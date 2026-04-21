@@ -1,0 +1,4 @@
+# Railway uses Nixpacks. Python is auto-detected from requirements.txt, but the
+# frontend build needs Node/npm. Extend the default nix packages with nodejs.
+[phases.setup]
+nixPkgs = ["...", "nodejs"]
