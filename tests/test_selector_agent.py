@@ -58,6 +58,11 @@ def test_build_prompt_contains_question_pool():
     assert "What do you eat?" in prompt
 
 
+def test_build_prompt_contains_lesson_title():
+    prompt = build_prompt(DIAGNOSTIC_TEXT, QUESTION_POOL)
+    assert "Lesson A" in prompt
+
+
 def test_homework_schema_has_required_fields():
     props = HOMEWORK_SCHEMA["schema"]["properties"]["homework"]["items"]["properties"]
     for field in (

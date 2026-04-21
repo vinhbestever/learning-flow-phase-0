@@ -92,6 +92,7 @@ def _pool_to_text(pool: list) -> str:
         qid = q.get("question_id") or f"fs-{i}"
         lines.append(
             f'[{q.get("signal_type", "?")}] qid={qid} lesson_id={q["lesson_id"]} '
+            f'lesson_title="{q.get("lesson_title", "")}" '
             f'type="{q["question_type"]}" '
             f'text="{(q.get("question_text") or "")[:120]}" '
             f'answer="{q.get("correct_answer") or "open"}"'
