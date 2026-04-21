@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: phase-0-learning-flow
-    runtime: python
-    buildCommand: pip install -r requirements.txt && cd web/frontend && npm ci && npm run build
-    startCommand: uvicorn web.backend.main:app --host 0.0.0.0 --port $PORT
-    envVars:
-      - key: OPENAI_API_KEY
-        sync: false
