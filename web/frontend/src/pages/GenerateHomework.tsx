@@ -93,11 +93,13 @@ export default function GenerateHomework() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--muted)]">
             Tiến trình
           </p>
-          <ul className="mt-4 space-y-2 font-mono text-sm text-[var(--mint)]">
+          <ul className="mt-4 space-y-2 font-mono text-sm text-[#134e4a]">
             {steps.map((s, i) => (
               <li key={`${i}-${s.slice(0, 12)}`} className="flex gap-2">
-                <span className="select-none text-[var(--amber)]">▶</span>
-                <span className="text-[var(--ink)]">{s}</span>
+                <span className="select-none font-sans text-[var(--amber)]" aria-hidden>
+                  ▶
+                </span>
+                <span className="font-sans text-[var(--ink)]">{s}</span>
               </li>
             ))}
           </ul>
@@ -109,7 +111,7 @@ export default function GenerateHomework() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--muted)]">
             Phân tích học sinh (stream)
           </p>
-          <p className="mt-4 whitespace-pre-wrap text-sm leading-relaxed text-[var(--ink)]/95">
+          <p className="mt-4 whitespace-pre-wrap text-sm leading-relaxed text-[var(--ink)]">
             {diagnostic}
           </p>
         </section>

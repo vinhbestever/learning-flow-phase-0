@@ -17,17 +17,18 @@ interface HomeworkData {
   diagnostic: string
 }
 
+/* Nền sáng: chữ đậm, viền nhạt — không dùng text-*-100/-200 (chỉ hợp nền tối) */
 const difficultyStyle: Record<Question['difficulty'], string> = {
-  easy: 'border-emerald-500/40 bg-emerald-500/10 text-emerald-200',
-  medium: 'border-amber-500/40 bg-amber-500/10 text-amber-100',
-  hard: 'border-rose-500/40 bg-rose-500/10 text-rose-100',
+  easy: 'border-emerald-200 bg-emerald-50 text-emerald-900',
+  medium: 'border-amber-200 bg-amber-50 text-amber-950',
+  hard: 'border-rose-200 bg-rose-50 text-rose-900',
 }
 
 const skillStyle: Record<string, string> = {
-  grammar: 'border-sky-500/35 bg-sky-500/10 text-sky-100',
-  vocabulary: 'border-violet-500/35 bg-violet-500/10 text-violet-100',
-  speaking: 'border-orange-500/35 bg-orange-500/10 text-orange-100',
-  pronunciation: 'border-fuchsia-500/35 bg-fuchsia-500/10 text-fuchsia-100',
+  grammar: 'border-sky-200 bg-sky-50 text-sky-900',
+  vocabulary: 'border-violet-200 bg-violet-50 text-violet-900',
+  speaking: 'border-orange-200 bg-orange-50 text-orange-900',
+  pronunciation: 'border-fuchsia-200 bg-fuchsia-50 text-fuchsia-900',
   other: 'border-[var(--border)] bg-[var(--elevated)] text-[var(--muted)]',
 }
 
@@ -103,7 +104,7 @@ export default function HomeworkResult() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--muted)]">
             Đánh giá học sinh
           </p>
-          <p className="mt-4 whitespace-pre-wrap text-sm leading-relaxed text-[var(--ink)]/95">
+          <p className="mt-4 whitespace-pre-wrap text-sm leading-relaxed text-[var(--ink)]">
             {data.diagnostic}
           </p>
         </section>
