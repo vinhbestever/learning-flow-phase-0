@@ -34,7 +34,7 @@ export default function LessonList() {
 
   if (error) {
     return (
-      <div className="rounded-3xl border border-[var(--coral)]/35 bg-[var(--elevated)]/80 p-6 text-[var(--coral)]">
+      <div className="rounded-3xl border border-[var(--coral)]/30 bg-[#fff1f2] p-6 text-[var(--coral)] shadow-[var(--shadow-card)]">
         <p className="font-display text-lg font-semibold">Không tải được danh sách</p>
         <p className="mt-2 text-sm text-[var(--muted)]">{error}</p>
       </div>
@@ -70,10 +70,10 @@ export default function LessonList() {
         {lessons.map((l, i) => (
           <li
             key={l.lesson_id}
-            className="animate-rise group relative overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface)]/90 p-5 shadow-[0_28px_90px_-60px_rgba(232,168,56,0.35)] transition hover:border-[var(--amber)]/30"
+            className="animate-rise group relative overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-[var(--shadow-card)] transition hover:border-[var(--amber)]/35"
             style={{ animationDelay: `${Math.min(i, 12) * 0.03}s` }}
           >
-            <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-[var(--amber)]/10 blur-3xl transition group-hover:bg-[var(--amber)]/20" />
+            <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-[var(--amber-soft)]/80 blur-3xl transition group-hover:bg-[var(--amber)]/15" />
             <div className="relative flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
               <div className="flex gap-4">
                 <span className="font-display mt-1 text-sm tabular-nums text-[var(--muted)]">
@@ -90,7 +90,7 @@ export default function LessonList() {
               </div>
               <div className="flex shrink-0 flex-wrap items-center justify-end gap-2 md:flex-col md:items-end">
                 {l.level != null && (
-                  <span className="rounded-full border border-[var(--mint)]/40 bg-[var(--mint)]/10 px-3 py-1 text-xs font-semibold text-[var(--mint)]">
+                  <span className="rounded-full border border-[var(--mint)]/35 bg-[var(--mint-soft)] px-3 py-1 text-xs font-semibold text-[var(--mint)]">
                     Cấp {l.level}
                   </span>
                 )}

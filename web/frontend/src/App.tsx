@@ -9,21 +9,21 @@ const linkClass = ({ isActive }: { isActive: boolean }) =>
     'rounded-full px-4 py-2 text-sm font-semibold tracking-wide transition-all duration-200',
     'focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--mint)]',
     isActive
-      ? 'bg-[var(--elevated-2)] text-[var(--ink)] shadow-[0_0_0_1px_var(--mint-glow),0_12px_40px_-18px_var(--mint-glow)]'
+      ? 'bg-[var(--nav-active)] text-[var(--ink)] shadow-[0_0_0_1px_var(--nav-active-ring)]'
       : 'text-[var(--muted)] hover:bg-[var(--faint)] hover:text-[var(--ink)]',
   ].join(' ')
 
 export default function App() {
   return (
     <div className="bg-lab min-h-dvh">
-      <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[rgba(6,7,12,0.65)] backdrop-blur-xl">
+      <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--header-bg)] backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between md:px-8">
           <div className="flex items-center gap-4">
             <div
-              className="relative h-11 w-11 shrink-0 rotate-3 rounded-2xl border border-[var(--border)] bg-[var(--elevated)] shadow-[0_20px_60px_-30px_var(--mint-glow)]"
+              className="relative h-11 w-11 shrink-0 rotate-3 rounded-2xl border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-float)]"
               aria-hidden
             >
-              <span className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[var(--mint)]/25 to-transparent" />
+              <span className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[var(--mint)]/20 to-transparent" />
               <span className="font-display absolute inset-0 flex items-center justify-center text-lg font-semibold text-[var(--mint)]">
                 P0
               </span>
@@ -39,7 +39,7 @@ export default function App() {
           </div>
 
           <nav
-            className="flex flex-wrap gap-1 rounded-full border border-[var(--border)] bg-[var(--surface)]/80 p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]"
+            className="flex flex-wrap gap-1 rounded-full border border-[var(--border)] bg-[var(--surface)] p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.95),0_1px_2px_rgba(26,35,51,0.04)]"
             aria-label="Điều hướng chính"
           >
             <NavLink to="/" end className={linkClass}>

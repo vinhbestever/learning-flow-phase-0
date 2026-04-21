@@ -1,26 +1,35 @@
 @import 'tailwindcss';
 
-/* “Midnight study lab” — deep void, mint signal, amber highlights, paper grain */
+/* “Morning classroom” — nền sáng ấm, teal giáo dục, dễ đọc lâu */
 :root {
-  --void: #06070c;
-  --surface: #0c0e16;
-  --elevated: #12151f;
-  --elevated-2: #181c28;
-  --ink: #e9edf5;
-  --muted: #8f98ab;
-  --faint: rgba(233, 237, 245, 0.06);
-  --mint: #3ecfad;
-  --mint-glow: rgba(62, 207, 173, 0.35);
-  --amber: #e8a838;
-  --coral: #ff7b6a;
-  --border: rgba(233, 237, 245, 0.09);
+  --void: #faf8f5;
+  --surface: #ffffff;
+  --elevated: #f3f1ec;
+  --elevated-2: #e8e5de;
+  --ink: #1a2333;
+  --muted: #5a6578;
+  --faint: rgba(26, 35, 51, 0.06);
+  --mint: #0d9488;
+  --mint-soft: #ccfbf1;
+  --mint-glow: rgba(13, 148, 136, 0.22);
+  --amber: #c2410c;
+  --amber-soft: #fff7ed;
+  --coral: #dc2626;
+  --border: rgba(26, 35, 51, 0.1);
+  --header-bg: rgba(255, 255, 255, 0.82);
+  --nav-active: #dff6f3;
+  --nav-active-ring: rgba(13, 148, 136, 0.35);
+  --on-primary: #ffffff;
   --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
   --font-body: 'Karla', system-ui, sans-serif;
+  --shadow-card: 0 22px 56px -36px rgba(26, 35, 51, 0.14);
+  --shadow-float: 0 12px 40px -24px rgba(13, 148, 136, 0.18);
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
+    color-scheme: light;
   }
 
   body {
@@ -38,19 +47,20 @@
   }
 
   ::selection {
-    background: rgba(62, 207, 173, 0.35);
-    color: var(--void);
+    background: rgba(13, 148, 136, 0.22);
+    color: var(--ink);
   }
 }
 
-/* Film grain + vignette (CSS-only atmosphere) */
+/* Ánh sáng nhẹ + giấy ấm, grain rất nhẹ */
 .bg-lab {
   position: relative;
   isolation: isolate;
   background:
-    radial-gradient(1200px 600px at 12% -10%, rgba(62, 207, 173, 0.12), transparent 55%),
-    radial-gradient(900px 500px at 92% 8%, rgba(232, 168, 56, 0.08), transparent 50%),
-    linear-gradient(165deg, #06070c 0%, #0a0c14 40%, #06070c 100%);
+    radial-gradient(1100px 520px at 10% -8%, rgba(13, 148, 136, 0.09), transparent 52%),
+    radial-gradient(780px 420px at 96% 4%, rgba(194, 65, 12, 0.05), transparent 48%),
+    radial-gradient(600px 400px at 50% 100%, rgba(59, 130, 246, 0.04), transparent 55%),
+    linear-gradient(180deg, #faf8f5 0%, #f3efe8 55%, #faf8f5 100%);
 }
 
 .bg-lab::before {
@@ -59,9 +69,9 @@
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.07;
+  opacity: 0.035;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  mix-blend-mode: overlay;
+  mix-blend-mode: multiply;
 }
 
 .bg-lab > * {
@@ -73,7 +83,6 @@
   font-family: var(--font-display);
 }
 
-/* Staggered entrance — one orchestrated reveal */
 @keyframes rise-in {
   from {
     opacity: 0;

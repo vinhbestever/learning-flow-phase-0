@@ -71,7 +71,7 @@ export default function GenerateHomework() {
           <button
             type="button"
             onClick={start}
-            className="animate-rise rounded-full bg-gradient-to-r from-[var(--mint)] to-[#2ea88f] px-8 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[var(--void)] shadow-[0_20px_60px_-24px_var(--mint-glow)] transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--mint)]"
+            className="animate-rise rounded-full bg-gradient-to-r from-[var(--mint)] to-[#0f766e] px-8 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[var(--on-primary)] shadow-[var(--shadow-float)] transition hover:brightness-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--mint)]"
           >
             Bắt đầu tạo bài tập
           </button>
@@ -81,7 +81,7 @@ export default function GenerateHomework() {
           <button
             type="button"
             disabled
-            className="cursor-not-allowed rounded-full border border-[var(--border)] bg-[var(--elevated)] px-8 py-3 text-sm font-semibold text-[var(--muted)]"
+            className="cursor-not-allowed rounded-full border border-[var(--border)] bg-[var(--elevated)] px-8 py-3 text-sm font-semibold text-[var(--muted)] opacity-90"
           >
             Đang chạy pipeline…
           </button>
@@ -89,7 +89,7 @@ export default function GenerateHomework() {
       </div>
 
       {steps.length > 0 && (
-        <section className="animate-rise rounded-3xl border border-[var(--border)] bg-[var(--surface)]/95 p-6 shadow-[0_32px_100px_-60px_rgba(62,207,173,0.35)]">
+        <section className="animate-rise rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-6 shadow-[var(--shadow-card)]">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--muted)]">
             Tiến trình
           </p>
@@ -105,7 +105,7 @@ export default function GenerateHomework() {
       )}
 
       {diagnostic && (
-        <section className="animate-rise rounded-3xl border border-[var(--border)] bg-[var(--elevated)]/90 p-6">
+        <section className="animate-rise rounded-3xl border border-[var(--border)] bg-[var(--mint-soft)]/40 p-6">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--muted)]">
             Phân tích học sinh (stream)
           </p>
@@ -116,7 +116,7 @@ export default function GenerateHomework() {
       )}
 
       {status === 'error' && (
-        <div className="animate-rise rounded-3xl border border-[var(--coral)]/45 bg-[rgba(255,123,106,0.08)] p-6">
+        <div className="animate-rise rounded-3xl border border-[var(--coral)]/30 bg-[#fff1f2] p-6 shadow-[var(--shadow-card)]">
           <p className="font-medium text-[var(--coral)]">{errorMsg}</p>
           <button
             type="button"
@@ -132,7 +132,7 @@ export default function GenerateHomework() {
       )}
 
       {status === 'done' && (
-        <div className="animate-rise rounded-3xl border border-[var(--mint)]/35 bg-[var(--mint)]/10 p-6 shadow-[0_28px_90px_-50px_var(--mint-glow)]">
+        <div className="animate-rise rounded-3xl border border-[var(--mint)]/30 bg-[var(--mint-soft)] p-6 shadow-[var(--shadow-card)]">
           <p className="font-display text-lg font-semibold text-[var(--mint)]">
             Tạo bài tập thành công
           </p>
@@ -143,7 +143,7 @@ export default function GenerateHomework() {
           <button
             type="button"
             onClick={() => navigate('/homework')}
-            className="mt-5 rounded-full bg-[var(--ink)] px-6 py-2.5 text-sm font-bold text-[var(--void)] transition hover:opacity-90"
+            className="mt-5 rounded-full bg-[var(--ink)] px-6 py-2.5 text-sm font-bold text-[var(--on-primary)] transition hover:opacity-90"
           >
             Xem bài tập →
           </button>

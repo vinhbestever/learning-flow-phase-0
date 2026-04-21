@@ -39,7 +39,7 @@ export default function StudentProfile() {
 
   if (error) {
     return (
-      <div className="animate-rise rounded-3xl border border-[var(--coral)]/35 bg-[var(--elevated)]/80 p-6 text-[var(--coral)] shadow-[0_24px_80px_-40px_rgba(255,123,106,0.45)]">
+      <div className="animate-rise rounded-3xl border border-[var(--coral)]/30 bg-[#fff1f2] p-6 text-[var(--coral)] shadow-[var(--shadow-card)]">
         <p className="font-display text-lg font-semibold">Không tải được hồ sơ</p>
         <p className="mt-2 text-sm text-[var(--muted)]">{error}</p>
       </div>
@@ -124,7 +124,7 @@ export default function StudentProfile() {
             skills.map(([skill, stats], i) => (
               <div
                 key={skill}
-                className="group rounded-2xl border border-[var(--border)] bg-[var(--surface)]/90 p-5 shadow-[0_24px_80px_-48px_rgba(0,0,0,0.85)] transition hover:border-[var(--mint)]/35"
+                className="group rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-[var(--shadow-card)] transition hover:border-[var(--mint)]/40"
                 style={{ animationDelay: `${0.05 * i}s` }}
               >
                 <div className="mb-3 flex flex-wrap items-center justify-between gap-2 text-sm">
@@ -157,7 +157,7 @@ export default function StudentProfile() {
             speakingDist.map(([type, count]) => (
               <span
                 key={type}
-                className="rounded-2xl border border-[var(--border)] bg-[var(--elevated)] px-4 py-2 text-sm text-[var(--muted)] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]"
+                className="rounded-2xl border border-[var(--border)] bg-[var(--elevated)] px-4 py-2 text-sm text-[var(--muted)]"
               >
                 <span className="text-[var(--ink)]">{type}</span>
                 <span className="ml-2 font-semibold tabular-nums text-[var(--amber)]">{count}</span>
@@ -185,7 +185,7 @@ function StatCard({
 }) {
   return (
     <div
-      className={`rounded-3xl border border-[var(--border)] bg-[var(--surface)]/95 p-5 shadow-[0_30px_90px_-55px_rgba(62,207,173,0.35)] ${className}`}
+      className={`rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-[var(--shadow-card)] ${className}`}
     >
       <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--muted)]">
         {label}

@@ -57,7 +57,7 @@ export default function HomeworkResult() {
 
   if (error) {
     return (
-      <div className="space-y-4 rounded-3xl border border-[var(--border)] bg-[var(--surface)]/90 p-8">
+      <div className="space-y-4 rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-8 shadow-[var(--shadow-card)]">
         <p className="text-[var(--coral)]">{error}</p>
         <Link
           to="/generate"
@@ -99,7 +99,7 @@ export default function HomeworkResult() {
       </header>
 
       {showDiag && (
-        <section className="animate-rise rounded-3xl border border-[var(--border)] bg-[var(--surface)]/95 p-6 shadow-[0_32px_100px_-60px_rgba(0,0,0,0.65)]">
+        <section className="animate-rise rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-6 shadow-[var(--shadow-card)]">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--muted)]">
             Đánh giá học sinh
           </p>
@@ -113,7 +113,7 @@ export default function HomeworkResult() {
         {data.homework.map((q, i) => (
           <li
             key={q.question_no}
-            className="animate-rise rounded-3xl border border-[var(--border)] bg-[var(--surface)]/90 p-6 shadow-[0_26px_90px_-58px_rgba(232,168,56,0.22)]"
+            className="animate-rise rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-6 shadow-[var(--shadow-card)]"
             style={{ animationDelay: `${Math.min(i, 14) * 0.035}s` }}
           >
             <div className="flex gap-4">
