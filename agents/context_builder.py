@@ -1,0 +1,147 @@
+"""
+Pre-filter and tier scored_candidates before sending to LLM agents.
+
+Tiering rules:
+  critical    weakness_score > 0.5
+  spaced_rep  days_since > 14 AND weakness_score <= 0.5
+  maintenance everything else
+
+Selection: greedy within each tier, sorted by composite_priority_score DESC.
+Skill-diversity boost: +0.1 per new skill category not yet covered.
+Cap: MAX_CANDIDATES total across all tiers.
+"""
+
+from __future__ import annotations
+
+MAX_CANDIDATES = 15
+MIN_QUESTIONS = 2  # lessons with fewer usable questions are excluded
+
+
+def _count_usable(lesson: dict) -> tuple[int, list]:
+    """Return (count, list) of text-renderable questions for a lesson."""
+    usable = []
+    hw = lesson.get("homework") or {}
+    for ptype in ("bai_tap", "luyen_tap"):
+        practice = hw.get(ptype) or {}
+        for q in practice.get("questions") or []:
+            if not q.get("requires_media") and q.get("question_text"):
+                usable.append({**q, "source": ptype})
+    for item in (lesson.get("in_class") or {}).get("free_speaking") or []:
+        if item.get("question"):
+            usable.append({
+                "question_id": None,
+                "question_folder": "Speaking",
+                "question_type": item.get("question_type", "free_speaking"),
+                "question_text": item["question"],
+                "requires_media": False,
+                "correct_answer": None,
+                "interaction_type": "free_speaking",
+                "source": "in_class",
+            })
+    return len(usable), usable
+
+
+def tier_candidates(
+    candidates: list,
+    questions_export: dict | None = None,
+    min_questions: int = MIN_QUESTIONS,
+    max_candidates: int = MAX_CANDIDATES,
+) -> list:
+    """
+    Assign signal_type to each candidate, filter by question availability,
+    apply diversity-aware greedy selection, cap at max_candidates.
+    """
+    q_map = {}
+    if questions_export:
+        q_map = {l["lesson_id"]: l for l in questions_export.get("lessons", [])}
+
+    def _signal(c):
+        if c.get("weakness_score", 0) > 0.5:
+            return "critical"
+        if (c.get("days_since_last_practice") or 0) > 14:
+            return "spaced_rep"
+        return "maintenance"
+
+    enriched = []
+    for c in candidates:
+        signal = _signal(c)
+        lesson = q_map.get(c["lesson_id"], {})
+        count, _ = _count_usable(lesson)
+        if questions_export and count < min_questions:
+            continue
+        enriched.append({
+            **c,
+            "signal_type": signal,
+            "usable_question_count": count,
+        })
+
+    tier_order = ["critical", "spaced_rep", "maintenance"]
+    selected = []
+    covered_skills = set()
+
+    for tier in tier_order:
+        if len(selected) >= max_candidates:
+            break
+        tier_items = [c for c in enriched if c["signal_type"] == tier]
+        for c in tier_items:
+            new_skills = set(c.get("weak_skills") or []) - covered_skills
+            c["_adjusted"] = c["composite_priority_score"] + 0.1 * len(new_skills)
+        tier_items.sort(key=lambda c: c["_adjusted"], reverse=True)
+        for c in tier_items:
+            if len(selected) >= max_candidates:
+                break
+            selected.append(c)
+            covered_skills.update(c.get("weak_skills") or [])
+
+    # Clean up internal field
+    for c in selected:
+        c.pop("_adjusted", None)
+
+    return selected
+
+
+def build_question_pool(lesson_ids: set, questions_export: dict) -> list:
+    """
+    Flatten usable questions from the given lesson_ids.
+    Attaches lesson_id, lesson_title, signal_type (from tiered_candidates if available).
+    """
+    q_map = {l["lesson_id"]: l for l in questions_export.get("lessons", [])}
+    pool = []
+    for lid in lesson_ids:
+        lesson = q_map.get(lid, {})
+        _, usable = _count_usable(lesson)
+        title = lesson.get("title", "")
+        for q in usable:
+            pool.append({
+                "lesson_id": lid,
+                "lesson_title": title,
+                "signal_type": None,  # caller sets this after tier_candidates
+                **q,
+            })
+    return pool
+
+
+def build_context(
+    student_context: dict,
+    questions_export: dict,
+    max_candidates: int = MAX_CANDIDATES,
+) -> tuple[list, list]:
+    """
+    Main entry: returns (tiered_candidates, question_pool).
+    tiered_candidates: enriched candidate list with signal_type
+    question_pool: flat list of usable questions from those lessons
+    """
+    raw_candidates = student_context.get("scored_candidates", [])
+    tiered = tier_candidates(
+        raw_candidates,
+        questions_export,
+        max_candidates=max_candidates,
+    )
+
+    signal_map = {c["lesson_id"]: c["signal_type"] for c in tiered}
+    lesson_ids = set(signal_map.keys())
+    pool = build_question_pool(lesson_ids, questions_export)
+    for q in pool:
+        q["signal_type"] = signal_map.get(q["lesson_id"])
+
+    return tiered, pool

@@ -1,1 +1,157 @@
-# Placeholder — tests added in Task 2
+from agents.context_builder import build_question_pool, tier_candidates
+
+CANDIDATE_CRITICAL = {
+    "lesson_id": 1,
+    "title": "Lesson A",
+    "level": 5,
+    "days_since_last_practice": 20,
+    "forgetting_score": 1.0,
+    "weakness_score": 0.6,
+    "composite_priority_score": 0.8,
+    "weak_skills": ["grammar"],
+    "failed_text_questions": [],
+    "worst_speaking_items": [],
+    "practice_ids": {"bai_tap": None, "luyen_tap": 101},
+}
+CANDIDATE_SPACED = {
+    **CANDIDATE_CRITICAL,
+    "lesson_id": 2,
+    "title": "Lesson B",
+    "weakness_score": 0.3,
+    "composite_priority_score": 0.65,
+    "days_since_last_practice": 16,
+}
+CANDIDATE_MAINTENANCE = {
+    **CANDIDATE_CRITICAL,
+    "lesson_id": 3,
+    "title": "Lesson C",
+    "weakness_score": 0.2,
+    "composite_priority_score": 0.4,
+    "days_since_last_practice": 10,
+}
+
+QUESTIONS_EXPORT = {
+    "lessons": [
+        {
+            "lesson_id": 1,
+            "title": "Lesson A",
+            "in_class": {
+                "free_speaking": [
+                    {
+                        "interaction_type": "free_speaking",
+                        "question": "What do you eat?",
+                        "question_type": "speaking_unscripted",
+                    }
+                ]
+            },
+            "homework": {
+                "bai_tap": None,
+                "luyen_tap": {
+                    "practice_id": 101,
+                    "score": 0.8,
+                    "correct": 8,
+                    "total": 10,
+                    "questions": [
+                        {
+                            "question_id": 1001,
+                            "question_folder": "Grammar",
+                            "question_type": "Điền vào chỗ trống",
+                            "question_text": "She ___ a cat.",
+                            "requires_media": False,
+                            "correct_answer": "has",
+                        },
+                        {
+                            "question_id": 1002,
+                            "question_folder": "Grammar",
+                            "question_type": "Một lựa chọn",
+                            "question_text": None,
+                            "requires_media": True,
+                            "correct_answer": "blue",
+                        },
+                    ],
+                },
+            },
+        },
+        {
+            "lesson_id": 2,
+            "title": "Lesson B",
+            "in_class": {"free_speaking": []},
+            "homework": {
+                "bai_tap": {
+                    "practice_id": 201,
+                    "score": 0.9,
+                    "correct": 9,
+                    "total": 10,
+                    "questions": [
+                        {
+                            "question_id": 2001,
+                            "question_folder": "Vocabulary",
+                            "question_type": "Điền vào chỗ trống",
+                            "question_text": "A dog is an ___.",
+                            "requires_media": False,
+                            "correct_answer": "animal",
+                        },
+                    ],
+                },
+                "luyen_tap": None,
+            },
+        },
+        {
+            "lesson_id": 3,
+            "title": "Lesson C",
+            "in_class": {"free_speaking": []},
+            "homework": {"bai_tap": None, "luyen_tap": None},
+        },
+    ]
+}
+
+
+def test_tier_candidates_labels():
+    candidates = [CANDIDATE_CRITICAL, CANDIDATE_SPACED, CANDIDATE_MAINTENANCE]
+    tiered = tier_candidates(candidates)
+    by_id = {c["lesson_id"]: c for c in tiered}
+    assert by_id[1]["signal_type"] == "critical"
+    assert by_id[2]["signal_type"] == "spaced_rep"
+    assert by_id[3]["signal_type"] == "maintenance"
+
+
+def test_tier_candidates_excludes_zero_question_lessons():
+    candidates = [CANDIDATE_CRITICAL, CANDIDATE_MAINTENANCE]
+    tiered = tier_candidates(candidates, questions_export=QUESTIONS_EXPORT, min_questions=2)
+    ids = [c["lesson_id"] for c in tiered]
+    # lesson 3 has 0 usable questions — excluded
+    assert 3 not in ids
+    assert 1 in ids
+
+
+def test_tier_candidates_caps_at_15():
+    many = [
+        {**CANDIDATE_CRITICAL, "lesson_id": i, "composite_priority_score": 0.9 - i * 0.01}
+        for i in range(1, 25)
+    ]
+    tiered = tier_candidates(many)
+    assert len(tiered) <= 15
+
+
+def test_build_question_pool_excludes_media():
+    lesson_ids = {1}
+    pool = build_question_pool(lesson_ids, QUESTIONS_EXPORT)
+    # question_id 1002 has requires_media=True — must not appear
+    assert all(q.get("requires_media") is False for q in pool)
+    # question_id 1001 should be present
+    assert any(q["question_id"] == 1001 for q in pool)
+
+
+def test_build_question_pool_includes_free_speaking():
+    lesson_ids = {1}
+    pool = build_question_pool(lesson_ids, QUESTIONS_EXPORT)
+    assert any(q.get("interaction_type") == "free_speaking" for q in pool)
+
+
+def test_build_question_pool_attaches_lesson_metadata():
+    lesson_ids = {1}
+    pool = build_question_pool(lesson_ids, QUESTIONS_EXPORT)
+    for q in pool:
+        assert "lesson_id" in q
+        assert "lesson_title" in q
+        assert "signal_type" in q
