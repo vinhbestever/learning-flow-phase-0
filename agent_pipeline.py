@@ -40,6 +40,8 @@ def main():
         print("ERROR: OPENAI_API_KEY environment variable not set.")
         sys.exit(1)
 
+    Path("output").mkdir(exist_ok=True)
+
     print("Loading data files...")
     student_context = load_json(STUDENT_CONTEXT_PATH)
     questions_export = load_json(QUESTIONS_EXPORT_PATH)
@@ -49,6 +51,13 @@ def main():
 
     print("[1/3] Building context (tiering candidates, building question pool)...")
     tiered_candidates, question_pool = build_context(student_context, questions_export)
+    if not tiered_candidates:
+        print("ERROR: No candidates found. Check that student_context.json has scored_candidates.")
+        sys.exit(1)
+    if not question_pool:
+        print("ERROR: Question pool is empty. Check that questions_export.json has usable questions.")
+        sys.exit(1)
+
     print(f"      {len(tiered_candidates)} candidates | {len(question_pool)} questions in pool")
     tier_counts = {}
     for c in tiered_candidates:

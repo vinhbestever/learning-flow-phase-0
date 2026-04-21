@@ -85,7 +85,7 @@ def test_parse_response_validates_count():
         parse_response(raw)
 
 
-def test_run_selector_calls_structured_output():
+def test_run_selector_calls_create_with_json_schema():
     mock_client = MagicMock()
     mock_client.chat.completions.create.return_value = MagicMock(
         choices=[
@@ -101,3 +101,12 @@ def test_run_selector_calls_structured_output():
     call_kwargs = mock_client.chat.completions.create.call_args[1]
     assert call_kwargs["model"] == "gpt-4o"
     assert call_kwargs["temperature"] == 0
+    assert "response_format" in call_kwargs
+    assert call_kwargs["response_format"]["type"] == "json_schema"
+
+
+def test_parse_response_rejects_none_and_empty():
+    with pytest.raises((ValueError, TypeError)):
+        parse_response(None)
+    with pytest.raises(ValueError):
+        parse_response("")

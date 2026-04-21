@@ -155,3 +155,36 @@ def test_build_question_pool_attaches_lesson_metadata():
         assert "lesson_id" in q
         assert "lesson_title" in q
         assert "signal_type" in q
+
+
+def test_tier_candidates_attaches_skill_coverage():
+    candidates = [CANDIDATE_CRITICAL]
+    tiered = tier_candidates(candidates)
+    assert "skill_coverage" in tiered[0]
+    assert isinstance(tiered[0]["skill_coverage"], list)
+
+
+def test_tier_candidates_diversity_boost_is_greedy():
+    # Two critical lessons share skill "grammar". A third has skill "speaking".
+    # Without greedy re-scoring, both grammar lessons get the boost before selection.
+    # With greedy re-scoring, the second grammar lesson loses the boost after the first
+    # is selected — allowing the speaking lesson to be picked instead if scores are close.
+    shared_skill_a = {
+        **CANDIDATE_CRITICAL, "lesson_id": 10, "weak_skills": ["grammar"],
+        "composite_priority_score": 0.80,
+    }
+    shared_skill_b = {
+        **CANDIDATE_CRITICAL, "lesson_id": 11, "weak_skills": ["grammar"],
+        "composite_priority_score": 0.75,
+    }
+    new_skill_c = {
+        **CANDIDATE_CRITICAL, "lesson_id": 12, "weak_skills": ["speaking"],
+        "composite_priority_score": 0.74,  # lower base, but brings new skill
+    }
+    tiered = tier_candidates([shared_skill_a, shared_skill_b, new_skill_c], max_candidates=3)
+    ids = [c["lesson_id"] for c in tiered]
+    # lesson 10 selected first (highest score + grammar boost)
+    assert ids[0] == 10
+    # lesson 12 should be picked second: after 10 is selected, "grammar" is covered,
+    # so 11's adjusted score drops to 0.75 while 12 gets boost → 0.74 + 0.1 = 0.84
+    assert ids[1] == 12

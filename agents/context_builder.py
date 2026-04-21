@@ -73,6 +73,7 @@ def tier_candidates(
             **c,
             "signal_type": signal,
             "usable_question_count": count,
+            "skill_coverage": list(set(c.get("weak_skills") or [])),
         })
 
     tier_order = ["critical", "spaced_rep", "maintenance"]
@@ -82,16 +83,16 @@ def tier_candidates(
     for tier in tier_order:
         if len(selected) >= max_candidates:
             break
-        tier_items = [c for c in enriched if c["signal_type"] == tier]
-        for c in tier_items:
-            new_skills = set(c.get("weak_skills") or []) - covered_skills
-            c["_adjusted"] = c["composite_priority_score"] + 0.1 * len(new_skills)
-        tier_items.sort(key=lambda c: c["_adjusted"], reverse=True)
-        for c in tier_items:
-            if len(selected) >= max_candidates:
-                break
-            selected.append(c)
-            covered_skills.update(c.get("weak_skills") or [])
+        remaining = [c for c in enriched if c["signal_type"] == tier]
+        while remaining and len(selected) < max_candidates:
+            # Re-score against current covered_skills so diversity boost is accurate
+            for c in remaining:
+                new_skills = set(c.get("weak_skills") or []) - covered_skills
+                c["_adjusted"] = c["composite_priority_score"] + 0.1 * len(new_skills)
+            best = max(remaining, key=lambda c: c["_adjusted"])
+            selected.append(best)
+            covered_skills.update(best.get("weak_skills") or [])
+            remaining.remove(best)
 
     # Clean up internal field
     for c in selected:
