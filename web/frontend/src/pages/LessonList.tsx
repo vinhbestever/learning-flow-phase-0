@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { CollapsibleModule } from '../components/CollapsibleModule'
 import { groupLessonsByModule } from '../lib/lessonGroups'
 
 interface Lesson {
@@ -55,77 +56,62 @@ export default function LessonList() {
   }
 
   return (
-    <div className="space-y-10">
-      <header className="animate-rise flex flex-wrap items-end justify-between gap-4">
+    <div className="space-y-6">
+      <header className="animate-rise flex flex-wrap items-end justify-between gap-3">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--amber)]">
             Khóa học
           </p>
-          <h1 className="font-display mt-2 text-3xl font-semibold text-[var(--ink)] md:text-4xl">
+          <h1 className="font-display mt-1 text-2xl font-semibold text-[var(--ink)] md:text-3xl">
             Danh sách bài học
           </h1>
-          <p className="mt-2 max-w-2xl text-sm text-[var(--muted)]">
-            Nhóm theo unit/chủ đề (phần đầu tiên của tiêu đề). Chọn một bài để xem{' '}
-            <strong className="text-[var(--ink)]">bài tập &amp; luyện tập</strong> chi tiết.
+          <p className="mt-1 max-w-2xl text-sm leading-snug text-[var(--muted)]">
+            Thu gọn từng nhóm unit để lướt nhanh. Bấm một dòng để mở chi tiết bài tập / luyện tập.
           </p>
         </div>
-        <div className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-4 py-2 text-sm text-[var(--muted)]">
+        <div className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-3 py-1.5 text-xs text-[var(--muted)]">
           <span className="font-semibold text-[var(--ink)]">{lessons.length}</span> bài ·{' '}
           <span className="font-semibold text-[var(--ink)]">{grouped.length}</span> nhóm
         </div>
       </header>
 
-      <div className="space-y-14">
+      <div className="space-y-3">
         {grouped.map(([moduleLabel, rows], gi) => (
-          <section key={moduleLabel} className="animate-rise" style={{ animationDelay: `${gi * 0.05}s` }}>
-            <h2 className="font-display border-b border-[var(--border)] pb-3 text-xl font-semibold text-[var(--ink)] md:text-2xl">
-              {moduleLabel}
-            </h2>
-            <ol className="mt-6 space-y-4">
+          <CollapsibleModule
+            key={moduleLabel}
+            label={moduleLabel}
+            count={rows.length}
+            defaultOpen={gi === 0}
+          >
+            <ul className="grid gap-1 xl:grid-cols-2">
               {rows.map((l, i) => (
                 <li key={l.lesson_id}>
                   <Link
                     to={`/lessons/${l.lesson_id}`}
-                    className="group relative block overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-[var(--shadow-card)] outline-none transition hover:border-[var(--amber)]/40 hover:shadow-[var(--shadow-float)] focus-visible:ring-2 focus-visible:ring-[var(--mint)]"
+                    title={l.desc ? l.desc.slice(0, 280) : undefined}
+                    className="flex min-h-[3rem] items-center gap-2 rounded-xl border border-transparent px-2 py-2 text-sm outline-none transition hover:border-[var(--mint)]/35 hover:bg-[var(--surface)] focus-visible:ring-2 focus-visible:ring-[var(--mint)]"
                   >
-                    <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-[var(--amber-soft)]/80 blur-3xl transition group-hover:bg-[var(--amber)]/15" />
-                    <div className="relative flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-                      <div className="flex min-w-0 gap-4">
-                        <span className="font-display mt-1 shrink-0 text-sm tabular-nums text-[var(--muted)]">
-                          {String(l.position ?? i + 1).padStart(2, '0')}
-                        </span>
-                        <div className="min-w-0">
-                          <p className="font-display text-lg font-semibold text-[var(--ink)] group-hover:text-[var(--mint)] md:text-xl">
-                            {l.title?.trim() || `Bài học #${l.lesson_id}`}
-                          </p>
-                          {l.desc ? (
-                            <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-[var(--muted)]">
-                              {l.desc}
-                            </p>
-                          ) : null}
-                          <p className="mt-3 text-xs font-semibold text-[var(--mint)]">
-                            Xem danh sách câu hỏi →
-                          </p>
-                        </div>
-                      </div>
-                      <div className="flex shrink-0 flex-wrap items-center justify-end gap-2 md:flex-col md:items-end">
-                        {l.level != null && (
-                          <span className="rounded-full border border-[var(--mint)]/35 bg-[var(--mint-soft)] px-3 py-1 text-xs font-semibold text-[var(--mint)]">
-                            Cấp {l.level}
-                          </span>
-                        )}
-                        {l.last_activity_date && (
-                          <span className="text-xs tabular-nums text-[var(--muted)]">
-                            {l.last_activity_date}
-                          </span>
-                        )}
-                      </div>
-                    </div>
+                    <span className="w-7 shrink-0 text-center font-display text-xs tabular-nums text-[var(--muted)]">
+                      {String(l.position ?? i + 1).padStart(2, '0')}
+                    </span>
+                    <span className="min-w-0 flex-1 leading-snug">
+                      <span className="font-medium text-[var(--ink)] line-clamp-2 md:line-clamp-1">
+                        {l.title?.trim() || `Bài học #${l.lesson_id}`}
+                      </span>
+                    </span>
+                    <span className="hidden shrink-0 text-xs tabular-nums text-[var(--muted)] sm:inline">
+                      {l.last_activity_date ?? '—'}
+                    </span>
+                    {l.level != null && (
+                      <span className="shrink-0 rounded-md border border-[var(--mint)]/30 bg-[var(--mint-soft)] px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-[var(--mint)]">
+                        L{l.level}
+                      </span>
+                    )}
                   </Link>
                 </li>
               ))}
-            </ol>
-          </section>
+            </ul>
+          </CollapsibleModule>
         ))}
       </div>
     </div>

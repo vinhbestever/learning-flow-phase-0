@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { CollapsibleModule } from '../components/CollapsibleModule'
 import { groupHistoryByModule } from '../lib/lessonGroups'
 
 interface HistoryItem {
@@ -83,21 +84,21 @@ export default function LearningHistory() {
   }
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-6">
       <header className="animate-rise">
         <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--mint)]">
-          Dòng thời gian
+          Lịch sử
         </p>
-        <h1 className="font-display mt-2 text-3xl font-semibold text-[var(--ink)] md:text-4xl">
+        <h1 className="font-display mt-1 text-2xl font-semibold text-[var(--ink)] md:text-3xl">
           Lịch sử học tập
         </h1>
-        <p className="mt-3 max-w-2xl text-[var(--muted)]">
-          Nhóm theo unit/chủ đề. Bấm vào tiêu đề hoặc &quot;Xem bài tập&quot; để mở chi tiết câu hỏi LMS.
-          Dữ liệu theo ngày tham chiếu{' '}
+        <p className="mt-1 max-w-2xl text-sm leading-snug text-[var(--muted)]">
+          Thu gọn unit; mỗi bài một dòng — bấm dòng để xem phân tích. Tham chiếu{' '}
           <span className="font-semibold text-[var(--ink)]">{data.reference_date ?? '—'}</span>
           {data.student_id != null && (
             <>
-              , học sinh <span className="font-semibold text-[var(--ink)]">#{data.student_id}</span>
+              {' '}
+              · HS <span className="font-semibold text-[var(--ink)]">#{data.student_id}</span>
             </>
           )}
           .
@@ -107,146 +108,108 @@ export default function LearningHistory() {
       {data.items.length === 0 ? (
         <p className="text-[var(--muted)]">Chưa có mục lịch sử.</p>
       ) : (
-        <div className="space-y-16">
+        <div className="space-y-3">
           {grouped.map(([moduleLabel, moduleItems], gi) => (
-            <section key={moduleLabel} className="animate-rise" style={{ animationDelay: `${gi * 0.06}s` }}>
-              <h2 className="font-display border-b border-[var(--border)] pb-3 text-xl font-semibold text-[var(--ink)] md:text-2xl">
-                {moduleLabel}
-              </h2>
-
-              <div className="relative mt-8">
-                <div
-                  className="absolute bottom-0 left-[1.125rem] top-8 w-px bg-gradient-to-b from-[var(--mint)] via-[var(--border)] to-transparent md:left-5"
-                  aria-hidden
-                />
-
-                <ol className="space-y-8">
-                  {moduleItems.map((item, i) => (
-                    <li
-                      key={item.lesson_id}
-                      className="relative flex gap-5 pl-1 md:gap-8"
-                      style={{ animationDelay: `${Math.min(i, 14) * 0.04}s` }}
-                    >
-                      <div className="relative z-[1] flex shrink-0 flex-col items-center">
-                        <span className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[var(--surface)] bg-[var(--mint-soft)] font-display text-sm font-bold text-[var(--mint)] shadow-[var(--shadow-card)] md:h-10 md:w-10">
-                          {i + 1}
+            <CollapsibleModule
+              key={moduleLabel}
+              label={moduleLabel}
+              count={moduleItems.length}
+              defaultOpen={gi === 0}
+            >
+              <div className="divide-y divide-[var(--border)] rounded-lg border border-[var(--border)] bg-[var(--surface)]">
+                {moduleItems.map((item) => (
+                  <details
+                    key={item.lesson_id}
+                    className="group open:bg-[var(--void)]/25 [&_summary::-webkit-details-marker]:hidden"
+                  >
+                    <summary className="flex cursor-pointer list-none flex-wrap items-center gap-x-2 gap-y-1 px-3 py-2.5 text-sm">
+                      <Link
+                        to={`/lessons/${item.lesson_id}`}
+                        className="min-w-0 flex-1 truncate font-medium text-[var(--ink)] hover:text-[var(--mint)] hover:underline"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        {item.title}
+                      </Link>
+                      {item.level != null && (
+                        <span className="shrink-0 rounded border border-[var(--mint)]/30 bg-[var(--mint-soft)] px-1.5 py-0.5 text-[10px] font-bold text-[var(--mint)]">
+                          L{item.level}
                         </span>
-                      </div>
-
-                      <article className="min-w-0 flex-1 rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-[var(--shadow-card)] md:p-6">
-                  <div className="flex flex-wrap items-start justify-between gap-3">
-                    <div className="min-w-0">
-                      <h2 className="font-display text-lg font-semibold leading-snug md:text-xl">
-                        <Link
-                          to={`/lessons/${item.lesson_id}`}
-                          className="text-[var(--ink)] underline-offset-4 transition hover:text-[var(--mint)] hover:underline"
-                        >
-                          {item.title}
-                        </Link>
-                      </h2>
-                      <div className="mt-2 flex flex-wrap gap-2 text-xs">
-                        {item.level != null && (
-                          <span className="rounded-full border border-[var(--mint)]/35 bg-[var(--mint-soft)] px-2.5 py-0.5 font-semibold text-[var(--mint)]">
-                            Cấp {item.level}
-                          </span>
-                        )}
-                        {item.days_since_last_practice != null && (
-                          <span className="rounded-full border border-[var(--border)] bg-[var(--elevated)] px-2.5 py-0.5 text-[var(--muted)]">
-                            {item.days_since_last_practice} ngày từ lần luyện gần nhất
-                          </span>
-                        )}
-                        {item.last_speaking_activity && (
-                          <span className="rounded-full border border-[var(--amber)]/30 bg-[var(--amber-soft)] px-2.5 py-0.5 tabular-nums text-[var(--amber)]">
-                            Nói: {item.last_speaking_activity}
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                    <div className="text-right text-xs leading-relaxed text-[var(--muted)]">
-                      <div>
-                        Ưu tiên:{' '}
-                        <span className="font-semibold text-[var(--ink)]">
-                          {item.composite_priority_score != null
-                            ? item.composite_priority_score.toFixed(2)
-                            : '—'}
-                        </span>
-                      </div>
-                      <div className="mt-1">
-                        Quên (ước lượng): {pct(item.forgetting_score)} · Điểm yếu:{' '}
-                        {item.weakness_score != null ? item.weakness_score.toFixed(2) : '—'}
-                      </div>
-                    </div>
-                  </div>
-
-                  {item.weak_skills.length > 0 && (
-                    <div className="mt-4 flex flex-wrap gap-1.5">
-                      {item.weak_skills.map((s) => (
-                        <span
-                          key={s}
-                          className="rounded-lg border border-rose-200 bg-rose-50 px-2 py-0.5 text-xs font-medium text-rose-900"
-                        >
-                          {s}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-
-                  <div className="mt-4 grid gap-4 border-t border-[var(--border)] pt-4 sm:grid-cols-2">
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-wider text-[var(--muted)]">
-                        Bài tập / điền
-                      </p>
-                      <p className="mt-1 text-sm text-[var(--ink)]">
-                        Sai (text): <strong>{item.failed_text_count}</strong> · Media:{' '}
-                        <strong>{item.failed_media_questions_count}</strong>
-                      </p>
-                      {item.failed_preview.map((fp, j) => (
-                        <p key={j} className="mt-2 line-clamp-3 text-xs italic text-[var(--muted)]">
-                          {fp.question_type && <span className="not-italic">{fp.question_type}: </span>}
-                          {fp.snippet}
-                          {fp.snippet.length >= 140 ? '…' : ''}
-                        </p>
-                      ))}
-                    </div>
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-wider text-[var(--muted)]">
-                        Nói (mẫu)
-                      </p>
-                      {item.speaking_preview.length === 0 ? (
-                        <p className="mt-1 text-sm text-[var(--muted)]">Không có đoạn nói tiêu biểu.</p>
-                      ) : (
-                        item.speaking_preview.map((sp, j) => (
-                          <blockquote
-                            key={j}
-                            className="mt-2 border-l-[3px] border-[var(--mint)] pl-3 text-sm"
-                          >
-                            <p className="text-[var(--ink)]">&ldquo;{sp.question}&rdquo;</p>
-                            <p className="mt-1 text-[var(--muted)]">
-                              HS: <span className="text-[var(--ink)]">{sp.user_transcript || '—'}</span>
-                              {sp.timestamp && (
-                                <span className="ml-2 tabular-nums text-xs">({sp.timestamp})</span>
-                              )}
-                            </p>
-                          </blockquote>
-                        ))
                       )}
-                    </div>
-                  </div>
+                      {item.days_since_last_practice != null && (
+                        <span className="shrink-0 text-xs tabular-nums text-[var(--muted)]">
+                          {item.days_since_last_practice}d
+                        </span>
+                      )}
+                      <span className="ml-auto shrink-0 text-xs tabular-nums text-[var(--muted)]">
+                        ưu tiên {item.composite_priority_score?.toFixed(2) ?? '—'}
+                      </span>
+                    </summary>
 
-                  <div className="mt-4 border-t border-[var(--border)] pt-4">
-                    <Link
-                      to={`/lessons/${item.lesson_id}`}
-                      className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--mint)] hover:underline"
-                    >
-                      Xem danh sách bài tập &amp; luyện tập của bài này →
-                    </Link>
-                  </div>
-                </article>
-                    </li>
-                  ))}
-                </ol>
+                    <div className="border-t border-[var(--border)] px-3 pb-3 pt-2">
+                      <div className="flex flex-wrap gap-2 text-xs text-[var(--muted)]">
+                        <span>Quên: {pct(item.forgetting_score)}</span>
+                        <span>·</span>
+                        <span>Yếu: {item.weakness_score?.toFixed(2) ?? '—'}</span>
+                        {item.last_speaking_activity && (
+                          <>
+                            <span>·</span>
+                            <span>Nói: {item.last_speaking_activity}</span>
+                          </>
+                        )}
+                      </div>
+
+                      {item.weak_skills.length > 0 && (
+                        <div className="mt-2 flex flex-wrap gap-1">
+                          {item.weak_skills.map((s) => (
+                            <span
+                              key={s}
+                              className="rounded border border-rose-200 bg-rose-50 px-1.5 py-0.5 text-[11px] font-medium text-rose-900"
+                            >
+                              {s}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+
+                      <div className="mt-3 grid gap-3 text-xs sm:grid-cols-2">
+                        <div>
+                          <p className="font-semibold uppercase tracking-wide text-[var(--muted)]">
+                            Bài tập sai
+                          </p>
+                          <p className="mt-0.5 text-[var(--ink)]">
+                            Text: <strong>{item.failed_text_count}</strong> · Media:{' '}
+                            <strong>{item.failed_media_questions_count}</strong>
+                          </p>
+                          {item.failed_preview.map((fp, j) => (
+                            <p key={j} className="mt-1 line-clamp-2 italic text-[var(--muted)]">
+                              {fp.question_type && `${fp.question_type}: `}
+                              {fp.snippet}
+                            </p>
+                          ))}
+                        </div>
+                        <div>
+                          <p className="font-semibold uppercase tracking-wide text-[var(--muted)]">
+                            Nói (mẫu)
+                          </p>
+                          {item.speaking_preview.length === 0 ? (
+                            <p className="mt-0.5 text-[var(--muted)]">—</p>
+                          ) : (
+                            item.speaking_preview.map((sp, j) => (
+                              <p key={j} className="mt-1 border-l-2 border-[var(--mint)] pl-2 text-[var(--ink)]">
+                                <span className="text-[var(--muted)]">HS:</span> {sp.user_transcript || '—'}
+                                {sp.timestamp && (
+                                  <span className="ml-1 text-[var(--muted)]">({sp.timestamp})</span>
+                                )}
+                              </p>
+                            ))
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </details>
+                ))}
               </div>
-            </section>
+            </CollapsibleModule>
           ))}
         </div>
       )}
