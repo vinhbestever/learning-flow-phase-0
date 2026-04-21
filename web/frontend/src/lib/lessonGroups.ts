@@ -1,11 +1,14 @@
 /** Nhóm theo phần đầu tiêu đề (vd. "Unit 2C: Shopping - Lesson 5" → "Unit 2C: Shopping") */
-export function moduleLabelFromTitle(title: string): string {
-  const i = title.indexOf(' - ')
-  if (i === -1) return title.trim() || 'Khác'
-  return title.slice(0, i).trim() || 'Khác'
+export function moduleLabelFromTitle(title: string | null | undefined): string {
+  if (title == null || typeof title !== 'string') return 'Khác'
+  const t = title.trim()
+  if (!t) return 'Khác'
+  const i = t.indexOf(' - ')
+  if (i === -1) return t
+  return t.slice(0, i).trim() || 'Khác'
 }
 
-export type WithTitlePos = { title: string; position?: number | null }
+export type WithTitlePos = { title?: string | null; position?: number | null }
 
 export function groupLessonsByModule<T extends WithTitlePos>(items: T[]): [string, T[]][] {
   const map = new Map<string, T[]>()
@@ -28,7 +31,10 @@ export function groupLessonsByModule<T extends WithTitlePos>(items: T[]): [strin
 }
 
 /** Lịch sử: nhóm theo unit; trong nhóm sắp theo gần luyện nhất trước */
-export type HistoryRow = { title: string; days_since_last_practice: number | null }
+export type HistoryRow = {
+  title?: string | null
+  days_since_last_practice: number | null
+}
 
 export function groupHistoryByModule<T extends HistoryRow>(items: T[]): [string, T[]][] {
   const map = new Map<string, T[]>()

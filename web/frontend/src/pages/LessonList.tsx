@@ -4,7 +4,7 @@ import { groupLessonsByModule } from '../lib/lessonGroups'
 
 interface Lesson {
   lesson_id: number
-  title: string
+  title: string | null
   level: number | null
   position: number | null
   last_activity_date: string | null
@@ -96,7 +96,7 @@ export default function LessonList() {
                         </span>
                         <div className="min-w-0">
                           <p className="font-display text-lg font-semibold text-[var(--ink)] group-hover:text-[var(--mint)] md:text-xl">
-                            {l.title}
+                            {l.title?.trim() || `Bài học #${l.lesson_id}`}
                           </p>
                           {l.desc ? (
                             <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-[var(--muted)]">
