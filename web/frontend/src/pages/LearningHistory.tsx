@@ -122,7 +122,7 @@ export default function LearningHistory() {
                     key={item.lesson_id}
                     className="group open:bg-[var(--void)]/25 [&_summary::-webkit-details-marker]:hidden"
                   >
-                    <summary className="flex cursor-pointer list-none flex-wrap items-center gap-x-2 gap-y-1 px-3 py-2.5 text-sm">
+                    <summary className="flex cursor-pointer list-none flex-wrap items-center gap-x-2 gap-y-1 px-3 py-2 text-sm">
                       <Link
                         to={`/lessons/${item.lesson_id}`}
                         className="min-w-0 flex-1 truncate font-medium text-[var(--ink)] hover:text-[var(--mint)] hover:underline"
@@ -145,67 +145,72 @@ export default function LearningHistory() {
                       </span>
                     </summary>
 
-                    <div className="border-t border-[var(--border)] px-3 pb-3 pt-2">
-                      <div className="flex flex-wrap gap-2 text-xs text-[var(--muted)]">
-                        <span>Quên: {pct(item.forgetting_score)}</span>
-                        <span>·</span>
-                        <span>Yếu: {item.weakness_score?.toFixed(2) ?? '—'}</span>
-                        {item.last_speaking_activity && (
-                          <>
-                            <span>·</span>
-                            <span>Nói: {item.last_speaking_activity}</span>
-                          </>
-                        )}
-                      </div>
-
-                      {item.weak_skills.length > 0 && (
-                        <div className="mt-2 flex flex-wrap gap-1">
-                          {item.weak_skills.map((s) => (
-                            <span
-                              key={s}
-                              className="rounded border border-rose-200 bg-rose-50 px-1.5 py-0.5 text-[11px] font-medium text-rose-900"
-                            >
-                              {s}
-                            </span>
-                          ))}
-                        </div>
-                      )}
-
-                      <div className="mt-3 grid gap-3 text-xs sm:grid-cols-2">
-                        <div>
-                          <p className="font-semibold uppercase tracking-wide text-[var(--muted)]">
-                            Bài tập sai
-                          </p>
-                          <p className="mt-0.5 text-[var(--ink)]">
-                            Text: <strong>{item.failed_text_count}</strong> · Media:{' '}
-                            <strong>{item.failed_media_questions_count}</strong>
-                          </p>
-                          {item.failed_preview.map((fp, j) => (
-                            <p key={j} className="mt-1 line-clamp-2 italic text-[var(--muted)]">
-                              {fp.question_type && `${fp.question_type}: `}
-                              {fp.snippet}
-                            </p>
-                          ))}
-                        </div>
-                        <div>
-                          <p className="font-semibold uppercase tracking-wide text-[var(--muted)]">
-                            Nói (mẫu)
-                          </p>
-                          {item.speaking_preview.length === 0 ? (
-                            <p className="mt-0.5 text-[var(--muted)]">—</p>
-                          ) : (
-                            item.speaking_preview.map((sp, j) => (
-                              <p key={j} className="mt-1 border-l-2 border-[var(--mint)] pl-2 text-[var(--ink)]">
-                                <span className="text-[var(--muted)]">HS:</span> {sp.user_transcript || '—'}
-                                {sp.timestamp && (
-                                  <span className="ml-1 text-[var(--muted)]">({sp.timestamp})</span>
-                                )}
-                              </p>
-                            ))
+                    <details className="border-t border-[var(--border)] bg-[var(--void)]/15 [&>summary::-webkit-details-marker]:hidden">
+                      <summary className="cursor-pointer list-none px-3 py-2 text-xs font-semibold text-[var(--mint)]">
+                        Phân tích chi tiết (quên / sai bài / nói) ▾
+                      </summary>
+                      <div className="space-y-3 border-t border-[var(--border)] px-3 pb-3 pt-2">
+                        <div className="flex flex-wrap gap-x-2 gap-y-0.5 text-[11px] text-[var(--muted)]">
+                          <span>Quên: {pct(item.forgetting_score)}</span>
+                          <span>·</span>
+                          <span>Yếu: {item.weakness_score?.toFixed(2) ?? '—'}</span>
+                          {item.last_speaking_activity && (
+                            <>
+                              <span>·</span>
+                              <span>Nói: {item.last_speaking_activity}</span>
+                            </>
                           )}
                         </div>
+
+                        {item.weak_skills.length > 0 && (
+                          <div className="flex flex-wrap gap-1">
+                            {item.weak_skills.map((s) => (
+                              <span
+                                key={s}
+                                className="rounded border border-rose-200 bg-rose-50 px-1.5 py-0.5 text-[10px] font-medium text-rose-900"
+                              >
+                                {s}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+
+                        <div className="grid gap-2 text-[11px] sm:grid-cols-2 sm:gap-3">
+                          <div>
+                            <p className="font-semibold uppercase tracking-wide text-[var(--muted)]">
+                              Sai bài
+                            </p>
+                            <p className="mt-0.5 text-[var(--ink)]">
+                              Text <strong>{item.failed_text_count}</strong> · Media{' '}
+                              <strong>{item.failed_media_questions_count}</strong>
+                            </p>
+                            {item.failed_preview.map((fp, j) => (
+                              <p key={j} className="mt-1 line-clamp-3 italic text-[var(--muted)]">
+                                {fp.question_type && `${fp.question_type}: `}
+                                {fp.snippet}
+                              </p>
+                            ))}
+                          </div>
+                          <div>
+                            <p className="font-semibold uppercase tracking-wide text-[var(--muted)]">
+                              Nói (mẫu)
+                            </p>
+                            {item.speaking_preview.length === 0 ? (
+                              <p className="mt-0.5 text-[var(--muted)]">—</p>
+                            ) : (
+                              item.speaking_preview.map((sp, j) => (
+                                <p key={j} className="mt-1 border-l-2 border-[var(--mint)] pl-2 text-[var(--ink)]">
+                                  <span className="text-[var(--muted)]">HS:</span> {sp.user_transcript || '—'}
+                                  {sp.timestamp && (
+                                    <span className="ml-1 text-[var(--muted)]">({sp.timestamp})</span>
+                                  )}
+                                </p>
+                              ))
+                            )}
+                          </div>
+                        </div>
                       </div>
-                    </div>
+                    </details>
                   </details>
                 ))}
               </div>
