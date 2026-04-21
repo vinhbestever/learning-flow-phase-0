@@ -1,0 +1,5836 @@
+[{
+  "_id": {
+    "$oid": "68e479dc3fe2f2ae7c195043"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "TRIAL_LESSON_OVER_7",
+  "scriptId": {
+    "$oid": "68db7df51f43c5aa6bb68ceb"
+  },
+  "scriptVersionId": {
+    "$oid": "68df428988854cabbecd49ea"
+  },
+  "versionNumber": 12,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 0,
+  "checkpoint": {
+    "completedSections": [
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "68d0cdfc552edb0d8002aa3d"
+    ],
+    "completedFlows": [
+      "68db7e201f43c5aa6bb68d44",
+      "68db7f0b1f43c5aa6bb6907c",
+      "68db94381f43c5aa6bb69a3d",
+      "68db94381f43c5aa6bb69a40",
+      "68db7e211f43c5aa6bb68d7a",
+      "68db7e211f43c5aa6bb68d5c",
+      "68db7e211f43c5aa6bb68d5e",
+      "68db81291f43c5aa6bb691c8",
+      "68db7e211f43c5aa6bb68d65",
+      "68db82c21f43c5aa6bb69551",
+      "68db82c21f43c5aa6bb69554",
+      "68dcaa1e494c5b4aac850b88",
+      "68db7e291f43c5aa6bb68e5a",
+      "68db7e281f43c5aa6bb68e47",
+      "68db7e2e1f43c5aa6bb68ecc",
+      "68db7e2e1f43c5aa6bb68ece",
+      "68db95b91f43c5aa6bb69a99",
+      "68db95b91f43c5aa6bb69a9c",
+      "68df3e0388854cabbecd4933"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-10-07T02:24:28.060Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 19,
+  "completedFlowsCount": 19,
+  "startedAt": {
+    "$date": "2025-10-07T02:24:28.060Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-10-08T12:56:32.939Z"
+  },
+  "createdAt": {
+    "$date": "2025-10-07T02:24:28.061Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-09T08:50:47.000Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-10-08T12:56:32.939Z"
+  },
+  "completedSectionsCount": 3,
+  "totalSections": 3
+},
+{
+  "_id": {
+    "$oid": "68e66063ff06feda9de8b204"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3445252",
+  "scriptId": {
+    "$oid": "68ae8c60e2bcdce7ef3a0634"
+  },
+  "scriptVersionId": {
+    "$oid": "68e625620efc68a8c882a211"
+  },
+  "versionNumber": 5,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 105451,
+  "checkpoint": {
+    "currentSectionId": "689965530598bfe23ce95654",
+    "currentSetupId": "68bea0ff8c5455ea464d110f",
+    "currentFlowId": "68bea0ff8c5455ea464d110e",
+    "currentNodeId": "6a8de5f8-a95f-4522-85cb-90315de333d0",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654"
+    ],
+    "completedFlows": [
+      "68bea0e18c5455ea464d0f21",
+      "68c7ca867b10652adb3f38dc",
+      "68bea0e18c5455ea464d0f28",
+      "68bea5e68c5455ea464d1287",
+      "68b859189fb3e5c7610e4389",
+      "68b859189fb3e5c7610e438b",
+      "68beac81712d1e4ad8fada45",
+      "68bea0ee8c5455ea464d0fa8",
+      "68bea0ee8c5455ea464d0fab",
+      "68bea0ee8c5455ea464d0fad",
+      "68beb061712d1e4ad8fadbe0",
+      "68bea0ef8c5455ea464d0fb3",
+      "68bea0ef8c5455ea464d0fb5",
+      "68beb061712d1e4ad8fadbe5",
+      "68bea0ef8c5455ea464d0fbd",
+      "68bea0ef8c5455ea464d0fbf",
+      "68bea0f08c5455ea464d0fc9",
+      "68bea0f18c5455ea464d0ff2",
+      "68bea0f18c5455ea464d0ff4",
+      "68bea0f18c5455ea464d0ff6",
+      "68bea0f18c5455ea464d0ff8",
+      "68bea0f18c5455ea464d0ffa",
+      "68bea0f18c5455ea464d0fe5",
+      "68bea0f18c5455ea464d0fe7",
+      "68bea0f18c5455ea464d0fe9",
+      "68bea0f18c5455ea464d0feb",
+      "68bea0f18c5455ea464d0fed",
+      "68bfd492a82044ff40d61ff8",
+      "68bfd299a82044ff40d61dea",
+      "68bfd299a82044ff40d61ded",
+      "68bfd299a82044ff40d61df0",
+      "68bfd29aa82044ff40d61df3",
+      "68bea0f28c5455ea464d1002",
+      "68dab6ed83faa09689cad392",
+      "68dab6d183faa09689cad2de",
+      "68c23a7693ccf2bb3ae70584",
+      "68c29fa7a70538e18ccf701e",
+      "68bea0f98c5455ea464d1096",
+      "68bea0f98c5455ea464d1099",
+      "68bea0fa8c5455ea464d10ac",
+      "68bea0fa8c5455ea464d10ae",
+      "68bea0fa8c5455ea464d10b0",
+      "68bea0fa8c5455ea464d10b2",
+      "68bea0fa8c5455ea464d10b4",
+      "68bea0f98c5455ea464d109c",
+      "68d50fccdaa2c9e9e74f79c4",
+      "68d50fccdaa2c9e9e74f79c7",
+      "68d50fccdaa2c9e9e74f79ca",
+      "68d50fccdaa2c9e9e74f79cd",
+      "68bfdf3aa82044ff40d62a77",
+      "68bfdf3aa82044ff40d62a7a",
+      "68bfdf3aa82044ff40d62a7d",
+      "68bfdf3ba82044ff40d62a80",
+      "68bfdf3ba82044ff40d62a83",
+      "68bea0fb8c5455ea464d10c6",
+      "68bfd622a82044ff40d6221f",
+      "68bea0ff8c5455ea464d110e"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-10-08T13:24:55.438Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 57,
+  "totalSections": 5,
+  "completedFlowsCount": 57,
+  "completedSectionsCount": 5,
+  "startedAt": {
+    "$date": "2025-10-08T13:00:19.088Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-10-08T13:24:55.650Z"
+  },
+  "createdAt": {
+    "$date": "2025-10-08T13:00:19.089Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-09T08:50:47.000Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-10-08T13:24:55.650Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68eba26909c1c1cd5c52b5a0"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3445252",
+  "scriptId": {
+    "$oid": "68ae8c60e2bcdce7ef3a0634"
+  },
+  "scriptVersionId": {
+    "$oid": "68e625620efc68a8c882a211"
+  },
+  "versionNumber": 5,
+  "status": "COMPLETED",
+  "attemptNumber": 2,
+  "totalDurationMs": 20152,
+  "checkpoint": {
+    "currentSectionId": "689965ce0598bfe23ce95668",
+    "currentSetupId": "68bea0e18c5455ea464d0f29",
+    "currentFlowId": "68c7ca867b10652adb3f38dc",
+    "currentNodeId": "1e6ca38c-3bcf-4792-b96f-3a70d347b0e1",
+    "completedSections": [],
+    "completedFlows": [
+      "68c7ca867b10652adb3f38dc"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-10-12T12:43:58.712Z"
+    }
+  },
+  "completionPercentage": 5,
+  "totalFlows": 57,
+  "totalSections": 5,
+  "completedFlowsCount": 1,
+  "completedSectionsCount": 0,
+  "startedAt": {
+    "$date": "2025-10-12T12:43:21.303Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-10-13T12:59:01.148Z"
+  },
+  "createdAt": {
+    "$date": "2025-10-12T12:43:21.303Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-13T12:59:01.148Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-10-13T12:59:01.148Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ecf7d3110bf4fab2c4cd97"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3448739",
+  "scriptId": {
+    "$oid": "68c12f0393ccf2bb3ae6f4da"
+  },
+  "scriptVersionId": {
+    "$oid": "68e6287a0d659cb2075ceb6c"
+  },
+  "versionNumber": 4,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1294946,
+  "checkpoint": {
+    "currentSectionId": "689965530598bfe23ce95654",
+    "currentSetupId": "68c248d993ccf2bb3ae70a3b",
+    "currentFlowId": "68c248d993ccf2bb3ae70a3a",
+    "currentNodeId": "6a8de5f8-a95f-4522-85cb-90315de333d0",
+    "completedSections": [
+      "689965530598bfe23ce95654"
+    ],
+    "completedFlows": [
+      "68c1319a93ccf2bb3ae6f509",
+      "68c248d993ccf2bb3ae70a3a"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-10-13T13:22:12.529Z"
+    }
+  },
+  "completionPercentage": 20,
+  "totalFlows": 50,
+  "totalSections": 5,
+  "completedFlowsCount": 2,
+  "completedSectionsCount": 1,
+  "startedAt": {
+    "$date": "2025-10-13T13:00:03.348Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-10-13T13:22:12.582Z"
+  },
+  "createdAt": {
+    "$date": "2025-10-13T13:00:03.349Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-13T13:22:12.582Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-10-13T13:22:12.582Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ecfd19110bf4fab2c4d39c"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3448739",
+  "scriptId": {
+    "$oid": "68c12f0393ccf2bb3ae6f4da"
+  },
+  "scriptVersionId": {
+    "$oid": "68e6287a0d659cb2075ceb6c"
+  },
+  "versionNumber": 4,
+  "status": "COMPLETED",
+  "attemptNumber": 2,
+  "totalDurationMs": 20225,
+  "checkpoint": {
+    "currentSectionId": "689965ce0598bfe23ce95668",
+    "currentSetupId": "68c1319b93ccf2bb3ae6f50f",
+    "currentFlowId": "68c7e5277b10652adb3f5ee1",
+    "currentNodeId": "1e6ca38c-3bcf-4792-b96f-3a70d347b0e1",
+    "completedSections": [],
+    "completedFlows": [
+      "68c7e5277b10652adb3f5ee1"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-10-13T13:23:05.572Z"
+    }
+  },
+  "completionPercentage": 5,
+  "totalFlows": 50,
+  "totalSections": 5,
+  "completedFlowsCount": 1,
+  "completedSectionsCount": 0,
+  "startedAt": {
+    "$date": "2025-10-13T13:22:33.067Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-10-15T01:42:27.443Z"
+  },
+  "createdAt": {
+    "$date": "2025-10-13T13:22:33.068Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-15T01:42:27.443Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-10-15T01:42:27.443Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ef9ad271dd5ff2cf955ece"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3448740",
+  "scriptId": {
+    "$oid": "68d22a33e3bd89fa74d086b3"
+  },
+  "scriptVersionId": {
+    "$oid": "68e632730d659cb2075cf2e3"
+  },
+  "versionNumber": 3,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1497957,
+  "checkpoint": {
+    "currentSectionId": "689965530598bfe23ce95654",
+    "currentSetupId": "68d6423f3d719df84243e92d",
+    "currentFlowId": "68d6423f3d719df84243e92c",
+    "currentNodeId": "6a8de5f8-a95f-4522-85cb-90315de333d0",
+    "completedSections": [
+      "689965530598bfe23ce95654"
+    ],
+    "completedFlows": [
+      "68d6423f3d719df84243e92c"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-10-15T13:25:02.227Z"
+    }
+  },
+  "completionPercentage": 20,
+  "totalFlows": 57,
+  "totalSections": 5,
+  "completedFlowsCount": 1,
+  "completedSectionsCount": 1,
+  "startedAt": {
+    "$date": "2025-10-15T13:00:02.625Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-10-15T13:25:02.285Z"
+  },
+  "createdAt": {
+    "$date": "2025-10-15T13:00:02.625Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-15T13:25:02.285Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-10-15T13:25:02.285Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68efa0b9d5e9d73ceff20a1a"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3448740",
+  "scriptId": {
+    "$oid": "68d22a33e3bd89fa74d086b3"
+  },
+  "scriptVersionId": {
+    "$oid": "68e632730d659cb2075cf2e3"
+  },
+  "versionNumber": 3,
+  "status": "COMPLETED",
+  "attemptNumber": 2,
+  "totalDurationMs": 7495,
+  "checkpoint": {
+    "currentSectionId": "689965ce0598bfe23ce95668",
+    "currentSetupId": "68d642283d719df84243e6fa",
+    "currentFlowId": "68d642283d719df84243e6f4",
+    "currentNodeId": "d1fe64e2-bc3d-48df-a2c1-319e9224fc90",
+    "completedSections": [],
+    "completedFlows": [
+      "68d642283d719df84243e6f4"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-10-15T13:25:23.214Z"
+    }
+  },
+  "completionPercentage": 5,
+  "totalFlows": 57,
+  "totalSections": 5,
+  "completedFlowsCount": 1,
+  "completedSectionsCount": 0,
+  "startedAt": {
+    "$date": "2025-10-15T13:25:13.131Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-10-20T12:59:45.237Z"
+  },
+  "createdAt": {
+    "$date": "2025-10-15T13:25:13.131Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-20T12:59:45.237Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-10-20T12:59:45.237Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68f63252d5e9d73ceff34888"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3448741",
+  "scriptId": {
+    "$oid": "68c1b10493ccf2bb3ae701e3"
+  },
+  "scriptVersionId": {
+    "$oid": "68f0b3b9d5e9d73ceff25a83"
+  },
+  "versionNumber": 6,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1523361,
+  "checkpoint": {
+    "currentSectionId": "689965530598bfe23ce95654",
+    "currentSetupId": "68d2e79554c95a4729fd352a",
+    "currentFlowId": "68d2e79554c95a4729fd3529",
+    "currentNodeId": "6a8de5f8-a95f-4522-85cb-90315de333d0",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654"
+    ],
+    "completedFlows": [
+      "68d2e77e54c95a4729fd331c",
+      "68d2e77e54c95a4729fd331e",
+      "68d2e77f54c95a4729fd3321",
+      "68d2e78154c95a4729fd333c",
+      "68d2e78154c95a4729fd333f",
+      "68d2e78154c95a4729fd3341",
+      "68d2e78854c95a4729fd33b0",
+      "68d4deb148a122544e7f3968",
+      "68d2e78854c95a4729fd33b6",
+      "68d2e78854c95a4729fd33b8",
+      "68d4395348a122544e7f1c59",
+      "68d52c01daa2c9e9e74f8f72",
+      "68d2e78854c95a4729fd33be",
+      "68d2e78854c95a4729fd33c0",
+      "68d2e78854c95a4729fd33c2",
+      "68d4395448a122544e7f1c61",
+      "68d4395448a122544e7f1c64",
+      "68d4395448a122544e7f1c67",
+      "68d52c02daa2c9e9e74f8f77",
+      "68d2e78954c95a4729fd33c8",
+      "68d2e78954c95a4729fd33ca",
+      "68d2e78954c95a4729fd33cc",
+      "68d2e78954c95a4729fd33ce",
+      "68d4395448a122544e7f1c6f",
+      "68d2e78954c95a4729fd33d1",
+      "68d2e78954c95a4729fd33d4",
+      "68d2e78954c95a4729fd33d6",
+      "68d2e78954c95a4729fd33d8",
+      "68d2e78954c95a4729fd33da",
+      "68d2e78954c95a4729fd33dc",
+      "68d2e78a54c95a4729fd33fa",
+      "68d2e78a54c95a4729fd33fc",
+      "68d2e78a54c95a4729fd33fe",
+      "68d2e78b54c95a4729fd3400",
+      "68d2e78b54c95a4729fd3402",
+      "68d2e78b54c95a4729fd3417",
+      "68d2e78f54c95a4729fd3493",
+      "68d4413c48a122544e7f1d85",
+      "68d52cb6daa2c9e9e74f9075",
+      "68d4413c48a122544e7f1d89",
+      "68d4413c48a122544e7f1d8d",
+      "68d2e78f54c95a4729fd3499",
+      "68d2e78f54c95a4729fd349b",
+      "68d2e78f54c95a4729fd349d",
+      "68d2e78f54c95a4729fd349f",
+      "68d2e78f54c95a4729fd34a1",
+      "68d4413d48a122544e7f1d93",
+      "68d4413d48a122544e7f1d96",
+      "68d4413d48a122544e7f1d99",
+      "68d4413d48a122544e7f1d9c",
+      "68d52cb6daa2c9e9e74f907d",
+      "68d52cb6daa2c9e9e74f9080",
+      "68d52cb6daa2c9e9e74f9083",
+      "68d52cb6daa2c9e9e74f9086",
+      "68d52cb6daa2c9e9e74f9089",
+      "68d2e79254c95a4729fd34e3"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-10-20T13:25:27.025Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 57,
+  "totalSections": 5,
+  "completedFlowsCount": 56,
+  "completedSectionsCount": 5,
+  "startedAt": {
+    "$date": "2025-10-20T13:00:02.284Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-10-20T13:25:27.077Z"
+  },
+  "createdAt": {
+    "$date": "2025-10-20T13:00:02.285Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-20T13:25:27.078Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-10-20T13:25:27.077Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68f8d552308fedade1ca2e86"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3448742",
+  "scriptId": {
+    "$oid": "68c1c51a93ccf2bb3ae701ed"
+  },
+  "scriptVersionId": {
+    "$oid": "68f7071ed5e9d73ceff37c7e"
+  },
+  "versionNumber": 5,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1283016,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "68f7065771dd5ff2cf96e3bc",
+    "currentFlowId": "68f7065771dd5ff2cf96e3bb",
+    "currentNodeId": "53a85dcc-8640-4719-9772-4a5f6b4dec92",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "68d569f7daa2c9e9e74fa160",
+      "68d569f7daa2c9e9e74fa162",
+      "68d569f7daa2c9e9e74fa165",
+      "68f705d8d5e9d73ceff3790a",
+      "68d569fbdaa2c9e9e74fa181",
+      "68d569fbdaa2c9e9e74fa184",
+      "68d569fbdaa2c9e9e74fa186",
+      "68d56a01daa2c9e9e74fa1f7",
+      "68d5e43cdaa2c9e9e74fb80f",
+      "68d56a02daa2c9e9e74fa1fd",
+      "68d56a02daa2c9e9e74fa1ff",
+      "68d5e43cdaa2c9e9e74fb813",
+      "68d5e43cdaa2c9e9e74fb816",
+      "68d5e43cdaa2c9e9e74fb81a",
+      "68d56a02daa2c9e9e74fa205",
+      "68d56a02daa2c9e9e74fa207",
+      "68d56a02daa2c9e9e74fa209",
+      "68d5e43cdaa2c9e9e74fb81e",
+      "68d56a02daa2c9e9e74fa218",
+      "68d56a02daa2c9e9e74fa21b",
+      "68d56a02daa2c9e9e74fa21d",
+      "68d56a02daa2c9e9e74fa21f",
+      "68d56a02daa2c9e9e74fa221",
+      "68d56a02daa2c9e9e74fa223",
+      "68d56a03daa2c9e9e74fa241",
+      "68d56a03daa2c9e9e74fa243",
+      "68d56a03daa2c9e9e74fa245",
+      "68d56a03daa2c9e9e74fa247",
+      "68d56a03daa2c9e9e74fa249",
+      "68d56a03daa2c9e9e74fa25e",
+      "68d5ec35daa2c9e9e74fbb51",
+      "68d5ec35daa2c9e9e74fbb55",
+      "68d5ec36daa2c9e9e74fbb58",
+      "68d56a08daa2c9e9e74fa2fe",
+      "68d56a08daa2c9e9e74fa301",
+      "68d56a08daa2c9e9e74fa304",
+      "68d56a08daa2c9e9e74fa306",
+      "68d56a08daa2c9e9e74fa308",
+      "68d56a08daa2c9e9e74fa30a",
+      "68d56a08daa2c9e9e74fa30c",
+      "68d56a08daa2c9e9e74fa314",
+      "68d56a08daa2c9e9e74fa318",
+      "68d56a08daa2c9e9e74fa31a",
+      "68d56a08daa2c9e9e74fa31c",
+      "68d56a08daa2c9e9e74fa31e",
+      "68d56a08daa2c9e9e74fa323",
+      "68d56a08daa2c9e9e74fa325",
+      "68d56a08daa2c9e9e74fa327",
+      "68d56a09daa2c9e9e74fa329",
+      "68d56a09daa2c9e9e74fa32b",
+      "68d56a09daa2c9e9e74fa33d",
+      "68d56a0bdaa2c9e9e74fa385",
+      "68f7065771dd5ff2cf96e3b9",
+      "68f7065771dd5ff2cf96e3bb"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-10-22T13:21:26.960Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 54,
+  "totalSections": 6,
+  "completedFlowsCount": 54,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2025-10-22T13:00:02.283Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-10-22T13:21:27.013Z"
+  },
+  "createdAt": {
+    "$date": "2025-10-22T13:00:02.284Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-22T13:21:27.013Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-10-22T13:21:27.013Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68ff6cd30d5c1dc09318df26"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3448743",
+  "scriptId": {
+    "$oid": "68cf7528552edb0d80026dc7"
+  },
+  "scriptVersionId": {
+    "$oid": "68f733af71dd5ff2cf970a12"
+  },
+  "versionNumber": 7,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1442507,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "68f70757d5e9d73ceff37d27",
+    "currentFlowId": "68f70757d5e9d73ceff37d26",
+    "currentNodeId": "53a85dcc-8640-4719-9772-4a5f6b4dec92",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "68d00095552edb0d800287d2",
+      "68d00095552edb0d800287d4",
+      "68d00095552edb0d800287d7",
+      "68f70765d5e9d73ceff37d6a",
+      "68d00099552edb0d800287f3",
+      "68d00099552edb0d800287f6",
+      "68d00099552edb0d800287f8",
+      "68d0009f552edb0d80028869",
+      "68da9c5083faa09689cab5ac",
+      "68d0009f552edb0d8002886f",
+      "68d0009f552edb0d80028871",
+      "68da4c245253105da57b25a2",
+      "68daa05283faa09689cabae9",
+      "68d000a0552edb0d80028879",
+      "68d000a0552edb0d8002887b",
+      "68d000a0552edb0d8002888a",
+      "68daa88e83faa09689cac303",
+      "68daa88e83faa09689cac306",
+      "68daa88e83faa09689cac309",
+      "68daa88e83faa09689cac30c",
+      "68daa88e83faa09689cac30f",
+      "68d000a2552edb0d800288b3",
+      "68d000a2552edb0d800288b5",
+      "68d000a2552edb0d800288b7",
+      "68d000a2552edb0d800288b9",
+      "68d000a2552edb0d800288bb",
+      "68d000a0552edb0d8002888d",
+      "68d000a1552edb0d8002888f",
+      "68d000a1552edb0d80028891",
+      "68d000a1552edb0d80028893",
+      "68d000a1552edb0d80028895",
+      "68d000a3552edb0d800288d0",
+      "68db969a1f43c5aa6bb69b78",
+      "68db969a1f43c5aa6bb69b7c",
+      "68d000a7552edb0d8002895b",
+      "68dbeb96558548a0d2477448",
+      "68d000a7552edb0d80028961",
+      "68d000a8552edb0d80028964",
+      "68d000a8552edb0d80028967",
+      "68d000a8552edb0d80028970",
+      "68d000a8552edb0d80028973",
+      "68d000a9552edb0d80028986",
+      "68d000a9552edb0d80028988",
+      "68d000a9552edb0d8002898a",
+      "68d000a9552edb0d8002898c",
+      "68d000a9552edb0d8002898e",
+      "68d000a9552edb0d80028993",
+      "68d000a9552edb0d80028995",
+      "68d000a9552edb0d80028997",
+      "68d000aa552edb0d80028999",
+      "68d000aa552edb0d8002899b",
+      "68d000aa552edb0d800289ad",
+      "68d000b0552edb0d800289fc",
+      "68f70757d5e9d73ceff37d24",
+      "68f70757d5e9d73ceff37d26"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-10-27T13:24:07.627Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 55,
+  "totalSections": 6,
+  "completedFlowsCount": 55,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2025-10-27T13:00:03.686Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-10-27T13:24:07.680Z"
+  },
+  "createdAt": {
+    "$date": "2025-10-27T13:00:03.687Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-27T13:24:07.680Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-10-27T13:24:07.680Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6902102920d53000d369133f"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3448744",
+  "scriptId": {
+    "$oid": "68d2096b224fd0c03af432e0"
+  },
+  "scriptVersionId": {
+    "$oid": "68e33ee6687f4ae2d514f222"
+  },
+  "versionNumber": 2,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1191443,
+  "checkpoint": {
+    "currentSectionId": "689965530598bfe23ce95654",
+    "currentSetupId": "68d7e5b98ab5cf12862f52f1",
+    "currentFlowId": "68d7e5b98ab5cf12862f52f0",
+    "currentNodeId": "6a8de5f8-a95f-4522-85cb-90315de333d0",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654"
+    ],
+    "completedFlows": [
+      "68d7e5ab8ab5cf12862f51a1",
+      "68d7e5ab8ab5cf12862f51a3",
+      "68d7e5ab8ab5cf12862f51a6",
+      "68d7e5ae8ab5cf12862f51c2",
+      "68d7e5ae8ab5cf12862f51c5",
+      "68d7e5ae8ab5cf12862f51c7",
+      "68d7e5b68ab5cf12862f5238",
+      "68d7e5b68ab5cf12862f523b",
+      "68d7e5b68ab5cf12862f523e",
+      "68d7e5b68ab5cf12862f5240",
+      "68d7e5b68ab5cf12862f5243",
+      "68d7e5b68ab5cf12862f5246",
+      "68d7e5b68ab5cf12862f5248",
+      "68d7e5b68ab5cf12862f524a",
+      "68d7e5b78ab5cf12862f5259",
+      "68d7e5b78ab5cf12862f525c",
+      "68d7e5b78ab5cf12862f525e",
+      "68d7e5b78ab5cf12862f5260",
+      "68d7e5b78ab5cf12862f5262",
+      "68d7e5b78ab5cf12862f5264",
+      "68d7e5b78ab5cf12862f5277",
+      "68d7e5b78ab5cf12862f5279",
+      "68d7e5b78ab5cf12862f527b",
+      "68d7e5b78ab5cf12862f527d",
+      "68d7e5b78ab5cf12862f527f",
+      "68d7e5b78ab5cf12862f5284",
+      "68d7e5b78ab5cf12862f5286",
+      "68d7e5b78ab5cf12862f5288",
+      "68d7e5b78ab5cf12862f528a",
+      "68d7e5b78ab5cf12862f528c",
+      "68d7e5b88ab5cf12862f52a1",
+      "68d7e5be8ab5cf12862f533a",
+      "68d801dd8ab5cf12862f560d",
+      "68d7e5be8ab5cf12862f5340",
+      "68d801dd8ab5cf12862f5611",
+      "68d7e5be8ab5cf12862f5355",
+      "68d7e5be8ab5cf12862f5358",
+      "68d7e5bf8ab5cf12862f536b",
+      "68d7e5bf8ab5cf12862f536d",
+      "68d7e5bf8ab5cf12862f536f",
+      "68d7e5bf8ab5cf12862f5371",
+      "68d7e5bf8ab5cf12862f5373",
+      "68d7e5bf8ab5cf12862f5378",
+      "68d7e5bf8ab5cf12862f537a",
+      "68d801dd8ab5cf12862f5619",
+      "68d801dd8ab5cf12862f561c",
+      "68d7e5bf8ab5cf12862f5392",
+      "68d7e5b98ab5cf12862f52f0"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-10-29T13:21:21.755Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 48,
+  "totalSections": 5,
+  "completedFlowsCount": 48,
+  "completedSectionsCount": 5,
+  "startedAt": {
+    "$date": "2025-10-29T13:01:29.019Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-10-29T13:21:21.804Z"
+  },
+  "createdAt": {
+    "$date": "2025-10-29T13:01:29.020Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-29T13:21:21.804Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-10-29T13:21:21.804Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6908a7526813fa60502e6f69"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3448745",
+  "scriptId": {
+    "$oid": "68d25bbbe3bd89fa74d08b67"
+  },
+  "scriptVersionId": {
+    "$oid": "6902ce1720d53000d3692d04"
+  },
+  "versionNumber": 2,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1225178,
+  "checkpoint": {
+    "currentSectionId": "689965530598bfe23ce95654",
+    "currentSetupId": "68de9d734f4fa9acf08856c2",
+    "currentFlowId": "68de9d734f4fa9acf08856c1",
+    "currentNodeId": "6a8de5f8-a95f-4522-85cb-90315de333d0",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654"
+    ],
+    "completedFlows": [
+      "68de9d538313e48f04181e71",
+      "68de9d538313e48f04181e73",
+      "68de9d538313e48f04181e76",
+      "68de9d574f4fa9acf08855b0",
+      "68de9d574f4fa9acf08855b3",
+      "68de9d574f4fa9acf08855b5",
+      "68de9d604f4fa9acf0885609",
+      "68de9d604f4fa9acf088560c",
+      "68de9d604f4fa9acf088560f",
+      "68de9d604f4fa9acf0885611",
+      "68de9d604f4fa9acf0885614",
+      "68de9d604f4fa9acf0885617",
+      "68de9d604f4fa9acf0885619",
+      "68de9d604f4fa9acf088561b",
+      "68deabee8313e48f04182380",
+      "68de9d604f4fa9acf0885621",
+      "68de9d604f4fa9acf0885623",
+      "68de9d614f4fa9acf088562a",
+      "68de9d614f4fa9acf088562d",
+      "68de9d614f4fa9acf088562f",
+      "68de9d614f4fa9acf0885631",
+      "68de9d614f4fa9acf0885633",
+      "68de9d614f4fa9acf0885635",
+      "68de9d614f4fa9acf0885646",
+      "68de9d614f4fa9acf0885648",
+      "68de9d614f4fa9acf088564a",
+      "68de9d614f4fa9acf088564c",
+      "68de9d614f4fa9acf088564e",
+      "68de9d614f4fa9acf088563a",
+      "68de9d614f4fa9acf0885670",
+      "68e1ddef96b9c04a82cc06fd",
+      "68df1cd088854cabbecd3db1",
+      "68df207c88854cabbecd3ee5",
+      "68df5c3b45dea215fa77cfcf",
+      "68de9d6b8313e48f04181efb",
+      "68de9d6b8313e48f04181efe",
+      "68de9d6b8313e48f04181f1e",
+      "68de9d6b8313e48f04181f20",
+      "68de9d6b8313e48f04181f22",
+      "68de9d6b8313e48f04181f24",
+      "68de9d6b8313e48f04181f26",
+      "68df5c3b45dea215fa77cfd6",
+      "68df5c3b45dea215fa77cfd9",
+      "68df5c3b45dea215fa77cfdd",
+      "68df5c3b45dea215fa77cfe0",
+      "68df5c3b45dea215fa77cfe3",
+      "68df5c3b45dea215fa77cfe6",
+      "68df5c3b45dea215fa77cfe9",
+      "68de9d6b8313e48f04181f38",
+      "68de9d734f4fa9acf08856c1"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-11-03T13:20:29.506Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 50,
+  "totalSections": 5,
+  "completedFlowsCount": 50,
+  "completedSectionsCount": 5,
+  "startedAt": {
+    "$date": "2025-11-03T13:00:02.917Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-11-03T13:20:29.560Z"
+  },
+  "createdAt": {
+    "$date": "2025-11-03T13:00:02.918Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-03T13:20:29.561Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-11-03T13:20:29.560Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6908ac276813fa60502e746f"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3448745",
+  "scriptId": {
+    "$oid": "68d25bbbe3bd89fa74d08b67"
+  },
+  "scriptVersionId": {
+    "$oid": "6902ce1720d53000d3692d04"
+  },
+  "versionNumber": 2,
+  "status": "COMPLETED",
+  "attemptNumber": 2,
+  "totalDurationMs": 0,
+  "checkpoint": {
+    "completedSections": [],
+    "completedFlows": [],
+    "lastCheckpointAt": {
+      "$date": "2025-11-03T13:20:39.705Z"
+    }
+  },
+  "completionPercentage": 5,
+  "totalFlows": 50,
+  "totalSections": 5,
+  "completedFlowsCount": 0,
+  "completedSectionsCount": 0,
+  "startedAt": {
+    "$date": "2025-11-03T13:20:39.705Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-11-04T02:59:20.405Z"
+  },
+  "createdAt": {
+    "$date": "2025-11-03T13:20:39.705Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-04T02:59:20.406Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-11-04T02:59:20.405Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "690b4a526813fa60502eb557"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3448746",
+  "scriptId": {
+    "$oid": "68da66ba83faa09689caac19"
+  },
+  "scriptVersionId": {
+    "$oid": "6902ce6020d53000d3692fa4"
+  },
+  "versionNumber": 2,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 247711,
+  "checkpoint": {
+    "currentSectionId": "689965530598bfe23ce95654",
+    "currentSetupId": "68de5fa24f4fa9acf0884c99",
+    "currentFlowId": "68de5fa24f4fa9acf0884c98",
+    "currentNodeId": "6a8de5f8-a95f-4522-85cb-90315de333d0",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654"
+    ],
+    "completedFlows": [
+      "68de5f8f8313e48f0418144b",
+      "68de5f8f8313e48f0418144d",
+      "68de5f8f8313e48f04181450",
+      "68de5f924f4fa9acf0884b87",
+      "68de5f924f4fa9acf0884b8a",
+      "68de5f924f4fa9acf0884b8c",
+      "68de5f948313e48f0418146b",
+      "68de5f948313e48f0418146e",
+      "68de5f984f4fa9acf0884be0",
+      "68de60a28313e48f041815fc",
+      "68de5f984f4fa9acf0884be6",
+      "68de5f984f4fa9acf0884be8",
+      "68de60a28313e48f04181600",
+      "68de60a28313e48f04181603",
+      "68de60a28313e48f04181606",
+      "68de60a28313e48f04181609",
+      "68de60a28313e48f0418160c",
+      "68de60a28313e48f0418160f",
+      "68de60a28313e48f04181613",
+      "68de5f984f4fa9acf0884bee",
+      "68de5f984f4fa9acf0884bf0",
+      "68de5f984f4fa9acf0884bf2",
+      "68de60a38313e48f04181617",
+      "68de60a38313e48f0418161a",
+      "68de60a38313e48f0418161d",
+      "68de5f984f4fa9acf0884c01",
+      "68de5f994f4fa9acf0884c1d",
+      "68de5f994f4fa9acf0884c1f",
+      "68de5f994f4fa9acf0884c21",
+      "68de5f994f4fa9acf0884c23",
+      "68de5f994f4fa9acf0884c25",
+      "68de5f984f4fa9acf0884c04",
+      "68de5f984f4fa9acf0884c06",
+      "68de5f984f4fa9acf0884c08",
+      "68de5f984f4fa9acf0884c0a",
+      "68de5f984f4fa9acf0884c0c",
+      "68de5f994f4fa9acf0884c47",
+      "68de61178313e48f04181700",
+      "68de61178313e48f04181704",
+      "68de61178313e48f04181707",
+      "68de5f9d8313e48f041814d5",
+      "68de5f9d8313e48f041814d8",
+      "68de5f9d8313e48f041814eb",
+      "68de5f9d8313e48f041814ed",
+      "68de5f9d8313e48f041814ef",
+      "68de5f9d8313e48f041814f1",
+      "68de5f9d8313e48f041814f3",
+      "68de61178313e48f0418170e",
+      "68de61178313e48f04181711",
+      "68de61178313e48f04181714",
+      "68de61188313e48f04181717",
+      "68de61188313e48f0418171a",
+      "68de5f9d8313e48f041814f8",
+      "68de5f9d8313e48f041814fa",
+      "68de5f9d8313e48f041814fc",
+      "68de5f9e8313e48f041814fe",
+      "68de5f9e8313e48f04181500",
+      "68de5f9e8313e48f04181512",
+      "68de5fa24f4fa9acf0884c98"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-11-05T13:30:46.709Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 59,
+  "totalSections": 6,
+  "completedFlowsCount": 59,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2025-11-05T13:00:02.943Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-11-05T13:30:46.762Z"
+  },
+  "createdAt": {
+    "$date": "2025-11-05T13:00:02.943Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-05T13:30:46.762Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-11-05T13:30:46.762Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6911e1dd015b467904d26f75"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3448747",
+  "scriptId": {
+    "$oid": "68db4e5983faa09689cae756"
+  },
+  "scriptVersionId": {
+    "$oid": "6902ceb01c844adcaca9fb73"
+  },
+  "versionNumber": 2,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1546803,
+  "checkpoint": {
+    "currentSectionId": "689965530598bfe23ce95654",
+    "currentSetupId": "68de20ac13f31249ad5f381c",
+    "currentFlowId": "68de20ac13f31249ad5f381b",
+    "currentNodeId": "6a8de5f8-a95f-4522-85cb-90315de333d0",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654"
+    ],
+    "completedFlows": [
+      "68de209b13f31249ad5f37c9",
+      "68de209b13f31249ad5f37cb",
+      "68de209b13f31249ad5f37ce",
+      "68de209d4c4e5d31f54d5aed",
+      "68de209d4c4e5d31f54d5af0",
+      "68de209e4c4e5d31f54d5af2",
+      "68de20a013f31249ad5f37f4",
+      "68de20a013f31249ad5f37f7",
+      "68de20a24c4e5d31f54d5b51",
+      "68de232513f31249ad5f3b98",
+      "68de20a24c4e5d31f54d5b57",
+      "68de20a24c4e5d31f54d5b59",
+      "68de232513f31249ad5f3b9c",
+      "68de232513f31249ad5f3ba0",
+      "68de20a34c4e5d31f54d5b5f",
+      "68de20a34c4e5d31f54d5b61",
+      "68de20a34c4e5d31f54d5b63",
+      "68de232513f31249ad5f3ba4",
+      "68de232513f31249ad5f3ba8",
+      "68de20a34c4e5d31f54d5b69",
+      "68de20a34c4e5d31f54d5b6b",
+      "68de20a34c4e5d31f54d5b6d",
+      "68de20a34c4e5d31f54d5b72",
+      "68de20a34c4e5d31f54d5b75",
+      "68de20a34c4e5d31f54d5b77",
+      "68de20a34c4e5d31f54d5b79",
+      "68de20a34c4e5d31f54d5b7b",
+      "68de20a34c4e5d31f54d5b7d",
+      "68de20a34c4e5d31f54d5b9b",
+      "68de20a34c4e5d31f54d5b9d",
+      "68de20a34c4e5d31f54d5b9f",
+      "68de20a34c4e5d31f54d5ba1",
+      "68de20a34c4e5d31f54d5ba3",
+      "68de20a34c4e5d31f54d5b82",
+      "68de232613f31249ad5f3bb0",
+      "68de20a44c4e5d31f54d5bb8",
+      "68de239a13f31249ad5f3d84",
+      "68de239a13f31249ad5f3d88",
+      "68de239a13f31249ad5f3d8b",
+      "68de20a84c4e5d31f54d5c56",
+      "68de20a84c4e5d31f54d5c59",
+      "68de20a84c4e5d31f54d5c6c",
+      "68de20a84c4e5d31f54d5c6e",
+      "68de20a84c4e5d31f54d5c70",
+      "68de20a84c4e5d31f54d5c72",
+      "68de20a84c4e5d31f54d5c74",
+      "68de20a84c4e5d31f54d5c79",
+      "68de20a84c4e5d31f54d5c7b",
+      "68de20a84c4e5d31f54d5c7d",
+      "68de20a84c4e5d31f54d5c7f",
+      "68de20a84c4e5d31f54d5c81",
+      "68de239a13f31249ad5f3d93",
+      "68de239a13f31249ad5f3d96",
+      "68de239a13f31249ad5f3d99",
+      "68de239a13f31249ad5f3d9c",
+      "68de239a13f31249ad5f3d9f",
+      "68de20a84c4e5d31f54d5c93",
+      "68de20ac13f31249ad5f381b"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-11-10T13:26:02.775Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 58,
+  "totalSections": 6,
+  "completedFlowsCount": 58,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2025-11-10T13:00:13.928Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-11-10T13:26:02.786Z"
+  },
+  "createdAt": {
+    "$date": "2025-11-10T13:00:13.929Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-10T13:26:02.786Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-11-10T13:26:02.786Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "691487154476bea8a9007866"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3448747",
+  "scriptId": {
+    "$oid": "68db4e5983faa09689cae756"
+  },
+  "scriptVersionId": {
+    "$oid": "6912a866392b758c8e91598e"
+  },
+  "versionNumber": 6,
+  "status": "COMPLETED",
+  "attemptNumber": 2,
+  "totalDurationMs": 0,
+  "checkpoint": {
+    "completedSections": [],
+    "completedFlows": [],
+    "lastCheckpointAt": {
+      "$date": "2025-11-12T13:09:41.331Z"
+    }
+  },
+  "completionPercentage": 5,
+  "totalFlows": 61,
+  "totalSections": 6,
+  "completedFlowsCount": 0,
+  "completedSectionsCount": 0,
+  "startedAt": {
+    "$date": "2025-11-12T13:09:41.331Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-11-13T03:53:11.508Z"
+  },
+  "createdAt": {
+    "$date": "2025-11-12T13:09:41.332Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-13T03:53:11.508Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-11-13T03:53:11.508Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6917ecc33ea3676f3c685cc1"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3525824",
+  "scriptId": {
+    "$oid": "68e35f47803b865312d22d75"
+  },
+  "scriptVersionId": {
+    "$oid": "6912c052392b758c8e915f9a"
+  },
+  "versionNumber": 5,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1333653,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "68fc8fdd0d5c1dc093188c9b",
+    "currentFlowId": "68fc8fdd0d5c1dc093188c9a",
+    "currentNodeId": "53a85dcc-8640-4719-9772-4a5f6b4dec92",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "68e542f88f32117fa86bb620",
+      "68e542f88f32117fa86bb622",
+      "68e542f88f32117fa86bb625",
+      "6912bf8f392b758c8e915d29",
+      "68e542fd8f32117fa86bb641",
+      "68e542fd8f32117fa86bb643",
+      "6912bfb26170994073c42437",
+      "68e6a50bc916e14dfaf0b02d",
+      "68e543028f32117fa86bb69c",
+      "68e543028f32117fa86bb69e",
+      "68e6a50bc916e14dfaf0b031",
+      "68e6a50bc916e14dfaf0b035",
+      "68e543028f32117fa86bb6a6",
+      "68e6a50bc916e14dfaf0b03a",
+      "68e543028f32117fa86bb6ae",
+      "68e543028f32117fa86bb6b0",
+      "68e543038f32117fa86bb6b7",
+      "68e543038f32117fa86bb6ba",
+      "68e543038f32117fa86bb6bc",
+      "68e543038f32117fa86bb6be",
+      "68e543038f32117fa86bb6c0",
+      "68e543038f32117fa86bb6c2",
+      "68e543038f32117fa86bb6d3",
+      "68e543038f32117fa86bb6d5",
+      "68e543038f32117fa86bb6d7",
+      "68e543038f32117fa86bb6d9",
+      "68e543038f32117fa86bb6db",
+      "68e543038f32117fa86bb6c7",
+      "68e6a50cc916e14dfaf0b042",
+      "68e543048f32117fa86bb6fd",
+      "6912bfc7392b758c8e915dc2",
+      "68e543085195408e4e656c70",
+      "68f3779471dd5ff2cf964cce",
+      "68e543085195408e4e656c76",
+      "68f3779571dd5ff2cf964cd3",
+      "68e543085195408e4e656c7c",
+      "68e543085195408e4e656c8b",
+      "68e543085195408e4e656c8e",
+      "68e543095195408e4e656ca1",
+      "68e543095195408e4e656ca3",
+      "68e543095195408e4e656ca5",
+      "68e543095195408e4e656ca7",
+      "68e543095195408e4e656ca9",
+      "68f3779571dd5ff2cf964cdb",
+      "68f3779571dd5ff2cf964cde",
+      "68f3779571dd5ff2cf964ce1",
+      "68f3779571dd5ff2cf964ce4",
+      "68f3779571dd5ff2cf964ce7",
+      "68e543085195408e4e656c91",
+      "68e543085195408e4e656c93",
+      "68e543085195408e4e656c95",
+      "68e543085195408e4e656c97",
+      "68e543085195408e4e656c99",
+      "68e543095195408e4e656cc8",
+      "6912bfdc6170994073c424c5",
+      "68e5430b8f32117fa86bb74d",
+      "68fc8fdd0d5c1dc093188c98",
+      "6912bffa6170994073c424fe",
+      "68fc8fdd0d5c1dc093188c9a"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-11-15T03:22:34.908Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 59,
+  "totalSections": 6,
+  "completedFlowsCount": 59,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2025-11-15T03:00:19.430Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-11-15T03:22:34.916Z"
+  },
+  "createdAt": {
+    "$date": "2025-11-15T03:00:19.430Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-15T03:22:34.916Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-11-15T03:22:34.916Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "691b1c524476bea8a901c0ab"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3528953",
+  "scriptId": {
+    "$oid": "68e4ad3a9c018324604fac25"
+  },
+  "scriptVersionId": {
+    "$oid": "6912c1306170994073c427c8"
+  },
+  "versionNumber": 4,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1087689,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "68fb92a60d5c1dc09318723b",
+    "currentFlowId": "68fb92a60d5c1dc09318723a",
+    "currentNodeId": "53a85dcc-8640-4719-9772-4a5f6b4dec92",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "68f44f21d5e9d73ceff2e837",
+      "68f44f21d5e9d73ceff2e839",
+      "68f44f21d5e9d73ceff2e83c",
+      "6912c09c392b758c8e916049",
+      "68f44f26d5e9d73ceff2e86c",
+      "68f44f26d5e9d73ceff2e86e",
+      "6912c0b66170994073c426ae",
+      "68fb85460d5c1dc093186e07",
+      "68f44f2dd5e9d73ceff2e8de",
+      "68f44f2dd5e9d73ceff2e8e0",
+      "68fb85460d5c1dc093186e0b",
+      "68fb85470d5c1dc093186e0f",
+      "68f44f2dd5e9d73ceff2e8e6",
+      "68f44f2dd5e9d73ceff2e8e8",
+      "68f44f2dd5e9d73ceff2e8f9",
+      "68f44f2dd5e9d73ceff2e8fc",
+      "68f44f2dd5e9d73ceff2e8fe",
+      "68f44f2dd5e9d73ceff2e900",
+      "68f44f2dd5e9d73ceff2e902",
+      "68f44f2dd5e9d73ceff2e904",
+      "68f44f2ed5e9d73ceff2e922",
+      "68f44f2ed5e9d73ceff2e924",
+      "68f44f2ed5e9d73ceff2e926",
+      "68f44f2ed5e9d73ceff2e928",
+      "68f44f2ed5e9d73ceff2e92a",
+      "68f44f2dd5e9d73ceff2e915",
+      "68f44f2dd5e9d73ceff2e917",
+      "68f44f2dd5e9d73ceff2e919",
+      "68f44f2ed5e9d73ceff2e93f",
+      "6912c0d9392b758c8e9160e2",
+      "68f44f3271dd5ff2cf964f35",
+      "68fb85f770a92131a3879453",
+      "68fb85f770a92131a3879457",
+      "68fb85f770a92131a387945b",
+      "68f44f3271dd5ff2cf964f41",
+      "68f44f3271dd5ff2cf964f50",
+      "68f44f3271dd5ff2cf964f53",
+      "68f44f3271dd5ff2cf964f56",
+      "68f44f3271dd5ff2cf964f58",
+      "68f44f3271dd5ff2cf964f5a",
+      "68f44f3271dd5ff2cf964f5c",
+      "68f44f3271dd5ff2cf964f5e",
+      "68f44f3371dd5ff2cf964f66",
+      "68f44f3371dd5ff2cf964f68",
+      "68f44f3371dd5ff2cf964f6a",
+      "68f44f3371dd5ff2cf964f6c",
+      "68f44f3371dd5ff2cf964f6e",
+      "68fb85f870a92131a3879464",
+      "68fb85f870a92131a3879467",
+      "68fb85f870a92131a387946a",
+      "68fb85f870a92131a387946d",
+      "68fb85f870a92131a3879470",
+      "68f44f3371dd5ff2cf964f8f",
+      "6912c0f56170994073c42724",
+      "68f44f3dd5e9d73ceff2e9d4",
+      "68fb92a60d5c1dc093187238",
+      "69032c9d1c844adcacaa4bd0",
+      "68fb92a60d5c1dc09318723a"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-11-17T13:27:17.939Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 58,
+  "totalSections": 6,
+  "completedFlowsCount": 58,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2025-11-17T13:00:02.505Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-11-17T13:27:17.947Z"
+  },
+  "createdAt": {
+    "$date": "2025-11-17T13:00:02.506Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-17T13:27:17.947Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-11-17T13:27:17.947Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "691dbf524476bea8a90296f9"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3528954",
+  "scriptId": {
+    "$oid": "68e4ce3f9c018324604fb5c4"
+  },
+  "scriptVersionId": {
+    "$oid": "6912c208392b758c8e916546"
+  },
+  "versionNumber": 3,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1427302,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "68f2308471dd5ff2cf96342f",
+    "currentFlowId": "68f2308471dd5ff2cf96342e",
+    "currentNodeId": "53a85dcc-8640-4719-9772-4a5f6b4dec92",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "68e54a005195408e4e656e60",
+      "68e54a005195408e4e656e62",
+      "68e54a005195408e4e656e65",
+      "6912c16f392b758c8e916282",
+      "68e54a065195408e4e656e82",
+      "68e54a065195408e4e656e84",
+      "6912c1b0392b758c8e91631e",
+      "68e54a118f32117fa86bba59",
+      "68e54a118f32117fa86bba5c",
+      "68e54a118f32117fa86bba5e",
+      "68e560ce8f32117fa86bbc0f",
+      "68e54a118f32117fa86bba64",
+      "68e54a118f32117fa86bba66",
+      "68e54a118f32117fa86bba77",
+      "68e54a118f32117fa86bba7a",
+      "68e54a118f32117fa86bba7c",
+      "68e54a118f32117fa86bba7e",
+      "68e54a118f32117fa86bba80",
+      "68e54a128f32117fa86bba82",
+      "68e54a128f32117fa86bbaa0",
+      "68e54a128f32117fa86bbaa2",
+      "68e54a128f32117fa86bbaa4",
+      "68e54a128f32117fa86bbaa6",
+      "68e54a128f32117fa86bbaa8",
+      "68e54a128f32117fa86bba87",
+      "68e54a128f32117fa86bbabd",
+      "6912c1c6392b758c8e9163ec",
+      "68e568fd5195408e4e657248",
+      "68e54a195195408e4e656ef2",
+      "68e568fe5195408e4e65724c",
+      "68e568fe5195408e4e657250",
+      "68e54a195195408e4e656ef8",
+      "68e568fe5195408e4e657254",
+      "68e54a1a5195408e4e656f07",
+      "68e54a1a5195408e4e656f0a",
+      "68e54a1a5195408e4e656f1d",
+      "68e54a1a5195408e4e656f1f",
+      "68e54a1a5195408e4e656f21",
+      "68e54a1a5195408e4e656f23",
+      "68e54a1a5195408e4e656f25",
+      "68e568fe5195408e4e65725b",
+      "68e568fe5195408e4e65725e",
+      "68e568fe5195408e4e657261",
+      "68e568fe5195408e4e657264",
+      "68e568fe5195408e4e657267",
+      "68e54a1a5195408e4e656f2a",
+      "68e54a1a5195408e4e656f2c",
+      "68e54a1a5195408e4e656f2e",
+      "68e54a1a5195408e4e656f30",
+      "68e54a1a5195408e4e656f32",
+      "68e54a1b5195408e4e656f44",
+      "6912c1e2392b758c8e916463",
+      "68e54a298f32117fa86bbb3f",
+      "68f2308471dd5ff2cf96342c",
+      "6912c1f3392b758c8e916493",
+      "68f2308471dd5ff2cf96342e"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-11-19T13:23:52.411Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 56,
+  "totalSections": 6,
+  "completedFlowsCount": 56,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2025-11-19T13:00:02.569Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-11-19T13:23:52.418Z"
+  },
+  "createdAt": {
+    "$date": "2025-11-19T13:00:02.569Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-19T13:23:52.419Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-11-19T13:23:52.418Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "692456d2a01411a7bfab0815"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3528955",
+  "scriptId": {
+    "$oid": "68e530eb8f32117fa86bb58c"
+  },
+  "scriptVersionId": {
+    "$oid": "6912dabf6170994073c433f3"
+  },
+  "versionNumber": 3,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 920133,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "68f5bfc1d5e9d73ceff3151f",
+    "currentFlowId": "68f5bfc1d5e9d73ceff3151e",
+    "currentNodeId": "53a85dcc-8640-4719-9772-4a5f6b4dec92",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "68e9c991e4f8c43e763b138f",
+      "68e9c991e4f8c43e763b1391",
+      "68e9c991e4f8c43e763b1394",
+      "6912da54392b758c8e916c1c",
+      "68e9c994e4f8c43e763b13ab",
+      "68e9c994e4f8c43e763b13ad",
+      "68e9c99ee4f8c43e763b1406",
+      "68e9d094efa9baf8735c39ea",
+      "68e9c99ee4f8c43e763b140c",
+      "68e9c99ee4f8c43e763b140e",
+      "68e9d094efa9baf8735c39ee",
+      "68e9d094efa9baf8735c39f1",
+      "68e9d094efa9baf8735c39f4",
+      "68e9d094efa9baf8735c39f8",
+      "68e9c99fe4f8c43e763b1414",
+      "68e9c99fe4f8c43e763b1416",
+      "68e9c99fe4f8c43e763b1418",
+      "68e9d094efa9baf8735c39fc",
+      "68e9d094efa9baf8735c3a00",
+      "68e9c99fe4f8c43e763b141e",
+      "68e9c99fe4f8c43e763b1420",
+      "68e9c99fe4f8c43e763b1427",
+      "68e9c99fe4f8c43e763b142a",
+      "68e9c99fe4f8c43e763b142c",
+      "68e9c99fe4f8c43e763b142e",
+      "68e9c99fe4f8c43e763b1430",
+      "68e9c99fe4f8c43e763b1432",
+      "68e9c99fe4f8c43e763b1443",
+      "68e9c99fe4f8c43e763b1445",
+      "68e9c9a0e4f8c43e763b1447",
+      "68e9c9a0e4f8c43e763b1449",
+      "68e9c9a0e4f8c43e763b144b",
+      "68e9c9a0e4f8c43e763b146d",
+      "6912da7d6170994073c43191",
+      "68e9e507efa9baf8735c3d7d",
+      "68f0a28071dd5ff2cf959cca",
+      "68f0a28071dd5ff2cf959ccd",
+      "68e9c9bbefa9baf8735c3642",
+      "68e9c9bbefa9baf8735c3645",
+      "68e9c9bbefa9baf8735c3658",
+      "68e9c9bbefa9baf8735c365a",
+      "68e9c9bbefa9baf8735c365c",
+      "68e9c9bbefa9baf8735c365e",
+      "68e9c9bcefa9baf8735c3660",
+      "68e9e508efa9baf8735c3d8b",
+      "68e9e508efa9baf8735c3d8e",
+      "68e9c9bcefa9baf8735c3665",
+      "68e9c9bcefa9baf8735c3667",
+      "68e9c9bcefa9baf8735c3669",
+      "68e9c9bcefa9baf8735c366b",
+      "68e9c9bcefa9baf8735c366d",
+      "68e9c9bcefa9baf8735c367f",
+      "6912da93392b758c8e916cba",
+      "68e9c9cce4f8c43e763b14d5",
+      "68f5bfc1d5e9d73ceff3151c",
+      "6912daa66170994073c4335a",
+      "68f5bfc1d5e9d73ceff3151e"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-11-24T13:24:14.210Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 57,
+  "totalSections": 6,
+  "completedFlowsCount": 57,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2025-11-24T13:00:02.707Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-11-24T13:24:14.220Z"
+  },
+  "createdAt": {
+    "$date": "2025-11-24T13:00:02.707Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-24T13:24:14.220Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-11-24T13:24:14.220Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6926f9d95f24dee0820e37ad"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3528956",
+  "scriptId": {
+    "$oid": "68e77b87ff06feda9de8e82d"
+  },
+  "scriptVersionId": {
+    "$oid": "6912e567392b758c8e9175f7"
+  },
+  "versionNumber": 4,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 52760,
+  "checkpoint": {
+    "currentSectionId": "689965640598bfe23ce95658",
+    "currentSetupId": "68f0af30d5e9d73ceff253d9",
+    "currentFlowId": "68f117ec71dd5ff2cf95e6fb",
+    "currentNodeId": "e4fb8fad-b273-46b2-9dec-d1caf843932d",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658"
+    ],
+    "completedFlows": [
+      "68f0af1c71dd5ff2cf95aa4e",
+      "68f0af1c71dd5ff2cf95aa50",
+      "68f0af1c71dd5ff2cf95aa53",
+      "6912e420392b758c8e9173b4",
+      "68f0af2071dd5ff2cf95aa91",
+      "68f0af2071dd5ff2cf95aa93",
+      "6912e4cd392b758c8e91744a",
+      "68f0b65e71dd5ff2cf95b861",
+      "68f0af2671dd5ff2cf95ab12",
+      "68f0af2671dd5ff2cf95ab14",
+      "68f0b65e71dd5ff2cf95b865",
+      "68f0b65f71dd5ff2cf95b869",
+      "68f0b65f71dd5ff2cf95b86c",
+      "68f0b65f71dd5ff2cf95b870",
+      "68f0af2671dd5ff2cf95ab1a",
+      "68f0af2671dd5ff2cf95ab1c",
+      "68f0b65f71dd5ff2cf95b875",
+      "68f0af2771dd5ff2cf95ab24",
+      "68f0af2771dd5ff2cf95ab26",
+      "68f0af2771dd5ff2cf95ab28",
+      "68f0af2771dd5ff2cf95ab2d",
+      "68f0af2771dd5ff2cf95ab30",
+      "68f0af2771dd5ff2cf95ab32",
+      "68f0af2771dd5ff2cf95ab34",
+      "68f0af2771dd5ff2cf95ab36",
+      "68f0af2771dd5ff2cf95ab38",
+      "68f0af2771dd5ff2cf95ab56",
+      "68f0af2771dd5ff2cf95ab58",
+      "68f0af2771dd5ff2cf95ab5a",
+      "68f0af2771dd5ff2cf95ab5c",
+      "68f0af2771dd5ff2cf95ab5e",
+      "68f0af2871dd5ff2cf95ab73",
+      "6912e4e06170994073c438cc",
+      "68f11a58d5e9d73ceff2852d",
+      "68f117ec71dd5ff2cf95e6f8",
+      "68f117ec71dd5ff2cf95e6fb"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-11-26T13:14:39.472Z"
+    }
+  },
+  "completionPercentage": 66,
+  "totalFlows": 58,
+  "totalSections": 6,
+  "completedFlowsCount": 36,
+  "completedSectionsCount": 4,
+  "startedAt": {
+    "$date": "2025-11-26T13:00:09.818Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-12-01T12:58:41.451Z"
+  },
+  "createdAt": {
+    "$date": "2025-11-26T13:00:09.819Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-01T12:58:41.451Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-12-01T12:58:41.451Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "692d91535f24dee0820ff222"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3528957",
+  "scriptId": {
+    "$oid": "68f6115b71dd5ff2cf96ab5f"
+  },
+  "scriptVersionId": {
+    "$oid": "6912e7c8392b758c8e917843"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1187633,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "68f8f5bd308fedade1ca347b",
+    "currentFlowId": "68f8f5bd308fedade1ca347a",
+    "currentNodeId": "53a85dcc-8640-4719-9772-4a5f6b4dec92",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "68f8f59e308fedade1ca330a",
+      "68f8f59e308fedade1ca330c",
+      "68f8f59e308fedade1ca330f",
+      "6912e6316170994073c43c67",
+      "68f8f5a24fae51be8061c59e",
+      "68f8f5a24fae51be8061c5a0",
+      "6912e6456170994073c43cf8",
+      "68f8f5ab4fae51be8061c614",
+      "68f8f5ab4fae51be8061c617",
+      "68f8f5ab4fae51be8061c619",
+      "68f8f5ab4fae51be8061c61c",
+      "68f8f5ab4fae51be8061c61f",
+      "68f8f5ab4fae51be8061c621",
+      "68f8f5ab4fae51be8061c623",
+      "68f8f5ab4fae51be8061c632",
+      "68f8f5ac4fae51be8061c65b",
+      "68f8f5ac4fae51be8061c65d",
+      "68f8f5ac4fae51be8061c65f",
+      "68f8f5ac4fae51be8061c661",
+      "68f8f5ac4fae51be8061c663",
+      "68f8f5ac4fae51be8061c64e",
+      "68f8f5ac4fae51be8061c650",
+      "68f8f5ac4fae51be8061c652",
+      "68f8f5ac4fae51be8061c654",
+      "68f8f5ac4fae51be8061c656",
+      "68f8f5ac4fae51be8061c635",
+      "68f8f5ac4fae51be8061c637",
+      "68f8f5ac4fae51be8061c639",
+      "68f8f5ac4fae51be8061c63b",
+      "68f8f5ac4fae51be8061c63d",
+      "68f8f5ac4fae51be8061c678",
+      "6912e6556170994073c43dc1",
+      "68f986794fae51be8061d0a4",
+      "68f8f5b2308fedade1ca33be",
+      "68f9867a4fae51be8061d0a8",
+      "68f8f5b2308fedade1ca33d3",
+      "68f8f5b2308fedade1ca33d6",
+      "68f8f5b2308fedade1ca33e9",
+      "68f8f5b2308fedade1ca33eb",
+      "68f8f5b3308fedade1ca33ed",
+      "68f8f5b3308fedade1ca33ef",
+      "68f8f5b3308fedade1ca33f1",
+      "68f9867a4fae51be8061d0af",
+      "68f9867a4fae51be8061d0b2",
+      "68f9867a4fae51be8061d0b5",
+      "68f9867a4fae51be8061d0b8",
+      "68f9867a4fae51be8061d0bb",
+      "68f8f5b3308fedade1ca33f6",
+      "68f8f5b3308fedade1ca33f8",
+      "68f8f5b3308fedade1ca33fa",
+      "68f8f5b3308fedade1ca33fc",
+      "68f8f5b3308fedade1ca33fe",
+      "68f8f5b3308fedade1ca3410",
+      "6912e66b6170994073c43e20",
+      "68f8f5b74fae51be8061c6e6",
+      "68f8f5bd308fedade1ca3478",
+      "6912e679392b758c8e91771a",
+      "68f8f5bd308fedade1ca347a"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-12-01T13:19:52.575Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 58,
+  "totalSections": 6,
+  "completedFlowsCount": 58,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2025-12-01T13:00:03.365Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-12-01T13:19:52.583Z"
+  },
+  "createdAt": {
+    "$date": "2025-12-01T13:00:03.367Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-01T13:19:52.583Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-12-01T13:19:52.583Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69303452e5ab08399d2fbf87"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3528958",
+  "scriptId": {
+    "$oid": "68f65c3cd5e9d73ceff34f65"
+  },
+  "scriptVersionId": {
+    "$oid": "6912e8ce392b758c8e917a45"
+  },
+  "versionNumber": 4,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1048556,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "68f9d43470a92131a387397f",
+    "currentFlowId": "68f9d43470a92131a387397e",
+    "currentNodeId": "53a85dcc-8640-4719-9772-4a5f6b4dec92",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "68f9d4160d5c1dc093180f86",
+      "68f9d4160d5c1dc093180f88",
+      "68f9d4160d5c1dc093180f8b",
+      "6912e865392b758c8e91790b",
+      "68f9d4120d5c1dc093180f4b",
+      "68f9d4120d5c1dc093180f4d",
+      "6912e87d6170994073c44001",
+      "68f9d4210d5c1dc093181008",
+      "68f9d4210d5c1dc09318100b",
+      "68f9d4210d5c1dc09318100d",
+      "68f9dd680d5c1dc09318177b",
+      "68f9d4210d5c1dc093181013",
+      "68f9d4210d5c1dc093181015",
+      "68f9d4220d5c1dc093181026",
+      "68f9d4220d5c1dc093181029",
+      "68f9d4220d5c1dc09318102b",
+      "68f9d4220d5c1dc09318102f",
+      "68f9d4220d5c1dc093181031",
+      "68f9d4220d5c1dc093181033",
+      "68f9d4220d5c1dc093181044",
+      "68f9d4220d5c1dc093181046",
+      "68f9d4220d5c1dc093181048",
+      "68f9d4220d5c1dc09318104a",
+      "68f9d4220d5c1dc09318104c",
+      "68f9d4220d5c1dc093181051",
+      "68f9d4220d5c1dc093181053",
+      "68f9d4220d5c1dc093181055",
+      "68f9d4220d5c1dc093181057",
+      "68f9d4220d5c1dc093181059",
+      "68f9d4230d5c1dc09318106e",
+      "6912e88c6170994073c440d1",
+      "68f9e53570a92131a3874282",
+      "68f9d42870a92131a38738c2",
+      "68f9e53570a92131a3874286",
+      "68f9d42870a92131a38738d7",
+      "68f9d42870a92131a38738da",
+      "68f9d42870a92131a38738ed",
+      "68f9d42870a92131a38738ef",
+      "68f9d42870a92131a38738f1",
+      "68f9d42970a92131a38738f3",
+      "68f9d42970a92131a38738f5",
+      "68f9e53570a92131a387428d",
+      "68f9e53570a92131a3874290",
+      "68f9e53570a92131a3874293",
+      "68f9e53570a92131a3874296",
+      "68f9e53570a92131a3874299",
+      "68f9d42970a92131a38738fa",
+      "68f9d42970a92131a38738fc",
+      "68f9d42970a92131a38738fe",
+      "68f9d42970a92131a3873900",
+      "68f9d42970a92131a3873902",
+      "68f9d42970a92131a3873914",
+      "6912e89e392b758c8e917976",
+      "68f9d42f0d5c1dc0931810dc",
+      "68f9d43470a92131a387397c",
+      "6912e8ba6170994073c44180",
+      "68f9d43470a92131a387397e"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-12-03T13:17:33.012Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 57,
+  "totalSections": 6,
+  "completedFlowsCount": 57,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2025-12-03T13:00:02.892Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-12-03T13:17:33.019Z"
+  },
+  "createdAt": {
+    "$date": "2025-12-03T13:00:02.893Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-03T13:17:33.019Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-12-03T13:17:33.019Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6936cbec41223900f4f8e219"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3528959",
+  "scriptId": {
+    "$oid": "68f86eabd5e9d73ceff3f021"
+  },
+  "scriptVersionId": {
+    "$oid": "6912edd6392b758c8e918060"
+  },
+  "versionNumber": 2,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1112919,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "68f8b836308fedade1ca2949",
+    "currentFlowId": "68f8b836308fedade1ca2948",
+    "currentNodeId": "53a85dcc-8640-4719-9772-4a5f6b4dec92",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "68f8b817308fedade1ca278f",
+      "68f8b817308fedade1ca2791",
+      "68f8b817308fedade1ca2794",
+      "6912ed506170994073c44645",
+      "68f8b81b308fedade1ca27d3",
+      "68f8b81b308fedade1ca27d5",
+      "6912ed83392b758c8e917e86",
+      "68f8c0f6308fedade1ca2be9",
+      "68f8b8274fae51be8061bca6",
+      "68f8b8274fae51be8061bca8",
+      "68f8c0f6308fedade1ca2bed",
+      "68f8c0f7308fedade1ca2bf1",
+      "68f8b8274fae51be8061bcae",
+      "68f8b8274fae51be8061bcb0",
+      "68f8c0f7308fedade1ca2bf6",
+      "68f8b8274fae51be8061bcb8",
+      "68f8b8274fae51be8061bcba",
+      "68f8b8284fae51be8061bcc1",
+      "68f8b8284fae51be8061bcc4",
+      "68f8b8284fae51be8061bcc6",
+      "68f8b8284fae51be8061bcc8",
+      "68f8b8284fae51be8061bcca",
+      "68f8b8284fae51be8061bccc",
+      "68f8b8284fae51be8061bcdd",
+      "68f8b8284fae51be8061bcdf",
+      "68f8b8284fae51be8061bce1",
+      "68f8b8284fae51be8061bce3",
+      "68f8b8284fae51be8061bce5",
+      "68f8c0f7308fedade1ca2bff",
+      "68f8c0f7308fedade1ca2c02",
+      "68f8c0f7308fedade1ca2c05",
+      "68f8c0f7308fedade1ca2c08",
+      "68f8c0f7308fedade1ca2c0b",
+      "68f8b8294fae51be8061bd07",
+      "6912ed936170994073c44700",
+      "68f8b82c308fedade1ca2882",
+      "68fcdc930d5c1dc09318987f",
+      "68f905134fae51be8061cbcf",
+      "68f8b82c308fedade1ca289d",
+      "68f8b82d308fedade1ca28a0",
+      "68f8b82d308fedade1ca28b3",
+      "68f8b82d308fedade1ca28b5",
+      "68f8b82d308fedade1ca28b7",
+      "68f8b82d308fedade1ca28b9",
+      "68f8b82d308fedade1ca28bb",
+      "68f8b82d308fedade1ca28c0",
+      "68f8b82d308fedade1ca28c2",
+      "68f8b82d308fedade1ca28c4",
+      "68f8b82d308fedade1ca28c6",
+      "68f8b82d308fedade1ca28c8",
+      "68f8b82d308fedade1ca28da",
+      "6912edaa6170994073c44763",
+      "68f8b8324fae51be8061bd75",
+      "68f8b836308fedade1ca2946",
+      "6912edbb6170994073c4479b",
+      "68f8b836308fedade1ca2948"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-12-08T13:19:02.470Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 56,
+  "totalSections": 6,
+  "completedFlowsCount": 56,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2025-12-08T13:00:28.074Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-12-08T13:19:02.479Z"
+  },
+  "createdAt": {
+    "$date": "2025-12-08T13:00:28.075Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-08T13:19:02.479Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-12-08T13:19:02.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69396ee31ecc2be773861b1c"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3528960",
+  "scriptId": {
+    "$oid": "68f87b4871dd5ff2cf976214"
+  },
+  "scriptVersionId": {
+    "$oid": "6912ef15392b758c8e9184ab"
+  },
+  "versionNumber": 2,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1195748,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "68fb70fb70a92131a387918d",
+    "currentFlowId": "68fb70fb70a92131a387918c",
+    "currentNodeId": "53a85dcc-8640-4719-9772-4a5f6b4dec92",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "68fb70db0d5c1dc0931867f5",
+      "68fb70db0d5c1dc0931867f7",
+      "68fb70db0d5c1dc0931867fa",
+      "6912ee33392b758c8e9181e5",
+      "68fb70dd70a92131a3878fd5",
+      "68fb70dd70a92131a3878fd7",
+      "6912ee53392b758c8e91828c",
+      "68fbdacc0d5c1dc093187753",
+      "68fb70e570a92131a3879052",
+      "68fb70e570a92131a3879054",
+      "68fbdacc0d5c1dc093187757",
+      "68fbdacc0d5c1dc09318775a",
+      "68fbdacc0d5c1dc09318775d",
+      "68fbdacd0d5c1dc093187760",
+      "68fbdacd0d5c1dc093187763",
+      "68fbdacd0d5c1dc093187767",
+      "68fb70e570a92131a387905a",
+      "68fb70e570a92131a387905c",
+      "68fb70e570a92131a387905e",
+      "68fbdacd0d5c1dc09318776c",
+      "68fb70e570a92131a3879064",
+      "68fb70e570a92131a3879066",
+      "68fb70e570a92131a3879068",
+      "68fb70e570a92131a387906a",
+      "68fbdacd0d5c1dc093187770",
+      "68fb70e570a92131a387906d",
+      "68fb70e570a92131a3879070",
+      "68fb70e570a92131a3879072",
+      "68fb70e570a92131a3879074",
+      "68fb70e570a92131a3879076",
+      "68fb70e570a92131a3879078",
+      "68fb70e570a92131a3879089",
+      "68fb70e570a92131a387908b",
+      "68fb70e570a92131a387908d",
+      "68fb70e570a92131a387908f",
+      "68fb70e570a92131a3879091",
+      "68fb70e670a92131a38790b3",
+      "6912ee666170994073c44966",
+      "68fbe83870a92131a3879de2",
+      "68fbe83870a92131a3879de6",
+      "68fbe83870a92131a3879de9",
+      "68fb70ed0d5c1dc093186992",
+      "68fb70ed0d5c1dc093186995",
+      "68fb70ed0d5c1dc0931869a8",
+      "68fb70ed0d5c1dc0931869aa",
+      "68fb70ed0d5c1dc0931869ac",
+      "68fb70ed0d5c1dc0931869ae",
+      "68fb70ed0d5c1dc0931869b0",
+      "68fb70ed0d5c1dc0931869b5",
+      "68fb70ed0d5c1dc0931869b7",
+      "68fb70ee0d5c1dc0931869b9",
+      "68fb70ee0d5c1dc0931869bb",
+      "68fb70ee0d5c1dc0931869bd",
+      "68fbe83870a92131a3879df0",
+      "68fbe83870a92131a3879df3",
+      "68fbe83870a92131a3879df6",
+      "68fbe83870a92131a3879df9",
+      "68fb70ee0d5c1dc0931869cf",
+      "6912eebb392b758c8e9183a2",
+      "68fb70f370a92131a3879144",
+      "68fb70fb70a92131a387918a",
+      "6912eed3392b758c8e9183de",
+      "68fb70fb70a92131a387918c"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-12-10T13:20:16.319Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 63,
+  "totalSections": 6,
+  "completedFlowsCount": 63,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2025-12-10T13:00:19.007Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-12-10T13:20:16.326Z"
+  },
+  "createdAt": {
+    "$date": "2025-12-10T13:00:19.007Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-10T13:20:16.326Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-12-10T13:20:16.326Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "694006531ecc2be77389993c"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3528961",
+  "scriptId": {
+    "$oid": "690068c80d5c1dc093190532"
+  },
+  "scriptVersionId": {
+    "$oid": "6912f3776170994073c4555a"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 974383,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "69046f0d20d53000d369c331",
+    "currentFlowId": "69046f0d20d53000d369c330",
+    "currentNodeId": "53a85dcc-8640-4719-9772-4a5f6b4dec92",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "69046ef520d53000d369c1d9",
+      "69046ef520d53000d369c1db",
+      "69046ef520d53000d369c1de",
+      "69046ef81c844adcacaa92f0",
+      "69046ef81c844adcacaa92f3",
+      "69046ef81c844adcacaa92f5",
+      "69046eff1c844adcacaa9359",
+      "690479531c844adcacaaa16f",
+      "69046eff1c844adcacaa935f",
+      "69046eff1c844adcacaa9361",
+      "690479531c844adcacaaa173",
+      "690479531c844adcacaaa176",
+      "690479531c844adcacaaa179",
+      "690479531c844adcacaaa17c",
+      "69046f001c844adcacaa9364",
+      "69046f001c844adcacaa9367",
+      "69046f001c844adcacaa9369",
+      "69046f001c844adcacaa936b",
+      "69046f001c844adcacaa936d",
+      "69046f001c844adcacaa936f",
+      "69046f001c844adcacaa9380",
+      "69046f001c844adcacaa9382",
+      "69046f001c844adcacaa9384",
+      "69046f001c844adcacaa9386",
+      "69046f001c844adcacaa9388",
+      "690479531c844adcacaaa183",
+      "690479531c844adcacaaa188",
+      "690479531c844adcacaaa18b",
+      "690479541c844adcacaaa191",
+      "690479541c844adcacaaa194",
+      "69046f001c844adcacaa93aa",
+      "69046f0420d53000d369c27f",
+      "6906186b20d53000d36a1c58",
+      "69046f0520d53000d369c28e",
+      "69046f0520d53000d369c291",
+      "69046f0520d53000d369c2b1",
+      "69046f0520d53000d369c2b3",
+      "69046f0520d53000d369c2a4",
+      "69046f0520d53000d369c2a6",
+      "69046f0520d53000d369c294",
+      "69046f0520d53000d369c296",
+      "69046f0520d53000d369c298",
+      "69046f0520d53000d369c29a",
+      "69046f0520d53000d369c29c",
+      "69046f0520d53000d369c2cb",
+      "69046f091c844adcacaa940d",
+      "69046f091c844adcacaa9410",
+      "69046f0d20d53000d369c32c",
+      "69046f0d20d53000d369c32e",
+      "69046f0d20d53000d369c330"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-12-15T13:16:19.309Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 50,
+  "totalSections": 6,
+  "completedFlowsCount": 50,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2025-12-15T13:00:03.177Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-12-15T13:16:19.319Z"
+  },
+  "createdAt": {
+    "$date": "2025-12-15T13:00:03.178Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-15T13:16:19.319Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-12-15T13:16:19.319Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "694533b9113d0f60577a4815"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3600069",
+  "scriptId": {
+    "$oid": "690966746813fa60502e7eb0"
+  },
+  "scriptVersionId": {
+    "$oid": "69281286e5ab08399d2d9747"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 6133,
+  "checkpoint": {
+    "currentSectionId": "689965530598bfe23ce95654",
+    "currentSetupId": "690de8db92f66ede4eb279b9",
+    "currentFlowId": "690de8db92f66ede4eb279b5",
+    "currentNodeId": "ab9a61b4-88fd-42c8-8c71-a193b7ac13db",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654"
+    ],
+    "completedFlows": [
+      "690de8c7b8ceb7d0d217e4f3",
+      "690de8c7b8ceb7d0d217e4f6",
+      "690de8c992f66ede4eb27890",
+      "690de8c992f66ede4eb27893",
+      "690de8c992f66ede4eb27895",
+      "690de8d1b8ceb7d0d217e533",
+      "690de8d1b8ceb7d0d217e536",
+      "690de8d392f66ede4eb27901",
+      "690de99692f66ede4eb27a6c",
+      "690de8d392f66ede4eb27907",
+      "690de8d392f66ede4eb27909",
+      "690de99692f66ede4eb27a70",
+      "690de99692f66ede4eb27a74",
+      "690de99692f66ede4eb27a78",
+      "690de99692f66ede4eb27a7b",
+      "690de8d392f66ede4eb2790c",
+      "690de8d392f66ede4eb2790f",
+      "690de8d392f66ede4eb27911",
+      "690de8d392f66ede4eb27913",
+      "690de8d392f66ede4eb27915",
+      "690de8d392f66ede4eb27917",
+      "690de8d492f66ede4eb27928",
+      "690de8d492f66ede4eb2792a",
+      "690de8d492f66ede4eb2792c",
+      "690de8d492f66ede4eb2792e",
+      "690de8d492f66ede4eb27930",
+      "690de8d492f66ede4eb27935",
+      "690de8d492f66ede4eb27937",
+      "690de8d492f66ede4eb27939",
+      "690de8d492f66ede4eb2793b",
+      "690de8d492f66ede4eb2793d",
+      "690de8d492f66ede4eb27952",
+      "690de8d7b8ceb7d0d217e597",
+      "690e256492f66ede4eb28519",
+      "690e256492f66ede4eb28525",
+      "690de8d7b8ceb7d0d217e5a3",
+      "690e256492f66ede4eb28521",
+      "690e256492f66ede4eb2851d",
+      "690de8d7b8ceb7d0d217e59d",
+      "690de8d7b8ceb7d0d217e5a6",
+      "690de8d7b8ceb7d0d217e5a9",
+      "690de8d7b8ceb7d0d217e5bc",
+      "690de8d7b8ceb7d0d217e5be",
+      "690de8d7b8ceb7d0d217e5c0",
+      "690de8d7b8ceb7d0d217e5c2",
+      "690de8d7b8ceb7d0d217e5c4",
+      "690e256492f66ede4eb2852c",
+      "690e256492f66ede4eb2852f",
+      "690e256492f66ede4eb28532",
+      "690e256492f66ede4eb28535",
+      "690e256492f66ede4eb28538",
+      "690de8d7b8ceb7d0d217e5c9",
+      "690de8d7b8ceb7d0d217e5cb",
+      "690de8d7b8ceb7d0d217e5cd",
+      "690de8d7b8ceb7d0d217e5cf",
+      "690de8d7b8ceb7d0d217e5d1",
+      "690de8d7b8ceb7d0d217e5e3",
+      "690de8db92f66ede4eb279b5"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-12-19T11:37:26.131Z"
+    }
+  },
+  "completionPercentage": 85,
+  "totalFlows": 62,
+  "totalSections": 7,
+  "completedFlowsCount": 58,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2025-12-19T11:15:05.984Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-12-19T14:13:19.983Z"
+  },
+  "createdAt": {
+    "$date": "2025-12-19T11:15:05.985Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-19T14:13:19.983Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-12-19T14:13:19.983Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69493fd4113d0f60577e2587"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3605592",
+  "scriptId": {
+    "$oid": "690991926813fa60502e8036"
+  },
+  "scriptVersionId": {
+    "$oid": "692815cd5f24dee0820e8b0d"
+  },
+  "versionNumber": 2,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1293161,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "691039dab8ceb7d0d2187052",
+    "currentFlowId": "691039dab8ceb7d0d2187051",
+    "currentNodeId": "53a85dcc-8640-4719-9772-4a5f6b4dec92",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "691039c3b8ceb7d0d2186eff",
+      "691039c3b8ceb7d0d2186f02",
+      "691039c692f66ede4eb305c2",
+      "691039c692f66ede4eb305c5",
+      "691039c692f66ede4eb305c7",
+      "691039ce92f66ede4eb3062b",
+      "69103e6892f66ede4eb308ef",
+      "691039ce92f66ede4eb30631",
+      "691039ce92f66ede4eb30633",
+      "69103e6892f66ede4eb308f3",
+      "69103e6892f66ede4eb308f7",
+      "69103e6892f66ede4eb308fb",
+      "69103e6892f66ede4eb308fe",
+      "69103e6892f66ede4eb30901",
+      "691039ce92f66ede4eb30636",
+      "691039ce92f66ede4eb30639",
+      "691039ce92f66ede4eb3063b",
+      "691039ce92f66ede4eb3063d",
+      "691039ce92f66ede4eb3063f",
+      "691039cf92f66ede4eb3065f",
+      "691039cf92f66ede4eb30661",
+      "691039cf92f66ede4eb30663",
+      "691039cf92f66ede4eb30646",
+      "691039cf92f66ede4eb3067c",
+      "691039d2b8ceb7d0d2186fa0",
+      "69104683b8ceb7d0d218737b",
+      "691039d2b8ceb7d0d2186fa6",
+      "69104683b8ceb7d0d218737f",
+      "69104683b8ceb7d0d2187383",
+      "691039d2b8ceb7d0d2186fac",
+      "69104683b8ceb7d0d2187387",
+      "691039d2b8ceb7d0d2186faf",
+      "691039d2b8ceb7d0d2186fb2",
+      "691039d3b8ceb7d0d2186fc5",
+      "691039d3b8ceb7d0d2186fc7",
+      "691039d3b8ceb7d0d2186fc9",
+      "691039d3b8ceb7d0d2186fcb",
+      "69104683b8ceb7d0d218738e",
+      "69104683b8ceb7d0d2187391",
+      "69104683b8ceb7d0d2187394",
+      "69104683b8ceb7d0d2187397",
+      "691039d3b8ceb7d0d2186fd2",
+      "691039d3b8ceb7d0d2186fd4",
+      "691039d3b8ceb7d0d2186fd6",
+      "691039d3b8ceb7d0d2186fd8",
+      "691039d3b8ceb7d0d2186fec",
+      "691039d692f66ede4eb306df",
+      "691039d792f66ede4eb306e2",
+      "691039dab8ceb7d0d218704d",
+      "691039dab8ceb7d0d218704f",
+      "691039dab8ceb7d0d2187051"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-12-22T13:18:32.219Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 51,
+  "totalSections": 6,
+  "completedFlowsCount": 51,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2025-12-22T12:55:48.513Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-12-22T13:18:32.227Z"
+  },
+  "createdAt": {
+    "$date": "2025-12-22T12:55:48.514Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-22T13:18:32.227Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-12-22T13:18:32.227Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "694be2621ecc2be77393d667"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3605593",
+  "scriptId": {
+    "$oid": "6909aea76813fa60502e8297"
+  },
+  "scriptVersionId": {
+    "$oid": "692817f55f24dee0820e8c45"
+  },
+  "versionNumber": 2,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 29651,
+  "checkpoint": {
+    "currentSectionId": "689965880598bfe23ce9565c",
+    "currentSetupId": "6910be61b8ceb7d0d2187cfa",
+    "currentFlowId": "6910be60b8ceb7d0d2187cde",
+    "currentNodeId": "6aec1093-8cb0-4970-b7c1-2804fffba01c",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c"
+    ],
+    "completedFlows": [
+      "6910be5bb8ceb7d0d2187c44",
+      "6910be5bb8ceb7d0d2187c47",
+      "6910be5e92f66ede4eb312ab",
+      "6910be5e92f66ede4eb312ae",
+      "6910be5e92f66ede4eb312b0",
+      "6910be60b8ceb7d0d2187ca8",
+      "6910be60b8ceb7d0d2187cab",
+      "6910be60b8ceb7d0d2187cae",
+      "6910be60b8ceb7d0d2187cb0",
+      "6910becf92f66ede4eb31480",
+      "6910becf92f66ede4eb31484",
+      "6910becf92f66ede4eb31487",
+      "6910be60b8ceb7d0d2187cb3",
+      "6910be60b8ceb7d0d2187ccf",
+      "6910be60b8ceb7d0d2187cd1",
+      "6910be60b8ceb7d0d2187cd3",
+      "6910be60b8ceb7d0d2187cd5",
+      "6910be60b8ceb7d0d2187cdc",
+      "6910be60b8ceb7d0d2187cde"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-12-24T13:05:53.689Z"
+    }
+  },
+  "completionPercentage": 50,
+  "totalFlows": 53,
+  "totalSections": 6,
+  "completedFlowsCount": 19,
+  "completedSectionsCount": 3,
+  "startedAt": {
+    "$date": "2025-12-24T12:53:54.019Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-12-29T13:02:26.203Z"
+  },
+  "createdAt": {
+    "$date": "2025-12-24T12:53:54.019Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-29T13:02:26.203Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-12-29T13:02:26.203Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69527c3ee4526c242fdbabe6"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3605594",
+  "scriptId": {
+    "$oid": "690b0b716813fa60502e9cde"
+  },
+  "scriptVersionId": {
+    "$oid": "69281975e5ab08399d2d99bf"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 454730,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "690d606db8ceb7d0d217a7b7",
+    "currentFlowId": "690d606db8ceb7d0d217a7b6",
+    "currentNodeId": "53a85dcc-8640-4719-9772-4a5f6b4dec92",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "690d6058b8ceb7d0d217a662",
+      "690d6058b8ceb7d0d217a665",
+      "690d605b92f66ede4eb23791",
+      "690d605b92f66ede4eb23794",
+      "690d605b92f66ede4eb23796",
+      "690d606192f66ede4eb237fa",
+      "690d6780b8ceb7d0d217ac41",
+      "690d606192f66ede4eb23800",
+      "690d606192f66ede4eb23802",
+      "690d6780b8ceb7d0d217ac45",
+      "690d6780b8ceb7d0d217ac48",
+      "690d6780b8ceb7d0d217ac4c",
+      "690d6780b8ceb7d0d217ac50",
+      "690d6780b8ceb7d0d217ac53",
+      "690d6780b8ceb7d0d217ac57",
+      "690d6780b8ceb7d0d217ac5b",
+      "690d6780b8ceb7d0d217ac5e",
+      "690d6780b8ceb7d0d217ac61",
+      "690d6780b8ceb7d0d217ac64",
+      "690d6780b8ceb7d0d217ac68",
+      "690d6780b8ceb7d0d217ac6c",
+      "690d6780b8ceb7d0d217ac6f",
+      "690d6780b8ceb7d0d217ac72",
+      "690d606192f66ede4eb23805",
+      "690d606192f66ede4eb23821",
+      "690d606192f66ede4eb23823",
+      "690d606192f66ede4eb23825",
+      "690d606192f66ede4eb23827",
+      "690d606192f66ede4eb23829",
+      "690d606192f66ede4eb23808",
+      "690d606192f66ede4eb2380a",
+      "690d606192f66ede4eb2380c",
+      "690d606192f66ede4eb2380e",
+      "690d606192f66ede4eb2384b",
+      "690d6065b8ceb7d0d217a705",
+      "690db03592f66ede4eb2536e",
+      "690dafd2b8ceb7d0d217be0f",
+      "690d6066b8ceb7d0d217a751",
+      "690d6065b8ceb7d0d217a714",
+      "690d6065b8ceb7d0d217a717",
+      "690d6065b8ceb7d0d217a71a",
+      "690d6065b8ceb7d0d217a71c",
+      "690d6065b8ceb7d0d217a71e",
+      "690d6065b8ceb7d0d217a720",
+      "690d6065b8ceb7d0d217a722",
+      "690dafd2b8ceb7d0d217be16",
+      "690dafd2b8ceb7d0d217be19",
+      "690dafd2b8ceb7d0d217be1c",
+      "690d6065b8ceb7d0d217a72a",
+      "690d6065b8ceb7d0d217a72c",
+      "690d6065b8ceb7d0d217a72e",
+      "690d6065b8ceb7d0d217a730",
+      "690d6065b8ceb7d0d217a732",
+      "690db1a792f66ede4eb25419",
+      "690d606a92f66ede4eb238ae",
+      "690d606a92f66ede4eb238b1",
+      "690d606db8ceb7d0d217a7b2",
+      "690d606db8ceb7d0d217a7b4",
+      "690d606db8ceb7d0d217a7b6"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2025-12-29T13:29:46.336Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 59,
+  "totalSections": 6,
+  "completedFlowsCount": 59,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2025-12-29T13:03:58.320Z"
+  },
+  "lastActiveAt": {
+    "$date": "2025-12-29T13:29:46.345Z"
+  },
+  "createdAt": {
+    "$date": "2025-12-29T13:03:58.321Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-29T13:29:46.345Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2025-12-29T13:29:46.345Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69587eb3e4526c242fe092f8"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3633851",
+  "scriptId": {
+    "$oid": "690b33286813fa60502ead4b"
+  },
+  "scriptVersionId": {
+    "$oid": "69281e97e5ab08399d2d9a95"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1114807,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "6910ac69b8ceb7d0d218795d",
+    "currentFlowId": "6910ac69b8ceb7d0d218795c",
+    "currentNodeId": "53a85dcc-8640-4719-9772-4a5f6b4dec92",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "6910ac5192f66ede4eb30fb8",
+      "6910ac5192f66ede4eb30fbb",
+      "6910ac55b8ceb7d0d218784e",
+      "6910ac55b8ceb7d0d2187851",
+      "6910ac55b8ceb7d0d2187853",
+      "6910ac5a92f66ede4eb31019",
+      "6910b091b8ceb7d0d2187a39",
+      "6910ac5a92f66ede4eb3101f",
+      "6910ac5a92f66ede4eb31021",
+      "6910b091b8ceb7d0d2187a3d",
+      "6910b091b8ceb7d0d2187a41",
+      "6910b091b8ceb7d0d2187a45",
+      "6910b091b8ceb7d0d2187a48",
+      "6910b091b8ceb7d0d2187a4b",
+      "6910b091b8ceb7d0d2187a4e",
+      "6910ac5a92f66ede4eb31024",
+      "6910ac5a92f66ede4eb31027",
+      "6910ac5a92f66ede4eb31029",
+      "6910ac5a92f66ede4eb3102b",
+      "6910ac5a92f66ede4eb3102d",
+      "6910ac5a92f66ede4eb3102f",
+      "6910ac5a92f66ede4eb3104d",
+      "6910ac5a92f66ede4eb3104f",
+      "6910ac5a92f66ede4eb31051",
+      "6910ac5a92f66ede4eb31053",
+      "6910ac5a92f66ede4eb31055",
+      "6910ac5a92f66ede4eb3106a",
+      "6910ac5fb8ceb7d0d21878b0",
+      "6910b8e292f66ede4eb311e5",
+      "6910b8e292f66ede4eb311e9",
+      "6910b8e292f66ede4eb311ed",
+      "6910ac5fb8ceb7d0d21878bf",
+      "6910ac5fb8ceb7d0d21878c2",
+      "6910ac5fb8ceb7d0d21878d5",
+      "6910ac5fb8ceb7d0d21878d7",
+      "6910ac5fb8ceb7d0d21878d9",
+      "6910ac5fb8ceb7d0d21878db",
+      "6910ac5fb8ceb7d0d21878dd",
+      "6910b8e292f66ede4eb311f4",
+      "6910b8e292f66ede4eb311f7",
+      "6910b8e292f66ede4eb311fa",
+      "6910b8e292f66ede4eb311fd",
+      "6910b8e292f66ede4eb31200",
+      "6910ac5fb8ceb7d0d21878e2",
+      "6910ac5fb8ceb7d0d21878e4",
+      "6910ac5fb8ceb7d0d21878e6",
+      "6910ac5fb8ceb7d0d21878e8",
+      "6910ac5fb8ceb7d0d21878ea",
+      "6910ac5fb8ceb7d0d21878fc",
+      "6910ac6592f66ede4eb310c8",
+      "6910ac6592f66ede4eb310cb",
+      "6910ac69b8ceb7d0d2187958",
+      "6910ac69b8ceb7d0d218795a",
+      "6910ac69b8ceb7d0d218795c"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-01-03T02:46:38.824Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 54,
+  "totalSections": 6,
+  "completedFlowsCount": 54,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2026-01-03T02:28:03.265Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-01-03T02:46:38.832Z"
+  },
+  "createdAt": {
+    "$date": "2026-01-03T02:28:03.265Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-03T02:46:38.832Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-01-03T02:46:38.832Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6959d4f4e4526c242fe186ee"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3633852",
+  "scriptId": {
+    "$oid": "691dad693ea3676f3c69c107"
+  },
+  "scriptVersionId": {
+    "$oid": "6929017be5ab08399d2dd0c7"
+  },
+  "versionNumber": 2,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1197958,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "69241974a01411a7bfaaf0b6",
+    "currentFlowId": "69241974a01411a7bfaaf0b5",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "6924195ba01411a7bfaaef5b",
+      "6924195ba01411a7bfaaef5e",
+      "6924195e90cb95f727f2dcfc",
+      "6924195e90cb95f727f2dcff",
+      "6924195e90cb95f727f2dd01",
+      "69241963a01411a7bfaaef95",
+      "69241963a01411a7bfaaef98",
+      "6924196890cb95f727f2dd65",
+      "69241ae490cb95f727f2df63",
+      "6924196890cb95f727f2dd6b",
+      "6924196890cb95f727f2dd6d",
+      "69241ae490cb95f727f2df67",
+      "69241ae490cb95f727f2df6a",
+      "69241ae490cb95f727f2df6e",
+      "69241ae490cb95f727f2df72",
+      "69241ae490cb95f727f2df75",
+      "69241ae490cb95f727f2df78",
+      "69241ae490cb95f727f2df7b",
+      "6924196890cb95f727f2dd80",
+      "6924196890cb95f727f2dd99",
+      "6924196890cb95f727f2dd9b",
+      "6924196890cb95f727f2dd9d",
+      "6924196890cb95f727f2dd9f",
+      "6924196890cb95f727f2dda1",
+      "6924196890cb95f727f2dd73",
+      "6924196890cb95f727f2dd75",
+      "6924196890cb95f727f2dd77",
+      "6924196890cb95f727f2dd79",
+      "6924196890cb95f727f2dd8c",
+      "6924196890cb95f727f2dd8e",
+      "6924196890cb95f727f2dd90",
+      "6924196890cb95f727f2dd92",
+      "6924196ca01411a7bfaaeffa",
+      "69241b70a01411a7bfaaf253",
+      "6924196ca01411a7bfaaf000",
+      "69241b70a01411a7bfaaf258",
+      "6924196ca01411a7bfaaf006",
+      "6924196ca01411a7bfaaf009",
+      "6924196ca01411a7bfaaf00c",
+      "6924196ca01411a7bfaaf01f",
+      "6924196ca01411a7bfaaf021",
+      "6924196ca01411a7bfaaf023",
+      "6924196ca01411a7bfaaf025",
+      "69241b70a01411a7bfaaf260",
+      "69241b70a01411a7bfaaf263",
+      "69241b70a01411a7bfaaf266",
+      "69241b70a01411a7bfaaf269",
+      "6924196ca01411a7bfaaf02c",
+      "6924196ca01411a7bfaaf02e",
+      "6924196ca01411a7bfaaf030",
+      "6924196ca01411a7bfaaf032",
+      "6924196ca01411a7bfaaf034",
+      "6924196f90cb95f727f2de24",
+      "6924196f90cb95f727f2de27",
+      "69241974a01411a7bfaaf0b1",
+      "69241974a01411a7bfaaf0b3",
+      "69241974a01411a7bfaaf0b5"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-01-04T03:08:18.883Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 57,
+  "totalSections": 7,
+  "completedFlowsCount": 57,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-01-04T02:48:20.595Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-01-04T03:08:18.894Z"
+  },
+  "createdAt": {
+    "$date": "2026-01-04T02:48:20.595Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-04T03:08:18.894Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-01-04T03:08:18.894Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "695d0376f33d0f136d801110"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3654342",
+  "scriptId": {
+    "$oid": "691dceae4476bea8a9029fde"
+  },
+  "scriptVersionId": {
+    "$oid": "694e3526a9652b1c125b2fb5"
+  },
+  "versionNumber": 2,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1361815,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "692553b490cb95f727f333a1",
+    "currentFlowId": "692553b490cb95f727f333a0",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "6925539e90cb95f727f33251",
+      "6925539e90cb95f727f33254",
+      "692553a1a01411a7bfab3dd0",
+      "692553a1a01411a7bfab3dd3",
+      "692553a1a01411a7bfab3dd5",
+      "692553a490cb95f727f3328b",
+      "692553a490cb95f727f3328e",
+      "692553a8a01411a7bfab3e39",
+      "6925565a90cb95f727f33599",
+      "692553a8a01411a7bfab3e3f",
+      "692553a8a01411a7bfab3e41",
+      "6925565a90cb95f727f3359d",
+      "6925565a90cb95f727f335a1",
+      "6925565a90cb95f727f335a5",
+      "6925565a90cb95f727f335a8",
+      "692553a8a01411a7bfab3e47",
+      "692553a8a01411a7bfab3e49",
+      "692553a8a01411a7bfab3e4b",
+      "692553a8a01411a7bfab3e4d",
+      "692553a8a01411a7bfab3e4f",
+      "692553a8a01411a7bfab3e6d",
+      "692553a8a01411a7bfab3e6f",
+      "692553a8a01411a7bfab3e71",
+      "692553a8a01411a7bfab3e73",
+      "692553a8a01411a7bfab3e54",
+      "692553ad90cb95f727f332ef",
+      "69256e47a01411a7bfab4cf2",
+      "692553ad90cb95f727f332f5",
+      "692556f4a01411a7bfab42d7",
+      "692556f4a01411a7bfab42db",
+      "692553ad90cb95f727f332fb",
+      "692556f4a01411a7bfab42df",
+      "692553ad90cb95f727f332fe",
+      "692553ad90cb95f727f33301",
+      "692553ad90cb95f727f33314",
+      "692553ad90cb95f727f33316",
+      "692553ad90cb95f727f33318",
+      "692553ad90cb95f727f3331a",
+      "692556f4a01411a7bfab42e6",
+      "692556f4a01411a7bfab42e9",
+      "692556f4a01411a7bfab42ec",
+      "692556f4a01411a7bfab42ef",
+      "692553ad90cb95f727f33321",
+      "692553ad90cb95f727f33323",
+      "692553ad90cb95f727f33325",
+      "692553ad90cb95f727f33327",
+      "692553ad90cb95f727f3333b",
+      "692553b0a01411a7bfab3eed",
+      "692553b0a01411a7bfab3ef0",
+      "692553b490cb95f727f3339c",
+      "692553b490cb95f727f3339e",
+      "692553b490cb95f727f333a0"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-01-06T13:06:16.990Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 52,
+  "totalSections": 7,
+  "completedFlowsCount": 52,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-01-06T12:43:34.827Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-01-06T13:06:16.996Z"
+  },
+  "createdAt": {
+    "$date": "2026-01-06T12:43:34.827Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-06T13:06:16.996Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-01-06T13:06:16.996Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "696361f98d0f50d1698ce14c"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3664256",
+  "scriptId": {
+    "$oid": "691e8c013ea3676f3c69f471"
+  },
+  "scriptVersionId": {
+    "$oid": "692e9abd5f24dee0821033d6"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1167811,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "692a6d755f24dee0820f44ed",
+    "currentFlowId": "692a6d755f24dee0820f44ec",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "692a6d65e5ab08399d2e55ab",
+      "692a6d65e5ab08399d2e55ae",
+      "692a6d565f24dee0820f42dc",
+      "692a6d565f24dee0820f42df",
+      "692a6d565f24dee0820f42e1",
+      "692a6d63e5ab08399d2e5570",
+      "692a6d63e5ab08399d2e5573",
+      "692a6d695f24dee0820f435a",
+      "692a6ddf5f24dee0820f4617",
+      "692a6d695f24dee0820f4360",
+      "692a6d695f24dee0820f4362",
+      "692a6ddf5f24dee0820f461b",
+      "692a6ddf5f24dee0820f461e",
+      "692a6d695f24dee0820f4375",
+      "692a6d695f24dee0820f4381",
+      "692a6d695f24dee0820f4383",
+      "692a6d695f24dee0820f4385",
+      "692a6d695f24dee0820f4387",
+      "692a6d695f24dee0820f4389",
+      "692a6d695f24dee0820f436c",
+      "692a6d695f24dee0820f436e",
+      "692a6d695f24dee0820f4370",
+      "692a6d695f24dee0820f436a",
+      "692a6d6e5f24dee0820f443b",
+      "692a7d11e5ab08399d2e5c60",
+      "692a6d6e5f24dee0820f4441",
+      "692a7d11e5ab08399d2e5c65",
+      "692a6d6e5f24dee0820f4447",
+      "692a6d6e5f24dee0820f444a",
+      "692a6d6e5f24dee0820f444d",
+      "692a6d6e5f24dee0820f4460",
+      "692a6d6e5f24dee0820f4462",
+      "692a6d6e5f24dee0820f4464",
+      "692a6d6e5f24dee0820f4466",
+      "692a6d6e5f24dee0820f4468",
+      "692a6d6e5f24dee0820f446d",
+      "692a6d6e5f24dee0820f446f",
+      "692a6d6e5f24dee0820f4471",
+      "692a6d6e5f24dee0820f4473",
+      "692a9468e5ab08399d2e6064",
+      "692a9469e5ab08399d2e6068",
+      "692a9469e5ab08399d2e606b",
+      "692a9469e5ab08399d2e606e",
+      "692a9469e5ab08399d2e6071",
+      "692a6d6e5f24dee0820f4487",
+      "692a6d71e5ab08399d2e55ef",
+      "692a6d71e5ab08399d2e55f2",
+      "692a6d755f24dee0820f44e8",
+      "692a6d755f24dee0820f44ea",
+      "692a6d755f24dee0820f44ec"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-01-11T08:59:53.825Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 50,
+  "totalSections": 7,
+  "completedFlowsCount": 50,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-01-11T08:40:25.620Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-01-11T08:59:53.831Z"
+  },
+  "createdAt": {
+    "$date": "2026-01-11T08:40:25.620Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-11T08:59:53.831Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-01-11T08:59:53.831Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "696aef5603eb29e88a0a14b5"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3672543",
+  "scriptId": {
+    "$oid": "691e99da4476bea8a902c38b"
+  },
+  "scriptVersionId": {
+    "$oid": "692911105f24dee0820ecb7b"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1333431,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "69250556a01411a7bfab3386",
+    "currentFlowId": "69250556a01411a7bfab3385",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "6925053aa01411a7bfab3236",
+      "6925053aa01411a7bfab3239",
+      "6925053f90cb95f727f3238a",
+      "6925053f90cb95f727f3238d",
+      "6925053f90cb95f727f3238f",
+      "69250545a01411a7bfab3270",
+      "69250545a01411a7bfab3273",
+      "6925054990cb95f727f323f3",
+      "69251a8ea01411a7bfab35fc",
+      "6925054990cb95f727f323f9",
+      "6925054990cb95f727f323fb",
+      "69251a8ea01411a7bfab3600",
+      "69251a8ea01411a7bfab3603",
+      "69251a8ea01411a7bfab3607",
+      "69251a8ea01411a7bfab360b",
+      "69251a8ea01411a7bfab360e",
+      "69251a8ea01411a7bfab3611",
+      "69251a8ea01411a7bfab3614",
+      "69251a8ea01411a7bfab3617",
+      "69251a8ea01411a7bfab361a",
+      "6925054990cb95f727f32401",
+      "6925054990cb95f727f32403",
+      "6925054990cb95f727f32405",
+      "6925054990cb95f727f32407",
+      "6925054990cb95f727f32409",
+      "6925054990cb95f727f32427",
+      "6925054990cb95f727f32429",
+      "6925054990cb95f727f3242b",
+      "6925054990cb95f727f3242d",
+      "6925054990cb95f727f3242f",
+      "6925054da01411a7bfab32d4",
+      "69251b3c90cb95f727f328a9",
+      "69251b3c90cb95f727f328ad",
+      "69251b3c90cb95f727f328b1",
+      "6925054da01411a7bfab32e3",
+      "6925054da01411a7bfab32e6",
+      "6925054da01411a7bfab32f9",
+      "6925054da01411a7bfab32fb",
+      "6925054da01411a7bfab32fd",
+      "6925054da01411a7bfab32ff",
+      "6925054da01411a7bfab3301",
+      "6925054da01411a7bfab3306",
+      "6925054da01411a7bfab3308",
+      "6925054da01411a7bfab330a",
+      "6925054da01411a7bfab330c",
+      "6925054da01411a7bfab330e",
+      "6925054da01411a7bfab32e9",
+      "6925054da01411a7bfab32eb",
+      "6925054da01411a7bfab32ed",
+      "6925054da01411a7bfab32ef",
+      "6925054da01411a7bfab32f1",
+      "6925054da01411a7bfab3320",
+      "6925055290cb95f727f324a7",
+      "6925055290cb95f727f324aa",
+      "69250556a01411a7bfab3381",
+      "69250556a01411a7bfab3383",
+      "69250556a01411a7bfab3385"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-01-17T02:31:39.840Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 57,
+  "totalSections": 7,
+  "completedFlowsCount": 57,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-01-17T02:09:26.096Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-01-17T02:31:39.847Z"
+  },
+  "createdAt": {
+    "$date": "2026-01-17T02:09:26.096Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-17T02:31:39.847Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-01-17T02:31:39.847Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "696c882503eb29e88a0ae60a"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3672544",
+  "scriptId": {
+    "$oid": "691fd44d90cb95f727f1b4d1"
+  },
+  "scriptVersionId": {
+    "$oid": "694a1deb1ecc2be773923b06"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1334969,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "69314bd75f24dee08210c83a",
+    "currentFlowId": "69314bd75f24dee08210c839",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "69314bbb5f24dee08210c6e7",
+      "69314bbb5f24dee08210c6ea",
+      "69314bc0e5ab08399d2fd7b3",
+      "69314bc0e5ab08399d2fd7b6",
+      "69314bc0e5ab08399d2fd7b8",
+      "69314bc35f24dee08210c721",
+      "69314bc35f24dee08210c724",
+      "69314bcbe5ab08399d2fd820",
+      "693157e7e5ab08399d2fdac4",
+      "69314bcbe5ab08399d2fd826",
+      "69314bcbe5ab08399d2fd828",
+      "693157e7e5ab08399d2fdac8",
+      "693157e7e5ab08399d2fdacc",
+      "693157e7e5ab08399d2fdad0",
+      "693157e7e5ab08399d2fdad3",
+      "693157e7e5ab08399d2fdad6",
+      "693157e7e5ab08399d2fdada",
+      "693157e7e5ab08399d2fdade",
+      "693157e7e5ab08399d2fdae1",
+      "693157e7e5ab08399d2fdae4",
+      "69314bcbe5ab08399d2fd82b",
+      "69314bcbe5ab08399d2fd847",
+      "69314bcbe5ab08399d2fd849",
+      "69314bcbe5ab08399d2fd84b",
+      "69314bcbe5ab08399d2fd84d",
+      "69314bcbe5ab08399d2fd82e",
+      "69314bcbe5ab08399d2fd830",
+      "69314bcbe5ab08399d2fd832",
+      "69314bcbe5ab08399d2fd834",
+      "69314bcbe5ab08399d2fd854",
+      "69314bcbe5ab08399d2fd856",
+      "69314bcbe5ab08399d2fd858",
+      "69314bcbe5ab08399d2fd85a",
+      "69314bcbe5ab08399d2fd871",
+      "69314bcf5f24dee08210c788",
+      "6931c82ce5ab08399d3021b8",
+      "6931c82ce5ab08399d3021bb",
+      "6931c82ce5ab08399d3021be",
+      "69314bcf5f24dee08210c797",
+      "69314bcf5f24dee08210c79a",
+      "69314bcf5f24dee08210c7ad",
+      "69314bcf5f24dee08210c7af",
+      "69314bcf5f24dee08210c7b1",
+      "69314bcf5f24dee08210c7b3",
+      "69314bcf5f24dee08210c7ba",
+      "69314bcf5f24dee08210c7bc",
+      "69314bcf5f24dee08210c7be",
+      "69314bcf5f24dee08210c7c0",
+      "69314bcf5f24dee08210c7c2",
+      "6931c82ce5ab08399d3021c6",
+      "6931c82ce5ab08399d3021c9",
+      "6931c82ce5ab08399d3021cc",
+      "6931c82ce5ab08399d3021cf",
+      "69314bcf5f24dee08210c7d4",
+      "69314bd3e5ab08399d2fd8d4",
+      "69314bd3e5ab08399d2fd8d7",
+      "69314bd75f24dee08210c835",
+      "69314bd75f24dee08210c837",
+      "69314bd75f24dee08210c839"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-01-18T07:35:56.313Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 59,
+  "totalSections": 7,
+  "completedFlowsCount": 59,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-01-18T07:13:41.039Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-01-18T07:35:56.324Z"
+  },
+  "createdAt": {
+    "$date": "2026-01-18T07:13:41.040Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-18T07:35:56.324Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-01-18T07:35:56.324Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "696f78f03034135589b37258"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3687463",
+  "scriptId": {
+    "$oid": "6926684d5f24dee0820e122f"
+  },
+  "scriptVersionId": {
+    "$oid": "694a207f113d0f60577ea866"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1305614,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "692e8d655f24dee082102d23",
+    "currentFlowId": "692e8d655f24dee082102d22",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "692e8d4ce5ab08399d2f415d",
+      "692e8d4ce5ab08399d2f4160",
+      "692e8d505f24dee082102b2a",
+      "692e8d505f24dee082102b2d",
+      "692e8d505f24dee082102b2f",
+      "692e8d54e5ab08399d2f4197",
+      "692e8d54e5ab08399d2f419a",
+      "692e8d585f24dee082102b93",
+      "692e914a5f24dee08210300d",
+      "692e8d585f24dee082102b99",
+      "692e8d585f24dee082102b9b",
+      "692e914a5f24dee082103011",
+      "692e914a5f24dee082103015",
+      "692e914a5f24dee082103019",
+      "692e914a5f24dee08210301c",
+      "692e914a5f24dee08210301f",
+      "692e914a5f24dee082103023",
+      "692e914a5f24dee082103027",
+      "692e914a5f24dee08210302a",
+      "692e8d585f24dee082102ba1",
+      "692e8d585f24dee082102ba3",
+      "692e8d585f24dee082102ba5",
+      "692e8d585f24dee082102ba7",
+      "692e8d585f24dee082102ba9",
+      "692e8d585f24dee082102bc7",
+      "692e8d585f24dee082102bc9",
+      "692e8d585f24dee082102bcb",
+      "692e8d585f24dee082102bcd",
+      "692e8d585f24dee082102bcf",
+      "692e8d585f24dee082102bae",
+      "692e8d5e5f24dee082102c71",
+      "692ea2bae5ab08399d2f4b06",
+      "692ea2bae5ab08399d2f4b0a",
+      "692ea2bae5ab08399d2f4b0d",
+      "692ea2bae5ab08399d2f4b10",
+      "692e8d5e5f24dee082102c80",
+      "692e8d5e5f24dee082102c83",
+      "692ea2bae5ab08399d2f4b16",
+      "692ea2bae5ab08399d2f4b19",
+      "692ea2bae5ab08399d2f4b1c",
+      "692e8d5e5f24dee082102c86",
+      "692e8d5e5f24dee082102c88",
+      "692e8d5e5f24dee082102c8a",
+      "692e8d5e5f24dee082102c8c",
+      "692e8d5e5f24dee082102c8e",
+      "692e8d5e5f24dee082102ca3",
+      "692e8d5e5f24dee082102ca5",
+      "692e8d5e5f24dee082102ca7",
+      "692e8d5e5f24dee082102ca9",
+      "692e8d5e5f24dee082102cab",
+      "692e8d61e5ab08399d2f41d6",
+      "692e8d61e5ab08399d2f41d9",
+      "692e8d655f24dee082102d1e",
+      "692e8d655f24dee082102d20",
+      "692e8d655f24dee082102d22"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-01-20T13:07:22.895Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 55,
+  "totalSections": 7,
+  "completedFlowsCount": 55,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-01-20T12:45:36.765Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-01-20T13:07:22.906Z"
+  },
+  "createdAt": {
+    "$date": "2026-01-20T12:45:36.765Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-20T13:07:22.906Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-01-20T13:07:22.906Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6975dd0e03eb29e88a13ffc2"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3687464",
+  "scriptId": {
+    "$oid": "6927ba2e5f24dee0820e7162"
+  },
+  "scriptVersionId": {
+    "$oid": "694a21ac113d0f60577eaa34"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1338004,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "692ea9da5f24dee082103df3",
+    "currentFlowId": "692ea9da5f24dee082103df2",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "692ea9c7e5ab08399d2f5058",
+      "692ea9c7e5ab08399d2f505b",
+      "692ea9c3e5ab08399d2f501d",
+      "692ea9c3e5ab08399d2f5020",
+      "692ea9c3e5ab08399d2f5022",
+      "692ea9ca5f24dee082103cd7",
+      "692ea9ca5f24dee082103cda",
+      "692ea9cee5ab08399d2f50c8",
+      "692ea9cee5ab08399d2f50cb",
+      "692ea9cee5ab08399d2f50ce",
+      "692ea9cee5ab08399d2f50d0",
+      "692f02e85f24dee082107e62",
+      "692f02e85f24dee082107e66",
+      "692f02e85f24dee082107e69",
+      "692ea9cee5ab08399d2f50d3",
+      "692ea9cee5ab08399d2f50d6",
+      "692ea9cee5ab08399d2f50d8",
+      "692ea9cee5ab08399d2f50da",
+      "692ea9cee5ab08399d2f50dc",
+      "692ea9cee5ab08399d2f50de",
+      "692ea9cee5ab08399d2f50fc",
+      "692ea9cee5ab08399d2f50fe",
+      "692ea9cee5ab08399d2f5100",
+      "692ea9cee5ab08399d2f5102",
+      "692ea9cee5ab08399d2f5104",
+      "692ea9cee5ab08399d2f50e3",
+      "692ea9d25f24dee082103d41",
+      "692f090c5f24dee082108250",
+      "692ea9d25f24dee082103d47",
+      "692f090c5f24dee082108254",
+      "692ea9d25f24dee082103d50",
+      "692ea9d25f24dee082103d53",
+      "692ea9d25f24dee082103d66",
+      "692ea9d25f24dee082103d68",
+      "692ea9d25f24dee082103d6a",
+      "692ea9d25f24dee082103d6c",
+      "692f090c5f24dee08210825b",
+      "692f090c5f24dee08210825e",
+      "692f090c5f24dee082108261",
+      "692f090c5f24dee082108264",
+      "692ea9d25f24dee082103d73",
+      "692ea9d25f24dee082103d75",
+      "692ea9d25f24dee082103d77",
+      "692ea9d25f24dee082103d79",
+      "692ea9d6e5ab08399d2f5180",
+      "692ea9d6e5ab08399d2f5183",
+      "692ea9da5f24dee082103dee",
+      "692ea9da5f24dee082103df0",
+      "692ea9da5f24dee082103df2"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-01-25T09:28:40.458Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 49,
+  "totalSections": 7,
+  "completedFlowsCount": 49,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-01-25T09:06:22.012Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-01-25T09:28:40.466Z"
+  },
+  "createdAt": {
+    "$date": "2026-01-25T09:06:22.013Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-25T09:28:40.467Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-01-25T09:28:40.466Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6978ae9a0f7fe4b5e1c976bd"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3687465",
+  "scriptId": {
+    "$oid": "6927c75c5f24dee0820e742e"
+  },
+  "scriptVersionId": {
+    "$oid": "694a3d90113d0f60577ebb39"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1152077,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "692fb78c5f24dee082109152",
+    "currentFlowId": "692fb78c5f24dee082109151",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "692fb75e5f24dee082108ffb",
+      "692fb75e5f24dee082108ffe",
+      "692fb76ee5ab08399d2f9d10",
+      "692fb76ee5ab08399d2f9d13",
+      "692fb76ee5ab08399d2f9d15",
+      "692fb7745f24dee08210903c",
+      "692fb7745f24dee08210903f",
+      "692fb77ae5ab08399d2f9d79",
+      "692fe2b5e5ab08399d2fa3a8",
+      "692fb77ae5ab08399d2f9d7f",
+      "692fb77ae5ab08399d2f9d81",
+      "692fe2b5e5ab08399d2fa3ac",
+      "692fe2b5e5ab08399d2fa3b0",
+      "692fe2b5e5ab08399d2fa3b4",
+      "692fe2b5e5ab08399d2fa3b7",
+      "692fe2b5e5ab08399d2fa3ba",
+      "692fb77ae5ab08399d2f9d84",
+      "692fb77ae5ab08399d2f9da0",
+      "692fb77ae5ab08399d2f9da2",
+      "692fb77ae5ab08399d2f9da4",
+      "692fb77ae5ab08399d2f9da6",
+      "692fb77ae5ab08399d2f9da8",
+      "692fb77ae5ab08399d2f9d87",
+      "692fb77ae5ab08399d2f9d89",
+      "692fb77ae5ab08399d2f9d8b",
+      "692fb77ae5ab08399d2f9d8d",
+      "692fb77ae5ab08399d2f9d94",
+      "692fb77ae5ab08399d2f9dca",
+      "692fb7825f24dee0821090a0",
+      "692fe836e5ab08399d2fa5c1",
+      "692fb7825f24dee0821090a6",
+      "692fb7825f24dee0821090af",
+      "692fb7825f24dee0821090b2",
+      "692fb7825f24dee0821090d2",
+      "692fb7825f24dee0821090d4",
+      "692fb7825f24dee0821090d6",
+      "692fb7825f24dee0821090c5",
+      "692fb7825f24dee0821090c7",
+      "692fb7825f24dee0821090c9",
+      "692fb7825f24dee0821090cb",
+      "692fb7825f24dee0821090cd",
+      "692fb7825f24dee0821090b5",
+      "692fb7825f24dee0821090b7",
+      "692fb7825f24dee0821090b9",
+      "692fb7825f24dee0821090bb",
+      "692fb7825f24dee0821090bd",
+      "692fb7825f24dee0821090ec",
+      "692fb787e5ab08399d2f9e2d",
+      "692fb787e5ab08399d2f9e30",
+      "692fb78c5f24dee08210914d",
+      "692fb78c5f24dee08210914f",
+      "692fb78c5f24dee082109151"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-01-27T12:44:11.854Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 52,
+  "totalSections": 7,
+  "completedFlowsCount": 52,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-01-27T12:24:58.155Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-01-27T12:44:11.862Z"
+  },
+  "createdAt": {
+    "$date": "2026-01-27T12:24:58.155Z"
+  },
+  "updatedAt": {
+    "$date": "2026-01-27T12:44:11.862Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-01-27T12:44:11.862Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6981e785881759ad0c4e4ab9"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3687467",
+  "scriptId": {
+    "$oid": "693a78fd113d0f6057732593"
+  },
+  "scriptVersionId": {
+    "$oid": "694a421b113d0f60577ec0a6"
+  },
+  "versionNumber": 2,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1221681,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "69422902113d0f6057779120",
+    "currentFlowId": "69422902113d0f605777911f",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "694228f0113d0f6057778fd3",
+      "694228f0113d0f6057778fd6",
+      "694228f21ecc2be7738b08df",
+      "694228f21ecc2be7738b08e2",
+      "694228f21ecc2be7738b08e4",
+      "694228f5113d0f605777900c",
+      "694228f5113d0f605777900e",
+      "694228f81ecc2be7738b0948",
+      "6942296d1ecc2be7738b0ac8",
+      "694228f81ecc2be7738b094e",
+      "694228f81ecc2be7738b0950",
+      "6942296d1ecc2be7738b0acc",
+      "6942296d1ecc2be7738b0acf",
+      "6942296d1ecc2be7738b0ad2",
+      "6942296d1ecc2be7738b0ad5",
+      "6942296d1ecc2be7738b0ad8",
+      "6942296d1ecc2be7738b0adb",
+      "694228f81ecc2be7738b0953",
+      "694228f81ecc2be7738b0956",
+      "694228f81ecc2be7738b0958",
+      "694228f81ecc2be7738b095a",
+      "694228f81ecc2be7738b095c",
+      "694228f81ecc2be7738b095e",
+      "694228f81ecc2be7738b096f",
+      "694228f81ecc2be7738b0971",
+      "694228f81ecc2be7738b0973",
+      "694228f81ecc2be7738b0975",
+      "694228f81ecc2be7738b0977",
+      "6942296d1ecc2be7738b0ae2",
+      "6942296d1ecc2be7738b0ae5",
+      "6942296d1ecc2be7738b0ae8",
+      "6942296d1ecc2be7738b0aeb",
+      "6942296d1ecc2be7738b0aee",
+      "694228f81ecc2be7738b0999",
+      "694228fc113d0f605777906e",
+      "694234e41ecc2be7738b157a",
+      "694228fc113d0f6057779080",
+      "694236e91ecc2be7738b1768",
+      "694234e41ecc2be7738b157f",
+      "694234e41ecc2be7738b1582",
+      "694234e41ecc2be7738b1585",
+      "694228fc113d0f6057779093",
+      "694228fc113d0f6057779095",
+      "694228fc113d0f6057779097",
+      "694228fc113d0f6057779099",
+      "694228fc113d0f605777909b",
+      "694228fc113d0f60577790a0",
+      "694228fc113d0f60577790a2",
+      "694228fc113d0f60577790a4",
+      "694228fc113d0f60577790a6",
+      "694228fc113d0f60577790ba",
+      "694228ff1ecc2be7738b09fc",
+      "694228ff1ecc2be7738b09ff",
+      "69422902113d0f605777911b",
+      "69422902113d0f605777911d",
+      "69422902113d0f605777911f"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-02-03T12:38:35.614Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 56,
+  "totalSections": 7,
+  "completedFlowsCount": 56,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-02-03T12:18:13.654Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-02-03T12:38:35.621Z"
+  },
+  "createdAt": {
+    "$date": "2026-02-03T12:18:13.655Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-03T12:38:35.621Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-02-03T12:38:35.621Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "698846580b8640e5d56d6687"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3687468",
+  "scriptId": {
+    "$oid": "6944f6b6113d0f605779efcb"
+  },
+  "scriptVersionId": {
+    "$oid": "695b2fc7f33d0f136d7ed351"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 266067,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "69465209113d0f60577b9dc5",
+    "currentFlowId": "69465209113d0f60577b9dc4",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "currentCups": 0,
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "694651f1113d0f60577b9c74",
+      "694651f1113d0f60577b9c77",
+      "694651f51ecc2be7738f2906",
+      "694651f51ecc2be7738f2909",
+      "694651f51ecc2be7738f290b",
+      "694651f9113d0f60577b9cad",
+      "694651f9113d0f60577b9caf",
+      "694651fc1ecc2be7738f296f",
+      "694658b81ecc2be7738f40fb",
+      "694651fc1ecc2be7738f2975",
+      "694651fc1ecc2be7738f2977",
+      "694658b81ecc2be7738f40ff",
+      "694658b81ecc2be7738f4102",
+      "694658b81ecc2be7738f4106",
+      "694658b81ecc2be7738f410a",
+      "694658b81ecc2be7738f410d",
+      "694658b81ecc2be7738f4110",
+      "694658b81ecc2be7738f4113",
+      "694651fc1ecc2be7738f29a3",
+      "694651fc1ecc2be7738f29a5",
+      "694651fc1ecc2be7738f29a7",
+      "694651fc1ecc2be7738f29a9",
+      "694651fc1ecc2be7738f29ab",
+      "694651fc1ecc2be7738f2996",
+      "694651fc1ecc2be7738f2998",
+      "694651fc1ecc2be7738f299a",
+      "694651fc1ecc2be7738f299c",
+      "694651fc1ecc2be7738f299e",
+      "694658b81ecc2be7738f4119",
+      "694658b81ecc2be7738f411c",
+      "694658b81ecc2be7738f411f",
+      "694658b81ecc2be7738f4122",
+      "694658b81ecc2be7738f4125",
+      "69465201113d0f60577b9d0f",
+      "69466448113d0f60577bc7ce",
+      "69465201113d0f60577b9d15",
+      "69466448113d0f60577bc7d2",
+      "69465201113d0f60577b9d1e",
+      "69465201113d0f60577b9d21",
+      "69465201113d0f60577b9d41",
+      "69465201113d0f60577b9d43",
+      "69465201113d0f60577b9d45",
+      "69465201113d0f60577b9d47",
+      "69465201113d0f60577b9d49",
+      "69465201113d0f60577b9d34",
+      "69465201113d0f60577b9d36",
+      "69465201113d0f60577b9d38",
+      "69465201113d0f60577b9d3a",
+      "69465201113d0f60577b9d3c",
+      "69490634113d0f60577ded4d",
+      "69490634113d0f60577ded50",
+      "69490634113d0f60577ded53",
+      "694652051ecc2be7738f2a23",
+      "694652051ecc2be7738f2a26",
+      "69465209113d0f60577b9dc0",
+      "69465209113d0f60577b9dc2",
+      "69465209113d0f60577b9dc4"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-02-08T08:43:39.266Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 57,
+  "totalSections": 7,
+  "completedFlowsCount": 57,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-02-08T08:16:24.827Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-02-08T08:43:39.273Z"
+  },
+  "createdAt": {
+    "$date": "2026-02-08T08:16:24.827Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-08T08:43:39.274Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-02-08T08:43:39.273Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "698b1cc26107d676b6aead9e"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3744891",
+  "scriptId": {
+    "$oid": "69450b7a113d0f60577a0523"
+  },
+  "scriptVersionId": {
+    "$oid": "695b30c8e4526c242fe2b21d"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1699419,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "6946a28c1ecc2be77390080d",
+    "currentFlowId": "6946a28c1ecc2be77390080c",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "currentCups": 0,
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "6946a2731ecc2be7739006e8",
+      "6946a2731ecc2be7739006eb",
+      "6946a2761ecc2be77390073e",
+      "6946a2761ecc2be773900741",
+      "6946a2761ecc2be773900743",
+      "6946a27a113d0f60577c7268",
+      "6946a27a113d0f60577c726a",
+      "6946a27d113d0f60577c72da",
+      "6946a27d113d0f60577c72dd",
+      "6946a27d113d0f60577c72e0",
+      "6946a27d113d0f60577c72e2",
+      "6946a906113d0f60577c958c",
+      "6946a906113d0f60577c9590",
+      "6946a906113d0f60577c9593",
+      "6946a906113d0f60577c9596",
+      "6946a906113d0f60577c9599",
+      "6946a27d113d0f60577c730e",
+      "6946a27d113d0f60577c7310",
+      "6946a27d113d0f60577c7312",
+      "6946a27d113d0f60577c7314",
+      "6946a27d113d0f60577c7316",
+      "6946a27d113d0f60577c72e8",
+      "6946a27d113d0f60577c72ea",
+      "6946a27d113d0f60577c72ec",
+      "6946a27d113d0f60577c72ee",
+      "6946a27d113d0f60577c72f0",
+      "6946a27d113d0f60577c7301",
+      "6946a27d113d0f60577c7303",
+      "6946a27d113d0f60577c7305",
+      "6946a27d113d0f60577c7307",
+      "6946a27d113d0f60577c7309",
+      "6946a281113d0f60577c73c5",
+      "6946b127113d0f60577ca6ec",
+      "6946a281113d0f60577c73cb",
+      "6946b127113d0f60577ca6f1",
+      "6946a281113d0f60577c73d1",
+      "6946a281113d0f60577c73d4",
+      "6946a281113d0f60577c73d7",
+      "6946a281113d0f60577c73f7",
+      "6946a281113d0f60577c73f9",
+      "6946a281113d0f60577c73fb",
+      "6946a281113d0f60577c73fd",
+      "6946a281113d0f60577c73ff",
+      "6946a281113d0f60577c73ea",
+      "6946a281113d0f60577c73ec",
+      "6946a281113d0f60577c73ee",
+      "6946a281113d0f60577c73f0",
+      "6946a281113d0f60577c73f2",
+      "6946b127113d0f60577ca6fa",
+      "6946b127113d0f60577ca6fd",
+      "6946b127113d0f60577ca700",
+      "6946b127113d0f60577ca703",
+      "6946b127113d0f60577ca706",
+      "6946a285113d0f60577c7483",
+      "6946a285113d0f60577c7486",
+      "6946a28c1ecc2be773900808",
+      "6946a28c1ecc2be77390080a",
+      "6946a28c1ecc2be77390080c"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-02-10T12:24:06.796Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 58,
+  "totalSections": 7,
+  "completedFlowsCount": 58,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-02-10T11:55:46.981Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-02-10T12:24:06.802Z"
+  },
+  "createdAt": {
+    "$date": "2026-02-10T11:55:46.981Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-10T12:24:06.802Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-02-10T12:24:06.802Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "698c7bab8b8142519407b300"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3744892",
+  "scriptId": {
+    "$oid": "69464efb113d0f60577b9a48"
+  },
+  "scriptVersionId": {
+    "$oid": "695b332be4526c242fe2b329"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1514206,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "6949f6b7113d0f60577e8972",
+    "currentFlowId": "6949f6b7113d0f60577e8971",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "currentCups": 0,
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "6949f69b113d0f60577e8822",
+      "6949f69b113d0f60577e8825",
+      "6949f69e1ecc2be773921efb",
+      "6949f69e1ecc2be773921efe",
+      "6949f69e1ecc2be773921f00",
+      "6949f6a2113d0f60577e885e",
+      "6949f6a2113d0f60577e8860",
+      "6949f6a61ecc2be773921f64",
+      "6949fc7a113d0f60577e8b86",
+      "6949f6a61ecc2be773921f6a",
+      "6949f6a61ecc2be773921f6c",
+      "6949fc7a113d0f60577e8b8a",
+      "6949fc7a113d0f60577e8b8e",
+      "6949fc7a113d0f60577e8b92",
+      "6949fc7a113d0f60577e8b95",
+      "6949fc7a113d0f60577e8b98",
+      "6949f6a61ecc2be773921f6f",
+      "6949f6a61ecc2be773921f72",
+      "6949f6a61ecc2be773921f74",
+      "6949f6a61ecc2be773921f76",
+      "6949f6a61ecc2be773921f78",
+      "6949f6a61ecc2be773921f7a",
+      "6949f6a61ecc2be773921f8b",
+      "6949f6a61ecc2be773921f8d",
+      "6949f6a61ecc2be773921f8f",
+      "6949f6a61ecc2be773921f91",
+      "6949f6a61ecc2be773921f93",
+      "6949f6a61ecc2be773921f98",
+      "6949f6a61ecc2be773921f9a",
+      "6949f6a61ecc2be773921f9c",
+      "6949f6a61ecc2be773921f9e",
+      "6949f6a61ecc2be773921fb5",
+      "6949f6b0113d0f60577e88c0",
+      "694a03b31ecc2be77392229c",
+      "6949f6b0113d0f60577e88c6",
+      "694a03b31ecc2be7739222a1",
+      "6949f6b0113d0f60577e88cc",
+      "6949f6b0113d0f60577e88cf",
+      "6949f6b0113d0f60577e88d2",
+      "6949f6b0113d0f60577e88e5",
+      "6949f6b0113d0f60577e88e7",
+      "6949f6b0113d0f60577e88e9",
+      "6949f6b0113d0f60577e88eb",
+      "6949f6b0113d0f60577e88f2",
+      "6949f6b0113d0f60577e88f4",
+      "6949f6b0113d0f60577e88f6",
+      "6949f6b0113d0f60577e88f8",
+      "694a03b31ecc2be7739222aa",
+      "694a03b31ecc2be7739222ad",
+      "694a03b31ecc2be7739222b0",
+      "694a03b31ecc2be7739222b3",
+      "6949f6b0113d0f60577e890c",
+      "6949f6b41ecc2be773922018",
+      "6949f6b41ecc2be77392201b",
+      "6949f6b7113d0f60577e896d",
+      "6949f6b7113d0f60577e896f",
+      "6949f6b7113d0f60577e8971"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-02-11T13:18:14.893Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 57,
+  "totalSections": 7,
+  "completedFlowsCount": 57,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-02-11T12:52:59.425Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-02-11T13:18:14.901Z"
+  },
+  "createdAt": {
+    "$date": "2026-02-11T12:52:59.426Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-11T13:18:14.902Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-02-11T13:18:14.901Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "699d9e8c51f5b7ce2fa46374"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3766993",
+  "scriptId": {
+    "$oid": "6946a0641ecc2be7738ff667"
+  },
+  "scriptVersionId": {
+    "$oid": "695b33e8e4526c242fe2b3b6"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1596752,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "694a0a1e113d0f60577e90b0",
+    "currentFlowId": "694a0a1e113d0f60577e90af",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "currentCups": 0,
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "694a0a0b113d0f60577e8f63",
+      "694a0a0b113d0f60577e8f66",
+      "694a0a0e1ecc2be7739225e4",
+      "694a0a0e1ecc2be7739225e7",
+      "694a0a0e1ecc2be7739225e9",
+      "694a0a11113d0f60577e8f9c",
+      "694a0a11113d0f60577e8f9e",
+      "694a0a141ecc2be77392264d",
+      "694a0f46113d0f60577e956a",
+      "694a0a141ecc2be773922653",
+      "694a0a141ecc2be773922655",
+      "694a0f46113d0f60577e956e",
+      "694a0f46113d0f60577e9571",
+      "694a0f46113d0f60577e9574",
+      "694a0f46113d0f60577e9577",
+      "694a0f46113d0f60577e957b",
+      "694a0f46113d0f60577e957f",
+      "694a0f46113d0f60577e9582",
+      "694a0f46113d0f60577e9585",
+      "694a0f46113d0f60577e9588",
+      "694a0f46113d0f60577e958b",
+      "694a0f46113d0f60577e958e",
+      "694a0f46113d0f60577e9591",
+      "694a0a141ecc2be773922658",
+      "694a0a141ecc2be773922674",
+      "694a0a141ecc2be773922676",
+      "694a0a141ecc2be773922678",
+      "694a0a141ecc2be77392267a",
+      "694a0a141ecc2be77392267c",
+      "694a0a141ecc2be77392265b",
+      "694a0a141ecc2be77392265d",
+      "694a0a141ecc2be77392265f",
+      "694a0a141ecc2be773922661",
+      "694a0a151ecc2be773922681",
+      "694a0a151ecc2be773922683",
+      "694a0a151ecc2be773922685",
+      "694a0a151ecc2be773922687",
+      "694a0a151ecc2be77392269e",
+      "694a0a18113d0f60577e8ffe",
+      "694a110c113d0f60577e9881",
+      "694a110c113d0f60577e9884",
+      "694a110c113d0f60577e9887",
+      "694a0a18113d0f60577e900d",
+      "694a0a18113d0f60577e9010",
+      "694a0a18113d0f60577e9030",
+      "694a0a18113d0f60577e9032",
+      "694a0a18113d0f60577e9034",
+      "694a0a18113d0f60577e9036",
+      "694a0a18113d0f60577e9038",
+      "694a0a18113d0f60577e9023",
+      "694a0a18113d0f60577e9025",
+      "694a0a18113d0f60577e9027",
+      "694a0a18113d0f60577e9029",
+      "694a110c113d0f60577e988f",
+      "694a110c113d0f60577e9892",
+      "694a110c113d0f60577e9898",
+      "694a110c113d0f60577e9895",
+      "694a0a18113d0f60577e904a",
+      "694a0a1b1ecc2be773922701",
+      "694a0a1b1ecc2be773922704",
+      "694a0a1e113d0f60577e90ab",
+      "694a0a1e113d0f60577e90ad",
+      "694a0a1e113d0f60577e90af"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-02-24T13:16:57.198Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 63,
+  "totalSections": 7,
+  "completedFlowsCount": 63,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-02-24T12:50:20.078Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-02-24T13:16:57.207Z"
+  },
+  "createdAt": {
+    "$date": "2026-02-24T12:50:20.078Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-24T13:16:57.207Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-02-24T13:16:57.207Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "699eea2bf27f0653c92fec47"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3766994",
+  "scriptId": {
+    "$oid": "6946b8f1113d0f60577cbc20"
+  },
+  "scriptVersionId": {
+    "$oid": "695b34cbf33d0f136d7ed557"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1813289,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "694a52eb113d0f60577ec8d3",
+    "currentFlowId": "694a52eb113d0f60577ec8d2",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "currentCups": 0,
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "694a52d7113d0f60577ec786",
+      "694a52d7113d0f60577ec789",
+      "694a52da1ecc2be773925f88",
+      "694a52da1ecc2be773925f8b",
+      "694a52da1ecc2be773925f8d",
+      "694a52dd113d0f60577ec7bf",
+      "694a52dd113d0f60577ec7c1",
+      "694a52e11ecc2be773925ff1",
+      "694a56e2113d0f60577ecb11",
+      "694a52e11ecc2be773925ff7",
+      "694a52e11ecc2be773925ff9",
+      "694a56e2113d0f60577ecb15",
+      "694a56e2113d0f60577ecb18",
+      "694a56e2113d0f60577ecb1b",
+      "694a56e2113d0f60577ecb1e",
+      "694a56e2113d0f60577ecb21",
+      "694a56e2113d0f60577ecb24",
+      "694a56e2113d0f60577ecb28",
+      "694a56e2113d0f60577ecb2c",
+      "694a56e2113d0f60577ecb2f",
+      "694a56e2113d0f60577ecb32",
+      "694a56e2113d0f60577ecb35",
+      "694a56e2113d0f60577ecb38",
+      "694a52e11ecc2be773925ffc",
+      "694a52e11ecc2be77392600c",
+      "694a56e2113d0f60577ecb3e",
+      "694a52e11ecc2be773926018",
+      "694a52e11ecc2be77392601a",
+      "694a52e11ecc2be77392601c",
+      "694a52e11ecc2be77392601e",
+      "694a52e11ecc2be773926020",
+      "694a56e2113d0f60577ecb43",
+      "694a56e2113d0f60577ecb46",
+      "694a56e2113d0f60577ecb49",
+      "694a56e2113d0f60577ecb4c",
+      "694a56e2113d0f60577ecb4f",
+      "694a52e11ecc2be773926042",
+      "694a52e4113d0f60577ec821",
+      "694a5747113d0f60577ecc34",
+      "694a5747113d0f60577ecc37",
+      "694a52e5113d0f60577ec830",
+      "694a52e5113d0f60577ec833",
+      "694a52e5113d0f60577ec846",
+      "694a52e5113d0f60577ec848",
+      "694a52e5113d0f60577ec84a",
+      "694a52e5113d0f60577ec84c",
+      "694a52e5113d0f60577ec84e",
+      "694a52e5113d0f60577ec853",
+      "694a52e5113d0f60577ec855",
+      "694a52e5113d0f60577ec857",
+      "694a52e5113d0f60577ec859",
+      "694a5747113d0f60577ecc3f",
+      "694a5747113d0f60577ecc42",
+      "694a5747113d0f60577ecc45",
+      "694a5747113d0f60577ecc48",
+      "694a52e5113d0f60577ec86d",
+      "694a52e81ecc2be7739260a5",
+      "694a52e81ecc2be7739260a8",
+      "694a52eb113d0f60577ec8ce",
+      "694a52eb113d0f60577ec8d0",
+      "694a52eb113d0f60577ec8d2"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-02-25T12:56:11.508Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 61,
+  "totalSections": 7,
+  "completedFlowsCount": 61,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-02-25T12:25:15.558Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-02-25T12:56:11.515Z"
+  },
+  "createdAt": {
+    "$date": "2026-02-25T12:25:15.561Z"
+  },
+  "updatedAt": {
+    "$date": "2026-02-25T12:56:11.516Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-02-25T12:56:11.515Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69a6deed0fa3de72796e3e93"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3766995",
+  "scriptId": {
+    "$oid": "697c6f7f0f7fe4b5e1cdf3dc"
+  },
+  "scriptVersionId": {
+    "$oid": "69a50e380fa3de72796b4130"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1161863,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "6989391a0b8640e5d56e6117",
+    "currentFlowId": "6989391a0b8640e5d56e6114",
+    "currentNodeId": "e4468a61-df12-47c1-9165-9a733347a453",
+    "currentCups": 63,
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "69142fa16170994073c4db1e",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "6989390b0b8640e5d56e5fcf",
+      "6989390b0b8640e5d56e5fd2",
+      "6989390e6107d676b6ad2e12",
+      "69893bf70b8640e5d56e6367",
+      "69893bf70b8640e5d56e636b",
+      "69893bf70b8640e5d56e636e",
+      "69893bf70b8640e5d56e6371",
+      "69893bf70b8640e5d56e6374",
+      "69893bf70b8640e5d56e6377",
+      "69893bf70b8640e5d56e637a",
+      "69893bf70b8640e5d56e637e",
+      "69893bf70b8640e5d56e6381",
+      "69893bf70b8640e5d56e6384",
+      "69893bf70b8640e5d56e6387",
+      "69893bf70b8640e5d56e638a",
+      "69893bf70b8640e5d56e638d",
+      "6989390e6107d676b6ad2e46",
+      "6989390e6107d676b6ad2e48",
+      "6989390e6107d676b6ad2e4a",
+      "6989390e6107d676b6ad2e4c",
+      "6989390e6107d676b6ad2e4e",
+      "69893bf70b8640e5d56e6391",
+      "69893bf70b8640e5d56e6395",
+      "698939100b8640e5d56e6031",
+      "698941a96107d676b6ad31df",
+      "698941a96107d676b6ad31e3",
+      "698941a96107d676b6ad31e6",
+      "698941a96107d676b6ad31e9",
+      "698941a96107d676b6ad31ec",
+      "698941a96107d676b6ad31ef",
+      "698941a96107d676b6ad31f2",
+      "698939110b8640e5d56e6063",
+      "698939110b8640e5d56e6065",
+      "698939110b8640e5d56e6067",
+      "698939110b8640e5d56e6069",
+      "698939110b8640e5d56e606b",
+      "698941a96107d676b6ad31f6",
+      "698939110b8640e5d56e6056",
+      "698939110b8640e5d56e6058",
+      "698939110b8640e5d56e605a",
+      "698939110b8640e5d56e605c",
+      "698939110b8640e5d56e605e",
+      "698941a96107d676b6ad31fa",
+      "698939146107d676b6ad2ecc",
+      "698939170b8640e5d56e60dd",
+      "698939170b8640e5d56e60e0",
+      "6989391a0b8640e5d56e6112",
+      "6989475d6107d676b6ad32e3",
+      "6989391a0b8640e5d56e6114"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-03-03T13:34:48.047Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 49,
+  "totalSections": 6,
+  "completedFlowsCount": 49,
+  "completedSectionsCount": 6,
+  "startedAt": {
+    "$date": "2026-03-03T13:15:25.853Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-03-03T13:34:48.056Z"
+  },
+  "createdAt": {
+    "$date": "2026-03-03T13:15:25.854Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-03T13:34:48.056Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-03-03T13:34:48.056Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69a828318905d021166854fc"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3766996",
+  "scriptId": {
+    "$oid": "6969f96403eb29e88a0907c0"
+  },
+  "scriptVersionId": {
+    "$oid": "69a10db56605b9da75e097cc"
+  },
+  "versionNumber": 2,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1518474,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "6971144003eb29e88a0fc312",
+    "currentFlowId": "6971144003eb29e88a0fc311",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "currentCups": 47,
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "6971142b03eb29e88a0fc1c5",
+      "6971142b03eb29e88a0fc1c8",
+      "6971142e3034135589b5db97",
+      "6971142e3034135589b5db9a",
+      "6971142e3034135589b5db9c",
+      "6971143103eb29e88a0fc1fe",
+      "6971143103eb29e88a0fc200",
+      "697114363034135589b5dc00",
+      "697114363034135589b5dc03",
+      "697114363034135589b5dc06",
+      "697114363034135589b5dc08",
+      "69711a283034135589b5dd95",
+      "69711a283034135589b5dd99",
+      "69711a283034135589b5dd9c",
+      "69711a283034135589b5dda0",
+      "69711a283034135589b5dda4",
+      "69711a283034135589b5dda7",
+      "69711a283034135589b5ddaa",
+      "69711a283034135589b5ddad",
+      "69711a283034135589b5ddb0",
+      "69711a283034135589b5ddb4",
+      "69711a283034135589b5ddb7",
+      "69711a283034135589b5ddba",
+      "69711a283034135589b5ddbd",
+      "69711a283034135589b5ddc0",
+      "69711a283034135589b5ddc4",
+      "69711a283034135589b5ddc7",
+      "69711a283034135589b5ddca",
+      "69711a293034135589b5ddcd",
+      "69711a293034135589b5ddd0",
+      "69711a293034135589b5ddd4",
+      "6971143a03eb29e88a0fc260",
+      "6971237403eb29e88a0fc454",
+      "6971143a03eb29e88a0fc266",
+      "6971296403eb29e88a0fc534",
+      "6971143a03eb29e88a0fc26c",
+      "6971143a03eb29e88a0fc26f",
+      "6971143a03eb29e88a0fc272",
+      "6971143a03eb29e88a0fc292",
+      "6971143a03eb29e88a0fc294",
+      "6971143a03eb29e88a0fc296",
+      "6971237403eb29e88a0fc461",
+      "6971237403eb29e88a0fc464",
+      "6971237403eb29e88a0fc467",
+      "6971237403eb29e88a0fc46a",
+      "6971237403eb29e88a0fc46d",
+      "6971237403eb29e88a0fc471",
+      "6971237403eb29e88a0fc474",
+      "6971237403eb29e88a0fc477",
+      "6971237403eb29e88a0fc47a",
+      "6971237403eb29e88a0fc47d",
+      "6971237403eb29e88a0fc481",
+      "6971143d3034135589b5dcb4",
+      "6971143d3034135589b5dcb7",
+      "6971144003eb29e88a0fc30d",
+      "6971144003eb29e88a0fc30f",
+      "6971144003eb29e88a0fc311"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-03-04T13:05:36.357Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 57,
+  "totalSections": 7,
+  "completedFlowsCount": 57,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-03-04T12:40:17.277Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-03-04T13:05:36.364Z"
+  },
+  "createdAt": {
+    "$date": "2026-03-04T12:40:17.278Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-04T13:05:36.365Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-03-04T13:05:36.364Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b016300fa3de72797ce7f4"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3766997",
+  "scriptId": {
+    "$oid": "696dc2743034135589b1b379"
+  },
+  "scriptVersionId": {
+    "$oid": "697b263d0f7fe4b5e1cc4c45"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1584931,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "697251ef03eb29e88a111ed3",
+    "currentFlowId": "697251ef03eb29e88a111ed2",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "currentCups": 47,
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "697251db03eb29e88a111d86",
+      "697251db03eb29e88a111d89",
+      "697251dd3034135589b73474",
+      "697251dd3034135589b73477",
+      "697251dd3034135589b73479",
+      "697251e103eb29e88a111dbf",
+      "697251e103eb29e88a111dc1",
+      "697251e43034135589b734e0",
+      "697251e43034135589b734e3",
+      "697251e43034135589b734e6",
+      "697251e43034135589b734e8",
+      "697256cf03eb29e88a112263",
+      "697256cf03eb29e88a112267",
+      "697256cf03eb29e88a11226a",
+      "697256cf03eb29e88a11226e",
+      "697256cf03eb29e88a112272",
+      "697256cf03eb29e88a112275",
+      "697256cf03eb29e88a112279",
+      "697256cf03eb29e88a11227d",
+      "697256cf03eb29e88a112280",
+      "697256cf03eb29e88a112284",
+      "697256cf03eb29e88a112288",
+      "697256cf03eb29e88a11228b",
+      "697256cf03eb29e88a11228e",
+      "697256cf03eb29e88a112291",
+      "697256cf03eb29e88a112294",
+      "697256cf03eb29e88a112298",
+      "697256cf03eb29e88a11229b",
+      "697256cf03eb29e88a11229e",
+      "697256cf03eb29e88a1122a1",
+      "697256cf03eb29e88a1122a4",
+      "697256cf03eb29e88a1122a8",
+      "697251e803eb29e88a111e21",
+      "697266533034135589b73a8e",
+      "697251e803eb29e88a111e27",
+      "697266533034135589b73a93",
+      "697251e803eb29e88a111e2d",
+      "697251e803eb29e88a111e30",
+      "697251e803eb29e88a111e33",
+      "697251e803eb29e88a111e53",
+      "697251e803eb29e88a111e55",
+      "697251e803eb29e88a111e57",
+      "697251e803eb29e88a111e59",
+      "697251e803eb29e88a111e5b",
+      "697266533034135589b73a9b",
+      "697266533034135589b73a9e",
+      "697266533034135589b73aa1",
+      "697266533034135589b73aa4",
+      "697266533034135589b73aa7",
+      "697266543034135589b73aab",
+      "697251ec3034135589b73594",
+      "697251ec3034135589b73597",
+      "697251ef03eb29e88a111ece",
+      "697251ef03eb29e88a111ed0",
+      "697251ef03eb29e88a111ed2"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-03-10T13:28:02.452Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 55,
+  "totalSections": 7,
+  "completedFlowsCount": 55,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-03-10T13:01:36.919Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-03-10T13:28:02.460Z"
+  },
+  "createdAt": {
+    "$date": "2026-03-10T13:01:36.920Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-10T13:28:02.460Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-03-10T13:28:02.460Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b171289cbc4760beef4b31"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3766998",
+  "scriptId": {
+    "$oid": "696dd5b83034135589b1b76f"
+  },
+  "scriptVersionId": {
+    "$oid": "697b27460f7fe4b5e1cc4da6"
+  },
+  "versionNumber": 2,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1518660,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "697183af03eb29e88a0fcb17",
+    "currentFlowId": "697183af03eb29e88a0fcb16",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "currentCups": 48,
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "697183983034135589b5e3e2",
+      "697183983034135589b5e3e5",
+      "6971839b03eb29e88a0fc9fe",
+      "6971839b03eb29e88a0fca01",
+      "6971839b03eb29e88a0fca03",
+      "6971839e3034135589b5e41b",
+      "6971839e3034135589b5e41d",
+      "697183a23034135589b5e47f",
+      "697183a23034135589b5e482",
+      "697183a23034135589b5e485",
+      "697183a23034135589b5e487",
+      "69718aee3034135589b5e88f",
+      "69718aee3034135589b5e893",
+      "69718aee3034135589b5e896",
+      "69718aee3034135589b5e89a",
+      "69718aee3034135589b5e89e",
+      "69718aee3034135589b5e8a1",
+      "697183a23034135589b5e48a",
+      "697183a23034135589b5e4a6",
+      "697183a23034135589b5e4a8",
+      "697183a23034135589b5e4aa",
+      "697183a23034135589b5e4ac",
+      "697183a23034135589b5e4ae",
+      "697183a23034135589b5e48d",
+      "697183a23034135589b5e48f",
+      "697183a23034135589b5e491",
+      "697183a23034135589b5e493",
+      "697183a23034135589b5e495",
+      "697183a23034135589b5e49a",
+      "697183a23034135589b5e4d0",
+      "697183a603eb29e88a0fca65",
+      "6971951a03eb29e88a0fd768",
+      "697183a603eb29e88a0fca6b",
+      "6971951a03eb29e88a0fd76d",
+      "697183a603eb29e88a0fca71",
+      "697183a603eb29e88a0fca74",
+      "697183a603eb29e88a0fca77",
+      "697183a603eb29e88a0fca7a",
+      "697183a603eb29e88a0fca7c",
+      "697183a603eb29e88a0fca7e",
+      "697183a603eb29e88a0fca80",
+      "697183a603eb29e88a0fca82",
+      "697183a603eb29e88a0fca97",
+      "697183a603eb29e88a0fca99",
+      "697183a603eb29e88a0fca9b",
+      "6971951a03eb29e88a0fd776",
+      "6971951a03eb29e88a0fd779",
+      "6971951a03eb29e88a0fd77c",
+      "6971951a03eb29e88a0fd77f",
+      "697183a603eb29e88a0fcab1",
+      "697183ab3034135589b5e533",
+      "697183ab3034135589b5e536",
+      "697183af03eb29e88a0fcb12",
+      "697183af03eb29e88a0fcb14",
+      "697183af03eb29e88a0fcb16"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-03-11T14:07:20.124Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 55,
+  "totalSections": 7,
+  "completedFlowsCount": 55,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-03-11T13:42:00.960Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-03-11T14:07:20.132Z"
+  },
+  "createdAt": {
+    "$date": "2026-03-11T13:42:00.960Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-11T14:07:20.132Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-03-11T14:07:20.132Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69b951c8e6d5e9fab591ed00"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3766999",
+  "scriptId": {
+    "$oid": "696de92e3034135589b1c543"
+  },
+  "scriptVersionId": {
+    "$oid": "697b28510f7fe4b5e1cc4e81"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1678660,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "69719bac03eb29e88a0fe534",
+    "currentFlowId": "69719bac03eb29e88a0fe533",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "currentCups": 49,
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "69719b9a03eb29e88a0fe2b4",
+      "69719b9a03eb29e88a0fe2b7",
+      "69719b9c03eb29e88a0fe2ed",
+      "69719b9c03eb29e88a0fe2f0",
+      "69719b9c03eb29e88a0fe2f2",
+      "69719b9f03eb29e88a0fe327",
+      "69719b9f03eb29e88a0fe329",
+      "69719ba203eb29e88a0fe370",
+      "69719f8e3034135589b5fc65",
+      "69719ba203eb29e88a0fe376",
+      "69719ba203eb29e88a0fe378",
+      "69719f8e3034135589b5fc69",
+      "69719f8e3034135589b5fc6c",
+      "69719f8e3034135589b5fc6f",
+      "69719f8f3034135589b5fc73",
+      "69719f8f3034135589b5fc77",
+      "69719f8f3034135589b5fc7a",
+      "69719f8f3034135589b5fc7d",
+      "69719f8f3034135589b5fc80",
+      "69719f8f3034135589b5fc83",
+      "69719f8f3034135589b5fc86",
+      "69719ba203eb29e88a0fe37b",
+      "69719ba203eb29e88a0fe37e",
+      "69719ba203eb29e88a0fe380",
+      "69719ba203eb29e88a0fe382",
+      "69719ba203eb29e88a0fe384",
+      "69719ba203eb29e88a0fe386",
+      "69719ba203eb29e88a0fe397",
+      "69719ba203eb29e88a0fe399",
+      "69719ba203eb29e88a0fe39b",
+      "69719ba203eb29e88a0fe39d",
+      "69719ba203eb29e88a0fe39f",
+      "69719f8f3034135589b5fc8d",
+      "69719f8f3034135589b5fc90",
+      "69719f8f3034135589b5fc93",
+      "69719f8f3034135589b5fc96",
+      "69719f8f3034135589b5fc99",
+      "69719ba203eb29e88a0fe3c1",
+      "69719ba603eb29e88a0fe44c",
+      "6971a05303eb29e88a0fe8e5",
+      "6971a05303eb29e88a0fe8e9",
+      "6971a05303eb29e88a0fe8ec",
+      "6971a05303eb29e88a0fe8ef",
+      "69719ba603eb29e88a0fe45b",
+      "69719ba603eb29e88a0fe45e",
+      "69719ba603eb29e88a0fe461",
+      "69719ba603eb29e88a0fe463",
+      "69719ba603eb29e88a0fe465",
+      "69719ba603eb29e88a0fe467",
+      "69719ba603eb29e88a0fe469",
+      "69719ba603eb29e88a0fe47e",
+      "69719ba603eb29e88a0fe480",
+      "69719ba603eb29e88a0fe482",
+      "69719ba603eb29e88a0fe484",
+      "69719ba603eb29e88a0fe486",
+      "69719ba603eb29e88a0fe471",
+      "69719ba603eb29e88a0fe473",
+      "69719ba603eb29e88a0fe475",
+      "69719ba603eb29e88a0fe477",
+      "69719ba603eb29e88a0fe479",
+      "69719ba603eb29e88a0fe498",
+      "69719ba903eb29e88a0fe4f7",
+      "69719ba903eb29e88a0fe4fa",
+      "69719bac03eb29e88a0fe52f",
+      "69719bac03eb29e88a0fe531",
+      "69719bac03eb29e88a0fe533"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-03-17T13:34:16.049Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 66,
+  "totalSections": 7,
+  "completedFlowsCount": 66,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-03-17T13:06:16.710Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-03-17T13:34:16.057Z"
+  },
+  "createdAt": {
+    "$date": "2026-03-17T13:06:16.710Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-17T13:34:16.057Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-03-17T13:34:16.057Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69baace99e23fb71d3489b3e"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3767000",
+  "scriptId": {
+    "$oid": "697082d803eb29e88a0e5eb5"
+  },
+  "scriptVersionId": {
+    "$oid": "697b294ebfd4814696a03418"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1527345,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "6976ed2703eb29e88a14c148",
+    "currentFlowId": "6976ed2703eb29e88a14c147",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "currentCups": 51,
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "6976ed193034135589bad216",
+      "6976ed193034135589bad219",
+      "6976ed153034135589bad1db",
+      "6976ed153034135589bad1de",
+      "6976ed153034135589bad1e0",
+      "6976ed1b03eb29e88a14bf22",
+      "6976ed1b03eb29e88a14bf24",
+      "6976ed1e03eb29e88a14bf84",
+      "6976f73f03eb29e88a14c402",
+      "6976ed1e03eb29e88a14bf8a",
+      "6976ed1e03eb29e88a14bf8c",
+      "6976f73f03eb29e88a14c406",
+      "6976f73f03eb29e88a14c409",
+      "6976f73f03eb29e88a14c40c",
+      "6976f73f03eb29e88a14c410",
+      "6976f73f03eb29e88a14c414",
+      "6976f73f03eb29e88a14c417",
+      "6976f73f03eb29e88a14c41a",
+      "6976ed1e03eb29e88a14bf8f",
+      "6976ed1e03eb29e88a14bfb8",
+      "6976ed1e03eb29e88a14bfba",
+      "6976ed1e03eb29e88a14bfbc",
+      "6976ed1e03eb29e88a14bfbe",
+      "6976ed1e03eb29e88a14bf92",
+      "6976ed1e03eb29e88a14bf94",
+      "6976ed1e03eb29e88a14bf96",
+      "6976ed1e03eb29e88a14bf98",
+      "6976ed1e03eb29e88a14bf9a",
+      "6976ed1e03eb29e88a14bfab",
+      "6976ed1e03eb29e88a14bfad",
+      "6976ed1e03eb29e88a14bfaf",
+      "6976ed1e03eb29e88a14bfb1",
+      "6976ed1e03eb29e88a14bfb3",
+      "6976ed1e03eb29e88a14bfd5",
+      "6976ed2103eb29e88a14c060",
+      "6977010a03eb29e88a14c6d7",
+      "6977010a03eb29e88a14c6db",
+      "6977010a03eb29e88a14c6de",
+      "6977010a03eb29e88a14c6e1",
+      "6976ed2103eb29e88a14c06f",
+      "6976ed2103eb29e88a14c072",
+      "6976ed2103eb29e88a14c085",
+      "6976ed2103eb29e88a14c087",
+      "6976ed2103eb29e88a14c089",
+      "6976ed2103eb29e88a14c08b",
+      "6976ed2103eb29e88a14c08d",
+      "6976ed2103eb29e88a14c092",
+      "6976ed2103eb29e88a14c094",
+      "6976ed2103eb29e88a14c096",
+      "6976ed2103eb29e88a14c098",
+      "6976ed2103eb29e88a14c09a",
+      "6977010a03eb29e88a14c6e9",
+      "6977010a03eb29e88a14c6ec",
+      "6977010a03eb29e88a14c6ef",
+      "6977010a03eb29e88a14c6f2",
+      "6977010a03eb29e88a14c6f5",
+      "6976ed2103eb29e88a14c0ac",
+      "6976ed2503eb29e88a14c10b",
+      "6976ed2503eb29e88a14c10e",
+      "6976ed2703eb29e88a14c143",
+      "6976ed2703eb29e88a14c145",
+      "6976ed2703eb29e88a14c147"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-03-18T14:12:49.417Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 62,
+  "totalSections": 7,
+  "completedFlowsCount": 62,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-03-18T13:47:21.685Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-03-18T14:12:49.423Z"
+  },
+  "createdAt": {
+    "$date": "2026-03-18T13:47:21.686Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-18T14:12:49.424Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-03-18T14:12:49.423Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69c29072c010b10ce2fe60a8"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3767001",
+  "scriptId": {
+    "$oid": "697d6e21bfd4814696a31c5d"
+  },
+  "scriptVersionId": {
+    "$oid": "69a7a3ef0fa3de72796f3b80"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1681681,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "69898d656107d676b6ad55d0",
+    "currentFlowId": "69898d656107d676b6ad55cf",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "currentCups": 51,
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "69898d696107d676b6ad5604",
+      "69898d696107d676b6ad5607",
+      "69898d530b8640e5d56e8093",
+      "69898d530b8640e5d56e8096",
+      "69898d530b8640e5d56e8098",
+      "69898d566107d676b6ad54ba",
+      "69898d566107d676b6ad54bc",
+      "69898d580b8640e5d56e80fc",
+      "69898df50b8640e5d56e8280",
+      "69898d580b8640e5d56e8102",
+      "69898d580b8640e5d56e8104",
+      "69898df50b8640e5d56e8284",
+      "69898df50b8640e5d56e8288",
+      "69898df50b8640e5d56e828c",
+      "69898df50b8640e5d56e828f",
+      "69898df50b8640e5d56e8292",
+      "69898df50b8640e5d56e8295",
+      "69898d580b8640e5d56e8107",
+      "69898d580b8640e5d56e8117",
+      "69898d580b8640e5d56e8123",
+      "69898d580b8640e5d56e8125",
+      "69898d580b8640e5d56e8127",
+      "69898d580b8640e5d56e8129",
+      "69898d580b8640e5d56e812b",
+      "69898d580b8640e5d56e8130",
+      "69898d580b8640e5d56e8132",
+      "69898d580b8640e5d56e8134",
+      "69898d580b8640e5d56e8136",
+      "69898d580b8640e5d56e8138",
+      "69898d5b6107d676b6ad551e",
+      "6989ea540b8640e5d56f30a2",
+      "69898d5b6107d676b6ad5524",
+      "6989ea540b8640e5d56f30a7",
+      "69898d5b6107d676b6ad552a",
+      "69898d5b6107d676b6ad552d",
+      "69898d5b6107d676b6ad5530",
+      "69898d5b6107d676b6ad5533",
+      "69898d5b6107d676b6ad5535",
+      "69898d5b6107d676b6ad5537",
+      "69898d5b6107d676b6ad5539",
+      "69898d5b6107d676b6ad553b",
+      "69898d5b6107d676b6ad5543",
+      "69898d5b6107d676b6ad5545",
+      "69898d5c6107d676b6ad5547",
+      "69898d5c6107d676b6ad5549",
+      "69898d5c6107d676b6ad554b",
+      "69898d5c6107d676b6ad5550",
+      "69898d5c6107d676b6ad5552",
+      "69898d5c6107d676b6ad5554",
+      "69898d5c6107d676b6ad5556",
+      "69898d5c6107d676b6ad5558",
+      "69898d5f0b8640e5d56e81bb",
+      "69898d5f0b8640e5d56e81be",
+      "69898d656107d676b6ad55cb",
+      "69898d656107d676b6ad55cd",
+      "69898d656107d676b6ad55cf"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-03-24T13:52:04.971Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 56,
+  "totalSections": 7,
+  "completedFlowsCount": 56,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-03-24T13:24:02.894Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-03-24T13:52:04.979Z"
+  },
+  "createdAt": {
+    "$date": "2026-03-24T13:24:02.894Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-24T13:52:04.979Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-03-24T13:52:04.979Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69c3e6a9aae94d884a978a04"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3767002",
+  "scriptId": {
+    "$oid": "698068eb0f7fe4b5e1d1c988"
+  },
+  "scriptVersionId": {
+    "$oid": "69a7a60c0fa3de72796f3e63"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1516344,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "698d8fdd64f29ef8d11a40f1",
+    "currentFlowId": "698d8fdd64f29ef8d11a40f0",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "currentCups": 52,
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "698d8fca64f29ef8d11a3f92",
+      "698d8fca64f29ef8d11a3f95",
+      "698d8fcc51f5b7ce2f9d5e73",
+      "698d8fcc51f5b7ce2f9d5e76",
+      "698d8fcc51f5b7ce2f9d5e78",
+      "698d8fcf64f29ef8d11a3fce",
+      "698d8fcf64f29ef8d11a3fd0",
+      "698d8fd351f5b7ce2f9d5ee4",
+      "698d90c451f5b7ce2f9d6163",
+      "698d90c451f5b7ce2f9d6167",
+      "698d8fd351f5b7ce2f9d5ee7",
+      "698d8fd351f5b7ce2f9d5eea",
+      "698d8fd351f5b7ce2f9d5eec",
+      "698d90c451f5b7ce2f9d616d",
+      "698d90c451f5b7ce2f9d6171",
+      "698d90c451f5b7ce2f9d6174",
+      "698d90c451f5b7ce2f9d6178",
+      "698d90c451f5b7ce2f9d617c",
+      "698d8fd351f5b7ce2f9d5eef",
+      "698d8fd351f5b7ce2f9d5eff",
+      "698d8fd351f5b7ce2f9d5f0b",
+      "698d8fd351f5b7ce2f9d5f0d",
+      "698d8fd351f5b7ce2f9d5f0f",
+      "698d8fd351f5b7ce2f9d5f11",
+      "698d8fd351f5b7ce2f9d5f13",
+      "698d90c451f5b7ce2f9d6183",
+      "698d90c451f5b7ce2f9d6186",
+      "698d90c451f5b7ce2f9d6189",
+      "698d90c451f5b7ce2f9d618c",
+      "698d90c451f5b7ce2f9d618f",
+      "698d8fd351f5b7ce2f9d5f35",
+      "698d8fd664f29ef8d11a403f",
+      "699bbe4351f5b7ce2fa26c3e",
+      "699bbf3e64f29ef8d11f5515",
+      "699bbf3e64f29ef8d11f5518",
+      "698d8fd664f29ef8d11a404e",
+      "698d8fd664f29ef8d11a4051",
+      "698d8fd664f29ef8d11a4064",
+      "698d8fd664f29ef8d11a4066",
+      "698d8fd664f29ef8d11a4068",
+      "698d8fd664f29ef8d11a406a",
+      "698d8fd664f29ef8d11a406c",
+      "699bbe4351f5b7ce2fa26c49",
+      "699bbe4351f5b7ce2fa26c4c",
+      "699bbe4351f5b7ce2fa26c4f",
+      "699bbe4351f5b7ce2fa26c52",
+      "699bbe4351f5b7ce2fa26c55",
+      "699bbe4351f5b7ce2fa26c59",
+      "699bbe4351f5b7ce2fa26c5c",
+      "699bbe4351f5b7ce2fa26c5f",
+      "699bbe4351f5b7ce2fa26c62",
+      "699bbe4351f5b7ce2fa26c65",
+      "698d8fd664f29ef8d11a408b",
+      "698d8fda51f5b7ce2f9d5f9a",
+      "698d8fda51f5b7ce2f9d5f9d",
+      "698d8fdd64f29ef8d11a40ec",
+      "698d8fdd64f29ef8d11a40ee",
+      "698d8fdd64f29ef8d11a40f0"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-03-25T14:09:26.324Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 58,
+  "totalSections": 7,
+  "completedFlowsCount": 58,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-03-25T13:44:09.538Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-03-25T14:09:26.333Z"
+  },
+  "createdAt": {
+    "$date": "2026-03-25T13:44:09.538Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-25T14:09:26.333Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-03-25T14:09:26.333Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cbbfc5cd2616b91fa495ce"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3781880",
+  "scriptId": {
+    "$oid": "697da64a0f7fe4b5e1cf6dc8"
+  },
+  "scriptVersionId": {
+    "$oid": "69a7a8210fa3de72796f4154"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1688204,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "698c82e58b8142519407e5e3",
+    "currentFlowId": "698c82e58b8142519407e5e2",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "currentCups": 52,
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "698c82ce8b8142519407e448",
+      "698c82ce8b8142519407e44b",
+      "698c82d08b8142519407e471",
+      "698c82d08b8142519407e474",
+      "698c82d08b8142519407e476",
+      "698c82d38b8142519407e4b4",
+      "698c82d38b8142519407e4b6",
+      "698c82d88b8142519407e51e",
+      "698c8648a035d202ad3b0c73",
+      "698c82d88b8142519407e524",
+      "698c82d88b8142519407e526",
+      "698c8648a035d202ad3b0c77",
+      "698c8648a035d202ad3b0c7a",
+      "698c8648a035d202ad3b0c7e",
+      "698c8648a035d202ad3b0c82",
+      "698c8648a035d202ad3b0c85",
+      "698c82d88b8142519407e55b",
+      "698c82d88b8142519407e55d",
+      "698c82d88b8142519407e55f",
+      "698c82d88b8142519407e561",
+      "698c82d88b8142519407e563",
+      "698c8648a035d202ad3b0c8a",
+      "698c8648a035d202ad3b0c8d",
+      "698c8648a035d202ad3b0c90",
+      "698c82d88b8142519407e52c",
+      "698c82d88b8142519407e52f",
+      "698c82d88b8142519407e533",
+      "698c82d88b8142519407e535",
+      "698c82d88b8142519407e537",
+      "698c82dba035d202ad3af6b8",
+      "698c8c988b8142519408158d",
+      "698c82dba035d202ad3af6be",
+      "698c8c998b81425194081592",
+      "698c82dba035d202ad3af6c4",
+      "698c82dba035d202ad3af6c7",
+      "698c82dba035d202ad3af6ca",
+      "698c82dba035d202ad3af6cd",
+      "698c82dba035d202ad3af6cf",
+      "698c82dba035d202ad3af6d1",
+      "698c82dba035d202ad3af6d3",
+      "698c82dba035d202ad3af6d5",
+      "698c82dba035d202ad3af6dd",
+      "698c82dba035d202ad3af6df",
+      "698c82dba035d202ad3af6e1",
+      "698c82dba035d202ad3af6e3",
+      "698c82dba035d202ad3af6e5",
+      "698c82dba035d202ad3af6ea",
+      "698c82dba035d202ad3af6ec",
+      "698c82dba035d202ad3af6ee",
+      "698c82dba035d202ad3af6f0",
+      "698c82dba035d202ad3af6f2",
+      "698c82dfa035d202ad3af779",
+      "698c82dfa035d202ad3af77c",
+      "698c82e58b8142519407e5de",
+      "698c82e58b8142519407e5e0",
+      "698c82e58b8142519407e5e2"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-03-31T13:04:30.450Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 56,
+  "totalSections": 7,
+  "completedFlowsCount": 56,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-03-31T12:36:21.910Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-03-31T13:04:30.458Z"
+  },
+  "createdAt": {
+    "$date": "2026-03-31T12:36:21.910Z"
+  },
+  "updatedAt": {
+    "$date": "2026-03-31T13:04:30.458Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-03-31T13:04:30.458Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cd27ad77afad820d3d65cb"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3785477",
+  "scriptId": {
+    "$oid": "698094df0f7fe4b5e1d202c7"
+  },
+  "scriptVersionId": {
+    "$oid": "69a7abb20fa3de72796f4616"
+  },
+  "versionNumber": 1,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1436597,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "699bfb4764f29ef8d11f6c52",
+    "currentFlowId": "699bfb4764f29ef8d11f6c51",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "currentCups": 61,
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "699bfb3164f29ef8d11f6b05",
+      "699bfb3164f29ef8d11f6b08",
+      "699bfb3851f5b7ce2fa28169",
+      "699bfb3951f5b7ce2fa2816c",
+      "699bfb3951f5b7ce2fa2816e",
+      "699c1d8651f5b7ce2fa292a6",
+      "699c1d8651f5b7ce2fa292a8",
+      "699bfb3e51f5b7ce2fa281d2",
+      "699bfe3f51f5b7ce2fa283a0",
+      "699bfb3e51f5b7ce2fa281d8",
+      "699bfb3e51f5b7ce2fa281da",
+      "699bfe3f51f5b7ce2fa283a4",
+      "699bfe3f51f5b7ce2fa283a7",
+      "699bfe3f51f5b7ce2fa283ab",
+      "699bfe3f51f5b7ce2fa283af",
+      "699bfe3f51f5b7ce2fa283b2",
+      "699bfe3f51f5b7ce2fa283b5",
+      "699bfe3f51f5b7ce2fa283b8",
+      "699bfb3e51f5b7ce2fa281dd",
+      "699bfb3e51f5b7ce2fa281f9",
+      "699bfb3e51f5b7ce2fa281fb",
+      "699bfb3e51f5b7ce2fa281fd",
+      "699bfb3e51f5b7ce2fa281ff",
+      "699bfb3e51f5b7ce2fa28201",
+      "699bfb3e51f5b7ce2fa28206",
+      "699bfb3e51f5b7ce2fa28208",
+      "699bfb3e51f5b7ce2fa2820a",
+      "699bfb3e51f5b7ce2fa2820c",
+      "699bfb3e51f5b7ce2fa2820e",
+      "699bfb3e51f5b7ce2fa281ed",
+      "699bfe3f51f5b7ce2fa283c0",
+      "699bfb3e51f5b7ce2fa28220",
+      "699bfb3e51f5b7ce2fa28223",
+      "699bfb4164f29ef8d11f6ba0",
+      "699c059c51f5b7ce2fa285bc",
+      "699c05ee51f5b7ce2fa286ab",
+      "699c05ee51f5b7ce2fa286ae",
+      "699bfb4164f29ef8d11f6baf",
+      "699bfb4164f29ef8d11f6bb2",
+      "699c05ee51f5b7ce2fa286b4",
+      "699c05ee51f5b7ce2fa286b7",
+      "699c05ee51f5b7ce2fa286ba",
+      "699c05ee51f5b7ce2fa286bd",
+      "699c05ee51f5b7ce2fa286c0",
+      "699bfb4164f29ef8d11f6bd2",
+      "699bfb4164f29ef8d11f6bd4",
+      "699bfb4164f29ef8d11f6bd6",
+      "699bfb4164f29ef8d11f6bd8",
+      "699bfb4164f29ef8d11f6bda",
+      "699bfb4164f29ef8d11f6bc5",
+      "699bfb4164f29ef8d11f6bc7",
+      "699bfb4164f29ef8d11f6bc9",
+      "699bfb4164f29ef8d11f6bcb",
+      "699bfb4164f29ef8d11f6bcd",
+      "699bfb4164f29ef8d11f6bec",
+      "699bfb4451f5b7ce2fa28286",
+      "699bfb4451f5b7ce2fa28289",
+      "699bfb4764f29ef8d11f6c4d",
+      "699bfb4764f29ef8d11f6c4f",
+      "699bfb4764f29ef8d11f6c51"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-04-01T14:35:54.682Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 60,
+  "totalSections": 7,
+  "completedFlowsCount": 60,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-04-01T14:11:57.579Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-04-01T14:35:54.691Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-01T14:11:57.580Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-01T14:35:54.692Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-04-01T14:35:54.691Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69df92ed54870ab726d3f77c"
+  },
+  "studentId": "2102555",
+  "erpLessonId": "3968761",
+  "scriptId": {
+    "$oid": "698338cd72c5b6be60e8602b"
+  },
+  "scriptVersionId": {
+    "$oid": "69d329bd5ca2ef0711e9b85c"
+  },
+  "versionNumber": 3,
+  "status": "COMPLETED",
+  "attemptNumber": 1,
+  "totalDurationMs": 1672239,
+  "checkpoint": {
+    "currentSectionId": "6899653e0598bfe23ce95650",
+    "currentSetupId": "699c0ce851f5b7ce2fa28ab6",
+    "currentFlowId": "699c0ce851f5b7ce2fa28ab5",
+    "currentNodeId": "43201c85-00d3-4b50-97f8-963802158481",
+    "currentCups": 65,
+    "completedSections": [
+      "689965ce0598bfe23ce95668",
+      "689965bb0598bfe23ce95664",
+      "689965a60598bfe23ce95660",
+      "689965880598bfe23ce9565c",
+      "689965640598bfe23ce95658",
+      "689965530598bfe23ce95654",
+      "6899653e0598bfe23ce95650"
+    ],
+    "completedFlows": [
+      "699c0cd964f29ef8d11f7130",
+      "699c0cd964f29ef8d11f7133",
+      "699c0cdc51f5b7ce2fa289a7",
+      "699c0cdc51f5b7ce2fa289aa",
+      "699c0cdc51f5b7ce2fa289ac",
+      "699c1cf164f29ef8d11f78a8",
+      "699c1cf164f29ef8d11f78aa",
+      "699c0cde64f29ef8d11f7195",
+      "699c107b51f5b7ce2fa28d81",
+      "699c0cde64f29ef8d11f719b",
+      "699c0cde64f29ef8d11f719d",
+      "699c107b51f5b7ce2fa28d85",
+      "699c107b51f5b7ce2fa28d88",
+      "699c110751f5b7ce2fa28ed7",
+      "699c110751f5b7ce2fa28edb",
+      "699c110751f5b7ce2fa28ede",
+      "699c110751f5b7ce2fa28ee1",
+      "699c110751f5b7ce2fa28ee4",
+      "699c110751f5b7ce2fa28ee8",
+      "699c110751f5b7ce2fa28eec",
+      "699c110751f5b7ce2fa28eef",
+      "699c110751f5b7ce2fa28ef2",
+      "699c110751f5b7ce2fa28ef5",
+      "699c0cde64f29ef8d11f71a0",
+      "699c0cdf64f29ef8d11f71c9",
+      "699c0cdf64f29ef8d11f71cb",
+      "699c0cdf64f29ef8d11f71cd",
+      "699c0cdf64f29ef8d11f71cf",
+      "699c0cdf64f29ef8d11f71d1",
+      "699c107b51f5b7ce2fa28d92",
+      "699c107b51f5b7ce2fa28d95",
+      "699c107b51f5b7ce2fa28d98",
+      "699c107b51f5b7ce2fa28d9b",
+      "699c107b51f5b7ce2fa28d9e",
+      "699c0cdf64f29ef8d11f71e3",
+      "699c0cdf64f29ef8d11f71e6",
+      "699c0ce251f5b7ce2fa28a09",
+      "699c17fa64f29ef8d11f7792",
+      "699c17fa64f29ef8d11f7796",
+      "699c17fa64f29ef8d11f7799",
+      "699c17fa64f29ef8d11f779c",
+      "699c17fa64f29ef8d11f779f",
+      "699c0ce251f5b7ce2fa28a18",
+      "699c0ce251f5b7ce2fa28a1b",
+      "699c17fa64f29ef8d11f77a5",
+      "699c17fa64f29ef8d11f77a8",
+      "699c17fa64f29ef8d11f77ab",
+      "699c17fb64f29ef8d11f77ae",
+      "699c17fb64f29ef8d11f77b1",
+      "699c0ce251f5b7ce2fa28a3b",
+      "699c0ce251f5b7ce2fa28a3d",
+      "699c0ce251f5b7ce2fa28a3f",
+      "699c0ce251f5b7ce2fa28a41",
+      "699c0ce251f5b7ce2fa28a43",
+      "699c0ce251f5b7ce2fa28a2e",
+      "699c0ce251f5b7ce2fa28a30",
+      "699c0ce251f5b7ce2fa28a32",
+      "699c0ce251f5b7ce2fa28a34",
+      "699c0ce251f5b7ce2fa28a36",
+      "699c0ce251f5b7ce2fa28a55",
+      "699c0ce564f29ef8d11f7248",
+      "699c0ce564f29ef8d11f724b",
+      "699c0ce851f5b7ce2fa28ab1",
+      "699c0ce851f5b7ce2fa28ab3",
+      "699c0ce851f5b7ce2fa28ab5"
+    ],
+    "lastCheckpointAt": {
+      "$date": "2026-04-15T13:58:14.604Z"
+    }
+  },
+  "completionPercentage": 100,
+  "totalFlows": 65,
+  "totalSections": 7,
+  "completedFlowsCount": 65,
+  "completedSectionsCount": 7,
+  "startedAt": {
+    "$date": "2026-04-15T13:30:21.868Z"
+  },
+  "lastActiveAt": {
+    "$date": "2026-04-15T13:58:14.615Z"
+  },
+  "createdAt": {
+    "$date": "2026-04-15T13:30:21.868Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-15T13:58:14.615Z"
+  },
+  "__v": 0,
+  "completedAt": {
+    "$date": "2026-04-15T13:58:14.615Z"
+  }
+}]
