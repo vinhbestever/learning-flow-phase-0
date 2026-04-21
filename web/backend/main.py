@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
-from web.backend.routers import homework, lessons, student
+from web.backend.routers import history, homework, lessons, student
 
 load_dotenv(Path(__file__).resolve().parent.parent.parent / ".env")
 
@@ -12,6 +12,7 @@ app = FastAPI(title="Phase 0 Learning Flow")
 
 app.include_router(student.router)
 app.include_router(lessons.router)
+app.include_router(history.router)
 app.include_router(homework.router)
 
 dist = Path(__file__).parent.parent / "frontend" / "dist"

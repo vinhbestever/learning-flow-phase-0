@@ -1,6 +1,7 @@
 import { NavLink, Route, Routes } from 'react-router-dom'
 import GenerateHomework from './pages/GenerateHomework'
 import HomeworkResult from './pages/HomeworkResult'
+import LearningHistory from './pages/LearningHistory'
 import LessonList from './pages/LessonList'
 import StudentProfile from './pages/StudentProfile'
 
@@ -48,6 +49,9 @@ export default function App() {
             <NavLink to="/lessons" className={linkClass}>
               Bài học
             </NavLink>
+            <NavLink to="/history" className={linkClass}>
+              Lịch sử
+            </NavLink>
             <NavLink to="/generate" className={linkClass}>
               Tạo bài tập
             </NavLink>
@@ -62,6 +66,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<StudentProfile />} />
           <Route path="/lessons" element={<LessonList />} />
+          <Route path="/history" element={<LearningHistory />} />
           <Route path="/generate" element={<GenerateHomework />} />
           <Route path="/homework" element={<HomeworkResult />} />
         </Routes>
