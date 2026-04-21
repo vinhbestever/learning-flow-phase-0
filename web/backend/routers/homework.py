@@ -1,7 +1,9 @@
 import json
 from pathlib import Path
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect
+
+from web.backend.pipeline_ws import run_pipeline_ws
 
 HOMEWORK_PATH = "output/homework_assignment.json"
 DIAGNOSTIC_PATH = "output/diagnostic_output.txt"
@@ -21,3 +23,26 @@ def get_homework():
     hw = json.loads(hw_p.read_text(encoding="utf-8"))
     diag = diag_p.read_text(encoding="utf-8")
     return {"homework": hw.get("homework", []), "diagnostic": diag}
+
+
+@router.websocket("/ws/generate")
+async def ws_generate(websocket: WebSocket):
+    await websocket.accept()
+
+    async def send(msg: dict):
+        await websocket.send_json(msg)
+
+    try:
+        await run_pipeline_ws(send)
+    except WebSocketDisconnect:
+        pass
+    except Exception as e:
+        try:
+            await websocket.send_json({"type": "error", "text": str(e)})
+        except Exception:
+            pass
+    finally:
+        try:
+            await websocket.close()
+        except Exception:
+            pass
