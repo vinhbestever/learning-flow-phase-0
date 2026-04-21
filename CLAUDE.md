@@ -49,6 +49,7 @@ After raw exports exist under `data/`, run preprocessing and optional question e
 
 - **Dependencies:** `pip install -r requirements.txt` (see `agents/` for context builder, diagnostic, selector modules; tests in `tests/`).
 - **Design:** `docs/plans/2026-04-21-homework-agent-design.md` and `docs/plans/2026-04-21-homework-agent-pipeline.md`.
+- **Vietnamese system overview (flow, components):** `docs/tong-hop-he-thong.md`.
 
 ## Notes
 
