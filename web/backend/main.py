@@ -1,9 +1,12 @@
 from pathlib import Path
 
+from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
 from web.backend.routers import homework, lessons, student
+
+load_dotenv(Path(__file__).resolve().parent.parent.parent / ".env")
 
 app = FastAPI(title="Phase 0 Learning Flow")
 
