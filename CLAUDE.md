@@ -37,6 +37,19 @@ lms_practice_result.id → lms_practice_result_detail.result_id
 vh_digital_teacher.learning_sessions._id → learning_results.sessionId
 ```
 
+## Homework agent pipeline (code)
+
+After raw exports exist under `data/`, run preprocessing and optional question export, then the two-agent homework pipeline.
+
+| Step | Command | Output |
+|------|---------|--------|
+| Preprocess | `python preprocess.py` | `output/student_context.json` (scored candidates + summary) |
+| Question export | `python export_questions.py` | `output/questions_export.json` |
+| Homework agents | `export OPENAI_API_KEY=...` then `python agent_pipeline.py` | `output/diagnostic_output.txt`, `output/homework_assignment.json` (15 questions) |
+
+- **Dependencies:** `pip install -r requirements.txt` (see `agents/` for context builder, diagnostic, selector modules; tests in `tests/`).
+- **Design:** `docs/plans/2026-04-21-homework-agent-design.md` and `docs/plans/2026-04-21-homework-agent-pipeline.md`.
+
 ## Notes
 
 - Vietnamese field names: `bai_lam` = submission, `ket_qua` = result/grade, `diem_thi` = score
