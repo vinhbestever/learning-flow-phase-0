@@ -15,7 +15,7 @@ This is a data directory containing JSON exports from an English learning platfo
 
 ### Student Practice Results
 - `lms_practice_result_2102555.csv.json` — One record per practice attempt. Key fields: `practice_id`, `diem_thi` (score 0–1), `total_correct_question`, `total_question`, `create_date`.
-- `lms_practice_result_detail_2102555.json` / `_2.json` — Per-question detail rows linked via `result_id`. `bai_lam` = student's raw answer (JSON string), `ket_qua` = graded answer with `r` (correct bool) and `p` (point) per option. `is_correct: 1` = question answered correctly.
+- `lms_practice_result_detail_2102555_2.json` — Per-question detail rows linked via `result_id`. `bai_lam` = student's raw answer (JSON string), `ket_qua` = graded answer with `r` (correct bool) and `p` (point) per option. `is_correct: 1` = question answered correctly.
 
 ### Tutor Lesson List
 - `tutor_lessons_2102555.json` — Flat list of lessons with LMS practice IDs and completion counts (`completed_lesson`). Each lesson appears twice: once for "Bài tập" (exercises) and once for "Luyện tập" (practice), with different `lms_id`s.

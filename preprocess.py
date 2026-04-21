@@ -1,0 +1,776 @@
+"""
+Preprocess raw learning data for student 2102555.
+
+Output: output/student_context.json
+
+Designed for a two-agent pipeline:
+  Agent 1 (Analysis)  — reads full context, produces weakness analysis
+  Agent 2 (Assignment)— reads analysis + scored_candidates, selects 10-15 exercises
+
+Key additions vs v1:
+  - link_practice URL per bai_tap / luyen_tap (agent can generate assignment links)
+  - days_since_last_practice + forgetting_score per lesson (Ebbinghaus, no prior reps)
+  - weakness_score per lesson (composite of homework + free speaking)
+  - composite_priority_score = 0.5 * forgetting + 0.5 * weakness
+  - scored_candidates list (top lessons pre-ranked for Agent 2)
+  - worst_lms_questions per lesson (question-level failures from detail records)
+  - AUDIO subtypes separated: pronunciation_drill vs free_speaking
+"""
+
+import glob
+import json
+import math
+from collections import defaultdict
+from datetime import date
+
+DATA_DIR = "data"
+OUTPUT_FILE = "output/student_context.json"
+
+TODAY = date(2026, 4, 21)           # injected reference date
+EBBINGHAUS_STABILITY_DAYS = 1.0     # default stability for first exposure (no repetitions)
+WORST_SPEAKING_LIMIT = 5
+WORST_LMS_Q_LIMIT = 5
+CANDIDATE_POOL_SIZE = 20            # top N lessons pre-ranked for Agent 2
+
+
+# ---------------------------------------------------------------------------
+# Loaders
+# ---------------------------------------------------------------------------
+
+def load_json(path):
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_program_lessons():
+    """
+    Returns:
+      lessons:  lesson_id -> {lesson_id, program_id, position, title, desc}
+      lms_to_link: lms_id -> {link_practice, lms_link}
+    """
+    lessons = {}
+    lms_to_link = {}
+
+    for path in sorted(glob.glob(f"{DATA_DIR}/program*lesson*.json")):
+        raw = load_json(path)
+        data = raw.get("data", raw) if isinstance(raw, dict) else raw
+
+        for lesson in data:
+            lid = lesson["id"]
+            if lid not in lessons:
+                lessons[lid] = {
+                    "lesson_id": lid,
+                    "program_id": lesson.get("program_id"),
+                    "position": lesson.get("position"),
+                    "title": (lesson.get("title") or "").strip(),
+                    "desc": (lesson.get("desc") or "").strip(),
+                }
+            for sec in lesson.get("tutor_program_lesson_sections", []):
+                lms_id = sec.get("lms_id")
+                if lms_id and (sec.get("link_practice") or sec.get("lms_link")):
+                    lms_to_link[lms_id] = {
+                        "link_practice": sec.get("link_practice"),
+                        "lms_link": sec.get("lms_link"),
+                    }
+
+    return lessons, lms_to_link
+
+
+def load_tutor_lessons():
+    """
+    Returns:
+      by_lesson: lesson_id -> {level, title, desc, position, "Bài tập": {...}, "Luyện tập": {...}}
+      lms_to_lesson: lms_id -> (lesson_id, section_type)
+    """
+    data = load_json(f"{DATA_DIR}/tutor_lessons_2102555.json")
+    by_lesson = {}
+    lms_to_lesson = {}
+
+    for item in data:
+        lid = item["id"]
+        section_type = item["type"]
+        lms_id = item["lms_id"]
+
+        if lid not in by_lesson:
+            by_lesson[lid] = {
+                "level": item.get("level"),
+                "title": (item.get("title") or "").strip(),
+                "desc": (item.get("desc") or "").strip(),
+                "position": item.get("position"),
+            }
+        by_lesson[lid][section_type] = {
+            "lms_id": lms_id,
+            "lms_num_question": item.get("lms_num_question", 0),
+            "completed_lesson": item.get("completed_lesson", 0),
+        }
+        lms_to_lesson[lms_id] = (lid, section_type)
+
+    return by_lesson, lms_to_lesson
+
+
+def load_lms_practice_results():
+    """Returns dict: practice_id -> result record."""
+    data = load_json(f"{DATA_DIR}/lms_practice_result_2102555.csv.json")
+    return {r["practice_id"]: r for r in data}
+
+
+def load_lms_detail():
+    """Returns dict: practice_id -> [detail_row, ...]."""
+    detail = defaultdict(list)
+    for path in sorted(glob.glob(f"{DATA_DIR}/lms_practice_result_detail_2102555*.json")):
+        for row in load_json(path):
+            detail[row["practice_id"]].append(row)
+    return detail
+
+
+def load_dt_sessions():
+    """Returns dict: lesson_id (int) -> [session, ...]."""
+    data = load_json(f"{DATA_DIR}/vh_digital_teacher.learning_sessions_2102555_1.json")
+    by_lesson = defaultdict(list)
+    for s in data:
+        eid = s.get("erpLessonId", "")
+        if eid.isdigit():
+            by_lesson[int(eid)].append(s)
+    return by_lesson
+
+
+def load_dt_results():
+    """Returns dict: lesson_id (int) -> [result, ...]."""
+    data = load_json(f"{DATA_DIR}/vh_digital_teacher.learning_results_2102555_1.json")
+    by_lesson = defaultdict(list)
+    for r in data:
+        eid = r.get("erpLessonId", "")
+        if eid.isdigit():
+            by_lesson[int(eid)].append(r)
+    return by_lesson
+
+
+# ---------------------------------------------------------------------------
+# Transform helpers
+# ---------------------------------------------------------------------------
+
+def parse_mongo_date(value):
+    if isinstance(value, dict):
+        return value.get("$date", "")
+    return str(value) if value else ""
+
+
+def iso_to_date(iso_str):
+    return iso_str[:10] if iso_str else None
+
+
+def classify_audio(result_record):
+    """
+    pronunciation_drill: additionalData.speaking  (phonetic accuracy)
+    free_speaking:       additionalData.warmup or .brainstorm (open-ended)
+    other:               no recognised additionalData
+    """
+    ad = (result_record.get("result") or {}).get("additionalData") or {}
+    if "speaking" in ad:
+        return "pronunciation_drill"
+    if "warmup" in ad or "brainstorm" in ad:
+        return "free_speaking"
+    return "other"
+
+
+def extract_user_answer_type(additional_data):
+    if not isinstance(additional_data, dict):
+        return None
+    for v in additional_data.values():
+        if isinstance(v, dict):
+            uat = (v.get("result") or {}).get("userAnswerType")
+            if uat:
+                return uat
+    return None
+
+
+# ---------------------------------------------------------------------------
+# Forgetting curve (Ebbinghaus, no repetition data)
+# ---------------------------------------------------------------------------
+
+def forgetting_score(days_since: int, stability: float = EBBINGHAUS_STABILITY_DAYS) -> float:
+    """
+    Proportion of memory forgotten: 1 - e^(-t/S).
+    With a single prior exposure and default stability ≈1 day, anything
+    older than ~7 days scores ≥ 0.999 (effectively fully forgotten).
+    Returns 0.0–1.0; higher = more forgotten.
+    """
+    if days_since <= 0:
+        return 0.0
+    return round(1.0 - math.exp(-days_since / stability), 4)
+
+
+def retention_score(days_since: int, stability: float = EBBINGHAUS_STABILITY_DAYS) -> float:
+    """Complement of forgetting_score. 1.0 = fully retained."""
+    return round(1.0 - forgetting_score(days_since, stability), 4)
+
+
+# ---------------------------------------------------------------------------
+# Per-lesson builders
+# ---------------------------------------------------------------------------
+
+import re as _re
+
+def _strip_html(html: str) -> str:
+    """Remove HTML tags and decode common HTML entities."""
+    text = _re.sub(r"<[^>]+>", " ", html or "")
+    text = text.replace("&nbsp;", " ").replace("&amp;", "&")
+    text = text.replace("&lt;", "<").replace("&gt;", ">")
+    text = text.replace("&atilde;", "ã").replace("&aacute;", "á")
+    text = text.replace("&agrave;", "à").replace("&acirc;", "â")
+    text = _re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def _has_media(raw_html: str) -> bool:
+    """True if the HTML contains image or audio elements."""
+    return bool(_re.search(r"<(img|audio|source)\b", raw_html or "", _re.IGNORECASE))
+
+
+def extract_question_content(row: dict) -> dict:
+    """
+    Extract human-readable question content from a detail record.
+
+    Returns a dict with:
+      question_text:   cleaned text of the question prompt
+      correct_answer:  correct answer as plain text (None if image/audio only)
+      student_answer:  what the student submitted
+      requires_media:  True if the question depends on image/audio to make sense
+    """
+    qt = row.get("question_type", "")
+    raw_content = row.get("content") or ""
+    raw_answers = row.get("answers") or "[]"
+    raw_bai_lam = row.get("bai_lam") or "[]"
+
+    question_text = _strip_html(raw_content)
+
+    # Detect media dependency in question content
+    requires_media = _has_media(raw_content)
+
+    # Parse answers JSON
+    try:
+        answers = json.loads(raw_answers)
+    except Exception:
+        answers = []
+
+    # Parse student submission
+    try:
+        bai_lam = json.loads(raw_bai_lam)
+        student_answers = [item.get("u") for item in bai_lam if isinstance(item, dict)]
+    except Exception:
+        student_answers = []
+
+    correct_answer = None
+
+    if qt in ("Điền vào chỗ trống",):
+        # answers: [{"content": "", "option": "...", "is_true": "correct_word"}]
+        if isinstance(answers, list) and answers:
+            a = answers[0]
+            if isinstance(a, dict):
+                correct_answer = (
+                    str(a.get("is_true") or a.get("option") or "").strip() or None
+                )
+        student_ans = student_answers[0] if student_answers else None
+
+    elif qt in ("Trả lời bằng giọng nói",):
+        # answers: ["correct text"] or [{"content": "correct text", "is_true": True}]
+        if isinstance(answers, list) and answers:
+            a0 = answers[0]
+            if isinstance(a0, str):
+                correct_answer = a0.strip() or None
+            elif isinstance(a0, dict):
+                correct_answer = _strip_html(
+                    a0.get("content") or a0.get("content_text") or ""
+                ) or None
+                requires_media = requires_media or _has_media(a0.get("content", ""))
+        student_ans = student_answers[0] if student_answers else None
+
+    elif qt in ("Một lựa chọn", "Nhiều lựa chọn"):
+        if isinstance(answers, list):
+            correct_items = [
+                a for a in answers
+                if isinstance(a, dict) and (
+                    a.get("is_true") is True
+                    or str(a.get("is_true", "")).lower() == "true"
+                    or (isinstance(a.get("is_true"), str) and a["is_true"].upper() in ("A", "B", "TRUE", "ĐÚNG"))
+                )
+            ]
+            if correct_items:
+                ca = correct_items[0]
+                ca_text = _strip_html(
+                    ca.get("content") or ca.get("content_text") or ""
+                )
+                # Also flag if the answer itself is an image
+                if _has_media(ca.get("content", "")):
+                    requires_media = True
+                correct_answer = ca_text or None
+        student_ans = student_answers
+
+    elif qt == "Xứng-Hợp":
+        # Matching: text terms in column1, often images in column2
+        if isinstance(answers, dict):
+            col1_texts = [
+                _strip_html(a.get("content", ""))
+                for a in answers.get("column1", [])
+                if isinstance(a, dict)
+            ]
+            correct_answer = ", ".join(t for t in col1_texts if t) or None
+            # column2 usually images
+            col2 = answers.get("column2", [])
+            if any(_has_media(a.get("content", "")) for a in col2 if isinstance(a, dict)):
+                requires_media = True
+        student_ans = student_answers
+
+    elif qt == "Kéo thả vào chỗ trống trong đoạn văn":
+        # Reorder letters/words — content has the shuffled pieces
+        if isinstance(answers, dict):
+            correct_answer = _strip_html(answers.get("correctAnswer", "")) or None
+            col2 = answers.get("column2", [])
+            pieces = [a.get("content_text") or _strip_html(a.get("raw_content", ""))
+                      for a in col2 if isinstance(a, dict)]
+            if not question_text or question_text.count("[{}]") > 0:
+                question_text = "Reorder: " + " | ".join(p for p in pieces if p)
+        student_ans = student_answers
+
+    else:
+        student_ans = student_answers
+
+    return {
+        "question_text": question_text[:300] if question_text else None,
+        "correct_answer": correct_answer,
+        "student_answer": student_answers[0] if isinstance(student_answers, list) and len(student_answers) == 1
+                          else (student_answers if student_answers else None),
+        "requires_media": requires_media,
+    }
+
+
+def build_lms_homework(tutor_entry, pr_by_pid, detail_by_pid, lms_to_link):
+    bai_tap_meta = tutor_entry.get("Bài tập") or {}
+    luyen_tap_meta = tutor_entry.get("Luyện tập") or {}
+
+    def result_for(lms_id):
+        if not lms_id:
+            return None
+        r = pr_by_pid.get(lms_id)
+        if not r:
+            return None
+        return {
+            "practice_id": lms_id,
+            "score": r["diem_thi"],
+            "correct": r["total_correct_question"],
+            "total": r["total_question"],
+            "submitted_date": (r.get("create_date") or "")[:10] or None,
+        }
+
+    bai_tap = result_for(bai_tap_meta.get("lms_id"))
+    luyen_tap = result_for(luyen_tap_meta.get("lms_id"))
+
+    # Skill breakdown by question_folder
+    skill_counts = defaultdict(lambda: {"correct": 0, "total": 0})
+    for lms_entry in [bai_tap_meta, luyen_tap_meta]:
+        pid = lms_entry.get("lms_id")
+        if not pid:
+            continue
+        for row in detail_by_pid.get(pid, []):
+            folder = row.get("question_folder") or "Unknown"
+            skill_counts[folder]["total"] += 1
+            if row.get("is_correct") == 1:
+                skill_counts[folder]["correct"] += 1
+
+    skill_breakdown = {
+        folder: {
+            "correct": c["correct"],
+            "total": c["total"],
+            "accuracy": round(c["correct"] / c["total"], 3) if c["total"] else None,
+        }
+        for folder, c in skill_counts.items()
+    }
+    weak_skills = [
+        f for f, s in skill_breakdown.items()
+        if s["accuracy"] is not None and s["accuracy"] < 0.70
+    ]
+
+    # Failed questions with full content extraction
+    failed_questions = []
+    for lms_entry in [bai_tap_meta, luyen_tap_meta]:
+        pid = lms_entry.get("lms_id")
+        if not pid:
+            continue
+        failed = [r for r in detail_by_pid.get(pid, []) if r.get("is_correct") == 0]
+        for row in failed[:WORST_LMS_Q_LIMIT]:
+            content = extract_question_content(row)
+            failed_questions.append({
+                "practice_id": pid,
+                "question_id": row.get("question_id"),
+                "question_folder": row.get("question_folder"),
+                "question_type": row.get("question_type"),
+                **content,
+            })
+        if len(failed_questions) >= WORST_LMS_Q_LIMIT:
+            break
+
+    return {
+        "attempted": bai_tap is not None or luyen_tap is not None,
+        "bai_tap": bai_tap,
+        "luyen_tap": luyen_tap,
+        "skill_breakdown": skill_breakdown,
+        "weak_skills": weak_skills,
+        "worst_questions": failed_questions,
+    }
+
+
+def build_dt_in_class(sessions, results):
+    if not sessions:
+        return {"participated": False}
+
+    completed_sessions = [s for s in sessions if s.get("status") == "COMPLETED"]
+    latest_session = max(sessions, key=lambda s: parse_mongo_date(s.get("startedAt", "")))
+    latest_date = iso_to_date(parse_mongo_date(latest_session.get("startedAt")))
+    max_completion = max(s.get("completionPercentage", 0) for s in sessions)
+
+    audio_results = [r for r in results if r.get("interactionType") == "AUDIO"]
+
+    # Pronunciation drills
+    pron_items = [r for r in audio_results if classify_audio(r) == "pronunciation_drill"]
+    pron_scores = [
+        r["result"]["pronunciationScore"]
+        for r in pron_items
+        if (r.get("result") or {}).get("pronunciationScore") is not None
+    ]
+    pronunciation_score_avg = (
+        round(sum(pron_scores) / len(pron_scores), 2) if pron_scores else None
+    )
+
+    # Free speaking (open-ended, scored on semantic correctness)
+    free_items = [r for r in audio_results if classify_audio(r) == "free_speaking"]
+    free_scores = [
+        r["result"]["score"]
+        for r in free_items
+        if (r.get("result") or {}).get("score") is not None
+    ]
+    free_speaking_score_avg = (
+        round(sum(free_scores) / len(free_scores), 2) if free_scores else None
+    )
+
+    answer_type_dist = defaultdict(int)
+    for r in free_items:
+        uat = extract_user_answer_type((r.get("result") or {}).get("additionalData"))
+        if uat:
+            answer_type_dist[uat] += 1
+
+    # Worst free-speaking failures
+    failed = [
+        r for r in free_items
+        if (r.get("result") or {}).get("score", 1) == 0
+        and extract_user_answer_type((r.get("result") or {}).get("additionalData"))
+        in ("incorrect", "inaccordant")
+    ]
+    failed_sorted = sorted(
+        failed,
+        key=lambda r: parse_mongo_date(r.get("timestamp", "")),
+        reverse=True,
+    )
+    worst_speaking_items = []
+    for r in failed_sorted[:WORST_SPEAKING_LIMIT]:
+        result_data = r.get("result") or {}
+        lms_data = r.get("lmsData") or {}
+        worst_speaking_items.append({
+            "question": lms_data.get("question"),
+            "question_type": lms_data.get("questionType"),
+            "user_transcript": result_data.get("userTranscript"),
+            "score": result_data.get("score"),
+            "answer_type": extract_user_answer_type(result_data.get("additionalData")),
+            "timestamp": iso_to_date(parse_mongo_date(r.get("timestamp"))),
+        })
+
+    return {
+        "participated": True,
+        "session_count": len(sessions),
+        "is_completed": len(completed_sessions) > 0,
+        "completion_pct": max_completion,
+        "latest_session_date": latest_date,
+        "pronunciation_attempts": len(pron_items),
+        "pronunciation_score_avg": pronunciation_score_avg,
+        "free_speaking_attempts": len(free_items),
+        "free_speaking_score_avg": free_speaking_score_avg,
+        "free_speaking_answer_type_dist": dict(answer_type_dist),
+        "worst_speaking_items": worst_speaking_items,
+    }
+
+
+def derive_status(in_class, homework):
+    has_dt = in_class.get("participated", False)
+    has_hw = homework.get("attempted", False)
+    if has_dt and has_hw:
+        return "completed"
+    if has_dt and not has_hw:
+        return "in_class_only"
+    if not has_dt and has_hw:
+        return "homework_only"
+    return "not_started"
+
+
+def compute_weakness_score(homework, in_class) -> float:
+    """
+    Composite weakness 0.0–1.0 (higher = weaker).
+    Weights: bai_tap 35%, luyen_tap 15%, free_speaking 50%
+    Free speaking weighted highest: it's the hardest skill and least practiced.
+    """
+    components = []
+
+    bt = homework.get("bai_tap") or {}
+    if bt.get("score") is not None:
+        components.append((1.0 - bt["score"], 0.35))
+
+    lt = homework.get("luyen_tap") or {}
+    if lt.get("score") is not None:
+        components.append((1.0 - lt["score"], 0.15))
+
+    fs = in_class.get("free_speaking_score_avg")
+    if fs is not None:
+        components.append((1.0 - fs / 100.0, 0.50))
+    elif in_class.get("participated"):
+        # Participated but no free speaking data: use pronunciation as weak proxy
+        pron = in_class.get("pronunciation_score_avg")
+        if pron is not None:
+            components.append((1.0 - pron / 100.0, 0.25))
+
+    if not components:
+        return 0.0
+
+    total_weight = sum(w for _, w in components)
+    weighted_sum = sum(score * w for score, w in components)
+    return round(weighted_sum / total_weight, 4)
+
+
+def latest_activity_date(*dates):
+    valid = [d for d in dates if d]
+    return max(valid) if valid else None
+
+
+# ---------------------------------------------------------------------------
+# Main pipeline
+# ---------------------------------------------------------------------------
+
+def build_student_context():
+    print("Loading data files...")
+    program_lessons, lms_to_link = load_program_lessons()
+    tutor_by_lesson, _ = load_tutor_lessons()
+    pr_by_pid = load_lms_practice_results()
+    detail_by_pid = load_lms_detail()
+    dt_sessions = load_dt_sessions()
+    dt_results = load_dt_results()
+
+    # program_lesson files = full curriculum catalog (all levels, all programs)
+    # tutor_lessons        = lessons actually assigned to this student
+    # DT session keys      = lessons the student entered a Digital Teacher session for
+    #
+    # Only include lessons where the student has real activity:
+    #   tutor_lessons   → student is enrolled (has lms_id to submit homework)
+    #   dt_sessions     → student entered a Digital Teacher session
+    # Exclude: program_lesson-only IDs (catalog entries never assigned to student)
+    active_lesson_ids = set(tutor_by_lesson.keys()) | set(dt_sessions.keys())
+    print(f"Processing {len(active_lesson_ids)} student-active lessons "
+          f"(excluded {len(set(program_lessons.keys()) - active_lesson_ids)} curriculum-catalog-only entries)")
+
+    records = []
+    for lid in sorted(active_lesson_ids):
+        lesson_meta = program_lessons.get(lid, {})
+        tutor_entry = tutor_by_lesson.get(lid, {})
+
+        in_class = build_dt_in_class(dt_sessions.get(lid, []), dt_results.get(lid, []))
+        homework = build_lms_homework(tutor_entry, pr_by_pid, detail_by_pid, {})
+        status = derive_status(in_class, homework)
+
+        last_date_str = latest_activity_date(
+            in_class.get("latest_session_date"),
+            (homework.get("bai_tap") or {}).get("submitted_date"),
+            (homework.get("luyen_tap") or {}).get("submitted_date"),
+        )
+
+        # Scoring for forgetting curve + weakness
+        days_since = None
+        f_score = None
+        w_score = None
+        composite = None
+        if last_date_str:
+            days_since = (TODAY - date.fromisoformat(last_date_str)).days
+            f_score = forgetting_score(days_since)
+            w_score = compute_weakness_score(homework, in_class)
+            composite = round(0.5 * f_score + 0.5 * w_score, 4)
+
+        records.append({
+            "lesson_id": lid,
+            "program_id": lesson_meta.get("program_id"),
+            "level": tutor_entry.get("level"),
+            "position": lesson_meta.get("position") or tutor_entry.get("position"),
+            "title": lesson_meta.get("title") or tutor_entry.get("title") or None,
+            "desc": lesson_meta.get("desc") or tutor_entry.get("desc") or None,
+            "status": status,
+            "last_activity_date": last_date_str,
+            "days_since_last_practice": days_since,
+            "forgetting_score": f_score,
+            "weakness_score": w_score,
+            "composite_priority_score": composite,
+            "in_class": in_class,
+            "homework": homework,
+        })
+
+    # Drop future-scheduled lessons (enrolled but no activity yet)
+    records = [r for r in records if r["status"] != "not_started"]
+
+    # Sort by composite DESC (most urgent review first), then by recency
+    records.sort(
+        key=lambda r: (r["composite_priority_score"] or 0, r["days_since_last_practice"] or 0),
+        reverse=True,
+    )
+    return records
+
+
+def build_scored_candidates(records):
+    """
+    Pre-ranked candidate list for Agent 2 (assignment agent).
+    Exposes the actual question content (not links) for each failed question,
+    so the agent can present exercises directly to the student.
+    """
+    candidates = []
+    for r in records:
+        if r["status"] not in ("completed", "homework_only", "in_class_only"):
+            continue
+        hw = r["homework"]
+        bt = hw.get("bai_tap") or {}
+        lt = hw.get("luyen_tap") or {}
+
+        # Must have homework attempt (we need question content from detail records)
+        if not hw.get("attempted"):
+            continue
+
+        # Separate text-renderable vs media-dependent failed questions
+        all_failed = hw.get("worst_questions", [])
+        text_questions = [q for q in all_failed if not q.get("requires_media")]
+        media_questions = [q for q in all_failed if q.get("requires_media")]
+
+        candidates.append({
+            "lesson_id": r["lesson_id"],
+            "title": r["title"],
+            "level": r["level"],
+            "days_since_last_practice": r["days_since_last_practice"],
+            "forgetting_score": r["forgetting_score"],
+            "weakness_score": r["weakness_score"],
+            "composite_priority_score": r["composite_priority_score"],
+            "weak_skills": hw.get("weak_skills", []),
+            # Text-based failed questions (agent can present directly)
+            "failed_text_questions": text_questions,
+            # Media-dependent questions (agent notes topic but can't show inline)
+            "failed_media_questions_count": len(media_questions),
+            # Worst speaking items (already text — transcript + question)
+            "worst_speaking_items": r["in_class"].get("worst_speaking_items", []),
+            # Practice IDs for reference
+            "practice_ids": {
+                "bai_tap": bt.get("practice_id"),
+                "luyen_tap": lt.get("practice_id"),
+            },
+        })
+
+    return candidates[:CANDIDATE_POOL_SIZE]
+
+
+def build_summary(records):
+    total = len(records)
+    by_status = defaultdict(int)
+    for r in records:
+        by_status[r["status"]] += 1
+
+    skill_totals = defaultdict(lambda: {"correct": 0, "total": 0})
+    for r in records:
+        for folder, s in r["homework"].get("skill_breakdown", {}).items():
+            skill_totals[folder]["correct"] += s["correct"]
+            skill_totals[folder]["total"] += s["total"]
+
+    overall_skill = {
+        folder: {
+            "correct": c["correct"],
+            "total": c["total"],
+            "accuracy": round(c["correct"] / c["total"], 3) if c["total"] else None,
+        }
+        for folder, c in skill_totals.items()
+    }
+    weak_skills_global = [
+        f for f, s in overall_skill.items()
+        if s["accuracy"] is not None and s["accuracy"] < 0.70
+    ]
+
+    all_pron_scores, all_free_scores = [], []
+    all_answer_types = defaultdict(int)
+    for r in records:
+        ic = r.get("in_class", {})
+        pron_avg = ic.get("pronunciation_score_avg")
+        pron_n = ic.get("pronunciation_attempts", 0)
+        if pron_avg is not None and pron_n > 0:
+            all_pron_scores.extend([pron_avg] * pron_n)
+        free_avg = ic.get("free_speaking_score_avg")
+        free_n = ic.get("free_speaking_attempts", 0)
+        if free_avg is not None and free_n > 0:
+            all_free_scores.extend([free_avg] * free_n)
+        for at, cnt in ic.get("free_speaking_answer_type_dist", {}).items():
+            all_answer_types[at] += cnt
+
+    completed = [r for r in records if r["status"] == "completed"]
+    return {
+        "student_id": 2102555,
+        "reference_date": str(TODAY),
+        "total_lessons": total,
+        "lessons_by_status": dict(by_status),
+        "overall_homework_skill_breakdown": overall_skill,
+        "weak_skills_global": weak_skills_global,
+        "overall_pronunciation_score_avg": (
+            round(sum(all_pron_scores) / len(all_pron_scores), 2) if all_pron_scores else None
+        ),
+        "overall_free_speaking_score_avg": (
+            round(sum(all_free_scores) / len(all_free_scores), 2) if all_free_scores else None
+        ),
+        "overall_free_speaking_answer_type_dist": dict(all_answer_types),
+        "forgetting_curve_note": (
+            "All lessons have 1 prior attempt. Stability set to default 1 day. "
+            "Lessons older than 7 days score >0.999 (fully forgotten). "
+            "Agent should prioritise by composite_priority_score."
+        ),
+    }
+
+
+def main():
+    import os
+    os.makedirs("output", exist_ok=True)
+
+    records = build_student_context()
+    summary = build_summary(records)
+    scored_candidates = build_scored_candidates(records)
+
+    output = {
+        "summary": summary,
+        "scored_candidates": scored_candidates,
+        "lessons": records,
+    }
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(output, f, ensure_ascii=False, indent=2)
+
+    completed = [r for r in records if r["status"] == "completed"]
+    print(f"\nDone. {len(records)} lessons → {OUTPUT_FILE}")
+    print(f"Status: {summary['lessons_by_status']}")
+    print(f"Scored candidates (Agent 2 pool): {len(scored_candidates)}")
+    print(f"Pronunciation avg: {summary['overall_pronunciation_score_avg']}")
+    print(f"Free speaking avg: {summary['overall_free_speaking_score_avg']}")
+    print(f"Global weak skills: {summary['weak_skills_global']}")
+    print(f"\nTop 5 priority lessons for re-practice:")
+    for r in [c for c in scored_candidates if c["composite_priority_score"]][:5]:
+        print(
+            f"  [{r['composite_priority_score']:.3f}] lesson {r['lesson_id']} "
+            f"'{(r['title'] or '')[:45]}' "
+            f"| forget={r['forgetting_score']:.3f} weak={r['weakness_score']:.3f} "
+            f"| {r['days_since_last_practice']}d ago"
+        )
+
+
+if __name__ == "__main__":
+    main()
