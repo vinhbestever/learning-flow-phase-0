@@ -65,11 +65,23 @@ HOMEWORK_SCHEMA = {
 SYSTEM_PROMPT = """\
 You are a homework assignment designer for a Vietnamese student learning English (Phase 0, levels 4–5).
 Select exactly 15 questions from the provided pool to create a balanced, targeted homework set.
-Rules:
+
+SELECTION RULES:
 - Prioritise: critical signal > spaced_rep > maintenance
 - Include at least: 3 speaking, 4 grammar or fill-blank, 3 vocabulary
 - No duplicate skill coverage from the same lesson
 - Tie-break: prefer fill-blank > multiple-choice > speaking when signal_type and lesson are equal
+
+REASON FIELD RULES — this is the most important field:
+Write 1–2 sentences per question that are specific to THIS student's actual performance.
+Always reference at least one of: a specific wrong answer they gave, a speaking transcript, a forgetting duration, or a named skill gap from the diagnostic.
+Do NOT write generic labels like "critical signal, grammar practice".
+
+Good reason examples:
+- "Student wrote 'cost' instead of 'is' in this lesson's fill-blank — a subject-verb agreement error that appeared in 3 separate lessons per the diagnostic. Practiced 20 days ago (fully forgotten)."
+- "Free speaking score of 0/100 in this lesson: student said 'I eat bitter' when asked 'What do you eat?' — targets the open-ended response gap the diagnostic flagged as the weakest skill overall (avg 30.71/100)."
+- "Lesson not practiced for 18 days; student's vocabulary accuracy here was below 70%. Reinforces clothing/shopping terms the diagnostic identified as inconsistently retained."
+
 Return ONLY valid JSON matching the schema. No markdown, no explanation.\
 """
 
@@ -90,9 +102,18 @@ def _pool_to_text(pool: list) -> str:
     lines = []
     for i, q in enumerate(pool):
         qid = q.get("question_id") or f"fs-{i}"
+        days = q.get("days_since")
+        weak = q.get("weakness_score")
+        meta = []
+        if days is not None:
+            meta.append(f"{days}d ago")
+        if weak is not None:
+            meta.append(f"weakness={weak:.2f}")
+        meta_str = " | ".join(meta)
         lines.append(
             f'[{q.get("signal_type", "?")}] qid={qid} lesson_id={q["lesson_id"]} '
             f'lesson_title="{q.get("lesson_title", "")}" '
+            f'[{meta_str}] '
             f'type="{q["question_type"]}" '
             f'text="{(q.get("question_text") or "")[:120]}" '
             f'answer="{q.get("correct_answer") or "open"}"'

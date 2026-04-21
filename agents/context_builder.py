@@ -140,9 +140,14 @@ def build_context(
     )
 
     signal_map = {c["lesson_id"]: c["signal_type"] for c in tiered}
+    days_map = {c["lesson_id"]: c.get("days_since_last_practice") for c in tiered}
+    weakness_map = {c["lesson_id"]: c.get("weakness_score") for c in tiered}
     lesson_ids = set(signal_map.keys())
     pool = build_question_pool(lesson_ids, questions_export)
     for q in pool:
-        q["signal_type"] = signal_map.get(q["lesson_id"])
+        lid = q["lesson_id"]
+        q["signal_type"] = signal_map.get(lid)
+        q["days_since"] = days_map.get(lid)
+        q["weakness_score"] = weakness_map.get(lid)
 
     return tiered, pool
