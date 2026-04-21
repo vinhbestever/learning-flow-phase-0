@@ -21,8 +21,9 @@
   --nav-active: #dff6f3;
   --nav-active-ring: rgba(13, 148, 136, 0.35);
   --on-primary: #ffffff;
-  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
-  --font-body: 'Karla', system-ui, sans-serif;
+  /* Be Vietnam Pro: hinting & diacritics tối ưu cho tiếng Việt · Sora: tiêu đề sans rõ, vẫn đọc tốt với dấu */
+  --font-display: 'Sora', 'Be Vietnam Pro', system-ui, sans-serif;
+  --font-body: 'Be Vietnam Pro', 'Sora', 'Segoe UI', system-ui, sans-serif;
   --shadow-card: 0 22px 56px -36px rgba(26, 35, 51, 0.14);
   --shadow-float: 0 12px 40px -24px rgba(13, 148, 136, 0.18);
 }

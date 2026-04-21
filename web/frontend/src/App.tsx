@@ -21,15 +21,6 @@ export default function App() {
       <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--header-bg)] backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between md:px-8">
           <div className="flex items-center gap-4">
-            <div
-              className="relative h-11 w-11 shrink-0 rotate-3 rounded-2xl border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-float)]"
-              aria-hidden
-            >
-              <span className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[var(--mint)]/20 to-transparent" />
-              <span className="font-display absolute inset-0 flex items-center justify-center text-lg font-semibold text-[var(--mint)]">
-                P0
-              </span>
-            </div>
             <div>
               <p className="font-display text-lg font-semibold leading-tight text-[var(--ink)] md:text-xl">
                 Phase 0
@@ -47,11 +38,11 @@ export default function App() {
             <NavLink to="/" end className={linkClass}>
               Học sinh
             </NavLink>
+            <NavLink to="/history" className={linkClass}>
+              Lịch sử học tập
+            </NavLink>
             <NavLink to="/lessons" className={linkClass}>
               Bài học
-            </NavLink>
-            <NavLink to="/history" className={linkClass}>
-              Lịch sử
             </NavLink>
             <NavLink to="/generate" className={linkClass}>
               Tạo bài tập
