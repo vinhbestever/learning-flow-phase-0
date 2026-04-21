@@ -2,6 +2,7 @@ import { NavLink, Route, Routes } from 'react-router-dom'
 import GenerateHomework from './pages/GenerateHomework'
 import HomeworkResult from './pages/HomeworkResult'
 import LearningHistory from './pages/LearningHistory'
+import LessonDetail from './pages/LessonDetail'
 import LessonList from './pages/LessonList'
 import StudentProfile from './pages/StudentProfile'
 
@@ -65,6 +66,7 @@ export default function App() {
       <main className="mx-auto max-w-6xl px-4 py-10 md:px-8 md:py-14">
         <Routes>
           <Route path="/" element={<StudentProfile />} />
+          <Route path="/lessons/:lessonId" element={<LessonDetail />} />
           <Route path="/lessons" element={<LessonList />} />
           <Route path="/history" element={<LearningHistory />} />
           <Route path="/generate" element={<GenerateHomework />} />

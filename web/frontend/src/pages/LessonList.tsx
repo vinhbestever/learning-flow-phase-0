@@ -1,4 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
+import { groupLessonsByModule } from '../lib/lessonGroups'
 
 interface Lesson {
   lesson_id: number
@@ -32,6 +34,8 @@ export default function LessonList() {
       .catch((e: unknown) => setError(String(e)))
   }, [])
 
+  const grouped = useMemo(() => (lessons ? groupLessonsByModule(lessons) : []), [lessons])
+
   if (error) {
     return (
       <div className="rounded-3xl border border-[var(--coral)]/30 bg-[#fff1f2] p-6 text-[var(--coral)] shadow-[var(--shadow-card)]">
@@ -60,50 +64,70 @@ export default function LessonList() {
           <h1 className="font-display mt-2 text-3xl font-semibold text-[var(--ink)] md:text-4xl">
             Danh sách bài học
           </h1>
+          <p className="mt-2 max-w-2xl text-sm text-[var(--muted)]">
+            Nhóm theo unit/chủ đề (phần đầu tiên của tiêu đề). Chọn một bài để xem{' '}
+            <strong className="text-[var(--ink)]">bài tập &amp; luyện tập</strong> chi tiết.
+          </p>
         </div>
         <div className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-4 py-2 text-sm text-[var(--muted)]">
-          <span className="font-semibold text-[var(--ink)]">{lessons.length}</span> bài trong export
+          <span className="font-semibold text-[var(--ink)]">{lessons.length}</span> bài ·{' '}
+          <span className="font-semibold text-[var(--ink)]">{grouped.length}</span> nhóm
         </div>
       </header>
 
-      <ol className="space-y-4">
-        {lessons.map((l, i) => (
-          <li
-            key={l.lesson_id}
-            className="animate-rise group relative overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-[var(--shadow-card)] transition hover:border-[var(--amber)]/35"
-            style={{ animationDelay: `${Math.min(i, 12) * 0.03}s` }}
-          >
-            <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-[var(--amber-soft)]/80 blur-3xl transition group-hover:bg-[var(--amber)]/15" />
-            <div className="relative flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-              <div className="flex gap-4">
-                <span className="font-display mt-1 text-sm tabular-nums text-[var(--muted)]">
-                  {String(l.position ?? i + 1).padStart(2, '0')}
-                </span>
-                <div>
-                  <p className="font-display text-lg font-semibold text-[var(--ink)]">{l.title}</p>
-                  {l.desc ? (
-                    <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-[var(--muted)]">
-                      {l.desc}
-                    </p>
-                  ) : null}
-                </div>
-              </div>
-              <div className="flex shrink-0 flex-wrap items-center justify-end gap-2 md:flex-col md:items-end">
-                {l.level != null && (
-                  <span className="rounded-full border border-[var(--mint)]/35 bg-[var(--mint-soft)] px-3 py-1 text-xs font-semibold text-[var(--mint)]">
-                    Cấp {l.level}
-                  </span>
-                )}
-                {l.last_activity_date && (
-                  <span className="text-xs tabular-nums text-[var(--muted)]">
-                    {l.last_activity_date}
-                  </span>
-                )}
-              </div>
-            </div>
-          </li>
+      <div className="space-y-14">
+        {grouped.map(([moduleLabel, rows], gi) => (
+          <section key={moduleLabel} className="animate-rise" style={{ animationDelay: `${gi * 0.05}s` }}>
+            <h2 className="font-display border-b border-[var(--border)] pb-3 text-xl font-semibold text-[var(--ink)] md:text-2xl">
+              {moduleLabel}
+            </h2>
+            <ol className="mt-6 space-y-4">
+              {rows.map((l, i) => (
+                <li key={l.lesson_id}>
+                  <Link
+                    to={`/lessons/${l.lesson_id}`}
+                    className="group relative block overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-[var(--shadow-card)] outline-none transition hover:border-[var(--amber)]/40 hover:shadow-[var(--shadow-float)] focus-visible:ring-2 focus-visible:ring-[var(--mint)]"
+                  >
+                    <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-[var(--amber-soft)]/80 blur-3xl transition group-hover:bg-[var(--amber)]/15" />
+                    <div className="relative flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+                      <div className="flex min-w-0 gap-4">
+                        <span className="font-display mt-1 shrink-0 text-sm tabular-nums text-[var(--muted)]">
+                          {String(l.position ?? i + 1).padStart(2, '0')}
+                        </span>
+                        <div className="min-w-0">
+                          <p className="font-display text-lg font-semibold text-[var(--ink)] group-hover:text-[var(--mint)] md:text-xl">
+                            {l.title}
+                          </p>
+                          {l.desc ? (
+                            <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-[var(--muted)]">
+                              {l.desc}
+                            </p>
+                          ) : null}
+                          <p className="mt-3 text-xs font-semibold text-[var(--mint)]">
+                            Xem danh sách câu hỏi →
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex shrink-0 flex-wrap items-center justify-end gap-2 md:flex-col md:items-end">
+                        {l.level != null && (
+                          <span className="rounded-full border border-[var(--mint)]/35 bg-[var(--mint-soft)] px-3 py-1 text-xs font-semibold text-[var(--mint)]">
+                            Cấp {l.level}
+                          </span>
+                        )}
+                        {l.last_activity_date && (
+                          <span className="text-xs tabular-nums text-[var(--muted)]">
+                            {l.last_activity_date}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  </Link>
+                </li>
+              ))}
+            </ol>
+          </section>
         ))}
-      </ol>
+      </div>
     </div>
   )
 }

@@ -1,4 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
+import { groupHistoryByModule } from '../lib/lessonGroups'
 
 interface HistoryItem {
   lesson_id: number
@@ -50,6 +52,11 @@ export default function LearningHistory() {
   const [data, setData] = useState<HistoryResponse | null>(null)
   const [error, setError] = useState<string | null>(null)
 
+  const grouped = useMemo(
+    () => (data?.items.length ? groupHistoryByModule(data.items) : []),
+    [data],
+  )
+
   useEffect(() => {
     fetch('/api/history')
       .then((r) => (r.ok ? r.json() : errorMessage(r).then((msg) => Promise.reject(msg))))
@@ -85,7 +92,7 @@ export default function LearningHistory() {
           Lịch sử học tập
         </h1>
         <p className="mt-3 max-w-2xl text-[var(--muted)]">
-          Các bài học đã phân tích từ dữ liệu luyện tập — ưu tiên hiển thị bài luyện gần đây trước.
+          Nhóm theo unit/chủ đề. Bấm vào tiêu đề hoặc &quot;Xem bài tập&quot; để mở chi tiết câu hỏi LMS.
           Dữ liệu theo ngày tham chiếu{' '}
           <span className="font-semibold text-[var(--ink)]">{data.reference_date ?? '—'}</span>
           {data.student_id != null && (
@@ -100,31 +107,42 @@ export default function LearningHistory() {
       {data.items.length === 0 ? (
         <p className="text-[var(--muted)]">Chưa có mục lịch sử.</p>
       ) : (
-        <div className="relative">
-          {/* Đường timeline — lệch nhẹ editorial */}
-          <div
-            className="absolute bottom-0 left-[1.125rem] top-8 w-px bg-gradient-to-b from-[var(--mint)] via-[var(--border)] to-transparent md:left-5"
-            aria-hidden
-          />
+        <div className="space-y-16">
+          {grouped.map(([moduleLabel, moduleItems], gi) => (
+            <section key={moduleLabel} className="animate-rise" style={{ animationDelay: `${gi * 0.06}s` }}>
+              <h2 className="font-display border-b border-[var(--border)] pb-3 text-xl font-semibold text-[var(--ink)] md:text-2xl">
+                {moduleLabel}
+              </h2>
 
-          <ol className="space-y-8">
-            {data.items.map((item, i) => (
-              <li
-                key={item.lesson_id}
-                className="animate-rise relative flex gap-5 pl-1 md:gap-8"
-                style={{ animationDelay: `${Math.min(i, 14) * 0.04}s` }}
-              >
-                <div className="relative z-[1] flex shrink-0 flex-col items-center">
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[var(--surface)] bg-[var(--mint-soft)] font-display text-sm font-bold text-[var(--mint)] shadow-[var(--shadow-card)] md:h-10 md:w-10">
-                    {i + 1}
-                  </span>
-                </div>
+              <div className="relative mt-8">
+                <div
+                  className="absolute bottom-0 left-[1.125rem] top-8 w-px bg-gradient-to-b from-[var(--mint)] via-[var(--border)] to-transparent md:left-5"
+                  aria-hidden
+                />
 
-                <article className="min-w-0 flex-1 rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-[var(--shadow-card)] md:p-6">
+                <ol className="space-y-8">
+                  {moduleItems.map((item, i) => (
+                    <li
+                      key={item.lesson_id}
+                      className="relative flex gap-5 pl-1 md:gap-8"
+                      style={{ animationDelay: `${Math.min(i, 14) * 0.04}s` }}
+                    >
+                      <div className="relative z-[1] flex shrink-0 flex-col items-center">
+                        <span className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[var(--surface)] bg-[var(--mint-soft)] font-display text-sm font-bold text-[var(--mint)] shadow-[var(--shadow-card)] md:h-10 md:w-10">
+                          {i + 1}
+                        </span>
+                      </div>
+
+                      <article className="min-w-0 flex-1 rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-[var(--shadow-card)] md:p-6">
                   <div className="flex flex-wrap items-start justify-between gap-3">
-                    <div>
-                      <h2 className="font-display text-lg font-semibold leading-snug text-[var(--ink)] md:text-xl">
-                        {item.title}
+                    <div className="min-w-0">
+                      <h2 className="font-display text-lg font-semibold leading-snug md:text-xl">
+                        <Link
+                          to={`/lessons/${item.lesson_id}`}
+                          className="text-[var(--ink)] underline-offset-4 transition hover:text-[var(--mint)] hover:underline"
+                        >
+                          {item.title}
+                        </Link>
                       </h2>
                       <div className="mt-2 flex flex-wrap gap-2 text-xs">
                         {item.level != null && (
@@ -214,10 +232,22 @@ export default function LearningHistory() {
                       )}
                     </div>
                   </div>
+
+                  <div className="mt-4 border-t border-[var(--border)] pt-4">
+                    <Link
+                      to={`/lessons/${item.lesson_id}`}
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--mint)] hover:underline"
+                    >
+                      Xem danh sách bài tập &amp; luyện tập của bài này →
+                    </Link>
+                  </div>
                 </article>
-              </li>
-            ))}
-          </ol>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </section>
+          ))}
         </div>
       )}
     </div>
