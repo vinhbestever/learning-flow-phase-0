@@ -17,7 +17,6 @@ interface HomeworkData {
   diagnostic: string
 }
 
-/* Nền sáng: chữ đậm, viền nhạt — không dùng text-*-100/-200 (chỉ hợp nền tối) */
 const difficultyStyle: Record<Question['difficulty'], string> = {
   easy: 'border-emerald-200 bg-emerald-50 text-emerald-900',
   medium: 'border-amber-200 bg-amber-50 text-amber-950',
@@ -58,7 +57,7 @@ export default function HomeworkResult() {
 
   if (error) {
     return (
-      <div className="space-y-4 rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-8 shadow-[var(--shadow-card)]">
+      <div className="space-y-4 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 shadow-[var(--shadow-card)]">
         <p className="text-[var(--coral)]">{error}</p>
         <Link
           to="/generate"
@@ -80,74 +79,96 @@ export default function HomeworkResult() {
   }
 
   return (
-    <div className="space-y-10">
-      <header className="animate-rise flex flex-wrap items-end justify-between gap-4">
+    <div className="space-y-6">
+      <header className="flex flex-wrap items-start justify-between gap-3">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--amber)]">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[var(--amber)]">
             Bài về nhà
           </p>
-          <h1 className="font-display mt-2 text-3xl font-semibold text-[var(--ink)] md:text-4xl">
+          <h1 className="font-display mt-1 text-2xl font-semibold text-[var(--ink)] md:text-3xl">
             {data.homework.length} câu đã chọn
           </h1>
+          <p className="mt-1 max-w-xl text-xs text-[var(--muted)]">
+            Phần <span className="font-semibold text-[var(--mint)]">Lý do giao bài</span> giải thích vì
+            sao câu này phù hợp với học sinh — đọc trước khi xem đề.
+          </p>
         </div>
         <button
           type="button"
           onClick={() => setShowDiag((d) => !d)}
-          className="rounded-full border border-[var(--border)] bg-[var(--elevated)] px-4 py-2 text-sm font-semibold text-[var(--muted)] transition hover:border-[var(--mint)]/40 hover:text-[var(--ink)]"
+          className="shrink-0 rounded-full border border-[var(--border)] bg-[var(--surface)] px-3 py-1.5 text-xs font-semibold text-[var(--muted)] transition hover:border-[var(--mint)]/40 hover:text-[var(--ink)]"
         >
-          {showDiag ? 'Ẩn đánh giá' : 'Xem đánh giá đầy đủ'}
+          {showDiag ? 'Ẩn đánh giá' : 'Đánh giá đầy đủ'}
         </button>
       </header>
 
       {showDiag && (
-        <section className="animate-rise rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-6 shadow-[var(--shadow-card)]">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--muted)]">
-            Đánh giá học sinh
+        <section className="max-h-[min(50vh,420px)] overflow-y-auto rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 shadow-sm">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--muted)]">
+            Diagnostic
           </p>
-          <p className="mt-4 whitespace-pre-wrap text-sm leading-relaxed text-[var(--ink)]">
+          <p className="mt-2 whitespace-pre-wrap text-sm leading-relaxed text-[var(--ink)]">
             {data.diagnostic}
           </p>
         </section>
       )}
 
-      <ol className="space-y-4">
+      <ol className="space-y-3">
         {data.homework.map((q, i) => (
           <li
             key={q.question_no}
-            className="animate-rise rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-6 shadow-[var(--shadow-card)]"
-            style={{ animationDelay: `${Math.min(i, 14) * 0.035}s` }}
+            className="overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)] shadow-sm"
+            style={{ animationDelay: `${Math.min(i, 12) * 0.03}s` }}
           >
-            <div className="flex gap-4">
-              <span className="font-display mt-0.5 w-8 shrink-0 text-sm tabular-nums text-[var(--muted)]">
-                {q.question_no}.
+            {/* Hàng meta gọn */}
+            <div className="flex flex-wrap items-center gap-2 border-b border-[var(--border)] bg-[var(--void)]/40 px-3 py-2">
+              <span className="font-display w-7 text-center text-xs font-bold tabular-nums text-[var(--muted)]">
+                {q.question_no}
               </span>
-              <div className="min-w-0 flex-1 space-y-3">
-                <div className="flex flex-wrap gap-2 text-xs font-semibold uppercase tracking-wide">
-                  <span
-                    className={`rounded-full border px-2.5 py-1 ${skillStyle[q.skill_category] ?? skillStyle.other}`}
-                  >
-                    {q.skill_category}
-                  </span>
-                  <span
-                    className={`rounded-full border px-2.5 py-1 ${difficultyStyle[q.difficulty]}`}
-                  >
-                    {q.difficulty}
-                  </span>
-                  <span className="rounded-full border border-[var(--border)] bg-[var(--elevated)] px-2.5 py-1 text-[var(--muted)]">
-                    {q.question_type}
-                  </span>
-                </div>
-                <p className="text-xs text-[var(--muted)]">{q.lesson_title}</p>
-                <p className="text-[var(--ink)] leading-relaxed">{q.question_text}</p>
-                {q.correct_answer && (
-                  <p className="text-sm text-[var(--mint)]">
-                    Đáp án: <span className="font-medium">{q.correct_answer}</span>
-                  </p>
-                )}
-                <p className="border-l-2 border-[var(--amber)]/50 pl-3 text-sm italic text-[var(--muted)]">
-                  {q.reason}
+              <span
+                className={`rounded-md border px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${skillStyle[q.skill_category] ?? skillStyle.other}`}
+              >
+                {q.skill_category}
+              </span>
+              <span
+                className={`rounded-md border px-1.5 py-0.5 text-[10px] font-semibold ${difficultyStyle[q.difficulty]}`}
+              >
+                {q.difficulty}
+              </span>
+              <span className="rounded-md border border-[var(--border)] bg-[var(--elevated)] px-1.5 py-0.5 text-[10px] text-[var(--muted)]">
+                {q.question_type}
+              </span>
+              <span className="ml-auto min-w-0 truncate pl-2 text-right text-[10px] text-[var(--muted)]">
+                {q.lesson_title}
+              </span>
+            </div>
+
+            {/* Lý do — trọng tâm UI */}
+            <div className="relative border-b border-[var(--mint)]/20 bg-gradient-to-br from-[var(--mint-soft)]/90 via-[#f0fdf9] to-[var(--amber-soft)]/50 px-4 py-4">
+              <div
+                className="pointer-events-none absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-[var(--mint)] to-[var(--amber)]"
+                aria-hidden
+              />
+              <p className="pl-3 font-display text-[10px] font-semibold uppercase tracking-[0.35em] text-[var(--mint)]">
+                Lý do giao bài
+              </p>
+              <p className="mt-2 pl-3 text-sm font-medium leading-relaxed text-[var(--ink)] md:text-[0.9375rem]">
+                {q.reason}
+              </p>
+            </div>
+
+            {/* Đề + đáp án — nhẹ hơn */}
+            <div className="space-y-2 px-4 py-3">
+              <p className="text-[10px] font-semibold uppercase tracking-wider text-[var(--muted)]">
+                Câu hỏi
+              </p>
+              <p className="text-sm leading-relaxed text-[var(--ink)]">{q.question_text}</p>
+              {q.correct_answer && (
+                <p className="rounded-lg border border-dashed border-[var(--mint)]/40 bg-[var(--mint-soft)]/30 px-2.5 py-1.5 text-xs">
+                  <span className="font-semibold text-[var(--mint)]">Đáp án:</span>{' '}
+                  <span className="text-[var(--ink)]">{q.correct_answer}</span>
                 </p>
-              </div>
+              )}
             </div>
           </li>
         ))}
