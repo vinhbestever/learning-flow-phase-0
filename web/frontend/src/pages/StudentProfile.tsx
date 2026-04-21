@@ -184,6 +184,61 @@ export default function StudentProfile() {
         />
       </section>
 
+      {(otherStatuses.length > 0 || speakingDist.length > 0) && (
+        <section className="animate-rise delay-5 grid gap-4 md:grid-cols-2">
+          {otherStatuses.length > 0 && (
+            <div className="space-y-3 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-[var(--shadow-card)]">
+              <h2 className="font-display text-base font-semibold text-[var(--ink)]">
+                Tiến độ theo trạng thái
+              </h2>
+              <p className="text-xs text-[var(--muted)]">
+                Ngoài bài đã hoàn thành ({completed}), các trạng thái còn lại trong lộ trình.
+              </p>
+              <ul className="flex flex-wrap gap-2">
+                {otherStatuses.map(([key, n]) => (
+                  <li
+                    key={key}
+                    className="rounded-lg border border-[var(--border)] bg-[var(--elevated)]/50 px-3 py-1.5 text-sm"
+                  >
+                    <span className="text-[var(--muted)]">{LESSON_STATUS_LABEL[key] ?? key}</span>
+                    <span className="ml-2 font-semibold tabular-nums text-[var(--ink)]">{n}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {speakingDist.length > 0 && (
+            <div className="space-y-3 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 shadow-[var(--shadow-card)]">
+              <h2 className="font-display text-base font-semibold text-[var(--ink)]">
+                Loại câu trả lời (nói tự do)
+              </h2>
+              {speakingTotal > 0 ? (
+                <ul className="space-y-2">
+                  {speakingDist.map(([key, n]) => (
+                    <li key={key} className="space-y-1">
+                      <div className="flex justify-between gap-2 text-xs">
+                        <span className="text-[var(--ink)]">{SPEAKING_TYPE_LABEL[key] ?? key}</span>
+                        <span className="shrink-0 tabular-nums text-[var(--muted)]">
+                          {n} ({Math.round((n / speakingTotal) * 100)}%)
+                        </span>
+                      </div>
+                      <div className="h-2 overflow-hidden rounded-full bg-[var(--elevated-2)]">
+                        <div
+                          className={`h-full rounded-full ${SPEAKING_TYPE_COLOR[key] ?? 'bg-[var(--muted)]'}`}
+                          style={{ width: `${Math.min(100, (n / speakingTotal) * 100)}%` }}
+                        />
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="text-sm text-[var(--muted)]">Chưa có lượt nói tự do được ghi nhận.</p>
+              )}
+            </div>
+          )}
+        </section>
+      )}
 
       <section className="animate-rise delay-5 space-y-4">
         <div className="flex flex-wrap items-end justify-between gap-3">
