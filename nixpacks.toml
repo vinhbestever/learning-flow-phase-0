@@ -1,4 +1,5 @@
 # Railway uses Nixpacks. Python is auto-detected from requirements.txt, but the
-# frontend build needs Node/npm. Extend the default nix packages with nodejs.
+# frontend build needs Node/npm. Plain `nodejs` in nixpkgs was Node 20.18, which
+# is below Vite 8's minimum (^20.19 || >=22.12) and broke rolldown native bindings.
 [phases.setup]
-nixPkgs = ["...", "nodejs"]
+nixPkgs = ["...", "nodejs_22"]
