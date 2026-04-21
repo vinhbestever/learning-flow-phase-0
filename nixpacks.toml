@@ -1,5 +1,8 @@
 # Railway uses Nixpacks. Python is auto-detected from requirements.txt, but the
-# frontend build needs Node/npm. Nix `nodejs` was too old for Vite 8; `nodejs_22`
-# in Nixpacks' nixpkgs pin was still 22.10 (< 22.12). Node 24 satisfies Vite 8.
+# frontend build needs Node/npm. Nixpacks pins an old nixpkgs where `nodejs` and
+# `nodejs_22` are below Vite 8's minimum, and `nodejs_24` does not exist. Bump
+# the nixpkgs snapshot so `nodejs_24` is available and recent enough.
 [phases.setup]
+# nixpkgs-unstable head (see https://channels.nixos.org/nixpkgs-unstable/git-revision)
+nixpkgsArchive = "b86751bc4085f48661017fa226dee99fab6c651b"
 nixPkgs = ["...", "nodejs_24"]
