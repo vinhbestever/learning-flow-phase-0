@@ -97,7 +97,7 @@ uvicorn web.backend.main:app --port 8000   # FastAPI serves dist/ as static file
 **Backend additions** (add to `requirements.txt`):
 - `fastapi>=0.110`
 - `uvicorn[standard]>=0.29`
-- `python-multipart` (FastAPI form support)
+- `websockets>=12.0`
 
 **Frontend** (new `web/frontend/`):
 - React 18 + Vite

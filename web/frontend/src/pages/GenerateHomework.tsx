@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 type WsMsg =
@@ -14,6 +14,12 @@ export default function GenerateHomework() {
   const [errorMsg, setErrorMsg] = useState('')
   const wsRef = useRef<WebSocket | null>(null)
   const navigate = useNavigate()
+
+  useEffect(() => {
+    return () => {
+      wsRef.current?.close()
+    }
+  }, [])
 
   function start() {
     setSteps([])

@@ -3,10 +3,9 @@ from pathlib import Path
 
 from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect
 
+from web.backend.config import DIAGNOSTIC_PATH as DIAGNOSTIC_PATH
+from web.backend.config import HOMEWORK_PATH as HOMEWORK_PATH
 from web.backend.pipeline_ws import run_pipeline_ws
-
-HOMEWORK_PATH = "output/homework_assignment.json"
-DIAGNOSTIC_PATH = "output/diagnostic_output.txt"
 
 router = APIRouter(prefix="/api")
 

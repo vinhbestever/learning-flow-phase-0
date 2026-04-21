@@ -3,7 +3,7 @@ from pathlib import Path
 
 from fastapi import APIRouter, HTTPException
 
-QUESTIONS_EXPORT_PATH = "output/questions_export.json"
+from web.backend.config import QUESTIONS_EXPORT_PATH as QUESTIONS_EXPORT_PATH
 
 router = APIRouter(prefix="/api")
 

@@ -3,7 +3,7 @@ from pathlib import Path
 
 from fastapi import APIRouter, HTTPException
 
-STUDENT_CONTEXT_PATH = "output/student_context.json"
+from web.backend.config import STUDENT_CONTEXT_PATH as STUDENT_CONTEXT_PATH
 
 router = APIRouter(prefix="/api")
 
