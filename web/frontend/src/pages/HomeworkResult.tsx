@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { formatActivityDateDisplay } from '../lib/activityDate'
 
 interface SpeakingItem {
   question: string
@@ -22,6 +23,8 @@ interface FailedTextQuestion {
 }
 
 interface StudentContext {
+  /** ISO-like LMS date when present (requires preprocess after this field was added). */
+  last_activity_date?: string | null
   days_since_last_practice: number | null
   forgetting_score: number | null
   weakness_score: number | null
@@ -107,6 +110,11 @@ function StudentAttemptPanel({ q }: { q: Question }) {
 
   const hasAttemptInfo = speakingItem || textItem
   const days = ctx.days_since_last_practice
+  const lastReviewFmt =
+    formatActivityDateDisplay(ctx.last_activity_date ?? null) ??
+    (speakingItem?.timestamp
+      ? formatActivityDateDisplay(String(speakingItem.timestamp))
+      : null)
 
   return (
     <div className="border-b border-[var(--border)] bg-[var(--void)]/30 px-3 py-2.5">
@@ -115,8 +123,7 @@ function StudentAttemptPanel({ q }: { q: Question }) {
       </p>
 
       <div className="flex flex-wrap gap-2">
-        {/* Days since last practice */}
-        {days !== null && (
+        {(lastReviewFmt || days !== null) && (
           <span className="inline-flex items-center gap-1 rounded-md border border-[var(--border)] bg-[var(--elevated)] px-2 py-1 text-[11px] text-[var(--muted)]">
             <svg className="h-3 w-3 shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
               <path
@@ -125,7 +132,18 @@ function StudentAttemptPanel({ q }: { q: Question }) {
                 clipRule="evenodd"
               />
             </svg>
-            Lần cuối ôn: <span className="font-semibold text-[var(--ink)]">{days} ngày trước</span>
+            Lần ôn cuối:{' '}
+            {lastReviewFmt ? (
+              <time
+                dateTime={lastReviewFmt.dateTime}
+                title={lastReviewFmt.title}
+                className="font-semibold tabular-nums text-[var(--ink)]"
+              >
+                {lastReviewFmt.label}
+              </time>
+            ) : (
+              <span className="font-semibold text-[var(--ink)]">{days} ngày trước</span>
+            )}
           </span>
         )}
 

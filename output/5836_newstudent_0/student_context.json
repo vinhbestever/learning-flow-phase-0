@@ -1,0 +1,527 @@
+{
+  "summary": {
+    "student_id": "5836_newstudent_0",
+    "reference_date": "2026-04-21",
+    "total_lessons": 2,
+    "lessons_by_status": {
+      "in_class_only": 1,
+      "completed": 1
+    },
+    "overall_homework_skill_breakdown": {
+      "English Tutoring - Level 2": {
+        "correct": 44,
+        "total": 60,
+        "accuracy": 0.733
+      }
+    },
+    "weak_skills_global": [],
+    "overall_pronunciation_score_avg": 56.78,
+    "overall_free_speaking_score_avg": 0.0,
+    "overall_free_speaking_answer_type_dist": {
+      "lack_of_knowledge": 2,
+      "correct": 1,
+      "incorrect": 5
+    },
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+  },
+  "scored_candidates": [
+    {
+      "lesson_id": 3834262,
+      "title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
+      "level": 2,
+      "last_activity_date": "2026-03-16",
+      "days_since_last_practice": 36,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "homework_status": "not_attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [
+        {
+          "practice_id": 7693,
+          "question_id": 303559,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+          "correct_answer": "B.",
+          "student_answer": null,
+          "requires_media": true
+        },
+        {
+          "practice_id": 7693,
+          "question_id": 303560,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+          "correct_answer": "C.",
+          "student_answer": null,
+          "requires_media": true
+        },
+        {
+          "practice_id": 7693,
+          "question_id": 303565,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+          "correct_answer": "A.",
+          "student_answer": null,
+          "requires_media": true
+        },
+        {
+          "practice_id": 7693,
+          "question_id": 303572,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+          "correct_answer": "C.",
+          "student_answer": null,
+          "requires_media": true
+        },
+        {
+          "practice_id": 7693,
+          "question_id": 303576,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn câu đúng nhé.)",
+          "correct_answer": "A. It's a teddy bear.",
+          "student_answer": null,
+          "requires_media": true
+        }
+      ],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "Awesome! I see them too. What else is there?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Door.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-16"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7693,
+        "luyen_tap": 13217
+      }
+    },
+    {
+      "lesson_id": 3789324,
+      "title": "Unit 1A: Toys - Lesson 1: Hello!",
+      "level": 2,
+      "last_activity_date": "2026-03-13",
+      "days_since_last_practice": 39,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.6125,
+      "composite_priority_score": 0.8063,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 7670,
+          "question_id": 303522,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn câu đúng nhé.) I'm fine. Thanks.",
+          "correct_answer": "C. How are you?",
+          "student_answer": [
+            "1",
+            "0",
+            "0"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 7670,
+          "question_id": 303524,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn câu đúng nhé.) How old are you?",
+          "correct_answer": "B. I'm seven years old.",
+          "student_answer": [
+            "0",
+            "0",
+            "1"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 3,
+      "worst_speaking_items": [
+        {
+          "question": "What is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "The.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-08"
+        },
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "W. Bell.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-08"
+        },
+        {
+          "question": "What is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Belle My.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-02"
+        },
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "The.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-02"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7670,
+        "luyen_tap": 13216
+      }
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": 3834262,
+      "program_id": null,
+      "level": 2,
+      "position": 2,
+      "title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
+      "desc": "- Toys: ball, doll, teddy bear (review)\n- Numbers: 1-5",
+      "status": "in_class_only",
+      "last_activity_date": "2026-03-16",
+      "days_since_last_practice": 36,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 71,
+        "latest_session_date": "2026-03-16",
+        "pronunciation_attempts": 43,
+        "pronunciation_score_avg": 61.72,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "lack_of_knowledge": 1,
+          "correct": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "Awesome! I see them too. What else is there?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Door.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-16"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 7693,
+          "luyen_tap": 13217
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {
+          "bai_tap": [
+            {
+              "practice_id": 7693,
+              "question_id": 303559,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+              "correct_answer": "B.",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 7693,
+              "question_id": 303560,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+              "correct_answer": "C.",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 7693,
+              "question_id": 303565,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+              "correct_answer": "A.",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 7693,
+              "question_id": 303572,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+              "correct_answer": "C.",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 7693,
+              "question_id": 303576,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn câu đúng nhé.)",
+              "correct_answer": "A. It's a teddy bear.",
+              "student_answer": null,
+              "requires_media": true
+            }
+          ],
+          "luyen_tap": [
+            {
+              "practice_id": 13217,
+              "question_id": 370335,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai nhé.)",
+              "correct_answer": "B",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 13217,
+              "question_id": 370339,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai nhé.)",
+              "correct_answer": "A",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 13217,
+              "question_id": 370340,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai nhé.)",
+              "correct_answer": "B",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 13217,
+              "question_id": 370342,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai nhé.)",
+              "correct_answer": "A",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 13217,
+              "question_id": 370344,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn câu đúng nhé.)",
+              "correct_answer": "C. It's a ball.",
+              "student_answer": null,
+              "requires_media": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": 3789324,
+      "program_id": null,
+      "level": 2,
+      "position": 1,
+      "title": "Unit 1A: Toys - Lesson 1: Hello!",
+      "desc": "- Greetings\n - numbers 1-10\n - Toys\n - sounds: æ, e\n - Math: plus, minus, equal",
+      "status": "completed",
+      "last_activity_date": "2026-03-13",
+      "days_since_last_practice": 39,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.6125,
+      "composite_priority_score": 0.8063,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 85,
+        "latest_session_date": "2026-03-08",
+        "pronunciation_attempts": 106,
+        "pronunciation_score_avg": 54.77,
+        "free_speaking_attempts": 5,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "incorrect": 4,
+          "lack_of_knowledge": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "The.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-08"
+          },
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "W. Bell.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-08"
+          },
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Belle My.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-02"
+          },
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "The.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-02"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7670,
+          "score": 0.7,
+          "correct": 14,
+          "total": 20,
+          "submitted_date": "2026-03-13"
+        },
+        "luyen_tap": {
+          "practice_id": 13216,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-03-13"
+        },
+        "lms_ids": {
+          "bai_tap": 7670,
+          "luyen_tap": 13216
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 44,
+            "total": 60,
+            "accuracy": 0.733
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7670,
+            "question_id": 389373,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn tranh và nói nhé.)",
+            "correct_answer": "ball",
+            "student_answer": "bow",
+            "requires_media": true
+          },
+          {
+            "practice_id": 7670,
+            "question_id": 303510,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose the correct picture (Con hãy đọc và chọn tranh đúng nhé.) It's a ball.",
+            "correct_answer": "A.",
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 7670,
+            "question_id": 303515,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose the correct picture (Con hãy đọc và chọn tranh đúng nhé.) It's a fan.",
+            "correct_answer": "C.",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 7670,
+            "question_id": 303522,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn câu đúng nhé.) I'm fine. Thanks.",
+            "correct_answer": "C. How are you?",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 7670,
+            "question_id": 303524,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn câu đúng nhé.) How old are you?",
+            "correct_answer": "B. I'm seven years old.",
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    }
+  ]
+}

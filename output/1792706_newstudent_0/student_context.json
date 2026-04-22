@@ -1,0 +1,2259 @@
+{
+  "summary": {
+    "student_id": "1792706_newstudent_0",
+    "reference_date": "2026-04-21",
+    "total_lessons": 12,
+    "lessons_by_status": {
+      "completed": 12
+    },
+    "overall_homework_skill_breakdown": {
+      "English Tutoring - Level 1": {
+        "correct": 157,
+        "total": 181,
+        "accuracy": 0.867
+      },
+      "Kĩ năng nghe": {
+        "correct": 83,
+        "total": 91,
+        "accuracy": 0.912
+      },
+      "Biểu đồ": {
+        "correct": 42,
+        "total": 44,
+        "accuracy": 0.955
+      },
+      "Từ vựng": {
+        "correct": 29,
+        "total": 30,
+        "accuracy": 0.967
+      },
+      "English Tutoring Level 0": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "weak_skills_global": [],
+    "overall_pronunciation_score_avg": 54.06,
+    "overall_free_speaking_score_avg": 2.94,
+    "overall_free_speaking_answer_type_dist": {
+      "inaccordant": 8,
+      "correct": 6,
+      "incorrect": 17,
+      "lack_of_knowledge": 2,
+      "accordant": 1
+    },
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+  },
+  "scored_candidates": [
+    {
+      "lesson_id": 3830583,
+      "title": "Unit 3A: School things - Lesson 1: It's a red notebook.",
+      "level": 1,
+      "last_activity_date": "2026-04-17",
+      "days_since_last_practice": 4,
+      "forgetting_score": 0.9817,
+      "weakness_score": 1.0,
+      "composite_priority_score": 0.9909,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "How are you today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "After.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-04-15"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7212,
+        "luyen_tap": 13133
+      }
+    },
+    {
+      "lesson_id": 3836969,
+      "title": "Unit 3A: School things - Lesson 2: I have a yellow pencil.",
+      "level": 1,
+      "last_activity_date": "2026-04-19",
+      "days_since_last_practice": 2,
+      "forgetting_score": 0.8647,
+      "weakness_score": 0.7992,
+      "composite_priority_score": 0.8319,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 13136,
+          "question_id": 385157,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Match (Con hãy di chuyển các ô ở cột bên phải để nối từ với ảnh đúng.)",
+          "correct_answer": null,
+          "student_answer": [
+            "3",
+            "2",
+            "4",
+            "1"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 13136,
+          "question_id": 369464,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Một lựa chọn",
+          "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.) How many rulers ... there?",
+          "correct_answer": "C. are",
+          "student_answer": [
+            "0",
+            "1",
+            "0"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "IoH.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-17"
+        },
+        {
+          "question": "How do you feel now?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Than you.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-04-17"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7213,
+        "luyen_tap": 13136
+      }
+    },
+    {
+      "lesson_id": 3824530,
+      "title": "Unit 1A: Greetings - Lesson 4: I'm good!",
+      "level": 1,
+      "last_activity_date": "2026-03-25",
+      "days_since_last_practice": 27,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.6195,
+      "composite_priority_score": 0.8097,
+      "homework_status": "attempted",
+      "weak_skills": [
+        "English Tutoring - Level 1"
+      ],
+      "failed_text_questions": [
+        {
+          "practice_id": 13129,
+          "question_id": 369270,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Một lựa chọn",
+          "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.) What's your name?",
+          "correct_answer": "C. I'm Tony.",
+          "student_answer": [
+            "0",
+            "1",
+            "0"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 13129,
+          "question_id": 369269,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Một lựa chọn",
+          "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.) How old are you?",
+          "correct_answer": "C. I'm ten years old.",
+          "student_answer": [
+            "0",
+            "1",
+            "0"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 13129,
+          "question_id": 387599,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Fill in the blank (Con hãy điền từ vào ô trống.) What is this? - It's a clo_k.",
+          "correct_answer": "c",
+          "student_answer": "ụ ih",
+          "requires_media": false
+        },
+        {
+          "practice_id": 13129,
+          "question_id": 369274,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Fill in the blank (Con hãy điền từ vào ô trống.) Nice to m_et you.",
+          "correct_answer": "e",
+          "student_answer": "ioekdj",
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 4,
+      "worst_speaking_items": [
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I hate.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-20"
+        },
+        {
+          "question": "How are you today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Y.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-03-20"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7193,
+        "luyen_tap": 13129
+      }
+    },
+    {
+      "lesson_id": 3824532,
+      "title": "Unit 2A: Colors - Lesson 1: It's red.",
+      "level": 1,
+      "last_activity_date": "2026-03-29",
+      "days_since_last_practice": 23,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.57,
+      "composite_priority_score": 0.785,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 3,
+      "worst_speaking_items": [
+        {
+          "question": "Anything else?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "No.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-28"
+        },
+        {
+          "question": "What is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Oh.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-27"
+        },
+        {
+          "question": "What do you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "God, the.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-27"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7201,
+        "luyen_tap": 13139
+      }
+    },
+    {
+      "lesson_id": 3824533,
+      "title": "Unit 2A: Colors - Lesson 2: It's a red flower.",
+      "level": 1,
+      "last_activity_date": "2026-04-02",
+      "days_since_last_practice": 19,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.565,
+      "composite_priority_score": 0.7825,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 13140,
+          "question_id": 369547,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Một lựa chọn",
+          "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.)",
+          "correct_answer": "A. It's a purple egg.",
+          "student_answer": [
+            "0",
+            "1",
+            "0"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 13140,
+          "question_id": 369550,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Một lựa chọn",
+          "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.)",
+          "correct_answer": "B. It's a blue elephant",
+          "student_answer": [
+            "1",
+            "0",
+            "0"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 13140,
+          "question_id": 369561,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Fill in the blank (Con hãy điền từ vào ô trống.) Is it purple? Y_s, it is.",
+          "correct_answer": "e",
+          "student_answer": "u",
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "question": "Look at the picture. Do you know what is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "The.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-01"
+        },
+        {
+          "question": "Look at this picture and tell me, what can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Good.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-01"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7202,
+        "luyen_tap": 13140
+      }
+    },
+    {
+      "lesson_id": 3824535,
+      "title": "Unit 2A: Colors - Lesson 4: Is it orange?",
+      "level": 1,
+      "last_activity_date": "2026-04-10",
+      "days_since_last_practice": 11,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5455,
+      "composite_priority_score": 0.7728,
+      "homework_status": "attempted",
+      "weak_skills": [
+        "Biểu đồ"
+      ],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 2,
+      "worst_speaking_items": [
+        {
+          "question": "What is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-10"
+        },
+        {
+          "question": "What toys do you like?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Egg.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-04-10"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7206,
+        "luyen_tap": 13117
+      }
+    },
+    {
+      "lesson_id": 3824531,
+      "title": "Unit 1A: Greetings - Lesson 5: Review & culture",
+      "level": 1,
+      "last_activity_date": "2026-03-25",
+      "days_since_last_practice": 27,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5405,
+      "composite_priority_score": 0.7702,
+      "homework_status": "attempted",
+      "weak_skills": [
+        "Từ vựng"
+      ],
+      "failed_text_questions": [
+        {
+          "practice_id": 13141,
+          "question_id": 369516,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct answer. ( Con hãy nghe và chọn đáp án đúng.)",
+          "correct_answer": "C. I am Tony",
+          "student_answer": [
+            "0",
+            "1",
+            "0"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 13141,
+          "question_id": 369524,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct answer. ( Con hãy nghe và chọn đáp án đúng.)",
+          "correct_answer": "C. Nice to meet you.",
+          "student_answer": [
+            "0",
+            "1",
+            "0"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 13141,
+          "question_id": 369527,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Một lựa chọn",
+          "question_text": "Reorder the letter. (Con hãy sắp xếp lại các chữ cái để tạo thành từ đúng.) a n t",
+          "correct_answer": "A. ant",
+          "student_answer": [
+            "0",
+            "1",
+            "0"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 2,
+      "worst_speaking_items": [
+        {
+          "question": "What else can you find?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "She seven, she.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-25"
+        },
+        {
+          "question": "How are you today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "One, two, three, four.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-03-25"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7194,
+        "luyen_tap": 13141
+      }
+    },
+    {
+      "lesson_id": 3824536,
+      "title": "Unit 2A: Colors - Lesson 5: Review & value",
+      "level": 1,
+      "last_activity_date": "2026-04-11",
+      "days_since_last_practice": 10,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5195,
+      "composite_priority_score": 0.7597,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 2,
+      "worst_speaking_items": [
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Like.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-10"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7210,
+        "luyen_tap": 13131
+      }
+    },
+    {
+      "lesson_id": 3824528,
+      "title": "Unit 1A: Greetings - Lesson 2: Nice to meet you!",
+      "level": 1,
+      "last_activity_date": "2026-03-14",
+      "days_since_last_practice": 38,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5105,
+      "composite_priority_score": 0.7552,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Ground.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-14"
+        },
+        {
+          "question": "How do you feel now?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Don gonna night.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-03-13"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7191,
+        "luyen_tap": 13127
+      }
+    },
+    {
+      "lesson_id": 3824529,
+      "title": "Unit 1A: Greetings - Lesson 3: I'm six years old.",
+      "level": 1,
+      "last_activity_date": "2026-03-19",
+      "days_since_last_practice": 33,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5105,
+      "composite_priority_score": 0.7552,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "question": "What’s the weather like today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I want A.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-19"
+        },
+        {
+          "question": "What’s the weather like today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "No dollar.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-03-19"
+        },
+        {
+          "question": "What’s the weather like today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Tori.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-18"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7192,
+        "luyen_tap": 13128
+      }
+    },
+    {
+      "lesson_id": 3824534,
+      "title": "Unit 2A: Colors - Lesson 3: Is it green?",
+      "level": 1,
+      "last_activity_date": "2026-04-05",
+      "days_since_last_practice": 16,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 13145,
+          "question_id": 369607,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
+          "correct_answer": "A. It's a red flower.",
+          "student_answer": [
+            "0",
+            "0",
+            "1"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 3,
+      "worst_speaking_items": [
+        {
+          "question": "How are you today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "The.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-04-05"
+        },
+        {
+          "question": "Look at the picture. Do you know what is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "What?",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-03"
+        },
+        {
+          "question": "Look at this picture! What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "What can?",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-03"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7203,
+        "luyen_tap": 13145
+      }
+    },
+    {
+      "lesson_id": 3824527,
+      "title": "Unit 1A: Greetings - Lesson 1: Hello!",
+      "level": 1,
+      "last_activity_date": "2026-03-12",
+      "days_since_last_practice": 40,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.3739,
+      "composite_priority_score": 0.6869,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 4,
+      "worst_speaking_items": [
+        {
+          "question": "What is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Yeah.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-11"
+        },
+        {
+          "question": "what can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "What can you see?",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-11"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7190,
+        "luyen_tap": 13126
+      }
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": 3830583,
+      "program_id": null,
+      "level": 1,
+      "position": 13,
+      "title": "Unit 3A: School things - Lesson 1: It's a red notebook.",
+      "desc": "- pencil, pen, ruler, rubber, school bag\n  glass, goat \n- Letter Gg and sound /g/\n- What color is this/ the notebook? It's (red).\n - What is this? It's (a red notebook).",
+      "status": "completed",
+      "last_activity_date": "2026-04-17",
+      "days_since_last_practice": 4,
+      "forgetting_score": 0.9817,
+      "weakness_score": 1.0,
+      "composite_priority_score": 0.9909,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-15",
+        "pronunciation_attempts": 34,
+        "pronunciation_score_avg": 53.0,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "After.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-04-15"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7212,
+          "score": null,
+          "correct": 0,
+          "total": 15,
+          "submitted_date": "2026-04-17"
+        },
+        "luyen_tap": {
+          "practice_id": 13133,
+          "score": null,
+          "correct": 0,
+          "total": 15,
+          "submitted_date": "2026-04-17"
+        },
+        "lms_ids": {
+          "bai_tap": 7212,
+          "luyen_tap": 13133
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3836969,
+      "program_id": null,
+      "level": 1,
+      "position": 14,
+      "title": "Unit 3A: School things - Lesson 2: I have a yellow pencil.",
+      "desc": "- pencil, pen, ruler, rubber, school bag, \n  head, house\n- Letter Hh and sound /h/ \n- What color is this/ the notebook? It's (red).\n - What is this? It's (a red notebook).\n - What do you have? I have",
+      "status": "completed",
+      "last_activity_date": "2026-04-19",
+      "days_since_last_practice": 2,
+      "forgetting_score": 0.8647,
+      "weakness_score": 0.7992,
+      "composite_priority_score": 0.8319,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-19",
+        "pronunciation_attempts": 62,
+        "pronunciation_score_avg": 55.6,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "IoH.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-17"
+          },
+          {
+            "question": "How do you feel now?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Than you.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-04-17"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7213,
+          "score": null,
+          "correct": 0,
+          "total": 15,
+          "submitted_date": "2026-04-19"
+        },
+        "luyen_tap": {
+          "practice_id": 13136,
+          "score": 0.87,
+          "correct": 13,
+          "total": 15,
+          "submitted_date": "2026-04-19"
+        },
+        "lms_ids": {
+          "bai_tap": 7213,
+          "luyen_tap": 13136
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 1": {
+            "correct": 13,
+            "total": 15,
+            "accuracy": 0.867
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 13136,
+            "question_id": 385157,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Xứng-Hợp",
+            "question_text": "Match (Con hãy di chuyển các ô ở cột bên phải để nối từ với ảnh đúng.)",
+            "correct_answer": null,
+            "student_answer": [
+              "3",
+              "2",
+              "4",
+              "1"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 13136,
+            "question_id": 369464,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.) How many rulers ... there?",
+            "correct_answer": "C. are",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3824530,
+      "program_id": null,
+      "level": 1,
+      "position": 4,
+      "title": "Unit 1A: Greetings - Lesson 4: I'm good!",
+      "desc": "- Numbers 1-10\n - ant, apple, book, black, candy, clock.\n- Review Aa, Bb, Cc\n\n- What's your name? I'm (Tony).\n- How old are you? I'm (six years old)\n- Nice to meet you!\n- Nice to meet you, too!\n- What",
+      "status": "completed",
+      "last_activity_date": "2026-03-25",
+      "days_since_last_practice": 27,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.6195,
+      "composite_priority_score": 0.8097,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-20",
+        "pronunciation_attempts": 28,
+        "pronunciation_score_avg": 61.68,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "incorrect": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I hate.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-20"
+          },
+          {
+            "question": "How are you today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Y.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-03-20"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7193,
+          "score": 0.8,
+          "correct": 12,
+          "total": 15,
+          "submitted_date": "2026-03-25"
+        },
+        "luyen_tap": {
+          "practice_id": 13129,
+          "score": 0.67,
+          "correct": 10,
+          "total": 15,
+          "submitted_date": "2026-03-25"
+        },
+        "lms_ids": {
+          "bai_tap": 7193,
+          "luyen_tap": 13129
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 7,
+            "total": 10,
+            "accuracy": 0.7
+          },
+          "Biểu đồ": {
+            "correct": 3,
+            "total": 3,
+            "accuracy": 1.0
+          },
+          "Từ vựng": {
+            "correct": 2,
+            "total": 2,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 1": {
+            "correct": 10,
+            "total": 15,
+            "accuracy": 0.667
+          }
+        },
+        "weak_skills": [
+          "English Tutoring - Level 1"
+        ],
+        "worst_questions": [
+          {
+            "practice_id": 7193,
+            "question_id": 296463,
+            "question_folder": "Kĩ năng nghe",
+            "question_type": "Một lựa chọn",
+            "question_text": "Find the picture beginning with the letter ... Con hãy tìm bức tranh bắt đầu bằng chữ cái ... Letter B",
+            "correct_answer": null,
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 7193,
+            "question_id": 296466,
+            "question_folder": "Kĩ năng nghe",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer. Con hãy nghe và chọn đáp án đúng.",
+            "correct_answer": null,
+            "student_answer": [
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 7193,
+            "question_id": 296467,
+            "question_folder": "Kĩ năng nghe",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer. Con hãy nghe và chọn đáp án đúng.",
+            "correct_answer": null,
+            "student_answer": [
+              "0",
+              "1"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 13129,
+            "question_id": 369265,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and find the missing letter. (Con hãy nghe và tìm chữ cái bị thiếu.) a_ple.",
+            "correct_answer": "C. p.",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 13129,
+            "question_id": 369270,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.) What's your name?",
+            "correct_answer": "C. I'm Tony.",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 13129,
+            "question_id": 369269,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.) How old are you?",
+            "correct_answer": "C. I'm ten years old.",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 13129,
+            "question_id": 387599,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Fill in the blank (Con hãy điền từ vào ô trống.) What is this? - It's a clo_k.",
+            "correct_answer": "c",
+            "student_answer": "ụ ih",
+            "requires_media": false
+          },
+          {
+            "practice_id": 13129,
+            "question_id": 369274,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Fill in the blank (Con hãy điền từ vào ô trống.) Nice to m_et you.",
+            "correct_answer": "e",
+            "student_answer": "ioekdj",
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3824532,
+      "program_id": null,
+      "level": 1,
+      "position": 7,
+      "title": "Unit 2A: Colors - Lesson 1: It's red.",
+      "desc": "- red, blue, yellow, purple, green\n- duck, dress \n- Letter Dd and sound /d/ \n- What is this? It's (a dress).\n- What color is it/ the dress? It's (red).",
+      "status": "completed",
+      "last_activity_date": "2026-03-29",
+      "days_since_last_practice": 23,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.57,
+      "composite_priority_score": 0.785,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-28",
+        "pronunciation_attempts": 81,
+        "pronunciation_score_avg": 58.09,
+        "free_speaking_attempts": 4,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "incorrect": 3,
+          "correct": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "Anything else?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "No.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-28"
+          },
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Oh.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-27"
+          },
+          {
+            "question": "What do you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "God, the.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-27"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7201,
+          "score": 0.8,
+          "correct": 12,
+          "total": 15,
+          "submitted_date": "2026-03-29"
+        },
+        "luyen_tap": {
+          "practice_id": 13139,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-03-29"
+        },
+        "lms_ids": {
+          "bai_tap": 7201,
+          "luyen_tap": 13139
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 7,
+            "total": 10,
+            "accuracy": 0.7
+          },
+          "Biểu đồ": {
+            "correct": 3,
+            "total": 3,
+            "accuracy": 1.0
+          },
+          "Từ vựng": {
+            "correct": 2,
+            "total": 2,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 1": {
+            "correct": 15,
+            "total": 15,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7201,
+            "question_id": 296876,
+            "question_folder": "Kĩ năng nghe",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer. Con hãy nghe và chọn đáp án đúng.",
+            "correct_answer": null,
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 7201,
+            "question_id": 296880,
+            "question_folder": "Kĩ năng nghe",
+            "question_type": "Một lựa chọn",
+            "question_text": "Tick or Cross Con hãy chọn đúng hoặc sai.",
+            "correct_answer": null,
+            "student_answer": [
+              "0",
+              "1"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 7201,
+            "question_id": 296884,
+            "question_folder": "Kĩ năng nghe",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose the correct answer. Con hãy đọc và chọn đáp án đúng. What color is this? - It's purple.",
+            "correct_answer": null,
+            "student_answer": [
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3824533,
+      "program_id": null,
+      "level": 1,
+      "position": 8,
+      "title": "Unit 2A: Colors - Lesson 2: It's a red flower.",
+      "desc": "- red, blue, yellow, purple, green\n- elephant, egg\n- Letter Ee and sound /e/\n - What is this? It's (a red flower).\n- What color is it / the flower? It's (red).\n - Is it red? Yes, it is/ No, it isn't.",
+      "status": "completed",
+      "last_activity_date": "2026-04-02",
+      "days_since_last_practice": 19,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.565,
+      "composite_priority_score": 0.7825,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-02",
+        "pronunciation_attempts": 77,
+        "pronunciation_score_avg": 39.84,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "incorrect": 2,
+          "correct": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "Look at the picture. Do you know what is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "The.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-01"
+          },
+          {
+            "question": "Look at this picture and tell me, what can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Good.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-01"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7202,
+          "score": 0.93,
+          "correct": 14,
+          "total": 15,
+          "submitted_date": "2026-04-02"
+        },
+        "luyen_tap": {
+          "practice_id": 13140,
+          "score": 0.73,
+          "correct": 11,
+          "total": 15,
+          "submitted_date": "2026-04-02"
+        },
+        "lms_ids": {
+          "bai_tap": 7202,
+          "luyen_tap": 13140
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 9,
+            "total": 10,
+            "accuracy": 0.9
+          },
+          "Biểu đồ": {
+            "correct": 3,
+            "total": 3,
+            "accuracy": 1.0
+          },
+          "Từ vựng": {
+            "correct": 2,
+            "total": 2,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 1": {
+            "correct": 11,
+            "total": 14,
+            "accuracy": 0.786
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7202,
+            "question_id": 296900,
+            "question_folder": "Kĩ năng nghe",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. Con hãy chọn đáp án đúng. What color is this? - It's purple.",
+            "correct_answer": null,
+            "student_answer": [
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 13140,
+            "question_id": 369547,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.)",
+            "correct_answer": "A. It's a purple egg.",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 13140,
+            "question_id": 369550,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.)",
+            "correct_answer": "B. It's a blue elephant",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 13140,
+            "question_id": 369561,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Fill in the blank (Con hãy điền từ vào ô trống.) Is it purple? Y_s, it is.",
+            "correct_answer": "e",
+            "student_answer": "u",
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3824535,
+      "program_id": null,
+      "level": 1,
+      "position": 10,
+      "title": "Unit 2A: Colors - Lesson 4: Is it orange?",
+      "desc": "- orange, black, white, pink\n- duck, dress, elephant, egg, frog, flower\n- Review Dd, Ee, Ff\n- What is this? It's (a red flower).\n- What color is it / the flower? It's (red).",
+      "status": "completed",
+      "last_activity_date": "2026-04-10",
+      "days_since_last_practice": 11,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5455,
+      "composite_priority_score": 0.7728,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-10",
+        "pronunciation_attempts": 45,
+        "pronunciation_score_avg": 52.31,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "lack_of_knowledge": 1,
+          "inaccordant": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-10"
+          },
+          {
+            "question": "What toys do you like?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Egg.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-04-10"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7206,
+          "score": 0.87,
+          "correct": 13,
+          "total": 15,
+          "submitted_date": "2026-04-09"
+        },
+        "luyen_tap": {
+          "practice_id": 13117,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-04-09"
+        },
+        "lms_ids": {
+          "bai_tap": 7206,
+          "luyen_tap": 13117
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 9,
+            "total": 10,
+            "accuracy": 0.9
+          },
+          "Biểu đồ": {
+            "correct": 2,
+            "total": 3,
+            "accuracy": 0.667
+          },
+          "Từ vựng": {
+            "correct": 2,
+            "total": 2,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 1": {
+            "correct": 15,
+            "total": 15,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [
+          "Biểu đồ"
+        ],
+        "worst_questions": [
+          {
+            "practice_id": 7206,
+            "question_id": 297046,
+            "question_folder": "Kĩ năng nghe",
+            "question_type": "Một lựa chọn",
+            "question_text": "Find a picture beginning with letter ... Con hãy tìm bức tranh bắt đầu bằng chữ cái ... Letter F",
+            "correct_answer": null,
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 7206,
+            "question_id": 384696,
+            "question_folder": "Biểu đồ",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say Con hãy nhìn và nói.",
+            "correct_answer": "dress",
+            "student_answer": "say",
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3824531,
+      "program_id": null,
+      "level": 1,
+      "position": 5,
+      "title": "Unit 1A: Greetings - Lesson 5: Review & culture",
+      "desc": "- What's your name? I'm (Tony).\n- How are you? I'm (good).\n- How old are you? I'm (six years old)\n- Nice to meet you!\n- Nice to meet you, too!",
+      "status": "completed",
+      "last_activity_date": "2026-03-25",
+      "days_since_last_practice": 27,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5405,
+      "composite_priority_score": 0.7702,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-25",
+        "pronunciation_attempts": 20,
+        "pronunciation_score_avg": 58.9,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "correct": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What else can you find?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "She seven, she.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-25"
+          },
+          {
+            "question": "How are you today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "One, two, three, four.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-03-25"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7194,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-03-25"
+        },
+        "luyen_tap": {
+          "practice_id": 13141,
+          "score": 0.73,
+          "correct": 11,
+          "total": 15,
+          "submitted_date": "2026-03-25"
+        },
+        "lms_ids": {
+          "bai_tap": 7194,
+          "luyen_tap": 13141
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 1": {
+            "correct": 12,
+            "total": 16,
+            "accuracy": 0.75
+          },
+          "Biểu đồ": {
+            "correct": 11,
+            "total": 11,
+            "accuracy": 1.0
+          },
+          "Từ vựng": {
+            "correct": 2,
+            "total": 3,
+            "accuracy": 0.667
+          }
+        },
+        "weak_skills": [
+          "Từ vựng"
+        ],
+        "worst_questions": [
+          {
+            "practice_id": 7194,
+            "question_id": 296492,
+            "question_folder": "Từ vựng",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look at the picture and odd one out. Con hãy nhìn ảnh và chọn ra từ không cùng loại.",
+            "correct_answer": null,
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 13141,
+            "question_id": 369516,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer. ( Con hãy nghe và chọn đáp án đúng.)",
+            "correct_answer": "C. I am Tony",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 13141,
+            "question_id": 369524,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer. ( Con hãy nghe và chọn đáp án đúng.)",
+            "correct_answer": "C. Nice to meet you.",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 13141,
+            "question_id": 369527,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Reorder the letter. (Con hãy sắp xếp lại các chữ cái để tạo thành từ đúng.) a n t",
+            "correct_answer": "A. ant",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 13141,
+            "question_id": 369557,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look at the picture and odd one out. (Con hãy nhìn ảnh và chọn ra từ không cùng lại.)",
+            "correct_answer": "B.",
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3824536,
+      "program_id": null,
+      "level": 1,
+      "position": 11,
+      "title": "Unit 2A: Colors - Lesson 5: Review & value",
+      "desc": "- red, blue, yellow, purple, green, orange, black, white, pink\n - What is this? It's (a red flower).\n- What color is it/ the flower? It's (red).\n - Is it red? Yes, it is/ No, it isn't.",
+      "status": "completed",
+      "last_activity_date": "2026-04-11",
+      "days_since_last_practice": 10,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5195,
+      "composite_priority_score": 0.7597,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-10",
+        "pronunciation_attempts": 31,
+        "pronunciation_score_avg": 43.87,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Like.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-10"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7210,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-04-11"
+        },
+        "luyen_tap": {
+          "practice_id": 13131,
+          "score": 0.87,
+          "correct": 13,
+          "total": 15,
+          "submitted_date": "2026-04-11"
+        },
+        "lms_ids": {
+          "bai_tap": 7210,
+          "luyen_tap": 13131
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 10,
+            "total": 10,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 3,
+            "total": 3,
+            "accuracy": 1.0
+          },
+          "Từ vựng": {
+            "correct": 2,
+            "total": 2,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 1": {
+            "correct": 12,
+            "total": 14,
+            "accuracy": 0.857
+          },
+          "English Tutoring Level 0": {
+            "correct": 1,
+            "total": 1,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 13131,
+            "question_id": 369374,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Reorder the letter. (Con hãy sắp xếp lại các chữ cái để tạo thành từ đúng.) l a b c k",
+            "correct_answer": "B. black",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 13131,
+            "question_id": 387610,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Reorder the letter. (Con hãy sắp xếp lại các chữ cái để tạo thành từ đúng.) g r n e e",
+            "correct_answer": "B. green",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3824528,
+      "program_id": null,
+      "level": 1,
+      "position": 2,
+      "title": "Unit 1A: Greetings - Lesson 2: Nice to meet you!",
+      "desc": "- Hi, Hello, Goodbye, Bye, book, black\n- Letter Bb and sound /b/ \n- What's your name? I'm (Tony).\n  Nice to meet you!\n  What is this? It's (a book).",
+      "status": "completed",
+      "last_activity_date": "2026-03-14",
+      "days_since_last_practice": 38,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5105,
+      "composite_priority_score": 0.7552,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-14",
+        "pronunciation_attempts": 86,
+        "pronunciation_score_avg": 61.09,
+        "free_speaking_attempts": 4,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "correct": 1,
+          "lack_of_knowledge": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Ground.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-14"
+          },
+          {
+            "question": "How do you feel now?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Don gonna night.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-03-13"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7191,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-03-13"
+        },
+        "luyen_tap": {
+          "practice_id": 13127,
+          "score": 0.93,
+          "correct": 14,
+          "total": 15,
+          "submitted_date": "2026-03-13"
+        },
+        "lms_ids": {
+          "bai_tap": 7191,
+          "luyen_tap": 13127
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 4,
+            "total": 4,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 2,
+            "total": 2,
+            "accuracy": 1.0
+          },
+          "Từ vựng": {
+            "correct": 4,
+            "total": 4,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 1": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3824529,
+      "program_id": null,
+      "level": 1,
+      "position": 3,
+      "title": "Unit 1A: Greetings - Lesson 3: I'm six years old.",
+      "desc": "- Numbers 1-10, candy, clock\n- Letter Cc and sound /k/ \n- \n- What's your name? I'm (Tony).\n - How old are you? I'm (six years old)\n- Nice to meet you! \n- Nice to meet you, too!\n - What is this? It's (",
+      "status": "completed",
+      "last_activity_date": "2026-03-19",
+      "days_since_last_practice": 33,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5105,
+      "composite_priority_score": 0.7552,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-19",
+        "pronunciation_attempts": 62,
+        "pronunciation_score_avg": 47.63,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "incorrect": 2,
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What’s the weather like today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I want A.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-19"
+          },
+          {
+            "question": "What’s the weather like today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "No dollar.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-03-19"
+          },
+          {
+            "question": "What’s the weather like today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Tori.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-18"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7192,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-03-18"
+        },
+        "luyen_tap": {
+          "practice_id": 13128,
+          "score": 0.93,
+          "correct": 14,
+          "total": 15,
+          "submitted_date": "2026-03-19"
+        },
+        "lms_ids": {
+          "bai_tap": 7192,
+          "luyen_tap": 13128
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 7,
+            "total": 7,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 1": {
+            "correct": 15,
+            "total": 16,
+            "accuracy": 0.938
+          },
+          "Biểu đồ": {
+            "correct": 4,
+            "total": 4,
+            "accuracy": 1.0
+          },
+          "Từ vựng": {
+            "correct": 3,
+            "total": 3,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 13128,
+            "question_id": 369239,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Fill in the blank (Con hãy điền chữ cái còn thiếu vào ô trống.) How old are you?",
+            "correct_answer": "x",
+            "student_answer": "xth",
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3824534,
+      "program_id": null,
+      "level": 1,
+      "position": 9,
+      "title": "Unit 2A: Colors - Lesson 3: Is it green?",
+      "desc": "- orange, black, white, pink\n- frog, flower\n- Letter Ff and sound /f/\n - What is this? It's (a red flower).\n- What color is it/ the flower? It's (red).\n - Is it orange? Yes, it is/ No, it isn't.",
+      "status": "completed",
+      "last_activity_date": "2026-04-05",
+      "days_since_last_practice": 16,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-05",
+        "pronunciation_attempts": 40,
+        "pronunciation_score_avg": 63.42,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "incorrect": 2,
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "The.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-04-05"
+          },
+          {
+            "question": "Look at the picture. Do you know what is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "What?",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-03"
+          },
+          {
+            "question": "Look at this picture! What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "What can?",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-03"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7203,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-04-04"
+        },
+        "luyen_tap": {
+          "practice_id": 13145,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-04-04"
+        },
+        "lms_ids": {
+          "bai_tap": 7203,
+          "luyen_tap": 13145
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 12,
+            "total": 12,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 1": {
+            "correct": 29,
+            "total": 32,
+            "accuracy": 0.906
+          },
+          "Biểu đồ": {
+            "correct": 9,
+            "total": 10,
+            "accuracy": 0.9
+          },
+          "Từ vựng": {
+            "correct": 6,
+            "total": 6,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7203,
+            "question_id": 384692,
+            "question_folder": "Biểu đồ",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say Con hãy nhìn và nói.",
+            "correct_answer": "frog",
+            "student_answer": "dog",
+            "requires_media": true
+          },
+          {
+            "practice_id": 13145,
+            "question_id": 369598,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
+            "correct_answer": "C.",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 13145,
+            "question_id": 369602,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
+            "correct_answer": "C.",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 13145,
+            "question_id": 369607,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
+            "correct_answer": "A. It's a red flower.",
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3824527,
+      "program_id": null,
+      "level": 1,
+      "position": 1,
+      "title": "Unit 1A: Greetings - Lesson 1: Hello!",
+      "desc": "- Hi, Hello, Goodbye, Bye, ant, apple\n- Letter Aa and sound /æ/ \n- What's your name? I'm (Tony).\n Nice to meet you!\n What is this? It's (an apple).",
+      "status": "completed",
+      "last_activity_date": "2026-03-12",
+      "days_since_last_practice": 40,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.3739,
+      "composite_priority_score": 0.6869,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-11",
+        "pronunciation_attempts": 54,
+        "pronunciation_score_avg": 58.06,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "incorrect": 2,
+          "accordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Yeah.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-11"
+          },
+          {
+            "question": "what can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "What can you see?",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-11"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7190,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-03-12"
+        },
+        "luyen_tap": {
+          "practice_id": 13126,
+          "score": 0.73,
+          "correct": 11,
+          "total": 15,
+          "submitted_date": "2026-03-12"
+        },
+        "lms_ids": {
+          "bai_tap": 7190,
+          "luyen_tap": 13126
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 4,
+            "total": 4,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 2,
+            "total": 2,
+            "accuracy": 1.0
+          },
+          "Từ vựng": {
+            "correct": 4,
+            "total": 4,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 1": {
+            "correct": 11,
+            "total": 15,
+            "accuracy": 0.733
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 13126,
+            "question_id": 369214,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
+            "correct_answer": "B.",
+            "student_answer": [
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 13126,
+            "question_id": 369216,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
+            "correct_answer": "B.",
+            "student_answer": [
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 13126,
+            "question_id": 369217,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.) What's your name?",
+            "correct_answer": "B. I'm Tony",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 13126,
+            "question_id": 369218,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.) What's your name?",
+            "correct_answer": "A. I'm Lisa",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    }
+  ]
+}

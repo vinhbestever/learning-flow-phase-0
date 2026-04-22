@@ -1,0 +1,517 @@
+{
+  "summary": {
+    "student_id": "2099447_newstudent",
+    "reference_date": "2026-04-21",
+    "total_lessons": 3,
+    "lessons_by_status": {
+      "completed": 3
+    },
+    "overall_homework_skill_breakdown": {
+      "English Tutoring - Level 3": {
+        "correct": 178,
+        "total": 186,
+        "accuracy": 0.957
+      },
+      "Biểu đồ": {
+        "correct": 32,
+        "total": 32,
+        "accuracy": 1.0
+      }
+    },
+    "weak_skills_global": [],
+    "overall_pronunciation_score_avg": 74.29,
+    "overall_free_speaking_score_avg": 25.0,
+    "overall_free_speaking_answer_type_dist": {
+      "correct": 6,
+      "inaccordant": 1,
+      "accordant": 1
+    },
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+  },
+  "scored_candidates": [
+    {
+      "lesson_id": 3640586,
+      "title": "Unit 1A : Nature - Lesson 2: There're some flowers.",
+      "level": 3,
+      "last_activity_date": "2026-01-19",
+      "days_since_last_practice": 92,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5128,
+      "composite_priority_score": 0.7564,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "question": "What did you do today? Is there any fun activity?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "You right now?",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-01-12"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7664,
+        "luyen_tap": 13411
+      }
+    },
+    {
+      "lesson_id": 3640585,
+      "title": "Unit 1A : Nature - Lesson 1: There's one spider.",
+      "level": 3,
+      "last_activity_date": "2026-01-19",
+      "days_since_last_practice": 92,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 7647,
+          "question_id": 302824,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the words (Con hãy đọc và sắp xếp các từ thành câu hoàn chỉnh.) /insects/there?/How/are/many/",
+          "correct_answer": "B. How many insects are there?",
+          "student_answer": [
+            "1",
+            "0",
+            "0"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 13410,
+          "question_id": 372680,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer (Con hãy đọc và chọn câu trả lời đúng.) How many ants are there?",
+          "correct_answer": "A. There're six ants.",
+          "student_answer": [
+            "0",
+            "0",
+            "1"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 13410,
+          "question_id": 372681,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer (Con hãy đọc và chọn câu trả lời đúng.) How many insects are there?",
+          "correct_answer": "B. There're five insects.",
+          "student_answer": [
+            "0",
+            "0",
+            "1"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 7647,
+        "luyen_tap": 13410
+      }
+    },
+    {
+      "lesson_id": 3681506,
+      "title": "Unit 1A : Nature - Lesson 3: Is there any wind?",
+      "level": 3,
+      "last_activity_date": "2026-03-14",
+      "days_since_last_practice": 38,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.375,
+      "composite_priority_score": 0.6875,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 13413,
+          "question_id": 372779,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and find the mistake. (Con hãy đọc và tìm lỗi sai.) Is there some wind?",
+          "correct_answer": "B. some",
+          "student_answer": [
+            "1",
+            "0",
+            "0"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 13413,
+          "question_id": 372773,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Read and fill in the blank. (Con hãy đọc và điền đáp án đúng.) David: Emily, look! Is there any wind? Emily: (1) ......., there isn't. There're some clouds. How many clouds are there? David: There're eight .........(2). Is there (3) .......... rainbow? Emily: Yes, there is. It's beautiful. (3)",
+          "correct_answer": "any",
+          "student_answer": "a",
+          "requires_media": false
+        },
+        {
+          "practice_id": 13413,
+          "question_id": 372780,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and find the mistake. (Con hãy đọc và tìm lỗi sai.) Yes, there is not.",
+          "correct_answer": "A. not",
+          "student_answer": [
+            "0",
+            "1",
+            "0"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 13413,
+          "question_id": 372781,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and find the mistake. (Con hãy đọc và tìm lỗi sai.) No, there isn't some wind.",
+          "correct_answer": "A. some",
+          "student_answer": [
+            "0",
+            "1",
+            "0"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 7666,
+        "luyen_tap": 13413
+      }
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": 3640586,
+      "program_id": null,
+      "level": 3,
+      "position": 2,
+      "title": "Unit 1A : Nature - Lesson 2: There're some flowers.",
+      "desc": "- flower, mushroom, tree, leaf (leaves)\n-  How many flowers are there? There're some flowers/ There aren't any flowers.",
+      "status": "completed",
+      "last_activity_date": "2026-01-19",
+      "days_since_last_practice": 92,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5128,
+      "composite_priority_score": 0.7564,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-12",
+        "pronunciation_attempts": 53,
+        "pronunciation_score_avg": 72.19,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "correct": 2,
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What did you do today? Is there any fun activity?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "You right now?",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-01-12"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7664,
+          "score": null,
+          "correct": 0,
+          "total": 0,
+          "submitted_date": "2026-01-19"
+        },
+        "luyen_tap": {
+          "practice_id": 13411,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-01-19"
+        },
+        "lms_ids": {
+          "bai_tap": 7664,
+          "luyen_tap": 13411
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 49,
+            "total": 50,
+            "accuracy": 0.98
+          },
+          "Biểu đồ": {
+            "correct": 9,
+            "total": 9,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 13411,
+            "question_id": 372731,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose the correct picture. (Con hãy đọc và chọn tranh đúng.) Anna: Tommy, look! How many trees are there? Tommy: There're some trees (1) . Anna: Oh, how many flowers are there? Tommy: There aren't any flowers (2).",
+            "correct_answer": "A.",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3640585,
+      "program_id": null,
+      "level": 3,
+      "position": 1,
+      "title": "Unit 1A : Nature - Lesson 1: There's one spider.",
+      "desc": "-  insects, ant, worm, spider, butterfly, ladybug\n- How many spiders are there? - There's one spider./There're three spiders.",
+      "status": "completed",
+      "last_activity_date": "2026-01-19",
+      "days_since_last_practice": 92,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-03",
+        "pronunciation_attempts": 39,
+        "pronunciation_score_avg": 72.87,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "correct": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7647,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-01-19"
+        },
+        "luyen_tap": {
+          "practice_id": 13410,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-01-19"
+        },
+        "lms_ids": {
+          "bai_tap": 7647,
+          "luyen_tap": 13410
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 57,
+            "total": 60,
+            "accuracy": 0.95
+          },
+          "Biểu đồ": {
+            "correct": 20,
+            "total": 20,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7647,
+            "question_id": 302824,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and reorder the words (Con hãy đọc và sắp xếp các từ thành câu hoàn chỉnh.) /insects/there?/How/are/many/",
+            "correct_answer": "B. How many insects are there?",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 13410,
+            "question_id": 372680,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose the correct answer (Con hãy đọc và chọn câu trả lời đúng.) How many ants are there?",
+            "correct_answer": "A. There're six ants.",
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 13410,
+            "question_id": 372681,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose the correct answer (Con hãy đọc và chọn câu trả lời đúng.) How many insects are there?",
+            "correct_answer": "B. There're five insects.",
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3681506,
+      "program_id": null,
+      "level": 3,
+      "position": 3,
+      "title": "Unit 1A : Nature - Lesson 3: Is there any wind?",
+      "desc": "- sun, sky, cloud, wind, rainbow\n- Is there any wind? Yes, there is (some wind)./ No, there isn't (any wind)",
+      "status": "completed",
+      "last_activity_date": "2026-03-14",
+      "days_since_last_practice": 38,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.375,
+      "composite_priority_score": 0.6875,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-22",
+        "pronunciation_attempts": 22,
+        "pronunciation_score_avg": 81.86,
+        "free_speaking_attempts": 4,
+        "free_speaking_score_avg": 25.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "correct": 3
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7666,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-01-22"
+        },
+        "luyen_tap": {
+          "practice_id": 13413,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-14"
+        },
+        "lms_ids": {
+          "bai_tap": 7666,
+          "luyen_tap": 13413
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 72,
+            "total": 76,
+            "accuracy": 0.947
+          },
+          "Biểu đồ": {
+            "correct": 3,
+            "total": 3,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 13413,
+            "question_id": 372779,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and find the mistake. (Con hãy đọc và tìm lỗi sai.) Is there some wind?",
+            "correct_answer": "B. some",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 13413,
+            "question_id": 372773,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Read and fill in the blank. (Con hãy đọc và điền đáp án đúng.) David: Emily, look! Is there any wind? Emily: (1) ......., there isn't. There're some clouds. How many clouds are there? David: There're eight .........(2). Is there (3) .......... rainbow? Emily: Yes, there is. It's beautiful. (3)",
+            "correct_answer": "any",
+            "student_answer": "a",
+            "requires_media": false
+          },
+          {
+            "practice_id": 13413,
+            "question_id": 372780,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and find the mistake. (Con hãy đọc và tìm lỗi sai.) Yes, there is not.",
+            "correct_answer": "A. not",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 13413,
+            "question_id": 372781,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and find the mistake. (Con hãy đọc và tìm lỗi sai.) No, there isn't some wind.",
+            "correct_answer": "A. some",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    }
+  ]
+}

@@ -25,7 +25,7 @@ import preprocess
 
 # Set by main() before any loader is called
 DATA_DIR = "data"
-STUDENT_ID = 2102555
+STUDENT_ID = "2102555"
 OUTPUT_FILE = "output/questions_export.json"
 TODAY = date(2026, 4, 21)
 QUESTION_BANK_FILES = [
@@ -321,8 +321,8 @@ def main():
 
     parser = argparse.ArgumentParser(description="Export questions for student learning data.")
     parser.add_argument(
-        "student_id", nargs="?", type=int, default=2102555,
-        help="Student ID (folder under data/). Default: 2102555",
+        "student_id", nargs="?", type=str, default="2102555",
+        help="Student data folder under data/ (e.g. 2102555 or 2111414_newstudent). Default: 2102555",
     )
     parser.add_argument(
         "--question-bank", metavar="PATH", default=None,
@@ -331,7 +331,7 @@ def main():
     )
     args = parser.parse_args()
 
-    STUDENT_ID = args.student_id
+    STUDENT_ID = str(args.student_id).strip()
     DATA_DIR = f"data/{STUDENT_ID}"
     OUTPUT_FILE = f"output/{STUDENT_ID}/questions_export.json"
 

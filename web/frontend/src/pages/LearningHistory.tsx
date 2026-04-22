@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { CollapsibleModule } from '../components/CollapsibleModule'
+import { formatActivityDateDisplay } from '../lib/activityDate'
 import { groupHistoryByMonth } from '../lib/lessonGroups'
 
 interface SpeakingItem {
@@ -251,6 +252,7 @@ function LessonCard({ item, studentId }: { item: HistoryItem; studentId: string 
   const urgentClass = priorityScore != null && priorityScore > 0.7
     ? 'border-l-2 border-l-rose-300'
     : ''
+  const activityFmt = formatActivityDateDisplay(item.last_activity_date)
 
   return (
     <details className={`group [&_summary::-webkit-details-marker]:hidden ${urgentClass}`}>
@@ -290,10 +292,14 @@ function LessonCard({ item, studentId }: { item: HistoryItem; studentId: string 
               Chưa nộp BTVN
             </span>
           ) : null}
-          {item.days_since_last_practice != null && (
-            <span className="text-xs tabular-nums text-[var(--muted)]">
-              {item.days_since_last_practice}d
-            </span>
+          {activityFmt && (
+            <time
+              dateTime={activityFmt.dateTime}
+              title={activityFmt.title}
+              className="rounded border border-[var(--mint)]/25 bg-[var(--mint-soft)] px-1.5 py-0.5 text-[10px] font-medium tabular-nums tracking-tight text-[var(--muted)]"
+            >
+              {activityFmt.label}
+            </time>
           )}
         </div>
       </summary>

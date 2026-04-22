@@ -22,17 +22,28 @@ def get_homework(student_id: int):
     diag = diag_p.read_text(encoding="utf-8")
 
     ctx_by_lesson: dict = {}
+    lesson_by_id: dict = {}
     ctx_p = paths["context"]
     if ctx_p.exists():
         ctx = json.loads(ctx_p.read_text(encoding="utf-8"))
         for c in ctx.get("scored_candidates", []):
             ctx_by_lesson[c["lesson_id"]] = c
+        for row in ctx.get("lessons", []):
+            lid = row.get("lesson_id")
+            if lid is not None:
+                lesson_by_id[lid] = row
 
     homework_list = hw.get("homework", [])
     for q in homework_list:
-        ctx_data = ctx_by_lesson.get(q.get("lesson_id"))
+        lid = q.get("lesson_id")
+        ctx_data = ctx_by_lesson.get(lid)
+        lesson_row = lesson_by_id.get(lid) if lid is not None else None
         if ctx_data:
+            last_dt = ctx_data.get("last_activity_date") or (lesson_row or {}).get(
+                "last_activity_date"
+            )
             q["student_context"] = {
+                "last_activity_date": last_dt,
                 "days_since_last_practice": ctx_data.get("days_since_last_practice"),
                 "forgetting_score": ctx_data.get("forgetting_score"),
                 "weakness_score": ctx_data.get("weakness_score"),

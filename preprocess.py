@@ -2,7 +2,9 @@
 Preprocess raw learning data for a given student.
 
 Usage:
-    python preprocess.py [student_id]   (default: 2102555)
+    python preprocess.py [student_folder]   (default: 2102555)
+
+    student_folder is the directory name under data/ (numeric or e.g. 2111414_newstudent).
 
 Output: output/{student_id}/student_context.json
 
@@ -19,9 +21,10 @@ Key features:
   - worst_lms_questions per lesson (question-level failures from detail records)
   - AUDIO subtypes separated: pronunciation_drill vs free_speaking
 
-Supports two tutor_lesson file formats:
+Supports tutor_lesson export variants:
   - 2102555 style: 'type' field = "Bài tập"/"Luyện tập", 'id' = lesson_id
   - 2102553 style: 'title' = section type, 'class_lesson_id' = lesson_id (erpLessonId)
+  - English label: 'type' ending in "Homework" (e.g. "Unit 1A - Lesson 1 - Homework") → treated as Bài tập
 """
 
 import glob
@@ -32,7 +35,7 @@ from datetime import date
 
 # Set by main() before any loader is called
 DATA_DIR = "data"
-STUDENT_ID = 2102555
+STUDENT_ID = "2102555"
 OUTPUT_FILE = "output/student_context.json"
 
 TODAY = date(2026, 4, 21)           # injected reference date
@@ -52,6 +55,22 @@ SECTION_TYPE_MAP = {
 }
 
 
+def _normalize_tutor_section_type(raw: str) -> str:
+    """Map export-specific labels onto Bài tập / Luyện tập for downstream logic."""
+    s = (raw or "").strip()
+    if not s:
+        return s
+    mapped = SECTION_TYPE_MAP.get(s, s)
+    if mapped in ("Bài tập", "Luyện tập"):
+        return mapped
+    low = s.lower()
+    if low.endswith("homework") or " - homework" in low:
+        return "Bài tập"
+    if "luyện tập" in low or low.endswith("practice"):
+        return "Luyện tập"
+    return mapped
+
+
 # ---------------------------------------------------------------------------
 # Loaders
 # ---------------------------------------------------------------------------
@@ -67,9 +86,9 @@ def load_tutor_lessons():
       by_lesson: lesson_id -> {level, title, desc, position, "Bài tập": {...}, "Luyện tập": {...}}
       lms_to_lesson: lms_id -> (lesson_id, section_type)
 
-    Handles two export formats:
-      - 'type' field present: lesson_id = item['id'], section_type = item['type']
-      - 'type' field absent:  lesson_id = item['class_lesson_id'], section_type = item['title']
+    Handles export formats:
+      - 'type' field present: lesson_id = item['id'], section_type normalized from item['type']
+      - 'type' field absent:  lesson_id = item['class_lesson_id'], section_type from item['title']
     """
     paths = sorted(glob.glob(f"{DATA_DIR}/tutor_lesson*.json"))
     if not paths:
@@ -88,12 +107,12 @@ def load_tutor_lessons():
     for item in all_items:
         if has_type_field:
             lid = item["id"]
-            section_type = SECTION_TYPE_MAP.get(item.get("type", ""), item.get("type", ""))
+            section_type = _normalize_tutor_section_type(item.get("type", ""))
             lesson_title = (item.get("title") or "").strip()
             lesson_desc = (item.get("desc") or "").strip()
         else:
             lid = item["class_lesson_id"]
-            section_type = SECTION_TYPE_MAP.get(item.get("title", ""), item.get("title", ""))
+            section_type = _normalize_tutor_section_type(item.get("title", ""))
             lesson_title = ""  # title holds section type in this format
             lesson_desc = (item.get("desc") or "").strip()
 
@@ -728,6 +747,7 @@ def build_scored_candidates(records):
             "lesson_id": r["lesson_id"],
             "title": r["title"],
             "level": r["level"],
+            "last_activity_date": r.get("last_activity_date"),
             "days_since_last_practice": r["days_since_last_practice"],
             "forgetting_score": r["forgetting_score"],
             "weakness_score": r["weakness_score"],
@@ -838,12 +858,12 @@ def main():
 
     parser = argparse.ArgumentParser(description="Preprocess student learning data.")
     parser.add_argument(
-        "student_id", nargs="?", type=int, default=2102555,
-        help="Student ID (folder under data/). Default: 2102555",
+        "student_id", nargs="?", type=str, default="2102555",
+        help="Student data folder under data/ (e.g. 2102555 or 2111414_newstudent). Default: 2102555",
     )
     args = parser.parse_args()
 
-    STUDENT_ID = args.student_id
+    STUDENT_ID = str(args.student_id).strip()
     DATA_DIR = f"data/{STUDENT_ID}"
     OUTPUT_FILE = f"output/{STUDENT_ID}/student_context.json"
 

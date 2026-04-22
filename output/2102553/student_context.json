@@ -1,0 +1,5382 @@
+{
+  "summary": {
+    "student_id": "2102553",
+    "reference_date": "2026-04-21",
+    "total_lessons": 49,
+    "lessons_by_status": {
+      "in_class_only": 7,
+      "completed": 41,
+      "homework_only": 1
+    },
+    "overall_homework_skill_breakdown": {
+      "English Tutoring - Level 4": {
+        "correct": 719,
+        "total": 766,
+        "accuracy": 0.939
+      },
+      "English Tutoring Level 0": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "English Tutoring - Level 5": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "English Tutoring - Level 3": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "weak_skills_global": [],
+    "overall_pronunciation_score_avg": 70.02,
+    "overall_free_speaking_score_avg": 21.79,
+    "overall_free_speaking_answer_type_dist": {
+      "inaccordant": 22,
+      "incorrect": 24,
+      "lack_of_knowledge": 4,
+      "correct": 14,
+      "accordant": 14
+    },
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+  },
+  "scored_candidates": [
+    {
+      "lesson_id": 3614497,
+      "title": "Unit 1B: My week - Lesson 2: Did she play sports yesterday morning?",
+      "level": 4,
+      "last_activity_date": "2026-01-08",
+      "days_since_last_practice": 103,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "Do you know what is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "This is the.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-01-06"
+        },
+        {
+          "question": "How do you feel now?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I exactly about.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-01-06"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 49196,
+        "luyen_tap": 49327
+      }
+    },
+    {
+      "lesson_id": 3729128,
+      "title": "Unit 2B: My day - Lesson 5: Be on time!",
+      "level": 4,
+      "last_activity_date": "2026-02-05",
+      "days_since_last_practice": 75,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "homework_status": "not_attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [
+        {
+          "practice_id": 49414,
+          "question_id": 748528,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng nhé!) 1. What time is it?",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true
+        },
+        {
+          "practice_id": 49414,
+          "question_id": 748529,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng nhé!) 2. When does Emily take a shower?",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true
+        },
+        {
+          "practice_id": 49414,
+          "question_id": 748530,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng nhé!) 3. What do they eat for dinner?",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true
+        },
+        {
+          "practice_id": 49414,
+          "question_id": 748531,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng nhé!) 4. What is Emily doing?",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true
+        },
+        {
+          "practice_id": 49414,
+          "question_id": 748536,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Trả lời bằng giọng nói",
+          "status": "not_attempted",
+          "question_text": "Look and answer the questions. (Con hãy nhìn tranh và trả lời câu hỏi.) [Con nhớ trả lời cả câu nhé!] 1. What number is it?",
+          "correct_answer": "Fifty. | It's fifty.",
+          "student_answer": null,
+          "requires_media": true
+        }
+      ],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What color is the sky?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Y.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-02-05"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 49414,
+        "luyen_tap": 49428
+      }
+    },
+    {
+      "lesson_id": 3765274,
+      "title": "Unit 4B: My town - Lesson 3: Is there a cinema near here?",
+      "level": 4,
+      "last_activity_date": "2026-03-12",
+      "days_since_last_practice": 40,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "How do you feel now?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "It's a library, but you got.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-03-12"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 49745,
+        "luyen_tap": 49746
+      }
+    },
+    {
+      "lesson_id": 3476945,
+      "title": "Unit 1A:  Daily life - Lesson 4: Review 1.",
+      "level": 4,
+      "last_activity_date": "2025-10-28",
+      "days_since_last_practice": 175,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.7005,
+      "composite_priority_score": 0.8502,
+      "homework_status": "attempted",
+      "weak_skills": [
+        "English Tutoring - Level 4"
+      ],
+      "failed_text_questions": [
+        {
+          "practice_id": 37964,
+          "question_id": 686302,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Listen and write (Con hãy nghe và viết từ đúng nhé.) John washes his face ... .",
+          "correct_answer": "every day",
+          "student_answer": "John washes his face everyday",
+          "requires_media": false
+        },
+        {
+          "practice_id": 37964,
+          "question_id": 686303,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Listen and write (Con hãy nghe và viết từ đúng nhé.) John's brother ... brushes his teeth in the morning.",
+          "correct_answer": "always",
+          "student_answer": "he awai",
+          "requires_media": false
+        },
+        {
+          "practice_id": 37964,
+          "question_id": 686304,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Listen and write (Con hãy nghe và viết từ đúng nhé.) John's sister visits her grandparents ... .",
+          "correct_answer": "twice a week",
+          "student_answer": "toy sweet",
+          "requires_media": false
+        },
+        {
+          "practice_id": 37964,
+          "question_id": 686305,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Listen and write (Con hãy nghe và viết từ đúng.) John's grandmother usually ... in the evening.",
+          "correct_answer": "has dinner",
+          "student_answer": "have",
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "question": "Can you tell me what is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "This is yellow.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2025-10-23"
+        },
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "PSE my teeth.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2025-10-23"
+        },
+        {
+          "question": "What's the weather like today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Y.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2025-10-23"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 37964,
+        "luyen_tap": 37965
+      }
+    },
+    {
+      "lesson_id": 3449131,
+      "title": "Unit 1A: Daily life - Lesson 3: How often does he take out the garbage?",
+      "level": 4,
+      "last_activity_date": "2025-10-26",
+      "days_since_last_practice": 177,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.6015,
+      "composite_priority_score": 0.8008,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 4,
+      "worst_speaking_items": [
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I'mu.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2025-10-21"
+        },
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Can you see here?",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2025-10-16"
+        },
+        {
+          "question": "What color is the sky?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Y.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2025-10-16"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 37766,
+        "luyen_tap": 37764
+      }
+    },
+    {
+      "lesson_id": 3492720,
+      "title": "Unit 2A: Sports and hobbies - Lesson 3: How about playing baseball at the sport center?",
+      "level": 4,
+      "last_activity_date": "2025-11-13",
+      "days_since_last_practice": 159,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.6015,
+      "composite_priority_score": 0.8008,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 32388,
+          "question_id": 640971,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Listen and write (Con hãy nghe và điền một từ/số nhé.) Name of the sports centre: (1)........ Sports Centre To go there, you need (2)........ minutes Activities: (3)......, table tennis Ben's favorite sport: (4)..... Day of the match: this (5) ......",
+          "correct_answer": "Diamond",
+          "student_answer": [
+            "Diaold",
+            "50",
+            "swimming and treble tennis",
+            "sport",
+            "good idea"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 32388,
+          "question_id": 642507,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Write the correct word to fill in the blanks (Con hãy điền từ thích hợp nhé) There are many exciting places in my neighborhood. There's a big (1)..... nearby with swings and slides for children. Sometimes, I also (2)..... there if it's windy. For those who like sports, there's a (3)..... just down t",
+          "correct_answer": "park",
+          "student_answer": [
+            "always",
+            "cinema",
+            "badminton",
+            "sports",
+            "going for a walk"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "This is, this is.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2025-11-06"
+        },
+        {
+          "question": "What did you eat today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Hockey.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2025-11-06"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 32388,
+        "luyen_tap": 32389
+      }
+    },
+    {
+      "lesson_id": 3614500,
+      "title": "Unit 1B: My week - Lesson 5: Review 2",
+      "level": 4,
+      "last_activity_date": "2026-01-15",
+      "days_since_last_practice": 96,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5905,
+      "composite_priority_score": 0.7953,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 49937,
+          "question_id": 754625,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Reorder the words. (Con hãy sắp xếp các từ thành câu đúng.) did/ do/ What/ Friday/ he/ last/?/",
+          "correct_answer": "What did he do last Friday?",
+          "student_answer": "What did do he last Friday",
+          "requires_media": false
+        },
+        {
+          "practice_id": 49937,
+          "question_id": 754626,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Reorder the words. (Con hãy sắp xếp các từ thành câu đúng.) she/ afternoon/ Did/ homework/ yesterday/ her/ do/?/",
+          "correct_answer": "Did she do her homework yesterday afternoon?",
+          "student_answer": "Did she her do homework yesterday afternoon?",
+          "requires_media": false
+        },
+        {
+          "practice_id": 49937,
+          "question_id": 754627,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Reorder the words. (Con hãy sắp xếp các từ thành câu đúng.) went/ with/ last/ He/ family/ out/ Saturday/./ his/",
+          "correct_answer": "He went out with his family last Saturday.",
+          "student_answer": "He last his went out with family Saturday",
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 2,
+      "worst_speaking_items": [
+        {
+          "question": "How are you today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "How are you today?",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-01-15"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 49298,
+        "luyen_tap": 49937
+      }
+    },
+    {
+      "lesson_id": 3492727,
+      "title": "Unit 3A: Animals - Lesson 4: Review 1",
+      "level": 4,
+      "last_activity_date": "2025-12-04",
+      "days_since_last_practice": 138,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5875,
+      "composite_priority_score": 0.7937,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 32107,
+          "question_id": 636097,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Listen and write a word in the blank. (Con hãy nghe và điền 1 từ vào chỗ trống.) 1. Book's name: Have ............... in the North Pole 2. Friend's name: ............... 3. Favorite animals: penguins and ............... 4. Fun fact: Polar bears have ............... skin",
+          "correct_answer": "fun",
+          "student_answer": [
+            "hsys",
+            "gsush",
+            "bsjap",
+            "hsjsvj"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 2,
+      "worst_speaking_items": [
+        {
+          "question": "What is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "This is a polar pair.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2025-12-02"
+        },
+        {
+          "question": "What is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I'll let back get up.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2025-12-02"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 32107,
+        "luyen_tap": 32108
+      }
+    },
+    {
+      "lesson_id": 3493046,
+      "title": "Unit 3A: Animals - Lesson 5: Review 2",
+      "level": 4,
+      "last_activity_date": "2025-12-09",
+      "days_since_last_practice": 133,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5535,
+      "composite_priority_score": 0.7768,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 3,
+      "worst_speaking_items": [
+        {
+          "question": "What do you like to eat?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "October Chellyfish Well, grab shock.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2025-12-04"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 32127,
+        "luyen_tap": 32129
+      }
+    },
+    {
+      "lesson_id": 3765268,
+      "title": "Unit 3B: School Subjects - Lesson 2: When do you have Maths?",
+      "level": 4,
+      "last_activity_date": "2026-02-26",
+      "days_since_last_practice": 54,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.515,
+      "composite_priority_score": 0.7575,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 49666,
+        "luyen_tap": 49667
+      }
+    },
+    {
+      "lesson_id": 3492718,
+      "title": "Unit 2A: Sports and hobbies - Lesson 1: Swimming is my favorite hobby.",
+      "level": 4,
+      "last_activity_date": "2025-10-30",
+      "days_since_last_practice": 173,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What do you like to eat?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Hello.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2025-10-30"
+        },
+        {
+          "question": "What do you like to eat?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Screaming pool.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2025-10-30"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 32384,
+        "luyen_tap": 32385
+      }
+    },
+    {
+      "lesson_id": 3492719,
+      "title": "Unit 2A: Sports and hobbies - Lesson 2: I enjoy skateboarding.",
+      "level": 4,
+      "last_activity_date": "2025-11-06",
+      "days_since_last_practice": 166,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "How do you feel now?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Tennis.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2025-11-04"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 32386,
+        "luyen_tap": 32387
+      }
+    },
+    {
+      "lesson_id": 3492726,
+      "title": "Unit 3A: Animals - Lesson 3: I think whales are huge.",
+      "level": 4,
+      "last_activity_date": "2025-11-27",
+      "days_since_last_practice": 145,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Yeah.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2025-11-27"
+        },
+        {
+          "question": "What did you eat today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Shock, I' going.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2025-11-27"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 32063,
+        "luyen_tap": 32064
+      }
+    },
+    {
+      "lesson_id": 3502923,
+      "title": "Unit 4A: The seasons (Extra) - Lesson 1: What was the weather like?",
+      "level": 4,
+      "last_activity_date": "2025-12-09",
+      "days_since_last_practice": 133,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What color is the sky?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Suny cool ring.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2025-12-09"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 32394,
+        "luyen_tap": 32395
+      }
+    },
+    {
+      "lesson_id": 3507335,
+      "title": "Unit 4A: The seasons (Extra) - Lesson 2: It was rainy and wet.",
+      "level": 4,
+      "last_activity_date": "2025-12-11",
+      "days_since_last_practice": 131,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "How are you today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "You and you.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2025-12-11"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 32395,
+        "luyen_tap": 32397
+      }
+    },
+    {
+      "lesson_id": 3519948,
+      "title": "Unit 4A: The seasons (Extra) - Lesson 3: What did you do last summer?",
+      "level": 4,
+      "last_activity_date": "2025-12-16",
+      "days_since_last_practice": 126,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What's the weather like today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I swimming.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2025-12-16"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 32398,
+        "luyen_tap": 32399
+      }
+    },
+    {
+      "lesson_id": 3614498,
+      "title": "Unit 1B: My week - Lesson 3: When did you meet your friends?",
+      "level": 4,
+      "last_activity_date": "2026-01-08",
+      "days_since_last_practice": 103,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What’s your favorite color?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "This is a.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-01-08"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 49256,
+        "luyen_tap": 49330
+      }
+    },
+    {
+      "lesson_id": 3767327,
+      "title": "Unit 1C: My house - Lesson 1: Are there any elevators in your house?",
+      "level": 4,
+      "last_activity_date": "2026-03-26",
+      "days_since_last_practice": 26,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "Look at this picture and tell me, what can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "This is home.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-26"
+        },
+        {
+          "question": "What's the weather like today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Y.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-03-26"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 35150,
+        "luyen_tap": 35151
+      }
+    },
+    {
+      "lesson_id": 3937148,
+      "title": "Unit 1C: My house - Lesson 4: Review 1",
+      "level": 4,
+      "last_activity_date": "2026-04-14",
+      "days_since_last_practice": 7,
+      "forgetting_score": 0.9991,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.7495,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "This is a hall.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-14"
+        },
+        {
+          "question": "How do you feel now?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "How do you feel now?",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-04-14"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 35790,
+        "luyen_tap": 35790
+      }
+    },
+    {
+      "lesson_id": 3765269,
+      "title": "Unit 3B: School Subjects - Lesson 3: Where do you learn music?",
+      "level": 4,
+      "last_activity_date": "2026-02-24",
+      "days_since_last_practice": 56,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.467,
+      "composite_priority_score": 0.7335,
+      "homework_status": "not_attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [
+        {
+          "practice_id": 49668,
+          "question_id": 750957,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Nhiều lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and match (Con hãy nghe, ghép vật với tranh đúng nhé!)",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true
+        },
+        {
+          "practice_id": 49668,
+          "question_id": 750958,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Nhiều lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and match (Con hãy nghe, ghép vật với tranh đúng nhé!)",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true
+        },
+        {
+          "practice_id": 49668,
+          "question_id": 751080,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Nhiều lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and match (Con hãy nghe, ghép vật với tranh đúng nhé!)",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true
+        },
+        {
+          "practice_id": 49668,
+          "question_id": 751081,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Nhiều lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and match (Con hãy nghe, ghép vật với tranh đúng nhé!)",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true
+        },
+        {
+          "practice_id": 49668,
+          "question_id": 751082,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Read and choose (Con hãy đọc và chọn đáp án đúng nhé!) Today, I had an IT lesson in the (1) _______ room. The teacher started by explaining how (2) _______ the computer to create simple projects. We learned how to open a program and type on the keyboard. After that, the teacher showed us how ",
+          "correct_answer": "computer",
+          "student_answer": null,
+          "requires_media": false
+        }
+      ],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 49668,
+        "luyen_tap": 49679
+      }
+    },
+    {
+      "lesson_id": 3449129,
+      "title": "Unit 1A: Daily life - Lesson 1: What do you do in the morning?",
+      "level": 4,
+      "last_activity_date": "2025-10-16",
+      "days_since_last_practice": 187,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.4489,
+      "composite_priority_score": 0.7245,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 37196,
+          "question_id": 685286,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose (Con hãy đọc đoạn văn, chọn từ đúng nhé.) Every day, I (12)... early in the morning. I brush my teeth and have breakfast. After that, I go to school. I learn many things at (13)... and play with my friends. In the afternoon, I go home and do my homework. I help my mom with some ",
+          "correct_answer": "get up",
+          "student_answer": [
+            "0",
+            "0",
+            "1"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 37196,
+          "question_id": 685288,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose (Con hãy đọc đoạn văn, chọn từ đúng nhé.) Every day, I (12)... early in the morning. I brush my teeth and have breakfast. After that, I go to school. I learn many things at (13)... and play with my friends. In the afternoon, I go home and do my homework. I help my mom with some ",
+          "correct_answer": "dinner",
+          "student_answer": [
+            "1",
+            "0",
+            "0"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 37196,
+          "question_id": 685289,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose (Con hãy đọc đoạn văn và chọn từ thích hợp nhé.) Every day, I (12)... early in the morning. I brush my teeth and have breakfast. After that, I go to school. I learn many things at (13)... and play with my friends. In the afternoon, I go home and do my homework. I help my mom ",
+          "correct_answer": "go to bed",
+          "student_answer": [
+            "0",
+            "0",
+            "1"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 2,
+      "worst_speaking_items": [
+        {
+          "question": "What is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "It's the red up.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2025-10-09"
+        },
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Getther.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2025-10-09"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 37196,
+        "luyen_tap": 37203
+      }
+    },
+    {
+      "lesson_id": 3476946,
+      "title": "Unit 1A: Daily life - Lesson 5: Review 2.",
+      "level": 4,
+      "last_activity_date": "2025-10-28",
+      "days_since_last_practice": 175,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.44,
+      "composite_priority_score": 0.72,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 38203,
+          "question_id": 686602,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Một lựa chọn",
+          "question_text": "Odd-one-out (Con hãy đọc và chọn từ khác loại nhé.)",
+          "correct_answer": "three times a week",
+          "student_answer": [
+            "1",
+            "0",
+            "0"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 38203,
+          "question_id": 686603,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Một lựa chọn",
+          "question_text": "Odd-one-out (Con hãy đọc và chọn từ khác loại nhé.)",
+          "correct_answer": "take out the garbage",
+          "student_answer": [
+            "0",
+            "0",
+            "1"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 38203,
+          "question_id": 686605,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Một lựa chọn",
+          "question_text": "Odd-one-out (Con hãy đọc và chọn từ khác loại nhé.)",
+          "correct_answer": "once a week",
+          "student_answer": [
+            "1",
+            "0",
+            "0"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 38203,
+          "question_id": 686613,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read the passage and choose the correct answer (Con hãy đọc và chọn từ thích hợp nhé.) My house is always tidy because I believe in keeping it clean and organized. Every week, I make sure to (12) ... my house thoroughly, paying attention to every corner. I always remember that I should (13) .",
+          "correct_answer": "fresh",
+          "student_answer": [
+            "0",
+            "1",
+            "0"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "question": "How do you feel now?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "L.A.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2025-10-28"
+        },
+        {
+          "question": "How do you feel now?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Take a shower, do homework, clean my house play friend?",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2025-10-28"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 38203,
+        "luyen_tap": 38205
+      }
+    },
+    {
+      "lesson_id": 3614504,
+      "title": "Unit 2B: My day - Lesson 4: When do you do your homework?",
+      "level": 4,
+      "last_activity_date": "2026-01-29",
+      "days_since_last_practice": 82,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.4123,
+      "composite_priority_score": 0.7062,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 2,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 49402,
+        "luyen_tap": 49415
+      }
+    },
+    {
+      "lesson_id": 3765276,
+      "title": "Unit 4B: My town - Lesson 5: Review 2",
+      "level": 4,
+      "last_activity_date": "2026-03-26",
+      "days_since_last_practice": 26,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.3334,
+      "composite_priority_score": 0.6667,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What is this?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "This is a light.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-19"
+        },
+        {
+          "question": "Look at this picture and tell me, what can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "This is a fun.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-19"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 49758,
+        "luyen_tap": 49759
+      }
+    },
+    {
+      "lesson_id": 3788391,
+      "title": "Unit 1C: My house - Lesson 3: Which toothbrush do you prefer?",
+      "level": 4,
+      "last_activity_date": "2026-04-14",
+      "days_since_last_practice": 7,
+      "forgetting_score": 0.9991,
+      "weakness_score": 0.3334,
+      "composite_priority_score": 0.6663,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What are they doing?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "It break your big.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-02"
+        },
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "O.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-02"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 35788,
+        "luyen_tap": 35789
+      }
+    },
+    {
+      "lesson_id": 3937151,
+      "title": "Unit 1C: My house - Lesson 5: Review 2",
+      "level": 4,
+      "last_activity_date": "2026-04-16",
+      "days_since_last_practice": 5,
+      "forgetting_score": 0.9933,
+      "weakness_score": 0.3334,
+      "composite_priority_score": 0.6633,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "Can you tell me what it is?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "This is a tower.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-16"
+        },
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "This is a bathroom room.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-16"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 36053,
+        "luyen_tap": 36049
+      }
+    },
+    {
+      "lesson_id": 3765270,
+      "title": "Unit 3B: School Subjects - Lesson 4: Review 1",
+      "level": 4,
+      "last_activity_date": "2026-03-12",
+      "days_since_last_practice": 40,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.2548,
+      "composite_priority_score": 0.6274,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 4,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 49695,
+        "luyen_tap": 49696
+      }
+    },
+    {
+      "lesson_id": 3492722,
+      "title": "Unit 2A: Sports and hobbies - Lesson 5: Review 2",
+      "level": 4,
+      "last_activity_date": "2025-11-18",
+      "days_since_last_practice": 154,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.25,
+      "composite_priority_score": 0.625,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2025-11-13"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 32392,
+        "luyen_tap": 32393
+      }
+    },
+    {
+      "lesson_id": 3781742,
+      "title": "Unit 1C: My house - Lesson 2: That is the kitchen where mother cooks.",
+      "level": 4,
+      "last_activity_date": "2026-04-14",
+      "days_since_last_practice": 7,
+      "forgetting_score": 0.9991,
+      "weakness_score": 0.25,
+      "composite_priority_score": 0.6245,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "O.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-31"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 35778,
+        "luyen_tap": 35781
+      }
+    },
+    {
+      "lesson_id": 3729130,
+      "title": "Unit 3B: School Subjects - Lesson 1: I'm good at English.",
+      "level": 4,
+      "last_activity_date": "2026-02-26",
+      "days_since_last_practice": 54,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0741,
+      "composite_priority_score": 0.5371,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 49660,
+        "luyen_tap": 49664
+      }
+    },
+    {
+      "lesson_id": 3492721,
+      "title": "Unit 2A: Sports and hobbies - Lesson 4: Review 1",
+      "level": 4,
+      "last_activity_date": "2025-11-13",
+      "days_since_last_practice": 159,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.03,
+      "composite_priority_score": 0.515,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 32391,
+          "question_id": 642549,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Write complete sentences from the cues given (Con hãy hoàn chỉnh câu từ gợi ý nhé) 2. Do/Peter/and Jane/like/flying kites/?",
+          "correct_answer": "Do Peter and Jane like flying kites?|Do Peter and Jane like flying kites",
+          "student_answer": "Do like flying kites Peter and Jane",
+          "requires_media": false
+        },
+        {
+          "practice_id": 32391,
+          "question_id": 642551,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Write complete sentences from the cues given (Con hãy hoàn chỉnh câu từ gợi ý nhé) 3. Linda/not/like/going fishing/.",
+          "correct_answer": "Linda doesn't like going fishing.|Linda doesn't like going fishing|Linda does not like going fishing.|Linda does not like going fishing",
+          "student_answer": "Linda not like going fishing.",
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 32390,
+        "luyen_tap": 32391
+      }
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": 18992668,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2025-10-21",
+      "days_since_last_practice": 182,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": false,
+        "completion_pct": 28,
+        "latest_session_date": "2025-10-21",
+        "pronunciation_attempts": 0,
+        "pronunciation_score_avg": null,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "The'.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2025-10-21"
+          },
+          {
+            "question": "What's the weather like today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "He woman said, Man, hanging down.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2025-10-21"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3614497,
+      "program_id": null,
+      "level": 4,
+      "position": 2,
+      "title": "Unit 1B: My week - Lesson 2: Did she play sports yesterday morning?",
+      "desc": "Vocabulary: \n- Time: morning, afternoon, evening\t\nGrammar:\n- Did you do the housework yesterday evening? Yes, I did./ No, I didn't. I watched TV.\n- Did he/she play sports yesterday morning? Yes, he/sh",
+      "status": "completed",
+      "last_activity_date": "2026-01-08",
+      "days_since_last_practice": 103,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-06",
+        "pronunciation_attempts": 31,
+        "pronunciation_score_avg": 80.87,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "Do you know what is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "This is the.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-01-06"
+          },
+          {
+            "question": "How do you feel now?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I exactly about.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-01-06"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49196,
+          "score": null,
+          "correct": 0,
+          "total": 15,
+          "submitted_date": "2026-01-08"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49196,
+          "luyen_tap": 49327
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3614503,
+      "program_id": null,
+      "level": 4,
+      "position": 9,
+      "title": "Unit 2B: My day - Lesson 3: I have to clean my house.",
+      "desc": "Vocabulary: \n- Daily routine (cont): do my homework, watch TV, clean my house, go to bed\n- Numbers: 20-30-40-50-60-70-80-90\nGrammar:\n- I have to clean my house after 3:30 pm.\n- What time is it? It's 1",
+      "status": "completed",
+      "last_activity_date": "2026-01-27",
+      "days_since_last_practice": 84,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-27",
+        "pronunciation_attempts": 22,
+        "pronunciation_score_avg": 47.73,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "lack_of_knowledge": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 34716,
+          "score": null,
+          "correct": 0,
+          "total": 11,
+          "submitted_date": "2026-01-27"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 34716,
+          "luyen_tap": 34750
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3729128,
+      "program_id": null,
+      "level": 4,
+      "position": 11,
+      "title": "Unit 2B: My day - Lesson 5: Be on time!",
+      "desc": "Vocabulary Review: \n- Daily routine (cont): take a shower, have dinner, do my homework, watch TV, clean my house, go to bed, \n- Numbers: 11-19, 20-90\nGrammar Review:\n- I have to go to bed before 10:15",
+      "status": "in_class_only",
+      "last_activity_date": "2026-02-05",
+      "days_since_last_practice": 75,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-05",
+        "pronunciation_attempts": 14,
+        "pronunciation_score_avg": 55.07,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What color is the sky?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Y.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-02-05"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49414,
+          "luyen_tap": 49428
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {
+          "bai_tap": [
+            {
+              "practice_id": 49414,
+              "question_id": 748528,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng nhé!) 1. What time is it?",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 49414,
+              "question_id": 748529,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng nhé!) 2. When does Emily take a shower?",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 49414,
+              "question_id": 748530,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng nhé!) 3. What do they eat for dinner?",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 49414,
+              "question_id": 748531,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng nhé!) 4. What is Emily doing?",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 49414,
+              "question_id": 748536,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Trả lời bằng giọng nói",
+              "status": "not_attempted",
+              "question_text": "Look and answer the questions. (Con hãy nhìn tranh và trả lời câu hỏi.) [Con nhớ trả lời cả câu nhé!] 1. What number is it?",
+              "correct_answer": "Fifty. | It's fifty.",
+              "student_answer": null,
+              "requires_media": true
+            }
+          ],
+          "luyen_tap": [
+            {
+              "practice_id": 49428,
+              "question_id": 748704,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
+              "status": "not_attempted",
+              "question_text": "Reorder: ",
+              "correct_answer": "It&#39;s Saturday! I don&#39;t have school today. This means no homework ! I often watch my favorite cartoons on TV. I also help my mom clean the house . After I finish cleaning, I play sports and eat ice cream with my friends in the park. When it is late, I go home and take a shower . I have to go to bed before 9:30 p.m. Let&rsquo;s share your weekend with me!",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 49428,
+              "question_id": 748710,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
+              "status": "not_attempted",
+              "question_text": "Reorder: ",
+              "correct_answer": "I have to clean my house before 10:15 a.m.",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 49428,
+              "question_id": 748711,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
+              "status": "not_attempted",
+              "question_text": "Reorder: ",
+              "correct_answer": "He takes a shower at 7 p.m.",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 49428,
+              "question_id": 748712,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
+              "status": "not_attempted",
+              "question_text": "Reorder: ",
+              "correct_answer": "What time is it?",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 49428,
+              "question_id": 748713,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
+              "status": "not_attempted",
+              "question_text": "Reorder: ",
+              "correct_answer": "When do you have dinner?",
+              "student_answer": null,
+              "requires_media": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": 3765274,
+      "program_id": null,
+      "level": 4,
+      "position": 21,
+      "title": "Unit 4B: My town - Lesson 3: Is there a cinema near here?",
+      "desc": "Vocabulary: \n- Places: library, museum, bookstore\n- Prep: near, between, opposite\nGrammar:\n- Where is the library? It's near the museum.\n- Is the cinema between the museum and the cinema? Yes, it is./",
+      "status": "completed",
+      "last_activity_date": "2026-03-12",
+      "days_since_last_practice": 40,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-12",
+        "pronunciation_attempts": 27,
+        "pronunciation_score_avg": 95.74,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How do you feel now?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "It's a library, but you got.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-03-12"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49745,
+          "score": null,
+          "correct": 0,
+          "total": 15,
+          "submitted_date": "2026-03-12"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49745,
+          "luyen_tap": 49746
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3476945,
+      "program_id": null,
+      "level": 4,
+      "position": 4,
+      "title": "Unit 1A:  Daily life - Lesson 4: Review 1.",
+      "desc": "Vocabulary Review:\n- Daily activities: get up, brush my teeth, go to school, make the bed, go home, go to bed, have breakfast/ lunch/ dinner\n- Adverbs of frequency: always, usually, often, sometimes,",
+      "status": "completed",
+      "last_activity_date": "2025-10-28",
+      "days_since_last_practice": 175,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.7005,
+      "composite_priority_score": 0.8502,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-10-28",
+        "pronunciation_attempts": 48,
+        "pronunciation_score_avg": 73.71,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "incorrect": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "Can you tell me what is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "This is yellow.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2025-10-23"
+          },
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "PSE my teeth.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2025-10-23"
+          },
+          {
+            "question": "What's the weather like today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Y.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2025-10-23"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 37964,
+          "score": 0.47,
+          "correct": 7,
+          "total": 15,
+          "submitted_date": "2025-10-26"
+        },
+        "luyen_tap": {
+          "practice_id": 37965,
+          "score": 0.9,
+          "correct": 9,
+          "total": 10,
+          "submitted_date": "2025-10-28"
+        },
+        "lms_ids": {
+          "bai_tap": 37964,
+          "luyen_tap": 37965
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 16,
+            "total": 25,
+            "accuracy": 0.64
+          }
+        },
+        "weak_skills": [
+          "English Tutoring - Level 4"
+        ],
+        "worst_questions": [
+          {
+            "practice_id": 37964,
+            "question_id": 686302,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Listen and write (Con hãy nghe và viết từ đúng nhé.) John washes his face ... .",
+            "correct_answer": "every day",
+            "student_answer": "John washes his face everyday",
+            "requires_media": false
+          },
+          {
+            "practice_id": 37964,
+            "question_id": 686303,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Listen and write (Con hãy nghe và viết từ đúng nhé.) John's brother ... brushes his teeth in the morning.",
+            "correct_answer": "always",
+            "student_answer": "he awai",
+            "requires_media": false
+          },
+          {
+            "practice_id": 37964,
+            "question_id": 686304,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Listen and write (Con hãy nghe và viết từ đúng nhé.) John's sister visits her grandparents ... .",
+            "correct_answer": "twice a week",
+            "student_answer": "toy sweet",
+            "requires_media": false
+          },
+          {
+            "practice_id": 37964,
+            "question_id": 686305,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Listen and write (Con hãy nghe và viết từ đúng.) John's grandmother usually ... in the evening.",
+            "correct_answer": "has dinner",
+            "student_answer": "have",
+            "requires_media": false
+          },
+          {
+            "practice_id": 37964,
+            "question_id": 686311,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Read, write and say (Con hãy đọc, điền từ và nói lại nhé.) What do you do in the morning? - I often .... in the morning.",
+            "correct_answer": "get up",
+            "student_answer": "do",
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3449131,
+      "program_id": null,
+      "level": 4,
+      "position": 3,
+      "title": "Unit 1A: Daily life - Lesson 3: How often does he take out the garbage?",
+      "desc": "Vocabulary:\n - Daily activities: meet my friends, do homework, clean my house, take out the garbage, visit my grandparents, take a shower\nGrammar:\n- You should do your homework. (advice) \n- You must d",
+      "status": "completed",
+      "last_activity_date": "2025-10-26",
+      "days_since_last_practice": 177,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.6015,
+      "composite_priority_score": 0.8008,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-10-21",
+        "pronunciation_attempts": 59,
+        "pronunciation_score_avg": 70.73,
+        "free_speaking_attempts": 5,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "incorrect": 2,
+          "correct": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I'mu.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2025-10-21"
+          },
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Can you see here?",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2025-10-16"
+          },
+          {
+            "question": "What color is the sky?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Y.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2025-10-16"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 37766,
+          "score": 0.71,
+          "correct": 10,
+          "total": 14,
+          "submitted_date": "2025-10-26"
+        },
+        "luyen_tap": {
+          "practice_id": 37764,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2025-10-26"
+        },
+        "lms_ids": {
+          "bai_tap": 37766,
+          "luyen_tap": 37764
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 20,
+            "total": 24,
+            "accuracy": 0.833
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 37766,
+            "question_id": 685930,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose (Con hãy nghe, và chọn nhân vật đúng nhé.)",
+            "correct_answer": "C",
+            "student_answer": [
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 37766,
+            "question_id": 685945,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose (Con hãy đọc đoạn văn và chọn từ nhé.) (13)",
+            "correct_answer": "garbage",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 37766,
+            "question_id": 685946,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose (Con hãy đọc đoạn văn và chọn từ nhé.) (14)",
+            "correct_answer": "clean",
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 37766,
+            "question_id": 685947,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose (Con hãy đọc đoạn văn và chọn từ nhé.) (15)",
+            "correct_answer": "tidy",
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3492720,
+      "program_id": null,
+      "level": 4,
+      "position": 9,
+      "title": "Unit 2A: Sports and hobbies - Lesson 3: How about playing baseball at the sport center?",
+      "desc": "Unit 2A: Sports and hobbies - Lesson 3: How about playing baseball at the sport center?",
+      "status": "completed",
+      "last_activity_date": "2025-11-13",
+      "days_since_last_practice": 159,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.6015,
+      "composite_priority_score": 0.8008,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-11-06",
+        "pronunciation_attempts": 27,
+        "pronunciation_score_avg": 74.93,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "This is, this is.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2025-11-06"
+          },
+          {
+            "question": "What did you eat today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Hockey.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2025-11-06"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 32388,
+          "score": 0.71,
+          "correct": 5,
+          "total": 7,
+          "submitted_date": "2025-11-13"
+        },
+        "luyen_tap": {
+          "practice_id": 32389,
+          "score": 1,
+          "correct": 7,
+          "total": 7,
+          "submitted_date": "2025-11-13"
+        },
+        "lms_ids": {
+          "bai_tap": 32388,
+          "luyen_tap": 32389
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 12,
+            "total": 14,
+            "accuracy": 0.857
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 32388,
+            "question_id": 640971,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Listen and write (Con hãy nghe và điền một từ/số nhé.) Name of the sports centre: (1)........ Sports Centre To go there, you need (2)........ minutes Activities: (3)......, table tennis Ben's favorite sport: (4)..... Day of the match: this (5) ......",
+            "correct_answer": "Diamond",
+            "student_answer": [
+              "Diaold",
+              "50",
+              "swimming and treble tennis",
+              "sport",
+              "good idea"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 32388,
+            "question_id": 642507,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Write the correct word to fill in the blanks (Con hãy điền từ thích hợp nhé) There are many exciting places in my neighborhood. There's a big (1)..... nearby with swings and slides for children. Sometimes, I also (2)..... there if it's windy. For those who like sports, there's a (3)..... just down t",
+            "correct_answer": "park",
+            "student_answer": [
+              "always",
+              "cinema",
+              "badminton",
+              "sports",
+              "going for a walk"
+            ],
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3614500,
+      "program_id": null,
+      "level": 4,
+      "position": 5,
+      "title": "Unit 1B: My week - Lesson 5: Review 2",
+      "desc": "Vocabulary Review: \n- Time: morning, afternoon, evening\n- Activities: went out with my family, did my homework, met my friends, watched TV\n- Activities: went to school, stayed at home, played sports,",
+      "status": "completed",
+      "last_activity_date": "2026-01-15",
+      "days_since_last_practice": 96,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5905,
+      "composite_priority_score": 0.7953,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-15",
+        "pronunciation_attempts": 17,
+        "pronunciation_score_avg": 30.24,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "How are you today?",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-01-15"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49298,
+          "score": 0.87,
+          "correct": 13,
+          "total": 15,
+          "submitted_date": "2026-01-15"
+        },
+        "luyen_tap": {
+          "practice_id": 49937,
+          "score": 0.7,
+          "correct": 7,
+          "total": 10,
+          "submitted_date": "2026-01-15"
+        },
+        "lms_ids": {
+          "bai_tap": 49298,
+          "luyen_tap": 49937
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 20,
+            "total": 25,
+            "accuracy": 0.8
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 49298,
+            "question_id": 747102,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Look, read and write. (Con hãy nhìn tranh, đọc và điền từ còn thiếu vào chỗ trống nhé!)",
+            "correct_answer": "flying",
+            "student_answer": "fly a kite",
+            "requires_media": true
+          },
+          {
+            "practice_id": 49298,
+            "question_id": 747103,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Look, read and write. (Con hãy nhìn tranh, đọc và điền từ còn thiếu vào chỗ trống nhé!)",
+            "correct_answer": "riding",
+            "student_answer": "riding a bike",
+            "requires_media": true
+          },
+          {
+            "practice_id": 49937,
+            "question_id": 754625,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Reorder the words. (Con hãy sắp xếp các từ thành câu đúng.) did/ do/ What/ Friday/ he/ last/?/",
+            "correct_answer": "What did he do last Friday?",
+            "student_answer": "What did do he last Friday",
+            "requires_media": false
+          },
+          {
+            "practice_id": 49937,
+            "question_id": 754626,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Reorder the words. (Con hãy sắp xếp các từ thành câu đúng.) she/ afternoon/ Did/ homework/ yesterday/ her/ do/?/",
+            "correct_answer": "Did she do her homework yesterday afternoon?",
+            "student_answer": "Did she her do homework yesterday afternoon?",
+            "requires_media": false
+          },
+          {
+            "practice_id": 49937,
+            "question_id": 754627,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Reorder the words. (Con hãy sắp xếp các từ thành câu đúng.) went/ with/ last/ He/ family/ out/ Saturday/./ his/",
+            "correct_answer": "He went out with his family last Saturday.",
+            "student_answer": "He last his went out with family Saturday",
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3492727,
+      "program_id": null,
+      "level": 4,
+      "position": 16,
+      "title": "Unit 3A: Animals - Lesson 4: Review 1",
+      "desc": "Vocabulary Review:\njellyfish, shark, dolphin, whale, penguin, polar bear, crab, seal\nGrammar Review:\nWhat animal do you like? - I like \nDo you like ... or ...?",
+      "status": "completed",
+      "last_activity_date": "2025-12-04",
+      "days_since_last_practice": 138,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5875,
+      "composite_priority_score": 0.7937,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-12-02",
+        "pronunciation_attempts": 22,
+        "pronunciation_score_avg": 73.41,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "incorrect": 2,
+          "correct": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "This is a polar pair.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2025-12-02"
+          },
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I'll let back get up.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2025-12-02"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 32107,
+          "score": 0.75,
+          "correct": 9,
+          "total": 12,
+          "submitted_date": "2025-12-02"
+        },
+        "luyen_tap": {
+          "practice_id": 32108,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2025-12-04"
+        },
+        "lms_ids": {
+          "bai_tap": 32107,
+          "luyen_tap": 32108
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 19,
+            "total": 22,
+            "accuracy": 0.864
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 32107,
+            "question_id": 636097,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Listen and write a word in the blank. (Con hãy nghe và điền 1 từ vào chỗ trống.) 1. Book's name: Have ............... in the North Pole 2. Friend's name: ............... 3. Favorite animals: penguins and ............... 4. Fun fact: Polar bears have ............... skin",
+            "correct_answer": "fun",
+            "student_answer": [
+              "hsys",
+              "gsush",
+              "bsjap",
+              "hsjsvj"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 32107,
+            "question_id": 636106,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look at 4 pictures and tell a story. (Con hãy nhìn vào 4 hình và kể chuyện.) Then, Tom goes to the toy store.",
+            "correct_answer": "Then, Tom goes to the toy store.",
+            "student_answer": "then tom goes to the toy store",
+            "requires_media": true
+          },
+          {
+            "practice_id": 32107,
+            "question_id": 636117,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read the text and choose the best answer. (Con hãy đọc và chọn câu trả lời đúng.) 5. Patt: See you later at the aquarium! Anna: ....................................",
+            "correct_answer": "A. Can't wait to see you there!",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3765271,
+      "program_id": null,
+      "level": 4,
+      "position": 17,
+      "title": "Unit 3B: School Subjects - Lesson 5: Review 2",
+      "desc": "Vocabulary Review: \n- difficult, easy, boring\n- School facilities: art room, music room, classroom, library,  computeroom, sports field, schoolyard\nGrammar Review:\n- Is English difficult?\n- Where do y",
+      "status": "completed",
+      "last_activity_date": "2026-03-12",
+      "days_since_last_practice": 40,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.576,
+      "composite_priority_score": 0.788,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-03",
+        "pronunciation_attempts": 30,
+        "pronunciation_score_avg": 42.4,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49703,
+          "score": null,
+          "correct": 0,
+          "total": 15,
+          "submitted_date": "2026-03-12"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49703,
+          "luyen_tap": 49709
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3493046,
+      "program_id": null,
+      "level": 4,
+      "position": 17,
+      "title": "Unit 3A: Animals - Lesson 5: Review 2",
+      "desc": "Vocabulary Review:\nhuge, scary, dangerous, nice\nGrammar Review:\n- I think ... are ... .\n- I know ... are ... .",
+      "status": "completed",
+      "last_activity_date": "2025-12-09",
+      "days_since_last_practice": 133,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5535,
+      "composite_priority_score": 0.7768,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-12-09",
+        "pronunciation_attempts": 20,
+        "pronunciation_score_avg": 68.65,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What do you like to eat?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "October Chellyfish Well, grab shock.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2025-12-04"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 32127,
+          "score": 0.89,
+          "correct": 8,
+          "total": 9,
+          "submitted_date": "2025-12-04"
+        },
+        "luyen_tap": {
+          "practice_id": 32129,
+          "score": 0.9,
+          "correct": 9,
+          "total": 10,
+          "submitted_date": "2025-12-04"
+        },
+        "lms_ids": {
+          "bai_tap": 32127,
+          "luyen_tap": 32129
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 25,
+            "total": 28,
+            "accuracy": 0.893
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 32127,
+            "question_id": 636324,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and answer the questions. (Con hãy nh&igrave;n tranh và trả lời câu hỏi.) What do you know about jellyfish?",
+            "correct_answer": "I know jellyfish are dangerous.",
+            "student_answer": "i know jellyfish are dangerous",
+            "requires_media": true
+          },
+          {
+            "practice_id": 32129,
+            "question_id": 636361,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and answer the questions. (Con hãy nhìn tranh và trả lời câu hỏi.) What do you know about jellyfish?",
+            "correct_answer": "I know jellyfish are dangerous.",
+            "student_answer": "I know jelly or any",
+            "requires_media": true
+          },
+          {
+            "practice_id": 32129,
+            "question_id": 636361,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and answer the questions. (Con hãy nhìn tranh và trả lời câu hỏi.) What do you know about jellyfish?",
+            "correct_answer": "I know jellyfish are dangerous.",
+            "student_answer": "I know tradefish or tennis",
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3729129,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-02-10",
+      "days_since_last_practice": 70,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5376,
+      "composite_priority_score": 0.7688,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-10",
+        "pronunciation_attempts": 29,
+        "pronunciation_score_avg": 46.24,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3765268,
+      "program_id": null,
+      "level": 4,
+      "position": 14,
+      "title": "Unit 3B: School Subjects - Lesson 2: When do you have Maths?",
+      "desc": "Vocabulary: \n- Subject: IT, PE, Art, Music\n- difficult, easy, boring\nGrammar:\n- What subjects do you have on Wednesday? I have IT (and Art) on Wednesday.\n- Is IT difficult?",
+      "status": "completed",
+      "last_activity_date": "2026-02-26",
+      "days_since_last_practice": 54,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.515,
+      "composite_priority_score": 0.7575,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 85,
+        "latest_session_date": "2026-02-19",
+        "pronunciation_attempts": 34,
+        "pronunciation_score_avg": 67.85,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "correct": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49666,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-02-26"
+        },
+        "luyen_tap": {
+          "practice_id": 49667,
+          "score": 0.9,
+          "correct": 9,
+          "total": 10,
+          "submitted_date": "2026-02-26"
+        },
+        "lms_ids": {
+          "bai_tap": 49666,
+          "luyen_tap": 49667
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 24,
+            "total": 25,
+            "accuracy": 0.96
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 49667,
+            "question_id": 750956,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose (Con hãy đọc và chọn đáp án đúng nhé!) I really enjoy my (1) ________ class. I have Music on Tuesday, and it’s one of my favorite subjects. We learn how to play different instruments and sing (2) ________. I think it’s easy (3) ________I already know some basic notes and rhyth",
+            "correct_answer": "because",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3492718,
+      "program_id": null,
+      "level": 4,
+      "position": 7,
+      "title": "Unit 2A: Sports and hobbies - Lesson 1: Swimming is my favorite hobby.",
+      "desc": "Unit 2A: Sports and hobbies - Lesson 1: Swimming is my favorite hobby.",
+      "status": "completed",
+      "last_activity_date": "2025-10-30",
+      "days_since_last_practice": 173,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-10-30",
+        "pronunciation_attempts": 28,
+        "pronunciation_score_avg": 82.14,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What do you like to eat?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Hello.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2025-10-30"
+          },
+          {
+            "question": "What do you like to eat?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Screaming pool.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2025-10-30"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 32384,
+          "score": 1,
+          "correct": 11,
+          "total": 11,
+          "submitted_date": "2025-10-30"
+        },
+        "luyen_tap": {
+          "practice_id": 32385,
+          "score": 1,
+          "correct": 8,
+          "total": 8,
+          "submitted_date": "2025-10-30"
+        },
+        "lms_ids": {
+          "bai_tap": 32384,
+          "luyen_tap": 32385
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 19,
+            "total": 19,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3492719,
+      "program_id": null,
+      "level": 4,
+      "position": 8,
+      "title": "Unit 2A: Sports and hobbies - Lesson 2: I enjoy skateboarding.",
+      "desc": "Unit 2A: Sports and hobbies - Lesson 2: I enjoy skateboarding.",
+      "status": "completed",
+      "last_activity_date": "2025-11-06",
+      "days_since_last_practice": 166,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-11-04",
+        "pronunciation_attempts": 26,
+        "pronunciation_score_avg": 73.42,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How do you feel now?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Tennis.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2025-11-04"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 32386,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2025-11-06"
+        },
+        "luyen_tap": {
+          "practice_id": 32387,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2025-11-06"
+        },
+        "lms_ids": {
+          "bai_tap": 32386,
+          "luyen_tap": 32387
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 25,
+            "total": 25,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3492724,
+      "program_id": null,
+      "level": 4,
+      "position": 13,
+      "title": "Unit 3A: Animals - Lesson 1: I like dolphins.",
+      "desc": "Vocabulary:\njellyfish, shark, dolphin, crab\nGrammar:\nWhat animal do you like? - I like ... .",
+      "status": "completed",
+      "last_activity_date": "2025-11-20",
+      "days_since_last_practice": 152,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-11-20",
+        "pronunciation_attempts": 20,
+        "pronunciation_score_avg": 81.65,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "lack_of_knowledge": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 31177,
+          "score": 1,
+          "correct": 7,
+          "total": 7,
+          "submitted_date": "2025-11-20"
+        },
+        "luyen_tap": {
+          "practice_id": 31178,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2025-11-20"
+        },
+        "lms_ids": {
+          "bai_tap": 31177,
+          "luyen_tap": 31178
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 17,
+            "total": 17,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3492726,
+      "program_id": null,
+      "level": 4,
+      "position": 15,
+      "title": "Unit 3A: Animals - Lesson 3: I think whales are huge.",
+      "desc": "Vocabulary:\nhuge, scary, dangerous, nice\nGrammar:\n- I think ... are ... .\n- I know ... are ... .",
+      "status": "completed",
+      "last_activity_date": "2025-11-27",
+      "days_since_last_practice": 145,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-11-27",
+        "pronunciation_attempts": 34,
+        "pronunciation_score_avg": 57.03,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Yeah.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2025-11-27"
+          },
+          {
+            "question": "What did you eat today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Shock, I' going.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2025-11-27"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 32063,
+          "score": 1,
+          "correct": 4,
+          "total": 4,
+          "submitted_date": "2025-11-27"
+        },
+        "luyen_tap": {
+          "practice_id": 32064,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2025-11-27"
+        },
+        "lms_ids": {
+          "bai_tap": 32063,
+          "luyen_tap": 32064
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3502923,
+      "program_id": null,
+      "level": 4,
+      "position": 19,
+      "title": "Unit 4A: The seasons (Extra) - Lesson 1: What was the weather like?",
+      "desc": "Vocabulary:\nsunny, rainy, cloudy, snowy, stormy, cool, dry, wet\nGrammar:\nWhat was the weather like? - It was stormy.",
+      "status": "completed",
+      "last_activity_date": "2025-12-09",
+      "days_since_last_practice": 133,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-12-09",
+        "pronunciation_attempts": 33,
+        "pronunciation_score_avg": 73.0,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What color is the sky?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Suny cool ring.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2025-12-09"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 32394,
+          "score": 1,
+          "correct": 11,
+          "total": 11,
+          "submitted_date": "2025-12-09"
+        },
+        "luyen_tap": {
+          "practice_id": 32395,
+          "score": 1,
+          "correct": 8,
+          "total": 8,
+          "submitted_date": "2025-12-09"
+        },
+        "lms_ids": {
+          "bai_tap": 32394,
+          "luyen_tap": 32395
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 19,
+            "total": 19,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3507335,
+      "program_id": null,
+      "level": 4,
+      "position": 20,
+      "title": "Unit 4A: The seasons (Extra) - Lesson 2: It was rainy and wet.",
+      "desc": "Vocabulary:\n- Season: spring, summer, fall, winter\n- Weather: hot, warm, cold\nGrammar:\n- What was the weather like last summer? - It was hot and stormy.\n- What a hot day!",
+      "status": "completed",
+      "last_activity_date": "2025-12-11",
+      "days_since_last_practice": 131,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-12-11",
+        "pronunciation_attempts": 22,
+        "pronunciation_score_avg": 58.77,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "You and you.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2025-12-11"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 32395,
+          "score": 1,
+          "correct": 8,
+          "total": 8,
+          "submitted_date": "2025-12-09"
+        },
+        "luyen_tap": {
+          "practice_id": 32397,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2025-12-11"
+        },
+        "lms_ids": {
+          "bai_tap": 32395,
+          "luyen_tap": 32397
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 18,
+            "total": 18,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3519948,
+      "program_id": null,
+      "level": 4,
+      "position": 21,
+      "title": "Unit 4A: The seasons (Extra) - Lesson 3: What did you do last summer?",
+      "desc": "Vocabulary:\n- Activities: went camping, went swimming, went skiing, flew a kite\nGrammar:\n- What did you do last summer? I went swimming last summer.\n- What did she/he do last spring? He/She went campi",
+      "status": "completed",
+      "last_activity_date": "2025-12-16",
+      "days_since_last_practice": 126,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-12-16",
+        "pronunciation_attempts": 27,
+        "pronunciation_score_avg": 71.07,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What's the weather like today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I swimming.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2025-12-16"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 32398,
+          "score": 1,
+          "correct": 11,
+          "total": 11,
+          "submitted_date": "2025-12-16"
+        },
+        "luyen_tap": {
+          "practice_id": 32399,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2025-12-16"
+        },
+        "lms_ids": {
+          "bai_tap": 32398,
+          "luyen_tap": 32399
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 21,
+            "total": 21,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3535601,
+      "program_id": null,
+      "level": 4,
+      "position": 22,
+      "title": "Unit 4A: The seasons (Extra) - Lesson 4: Review 1",
+      "desc": "Vocabulary Review:\n- Weather: sunny, rainy, cloudy, snowy, stormy, hot, warm, cool, cold, dry, wet\n- Season: spring, summer, fall, winter\nGrammar Reviewr:\n- What was the weather like? It was stormy.\n-",
+      "status": "completed",
+      "last_activity_date": "2025-12-18",
+      "days_since_last_practice": 124,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-12-18",
+        "pronunciation_attempts": 14,
+        "pronunciation_score_avg": 71.57,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "lack_of_knowledge": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 32675,
+          "score": 1,
+          "correct": 11,
+          "total": 11,
+          "submitted_date": "2025-12-18"
+        },
+        "luyen_tap": {
+          "practice_id": 32676,
+          "score": 1,
+          "correct": 7,
+          "total": 7,
+          "submitted_date": "2025-12-18"
+        },
+        "lms_ids": {
+          "bai_tap": 32675,
+          "luyen_tap": 32676
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 17,
+            "total": 17,
+            "accuracy": 1.0
+          },
+          "English Tutoring Level 0": {
+            "correct": 1,
+            "total": 1,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3549725,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2025-12-27",
+      "days_since_last_practice": 115,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-12-27",
+        "pronunciation_attempts": 22,
+        "pronunciation_score_avg": 71.27,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 50.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "accordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I'm shot.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2025-12-25"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3614498,
+      "program_id": null,
+      "level": 4,
+      "position": 3,
+      "title": "Unit 1B: My week - Lesson 3: When did you meet your friends?",
+      "desc": "Vocabulary: \n- Activities: went out with my family, did my homework, met my friends, watched TV\nGrammar:\n- When did you meet your friends? I met my friends last Sunday (morning).\n- When did he/she mee",
+      "status": "completed",
+      "last_activity_date": "2026-01-08",
+      "days_since_last_practice": 103,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-08",
+        "pronunciation_attempts": 22,
+        "pronunciation_score_avg": 61.05,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What’s your favorite color?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "This is a.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-01-08"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49256,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-01-08"
+        },
+        "luyen_tap": {
+          "practice_id": 49330,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-01-08"
+        },
+        "lms_ids": {
+          "bai_tap": 49256,
+          "luyen_tap": 49330
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 25,
+            "total": 25,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3765275,
+      "program_id": null,
+      "level": 4,
+      "position": 22,
+      "title": "Unit 4B: My town - Lesson 4: Review 1",
+      "desc": "Vocabulary Review:\n- Places: cafe, car park, shopping centre, playground\n- Prep: in front of, behind, on the left of, on the right of\nGrammar Review:\n- Where is the cafe? It's in front of the playgrou",
+      "status": "completed",
+      "last_activity_date": "2026-03-26",
+      "days_since_last_practice": 26,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-17",
+        "pronunciation_attempts": 38,
+        "pronunciation_score_avg": 73.11,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "lack_of_knowledge": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49755,
+          "score": 1,
+          "correct": 12,
+          "total": 12,
+          "submitted_date": "2026-03-26"
+        },
+        "luyen_tap": {
+          "practice_id": 49756,
+          "score": 1,
+          "correct": 9,
+          "total": 9,
+          "submitted_date": "2026-03-26"
+        },
+        "lms_ids": {
+          "bai_tap": 49755,
+          "luyen_tap": 49756
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 21,
+            "total": 21,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3767327,
+      "program_id": null,
+      "level": 4,
+      "position": 1,
+      "title": "Unit 1C: My house - Lesson 1: Are there any elevators in your house?",
+      "desc": "- living room, kitchen, bedroom, balcony, elevator, garden, bathroom\n- Are there any elevators in your house?\n(+) Yes, there are two elevators in my house.\n(-) No, there aren't any elevators in my hou",
+      "status": "completed",
+      "last_activity_date": "2026-03-26",
+      "days_since_last_practice": 26,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-26",
+        "pronunciation_attempts": 36,
+        "pronunciation_score_avg": 83.53,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "incorrect": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "Look at this picture and tell me, what can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "This is home.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-26"
+          },
+          {
+            "question": "What's the weather like today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Y.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-03-26"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 35150,
+          "score": 1,
+          "correct": 11,
+          "total": 11,
+          "submitted_date": "2026-03-26"
+        },
+        "luyen_tap": {
+          "practice_id": 35151,
+          "score": 1,
+          "correct": 6,
+          "total": 6,
+          "submitted_date": "2026-03-26"
+        },
+        "lms_ids": {
+          "bai_tap": 35150,
+          "luyen_tap": 35151
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 16,
+            "total": 16,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 5": {
+            "correct": 1,
+            "total": 1,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3937148,
+      "program_id": null,
+      "level": 4,
+      "position": 4,
+      "title": "Unit 1C: My house - Lesson 4: Review 1",
+      "desc": "- living room, kitchen, bedroom, balcony, elevator, garden, bathroom\ncook, sleep, watch TV, grow plants, enjoy the view, go upstairs, go downstairs\n- Are there any elevators in your house?\n(+) Yes, th",
+      "status": "completed",
+      "last_activity_date": "2026-04-14",
+      "days_since_last_practice": 7,
+      "forgetting_score": 0.9991,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.7495,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-14",
+        "pronunciation_attempts": 36,
+        "pronunciation_score_avg": 92.72,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "incorrect": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "This is a hall.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-14"
+          },
+          {
+            "question": "How do you feel now?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "How do you feel now?",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-04-14"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 35790,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-04-14"
+        },
+        "luyen_tap": {
+          "practice_id": 35790,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-04-14"
+        },
+        "lms_ids": {
+          "bai_tap": 35790,
+          "luyen_tap": 35790
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 20,
+            "total": 20,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3765269,
+      "program_id": null,
+      "level": 4,
+      "position": 15,
+      "title": "Unit 3B: School Subjects - Lesson 3: Where do you learn music?",
+      "desc": "Vocabulary: \n- School facilities: art room, music room, classroom, library, computer room, sports field, schoolyard\nGrammar:\n- Where do you learn music? I learn it in the music room.",
+      "status": "in_class_only",
+      "last_activity_date": "2026-02-24",
+      "days_since_last_practice": 56,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.467,
+      "composite_priority_score": 0.7335,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-24",
+        "pronunciation_attempts": 30,
+        "pronunciation_score_avg": 53.3,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49668,
+          "luyen_tap": 49679
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {
+          "bai_tap": [
+            {
+              "practice_id": 49668,
+              "question_id": 750957,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Nhiều lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and match (Con hãy nghe, ghép vật với tranh đúng nhé!)",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 49668,
+              "question_id": 750958,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Nhiều lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and match (Con hãy nghe, ghép vật với tranh đúng nhé!)",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 49668,
+              "question_id": 751080,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Nhiều lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and match (Con hãy nghe, ghép vật với tranh đúng nhé!)",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 49668,
+              "question_id": 751081,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Nhiều lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and match (Con hãy nghe, ghép vật với tranh đúng nhé!)",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 49668,
+              "question_id": 751082,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Read and choose (Con hãy đọc và chọn đáp án đúng nhé!) Today, I had an IT lesson in the (1) _______ room. The teacher started by explaining how (2) _______ the computer to create simple projects. We learned how to open a program and type on the keyboard. After that, the teacher showed us how ",
+              "correct_answer": "computer",
+              "student_answer": null,
+              "requires_media": false
+            }
+          ],
+          "luyen_tap": [
+            {
+              "practice_id": 49679,
+              "question_id": 751109,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose (Con hãy nghe và chọn đáp án đúng nhé!) 1. Where do you learn Music?",
+              "correct_answer": "I learn it in the music room.",
+              "student_answer": null,
+              "requires_media": false
+            },
+            {
+              "practice_id": 49679,
+              "question_id": 751110,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose (Con hãy nghe và chọn đáp án đúng nhé!) 2. Where do you learn IT?",
+              "correct_answer": "I learn it in the computer room.",
+              "student_answer": null,
+              "requires_media": false
+            },
+            {
+              "practice_id": 49679,
+              "question_id": 751111,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose (Con hãy nghe và chọn đáp án đúng nhé!) 3. Where do you learn PE?",
+              "correct_answer": "I learn it in the sports field.",
+              "student_answer": null,
+              "requires_media": false
+            },
+            {
+              "practice_id": 49679,
+              "question_id": 751115,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Trả lời bằng giọng nói",
+              "status": "not_attempted",
+              "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+              "correct_answer": "library",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 49679,
+              "question_id": 751116,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Trả lời bằng giọng nói",
+              "status": "not_attempted",
+              "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+              "correct_answer": "schoolyard",
+              "student_answer": null,
+              "requires_media": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": 3449129,
+      "program_id": null,
+      "level": 4,
+      "position": 1,
+      "title": "Unit 1A: Daily life - Lesson 1: What do you do in the morning?",
+      "desc": "Vocabulary:\n- Daily activities: get up, brush my teeth, go to school, make the bed, go home, go to bed\n- Adverbs of frequency: always, usually, often, sometimes, never\nGrammar:\nWhat do you do in the m",
+      "status": "completed",
+      "last_activity_date": "2025-10-16",
+      "days_since_last_practice": 187,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.4489,
+      "composite_priority_score": 0.7245,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 60,
+        "latest_session_date": "2025-10-12",
+        "pronunciation_attempts": 52,
+        "pronunciation_score_avg": 67.6,
+        "free_speaking_attempts": 6,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "accordant": 2,
+          "incorrect": 2,
+          "correct": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "It's the red up.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2025-10-09"
+          },
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Getther.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2025-10-09"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 37196,
+          "score": 0.67,
+          "correct": 10,
+          "total": 15,
+          "submitted_date": "2025-10-12"
+        },
+        "luyen_tap": {
+          "practice_id": 37203,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2025-10-16"
+        },
+        "lms_ids": {
+          "bai_tap": 37196,
+          "luyen_tap": 37203
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 20,
+            "total": 25,
+            "accuracy": 0.8
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 37196,
+            "question_id": 685267,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose (Con hãy nghe và chọn đáp án đúng nhé.) Who's Linda?",
+            "correct_answer": "A",
+            "student_answer": [
+              "0",
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 37196,
+            "question_id": 685278,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Look and write (Con hãy nhìn tranh và viết từ đúng nhé.)",
+            "correct_answer": "make the bed",
+            "student_answer": "meet the bed",
+            "requires_media": true
+          },
+          {
+            "practice_id": 37196,
+            "question_id": 685286,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose (Con hãy đọc đoạn văn, chọn từ đúng nhé.) Every day, I (12)... early in the morning. I brush my teeth and have breakfast. After that, I go to school. I learn many things at (13)... and play with my friends. In the afternoon, I go home and do my homework. I help my mom with some ",
+            "correct_answer": "get up",
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 37196,
+            "question_id": 685288,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose (Con hãy đọc đoạn văn, chọn từ đúng nhé.) Every day, I (12)... early in the morning. I brush my teeth and have breakfast. After that, I go to school. I learn many things at (13)... and play with my friends. In the afternoon, I go home and do my homework. I help my mom with some ",
+            "correct_answer": "dinner",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 37196,
+            "question_id": 685289,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose (Con hãy đọc đoạn văn và chọn từ thích hợp nhé.) Every day, I (12)... early in the morning. I brush my teeth and have breakfast. After that, I go to school. I learn many things at (13)... and play with my friends. In the afternoon, I go home and do my homework. I help my mom ",
+            "correct_answer": "go to bed",
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3476946,
+      "program_id": null,
+      "level": 4,
+      "position": 5,
+      "title": "Unit 1A: Daily life - Lesson 5: Review 2.",
+      "desc": "Vocabulary Review:\n- Daily activities: wash my face, do morning exercise, meet my friends, do homework, clean my house, take out the garbage, visit my grandparents, take a shower\nGrammar Review:\n- You",
+      "status": "completed",
+      "last_activity_date": "2025-10-28",
+      "days_since_last_practice": 175,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.44,
+      "composite_priority_score": 0.72,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-10-28",
+        "pronunciation_attempts": 56,
+        "pronunciation_score_avg": 73.91,
+        "free_speaking_attempts": 5,
+        "free_speaking_score_avg": 40.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 2,
+          "correct": 3
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How do you feel now?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "L.A.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2025-10-28"
+          },
+          {
+            "question": "How do you feel now?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Take a shower, do homework, clean my house play friend?",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2025-10-28"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 38203,
+          "score": 0.6,
+          "correct": 9,
+          "total": 15,
+          "submitted_date": "2025-10-28"
+        },
+        "luyen_tap": {
+          "practice_id": 38205,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2025-10-28"
+        },
+        "lms_ids": {
+          "bai_tap": 38203,
+          "luyen_tap": 38205
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 19,
+            "total": 25,
+            "accuracy": 0.76
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 38203,
+            "question_id": 686592,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn tranh và nói câu đúng nhé.) You should ...",
+            "correct_answer": "You should take out the garbage.",
+            "student_answer": "you should take out the garbage",
+            "requires_media": true
+          },
+          {
+            "practice_id": 38203,
+            "question_id": 686602,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Odd-one-out (Con hãy đọc và chọn từ khác loại nhé.)",
+            "correct_answer": "three times a week",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 38203,
+            "question_id": 686603,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Odd-one-out (Con hãy đọc và chọn từ khác loại nhé.)",
+            "correct_answer": "take out the garbage",
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 38203,
+            "question_id": 686605,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Odd-one-out (Con hãy đọc và chọn từ khác loại nhé.)",
+            "correct_answer": "once a week",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 38203,
+            "question_id": 686613,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read the passage and choose the correct answer (Con hãy đọc và chọn từ thích hợp nhé.) My house is always tidy because I believe in keeping it clean and organized. Every week, I make sure to (12) ... my house thoroughly, paying attention to every corner. I always remember that I should (13) .",
+            "correct_answer": "fresh",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3614504,
+      "program_id": null,
+      "level": 4,
+      "position": 10,
+      "title": "Unit 2B: My day - Lesson 4: When do you do your homework?",
+      "desc": "Vocabulary Review: \n- Daily routine: get up, have breakfast, go to school, play sports, have lunch, go home\n- Numbers: 1-10\nGrammar Review:\n- What time is it? It's 10 a.m.\n- When do you do your homewo",
+      "status": "completed",
+      "last_activity_date": "2026-01-29",
+      "days_since_last_practice": 82,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.4123,
+      "composite_priority_score": 0.7062,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-29",
+        "pronunciation_attempts": 17,
+        "pronunciation_score_avg": 29.06,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49402,
+          "score": 0.8,
+          "correct": 12,
+          "total": 15,
+          "submitted_date": "2026-01-29"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49402,
+          "luyen_tap": 49415
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 12,
+            "total": 14,
+            "accuracy": 0.857
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 49402,
+            "question_id": 748518,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Read the story and complete the sentences about the story. Use NO MORE THAN TWO WORDS. (Con hãy đọc câu chuyện và hoàn thành câu. KHÔNG SỬ DỤNG QUÁ HAI TỪ nhé!) Getting in small trouble Dan usually wakes up at 7 am. Then, he eats breakfast and goes to school at 8 am. He likes to play with his friend",
+            "correct_answer": "wakes up",
+            "student_answer": "usually wakes up",
+            "requires_media": true
+          },
+          {
+            "practice_id": 49402,
+            "question_id": 748520,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Read the story and complete the sentences about the story. Use NO MORE THAN TWO WORDS. (Con hãy đọc câu chuyện và hoàn thành câu. KHÔNG SỬ DỤNG QUÁ HAI TỪ nhé!) Getting in small trouble Dan usually wakes up at 7 am. Then, he eats breakfast and goes to school at 8 am. He likes to play with his friend",
+            "correct_answer": "vase",
+            "student_answer": "angry",
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3765272,
+      "program_id": null,
+      "level": 4,
+      "position": 19,
+      "title": "Unit 4B: My town - Lesson 1: Where is the cafe?",
+      "desc": "Vocabulary: \n- Places: café, car park, shopping centre, playground\n- Prep: in front of, behind, below, above\nGrammar:\n- Where is the cafe? It's in front of the playground.\n- Is the park behind the car",
+      "status": "completed",
+      "last_activity_date": "2026-03-19",
+      "days_since_last_practice": 33,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.3825,
+      "composite_priority_score": 0.6913,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-05",
+        "pronunciation_attempts": 32,
+        "pronunciation_score_avg": 61.75,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": null,
+        "luyen_tap": {
+          "practice_id": 49734,
+          "score": null,
+          "correct": 0,
+          "total": 10,
+          "submitted_date": "2026-03-19"
+        },
+        "lms_ids": {
+          "bai_tap": 49732,
+          "luyen_tap": 49734
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3765276,
+      "program_id": null,
+      "level": 4,
+      "position": 23,
+      "title": "Unit 4B: My town - Lesson 5: Review 2",
+      "desc": "Vocabulary Review:\n- Places: market, supermarket, square, funfair, library, museum, bookstore\n- Prep: near, between, opposite\nGrammar Review:\n- Where is the market? It's near the library.\n- Is the fun",
+      "status": "completed",
+      "last_activity_date": "2026-03-26",
+      "days_since_last_practice": 26,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.3334,
+      "composite_priority_score": 0.6667,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-19",
+        "pronunciation_attempts": 34,
+        "pronunciation_score_avg": 85.62,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "incorrect": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What is this?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "This is a light.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-19"
+          },
+          {
+            "question": "Look at this picture and tell me, what can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "This is a fun.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-19"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49758,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-03-26"
+        },
+        "luyen_tap": {
+          "practice_id": 49759,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-03-26"
+        },
+        "lms_ids": {
+          "bai_tap": 49758,
+          "luyen_tap": 49759
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 25,
+            "total": 25,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3788391,
+      "program_id": null,
+      "level": 4,
+      "position": 3,
+      "title": "Unit 1C: My house - Lesson 3: Which toothbrush do you prefer?",
+      "desc": "- toothbrush, toothpaste, towel, comb, take a bath, take a shower\n- Which toothbrush do you prefer?\n+ I prefer the toothbrush which is yellow.\n- Do you prefer taking a bath or taking a shower?",
+      "status": "completed",
+      "last_activity_date": "2026-04-14",
+      "days_since_last_practice": 7,
+      "forgetting_score": 0.9991,
+      "weakness_score": 0.3334,
+      "composite_priority_score": 0.6663,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-02",
+        "pronunciation_attempts": 34,
+        "pronunciation_score_avg": 77.21,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "incorrect": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What are they doing?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "It break your big.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-02"
+          },
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "O.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-02"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 35788,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-04-14"
+        },
+        "luyen_tap": {
+          "practice_id": 35789,
+          "score": 1,
+          "correct": 6,
+          "total": 6,
+          "submitted_date": "2026-04-14"
+        },
+        "lms_ids": {
+          "bai_tap": 35788,
+          "luyen_tap": 35789
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 21,
+            "total": 21,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3937151,
+      "program_id": null,
+      "level": 4,
+      "position": 5,
+      "title": "Unit 1C: My house - Lesson 5: Review 2",
+      "desc": "- toothbrush, toothpaste, towel, comb, take a bath, take a shower\n- Which toothbrush do you prefer?\n+ I prefer the toothbrush which is yellow.\n- Do you prefer taking a bath or taking a shower?",
+      "status": "completed",
+      "last_activity_date": "2026-04-16",
+      "days_since_last_practice": 5,
+      "forgetting_score": 0.9933,
+      "weakness_score": 0.3334,
+      "composite_priority_score": 0.6633,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-16",
+        "pronunciation_attempts": 40,
+        "pronunciation_score_avg": 73.9,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "incorrect": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "Can you tell me what it is?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "This is a tower.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-16"
+          },
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "This is a bathroom room.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-16"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 36053,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-04-16"
+        },
+        "luyen_tap": {
+          "practice_id": 36049,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-04-16"
+        },
+        "lms_ids": {
+          "bai_tap": 36053,
+          "luyen_tap": 36049
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 25,
+            "total": 25,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3765270,
+      "program_id": null,
+      "level": 4,
+      "position": 16,
+      "title": "Unit 3B: School Subjects - Lesson 4: Review 1",
+      "desc": "Vocabulary Review: \n- Subject: English, Vietnamese, History, Maths, Science, IT, PE, Art, Music, Geography\nGrammar Review:\n- I'm good at English.\n- When do you have Maths? I have it on Wednesday.\n- Wh",
+      "status": "completed",
+      "last_activity_date": "2026-03-12",
+      "days_since_last_practice": 40,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.2548,
+      "composite_priority_score": 0.6274,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-26",
+        "pronunciation_attempts": 21,
+        "pronunciation_score_avg": 64.57,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49695,
+          "score": 0.75,
+          "correct": 9,
+          "total": 12,
+          "submitted_date": "2026-03-12"
+        },
+        "luyen_tap": {
+          "practice_id": 49696,
+          "score": 0.9,
+          "correct": 9,
+          "total": 10,
+          "submitted_date": "2026-03-12"
+        },
+        "lms_ids": {
+          "bai_tap": 49695,
+          "luyen_tap": 49696
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 18,
+            "total": 22,
+            "accuracy": 0.818
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 49695,
+            "question_id": 751285,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Xứng-Hợp",
+            "question_text": "Look and reorder the sentences to complete the story (Con hãy nhìn và sắp xếp các câu nhé!)",
+            "correct_answer": "1, 2, 3, 4",
+            "student_answer": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 49695,
+            "question_id": 751287,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Read and write (Con hãy đọc và điền 1-2 từ nhé!) I really like studying Science. It helps me understand how things work in the world. I enjoy learning about different animals, plants, and the human body. My favorite part of Science is doing experiments. It is fun to see how things change when we ",
+            "correct_answer": "animals | different animals",
+            "student_answer": "different animals ,",
+            "requires_media": true
+          },
+          {
+            "practice_id": 49695,
+            "question_id": 751289,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Read and write (Con hãy đọc và điền 1-2 từ nhé!) I really like studying Science. It helps me understand how things work in the world. I enjoy learning about different animals, plants, and the human body. My favorite part of Science is doing experiments. It is fun to see how things change when we ",
+            "correct_answer": "curious",
+            "student_answer": "also",
+            "requires_media": true
+          },
+          {
+            "practice_id": 49696,
+            "question_id": 751311,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose (Con hãy đọc và chọn đáp án đúng nhé!) I really enjoy learning English. I’m good at (1) _______ because I practice speaking and reading every day. I have it (2) _______ Wednesday, and it’s always fun. My teacher explains everything clearly, and we do a lot of interesting activ",
+            "correct_answer": "and",
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3492722,
+      "program_id": null,
+      "level": 4,
+      "position": 11,
+      "title": "Unit 2A: Sports and hobbies - Lesson 5: Review 2",
+      "desc": "Unit 2A: Sports and hobbies - Lesson 5: Review 2",
+      "status": "completed",
+      "last_activity_date": "2025-11-18",
+      "days_since_last_practice": 154,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.25,
+      "composite_priority_score": 0.625,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-11-13",
+        "pronunciation_attempts": 20,
+        "pronunciation_score_avg": 77.05,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 50.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2025-11-13"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 32392,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2025-11-18"
+        },
+        "luyen_tap": {
+          "practice_id": 32393,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2025-11-18"
+        },
+        "lms_ids": {
+          "bai_tap": 32392,
+          "luyen_tap": 32393
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 25,
+            "total": 25,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3781742,
+      "program_id": null,
+      "level": 4,
+      "position": 2,
+      "title": "Unit 1C: My house - Lesson 2: That is the kitchen where mother cooks.",
+      "desc": "- cook, sleep, watch TV, grow plants, enjoy the view, go upstairs, go downstairs\n- That is the kitchen where mother cooks.",
+      "status": "completed",
+      "last_activity_date": "2026-04-14",
+      "days_since_last_practice": 7,
+      "forgetting_score": 0.9991,
+      "weakness_score": 0.25,
+      "composite_priority_score": 0.6245,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-31",
+        "pronunciation_attempts": 29,
+        "pronunciation_score_avg": 81.9,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 50.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "O.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-31"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 35778,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-04-14"
+        },
+        "luyen_tap": {
+          "practice_id": 35781,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-04-14"
+        },
+        "lms_ids": {
+          "bai_tap": 35778,
+          "luyen_tap": 35781
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 25,
+            "total": 25,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3765273,
+      "program_id": null,
+      "level": 4,
+      "position": 20,
+      "title": "Unit 4B: My town - Lesson 2: Is the market on the left of the funfair?",
+      "desc": "Vocabulary: \n- Places: market, supermarket, square, funfair\n- Prep: on the left of, on the right of\nGrammar:\n- Where is the supermarket? It's on the right of the funfair.\n- Is the market on the left o",
+      "status": "completed",
+      "last_activity_date": "2026-03-26",
+      "days_since_last_practice": 26,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.1864,
+      "composite_priority_score": 0.5932,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-10",
+        "pronunciation_attempts": 33,
+        "pronunciation_score_avg": 81.36,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": null,
+        "luyen_tap": {
+          "practice_id": 49743,
+          "score": null,
+          "correct": 0,
+          "total": 10,
+          "submitted_date": "2026-03-26"
+        },
+        "lms_ids": {
+          "bai_tap": 49740,
+          "luyen_tap": 49743
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3614501,
+      "program_id": null,
+      "level": 4,
+      "position": 7,
+      "title": "Unit 2B: My day - Lesson 1: When do you do your homework?",
+      "desc": "Vocabulary: \n- Daily routine: get up, have breakfast, go to school, play sports\n- Numbers: 1-10; \n- a.m., p.m.\t\nGrammar:\n- What time is it? It's 10 a.m. \n- When do you do your homework? I do my homewo",
+      "status": "completed",
+      "last_activity_date": "2026-01-20",
+      "days_since_last_practice": 91,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.1183,
+      "composite_priority_score": 0.5592,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-20",
+        "pronunciation_attempts": 12,
+        "pronunciation_score_avg": 64.5,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 34714,
+          "score": 1,
+          "correct": 7,
+          "total": 7,
+          "submitted_date": "2026-01-20"
+        },
+        "luyen_tap": {
+          "practice_id": 34748,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-01-20"
+        },
+        "lms_ids": {
+          "bai_tap": 34714,
+          "luyen_tap": 34748
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 17,
+            "total": 17,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3729130,
+      "program_id": null,
+      "level": 4,
+      "position": 13,
+      "title": "Unit 3B: School Subjects - Lesson 1: I'm good at English.",
+      "desc": "Vocabulary: \n- Subject: English, Vietnamese, History, Maths, Science, Geography\nGrammar:\n- I'm good at English.\n- When do you have Maths? I have it on Wednesday.",
+      "status": "completed",
+      "last_activity_date": "2026-02-26",
+      "days_since_last_practice": 54,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0741,
+      "composite_priority_score": 0.5371,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-12",
+        "pronunciation_attempts": 23,
+        "pronunciation_score_avg": 83.78,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49660,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-02-26"
+        },
+        "luyen_tap": {
+          "practice_id": 49664,
+          "score": 0.9,
+          "correct": 9,
+          "total": 10,
+          "submitted_date": "2026-02-26"
+        },
+        "lms_ids": {
+          "bai_tap": 49660,
+          "luyen_tap": 49664
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 24,
+            "total": 25,
+            "accuracy": 0.96
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 49664,
+            "question_id": 750913,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Fill in the blank (Con hãy đọc và điền chữ còn thiếu nhé!)",
+            "correct_answer": "c",
+            "student_answer": "ce",
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3535602,
+      "program_id": null,
+      "level": 4,
+      "position": 23,
+      "title": "Unit 4A: The seasons (Extra) - Lesson 5: Review 2",
+      "desc": "Vocabulary Review:\n- activities: went camping, went swimming, went skiing, flew a kite\nGrammar Reviewr:\n- What did you do last summer? I went swimming last summer.\n- What did she/he do last spring? He",
+      "status": "completed",
+      "last_activity_date": "2025-12-23",
+      "days_since_last_practice": 119,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.06,
+      "composite_priority_score": 0.53,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-12-23",
+        "pronunciation_attempts": 13,
+        "pronunciation_score_avg": 82.0,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 32677,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2025-12-23"
+        },
+        "luyen_tap": {
+          "practice_id": 32678,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2025-12-23"
+        },
+        "lms_ids": {
+          "bai_tap": 32677,
+          "luyen_tap": 32678
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 19,
+            "total": 19,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 3": {
+            "correct": 1,
+            "total": 1,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3492721,
+      "program_id": null,
+      "level": 4,
+      "position": 10,
+      "title": "Unit 2A: Sports and hobbies - Lesson 4: Review 1",
+      "desc": "Unit 2A: Sports and hobbies - Lesson 4: Review 1",
+      "status": "completed",
+      "last_activity_date": "2025-11-13",
+      "days_since_last_practice": 159,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.03,
+      "composite_priority_score": 0.515,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-11-11",
+        "pronunciation_attempts": 25,
+        "pronunciation_score_avg": 88.52,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 32390,
+          "score": 1,
+          "correct": 11,
+          "total": 11,
+          "submitted_date": "2025-11-13"
+        },
+        "luyen_tap": {
+          "practice_id": 32391,
+          "score": 0.8,
+          "correct": 8,
+          "total": 10,
+          "submitted_date": "2025-11-13"
+        },
+        "lms_ids": {
+          "bai_tap": 32390,
+          "luyen_tap": 32391
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 19,
+            "total": 21,
+            "accuracy": 0.905
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 32391,
+            "question_id": 642549,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Write complete sentences from the cues given (Con hãy hoàn chỉnh câu từ gợi ý nhé) 2. Do/Peter/and Jane/like/flying kites/?",
+            "correct_answer": "Do Peter and Jane like flying kites?|Do Peter and Jane like flying kites",
+            "student_answer": "Do like flying kites Peter and Jane",
+            "requires_media": false
+          },
+          {
+            "practice_id": 32391,
+            "question_id": 642551,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Write complete sentences from the cues given (Con hãy hoàn chỉnh câu từ gợi ý nhé) 3. Linda/not/like/going fishing/.",
+            "correct_answer": "Linda doesn't like going fishing.|Linda doesn't like going fishing|Linda does not like going fishing.|Linda does not like going fishing",
+            "student_answer": "Linda not like going fishing.",
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3492725,
+      "program_id": null,
+      "level": 4,
+      "position": 14,
+      "title": "Unit 3A: Animals - Lesson 2: Do you like penguins or whales?",
+      "desc": "Vocabulary:\npenguin, polar bear, whale, seal\nGrammar:\nDo you like ... or ...?  - I like ... .",
+      "status": "completed",
+      "last_activity_date": "2025-11-27",
+      "days_since_last_practice": 145,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.5,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-11-27",
+        "pronunciation_attempts": 32,
+        "pronunciation_score_avg": 61.47,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 31191,
+          "score": 1,
+          "correct": 8,
+          "total": 8,
+          "submitted_date": "2025-11-25"
+        },
+        "luyen_tap": {
+          "practice_id": 31193,
+          "score": 1,
+          "correct": 6,
+          "total": 6,
+          "submitted_date": "2025-11-25"
+        },
+        "lms_ids": {
+          "bai_tap": 31191,
+          "luyen_tap": 31193
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 14,
+            "total": 14,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3549726,
+      "program_id": null,
+      "level": 4,
+      "position": 1,
+      "title": "Unit 1B: My week - Lesson 1: I went to school.",
+      "desc": "Vocabulary: \n- Days of the week: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday\n- Activities: went to school, stayed at home, played sports, did the housework\"\t\nGrammar:\n- What did you",
+      "status": "homework_only",
+      "last_activity_date": "2026-01-03",
+      "days_since_last_practice": 108,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.5,
+      "in_class": {
+        "participated": false
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49159,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-01-03"
+        },
+        "luyen_tap": {
+          "practice_id": 49323,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-01-03"
+        },
+        "lms_ids": {
+          "bai_tap": 49159,
+          "luyen_tap": 49323
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 25,
+            "total": 25,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3614499,
+      "program_id": null,
+      "level": 4,
+      "position": 4,
+      "title": "Unit 1B: My week - Lesson 4: Review 1",
+      "desc": "Vocabulary Review: \n- Days of the week: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday\n- Activities: went to school, stayed at home, played sports, did the housework\nGrammar Review:\n-",
+      "status": "completed",
+      "last_activity_date": "2026-01-15",
+      "days_since_last_practice": 96,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.5,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-13",
+        "pronunciation_attempts": 19,
+        "pronunciation_score_avg": 22.89,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49266,
+          "score": 1,
+          "correct": 12,
+          "total": 12,
+          "submitted_date": "2026-01-13"
+        },
+        "luyen_tap": {
+          "practice_id": 49338,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-01-15"
+        },
+        "lms_ids": {
+          "bai_tap": 49266,
+          "luyen_tap": 49338
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 22,
+            "total": 22,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3614502,
+      "program_id": null,
+      "level": 4,
+      "position": 8,
+      "title": "Unit 2B: My day - Lesson 2: What time is it?",
+      "desc": "Vocabulary: \n- Daily routine (cont): have lunch, go home, take a shower, have dinner\n- Numbers: 11-19\nGrammar:\n- What time is it? It's 10:15 pm.\n- I have to go to bed before 10:15 pm.",
+      "status": "completed",
+      "last_activity_date": "2026-01-22",
+      "days_since_last_practice": 89,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.5,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-22",
+        "pronunciation_attempts": 21,
+        "pronunciation_score_avg": 43.67,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 34715,
+          "score": 1,
+          "correct": 11,
+          "total": 11,
+          "submitted_date": "2026-01-22"
+        },
+        "luyen_tap": {
+          "practice_id": 34749,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-01-22"
+        },
+        "lms_ids": {
+          "bai_tap": 34715,
+          "luyen_tap": 34749
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 21,
+            "total": 21,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3765277,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-03-24",
+      "days_since_last_practice": 28,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.5,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-24",
+        "pronunciation_attempts": 28,
+        "pronunciation_score_avg": 85.68,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3937155,
+      "program_id": null,
+      "level": 4,
+      "position": 7,
+      "title": "Unit 2C: My busy day - Lesson 1: When does Julia go shopping?",
+      "desc": "- go shopping, go roller skating, go for a walk, go for a drive, go for a swim\n- When does Julia go shopping? \nShe goes shopping on Fridays.",
+      "status": "in_class_only",
+      "last_activity_date": "2026-04-21",
+      "days_since_last_practice": 0,
+      "forgetting_score": 0.0,
+      "weakness_score": 0.6667,
+      "composite_priority_score": 0.3333,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-21",
+        "pronunciation_attempts": 29,
+        "pronunciation_score_avg": 79.66,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "incorrect": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What is this person doing?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "He is a speaking.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-21"
+          },
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "This is a.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-21"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 38221,
+          "luyen_tap": 38222
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {
+          "bai_tap": [
+            {
+              "practice_id": 38221,
+              "question_id": 686734,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Nhiều lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and match the names with the correct characters. (Con hãy nghe và chọn bức tranh của nhân vật được nhắc đến, sau đó con chọn tên đúng của nhân vật đó nhé!) [Con lưu ý chọn 1 nhân vật + 1 tên nhé!]",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 38221,
+              "question_id": 686735,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Nhiều lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and match the names with the correct characters. (Con hãy nghe và chọn bức tranh của nhân vật được nhắc đến, sau đó con chọn tên đúng của nhân vật đó nhé!) [Con lưu ý chọn 1 nhân vật + 1 tên nhé!]",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 38221,
+              "question_id": 686736,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Nhiều lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and match the names with the correct characters. (Con hãy nghe và chọn bức tranh của nhân vật được nhắc đến, sau đó con chọn tên đúng của nhân vật đó nhé!) [Con lưu ý chọn 1 nhân vật + 1 tên nhé!]",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 38221,
+              "question_id": 686737,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Nhiều lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and match the names with the correct characters. (Con hãy nghe và chọn bức tranh của nhân vật được nhắc đến, sau đó con chọn tên đúng của nhân vật đó nhé!) [Con lưu ý chọn 1 nhân vật + 1 tên nhé!]",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 38221,
+              "question_id": 686738,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Nhiều lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and match the names with the correct characters. (Con hãy nghe và chọn bức tranh của nhân vật được nhắc đến, sau đó con chọn tên đúng của nhân vật đó nhé!) [Con lưu ý chọn 1 nhân vật + 1 tên nhé!]",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            }
+          ],
+          "luyen_tap": [
+            {
+              "practice_id": 38222,
+              "question_id": 686750,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
+              "status": "not_attempted",
+              "question_text": "Reorder: ",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 38222,
+              "question_id": 686751,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
+              "status": "not_attempted",
+              "question_text": "Reorder: ",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 38222,
+              "question_id": 686752,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
+              "status": "not_attempted",
+              "question_text": "Reorder: ",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 38222,
+              "question_id": 686753,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Choose the correct answer. (Con hãy chọn đáp án đ&uacute;ng nh&eacute;.) 1. When .......... Julia go for a drive?",
+              "correct_answer": "B. does",
+              "student_answer": null,
+              "requires_media": false
+            },
+            {
+              "practice_id": 38222,
+              "question_id": 686754,
+              "question_folder": "English Tutoring - Level 4",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Choose the correct answer. (Con hãy chọn đáp án đ&uacute;ng nh&eacute;.) 2. I .......... every day.",
+              "correct_answer": "A. go for a walk",
+              "student_answer": null,
+              "requires_media": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

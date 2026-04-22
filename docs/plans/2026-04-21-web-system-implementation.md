@@ -805,7 +805,7 @@ export default function StudentProfile() {
 
       <div className="grid grid-cols-3 gap-4">
         <StatCard label="Tổng bài học" value={data.total_lessons} />
-        <StatCard label="Đã hoàn thành" value={data.lessons_by_status['completed'] ?? 0} />
+        <StatCard label="Đã hoàn thành BTVN" value={data.lessons_by_status['completed'] ?? 0} />
         <StatCard label="Phát âm TB" value={`${data.overall_pronunciation_score_avg.toFixed(1)}/100`} />
         <StatCard label="Nói tự do TB" value={`${data.overall_free_speaking_score_avg.toFixed(1)}/100`} />
       </div>

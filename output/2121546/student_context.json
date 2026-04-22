@@ -1,0 +1,4269 @@
+{
+  "summary": {
+    "student_id": "2121546",
+    "reference_date": "2026-04-21",
+    "total_lessons": 39,
+    "lessons_by_status": {
+      "in_class_only": 9,
+      "completed": 30
+    },
+    "overall_homework_skill_breakdown": {
+      "Vocabulary": {
+        "correct": 55,
+        "total": 56,
+        "accuracy": 0.982
+      },
+      "Grammar": {
+        "correct": 51,
+        "total": 54,
+        "accuracy": 0.944
+      },
+      "Listening": {
+        "correct": 24,
+        "total": 28,
+        "accuracy": 0.857
+      },
+      "Speaking": {
+        "correct": 24,
+        "total": 24,
+        "accuracy": 1.0
+      },
+      "English Tutoring - Level 3": {
+        "correct": 440,
+        "total": 451,
+        "accuracy": 0.976
+      },
+      "Biểu đồ": {
+        "correct": 105,
+        "total": 106,
+        "accuracy": 0.991
+      },
+      "English Tutoring - Level 2": {
+        "correct": 450,
+        "total": 456,
+        "accuracy": 0.987
+      },
+      "Reading": {
+        "correct": 20,
+        "total": 20,
+        "accuracy": 1.0
+      },
+      "English Tutoring - Level 4": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
+      "Writing": {
+        "correct": 10,
+        "total": 15,
+        "accuracy": 0.667
+      },
+      "English Tutoring - Level 1": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      }
+    },
+    "weak_skills_global": [
+      "Writing"
+    ],
+    "overall_pronunciation_score_avg": 84.57,
+    "overall_free_speaking_score_avg": 26.59,
+    "overall_free_speaking_answer_type_dist": {
+      "incorrect": 33,
+      "inaccordant": 11,
+      "correct": 29,
+      "accordant": 19,
+      "lack_of_knowledge": 2
+    },
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+  },
+  "scored_candidates": [
+    {
+      "lesson_id": 3933227,
+      "title": "Unit 3A: Pets - Lesson 1: What pet do you have?",
+      "level": 3,
+      "last_activity_date": "2026-04-10",
+      "days_since_last_practice": 11,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.8315,
+      "composite_priority_score": 0.9158,
+      "homework_status": "attempted",
+      "weak_skills": [
+        "Listening"
+      ],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 4,
+      "worst_speaking_items": [
+        {
+          "question": "What's the weather like today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "What do you?",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-04-10"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 54638,
+        "luyen_tap": 54647
+      }
+    },
+    {
+      "lesson_id": 3918294,
+      "title": "Unit 1A: Nature  - Lesson 5: There are some mushrooms.",
+      "level": 3,
+      "last_activity_date": "2026-04-04",
+      "days_since_last_practice": 17,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5425,
+      "composite_priority_score": 0.7712,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 7703,
+          "question_id": 303818,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Một lựa chọn",
+          "question_text": "Odd one out (Con hãy đọc và chọn phương án khác loại.)",
+          "correct_answer": "C. Leaves",
+          "student_answer": [
+            "0",
+            "1",
+            "0"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 7703,
+          "question_id": 303828,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) Harry: Lily, look at the sky, how many (17) ......... are there? Lily: There're five clouds. Is there any wind? Harry: No, (18) ............... . Are there any ponds? Lily: Yes, (19) .............. . Are there any flowers? H",
+          "correct_answer": "C. There aren't",
+          "student_answer": [
+            "1",
+            "0",
+            "0"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "question": "How are you today?.",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I'm happy that's my next equal.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-04-04"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7703,
+        "luyen_tap": 13488
+      }
+    },
+    {
+      "lesson_id": 3887954,
+      "title": "Unit 3A: Body parts - Lesson 5: He can dance.",
+      "level": 2,
+      "last_activity_date": "2026-03-28",
+      "days_since_last_practice": 24,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5325,
+      "composite_priority_score": 0.7662,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Can see what parts.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-27"
+        },
+        {
+          "question": "What did you eat today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I read, Baby.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-03-27"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7859,
+        "luyen_tap": 13291
+      }
+    },
+    {
+      "lesson_id": 3941017,
+      "title": "Unit 3A: Pets - Lesson 3: It has fur. It doesn't have feathers.",
+      "level": 3,
+      "last_activity_date": "2026-04-12",
+      "days_since_last_practice": 9,
+      "forgetting_score": 0.9999,
+      "weakness_score": 0.529,
+      "composite_priority_score": 0.7645,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I can see A.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-12"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 54684,
+        "luyen_tap": 54685
+      }
+    },
+    {
+      "lesson_id": 3925795,
+      "title": "Unit 2A: Me - Lesson 3: Do you have strong arms?",
+      "level": 3,
+      "last_activity_date": "2026-04-07",
+      "days_since_last_practice": 14,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.525,
+      "composite_priority_score": 0.7625,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 7711,
+          "question_id": 303945,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and find the incorrect answer (Con hãy đọc và chọn đáp án sai.) Do he have strong arms ?",
+          "correct_answer": "A. Do",
+          "student_answer": [
+            "0",
+            "0",
+            "1"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 13498,
+          "question_id": 374135,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
+          "correct_answer": "A. Does she have strong legs? No, she doesn't",
+          "student_answer": [
+            "0",
+            "0",
+            "1"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I can see a strong man.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-07"
+        },
+        {
+          "question": "Have a look at this picture. What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "It is for strong.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-07"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7711,
+        "luyen_tap": 13498
+      }
+    },
+    {
+      "lesson_id": 3933226,
+      "title": "Unit 2A: Me  - Lesson 5: What do you look like?",
+      "level": 3,
+      "last_activity_date": "2026-04-09",
+      "days_since_last_practice": 12,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.525,
+      "composite_priority_score": 0.7625,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I can see some people, people, people.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-09"
+        },
+        {
+          "question": "What did you eat today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "You were do so bad and I couldn have, look, man, the long hand and Mo tie back won't do my.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-04-09"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7720,
+        "luyen_tap": 13369
+      }
+    },
+    {
+      "lesson_id": 3842154,
+      "title": "Unit 1A: Toys - Lesson 4: There's one ball.",
+      "level": 2,
+      "last_activity_date": "2026-03-20",
+      "days_since_last_practice": 32,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.515,
+      "composite_priority_score": 0.7575,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 2,
+      "worst_speaking_items": [
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "What can you see?",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-16"
+        },
+        {
+          "question": "What toys do you like?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I like those.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-03-16"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7707,
+        "luyen_tap": 13224
+      }
+    },
+    {
+      "lesson_id": 3857727,
+      "title": "Unit 2A: My home - Lesson 2: They're my parents.",
+      "level": 2,
+      "last_activity_date": "2026-03-23",
+      "days_since_last_practice": 29,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5075,
+      "composite_priority_score": 0.7537,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 7704,
+        "luyen_tap": 13323
+      }
+    },
+    {
+      "lesson_id": 3877434,
+      "title": "Unit 3A: Body parts - Lesson 3: I can swim.",
+      "level": 2,
+      "last_activity_date": "2026-03-26",
+      "days_since_last_practice": 26,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5075,
+      "composite_priority_score": 0.7537,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 13287,
+          "question_id": 371188,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the words to make the correct sentences. (Con hãy đọc và sắp xếp thành câu nhé.) dance/ can/ I/ .",
+          "correct_answer": "C. I can dance.",
+          "student_answer": [
+            "1",
+            "0",
+            "0"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "How do you feel now?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I'mhapp.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-03-25"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7855,
+        "luyen_tap": 13287
+      }
+    },
+    {
+      "lesson_id": 3918295,
+      "title": "Unit 2A: Me - Lesson 1: I don't have short hair.",
+      "level": 3,
+      "last_activity_date": "2026-04-05",
+      "days_since_last_practice": 16,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Yeah.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-05"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7680,
+        "luyen_tap": 13496
+      }
+    },
+    {
+      "lesson_id": 3925796,
+      "title": "Unit 2A: Me  - Lesson 4: Does she have strong arms?",
+      "level": 3,
+      "last_activity_date": "2026-04-09",
+      "days_since_last_practice": 12,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "Anything else?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "And take.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-08"
+        },
+        {
+          "question": "How are you today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "T Some only.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-04-08"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7715,
+        "luyen_tap": 13368
+      }
+    },
+    {
+      "lesson_id": 3977197,
+      "title": "Unit 4A: Home - Lesson 2: It's in the bedroom.",
+      "level": 3,
+      "last_activity_date": "2026-04-17",
+      "days_since_last_practice": 4,
+      "forgetting_score": 0.9817,
+      "weakness_score": 0.5175,
+      "composite_priority_score": 0.7496,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 7960,
+          "question_id": 307581,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the words to make the correct sentences (Con hãy đọc câu và sắp xếp câu lại thành câu hoàn chỉnh.) shower/ the/ in/ bathroom./ is/ The/",
+          "correct_answer": "C. The shower is in the bathroom.",
+          "student_answer": [
+            "1",
+            "0",
+            "0"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What else is there?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "A cat and a dog and a tub.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-16"
+        },
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "A cat, a dog, a car, a close, a picture, a sofa, a bully.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-16"
+        },
+        {
+          "question": "What's the weather like today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Below.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-04-16"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7960,
+        "luyen_tap": 13442
+      }
+    },
+    {
+      "lesson_id": 3977196,
+      "title": "Unit 4A: Home - Lesson 1: Where's the sofa?",
+      "level": 3,
+      "last_activity_date": "2026-04-16",
+      "days_since_last_practice": 5,
+      "forgetting_score": 0.9933,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.7467,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "Anything more?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Hel.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-15"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7957,
+        "luyen_tap": 13430
+      }
+    },
+    {
+      "lesson_id": 3991867,
+      "title": "Unit 4A: Home - Lesson 4: Are the plates in the cupboard?",
+      "level": 3,
+      "last_activity_date": "2026-04-18",
+      "days_since_last_practice": 3,
+      "forgetting_score": 0.9502,
+      "weakness_score": 0.525,
+      "composite_priority_score": 0.7376,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 7962,
+          "question_id": 307640,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer (Con hãy đọc và chọn phương án đúng.) Lily and Peter are in the kitchen. Lily: Hi Peter, where's the fridge? Peter: It's next to the sink. Lily: Is the stove under the cupboard? Peter: Yes, it is. Lily: Are the plates in the sink? Peter: No, they aren't. Are ",
+          "correct_answer": "B. No, they aren't.",
+          "student_answer": [
+            "1",
+            "0",
+            "0"
+          ],
+          "requires_media": false
+        },
+        {
+          "practice_id": 13452,
+          "question_id": 373460,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn phương án đúng.)",
+          "correct_answer": "C. Where's the stove?",
+          "student_answer": [
+            "0",
+            "1",
+            "0"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I can see a kitchen.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-18"
+        },
+        {
+          "question": "What did you eat today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I, I cannot.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-04-18"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7962,
+        "luyen_tap": 13452
+      }
+    },
+    {
+      "lesson_id": 3941016,
+      "title": "Unit 3A: Pets - Lesson 2: What does it look like?",
+      "level": 3,
+      "last_activity_date": "2026-04-12",
+      "days_since_last_practice": 9,
+      "forgetting_score": 0.9999,
+      "weakness_score": 0.3789,
+      "composite_priority_score": 0.6894,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 4,
+      "worst_speaking_items": [
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I can see a moonlight.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-11"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 54661,
+        "luyen_tap": 54660
+      }
+    },
+    {
+      "lesson_id": 3899787,
+      "title": "Unit 1A : Nature - Lesson 2: There're some flowers.",
+      "level": 3,
+      "last_activity_date": "2026-03-31",
+      "days_since_last_practice": 21,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.3684,
+      "composite_priority_score": 0.6842,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I can see much shoes.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-31"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7664,
+        "luyen_tap": 13411
+      }
+    },
+    {
+      "lesson_id": 3887955,
+      "title": "Unit 4A: My face - Lesson 1: I have big eyes.",
+      "level": 2,
+      "last_activity_date": "2026-03-29",
+      "days_since_last_practice": 23,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.3509,
+      "composite_priority_score": 0.6754,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "It's a face.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-28"
+        },
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Hey.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-28"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7943,
+        "luyen_tap": 13292
+      }
+    },
+    {
+      "lesson_id": 3848406,
+      "title": "Unit 2A: My home - Lesson 1: He's my father.",
+      "level": 2,
+      "last_activity_date": "2026-03-20",
+      "days_since_last_practice": 32,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.3334,
+      "composite_priority_score": 0.6667,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "Anything else?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "H Welcome anything else.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-18"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7695,
+        "luyen_tap": 13313
+      }
+    },
+    {
+      "lesson_id": 3877435,
+      "title": "Unit 3A: Body parts - Lesson 4: She can sing.",
+      "level": 2,
+      "last_activity_date": "2026-03-27",
+      "days_since_last_practice": 25,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.3334,
+      "composite_priority_score": 0.6667,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What body part does he use to draw?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "And.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-26"
+        },
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I can see people.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-26"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7856,
+        "luyen_tap": 13289
+      }
+    },
+    {
+      "lesson_id": 3899788,
+      "title": "Unit 1A : Nature - Lesson 3: Is there any wind?",
+      "level": 3,
+      "last_activity_date": "2026-04-01",
+      "days_since_last_practice": 20,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.3334,
+      "composite_priority_score": 0.6667,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "Anything else?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I can see a Sunday.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-04-01"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7666,
+        "luyen_tap": 13413
+      }
+    },
+    {
+      "lesson_id": 3947613,
+      "title": "Unit 3A: Pets - Lesson 4: Does a parrot have soft feathers?",
+      "level": 3,
+      "last_activity_date": "2026-04-13",
+      "days_since_last_practice": 8,
+      "forgetting_score": 0.9997,
+      "weakness_score": 0.28,
+      "composite_priority_score": 0.6399,
+      "homework_status": "attempted",
+      "weak_skills": [
+        "Writing"
+      ],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 4,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 54689,
+        "luyen_tap": 54689
+      }
+    },
+    {
+      "lesson_id": 3947614,
+      "title": "Unit 3A: Pets - Lesson 5: Does a parrot have a shell?",
+      "level": 3,
+      "last_activity_date": "2026-04-16",
+      "days_since_last_practice": 5,
+      "forgetting_score": 0.9933,
+      "weakness_score": 0.285,
+      "composite_priority_score": 0.6391,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 7845,
+          "question_id": 306098,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and find the incorrect answer (Con hãy đọc và tìm ra đáp án sai) I have a cats .",
+          "correct_answer": "B. cats",
+          "student_answer": [
+            "0",
+            "0",
+            "1"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 7845,
+        "luyen_tap": 13422
+      }
+    },
+    {
+      "lesson_id": 3864426,
+      "title": "Unit 2A: My home - Lesson 5: They're in the living room.",
+      "level": 2,
+      "last_activity_date": "2026-03-25",
+      "days_since_last_practice": 27,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.2675,
+      "composite_priority_score": 0.6338,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 7714,
+          "question_id": 304092,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose correct answer (Con hãy đọc và chọn đáp án đúng nhé.) Where's he?",
+          "correct_answer": "B. He&#39;s in the garden.",
+          "student_answer": [
+            "0",
+            "0",
+            "1"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "What is it?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "This is my brother.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-22"
+        },
+        {
+          "question": "What can you see?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I can see family.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "timestamp": "2026-03-22"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7714,
+        "luyen_tap": 13450
+      }
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": 3848405,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-03-17",
+      "days_since_last_practice": 35,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-17",
+        "pronunciation_attempts": 43,
+        "pronunciation_score_avg": 82.6,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "incorrect": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Sub bite.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-17"
+          },
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I can see a do.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-17"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3991866,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-04-17",
+      "days_since_last_practice": 4,
+      "forgetting_score": 0.9817,
+      "weakness_score": 1.0,
+      "composite_priority_score": 0.9909,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-17",
+        "pronunciation_attempts": 38,
+        "pronunciation_score_avg": 86.74,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "incorrect": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "It's a refrigeratorator.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-17"
+          },
+          {
+            "question": "Look at this picture and tell me, what can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Officially later.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-17"
+          },
+          {
+            "question": "How do you feel now?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "HappyI'm sad.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-04-17"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3933227,
+      "program_id": null,
+      "level": 3,
+      "position": 13,
+      "title": "Unit 3A: Pets - Lesson 1: What pet do you have?",
+      "desc": "- Pets: cat, dog, goldfish, hamster, parrot, rabbit, tortoise\n- What animal is this? - It's a cat.\n- What pet do you have? I have a cat.",
+      "status": "completed",
+      "last_activity_date": "2026-04-10",
+      "days_since_last_practice": 11,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.8315,
+      "composite_priority_score": 0.9158,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-10",
+        "pronunciation_attempts": 27,
+        "pronunciation_score_avg": 85.89,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "correct": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What's the weather like today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "What do you?",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-04-10"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 54638,
+          "score": null,
+          "correct": 0,
+          "total": 0,
+          "submitted_date": "2026-04-10"
+        },
+        "luyen_tap": {
+          "practice_id": 54647,
+          "score": 0.73,
+          "correct": 11,
+          "total": 15,
+          "submitted_date": "2026-04-10"
+        },
+        "lms_ids": {
+          "bai_tap": 54638,
+          "luyen_tap": 54647
+        },
+        "skill_breakdown": {
+          "Vocabulary": {
+            "correct": 15,
+            "total": 15,
+            "accuracy": 1.0
+          },
+          "Grammar": {
+            "correct": 15,
+            "total": 15,
+            "accuracy": 1.0
+          },
+          "Listening": {
+            "correct": 6,
+            "total": 10,
+            "accuracy": 0.6
+          },
+          "Speaking": {
+            "correct": 5,
+            "total": 5,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [
+          "Listening"
+        ],
+        "worst_questions": [
+          {
+            "practice_id": 54647,
+            "question_id": 805586,
+            "question_folder": "Listening",
+            "question_type": "Nhiều lựa chọn",
+            "question_text": "Listen and choose (Con hãy nghe và chọn nhân vật được nhắc đến trong bức tranh nhé!) [Con lưu ý chọn 1 nhân vật + 1 tên nhé!]",
+            "correct_answer": null,
+            "student_answer": [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 54647,
+            "question_id": 805587,
+            "question_folder": "Listening",
+            "question_type": "Nhiều lựa chọn",
+            "question_text": "Listen and choose (Con hãy nghe và chọn nhân vật được nhắc đến trong bức tranh nhé!) [Con lưu ý chọn 1 nhân vật + 1 tên nhé!]",
+            "correct_answer": null,
+            "student_answer": [
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 54647,
+            "question_id": 805588,
+            "question_folder": "Listening",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose (Con hãy nghe và chọn nhân vật được nhắc đến trong bức tranh nhé!) [Con lưu ý chọn 1 nhân vật + 1 tên nhé!]",
+            "correct_answer": null,
+            "student_answer": [
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 54647,
+            "question_id": 805589,
+            "question_folder": "Listening",
+            "question_type": "Nhiều lựa chọn",
+            "question_text": "Listen and choose (Con hãy nghe và chọn nhân vật được nhắc đến trong bức tranh nhé!) [Con lưu ý chọn 1 nhân vật + 1 tên nhé!]",
+            "correct_answer": null,
+            "student_answer": [
+              "0",
+              "0",
+              "0",
+              "0",
+              "1",
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3864425,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-03-21",
+      "days_since_last_practice": 31,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.6667,
+      "composite_priority_score": 0.8334,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 85,
+        "latest_session_date": "2026-03-21",
+        "pronunciation_attempts": 29,
+        "pronunciation_score_avg": 92.86,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "incorrect": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "It's a toilet.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-21"
+          },
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Let' see news.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-21"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3909380,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-04-02",
+      "days_since_last_practice": 19,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.6667,
+      "composite_priority_score": 0.8334,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-02",
+        "pronunciation_attempts": 29,
+        "pronunciation_score_avg": 75.17,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "incorrect": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "Can you see this object I circled? What do you think it is?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I can see a screen.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-02"
+          },
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "See a pun.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-02"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 4000362,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-04-20",
+      "days_since_last_practice": 1,
+      "forgetting_score": 0.6321,
+      "weakness_score": 1.0,
+      "composite_priority_score": 0.816,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-20",
+        "pronunciation_attempts": 27,
+        "pronunciation_score_avg": 91.04,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Oh, I see.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-04-20"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3918294,
+      "program_id": null,
+      "level": 3,
+      "position": 5,
+      "title": "Unit 1A: Nature  - Lesson 5: There are some mushrooms.",
+      "desc": "- Maths: plus, minus, equals (in context, dạng BT tính toán bằng TA) (xem ODI 3)\n- Review all structures:\n How many spiders are there? - There's one spider./There're three spiders.\n How many flowers a",
+      "status": "completed",
+      "last_activity_date": "2026-04-04",
+      "days_since_last_practice": 17,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5425,
+      "composite_priority_score": 0.7712,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-04",
+        "pronunciation_attempts": 38,
+        "pronunciation_score_avg": 69.76,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "correct": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you today?.",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I'm happy that's my next equal.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-04-04"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7703,
+          "score": 0.9,
+          "correct": 18,
+          "total": 20,
+          "submitted_date": "2026-04-04"
+        },
+        "luyen_tap": {
+          "practice_id": 13488,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-04-04"
+        },
+        "lms_ids": {
+          "bai_tap": 7703,
+          "luyen_tap": 13488
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 29,
+            "total": 31,
+            "accuracy": 0.935
+          },
+          "Biểu đồ": {
+            "correct": 8,
+            "total": 9,
+            "accuracy": 0.889
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7703,
+            "question_id": 303818,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Odd one out (Con hãy đọc và chọn phương án khác loại.)",
+            "correct_answer": "C. Leaves",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 7703,
+            "question_id": 303828,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) Harry: Lily, look at the sky, how many (17) ......... are there? Lily: There're five clouds. Is there any wind? Harry: No, (18) ............... . Are there any ponds? Lily: Yes, (19) .............. . Are there any flowers? H",
+            "correct_answer": "C. There aren't",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 13488,
+            "question_id": 388977,
+            "question_folder": "Biểu đồ",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn và đặt câu dựa vào hình ảnh.)",
+            "correct_answer": "Are there any rocks? Yes, there are.",
+            "student_answer": "all day it works all - -",
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3887954,
+      "program_id": null,
+      "level": 2,
+      "position": 17,
+      "title": "Unit 3A: Body parts - Lesson 5: He can dance.",
+      "desc": "- Body parts: body, head, arm, hand, leg, foot, feet, finger(s), toe(s) (R)\nVs of abilities: swim, dance, sing, draw (R)\n- sound /ʊ/ foot, look\n/ʌ/ touch, puzzle\n- What can he/she do? He/She can dance",
+      "status": "completed",
+      "last_activity_date": "2026-03-28",
+      "days_since_last_practice": 24,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5325,
+      "composite_priority_score": 0.7662,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-27",
+        "pronunciation_attempts": 31,
+        "pronunciation_score_avg": 86.87,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Can see what parts.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-27"
+          },
+          {
+            "question": "What did you eat today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I read, Baby.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-03-27"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7859,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-03-27"
+        },
+        "luyen_tap": {
+          "practice_id": 13291,
+          "score": 0.9,
+          "correct": 18,
+          "total": 20,
+          "submitted_date": "2026-03-28"
+        },
+        "lms_ids": {
+          "bai_tap": 7859,
+          "luyen_tap": 13291
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 37,
+            "total": 38,
+            "accuracy": 0.974
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 13291,
+            "question_id": 371271,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng nhé.)",
+            "correct_answer": "C.",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3941017,
+      "program_id": null,
+      "level": 3,
+      "position": 15,
+      "title": "Unit 3A: Pets - Lesson 3: It has fur. It doesn't have feathers.",
+      "desc": "- Review animal body parts \n - Animal body parts: fur, feather, fin, shell",
+      "status": "completed",
+      "last_activity_date": "2026-04-12",
+      "days_since_last_practice": 9,
+      "forgetting_score": 0.9999,
+      "weakness_score": 0.529,
+      "composite_priority_score": 0.7645,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-12",
+        "pronunciation_attempts": 28,
+        "pronunciation_score_avg": 83.93,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "incorrect": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I can see A.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-12"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 54684,
+          "score": null,
+          "correct": 0,
+          "total": 0,
+          "submitted_date": "2026-04-12"
+        },
+        "luyen_tap": {
+          "practice_id": 54685,
+          "score": 0.93,
+          "correct": 14,
+          "total": 15,
+          "submitted_date": "2026-04-12"
+        },
+        "lms_ids": {
+          "bai_tap": 54684,
+          "luyen_tap": 54685
+        },
+        "skill_breakdown": {
+          "Vocabulary": {
+            "correct": 14,
+            "total": 15,
+            "accuracy": 0.933
+          },
+          "Grammar": {
+            "correct": 15,
+            "total": 15,
+            "accuracy": 1.0
+          },
+          "Listening": {
+            "correct": 6,
+            "total": 6,
+            "accuracy": 1.0
+          },
+          "Speaking": {
+            "correct": 4,
+            "total": 4,
+            "accuracy": 1.0
+          },
+          "Reading": {
+            "correct": 5,
+            "total": 5,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 54685,
+            "question_id": 805461,
+            "question_folder": "Vocabulary",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Look and write. (Con hãy nhìn tranh và điền từ vào chỗ trống nhé!)",
+            "correct_answer": "fins",
+            "student_answer": "find",
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3925795,
+      "program_id": null,
+      "level": 3,
+      "position": 9,
+      "title": "Unit 2A: Me - Lesson 3: Do you have strong arms?",
+      "desc": "- New words: strong, arms, legs\n- Do you have strong arms? - Yes, I do./No, I don't.\n - Does she have strong arms? - Yes, she does./No, she doesn't.",
+      "status": "completed",
+      "last_activity_date": "2026-04-07",
+      "days_since_last_practice": 14,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.525,
+      "composite_priority_score": 0.7625,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-07",
+        "pronunciation_attempts": 35,
+        "pronunciation_score_avg": 79.06,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "lack_of_knowledge": 1,
+          "incorrect": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I can see a strong man.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-07"
+          },
+          {
+            "question": "Have a look at this picture. What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "It is for strong.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-07"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7711,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-04-07"
+        },
+        "luyen_tap": {
+          "practice_id": 13498,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-04-07"
+        },
+        "lms_ids": {
+          "bai_tap": 7711,
+          "luyen_tap": 13498
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 30,
+            "total": 32,
+            "accuracy": 0.938
+          },
+          "Biểu đồ": {
+            "correct": 8,
+            "total": 8,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7711,
+            "question_id": 303945,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and find the incorrect answer (Con hãy đọc và chọn đáp án sai.) Do he have strong arms ?",
+            "correct_answer": "A. Do",
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 13498,
+            "question_id": 374135,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
+            "correct_answer": "A. Does she have strong legs? No, she doesn't",
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3933226,
+      "program_id": null,
+      "level": 3,
+      "position": 11,
+      "title": "Unit 2A: Me  - Lesson 5: What do you look like?",
+      "desc": "- review\n - Value: Have good habits. Keep clean and healthy \nReview all structures:\n 'What do you look like?\n - I have blue eyes./ a small nose.\n - I don't have short hair.\n 'What does he/she look lik",
+      "status": "completed",
+      "last_activity_date": "2026-04-09",
+      "days_since_last_practice": 12,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.525,
+      "composite_priority_score": 0.7625,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-09",
+        "pronunciation_attempts": 24,
+        "pronunciation_score_avg": 89.21,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I can see some people, people, people.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-09"
+          },
+          {
+            "question": "What did you eat today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "You were do so bad and I couldn have, look, man, the long hand and Mo tie back won't do my.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-04-09"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7720,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-04-09"
+        },
+        "luyen_tap": {
+          "practice_id": 13369,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-04-09"
+        },
+        "lms_ids": {
+          "bai_tap": 7720,
+          "luyen_tap": 13369
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 32,
+            "total": 33,
+            "accuracy": 0.97
+          },
+          "Biểu đồ": {
+            "correct": 5,
+            "total": 5,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 4": {
+            "correct": 1,
+            "total": 1,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7720,
+            "question_id": 304150,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
+            "correct_answer": "B.",
+            "student_answer": [
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3842154,
+      "program_id": null,
+      "level": 2,
+      "position": 4,
+      "title": "Unit 1A: Toys - Lesson 4: There's one ball.",
+      "desc": "- Từ vựng: - Toys: ball, doll, teddy bear, car, bike, puzzle, block; Numbers: 1-10\n- Mẫu câu: \n+ What's this? It's a ball.\n+ What are they? They're cars and balls.\n+ How many balls are there? There's",
+      "status": "completed",
+      "last_activity_date": "2026-03-20",
+      "days_since_last_practice": 32,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.515,
+      "composite_priority_score": 0.7575,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-16",
+        "pronunciation_attempts": 37,
+        "pronunciation_score_avg": 81.24,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "incorrect": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "What can you see?",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-16"
+          },
+          {
+            "question": "What toys do you like?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I like those.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-03-16"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7707,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-16"
+        },
+        "luyen_tap": {
+          "practice_id": 13224,
+          "score": 0.9,
+          "correct": 18,
+          "total": 20,
+          "submitted_date": "2026-03-20"
+        },
+        "lms_ids": {
+          "bai_tap": 7707,
+          "luyen_tap": 13224
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 38,
+            "total": 40,
+            "accuracy": 0.95
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 13224,
+            "question_id": 387486,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn tranh và nói nhé.)",
+            "correct_answer": "doll",
+            "student_answer": "door",
+            "requires_media": true
+          },
+          {
+            "practice_id": 13224,
+            "question_id": 370449,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Fill in the missing letter. (Con hãy điền chữ còn thiếu nhé.) n_ne",
+            "correct_answer": "i",
+            "student_answer": "nine",
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3857727,
+      "program_id": null,
+      "level": 2,
+      "position": 8,
+      "title": "Unit 2A: My home - Lesson 2: They're my parents.",
+      "desc": "- family members: mother, father, brother, sister, parents, son, daughter (R); grandfather, grandmother, grandparents\n- sound /ə/: mother, sister (review)\n- Who's he/ she? He/She's my father/ mother.",
+      "status": "completed",
+      "last_activity_date": "2026-03-23",
+      "days_since_last_practice": 29,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5075,
+      "composite_priority_score": 0.7537,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-19",
+        "pronunciation_attempts": 23,
+        "pronunciation_score_avg": 95.48,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "correct": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7704,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-19"
+        },
+        "luyen_tap": {
+          "practice_id": 13323,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-03-23"
+        },
+        "lms_ids": {
+          "bai_tap": 7704,
+          "luyen_tap": 13323
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 39,
+            "total": 40,
+            "accuracy": 0.975
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 13323,
+            "question_id": 371652,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Fill in the blank. (Con hãy điền từ còn thiếu nhé.) daught_r",
+            "correct_answer": "e",
+            "student_answer": "o",
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3877434,
+      "program_id": null,
+      "level": 2,
+      "position": 15,
+      "title": "Unit 3A: Body parts - Lesson 3: I can swim.",
+      "desc": "- Vs of abilities: swim, dance, sing, draw\n- sound /ʌ/ touch, puzzle\n- What can you do? I can swim.",
+      "status": "completed",
+      "last_activity_date": "2026-03-26",
+      "days_since_last_practice": 26,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5075,
+      "composite_priority_score": 0.7537,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-25",
+        "pronunciation_attempts": 30,
+        "pronunciation_score_avg": 90.6,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "correct": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How do you feel now?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I'mhapp.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-03-25"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7855,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-25"
+        },
+        "luyen_tap": {
+          "practice_id": 13287,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-03-26"
+        },
+        "lms_ids": {
+          "bai_tap": 7855,
+          "luyen_tap": 13287
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 39,
+            "total": 40,
+            "accuracy": 0.975
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 13287,
+            "question_id": 371188,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and reorder the words to make the correct sentences. (Con hãy đọc và sắp xếp thành câu nhé.) dance/ can/ I/ .",
+            "correct_answer": "C. I can dance.",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3871474,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-03-23",
+      "days_since_last_practice": 29,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-23",
+        "pronunciation_attempts": 29,
+        "pronunciation_score_avg": 94.34,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 50.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "Look at this picture and tell me, what can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I can see Body Park.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-23"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3918295,
+      "program_id": null,
+      "level": 3,
+      "position": 7,
+      "title": "Unit 2A: Me - Lesson 1: I don't have short hair.",
+      "desc": "- ears, nose, hair, eyes\n- short long; small big; dark, brown, blond\n- What do you look like?\n- I have blue eyes/ a small nose.\n- I don't have short hair.",
+      "status": "completed",
+      "last_activity_date": "2026-04-05",
+      "days_since_last_practice": 16,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-05",
+        "pronunciation_attempts": 34,
+        "pronunciation_score_avg": 88.09,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "incorrect": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Yeah.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-05"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7680,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-05"
+        },
+        "luyen_tap": {
+          "practice_id": 13496,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-05"
+        },
+        "lms_ids": {
+          "bai_tap": 7680,
+          "luyen_tap": 13496
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 29,
+            "total": 29,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 11,
+            "total": 11,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3925796,
+      "program_id": null,
+      "level": 3,
+      "position": 10,
+      "title": "Unit 2A: Me  - Lesson 4: Does she have strong arms?",
+      "desc": "- long vowel /ɑː/: car, arm, dark\n- new words: mustache, beard\nReview all structures:\n - What do you look like?\n - I have blue eyes./ a small nose.\n - I don't have short hair.",
+      "status": "completed",
+      "last_activity_date": "2026-04-09",
+      "days_since_last_practice": 12,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-08",
+        "pronunciation_attempts": 24,
+        "pronunciation_score_avg": 84.42,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "correct": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "Anything else?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "And take.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-08"
+          },
+          {
+            "question": "How are you today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "T Some only.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-04-08"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7715,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-09"
+        },
+        "luyen_tap": {
+          "practice_id": 13368,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-09"
+        },
+        "lms_ids": {
+          "bai_tap": 7715,
+          "luyen_tap": 13368
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 27,
+            "total": 27,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 13,
+            "total": 13,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3977197,
+      "program_id": null,
+      "level": 3,
+      "position": 20,
+      "title": "Unit 4A: Home - Lesson 2: It's in the bedroom.",
+      "desc": "- Review words in L1\n - Furniture: pillow, closet, shower\n - Prepositions: in, on, under\n- Where's the closet? It's in the bedroom.\n- Is the shower in the bathroom? Yes, it is./No, it isn't.",
+      "status": "completed",
+      "last_activity_date": "2026-04-17",
+      "days_since_last_practice": 4,
+      "forgetting_score": 0.9817,
+      "weakness_score": 0.5175,
+      "composite_priority_score": 0.7496,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-16",
+        "pronunciation_attempts": 37,
+        "pronunciation_score_avg": 81.68,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "incorrect": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What else is there?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "A cat and a dog and a tub.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-16"
+          },
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "A cat, a dog, a car, a close, a picture, a sofa, a bully.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-16"
+          },
+          {
+            "question": "What's the weather like today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Below.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-04-16"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7960,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-04-16"
+        },
+        "luyen_tap": {
+          "practice_id": 13442,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-17"
+        },
+        "lms_ids": {
+          "bai_tap": 7960,
+          "luyen_tap": 13442
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 32,
+            "total": 33,
+            "accuracy": 0.97
+          },
+          "Biểu đồ": {
+            "correct": 7,
+            "total": 7,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7960,
+            "question_id": 307581,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and reorder the words to make the correct sentences (Con hãy đọc câu và sắp xếp câu lại thành câu hoàn chỉnh.) shower/ the/ in/ bathroom./ is/ The/",
+            "correct_answer": "C. The shower is in the bathroom.",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3977196,
+      "program_id": null,
+      "level": 3,
+      "position": 19,
+      "title": "Unit 4A: Home - Lesson 1: Where's the sofa?",
+      "desc": "- Rooms: living room, bedroom, bathroom, kitchen\n - Furniture: sofa, table, lamp\n- What's this? It's a sofa/ a living room.\n - Where's the sofa? It's in the living room.",
+      "status": "completed",
+      "last_activity_date": "2026-04-16",
+      "days_since_last_practice": 5,
+      "forgetting_score": 0.9933,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.7467,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-15",
+        "pronunciation_attempts": 38,
+        "pronunciation_score_avg": 73.71,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "correct": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "Anything more?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Hel.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-15"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7957,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-16"
+        },
+        "luyen_tap": {
+          "practice_id": 13430,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-16"
+        },
+        "lms_ids": {
+          "bai_tap": 7957,
+          "luyen_tap": 13430
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 34,
+            "total": 34,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 6,
+            "total": 6,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3991867,
+      "program_id": null,
+      "level": 3,
+      "position": 22,
+      "title": "Unit 4A: Home - Lesson 4: Are the plates in the cupboard?",
+      "desc": "- Where's the fridge? It's next to the stove.\n- Is the fridge in the kitchen? Yes, it is./No, it isn't.\n - Are the plates in the cupboard? Yes, they are./ No, they aren't.",
+      "status": "completed",
+      "last_activity_date": "2026-04-18",
+      "days_since_last_practice": 3,
+      "forgetting_score": 0.9502,
+      "weakness_score": 0.525,
+      "composite_priority_score": 0.7376,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-18",
+        "pronunciation_attempts": 38,
+        "pronunciation_score_avg": 83.13,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "incorrect": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I can see a kitchen.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-18"
+          },
+          {
+            "question": "What did you eat today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I, I cannot.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-04-18"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7962,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-04-18"
+        },
+        "luyen_tap": {
+          "practice_id": 13452,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-04-18"
+        },
+        "lms_ids": {
+          "bai_tap": 7962,
+          "luyen_tap": 13452
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 32,
+            "total": 34,
+            "accuracy": 0.941
+          },
+          "Biểu đồ": {
+            "correct": 6,
+            "total": 6,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7962,
+            "question_id": 307640,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose the correct answer (Con hãy đọc và chọn phương án đúng.) Lily and Peter are in the kitchen. Lily: Hi Peter, where's the fridge? Peter: It's next to the sink. Lily: Is the stove under the cupboard? Peter: Yes, it is. Lily: Are the plates in the sink? Peter: No, they aren't. Are ",
+            "correct_answer": "B. No, they aren't.",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 13452,
+            "question_id": 373460,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn phương án đúng.)",
+            "correct_answer": "C. Where's the stove?",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3835959,
+      "program_id": null,
+      "level": 2,
+      "position": 2,
+      "title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
+      "desc": "- Toys: ball, doll, teddy bear (review)\n- Numbers: 1-5",
+      "status": "completed",
+      "last_activity_date": "2026-03-14",
+      "days_since_last_practice": 38,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.3846,
+      "composite_priority_score": 0.6923,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-14",
+        "pronunciation_attempts": 33,
+        "pronunciation_score_avg": 69.94,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 50.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": null,
+        "luyen_tap": {
+          "practice_id": 13217,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-14"
+        },
+        "lms_ids": {
+          "bai_tap": 7693,
+          "luyen_tap": 13217
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 20,
+            "total": 20,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3941016,
+      "program_id": null,
+      "level": 3,
+      "position": 14,
+      "title": "Unit 3A: Pets - Lesson 2: What does it look like?",
+      "desc": "- Review pets \n - Animal body parts: tail, beak, wing, claw\n- What animal is this? - It's a cat.",
+      "status": "completed",
+      "last_activity_date": "2026-04-12",
+      "days_since_last_practice": 9,
+      "forgetting_score": 0.9999,
+      "weakness_score": 0.3789,
+      "composite_priority_score": 0.6894,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-11",
+        "pronunciation_attempts": 26,
+        "pronunciation_score_avg": 87.5,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "incorrect": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I can see a moonlight.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-11"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 54661,
+          "score": 0.9,
+          "correct": 27,
+          "total": 30,
+          "submitted_date": "2026-04-12"
+        },
+        "luyen_tap": {
+          "practice_id": 54660,
+          "score": 0.93,
+          "correct": 14,
+          "total": 15,
+          "submitted_date": "2026-04-12"
+        },
+        "lms_ids": {
+          "bai_tap": 54661,
+          "luyen_tap": 54660
+        },
+        "skill_breakdown": {
+          "Vocabulary": {
+            "correct": 16,
+            "total": 16,
+            "accuracy": 1.0
+          },
+          "Grammar": {
+            "correct": 11,
+            "total": 14,
+            "accuracy": 0.786
+          },
+          "Reading": {
+            "correct": 5,
+            "total": 5,
+            "accuracy": 1.0
+          },
+          "Writing": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "Speaking": {
+            "correct": 5,
+            "total": 5,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 54661,
+            "question_id": 804974,
+            "question_folder": "Grammar",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose. (Con hãy đọc và chọn đáp án đúng nhé!)",
+            "correct_answer": "It has a tail.",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 54661,
+            "question_id": 805104,
+            "question_folder": "Grammar",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose. (Con hãy nghe và chọn đáp án đúng nhé!)",
+            "correct_answer": null,
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 54661,
+            "question_id": 805121,
+            "question_folder": "Writing",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and answer (Con hãy đọc và chọn câu trả lời đúng nhé!) What does it look like?",
+            "correct_answer": "It has a sharp beak.",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 54660,
+            "question_id": 804954,
+            "question_folder": "Grammar",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Look and write. (Con hãy nhìn tranh và điền từ vào chỗ trống nhé!) What does it look like?",
+            "correct_answer": "claws",
+            "student_answer": "claw",
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3899787,
+      "program_id": null,
+      "level": 3,
+      "position": 2,
+      "title": "Unit 1A : Nature - Lesson 2: There're some flowers.",
+      "desc": "- flower, mushroom, tree, leaf (leaves)\n-  How many flowers are there? There're some flowers/ There aren't any flowers.",
+      "status": "completed",
+      "last_activity_date": "2026-03-31",
+      "days_since_last_practice": 21,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.3684,
+      "composite_priority_score": 0.6842,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-31",
+        "pronunciation_attempts": 25,
+        "pronunciation_score_avg": 85.12,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "incorrect": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I can see much shoes.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-31"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7664,
+          "score": 0.9,
+          "correct": 18,
+          "total": 20,
+          "submitted_date": "2026-03-31"
+        },
+        "luyen_tap": {
+          "practice_id": 13411,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-31"
+        },
+        "lms_ids": {
+          "bai_tap": 7664,
+          "luyen_tap": 13411
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 32,
+            "total": 33,
+            "accuracy": 0.97
+          },
+          "Biểu đồ": {
+            "correct": 6,
+            "total": 6,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7664,
+            "question_id": 302909,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. (Con hãy chọn phương án đúng.)",
+            "correct_answer": "C. leaves",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3887955,
+      "program_id": null,
+      "level": 2,
+      "position": 19,
+      "title": "Unit 4A: My face - Lesson 1: I have big eyes.",
+      "desc": "- eye(s), ear(s), nose, mouth\n- Adjs to describe: small, big\n- sound /ɪ/ insect, six\n- I have big eyes.\n- I have a big nose.",
+      "status": "completed",
+      "last_activity_date": "2026-03-29",
+      "days_since_last_practice": 23,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.3509,
+      "composite_priority_score": 0.6754,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-28",
+        "pronunciation_attempts": 27,
+        "pronunciation_score_avg": 83.26,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "incorrect": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "It's a face.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-28"
+          },
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Hey.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-28"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7943,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-03-28"
+        },
+        "luyen_tap": {
+          "practice_id": 13292,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-29"
+        },
+        "lms_ids": {
+          "bai_tap": 7943,
+          "luyen_tap": 13292
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 38,
+            "total": 38,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 1": {
+            "correct": 1,
+            "total": 1,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3848406,
+      "program_id": null,
+      "level": 2,
+      "position": 7,
+      "title": "Unit 2A: My home - Lesson 1: He's my father.",
+      "desc": "- Family members\n- parts of house\n- sound: ə\n- Social science: Nuclear family and extended family",
+      "status": "completed",
+      "last_activity_date": "2026-03-20",
+      "days_since_last_practice": 32,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.3334,
+      "composite_priority_score": 0.6667,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-18",
+        "pronunciation_attempts": 28,
+        "pronunciation_score_avg": 89.93,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "correct": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "Anything else?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "H Welcome anything else.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-18"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7695,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-18"
+        },
+        "luyen_tap": {
+          "practice_id": 13313,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-20"
+        },
+        "lms_ids": {
+          "bai_tap": 7695,
+          "luyen_tap": 13313
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 40,
+            "total": 40,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3871475,
+      "program_id": null,
+      "level": 2,
+      "position": 14,
+      "title": "Unit 3A: Body parts - Lesson 2: They're my feet.",
+      "desc": "- Body parts: body, head, arm, hand, leg, foot (R); feet, finger(s), toe(s)\n- sound /ʊ/ foot, look (R)\n- What's this? This is my arm.\n- What are they? They're my feet.",
+      "status": "completed",
+      "last_activity_date": "2026-03-25",
+      "days_since_last_practice": 27,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.3334,
+      "composite_priority_score": 0.6667,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-24",
+        "pronunciation_attempts": 25,
+        "pronunciation_score_avg": 93.8,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "correct": 2
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 13286,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-24"
+        },
+        "luyen_tap": {
+          "practice_id": 13465,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-25"
+        },
+        "lms_ids": {
+          "bai_tap": 13286,
+          "luyen_tap": 13465
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 40,
+            "total": 40,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3877435,
+      "program_id": null,
+      "level": 2,
+      "position": 16,
+      "title": "Unit 3A: Body parts - Lesson 4: She can sing.",
+      "desc": "- Body parts: body, head, arm, hand, leg, foot, feet, finger(s), toe(s) (R)\nVs of abilities: swim, dance, sing, draw (R)\n- What can you do? I can swim.\n- What can he/she do? He/She can sing.",
+      "status": "completed",
+      "last_activity_date": "2026-03-27",
+      "days_since_last_practice": 25,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.3334,
+      "composite_priority_score": 0.6667,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-26",
+        "pronunciation_attempts": 31,
+        "pronunciation_score_avg": 86.26,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "incorrect": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What body part does he use to draw?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "And.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-26"
+          },
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I can see people.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-26"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7856,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-26"
+        },
+        "luyen_tap": {
+          "practice_id": 13289,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-27"
+        },
+        "lms_ids": {
+          "bai_tap": 7856,
+          "luyen_tap": 13289
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 40,
+            "total": 40,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3899788,
+      "program_id": null,
+      "level": 3,
+      "position": 3,
+      "title": "Unit 1A : Nature - Lesson 3: Is there any wind?",
+      "desc": "- sun, sky, cloud, wind, rainbow\n- Is there any wind? Yes, there is (some wind)./ No, there isn't (any wind)",
+      "status": "completed",
+      "last_activity_date": "2026-04-01",
+      "days_since_last_practice": 20,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.3334,
+      "composite_priority_score": 0.6667,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-01",
+        "pronunciation_attempts": 25,
+        "pronunciation_score_avg": 86.28,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "correct": 1,
+          "incorrect": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "Anything else?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I can see a Sunday.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-01"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7666,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-01"
+        },
+        "luyen_tap": {
+          "practice_id": 13413,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-01"
+        },
+        "lms_ids": {
+          "bai_tap": 7666,
+          "luyen_tap": 13413
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 37,
+            "total": 37,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 3,
+            "total": 3,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3947613,
+      "program_id": null,
+      "level": 3,
+      "position": 16,
+      "title": "Unit 3A: Pets - Lesson 4: Does a parrot have soft feathers?",
+      "desc": "- review animal body parts \n - soft, sharp, hard (=> soft fur/feathers, hard shell/beak, sharp claws)\n- What does it look like?",
+      "status": "completed",
+      "last_activity_date": "2026-04-13",
+      "days_since_last_practice": 8,
+      "forgetting_score": 0.9997,
+      "weakness_score": 0.28,
+      "composite_priority_score": 0.6399,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-13",
+        "pronunciation_attempts": 32,
+        "pronunciation_score_avg": 80.47,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 50.0,
+        "free_speaking_answer_type_dist": {
+          "lack_of_knowledge": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 54689,
+          "score": 0.94,
+          "correct": 29,
+          "total": 31,
+          "submitted_date": "2026-04-13"
+        },
+        "luyen_tap": {
+          "practice_id": 54689,
+          "score": 0.94,
+          "correct": 29,
+          "total": 31,
+          "submitted_date": "2026-04-13"
+        },
+        "lms_ids": {
+          "bai_tap": 54689,
+          "luyen_tap": 54689
+        },
+        "skill_breakdown": {
+          "Vocabulary": {
+            "correct": 10,
+            "total": 10,
+            "accuracy": 1.0
+          },
+          "Grammar": {
+            "correct": 10,
+            "total": 10,
+            "accuracy": 1.0
+          },
+          "Listening": {
+            "correct": 12,
+            "total": 12,
+            "accuracy": 1.0
+          },
+          "Reading": {
+            "correct": 10,
+            "total": 10,
+            "accuracy": 1.0
+          },
+          "Writing": {
+            "correct": 6,
+            "total": 10,
+            "accuracy": 0.6
+          },
+          "Speaking": {
+            "correct": 10,
+            "total": 10,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [
+          "Writing"
+        ],
+        "worst_questions": [
+          {
+            "practice_id": 54689,
+            "question_id": 805577,
+            "question_folder": "Writing",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Look and write (Con hãy nhìn tranh và viết từ đúng nhé!) What does it look like?",
+            "correct_answer": "fin",
+            "student_answer": "fin",
+            "requires_media": true
+          },
+          {
+            "practice_id": 54689,
+            "question_id": 805579,
+            "question_folder": "Writing",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Look and write (Con hãy nhìn tranh và viết từ đúng nhé!) Does a tortoise have a shell?",
+            "correct_answer": "does",
+            "student_answer": "does",
+            "requires_media": true
+          },
+          {
+            "practice_id": 54689,
+            "question_id": 805577,
+            "question_folder": "Writing",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Look and write (Con hãy nhìn tranh và viết từ đúng nhé!) What does it look like?",
+            "correct_answer": "fin",
+            "student_answer": "fin",
+            "requires_media": true
+          },
+          {
+            "practice_id": 54689,
+            "question_id": 805579,
+            "question_folder": "Writing",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Look and write (Con hãy nhìn tranh và viết từ đúng nhé!) Does a tortoise have a shell?",
+            "correct_answer": "does",
+            "student_answer": "does",
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3947614,
+      "program_id": null,
+      "level": 3,
+      "position": 17,
+      "title": "Unit 3A: Pets - Lesson 5: Does a parrot have a shell?",
+      "desc": "Review all \n- What animal is this? - It's a cat.\n - What pet do you have? I have a cat.\n - What does it look like? It has s",
+      "status": "completed",
+      "last_activity_date": "2026-04-16",
+      "days_since_last_practice": 5,
+      "forgetting_score": 0.9933,
+      "weakness_score": 0.285,
+      "composite_priority_score": 0.6391,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-14",
+        "pronunciation_attempts": 37,
+        "pronunciation_score_avg": 81.65,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 50.0,
+        "free_speaking_answer_type_dist": {
+          "correct": 2
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7845,
+          "score": 0.9,
+          "correct": 18,
+          "total": 20,
+          "submitted_date": "2026-04-16"
+        },
+        "luyen_tap": {
+          "practice_id": 13422,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-16"
+        },
+        "lms_ids": {
+          "bai_tap": 7845,
+          "luyen_tap": 13422
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 29,
+            "total": 31,
+            "accuracy": 0.935
+          },
+          "Biểu đồ": {
+            "correct": 9,
+            "total": 9,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7845,
+            "question_id": 306092,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look and choose correct answer (Con hãy nhìn tranh và chọn câu trả lời đúng.)",
+            "correct_answer": "C. It has soft feathers.",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 7845,
+            "question_id": 306098,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and find the incorrect answer (Con hãy đọc và tìm ra đáp án sai) I have a cats .",
+            "correct_answer": "B. cats",
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3864426,
+      "program_id": null,
+      "level": 2,
+      "position": 11,
+      "title": "Unit 2A: My home - Lesson 5: They're in the living room.",
+      "desc": "- family members:  mother, father, brother, sister, grandmother, grandfather, parents, grandparents, son, daughter (R) \n- Who's he/ she? He/She's my father/ mother.\n- Who are they? They're my parents.",
+      "status": "completed",
+      "last_activity_date": "2026-03-25",
+      "days_since_last_practice": 27,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.2675,
+      "composite_priority_score": 0.6338,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-23",
+        "pronunciation_attempts": 36,
+        "pronunciation_score_avg": 91.17,
+        "free_speaking_attempts": 4,
+        "free_speaking_score_avg": 50.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 2,
+          "incorrect": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "What is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "This is my brother.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-22"
+          },
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I can see family.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-03-22"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7714,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-03-22"
+        },
+        "luyen_tap": {
+          "practice_id": 13450,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-25"
+        },
+        "lms_ids": {
+          "bai_tap": 7714,
+          "luyen_tap": 13450
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 39,
+            "total": 40,
+            "accuracy": 0.975
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7714,
+            "question_id": 304092,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose correct answer (Con hãy đọc và chọn đáp án đúng nhé.) Where's he?",
+            "correct_answer": "B. He&#39;s in the garden.",
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3842153,
+      "program_id": null,
+      "level": 2,
+      "position": 3,
+      "title": "Unit 1A: Toys - Lesson 3: How many balls are there?",
+      "desc": "- Toys: car, bike, puzzle, block\n- Numbers: 6-10\n - How many balls are there? There's one ball./ There're 5 balls.",
+      "status": "completed",
+      "last_activity_date": "2026-03-16",
+      "days_since_last_practice": 36,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.25,
+      "composite_priority_score": 0.625,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-15",
+        "pronunciation_attempts": 35,
+        "pronunciation_score_avg": 89.8,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 50.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7697,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-15"
+        },
+        "luyen_tap": {
+          "practice_id": 13222,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-16"
+        },
+        "lms_ids": {
+          "bai_tap": 7697,
+          "luyen_tap": 13222
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 40,
+            "total": 40,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3896846,
+      "program_id": null,
+      "level": 3,
+      "position": 1,
+      "title": "Unit 1A : Nature - Lesson 1: There's one spider.",
+      "desc": "-  insects, ant, worm, spider, butterfly, ladybug\n- How many spiders are there? - There's one spider./There're three spiders.",
+      "status": "completed",
+      "last_activity_date": "2026-03-30",
+      "days_since_last_practice": 22,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.25,
+      "composite_priority_score": 0.625,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-30",
+        "pronunciation_attempts": 31,
+        "pronunciation_score_avg": 75.87,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 50.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7647,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-30"
+        },
+        "luyen_tap": {
+          "practice_id": 13410,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-30"
+        },
+        "lms_ids": {
+          "bai_tap": 7647,
+          "luyen_tap": 13410
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 30,
+            "total": 30,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 10,
+            "total": 10,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3829992,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-03-11",
+      "days_since_last_practice": 41,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.5,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 5,
+        "latest_session_date": "2026-03-11",
+        "pronunciation_attempts": 0,
+        "pronunciation_score_avg": null,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3835958,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-03-13",
+      "days_since_last_practice": 39,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.5,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-13",
+        "pronunciation_attempts": 39,
+        "pronunciation_score_avg": 78.05,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3857728,
+      "program_id": null,
+      "level": 2,
+      "position": 9,
+      "title": "Unit 2A: My home - Lesson 3: She's in the living room.",
+      "desc": "- parts of house: living room, kitchen, bedroom, bathroom, toilet, garden\n- Where's he/she? He/She's in the living room.",
+      "status": "completed",
+      "last_activity_date": "2026-03-21",
+      "days_since_last_practice": 31,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.5,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-21",
+        "pronunciation_attempts": 28,
+        "pronunciation_score_avg": 90.21,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "correct": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7708,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-20"
+        },
+        "luyen_tap": {
+          "practice_id": 13327,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-21"
+        },
+        "lms_ids": {
+          "bai_tap": 7708,
+          "luyen_tap": 13327
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 40,
+            "total": 40,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3922980,
+      "program_id": null,
+      "level": 3,
+      "position": 8,
+      "title": "Unit 2A: Me - Lesson 2: He has brown eyes.",
+      "desc": "- Review: eyes (colors), ears, nose, hair,  - short long; small big\n- New words: \n- dark, brown, blond\n- black, brown, green, blue\n- He has ... \n- She/He doesn't have...\nWhat does he/she look like?\n -",
+      "status": "completed",
+      "last_activity_date": "2026-04-06",
+      "days_since_last_practice": 15,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.5,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 85,
+        "latest_session_date": "2026-04-06",
+        "pronunciation_attempts": 26,
+        "pronunciation_score_avg": 94.81,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "correct": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7700,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-06"
+        },
+        "luyen_tap": {
+          "practice_id": 13497,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-06"
+        },
+        "lms_ids": {
+          "bai_tap": 7700,
+          "luyen_tap": 13497
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 32,
+            "total": 32,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 8,
+            "total": 8,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 4016962,
+      "program_id": null,
+      "level": 3,
+      "position": 1,
+      "title": "Unit 1B: Clothes - Lesson 1: What are you wearing?",
+      "desc": "Tech Test- Clothes: T-shirt, dress, skirt, sweater, jacket\n- What are you wearing? - I'm wearing a T-shirt.",
+      "status": "in_class_only",
+      "last_activity_date": "2026-04-21",
+      "days_since_last_practice": 0,
+      "forgetting_score": 0.0,
+      "weakness_score": 0.6667,
+      "composite_priority_score": 0.3333,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-21",
+        "pronunciation_attempts": 22,
+        "pronunciation_score_avg": 96.09,
+        "free_speaking_attempts": 3,
+        "free_speaking_score_avg": 33.33,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "incorrect": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "Do you know what is it?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "It's a fresh.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-21"
+          },
+          {
+            "question": "What can you see?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I can see clothes.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "timestamp": "2026-04-21"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 8278,
+          "luyen_tap": 13467
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {
+          "bai_tap": [
+            {
+              "practice_id": 8278,
+              "question_id": 310096,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và trọn tranh đúng)",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 8278,
+              "question_id": 310111,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và trọn tranh đúng)",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 8278,
+              "question_id": 310112,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và trọn tranh đúng)",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 8278,
+              "question_id": 310113,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và trọn tranh đúng)",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 8278,
+              "question_id": 310114,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và trọn tranh đúng)",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            }
+          ],
+          "luyen_tap": [
+            {
+              "practice_id": 13467,
+              "question_id": 373625,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+              "correct_answer": "C.",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 13467,
+              "question_id": 373629,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+              "correct_answer": "A.",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 13467,
+              "question_id": 373633,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+              "correct_answer": "B.",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 13467,
+              "question_id": 373640,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+              "correct_answer": "A.",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 13467,
+              "question_id": 373727,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
+              "correct_answer": "A.",
+              "student_answer": null,
+              "requires_media": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": 4000361,
+      "program_id": null,
+      "level": 3,
+      "position": 23,
+      "title": "Unit 4A: Home - Lesson 5: It's between the table and the sofa.",
+      "desc": "- Review all learned words\n- Value: Help at home\n- What's this? It's a sofa/ a living room.\n - Where's the sofa? It's in the living room.\n- Is the fridge in the kitchen? Yes, it is./No, it isn't.\n - A",
+      "status": "completed",
+      "last_activity_date": "2026-04-21",
+      "days_since_last_practice": 0,
+      "forgetting_score": 0.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-19",
+        "pronunciation_attempts": 37,
+        "pronunciation_score_avg": 81.89,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "correct": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7963,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-21"
+        },
+        "luyen_tap": {
+          "practice_id": 13459,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-21"
+        },
+        "lms_ids": {
+          "bai_tap": 7963,
+          "luyen_tap": 13459
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 35,
+            "total": 35,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 5,
+            "total": 5,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    }
+  ]
+}

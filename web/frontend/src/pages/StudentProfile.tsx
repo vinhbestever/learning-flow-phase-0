@@ -134,7 +134,7 @@ export default function StudentProfile() {
         />
         <StatCard
           className="animate-rise delay-2"
-          label="Đã hoàn thành"
+          label="Đã hoàn thành BTVN"
           value={completed}
           hint={`${completionPct}% lộ trình`}
           accent="mint"
@@ -228,7 +228,7 @@ function CompletionRing({
         <div className="flex h-full w-full flex-col items-center justify-center rounded-full bg-[var(--surface)] text-center">
           <span className="font-display text-2xl font-bold tabular-nums text-[var(--ink)]">{pct}%</span>
           <span className="text-[10px] font-medium uppercase tracking-wider text-[var(--muted)]">
-            hoàn thành
+            hoàn thành <br /> BTVN
           </span>
         </div>
       </div>

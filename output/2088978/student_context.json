@@ -1,0 +1,3222 @@
+{
+  "summary": {
+    "student_id": "2088978",
+    "reference_date": "2026-04-21",
+    "total_lessons": 34,
+    "lessons_by_status": {
+      "in_class_only": 7,
+      "completed": 25,
+      "homework_only": 2
+    },
+    "overall_homework_skill_breakdown": {
+      "English Tutoring - Preschool": {
+        "correct": 689,
+        "total": 765,
+        "accuracy": 0.901
+      }
+    },
+    "weak_skills_global": [],
+    "overall_pronunciation_score_avg": 53.19,
+    "overall_free_speaking_score_avg": 22.22,
+    "overall_free_speaking_answer_type_dist": {
+      "inaccordant": 15,
+      "lack_of_knowledge": 6,
+      "accordant": 6
+    },
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+  },
+  "scored_candidates": [
+    {
+      "lesson_id": 3622388,
+      "title": "Unit 1A: My Classroom - Lesson 7",
+      "level": 17,
+      "last_activity_date": "2026-01-21",
+      "days_since_last_practice": 90,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 46632,
+          "question_id": 721107,
+          "question_folder": "English Tutoring - Preschool",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Look and match (Con hãy di chuyển các từ để ghép với hình đúng nhé!)",
+          "correct_answer": null,
+          "student_answer": [
+            "3",
+            "2",
+            "1",
+            "4"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 2,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 46632,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3622387,
+      "title": "Unit 1A: My Classroom - Lesson 6",
+      "level": 17,
+      "last_activity_date": "2026-01-27",
+      "days_since_last_practice": 84,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 5,
+      "worst_speaking_items": [
+        {
+          "question": "How are you feeling today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Y.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-01-11"
+        },
+        {
+          "question": "How are you feeling today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Y.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-01-11"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 46455,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3622390,
+      "title": "Unit 2A: Fun Colors - Lesson 1",
+      "level": 17,
+      "last_activity_date": "2026-01-31",
+      "days_since_last_practice": 80,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "How are you feeling today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Y.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-01-23"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 47689,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3641686,
+      "title": "Unit 2A: Fun Colors - Lesson 5",
+      "level": 17,
+      "last_activity_date": "2026-02-06",
+      "days_since_last_practice": 74,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "How are you today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Fo your.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-02-06"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 47977,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3791657,
+      "title": "Unit 3A: My Family - Lesson 5",
+      "level": 17,
+      "last_activity_date": "2026-03-01",
+      "days_since_last_practice": 51,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "How are you doing today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Hello.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-02-27"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 48761,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3793912,
+      "title": "Unit 3A: My Family - Lesson 6",
+      "level": 17,
+      "last_activity_date": "2026-03-11",
+      "days_since_last_practice": 41,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 2,
+      "worst_speaking_items": [
+        {
+          "question": "How are you doing today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Hel.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-03-01"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 48766,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3622384,
+      "title": "Unit 1A: My Classroom - Lesson 3",
+      "level": 17,
+      "last_activity_date": "2026-01-15",
+      "days_since_last_practice": 96,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7941,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 4,
+      "worst_speaking_items": [
+        {
+          "question": "How are you today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I thank you, I'm thank you.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-01-02"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 46353,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3815889,
+      "title": "Review 1 - Lesson 1",
+      "level": 17,
+      "last_activity_date": "2026-04-15",
+      "days_since_last_practice": 6,
+      "forgetting_score": 0.9975,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7929,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "question": "How are you feeling?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "Don't't you?",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2026-04-11"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 49839,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3622382,
+      "title": "Unit 1A: My Classroom - Lesson 1",
+      "level": 17,
+      "last_activity_date": "2026-01-06",
+      "days_since_last_practice": 105,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 3,
+      "worst_speaking_items": [
+        {
+          "question": "How are you today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "I play a big in Chicau.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2025-12-27"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 45807,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3763370,
+      "title": "Unit 3A: My Family - Lesson 1",
+      "level": 17,
+      "last_activity_date": "2026-02-22",
+      "days_since_last_practice": 58,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.4511,
+      "composite_priority_score": 0.7256,
+      "homework_status": "not_attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [
+        {
+          "practice_id": 48647,
+          "question_id": 739827,
+          "question_folder": "English Tutoring - Preschool",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true
+        },
+        {
+          "practice_id": 48647,
+          "question_id": 739828,
+          "question_folder": "English Tutoring - Preschool",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true
+        },
+        {
+          "practice_id": 48647,
+          "question_id": 740300,
+          "question_folder": "English Tutoring - Preschool",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+          "correct_answer": "A",
+          "student_answer": null,
+          "requires_media": true
+        },
+        {
+          "practice_id": 48647,
+          "question_id": 740305,
+          "question_folder": "English Tutoring - Preschool",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+          "correct_answer": "dad",
+          "student_answer": null,
+          "requires_media": true
+        },
+        {
+          "practice_id": 48647,
+          "question_id": 740306,
+          "question_folder": "English Tutoring - Preschool",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Look, listen and choose (Con hãy nhìn tranh, nghe và chọn tranh đúng nhé!)",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true
+        }
+      ],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 48647,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3622383,
+      "title": "Unit 1A: My Classroom - Lesson 2",
+      "level": 17,
+      "last_activity_date": "2026-01-16",
+      "days_since_last_practice": 95,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.2941,
+      "composite_priority_score": 0.6471,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 5,
+      "worst_speaking_items": [
+        {
+          "question": "How are you today?",
+          "question_type": "speaking_unscripted",
+          "user_transcript": "The.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "timestamp": "2025-12-29"
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 46174,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3815887,
+      "title": "Unit 4A: Farm Animals - Lesson 7",
+      "level": 17,
+      "last_activity_date": "2026-04-15",
+      "days_since_last_practice": 6,
+      "forgetting_score": 0.9975,
+      "weakness_score": 0.2941,
+      "composite_priority_score": 0.6458,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 49802,
+          "question_id": 752616,
+          "question_folder": "English Tutoring - Preschool",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Match (Con hãy di chuyển các từ để ghép với hình đúng nhé!)",
+          "correct_answer": null,
+          "student_answer": [
+            "4",
+            "1",
+            "2",
+            "5",
+            "3",
+            "6"
+          ],
+          "requires_media": false
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 4,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 49802,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3645381,
+      "title": "Unit 2A: Fun Colors - Lesson 6",
+      "level": 17,
+      "last_activity_date": "2026-02-22",
+      "days_since_last_practice": 58,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.257,
+      "composite_priority_score": 0.6285,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 5,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 48063,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3628007,
+      "title": "Unit 2A: Fun Colors - Lesson 4",
+      "level": 17,
+      "last_activity_date": "2026-02-05",
+      "days_since_last_practice": 75,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.2373,
+      "composite_priority_score": 0.6187,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 2,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 47915,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3664098,
+      "title": "Unit 2A: Fun Colors - Lesson 7",
+      "level": 17,
+      "last_activity_date": "2026-02-19",
+      "days_since_last_practice": 61,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.223,
+      "composite_priority_score": 0.6115,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 3,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 48069,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3622391,
+      "title": "Unit 2A: Fun Colors - Lesson 2",
+      "level": 17,
+      "last_activity_date": "2026-02-04",
+      "days_since_last_practice": 76,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.2088,
+      "composite_priority_score": 0.6044,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 2,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 47693,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3624747,
+      "title": "Unit 2A: Fun Colors - Lesson 3",
+      "level": 17,
+      "last_activity_date": "2026-02-04",
+      "days_since_last_practice": 76,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.1809,
+      "composite_priority_score": 0.5905,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 3,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 47791,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3622385,
+      "title": "Unit 1A: My Classroom - Lesson 4",
+      "level": 17,
+      "last_activity_date": "2026-01-14",
+      "days_since_last_practice": 97,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.5,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 5,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 46371,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3622386,
+      "title": "Unit 1A: My Classroom - Lesson 5",
+      "level": 17,
+      "last_activity_date": "2026-01-14",
+      "days_since_last_practice": 97,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.5,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 46408,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3815885,
+      "title": "Unit 4A: Farm Animals - Lesson 5",
+      "level": 17,
+      "last_activity_date": "2026-03-30",
+      "days_since_last_practice": 22,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.5,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 5,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 49774,
+        "luyen_tap": null
+      }
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": 3622389,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-01-18",
+      "days_since_last_practice": 93,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-18",
+        "pronunciation_attempts": 10,
+        "pronunciation_score_avg": 68.4,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you feeling today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "New.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-01-18"
+          },
+          {
+            "question": "How are you feeling today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Yees.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-01-18"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3622388,
+      "program_id": null,
+      "level": 17,
+      "position": 7,
+      "title": "Unit 1A: My Classroom - Lesson 7",
+      "desc": "Vocabulary Review: \nbook, chair, crayon, table\t\nGrammar Review:\nWhat is this?\n- It's a book.\t\nPhonics Review: \nAa: alligator, apple\nBb: bear, bus\nArt: Make a book\nThis is my book.",
+      "status": "completed",
+      "last_activity_date": "2026-01-21",
+      "days_since_last_practice": 90,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-16",
+        "pronunciation_attempts": 58,
+        "pronunciation_score_avg": 54.86,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "lack_of_knowledge": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 46632,
+          "score": null,
+          "correct": 0,
+          "total": 0,
+          "submitted_date": "2026-01-21"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 46632,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 37,
+            "total": 40,
+            "accuracy": 0.925
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 46632,
+            "question_id": 722010,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look, listen and answer (Con hãy nhìn tranh, nghe và trả lời nhé!) [Con nhớ trả lời cả câu nhé!] It's a ..........",
+            "correct_answer": "It's a table.",
+            "student_answer": "it's a humble",
+            "requires_media": true
+          },
+          {
+            "practice_id": 46632,
+            "question_id": 721107,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Xứng-Hợp",
+            "question_text": "Look and match (Con hãy di chuyển các từ để ghép với hình đúng nhé!)",
+            "correct_answer": null,
+            "student_answer": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "requires_media": false
+          },
+          {
+            "practice_id": 46632,
+            "question_id": 749990,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+            "correct_answer": "alligator",
+            "student_answer": "tiger",
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3622387,
+      "program_id": null,
+      "level": 17,
+      "position": 6,
+      "title": "Unit 1A: My Classroom - Lesson 6",
+      "desc": "Vocabulary Review: \ncrayon, table\t\nGrammar Review:\nWhat is this?\n- It's a table.\nPhonics Review:\nBb: bear, bus\nCLIL: Math\nShapes: circle, rectangle",
+      "status": "completed",
+      "last_activity_date": "2026-01-27",
+      "days_since_last_practice": 84,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-11",
+        "pronunciation_attempts": 52,
+        "pronunciation_score_avg": 61.75,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 2
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you feeling today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Y.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-01-11"
+          },
+          {
+            "question": "How are you feeling today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Y.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-01-11"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 46455,
+          "score": null,
+          "correct": 0,
+          "total": 0,
+          "submitted_date": "2026-01-27"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 46455,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 38,
+            "total": 47,
+            "accuracy": 0.809
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 46455,
+            "question_id": 720980,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "correct_answer": null,
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 46455,
+            "question_id": 749983,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look, listen and choose (Con hãy nhìn tranh, nghe và chọn nhé!)",
+            "correct_answer": "C",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 46455,
+            "question_id": 721053,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look, listen, and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "correct_answer": null,
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 46455,
+            "question_id": 720411,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "correct_answer": null,
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 46455,
+            "question_id": 720979,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "correct_answer": null,
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3622390,
+      "program_id": null,
+      "level": 17,
+      "position": 9,
+      "title": "Unit 2A: Fun Colors - Lesson 1",
+      "desc": "Vocabulary: \nblue, green\nGrammar:\nWhat color is this? \n- It's blue.\nPhonics: \nCc: cat, car",
+      "status": "completed",
+      "last_activity_date": "2026-01-31",
+      "days_since_last_practice": 80,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-23",
+        "pronunciation_attempts": 13,
+        "pronunciation_score_avg": 97.38,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you feeling today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Y.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-01-23"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 47689,
+          "score": null,
+          "correct": 0,
+          "total": 0,
+          "submitted_date": "2026-01-31"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 47689,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 10,
+            "total": 10,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3641686,
+      "program_id": null,
+      "level": 17,
+      "position": 13,
+      "title": "Unit 2A: Fun Colors - Lesson 5",
+      "desc": "Vocabulary Review: \nblue, green\nGrammar Review:\nWhat color is this? \n- It's blue.\nPhonics Review: \nReview Aa-Bb-Cc\nStory:\nWhat color is this?\nIt's yellow.\nHere you are.\nThank you.",
+      "status": "completed",
+      "last_activity_date": "2026-02-06",
+      "days_since_last_practice": 74,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-06",
+        "pronunciation_attempts": 64,
+        "pronunciation_score_avg": 66.31,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "lack_of_knowledge": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Fo your.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-02-06"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 47977,
+          "score": null,
+          "correct": 0,
+          "total": 10,
+          "submitted_date": "2026-02-06"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 47977,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3763369,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-02-20",
+      "days_since_last_practice": 60,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-20",
+        "pronunciation_attempts": 42,
+        "pronunciation_score_avg": 94.31,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you feeling today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Are there?",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-02-20"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3791657,
+      "program_id": null,
+      "level": 17,
+      "position": 21,
+      "title": "Unit 3A: My Family - Lesson 5",
+      "desc": "Vocabulary Review: \nmom, dad\nGrammar Review:\nWho is this? \n- It's my mom.\nPhonics Review: \nDd: dog, desk\nStory:\nThis is my sister.\nHi!\nI love my sister.\nMe too.",
+      "status": "completed",
+      "last_activity_date": "2026-03-01",
+      "days_since_last_practice": 51,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-28",
+        "pronunciation_attempts": 78,
+        "pronunciation_score_avg": 43.82,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you doing today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Hello.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-02-27"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 48761,
+          "score": null,
+          "correct": 0,
+          "total": 10,
+          "submitted_date": "2026-03-01"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 48761,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3815880,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-03-09",
+      "days_since_last_practice": 43,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-09",
+        "pronunciation_attempts": 33,
+        "pronunciation_score_avg": 60.94,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "lack_of_knowledge": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you feeling today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Come.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-03-08"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3793912,
+      "program_id": null,
+      "level": 17,
+      "position": 22,
+      "title": "Unit 3A: My Family - Lesson 6",
+      "desc": "Vocabulary Review: \nmom, dad\nGrammar Review:\nWho is this? \n- It's my mom.\nPhonics Review: \nDd: dog, desk\nCLIL: Social Studies\nFamily trees: This is my (brother).",
+      "status": "completed",
+      "last_activity_date": "2026-03-11",
+      "days_since_last_practice": 41,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-01",
+        "pronunciation_attempts": 58,
+        "pronunciation_score_avg": 45.28,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you doing today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Hel.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-03-01"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 48766,
+          "score": null,
+          "correct": 0,
+          "total": 0,
+          "submitted_date": "2026-03-11"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 48766,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 8,
+            "total": 10,
+            "accuracy": 0.8
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 48766,
+            "question_id": 740510,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Yes or No (Con hãy nhìn tranh, nghe và chọn Yes hoặc No nhé!)",
+            "correct_answer": "NO",
+            "student_answer": [
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 48766,
+            "question_id": 740788,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "correct_answer": "C",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3815888,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-04-05",
+      "days_since_last_practice": 16,
+      "forgetting_score": 1.0,
+      "weakness_score": 1.0,
+      "composite_priority_score": 1.0,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 71,
+        "latest_session_date": "2026-04-05",
+        "pronunciation_attempts": 9,
+        "pronunciation_score_avg": 30.11,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you feeling today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "O.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-04-05"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3815883,
+      "program_id": null,
+      "level": 17,
+      "position": 27,
+      "title": "Unit 4A: Farm Animals - Lesson 3",
+      "desc": "Vocabulary: \nhen, horse\nGrammar:\nWhat is that? \n- It's a hen.\nPhonics: \nReview: Dd-Ee-Ff",
+      "status": "completed",
+      "last_activity_date": "2026-03-31",
+      "days_since_last_practice": 21,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.6841,
+      "composite_priority_score": 0.842,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-22",
+        "pronunciation_attempts": 39,
+        "pronunciation_score_avg": 31.59,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49729,
+          "score": null,
+          "correct": 0,
+          "total": 0,
+          "submitted_date": "2026-03-31"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49729,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 10,
+            "total": 10,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3622384,
+      "program_id": null,
+      "level": 17,
+      "position": 3,
+      "title": "Unit 1A: My Classroom - Lesson 3",
+      "desc": "Vocabulary: \ncrayon, table\t\nGrammar:\nWhat is this?\n- It's a table.\nPhonics: \nBb: bear, bus",
+      "status": "completed",
+      "last_activity_date": "2026-01-15",
+      "days_since_last_practice": 96,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7941,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-03",
+        "pronunciation_attempts": 28,
+        "pronunciation_score_avg": 35.93,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I thank you, I'm thank you.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-01-02"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 46353,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-01-15"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 46353,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 62,
+            "total": 66,
+            "accuracy": 0.939
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 46353,
+            "question_id": 719011,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look, listen and repeat (Con hãy nhìn tranh, nghe và nói theo nhé!) What is this?",
+            "correct_answer": "It's a crayon.",
+            "student_answer": "wow - ryan",
+            "requires_media": true
+          },
+          {
+            "practice_id": 46353,
+            "question_id": 718750,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "correct_answer": "C",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 46353,
+            "question_id": 719011,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look, listen and repeat (Con hãy nhìn tranh, nghe và nói theo nhé!) What is this?",
+            "correct_answer": "It's a crayon.",
+            "student_answer": "its a crayon",
+            "requires_media": true
+          },
+          {
+            "practice_id": 46353,
+            "question_id": 719052,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look, listen and choose (Con hãy nhìn tranh, nghe và chọn nhé!)",
+            "correct_answer": null,
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3815886,
+      "program_id": null,
+      "level": 17,
+      "position": 30,
+      "title": "Unit 4A: Farm Animals - Lesson 6",
+      "desc": "Vocabulary Review: \nhen, horse\nGrammar Review:\nWhat is that? \n- It's a hen.\nPhonics Review: \nReview Dd-Ee-Ff\nConversation: \nBye-bye.\nSee you later.\nCLIL: Math\nCounting: one, two, three, four, five",
+      "status": "completed",
+      "last_activity_date": "2026-04-08",
+      "days_since_last_practice": 13,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7941,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-29",
+        "pronunciation_attempts": 68,
+        "pronunciation_score_avg": 60.34,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "lack_of_knowledge": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49801,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-04-08"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49801,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 30,
+            "total": 30,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3815889,
+      "program_id": null,
+      "level": 17,
+      "position": 33,
+      "title": "Review 1 - Lesson 1",
+      "desc": "Unit 1: My Classroom\nUnit 2: Fun Colors",
+      "status": "completed",
+      "last_activity_date": "2026-04-15",
+      "days_since_last_practice": 6,
+      "forgetting_score": 0.9975,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7929,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 44,
+        "latest_session_date": "2026-04-13",
+        "pronunciation_attempts": 16,
+        "pronunciation_score_avg": 59.19,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "lack_of_knowledge": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you feeling?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "Don't't you?",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2026-04-11"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49839,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-04-15"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49839,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 15,
+            "total": 15,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3777940,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-02-23",
+      "days_since_last_practice": 57,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5682,
+      "composite_priority_score": 0.7841,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-23",
+        "pronunciation_attempts": 34,
+        "pronunciation_score_avg": 43.18,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3815881,
+      "program_id": null,
+      "level": 17,
+      "position": 25,
+      "title": "Unit 4A: Farm Animals - Lesson 1",
+      "desc": "Vocabulary: \ncow, duck\nGrammar:\nWhat is that? \n- It's a cow.\nPhonics: \nFf: fish, fork",
+      "status": "completed",
+      "last_activity_date": "2026-03-16",
+      "days_since_last_practice": 36,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5561,
+      "composite_priority_score": 0.7781,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-14",
+        "pronunciation_attempts": 57,
+        "pronunciation_score_avg": 44.39,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49715,
+          "score": null,
+          "correct": 0,
+          "total": 10,
+          "submitted_date": "2026-03-16"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49715,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3622382,
+      "program_id": null,
+      "level": 17,
+      "position": 1,
+      "title": "Unit 1A: My Classroom - Lesson 1",
+      "desc": "Vocabulary: \n- Book, chair\nGrammar:\n- What is this?\n- It's a book.\t\nPhonics: \nAa: alligator, apple",
+      "status": "completed",
+      "last_activity_date": "2026-01-06",
+      "days_since_last_practice": 105,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-12-27",
+        "pronunciation_attempts": 33,
+        "pronunciation_score_avg": 34.55,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 50.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "I play a big in Chicau.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2025-12-27"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 45807,
+          "score": null,
+          "correct": 0,
+          "total": 0,
+          "submitted_date": "2026-01-06"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 45807,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 26,
+            "total": 29,
+            "accuracy": 0.897
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 45807,
+            "question_id": 716118,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look, listen and repeat (Con hãy nhìn tranh, nghe và nói theo nhé!) What is this?",
+            "correct_answer": "It's a book.",
+            "student_answer": "- - yeah",
+            "requires_media": true
+          },
+          {
+            "practice_id": 45807,
+            "question_id": 716117,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look, listen and repeat (Con hãy nhìn tranh, nghe và nói theo nhé!) What is this?",
+            "correct_answer": "It's a chair.",
+            "student_answer": "- - yeah",
+            "requires_media": true
+          },
+          {
+            "practice_id": 45807,
+            "question_id": 716128,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Listen and repeat (Con hãy nghe và nói theo nhé!)",
+            "correct_answer": "alligator",
+            "student_answer": "eight",
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3777941,
+      "program_id": null,
+      "level": 17,
+      "position": 20,
+      "title": "Unit 3A: My Family - Lesson 4",
+      "desc": "Vocabulary Review: \nbrother, sister\nGrammar Review:\nWho is this? \n- It's my brother.\nPhonics Review: \nEe: elephant, egg\nConversation: \nI love my (mom).\nMe too.",
+      "status": "completed",
+      "last_activity_date": "2026-02-24",
+      "days_since_last_practice": 56,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.463,
+      "composite_priority_score": 0.7315,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-24",
+        "pronunciation_attempts": 67,
+        "pronunciation_score_avg": 53.7,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 48760,
+          "score": null,
+          "correct": 0,
+          "total": 10,
+          "submitted_date": "2026-02-24"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 48760,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3763370,
+      "program_id": null,
+      "level": 17,
+      "position": 17,
+      "title": "Unit 3A: My Family - Lesson 1",
+      "desc": "Vocabulary: \nmom, dad\nGrammar:\nWho is this? \n- It's my mom.\nPhonics: \nDd: dog, desk",
+      "status": "in_class_only",
+      "last_activity_date": "2026-02-22",
+      "days_since_last_practice": 58,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.4511,
+      "composite_priority_score": 0.7256,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-22",
+        "pronunciation_attempts": 28,
+        "pronunciation_score_avg": 54.89,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 48647,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {
+          "bai_tap": [
+            {
+              "practice_id": 48647,
+              "question_id": 739827,
+              "question_folder": "English Tutoring - Preschool",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 48647,
+              "question_id": 739828,
+              "question_folder": "English Tutoring - Preschool",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 48647,
+              "question_id": 740300,
+              "question_folder": "English Tutoring - Preschool",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+              "correct_answer": "A",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 48647,
+              "question_id": 740305,
+              "question_folder": "English Tutoring - Preschool",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+              "correct_answer": "dad",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 48647,
+              "question_id": 740306,
+              "question_folder": "English Tutoring - Preschool",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Look, listen and choose (Con hãy nhìn tranh, nghe và chọn tranh đúng nhé!)",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": 3815884,
+      "program_id": null,
+      "level": 17,
+      "position": 28,
+      "title": "Unit 4A: Farm Animals - Lesson 4",
+      "desc": "Vocabulary Review: \nhen, horse\nGrammar Review:\nWhat is that? \n- It's a hen.\nPhonics Review: \nReview Dd-Ee-Ff\nConversation: \nBye-bye.\nSee you later.",
+      "status": "completed",
+      "last_activity_date": "2026-03-31",
+      "days_since_last_practice": 21,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.4436,
+      "composite_priority_score": 0.7218,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-23",
+        "pronunciation_attempts": 53,
+        "pronunciation_score_avg": 55.64,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49741,
+          "score": null,
+          "correct": 0,
+          "total": 0,
+          "submitted_date": "2026-03-31"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49741,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 10,
+            "total": 10,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3622383,
+      "program_id": null,
+      "level": 17,
+      "position": 2,
+      "title": "Unit 1A: My Classroom - Lesson 2",
+      "desc": "Vocabulary Review: \nbook, chair\nGrammar Review:\nWhat is this?\n- It's a book.\t\nPhonics Review: \nAa: alligator, apple",
+      "status": "completed",
+      "last_activity_date": "2026-01-16",
+      "days_since_last_practice": 95,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.2941,
+      "composite_priority_score": 0.6471,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-12-29",
+        "pronunciation_attempts": 38,
+        "pronunciation_score_avg": 28.45,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 50.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "inaccordant": 1
+        },
+        "worst_speaking_items": [
+          {
+            "question": "How are you today?",
+            "question_type": "speaking_unscripted",
+            "user_transcript": "The.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "timestamp": "2025-12-29"
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 46174,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-01-16"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 46174,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 63,
+            "total": 80,
+            "accuracy": 0.787
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 46174,
+            "question_id": 717250,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+            "correct_answer": "book",
+            "student_answer": "wow",
+            "requires_media": true
+          },
+          {
+            "practice_id": 46174,
+            "question_id": 749333,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look, listen and answer (Con hãy nhìn tranh, nghe và trả lời nhé!) [Con nhớ trả lời cả câu nhé!] It's a ..........",
+            "correct_answer": "It's a chair.",
+            "student_answer": "is - this",
+            "requires_media": true
+          },
+          {
+            "practice_id": 46174,
+            "question_id": 718715,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Yes or No (Con hãy nghe và chọn Yes hoặc No nhé!)",
+            "correct_answer": "NO",
+            "student_answer": [
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 46174,
+            "question_id": 717397,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+            "correct_answer": "alligator",
+            "student_answer": "good",
+            "requires_media": true
+          },
+          {
+            "practice_id": 46174,
+            "question_id": 716651,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look, listen and choose (Con hãy nhìn tranh, nghe và chọn nhé!)",
+            "correct_answer": null,
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3815887,
+      "program_id": null,
+      "level": 17,
+      "position": 31,
+      "title": "Unit 4A: Farm Animals - Lesson 7",
+      "desc": "Vocabulary Review: \ncow, duck, hen, horse\nGrammar Review:\nWhat is that? \n- It's a cow.\nWhat is that? \n- It's a hen.\nPhonics Review: \nReview Dd-Ee-Ff\nArt: Make a mask\nI'm a cow.",
+      "status": "completed",
+      "last_activity_date": "2026-04-15",
+      "days_since_last_practice": 6,
+      "forgetting_score": 0.9975,
+      "weakness_score": 0.2941,
+      "composite_priority_score": 0.6458,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-05",
+        "pronunciation_attempts": 201,
+        "pronunciation_score_avg": 52.98,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 50.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "lack_of_knowledge": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49802,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-04-15"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49802,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 55,
+            "total": 60,
+            "accuracy": 0.917
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 49802,
+            "question_id": 752609,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "correct_answer": "C",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 49802,
+            "question_id": 752608,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look, listen and answer (Con hãy nhìn tranh, nghe và trả lời nhé!) [Con nhớ trả lời cả câu nhé!]",
+            "correct_answer": "It's a cow.",
+            "student_answer": "- - okay",
+            "requires_media": true
+          },
+          {
+            "practice_id": 49802,
+            "question_id": 752609,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "correct_answer": "C",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 49802,
+            "question_id": 752612,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Yes or No (Con hãy nh&igrave;n tranh, nghe và chọn Yes nếu đ&uacute;ng, hoặc chọn No nếu sai nh&eacute;!)",
+            "correct_answer": "YES",
+            "student_answer": [
+              "0",
+              "1"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 49802,
+            "question_id": 752616,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Xứng-Hợp",
+            "question_text": "Match (Con hãy di chuyển các từ để ghép với hình đúng nhé!)",
+            "correct_answer": null,
+            "student_answer": [
+              "4",
+              "1",
+              "2",
+              "5",
+              "3",
+              "6"
+            ],
+            "requires_media": false
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3815882,
+      "program_id": null,
+      "level": 17,
+      "position": 26,
+      "title": "Unit 4A: Farm Animals - Lesson 2",
+      "desc": "Vocabulary Review: \ncow, duck\nGrammar Review:\nWhat is that? \n- It's a cow.\nPhonics Review: \nFf: fish, fork",
+      "status": "completed",
+      "last_activity_date": "2026-03-29",
+      "days_since_last_practice": 23,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.2683,
+      "composite_priority_score": 0.6341,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-15",
+        "pronunciation_attempts": 32,
+        "pronunciation_score_avg": 35.62,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49719,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-03-29"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49719,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 10,
+            "total": 10,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3645381,
+      "program_id": null,
+      "level": 17,
+      "position": 14,
+      "title": "Unit 2A: Fun Colors - Lesson 6",
+      "desc": "Vocabulary Review: \nred, yellow\nGrammar Review:\nWhat color is this? \n- It's red.\nPhonics Review: \nReview Aa-Bb-Cc\nCLIL: Science\nColors in nature: It's (yellow).",
+      "status": "completed",
+      "last_activity_date": "2026-02-22",
+      "days_since_last_practice": 58,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.257,
+      "composite_priority_score": 0.6285,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-08",
+        "pronunciation_attempts": 62,
+        "pronunciation_score_avg": 66.32,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 48063,
+          "score": 0.8,
+          "correct": 8,
+          "total": 10,
+          "submitted_date": "2026-02-22"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 48063,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 37,
+            "total": 49,
+            "accuracy": 0.755
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 48063,
+            "question_id": 733975,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "correct_answer": null,
+            "student_answer": [
+              "0",
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 48063,
+            "question_id": 733969,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "correct_answer": "C",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 48063,
+            "question_id": 733968,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "correct_answer": "A",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 48063,
+            "question_id": 733969,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "correct_answer": "C",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 48063,
+            "question_id": 733969,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "correct_answer": "C",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3628007,
+      "program_id": null,
+      "level": 17,
+      "position": 12,
+      "title": "Unit 2A: Fun Colors - Lesson 4",
+      "desc": "Vocabulary Review: \nred, yellow\nGrammar Review:\nWhat color is this? \n- It's red.\nPhonics Review: \nReview Aa-Bb-Cc\nConversation: \nHere you are.\nThank you.",
+      "status": "completed",
+      "last_activity_date": "2026-02-05",
+      "days_since_last_practice": 75,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.2373,
+      "composite_priority_score": 0.6187,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-01",
+        "pronunciation_attempts": 55,
+        "pronunciation_score_avg": 76.27,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 47915,
+          "score": null,
+          "correct": 0,
+          "total": 0,
+          "submitted_date": "2026-02-05"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 47915,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 48,
+            "total": 50,
+            "accuracy": 0.96
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 47915,
+            "question_id": 733337,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "correct_answer": null,
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 47915,
+            "question_id": 733337,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "correct_answer": null,
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3664098,
+      "program_id": null,
+      "level": 17,
+      "position": 15,
+      "title": "Unit 2A: Fun Colors - Lesson 7",
+      "desc": "Vocabulary Review: \nblue, green, red, yellow\nGrammar Review:\nWhat color is this? \n- It's blue/ green/ red/ yellow.\nPhonics Review: \nReview Aa-Bb-Cc\nCLIL: Science\nArt: Make a flower\nIt's (red).",
+      "status": "completed",
+      "last_activity_date": "2026-02-19",
+      "days_since_last_practice": 61,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.223,
+      "composite_priority_score": 0.6115,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-13",
+        "pronunciation_attempts": 73,
+        "pronunciation_score_avg": 46.48,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 48069,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-02-19"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 48069,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 17,
+            "total": 20,
+            "accuracy": 0.85
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 48069,
+            "question_id": 750023,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+            "correct_answer": "green",
+            "student_answer": "girl",
+            "requires_media": true
+          },
+          {
+            "practice_id": 48069,
+            "question_id": 734526,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Yes or No (Con hãy nhìn tranh, nghe và chọn Yes hoặc No nhé!)",
+            "correct_answer": "NO",
+            "student_answer": [
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 48069,
+            "question_id": 734527,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Yes or No (Con hãy nhìn tranh, nghe và chọn Yes hoặc No nhé!)",
+            "correct_answer": "NO",
+            "student_answer": [
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3622391,
+      "program_id": null,
+      "level": 17,
+      "position": 10,
+      "title": "Unit 2A: Fun Colors - Lesson 2",
+      "desc": "Vocabulary Review: \nblue, green\nGrammar Review:\nWhat color is this? \n- It's blue.\nPhonics Review: \nCc: cat, car",
+      "status": "completed",
+      "last_activity_date": "2026-02-04",
+      "days_since_last_practice": 76,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.2088,
+      "composite_priority_score": 0.6044,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-25",
+        "pronunciation_attempts": 16,
+        "pronunciation_score_avg": 49.88,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 47693,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-02-04"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 47693,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 17,
+            "total": 19,
+            "accuracy": 0.895
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 47693,
+            "question_id": 731831,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Yes or No (Con hãy nhìn tranh, nghe và chọn Yes hoặc No nhé!)",
+            "correct_answer": "NO",
+            "student_answer": [
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 47693,
+            "question_id": 731833,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look, listen and choose (Con hãy nhìn tranh, nghe và chọn tranh đúng nhé!)",
+            "correct_answer": null,
+            "student_answer": [
+              "0",
+              "0",
+              "1"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3624747,
+      "program_id": null,
+      "level": 17,
+      "position": 11,
+      "title": "Unit 2A: Fun Colors - Lesson 3",
+      "desc": "Vocabulary: \nred, yellow\nGrammar:\nWhat color is this? \n- It's red.\nPhonics: \nReview Aa-Bb-Cc",
+      "status": "completed",
+      "last_activity_date": "2026-02-04",
+      "days_since_last_practice": 76,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.1809,
+      "composite_priority_score": 0.5905,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-30",
+        "pronunciation_attempts": 41,
+        "pronunciation_score_avg": 56.59,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 47791,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-02-04"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 47791,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 45,
+            "total": 48,
+            "accuracy": 0.938
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 47791,
+            "question_id": 732594,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Xứng-Hợp",
+            "question_text": "Match (Con hãy di chuyển các hình để ghép với từ đúng nhé!)",
+            "correct_answer": "alligator, bus, car, cat, apple, bear",
+            "student_answer": [
+              "2",
+              "3",
+              "6",
+              "5",
+              "1",
+              "4"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 47791,
+            "question_id": 732595,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Listen and repeat (Con hãy nghe và n&oacute;i theo nh&eacute;!)",
+            "correct_answer": "alligator",
+            "student_answer": "wait",
+            "requires_media": true
+          },
+          {
+            "practice_id": 47791,
+            "question_id": 732594,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Xứng-Hợp",
+            "question_text": "Match (Con hãy di chuyển các hình để ghép với từ đúng nhé!)",
+            "correct_answer": "alligator, bus, car, cat, apple, bear",
+            "student_answer": [
+              "2",
+              "3",
+              "6",
+              "5",
+              "1",
+              "4"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3622385,
+      "program_id": null,
+      "level": 17,
+      "position": 4,
+      "title": "Unit 1A: My Classroom - Lesson 4",
+      "desc": "Vocabulary Review: \ncrayon, table\t\nGrammar Review:\nWhat is this?\n- It's a table.\nPhonics Review:\nBb: bear, bus\nConversation: \nWhat's your name? I'm (Kate).",
+      "status": "completed",
+      "last_activity_date": "2026-01-14",
+      "days_since_last_practice": 97,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.5,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 85,
+        "latest_session_date": "2026-01-04",
+        "pronunciation_attempts": 23,
+        "pronunciation_score_avg": 27.13,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 46371,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-01-14"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 46371,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 47,
+            "total": 52,
+            "accuracy": 0.904
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 46371,
+            "question_id": 719757,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look, listen and choose (Con hãy nhìn tranh, nghe và chọn nhé!)",
+            "correct_answer": "Audio C",
+            "student_answer": [
+              "0",
+              "1",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 46371,
+            "question_id": 719764,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+            "correct_answer": "crayon",
+            "student_answer": "you",
+            "requires_media": true
+          },
+          {
+            "practice_id": 46371,
+            "question_id": 719788,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+            "correct_answer": "bear",
+            "student_answer": "mo",
+            "requires_media": true
+          },
+          {
+            "practice_id": 46371,
+            "question_id": 719791,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+            "correct_answer": "bus",
+            "student_answer": "um",
+            "requires_media": true
+          },
+          {
+            "practice_id": 46371,
+            "question_id": 719788,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+            "correct_answer": "bear",
+            "student_answer": "go",
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3622386,
+      "program_id": null,
+      "level": 17,
+      "position": 5,
+      "title": "Unit 1A: My Classroom - Lesson 5",
+      "desc": "Vocabulary Review: \nbook, chair\nGrammar Review:\nWhat is this?\n- It's a book.\t\nPhonics Review: \nAa: alligator, apple\nStory:\nHi! I'm Jack. What's your name?\nI'm Kate.",
+      "status": "completed",
+      "last_activity_date": "2026-01-14",
+      "days_since_last_practice": 97,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.5,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-10",
+        "pronunciation_attempts": 44,
+        "pronunciation_score_avg": 41.86,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 46408,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-01-14"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 46408,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 59,
+            "total": 60,
+            "accuracy": 0.983
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 46408,
+            "question_id": 719857,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "correct_answer": null,
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3770098,
+      "program_id": null,
+      "level": 17,
+      "position": 18,
+      "title": "Unit 3A: My Family - Lesson 2",
+      "desc": "Vocabulary Review: \nmom, dad\nGrammar Review:\nWho is this? \n- It's my mom.\nPhonics Review: \nDd: dog, desk",
+      "status": "homework_only",
+      "last_activity_date": "2026-02-23",
+      "days_since_last_practice": 57,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.5,
+      "in_class": {
+        "participated": false
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 48749,
+          "score": null,
+          "correct": 0,
+          "total": 10,
+          "submitted_date": "2026-02-23"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 48749,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3793913,
+      "program_id": null,
+      "level": 17,
+      "position": 23,
+      "title": "Unit 3A: My Family - Lesson 7",
+      "desc": "Vocabulary Review: \nmom, dad, sister, brother\nGrammar Review:\nWho is this? \n- It's my mom.\n- It's my brother.\nPhonics Review: \nDd: dog, desk\nEe: elephant, egg\nArt: Make a photo frame.\nThis is my (dad)",
+      "status": "homework_only",
+      "last_activity_date": "2026-03-05",
+      "days_since_last_practice": 47,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.5,
+      "in_class": {
+        "participated": false
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 48794,
+          "score": null,
+          "correct": 0,
+          "total": 10,
+          "submitted_date": "2026-03-05"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 48794,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3815885,
+      "program_id": null,
+      "level": 17,
+      "position": 29,
+      "title": "Unit 4A: Farm Animals - Lesson 5",
+      "desc": "Vocabulary Review: \ncow, duck\nGrammar Review:\nWhat is that? \n- It's a cow.\nPhonics Review: \nReview Dd-Ee-Ff\nStory:\nWho is that?\nIt's my dad.\nBye-bye.\nSee you later.",
+      "status": "completed",
+      "last_activity_date": "2026-03-30",
+      "days_since_last_practice": 22,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.5,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-28",
+        "pronunciation_attempts": 59,
+        "pronunciation_score_avg": 48.93,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49774,
+          "score": null,
+          "correct": 0,
+          "total": 0,
+          "submitted_date": "2026-03-30"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49774,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring - Preschool": {
+            "correct": 45,
+            "total": 50,
+            "accuracy": 0.9
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 49774,
+            "question_id": 752249,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "correct_answer": "C",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 49774,
+            "question_id": 752260,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look, listen and repeat (Con hãy nhìn tranh, nghe và nói theo nhé!)",
+            "correct_answer": "It's my dad.",
+            "student_answer": "its my dad",
+            "requires_media": true
+          },
+          {
+            "practice_id": 49774,
+            "question_id": 752270,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "correct_answer": null,
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 49774,
+            "question_id": 752270,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "correct_answer": null,
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          },
+          {
+            "practice_id": 49774,
+            "question_id": 752271,
+            "question_folder": "English Tutoring - Preschool",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "correct_answer": "C",
+            "student_answer": [
+              "1",
+              "0",
+              "0"
+            ],
+            "requires_media": true
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3997750,
+      "program_id": null,
+      "level": 17,
+      "position": 34,
+      "title": "Review 1 - Lesson 2",
+      "desc": "Unit 3: My Family\nUnit 4: Farm Animals",
+      "status": "in_class_only",
+      "last_activity_date": "2026-04-20",
+      "days_since_last_practice": 1,
+      "forgetting_score": 0.6321,
+      "weakness_score": 0.352,
+      "composite_priority_score": 0.492,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-20",
+        "pronunciation_attempts": 44,
+        "pronunciation_score_avg": 64.8,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49842,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {
+          "bai_tap": [
+            {
+              "practice_id": 49842,
+              "question_id": 752998,
+              "question_folder": "English Tutoring - Preschool",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+              "correct_answer": "B",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 49842,
+              "question_id": 752999,
+              "question_folder": "English Tutoring - Preschool",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 49842,
+              "question_id": 753000,
+              "question_folder": "English Tutoring - Preschool",
+              "question_type": "Xứng-Hợp",
+              "status": "not_attempted",
+              "question_text": "Match (Con hãy di chuyển các h&igrave;nh để gh&eacute;p với từ đ&uacute;ng nh&eacute;!)",
+              "correct_answer": "mom, dad, sister, brother",
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 49842,
+              "question_id": 753001,
+              "question_folder": "English Tutoring - Preschool",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            },
+            {
+              "practice_id": 49842,
+              "question_id": 753002,
+              "question_folder": "English Tutoring - Preschool",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
