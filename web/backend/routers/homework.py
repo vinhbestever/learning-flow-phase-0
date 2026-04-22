@@ -16,7 +16,7 @@ def get_homework(student_id: int):
     if not hw_p.exists() or not diag_p.exists():
         raise HTTPException(
             status_code=404,
-            detail="Homework not generated yet — use /generate to run the pipeline",
+            detail="Bài tập về nhà chưa được tạo — chạy pipeline để tạo bài tập",
         )
     hw = json.loads(hw_p.read_text(encoding="utf-8"))
     diag = diag_p.read_text(encoding="utf-8")

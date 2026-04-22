@@ -110,6 +110,8 @@ def _pool_to_text(pool: list) -> str:
             meta.append(f"{days}d ago")
         if weak is not None:
             meta.append(f"weakness={weak:.2f}")
+        if q.get("hw_status") == "not_attempted":
+            meta.append("hw=chưa_làm_bài")
         meta_str = " | ".join(meta)
         lines.append(
             f'[{q.get("signal_type", "?")}] qid={qid} lesson_id={q["lesson_id"]} '

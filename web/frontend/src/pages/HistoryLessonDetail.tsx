@@ -234,12 +234,10 @@ function InClassSection({ data }: { data: InClass }) {
   )
 }
 
-function QuestionList({ questions }: { questions: QuestionRow[] }) {
+function QuestionList({ questions, attempted = true }: { questions: QuestionRow[]; attempted?: boolean }) {
   if (!questions.length) {
     return <p className="text-sm text-[var(--muted)] italic">Không có câu hỏi.</p>
   }
-  const failed = questions.filter((q) => q.is_failed)
-  const passed = questions.filter((q) => !q.is_failed)
 
   const QuestionItem = ({ q, idx }: { q: QuestionRow; idx: number }) => (
     <li>
@@ -285,6 +283,24 @@ function QuestionList({ questions }: { questions: QuestionRow[] }) {
     </li>
   )
 
+  // Not attempted: show as question bank, not results
+  if (!attempted) {
+    return (
+      <details open className="overflow-hidden rounded-lg border border-slate-200 [&>summary::-webkit-details-marker]:hidden">
+        <summary className="flex cursor-pointer list-none items-center justify-between bg-slate-50 px-3 py-2 text-xs font-semibold text-slate-500">
+          <span>Ngân hàng câu hỏi ({questions.length} câu)</span>
+          <span className="font-normal">▾</span>
+        </summary>
+        <ul className="divide-y divide-slate-100 border-t border-slate-100">
+          {questions.map((q, i) => <QuestionItem key={q.question_id ?? i} q={q} idx={i} />)}
+        </ul>
+      </details>
+    )
+  }
+
+  const failed = questions.filter((q) => q.is_failed)
+  const passed = questions.filter((q) => !q.is_failed)
+
   return (
     <div className="space-y-1">
       {failed.length > 0 && (
@@ -311,7 +327,16 @@ function QuestionList({ questions }: { questions: QuestionRow[] }) {
   )
 }
 
-function PracticePanel({ label, block }: { label: string; block: PracticeBlock | null }) {
+function PracticePanel({
+  label,
+  block,
+  attempted = true,
+}: {
+  label: string
+  block: PracticeBlock | null
+  /** When false, questions are from export only — show as question bank, not pass/fail results. */
+  attempted?: boolean
+}) {
   if (!block) {
     return (
       <div className="rounded-xl border border-dashed border-[var(--border)] bg-[var(--elevated)]/40 px-4 py-3 text-sm text-[var(--muted)]">
@@ -354,7 +379,7 @@ function PracticePanel({ label, block }: { label: string; block: PracticeBlock |
 
       {/* Question list */}
       <div className="border-t border-[var(--border)] px-3 pb-3 pt-2">
-        <QuestionList questions={block.questions} />
+        <QuestionList questions={block.questions} attempted={attempted} />
       </div>
     </div>
   )
@@ -532,8 +557,8 @@ export default function HistoryLessonDetail() {
         <InClassSection data={ic} />
       ) : (
         <div className="space-y-4">
-          <PracticePanel label="Bài tập" block={hw.bai_tap} />
-          <PracticePanel label="Luyện tập" block={hw.luyen_tap} />
+          <PracticePanel label="Bài tập" block={hw.bai_tap} attempted={hw.attempted} />
+          <PracticePanel label="Luyện tập" block={hw.luyen_tap} attempted={hw.attempted} />
         </div>
       )}
     </div>

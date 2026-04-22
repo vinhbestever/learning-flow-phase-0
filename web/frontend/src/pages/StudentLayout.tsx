@@ -39,7 +39,7 @@ export default function StudentLayout() {
             aria-label="Điều hướng học sinh"
           >
             <NavLink to={base} end className={linkClass}>Học sinh</NavLink>
-            <NavLink to={`${base}/history`} className={linkClass}>Lịch sử</NavLink>
+            <NavLink to={`${base}/history`} className={linkClass}>Lịch sử học tập</NavLink>
             <NavLink to={`${base}/lessons`} className={linkClass}>Bài học</NavLink>
             <NavLink to={`${base}/generate`} className={linkClass}>Tạo bài tập</NavLink>
             <NavLink to={`${base}/homework`} className={linkClass}>Kết quả</NavLink>

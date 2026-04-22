@@ -192,7 +192,15 @@ function InClassPanel({ data }: { data: InClassSummary }) {
 
 function HomeworkPanel({ data }: { data: HomeworkSummary }) {
   if (!data.attempted) {
-    return <p className="text-[11px] text-[var(--muted)] italic">Chưa làm bài tập về nhà.</p>
+    return (
+      <div className="flex items-start gap-2 rounded-lg border border-amber-200 bg-amber-50 px-2.5 py-2">
+        <span className="mt-0.5 text-amber-500 text-[13px] leading-none">⚠</span>
+        <div>
+          <p className="text-[11px] font-semibold text-amber-800">Chưa nộp bài tập về nhà</p>
+          <p className="text-[10px] text-amber-700 mt-0.5">Học sinh đã tham gia lớp nhưng chưa làm bài tập về nhà.</p>
+        </div>
+      </div>
+    )
   }
   return (
     <div className="space-y-2">
@@ -266,7 +274,7 @@ function LessonCard({ item, studentId }: { item: HistoryItem; studentId: string 
               {item.in_class.is_completed ? '✓ Lớp' : `${item.in_class.completion_pct ?? 0}%`}
             </span>
           )}
-          {item.homework.attempted && (() => {
+          {item.homework.attempted ? (() => {
             const bt = item.homework.bai_tap
             const lt = item.homework.luyen_tap
             const scores = [bt?.score, lt?.score].filter((s): s is number => s != null)
@@ -277,7 +285,11 @@ function LessonCard({ item, studentId }: { item: HistoryItem; studentId: string 
                 BT {avg != null ? pct(avg) : '—'}
               </span>
             )
-          })()}
+          })() : item.in_class.participated ? (
+            <span className="rounded border border-amber-200 bg-amber-50 px-1.5 py-0.5 text-[10px] font-medium text-amber-700">
+              Chưa nộp BTVN
+            </span>
+          ) : null}
           {item.days_since_last_practice != null && (
             <span className="text-xs tabular-nums text-[var(--muted)]">
               {item.days_since_last_practice}d

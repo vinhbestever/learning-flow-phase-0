@@ -10,6 +10,8 @@ interface Lesson {
   position: number | null
   last_activity_date: string | null
   desc: string
+  homework_attempted: boolean | null
+  in_class_participated: boolean | null
 }
 
 async function errorMessage(r: Response): Promise<string> {
@@ -107,6 +109,11 @@ export default function LessonList() {
                     <span className="hidden shrink-0 text-xs tabular-nums text-[var(--muted)] sm:inline">
                       {l.last_activity_date ?? '—'}
                     </span>
+                    {l.in_class_participated && l.homework_attempted === false && (
+                      <span className="shrink-0 rounded border border-amber-200 bg-amber-50 px-1.5 py-0.5 text-[10px] font-medium text-amber-700">
+                        Chưa nộp BTVN
+                      </span>
+                    )}
                     {l.level != null && (
                       <span className="shrink-0 rounded-md border border-[var(--mint)]/30 bg-[var(--mint-soft)] px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-[var(--mint)]">
                         L{l.level}

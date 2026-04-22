@@ -39,7 +39,11 @@ TODAY = date(2026, 4, 21)           # injected reference date
 EBBINGHAUS_STABILITY_DAYS = 1.0     # default stability for first exposure (no repetitions)
 WORST_SPEAKING_LIMIT = 5
 WORST_LMS_Q_LIMIT = 5
-CANDIDATE_POOL_SIZE = 20            # top N lessons pre-ranked for Agent 2
+MAX_CANDIDATE_POOL_SIZE = 40        # hard ceiling for Agent 2 context
+MIN_CANDIDATE_SCORE = 0.50          # minimum composite_priority_score to enter the pool
+MIN_CANDIDATE_POOL_FALLBACK = 5     # guarantee at least this many if not enough above threshold
+QUESTION_BANK_PATH = "data/practice_question_bank.json"
+QUESTION_BANK_PREVIEW_LIMIT = 5    # max questions per section shown from bank for not-attempted
 
 SECTION_TYPE_MAP = {
     "Bài tập": "Bài tập",
@@ -154,6 +158,23 @@ def load_dt_results():
             if str(eid).isdigit():
                 by_lesson[int(eid)].append(r)
     return by_lesson
+
+
+def load_question_bank():
+    """
+    Returns dict: practice_id -> [question_record, ...].
+    Reads from the global practice_question_bank.json (not per-student).
+    """
+    try:
+        items = load_json(QUESTION_BANK_PATH)
+    except (FileNotFoundError, IOError):
+        return {}
+    bank = defaultdict(list)
+    for q in items:
+        pid = q.get("practice_id")
+        if pid is not None:
+            bank[pid].append(q)
+    return dict(bank)
 
 
 # ---------------------------------------------------------------------------
@@ -355,7 +376,7 @@ def extract_question_content(row: dict) -> dict:
     }
 
 
-def build_lms_homework(tutor_entry, pr_by_pid, detail_by_pid, lms_to_link):
+def build_lms_homework(tutor_entry, pr_by_pid, detail_by_pid, lms_to_link, question_bank_by_pid=None):
     bai_tap_meta = tutor_entry.get("Bài tập") or {}
     luyen_tap_meta = tutor_entry.get("Luyện tập") or {}
 
@@ -420,13 +441,42 @@ def build_lms_homework(tutor_entry, pr_by_pid, detail_by_pid, lms_to_link):
         if len(failed_questions) >= WORST_LMS_Q_LIMIT:
             break
 
+    attempted = bai_tap is not None or luyen_tap is not None
+
+    # When no attempt exists, pull a question preview from the bank so the
+    # agent knows what content is in the lesson without detail records.
+    not_attempted_preview = {}
+    if not attempted and question_bank_by_pid:
+        for section_name, lms_entry in [("bai_tap", bai_tap_meta), ("luyen_tap", luyen_tap_meta)]:
+            pid = lms_entry.get("lms_id")
+            if not pid:
+                continue
+            bank_qs = (question_bank_by_pid.get(pid) or [])[:QUESTION_BANK_PREVIEW_LIMIT]
+            if bank_qs:
+                not_attempted_preview[section_name] = []
+                for q in bank_qs:
+                    content = extract_question_content(q)
+                    not_attempted_preview[section_name].append({
+                        "practice_id": pid,
+                        "question_id": q.get("question_id"),
+                        "question_folder": q.get("question_folder"),
+                        "question_type": q.get("question_type"),
+                        "status": "not_attempted",
+                        **content,
+                    })
+
     return {
-        "attempted": bai_tap is not None or luyen_tap is not None,
+        "attempted": attempted,
         "bai_tap": bai_tap,
         "luyen_tap": luyen_tap,
+        "lms_ids": {
+            "bai_tap": bai_tap_meta.get("lms_id"),
+            "luyen_tap": luyen_tap_meta.get("lms_id"),
+        },
         "skill_breakdown": skill_breakdown,
         "weak_skills": weak_skills,
         "worst_questions": failed_questions,
+        "not_attempted_preview": not_attempted_preview,
     }
 
 
@@ -570,6 +620,7 @@ def build_student_context():
     detail_by_pid = load_lms_detail()
     dt_sessions = load_dt_sessions()
     dt_results = load_dt_results()
+    question_bank_by_pid = load_question_bank()
 
     # tutor_lessons = lessons the student is enrolled in (has lms_id for homework)
     # dt_sessions   = lessons the student entered a Digital Teacher session for
@@ -581,7 +632,7 @@ def build_student_context():
         tutor_entry = tutor_by_lesson.get(lid, {})
 
         in_class = build_dt_in_class(dt_sessions.get(lid, []), dt_results.get(lid, []))
-        homework = build_lms_homework(tutor_entry, pr_by_pid, detail_by_pid, {})
+        homework = build_lms_homework(tutor_entry, pr_by_pid, detail_by_pid, {}, question_bank_by_pid)
         status = derive_status(in_class, homework)
 
         last_date_str = latest_activity_date(
@@ -634,6 +685,11 @@ def build_scored_candidates(records):
     Pre-ranked candidate list for Agent 2 (assignment agent).
     Exposes the actual question content (not links) for each failed question,
     so the agent can present exercises directly to the student.
+
+    Includes both:
+      - attempted lessons: failed questions from detail records
+      - not_attempted (in_class_only) lessons: question preview from practice_question_bank
+        tagged with status="not_attempted" so the agent knows homework is pending
     """
     candidates = []
     for r in records:
@@ -642,15 +698,31 @@ def build_scored_candidates(records):
         hw = r["homework"]
         bt = hw.get("bai_tap") or {}
         lt = hw.get("luyen_tap") or {}
+        lms_ids = hw.get("lms_ids", {})
 
-        # Must have homework attempt (we need question content from detail records)
-        if not hw.get("attempted"):
-            continue
+        homework_status = "attempted" if hw.get("attempted") else "not_attempted"
 
-        # Separate text-renderable vs media-dependent failed questions
-        all_failed = hw.get("worst_questions", [])
-        text_questions = [q for q in all_failed if not q.get("requires_media")]
-        media_questions = [q for q in all_failed if q.get("requires_media")]
+        if hw.get("attempted"):
+            # Separate text-renderable vs media-dependent failed questions
+            all_failed = hw.get("worst_questions", [])
+            text_questions = [q for q in all_failed if not q.get("requires_media")]
+            media_questions = [q for q in all_failed if q.get("requires_media")]
+            question_bank_preview = []
+        else:
+            # No homework attempt: surface question bank preview so the agent
+            # knows what the lesson covers and can assign it as new homework
+            all_failed = []
+            text_questions = []
+            media_questions = []
+            preview = hw.get("not_attempted_preview", {})
+            question_bank_preview = []
+            for section_qs in preview.values():
+                question_bank_preview.extend(section_qs)
+            question_bank_preview = question_bank_preview[:WORST_LMS_Q_LIMIT]
+
+            # Skip session-only lessons with no lms mapping — no homework can be assigned
+            if not lms_ids.get("bai_tap") and not lms_ids.get("luyen_tap"):
+                continue
 
         candidates.append({
             "lesson_id": r["lesson_id"],
@@ -660,21 +732,40 @@ def build_scored_candidates(records):
             "forgetting_score": r["forgetting_score"],
             "weakness_score": r["weakness_score"],
             "composite_priority_score": r["composite_priority_score"],
+            # "not_attempted" means student attended class but has not done homework
+            "homework_status": homework_status,
             "weak_skills": hw.get("weak_skills", []),
-            # Text-based failed questions (agent can present directly)
+            # Text-based failed questions (agent can present directly); empty when not attempted
             "failed_text_questions": text_questions,
+            # Question bank preview for not-attempted lessons (status="not_attempted" per item)
+            "question_bank_preview": question_bank_preview,
             # Media-dependent questions (agent notes topic but can't show inline)
             "failed_media_questions_count": len(media_questions),
             # Worst speaking items (already text — transcript + question)
             "worst_speaking_items": r["in_class"].get("worst_speaking_items", []),
-            # Practice IDs for reference
+            # Practice IDs for reference (falls back to lms_ids when no attempt exists)
             "practice_ids": {
-                "bai_tap": bt.get("practice_id"),
-                "luyen_tap": lt.get("practice_id"),
+                "bai_tap": bt.get("practice_id") or lms_ids.get("bai_tap"),
+                "luyen_tap": lt.get("practice_id") or lms_ids.get("luyen_tap"),
             },
         })
 
-    return candidates[:CANDIDATE_POOL_SIZE]
+    # Smart filtering: content gate + score threshold + hard ceiling
+    # Content gate: must have at least one actionable item
+    candidates = [
+        c for c in candidates
+        if (
+            c.get("failed_text_questions")
+            or c.get("question_bank_preview")
+            or c.get("worst_speaking_items")
+            or c.get("failed_media_questions_count", 0) > 0
+        )
+    ]
+    # Score threshold: only meaningful candidates; fall back to floor if too few
+    above = [c for c in candidates if (c["composite_priority_score"] or 0) >= MIN_CANDIDATE_SCORE]
+    below = [c for c in candidates if (c["composite_priority_score"] or 0) < MIN_CANDIDATE_SCORE]
+    pool = above if len(above) >= MIN_CANDIDATE_POOL_FALLBACK else above + below[:MIN_CANDIDATE_POOL_FALLBACK - len(above)]
+    return pool[:MAX_CANDIDATE_POOL_SIZE]
 
 
 def build_summary(records):

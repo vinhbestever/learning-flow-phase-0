@@ -9,110 +9,69 @@ Structure per lesson:
     free_speaking[]         - open-ended speaking (question + transcript + score + answer_type)
     interactive[]           - NON_AUDIO exercises (single_choice, true_false, fill_paragraph, matching)
   homework:
-    bai_tap{}               - graded homework practice (all questions)
-    luyen_tap{}             - extra practice (all questions)
+    bai_tap{} / luyen_tap{}  - lms_id + metadata from `data/<id>/tutor_lesson*.json` (Bài tập / Luyện tập),
+    full `questions[]`        - prefer lms_practice_result_detail; if missing, fall back to
+    `data/practice_question_bank.json` by practice_id (same lms_id), so all lesson questions
+    are included even when the student has not attempted the practice.
 """
 
-import glob
 import json
 import re
 from collections import defaultdict
 from datetime import date
+from pathlib import Path
+
+import preprocess
 
 # Set by main() before any loader is called
 DATA_DIR = "data"
 STUDENT_ID = 2102555
 OUTPUT_FILE = "output/questions_export.json"
 TODAY = date(2026, 4, 21)
-
-SECTION_TYPE_MAP = {
-    "Bài tập": "Bài tập",
-    "Luyện tập": "Luyện tập",
-    "Bài luyện tập": "Luyện tập",
-}
+QUESTION_BANK_FILES = [
+    "data/practice_question_bank.json",
+    "practice_question_bank.json",
+]
 
 
 # ---------------------------------------------------------------------------
-# Loaders (same as preprocess.py)
+# Global practice → questions (LMS catalogue; not student-specific)
 # ---------------------------------------------------------------------------
 
-def load_json(path):
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
+
+def _question_bank_path(explicit: str | None) -> Path | None:
+    if explicit:
+        p = Path(explicit)
+        return p if p.is_file() else None
+    repo = Path(__file__).resolve().parent
+    for rel in QUESTION_BANK_FILES:
+        p = (repo / rel).resolve()
+        if p.is_file():
+            return p
+    return None
 
 
-def load_tutor_lessons():
-    paths = sorted(glob.glob(f"{DATA_DIR}/tutor_lesson*.json"))
-    if not paths:
+def load_practice_question_bank(path: str | None = None) -> dict:
+    """
+    practice_id (lms) -> [ rows compatible with extract_lms_question: content, answers, ... ]
+    """
+    p = _question_bank_path(path)
+    if p is None:
         return {}
-
-    all_items = []
-    for path in paths:
-        all_items.extend(load_json(path))
-
-    has_type_field = any(item.get("type") for item in all_items)
-
-    by_lesson = {}
-    for item in all_items:
-        if has_type_field:
-            lid = item["id"]
-            section_type = SECTION_TYPE_MAP.get(item.get("type", ""), item.get("type", ""))
-            lesson_title = (item.get("title") or "").strip()
-            lesson_desc = (item.get("desc") or "").strip()
-        else:
-            lid = item["class_lesson_id"]
-            section_type = SECTION_TYPE_MAP.get(item.get("title", ""), item.get("title", ""))
-            lesson_title = ""
-            lesson_desc = (item.get("desc") or "").strip()
-
-        if lid not in by_lesson:
-            by_lesson[lid] = {
-                "level": item.get("level"),
-                "title": lesson_title,
-                "desc": lesson_desc,
-                "position": item.get("position"),
-            }
-        if section_type in ("Bài tập", "Luyện tập"):
-            by_lesson[lid][section_type] = {"lms_id": item.get("lms_id")}
-    return by_lesson
-
-
-def load_lms_results():
-    results = {}
-    for path in sorted(glob.glob(f"{DATA_DIR}/lms_practice_result*.json")):
-        if "detail" in path:
+    with p.open(encoding="utf-8") as f:
+        data = json.load(f)
+    if not isinstance(data, list):
+        return {}
+    by_pid: dict = defaultdict(list)
+    for row in data:
+        if not isinstance(row, dict):
             continue
-        for r in load_json(path):
-            results[r["practice_id"]] = r
-    return results
-
-
-def load_lms_detail():
-    detail = defaultdict(list)
-    for path in sorted(glob.glob(f"{DATA_DIR}/lms_practice_result_detail*.json")):
-        for row in load_json(path):
-            detail[row["practice_id"]].append(row)
-    return detail
-
-
-def load_dt_sessions():
-    by_lesson = defaultdict(list)
-    for path in sorted(glob.glob(f"{DATA_DIR}/vh_digital_teacher.learning_sessions*.json")):
-        for s in load_json(path):
-            eid = s.get("erpLessonId", "")
-            if str(eid).isdigit():
-                by_lesson[int(eid)].append(s)
-    return by_lesson
-
-
-def load_dt_results():
-    by_lesson = defaultdict(list)
-    for path in sorted(glob.glob(f"{DATA_DIR}/vh_digital_teacher.learning_results*.json")):
-        for r in load_json(path):
-            eid = r.get("erpLessonId", "")
-            if str(eid).isdigit():
-                by_lesson[int(eid)].append(r)
-    return by_lesson
+        pid = row.get("practice_id")
+        if pid is not None:
+            by_pid[pid].append(row)
+    for pid, rows in by_pid.items():
+        rows.sort(key=lambda x: (x.get("question_id") or 0, x.get("id") or 0))
+    return dict(by_pid)
 
 
 # ---------------------------------------------------------------------------
@@ -291,25 +250,61 @@ def extract_lms_question(row: dict) -> dict:
         "question_id": row.get("question_id"),
         "question_folder": row.get("question_folder"),
         "question_type": qt,
-        "question_text": question_text[:300] if question_text else None,
+        "question_text": question_text or None,
         "requires_media": requires_media,
         "correct_answer": correct_answer,
     }
 
 
-def build_homework_practice(lms_id, pr_by_pid, detail_by_pid):
+def _detail_rows_for_practice(lms_id, detail_by_pid):
+    rows = list(detail_by_pid.get(lms_id) or [])
+    rows.sort(key=lambda x: (x.get("question_id") or 0, x.get("id") or 0))
+    return rows
+
+
+def build_homework_practice(
+    lms_id, pr_by_pid, detail_by_pid, section_meta=None, bank_by_pid=None,
+):
+    """
+    Homework for one section from tutor lms_id.
+
+    Fills `questions` from the student's lms_practice_result_detail when present. Otherwise
+    uses the practice catalogue in `data/practice_question_bank.json` (keyed by practice_id).
+    Still returns a non-null object (tutor metadata + maybe empty `questions` if no source).
+    """
     if not lms_id:
         return None
+    bank_by_pid = bank_by_pid or {}
     r = pr_by_pid.get(lms_id)
-    if not r:
-        return None
-    questions = [extract_lms_question(row) for row in detail_by_pid.get(lms_id, [])]
+    detail_rows = _detail_rows_for_practice(lms_id, detail_by_pid)
+    if detail_rows:
+        rows = detail_rows
+        questions_source = "lms_practice_result_detail"
+    else:
+        rows = list(bank_by_pid.get(lms_id) or [])
+        questions_source = "practice_question_bank" if rows else "none"
+    questions = [extract_lms_question(row) for row in rows]
+    meta = section_meta or {}
+    has_student_detail = bool(detail_rows)
+    has_lms_attempt = bool(r or has_student_detail)
+    # Prefer scored total, else row count, else catalogue size from tutor
+    tot = None
+    if r:
+        tot = r.get("total_question")
+    if tot is None and questions:
+        tot = len(questions)
+    if tot is None and meta.get("lms_num_question") is not None:
+        tot = int(meta["lms_num_question"])
     return {
         "practice_id": lms_id,
-        "score": r["diem_thi"],
-        "correct": r["total_correct_question"],
-        "total": r["total_question"],
-        "submitted_date": (r.get("create_date") or "")[:10] or None,
+        "lms_num_question": meta.get("lms_num_question"),
+        "completed_lesson": meta.get("completed_lesson"),
+        "has_lms_attempt": has_lms_attempt,
+        "questions_source": questions_source,
+        "score": r["diem_thi"] if r else None,
+        "correct": r["total_correct_question"] if r else None,
+        "total": tot,
+        "submitted_date": (r.get("create_date") or "")[:10] if r else None,
         "questions": questions,
     }
 
@@ -329,6 +324,11 @@ def main():
         "student_id", nargs="?", type=int, default=2102555,
         help="Student ID (folder under data/). Default: 2102555",
     )
+    parser.add_argument(
+        "--question-bank", metavar="PATH", default=None,
+        help="LMS question catalogue (JSON array, practice_id = lms). "
+        "Default: data/practice_question_bank.json if present.",
+    )
     args = parser.parse_args()
 
     STUDENT_ID = args.student_id
@@ -338,11 +338,20 @@ def main():
     os.makedirs(f"output/{STUDENT_ID}", exist_ok=True)
 
     print("Loading data...")
-    tutor_by_lesson = load_tutor_lessons()
-    pr_by_pid = load_lms_results()
-    detail_by_pid = load_lms_detail()
-    dt_sessions = load_dt_sessions()
-    dt_results = load_dt_results()
+    bank_by_pid = load_practice_question_bank(args.question_bank)
+    qbank_path = _question_bank_path(args.question_bank)
+    if qbank_path:
+        print(f"  Question bank: {qbank_path} ({len(bank_by_pid)} practice ids)")
+    else:
+        print("  Question bank: not found — add data/practice_question_bank.json to backfill "
+              "full questions when LMS practice detail is missing")
+
+    preprocess.DATA_DIR = DATA_DIR
+    tutor_by_lesson, _lms_to_lesson = preprocess.load_tutor_lessons()
+    pr_by_pid = preprocess.load_lms_practice_results()
+    detail_by_pid = preprocess.load_lms_detail()
+    dt_sessions = preprocess.load_dt_sessions()
+    dt_results = preprocess.load_dt_results()
 
     active_ids = set(tutor_by_lesson.keys()) | set(dt_sessions.keys())
 
@@ -367,18 +376,33 @@ def main():
             d = s.get("startedAt")
             if isinstance(d, dict):
                 dates.append(d.get("$date", "")[:10])
-        bt_pid = (tutor.get("Bài tập") or {}).get("lms_id")
-        lt_pid = (tutor.get("Luyện tập") or {}).get("lms_id")
+        bai_tap_meta = tutor.get("Bài tập") or {}
+        luyen_tap_meta = tutor.get("Luyện tập") or {}
+        bt_pid = bai_tap_meta.get("lms_id")
+        lt_pid = luyen_tap_meta.get("lms_id")
         for pid in [bt_pid, lt_pid]:
-            if pid and pid in pr_by_pid:
+            if not pid:
+                continue
+            if pid in pr_by_pid:
                 d = pr_by_pid[pid].get("create_date", "")
                 if d:
                     dates.append(d[:10])
+            for row in detail_by_pid.get(pid) or []:
+                d = row.get("create_date") or row.get("update_date")
+                if isinstance(d, str) and d:
+                    dates.append(d[:10])
         last_activity = max(dates) if dates else None
+
+        def _has_lms_content(pid):
+            """LMS data from this student only (not the global question bank — bank backfills
+            questions in build_homework_practice but must not add lessons with no real activity)."""
+            if not pid:
+                return False
+            return pid in pr_by_pid or bool(detail_by_pid.get(pid))
 
         # Skip lessons with no actual activity
         has_dt = bool(sessions)
-        has_hw = bool(bt_pid and bt_pid in pr_by_pid) or bool(lt_pid and lt_pid in pr_by_pid)
+        has_hw = _has_lms_content(bt_pid) or _has_lms_content(lt_pid)
         if not has_dt and not has_hw:
             continue
 
@@ -391,8 +415,12 @@ def main():
         interactive = [extract_interactive(r) for r in non_audio]
 
         # Homework
-        bai_tap = build_homework_practice(bt_pid, pr_by_pid, detail_by_pid)
-        luyen_tap = build_homework_practice(lt_pid, pr_by_pid, detail_by_pid)
+        bai_tap = build_homework_practice(
+            bt_pid, pr_by_pid, detail_by_pid, bai_tap_meta, bank_by_pid=bank_by_pid,
+        )
+        luyen_tap = build_homework_practice(
+            lt_pid, pr_by_pid, detail_by_pid, luyen_tap_meta, bank_by_pid=bank_by_pid,
+        )
 
         lessons_export.append({
             "lesson_id": lid,
@@ -424,6 +452,9 @@ def main():
     # Sort by last_activity DESC
     lessons_export.sort(key=lambda l: l["last_activity_date"] or "0000", reverse=True)
 
+    stats["question_bank_practice_ids"] = len(bank_by_pid)
+    stats["question_bank_path"] = str(qbank_path) if qbank_path else None
+
     output = {
         "student_id": STUDENT_ID,
         "exported_at": str(TODAY),
@@ -441,6 +472,7 @@ def main():
     print(f"Free speaking:       {stats['free_speaking']}")
     print(f"Interactive (NON_AUDIO): {stats['interactive']}")
     print(f"LMS homework questions:  {stats['lms_questions']}")
+    print(f"Question bank (practice ids): {stats['question_bank_practice_ids']}")
 
 
 if __name__ == "__main__":

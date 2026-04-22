@@ -252,7 +252,7 @@ export default function GenerateHomework() {
             Tạo bài tập thành công
           </p>
           <p className="mt-2 text-sm text-[var(--muted)]">
-            File đã ghi vào <code>output/{studentId}/</code> — mở trang kết quả để xem 15 câu.
+            Mở trang kết quả để xem BTVN đã tạo.
           </p>
           <button
             type="button"

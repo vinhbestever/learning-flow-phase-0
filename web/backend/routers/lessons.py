@@ -45,6 +45,16 @@ def get_lessons(student_id: int):
             detail=f"questions_export.json not found for student {student_id} — run export_questions.py first",
         )
     data = json.loads(p.read_text(encoding="utf-8"))
+
+    sc_data = _load_json(paths["context"])
+    hw_attempted_by_lesson: dict[int, bool] = {}
+    in_class_participated_by_lesson: dict[int, bool] = {}
+    for l in sc_data.get("lessons") or []:
+        lid = l.get("lesson_id")
+        if lid is not None:
+            hw_attempted_by_lesson[lid] = (l.get("homework") or {}).get("attempted", True)
+            in_class_participated_by_lesson[lid] = (l.get("in_class") or {}).get("participated", False)
+
     return [
         {
             "lesson_id": l["lesson_id"],
@@ -53,6 +63,8 @@ def get_lessons(student_id: int):
             "position": l.get("position"),
             "last_activity_date": l.get("last_activity_date"),
             "desc": l.get("desc", ""),
+            "homework_attempted": hw_attempted_by_lesson.get(l["lesson_id"]),
+            "in_class_participated": in_class_participated_by_lesson.get(l["lesson_id"]),
         }
         for l in data.get("lessons", [])
     ]
