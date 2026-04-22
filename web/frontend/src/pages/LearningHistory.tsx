@@ -93,7 +93,6 @@ export default function LearningHistory() {
           Lịch sử học tập
         </h1>
         <p className="mt-1 max-w-2xl text-sm leading-snug text-[var(--muted)]">
-          Thu gọn unit; mỗi bài một dòng — bấm dòng để xem phân tích. Tham chiếu{' '}
           <span className="font-semibold text-[var(--ink)]">{data.reference_date ?? '—'}</span>
           {data.student_id != null && (
             <>

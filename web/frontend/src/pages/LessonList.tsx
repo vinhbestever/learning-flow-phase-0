@@ -65,9 +65,6 @@ export default function LessonList() {
           <h1 className="font-display mt-1 text-2xl font-semibold text-[var(--ink)] md:text-3xl">
             Danh sách bài học
           </h1>
-          <p className="mt-1 max-w-2xl text-sm leading-snug text-[var(--muted)]">
-            Thu gọn từng nhóm unit để lướt nhanh. Bấm một dòng để mở chi tiết bài tập / luyện tập.
-          </p>
         </div>
         <div className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-3 py-1.5 text-xs text-[var(--muted)]">
           <span className="font-semibold text-[var(--ink)]">{lessons.length}</span> bài ·{' '}

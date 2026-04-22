@@ -61,8 +61,8 @@ export default function GenerateHomework() {
           Tạo bài tập về nhà
         </h1>
         <p className="max-w-2xl text-[var(--muted)]">
-          Chạy diagnostic GPT-4o (streaming) rồi chọn 15 câu từ pool — theo dõi tiến trình theo thời
-          gian thực.
+          AI sẽ phân tích dữ liệu học sinh và tạo ra một bộ đề gồm 15 câu hỏi. Quá trình này có thể mất vài phút, hãy kiên
+          nhẫn chờ đợi!
         </p>
       </header>
 
