@@ -7,19 +7,70 @@ type WsMsg =
   | { type: 'done'; homework: unknown[]; diagnostic: string }
   | { type: 'error'; text: string }
 
+function StepItem({ text, isActive, index }: { text: string; isActive: boolean; index: number }) {
+  return (
+    <li
+      className="flex items-start gap-3 px-4 py-2.5 animate-rise"
+      style={{ animationDelay: `${Math.min(index, 10) * 0.045}s` }}
+    >
+      <span className="mt-[5px] shrink-0">
+        {isActive ? (
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--mint)] opacity-50" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--mint)]" />
+          </span>
+        ) : (
+          <span className="block h-2 w-2 rounded-full bg-[var(--mint)]/30 ring-1 ring-[var(--mint)]/40" />
+        )}
+      </span>
+      <span
+        className={`text-[13px] leading-snug ${
+          isActive ? 'font-medium text-[var(--ink)]' : 'text-[var(--muted)]'
+        }`}
+      >
+        {text}
+      </span>
+    </li>
+  )
+}
+
+function RunningIndicator() {
+  return (
+    <span className="flex items-end gap-[3px]" style={{ height: '14px' }} aria-hidden>
+      {[0, 1, 2, 3].map((i) => (
+        <span
+          key={i}
+          className="w-[3px] rounded-full bg-[var(--mint)]"
+          style={{
+            height: '100%',
+            transformOrigin: 'bottom',
+            animation: 'bar-bounce 1.1s ease-in-out infinite',
+            animationDelay: `${i * 0.16}s`,
+          }}
+        />
+      ))}
+    </span>
+  )
+}
+
 export default function GenerateHomework() {
   const [steps, setSteps] = useState<string[]>([])
   const [diagnostic, setDiagnostic] = useState('')
   const [status, setStatus] = useState<'idle' | 'running' | 'done' | 'error'>('idle')
   const [errorMsg, setErrorMsg] = useState('')
   const wsRef = useRef<WebSocket | null>(null)
+  const diagnosticRef = useRef<HTMLDivElement>(null)
   const navigate = useNavigate()
 
   useEffect(() => {
-    return () => {
-      wsRef.current?.close()
-    }
+    return () => wsRef.current?.close()
   }, [])
+
+  useEffect(() => {
+    if (diagnosticRef.current) {
+      diagnosticRef.current.scrollTop = diagnosticRef.current.scrollHeight
+    }
+  }, [diagnostic])
 
   function start() {
     setSteps([])
@@ -51,21 +102,26 @@ export default function GenerateHomework() {
     }
   }
 
+  const isRunning = status === 'running'
+  const isThinking = isRunning && diagnostic === ''
+  const isStreaming = isRunning && diagnostic !== ''
+
   return (
-    <div className="space-y-10">
+    <div className="space-y-8">
       <header className="animate-rise space-y-3">
-        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--mint)]">
+        <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[var(--mint)]">
           Pipeline
         </p>
         <h1 className="font-display text-3xl font-semibold text-[var(--ink)] md:text-4xl">
           Tạo bài tập về nhà
         </h1>
         <p className="max-w-2xl text-[var(--muted)]">
-          AI sẽ phân tích dữ liệu học sinh và tạo ra một bộ đề gồm 15 câu hỏi. Quá trình này có thể mất vài phút, hãy kiên
-          nhẫn chờ đợi!
+          AI sẽ phân tích dữ liệu học sinh và tạo ra một bộ đề gồm 15 câu hỏi. Quá trình này có thể
+          mất vài phút, hãy kiên nhẫn chờ đợi!
         </p>
       </header>
 
+      {/* Action button */}
       <div className="flex flex-wrap gap-3">
         {status === 'idle' && (
           <button
@@ -76,49 +132,93 @@ export default function GenerateHomework() {
             Bắt đầu tạo bài tập
           </button>
         )}
-
         {status === 'running' && (
-          <button
-            type="button"
-            disabled
-            className="cursor-not-allowed rounded-full border border-[var(--border)] bg-[var(--elevated)] px-8 py-3 text-sm font-semibold text-[var(--muted)] opacity-90"
-          >
-            Đang chạy pipeline…
-          </button>
+          <div className="animate-rise flex items-center gap-3 rounded-full border border-[var(--border)] bg-[var(--elevated)] px-5 py-2.5">
+            <RunningIndicator />
+            <span className="text-sm font-medium text-[var(--muted)]">Đang chạy pipeline</span>
+          </div>
         )}
       </div>
 
+      {/* Step log */}
       {steps.length > 0 && (
-        <section className="animate-rise rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-6 shadow-[var(--shadow-card)]">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--muted)]">
-            Tiến trình
-          </p>
-          <ul className="mt-4 space-y-2 font-mono text-sm text-[#134e4a]">
+        <section className="animate-rise overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-card)]">
+          <div className="flex items-center justify-between border-b border-[var(--border)] bg-[var(--void)]/70 px-4 py-2.5">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.32em] text-[var(--muted)]">
+              Tiến trình
+            </p>
+            {isRunning && (
+              <span className="flex items-center gap-1.5 text-[10px] font-semibold text-[var(--mint)]">
+                <span className="h-1.5 w-1.5 rounded-full bg-[var(--mint)] animate-pulse" />
+                Đang chạy
+              </span>
+            )}
+          </div>
+          <ul className="divide-y divide-[var(--border)]/40">
             {steps.map((s, i) => (
-              <li key={`${i}-${s.slice(0, 12)}`} className="flex gap-2">
-                <span className="select-none font-sans text-[var(--amber)]" aria-hidden>
-                  ▶
-                </span>
-                <span className="font-sans text-[var(--ink)]">{s}</span>
-              </li>
+              <StepItem
+                key={`${i}-${s.slice(0, 12)}`}
+                text={s}
+                isActive={i === steps.length - 1 && isRunning}
+                index={i}
+              />
             ))}
           </ul>
         </section>
       )}
 
-      {diagnostic && (
-        <section className="animate-rise rounded-3xl border border-[var(--border)] bg-[var(--mint-soft)]/40 p-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[var(--muted)]">
-            Phân tích học sinh (stream)
-          </p>
-          <p className="mt-4 whitespace-pre-wrap text-sm leading-relaxed text-[var(--ink)]">
-            {diagnostic}
-          </p>
+      {/* Diagnostic streaming panel */}
+      {(isRunning || diagnostic) && (
+        <section className="animate-rise overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-card)]">
+          <div className="flex items-center justify-between border-b border-[var(--border)] bg-[var(--void)]/70 px-4 py-2.5">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.32em] text-[var(--muted)]">
+              Phân tích học sinh
+            </p>
+            {isRunning && (
+              <span className="flex items-center gap-1.5 text-[10px] font-semibold text-[var(--mint)]">
+                <span className="h-1.5 w-1.5 rounded-full bg-[var(--mint)] animate-pulse" />
+                Stream
+              </span>
+            )}
+          </div>
+
+          {/* Thinking skeleton — shown while waiting for first token */}
+          {isThinking && (
+            <div className="space-y-3 px-4 py-5">
+              {[0.72, 0.48, 0.88, 0.6, 0.76].map((w, i) => (
+                <div
+                  key={i}
+                  className="h-3 rounded-md skeleton-shimmer"
+                  style={{ width: `${w * 100}%`, animationDelay: `${i * 0.1}s` }}
+                />
+              ))}
+            </div>
+          )}
+
+          {/* Streaming content */}
+          {diagnostic && (
+            <div
+              ref={diagnosticRef}
+              className="max-h-[min(55vh,480px)] overflow-y-auto px-4 py-4"
+            >
+              <p className="whitespace-pre-wrap font-mono text-[13px] leading-[1.75] text-[var(--ink)]">
+                {diagnostic}
+                {isStreaming && (
+                  <span
+                    className="ml-px inline-block w-[2px] translate-y-[1px] rounded-sm bg-[var(--mint)] align-middle animate-blink"
+                    style={{ height: '1.1em' }}
+                    aria-hidden
+                  />
+                )}
+              </p>
+            </div>
+          )}
         </section>
       )}
 
+      {/* Error */}
       {status === 'error' && (
-        <div className="animate-rise rounded-3xl border border-[var(--coral)]/30 bg-[#fff1f2] p-6 shadow-[var(--shadow-card)]">
+        <div className="animate-rise rounded-2xl border border-[var(--coral)]/25 bg-rose-50 p-6 shadow-[var(--shadow-card)]">
           <p className="font-medium text-[var(--coral)]">{errorMsg}</p>
           <button
             type="button"
@@ -133,14 +233,14 @@ export default function GenerateHomework() {
         </div>
       )}
 
+      {/* Done */}
       {status === 'done' && (
-        <div className="animate-rise rounded-3xl border border-[var(--mint)]/30 bg-[var(--mint-soft)] p-6 shadow-[var(--shadow-card)]">
+        <div className="animate-rise rounded-2xl border border-[var(--mint)]/30 bg-[var(--mint-soft)]/60 p-6 shadow-[var(--shadow-card)]">
           <p className="font-display text-lg font-semibold text-[var(--mint)]">
             Tạo bài tập thành công
           </p>
           <p className="mt-2 text-sm text-[var(--muted)]">
-            File đã ghi vào <code className="text-[var(--ink)]">output/</code> — mở trang kết quả để
-            xem 15 câu.
+            File đã ghi vào <code>output/</code> — mở trang kết quả để xem 15 câu.
           </p>
           <button
             type="button"

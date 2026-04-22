@@ -5,6 +5,7 @@ from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect
 
 from web.backend.config import DIAGNOSTIC_PATH as DIAGNOSTIC_PATH
 from web.backend.config import HOMEWORK_PATH as HOMEWORK_PATH
+from web.backend.config import STUDENT_CONTEXT_PATH as STUDENT_CONTEXT_PATH
 from web.backend.pipeline_ws import run_pipeline_ws
 
 router = APIRouter(prefix="/api")
@@ -21,7 +22,30 @@ def get_homework():
         )
     hw = json.loads(hw_p.read_text(encoding="utf-8"))
     diag = diag_p.read_text(encoding="utf-8")
-    return {"homework": hw.get("homework", []), "diagnostic": diag}
+
+    # Enrich with student context if available
+    ctx_by_lesson: dict = {}
+    ctx_p = Path(STUDENT_CONTEXT_PATH)
+    if ctx_p.exists():
+        ctx = json.loads(ctx_p.read_text(encoding="utf-8"))
+        for c in ctx.get("scored_candidates", []):
+            ctx_by_lesson[c["lesson_id"]] = c
+
+    homework_list = hw.get("homework", [])
+    for q in homework_list:
+        ctx_data = ctx_by_lesson.get(q.get("lesson_id"))
+        if ctx_data:
+            q["student_context"] = {
+                "days_since_last_practice": ctx_data.get("days_since_last_practice"),
+                "forgetting_score": ctx_data.get("forgetting_score"),
+                "weakness_score": ctx_data.get("weakness_score"),
+                "worst_speaking_items": ctx_data.get("worst_speaking_items", []),
+                "failed_text_questions": ctx_data.get("failed_text_questions", []),
+            }
+        else:
+            q["student_context"] = None
+
+    return {"homework": homework_list, "diagnostic": diag}
 
 
 @router.websocket("/ws/generate")
