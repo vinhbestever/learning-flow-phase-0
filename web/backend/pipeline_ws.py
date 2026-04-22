@@ -21,10 +21,10 @@ from web.backend.config import student_paths
 _pipeline_lock = asyncio.Lock()
 
 
-async def run_pipeline_ws(send, student_id: int) -> None:
+async def run_pipeline_ws(send, student_id: int | str) -> None:
     """
     send: async callable that accepts a dict and sends it as JSON over WebSocket.
-    student_id: integer student ID — determines which output/{student_id}/ paths to use.
+    student_id: folder name under output/ (numeric or e.g. 2111414_newstudent).
     """
     paths = student_paths(student_id)
 

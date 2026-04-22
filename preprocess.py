@@ -33,6 +33,8 @@ import math
 from collections import defaultdict
 from datetime import date
 
+from lms_question_rich import rich_question_fields
+
 # Set by main() before any loader is called
 DATA_DIR = "data"
 STUDENT_ID = "2102555"
@@ -386,13 +388,29 @@ def extract_question_content(row: dict) -> dict:
     else:
         student_ans = student_answers
 
-    return {
+    rich = rich_question_fields(
+        row,
+        stem_html=raw_content,
+        question_type=qt,
+        raw_answers=raw_answers,
+    )
+    comment_raw = row.get("comment") or ""
+    comment_plain = _strip_html(comment_raw)[:500] if comment_raw else None
+    out = {
         "question_text": question_text[:300] if question_text else None,
+        "comment_plain": comment_plain or None,
         "correct_answer": correct_answer,
         "student_answer": student_answers[0] if isinstance(student_answers, list) and len(student_answers) == 1
                           else (student_answers if student_answers else None),
         "requires_media": requires_media,
+        **rich,
     }
+    if row.get("is_correct") is not None:
+        try:
+            out["is_correct"] = int(row["is_correct"])
+        except (TypeError, ValueError):
+            pass
+    return out
 
 
 def build_lms_homework(tutor_entry, pr_by_pid, detail_by_pid, lms_to_link, question_bank_by_pid=None):

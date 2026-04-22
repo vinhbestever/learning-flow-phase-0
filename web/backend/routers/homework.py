@@ -8,8 +8,113 @@ from web.backend.pipeline_ws import run_pipeline_ws
 router = APIRouter(prefix="/api")
 
 
+def _norm_text(s: object) -> str:
+    if s is None:
+        return ""
+    return " ".join(str(s).lower().split())
+
+
+def _build_export_question_pools(qe_data: dict) -> dict[int, list[dict]]:
+    """Per lesson_id: flat list of homework questions (mutated when matching assignment rows)."""
+    pools: dict[int, list[dict]] = {}
+    for lesson in qe_data.get("lessons") or []:
+        lid = lesson.get("lesson_id")
+        if lid is None:
+            continue
+        acc: list[dict] = []
+        hw = lesson.get("homework") or {}
+        for sec in ("bai_tap", "luyen_tap"):
+            block = hw.get(sec) or {}
+            pid = block.get("practice_id")
+            src = block.get("questions_source") or ""
+            for row in block.get("questions") or []:
+                e = dict(row)
+                e.setdefault("stem_media_urls", [])
+                e.setdefault("comment_media_urls", [])
+                e.setdefault("choice_previews", [])
+                e["homework_section"] = sec
+                e["practice_id"] = pid
+                e["questions_source"] = src
+                acc.append(e)
+        if acc:
+            pools[int(lid)] = acc
+    return pools
+
+
+def _pop_export_match(pools: dict[int, list[dict]], item: dict) -> dict | None:
+    """Take one export row matching assignment item; removes it from pool."""
+    lid = item.get("lesson_id")
+    if lid is None:
+        return None
+    pool = pools.get(int(lid))
+    if not pool:
+        return None
+    aid = item.get("question_id")
+    if aid is not None:
+        for i, r in enumerate(pool):
+            if r.get("question_id") == aid:
+                return pool.pop(i)
+    qt = item.get("question_type") or ""
+    qn = _norm_text(item.get("question_text"))
+    ca = _norm_text(item.get("correct_answer"))
+    idxs = [
+        i
+        for i, r in enumerate(pool)
+        if (r.get("question_type") or "") == qt and _norm_text(r.get("question_text")) == qn
+    ]
+    if not idxs and ca and ca != "open":
+        idxs = [
+            i
+            for i, r in enumerate(pool)
+            if (r.get("question_type") or "") == qt and _norm_text(r.get("correct_answer")) == ca
+        ]
+    if len(idxs) > 1 and ca and ca != "open":
+        narrowed = [i for i in idxs if _norm_text(pool[i].get("correct_answer")) == ca]
+        if narrowed:
+            idxs = narrowed
+    if not idxs:
+        return None
+    return pool.pop(idxs[0])
+
+
+def _attach_lms_question(q: dict, matched: dict, ctx_data: dict | None) -> None:
+    """Build `lms_question` for the frontend (aligned with lessons API question rows)."""
+    lms = {
+        "question_id": matched.get("question_id"),
+        "question_folder": matched.get("question_folder"),
+        "question_type": matched.get("question_type"),
+        "question_text": matched.get("question_text"),
+        "comment_plain": matched.get("comment_plain"),
+        "requires_media": bool(matched.get("requires_media")),
+        "correct_answer": matched.get("correct_answer"),
+        "stem_media_urls": matched.get("stem_media_urls") or [],
+        "comment_media_urls": matched.get("comment_media_urls") or [],
+        "choice_previews": matched.get("choice_previews") or [],
+        "is_correct": matched.get("is_correct"),
+        "detail_result_id": matched.get("detail_result_id"),
+        "practice_id": matched.get("practice_id"),
+        "questions_source": matched.get("questions_source"),
+        "homework_section": matched.get("homework_section"),
+    }
+    if not (lms.get("correct_answer") or "").strip():
+        lms["correct_answer"] = q.get("correct_answer")
+    if not (lms.get("question_text") or "").strip():
+        lms["question_text"] = q.get("question_text")
+
+    qid = lms.get("question_id")
+    if ctx_data and qid is not None:
+        for fq in ctx_data.get("failed_text_questions") or []:
+            if fq.get("question_id") == qid:
+                lms["student_answer"] = fq.get("student_answer")
+                lms["is_failed"] = True
+                break
+    if "is_failed" not in lms:
+        lms["is_failed"] = lms.get("is_correct") == 0
+    q["lms_question"] = lms
+
+
 @router.get("/students/{student_id}/homework")
-def get_homework(student_id: int):
+def get_homework(student_id: str):
     paths = student_paths(student_id)
     hw_p = paths["homework"]
     diag_p = paths["diagnostic"]
@@ -33,6 +138,10 @@ def get_homework(student_id: int):
             if lid is not None:
                 lesson_by_id[lid] = row
 
+    qe_p = paths["questions"]
+    qe_data = json.loads(qe_p.read_text(encoding="utf-8")) if qe_p.exists() else {}
+    pools = _build_export_question_pools(qe_data)
+
     homework_list = hw.get("homework", [])
     for q in homework_list:
         lid = q.get("lesson_id")
@@ -53,11 +162,15 @@ def get_homework(student_id: int):
         else:
             q["student_context"] = None
 
+        matched = _pop_export_match(pools, q)
+        if matched:
+            _attach_lms_question(q, matched, ctx_data)
+
     return {"homework": homework_list, "diagnostic": diag}
 
 
 @router.websocket("/ws/students/{student_id}/generate")
-async def ws_generate(websocket: WebSocket, student_id: int):
+async def ws_generate(websocket: WebSocket, student_id: str):
     await websocket.accept()
 
     async def send(msg: dict):

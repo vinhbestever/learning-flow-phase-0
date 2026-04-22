@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
+import { HomeworkQuestionFullDetail, type HomeworkQuestionFull } from '../components/HomeworkQuestionFullDetail'
+
 // ── Types ──────────────────────────────────────────────────────────────── //
 
 interface PronunciationDrill {
@@ -13,18 +15,20 @@ interface FreeSpeakingQuestion {
   question_type: string | null
 }
 
-interface QuestionRow {
-  question_id: number | null
-  question_folder: string | null
-  question_type: string | null
-  question_text: string | null
-  requires_media: boolean
-  correct_answer: string | null
+interface QuestionRow extends HomeworkQuestionFull {
+  is_failed: boolean
 }
 
 interface PracticeBlock {
   practice_id: number | null
+  score: number | null
+  correct: number | null
   total: number | null
+  submitted_date: string | null
+  questions_source?: string | null
+  has_lms_attempt?: boolean
+  lms_num_question?: number | null
+  completed_lesson?: number | null
   questions: QuestionRow[]
 }
 
@@ -34,6 +38,9 @@ interface InClass {
 }
 
 interface Homework {
+  attempted: boolean
+  weak_skills?: string[]
+  skill_breakdown?: Record<string, { correct: number; total: number; accuracy: number | null }>
   bai_tap: PracticeBlock | null
   luyen_tap: PracticeBlock | null
 }
@@ -118,7 +125,15 @@ function FreeSpeakingSection({ questions }: { questions: FreeSpeakingQuestion[] 
   )
 }
 
-function QuestionSection({ label, block }: { label: string; block: PracticeBlock | null }) {
+function QuestionSection({
+  label,
+  block,
+  homeworkAttempted,
+}: {
+  label: string
+  block: PracticeBlock | null
+  homeworkAttempted: boolean
+}) {
   if (!block) return (
     <div className="rounded-xl border border-dashed border-[var(--border)] bg-[var(--elevated)]/40 px-4 py-3 text-sm text-[var(--muted)]">
       <span className="font-medium text-[var(--ink)]">{label}:</span> không có dữ liệu.
@@ -131,37 +146,31 @@ function QuestionSection({ label, block }: { label: string; block: PracticeBlock
         <span>{label} ({questions.length} câu)</span>
         <span className="text-xs font-normal text-[var(--muted)]">▾</span>
       </summary>
+      {(block.questions_source || block.practice_id != null) && (
+        <p className="flex flex-wrap items-center gap-2 border-t border-[var(--border)] px-4 py-2 text-[10px] text-[var(--muted)]">
+          {block.practice_id != null && (
+            <span className="font-mono tabular-nums">LMS <strong className="text-[var(--ink)]">{block.practice_id}</strong></span>
+          )}
+          {block.questions_source && (
+            <span>
+              {block.questions_source === 'lms_practice_result_detail' ? 'Bài làm chi tiết' : block.questions_source === 'practice_question_bank' ? 'Ngân hàng câu' : block.questions_source}
+            </span>
+          )}
+        </p>
+      )}
       {questions.length === 0 ? (
         <p className="border-t border-[var(--border)] px-4 py-3 text-sm italic text-[var(--muted)]">Không có câu hỏi.</p>
       ) : (
-        <ul className="max-h-96 divide-y divide-[var(--border)] overflow-y-auto border-t border-[var(--border)]">
+        <ul className="max-h-[32rem] divide-y divide-[var(--border)] overflow-y-auto border-t border-[var(--border)]">
           {questions.map((q, i) => (
-            <li key={q.question_id ?? i} className="px-4 py-3 text-sm">
-              <div className="flex items-start gap-2">
-                <span className="w-6 shrink-0 tabular-nums text-[var(--muted)]">{i + 1}.</span>
-                <div className="min-w-0 flex-1 space-y-1">
-                  <div className="flex flex-wrap gap-1">
-                    {q.question_type && (
-                      <span className="rounded border border-sky-200 bg-sky-50 px-1.5 py-0.5 text-[10px] font-medium text-sky-900">
-                        {q.question_type}
-                      </span>
-                    )}
-                    {q.requires_media && (
-                      <span className="rounded border border-violet-200 bg-violet-50 px-1.5 py-0.5 text-[10px] text-violet-900">
-                        media
-                      </span>
-                    )}
-                  </div>
-                  {q.question_text && (
-                    <p className="leading-snug text-[var(--ink)]">{q.question_text}</p>
-                  )}
-                  {q.correct_answer && (
-                    <p className="text-xs text-emerald-700">
-                      <span className="font-semibold">Đáp án: </span>{q.correct_answer}
-                    </p>
-                  )}
-                </div>
-              </div>
+            <li key={q.question_id ?? i} className="px-3 py-3">
+              <HomeworkQuestionFullDetail
+                q={q}
+                index={i}
+                practiceId={block.practice_id}
+                questionsSource={block.questions_source}
+                attempted={homeworkAttempted}
+              />
             </li>
           ))}
         </ul>
@@ -300,8 +309,8 @@ export default function LessonDetail() {
         </div>
       ) : (
         <div className="space-y-4">
-          <QuestionSection label="Bài tập" block={hw.bai_tap} />
-          <QuestionSection label="Luyện tập" block={hw.luyen_tap} />
+          <QuestionSection label="Bài tập" block={hw.bai_tap} homeworkAttempted={hw.attempted} />
+          <QuestionSection label="Luyện tập" block={hw.luyen_tap} homeworkAttempted={hw.attempted} />
         </div>
       )}
     </div>

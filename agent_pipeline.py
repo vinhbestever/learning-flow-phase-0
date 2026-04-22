@@ -104,9 +104,10 @@ def main():
     # Summary
     print("\n--- Homework Assignment Summary ---")
     for q in homework:
+        tag = "[media] " if q.get("requires_media") else ""
         print(
             f"  {q['question_no']:>2}. [{q['skill_category']:<12}] [{q['difficulty']:<6}] "
-            f"{q['question_text'][:60]}"
+            f"{tag}{q['question_text'][:60]}"
         )
 
 

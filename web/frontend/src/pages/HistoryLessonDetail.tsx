@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
+import { HomeworkQuestionFullDetail, type HomeworkQuestionFull } from '../components/HomeworkQuestionFullDetail'
+
 // ── Types ──────────────────────────────────────────────────────────────── //
 
 interface PronunciationDrill {
@@ -21,15 +23,8 @@ interface SpeakingItem {
   timestamp: string | null
 }
 
-interface QuestionRow {
-  question_id: number | null
-  question_folder: string | null
-  question_type: string | null
-  question_text: string | null
-  requires_media: boolean
-  correct_answer: string | null
+interface QuestionRow extends HomeworkQuestionFull {
   is_failed: boolean
-  student_answer: unknown
 }
 
 interface PracticeBlock {
@@ -38,6 +33,10 @@ interface PracticeBlock {
   correct: number | null
   total: number | null
   submitted_date: string | null
+  questions_source?: string | null
+  has_lms_attempt?: boolean
+  lms_num_question?: number | null
+  completed_lesson?: number | null
   questions: QuestionRow[]
 }
 
@@ -234,54 +233,64 @@ function InClassSection({ data }: { data: InClass }) {
   )
 }
 
-function QuestionList({ questions, attempted = true }: { questions: QuestionRow[]; attempted?: boolean }) {
+function QuestionList({
+  questions,
+  attempted = true,
+  practiceId,
+  questionsSource,
+}: {
+  questions: QuestionRow[]
+  attempted?: boolean
+  practiceId?: number | null
+  questionsSource?: string | null
+}) {
   if (!questions.length) {
     return <p className="text-sm text-[var(--muted)] italic">Không có câu hỏi.</p>
   }
 
-  const QuestionItem = ({ q, idx }: { q: QuestionRow; idx: number }) => (
-    <li>
-      <details className={`group [&>summary::-webkit-details-marker]:hidden ${q.is_failed ? 'bg-rose-50/30' : ''}`}>
-        <summary className="flex cursor-pointer list-none items-start gap-2 px-3 py-2.5 text-left text-xs">
-          <span className="mt-0.5 w-6 shrink-0 tabular-nums text-[var(--muted)]">{idx + 1}.</span>
-          <span className="min-w-0 flex-1 space-x-1">
-            {q.question_type && (
-              <span className="inline-block rounded border border-sky-200 bg-sky-50 px-1 py-0.5 text-[10px] font-medium text-sky-900">
-                {q.question_type}
-              </span>
-            )}
-            {q.requires_media && (
-              <span className="inline-block rounded border border-violet-200 bg-violet-50 px-1 py-0.5 text-[10px] text-violet-900">
-                media
-              </span>
-            )}
-            {q.is_failed && (
-              <span className="inline-block rounded border border-rose-200 bg-rose-50 px-1 py-0.5 text-[10px] font-semibold text-rose-700">
-                ✗ Sai
-              </span>
-            )}
-            <span className="line-clamp-2 text-[var(--ink)]">{q.question_text}</span>
-          </span>
-          <span className="shrink-0 text-[10px] text-[var(--muted)]">▼</span>
-        </summary>
-        <div className="space-y-1.5 border-t border-[var(--border)] bg-[var(--void)]/30 px-3 py-3 pl-11 text-xs leading-relaxed">
-          <p className="text-[var(--ink)]">{q.question_text}</p>
-          {q.correct_answer && (
-            <p>
-              <span className="font-semibold text-emerald-700">Đáp án đúng: </span>
-              <span className="text-emerald-700">{q.correct_answer}</span>
-            </p>
-          )}
-          {q.is_failed && q.student_answer != null && (
-            <p>
-              <span className="font-semibold text-rose-600">Học sinh trả lời: </span>
-              <span className="text-rose-600">{JSON.stringify(q.student_answer)}</span>
-            </p>
-          )}
-        </div>
-      </details>
-    </li>
-  )
+  const QuestionItem = ({ q, idx }: { q: QuestionRow; idx: number }) => {
+    const preview =
+      (q.question_text && q.question_text.trim())
+      || (q.requires_media ? 'Nội dung đa phương tiện' : 'Câu hỏi')
+    return (
+      <li>
+        <details className={`group [&>summary::-webkit-details-marker]:hidden ${q.is_failed ? 'bg-rose-50/30' : ''}`}>
+          <summary className="flex cursor-pointer list-none items-start gap-2 px-3 py-2.5 text-left text-xs">
+            <span className="mt-0.5 w-6 shrink-0 tabular-nums text-[var(--muted)]">{idx + 1}.</span>
+            <span className="min-w-0 flex-1 space-x-1">
+              {q.question_type && (
+                <span className="inline-block rounded border border-sky-200 bg-sky-50 px-1 py-0.5 text-[10px] font-medium text-sky-900">
+                  {q.question_type}
+                </span>
+              )}
+              {q.requires_media && (
+                <span className="inline-block rounded border border-violet-200 bg-violet-50 px-1 py-0.5 text-[10px] text-violet-900">
+                  media
+                </span>
+              )}
+              {q.is_failed && (
+                <span className="inline-block rounded border border-rose-200 bg-rose-50 px-1 py-0.5 text-[10px] font-semibold text-rose-700">
+                  ✗ Sai
+                </span>
+              )}
+              <span className="line-clamp-2 text-[var(--ink)]">{preview}</span>
+            </span>
+            <span className="shrink-0 text-[10px] text-[var(--muted)]">▼</span>
+          </summary>
+          <div className="border-t border-[var(--border)] bg-[var(--void)]/30 px-3 py-3 pl-11">
+            <HomeworkQuestionFullDetail
+              q={q}
+              index={idx}
+              practiceId={practiceId}
+              questionsSource={questionsSource}
+              attempted={attempted}
+              embedded
+            />
+          </div>
+        </details>
+      </li>
+    )
+  }
 
   // Not attempted: show as question bank, not results
   if (!attempted) {
@@ -292,7 +301,9 @@ function QuestionList({ questions, attempted = true }: { questions: QuestionRow[
           <span className="font-normal">▾</span>
         </summary>
         <ul className="divide-y divide-slate-100 border-t border-slate-100">
-          {questions.map((q, i) => <QuestionItem key={q.question_id ?? i} q={q} idx={i} />)}
+          {questions.map((q, i) => (
+            <QuestionItem key={q.question_id ?? i} q={q} idx={i} />
+          ))}
         </ul>
       </details>
     )
@@ -377,9 +388,30 @@ function PracticePanel({
         </div>
       )}
 
+      {(block.questions_source || block.practice_id != null) && (
+        <p className="flex flex-wrap items-center gap-2 border-b border-[var(--border)]/60 px-4 py-2 text-[10px] text-[var(--muted)]">
+          {block.practice_id != null && (
+            <span className="font-mono tabular-nums">LMS practice <strong className="text-[var(--ink)]">{block.practice_id}</strong></span>
+          )}
+          {block.questions_source && (
+            <span className="rounded border border-[var(--border)] bg-[var(--void)]/60 px-1.5 py-0.5 font-medium text-[var(--ink)]">
+              Nguồn: {block.questions_source === 'lms_practice_result_detail' ? 'bài làm chi tiết' : block.questions_source === 'practice_question_bank' ? 'ngân hàng' : block.questions_source}
+            </span>
+          )}
+          {block.lms_num_question != null && (
+            <span className="tabular-nums">Tutor: {block.lms_num_question} câu</span>
+          )}
+        </p>
+      )}
+
       {/* Question list */}
       <div className="border-t border-[var(--border)] px-3 pb-3 pt-2">
-        <QuestionList questions={block.questions} attempted={attempted} />
+        <QuestionList
+          questions={block.questions}
+          attempted={attempted}
+          practiceId={block.practice_id}
+          questionsSource={block.questions_source}
+        />
       </div>
     </div>
   )

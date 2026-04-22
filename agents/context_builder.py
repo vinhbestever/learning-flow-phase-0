@@ -9,6 +9,10 @@ Tiering rules:
 Selection: greedy within each tier, sorted by composite_priority_score DESC.
 Skill-diversity boost: +0.1 per new skill category not yet covered.
 Cap: MAX_CANDIDATES total across all tiers.
+
+Question pool includes plain-text items and media-dependent LMS items (stub
+question_text when the stem is image/audio-only) so the selector can assign
+a bounded number of media questions.
 """
 
 from __future__ import annotations
@@ -16,16 +20,48 @@ from __future__ import annotations
 MAX_CANDIDATES = 15
 MIN_QUESTIONS = 2  # lessons with fewer usable questions are excluded
 
+# Shown in pool / homework when stem is mostly image+audio (no plain text stem).
+MEDIA_QUESTION_TEXT_STUB = (
+    "[Câu có hình/âm thanh — mở bài trên LMS hoặc xem phần đính kèm bên dưới]"
+)
+
+
+def _poolable_practice_question(q: dict) -> bool:
+    """Text-only needs question_text; media needs question_id or text or at least one stem URL."""
+    if q.get("requires_media"):
+        return bool(
+            q.get("question_id") is not None
+            or (q.get("question_text") or "").strip()
+            or (q.get("stem_media_urls") or [])
+        )
+    return bool((q.get("question_text") or "").strip())
+
+
+def _normalize_practice_row_for_pool(q: dict, source: str) -> dict | None:
+    """Copy row into pool shape; ensure non-empty question_text for LLM + strict JSON."""
+    if not _poolable_practice_question(q):
+        return None
+    row = {**q, "source": source}
+    row.setdefault("stem_media_urls", [])
+    row.setdefault("comment_media_urls", [])
+    if not (row.get("question_text") or "").strip():
+        if row.get("requires_media"):
+            row["question_text"] = MEDIA_QUESTION_TEXT_STUB
+        else:
+            return None
+    return row
+
 
 def _count_usable(lesson: dict) -> tuple[int, list]:
-    """Return (count, list) of text-renderable questions for a lesson."""
+    """Return (count, list) of poolable questions (plain text + media-dependent)."""
     usable = []
     hw = lesson.get("homework") or {}
     for ptype in ("bai_tap", "luyen_tap"):
         practice = hw.get(ptype) or {}
         for q in practice.get("questions") or []:
-            if not q.get("requires_media") and q.get("question_text"):
-                usable.append({**q, "source": ptype})
+            norm = _normalize_practice_row_for_pool(q, ptype)
+            if norm is not None:
+                usable.append(norm)
     for item in (lesson.get("in_class") or {}).get("free_speaking") or []:
         if item.get("question"):
             usable.append({

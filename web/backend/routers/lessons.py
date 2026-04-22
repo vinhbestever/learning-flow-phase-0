@@ -26,8 +26,14 @@ def _build_question_list(qe_block: dict | None, failed_by_qid: dict) -> list:
             "question_folder": q.get("question_folder"),
             "question_type": q.get("question_type"),
             "question_text": q.get("question_text"),
+            "comment_plain": q.get("comment_plain"),
             "requires_media": bool(q.get("requires_media")),
             "correct_answer": q.get("correct_answer"),
+            "stem_media_urls": q.get("stem_media_urls") or [],
+            "comment_media_urls": q.get("comment_media_urls") or [],
+            "choice_previews": q.get("choice_previews") or [],
+            "is_correct": q.get("is_correct"),
+            "detail_result_id": q.get("detail_result_id"),
             "is_failed": failed is not None,
             "student_answer": failed.get("student_answer") if failed else None,
         }
@@ -127,6 +133,10 @@ def get_lesson_detail(student_id: int, lesson_id: int):
             "correct": perf.get("correct") if perf else block.get("correct"),
             "total": perf.get("total") if perf else block.get("total"),
             "submitted_date": perf.get("submitted_date") if perf else block.get("submitted_date"),
+            "questions_source": block.get("questions_source"),
+            "has_lms_attempt": block.get("has_lms_attempt"),
+            "lms_num_question": block.get("lms_num_question"),
+            "completed_lesson": block.get("completed_lesson"),
             "questions": _build_question_list(block, failed_by_qid),
         }
 

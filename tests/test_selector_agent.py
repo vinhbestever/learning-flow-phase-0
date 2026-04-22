@@ -3,7 +3,13 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from agents.selector_agent import HOMEWORK_SCHEMA, build_prompt, parse_response, run_selector
+from agents.selector_agent import (
+    HOMEWORK_SCHEMA,
+    build_prompt,
+    enrich_homework_from_pool,
+    parse_response,
+    run_selector,
+)
 
 DIAGNOSTIC_TEXT = "Student shows weak grammar. Struggles with subject-verb agreement."
 
@@ -19,6 +25,8 @@ QUESTION_POOL = [
         "requires_media": False,
         "correct_answer": "has",
         "interaction_type": None,
+        "stem_media_urls": [],
+        "comment_media_urls": [],
     },
     {
         "lesson_id": 1,
@@ -31,6 +39,8 @@ QUESTION_POOL = [
         "requires_media": False,
         "correct_answer": None,
         "interaction_type": "free_speaking",
+        "stem_media_urls": [],
+        "comment_media_urls": [],
     },
 ]
 
@@ -44,6 +54,8 @@ VALID_HOMEWORK_ITEM = {
     "correct_answer": "has",
     "difficulty": "medium",
     "reason": "Student failed subject-verb agreement",
+    "question_id": 1001,
+    "requires_media": False,
 }
 
 
@@ -73,8 +85,44 @@ def test_homework_schema_has_required_fields():
         "correct_answer",
         "difficulty",
         "reason",
+        "question_id",
+        "requires_media",
     ):
         assert field in props, f"Missing field: {field}"
+
+
+def test_enrich_homework_from_pool_fills_media_urls():
+    pool = [
+        {
+            "lesson_id": 7,
+            "question_id": 99,
+            "requires_media": True,
+            "stem_media_urls": ["https://cdn.example/a.png"],
+            "comment_media_urls": [],
+            "choice_previews": [],
+            "comment_plain": "hint",
+            "question_folder": "Pic",
+        }
+    ]
+    hw = [
+        {
+            "question_no": 1,
+            "lesson_id": 7,
+            "lesson_title": "L",
+            "skill_category": "vocabulary",
+            "question_type": "Một lựa chọn",
+            "question_text": "stub",
+            "correct_answer": "x",
+            "difficulty": "easy",
+            "reason": "r",
+            "question_id": 99,
+            "requires_media": False,
+        }
+    ]
+    enrich_homework_from_pool(hw, pool)
+    assert hw[0]["requires_media"] is True
+    assert hw[0]["stem_media_urls"] == ["https://cdn.example/a.png"]
+    assert hw[0]["question_folder"] == "Pic"
 
 
 def test_parse_response_returns_list():

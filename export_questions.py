@@ -22,6 +22,7 @@ from datetime import date
 from pathlib import Path
 
 import preprocess
+from lms_question_rich import rich_question_fields
 
 # Set by main() before any loader is called
 DATA_DIR = "data"
@@ -246,14 +247,32 @@ def extract_lms_question(row: dict) -> dict:
             if pieces:
                 question_text = (question_text or "Reorder") + ": " + " | ".join(p for p in pieces if p)
 
-    return {
+    rich = rich_question_fields(
+        row,
+        stem_html=raw_content,
+        question_type=qt,
+        raw_answers=raw_answers,
+    )
+    comment_raw = row.get("comment") or ""
+    comment_plain = strip_html(comment_raw) or None
+    payload = {
         "question_id": row.get("question_id"),
         "question_folder": row.get("question_folder"),
         "question_type": qt,
         "question_text": question_text or None,
+        "comment_plain": comment_plain,
         "requires_media": requires_media,
         "correct_answer": correct_answer,
+        **rich,
     }
+    if row.get("is_correct") is not None:
+        try:
+            payload["is_correct"] = int(row["is_correct"])
+        except (TypeError, ValueError):
+            pass
+    if row.get("result_id") is not None:
+        payload["detail_result_id"] = row.get("result_id")
+    return payload
 
 
 def _detail_rows_for_practice(lms_id, detail_by_pid):

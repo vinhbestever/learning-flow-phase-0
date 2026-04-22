@@ -40,6 +40,8 @@ HOMEWORK_SCHEMA = {
                         "correct_answer",
                         "difficulty",
                         "reason",
+                        "question_id",
+                        "requires_media",
                     ],
                     "additionalProperties": False,
                     "properties": {
@@ -55,6 +57,8 @@ HOMEWORK_SCHEMA = {
                         "correct_answer": {"anyOf": [{"type": "string"}, {"type": "null"}]},
                         "difficulty": {"type": "string", "enum": ["easy", "medium", "hard"]},
                         "reason": {"type": "string"},
+                        "question_id": {"anyOf": [{"type": "integer"}, {"type": "null"}]},
+                        "requires_media": {"type": "boolean"},
                     },
                 },
             }
@@ -71,6 +75,7 @@ SELECTION RULES:
 - Include at least: 3 speaking, 4 grammar or fill-blank, 3 vocabulary
 - No duplicate skill coverage from the same lesson
 - Tie-break: prefer fill-blank > multiple-choice > speaking when signal_type and lesson are equal
+- MEDIA: pool lines tagged MEDIA=yes need image/audio on LMS. Include 2–4 such questions if the pool offers them; set requires_media=true and copy the same question_id as in the pool. For non-media lines set requires_media=false. For free-speaking pool rows (no question_id) use question_id=null and requires_media=false.
 
 REASON FIELD RULES — this is the most important field:
 Write 1–2 sentences per question IN VIETNAMESE that are specific to THIS student's actual performance.
@@ -102,7 +107,8 @@ Select exactly 15 questions. Assign question_no 1–15 in order of priority.\
 def _pool_to_text(pool: list) -> str:
     lines = []
     for i, q in enumerate(pool):
-        qid = q.get("question_id") or f"fs-{i}"
+        qid = q.get("question_id")
+        qid_disp = qid if qid is not None else f"fs-{i}"
         days = q.get("days_since")
         weak = q.get("weakness_score")
         meta = []
@@ -113,8 +119,12 @@ def _pool_to_text(pool: list) -> str:
         if q.get("hw_status") == "not_attempted":
             meta.append("hw=chưa_làm_bài")
         meta_str = " | ".join(meta)
+        media = "yes" if q.get("requires_media") else "no"
+        n_stem = len(q.get("stem_media_urls") or [])
+        n_com = len(q.get("comment_media_urls") or [])
         lines.append(
-            f'[{q.get("signal_type", "?")}] qid={qid} lesson_id={q["lesson_id"]} '
+            f'[{q.get("signal_type", "?")}] MEDIA={media} stem_files={n_stem} comment_files={n_com} '
+            f'qid={qid_disp} lesson_id={q["lesson_id"]} '
             f'lesson_title="{q.get("lesson_title", "")}" '
             f'[{meta_str}] '
             f'type="{q["question_type"]}" '
@@ -142,6 +152,38 @@ def parse_response(raw: str | None) -> list:
     return homework
 
 
+def enrich_homework_from_pool(homework: list, question_pool: list) -> None:
+    """
+    Attach authoritative media + metadata from the pool (by lesson_id + question_id).
+    Avoids asking the model to echo long URLs; keeps requires_media aligned with export.
+    """
+    by_key: dict[tuple, dict] = {}
+    for q in question_pool:
+        lid = q.get("lesson_id")
+        qid = q.get("question_id")
+        if lid is None or qid is None:
+            continue
+        by_key[(int(lid), int(qid))] = q
+
+    for row in homework:
+        lid = row.get("lesson_id")
+        qid = row.get("question_id")
+        if lid is None or qid is None:
+            continue
+        src = by_key.get((int(lid), int(qid)))
+        if not src:
+            continue
+        row["requires_media"] = bool(src.get("requires_media"))
+        row["stem_media_urls"] = list(src.get("stem_media_urls") or [])
+        row["comment_media_urls"] = list(src.get("comment_media_urls") or [])
+        if src.get("choice_previews") is not None:
+            row["choice_previews"] = list(src.get("choice_previews") or [])
+        if src.get("comment_plain"):
+            row["comment_plain"] = src.get("comment_plain")
+        if src.get("question_folder"):
+            row["question_folder"] = src.get("question_folder")
+
+
 def run_selector(
     diagnostic_text: str,
     question_pool: list,
@@ -164,6 +206,7 @@ def run_selector(
     )
     raw = response.choices[0].message.content
     homework = parse_response(raw)
+    enrich_homework_from_pool(homework, question_pool)
 
     if save_path:
         with open(save_path, "w", encoding="utf-8") as f:

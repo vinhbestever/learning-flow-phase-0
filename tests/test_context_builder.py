@@ -133,12 +133,14 @@ def test_tier_candidates_caps_at_15():
     assert len(tiered) <= 15
 
 
-def test_build_question_pool_excludes_media():
+def test_build_question_pool_includes_media_with_stub_text():
     lesson_ids = {1}
     pool = build_question_pool(lesson_ids, QUESTIONS_EXPORT)
-    # question_id 1002 has requires_media=True — must not appear
-    assert all(q.get("requires_media") is False for q in pool)
-    # question_id 1001 should be present
+    media_rows = [q for q in pool if q.get("question_id") == 1002]
+    assert len(media_rows) == 1
+    assert media_rows[0].get("requires_media") is True
+    assert (media_rows[0].get("question_text") or "").strip()
+    # question_id 1001 should still be present
     assert any(q["question_id"] == 1001 for q in pool)
 
 
