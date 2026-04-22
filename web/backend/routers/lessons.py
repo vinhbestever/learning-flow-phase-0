@@ -3,7 +3,7 @@ from pathlib import Path
 
 from fastapi import APIRouter, HTTPException
 
-from web.backend.config import QUESTIONS_EXPORT_PATH, STUDENT_CONTEXT_PATH
+from web.backend.config import student_paths
 
 router = APIRouter(prefix="/api")
 
@@ -15,7 +15,6 @@ def _load_json(path: Path) -> dict:
 
 
 def _build_question_list(qe_block: dict | None, failed_by_qid: dict) -> list:
-    """Merge questions_export question list with student_context failed answers."""
     if not qe_block:
         return []
     result = []
@@ -36,13 +35,14 @@ def _build_question_list(qe_block: dict | None, failed_by_qid: dict) -> list:
     return result
 
 
-@router.get("/lessons")
-def get_lessons():
-    p = Path(QUESTIONS_EXPORT_PATH)
+@router.get("/students/{student_id}/lessons")
+def get_lessons(student_id: int):
+    paths = student_paths(student_id)
+    p = paths["questions"]
     if not p.exists():
         raise HTTPException(
             status_code=404,
-            detail="questions_export.json not found — run export_questions.py first",
+            detail=f"questions_export.json not found for student {student_id} — run export_questions.py first",
         )
     data = json.loads(p.read_text(encoding="utf-8"))
     return [
@@ -58,18 +58,16 @@ def get_lessons():
     ]
 
 
-@router.get("/lessons/{lesson_id}")
-def get_lesson_detail(lesson_id: int):
-    """Chi tiết bài học: merge questions_export (nội dung câu hỏi) + student_context (kết quả)."""
-    qe_data = _load_json(Path(QUESTIONS_EXPORT_PATH))
-    sc_data = _load_json(Path(STUDENT_CONTEXT_PATH))
+@router.get("/students/{student_id}/lessons/{lesson_id}")
+def get_lesson_detail(student_id: int, lesson_id: int):
+    paths = student_paths(student_id)
+    qe_data = _load_json(paths["questions"])
+    sc_data = _load_json(paths["context"])
 
-    # Tìm lesson trong questions_export
     qe_lesson = next(
         (l for l in qe_data.get("lessons", []) if l.get("lesson_id") == lesson_id),
         None,
     )
-    # Tìm lesson trong student_context
     sc_lesson = next(
         (l for l in sc_data.get("lessons", []) if l.get("lesson_id") == lesson_id),
         None,
@@ -80,14 +78,10 @@ def get_lesson_detail(lesson_id: int):
 
     lesson = qe_lesson or sc_lesson
 
-    # ------------------------------------------------------------------ #
-    # In-class: content từ questions_export, kết quả từ student_context   #
-    # ------------------------------------------------------------------ #
     qe_ic = (qe_lesson or {}).get("in_class") or {}
     sc_ic = (sc_lesson or {}).get("in_class") or {}
 
     in_class = {
-        # Kết quả (student_context)
         "participated": sc_ic.get("participated", False),
         "is_completed": sc_ic.get("is_completed", False),
         "completion_pct": sc_ic.get("completion_pct"),
@@ -97,18 +91,13 @@ def get_lesson_detail(lesson_id: int):
         "free_speaking_score_avg": sc_ic.get("free_speaking_score_avg"),
         "free_speaking_attempts": sc_ic.get("free_speaking_attempts", 0),
         "worst_speaking_items": sc_ic.get("worst_speaking_items") or [],
-        # Nội dung (questions_export)
         "pronunciation_drills": qe_ic.get("pronunciation_drills") or [],
         "free_speaking_questions": qe_ic.get("free_speaking") or [],
     }
 
-    # ------------------------------------------------------------------ #
-    # Homework: questions từ qe, kết quả + answers từ sc                  #
-    # ------------------------------------------------------------------ #
     qe_hw = (qe_lesson or {}).get("homework") or {}
     sc_hw = (sc_lesson or {}).get("homework") or {}
 
-    # Map question_id → failed row (có student_answer) từ student_context
     failed_by_qid: dict = {}
     for wq in sc_hw.get("worst_questions") or []:
         qid = wq.get("question_id")

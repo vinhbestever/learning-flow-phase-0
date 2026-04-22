@@ -19,9 +19,17 @@ import re
 from collections import defaultdict
 from datetime import date
 
+# Set by main() before any loader is called
 DATA_DIR = "data"
+STUDENT_ID = 2102555
 OUTPUT_FILE = "output/questions_export.json"
 TODAY = date(2026, 4, 21)
+
+SECTION_TYPE_MAP = {
+    "Bài tập": "Bài tập",
+    "Luyện tập": "Luyện tập",
+    "Bài luyện tập": "Luyện tập",
+}
 
 
 # ---------------------------------------------------------------------------
@@ -34,51 +42,76 @@ def load_json(path):
 
 
 def load_tutor_lessons():
-    data = load_json(f"{DATA_DIR}/tutor_lessons_2102555.json")
+    paths = sorted(glob.glob(f"{DATA_DIR}/tutor_lesson*.json"))
+    if not paths:
+        return {}
+
+    all_items = []
+    for path in paths:
+        all_items.extend(load_json(path))
+
+    has_type_field = any(item.get("type") for item in all_items)
+
     by_lesson = {}
-    for item in data:
-        lid = item["id"]
+    for item in all_items:
+        if has_type_field:
+            lid = item["id"]
+            section_type = SECTION_TYPE_MAP.get(item.get("type", ""), item.get("type", ""))
+            lesson_title = (item.get("title") or "").strip()
+            lesson_desc = (item.get("desc") or "").strip()
+        else:
+            lid = item["class_lesson_id"]
+            section_type = SECTION_TYPE_MAP.get(item.get("title", ""), item.get("title", ""))
+            lesson_title = ""
+            lesson_desc = (item.get("desc") or "").strip()
+
         if lid not in by_lesson:
             by_lesson[lid] = {
                 "level": item.get("level"),
-                "title": (item.get("title") or "").strip(),
-                "desc": (item.get("desc") or "").strip(),
+                "title": lesson_title,
+                "desc": lesson_desc,
                 "position": item.get("position"),
             }
-        by_lesson[lid][item["type"]] = {"lms_id": item["lms_id"]}
+        if section_type in ("Bài tập", "Luyện tập"):
+            by_lesson[lid][section_type] = {"lms_id": item.get("lms_id")}
     return by_lesson
 
 
 def load_lms_results():
-    data = load_json(f"{DATA_DIR}/lms_practice_result_2102555.csv.json")
-    return {r["practice_id"]: r for r in data}
+    results = {}
+    for path in sorted(glob.glob(f"{DATA_DIR}/lms_practice_result*.json")):
+        if "detail" in path:
+            continue
+        for r in load_json(path):
+            results[r["practice_id"]] = r
+    return results
 
 
 def load_lms_detail():
     detail = defaultdict(list)
-    for path in sorted(glob.glob(f"{DATA_DIR}/lms_practice_result_detail_2102555*.json")):
+    for path in sorted(glob.glob(f"{DATA_DIR}/lms_practice_result_detail*.json")):
         for row in load_json(path):
             detail[row["practice_id"]].append(row)
     return detail
 
 
 def load_dt_sessions():
-    data = load_json(f"{DATA_DIR}/vh_digital_teacher.learning_sessions_2102555_1.json")
     by_lesson = defaultdict(list)
-    for s in data:
-        eid = s.get("erpLessonId", "")
-        if eid.isdigit():
-            by_lesson[int(eid)].append(s)
+    for path in sorted(glob.glob(f"{DATA_DIR}/vh_digital_teacher.learning_sessions*.json")):
+        for s in load_json(path):
+            eid = s.get("erpLessonId", "")
+            if str(eid).isdigit():
+                by_lesson[int(eid)].append(s)
     return by_lesson
 
 
 def load_dt_results():
-    data = load_json(f"{DATA_DIR}/vh_digital_teacher.learning_results_2102555_1.json")
     by_lesson = defaultdict(list)
-    for r in data:
-        eid = r.get("erpLessonId", "")
-        if eid.isdigit():
-            by_lesson[int(eid)].append(r)
+    for path in sorted(glob.glob(f"{DATA_DIR}/vh_digital_teacher.learning_results*.json")):
+        for r in load_json(path):
+            eid = r.get("erpLessonId", "")
+            if str(eid).isdigit():
+                by_lesson[int(eid)].append(r)
     return by_lesson
 
 
@@ -286,8 +319,23 @@ def build_homework_practice(lms_id, pr_by_pid, detail_by_pid):
 # ---------------------------------------------------------------------------
 
 def main():
+    global DATA_DIR, STUDENT_ID, OUTPUT_FILE
+
+    import argparse
     import os
-    os.makedirs("output", exist_ok=True)
+
+    parser = argparse.ArgumentParser(description="Export questions for student learning data.")
+    parser.add_argument(
+        "student_id", nargs="?", type=int, default=2102555,
+        help="Student ID (folder under data/). Default: 2102555",
+    )
+    args = parser.parse_args()
+
+    STUDENT_ID = args.student_id
+    DATA_DIR = f"data/{STUDENT_ID}"
+    OUTPUT_FILE = f"output/{STUDENT_ID}/questions_export.json"
+
+    os.makedirs(f"output/{STUDENT_ID}", exist_ok=True)
 
     print("Loading data...")
     tutor_by_lesson = load_tutor_lessons()
@@ -298,20 +346,6 @@ def main():
 
     active_ids = set(tutor_by_lesson.keys()) | set(dt_sessions.keys())
 
-    # Load program_lesson metadata for title/desc fallback
-    program_meta = {}
-    for path in sorted(glob.glob(f"{DATA_DIR}/program*lesson*.json")):
-        raw = load_json(path)
-        data_list = raw.get("data", raw) if isinstance(raw, dict) else raw
-        for lesson in data_list:
-            lid = lesson["id"]
-            if lid not in program_meta:
-                program_meta[lid] = {
-                    "title": (lesson.get("title") or "").strip(),
-                    "desc": (lesson.get("desc") or "").strip(),
-                    "program_id": lesson.get("program_id"),
-                }
-
     print(f"Processing {len(active_ids)} lessons...")
 
     lessons_export = []
@@ -320,10 +354,9 @@ def main():
 
     for lid in sorted(active_ids):
         tutor = tutor_by_lesson.get(lid, {})
-        meta = program_meta.get(lid, {})
 
-        title = meta.get("title") or tutor.get("title") or None
-        desc = meta.get("desc") or tutor.get("desc") or None
+        title = tutor.get("title") or None
+        desc = tutor.get("desc") or None
 
         results = dt_results.get(lid, [])
         sessions = dt_sessions.get(lid, [])
@@ -363,7 +396,7 @@ def main():
 
         lessons_export.append({
             "lesson_id": lid,
-            "program_id": meta.get("program_id"),
+            "program_id": None,
             "level": tutor.get("level"),
             "position": tutor.get("position"),
             "title": title,
@@ -392,7 +425,7 @@ def main():
     lessons_export.sort(key=lambda l: l["last_activity_date"] or "0000", reverse=True)
 
     output = {
-        "student_id": 2102555,
+        "student_id": STUDENT_ID,
         "exported_at": str(TODAY),
         "total_lessons": len(lessons_export),
         "stats": stats,

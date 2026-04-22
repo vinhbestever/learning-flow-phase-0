@@ -13,22 +13,21 @@ from __future__ import annotations
 import asyncio
 import json
 import os
-from pathlib import Path
 
 from openai import AsyncOpenAI
 
-from web.backend.config import DIAGNOSTIC_PATH as DIAGNOSTIC_PATH
-from web.backend.config import HOMEWORK_PATH as HOMEWORK_PATH
-from web.backend.config import QUESTIONS_EXPORT_PATH as QUESTIONS_EXPORT_PATH
-from web.backend.config import STUDENT_CONTEXT_PATH as STUDENT_CONTEXT_PATH
+from web.backend.config import student_paths
 
 _pipeline_lock = asyncio.Lock()
 
 
-async def run_pipeline_ws(send) -> None:
+async def run_pipeline_ws(send, student_id: int) -> None:
     """
     send: async callable that accepts a dict and sends it as JSON over WebSocket.
+    student_id: integer student ID — determines which output/{student_id}/ paths to use.
     """
+    paths = student_paths(student_id)
+
     if _pipeline_lock.locked():
         await send({"type": "error", "text": "Pipeline đang chạy — vui lòng thử lại sau"})
         return
@@ -37,8 +36,8 @@ async def run_pipeline_ws(send) -> None:
         await send({"type": "error", "text": "OPENAI_API_KEY chưa được cấu hình"})
         return
 
-    for path in (STUDENT_CONTEXT_PATH, QUESTIONS_EXPORT_PATH):
-        if not Path(path).exists():
+    for path in (paths["context"], paths["questions"]):
+        if not path.exists():
             await send({"type": "error", "text": f"{path} không tồn tại — chạy preprocess.py trước"})
             return
 
@@ -48,13 +47,12 @@ async def run_pipeline_ws(send) -> None:
         loop = asyncio.get_running_loop()
 
         def _load():
-            sc = json.loads(Path(STUDENT_CONTEXT_PATH).read_text(encoding="utf-8"))
-            qe = json.loads(Path(QUESTIONS_EXPORT_PATH).read_text(encoding="utf-8"))
+            sc = json.loads(paths["context"].read_text(encoding="utf-8"))
+            qe = json.loads(paths["questions"].read_text(encoding="utf-8"))
             return sc, qe
 
         student_context, questions_export = await loop.run_in_executor(None, _load)
 
-        # Step 1: build context
         await send({"type": "step", "text": "[1/3] Đang phân tích học sinh..."})
 
         from agents.context_builder import build_context
@@ -64,7 +62,6 @@ async def run_pipeline_ws(send) -> None:
 
         tiered_candidates, question_pool = await loop.run_in_executor(None, _build)
 
-        # Step 2: diagnostic — stream tokens
         await send({"type": "step", "text": "[2/3] Đang chạy diagnostic agent (GPT-4o)..."})
 
         from agents.diagnostic_agent import SYSTEM_PROMPT, build_prompt
@@ -88,9 +85,8 @@ async def run_pipeline_ws(send) -> None:
                 diagnostic_text += token
                 await send({"type": "token", "text": token})
 
-        Path(DIAGNOSTIC_PATH).write_text(diagnostic_text, encoding="utf-8")
+        paths["diagnostic"].write_text(diagnostic_text, encoding="utf-8")
 
-        # Step 3: selector
         await send({"type": "step", "text": "[3/3] Đang chọn câu hỏi bài tập..."})
 
         from agents.selector_agent import run_selector
@@ -99,7 +95,7 @@ async def run_pipeline_ws(send) -> None:
             return run_selector(
                 diagnostic_text=diagnostic_text,
                 question_pool=question_pool,
-                save_path=HOMEWORK_PATH,
+                save_path=str(paths["homework"]),
             )
 
         homework = await loop.run_in_executor(None, _select)

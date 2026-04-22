@@ -1,13 +1,16 @@
 """
-Preprocess raw learning data for student 2102555.
+Preprocess raw learning data for a given student.
 
-Output: output/student_context.json
+Usage:
+    python preprocess.py [student_id]   (default: 2102555)
+
+Output: output/{student_id}/student_context.json
 
 Designed for a two-agent pipeline:
   Agent 1 (Analysis)  — reads full context, produces weakness analysis
   Agent 2 (Assignment)— reads analysis + scored_candidates, selects 10-15 exercises
 
-Key additions vs v1:
+Key features:
   - link_practice URL per bai_tap / luyen_tap (agent can generate assignment links)
   - days_since_last_practice + forgetting_score per lesson (Ebbinghaus, no prior reps)
   - weakness_score per lesson (composite of homework + free speaking)
@@ -15,6 +18,10 @@ Key additions vs v1:
   - scored_candidates list (top lessons pre-ranked for Agent 2)
   - worst_lms_questions per lesson (question-level failures from detail records)
   - AUDIO subtypes separated: pronunciation_drill vs free_speaking
+
+Supports two tutor_lesson file formats:
+  - 2102555 style: 'type' field = "Bài tập"/"Luyện tập", 'id' = lesson_id
+  - 2102553 style: 'title' = section type, 'class_lesson_id' = lesson_id (erpLessonId)
 """
 
 import glob
@@ -23,7 +30,9 @@ import math
 from collections import defaultdict
 from datetime import date
 
+# Set by main() before any loader is called
 DATA_DIR = "data"
+STUDENT_ID = 2102555
 OUTPUT_FILE = "output/student_context.json"
 
 TODAY = date(2026, 4, 21)           # injected reference date
@@ -31,6 +40,12 @@ EBBINGHAUS_STABILITY_DAYS = 1.0     # default stability for first exposure (no r
 WORST_SPEAKING_LIMIT = 5
 WORST_LMS_Q_LIMIT = 5
 CANDIDATE_POOL_SIZE = 20            # top N lessons pre-ranked for Agent 2
+
+SECTION_TYPE_MAP = {
+    "Bài tập": "Bài tập",
+    "Luyện tập": "Luyện tập",
+    "Bài luyện tập": "Luyện tập",  # alias used in some exports
+}
 
 
 # ---------------------------------------------------------------------------
@@ -42,82 +57,78 @@ def load_json(path):
         return json.load(f)
 
 
-def load_program_lessons():
-    """
-    Returns:
-      lessons:  lesson_id -> {lesson_id, program_id, position, title, desc}
-      lms_to_link: lms_id -> {link_practice, lms_link}
-    """
-    lessons = {}
-    lms_to_link = {}
-
-    for path in sorted(glob.glob(f"{DATA_DIR}/program*lesson*.json")):
-        raw = load_json(path)
-        data = raw.get("data", raw) if isinstance(raw, dict) else raw
-
-        for lesson in data:
-            lid = lesson["id"]
-            if lid not in lessons:
-                lessons[lid] = {
-                    "lesson_id": lid,
-                    "program_id": lesson.get("program_id"),
-                    "position": lesson.get("position"),
-                    "title": (lesson.get("title") or "").strip(),
-                    "desc": (lesson.get("desc") or "").strip(),
-                }
-            for sec in lesson.get("tutor_program_lesson_sections", []):
-                lms_id = sec.get("lms_id")
-                if lms_id and (sec.get("link_practice") or sec.get("lms_link")):
-                    lms_to_link[lms_id] = {
-                        "link_practice": sec.get("link_practice"),
-                        "lms_link": sec.get("lms_link"),
-                    }
-
-    return lessons, lms_to_link
-
-
 def load_tutor_lessons():
     """
     Returns:
       by_lesson: lesson_id -> {level, title, desc, position, "Bài tập": {...}, "Luyện tập": {...}}
       lms_to_lesson: lms_id -> (lesson_id, section_type)
+
+    Handles two export formats:
+      - 'type' field present: lesson_id = item['id'], section_type = item['type']
+      - 'type' field absent:  lesson_id = item['class_lesson_id'], section_type = item['title']
     """
-    data = load_json(f"{DATA_DIR}/tutor_lessons_2102555.json")
+    paths = sorted(glob.glob(f"{DATA_DIR}/tutor_lesson*.json"))
+    if not paths:
+        return {}, {}
+
+    all_items = []
+    for path in paths:
+        all_items.extend(load_json(path))
+
+    # Detect format: 2102555 has truthy 'type'; 2102553 has None/missing 'type'
+    has_type_field = any(item.get("type") for item in all_items)
+
     by_lesson = {}
     lms_to_lesson = {}
 
-    for item in data:
-        lid = item["id"]
-        section_type = item["type"]
-        lms_id = item["lms_id"]
+    for item in all_items:
+        if has_type_field:
+            lid = item["id"]
+            section_type = SECTION_TYPE_MAP.get(item.get("type", ""), item.get("type", ""))
+            lesson_title = (item.get("title") or "").strip()
+            lesson_desc = (item.get("desc") or "").strip()
+        else:
+            lid = item["class_lesson_id"]
+            section_type = SECTION_TYPE_MAP.get(item.get("title", ""), item.get("title", ""))
+            lesson_title = ""  # title holds section type in this format
+            lesson_desc = (item.get("desc") or "").strip()
+
+        lms_id = item.get("lms_id")
 
         if lid not in by_lesson:
             by_lesson[lid] = {
                 "level": item.get("level"),
-                "title": (item.get("title") or "").strip(),
-                "desc": (item.get("desc") or "").strip(),
+                "title": lesson_title,
+                "desc": lesson_desc,
                 "position": item.get("position"),
             }
-        by_lesson[lid][section_type] = {
-            "lms_id": lms_id,
-            "lms_num_question": item.get("lms_num_question", 0),
-            "completed_lesson": item.get("completed_lesson", 0),
-        }
-        lms_to_lesson[lms_id] = (lid, section_type)
+        if section_type in ("Bài tập", "Luyện tập"):
+            by_lesson[lid][section_type] = {
+                "lms_id": lms_id,
+                "lms_num_question": item.get("lms_num_question", 0),
+                "completed_lesson": item.get("completed_lesson", 0),
+            }
+        if lms_id:
+            lms_to_lesson[lms_id] = (lid, section_type)
 
     return by_lesson, lms_to_lesson
 
 
 def load_lms_practice_results():
     """Returns dict: practice_id -> result record."""
-    data = load_json(f"{DATA_DIR}/lms_practice_result_2102555.csv.json")
-    return {r["practice_id"]: r for r in data}
+    results = {}
+    for path in sorted(glob.glob(f"{DATA_DIR}/lms_practice_result*.json")):
+        if "detail" in path:
+            continue
+        for r in load_json(path):
+            results[r["practice_id"]] = r
+    return results
 
 
 def load_lms_detail():
     """Returns dict: practice_id -> [detail_row, ...]."""
     detail = defaultdict(list)
-    for path in sorted(glob.glob(f"{DATA_DIR}/lms_practice_result_detail_2102555*.json")):
+    for path in sorted(glob.glob(f"{DATA_DIR}/lms_practice_result_detail*.json")):
         for row in load_json(path):
             detail[row["practice_id"]].append(row)
     return detail
@@ -125,23 +136,23 @@ def load_lms_detail():
 
 def load_dt_sessions():
     """Returns dict: lesson_id (int) -> [session, ...]."""
-    data = load_json(f"{DATA_DIR}/vh_digital_teacher.learning_sessions_2102555_1.json")
     by_lesson = defaultdict(list)
-    for s in data:
-        eid = s.get("erpLessonId", "")
-        if eid.isdigit():
-            by_lesson[int(eid)].append(s)
+    for path in sorted(glob.glob(f"{DATA_DIR}/vh_digital_teacher.learning_sessions*.json")):
+        for s in load_json(path):
+            eid = s.get("erpLessonId", "")
+            if str(eid).isdigit():
+                by_lesson[int(eid)].append(s)
     return by_lesson
 
 
 def load_dt_results():
     """Returns dict: lesson_id (int) -> [result, ...]."""
-    data = load_json(f"{DATA_DIR}/vh_digital_teacher.learning_results_2102555_1.json")
     by_lesson = defaultdict(list)
-    for r in data:
-        eid = r.get("erpLessonId", "")
-        if eid.isdigit():
-            by_lesson[int(eid)].append(r)
+    for path in sorted(glob.glob(f"{DATA_DIR}/vh_digital_teacher.learning_results*.json")):
+        for r in load_json(path):
+            eid = r.get("erpLessonId", "")
+            if str(eid).isdigit():
+                by_lesson[int(eid)].append(r)
     return by_lesson
 
 
@@ -554,28 +565,19 @@ def latest_activity_date(*dates):
 
 def build_student_context():
     print("Loading data files...")
-    program_lessons, lms_to_link = load_program_lessons()
     tutor_by_lesson, _ = load_tutor_lessons()
     pr_by_pid = load_lms_practice_results()
     detail_by_pid = load_lms_detail()
     dt_sessions = load_dt_sessions()
     dt_results = load_dt_results()
 
-    # program_lesson files = full curriculum catalog (all levels, all programs)
-    # tutor_lessons        = lessons actually assigned to this student
-    # DT session keys      = lessons the student entered a Digital Teacher session for
-    #
-    # Only include lessons where the student has real activity:
-    #   tutor_lessons   → student is enrolled (has lms_id to submit homework)
-    #   dt_sessions     → student entered a Digital Teacher session
-    # Exclude: program_lesson-only IDs (catalog entries never assigned to student)
+    # tutor_lessons = lessons the student is enrolled in (has lms_id for homework)
+    # dt_sessions   = lessons the student entered a Digital Teacher session for
     active_lesson_ids = set(tutor_by_lesson.keys()) | set(dt_sessions.keys())
-    print(f"Processing {len(active_lesson_ids)} student-active lessons "
-          f"(excluded {len(set(program_lessons.keys()) - active_lesson_ids)} curriculum-catalog-only entries)")
+    print(f"Processing {len(active_lesson_ids)} student-active lessons")
 
     records = []
     for lid in sorted(active_lesson_ids):
-        lesson_meta = program_lessons.get(lid, {})
         tutor_entry = tutor_by_lesson.get(lid, {})
 
         in_class = build_dt_in_class(dt_sessions.get(lid, []), dt_results.get(lid, []))
@@ -601,11 +603,11 @@ def build_student_context():
 
         records.append({
             "lesson_id": lid,
-            "program_id": lesson_meta.get("program_id"),
+            "program_id": None,
             "level": tutor_entry.get("level"),
-            "position": lesson_meta.get("position") or tutor_entry.get("position"),
-            "title": lesson_meta.get("title") or tutor_entry.get("title") or None,
-            "desc": lesson_meta.get("desc") or tutor_entry.get("desc") or None,
+            "position": tutor_entry.get("position"),
+            "title": tutor_entry.get("title") or None,
+            "desc": tutor_entry.get("desc") or None,
             "status": status,
             "last_activity_date": last_date_str,
             "days_since_last_practice": days_since,
@@ -715,9 +717,8 @@ def build_summary(records):
         for at, cnt in ic.get("free_speaking_answer_type_dist", {}).items():
             all_answer_types[at] += cnt
 
-    completed = [r for r in records if r["status"] == "completed"]
     return {
-        "student_id": 2102555,
+        "student_id": STUDENT_ID,
         "reference_date": str(TODAY),
         "total_lessons": total,
         "lessons_by_status": dict(by_status),
@@ -739,8 +740,23 @@ def build_summary(records):
 
 
 def main():
+    global DATA_DIR, STUDENT_ID, OUTPUT_FILE
+
+    import argparse
     import os
-    os.makedirs("output", exist_ok=True)
+
+    parser = argparse.ArgumentParser(description="Preprocess student learning data.")
+    parser.add_argument(
+        "student_id", nargs="?", type=int, default=2102555,
+        help="Student ID (folder under data/). Default: 2102555",
+    )
+    args = parser.parse_args()
+
+    STUDENT_ID = args.student_id
+    DATA_DIR = f"data/{STUDENT_ID}"
+    OUTPUT_FILE = f"output/{STUDENT_ID}/student_context.json"
+
+    os.makedirs(f"output/{STUDENT_ID}", exist_ok=True)
 
     records = build_student_context()
     summary = build_summary(records)
@@ -755,7 +771,6 @@ def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    completed = [r for r in records if r["status"] == "completed"]
     print(f"\nDone. {len(records)} lessons → {OUTPUT_FILE}")
     print(f"Status: {summary['lessons_by_status']}")
     print(f"Scored candidates (Agent 2 pool): {len(scored_candidates)}")

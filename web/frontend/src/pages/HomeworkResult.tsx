@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 interface SpeakingItem {
   question: string
@@ -184,23 +184,31 @@ function StudentAttemptPanel({ q }: { q: Question }) {
 }
 
 export default function HomeworkResult() {
+  const { studentId } = useParams<{ studentId: string }>()
   const [data, setData] = useState<HomeworkData | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [showDiag, setShowDiag] = useState(false)
 
   useEffect(() => {
-    fetch('/api/homework')
+    if (!studentId) return
+    setData(null)
+    setError(null)
+    fetch(`/api/students/${studentId}/homework`)
       .then((r) => (r.ok ? r.json() : errorMessage(r).then((msg) => Promise.reject(msg))))
       .then(setData)
       .catch((e: unknown) => setError(String(e)))
-  }, [])
+  }, [studentId])
+
+  if (!studentId) {
+    return <p className="text-[var(--muted)]">Thiếu mã học sinh trong URL.</p>
+  }
 
   if (error) {
     return (
       <div className="space-y-4 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 shadow-[var(--shadow-card)]">
         <p className="text-[var(--coral)]">{error}</p>
         <Link
-          to="/generate"
+          to="../generate"
           className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--mint)] underline-offset-4 hover:underline"
         >
           Chạy pipeline tạo bài tập

@@ -3,26 +3,40 @@ Entry point for the homework agent pipeline.
 
 Usage:
     export OPENAI_API_KEY=sk-...
-    python agent_pipeline.py
+    python agent_pipeline.py [student_id]
 
 Prerequisites:
-    output/student_context.json   (run preprocess.py first)
-    output/questions_export.json  (run export_questions.py first)
+    output/{student_id}/student_context.json   (run preprocess.py first)
+    output/{student_id}/questions_export.json  (run export_questions.py first)
 
 Outputs:
-    output/diagnostic_output.txt
-    output/homework_assignment.json
+    output/{student_id}/diagnostic_output.txt
+    output/{student_id}/homework_assignment.json
 """
 
+import argparse
 import json
 import os
 import sys
 from pathlib import Path
 
-STUDENT_CONTEXT_PATH = "output/student_context.json"
-QUESTIONS_EXPORT_PATH = "output/questions_export.json"
-DIAGNOSTIC_OUTPUT = "output/diagnostic_output.txt"
-HOMEWORK_OUTPUT = "output/homework_assignment.json"
+
+def _parse_args():
+    parser = argparse.ArgumentParser(description="Run homework agent pipeline.")
+    parser.add_argument(
+        "student_id", nargs="?", type=int, default=2102555,
+        help="Student ID. Default: 2102555",
+    )
+    return parser.parse_args()
+
+
+_args = _parse_args()
+_out = f"output/{_args.student_id}"
+
+STUDENT_CONTEXT_PATH = f"{_out}/student_context.json"
+QUESTIONS_EXPORT_PATH = f"{_out}/questions_export.json"
+DIAGNOSTIC_OUTPUT = f"{_out}/diagnostic_output.txt"
+HOMEWORK_OUTPUT = f"{_out}/homework_assignment.json"
 
 
 def load_json(path: str) -> dict:
@@ -40,7 +54,7 @@ def main():
         print("ERROR: OPENAI_API_KEY environment variable not set.")
         sys.exit(1)
 
-    Path("output").mkdir(exist_ok=True)
+    Path(_out).mkdir(parents=True, exist_ok=True)
 
     print("Loading data files...")
     student_context = load_json(STUDENT_CONTEXT_PATH)

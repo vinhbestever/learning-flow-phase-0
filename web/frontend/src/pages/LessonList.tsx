@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { CollapsibleModule } from '../components/CollapsibleModule'
 import { groupLessonsByModule } from '../lib/lessonGroups'
 
@@ -25,17 +25,25 @@ async function errorMessage(r: Response): Promise<string> {
 }
 
 export default function LessonList() {
+  const { studentId } = useParams<{ studentId: string }>()
   const [lessons, setLessons] = useState<Lesson[] | null>(null)
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    fetch('/api/lessons')
+    if (!studentId) return
+    setLessons(null)
+    setError(null)
+    fetch(`/api/students/${studentId}/lessons`)
       .then((r) => (r.ok ? r.json() : errorMessage(r).then((msg) => Promise.reject(msg))))
       .then(setLessons)
       .catch((e: unknown) => setError(String(e)))
-  }, [])
+  }, [studentId])
 
   const grouped = useMemo(() => (lessons ? groupLessonsByModule(lessons) : []), [lessons])
+
+  if (!studentId) {
+    return <p className="text-[var(--muted)]">Thiếu mã học sinh trong URL.</p>
+  }
 
   if (error) {
     return (
@@ -84,7 +92,7 @@ export default function LessonList() {
               {rows.map((l, i) => (
                 <li key={l.lesson_id}>
                   <Link
-                    to={`/lessons/${l.lesson_id}`}
+                    to={`${l.lesson_id}`}
                     title={l.desc ? l.desc.slice(0, 280) : undefined}
                     className="flex min-h-[3rem] items-center gap-2 rounded-xl border border-transparent px-2 py-2 text-sm outline-none transition hover:border-[var(--mint)]/35 hover:bg-[var(--surface)] focus-visible:ring-2 focus-visible:ring-[var(--mint)]"
                   >

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 type WsMsg =
   | { type: 'step'; text: string }
@@ -54,6 +54,7 @@ function RunningIndicator() {
 }
 
 export default function GenerateHomework() {
+  const { studentId } = useParams<{ studentId: string }>()
   const [steps, setSteps] = useState<string[]>([])
   const [diagnostic, setDiagnostic] = useState('')
   const [status, setStatus] = useState<'idle' | 'running' | 'done' | 'error'>('idle')
@@ -73,13 +74,18 @@ export default function GenerateHomework() {
   }, [diagnostic])
 
   function start() {
+    if (!studentId) {
+      setErrorMsg('Thiếu mã học sinh trong URL')
+      setStatus('error')
+      return
+    }
     setSteps([])
     setDiagnostic('')
     setErrorMsg('')
     setStatus('running')
 
     const proto = window.location.protocol === 'https:' ? 'wss:' : 'ws:'
-    const ws = new WebSocket(`${proto}//${window.location.host}/api/ws/generate`)
+    const ws = new WebSocket(`${proto}//${window.location.host}/api/ws/students/${studentId}/generate`)
     wsRef.current = ws
 
     ws.onmessage = (e) => {
@@ -105,6 +111,12 @@ export default function GenerateHomework() {
   const isRunning = status === 'running'
   const isThinking = isRunning && diagnostic === ''
   const isStreaming = isRunning && diagnostic !== ''
+
+  if (!studentId) {
+    return (
+      <p className="text-[var(--muted)]">Thiếu mã học sinh trong URL.</p>
+    )
+  }
 
   return (
     <div className="space-y-8">
@@ -240,11 +252,11 @@ export default function GenerateHomework() {
             Tạo bài tập thành công
           </p>
           <p className="mt-2 text-sm text-[var(--muted)]">
-            File đã ghi vào <code>output/</code> — mở trang kết quả để xem 15 câu.
+            File đã ghi vào <code>output/{studentId}/</code> — mở trang kết quả để xem 15 câu.
           </p>
           <button
             type="button"
-            onClick={() => navigate('/homework')}
+            onClick={() => navigate('../homework')}
             className="mt-5 rounded-full bg-[var(--ink)] px-6 py-2.5 text-sm font-bold text-[var(--on-primary)] transition hover:opacity-90"
           >
             Xem bài tập →

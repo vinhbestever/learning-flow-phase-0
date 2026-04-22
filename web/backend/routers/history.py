@@ -1,21 +1,20 @@
 import json
-from pathlib import Path
 
 from fastapi import APIRouter, HTTPException
 
-from web.backend.config import STUDENT_CONTEXT_PATH
+from web.backend.config import student_paths
 
 router = APIRouter(prefix="/api")
 
 
-@router.get("/history")
-def get_learning_history():
-    """Timeline từ lessons — toàn bộ hoạt động & điểm yếu theo từng bài học."""
-    p = Path(STUDENT_CONTEXT_PATH)
+@router.get("/students/{student_id}/history")
+def get_learning_history(student_id: int):
+    paths = student_paths(student_id)
+    p = paths["context"]
     if not p.exists():
         raise HTTPException(
             status_code=404,
-            detail="student_context.json not found — run preprocess.py first",
+            detail=f"student_context.json not found for student {student_id} — run preprocess.py first",
         )
     raw = json.loads(p.read_text(encoding="utf-8"))
     summary = raw.get("summary") or {}
@@ -42,7 +41,6 @@ def get_learning_history():
                 "forgetting_score": r.get("forgetting_score"),
                 "weakness_score": r.get("weakness_score"),
                 "composite_priority_score": r.get("composite_priority_score"),
-                # Trên lớp
                 "in_class": {
                     "participated": in_class.get("participated", False),
                     "is_completed": in_class.get("is_completed", False),
@@ -63,7 +61,6 @@ def get_learning_history():
                         for w in speaking_items[:3]
                     ],
                 },
-                # Bài tập về nhà
                 "homework": {
                     "attempted": hw.get("attempted", False),
                     "bai_tap": hw.get("bai_tap"),
@@ -84,11 +81,7 @@ def get_learning_history():
             }
         )
 
-    # Gần đây nhất trước (date descending)
-    items.sort(
-        key=lambda x: x.get("last_activity_date") or "",
-        reverse=True,
-    )
+    items.sort(key=lambda x: x.get("last_activity_date") or "", reverse=True)
 
     return {
         "student_id": summary.get("student_id"),

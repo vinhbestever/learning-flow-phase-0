@@ -1,20 +1,18 @@
 import json
-from pathlib import Path
 
 from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect
 
-from web.backend.config import DIAGNOSTIC_PATH as DIAGNOSTIC_PATH
-from web.backend.config import HOMEWORK_PATH as HOMEWORK_PATH
-from web.backend.config import STUDENT_CONTEXT_PATH as STUDENT_CONTEXT_PATH
+from web.backend.config import student_paths
 from web.backend.pipeline_ws import run_pipeline_ws
 
 router = APIRouter(prefix="/api")
 
 
-@router.get("/homework")
-def get_homework():
-    hw_p = Path(HOMEWORK_PATH)
-    diag_p = Path(DIAGNOSTIC_PATH)
+@router.get("/students/{student_id}/homework")
+def get_homework(student_id: int):
+    paths = student_paths(student_id)
+    hw_p = paths["homework"]
+    diag_p = paths["diagnostic"]
     if not hw_p.exists() or not diag_p.exists():
         raise HTTPException(
             status_code=404,
@@ -23,9 +21,8 @@ def get_homework():
     hw = json.loads(hw_p.read_text(encoding="utf-8"))
     diag = diag_p.read_text(encoding="utf-8")
 
-    # Enrich with student context if available
     ctx_by_lesson: dict = {}
-    ctx_p = Path(STUDENT_CONTEXT_PATH)
+    ctx_p = paths["context"]
     if ctx_p.exists():
         ctx = json.loads(ctx_p.read_text(encoding="utf-8"))
         for c in ctx.get("scored_candidates", []):
@@ -48,15 +45,15 @@ def get_homework():
     return {"homework": homework_list, "diagnostic": diag}
 
 
-@router.websocket("/ws/generate")
-async def ws_generate(websocket: WebSocket):
+@router.websocket("/ws/students/{student_id}/generate")
+async def ws_generate(websocket: WebSocket, student_id: int):
     await websocket.accept()
 
     async def send(msg: dict):
         await websocket.send_json(msg)
 
     try:
-        await run_pipeline_ws(send)
+        await run_pipeline_ws(send, student_id)
     except WebSocketDisconnect:
         pass
     except Exception as e:

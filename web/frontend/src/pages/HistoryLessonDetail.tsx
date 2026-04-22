@@ -363,27 +363,36 @@ function PracticePanel({ label, block }: { label: string; block: PracticeBlock |
 // ── Page ───────────────────────────────────────────────────────────────── //
 
 export default function HistoryLessonDetail() {
-  const { lessonId } = useParams<{ lessonId: string }>()
+  const { studentId, lessonId } = useParams<{ studentId: string; lessonId: string }>()
   const id = lessonId ? parseInt(lessonId, 10) : NaN
   const [data, setData] = useState<LessonDetailData | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [tab, setTab] = useState<'inclass' | 'homework'>('inclass')
 
   useEffect(() => {
-    if (Number.isNaN(id)) { setError('Mã bài học không hợp lệ'); return }
+    if (Number.isNaN(id)) {
+      setError('Mã bài học không hợp lệ')
+      return
+    }
+    if (!studentId) {
+      setError('Thiếu mã học sinh')
+      return
+    }
     setError(null)
     setData(null)
-    fetch(`/api/lessons/${id}`)
+    fetch(`/api/students/${studentId}/lessons/${id}`)
       .then((r) => (r.ok ? r.json() : errorMessage(r).then((msg) => Promise.reject(msg))))
       .then(setData)
       .catch((e: unknown) => setError(String(e)))
-  }, [id])
+  }, [studentId, id])
 
-  if (Number.isNaN(id)) {
+  if (Number.isNaN(id) || !studentId) {
     return (
       <p className="text-[var(--coral)]">
         Không tìm thấy bài học.{' '}
-        <Link className="font-semibold text-[var(--mint)] underline" to="/history">← Lịch sử học tập</Link>
+        <Link className="font-semibold text-[var(--mint)] underline" to="..">
+          ← Lịch sử học tập
+        </Link>
       </p>
     )
   }
@@ -392,7 +401,7 @@ export default function HistoryLessonDetail() {
     return (
       <div className="rounded-2xl border border-[var(--coral)]/30 bg-[#fff1f2] p-4 shadow-[var(--shadow-card)]">
         <p className="text-[var(--coral)]">{error}</p>
-        <Link className="mt-3 inline-block text-sm font-semibold text-[var(--mint)] underline" to="/history">
+        <Link className="mt-3 inline-block text-sm font-semibold text-[var(--mint)] underline" to="..">
           ← Lịch sử học tập
         </Link>
       </div>
@@ -422,7 +431,7 @@ export default function HistoryLessonDetail() {
     <div className="space-y-5">
       {/* Breadcrumb */}
       <nav className="text-xs text-[var(--muted)]">
-        <Link to="/history" className="font-medium text-[var(--mint)] hover:underline">Lịch sử học tập</Link>
+        <Link to=".." className="font-medium text-[var(--mint)] hover:underline">Lịch sử học tập</Link>
         <span className="mx-1.5 opacity-50">/</span>
         <span className="text-[var(--ink)]">Chi tiết</span>
       </nav>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 
 interface StudentSummary {
   student_id: number
@@ -28,15 +29,23 @@ async function errorMessage(r: Response): Promise<string> {
 }
 
 export default function StudentProfile() {
+  const { studentId } = useParams<{ studentId: string }>()
   const [data, setData] = useState<StudentSummary | null>(null)
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    fetch('/api/student')
+    if (!studentId) return
+    setData(null)
+    setError(null)
+    fetch(`/api/students/${studentId}/profile`)
       .then((r) => (r.ok ? r.json() : errorMessage(r).then((msg) => Promise.reject(msg))))
       .then(setData)
       .catch((e: unknown) => setError(String(e)))
-  }, [])
+  }, [studentId])
+
+  if (!studentId) {
+    return <p className="text-[var(--muted)]">Thiếu mã học sinh trong URL.</p>
+  }
 
   const skills = data ? Object.entries(data.overall_homework_skill_breakdown) : []
   const completed = data ? (data.lessons_by_status['completed'] ?? 0) : 0

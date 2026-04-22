@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { CollapsibleModule } from '../components/CollapsibleModule'
 import { groupHistoryByMonth } from '../lib/lessonGroups'
 
@@ -238,7 +238,7 @@ function HomeworkPanel({ data }: { data: HomeworkSummary }) {
   )
 }
 
-function LessonCard({ item }: { item: HistoryItem }) {
+function LessonCard({ item, studentId }: { item: HistoryItem; studentId: string }) {
   const priorityScore = item.composite_priority_score
   const urgentClass = priorityScore != null && priorityScore > 0.7
     ? 'border-l-2 border-l-rose-300'
@@ -248,7 +248,7 @@ function LessonCard({ item }: { item: HistoryItem }) {
     <details className={`group [&_summary::-webkit-details-marker]:hidden ${urgentClass}`}>
       <summary className="flex cursor-pointer list-none flex-wrap items-center gap-x-2 gap-y-1 px-3 py-2.5 text-sm hover:bg-[var(--void)]/20">
         <Link
-          to={`/history/${item.lesson_id}`}
+          to={`/students/${studentId}/history/${item.lesson_id}`}
           className="min-w-0 flex-1 truncate font-medium text-[var(--ink)] hover:text-[var(--mint)] hover:underline"
           onClick={(e) => e.stopPropagation()}
         >
@@ -309,7 +309,6 @@ function LessonCard({ item }: { item: HistoryItem }) {
         {/* Footer: scores phụ */}
         {(item.forgetting_score != null || item.weakness_score != null) && (
           <div className="mt-2 flex flex-wrap gap-x-3 gap-y-0.5 border-t border-[var(--border)] pt-2 text-[10px] text-[var(--muted)]">
-            {item.forgetting_score != null && <span>Quên: {pct(item.forgetting_score)}</span>}
             {item.weakness_score != null && <span>Yếu: {item.weakness_score.toFixed(2)}</span>}
             {item.composite_priority_score != null && (
               <span className="ml-auto">Ưu tiên: {item.composite_priority_score.toFixed(2)}</span>
@@ -322,6 +321,7 @@ function LessonCard({ item }: { item: HistoryItem }) {
 }
 
 export default function LearningHistory() {
+  const { studentId } = useParams<{ studentId: string }>()
   const [data, setData] = useState<HistoryResponse | null>(null)
   const [error, setError] = useState<string | null>(null)
 
@@ -331,11 +331,20 @@ export default function LearningHistory() {
   )
 
   useEffect(() => {
-    fetch('/api/history')
+    if (!studentId) return
+    setData(null)
+    setError(null)
+    fetch(`/api/students/${studentId}/history`)
       .then((r) => (r.ok ? r.json() : errorMessage(r).then((msg) => Promise.reject(msg))))
       .then(setData)
       .catch((e: unknown) => setError(String(e)))
-  }, [])
+  }, [studentId])
+
+  if (!studentId) {
+    return (
+      <p className="text-[var(--muted)]">Thiếu mã học sinh trong URL.</p>
+    )
+  }
 
   if (error) {
     return (
@@ -384,7 +393,7 @@ export default function LearningHistory() {
             >
               <div className="divide-y divide-[var(--border)] rounded-lg border border-[var(--border)] bg-[var(--surface)]">
                 {monthItems.map((item) => (
-                  <LessonCard key={item.lesson_id} item={item} />
+                  <LessonCard key={item.lesson_id} item={item} studentId={studentId} />
                 ))}
               </div>
             </CollapsibleModule>
