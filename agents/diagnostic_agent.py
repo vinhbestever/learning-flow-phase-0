@@ -2,7 +2,7 @@
 Diagnostic agent — GPT-4o, plain text output.
 
 Input:  summary dict + tiered_candidates list
-Output: plain English analysis string (~500-700 words)
+Output: plain Vietnamese analysis string (~500-700 words)
 
 The output is intentionally NOT structured JSON. It serves as a rich
 chain-of-thought briefing for the selector agent.
@@ -15,13 +15,13 @@ import os
 from openai import OpenAI
 
 SYSTEM_PROMPT = """\
-You are an English learning diagnostic specialist analyzing a Vietnamese student's \
-performance data. The student is in Phase 0, levels 4–5.
+Bạn là chuyên gia chẩn đoán học tiếng Anh, phân tích dữ liệu kết quả học tập \
+của một học sinh người Việt. Học sinh đang ở Phase 0, cấp độ 4–5.
 
-Before writing your analysis, identify the 3 most critical error patterns you \
-observe, then expand on each in clear paragraphs. Write in English. \
-No JSON, no bullet lists, no markdown headers. \
-Your output will be read by a question selector agent as a briefing document.\
+Trước khi viết phân tích, hãy xác định 3 mẫu lỗi nghiêm trọng nhất bạn quan sát được, \
+sau đó trình bày chi tiết từng mẫu lỗi trong các đoạn văn rõ ràng. Viết bằng tiếng Việt. \
+Không dùng JSON, không dùng danh sách bullet, không dùng markdown headers. \
+Kết quả phân tích của bạn sẽ được đọc bởi một agent chọn câu hỏi như một tài liệu tóm tắt.\
 """
 
 USER_TEMPLATE = """\

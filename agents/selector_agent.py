@@ -73,14 +73,15 @@ SELECTION RULES:
 - Tie-break: prefer fill-blank > multiple-choice > speaking when signal_type and lesson are equal
 
 REASON FIELD RULES — this is the most important field:
-Write 1–2 sentences per question that are specific to THIS student's actual performance.
+Write 1–2 sentences per question IN VIETNAMESE that are specific to THIS student's actual performance.
 Always reference at least one of: a specific wrong answer they gave, a speaking transcript, a forgetting duration, or a named skill gap from the diagnostic.
 Do NOT write generic labels like "critical signal, grammar practice".
+The reason field MUST be written entirely in Vietnamese.
 
-Good reason examples:
-- "Student wrote 'cost' instead of 'is' in this lesson's fill-blank — a subject-verb agreement error that appeared in 3 separate lessons per the diagnostic. Practiced 20 days ago (fully forgotten)."
-- "Free speaking score of 0/100 in this lesson: student said 'I eat bitter' when asked 'What do you eat?' — targets the open-ended response gap the diagnostic flagged as the weakest skill overall (avg 30.71/100)."
-- "Lesson not practiced for 18 days; student's vocabulary accuracy here was below 70%. Reinforces clothing/shopping terms the diagnostic identified as inconsistently retained."
+Good reason examples (in Vietnamese):
+- "Học sinh điền 'cost' thay vì 'is' trong bài fill-blank này — lỗi chia động từ theo chủ ngữ xuất hiện ở 3 bài học khác nhau theo kết quả chẩn đoán. Bài đã học cách đây 20 ngày (đã quên hoàn toàn)."
+- "Điểm nói tự do 0/100 trong bài này: học sinh nói 'I eat bitter' khi được hỏi 'What do you eat?' — nhắm vào lỗ hổng trả lời câu hỏi mở mà chẩn đoán đã đánh dấu là kỹ năng yếu nhất (trung bình 30.71/100)."
+- "Bài chưa được luyện tập trong 18 ngày; độ chính xác từ vựng của học sinh trong bài này dưới 70%. Củng cố các từ về quần áo/mua sắm mà chẩn đoán xác định là chưa được ghi nhớ ổn định."
 
 Return ONLY valid JSON matching the schema. No markdown, no explanation.\
 """

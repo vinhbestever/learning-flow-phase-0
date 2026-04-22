@@ -1,6 +1,18 @@
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
+// ── Types ──────────────────────────────────────────────────────────────── //
+
+interface PronunciationDrill {
+  expected_transcript: string
+  question_prompt: string | null
+}
+
+interface FreeSpeakingQuestion {
+  question: string
+  question_type: string | null
+}
+
 interface QuestionRow {
   question_id: number | null
   question_folder: string | null
@@ -12,31 +24,31 @@ interface QuestionRow {
 
 interface PracticeBlock {
   practice_id: number | null
-  score: number | null
-  correct: number | null
   total: number | null
-  submitted_date: string | null
   questions: QuestionRow[]
 }
 
-interface LessonDetailData {
+interface InClass {
+  pronunciation_drills: PronunciationDrill[]
+  free_speaking_questions: FreeSpeakingQuestion[]
+}
+
+interface Homework {
+  bai_tap: PracticeBlock | null
+  luyen_tap: PracticeBlock | null
+}
+
+interface LessonContentData {
   lesson_id: number
   title: string | null
   level: number | null
   position: number | null
   desc: string
-  last_activity_date: string | null
-  program_id: number | null
-  homework: {
-    bai_tap: PracticeBlock | null
-    luyen_tap: PracticeBlock | null
-  }
-  in_class_summary: {
-    pronunciation_drills: number
-    free_speaking: number
-    interactive: number
-  }
+  in_class: InClass
+  homework: Homework
 }
+
+// ── Helpers ────────────────────────────────────────────────────────────── //
 
 async function errorMessage(r: Response): Promise<string> {
   try {
@@ -44,107 +56,131 @@ async function errorMessage(r: Response): Promise<string> {
     if (typeof e.detail === 'string') return e.detail
     if (Array.isArray(e.detail))
       return e.detail.map((x: { msg?: string }) => x.msg ?? '').filter(Boolean).join(', ')
-  } catch {
-    /* ignore */
-  }
+  } catch { /* ignore */ }
   return r.statusText || 'Lỗi không xác định'
 }
 
-function PracticeBlockPanel({
-  label,
-  block,
-}: {
-  label: string
-  block: PracticeBlock | null
-}) {
-  if (!block || !block.questions?.length) {
-    return (
-      <div className="rounded-xl border border-dashed border-[var(--border)] bg-[var(--elevated)]/40 px-4 py-3 text-sm text-[var(--muted)]">
-        <span className="font-medium text-[var(--ink)]">{label}:</span> chưa có câu hỏi trong export.
-      </div>
-    )
-  }
+// ── Sub-components ─────────────────────────────────────────────────────── //
 
-  const pct =
-    block.total != null && block.total > 0 && block.correct != null
-      ? Math.round((block.correct / block.total) * 100)
-      : null
-  const n = block.questions.length
-
+function PronunciationSection({ drills }: { drills: PronunciationDrill[] }) {
+  if (!drills.length) return (
+    <p className="text-sm italic text-[var(--muted)]">Không có bài phát âm.</p>
+  )
   return (
-    <details className="overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--surface)] [&>summary::-webkit-details-marker]:hidden">
-      <summary className="flex cursor-pointer list-none flex-wrap items-center gap-x-3 gap-y-1 px-4 py-3 text-sm transition hover:bg-[var(--void)]/30">
-        <span className="font-display font-semibold text-[var(--ink)]">{label}</span>
-        <span className="rounded-md bg-[var(--elevated)] px-2 py-0.5 text-xs tabular-nums text-[var(--muted)]">
-          {n} câu
-        </span>
-        {block.score != null && (
-          <span className="text-xs font-semibold text-[var(--mint)]">
-            {(block.score * 100).toFixed(0)}%
-            {pct != null && (
-              <span className="ml-1 font-normal text-[var(--muted)]">
-                ({block.correct}/{block.total})
-              </span>
-            )}
-          </span>
-        )}
-        {block.submitted_date && (
-          <span className="text-xs tabular-nums text-[var(--muted)]">Nộp {block.submitted_date}</span>
-        )}
-        <span className="ml-auto text-xs text-[var(--mint)]">Mở / đóng danh sách ▾</span>
+    <details className="overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--surface)] [&>summary::-webkit-details-marker]:hidden" open>
+      <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-2.5 text-sm font-semibold text-[var(--ink)]">
+        <span>Phát âm ({drills.length} câu)</span>
+        <span className="text-xs font-normal text-[var(--muted)]">▾</span>
       </summary>
-
-      <div className="max-h-[min(65vh,520px)] overflow-y-auto overscroll-contain border-t border-[var(--border)]">
-        <ul className="divide-y divide-[var(--border)]">
-          {block.questions.map((q, i) => (
-            <li key={q.question_id ?? i}>
-              <details className="group/q open:bg-[var(--void)]/20 [&>summary::-webkit-details-marker]:hidden">
-                <summary className="flex cursor-pointer list-none items-start gap-2 px-3 py-2.5 text-left text-xs">
-                  <span className="mt-0.5 w-6 shrink-0 tabular-nums text-[var(--muted)]">{i + 1}.</span>
-                  <span className="min-w-0 flex-1">
-                    {q.question_type && (
-                      <span className="mr-1 inline-block rounded border border-sky-200 bg-sky-50 px-1 py-0.5 text-[10px] font-medium text-sky-900">
-                        {q.question_type}
-                      </span>
-                    )}
-                    {q.requires_media && (
-                      <span className="mr-1 inline-block rounded border border-violet-200 bg-violet-50 px-1 py-0.5 text-[10px] text-violet-900">
-                        media
-                      </span>
-                    )}
-                    <span className="line-clamp-2 text-[var(--ink)]">{q.question_text}</span>
-                  </span>
-                  <span className="shrink-0 text-[10px] text-[var(--muted)]">▼</span>
-                </summary>
-                <div className="space-y-2 border-t border-[var(--border)] bg-[var(--void)]/40 px-3 py-3 pl-11 text-xs leading-relaxed">
-                  <p className="text-[var(--ink)]">{q.question_text}</p>
-                  {q.correct_answer && (
-                    <p className="text-[var(--muted)]">
-                      <span className="font-semibold text-[var(--ink)]">Gợi ý:</span>{' '}
-                      <span className="break-words">{q.correct_answer}</span>
-                    </p>
-                  )}
-                </div>
-              </details>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <ul className="max-h-72 divide-y divide-[var(--border)] overflow-y-auto border-t border-[var(--border)]">
+        {drills.map((d, i) => (
+          <li key={i} className="flex items-start gap-3 px-4 py-2.5 text-sm">
+            <span className="w-6 shrink-0 tabular-nums text-[var(--muted)]">{i + 1}.</span>
+            <div className="min-w-0">
+              <p className="font-medium text-[var(--ink)]">{d.expected_transcript}</p>
+              {d.question_prompt && (
+                <p className="mt-0.5 text-xs italic text-[var(--muted)]">{d.question_prompt}</p>
+              )}
+            </div>
+          </li>
+        ))}
+      </ul>
     </details>
   )
 }
 
+function FreeSpeakingSection({ questions }: { questions: FreeSpeakingQuestion[] }) {
+  if (!questions.length) return (
+    <p className="text-sm italic text-[var(--muted)]">Không có câu hỏi nói tự do.</p>
+  )
+  return (
+    <details className="overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--surface)] [&>summary::-webkit-details-marker]:hidden" open>
+      <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-2.5 text-sm font-semibold text-[var(--ink)]">
+        <span>Nói tự do ({questions.length} câu)</span>
+        <span className="text-xs font-normal text-[var(--muted)]">▾</span>
+      </summary>
+      <ul className="divide-y divide-[var(--border)] border-t border-[var(--border)]">
+        {questions.map((q, i) => (
+          <li key={i} className="flex items-start gap-3 px-4 py-2.5 text-sm">
+            <span className="w-6 shrink-0 tabular-nums text-[var(--muted)]">{i + 1}.</span>
+            <div className="min-w-0 flex-1">
+              <p className="text-[var(--ink)]">{q.question}</p>
+              {q.question_type && (
+                <span className="mt-1 inline-block rounded border border-sky-200 bg-sky-50 px-1.5 py-0.5 text-[10px] font-medium text-sky-800">
+                  {q.question_type}
+                </span>
+              )}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </details>
+  )
+}
+
+function QuestionSection({ label, block }: { label: string; block: PracticeBlock | null }) {
+  if (!block) return (
+    <div className="rounded-xl border border-dashed border-[var(--border)] bg-[var(--elevated)]/40 px-4 py-3 text-sm text-[var(--muted)]">
+      <span className="font-medium text-[var(--ink)]">{label}:</span> không có dữ liệu.
+    </div>
+  )
+  const questions = block.questions ?? []
+  return (
+    <details className="overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--surface)] [&>summary::-webkit-details-marker]:hidden" open>
+      <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-2.5 text-sm font-semibold text-[var(--ink)]">
+        <span>{label} ({questions.length} câu)</span>
+        <span className="text-xs font-normal text-[var(--muted)]">▾</span>
+      </summary>
+      {questions.length === 0 ? (
+        <p className="border-t border-[var(--border)] px-4 py-3 text-sm italic text-[var(--muted)]">Không có câu hỏi.</p>
+      ) : (
+        <ul className="max-h-96 divide-y divide-[var(--border)] overflow-y-auto border-t border-[var(--border)]">
+          {questions.map((q, i) => (
+            <li key={q.question_id ?? i} className="px-4 py-3 text-sm">
+              <div className="flex items-start gap-2">
+                <span className="w-6 shrink-0 tabular-nums text-[var(--muted)]">{i + 1}.</span>
+                <div className="min-w-0 flex-1 space-y-1">
+                  <div className="flex flex-wrap gap-1">
+                    {q.question_type && (
+                      <span className="rounded border border-sky-200 bg-sky-50 px-1.5 py-0.5 text-[10px] font-medium text-sky-900">
+                        {q.question_type}
+                      </span>
+                    )}
+                    {q.requires_media && (
+                      <span className="rounded border border-violet-200 bg-violet-50 px-1.5 py-0.5 text-[10px] text-violet-900">
+                        media
+                      </span>
+                    )}
+                  </div>
+                  {q.question_text && (
+                    <p className="leading-snug text-[var(--ink)]">{q.question_text}</p>
+                  )}
+                  {q.correct_answer && (
+                    <p className="text-xs text-emerald-700">
+                      <span className="font-semibold">Đáp án: </span>{q.correct_answer}
+                    </p>
+                  )}
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+    </details>
+  )
+}
+
+// ── Page ───────────────────────────────────────────────────────────────── //
+
 export default function LessonDetail() {
   const { lessonId } = useParams<{ lessonId: string }>()
   const id = lessonId ? parseInt(lessonId, 10) : NaN
-  const [data, setData] = useState<LessonDetailData | null>(null)
+  const [data, setData] = useState<LessonContentData | null>(null)
   const [error, setError] = useState<string | null>(null)
+  const [tab, setTab] = useState<'inclass' | 'homework'>('inclass')
 
   useEffect(() => {
-    if (Number.isNaN(id)) {
-      setError('Mã bài học không hợp lệ')
-      return
-    }
+    if (Number.isNaN(id)) { setError('Mã bài học không hợp lệ'); return }
     setError(null)
     setData(null)
     fetch(`/api/lessons/${id}`)
@@ -157,9 +193,7 @@ export default function LessonDetail() {
     return (
       <p className="text-[var(--coral)]">
         Không tìm thấy bài học.{' '}
-        <Link className="font-semibold text-[var(--mint)] underline" to="/lessons">
-          Về danh sách
-        </Link>
+        <Link className="font-semibold text-[var(--mint)] underline" to="/lessons">← Danh sách bài học</Link>
       </p>
     )
   }
@@ -179,23 +213,28 @@ export default function LessonDetail() {
     return (
       <div className="flex items-center gap-3 text-[var(--muted)]">
         <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-[var(--amber)]" />
-        Đang tải chi tiết bài học…
+        Đang tải nội dung bài học…
       </div>
     )
   }
 
-  const ic = data.in_class_summary
+  const ic = data.in_class
+  const hw = data.homework
+  const drillCount = ic.pronunciation_drills.length
+  const speakingCount = ic.free_speaking_questions.length
+  const btCount = hw.bai_tap?.questions.length ?? 0
+  const ltCount = hw.luyen_tap?.questions.length ?? 0
 
   return (
     <div className="space-y-5">
+      {/* Breadcrumb */}
       <nav className="text-xs text-[var(--muted)]">
-        <Link to="/lessons" className="font-medium text-[var(--mint)] hover:underline">
-          Danh sách bài học
-        </Link>
+        <Link to="/lessons" className="font-medium text-[var(--mint)] hover:underline">Danh sách bài học</Link>
         <span className="mx-1.5 opacity-50">/</span>
-        <span className="text-[var(--ink)]">Chi tiết</span>
+        <span className="text-[var(--ink)]">Nội dung</span>
       </nav>
 
+      {/* Header */}
       <header className="space-y-2">
         <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--amber)]">
           {data.position != null ? `Bài ${data.position}` : 'Bài học'}
@@ -203,50 +242,59 @@ export default function LessonDetail() {
         <h1 className="font-display text-2xl font-semibold leading-tight text-[var(--ink)] md:text-3xl">
           {data.title}
         </h1>
-        {data.desc ? (
-          <details className="rounded-lg border border-[var(--border)] bg-[var(--surface)] text-sm [&>summary::-webkit-details-marker]:hidden">
-            <summary className="cursor-pointer list-none px-3 py-2 font-medium text-[var(--muted)]">
-              Mô tả bài (mở rộng)
-            </summary>
-            <p className="border-t border-[var(--border)] px-3 py-2 leading-relaxed text-[var(--muted)]">
-              {data.desc}
-            </p>
-          </details>
-        ) : null}
-        <div className="flex flex-wrap gap-1.5">
+        <div className="flex flex-wrap items-center gap-2">
           {data.level != null && (
             <span className="rounded-full border border-[var(--mint)]/35 bg-[var(--mint-soft)] px-2 py-0.5 text-[11px] font-semibold text-[var(--mint)]">
               Cấp {data.level}
             </span>
           )}
-          {data.last_activity_date && (
-            <span className="rounded-full border border-[var(--border)] bg-[var(--elevated)] px-2 py-0.5 text-[11px] tabular-nums text-[var(--muted)]">
-              {data.last_activity_date}
-            </span>
-          )}
         </div>
+        {data.desc && (
+          <details className="rounded-lg border border-[var(--border)] bg-[var(--surface)] text-sm [&>summary::-webkit-details-marker]:hidden">
+            <summary className="cursor-pointer list-none px-3 py-2 font-medium text-[var(--muted)]">
+              Nội dung bài (mở rộng)
+            </summary>
+            <p className="border-t border-[var(--border)] px-3 py-2 leading-relaxed whitespace-pre-line text-[var(--muted)]">
+              {data.desc}
+            </p>
+          </details>
+        )}
       </header>
 
-      <section className="flex flex-wrap gap-x-4 gap-y-1 rounded-xl border border-[var(--border)] bg-[var(--mint-soft)]/40 px-3 py-2.5 text-xs">
-        <span className="font-semibold text-[var(--ink)]">Trong lớp:</span>
-        <span className="text-[var(--muted)]">
-          Phát âm <strong className="text-[var(--ink)]">{ic.pronunciation_drills}</strong>
-        </span>
-        <span className="text-[var(--muted)]">·</span>
-        <span className="text-[var(--muted)]">
-          Nói tự do <strong className="text-[var(--ink)]">{ic.free_speaking}</strong>
-        </span>
-        <span className="text-[var(--muted)]">·</span>
-        <span className="text-[var(--muted)]">
-          Tương tác <strong className="text-[var(--ink)]">{ic.interactive}</strong>
-        </span>
-      </section>
-
-      <div className="space-y-3">
-        <h2 className="font-display text-sm font-semibold text-[var(--ink)]">Bài tập &amp; luyện tập (LMS)</h2>
-        <PracticeBlockPanel label="Bài tập" block={data.homework.bai_tap} />
-        <PracticeBlockPanel label="Luyện tập" block={data.homework.luyen_tap} />
+      {/* Tab selector */}
+      <div className="flex rounded-xl border border-[var(--border)] bg-[var(--elevated)] p-1 text-sm">
+        <button
+          onClick={() => setTab('inclass')}
+          className={`flex-1 rounded-lg px-3 py-1.5 font-medium transition ${tab === 'inclass' ? 'bg-[var(--surface)] text-[var(--ink)] shadow-sm' : 'text-[var(--muted)] hover:text-[var(--ink)]'}`}
+        >
+          Trên lớp
+          {(drillCount > 0 || speakingCount > 0) && (
+            <span className="ml-1.5 text-xs text-[var(--muted)]">{drillCount + speakingCount}</span>
+          )}
+        </button>
+        <button
+          onClick={() => setTab('homework')}
+          className={`flex-1 rounded-lg px-3 py-1.5 font-medium transition ${tab === 'homework' ? 'bg-[var(--surface)] text-[var(--ink)] shadow-sm' : 'text-[var(--muted)] hover:text-[var(--ink)]'}`}
+        >
+          Bài tập về nhà
+          {(btCount > 0 || ltCount > 0) && (
+            <span className="ml-1.5 text-xs text-[var(--muted)]">{btCount + ltCount}</span>
+          )}
+        </button>
       </div>
+
+      {/* Tab content */}
+      {tab === 'inclass' ? (
+        <div className="space-y-3">
+          <PronunciationSection drills={ic.pronunciation_drills} />
+          <FreeSpeakingSection questions={ic.free_speaking_questions} />
+        </div>
+      ) : (
+        <div className="space-y-4">
+          <QuestionSection label="Bài tập" block={hw.bai_tap} />
+          <QuestionSection label="Luyện tập" block={hw.luyen_tap} />
+        </div>
+      )}
     </div>
   )
 }

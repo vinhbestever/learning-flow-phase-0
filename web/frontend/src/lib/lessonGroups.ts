@@ -33,7 +33,36 @@ export function groupLessonsByModule<T extends WithTitlePos>(items: T[]): [strin
 /** Lịch sử: nhóm theo unit; trong nhóm sắp theo gần luyện nhất trước */
 export type HistoryRow = {
   title?: string | null
+  last_activity_date?: string | null
   days_since_last_practice: number | null
+}
+
+function monthLabel(dateStr: string | null | undefined): string {
+  if (!dateStr) return 'Chưa xác định'
+  const [year, month] = dateStr.split('-')
+  if (!year || !month) return 'Chưa xác định'
+  return `Tháng ${parseInt(month, 10)}/${year}`
+}
+
+/** Lịch sử: nhóm theo tháng (gần nhất trước); trong tháng sắp theo ngày giảm dần */
+export function groupHistoryByMonth<T extends HistoryRow>(items: T[]): [string, T[]][] {
+  const map = new Map<string, T[]>()
+  for (const item of items) {
+    const label = monthLabel(item.last_activity_date)
+    const arr = map.get(label) ?? []
+    arr.push(item)
+    map.set(label, arr)
+  }
+  const entries = [...map.entries()]
+  for (const [, rows] of entries) {
+    rows.sort((a, b) => (b.last_activity_date ?? '').localeCompare(a.last_activity_date ?? ''))
+  }
+  entries.sort((a, b) => {
+    const maxDate = (rows: T[]) =>
+      rows.reduce((m, r) => ((r.last_activity_date ?? '') > m ? (r.last_activity_date ?? '') : m), '')
+    return maxDate(b[1]).localeCompare(maxDate(a[1]))
+  })
+  return entries
 }
 
 export function groupHistoryByModule<T extends HistoryRow>(items: T[]): [string, T[]][] {

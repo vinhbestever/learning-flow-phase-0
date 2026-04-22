@@ -8,18 +8,9 @@ from web.backend.config import STUDENT_CONTEXT_PATH
 router = APIRouter(prefix="/api")
 
 
-def _latest_speaking_ts(candidate: dict) -> str | None:
-    best = None
-    for w in candidate.get("worst_speaking_items") or []:
-        t = w.get("timestamp")
-        if t and (best is None or t > best):
-            best = t
-    return best
-
-
 @router.get("/history")
 def get_learning_history():
-    """Timeline từ scored_candidates — hoạt động & điểm yếu theo từng bài học."""
+    """Timeline từ lessons — toàn bộ hoạt động & điểm yếu theo từng bài học."""
     p = Path(STUDENT_CONTEXT_PATH)
     if not p.exists():
         raise HTTPException(
@@ -28,55 +19,75 @@ def get_learning_history():
         )
     raw = json.loads(p.read_text(encoding="utf-8"))
     summary = raw.get("summary") or {}
-    candidates = raw.get("scored_candidates") or []
+    lessons = raw.get("lessons") or []
 
     items = []
-    for c in candidates:
-        speaking_preview = []
-        for w in (c.get("worst_speaking_items") or [])[:2]:
-            speaking_preview.append(
-                {
-                    "question": (w.get("question") or "")[:160],
-                    "user_transcript": (w.get("user_transcript") or "")[:120],
-                    "answer_type": w.get("answer_type"),
-                    "score": w.get("score"),
-                    "timestamp": w.get("timestamp"),
-                }
-            )
-        failed = c.get("failed_text_questions") or []
-        failed_preview = []
-        for q in failed[:1]:
-            failed_preview.append(
-                {
-                    "question_type": q.get("question_type"),
-                    "snippet": (q.get("question_text") or "")[:140],
-                }
-            )
+    for r in lessons:
+        hw = r.get("homework") or {}
+        in_class = r.get("in_class") or {}
+        speaking_items = in_class.get("worst_speaking_items") or []
+        worst_questions = hw.get("worst_questions") or []
+
+        text_failed = [q for q in worst_questions if not q.get("requires_media")]
+        media_failed_count = sum(1 for q in worst_questions if q.get("requires_media"))
 
         items.append(
             {
-                "lesson_id": c.get("lesson_id"),
-                "title": c.get("title"),
-                "level": c.get("level"),
-                "days_since_last_practice": c.get("days_since_last_practice"),
-                "forgetting_score": c.get("forgetting_score"),
-                "weakness_score": c.get("weakness_score"),
-                "composite_priority_score": c.get("composite_priority_score"),
-                "weak_skills": c.get("weak_skills") or [],
-                "failed_text_count": len(failed),
-                "failed_media_questions_count": c.get("failed_media_questions_count", 0),
-                "failed_preview": failed_preview,
-                "speaking_preview": speaking_preview,
-                "last_speaking_activity": _latest_speaking_ts(c),
+                "lesson_id": r.get("lesson_id"),
+                "title": r.get("title"),
+                "level": r.get("level"),
+                "status": r.get("status"),
+                "last_activity_date": r.get("last_activity_date"),
+                "days_since_last_practice": r.get("days_since_last_practice"),
+                "forgetting_score": r.get("forgetting_score"),
+                "weakness_score": r.get("weakness_score"),
+                "composite_priority_score": r.get("composite_priority_score"),
+                # Trên lớp
+                "in_class": {
+                    "participated": in_class.get("participated", False),
+                    "is_completed": in_class.get("is_completed", False),
+                    "completion_pct": in_class.get("completion_pct"),
+                    "session_count": in_class.get("session_count", 0),
+                    "pronunciation_score_avg": in_class.get("pronunciation_score_avg"),
+                    "pronunciation_attempts": in_class.get("pronunciation_attempts", 0),
+                    "free_speaking_score_avg": in_class.get("free_speaking_score_avg"),
+                    "free_speaking_attempts": in_class.get("free_speaking_attempts", 0),
+                    "worst_speaking_items": [
+                        {
+                            "question": (w.get("question") or "")[:200],
+                            "user_transcript": (w.get("user_transcript") or "")[:200],
+                            "answer_type": w.get("answer_type"),
+                            "score": w.get("score"),
+                            "timestamp": w.get("timestamp"),
+                        }
+                        for w in speaking_items[:3]
+                    ],
+                },
+                # Bài tập về nhà
+                "homework": {
+                    "attempted": hw.get("attempted", False),
+                    "bai_tap": hw.get("bai_tap"),
+                    "luyen_tap": hw.get("luyen_tap"),
+                    "weak_skills": hw.get("weak_skills") or [],
+                    "failed_text_count": len(text_failed),
+                    "failed_media_count": media_failed_count,
+                    "failed_text_questions": [
+                        {
+                            "question_type": q.get("question_type"),
+                            "question_text": (q.get("question_text") or "")[:200],
+                            "correct_answer": q.get("correct_answer"),
+                            "student_answer": q.get("student_answer"),
+                        }
+                        for q in text_failed[:3]
+                    ],
+                },
             }
         )
 
-    # Gần đây luyện nhất trước (ít ngày từ lần cuối)
+    # Gần đây nhất trước (date descending)
     items.sort(
-        key=lambda x: (
-            x.get("days_since_last_practice") is None,
-            x.get("days_since_last_practice") if x.get("days_since_last_practice") is not None else 9999,
-        )
+        key=lambda x: x.get("last_activity_date") or "",
+        reverse=True,
     )
 
     return {
