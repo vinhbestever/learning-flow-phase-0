@@ -14,12 +14,20 @@ def student_paths(student_id: int | str) -> dict[str, Path]:
     }
 
 
-def list_students() -> list[int]:
-    """Sorted list of student IDs that have student_context.json in output/."""
-    result = []
-    if _OUTPUT.exists():
-        for child in sorted(_OUTPUT.iterdir()):
-            if child.is_dir() and child.name.isdigit():
-                if (child / "student_context.json").exists():
-                    result.append(int(child.name))
+def list_students() -> list[str]:
+    """Sorted folder names under output/ that contain student_context.json.
+
+    Names may be numeric (e.g. ``2102555``) or composite (e.g. ``2111414_newstudent``).
+    """
+    result: list[str] = []
+    if not _OUTPUT.exists():
+        return result
+    for child in sorted(_OUTPUT.iterdir()):
+        if not child.is_dir():
+            continue
+        name = child.name
+        if name.startswith("."):
+            continue
+        if (child / "student_context.json").exists():
+            result.append(name)
     return result

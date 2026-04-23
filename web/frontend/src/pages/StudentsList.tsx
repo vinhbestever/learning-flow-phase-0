@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { parseStudentFolderId } from '../lib/studentFolderLabel'
 
 interface StudentCard {
-  student_id: number
+  /** Folder name under output/ (numeric or e.g. 2111414_newstudent). */
+  student_id: string
   total_lessons: number
   completed: number
   completion_pct: number
@@ -81,11 +83,14 @@ export default function StudentsList() {
             </div>
           ) : (
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {students.map((s, i) => (
+              {students.map((s, i) => {
+                const folder = parseStudentFolderId(s.student_id)
+                return (
                 <button
                   key={s.student_id}
                   type="button"
-                  onClick={() => navigate(`/students/${s.student_id}`)}
+                  title={folder.raw}
+                  onClick={() => navigate(`/students/${encodeURIComponent(s.student_id)}`)}
                   className="animate-rise group relative overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 text-left shadow-[var(--shadow-card)] transition-all duration-200 hover:border-[var(--mint)]/40 hover:shadow-[var(--shadow-float)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--mint)]"
                   style={{ animationDelay: `${i * 0.08}s` }}
                 >
@@ -94,14 +99,34 @@ export default function StudentsList() {
                     aria-hidden
                   />
 
-                  <div className="relative mb-5 flex items-start justify-between">
-                    <div>
+                  <div className="relative mb-5 flex items-start justify-between gap-3">
+                    <div className="min-w-0 flex-1">
                       <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-[var(--muted)]">
                         Học sinh
                       </p>
-                      <p className="font-display mt-0.5 text-2xl font-bold text-[var(--ink)]">
-                        #{s.student_id}
-                      </p>
+                      <div className="mt-1 flex flex-wrap items-baseline gap-x-2 gap-y-1.5">
+                        <p className="font-display text-2xl font-bold tabular-nums tracking-tight text-[var(--ink)]">
+                          #{folder.displayId}
+                          {folder.isNewStudent && folder.variant != null && (
+                            <span className="ml-1 text-base font-semibold text-[var(--muted)]">
+                              ·{folder.variant}
+                            </span>
+                          )}
+                        </p>
+                        {folder.isNewStudent && (
+                          <span
+                            className="student-new-badge inline-flex shrink-0 items-center rounded-full border border-teal-300/70 bg-gradient-to-br from-[#ecfdf5] via-[#f0fdfa] to-[#e0f2fe] px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-[0.14em] text-teal-900 shadow-[0_1px_0_rgba(255,255,255,0.8)_inset,0_2px_8px_-2px_rgba(13,148,136,0.35)] ring-1 ring-teal-500/15 transition-[transform,box-shadow] duration-200 group-hover:-translate-y-px group-hover:ring-teal-400/35"
+                            title="Hồ sơ thư mục newstudent (bản nhập mới)"
+                          >
+                            Mới
+                          </span>
+                        )}
+                      </div>
+                      {folder.isNewStudent && (
+                        <p className="mt-1 truncate text-[10px] text-[var(--muted)]" title={folder.raw}>
+                          Thư mục: {folder.raw}
+                        </p>
+                      )}
                     </div>
                     <div
                       className="relative grid h-14 w-14 shrink-0 place-items-center rounded-full p-[2.5px]"
@@ -140,7 +165,8 @@ export default function StudentsList() {
                     </span>
                   </div>
                 </button>
-              ))}
+                )
+              })}
             </div>
           )}
         </div>

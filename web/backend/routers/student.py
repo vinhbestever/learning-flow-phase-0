@@ -29,7 +29,7 @@ def get_students():
 
 
 @router.get("/students/{student_id}/profile")
-def get_student_profile(student_id: int):
+def get_student_profile(student_id: str):
     paths = student_paths(student_id)
     p = paths["context"]
     if not p.exists():

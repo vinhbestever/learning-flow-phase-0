@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { parseStudentFolderId } from '../lib/studentFolderLabel'
 
 interface StudentSummary {
-  student_id: number
+  student_id: number | string
   reference_date?: string
   total_lessons: number
   overall_pronunciation_score_avg: number
@@ -53,6 +54,7 @@ export default function StudentProfile() {
     data && data.total_lessons > 0
       ? Math.min(100, Math.round((completed / data.total_lessons) * 100))
       : 0
+  const folderLabel = parseStudentFolderId(studentId)
 
 
   if (error) {
@@ -97,11 +99,24 @@ export default function StudentProfile() {
                 Tổng quan
               </span>
             </div>
-            <h1 className="font-display text-2xl font-semibold tracking-tight text-[var(--ink)] md:text-4xl">
-              Học sinh{' '}
-              <span className="bg-gradient-to-r from-[var(--mint)] to-[#0f766e] bg-clip-text text-transparent">
-                #{data.student_id}
+            <h1 className="flex flex-wrap items-baseline gap-x-3 gap-y-2 font-display text-2xl font-semibold tracking-tight text-[var(--ink)] md:text-4xl">
+              <span>
+                Học sinh{' '}
+                <span className="bg-gradient-to-r from-[var(--mint)] to-[#0f766e] bg-clip-text text-transparent tabular-nums">
+                  #{folderLabel.displayId}
+                  {folderLabel.isNewStudent && folderLabel.variant != null && (
+                    <span className="text-[var(--muted)]">·{folderLabel.variant}</span>
+                  )}
+                </span>
               </span>
+              {folderLabel.isNewStudent && (
+                <span
+                  className="student-new-badge inline-flex items-center rounded-full border border-teal-300/70 bg-gradient-to-br from-[#ecfdf5] via-[#f0fdfa] to-[#e0f2fe] px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.14em] text-teal-900 shadow-[0_1px_0_rgba(255,255,255,0.8)_inset,0_2px_8px_-2px_rgba(13,148,136,0.35)] ring-1 ring-teal-500/15 md:text-xs"
+                  title={folderLabel.raw}
+                >
+                  Mới
+                </span>
+              )}
             </h1>
             {data.weak_skills_global.length > 0 && (
               <div className="flex flex-wrap items-start gap-2 rounded-xl border border-[var(--amber)]/35 bg-[var(--amber-soft)]/90 px-3 py-2.5 text-sm text-[var(--ink)]">

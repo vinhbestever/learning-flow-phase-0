@@ -64,7 +64,7 @@ interface HistoryItem {
 }
 
 interface HistoryResponse {
-  student_id: number | null
+  student_id: number | string | null
   reference_date: string | null
   count: number
   items: HistoryItem[]

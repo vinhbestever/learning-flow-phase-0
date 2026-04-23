@@ -42,7 +42,7 @@ def _build_question_list(qe_block: dict | None, failed_by_qid: dict) -> list:
 
 
 @router.get("/students/{student_id}/lessons")
-def get_lessons(student_id: int):
+def get_lessons(student_id: str):
     paths = student_paths(student_id)
     p = paths["questions"]
     if not p.exists():
@@ -77,7 +77,7 @@ def get_lessons(student_id: int):
 
 
 @router.get("/students/{student_id}/lessons/{lesson_id}")
-def get_lesson_detail(student_id: int, lesson_id: int):
+def get_lesson_detail(student_id: str, lesson_id: int):
     paths = student_paths(student_id)
     qe_data = _load_json(paths["questions"])
     sc_data = _load_json(paths["context"])

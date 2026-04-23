@@ -8,7 +8,7 @@ router = APIRouter(prefix="/api")
 
 
 @router.get("/students/{student_id}/history")
-def get_learning_history(student_id: int):
+def get_learning_history(student_id: str):
     paths = student_paths(student_id)
     p = paths["context"]
     if not p.exists():
