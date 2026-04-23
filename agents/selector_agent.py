@@ -18,6 +18,8 @@ import os
 
 from openai import OpenAI
 
+from agents.model_config import DEFAULT_HOMEWORK_MODEL
+
 HOMEWORK_SCHEMA = {
     "name": "homework_assignment",
     "strict": True,
@@ -189,6 +191,7 @@ def run_selector(
     question_pool: list,
     client: OpenAI | None = None,
     save_path: str | None = None,
+    model: str = DEFAULT_HOMEWORK_MODEL,
 ) -> list:
     if client is None:
         client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
@@ -196,7 +199,7 @@ def run_selector(
     prompt = build_prompt(diagnostic_text, question_pool)
 
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model=model,
         temperature=0,
         response_format={"type": "json_schema", "json_schema": HOMEWORK_SCHEMA},
         messages=[

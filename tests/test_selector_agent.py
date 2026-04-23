@@ -152,7 +152,7 @@ def test_run_selector_calls_create_with_json_schema():
     result = run_selector(DIAGNOSTIC_TEXT, QUESTION_POOL, client=mock_client)
     assert len(result) == 15
     call_kwargs = mock_client.chat.completions.create.call_args[1]
-    assert call_kwargs["model"] == "gpt-4o"
+    assert call_kwargs["model"] == "gpt-5.4"
     assert call_kwargs["temperature"] == 0
     assert "response_format" in call_kwargs
     assert call_kwargs["response_format"]["type"] == "json_schema"

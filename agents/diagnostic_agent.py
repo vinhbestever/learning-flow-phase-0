@@ -14,6 +14,8 @@ import os
 
 from openai import OpenAI
 
+from agents.model_config import DEFAULT_HOMEWORK_MODEL
+
 SYSTEM_PROMPT = """\
 Bạn là chuyên gia chẩn đoán học tiếng Anh, phân tích dữ liệu kết quả học tập \
 của một học sinh người Việt. Học sinh đang ở Phase 0, cấp độ 4–5.
@@ -136,7 +138,7 @@ def run_diagnostic(
     candidates: list,
     client: OpenAI | None = None,
     save_path: str | None = None,
-    model: str = "gpt-4o",
+    model: str = DEFAULT_HOMEWORK_MODEL,
 ) -> str:
     if client is None:
         client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])

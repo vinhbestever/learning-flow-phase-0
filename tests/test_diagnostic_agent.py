@@ -85,14 +85,14 @@ def test_run_diagnostic_returns_string():
     assert len(result) > 0
 
 
-def test_run_diagnostic_calls_gpt4o():
+def test_run_diagnostic_uses_default_model():
     mock_client = MagicMock()
     mock_client.chat.completions.create.return_value = MagicMock(
         choices=[MagicMock(message=MagicMock(content="Analysis text."))]
     )
     run_diagnostic(SUMMARY, CANDIDATES, client=mock_client)
     call_kwargs = mock_client.chat.completions.create.call_args[1]
-    assert call_kwargs["model"] == "gpt-4o"
+    assert call_kwargs["model"] == "gpt-5.4"
     assert call_kwargs["temperature"] == 0.4
 
 

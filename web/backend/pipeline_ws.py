@@ -16,12 +16,15 @@ import os
 
 from openai import AsyncOpenAI
 
+from agents.model_config import DEFAULT_HOMEWORK_MODEL
 from web.backend.config import student_paths
 
 _pipeline_lock = asyncio.Lock()
 
 
-async def run_pipeline_ws(send, student_id: int | str, model: str = "gpt-4o") -> None:
+async def run_pipeline_ws(
+    send, student_id: int | str, model: str = DEFAULT_HOMEWORK_MODEL
+) -> None:
     """
     send: async callable that accepts a dict and sends it as JSON over WebSocket.
     student_id: folder name under output/ (numeric or e.g. 2111414_newstudent).
@@ -96,6 +99,7 @@ async def run_pipeline_ws(send, student_id: int | str, model: str = "gpt-4o") ->
                 diagnostic_text=diagnostic_text,
                 question_pool=question_pool,
                 save_path=str(paths["homework"]),
+                model=model,
             )
 
         homework = await loop.run_in_executor(None, _select)

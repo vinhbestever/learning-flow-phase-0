@@ -101,13 +101,13 @@ def test_save_model_result_merges_and_sets_last(tmp_path: Path) -> None:
 
     save_model_result(
         hbm,
-        "gemini-2.0-flash",
+        "gemini-2.5-flash",
         "diag b",
         [{"n": 2}],
         legacy_hw_path=None,
         legacy_diag_path=None,
     )
     state2 = json.loads(hbm.read_text(encoding="utf-8"))
-    assert set(state2["models"].keys()) == {"gpt-4.1", "gemini-2.0-flash"}
-    assert state2["last_run_model"] == "gemini-2.0-flash"
+    assert set(state2["models"].keys()) == {"gpt-4.1", "gemini-2.5-flash"}
+    assert state2["last_run_model"] == "gemini-2.5-flash"
     assert state2["models"]["gpt-4.1"]["diagnostic"] == "diag a"
