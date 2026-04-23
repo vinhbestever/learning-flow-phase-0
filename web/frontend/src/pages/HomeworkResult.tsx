@@ -48,9 +48,17 @@ interface Question {
   lms_question?: HomeworkQuestionFull | null
 }
 
+interface HomeworkModelRun {
+  diagnostic: string
+  homework: Question[]
+  updated_at?: string
+}
+
 interface HomeworkData {
   homework: Question[]
   diagnostic: string
+  last_run_model?: string
+  models?: Record<string, HomeworkModelRun>
 }
 
 const difficultyStyle: Record<Question['difficulty'], string> = {
@@ -250,6 +258,7 @@ export default function HomeworkResult() {
   const [data, setData] = useState<HomeworkData | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [showDiag, setShowDiag] = useState(false)
+  const [activeModel, setActiveModel] = useState<string | null>(null)
 
   useEffect(() => {
     if (!studentId) return
@@ -260,6 +269,18 @@ export default function HomeworkResult() {
       .then(setData)
       .catch((e: unknown) => setError(String(e)))
   }, [studentId])
+
+  useEffect(() => {
+    if (!data?.models) return
+    const keys = Object.keys(data.models)
+    if (keys.length === 0) return
+    setActiveModel((prev) => {
+      if (prev && data.models?.[prev]) return prev
+      const preferred = data.last_run_model
+      if (preferred && data.models[preferred]) return preferred
+      return keys[0]
+    })
+  }, [data])
 
   if (!studentId) {
     return <p className="text-[var(--muted)]">Thiếu mã học sinh trong URL.</p>
@@ -288,6 +309,12 @@ export default function HomeworkResult() {
     )
   }
 
+  const modelBlock =
+    activeModel && data.models && data.models[activeModel] ? data.models[activeModel] : null
+  const displayHomework = modelBlock?.homework ?? data.homework
+  const displayDiagnostic = modelBlock?.diagnostic ?? data.diagnostic
+  const modelKeys = data.models ? Object.keys(data.models) : []
+
   return (
     <div className="hw-results-page animate-rise mx-auto space-y-6 pb-12">
       <header className="hw-results-hero flex flex-wrap items-start justify-between gap-3">
@@ -295,8 +322,31 @@ export default function HomeworkResult() {
           <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[var(--amber)]">
             Phiếu giao bài
           </p>
+          {modelKeys.length > 1 && (
+            <div className="mt-2 flex flex-wrap items-center gap-2">
+              <label className="text-[11px] text-[var(--muted)]" htmlFor="hw-model-pick">
+                Phiên bản theo model
+              </label>
+              <select
+                id="hw-model-pick"
+                value={activeModel ?? modelKeys[0] ?? ''}
+                onChange={(e) => setActiveModel(e.target.value)}
+                className="max-w-full rounded-lg border border-[var(--border)] bg-[var(--surface)] px-2 py-1.5 text-xs text-[var(--ink)]"
+              >
+                {modelKeys.map((id) => {
+                  const u = data.models?.[id]?.updated_at
+                  return (
+                    <option key={id} value={id}>
+                      {id}
+                      {u ? ` — ${u}` : ''}
+                    </option>
+                  )
+                })}
+              </select>
+            </div>
+          )}
           <h1 className="font-display mt-1 text-2xl font-semibold tracking-tight text-[var(--ink)] md:text-3xl">
-            {data.homework.length} câu được chọn
+            {displayHomework.length} câu được chọn
           </h1>
           <p className="mt-2 text-[12px] leading-relaxed text-[var(--muted)] md:text-[13px]">
             Mỗi thẻ đi theo thứ tự: <span className="font-semibold text-[var(--mint)]">nội dung</span>
@@ -319,13 +369,13 @@ export default function HomeworkResult() {
             Diagnostic
           </p>
           <p className="mt-3 whitespace-pre-wrap text-sm leading-relaxed text-[var(--ink)]">
-            {data.diagnostic}
+            {displayDiagnostic}
           </p>
         </section>
       )}
 
       <ol className="space-y-5">
-        {data.homework.map((q, i) => {
+        {displayHomework.map((q, i) => {
           const lmsOutcome = q.lms_question ? lmsQuestionOutcome(q.lms_question) : null
           return (
           <li

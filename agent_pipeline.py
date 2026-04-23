@@ -2,8 +2,9 @@
 Entry point for the homework agent pipeline.
 
 Usage:
-    export OPENAI_API_KEY=sk-...
-    python agent_pipeline.py [student_id]
+    export OPENAI_API_KEY=sk-...   # for OpenAI models
+    export GOOGLE_API_KEY=...     # for Gemini models
+    python agent_pipeline.py [student_id] [--model MODEL_ID]
 
 Prerequisites:
     output/{student_id}/student_context.json   (run preprocess.py first)
@@ -12,6 +13,7 @@ Prerequisites:
 Outputs:
     output/{student_id}/diagnostic_output.txt
     output/{student_id}/homework_assignment.json
+    output/{student_id}/homework_by_model.json
 """
 
 import argparse
@@ -21,22 +23,24 @@ import sys
 from pathlib import Path
 
 
-def _parse_args():
+def _parse_args() -> argparse.Namespace:
+    from agents.model_config import DEFAULT_HOMEWORK_MODEL
+
     parser = argparse.ArgumentParser(description="Run homework agent pipeline.")
     parser.add_argument(
-        "student_id", nargs="?", type=int, default=2102555,
-        help="Student ID. Default: 2102555",
+        "student_id",
+        nargs="?",
+        type=str,
+        default="2102555",
+        help="Student folder name under output/ (numeric or e.g. 2111414_newstudent). Default: 2102555",
+    )
+    parser.add_argument(
+        "--model",
+        type=str,
+        default=DEFAULT_HOMEWORK_MODEL,
+        help=f"Model id (default: {DEFAULT_HOMEWORK_MODEL})",
     )
     return parser.parse_args()
-
-
-_args = _parse_args()
-_out = f"output/{_args.student_id}"
-
-STUDENT_CONTEXT_PATH = f"{_out}/student_context.json"
-QUESTIONS_EXPORT_PATH = f"{_out}/questions_export.json"
-DIAGNOSTIC_OUTPUT = f"{_out}/diagnostic_output.txt"
-HOMEWORK_OUTPUT = f"{_out}/homework_assignment.json"
 
 
 def load_json(path: str) -> dict:
@@ -44,23 +48,45 @@ def load_json(path: str) -> dict:
         return json.load(f)
 
 
-def main():
-    # Validate prerequisites
-    for path in (STUDENT_CONTEXT_PATH, QUESTIONS_EXPORT_PATH):
+def main() -> None:
+    from agents.model_config import get_provider, is_allowed
+    from web.backend.config import student_paths
+    from web.backend.homework_storage import save_model_result
+
+    args = _parse_args()
+    out = f"output/{args.student_id}"
+    student_context_path = f"{out}/student_context.json"
+    questions_export_path = f"{out}/questions_export.json"
+    paths = student_paths(args.student_id)
+
+    model = args.model
+    if not is_allowed(model):
+        print(f"ERROR: Model not allowlisted: {model!r}")
+        sys.exit(1)
+    try:
+        provider = get_provider(model)
+    except ValueError as e:
+        print(f"ERROR: {e}")
+        sys.exit(1)
+
+    for path in (student_context_path, questions_export_path):
         if not Path(path).exists():
             print(f"ERROR: {path} not found. Run preprocess.py / export_questions.py first.")
             sys.exit(1)
-    if not os.environ.get("OPENAI_API_KEY"):
+
+    if provider == "openai" and not os.environ.get("OPENAI_API_KEY"):
         print("ERROR: OPENAI_API_KEY environment variable not set.")
         sys.exit(1)
+    if provider == "google" and not os.environ.get("GOOGLE_API_KEY"):
+        print("ERROR: GOOGLE_API_KEY environment variable not set.")
+        sys.exit(1)
 
-    Path(_out).mkdir(parents=True, exist_ok=True)
+    Path(out).mkdir(parents=True, exist_ok=True)
 
     print("Loading data files...")
-    student_context = load_json(STUDENT_CONTEXT_PATH)
-    questions_export = load_json(QUESTIONS_EXPORT_PATH)
+    student_context = load_json(student_context_path)
+    questions_export = load_json(questions_export_path)
 
-    # Step 1: Build context
     from agents.context_builder import build_context
 
     print("[1/3] Building context (tiering candidates, building question pool)...")
@@ -73,35 +99,68 @@ def main():
         sys.exit(1)
 
     print(f"      {len(tiered_candidates)} candidates | {len(question_pool)} questions in pool")
-    tier_counts = {}
+    tier_counts: dict = {}
     for c in tiered_candidates:
         t = c["signal_type"]
         tier_counts[t] = tier_counts.get(t, 0) + 1
     print(f"      Tiers: {tier_counts}")
 
-    # Step 2: Diagnostic agent
-    from agents.diagnostic_agent import run_diagnostic
+    print(f"[2/3] Running diagnostic ({model})...")
+    if provider == "openai":
+        from agents.diagnostic_agent import run_diagnostic
 
-    print("[2/3] Running diagnostic agent (GPT-4o)...")
-    diagnostic_text = run_diagnostic(
-        summary=student_context["summary"],
-        candidates=tiered_candidates,
-        save_path=DIAGNOSTIC_OUTPUT,
+        diagnostic_text = run_diagnostic(
+            student_context["summary"],
+            tiered_candidates,
+            save_path=str(paths["diagnostic"]),
+            model=model,
+        )
+    else:
+        from agents.diagnostic_agent import SYSTEM_PROMPT, build_prompt
+        from agents.diagnostic_gemini import run_diagnostic_gemini_sync
+
+        prompt = build_prompt(student_context["summary"], tiered_candidates)
+        diagnostic_text = run_diagnostic_gemini_sync(
+            model=model,
+            system_instruction=SYSTEM_PROMPT,
+            user_content=prompt,
+        )
+        paths["diagnostic"].write_text(diagnostic_text, encoding="utf-8")
+
+    print(
+        f"      Diagnostic saved → {paths['diagnostic']} ({len(diagnostic_text)} chars)"
     )
-    print(f"      Diagnostic saved → {DIAGNOSTIC_OUTPUT} ({len(diagnostic_text)} chars)")
 
-    # Step 3: Selector agent
-    from agents.selector_agent import run_selector
+    print(f"[3/3] Running selector ({model})...")
+    if provider == "openai":
+        from agents.selector_agent import run_selector
 
-    print("[3/3] Running selector agent (GPT-4o structured output)...")
-    homework = run_selector(
-        diagnostic_text=diagnostic_text,
-        question_pool=question_pool,
-        save_path=HOMEWORK_OUTPUT,
+        homework = run_selector(
+            diagnostic_text=diagnostic_text,
+            question_pool=question_pool,
+            save_path=str(paths["homework"]),
+            model=model,
+        )
+    else:
+        from agents.selector_gemini import run_selector_gemini_sync
+
+        homework = run_selector_gemini_sync(
+            diagnostic_text=diagnostic_text,
+            question_pool=question_pool,
+            save_path=str(paths["homework"]),
+            model=model,
+        )
+
+    save_model_result(
+        paths["homework_by_model"],
+        model,
+        diagnostic_text,
+        homework,
+        legacy_hw_path=paths["homework"],
+        legacy_diag_path=paths["diagnostic"],
     )
-    print(f"      Done → {HOMEWORK_OUTPUT} ({len(homework)} questions)")
+    print(f"      Done → {paths['homework']} + {paths['homework_by_model']}")
 
-    # Summary
     print("\n--- Homework Assignment Summary ---")
     for q in homework:
         tag = "[media] " if q.get("requires_media") else ""

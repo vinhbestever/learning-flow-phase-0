@@ -3,7 +3,7 @@ Async pipeline wrapper for WebSocket streaming.
 
 Emits JSON messages:
   {"type": "step",  "text": "..."}   — progress log line
-  {"type": "token", "text": "..."}   — single GPT token
+  {"type": "token", "text": "..."}   — single model token
   {"type": "done",  "homework": [...], "diagnostic": "..."}
   {"type": "error", "text": "..."}
 """
@@ -16,8 +16,9 @@ import os
 
 from openai import AsyncOpenAI
 
-from agents.model_config import DEFAULT_HOMEWORK_MODEL
+from agents.model_config import DEFAULT_HOMEWORK_MODEL, get_provider, is_allowed
 from web.backend.config import student_paths
+from web.backend.homework_storage import save_model_result
 
 _pipeline_lock = asyncio.Lock()
 
@@ -31,12 +32,30 @@ async def run_pipeline_ws(
     """
     paths = student_paths(student_id)
 
+    if not is_allowed(model):
+        await send(
+            {
+                "type": "error",
+                "text": f"Model không hợp lệ hoặc chưa được hỗ trợ: {model}",
+            }
+        )
+        return
+
+    try:
+        provider = get_provider(model)
+    except ValueError as e:
+        await send({"type": "error", "text": str(e)})
+        return
+
     if _pipeline_lock.locked():
         await send({"type": "error", "text": "Pipeline đang chạy — vui lòng thử lại sau"})
         return
 
-    if not os.environ.get("OPENAI_API_KEY"):
+    if provider == "openai" and not os.environ.get("OPENAI_API_KEY"):
         await send({"type": "error", "text": "OPENAI_API_KEY chưa được cấu hình"})
+        return
+    if provider == "google" and not os.environ.get("GOOGLE_API_KEY"):
+        await send({"type": "error", "text": "GOOGLE_API_KEY chưa được cấu hình"})
         return
 
     for path in (paths["context"], paths["questions"]):
@@ -70,38 +89,72 @@ async def run_pipeline_ws(
         from agents.diagnostic_agent import SYSTEM_PROMPT, build_prompt
 
         prompt = build_prompt(student_context["summary"], tiered_candidates)
-        client = AsyncOpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
         diagnostic_text = ""
-        stream = await client.chat.completions.create(
-            model=model,
-            temperature=0.4,
-            stream=True,
-            messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": prompt},
-            ],
-        )
-        async for chunk in stream:
-            token = (chunk.choices[0].delta.content or "") if chunk.choices else ""
-            if token:
-                diagnostic_text += token
-                await send({"type": "token", "text": token})
+        if provider == "openai":
+            client = AsyncOpenAI(api_key=os.environ["OPENAI_API_KEY"])
+            stream = await client.chat.completions.create(
+                model=model,
+                temperature=0.4,
+                stream=True,
+                messages=[
+                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "user", "content": prompt},
+                ],
+            )
+            async for chunk in stream:
+                token = (chunk.choices[0].delta.content or "") if chunk.choices else ""
+                if token:
+                    diagnostic_text += token
+                    await send({"type": "token", "text": token})
+        else:
+            from agents.diagnostic_gemini import stream_diagnostic_gemini
+
+            async def _send_tok(t: str) -> None:
+                nonlocal diagnostic_text
+                diagnostic_text += t
+                await send({"type": "token", "text": t})
+
+            diagnostic_text = await stream_diagnostic_gemini(
+                model=model,
+                system_instruction=SYSTEM_PROMPT,
+                user_content=prompt,
+                send_token=_send_tok,
+            )
 
         paths["diagnostic"].write_text(diagnostic_text, encoding="utf-8")
 
         await send({"type": "step", "text": "[3/3] Đang chọn câu hỏi bài tập..."})
 
-        from agents.selector_agent import run_selector
+        if provider == "openai":
+            from agents.selector_agent import run_selector
 
-        def _select():
-            return run_selector(
+            def _select():
+                return run_selector(
+                    diagnostic_text=diagnostic_text,
+                    question_pool=question_pool,
+                    save_path=str(paths["homework"]),
+                    model=model,
+                )
+
+            homework = await loop.run_in_executor(None, _select)
+        else:
+            from agents.selector_gemini import run_selector_gemini
+
+            homework = await run_selector_gemini(
                 diagnostic_text=diagnostic_text,
                 question_pool=question_pool,
-                save_path=str(paths["homework"]),
                 model=model,
+                save_path=str(paths["homework"]),
             )
 
-        homework = await loop.run_in_executor(None, _select)
+        save_model_result(
+            paths["homework_by_model"],
+            model,
+            diagnostic_text,
+            homework,
+            legacy_hw_path=paths["homework"],
+            legacy_diag_path=paths["diagnostic"],
+        )
 
         await send({"type": "done", "homework": homework, "diagnostic": diagnostic_text})

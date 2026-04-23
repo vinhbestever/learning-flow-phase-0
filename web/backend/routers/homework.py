@@ -1,8 +1,11 @@
+import copy
 import json
 
 from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect
 
+from agents.model_config import ALL_ALLOWED, DEFAULT_HOMEWORK_MODEL, GOOGLE_MODELS, OPENAI_MODELS
 from web.backend.config import student_paths
+from web.backend.homework_storage import load_homework_state
 from web.backend.pipeline_ws import run_pipeline_ws
 
 router = APIRouter(prefix="/api")
@@ -113,19 +116,9 @@ def _attach_lms_question(q: dict, matched: dict, ctx_data: dict | None) -> None:
     q["lms_question"] = lms
 
 
-@router.get("/students/{student_id}/homework")
-def get_homework(student_id: str):
-    paths = student_paths(student_id)
-    hw_p = paths["homework"]
-    diag_p = paths["diagnostic"]
-    if not hw_p.exists() or not diag_p.exists():
-        raise HTTPException(
-            status_code=404,
-            detail="Bài tập về nhà chưa được tạo — chạy pipeline để tạo bài tập",
-        )
-    hw = json.loads(hw_p.read_text(encoding="utf-8"))
-    diag = diag_p.read_text(encoding="utf-8")
-
+def _enrich_homework_list(homework_list: list, paths: dict) -> list:
+    """Return a deep-copied list with ``student_context`` and ``lms_question`` fields."""
+    rows = copy.deepcopy(homework_list)
     ctx_by_lesson: dict = {}
     lesson_by_id: dict = {}
     ctx_p = paths["context"]
@@ -142,8 +135,7 @@ def get_homework(student_id: str):
     qe_data = json.loads(qe_p.read_text(encoding="utf-8")) if qe_p.exists() else {}
     pools = _build_export_question_pools(qe_data)
 
-    homework_list = hw.get("homework", [])
-    for q in homework_list:
+    for q in rows:
         lid = q.get("lesson_id")
         ctx_data = ctx_by_lesson.get(lid)
         lesson_row = lesson_by_id.get(lid) if lid is not None else None
@@ -165,19 +157,77 @@ def get_homework(student_id: str):
         matched = _pop_export_match(pools, q)
         if matched:
             _attach_lms_question(q, matched, ctx_data)
+    return rows
 
-    return {"homework": homework_list, "diagnostic": diag}
+
+@router.get("/homework-models")
+def list_homework_models():
+    return {
+        "default_model": DEFAULT_HOMEWORK_MODEL,
+        "models": [
+            {
+                "id": mid,
+                "provider": "openai" if mid in OPENAI_MODELS else "google",
+            }
+            for mid in sorted(ALL_ALLOWED)
+        ],
+    }
+
+
+@router.get("/students/{student_id}/homework")
+def get_homework(student_id: str):
+    paths = student_paths(student_id)
+    hw_p = paths["homework"]
+    diag_p = paths["diagnostic"]
+    hbm_p = paths["homework_by_model"]
+    state = load_homework_state(
+        hbm_p,
+        legacy_hw_path=hw_p,
+        legacy_diag_path=diag_p,
+    )
+    models_raw = state.get("models") or {}
+    if not models_raw:
+        raise HTTPException(
+            status_code=404,
+            detail="Bài tập về nhà chưa được tạo — chạy pipeline để tạo bài tập",
+        )
+
+    models_out: dict = {}
+    for mid, block in models_raw.items():
+        hl = _enrich_homework_list(block.get("homework", []), paths)
+        models_out[mid] = {
+            "diagnostic": block.get("diagnostic", ""),
+            "homework": hl,
+            "updated_at": block.get("updated_at"),
+        }
+
+    last = state.get("last_run_model")
+    if last and last in models_out:
+        primary = models_out[last]
+    else:
+        first_key = next(iter(models_out))
+        primary = models_out[first_key]
+        last = first_key
+
+    return {
+        "homework": primary["homework"],
+        "diagnostic": primary["diagnostic"],
+        "last_run_model": last,
+        "models": models_out,
+    }
 
 
 @router.websocket("/ws/students/{student_id}/generate")
 async def ws_generate(websocket: WebSocket, student_id: str):
     await websocket.accept()
+    q = dict(websocket.query_params)
+    model = q.get("model") or DEFAULT_HOMEWORK_MODEL
 
     async def send(msg: dict):
         await websocket.send_json(msg)
 
     try:
-        await run_pipeline_ws(send, student_id)
+        await run_pipeline_ws(send, student_id, model)
     except WebSocketDisconnect:
         pass
     except Exception as e:

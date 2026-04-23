@@ -53,18 +53,34 @@ function RunningIndicator() {
   )
 }
 
+type HomeworkModelOption = { id: string; provider: string }
+
 export default function GenerateHomework() {
   const { studentId } = useParams<{ studentId: string }>()
   const [steps, setSteps] = useState<string[]>([])
   const [diagnostic, setDiagnostic] = useState('')
   const [status, setStatus] = useState<'idle' | 'running' | 'done' | 'error'>('idle')
   const [errorMsg, setErrorMsg] = useState('')
+  const [modelOptions, setModelOptions] = useState<HomeworkModelOption[]>([])
+  const [selectedModel, setSelectedModel] = useState('gpt-5.4')
   const wsRef = useRef<WebSocket | null>(null)
   const diagnosticRef = useRef<HTMLDivElement>(null)
   const navigate = useNavigate()
 
   useEffect(() => {
     return () => wsRef.current?.close()
+  }, [])
+
+  useEffect(() => {
+    fetch('/api/homework-models')
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error('cannot load models'))))
+      .then((body: { default_model?: string; models?: HomeworkModelOption[] }) => {
+        if (body.default_model) setSelectedModel(body.default_model)
+        if (body.models?.length) setModelOptions(body.models)
+      })
+      .catch(() => {
+        /* keep hardcoded default */
+      })
   }, [])
 
   useEffect(() => {
@@ -79,13 +95,21 @@ export default function GenerateHomework() {
       setStatus('error')
       return
     }
+    if (!selectedModel) {
+      setErrorMsg('Chọn model trước khi chạy')
+      setStatus('error')
+      return
+    }
     setSteps([])
     setDiagnostic('')
     setErrorMsg('')
     setStatus('running')
 
     const proto = window.location.protocol === 'https:' ? 'wss:' : 'ws:'
-    const ws = new WebSocket(`${proto}//${window.location.host}/api/ws/students/${studentId}/generate`)
+    const q = new URLSearchParams({ model: selectedModel })
+    const ws = new WebSocket(
+      `${proto}//${window.location.host}/api/ws/students/${studentId}/generate?${q.toString()}`,
+    )
     wsRef.current = ws
 
     ws.onmessage = (e) => {
@@ -132,6 +156,33 @@ export default function GenerateHomework() {
           mất vài phút, hãy kiên nhẫn chờ đợi!
         </p>
       </header>
+
+      {status === 'idle' && (
+        <div className="flex max-w-lg flex-col gap-2">
+          <label className="text-xs font-medium text-[var(--muted)]" htmlFor="pipeline-model">
+            Model chạy pipeline
+          </label>
+          <select
+            id="pipeline-model"
+            value={selectedModel}
+            onChange={(e) => setSelectedModel(e.target.value)}
+            className="rounded-xl border border-[var(--border)] bg-[var(--surface)] px-3 py-2.5 text-sm text-[var(--ink)]"
+          >
+            {modelOptions.length > 0 ? (
+              modelOptions.map((m) => (
+                <option key={m.id} value={m.id}>
+                  {m.id} ({m.provider})
+                </option>
+              ))
+            ) : (
+              <option value={selectedModel}>{selectedModel}</option>
+            )}
+          </select>
+          <p className="text-[11px] text-[var(--muted)]">
+            Cần đúng API key: OpenAI cho dòng gpt, Google cho dòng gemini.
+          </p>
+        </div>
+      )}
 
       {/* Action button */}
       <div className="flex flex-wrap gap-3">
