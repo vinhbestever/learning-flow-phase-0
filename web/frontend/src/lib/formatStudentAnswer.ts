@@ -14,6 +14,15 @@ export function formatStudentAnswerDisplay(value: unknown): string {
       (x) => x == null || typeof x === 'string' || typeof x === 'number' || typeof x === 'boolean',
     )
     if (allScalar) {
+      // Binary selection arrays from LMS single/multi-choice: ['0','1','0'] → selected option letters
+      const isBinarySelection = value.every((x) => x === '0' || x === '1')
+      if (isBinarySelection) {
+        const LETTERS = 'ABCDEFGHIJ'
+        const selected = value
+          .map((x, i) => (x === '1' ? (LETTERS[i] ?? String(i + 1)) : null))
+          .filter((x): x is string => x !== null)
+        return selected.join(', ')
+      }
       return value.map((x) => String(x)).join(' · ')
     }
 
