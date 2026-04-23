@@ -136,6 +136,7 @@ def run_diagnostic(
     candidates: list,
     client: OpenAI | None = None,
     save_path: str | None = None,
+    model: str = "gpt-4o",
 ) -> str:
     if client is None:
         client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
@@ -143,7 +144,7 @@ def run_diagnostic(
     prompt = build_prompt(summary, candidates)
 
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model=model,
         temperature=0.4,
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},

@@ -21,7 +21,7 @@ from web.backend.config import student_paths
 _pipeline_lock = asyncio.Lock()
 
 
-async def run_pipeline_ws(send, student_id: int | str) -> None:
+async def run_pipeline_ws(send, student_id: int | str, model: str = "gpt-4o") -> None:
     """
     send: async callable that accepts a dict and sends it as JSON over WebSocket.
     student_id: folder name under output/ (numeric or e.g. 2111414_newstudent).
@@ -62,7 +62,7 @@ async def run_pipeline_ws(send, student_id: int | str) -> None:
 
         tiered_candidates, question_pool = await loop.run_in_executor(None, _build)
 
-        await send({"type": "step", "text": "[2/3] Đang chạy diagnostic agent (GPT-4o)..."})
+        await send({"type": "step", "text": f"[2/3] Đang chạy diagnostic agent ({model})..."})
 
         from agents.diagnostic_agent import SYSTEM_PROMPT, build_prompt
 
@@ -71,7 +71,7 @@ async def run_pipeline_ws(send, student_id: int | str) -> None:
 
         diagnostic_text = ""
         stream = await client.chat.completions.create(
-            model="gpt-4o",
+            model=model,
             temperature=0.4,
             stream=True,
             messages=[
