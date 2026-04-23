@@ -10,6 +10,7 @@ def student_paths(student_id: int | str) -> dict[str, Path]:
         "context": d / "student_context.json",
         "questions": d / "questions_export.json",
         "homework": d / "homework_assignment.json",
+        "homework_by_model": d / "homework_by_model.json",
         "diagnostic": d / "diagnostic_output.txt",
     }
 
