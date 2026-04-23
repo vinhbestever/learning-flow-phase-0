@@ -18,7 +18,11 @@ import os
 
 from openai import OpenAI
 
-from agents.model_config import DEFAULT_HOMEWORK_MODEL
+from agents.model_config import (
+    DEFAULT_HOMEWORK_MODEL,
+    openai_responses_include_temperature,
+    openai_uses_responses_api,
+)
 
 HOMEWORK_SCHEMA = {
     "name": "homework_assignment",
@@ -186,6 +190,42 @@ def enrich_homework_from_pool(homework: list, question_pool: list) -> None:
             row["question_folder"] = src.get("question_folder")
 
 
+def _run_selector_via_responses(
+    diagnostic_text: str,
+    question_pool: list,
+    client: OpenAI,
+    model: str,
+    save_path: str | None,
+) -> list:
+    """Models like gpt-5.4-pro: /v1/responses + json_schema trong text.format."""
+    prompt = build_prompt(diagnostic_text, question_pool)
+    req: dict = {
+        "model": model,
+        "instructions": SYSTEM_PROMPT,
+        "input": prompt,
+        "text": {
+            "format": {
+                "type": "json_schema",
+                "name": HOMEWORK_SCHEMA["name"],
+                "strict": HOMEWORK_SCHEMA["strict"],
+                "schema": HOMEWORK_SCHEMA["schema"],
+            }
+        },
+    }
+    if openai_responses_include_temperature(model):
+        req["temperature"] = 0
+    response = client.responses.create(**req)
+    raw = response.output_text
+    homework = parse_response(raw)
+    enrich_homework_from_pool(homework, question_pool)
+
+    if save_path:
+        with open(save_path, "w", encoding="utf-8") as f:
+            json.dump({"homework": homework}, f, ensure_ascii=False, indent=2)
+
+    return homework
+
+
 def run_selector(
     diagnostic_text: str,
     question_pool: list,
@@ -195,6 +235,11 @@ def run_selector(
 ) -> list:
     if client is None:
         client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+
+    if openai_uses_responses_api(model):
+        return _run_selector_via_responses(
+            diagnostic_text, question_pool, client, model, save_path
+        )
 
     prompt = build_prompt(diagnostic_text, question_pool)
 

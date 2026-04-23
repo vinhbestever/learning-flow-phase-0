@@ -16,7 +16,12 @@ import os
 
 from openai import AsyncOpenAI
 
-from agents.model_config import DEFAULT_HOMEWORK_MODEL, get_provider, is_allowed
+from agents.model_config import (
+    DEFAULT_HOMEWORK_MODEL,
+    get_provider,
+    is_allowed,
+    openai_uses_responses_api,
+)
 from web.backend.config import student_paths
 from web.backend.homework_storage import save_model_result
 
@@ -93,20 +98,35 @@ async def run_pipeline_ws(
         diagnostic_text = ""
         if provider == "openai":
             client = AsyncOpenAI(api_key=os.environ["OPENAI_API_KEY"])
-            stream = await client.chat.completions.create(
-                model=model,
-                temperature=0.4,
-                stream=True,
-                messages=[
-                    {"role": "system", "content": SYSTEM_PROMPT},
-                    {"role": "user", "content": prompt},
-                ],
-            )
-            async for chunk in stream:
-                token = (chunk.choices[0].delta.content or "") if chunk.choices else ""
-                if token:
-                    diagnostic_text += token
-                    await send({"type": "token", "text": token})
+            if openai_uses_responses_api(model):
+                from agents.openai_responses import stream_diagnostic_text
+
+                async def _send_tok(t: str) -> None:
+                    await send({"type": "token", "text": t})
+
+                diagnostic_text = await stream_diagnostic_text(
+                    client,
+                    model,
+                    system_prompt=SYSTEM_PROMPT,
+                    user_content=prompt,
+                    temperature=0.4,
+                    send_token=_send_tok,
+                )
+            else:
+                stream = await client.chat.completions.create(
+                    model=model,
+                    temperature=0.4,
+                    stream=True,
+                    messages=[
+                        {"role": "system", "content": SYSTEM_PROMPT},
+                        {"role": "user", "content": prompt},
+                    ],
+                )
+                async for chunk in stream:
+                    token = (chunk.choices[0].delta.content or "") if chunk.choices else ""
+                    if token:
+                        diagnostic_text += token
+                        await send({"type": "token", "text": token})
         else:
             from agents.diagnostic_gemini import stream_diagnostic_gemini
 

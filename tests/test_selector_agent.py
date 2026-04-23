@@ -156,6 +156,24 @@ def test_run_selector_calls_create_with_json_schema():
     assert call_kwargs["temperature"] == 0
     assert "response_format" in call_kwargs
     assert call_kwargs["response_format"]["type"] == "json_schema"
+    mock_client.responses.create.assert_not_called()
+
+
+def test_run_selector_gpt_5_4_pro_uses_responses_api():
+    """gpt-5.4-pro không dùng chat.completions — dùng responses + text.format json_schema."""
+    mock_client = MagicMock()
+    mock_client.responses.create.return_value = MagicMock(
+        output_text=json.dumps({"homework": [VALID_HOMEWORK_ITEM] * 15})
+    )
+    result = run_selector(
+        DIAGNOSTIC_TEXT, QUESTION_POOL, client=mock_client, model="gpt-5.4-pro"
+    )
+    assert len(result) == 15
+    mock_client.chat.completions.create.assert_not_called()
+    call_kwargs = mock_client.responses.create.call_args[1]
+    assert call_kwargs["model"] == "gpt-5.4-pro"
+    assert "temperature" not in call_kwargs
+    assert call_kwargs["text"]["format"]["type"] == "json_schema"
 
 
 def test_parse_response_rejects_none_and_empty():

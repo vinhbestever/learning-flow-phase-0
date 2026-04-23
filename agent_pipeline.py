@@ -106,13 +106,28 @@ def main() -> None:
 
     print(f"[2/3] Running diagnostic ({model})...")
     if provider == "openai":
-        from agents.diagnostic_agent import run_diagnostic
+        from openai import OpenAI
 
-        diagnostic_text = run_diagnostic(
-            student_context["summary"],
-            tiered_candidates,
-            model=model,
-        )
+        from agents.diagnostic_agent import SYSTEM_PROMPT, build_prompt, run_diagnostic
+        from agents.model_config import openai_uses_responses_api
+        from agents.openai_responses import complete_diagnostic_text
+
+        if openai_uses_responses_api(model):
+            prompt = build_prompt(student_context["summary"], tiered_candidates)
+            client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+            diagnostic_text = complete_diagnostic_text(
+                client,
+                model,
+                system_prompt=SYSTEM_PROMPT,
+                user_content=prompt,
+                temperature=0.4,
+            )
+        else:
+            diagnostic_text = run_diagnostic(
+                student_context["summary"],
+                tiered_candidates,
+                model=model,
+            )
     else:
         from agents.diagnostic_agent import SYSTEM_PROMPT, build_prompt
         from agents.diagnostic_gemini import run_diagnostic_gemini_sync
