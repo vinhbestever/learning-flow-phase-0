@@ -1,8 +1,6 @@
 import json
 from pathlib import Path
 
-import pytest
-
 from web.backend.homework_storage import (
     DEFAULT_LEGACY_MODEL_ID,
     load_homework_state,
