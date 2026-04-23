@@ -5,6 +5,9 @@ __pycache__/
 .pytest_cache/
 .env
 
+# Git worktrees (isolated workdirs)
+.worktrees/
+
 # Frontend (Vite)
 web/frontend/node_modules/
 web/frontend/dist/
