@@ -122,8 +122,6 @@ async def run_pipeline_ws(
                 send_token=_send_tok,
             )
 
-        paths["diagnostic"].write_text(diagnostic_text, encoding="utf-8")
-
         await send({"type": "step", "text": "[3/3] Đang chọn câu hỏi bài tập..."})
 
         if provider == "openai":
@@ -153,8 +151,6 @@ async def run_pipeline_ws(
             model,
             diagnostic_text,
             homework,
-            legacy_hw_path=paths["homework"],
-            legacy_diag_path=paths["diagnostic"],
         )
 
         await send({"type": "done", "homework": homework, "diagnostic": diagnostic_text})

@@ -271,13 +271,14 @@ export default function HomeworkResult() {
   }, [studentId])
 
   useEffect(() => {
-    if (!data?.models) return
-    const keys = Object.keys(data.models)
+    const models = data?.models
+    if (!models) return
+    const keys = Object.keys(models)
     if (keys.length === 0) return
     setActiveModel((prev) => {
-      if (prev && data.models?.[prev]) return prev
-      const preferred = data.last_run_model
-      if (preferred && data.models[preferred]) return preferred
+      if (prev && models[prev]) return prev
+      const preferred = data?.last_run_model
+      if (preferred && models[preferred]) return preferred
       return keys[0]
     })
   }, [data])

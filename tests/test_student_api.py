@@ -16,7 +16,6 @@ def _paths(d: Path) -> dict:
         "questions": d / "questions_export.json",
         "homework": d / "homework_assignment.json",
         "homework_by_model": d / "homework_by_model.json",
-        "diagnostic": d / "diagnostic_output.txt",
     }
 
 

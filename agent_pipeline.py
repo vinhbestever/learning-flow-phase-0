@@ -11,9 +11,8 @@ Prerequisites:
     output/{student_id}/questions_export.json  (run export_questions.py first)
 
 Outputs:
-    output/{student_id}/diagnostic_output.txt
     output/{student_id}/homework_assignment.json
-    output/{student_id}/homework_by_model.json
+    output/{student_id}/homework_by_model.json  (diagnostic + homework theo từng model)
 """
 
 import argparse
@@ -112,7 +111,6 @@ def main() -> None:
         diagnostic_text = run_diagnostic(
             student_context["summary"],
             tiered_candidates,
-            save_path=str(paths["diagnostic"]),
             model=model,
         )
     else:
@@ -125,11 +123,8 @@ def main() -> None:
             system_instruction=SYSTEM_PROMPT,
             user_content=prompt,
         )
-        paths["diagnostic"].write_text(diagnostic_text, encoding="utf-8")
 
-    print(
-        f"      Diagnostic saved → {paths['diagnostic']} ({len(diagnostic_text)} chars)"
-    )
+    print(f"      Diagnostic done ({len(diagnostic_text)} chars) — stored in homework_by_model.json")
 
     print(f"[3/3] Running selector ({model})...")
     if provider == "openai":
@@ -156,8 +151,6 @@ def main() -> None:
         model,
         diagnostic_text,
         homework,
-        legacy_hw_path=paths["homework"],
-        legacy_diag_path=paths["diagnostic"],
     )
     print(f"      Done → {paths['homework']} + {paths['homework_by_model']}")
 

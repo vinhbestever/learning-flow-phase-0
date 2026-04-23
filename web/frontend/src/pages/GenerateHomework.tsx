@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 
 type WsMsg =
@@ -54,6 +54,103 @@ function RunningIndicator() {
 }
 
 type HomeworkModelOption = { id: string; provider: string }
+
+function groupModelsByProvider(models: HomeworkModelOption[]) {
+  const openai: HomeworkModelOption[] = []
+  const google: HomeworkModelOption[] = []
+  for (const m of models) {
+    if (m.provider === 'openai') openai.push(m)
+    else google.push(m)
+  }
+  return { openai, google }
+}
+
+/** Một hàng: chọn model + bắt đầu (cùng khối) — gọn, đúng “một thao tác”. */
+function PipelineModelStartBlock({
+  modelOptions,
+  selectedModel,
+  onModelChange,
+  onStart,
+}: {
+  modelOptions: HomeworkModelOption[]
+  selectedModel: string
+  onModelChange: (id: string) => void
+  onStart: () => void
+}) {
+  const { openai, google } = useMemo(() => groupModelsByProvider(modelOptions), [modelOptions])
+  const hasList = modelOptions.length > 0
+
+  return (
+    <div className="max-w-xl space-y-1.5">
+      {/*
+        Grid [1fr | auto]: tránh w-full trên nút trong flex row phủ cả hàng.
+        Một dòng: nhãn + select — thấp hơn, gọn hơn block label/stacked.
+      */}
+      <div className="animate-rise grid w-full grid-cols-1 overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--surface)] shadow-[var(--shadow-card)] sm:grid-cols-[minmax(0,1fr)_auto] sm:items-stretch">
+        <div className="flex min-h-[2.75rem] min-w-0 items-center gap-2.5 border-b border-[var(--border)] px-3 py-2 sm:min-h-[2.5rem] sm:border-b-0 sm:pl-3.5 sm:pr-2">
+          <label
+            htmlFor="hw-pipeline-model"
+            className="shrink-0 text-[9px] font-bold uppercase leading-none tracking-[0.2em] text-[var(--mint)]"
+          >
+            Model
+          </label>
+          <select
+            id="hw-pipeline-model"
+            value={selectedModel}
+            onChange={(e) => onModelChange(e.target.value)}
+            className="min-w-0 flex-1 cursor-pointer border-0 bg-transparent py-1.5 pl-0 font-mono text-[12px] font-semibold text-[var(--ink)] focus:ring-0 focus:outline-none sm:py-2.5"
+          >
+            {hasList ? (
+              <>
+                {openai.length > 0 && (
+                  <optgroup label="OpenAI">
+                    {openai.map((m) => (
+                      <option key={m.id} value={m.id}>
+                        {m.id}
+                      </option>
+                    ))}
+                  </optgroup>
+                )}
+                {google.length > 0 && (
+                  <optgroup label="Google Gemini">
+                    {google.map((m) => (
+                      <option key={m.id} value={m.id}>
+                        {m.id}
+                      </option>
+                    ))}
+                  </optgroup>
+                )}
+              </>
+            ) : (
+              <option value={selectedModel}>
+                {selectedModel} (mặc định — chưa tải danh sách)
+              </option>
+            )}
+          </select>
+        </div>
+
+        <button
+          type="button"
+          onClick={onStart}
+          className="group relative inline-flex w-full min-w-0 min-h-[2.75rem] items-center justify-center border-t border-[var(--border)]/35 bg-gradient-to-b from-[var(--mint)] to-[#0c635c] px-3.5 py-2.5 text-[12px] font-semibold leading-none text-[var(--on-primary)] antialiased transition hover:brightness-[1.05] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--mint)] sm:min-h-[2.5rem] sm:w-auto sm:min-w-[10.25rem] sm:border-l sm:border-t-0 sm:px-4 sm:text-[13px]"
+        >
+          <span className="relative z-[1] text-center">Bắt đầu tạo bài tập</span>
+          <span
+            className="pointer-events-none absolute inset-0 z-0 opacity-0 transition group-hover:opacity-100"
+            style={{
+              background:
+                'radial-gradient(ellipse 100% 90% at 50% 110%, rgba(255,255,255,0.12), transparent 50%)',
+            }}
+            aria-hidden
+          />
+        </button>
+      </div>
+      <p className="text-[10px] leading-snug text-[var(--muted)]">
+        <code>OPENAI_API_KEY</code> / <code>GOOGLE_API_KEY</code> trên server
+      </p>
+    </div>
+  )
+}
 
 export default function GenerateHomework() {
   const { studentId } = useParams<{ studentId: string }>()
@@ -143,65 +240,36 @@ export default function GenerateHomework() {
   }
 
   return (
-    <div className="space-y-8">
-      <header className="animate-rise space-y-3">
-        <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[var(--mint)]">
+    <div className="space-y-6">
+      <header className="animate-rise max-w-2xl space-y-1.5">
+        <p className="text-[9px] font-bold uppercase tracking-[0.3em] text-[var(--mint)]">
           Pipeline
         </p>
-        <h1 className="font-display text-3xl font-semibold text-[var(--ink)] md:text-4xl">
+        <h1 className="font-display text-2xl font-semibold tracking-tight text-[var(--ink)] sm:text-3xl">
           Tạo bài tập về nhà
         </h1>
-        <p className="max-w-2xl text-[var(--muted)]">
-          AI sẽ phân tích dữ liệu học sinh và tạo ra một bộ đề gồm 15 câu hỏi. Quá trình này có thể
-          mất vài phút, hãy kiên nhẫn chờ đợi!
+        <p className="text-sm leading-relaxed text-[var(--muted)] sm:text-[15px] sm:leading-snug">
+          AI phân tích dữ liệu, tạo 15 câu. Có thể mất vài phút.
         </p>
       </header>
 
       {status === 'idle' && (
-        <div className="flex max-w-lg flex-col gap-2">
-          <label className="text-xs font-medium text-[var(--muted)]" htmlFor="pipeline-model">
-            Model chạy pipeline
-          </label>
-          <select
-            id="pipeline-model"
-            value={selectedModel}
-            onChange={(e) => setSelectedModel(e.target.value)}
-            className="rounded-xl border border-[var(--border)] bg-[var(--surface)] px-3 py-2.5 text-sm text-[var(--ink)]"
-          >
-            {modelOptions.length > 0 ? (
-              modelOptions.map((m) => (
-                <option key={m.id} value={m.id}>
-                  {m.id} ({m.provider})
-                </option>
-              ))
-            ) : (
-              <option value={selectedModel}>{selectedModel}</option>
-            )}
-          </select>
-          <p className="text-[11px] text-[var(--muted)]">
-            Cần đúng API key: OpenAI cho dòng gpt, Google cho dòng gemini.
-          </p>
-        </div>
+        <PipelineModelStartBlock
+          modelOptions={modelOptions}
+          selectedModel={selectedModel}
+          onModelChange={setSelectedModel}
+          onStart={start}
+        />
       )}
 
-      {/* Action button */}
-      <div className="flex flex-wrap gap-3">
-        {status === 'idle' && (
-          <button
-            type="button"
-            onClick={start}
-            className="animate-rise rounded-full bg-gradient-to-r from-[var(--mint)] to-[#0f766e] px-8 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[var(--on-primary)] shadow-[var(--shadow-float)] transition hover:brightness-[1.03] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--mint)]"
-          >
-            Bắt đầu tạo bài tập
-          </button>
-        )}
-        {status === 'running' && (
+      {status === 'running' && (
+        <div className="flex flex-wrap gap-3">
           <div className="animate-rise flex items-center gap-3 rounded-full border border-[var(--border)] bg-[var(--elevated)] px-5 py-2.5">
             <RunningIndicator />
             <span className="text-sm font-medium text-[var(--muted)]">Đang chạy pipeline</span>
           </div>
-        )}
-      </div>
+        </div>
+      )}
 
       {/* Step log */}
       {steps.length > 0 && (

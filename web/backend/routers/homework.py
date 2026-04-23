@@ -177,14 +177,8 @@ def list_homework_models():
 @router.get("/students/{student_id}/homework")
 def get_homework(student_id: str):
     paths = student_paths(student_id)
-    hw_p = paths["homework"]
-    diag_p = paths["diagnostic"]
     hbm_p = paths["homework_by_model"]
-    state = load_homework_state(
-        hbm_p,
-        legacy_hw_path=hw_p,
-        legacy_diag_path=diag_p,
-    )
+    state = load_homework_state(hbm_p)
     models_raw = state.get("models") or {}
     if not models_raw:
         raise HTTPException(

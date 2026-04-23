@@ -14,7 +14,6 @@ def _paths_for(d: Path) -> dict:
         "questions": d / "questions_export.json",
         "homework": d / "homework_assignment.json",
         "homework_by_model": d / "homework_by_model.json",
-        "diagnostic": d / "diagnostic_output.txt",
     }
 
 
@@ -41,11 +40,22 @@ def test_get_homework_returns_data(tmp_path: Path, monkeypatch) -> None:
     }
     diag = "Student analysis text."
     (d / "homework_assignment.json").write_text(json.dumps(hw), encoding="utf-8")
-    (d / "diagnostic_output.txt").write_text(diag, encoding="utf-8")
     (d / "student_context.json").write_text(
         '{"scored_candidates":[],"lessons":[]}', encoding="utf-8"
     )
     (d / "questions_export.json").write_text('{"lessons":[]}', encoding="utf-8")
+    hbm = {
+        "version": 1,
+        "last_run_model": "gpt-5.4",
+        "models": {
+            "gpt-5.4": {
+                "updated_at": "2026-01-01T00:00:00+00:00",
+                "diagnostic": diag,
+                "homework": hw["homework"],
+            }
+        },
+    }
+    (d / "homework_by_model.json").write_text(json.dumps(hbm), encoding="utf-8")
 
     monkeypatch.setattr("web.backend.routers.homework.student_paths", lambda _id: _paths_for(d))
 
@@ -56,7 +66,8 @@ def test_get_homework_returns_data(tmp_path: Path, monkeypatch) -> None:
     assert body["diagnostic"] == diag
     assert "models" in body
     assert "last_run_model" in body
-    assert "gpt-4o" in body["models"]  # legacy migration key
+    assert "gpt-5.4" in body["models"]
+    assert body["last_run_model"] == "gpt-5.4"
 
 
 def test_get_homework_404_when_missing(tmp_path: Path, monkeypatch) -> None:

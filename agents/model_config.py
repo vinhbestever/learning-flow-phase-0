@@ -33,7 +33,7 @@ GOOGLE_MODELS: frozenset[str] = frozenset(
 
 ALL_ALLOWED: frozenset[str] = OPENAI_MODELS | GOOGLE_MODELS
 
-# Default for new pipeline runs (must be in OPENAI_MODELS; legacy imports still use gpt-4o key in storage)
+# Default for new pipeline runs (must be in OPENAI_MODELS)
 DEFAULT_HOMEWORK_MODEL = "gpt-5.4"
 
 

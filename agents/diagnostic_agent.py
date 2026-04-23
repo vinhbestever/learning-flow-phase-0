@@ -137,7 +137,6 @@ def run_diagnostic(
     summary: dict,
     candidates: list,
     client: OpenAI | None = None,
-    save_path: str | None = None,
     model: str = DEFAULT_HOMEWORK_MODEL,
 ) -> str:
     if client is None:
@@ -153,10 +152,4 @@ def run_diagnostic(
             {"role": "user", "content": prompt},
         ],
     )
-    text = response.choices[0].message.content or ""
-
-    if save_path:
-        with open(save_path, "w", encoding="utf-8") as f:
-            f.write(text)
-
-    return text
+    return response.choices[0].message.content or ""
