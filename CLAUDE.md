@@ -45,7 +45,7 @@ After raw exports exist under `data/`, run preprocessing and optional question e
 |------|---------|--------|
 | Preprocess | `python preprocess.py` | `output/student_context.json` (scored candidates + summary) |
 | Question export | `python export_questions.py` | `output/questions_export.json` |
-| Homework agents | `export OPENAI_API_KEY=...` then `python agent_pipeline.py` | `output/diagnostic_output.txt`, `output/homework_assignment.json` (15 questions) |
+| Homework agents | `OPENAI_API_KEY` and/or `GOOGLE_API_KEY`; `python agent_pipeline.py [id] --model <id>` | `diagnostic_output.txt`, `homework_assignment.json`, `homework_by_model.json` (15 questions per run; một bản mới nhất mỗi model) |
 
 - **Dependencies:** `pip install -r requirements.txt` (see `agents/` for context builder, diagnostic, selector modules; tests in `tests/`).
 - **Design:** `docs/plans/2026-04-21-homework-agent-design.md` and `docs/plans/2026-04-21-homework-agent-pipeline.md`.

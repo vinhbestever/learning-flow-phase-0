@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 from fastapi.testclient import TestClient
 
@@ -6,8 +7,22 @@ from web.backend.main import app
 
 client = TestClient(app)
 
+TEST_SID = "test_les_1"
 
-def test_get_lessons_returns_list(tmp_path, monkeypatch):
+
+def _paths(d: Path) -> dict:
+    return {
+        "context": d / "student_context.json",
+        "questions": d / "questions_export.json",
+        "homework": d / "homework_assignment.json",
+        "homework_by_model": d / "homework_by_model.json",
+        "diagnostic": d / "diagnostic_output.txt",
+    }
+
+
+def test_get_lessons_returns_list(tmp_path: Path, monkeypatch) -> None:
+    d = tmp_path / TEST_SID
+    d.mkdir(parents=True)
     data = {
         "lessons": [
             {
@@ -28,26 +43,29 @@ def test_get_lessons_returns_list(tmp_path, monkeypatch):
             },
         ]
     }
-    f = tmp_path / "questions_export.json"
-    f.write_text(json.dumps(data), encoding="utf-8")
-    monkeypatch.setattr("web.backend.routers.lessons.QUESTIONS_EXPORT_PATH", str(f))
-    resp = client.get("/api/lessons")
-    assert resp.status_code == 200
+    (d / "questions_export.json").write_text(json.dumps(data), encoding="utf-8")
+    (d / "student_context.json").write_text("{}", encoding="utf-8")
+    monkeypatch.setattr("web.backend.routers.lessons.student_paths", lambda _id: _paths(d))
+
+    resp = client.get(f"/api/students/{TEST_SID}/lessons")
+    assert resp.status_code == 200, resp.text
     body = resp.json()
     assert len(body) == 2
     assert body[0]["lesson_id"] == 1
 
 
-def test_get_lessons_404_when_missing(tmp_path, monkeypatch):
-    monkeypatch.setattr(
-        "web.backend.routers.lessons.QUESTIONS_EXPORT_PATH",
-        str(tmp_path / "missing.json"),
-    )
-    resp = client.get("/api/lessons")
+def test_get_lessons_404_when_missing(tmp_path: Path, monkeypatch) -> None:
+    d = tmp_path / "nope"
+    d.mkdir()
+    monkeypatch.setattr("web.backend.routers.lessons.student_paths", lambda _id: _paths(d))
+
+    resp = client.get(f"/api/students/{TEST_SID}/lessons")
     assert resp.status_code == 404
 
 
-def test_get_lesson_detail(tmp_path, monkeypatch):
+def test_get_lesson_detail(tmp_path: Path, monkeypatch) -> None:
+    d = tmp_path / TEST_SID
+    d.mkdir(parents=True)
     data = {
         "lessons": [
             {
@@ -85,22 +103,26 @@ def test_get_lesson_detail(tmp_path, monkeypatch):
             }
         ]
     }
-    f = tmp_path / "questions_export.json"
-    f.write_text(json.dumps(data), encoding="utf-8")
-    monkeypatch.setattr("web.backend.routers.lessons.QUESTIONS_EXPORT_PATH", str(f))
-    resp = client.get("/api/lessons/42")
-    assert resp.status_code == 200
+    (d / "questions_export.json").write_text(json.dumps(data), encoding="utf-8")
+    (d / "student_context.json").write_text('{"lessons":[]}', encoding="utf-8")
+    monkeypatch.setattr("web.backend.routers.lessons.student_paths", lambda _id: _paths(d))
+
+    resp = client.get(f"/api/students/{TEST_SID}/lessons/42")
+    assert resp.status_code == 200, resp.text
     body = resp.json()
     assert body["lesson_id"] == 42
     assert body["homework"]["bai_tap"]["total"] == 10
     assert len(body["homework"]["bai_tap"]["questions"]) == 1
-    assert body["in_class_summary"]["pronunciation_drills"] == 1
+    assert len(body["in_class"]["pronunciation_drills"]) == 1
 
 
-def test_get_lesson_detail_404(tmp_path, monkeypatch):
+def test_get_lesson_detail_404(tmp_path: Path, monkeypatch) -> None:
+    d = tmp_path / TEST_SID
+    d.mkdir(parents=True)
     data = {"lessons": [{"lesson_id": 1, "title": "T", "homework": {}}]}
-    f = tmp_path / "questions_export.json"
-    f.write_text(json.dumps(data), encoding="utf-8")
-    monkeypatch.setattr("web.backend.routers.lessons.QUESTIONS_EXPORT_PATH", str(f))
-    resp = client.get("/api/lessons/999")
+    (d / "questions_export.json").write_text(json.dumps(data), encoding="utf-8")
+    (d / "student_context.json").write_text('{"lessons":[]}', encoding="utf-8")
+    monkeypatch.setattr("web.backend.routers.lessons.student_paths", lambda _id: _paths(d))
+
+    resp = client.get(f"/api/students/{TEST_SID}/lessons/999")
     assert resp.status_code == 404

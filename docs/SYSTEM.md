@@ -39,21 +39,30 @@ Pipeline tự động tạo bộ 15 câu bài tập cá nhân hóa cho học sin
           └─────────────┬─────────────────┘
                         │
           ┌─────────────▼─────────────┐
-          │   Diagnostic Agent         │  GPT-4o | temp=0.4
-          │   (plain text output)      │
+          │   Diagnostic Agent         │  OpenAI hoặc Gemini (chọn model)
+          │   (plain text output)      │  temp=0.4
           └─────────────┬─────────────┘
                         │
               output/diagnostic_output.txt
               (~600 words phân tích)
                         │
           ┌─────────────▼─────────────┐
-          │   Selector Agent           │  GPT-4o | temp=0 | json_schema
+          │   Selector Agent           │  Cùng family model | temp=0 | JSON
           │   (structured output)      │
           └─────────────┬─────────────┘
                         │
               output/homework_assignment.json
-              (15 câu bài tập cá nhân hóa)
+              output/homework_by_model.json
+              (15 câu; theo model_id, ghi đè bản cũ cùng model)
 ```
+
+### Nhiều model (web + CLI)
+
+- **Allowlist:** `agents/model_config.py` — chỉ các id API được phép (OpenAI: ví dụ `gpt-5.4`, `gpt-4.1`; Google: ví dụ `gemini-2.5-pro`, `gemini-2.5-flash`). Mặc định pipeline: `DEFAULT_HOMEWORK_MODEL` (hiện `gpt-5.4`).
+- **API key:** `OPENAI_API_KEY` khi chọn model OpenAI; `GOOGLE_API_KEY` khi chọn Gemini (Google AI Studio / tương thích `google-genai`).
+- **File output:** `homework_by_model.json` giữ **một bản mới nhất cho mỗi** `model_id`. Dữ liệu import từ pipeline cũ (chỉ `homework_assignment.json` + `diagnostic_output.txt`) gắn khóa legacy `gpt-4o` khi đọc lần đầu.
+- **Web:** WebSocket `/api/ws/students/{id}/generate?model=...`; `GET /api/homework-models` (danh sách chọn); trang kết quả đọc `GET /api/students/{id}/homework` với `models` + `last_run_model`.
+- **CLI:** `python agent_pipeline.py <student_folder> --model <id>` (cần `PYTHONPATH=.` từ thư mục gốc repo nếu dùng `web.backend`).
 
 ---
 
@@ -103,9 +112,9 @@ Trích xuất toàn bộ câu hỏi từ dữ liệu gốc, phân loại:
 
 ---
 
-### Bước 3 — Diagnostic Agent (`agents/diagnostic_agent.py`)
+### Bước 3 — Diagnostic Agent (`agents/diagnostic_agent.py` / `agents/diagnostic_gemini.py`)
 
-**Model:** GPT-4o | **Temperature:** 0.4 | **Output:** Plain text (~600 words)
+**Model:** chọn trong allowlist (mặc định `gpt-5.4` qua OpenAI; hoặc Gemini) | **Temperature:** 0.4 | **Output:** Plain text (~600 words)
 
 **Input context:**
 ```
@@ -132,9 +141,9 @@ Lưu tại: `output/diagnostic_output.txt`
 
 ---
 
-### Bước 4 — Selector Agent (`agents/selector_agent.py`)
+### Bước 4 — Selector Agent (`agents/selector_agent.py` / `agents/selector_gemini.py`)
 
-**Model:** GPT-4o | **Temperature:** 0 | **Output:** JSON schema (structured output)
+**Model:** cùng id với bước 3 (OpenAI `json_schema` hoặc Gemini `response_json_schema`) | **Temperature:** 0 | **Output:** JSON (structured)
 
 **Input:**
 - Diagnostic text từ Bước 3 (làm "briefing" từ giáo viên)
