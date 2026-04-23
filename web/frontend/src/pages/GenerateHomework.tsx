@@ -145,9 +145,6 @@ function PipelineModelStartBlock({
           />
         </button>
       </div>
-      <p className="text-[10px] leading-snug text-[var(--muted)]">
-        <code>OPENAI_API_KEY</code> / <code>GOOGLE_API_KEY</code> trên server
-      </p>
     </div>
   )
 }
