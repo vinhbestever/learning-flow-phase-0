@@ -5,9 +5,12 @@ Output: output/questions_export.json
 
 Structure per lesson:
   in_class:
-    pronunciation_drills[]  - scripted phonetic exercises (expectedTranscript + student result)
-    free_speaking[]         - open-ended speaking (question + transcript + score + answer_type)
-    interactive[]           - NON_AUDIO exercises (single_choice, true_false, fill_paragraph, matching)
+    session_metrics{}       - cups, audio_turns, avg/fastest reaction_ms, duration (from latest DT session)
+    pronunciation_drills[]  - transcript + score + audio_url, reaction_time_ms, pronunciation_detail (IPA phones)
+    free_speaking[]         - warmup / nói mở (+ audio_url, reaction_time_ms)
+    brainstorm[]            - nhìn ảnh gợi ý, nói từ mục tiêu (objects) (+ audio_url, reaction_time_ms)
+    conversation[]        - dialogue (+ audio_url, reaction_time_ms)
+    interactive[]           - NON_AUDIO (+ student_score, student_user_answers, reaction_time_ms)
   homework:
     bai_tap{} / luyen_tap{}  - lms_id + metadata from `data/<id>/tutor_lesson*.json` (Bài tập / Luyện tập),
     full `questions[]`        - prefer lms_practice_result_detail; if missing, fall back to
@@ -96,30 +99,107 @@ def has_media(html: str) -> bool:
 # In-class question extractors
 # ---------------------------------------------------------------------------
 
-def classify_audio(r):
-    ad = (r.get("result") or {}).get("additionalData") or {}
-    if "speaking" in ad:
-        return "pronunciation_drill"
-    if "warmup" in ad or "brainstorm" in ad:
-        return "free_speaking"
-    return "other"
+def _pronunciation_phoneme_detail(result: dict | None) -> dict | None:
+    """Rich IPA / per-phone scores from Digital Teacher (matches Rino post-class drill expand)."""
+    if not result:
+        return None
+    ad = result.get("additionalData") or {}
+    sp = ad.get("speaking")
+    if not isinstance(sp, dict):
+        return None
+    inner = sp.get("result")
+    if not isinstance(inner, dict) or not inner:
+        return None
+    return {
+        "matched_transcripts_ipa": inner.get("matchedTranscriptsIpa"),
+        "is_letter_correct_all_words": inner.get("isLetterCorrectAllWords"),
+        "word_score_list": inner.get("wordScoreList"),
+    }
 
 
 def extract_pronunciation_drill(r):
     lms = r.get("lmsData") or {}
+    result = r.get("result") or {}
     return {
         "interaction_type": "pronunciation_drill",
         "expected_transcript": lms.get("expectedTranscript"),
         "question_prompt": lms.get("question"),
+        # Student data
+        "user_transcript": result.get("userTranscript"),
+        "pronunciation_score": result.get("pronunciationScore"),
+        "overall_score": result.get("score"),
+        "audio_url": result.get("audioUrl"),
+        "reaction_time_ms": r.get("reactionTimeMs"),
+        "pronunciation_detail": _pronunciation_phoneme_detail(result),
     }
 
 
 def extract_free_speaking(r):
+    """Warmup / unscripted speaking — not brainstorm (see extract_brainstorm)."""
     lms = r.get("lmsData") or {}
+    result = r.get("result") or {}
     return {
         "interaction_type": "free_speaking",
         "question": lms.get("question"),
+        "expected_transcript": lms.get("expectedTranscript"),
         "question_type": lms.get("questionType"),
+        "target_objects": None,
+        "user_transcript": result.get("userTranscript"),
+        "score": result.get("score"),
+        "audio_url": result.get("audioUrl"),
+        "reaction_time_ms": r.get("reactionTimeMs"),
+    }
+
+
+def extract_brainstorm(r):
+    """Picture/cue vocabulary: student names target objects from additionalData.brainstorm."""
+    lms = r.get("lmsData") or {}
+    result = r.get("result") or {}
+    ad = result.get("additionalData") or {}
+    target_objects = None
+    if "brainstorm" in ad:
+        objs = ad["brainstorm"].get("objects") or []
+        target_objects = [
+            o["name"] for o in objs if isinstance(o, dict) and o.get("isMain")
+        ] or None
+    return {
+        "interaction_type": "brainstorm",
+        "question": lms.get("question"),
+        "expected_transcript": lms.get("expectedTranscript"),
+        "question_type": lms.get("questionType"),
+        "target_objects": target_objects,
+        "user_transcript": result.get("userTranscript"),
+        "score": result.get("score"),
+        "audio_url": result.get("audioUrl"),
+        "reaction_time_ms": r.get("reactionTimeMs"),
+    }
+
+
+def extract_conversation(r):
+    lms = r.get("lmsData") or {}
+    result = r.get("result") or {}
+    return {
+        # System data
+        "interaction_type": "conversation",
+        "question": lms.get("question"),
+        "expected_transcript": lms.get("expectedTranscript"),
+        "question_type": lms.get("questionType"),
+        # Student data
+        "user_transcript": result.get("userTranscript"),
+        "score": result.get("score"),
+        "grammar_score": result.get("grammarScore"),
+        "pronunciation_score": result.get("pronunciationScore"),
+        "audio_url": result.get("audioUrl"),
+        "reaction_time_ms": r.get("reactionTimeMs"),
+    }
+
+
+def _interactive_attempt(r: dict) -> dict:
+    res = r.get("result") or {}
+    return {
+        "reaction_time_ms": r.get("reactionTimeMs"),
+        "student_score": res.get("score"),
+        "student_user_answers": res.get("userAnswers") or [],
     }
 
 
@@ -129,6 +209,7 @@ def extract_interactive(r):
     qt = lms.get("questionType")
     question_text = lms.get("question") or ""
     raw_answers = lms.get("answers") or []
+    attempt = _interactive_attempt(r)
 
     if qt == "single_choice":
         options = [
@@ -142,6 +223,7 @@ def extract_interactive(r):
             "question": question_text,
             "options": options,
             "correct_answer": correct_option,
+            **attempt,
         }
 
     elif qt == "true_false":
@@ -154,6 +236,7 @@ def extract_interactive(r):
             "question_type": qt,
             "question": question_text,
             "correct_answer": correct_option,
+            **attempt,
         }
 
     elif qt == "fill_paragraph":
@@ -165,6 +248,7 @@ def extract_interactive(r):
             "question": question_text,
             "letter_pool": letter_pool,
             "correct_answer": correct_word,
+            **attempt,
         }
 
     elif qt == "matching":
@@ -174,6 +258,7 @@ def extract_interactive(r):
             "question_type": qt,
             "question": question_text or "Match the following",
             "terms": terms,
+            **attempt,
         }
 
     else:
@@ -182,7 +267,37 @@ def extract_interactive(r):
             "question_type": qt,
             "question": question_text or None,
             "requires_media": True,
+            **attempt,
         }
+
+
+def compute_session_metrics(sessions: list, results: list) -> dict | None:
+    """Session-level stats similar to Rino post-class summary (cups, turns, reaction)."""
+    if not sessions:
+        return None
+
+    def _ts(s: dict) -> str:
+        for key in ("lastActiveAt", "updatedAt", "startedAt"):
+            v = s.get(key)
+            if isinstance(v, dict):
+                d = v.get("$date") or ""
+                if d:
+                    return d
+        return ""
+
+    latest = max(sessions, key=_ts)
+    ck = latest.get("checkpoint") or {}
+    audio = [r for r in results if r.get("interactionType") == "AUDIO"]
+    rts = [r["reactionTimeMs"] for r in audio if isinstance(r.get("reactionTimeMs"), (int, float))]
+    return {
+        "cups": ck.get("currentCups"),
+        "audio_turns": len(audio),
+        "avg_reaction_ms": int(round(sum(rts) / len(rts))) if rts else None,
+        "fastest_reaction_ms": int(min(rts)) if rts else None,
+        "total_duration_ms": latest.get("totalDurationMs"),
+        "session_status": latest.get("status"),
+        "completion_pct": latest.get("completionPercentage"),
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -204,8 +319,12 @@ def extract_lms_question(row: dict) -> dict:
     correct_answer = None
 
     if qt == "Điền vào chỗ trống":
-        if isinstance(answers, list) and answers and isinstance(answers[0], dict):
-            correct_answer = str(answers[0].get("is_true") or answers[0].get("option") or "").strip() or None
+        if isinstance(answers, list):
+            correct_parts = [
+                str(a.get("is_true") or a.get("option") or "").strip()
+                for a in answers if isinstance(a, dict)
+            ]
+            correct_answer = " / ".join(p for p in correct_parts if p) or None
 
     elif qt == "Trả lời bằng giọng nói":
         if isinstance(answers, list) and answers:
@@ -233,9 +352,18 @@ def extract_lms_question(row: dict) -> dict:
 
     elif qt == "Xứng-Hợp":
         if isinstance(answers, dict):
-            col1_texts = [strip_html(a.get("content", "")) for a in answers.get("column1", []) if isinstance(a, dict)]
-            correct_answer = ", ".join(t for t in col1_texts if t) or None
-            col2 = answers.get("column2", [])
+            col1 = answers.get("column1") or []
+            col2 = answers.get("column2") or []
+            pairs = []
+            for a in col1:
+                if not isinstance(a, dict):
+                    continue
+                c1_text = strip_html(a.get("content", ""))
+                correct_idx = int(a.get("is_true", 0))
+                c2_item = col2[correct_idx - 1] if 0 < correct_idx <= len(col2) else {}
+                c2_text = strip_html(c2_item.get("content", "")) if isinstance(c2_item, dict) else ""
+                pairs.append(f"{c1_text}→{c2_text}" if c2_text else c1_text)
+            correct_answer = "; ".join(p for p in pairs if p) or None
             if any(has_media(a.get("content", "")) for a in col2 if isinstance(a, dict)):
                 requires_media = True
 
@@ -243,7 +371,10 @@ def extract_lms_question(row: dict) -> dict:
         if isinstance(answers, dict):
             correct_answer = strip_html(answers.get("correctAnswer", "")) or None
             col2 = answers.get("column2", [])
-            pieces = [a.get("content_text") or strip_html(a.get("raw_content", "")) for a in col2 if isinstance(a, dict)]
+            pieces = [
+                a.get("content_text") or a.get("content") or strip_html(a.get("raw_content", ""))
+                for a in col2 if isinstance(a, dict)
+            ]
             if pieces:
                 question_text = (question_text or "Reorder") + ": " + " | ".join(p for p in pieces if p)
 
@@ -265,6 +396,10 @@ def extract_lms_question(row: dict) -> dict:
         "correct_answer": correct_answer,
         **rich,
     }
+    # Student submission from `bai_lam` (text, flags, or URLs) — needed for homework / lesson UI.
+    _sub = preprocess.extract_question_content(row).get("student_answer")
+    if _sub is not None and _sub != "" and _sub != []:
+        payload["student_answer"] = _sub
     if row.get("is_correct") is not None:
         try:
             payload["is_correct"] = int(row["is_correct"])
@@ -377,8 +512,8 @@ def main():
     print(f"Processing {len(active_ids)} lessons...")
 
     lessons_export = []
-    stats = {"lessons": 0, "pron_drills": 0, "free_speaking": 0,
-             "interactive": 0, "lms_questions": 0}
+    stats = {"lessons": 0, "pron_drills": 0, "free_speaking": 0, "brainstorm": 0,
+             "conversation": 0, "interactive": 0, "lms_questions": 0}
 
     for lid in sorted(active_ids):
         tutor = tutor_by_lesson.get(lid, {})
@@ -429,8 +564,19 @@ def main():
         audio = [r for r in results if r.get("interactionType") == "AUDIO"]
         non_audio = [r for r in results if r.get("interactionType") == "NON_AUDIO"]
 
-        pron_drills = [extract_pronunciation_drill(r) for r in audio if classify_audio(r) == "pronunciation_drill"]
-        free_sp = [extract_free_speaking(r) for r in audio if classify_audio(r) == "free_speaking"]
+        pron_drills = [
+            extract_pronunciation_drill(r)
+            for r in audio if preprocess.classify_audio(r) == "pronunciation_drill"
+        ]
+        free_sp = [
+            extract_free_speaking(r) for r in audio if preprocess.classify_audio(r) == "free_speaking"
+        ]
+        brainstorm_sp = [
+            extract_brainstorm(r) for r in audio if preprocess.classify_audio(r) == "brainstorm"
+        ]
+        convos = [
+            extract_conversation(r) for r in audio if preprocess.classify_audio(r) == "conversation"
+        ]
         interactive = [extract_interactive(r) for r in non_audio]
 
         # Homework
@@ -440,6 +586,8 @@ def main():
         luyen_tap = build_homework_practice(
             lt_pid, pr_by_pid, detail_by_pid, luyen_tap_meta, bank_by_pid=bank_by_pid,
         )
+
+        session_metrics = compute_session_metrics(sessions, results)
 
         lessons_export.append({
             "lesson_id": lid,
@@ -451,8 +599,11 @@ def main():
             "last_activity_date": last_activity,
             "in_class": {
                 "session_count": len(sessions),
+                "session_metrics": session_metrics,
                 "pronunciation_drills": pron_drills,
                 "free_speaking": free_sp,
+                "brainstorm": brainstorm_sp,
+                "conversation": convos,
                 "interactive": interactive,
             },
             "homework": {
@@ -464,6 +615,8 @@ def main():
         stats["lessons"] += 1
         stats["pron_drills"] += len(pron_drills)
         stats["free_speaking"] += len(free_sp)
+        stats["brainstorm"] += len(brainstorm_sp)
+        stats["conversation"] += len(convos)
         stats["interactive"] += len(interactive)
         stats["lms_questions"] += len(bai_tap["questions"] if bai_tap else [])
         stats["lms_questions"] += len(luyen_tap["questions"] if luyen_tap else [])
@@ -488,7 +641,9 @@ def main():
     print(f"\nDone → {OUTPUT_FILE}")
     print(f"Lessons:            {stats['lessons']}")
     print(f"Pronunciation drills: {stats['pron_drills']}")
-    print(f"Free speaking:       {stats['free_speaking']}")
+    print(f"Free speaking (warmup): {stats['free_speaking']}")
+    print(f"Brainstorm (ảnh→từ):  {stats['brainstorm']}")
+    print(f"Conversation:         {stats['conversation']}")
     print(f"Interactive (NON_AUDIO): {stats['interactive']}")
     print(f"LMS homework questions:  {stats['lms_questions']}")
     print(f"Question bank (practice ids): {stats['question_bank_practice_ids']}")

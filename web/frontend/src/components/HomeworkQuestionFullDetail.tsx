@@ -1,6 +1,8 @@
 import { formatStudentAnswerDisplay } from '../lib/formatStudentAnswer'
 import { hasLmsQuestionSubmission, lmsQuestionOutcome } from '../lib/lmsQuestionAttempt'
+import { allStudentAnswerPlaybackUrls } from '../lib/studentAnswerMedia'
 import { HomeworkQuestionRich, type ChoicePreview } from './HomeworkQuestionRich'
+import { InlineAudioPlayer } from './InlineAudioPlayer'
 
 /** Homework question as returned by GET /api/students/.../lessons/:id */
 export interface HomeworkQuestionFull {
@@ -69,6 +71,7 @@ export function HomeworkQuestionFullDetail({
   }
   const stemLine = (q.question_text && q.question_text.trim()) || (q.requires_media ? 'Nội dung chủ yếu bằng hình / âm thanh' : '')
   const studentStr = formatStudentAnswerDisplay(q.student_answer)
+  const studentPlaybackUrls = allStudentAnswerPlaybackUrls(q.student_answer, q.choice_previews)
   const hasSubmission = hasLmsQuestionSubmission(qForAttempt)
   const attemptState = lmsQuestionOutcome(qForAttempt)
   const outcomeLine =
@@ -200,6 +203,18 @@ export function HomeworkQuestionFullDetail({
             >
               {studentStr || '—'}
             </p>
+            {studentPlaybackUrls.length > 0 && (
+              <div className="mt-2 space-y-1.5 border-t border-[var(--border)]/50 pt-2">
+                <p className="text-[9px] font-semibold uppercase tracking-[0.12em] text-[var(--muted)]">
+                  Âm thanh bài làm (học sinh)
+                </p>
+                <div className="flex flex-col gap-2">
+                  {studentPlaybackUrls.map((src) => (
+                    <InlineAudioPlayer key={src} src={src} />
+                  ))}
+                </div>
+              </div>
+            )}
             {outcomeLine && (
               <p
                 className={`mt-1 text-[10px] font-semibold ${

@@ -62,7 +62,8 @@ def _count_usable(lesson: dict) -> tuple[int, list]:
             norm = _normalize_practice_row_for_pool(q, ptype)
             if norm is not None:
                 usable.append(norm)
-    for item in (lesson.get("in_class") or {}).get("free_speaking") or []:
+    ic = lesson.get("in_class") or {}
+    for item in ic.get("free_speaking") or []:
         if item.get("question"):
             usable.append({
                 "question_id": None,
@@ -72,6 +73,18 @@ def _count_usable(lesson: dict) -> tuple[int, list]:
                 "requires_media": False,
                 "correct_answer": None,
                 "interaction_type": "free_speaking",
+                "source": "in_class",
+            })
+    for item in ic.get("brainstorm") or []:
+        if item.get("question"):
+            usable.append({
+                "question_id": None,
+                "question_folder": "Speaking",
+                "question_type": item.get("question_type", "brainstorm"),
+                "question_text": item["question"],
+                "requires_media": False,
+                "correct_answer": None,
+                "interaction_type": "brainstorm",
                 "source": "in_class",
             })
     return len(usable), usable

@@ -27,10 +27,14 @@
     "weak_skills_global": [],
     "overall_pronunciation_score_avg": 73.78,
     "overall_free_speaking_score_avg": 0.0,
+    "overall_brainstorm_score_avg": 0.0,
+    "overall_conversation_score_avg": 75.56,
     "overall_free_speaking_answer_type_dist": {
       "inaccordant": 9,
+      "lack_of_knowledge": 3
+    },
+    "overall_brainstorm_answer_type_dist": {
       "incorrect": 13,
-      "lack_of_knowledge": 3,
       "correct": 3
     },
     "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
@@ -52,28 +56,79 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
-          "question": "Can you tell me what it is?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "She is like.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-04-05"
+          "lms_type": "conversation",
+          "question": "Nice. Do you also play other games in your free time? 😊",
+          "expected_answer": "Yes, I also play the guitar sometimes and play chess with my brother.",
+          "target_objects": null,
+          "user_transcript": "I don't like game in your",
+          "score": 59.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 19,
+          "timestamp": "2026-04-05",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnldrxhl-0b1d6a1d-audio.wav",
+          "reaction_time_ms": 1186
         },
         {
-          "question": "What can you see?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "I'm the of you.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-04-05"
+          "lms_type": "conversation",
+          "question": "Nice. Who do you play with most often? 😊",
+          "expected_answer": "I play with Art most often, sometimes with Sally and my brother.",
+          "target_objects": null,
+          "user_transcript": "I play with art often.",
+          "score": 66,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 40,
+          "grammar_score": 92,
+          "timestamp": "2026-04-05",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnldrhl5-fffc3b55-audio.wav",
+          "reaction_time_ms": 1186
         },
         {
-          "question": "What do you like to play?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "Umpi and the Empire and is.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "timestamp": "2026-04-05"
+          "lms_type": "conversation",
+          "question": "Good. How often do you play with Art and Sally? 😊",
+          "expected_answer": "We play every week, on Saturdays.",
+          "target_objects": null,
+          "user_transcript": "I often do you play with them.",
+          "score": 51.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 85,
+          "grammar_score": 18,
+          "timestamp": "2026-04-05",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnldqypq-37c5491b-audio.wav",
+          "reaction_time_ms": 1186
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. How long do you play each time? 😊",
+          "expected_answer": "We play about one hour each time.",
+          "target_objects": null,
+          "user_transcript": "We like about one badminton.",
+          "score": 55.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 93,
+          "grammar_score": 18,
+          "timestamp": "2026-04-05",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnldniir-7a97b60a-audio.wav",
+          "reaction_time_ms": 1186
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Do you and your brother play every week? 😊",
+          "expected_answer": "Yes, we play every week, usually on Saturday.",
+          "target_objects": null,
+          "user_transcript": "Yes, we like every week.",
+          "score": 53.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 60,
+          "grammar_score": 47,
+          "timestamp": "2026-04-05",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnldn3no-2867d891-audio.wav",
+          "reaction_time_ms": 1186
         }
       ],
       "practice_ids": {
@@ -97,20 +152,79 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
-          "question": "What are they doing?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "How?",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-04-11"
+          "lms_type": "conversation",
+          "question": "Nice. Do you sing Shaan songs with friends? 🎤",
+          "expected_answer": "Yes, we sing Shaan songs together a lot.",
+          "target_objects": null,
+          "user_transcript": "I think some songs with yes.",
+          "score": 55,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 63,
+          "grammar_score": 47,
+          "timestamp": "2026-04-11",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/11/admin/mntyfcta-a40c9916-audio.wav",
+          "reaction_time_ms": 1463
         },
         {
-          "question": "What can you see?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "The.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-04-11"
+          "lms_type": "conversation",
+          "question": "Nice. Which song do you sing most often with your friends? 🎤",
+          "expected_answer": "We usually sing \"Shape of You\" together.",
+          "target_objects": null,
+          "user_transcript": "Shaan, we usually sing and spa.",
+          "score": 30,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 47,
+          "grammar_score": 13,
+          "timestamp": "2026-04-11",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/11/admin/mntyexrx-4bf2a9b2-audio.wav",
+          "reaction_time_ms": 1463
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Which song do you sing most often with friends? 🎤",
+          "expected_answer": "We usually sing 'Shape of You' together.",
+          "target_objects": null,
+          "user_transcript": "I sound do you sing we usually sing.",
+          "score": 28.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 39,
+          "grammar_score": 18,
+          "timestamp": "2026-04-11",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/11/admin/mntyeehe-846f457f-audio.wav",
+          "reaction_time_ms": 1463
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good — pop songs are great with friends 🎶 What’s a song you sing most often?",
+          "expected_answer": "We usually sing 'Shape of You' or 'Someone Like You' with friends.",
+          "target_objects": null,
+          "user_transcript": "It's a song you usually sing.",
+          "score": 48.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 59,
+          "grammar_score": 38,
+          "timestamp": "2026-04-11",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/11/admin/mntydweg-c6bbb33d-audio.wav",
+          "reaction_time_ms": 1463
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice, roller skating is fun 😊 Do you roller skate at a park or indoors?",
+          "expected_answer": "I roller skate at a park near my house.",
+          "target_objects": null,
+          "user_transcript": "I roll gas at 7 a.m.",
+          "score": 66.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 94,
+          "grammar_score": 39,
+          "timestamp": "2026-04-11",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/11/admin/mntybm2f-19c54ba4-audio.wav",
+          "reaction_time_ms": 1463
         }
       ],
       "practice_ids": {
@@ -134,20 +248,41 @@
       "failed_media_questions_count": 1,
       "worst_speaking_items": [
         {
+          "lms_type": "brainstorm",
           "question": "What can you see?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": [
+            "fat boy",
+            "thin girl",
+            "young children",
+            "old grandparents",
+            "tall boy",
+            "short girl"
+          ],
           "user_transcript": "I can.",
           "score": 0,
           "answer_type": "incorrect",
-          "timestamp": "2026-01-11"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-11",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/11/admin/mk9bt242-390a117d-audio.wav",
+          "reaction_time_ms": 3177
         },
         {
+          "lms_type": "free_speaking",
           "question": "How are you today?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": null,
           "user_transcript": "I, I can you.",
           "score": 0,
           "answer_type": "inaccordant",
-          "timestamp": "2026-01-11"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-11",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/11/admin/mk9brtiz-94a1bf0c-audio.wav",
+          "reaction_time_ms": 1207
         }
       ],
       "practice_ids": {
@@ -171,12 +306,79 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
-          "question": "What do you like to play?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "You?",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "timestamp": "2026-02-07"
+          "lms_type": "conversation",
+          "question": "Nice. Can you tell one thing you do as a teacher? 😊",
+          "expected_answer": "I help students learn and explain new words.",
+          "target_objects": null,
+          "user_transcript": "Yes, I have students learning about.",
+          "score": 55,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 92,
+          "grammar_score": 18,
+          "timestamp": "2026-02-07",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbxluhx-7c23a982-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. What do you like about being a teacher? 😊",
+          "expected_answer": "I like helping students and explaining things clearly.",
+          "target_objects": null,
+          "user_transcript": "I like.",
+          "score": 67.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 35,
+          "timestamp": "2026-02-07",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbxlelr-d3f78bf1-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice, you like teacher. Why do you like being a teacher? 😊",
+          "expected_answer": "I like teacher because I like help children learn and I enjoy speaking.",
+          "target_objects": null,
+          "user_transcript": "I like.",
+          "score": 26.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 16,
+          "grammar_score": 37,
+          "timestamp": "2026-02-07",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbxl378-1b724e83-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Firefighter is brave and helps people in fires. Do you want to be one? 🚒",
+          "expected_answer": "Yes, I want to be a firefighter because I like helping people.",
+          "target_objects": null,
+          "user_transcript": "He.",
+          "score": 32.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 15,
+          "timestamp": "2026-02-07",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbxjwn0-b9be5c12-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Teacher gives lessons and helps students learn. 😊 What job do you like most?",
+          "expected_answer": "I like firefighter because they help people and are brave.",
+          "target_objects": null,
+          "user_transcript": "I like firefighter because they",
+          "score": 30.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 45,
+          "grammar_score": 16,
+          "timestamp": "2026-02-07",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbxjmhg-2d8a439b-audio.wav",
+          "reaction_time_ms": null
         }
       ],
       "practice_ids": {
@@ -202,6 +404,7 @@
           "question_folder": "English Tutoring - Level 5",
           "question_type": "Điền vào chỗ trống",
           "question_text": "Look and write. (Con hãy nhìn và viết từ đúng) What does he look like? - ... young.",
+          "comment_plain": "=> Đáp án: He&#39;s (What does he look like? He&#39;s young: Anh ấy tr&ocirc;ng như thể nào? Anh ấy trẻ.)",
           "correct_answer": "He's",
           "student_answer": "he",
           "requires_media": false,
@@ -214,19 +417,47 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         }
       ],
       "question_bank_preview": [],
       "failed_media_questions_count": 4,
       "worst_speaking_items": [
         {
+          "lms_type": "conversation",
+          "question": "Great! My friend is very sporty. 💪 Is your friend sporty too?",
+          "expected_answer": "Yes, he is sporty. / No, he is not sporty.",
+          "target_objects": null,
+          "user_transcript": "Yes, he is sporty, no, he is not.",
+          "score": 54,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 64,
+          "grammar_score": 44,
+          "timestamp": "2026-01-17",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/17/admin/mkhx1y2r-9c1e7792-audio.wav",
+          "reaction_time_ms": 1557
+        },
+        {
+          "lms_type": "brainstorm",
           "question": "What do you see?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": [
+            "sporty boy",
+            "cute girl",
+            "handsome boy",
+            "pretty girl"
+          ],
           "user_transcript": "How going?",
           "score": 0,
           "answer_type": "incorrect",
-          "timestamp": "2026-01-17"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-17",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/17/admin/mkhwg0x9-825f3f9a-audio.wav",
+          "reaction_time_ms": null
         }
       ],
       "practice_ids": {
@@ -250,12 +481,40 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
+          "lms_type": "conversation",
+          "question": "That's wonderful! 👍 Are you friendly with your classmates?",
+          "expected_answer": "Yes, I am friendly. / No, I am not friendly.",
+          "target_objects": null,
+          "user_transcript": "Yes, I am friendly. No, I am not.",
+          "score": 66,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 32,
+          "timestamp": "2026-01-18",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/18/admin/mkjcm01u-6268a0b2-audio.wav",
+          "reaction_time_ms": 1296
+        },
+        {
+          "lms_type": "brainstorm",
           "question": "Look at the picture and the thing I circled. What is it?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": [
+            "friendly",
+            "clever",
+            "kind",
+            "hard-working",
+            "funny"
+          ],
           "user_transcript": "It's what this.",
           "score": 0,
           "answer_type": "incorrect",
-          "timestamp": "2026-01-18"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-18",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/18/admin/mkjbwgva-a4ecfa83-audio.wav",
+          "reaction_time_ms": 2097
         }
       ],
       "practice_ids": {
@@ -279,20 +538,41 @@
       "failed_media_questions_count": 3,
       "worst_speaking_items": [
         {
+          "lms_type": "brainstorm",
           "question": "Look at the picture and the thing I circled. What is it?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": [
+            "tall",
+            "short",
+            "fat",
+            "thin",
+            "cute",
+            "sporty"
+          ],
           "user_transcript": "Can me go?",
           "score": 0,
           "answer_type": "incorrect",
-          "timestamp": "2026-01-24"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-24",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/24/admin/mkrwj7ib-5a31f635-audio.wav",
+          "reaction_time_ms": 859
         },
         {
+          "lms_type": "free_speaking",
           "question": "How are you today?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": null,
           "user_transcript": "Ha, I heard, go with you.",
           "score": 0,
           "answer_type": "inaccordant",
-          "timestamp": "2026-01-24"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-24",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/24/admin/mkrwhths-bdf01198-audio.wav",
+          "reaction_time_ms": 1415
         }
       ],
       "practice_ids": {
@@ -314,7 +594,59 @@
       "failed_text_questions": [],
       "question_bank_preview": [],
       "failed_media_questions_count": 5,
-      "worst_speaking_items": [],
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Awesome! 🎉 Are they hard-working at school? I try to be!",
+          "expected_answer": "Yes, my best friend is hard-working.",
+          "target_objects": null,
+          "user_transcript": "Yes, my best friend is her working.",
+          "score": 55,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 74,
+          "grammar_score": 36,
+          "timestamp": "2026-01-25",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/25/admin/mktckcad-23ab1d1c-audio.wav",
+          "reaction_time_ms": 1094
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "Look at the picture and the thing I circled. What is it?",
+          "expected_answer": null,
+          "target_objects": [
+            "friendly",
+            "clever",
+            "kind"
+          ],
+          "user_transcript": "Friendly.",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "friendly"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-25",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/25/admin/mktbz7yc-baf1445a-audio.wav",
+          "reaction_time_ms": 2905
+        },
+        {
+          "lms_type": "free_speaking",
+          "question": "What do you like to do after school?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "Oh.",
+          "score": 0,
+          "answer_type": "lack_of_knowledge",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-25",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/25/admin/mktbxu3m-c85fa2b0-audio.wav",
+          "reaction_time_ms": 1892
+        }
+      ],
       "practice_ids": {
         "bai_tap": 15052,
         "luyen_tap": 13938
@@ -336,20 +668,61 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
+          "lms_type": "brainstorm",
           "question": "What is it?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": [
+            "nurse",
+            "farmer",
+            "police",
+            "firefighter",
+            "driver"
+          ],
           "user_transcript": "OK.",
           "score": 0,
           "answer_type": "incorrect",
-          "timestamp": "2026-01-31"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-31",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/31/admin/ml1wm81i-96290fe6-audio.wav",
+          "reaction_time_ms": 2288
         },
         {
+          "lms_type": "brainstorm",
           "question": "What can you see?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": [
+            "nurse",
+            "farmer",
+            "police",
+            "firefighter",
+            "driver"
+          ],
           "user_transcript": "I.",
           "score": 0,
           "answer_type": "incorrect",
-          "timestamp": "2026-01-31"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-31",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/31/admin/ml1wltf7-9a0fc188-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "free_speaking",
+          "question": "What sport can you play?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "The.",
+          "score": 0,
+          "answer_type": "lack_of_knowledge",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-31",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/31/admin/ml1wkryx-62c7d055-audio.wav",
+          "reaction_time_ms": 1363
         }
       ],
       "practice_ids": {
@@ -373,20 +746,85 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
+          "lms_type": "conversation",
+          "question": "Nice. Helping students is great 😊 What age do you want to teach?",
+          "expected_answer": "I want to teach young children, maybe age 6–8, because I like simple lessons and games.",
+          "target_objects": null,
+          "user_transcript": "I want.",
+          "score": 58,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 16,
+          "timestamp": "2026-02-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mldd3aet-046d51b7-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi, nice to see you. Ready to talk about jobs? 😄",
+          "expected_answer": "Yes, I'm ready. Let's talk about jobs.",
+          "target_objects": null,
+          "user_transcript": "Yes, I'm ready to take a part.",
+          "score": 63.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 58,
+          "grammar_score": 69,
+          "timestamp": "2026-02-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mldd2189-b657ddcc-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Do you enjoy answering phone calls? 📞",
+          "expected_answer": "Yes, I enjoy answering phone calls.",
+          "target_objects": null,
+          "user_transcript": "Yes, I am choosing and scoring phone calls.",
+          "score": 69.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 90,
+          "grammar_score": 49,
+          "timestamp": "2026-02-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mldd0e2u-f8c9ef10-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. What do you do in the office? 🙂",
+          "expected_answer": "I answer emails and attend meetings. I also prepare reports.",
+          "target_objects": null,
+          "user_transcript": "I email and I.",
+          "score": 23,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 31,
+          "grammar_score": 15,
+          "timestamp": "2026-02-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mldcz6xi-913b9e61-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "brainstorm",
           "question": "What is it?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": [
+            "school",
+            "fire station",
+            "circus",
+            "hospital",
+            "farm"
+          ],
           "user_transcript": "I.",
           "score": 0,
           "answer_type": "incorrect",
-          "timestamp": "2026-02-08"
-        },
-        {
-          "question": "What do you like to do after school?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "My hat.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "timestamp": "2026-02-08"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-02-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mldc80dc-5935fe6a-audio.wav",
+          "reaction_time_ms": null
         }
       ],
       "practice_ids": {
@@ -410,12 +848,79 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
+          "lms_type": "conversation",
+          "question": "Nice answer. Do you like working with children or adults more? 😊",
+          "expected_answer": "I like working with adults more because I can make important decisions and help many patients.",
+          "target_objects": null,
+          "user_transcript": "I like working with.",
+          "score": 57,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 14,
+          "timestamp": "2026-02-14",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/14/admin/mllxmbap-3dfb8d84-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. What does your teacher teach? 😊",
+          "expected_answer": "She teaches English and math.",
+          "target_objects": null,
+          "user_transcript": "C D about.",
+          "score": 5.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 11,
+          "timestamp": "2026-02-14",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/14/admin/mllxjszs-751bfacb-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Who is your favourite teacher? 😊",
+          "expected_answer": "My favourite teacher is Ms. Lopez.",
+          "target_objects": null,
+          "user_transcript": "My teacher.",
+          "score": 57.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 15,
+          "timestamp": "2026-02-14",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/14/admin/mllxjdzb-82c7b093-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "A teacher is great. What does your teacher do at school? 👩‍🏫",
+          "expected_answer": "My teacher teaches math and helps students with reading.",
+          "target_objects": null,
+          "user_transcript": "Marji, Mark, and I go.",
+          "score": 56.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 72,
+          "grammar_score": 41,
+          "timestamp": "2026-02-14",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/14/admin/mllxinqy-23e0bd94-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "free_speaking",
           "question": "What do you like to eat?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": null,
           "user_transcript": "Are you?",
           "score": 0,
           "answer_type": "inaccordant",
-          "timestamp": "2026-02-14"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-02-14",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/14/admin/mllwquzm-b37db269-audio.wav",
+          "reaction_time_ms": 1156
         }
       ],
       "practice_ids": {
@@ -439,12 +944,79 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
-          "question": "What's the weather like today?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "I'm fine, I can give news.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "timestamp": "2026-03-28"
+          "lms_type": "conversation",
+          "question": "Nice. Do you mean you would like to be a teacher at school? 😊",
+          "expected_answer": "Yes, I would like to be a teacher at school.",
+          "target_objects": null,
+          "user_transcript": "Yes, I would like to learn student.",
+          "score": 48.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 57,
+          "grammar_score": 40,
+          "timestamp": "2026-03-28",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9y4swn-6a8be4ed-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Do you mean you like teachers or students? 😊",
+          "expected_answer": "I mean I like teachers. I want to be a teacher at a school.",
+          "target_objects": null,
+          "user_transcript": "I would like to.",
+          "score": 65.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 87,
+          "grammar_score": 44,
+          "timestamp": "2026-03-28",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9y49fm-b7f4b189-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Working at a school is great. Which job there do you like? 😊",
+          "expected_answer": "I would like to be a teacher at the school.",
+          "target_objects": null,
+          "user_transcript": "It they are.",
+          "score": 41.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 66,
+          "grammar_score": 17,
+          "timestamp": "2026-03-28",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9y3wh3-f2002a08-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Great, cool. What job would you like to try one day? 😊",
+          "expected_answer": "I would like to be a doctor because I like helping people.",
+          "target_objects": null,
+          "user_transcript": "It is at school.",
+          "score": 69.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 39,
+          "timestamp": "2026-03-28",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9y351c-181a680e-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. What jobs did you hear about in the lesson? 😊",
+          "expected_answer": "I heard about a teacher at school, a doctor at the hospital, and a farmer on a farm.",
+          "target_objects": null,
+          "user_transcript": "I hear about a doctor at school.",
+          "score": 66.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 66,
+          "grammar_score": 67,
+          "timestamp": "2026-03-28",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9y0ch4-7f001120-audio.wav",
+          "reaction_time_ms": null
         }
       ],
       "practice_ids": {
@@ -470,12 +1042,9 @@
           "question_folder": "English Tutoring - Level 5",
           "question_type": "Một lựa chọn",
           "question_text": "Read and choose the correct answer (Con hãy đọc và chọn phương án đúng.) What do they like doing? - ... like going shopping.",
+          "comment_plain": "What do they like doing? - They like going shopping. Họ th&iacute;ch làm g&igrave;? - Họ th&iacute;ch đi mua sắm. => Đáp án: A",
           "correct_answer": "A. They",
-          "student_answer": [
-            "0",
-            "1",
-            "0"
-          ],
+          "student_answer": "B. I",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -498,35 +1067,92 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         }
       ],
       "question_bank_preview": [],
       "failed_media_questions_count": 3,
       "worst_speaking_items": [
         {
+          "lms_type": "conversation",
+          "question": "Nice, sometimes reading is good. How long do you read each time? 😊",
+          "expected_answer": "About one hour each time.",
+          "target_objects": null,
+          "user_transcript": "Ah, it sometimes reading is good about one hour.",
+          "score": 62,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 73,
+          "grammar_score": 51,
+          "timestamp": "2026-03-29",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbdjvqd-99be43b4-audio.wav",
+          "reaction_time_ms": 1382
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. How long do you read each time? 😊",
+          "expected_answer": "I usually read for about one hour each time.",
+          "target_objects": null,
+          "user_transcript": "Be time I read.",
+          "score": 11,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 8,
+          "grammar_score": 14,
+          "timestamp": "2026-03-29",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbdivo6-cfacecd3-audio.wav",
+          "reaction_time_ms": 1382
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Do you also like reading comics sometimes? 📚",
+          "expected_answer": "Yes, I sometimes read comics after diving. I like funny stories.",
+          "target_objects": null,
+          "user_transcript": "Yes, I sometimes read comics.",
+          "score": 56.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 22,
+          "grammar_score": 91,
+          "timestamp": "2026-03-29",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbdgroz-aacdbc7d-audio.wav",
+          "reaction_time_ms": 1382
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi, nice to see you. Ready to talk about free time activities? 😄",
+          "expected_answer": "Yes, I am ready. I like reading comics and going shopping.",
+          "target_objects": null,
+          "user_transcript": "Yes, I'm ready. I like.",
+          "score": 56.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 93,
+          "grammar_score": 20,
+          "timestamp": "2026-03-29",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbdeedw-351570a1-audio.wav",
+          "reaction_time_ms": 1382
+        },
+        {
+          "lms_type": "brainstorm",
           "question": "What are they doing?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": [
+            "Going shopping",
+            "Going diving",
+            "Go sailing",
+            "Reading comics"
+          ],
           "user_transcript": "I, you.",
           "score": 0,
           "answer_type": "incorrect",
-          "timestamp": "2026-03-29"
-        },
-        {
-          "question": "Look at this picture and tell me, what can you see?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "Ple.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-03-29"
-        },
-        {
-          "question": "How are you today?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "Hi.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "timestamp": "2026-03-29"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-29",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbcplgh-0b336410-audio.wav",
+          "reaction_time_ms": 693
         }
       ],
       "practice_ids": {
@@ -552,6 +1178,15 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 47,
+          "avg_reaction_ms": 2358,
+          "fastest_reaction_ms": 856,
+          "total_duration_ms": 1352255,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-02-01",
@@ -562,14 +1197,26 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 7,
+        "conversation_score_avg": 82.0,
         "worst_speaking_items": [
           {
+            "lms_type": "free_speaking",
             "question": "What do you like to play?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "What?",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-02-01"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-02-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/01/admin/ml3c0mzt-c210eef2-audio.wav",
+            "reaction_time_ms": 4028
           }
         ]
       },
@@ -603,41 +1250,107 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": 43,
+          "audio_turns": 49,
+          "avg_reaction_ms": 1401,
+          "fastest_reaction_ms": 484,
+          "total_duration_ms": 1746687,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-04-05",
         "pronunciation_attempts": 32,
         "pronunciation_score_avg": 71.66,
-        "free_speaking_attempts": 3,
+        "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "inaccordant": 1,
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "incorrect": 2
         },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 76.25,
         "worst_speaking_items": [
           {
-            "question": "Can you tell me what it is?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "She is like.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-04-05"
+            "lms_type": "conversation",
+            "question": "Nice. Do you also play other games in your free time? 😊",
+            "expected_answer": "Yes, I also play the guitar sometimes and play chess with my brother.",
+            "target_objects": null,
+            "user_transcript": "I don't like game in your",
+            "score": 59.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 19,
+            "timestamp": "2026-04-05",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnldrxhl-0b1d6a1d-audio.wav",
+            "reaction_time_ms": 1186
           },
           {
-            "question": "What can you see?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "I'm the of you.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-04-05"
+            "lms_type": "conversation",
+            "question": "Nice. Who do you play with most often? 😊",
+            "expected_answer": "I play with Art most often, sometimes with Sally and my brother.",
+            "target_objects": null,
+            "user_transcript": "I play with art often.",
+            "score": 66,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 40,
+            "grammar_score": 92,
+            "timestamp": "2026-04-05",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnldrhl5-fffc3b55-audio.wav",
+            "reaction_time_ms": 1186
           },
           {
-            "question": "What do you like to play?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "Umpi and the Empire and is.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "timestamp": "2026-04-05"
+            "lms_type": "conversation",
+            "question": "Good. How often do you play with Art and Sally? 😊",
+            "expected_answer": "We play every week, on Saturdays.",
+            "target_objects": null,
+            "user_transcript": "I often do you play with them.",
+            "score": 51.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 85,
+            "grammar_score": 18,
+            "timestamp": "2026-04-05",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnldqypq-37c5491b-audio.wav",
+            "reaction_time_ms": 1186
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. How long do you play each time? 😊",
+            "expected_answer": "We play about one hour each time.",
+            "target_objects": null,
+            "user_transcript": "We like about one badminton.",
+            "score": 55.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 93,
+            "grammar_score": 18,
+            "timestamp": "2026-04-05",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnldniir-7a97b60a-audio.wav",
+            "reaction_time_ms": 1186
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Do you and your brother play every week? 😊",
+            "expected_answer": "Yes, we play every week, usually on Saturday.",
+            "target_objects": null,
+            "user_transcript": "Yes, we like every week.",
+            "score": 53.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 60,
+            "grammar_score": 47,
+            "timestamp": "2026-04-05",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnldn3no-2867d891-audio.wav",
+            "reaction_time_ms": 1186
           }
         ]
       },
@@ -677,33 +1390,107 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": 49,
+          "audio_turns": 51,
+          "avg_reaction_ms": 1600,
+          "fastest_reaction_ms": 774,
+          "total_duration_ms": 1695283,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-04-11",
         "pronunciation_attempts": 34,
         "pronunciation_score_avg": 78.44,
-        "free_speaking_attempts": 3,
+        "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "lack_of_knowledge": 1,
+          "lack_of_knowledge": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "incorrect": 2
         },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 69.36,
         "worst_speaking_items": [
           {
-            "question": "What are they doing?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "How?",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-04-11"
+            "lms_type": "conversation",
+            "question": "Nice. Do you sing Shaan songs with friends? 🎤",
+            "expected_answer": "Yes, we sing Shaan songs together a lot.",
+            "target_objects": null,
+            "user_transcript": "I think some songs with yes.",
+            "score": 55,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 63,
+            "grammar_score": 47,
+            "timestamp": "2026-04-11",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/11/admin/mntyfcta-a40c9916-audio.wav",
+            "reaction_time_ms": 1463
           },
           {
-            "question": "What can you see?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "The.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-04-11"
+            "lms_type": "conversation",
+            "question": "Nice. Which song do you sing most often with your friends? 🎤",
+            "expected_answer": "We usually sing \"Shape of You\" together.",
+            "target_objects": null,
+            "user_transcript": "Shaan, we usually sing and spa.",
+            "score": 30,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 47,
+            "grammar_score": 13,
+            "timestamp": "2026-04-11",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/11/admin/mntyexrx-4bf2a9b2-audio.wav",
+            "reaction_time_ms": 1463
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Which song do you sing most often with friends? 🎤",
+            "expected_answer": "We usually sing 'Shape of You' together.",
+            "target_objects": null,
+            "user_transcript": "I sound do you sing we usually sing.",
+            "score": 28.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 39,
+            "grammar_score": 18,
+            "timestamp": "2026-04-11",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/11/admin/mntyeehe-846f457f-audio.wav",
+            "reaction_time_ms": 1463
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good — pop songs are great with friends 🎶 What’s a song you sing most often?",
+            "expected_answer": "We usually sing 'Shape of You' or 'Someone Like You' with friends.",
+            "target_objects": null,
+            "user_transcript": "It's a song you usually sing.",
+            "score": 48.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 59,
+            "grammar_score": 38,
+            "timestamp": "2026-04-11",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/11/admin/mntydweg-c6bbb33d-audio.wav",
+            "reaction_time_ms": 1463
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice, roller skating is fun 😊 Do you roller skate at a park or indoors?",
+            "expected_answer": "I roller skate at a park near my house.",
+            "target_objects": null,
+            "user_transcript": "I roll gas at 7 a.m.",
+            "score": 66.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 94,
+            "grammar_score": 39,
+            "timestamp": "2026-04-11",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/11/admin/mntybm2f-19c54ba4-audio.wav",
+            "reaction_time_ms": 1463
           }
         ]
       },
@@ -743,33 +1530,69 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 36,
+          "avg_reaction_ms": 1919,
+          "fastest_reaction_ms": 866,
+          "total_duration_ms": 10355,
+          "session_status": "COMPLETED",
+          "completion_pct": 16
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-01-12",
         "pronunciation_attempts": 24,
         "pronunciation_score_avg": 79.88,
-        "free_speaking_attempts": 2,
+        "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "inaccordant": 1,
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "incorrect": 1
         },
+        "conversation_attempts": 6,
+        "conversation_score_avg": 85.5,
         "worst_speaking_items": [
           {
+            "lms_type": "brainstorm",
             "question": "What can you see?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": [
+              "fat boy",
+              "thin girl",
+              "young children",
+              "old grandparents",
+              "tall boy",
+              "short girl"
+            ],
             "user_transcript": "I can.",
             "score": 0,
             "answer_type": "incorrect",
-            "timestamp": "2026-01-11"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-11",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/11/admin/mk9bt242-390a117d-audio.wav",
+            "reaction_time_ms": 3177
           },
           {
+            "lms_type": "free_speaking",
             "question": "How are you today?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "I, I can you.",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-01-11"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-11",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/11/admin/mk9brtiz-94a1bf0c-audio.wav",
+            "reaction_time_ms": 1207
           }
         ]
       },
@@ -813,12 +1636,9 @@
             "question_folder": "English Tutoring - Level 5",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+            "comment_plain": "Audio: tall: cao => Đáp án: A",
             "correct_answer": "A",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -847,7 +1667,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -869,6 +1690,15 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 71,
+          "avg_reaction_ms": 2722,
+          "fastest_reaction_ms": 348,
+          "total_duration_ms": 301258,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-02-07",
@@ -879,14 +1709,86 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 24,
+        "conversation_score_avg": 67.08,
         "worst_speaking_items": [
           {
-            "question": "What do you like to play?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "You?",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "timestamp": "2026-02-07"
+            "lms_type": "conversation",
+            "question": "Nice. Can you tell one thing you do as a teacher? 😊",
+            "expected_answer": "I help students learn and explain new words.",
+            "target_objects": null,
+            "user_transcript": "Yes, I have students learning about.",
+            "score": 55,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 92,
+            "grammar_score": 18,
+            "timestamp": "2026-02-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbxluhx-7c23a982-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. What do you like about being a teacher? 😊",
+            "expected_answer": "I like helping students and explaining things clearly.",
+            "target_objects": null,
+            "user_transcript": "I like.",
+            "score": 67.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 35,
+            "timestamp": "2026-02-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbxlelr-d3f78bf1-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice, you like teacher. Why do you like being a teacher? 😊",
+            "expected_answer": "I like teacher because I like help children learn and I enjoy speaking.",
+            "target_objects": null,
+            "user_transcript": "I like.",
+            "score": 26.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 16,
+            "grammar_score": 37,
+            "timestamp": "2026-02-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbxl378-1b724e83-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Firefighter is brave and helps people in fires. Do you want to be one? 🚒",
+            "expected_answer": "Yes, I want to be a firefighter because I like helping people.",
+            "target_objects": null,
+            "user_transcript": "He.",
+            "score": 32.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 15,
+            "timestamp": "2026-02-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbxjwn0-b9be5c12-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Teacher gives lessons and helps students learn. 😊 What job do you like most?",
+            "expected_answer": "I like firefighter because they help people and are brave.",
+            "target_objects": null,
+            "user_transcript": "I like firefighter because they",
+            "score": 30.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 45,
+            "grammar_score": 16,
+            "timestamp": "2026-02-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbxjmhg-2d8a439b-audio.wav",
+            "reaction_time_ms": null
           }
         ]
       },
@@ -932,24 +1834,65 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 36,
+          "avg_reaction_ms": 2366,
+          "fastest_reaction_ms": 765,
+          "total_duration_ms": 1184300,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-01-17",
         "pronunciation_attempts": 25,
         "pronunciation_score_avg": 80.08,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "incorrect": 1
         },
+        "conversation_attempts": 7,
+        "conversation_score_avg": 81.71,
         "worst_speaking_items": [
           {
+            "lms_type": "conversation",
+            "question": "Great! My friend is very sporty. 💪 Is your friend sporty too?",
+            "expected_answer": "Yes, he is sporty. / No, he is not sporty.",
+            "target_objects": null,
+            "user_transcript": "Yes, he is sporty, no, he is not.",
+            "score": 54,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 64,
+            "grammar_score": 44,
+            "timestamp": "2026-01-17",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/17/admin/mkhx1y2r-9c1e7792-audio.wav",
+            "reaction_time_ms": 1557
+          },
+          {
+            "lms_type": "brainstorm",
             "question": "What do you see?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": [
+              "sporty boy",
+              "cute girl",
+              "handsome boy",
+              "pretty girl"
+            ],
             "user_transcript": "How going?",
             "score": 0,
             "answer_type": "incorrect",
-            "timestamp": "2026-01-17"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-17",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/17/admin/mkhwg0x9-825f3f9a-audio.wav",
+            "reaction_time_ms": null
           }
         ]
       },
@@ -993,11 +1936,9 @@
             "question_folder": "English Tutoring - Level 5",
             "question_type": "Một lựa chọn",
             "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
+            "comment_plain": "Audio: I&#39;m sporty: T&ocirc;i thể thao năng động. => Đáp án: A",
             "correct_answer": null,
-            "student_answer": [
-              "0",
-              "1"
-            ],
+            "student_answer": "option_2",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/03/0df5_sporty.png"
@@ -1020,7 +1961,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 14333,
@@ -1028,11 +1970,9 @@
             "question_folder": "English Tutoring - Level 5",
             "question_type": "Một lựa chọn",
             "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
+            "comment_plain": "Audio: She&#39;s pretty: C&ocirc; ấy xinh đẹp. => Đáp án: A",
             "correct_answer": null,
-            "student_answer": [
-              "0",
-              "1"
-            ],
+            "student_answer": "option_2",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/21/142a_pretty--281-29.png"
@@ -1055,7 +1995,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13908,
@@ -1063,12 +2004,9 @@
             "question_folder": "English Tutoring - Level 5",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn phương án đúng.)",
+            "comment_plain": "Audio: What do you look like? - I&#39;m short. Bạn tr&ocirc;ng như thể nào? - T&ocirc;i thấp. => Đáp án: C",
             "correct_answer": "C",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -1097,7 +2035,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13908,
@@ -1105,6 +2044,7 @@
             "question_folder": "English Tutoring - Level 5",
             "question_type": "Điền vào chỗ trống",
             "question_text": "Fill in the blank (Con hãy điền vào chỗ trống) What does he look like? - He's ...",
+            "comment_plain": "Ảnh: đẹp trai = handsome => Đáp án: handsome",
             "correct_answer": "handsome",
             "student_answer": "hadsome",
             "requires_media": true,
@@ -1119,7 +2059,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13908,
@@ -1127,6 +2068,7 @@
             "question_folder": "English Tutoring - Level 5",
             "question_type": "Điền vào chỗ trống",
             "question_text": "Look and write. (Con hãy nhìn và viết từ đúng) What does he look like? - ... young.",
+            "comment_plain": "=> Đáp án: He&#39;s (What does he look like? He&#39;s young: Anh ấy tr&ocirc;ng như thể nào? Anh ấy trẻ.)",
             "correct_answer": "He's",
             "student_answer": "he",
             "requires_media": false,
@@ -1139,7 +2081,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -1161,24 +2104,66 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 35,
+          "avg_reaction_ms": 2177,
+          "fastest_reaction_ms": 791,
+          "total_duration_ms": 0,
+          "session_status": "COMPLETED",
+          "completion_pct": 5
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-01-24",
         "pronunciation_attempts": 25,
         "pronunciation_score_avg": 78.92,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "incorrect": 1
         },
+        "conversation_attempts": 7,
+        "conversation_score_avg": 80.86,
         "worst_speaking_items": [
           {
+            "lms_type": "conversation",
+            "question": "That's wonderful! 👍 Are you friendly with your classmates?",
+            "expected_answer": "Yes, I am friendly. / No, I am not friendly.",
+            "target_objects": null,
+            "user_transcript": "Yes, I am friendly. No, I am not.",
+            "score": 66,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 32,
+            "timestamp": "2026-01-18",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/18/admin/mkjcm01u-6268a0b2-audio.wav",
+            "reaction_time_ms": 1296
+          },
+          {
+            "lms_type": "brainstorm",
             "question": "Look at the picture and the thing I circled. What is it?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": [
+              "friendly",
+              "clever",
+              "kind",
+              "hard-working",
+              "funny"
+            ],
             "user_transcript": "It's what this.",
             "score": 0,
             "answer_type": "incorrect",
-            "timestamp": "2026-01-18"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-18",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/18/admin/mkjbwgva-a4ecfa83-audio.wav",
+            "reaction_time_ms": 2097
           }
         ]
       },
@@ -1235,33 +2220,69 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 47,
+          "avg_reaction_ms": 1929,
+          "fastest_reaction_ms": 737,
+          "total_duration_ms": 1348152,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-01-24",
         "pronunciation_attempts": 34,
         "pronunciation_score_avg": 71.0,
-        "free_speaking_attempts": 2,
+        "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "inaccordant": 1,
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "incorrect": 1
         },
+        "conversation_attempts": 7,
+        "conversation_score_avg": 90.71,
         "worst_speaking_items": [
           {
+            "lms_type": "brainstorm",
             "question": "Look at the picture and the thing I circled. What is it?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": [
+              "tall",
+              "short",
+              "fat",
+              "thin",
+              "cute",
+              "sporty"
+            ],
             "user_transcript": "Can me go?",
             "score": 0,
             "answer_type": "incorrect",
-            "timestamp": "2026-01-24"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-24",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/24/admin/mkrwj7ib-5a31f635-audio.wav",
+            "reaction_time_ms": 859
           },
           {
+            "lms_type": "free_speaking",
             "question": "How are you today?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "Ha, I heard, go with you.",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-01-24"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-24",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/24/admin/mkrwhths-bdf01198-audio.wav",
+            "reaction_time_ms": 1415
           }
         ]
       },
@@ -1305,12 +2326,9 @@
             "question_folder": "English Tutoring - Level 5",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn phương án đúng.)",
+            "comment_plain": "Audio: Why do you like him? - Because he&#39;s friendly. Tại sao bạn th&iacute;ch anh ấy? - Bởi v&igrave; anh ấy thân thiện. => Đáp án: A",
             "correct_answer": "A",
-            "student_answer": [
-              "0",
-              "0",
-              "1"
-            ],
+            "student_answer": "C",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -1339,7 +2357,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13915,
@@ -1347,6 +2366,7 @@
             "question_folder": "English Tutoring - Level 5",
             "question_type": "Điền vào chỗ trống",
             "question_text": "Read and fill in the blank (Con hãy đọc và điền đáp án đúng.) Lisa: Do you have any brothers or sister? Jack: I have a brother. Lisa: What does he look ... (1)? Jack: He's ... (2) and ... (3). Lisa: Is he handsome? Jack: ... (4), he is. Lisa: Do you like him? Jack: Yes, I like him.",
+            "comment_plain": "Ảnh: cao = tall (He&#39;s tall: Anh ấy cao.) => Đáp án: (2) - tall",
             "correct_answer": "tall",
             "student_answer": "thin",
             "requires_media": true,
@@ -1361,7 +2381,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13915,
@@ -1369,6 +2390,7 @@
             "question_folder": "English Tutoring - Level 5",
             "question_type": "Điền vào chỗ trống",
             "question_text": "Read and fill in the blank (Con hãy đọc và điền đáp án đúng.) Lisa: Do you have any brothers or sister? Jack: I have a brother. Lisa: What does he look ... (1)? Jack: He's ... (2) and ... (3) . Lisa: Is he handsome? Jack: ... (4), he is. Lisa: Do you like him? Jack: Yes, I like him.",
+            "comment_plain": "Ảnh: gầy = thin (He&#39;s tall and thin: Anh ấy cao và gầy.) => Đáp án: (3) - thin",
             "correct_answer": "thin",
             "student_answer": "tall",
             "requires_media": true,
@@ -1383,7 +2405,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -1405,18 +2428,85 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 34,
+          "avg_reaction_ms": 1948,
+          "fastest_reaction_ms": 602,
+          "total_duration_ms": 1143952,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-01-25",
         "pronunciation_attempts": 24,
         "pronunciation_score_avg": 78.08,
-        "free_speaking_attempts": 2,
+        "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "lack_of_knowledge": 1,
+          "lack_of_knowledge": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "correct": 1
         },
-        "worst_speaking_items": []
+        "conversation_attempts": 7,
+        "conversation_score_avg": 87.29,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Awesome! 🎉 Are they hard-working at school? I try to be!",
+            "expected_answer": "Yes, my best friend is hard-working.",
+            "target_objects": null,
+            "user_transcript": "Yes, my best friend is her working.",
+            "score": 55,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 74,
+            "grammar_score": 36,
+            "timestamp": "2026-01-25",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/25/admin/mktckcad-23ab1d1c-audio.wav",
+            "reaction_time_ms": 1094
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "Look at the picture and the thing I circled. What is it?",
+            "expected_answer": null,
+            "target_objects": [
+              "friendly",
+              "clever",
+              "kind"
+            ],
+            "user_transcript": "Friendly.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "friendly"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-25",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/25/admin/mktbz7yc-baf1445a-audio.wav",
+            "reaction_time_ms": 2905
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "What do you like to do after school?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "Oh.",
+            "score": 0,
+            "answer_type": "lack_of_knowledge",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-25",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/25/admin/mktbxu3m-c85fa2b0-audio.wav",
+            "reaction_time_ms": 1892
+          }
+        ]
       },
       "homework": {
         "attempted": true,
@@ -1458,6 +2548,7 @@
             "question_folder": "English Tutoring - Level 5",
             "question_type": "Điền vào chỗ trống",
             "question_text": "Fill in blank missing letter (Con hãy điền vào chỗ trống chữ cái còn thiếu.) sh_rt",
+            "comment_plain": "short: thấp => Đáp án: o",
             "correct_answer": "o",
             "student_answer": "short",
             "requires_media": true,
@@ -1472,7 +2563,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13938,
@@ -1480,6 +2572,7 @@
             "question_folder": "English Tutoring - Level 5",
             "question_type": "Điền vào chỗ trống",
             "question_text": "Fill in blank missing letter (Con hãy điền vào chỗ trống chữ cái còn thiếu.) overw_ight",
+            "comment_plain": "overweight: thừa cân => Đáp án: e",
             "correct_answer": "e",
             "student_answer": "overweight",
             "requires_media": true,
@@ -1494,7 +2587,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13938,
@@ -1502,6 +2596,7 @@
             "question_folder": "English Tutoring - Level 5",
             "question_type": "Điền vào chỗ trống",
             "question_text": "Fill in blank missing letter (Con hãy điền vào chỗ trống chữ cái còn thiếu.) pr_tty",
+            "comment_plain": "pretty: xinh đẹp => Đáp án: e",
             "correct_answer": "e",
             "student_answer": "pretty",
             "requires_media": true,
@@ -1516,7 +2611,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13938,
@@ -1524,6 +2620,7 @@
             "question_folder": "English Tutoring - Level 5",
             "question_type": "Điền vào chỗ trống",
             "question_text": "Fill in blank missing letter (Con hãy điền vào chỗ trống chữ cái còn thiếu.) fr_endly",
+            "comment_plain": "friendly: thân thiện => Đáp án: i",
             "correct_answer": "i",
             "student_answer": "friendly",
             "requires_media": true,
@@ -1538,7 +2635,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13938,
@@ -1546,6 +2644,7 @@
             "question_folder": "English Tutoring - Level 5",
             "question_type": "Điền vào chỗ trống",
             "question_text": "Read and fill in the blank. (Con hãy đọc và điền đáp án đúng.) Why do you like him? - Because he's ...",
+            "comment_plain": "Ảnh: thân thiện và th&ocirc;ng minh = kind and clever => Đáp án: kind and clever",
             "correct_answer": "kind and clever | clever and kind",
             "student_answer": "friendly and clever",
             "requires_media": true,
@@ -1561,7 +2660,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -1583,33 +2683,89 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 33,
+          "avg_reaction_ms": 1759,
+          "fastest_reaction_ms": 626,
+          "total_duration_ms": 1295937,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-01-31",
         "pronunciation_attempts": 27,
         "pronunciation_score_avg": 80.41,
-        "free_speaking_attempts": 3,
+        "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "lack_of_knowledge": 1,
+          "lack_of_knowledge": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "incorrect": 2
         },
+        "conversation_attempts": 1,
+        "conversation_score_avg": null,
         "worst_speaking_items": [
           {
+            "lms_type": "brainstorm",
             "question": "What is it?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": [
+              "nurse",
+              "farmer",
+              "police",
+              "firefighter",
+              "driver"
+            ],
             "user_transcript": "OK.",
             "score": 0,
             "answer_type": "incorrect",
-            "timestamp": "2026-01-31"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-31",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/31/admin/ml1wm81i-96290fe6-audio.wav",
+            "reaction_time_ms": 2288
           },
           {
+            "lms_type": "brainstorm",
             "question": "What can you see?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": [
+              "nurse",
+              "farmer",
+              "police",
+              "firefighter",
+              "driver"
+            ],
             "user_transcript": "I.",
             "score": 0,
             "answer_type": "incorrect",
-            "timestamp": "2026-01-31"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-31",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/31/admin/ml1wltf7-9a0fc188-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "What sport can you play?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "The.",
+            "score": 0,
+            "answer_type": "lack_of_knowledge",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-31",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/31/admin/ml1wkryx-62c7d055-audio.wav",
+            "reaction_time_ms": 1363
           }
         ]
       },
@@ -1661,33 +2817,113 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 63,
+          "avg_reaction_ms": 2293,
+          "fastest_reaction_ms": 344,
+          "total_duration_ms": 0,
+          "session_status": "COMPLETED",
+          "completion_pct": 5
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-02-11",
         "pronunciation_attempts": 29,
         "pronunciation_score_avg": 62.97,
-        "free_speaking_attempts": 2,
+        "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "inaccordant": 1,
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "incorrect": 1
         },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 73.86,
         "worst_speaking_items": [
           {
+            "lms_type": "conversation",
+            "question": "Nice. Helping students is great 😊 What age do you want to teach?",
+            "expected_answer": "I want to teach young children, maybe age 6–8, because I like simple lessons and games.",
+            "target_objects": null,
+            "user_transcript": "I want.",
+            "score": 58,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 16,
+            "timestamp": "2026-02-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mldd3aet-046d51b7-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi, nice to see you. Ready to talk about jobs? 😄",
+            "expected_answer": "Yes, I'm ready. Let's talk about jobs.",
+            "target_objects": null,
+            "user_transcript": "Yes, I'm ready to take a part.",
+            "score": 63.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 58,
+            "grammar_score": 69,
+            "timestamp": "2026-02-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mldd2189-b657ddcc-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Do you enjoy answering phone calls? 📞",
+            "expected_answer": "Yes, I enjoy answering phone calls.",
+            "target_objects": null,
+            "user_transcript": "Yes, I am choosing and scoring phone calls.",
+            "score": 69.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 90,
+            "grammar_score": 49,
+            "timestamp": "2026-02-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mldd0e2u-f8c9ef10-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What do you do in the office? 🙂",
+            "expected_answer": "I answer emails and attend meetings. I also prepare reports.",
+            "target_objects": null,
+            "user_transcript": "I email and I.",
+            "score": 23,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 31,
+            "grammar_score": 15,
+            "timestamp": "2026-02-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mldcz6xi-913b9e61-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "brainstorm",
             "question": "What is it?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": [
+              "school",
+              "fire station",
+              "circus",
+              "hospital",
+              "farm"
+            ],
             "user_transcript": "I.",
             "score": 0,
             "answer_type": "incorrect",
-            "timestamp": "2026-02-08"
-          },
-          {
-            "question": "What do you like to do after school?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "My hat.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "timestamp": "2026-02-08"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-02-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mldc80dc-5935fe6a-audio.wav",
+            "reaction_time_ms": null
           }
         ]
       },
@@ -1739,6 +2975,15 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 61,
+          "avg_reaction_ms": 1705,
+          "fastest_reaction_ms": 353,
+          "total_duration_ms": 1558126,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-02-14",
@@ -1749,14 +2994,86 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 14,
+        "conversation_score_avg": 72.46,
         "worst_speaking_items": [
           {
+            "lms_type": "conversation",
+            "question": "Nice answer. Do you like working with children or adults more? 😊",
+            "expected_answer": "I like working with adults more because I can make important decisions and help many patients.",
+            "target_objects": null,
+            "user_transcript": "I like working with.",
+            "score": 57,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 14,
+            "timestamp": "2026-02-14",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/14/admin/mllxmbap-3dfb8d84-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What does your teacher teach? 😊",
+            "expected_answer": "She teaches English and math.",
+            "target_objects": null,
+            "user_transcript": "C D about.",
+            "score": 5.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 11,
+            "timestamp": "2026-02-14",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/14/admin/mllxjszs-751bfacb-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Who is your favourite teacher? 😊",
+            "expected_answer": "My favourite teacher is Ms. Lopez.",
+            "target_objects": null,
+            "user_transcript": "My teacher.",
+            "score": 57.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 15,
+            "timestamp": "2026-02-14",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/14/admin/mllxjdzb-82c7b093-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "A teacher is great. What does your teacher do at school? 👩‍🏫",
+            "expected_answer": "My teacher teaches math and helps students with reading.",
+            "target_objects": null,
+            "user_transcript": "Marji, Mark, and I go.",
+            "score": 56.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 72,
+            "grammar_score": 41,
+            "timestamp": "2026-02-14",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/14/admin/mllxinqy-23e0bd94-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "free_speaking",
             "question": "What do you like to eat?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "Are you?",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-02-14"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-02-14",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/14/admin/mllwquzm-b37db269-audio.wav",
+            "reaction_time_ms": 1156
           }
         ]
       },
@@ -1808,25 +3125,107 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": 47,
+          "audio_turns": 52,
+          "avg_reaction_ms": 1948,
+          "fastest_reaction_ms": 498,
+          "total_duration_ms": 1565022,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-03-28",
         "pronunciation_attempts": 35,
         "pronunciation_score_avg": 65.74,
-        "free_speaking_attempts": 3,
+        "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "inaccordant": 1,
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "correct": 2
         },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 70.65,
         "worst_speaking_items": [
           {
-            "question": "What's the weather like today?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "I'm fine, I can give news.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "timestamp": "2026-03-28"
+            "lms_type": "conversation",
+            "question": "Nice. Do you mean you would like to be a teacher at school? 😊",
+            "expected_answer": "Yes, I would like to be a teacher at school.",
+            "target_objects": null,
+            "user_transcript": "Yes, I would like to learn student.",
+            "score": 48.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 57,
+            "grammar_score": 40,
+            "timestamp": "2026-03-28",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9y4swn-6a8be4ed-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Do you mean you like teachers or students? 😊",
+            "expected_answer": "I mean I like teachers. I want to be a teacher at a school.",
+            "target_objects": null,
+            "user_transcript": "I would like to.",
+            "score": 65.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 87,
+            "grammar_score": 44,
+            "timestamp": "2026-03-28",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9y49fm-b7f4b189-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Working at a school is great. Which job there do you like? 😊",
+            "expected_answer": "I would like to be a teacher at the school.",
+            "target_objects": null,
+            "user_transcript": "It they are.",
+            "score": 41.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 66,
+            "grammar_score": 17,
+            "timestamp": "2026-03-28",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9y3wh3-f2002a08-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Great, cool. What job would you like to try one day? 😊",
+            "expected_answer": "I would like to be a doctor because I like helping people.",
+            "target_objects": null,
+            "user_transcript": "It is at school.",
+            "score": 69.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 39,
+            "timestamp": "2026-03-28",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9y351c-181a680e-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What jobs did you hear about in the lesson? 😊",
+            "expected_answer": "I heard about a teacher at school, a doctor at the hospital, and a farmer on a farm.",
+            "target_objects": null,
+            "user_transcript": "I hear about a doctor at school.",
+            "score": 66.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 66,
+            "grammar_score": 67,
+            "timestamp": "2026-03-28",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9y0ch4-7f001120-audio.wav",
+            "reaction_time_ms": null
           }
         ]
       },
@@ -1878,41 +3277,112 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": 52,
+          "audio_turns": 50,
+          "avg_reaction_ms": 1403,
+          "fastest_reaction_ms": 693,
+          "total_duration_ms": 1533839,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-03-29",
         "pronunciation_attempts": 33,
         "pronunciation_score_avg": 75.73,
-        "free_speaking_attempts": 3,
+        "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "inaccordant": 1,
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "incorrect": 2
         },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 78.71,
         "worst_speaking_items": [
           {
+            "lms_type": "conversation",
+            "question": "Nice, sometimes reading is good. How long do you read each time? 😊",
+            "expected_answer": "About one hour each time.",
+            "target_objects": null,
+            "user_transcript": "Ah, it sometimes reading is good about one hour.",
+            "score": 62,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 73,
+            "grammar_score": 51,
+            "timestamp": "2026-03-29",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbdjvqd-99be43b4-audio.wav",
+            "reaction_time_ms": 1382
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. How long do you read each time? 😊",
+            "expected_answer": "I usually read for about one hour each time.",
+            "target_objects": null,
+            "user_transcript": "Be time I read.",
+            "score": 11,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 8,
+            "grammar_score": 14,
+            "timestamp": "2026-03-29",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbdivo6-cfacecd3-audio.wav",
+            "reaction_time_ms": 1382
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Do you also like reading comics sometimes? 📚",
+            "expected_answer": "Yes, I sometimes read comics after diving. I like funny stories.",
+            "target_objects": null,
+            "user_transcript": "Yes, I sometimes read comics.",
+            "score": 56.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 22,
+            "grammar_score": 91,
+            "timestamp": "2026-03-29",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbdgroz-aacdbc7d-audio.wav",
+            "reaction_time_ms": 1382
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi, nice to see you. Ready to talk about free time activities? 😄",
+            "expected_answer": "Yes, I am ready. I like reading comics and going shopping.",
+            "target_objects": null,
+            "user_transcript": "Yes, I'm ready. I like.",
+            "score": 56.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 93,
+            "grammar_score": 20,
+            "timestamp": "2026-03-29",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbdeedw-351570a1-audio.wav",
+            "reaction_time_ms": 1382
+          },
+          {
+            "lms_type": "brainstorm",
             "question": "What are they doing?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": [
+              "Going shopping",
+              "Going diving",
+              "Go sailing",
+              "Reading comics"
+            ],
             "user_transcript": "I, you.",
             "score": 0,
             "answer_type": "incorrect",
-            "timestamp": "2026-03-29"
-          },
-          {
-            "question": "Look at this picture and tell me, what can you see?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "Ple.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-03-29"
-          },
-          {
-            "question": "How are you today?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "Hi.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "timestamp": "2026-03-29"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-29",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbcplgh-0b336410-audio.wav",
+            "reaction_time_ms": 693
           }
         ]
       },
@@ -1956,6 +3426,7 @@
             "question_folder": "English Tutoring - Level 5",
             "question_type": "Điền vào chỗ trống",
             "question_text": "Find missing letter (Con hãy đọc và điền chữ cái còn thiếu.) going s_iling",
+            "comment_plain": "going sailing: ch&egrave;o thuyền => Đáp án: a",
             "correct_answer": "a",
             "student_answer": "i",
             "requires_media": true,
@@ -1970,7 +3441,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 15012,
@@ -1978,6 +3450,7 @@
             "question_folder": "Biểu đồ",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look and say (Con hãy nhìn tranh và nói.)",
+            "comment_plain": null,
             "correct_answer": "trampolining",
             "student_answer": "leaning",
             "requires_media": true,
@@ -1992,7 +3465,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 15012,
@@ -2000,12 +3474,9 @@
             "question_folder": "English Tutoring - Level 5",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct answer (Con hãy đọc và chọn phương án đúng.) What do they like doing? - ... like going shopping.",
+            "comment_plain": "What do they like doing? - They like going shopping. Họ th&iacute;ch làm g&igrave;? - Họ th&iacute;ch đi mua sắm. => Đáp án: A",
             "correct_answer": "A. They",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B. I",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -2028,7 +3499,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 15070,
@@ -2036,6 +3508,7 @@
             "question_folder": "English Tutoring - Level 5",
             "question_type": "Điền vào chỗ trống",
             "question_text": "Look and write. (Con hãy nhìn vào tranh và viết từ đúng) _____ shopping",
+            "comment_plain": "going shopping: đi mua sắm => Đáp án: going",
             "correct_answer": "Going",
             "student_answer": "going shopping",
             "requires_media": true,
@@ -2050,7 +3523,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}

@@ -25,6 +25,11 @@ Giải thích các trường dữ liệu:
 - hw_status=not_attempted: học sinh đã học trên lớp nhưng CHƯA NỘP BÀI TẬP VỀ NHÀ — \
 không có dữ liệu lỗi cụ thể; "Question bank preview" chỉ là mẫu câu hỏi trong ngân hàng bài tập. \
 Đây là rủi ro học tập cao vì không có bằng chứng ghi nhớ sau lớp học.
+- Worst speaking items gồm ba loại: \
+[brainstorm] là nói theo ảnh/gợi ý, phải dùng các từ mục tiêu (targets) — khác với nói mở thuần; \
+[free_speaking] là nói mở / warmup (theo additionalData.warmup; score=0 nghĩa là sai hoàn toàn; có thể có answer_type); \
+[conversation] là hội thoại cấu trúc (score<70/100 mới được ghi nhận là thất bại; \
+"gram" = điểm ngữ pháp, "pron" = điểm phát âm — "expected" là câu trả lời mẫu).
 
 Trước khi viết phân tích, hãy xác định 3 mẫu lỗi hoặc rủi ro nghiêm trọng nhất bạn quan sát được \
 (bao gồm cả các bài chưa làm bài tập), sau đó trình bày chi tiết từng mẫu trong các đoạn văn rõ ràng. \
@@ -37,7 +42,10 @@ STUDENT SUMMARY
 ---------------
 Lessons completed: {completed}/{total}
 Pronunciation avg: {pron}/100
-Free speaking avg: {free}/100
+Brainstorm (ảnh → từ mục tiêu) avg: {brainstorm}/100
+Free speaking / warmup avg: {free}/100
+Conversation avg:  {convo}/100
+Brainstorm answer distribution: {brainstorm_answer_dist}
 Free speaking answer distribution: {answer_dist}
 
 LESSONS TO REVIEW
@@ -88,10 +96,30 @@ def _fmt_speaking(items: list) -> str:
         return "none"
     parts = []
     for s in items[:2]:
-        parts.append(
-            f'Q: "{s.get("question", "")}" → '
-            f'"{s.get("user_transcript", "")}" [{s.get("answer_type")}]'
-        )
+        lms_type = s.get("lms_type", "free_speaking")
+        q = (s.get("question") or "")[:60]
+        transcript = (s.get("user_transcript") or "")[:60]
+        score = s.get("score")
+        if lms_type == "conversation":
+            gram = s.get("grammar_score")
+            pron = s.get("pronunciation_score")
+            expected = (s.get("expected_answer") or "")[:60]
+            detail = f"score={score}/100 gram={gram} pron={pron}"
+            if expected:
+                detail += f' expected="{expected}"'
+        elif lms_type == "brainstorm":
+            answer_type = s.get("answer_type") or "?"
+            targets = s.get("target_objects")
+            detail = f"score={score} [{answer_type}] brainstorm"
+            if targets:
+                detail += f" targets={targets}"
+        else:
+            answer_type = s.get("answer_type") or "?"
+            targets = s.get("target_objects")
+            detail = f"score={score} [{answer_type}] warmup"
+            if targets:
+                detail += f" targets={targets}"
+        parts.append(f'[{lms_type}] Q: "{q}" → "{transcript}" {detail}')
     return " | ".join(parts)
 
 
@@ -127,7 +155,10 @@ def build_prompt(summary: dict, candidates: list) -> str:
         completed=completed,
         total=total,
         pron=summary.get("overall_pronunciation_score_avg", "N/A"),
+        brainstorm=summary.get("overall_brainstorm_score_avg", "N/A"),
         free=summary.get("overall_free_speaking_score_avg", "N/A"),
+        convo=summary.get("overall_conversation_score_avg", "N/A"),
+        brainstorm_answer_dist=summary.get("overall_brainstorm_answer_type_dist", {}),
         answer_dist=summary.get("overall_free_speaking_answer_type_dist", {}),
         lesson_blocks="\n\n".join(lesson_blocks),
     )

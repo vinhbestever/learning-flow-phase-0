@@ -2,25 +2,87 @@ import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
 import { HomeworkQuestionFullDetail, type HomeworkQuestionFull } from '../components/HomeworkQuestionFullDetail'
+import { InlineAudioPlayer } from '../components/InlineAudioPlayer'
 
 // ── Types ──────────────────────────────────────────────────────────────── //
+
+interface PhoneScore {
+  phone?: string | null
+  phoneIpa?: string | null
+  qualityScore?: number | null
+  soundMostLike?: string | null
+}
+
+interface WordScore {
+  word?: string | null
+  qualityScore?: number | null
+  phoneScoreList?: PhoneScore[] | null
+}
+
+interface PronunciationDetail {
+  matched_transcripts_ipa?: string | null
+  is_letter_correct_all_words?: string | null
+  word_score_list?: WordScore[] | null
+}
 
 interface PronunciationDrill {
   expected_transcript: string
   question_prompt: string | null
+  user_transcript: string | null
+  pronunciation_score: number | null
+  overall_score?: number | null
+  audio_url?: string | null
+  reaction_time_ms?: number | null
+  pronunciation_detail?: PronunciationDetail | null
 }
 
 interface FreeSpeakingQuestion {
   question: string
   question_type: string | null
+  expected_transcript: string | null
+  target_objects: string[] | null
+  user_transcript: string | null
+  score: number | null
+  audio_url?: string | null
+  reaction_time_ms?: number | null
+}
+
+interface ConversationQuestion {
+  question: string | null
+  expected_transcript: string | null
+  question_type: string | null
+  user_transcript: string | null
+  score: number | null
+  grammar_score: number | null
+  pronunciation_score: number | null
+  audio_url?: string | null
+  reaction_time_ms?: number | null
+}
+
+interface SessionMetrics {
+  cups?: number | null
+  audio_turns?: number | null
+  avg_reaction_ms?: number | null
+  fastest_reaction_ms?: number | null
+  total_duration_ms?: number | null
+  session_status?: string | null
+  completion_pct?: number | null
 }
 
 interface SpeakingItem {
+  lms_type: 'free_speaking' | 'brainstorm' | 'conversation'
   question: string | null
+  expected_answer: string | null
+  target_objects: string[] | null
   user_transcript: string | null
   answer_type: string | null
   score: number | null
+  grammar_score: number | null
+  pronunciation_score: number | null
+  correct_objects: string[] | null
   timestamp: string | null
+  audio_url?: string | null
+  reaction_time_ms?: number | null
 }
 
 interface QuestionRow extends HomeworkQuestionFull {
@@ -49,9 +111,16 @@ interface InClass {
   pronunciation_attempts: number
   free_speaking_score_avg: number | null
   free_speaking_attempts: number
+  brainstorm_score_avg?: number | null
+  brainstorm_attempts?: number
+  conversation_score_avg: number | null
+  conversation_attempts: number
   worst_speaking_items: SpeakingItem[]
   pronunciation_drills: PronunciationDrill[]
   free_speaking_questions: FreeSpeakingQuestion[]
+  brainstorm_questions?: FreeSpeakingQuestion[]
+  conversation_questions: ConversationQuestion[]
+  session_metrics?: SessionMetrics | null
 }
 
 interface Homework {
@@ -99,6 +168,14 @@ function scoreColorClass(score: number | null | undefined, max = 1): string {
   return 'text-rose-500'
 }
 
+function scoreBg(score: number | null | undefined, max = 100): string {
+  if (score == null) return 'bg-slate-200'
+  const r = score / max
+  if (r >= 0.8) return 'bg-emerald-400'
+  if (r >= 0.6) return 'bg-amber-400'
+  return 'bg-rose-400'
+}
+
 function answerTypeLabel(type: string | null): { label: string; cls: string } {
   const map: Record<string, { label: string; cls: string }> = {
     correct:           { label: 'Đúng',       cls: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
@@ -121,6 +198,211 @@ function StatChip({ label, value, valueClass = '' }: { label: string; value: str
   )
 }
 
+function ScoreMiniBar({ score, max = 100, label }: { score: number | null; max?: number; label: string }) {
+  const pct = score != null ? Math.round((score / max) * 100) : 0
+  return (
+    <div className="flex items-center gap-1.5">
+      <span className="w-14 shrink-0 text-[10px] text-[var(--muted)]">{label}</span>
+      <div className="h-1 flex-1 overflow-hidden rounded-full bg-[var(--border)]">
+        <div
+          className={`h-full rounded-full transition-all ${scoreBg(score, max)}`}
+          style={{ width: score != null ? `${pct}%` : '0%' }}
+        />
+      </div>
+      <span className={`w-8 shrink-0 text-right text-[10px] font-semibold tabular-nums ${scoreColorClass(score, max)}`}>
+        {score != null ? score : '—'}
+      </span>
+    </div>
+  )
+}
+
+function formatReactionSec(ms: number | null | undefined): string | null {
+  if (ms == null || Number.isNaN(ms)) return null
+  return `${(ms / 1000).toFixed(1).replace('.', ',')}s`
+}
+
+function SessionMetricsStrip({ m }: { m: SessionMetrics }) {
+  const avg = formatReactionSec(m.avg_reaction_ms ?? undefined)
+  const fast = formatReactionSec(m.fastest_reaction_ms ?? undefined)
+  const durMin = m.total_duration_ms != null ? Math.round(m.total_duration_ms / 60000) : null
+  const chips: { k: string; v: string }[] = []
+  if (m.cups != null) chips.push({ k: 'Cup', v: String(m.cups) })
+  if (m.audio_turns != null) chips.push({ k: 'Lượt nói', v: String(m.audio_turns) })
+  if (avg) chips.push({ k: 'TB phản xạ', v: avg })
+  if (fast && fast !== avg) chips.push({ k: 'Nhanh nhất', v: fast })
+  if (durMin != null && durMin > 0) chips.push({ k: 'Ước lượng buổi', v: `~${durMin} phút` })
+  if (!chips.length) return null
+  return (
+    <div className="flex flex-wrap items-end gap-3 rounded-xl border border-teal-200/80 bg-gradient-to-r from-teal-50/90 via-[var(--surface)] to-cyan-50/40 px-3 py-2.5 text-[11px] shadow-sm">
+      {chips.map((c) => (
+        <div key={c.k} className="min-w-0">
+          <span className="block text-[9px] font-semibold uppercase tracking-wide text-teal-800/85">{c.k}</span>
+          <span className="font-display text-sm font-bold tabular-nums text-[var(--ink)]">{c.v}</span>
+        </div>
+      ))}
+      {m.session_status && (
+        <div className="ml-auto self-center rounded-full border border-teal-300/60 bg-white/70 px-2 py-0.5 text-[10px] font-medium text-teal-900">
+          {m.session_status}
+        </div>
+      )}
+    </div>
+  )
+}
+
+function PronunciationPhonemePanel({ detail }: { detail: PronunciationDetail }) {
+  const words = detail.word_score_list
+  if (!words?.length) return null
+  return (
+    <div className="mt-2 space-y-2 border-t border-dashed border-fuchsia-200/70 pt-2">
+      {detail.matched_transcripts_ipa && (
+        <p className="text-[10px] text-[var(--muted)]">
+          IPA (khớp):{' '}
+          <span className="font-mono text-xs font-medium text-[var(--ink)]">{detail.matched_transcripts_ipa}</span>
+        </p>
+      )}
+      {words.map((w, wi) => (
+        <div key={wi} className="rounded-lg border border-[var(--border)] bg-[var(--elevated)]/50 p-2">
+          <p className="text-[11px] font-semibold text-[var(--ink)]">
+            {w.word ?? '—'}{' '}
+            <span className="font-normal text-[var(--muted)]">
+              ({w.qualityScore != null ? `${w.qualityScore}%` : '—'})
+            </span>
+          </p>
+          {w.phoneScoreList && w.phoneScoreList.length > 0 && (
+            <table className="mt-1.5 w-full border-collapse text-[10px]">
+              <thead>
+                <tr className="text-left text-[var(--muted)]">
+                  <th className="pb-0.5 pr-2 font-medium">Grapheme</th>
+                  <th className="pb-0.5 pr-2 font-medium">IPA</th>
+                  <th className="pb-0.5 text-right font-medium">Điểm</th>
+                </tr>
+              </thead>
+              <tbody>
+                {w.phoneScoreList.map((ph, pi) => {
+                  const q = ph.qualityScore
+                  const ok = q != null && q >= 90
+                  return (
+                    <tr key={pi} className="border-t border-[var(--border)]/60">
+                      <td className="py-0.5 pr-2 font-mono text-[var(--ink)]">{ph.phone ?? '—'}</td>
+                      <td className="py-0.5 pr-2 font-mono text-[var(--muted)]">{ph.phoneIpa ?? '—'}</td>
+                      <td className={`py-0.5 text-right font-semibold tabular-nums ${ok ? 'text-emerald-600' : 'text-amber-600'}`}>
+                        {q != null ? `${q}%` : '—'}
+                      </td>
+                    </tr>
+                  )
+                })}
+              </tbody>
+            </table>
+          )}
+        </div>
+      ))}
+    </div>
+  )
+}
+
+function WorstSpeakingItem({ item }: { item: SpeakingItem }) {
+  const isConvo = item.lms_type === 'conversation'
+  const isBrainstorm = item.lms_type === 'brainstorm'
+  const atInfo = answerTypeLabel(item.answer_type)
+
+  return (
+    <li className="px-4 py-3 text-sm">
+      {/* Type badge + question */}
+      <div className="mb-2 flex flex-wrap items-start gap-2">
+        <span className={`shrink-0 rounded border px-1.5 py-0.5 text-[10px] font-semibold ${
+          isConvo
+            ? 'border-violet-200 bg-violet-50 text-violet-700'
+            : isBrainstorm
+              ? 'border-amber-300 bg-amber-50 text-amber-900'
+              : 'border-sky-200 bg-sky-50 text-sky-700'
+        }`}>
+          {isConvo ? 'Hội thoại' : isBrainstorm ? 'Brainstorm (ảnh)' : 'Nói mở (warmup)'}
+        </span>
+        {item.question && (
+          <p className="min-w-0 flex-1 italic text-[var(--muted)]">"{item.question}"</p>
+        )}
+      </div>
+
+      {/* Expected answer (conversation) */}
+      {isConvo && item.expected_answer && (
+        <p className="mb-1.5 rounded-lg border border-emerald-200 bg-emerald-50 px-2.5 py-1.5 text-[11px]">
+          <span className="font-semibold text-emerald-700">Câu mẫu: </span>
+          <span className="text-emerald-800">{item.expected_answer}</span>
+        </p>
+      )}
+
+      {/* Target objects (brainstorm vocabulary) */}
+      {!isConvo && item.target_objects && item.target_objects.length > 0 && (
+        <div className="mb-1.5 flex flex-wrap gap-1">
+          <span className="text-[10px] text-[var(--muted)]">Từ cần nói:</span>
+          {item.target_objects.map((obj) => (
+            <span key={obj} className="rounded border border-amber-200 bg-amber-50 px-1.5 py-0.5 text-[10px] font-medium text-amber-800">
+              {obj}
+            </span>
+          ))}
+        </div>
+      )}
+
+      {/* Student transcript */}
+      <p className="text-[var(--ink)]">
+        <span className="font-medium text-[var(--muted)]">Học sinh: </span>
+        {item.user_transcript || <span className="italic text-[var(--muted)]">(không có transcript)</span>}
+      </p>
+
+      {(item.reaction_time_ms != null || item.audio_url) && (
+        <div className="mt-2 space-y-1.5 text-[10px] text-[var(--muted)]">
+          {item.reaction_time_ms != null && (
+            <p>
+              Phản xạ:
+              {' '}
+              <strong className="tabular-nums text-[var(--ink)]">{formatReactionSec(item.reaction_time_ms)}</strong>
+            </p>
+          )}
+          {item.audio_url && <InlineAudioPlayer src={item.audio_url} />}
+        </div>
+      )}
+
+      {/* Scores */}
+      <div className="mt-2 space-y-1">
+        {isConvo ? (
+          <>
+            <ScoreMiniBar score={item.score} label="Tổng" />
+            <ScoreMiniBar score={item.grammar_score} label="Ngữ pháp" />
+            <ScoreMiniBar score={item.pronunciation_score} label="Phát âm" />
+          </>
+        ) : (
+          <div className="flex flex-wrap items-center gap-2">
+            {item.answer_type && (
+              <span className={`rounded border px-1.5 py-0.5 text-[10px] font-medium ${atInfo.cls}`}>
+                {atInfo.label}
+              </span>
+            )}
+            <span className={`text-xs font-semibold tabular-nums ${scoreColorClass(item.score, 100)}`}>
+              {item.score != null ? `${item.score}/100` : ''}
+            </span>
+          </div>
+        )}
+      </div>
+
+      {/* Correct objects (brainstorm) */}
+      {!isConvo && item.correct_objects && item.correct_objects.length > 0 && (
+        <div className="mt-1.5 flex flex-wrap gap-1">
+          <span className="text-[10px] text-[var(--muted)]">Đúng:</span>
+          {item.correct_objects.map((obj) => (
+            <span key={obj} className="rounded border border-emerald-200 bg-emerald-50 px-1.5 py-0.5 text-[10px] text-emerald-800">
+              {obj}
+            </span>
+          ))}
+        </div>
+      )}
+
+      {item.timestamp && (
+        <p className="mt-1 text-[10px] text-[var(--muted)]">{item.timestamp}</p>
+      )}
+    </li>
+  )
+}
+
 function InClassSection({ data }: { data: InClass }) {
   if (!data.participated) {
     return (
@@ -130,10 +412,15 @@ function InClassSection({ data }: { data: InClass }) {
     )
   }
 
+  const hasConvo = (data.conversation_attempts ?? 0) > 0
+  const hasBrain = (data.brainstorm_attempts ?? 0) > 0
+
   return (
     <div className="space-y-4">
+      {data.session_metrics && <SessionMetricsStrip m={data.session_metrics} />}
+
       {/* Tổng quan metrics */}
-      <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6">
         <StatChip
           label="Hoàn thành"
           value={data.is_completed ? '✓ Xong' : `${data.completion_pct ?? 0}%`}
@@ -144,18 +431,32 @@ function InClassSection({ data }: { data: InClass }) {
           value={data.pronunciation_score_avg != null ? `${data.pronunciation_score_avg.toFixed(0)}/100` : '—'}
           valueClass={scoreColorClass(data.pronunciation_score_avg, 100)}
         />
+        {hasBrain && (
+          <StatChip
+            label={`Brainstorm — ảnh→từ (${data.brainstorm_attempts} lần)`}
+            value={data.brainstorm_score_avg != null ? `${data.brainstorm_score_avg.toFixed(0)}/100` : '—'}
+            valueClass={scoreColorClass(data.brainstorm_score_avg ?? null, 100)}
+          />
+        )}
         <StatChip
-          label={`Nói tự do (${data.free_speaking_attempts} lần)`}
+          label={`Nói mở / warmup (${data.free_speaking_attempts} lần)`}
           value={data.free_speaking_score_avg != null ? `${data.free_speaking_score_avg.toFixed(0)}/100` : '—'}
           valueClass={scoreColorClass(data.free_speaking_score_avg, 100)}
         />
+        {hasConvo && (
+          <StatChip
+            label={`Hội thoại (${data.conversation_attempts} lần)`}
+            value={data.conversation_score_avg != null ? `${data.conversation_score_avg.toFixed(0)}/100` : '—'}
+            valueClass={scoreColorClass(data.conversation_score_avg, 100)}
+          />
+        )}
         <StatChip
           label="Số buổi"
           value={String(data.session_count)}
         />
       </div>
 
-      {/* Câu nói tự do sai */}
+      {/* Câu nói cần cải thiện */}
       {data.worst_speaking_items.length > 0 && (
         <details className="overflow-hidden rounded-xl border border-rose-200 bg-rose-50/40 [&>summary::-webkit-details-marker]:hidden" open>
           <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-2.5 text-sm font-semibold text-rose-700">
@@ -163,25 +464,67 @@ function InClassSection({ data }: { data: InClass }) {
             <span className="text-xs font-normal">▾</span>
           </summary>
           <ul className="divide-y divide-rose-100 border-t border-rose-200">
-            {data.worst_speaking_items.map((w, i) => {
-              const atInfo = answerTypeLabel(w.answer_type)
+            {data.worst_speaking_items.map((w, i) => (
+              <WorstSpeakingItem key={i} item={w} />
+            ))}
+          </ul>
+        </details>
+      )}
+
+      {/* Bài phát âm */}
+      {data.pronunciation_drills.length > 0 && (
+        <details className="overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--surface)] [&>summary::-webkit-details-marker]:hidden" open>
+          <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-2.5 text-sm font-semibold text-[var(--ink)]">
+            <span>Bài phát âm ({data.pronunciation_drills.length} lần luyện)</span>
+            <span className="text-xs font-normal text-[var(--muted)]">▾</span>
+          </summary>
+          <ul className="max-h-[32rem] divide-y divide-[var(--border)] overflow-y-auto border-t border-[var(--border)]">
+            {data.pronunciation_drills.map((d, i) => {
+              const hasPhonemes = Boolean(d.pronunciation_detail?.word_score_list?.length)
               return (
-                <li key={i} className="px-4 py-3 text-sm">
-                  {w.question && (
-                    <p className="mb-1 italic text-[var(--muted)]">"{w.question}"</p>
-                  )}
-                  <p className="text-[var(--ink)]">
-                    <span className="font-medium text-[var(--muted)]">Học sinh: </span>
-                    {w.user_transcript || <span className="text-[var(--muted)]">(không có transcript)</span>}
-                  </p>
-                  <div className="mt-1 flex flex-wrap items-center gap-2">
-                    {w.answer_type && (
-                      <span className={`rounded border px-1.5 py-0.5 text-[10px] font-medium ${atInfo.cls}`}>
-                        {atInfo.label}
-                      </span>
+                <li key={i} className="px-4 py-2.5 text-xs">
+                  <details className="group [&>summary::-webkit-details-marker]:hidden">
+                    <summary className="flex cursor-pointer list-none items-start gap-3">
+                      <span className="w-5 shrink-0 tabular-nums text-[var(--muted)]">{i + 1}.</span>
+                      <div className="min-w-0 flex-1 text-left">
+                        <p className="font-medium text-[var(--ink)]">{d.expected_transcript}</p>
+                        {d.question_prompt && (
+                          <p className="mt-0.5 italic text-[var(--muted)]">{d.question_prompt}</p>
+                        )}
+                        <div className="mt-1 flex flex-wrap items-center gap-2 text-[10px] text-[var(--muted)]">
+                          {d.reaction_time_ms != null && (
+                            <span>Phản xạ: <strong className="text-[var(--ink)] tabular-nums">{formatReactionSec(d.reaction_time_ms)}</strong></span>
+                          )}
+                          {d.overall_score != null && d.overall_score !== d.pronunciation_score && (
+                            <span>Tổng: <strong className="tabular-nums">{d.overall_score}</strong></span>
+                          )}
+                          {d.pronunciation_score != null && (
+                            <span className={`font-semibold tabular-nums ${scoreColorClass(d.pronunciation_score, 100)}`}>
+                              PA {d.pronunciation_score}/100
+                            </span>
+                          )}
+                          {hasPhonemes && (
+                            <span className="rounded-full border border-fuchsia-200 bg-fuchsia-50 px-1.5 py-0.5 text-[9px] font-bold text-fuchsia-800">
+                              IPA ▾
+                            </span>
+                          )}
+                        </div>
+                        {d.user_transcript && (
+                          <p className="mt-1 text-[var(--muted)]">
+                            <span className="font-medium">Học sinh: </span>{d.user_transcript}
+                          </p>
+                        )}
+                        {d.audio_url && (
+                          <InlineAudioPlayer src={d.audio_url} isolateInSummary className="mt-2" />
+                        )}
+                      </div>
+                    </summary>
+                    {hasPhonemes && d.pronunciation_detail && (
+                      <div className="mt-2 pl-8">
+                        <PronunciationPhonemePanel detail={d.pronunciation_detail} />
+                      </div>
                     )}
-                    {w.timestamp && <span className="text-[10px] text-[var(--muted)]">{w.timestamp}</span>}
-                  </div>
+                  </details>
                 </li>
               )
             })}
@@ -189,22 +532,52 @@ function InClassSection({ data }: { data: InClass }) {
         </details>
       )}
 
-      {/* Danh sách phát âm */}
-      {data.pronunciation_drills.length > 0 && (
-        <details className="overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--surface)] [&>summary::-webkit-details-marker]:hidden">
-          <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-2.5 text-sm font-semibold text-[var(--ink)]">
-            <span>Bài phát âm ({data.pronunciation_drills.length} lần luyện)</span>
-            <span className="text-xs font-normal text-[var(--muted)]">▾</span>
+      {/* Brainstorm: nhìn ảnh / ngữ cảnh, nói từ mục tiêu */}
+      {(data.brainstorm_questions ?? []).length > 0 && (
+        <details className="overflow-hidden rounded-xl border border-amber-200/90 bg-gradient-to-br from-amber-50/80 via-[var(--surface)] to-[var(--surface)] [&>summary::-webkit-details-marker]:hidden">
+          <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-2.5 text-sm font-semibold text-amber-950">
+            <span>Brainstorm — ảnh &amp; từ mục tiêu ({(data.brainstorm_questions ?? []).length} câu)</span>
+            <span className="text-xs font-normal text-amber-800/80">▾</span>
           </summary>
-          <ul className="max-h-60 divide-y divide-[var(--border)] overflow-y-auto border-t border-[var(--border)]">
-            {data.pronunciation_drills.map((d, i) => (
-              <li key={i} className="flex items-start gap-3 px-4 py-2 text-xs">
-                <span className="w-5 shrink-0 tabular-nums text-[var(--muted)]">{i + 1}.</span>
-                <div className="min-w-0">
-                  <p className="font-medium text-[var(--ink)]">{d.expected_transcript}</p>
-                  {d.question_prompt && (
-                    <p className="mt-0.5 text-[var(--muted)] italic">{d.question_prompt}</p>
-                  )}
+          <ul className="divide-y divide-amber-100 border-t border-amber-200/80">
+            {(data.brainstorm_questions ?? []).map((q, i) => (
+              <li key={i} className="px-4 py-2.5 text-sm">
+                <div className="flex items-start gap-3">
+                  <span className="w-5 shrink-0 tabular-nums text-[var(--muted)]">{i + 1}.</span>
+                  <div className="min-w-0 flex-1 space-y-1">
+                    <p className="text-[var(--ink)]">{q.question}</p>
+                    {q.target_objects && q.target_objects.length > 0 && (
+                      <div className="flex flex-wrap gap-1">
+                        {q.target_objects.map((obj) => (
+                          <span key={obj} className="rounded border border-amber-300 bg-amber-50 px-1.5 py-0.5 text-[10px] font-medium text-amber-900">
+                            {obj}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                    {q.user_transcript && (
+                      <p className="text-xs text-[var(--muted)]">
+                        <span className="font-medium">Học sinh: </span>{q.user_transcript}
+                        {q.score != null && (
+                          <span className={`ml-1.5 font-semibold tabular-nums ${scoreColorClass(q.score, 100)}`}>
+                            {q.score}/100
+                          </span>
+                        )}
+                      </p>
+                    )}
+                    {(q.reaction_time_ms != null || q.audio_url) && (
+                      <div className="mt-1 space-y-1.5 text-[10px] text-[var(--muted)]">
+                        {q.reaction_time_ms != null && (
+                          <p>
+                            Phản xạ:
+                            {' '}
+                            <strong className="tabular-nums text-[var(--ink)]">{formatReactionSec(q.reaction_time_ms)}</strong>
+                          </p>
+                        )}
+                        {q.audio_url && <InlineAudioPlayer src={q.audio_url} />}
+                      </div>
+                    )}
+                  </div>
                 </div>
               </li>
             ))}
@@ -212,20 +585,101 @@ function InClassSection({ data }: { data: InClass }) {
         </details>
       )}
 
-      {/* Câu hỏi nói tự do */}
+      {/* Nói mở / warmup (không gộp brainstorm) */}
       {data.free_speaking_questions.length > 0 && (
-        <details className="overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--surface)] [&>summary::-webkit-details-marker]:hidden">
+        <details className="overflow-hidden rounded-xl border border-sky-200/80 bg-[var(--surface)] [&>summary::-webkit-details-marker]:hidden">
           <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-2.5 text-sm font-semibold text-[var(--ink)]">
-            <span>Câu hỏi nói tự do ({data.free_speaking_questions.length})</span>
+            <span>Nói mở / warmup ({data.free_speaking_questions.length} câu)</span>
             <span className="text-xs font-normal text-[var(--muted)]">▾</span>
           </summary>
           <ul className="divide-y divide-[var(--border)] border-t border-[var(--border)]">
             {data.free_speaking_questions.map((q, i) => (
-              <li key={i} className="flex items-start gap-3 px-4 py-2.5 text-sm">
-                <span className="w-5 shrink-0 tabular-nums text-[var(--muted)]">{i + 1}.</span>
-                <p className="text-[var(--ink)]">{q.question}</p>
+              <li key={i} className="px-4 py-2.5 text-sm">
+                <div className="flex items-start gap-3">
+                  <span className="w-5 shrink-0 tabular-nums text-[var(--muted)]">{i + 1}.</span>
+                  <div className="min-w-0 flex-1 space-y-1">
+                    <p className="text-[var(--ink)]">{q.question}</p>
+                    {q.user_transcript && (
+                      <p className="text-xs text-[var(--muted)]">
+                        <span className="font-medium">Học sinh: </span>{q.user_transcript}
+                        {q.score != null && (
+                          <span className={`ml-1.5 font-semibold tabular-nums ${scoreColorClass(q.score, 100)}`}>
+                            {q.score}/100
+                          </span>
+                        )}
+                      </p>
+                    )}
+                    {(q.reaction_time_ms != null || q.audio_url) && (
+                      <div className="mt-1 space-y-1.5 text-[10px] text-[var(--muted)]">
+                        {q.reaction_time_ms != null && (
+                          <p>
+                            Phản xạ:
+                            {' '}
+                            <strong className="tabular-nums text-[var(--ink)]">{formatReactionSec(q.reaction_time_ms)}</strong>
+                          </p>
+                        )}
+                        {q.audio_url && <InlineAudioPlayer src={q.audio_url} />}
+                      </div>
+                    )}
+                  </div>
+                </div>
               </li>
             ))}
+          </ul>
+        </details>
+      )}
+
+      {/* Hội thoại */}
+      {data.conversation_questions.length > 0 && (
+        <details className="overflow-hidden rounded-xl border border-violet-200 bg-[var(--surface)] [&>summary::-webkit-details-marker]:hidden">
+          <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-2.5 text-sm font-semibold text-violet-700">
+            <span>Hội thoại ({data.conversation_questions.length} lượt)</span>
+            <span className="text-xs font-normal">▾</span>
+          </summary>
+          <ul className="max-h-[28rem] divide-y divide-violet-100 overflow-y-auto border-t border-violet-200">
+            {data.conversation_questions.map((q, i) => {
+              const failed = q.score != null && q.score < 70
+              return (
+                <li key={i} className={`px-4 py-3 text-sm ${failed ? 'bg-rose-50/30' : ''}`}>
+                  <div className="space-y-1.5">
+                    {q.question && (
+                      <p className="italic text-[var(--muted)]">"{q.question}"</p>
+                    )}
+                    {q.expected_transcript && (
+                      <p className="rounded-lg border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-[11px]">
+                        <span className="font-semibold text-emerald-700">Câu mẫu: </span>
+                        <span className="text-emerald-800">{q.expected_transcript}</span>
+                      </p>
+                    )}
+                    {q.user_transcript && (
+                      <p className="text-[var(--ink)]">
+                        <span className="font-medium text-[var(--muted)]">Học sinh: </span>
+                        {q.user_transcript}
+                      </p>
+                    )}
+                    {(q.reaction_time_ms != null || q.audio_url) && (
+                      <div className="mt-1 space-y-1.5 text-[10px] text-[var(--muted)]">
+                        {q.reaction_time_ms != null && (
+                          <p>
+                            Phản xạ:
+                            {' '}
+                            <strong className="tabular-nums text-[var(--ink)]">{formatReactionSec(q.reaction_time_ms)}</strong>
+                          </p>
+                        )}
+                        {q.audio_url && <InlineAudioPlayer src={q.audio_url} />}
+                      </div>
+                    )}
+                    {q.score != null && (
+                      <div className="space-y-1 pt-0.5">
+                        <ScoreMiniBar score={q.score} label="Tổng" />
+                        {q.grammar_score != null && <ScoreMiniBar score={q.grammar_score} label="Ngữ pháp" />}
+                        {q.pronunciation_score != null && <ScoreMiniBar score={q.pronunciation_score} label="Phát âm" />}
+                      </div>
+                    )}
+                  </div>
+                </li>
+              )
+            })}
           </ul>
         </details>
       )}
@@ -292,7 +746,6 @@ function QuestionList({
     )
   }
 
-  // Not attempted: show as question bank, not results
   if (!attempted) {
     return (
       <details open className="overflow-hidden rounded-lg border border-slate-200 [&>summary::-webkit-details-marker]:hidden">
@@ -345,7 +798,6 @@ function PracticePanel({
 }: {
   label: string
   block: PracticeBlock | null
-  /** When false, questions are from export only — show as question bank, not pass/fail results. */
   attempted?: boolean
 }) {
   if (!block) {
@@ -367,7 +819,6 @@ function PracticePanel({
 
   return (
     <div className="overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--surface)]">
-      {/* Header */}
       <div className="flex flex-wrap items-center gap-x-3 gap-y-1 px-4 py-3">
         <span className="font-display font-semibold text-[var(--ink)]">{label}</span>
         {scoreVal != null && (
@@ -381,7 +832,6 @@ function PracticePanel({
         )}
       </div>
 
-      {/* Score bar */}
       {block.score != null && (
         <div className="mx-4 mb-3 h-1.5 overflow-hidden rounded-full bg-[var(--border)]">
           <div className={`h-full rounded-full transition-all ${barColor}`} style={{ width: barWidth }} />
@@ -404,7 +854,6 @@ function PracticePanel({
         </p>
       )}
 
-      {/* Question list */}
       <div className="border-t border-[var(--border)] px-3 pb-3 pt-2">
         <QuestionList
           questions={block.questions}
@@ -484,6 +933,11 @@ export default function HistoryLessonDetail() {
   }
   const statusInfo = statusLabel[data.status ?? ''] ?? { label: data.status ?? '', cls: 'bg-slate-50 text-slate-600 border-slate-200' }
 
+  const inClassCount = ic.pronunciation_drills.length
+    + (ic.brainstorm_questions ?? []).length
+    + ic.free_speaking_questions.length
+    + ic.conversation_questions.length
+
   return (
     <div className="space-y-5">
       {/* Breadcrumb */}
@@ -530,7 +984,7 @@ export default function HistoryLessonDetail() {
         )}
       </header>
 
-      {/* Skill breakdown nhanh */}
+      {/* Skill breakdown */}
       {Object.keys(hw.skill_breakdown).length > 0 && (
         <div className="flex flex-wrap gap-2">
           {Object.entries(hw.skill_breakdown).map(([skill, s]) => (
@@ -567,6 +1021,9 @@ export default function HistoryLessonDetail() {
             <span className={`ml-1.5 text-xs ${ic.is_completed ? 'text-emerald-600' : 'text-amber-500'}`}>
               {ic.is_completed ? '✓' : `${ic.completion_pct ?? 0}%`}
             </span>
+          )}
+          {inClassCount > 0 && (
+            <span className="ml-1 text-xs text-[var(--muted)]">{inClassCount}</span>
           )}
         </button>
         <button

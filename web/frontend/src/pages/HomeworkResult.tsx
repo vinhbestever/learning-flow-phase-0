@@ -1,17 +1,26 @@
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { HomeworkQuestionFullDetail, type HomeworkQuestionFull } from '../components/HomeworkQuestionFullDetail'
+import { InlineAudioPlayer } from '../components/InlineAudioPlayer'
 import { formatActivityDateDisplay } from '../lib/activityDate'
 import { formatStudentAnswerDisplay } from '../lib/formatStudentAnswer'
 import { lmsQuestionOutcome } from '../lib/lmsQuestionAttempt'
 
 interface SpeakingItem {
-  question: string
-  question_type: string
-  user_transcript: string
-  score: number
-  answer_type: string
-  timestamp: string
+  lms_type?: 'free_speaking' | 'brainstorm' | 'conversation' | string | null
+  question: string | null
+  question_type?: string | null
+  expected_answer?: string | null
+  target_objects?: string[] | null
+  user_transcript?: string | null
+  score?: number | null
+  grammar_score?: number | null
+  pronunciation_score?: number | null
+  answer_type?: string | null
+  timestamp?: string | null
+  correct_objects?: string[] | null
+  audio_url?: string | null
+  reaction_time_ms?: number | null
 }
 
 interface FailedTextQuestion {
@@ -91,13 +100,52 @@ function normalizeText(s: string) {
   return s.toLowerCase().replace(/\s+/g, ' ').trim()
 }
 
+function formatReactionSec(ms: number | null | undefined): string | null {
+  if (ms == null || Number.isNaN(ms)) return null
+  return `${(ms / 1000).toFixed(1).replace('.', ',')}s`
+}
+
 function findMatchingSpeakingItem(q: Question): SpeakingItem | null {
   const ctx = q.student_context
   if (!ctx || !ctx.worst_speaking_items.length) return null
   const qNorm = normalizeText(q.question_text)
   return (
-    ctx.worst_speaking_items.find((item) => normalizeText(item.question) === qNorm) ??
+    ctx.worst_speaking_items.find((item) => normalizeText(item.question ?? '') === qNorm) ??
     ctx.worst_speaking_items[0]
+  )
+}
+
+function scoreBgHw(score: number | null | undefined, max = 100): string {
+  if (score == null) return 'bg-slate-200/80'
+  const r = score / max
+  if (r >= 0.8) return 'bg-emerald-400'
+  if (r >= 0.6) return 'bg-amber-400'
+  return 'bg-rose-400'
+}
+
+function scoreColorHw(score: number | null | undefined, max = 100): string {
+  if (score == null) return 'text-[var(--muted)]'
+  const r = score / max
+  if (r >= 0.8) return 'text-emerald-600'
+  if (r >= 0.6) return 'text-amber-500'
+  return 'text-rose-500'
+}
+
+function ScoreMiniBarHw({ score, max = 100, label }: { score: number | null; max?: number; label: string }) {
+  const pct = score != null ? Math.round((score / max) * 100) : 0
+  return (
+    <div className="flex items-center gap-1.5">
+      <span className="w-14 shrink-0 text-[10px] text-[var(--muted)]">{label}</span>
+      <div className="h-1 flex-1 overflow-hidden rounded-full bg-[var(--border)]">
+        <div
+          className={`h-full rounded-full ${scoreBgHw(score, max)}`}
+          style={{ width: score != null ? `${pct}%` : '0%' }}
+        />
+      </div>
+      <span className={`w-8 shrink-0 text-right text-[10px] font-semibold tabular-nums ${scoreColorHw(score, max)}`}>
+        {score != null ? score : '—'}
+      </span>
+    </div>
   )
 }
 
@@ -184,36 +232,135 @@ function PriorLearningContext({ q, studentId }: { q: Question; studentId: string
         )}
       </div>
 
-      {speakingItem && (
-        <div className="mt-3 rounded-lg border border-orange-200/90 bg-gradient-to-br from-orange-50/95 to-[var(--surface)] px-2.5 py-2.5">
-          <div className="flex flex-wrap items-center gap-2">
-            <p className="text-[10px] font-semibold uppercase tracking-wide text-orange-800">
-              Transcript trên lớp (nói)
-            </p>
-            <span className="rounded border border-orange-300 bg-white/70 px-1.5 py-0.5 text-[9px] font-bold text-orange-900">
-              Đã làm — theo lớp
-            </span>
-          </div>
-          <p className="mt-1 text-[10px] leading-snug text-orange-800/90">
-            Đoạn được chọn để ôn (ưu tiên), không phải đáp án mẫu hay kết luận “đúng hoàn toàn”.
-          </p>
-          <p className="mt-1.5 text-[13px] leading-relaxed italic text-[var(--ink)]">
-            &ldquo;{speakingItem.user_transcript}&rdquo;
-          </p>
-          <div className="mt-2 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[10px] text-orange-700">
-            <span>
-              Điểm:{' '}
-              <span className={`font-bold tabular-nums ${speakingItem.score === 0 ? 'text-[var(--coral)]' : 'text-emerald-600'}`}>
-                {speakingItem.score}
+      {speakingItem && (() => {
+        const isConvo = speakingItem.lms_type === 'conversation'
+        const isBrainstorm = speakingItem.lms_type === 'brainstorm'
+        const at = (speakingItem.answer_type ?? '').toLowerCase()
+        const shellClass = isConvo
+          ? 'border-violet-200/90 bg-gradient-to-br from-violet-50/90 via-[var(--surface)] to-[var(--surface)]'
+          : isBrainstorm
+            ? 'border-amber-200/90 bg-gradient-to-br from-amber-50/95 via-[var(--surface)] to-[var(--surface)]'
+            : 'border-orange-200/90 bg-gradient-to-br from-orange-50/95 to-[var(--surface)]'
+        const titleClass = isConvo ? 'text-violet-900' : isBrainstorm ? 'text-amber-950' : 'text-orange-800'
+        const badgeClass = isConvo
+          ? 'border-violet-300 bg-white/80 text-violet-900'
+          : isBrainstorm
+            ? 'border-amber-300 bg-white/80 text-amber-950'
+            : 'border-orange-300 bg-white/70 text-orange-900'
+        const blurbClass = isConvo ? 'text-violet-900/85' : isBrainstorm ? 'text-amber-950/90' : 'text-orange-800/90'
+        const title =
+          isConvo
+            ? 'Transcript trên lớp (hội thoại AI)'
+            : isBrainstorm
+              ? 'Transcript trên lớp (brainstorm — ảnh & từ mục tiêu)'
+              : 'Transcript trên lớp (nói mở / warmup)'
+        const blurb = isConvo
+          ? 'Ngữ cảnh hội thoại với AI: có điểm tổng, ngữ pháp và phát âm khi có dữ liệu.'
+          : isBrainstorm
+            ? 'Bài nhìn ảnh/gợi ý và nói các từ mục tiêu; điểm và answer_type phản ánh mức khớp với yêu cầu.'
+            : 'Warmup nói mở theo gợi ý trên lớp; đoạn được chọn để ôn (ưu tiên), không phải kết luận “đúng hoàn toàn”.'
+        return (
+          <div className={`mt-3 rounded-lg border px-2.5 py-2.5 ${shellClass}`}>
+            <div className="flex flex-wrap items-center gap-2">
+              <p className={`text-[10px] font-semibold uppercase tracking-wide ${titleClass}`}>
+                {title}
+              </p>
+              <span className={`rounded border px-1.5 py-0.5 text-[9px] font-bold ${badgeClass}`}>
+                Đã làm — theo lớp
               </span>
-            </span>
-            <span className="text-orange-300">·</span>
-            <span className="capitalize">{speakingItem.answer_type}</span>
-            <span className="text-orange-300">·</span>
-            <span className="tabular-nums opacity-90">{speakingItem.timestamp}</span>
+            </div>
+            <p className={`mt-1 text-[10px] leading-snug ${blurbClass}`}>
+              {blurb}
+            </p>
+            {speakingItem.question && (
+              <p className="mt-1.5 text-[11px] italic text-[var(--muted)]">&ldquo;{speakingItem.question}&rdquo;</p>
+            )}
+            {isConvo && speakingItem.expected_answer && (
+              <p className="mt-1.5 rounded-md border border-emerald-200 bg-emerald-50/90 px-2 py-1 text-[11px] text-emerald-900">
+                <span className="font-semibold">Câu mẫu: </span>
+                {speakingItem.expected_answer}
+              </p>
+            )}
+            {!isConvo && speakingItem.target_objects && speakingItem.target_objects.length > 0 && (
+              <div className="mt-1.5 flex flex-wrap gap-1">
+                {speakingItem.target_objects.map((obj) => (
+                  <span key={obj} className="rounded border border-amber-200 bg-amber-50 px-1.5 py-0.5 text-[10px] font-medium text-amber-900">
+                    {obj}
+                  </span>
+                ))}
+              </div>
+            )}
+            <p className="mt-1.5 text-[13px] leading-relaxed italic text-[var(--ink)]">
+              &ldquo;{speakingItem.user_transcript ?? '—'}&rdquo;
+            </p>
+            {(speakingItem.reaction_time_ms != null || speakingItem.audio_url) && (
+              <div className="mt-2 space-y-1.5 text-[10px] text-[var(--muted)]">
+                {speakingItem.reaction_time_ms != null && (
+                  <p>
+                    Phản xạ:
+                    {' '}
+                    <strong className="tabular-nums text-[var(--ink)]">
+                      {formatReactionSec(speakingItem.reaction_time_ms) ?? '—'}
+                    </strong>
+                  </p>
+                )}
+                {speakingItem.audio_url && <InlineAudioPlayer src={speakingItem.audio_url} />}
+              </div>
+            )}
+            {isConvo ? (
+              <div className="mt-2 space-y-1">
+                {speakingItem.score != null && <ScoreMiniBarHw score={speakingItem.score} label="Tổng" />}
+                {speakingItem.grammar_score != null && <ScoreMiniBarHw score={speakingItem.grammar_score} label="Ngữ pháp" />}
+                {speakingItem.pronunciation_score != null && (
+                  <ScoreMiniBarHw score={speakingItem.pronunciation_score} label="Phát âm" />
+                )}
+                {speakingItem.timestamp && (
+                  <p className="pt-0.5 text-[10px] text-[var(--muted)] tabular-nums">{speakingItem.timestamp}</p>
+                )}
+              </div>
+            ) : (
+              <div
+                className={`mt-2 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[10px] ${
+                  isBrainstorm ? 'text-amber-900' : 'text-orange-700'
+                }`}
+              >
+                <span>
+                  Điểm:{' '}
+                  <span
+                    className={`font-bold tabular-nums ${
+                      speakingItem.score == null
+                        ? 'text-[var(--muted)]'
+                        : speakingItem.score < 60
+                          ? 'text-[var(--coral)]'
+                          : 'text-emerald-600'
+                    }`}
+                  >
+                    {speakingItem.score != null ? `${speakingItem.score}/100` : '—'}
+                  </span>
+                </span>
+                {at ? (
+                  <>
+                    <span className={isBrainstorm ? 'text-amber-300' : 'text-orange-300'}>·</span>
+                    <span className="capitalize">{speakingItem.answer_type}</span>
+                  </>
+                ) : null}
+                {speakingItem.timestamp ? (
+                  <>
+                    <span className={isBrainstorm ? 'text-amber-300' : 'text-orange-300'}>·</span>
+                    <span className="tabular-nums opacity-90">{speakingItem.timestamp}</span>
+                  </>
+                ) : null}
+              </div>
+            )}
+            {!isConvo && speakingItem.correct_objects && speakingItem.correct_objects.length > 0 && (
+              <p className="mt-1.5 text-[10px] text-emerald-800">
+                <span className="font-medium">Từ đúng: </span>
+                {speakingItem.correct_objects.join(', ')}
+              </p>
+            )}
           </div>
-        </div>
-      )}
+        )
+      })()}
 
       {textItem && !hideTextSnippet && (
         <div className="mt-3 rounded-lg border border-rose-200/90 bg-rose-50/60 px-2.5 py-2.5">

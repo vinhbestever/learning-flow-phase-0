@@ -5,10 +5,16 @@ import { formatActivityDateDisplay } from '../lib/activityDate'
 import { groupHistoryByMonth } from '../lib/lessonGroups'
 
 interface SpeakingItem {
-  question: string
-  user_transcript: string
+  lms_type?: 'free_speaking' | 'brainstorm' | 'conversation' | string | null
+  question: string | null
+  expected_answer?: string | null
+  target_objects?: string[] | null
+  user_transcript: string | null
   answer_type: string | null
   score: number | null
+  grammar_score?: number | null
+  pronunciation_score?: number | null
+  correct_objects?: string[] | null
   timestamp: string | null
 }
 
@@ -27,6 +33,14 @@ interface PracticeResult {
   submitted_date: string | null
 }
 
+interface SessionMetricsLite {
+  cups?: number | null
+  audio_turns?: number | null
+  avg_reaction_ms?: number | null
+  fastest_reaction_ms?: number | null
+  session_status?: string | null
+}
+
 interface InClassSummary {
   participated: boolean
   is_completed: boolean
@@ -36,6 +50,11 @@ interface InClassSummary {
   pronunciation_attempts: number
   free_speaking_score_avg: number | null
   free_speaking_attempts: number
+  brainstorm_score_avg?: number | null
+  brainstorm_attempts?: number
+  conversation_score_avg?: number | null
+  conversation_attempts?: number
+  session_metrics?: SessionMetricsLite | null
   worst_speaking_items: SpeakingItem[]
 }
 
@@ -104,6 +123,18 @@ function answerTypeBadge(type: string | null): string {
   return map[type] ?? type
 }
 
+function scoreColor100(score: number | null | undefined): string {
+  if (score == null) return 'text-[var(--muted)]'
+  if (score >= 80) return 'text-emerald-600'
+  if (score >= 60) return 'text-amber-500'
+  return 'text-rose-500'
+}
+
+function formatReactionMs(ms: number | null | undefined): string | null {
+  if (ms == null || Number.isNaN(ms)) return null
+  return `${(ms / 1000).toFixed(1).replace('.', ',')}s`
+}
+
 function PracticeRow({ label, result }: { label: string; result: PracticeResult | null }) {
   if (!result) return (
     <div className="flex items-center gap-2 text-[11px] text-[var(--muted)]">
@@ -142,7 +173,7 @@ function InClassPanel({ data }: { data: InClassSummary }) {
       </div>
 
       {/* Điểm kỹ năng */}
-      <div className="grid grid-cols-2 gap-x-4 gap-y-1">
+      <div className="grid grid-cols-2 gap-x-4 gap-y-1 sm:grid-cols-3">
         {data.pronunciation_attempts > 0 && (
           <div className="flex items-baseline gap-1 text-[11px]">
             <span className="text-[var(--muted)]">Phát âm</span>
@@ -152,39 +183,136 @@ function InClassPanel({ data }: { data: InClassSummary }) {
             <span className="text-[var(--muted)]">({data.pronunciation_attempts} lần)</span>
           </div>
         )}
+        {(data.brainstorm_attempts ?? 0) > 0 && (
+          <div className="flex items-baseline gap-1 text-[11px]">
+            <span className="text-[var(--muted)]">Brainstorm</span>
+            <span className={`font-bold tabular-nums ${scoreColor(data.brainstorm_score_avg != null ? data.brainstorm_score_avg / 100 : null)}`}>
+              {data.brainstorm_score_avg != null ? `${data.brainstorm_score_avg.toFixed(0)}/100` : '—'}
+            </span>
+            <span className="text-[var(--muted)]">({data.brainstorm_attempts} lần)</span>
+          </div>
+        )}
         {data.free_speaking_attempts > 0 && (
           <div className="flex items-baseline gap-1 text-[11px]">
-            <span className="text-[var(--muted)]">Nói tự do</span>
+            <span className="text-[var(--muted)]">Nói mở / warmup</span>
             <span className={`font-bold tabular-nums ${scoreColor(data.free_speaking_score_avg != null ? data.free_speaking_score_avg / 100 : null)}`}>
               {data.free_speaking_score_avg != null ? `${data.free_speaking_score_avg.toFixed(0)}/100` : '—'}
             </span>
             <span className="text-[var(--muted)]">({data.free_speaking_attempts} lần)</span>
           </div>
         )}
+        {(data.conversation_attempts ?? 0) > 0 && (
+          <div className="flex items-baseline gap-1 text-[11px]">
+            <span className="text-[var(--muted)]">Hội thoại</span>
+            <span className={`font-bold tabular-nums ${scoreColor(data.conversation_score_avg != null ? data.conversation_score_avg / 100 : null)}`}>
+              {data.conversation_score_avg != null ? `${data.conversation_score_avg.toFixed(0)}/100` : '—'}
+            </span>
+            <span className="text-[var(--muted)]">({data.conversation_attempts} lần)</span>
+          </div>
+        )}
       </div>
+
+      {data.session_metrics && (data.session_metrics.cups != null || data.session_metrics.audio_turns != null || data.session_metrics.avg_reaction_ms != null) && (
+        <div className="flex flex-wrap gap-x-3 gap-y-0.5 border-t border-[var(--border)] pt-1.5 text-[10px] text-[var(--muted)]">
+          {data.session_metrics.cups != null && (
+            <span>Cup: <strong className="text-[var(--ink)] tabular-nums">{data.session_metrics.cups}</strong></span>
+          )}
+          {data.session_metrics.audio_turns != null && (
+            <span>Lượt nói: <strong className="text-[var(--ink)] tabular-nums">{data.session_metrics.audio_turns}</strong></span>
+          )}
+          {formatReactionMs(data.session_metrics.avg_reaction_ms ?? undefined) && (
+            <span>TB phản xạ: <strong className="text-[var(--ink)]">{formatReactionMs(data.session_metrics.avg_reaction_ms ?? undefined)}</strong></span>
+          )}
+          {data.session_metrics.session_status && (
+            <span className="rounded bg-teal-50 px-1 py-0.5 text-[9px] font-semibold text-teal-800">{data.session_metrics.session_status}</span>
+          )}
+        </div>
+      )}
 
       {/* Câu nói sai */}
       {data.worst_speaking_items.length > 0 && (
         <div className="space-y-1.5 border-t border-[var(--border)] pt-2">
           <p className="text-[10px] font-semibold uppercase tracking-wide text-[var(--muted)]">Câu nói cần cải thiện</p>
-          {data.worst_speaking_items.map((w, i) => (
-            <div key={i} className="rounded bg-rose-50 border border-rose-100 px-2 py-1.5 text-[11px]">
-              {w.question && (
-                <p className="text-[var(--muted)] italic mb-0.5">"{w.question}"</p>
-              )}
-              <p className="text-[var(--ink)]">
-                <span className="font-medium">HS:</span> {w.user_transcript || '—'}
-              </p>
-              <div className="flex items-center gap-2 mt-0.5">
-                {w.answer_type && (
-                  <span className="rounded bg-rose-100 px-1 py-0.5 text-[10px] font-medium text-rose-700">
-                    {answerTypeBadge(w.answer_type)}
+          {data.worst_speaking_items.map((w, i) => {
+            const isConvo = w.lms_type === 'conversation'
+            const isBrain = w.lms_type === 'brainstorm'
+            const shell = isConvo
+              ? 'border-violet-200/90 bg-gradient-to-br from-violet-50/80 to-[var(--surface)]'
+              : isBrain
+                ? 'border-amber-200/90 bg-gradient-to-br from-amber-50/85 to-[var(--surface)]'
+                : 'border-rose-100 bg-rose-50'
+            const badge = isConvo
+              ? 'bg-violet-200/80 text-violet-900'
+              : isBrain
+                ? 'bg-amber-200/90 text-amber-950'
+                : 'bg-sky-200/60 text-sky-900'
+            const kind = isConvo ? 'Hội thoại' : isBrain ? 'Brainstorm (ảnh)' : 'Nói mở / warmup'
+            return (
+              <div key={i} className={`rounded border px-2 py-1.5 text-[11px] ${shell}`}>
+                <div className="mb-0.5 flex flex-wrap items-center gap-1">
+                  <span className={`rounded px-1 py-0.5 text-[9px] font-bold uppercase tracking-wide ${badge}`}>
+                    {kind}
                   </span>
+                  {w.timestamp && <span className="ml-auto text-[10px] text-[var(--muted)]">{w.timestamp}</span>}
+                </div>
+                {w.question && (
+                  <p className="mb-0.5 text-[var(--muted)] italic">&ldquo;{w.question}&rdquo;</p>
                 )}
-                {w.timestamp && <span className="text-[var(--muted)]">{w.timestamp}</span>}
+                {isConvo && w.expected_answer && (
+                  <p className="mb-0.5 rounded border border-emerald-200/80 bg-emerald-50/90 px-1.5 py-0.5 text-[10px] text-emerald-900">
+                    <span className="font-semibold">Mẫu: </span>
+                    {w.expected_answer}
+                  </p>
+                )}
+                {!isConvo && w.target_objects && w.target_objects.length > 0 && (
+                  <div className="mb-0.5 flex flex-wrap gap-0.5">
+                    {w.target_objects.slice(0, 5).map((obj) => (
+                      <span key={obj} className="rounded border border-amber-200/90 bg-amber-50 px-1 py-0.5 text-[9px] text-amber-900">
+                        {obj}
+                      </span>
+                    ))}
+                  </div>
+                )}
+                <p className="text-[var(--ink)]">
+                  <span className="font-medium">HS:</span> {w.user_transcript || '—'}
+                </p>
+                {isConvo ? (
+                  <div className="mt-1 space-y-0.5 font-mono text-[10px] tabular-nums text-[var(--muted)]">
+                    <div>
+                      Tổng{' '}
+                      <span className={`font-semibold ${scoreColor100(w.score)}`}>{w.score != null ? w.score : '—'}</span>
+                      {w.grammar_score != null && (
+                        <>
+                          {' · '}NP <span className={`font-semibold ${scoreColor100(w.grammar_score)}`}>{w.grammar_score}</span>
+                        </>
+                      )}
+                      {w.pronunciation_score != null && (
+                        <>
+                          {' · '}PA <span className={`font-semibold ${scoreColor100(w.pronunciation_score)}`}>{w.pronunciation_score}</span>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="mt-0.5 flex flex-wrap items-center gap-2">
+                    {w.answer_type && (
+                      <span className="rounded bg-rose-100 px-1 py-0.5 text-[10px] font-medium text-rose-700">
+                        {answerTypeBadge(w.answer_type)}
+                      </span>
+                    )}
+                    {w.score != null && (
+                      <span className={`text-[10px] font-semibold tabular-nums ${scoreColor100(w.score)}`}>{w.score}/100</span>
+                    )}
+                  </div>
+                )}
+                {!isConvo && w.correct_objects && w.correct_objects.length > 0 && (
+                  <p className="mt-0.5 text-[10px] text-emerald-800">
+                    <span className="font-medium">Đúng:</span> {w.correct_objects.join(', ')}
+                  </p>
+                )}
               </div>
-            </div>
-          ))}
+            )
+          })}
         </div>
       )}
     </div>

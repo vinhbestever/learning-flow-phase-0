@@ -18,11 +18,14 @@
     "weak_skills_global": [],
     "overall_pronunciation_score_avg": 53.19,
     "overall_free_speaking_score_avg": 22.22,
+    "overall_brainstorm_score_avg": null,
+    "overall_conversation_score_avg": null,
     "overall_free_speaking_answer_type_dist": {
       "inaccordant": 15,
       "lack_of_knowledge": 6,
       "accordant": 6
     },
+    "overall_brainstorm_answer_type_dist": {},
     "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
@@ -44,13 +47,9 @@
           "question_folder": "English Tutoring - Preschool",
           "question_type": "Xứng-Hợp",
           "question_text": "Look and match (Con hãy di chuyển các từ để ghép với hình đúng nhé!)",
-          "correct_answer": null,
-          "student_answer": [
-            "3",
-            "2",
-            "1",
-            "4"
-          ],
+          "comment_plain": "crayon (b&uacute;t màu) book (quyển sách) chair (cái ghế) table (cái bàn)",
+          "correct_answer": "item_1→book; item_2→chair; item_3→crayon; item_4→table",
+          "student_answer": "wrong: item_1, item_2",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -111,12 +110,29 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         }
       ],
       "question_bank_preview": [],
       "failed_media_questions_count": 2,
-      "worst_speaking_items": [],
+      "worst_speaking_items": [
+        {
+          "lms_type": "free_speaking",
+          "question": "How are you feeling today?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "I am.",
+          "score": 0,
+          "answer_type": "lack_of_knowledge",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-16",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/16/admin/mkgtyjmc-6522c4e2-audio.wav",
+          "reaction_time_ms": 2249
+        }
+      ],
       "practice_ids": {
         "bai_tap": 46632,
         "luyen_tap": null
@@ -138,20 +154,34 @@
       "failed_media_questions_count": 5,
       "worst_speaking_items": [
         {
+          "lms_type": "free_speaking",
           "question": "How are you feeling today?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": null,
           "user_transcript": "Y.",
           "score": 0,
           "answer_type": "inaccordant",
-          "timestamp": "2026-01-11"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-11",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/11/admin/mk9t24pv-8691c217-audio.wav",
+          "reaction_time_ms": 2622
         },
         {
+          "lms_type": "free_speaking",
           "question": "How are you feeling today?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": null,
           "user_transcript": "Y.",
           "score": 0,
           "answer_type": "inaccordant",
-          "timestamp": "2026-01-11"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-11",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/11/admin/mk9s9qmm-9c4743f2-audio.wav",
+          "reaction_time_ms": 2526
         }
       ],
       "practice_ids": {
@@ -175,12 +205,19 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
+          "lms_type": "free_speaking",
           "question": "How are you feeling today?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": null,
           "user_transcript": "Y.",
           "score": 0,
           "answer_type": "inaccordant",
-          "timestamp": "2026-01-23"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-23",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/23/admin/mkquz32i-c61fed6b-audio.wav",
+          "reaction_time_ms": 3743
         }
       ],
       "practice_ids": {
@@ -204,12 +241,34 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
+          "lms_type": "free_speaking",
           "question": "How are you today?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "AFPha TI.",
+          "score": 0,
+          "answer_type": "lack_of_knowledge",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-02-06",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/06/admin/mlawgtd9-c6c07e76-audio.wav",
+          "reaction_time_ms": 2383
+        },
+        {
+          "lms_type": "free_speaking",
+          "question": "How are you today?",
+          "expected_answer": null,
+          "target_objects": null,
           "user_transcript": "Fo your.",
           "score": 0,
           "answer_type": "inaccordant",
-          "timestamp": "2026-02-06"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-02-06",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/06/admin/mlatny4c-f6058faa-audio.wav",
+          "reaction_time_ms": 1866
         }
       ],
       "practice_ids": {
@@ -233,12 +292,19 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
+          "lms_type": "free_speaking",
           "question": "How are you doing today?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": null,
           "user_transcript": "Hello.",
           "score": 0,
           "answer_type": "inaccordant",
-          "timestamp": "2026-02-27"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-02-27",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/28/admin/mm5j0w52-f01b8510-audio.wav",
+          "reaction_time_ms": 3665
         }
       ],
       "practice_ids": {
@@ -262,12 +328,19 @@
       "failed_media_questions_count": 2,
       "worst_speaking_items": [
         {
+          "lms_type": "free_speaking",
           "question": "How are you doing today?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": null,
           "user_transcript": "Hel.",
           "score": 0,
           "answer_type": "inaccordant",
-          "timestamp": "2026-03-01"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/01/admin/mm74r1z1-2e18c9eb-audio.wav",
+          "reaction_time_ms": 4378
         }
       ],
       "practice_ids": {
@@ -291,16 +364,59 @@
       "failed_media_questions_count": 4,
       "worst_speaking_items": [
         {
+          "lms_type": "free_speaking",
           "question": "How are you today?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": null,
           "user_transcript": "I thank you, I'm thank you.",
           "score": 0,
           "answer_type": "inaccordant",
-          "timestamp": "2026-01-02"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/02/admin/mjwy1rh6-1e8405cc-audio.wav",
+          "reaction_time_ms": 2766
         }
       ],
       "practice_ids": {
         "bai_tap": 46353,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3815886,
+      "title": "Unit 4A: Farm Animals - Lesson 6",
+      "level": 17,
+      "last_activity_date": "2026-04-08",
+      "days_since_last_practice": 13,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7941,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "free_speaking",
+          "question": "How are you feeling right now?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "Every.",
+          "score": 0,
+          "answer_type": "lack_of_knowledge",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-29",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnb3cds9-ebe8d90f-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 49801,
         "luyen_tap": null
       }
     },
@@ -320,12 +436,34 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
+          "lms_type": "free_speaking",
           "question": "How are you feeling?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "I.",
+          "score": 0,
+          "answer_type": "lack_of_knowledge",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-13",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx5hxbk-06f89802-audio.wav",
+          "reaction_time_ms": 497
+        },
+        {
+          "lms_type": "free_speaking",
+          "question": "How are you feeling?",
+          "expected_answer": null,
+          "target_objects": null,
           "user_transcript": "Don't't you?",
           "score": 0,
           "answer_type": "inaccordant",
-          "timestamp": "2026-04-11"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-11",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/11/admin/mnu3lqpy-bb73ec92-audio.wav",
+          "reaction_time_ms": 499
         }
       ],
       "practice_ids": {
@@ -349,12 +487,19 @@
       "failed_media_questions_count": 3,
       "worst_speaking_items": [
         {
+          "lms_type": "free_speaking",
           "question": "How are you today?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": null,
           "user_transcript": "I play a big in Chicau.",
           "score": 0,
           "answer_type": "inaccordant",
-          "timestamp": "2025-12-27"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2025-12-27",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/27/admin/mjnk4gle-37da5999-audio.wav",
+          "reaction_time_ms": 3444
         }
       ],
       "practice_ids": {
@@ -382,6 +527,7 @@
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
           "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+          "comment_plain": "Audio: mom (mẹ)",
           "correct_answer": null,
           "student_answer": null,
           "requires_media": true,
@@ -421,6 +567,7 @@
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
           "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+          "comment_plain": "Audio: dad (bố)",
           "correct_answer": null,
           "student_answer": null,
           "requires_media": true,
@@ -460,6 +607,7 @@
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
           "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+          "comment_plain": "Audio A: mom (mẹ) Audio B: dad (bố)",
           "correct_answer": "A",
           "student_answer": null,
           "requires_media": true,
@@ -493,6 +641,7 @@
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
           "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+          "comment_plain": "dad (bố) mom (mẹ)",
           "correct_answer": "dad",
           "student_answer": null,
           "requires_media": true,
@@ -522,6 +671,7 @@
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
           "question_text": "Look, listen and choose (Con hãy nhìn tranh, nghe và chọn tranh đúng nhé!)",
+          "comment_plain": "Audio: - Who is this? (Đây là ai vậy?) - It&#39;s my mom. (Đây là mẹ của tớ.)",
           "correct_answer": null,
           "student_answer": null,
           "requires_media": true,
@@ -580,12 +730,19 @@
       "failed_media_questions_count": 5,
       "worst_speaking_items": [
         {
+          "lms_type": "free_speaking",
           "question": "How are you today?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": null,
           "user_transcript": "The.",
           "score": 0,
           "answer_type": "inaccordant",
-          "timestamp": "2025-12-29"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2025-12-29",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/29/admin/mjr6975x-6ed936be-audio.wav",
+          "reaction_time_ms": 3029
         }
       ],
       "practice_ids": {
@@ -611,15 +768,9 @@
           "question_folder": "English Tutoring - Preschool",
           "question_type": "Xứng-Hợp",
           "question_text": "Match (Con hãy di chuyển các từ để ghép với hình đúng nhé!)",
-          "correct_answer": null,
-          "student_answer": [
-            "4",
-            "1",
-            "2",
-            "5",
-            "3",
-            "6"
-          ],
+          "comment_plain": "fork (cái nĩa) elephant (con voi) dog (con ch&oacute;) fish (con cá) egg (quả trứng) desk (cái bàn)",
+          "correct_answer": "item_1→desk; item_2→fork; item_3→elephant; item_4→egg; item_5→dog; item_6→fish",
+          "student_answer": "wrong: item_1, item_6",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -708,12 +859,29 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         }
       ],
       "question_bank_preview": [],
       "failed_media_questions_count": 4,
-      "worst_speaking_items": [],
+      "worst_speaking_items": [
+        {
+          "lms_type": "free_speaking",
+          "question": "How are you today?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "I don't know length.",
+          "score": 0,
+          "answer_type": "lack_of_knowledge",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-05",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnl01zzy-c4ded1e3-audio.wav",
+          "reaction_time_ms": 524
+        }
+      ],
       "practice_ids": {
         "bai_tap": 49802,
         "luyen_tap": null
@@ -897,6 +1065,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 48,
+          "avg_reaction_ms": 2841,
+          "fastest_reaction_ms": 2187,
+          "total_duration_ms": 42501,
+          "session_status": "COMPLETED",
+          "completion_pct": 50
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-01-18",
@@ -907,22 +1084,41 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 2
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": [
           {
+            "lms_type": "free_speaking",
             "question": "How are you feeling today?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "New.",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-01-18"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-18",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/18/admin/mkjeytge-4c4b42f6-audio.wav",
+            "reaction_time_ms": 3797
           },
           {
+            "lms_type": "free_speaking",
             "question": "How are you feeling today?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "Yees.",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-01-18"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-18",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/18/admin/mkje6ida-ca9dac2e-audio.wav",
+            "reaction_time_ms": 4183
           }
         ]
       },
@@ -956,6 +1152,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 69,
+          "avg_reaction_ms": 2455,
+          "fastest_reaction_ms": 1809,
+          "total_duration_ms": 1172266,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-01-16",
@@ -966,7 +1171,28 @@
         "free_speaking_answer_type_dist": {
           "lack_of_knowledge": 1
         },
-        "worst_speaking_items": []
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
+        "worst_speaking_items": [
+          {
+            "lms_type": "free_speaking",
+            "question": "How are you feeling today?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "I am.",
+            "score": 0,
+            "answer_type": "lack_of_knowledge",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-16",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/16/admin/mkgtyjmc-6522c4e2-audio.wav",
+            "reaction_time_ms": 2249
+          }
+        ]
       },
       "homework": {
         "attempted": true,
@@ -997,6 +1223,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look, listen and answer (Con hãy nhìn tranh, nghe và trả lời nhé!) [Con nhớ trả lời cả câu nhé!] It's a ..........",
+            "comment_plain": null,
             "correct_answer": "It's a table.",
             "student_answer": "it's a humble",
             "requires_media": true,
@@ -1011,7 +1238,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 46632,
@@ -1019,13 +1247,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Xứng-Hợp",
             "question_text": "Look and match (Con hãy di chuyển các từ để ghép với hình đúng nhé!)",
-            "correct_answer": null,
-            "student_answer": [
-              "3",
-              "2",
-              "1",
-              "4"
-            ],
+            "comment_plain": "crayon (b&uacute;t màu) book (quyển sách) chair (cái ghế) table (cái bàn)",
+            "correct_answer": "item_1→book; item_2→chair; item_3→crayon; item_4→table",
+            "student_answer": "wrong: item_1, item_2",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -1086,7 +1310,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 46632,
@@ -1094,6 +1319,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+            "comment_plain": null,
             "correct_answer": "alligator",
             "student_answer": "tiger",
             "requires_media": true,
@@ -1108,7 +1334,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -1130,6 +1357,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 63,
+          "avg_reaction_ms": 3073,
+          "fastest_reaction_ms": 1915,
+          "total_duration_ms": 8320,
+          "session_status": "COMPLETED",
+          "completion_pct": 88
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-01-11",
@@ -1140,22 +1376,41 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 2
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": [
           {
+            "lms_type": "free_speaking",
             "question": "How are you feeling today?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "Y.",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-01-11"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-11",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/11/admin/mk9t24pv-8691c217-audio.wav",
+            "reaction_time_ms": 2622
           },
           {
+            "lms_type": "free_speaking",
             "question": "How are you feeling today?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "Y.",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-01-11"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-11",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/11/admin/mk9s9qmm-9c4743f2-audio.wav",
+            "reaction_time_ms": 2526
           }
         ]
       },
@@ -1188,12 +1443,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "comment_plain": "Audio: rectangle (h&igrave;nh chữ nhật)",
             "correct_answer": null,
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "option_1",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -1222,7 +1474,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 46455,
@@ -1230,12 +1483,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Look, listen and choose (Con hãy nhìn tranh, nghe và chọn nhé!)",
+            "comment_plain": "Audio: Noah: What is this? (Đây là cái g&igrave; vậy?) Đáp án: Audio A: Kate: It&#39;s a book. (N&oacute; là quyển sách.) Audio B: Kate: It&#39;s a chair. (N&oacute; là cái ghế.) Audio C: Kate: It&#39;s a table. (N&oacute; là cái bàn.)",
             "correct_answer": "C",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A",
             "requires_media": true,
             "stem_media_urls": [
               "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/03/26/3dad_kindie-pictures-p1--28scale-vuong-29--285-29.png"
@@ -1266,7 +1516,8 @@
                   "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/03/26/8f64_it-s-a-table.mp3"
                 ]
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 46455,
@@ -1274,12 +1525,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Look, listen, and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "comment_plain": "Audio: bus (xe bu&yacute;t) alligator (con cá sấu) bear (con gấu) => Trong h&igrave;nh là con gấu => Chọn audio bear .",
             "correct_answer": null,
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "option_2",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/12/17/d172_1.png"
@@ -1310,7 +1558,8 @@
                   "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/12/20/9645_phonic---bear.mp3"
                 ]
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 46455,
@@ -1318,12 +1567,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "comment_plain": "Audio: table (cái bàn)",
             "correct_answer": null,
-            "student_answer": [
-              "0",
-              "0",
-              "1"
-            ],
+            "student_answer": "option_3",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -1352,7 +1598,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 46455,
@@ -1360,12 +1607,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "comment_plain": "Audio: circle (h&igrave;nh tr&ograve;n)",
             "correct_answer": null,
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "option_2",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -1394,7 +1638,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -1416,6 +1661,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 15,
+          "avg_reaction_ms": 3041,
+          "fastest_reaction_ms": 2590,
+          "total_duration_ms": 6286,
+          "session_status": "COMPLETED",
+          "completion_pct": 71
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-01-23",
@@ -1426,14 +1680,26 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": [
           {
+            "lms_type": "free_speaking",
             "question": "How are you feeling today?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "Y.",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-01-23"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-23",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/23/admin/mkquz32i-c61fed6b-audio.wav",
+            "reaction_time_ms": 3743
           }
         ]
       },
@@ -1479,6 +1745,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 68,
+          "avg_reaction_ms": 1756,
+          "fastest_reaction_ms": 997,
+          "total_duration_ms": 1256953,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-02-06",
@@ -1490,14 +1765,41 @@
           "inaccordant": 1,
           "lack_of_knowledge": 1
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": [
           {
+            "lms_type": "free_speaking",
             "question": "How are you today?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "AFPha TI.",
+            "score": 0,
+            "answer_type": "lack_of_knowledge",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-02-06",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/06/admin/mlawgtd9-c6c07e76-audio.wav",
+            "reaction_time_ms": 2383
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "How are you today?",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "Fo your.",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-02-06"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-02-06",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/06/admin/mlatny4c-f6058faa-audio.wav",
+            "reaction_time_ms": 1866
           }
         ]
       },
@@ -1537,6 +1839,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 44,
+          "avg_reaction_ms": 1909,
+          "fastest_reaction_ms": 1039,
+          "total_duration_ms": 775048,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-02-20",
@@ -1547,14 +1858,26 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": [
           {
+            "lms_type": "free_speaking",
             "question": "How are you feeling today?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "Are there?",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-02-20"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-02-20",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/20/admin/mluz3o3h-8863c131-audio.wav",
+            "reaction_time_ms": 4811
           }
         ]
       },
@@ -1588,6 +1911,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 52,
+          "audio_turns": 91,
+          "avg_reaction_ms": 3551,
+          "fastest_reaction_ms": 2126,
+          "total_duration_ms": 429555,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-02-28",
@@ -1598,14 +1930,26 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": [
           {
+            "lms_type": "free_speaking",
             "question": "How are you doing today?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "Hello.",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-02-27"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-02-27",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/28/admin/mm5j0w52-f01b8510-audio.wav",
+            "reaction_time_ms": 3665
           }
         ]
       },
@@ -1645,6 +1989,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 13,
+          "audio_turns": 70,
+          "avg_reaction_ms": 1741,
+          "fastest_reaction_ms": 406,
+          "total_duration_ms": 812975,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-03-09",
@@ -1656,14 +2009,41 @@
           "inaccordant": 1,
           "lack_of_knowledge": 1
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": [
           {
+            "lms_type": "free_speaking",
             "question": "How are you feeling today?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "I.",
+            "score": 0,
+            "answer_type": "lack_of_knowledge",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-09",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/10/admin/mmjs9v0c-a02e0338-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "How are you feeling today?",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "Come.",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-03-08"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh2goy8-e13bfb38-audio.wav",
+            "reaction_time_ms": 701
           }
         ]
       },
@@ -1697,6 +2077,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 40,
+          "audio_turns": 83,
+          "avg_reaction_ms": 3065,
+          "fastest_reaction_ms": 1754,
+          "total_duration_ms": 1187753,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-03-01",
@@ -1707,14 +2096,26 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": [
           {
+            "lms_type": "free_speaking",
             "question": "How are you doing today?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "Hel.",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-03-01"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/01/admin/mm74r1z1-2e18c9eb-audio.wav",
+            "reaction_time_ms": 4378
           }
         ]
       },
@@ -1747,11 +2148,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Yes or No (Con hãy nhìn tranh, nghe và chọn Yes hoặc No nhé!)",
+            "comment_plain": "Audio: brother (anh/em trai) Trong h&igrave;nh là chị/em gái => Chọn NO .",
             "correct_answer": "NO",
-            "student_answer": [
-              "1",
-              "0"
-            ],
+            "student_answer": "YES",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/02/17/3d6c_30-281-29.png"
@@ -1770,7 +2169,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 48766,
@@ -1778,12 +2178,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "comment_plain": "Audio A: This is my sister. (Đây là chị/em gái của tớ.) Audio B: This is my dad. (Đây là bố của tớ.) Audio C: This is my mom. (Đây là mẹ của tớ.)",
             "correct_answer": "C",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B",
             "requires_media": true,
             "stem_media_urls": [
               "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/04/02/2b96_287.png"
@@ -1814,7 +2211,8 @@
                   "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/02/14/1238_this-is-my-mom.mp3"
                 ]
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -1836,6 +2234,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 11,
+          "audio_turns": 15,
+          "avg_reaction_ms": 1713,
+          "fastest_reaction_ms": 492,
+          "total_duration_ms": 21725,
+          "session_status": "COMPLETED",
+          "completion_pct": 71
+        },
         "is_completed": true,
         "completion_pct": 71,
         "latest_session_date": "2026-04-05",
@@ -1846,14 +2253,26 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": [
           {
+            "lms_type": "free_speaking",
             "question": "How are you feeling today?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "O.",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-04-05"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-05",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlkgbnx-16955009-audio.wav",
+            "reaction_time_ms": 492
           }
         ]
       },
@@ -1887,6 +2306,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 51,
+          "audio_turns": 42,
+          "avg_reaction_ms": 1277,
+          "fastest_reaction_ms": 361,
+          "total_duration_ms": 1327594,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-03-22",
@@ -1895,6 +2323,11 @@
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": []
       },
       "homework": {
@@ -1939,6 +2372,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 39,
+          "avg_reaction_ms": 2781,
+          "fastest_reaction_ms": 1761,
+          "total_duration_ms": 816614,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-01-03",
@@ -1949,14 +2391,26 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": [
           {
+            "lms_type": "free_speaking",
             "question": "How are you today?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "I thank you, I'm thank you.",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-01-02"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/02/admin/mjwy1rh6-1e8405cc-audio.wav",
+            "reaction_time_ms": 2766
           }
         ]
       },
@@ -1989,6 +2443,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look, listen and repeat (Con hãy nhìn tranh, nghe và nói theo nhé!) What is this?",
+            "comment_plain": null,
             "correct_answer": "It's a crayon.",
             "student_answer": "wow - ryan",
             "requires_media": true,
@@ -2003,7 +2458,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 46353,
@@ -2011,12 +2467,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "comment_plain": "Audio A: book (quyển sách) Audio B: chair (cái ghế) Audio C: table (cái bàn)",
             "correct_answer": "C",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/12/17/7b30_5.png"
@@ -2047,7 +2500,8 @@
                   "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/03/20/c9c3_table.mp3"
                 ]
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 46353,
@@ -2055,6 +2509,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look, listen and repeat (Con hãy nhìn tranh, nghe và nói theo nhé!) What is this?",
+            "comment_plain": null,
             "correct_answer": "It's a crayon.",
             "student_answer": "its a crayon",
             "requires_media": true,
@@ -2069,7 +2524,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 46353,
@@ -2077,12 +2533,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Look, listen and choose (Con hãy nhìn tranh, nghe và chọn nhé!)",
+            "comment_plain": "Audio: alligator (con cá sấu) bus (xe bu&yacute;t) bear (con gấu) => Đáp án là: bear",
             "correct_answer": null,
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "option_2",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/12/17/921d_3.png"
@@ -2113,7 +2566,8 @@
                   "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/12/17/9ebf_phonic---bear.mp3"
                 ]
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -2135,6 +2589,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 45,
+          "audio_turns": 72,
+          "avg_reaction_ms": 1591,
+          "fastest_reaction_ms": 489,
+          "total_duration_ms": 1034675,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-03-29",
@@ -2145,7 +2608,28 @@
         "free_speaking_answer_type_dist": {
           "lack_of_knowledge": 1
         },
-        "worst_speaking_items": []
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
+        "worst_speaking_items": [
+          {
+            "lms_type": "free_speaking",
+            "question": "How are you feeling right now?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "Every.",
+            "score": 0,
+            "answer_type": "lack_of_knowledge",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-29",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnb3cds9-ebe8d90f-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
       },
       "homework": {
         "attempted": true,
@@ -2189,6 +2673,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 13,
+          "audio_turns": 21,
+          "avg_reaction_ms": 1316,
+          "fastest_reaction_ms": 497,
+          "total_duration_ms": 29220,
+          "session_status": "COMPLETED",
+          "completion_pct": 44
+        },
         "is_completed": true,
         "completion_pct": 44,
         "latest_session_date": "2026-04-13",
@@ -2200,14 +2693,41 @@
           "inaccordant": 1,
           "lack_of_knowledge": 1
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": [
           {
+            "lms_type": "free_speaking",
             "question": "How are you feeling?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "I.",
+            "score": 0,
+            "answer_type": "lack_of_knowledge",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx5hxbk-06f89802-audio.wav",
+            "reaction_time_ms": 497
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "How are you feeling?",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "Don't't you?",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-04-11"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-11",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/11/admin/mnu3lqpy-bb73ec92-audio.wav",
+            "reaction_time_ms": 499
           }
         ]
       },
@@ -2253,6 +2773,15 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 36,
+          "avg_reaction_ms": 2005,
+          "fastest_reaction_ms": 1003,
+          "total_duration_ms": 1306159,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-02-23",
@@ -2261,6 +2790,11 @@
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": []
       },
       "homework": {
@@ -2293,6 +2827,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 40,
+          "audio_turns": 64,
+          "avg_reaction_ms": 1496,
+          "fastest_reaction_ms": 437,
+          "total_duration_ms": 1410972,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-03-14",
@@ -2301,6 +2844,11 @@
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": []
       },
       "homework": {
@@ -2339,6 +2887,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 39,
+          "avg_reaction_ms": 2879,
+          "fastest_reaction_ms": 2134,
+          "total_duration_ms": 728835,
+          "session_status": "COMPLETED",
+          "completion_pct": 71
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2025-12-27",
@@ -2350,14 +2907,26 @@
           "accordant": 1,
           "inaccordant": 1
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": [
           {
+            "lms_type": "free_speaking",
             "question": "How are you today?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "I play a big in Chicau.",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2025-12-27"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2025-12-27",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/27/admin/mjnk4gle-37da5999-audio.wav",
+            "reaction_time_ms": 3444
           }
         ]
       },
@@ -2390,6 +2959,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look, listen and repeat (Con hãy nhìn tranh, nghe và nói theo nhé!) What is this?",
+            "comment_plain": null,
             "correct_answer": "It's a book.",
             "student_answer": "- - yeah",
             "requires_media": true,
@@ -2404,7 +2974,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 45807,
@@ -2412,6 +2983,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look, listen and repeat (Con hãy nhìn tranh, nghe và nói theo nhé!) What is this?",
+            "comment_plain": null,
             "correct_answer": "It's a chair.",
             "student_answer": "- - yeah",
             "requires_media": true,
@@ -2426,7 +2998,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 45807,
@@ -2434,6 +3007,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Listen and repeat (Con hãy nghe và nói theo nhé!)",
+            "comment_plain": null,
             "correct_answer": "alligator",
             "student_answer": "eight",
             "requires_media": true,
@@ -2448,7 +3022,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -2470,6 +3045,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 73,
+          "avg_reaction_ms": 2099,
+          "fastest_reaction_ms": 1009,
+          "total_duration_ms": 1249100,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-02-24",
@@ -2478,6 +3062,11 @@
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": []
       },
       "homework": {
@@ -2516,6 +3105,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 32,
+          "avg_reaction_ms": 1778,
+          "fastest_reaction_ms": 744,
+          "total_duration_ms": 8146,
+          "session_status": "IN_PROGRESS",
+          "completion_pct": 14
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-02-22",
@@ -2524,6 +3122,11 @@
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": []
       },
       "homework": {
@@ -2546,6 +3149,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+              "comment_plain": "Audio: mom (mẹ)",
               "correct_answer": null,
               "student_answer": null,
               "requires_media": true,
@@ -2585,6 +3189,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+              "comment_plain": "Audio: dad (bố)",
               "correct_answer": null,
               "student_answer": null,
               "requires_media": true,
@@ -2624,6 +3229,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+              "comment_plain": "Audio A: mom (mẹ) Audio B: dad (bố)",
               "correct_answer": "A",
               "student_answer": null,
               "requires_media": true,
@@ -2657,6 +3263,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+              "comment_plain": "dad (bố) mom (mẹ)",
               "correct_answer": "dad",
               "student_answer": null,
               "requires_media": true,
@@ -2686,6 +3293,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Look, listen and choose (Con hãy nhìn tranh, nghe và chọn tranh đúng nhé!)",
+              "comment_plain": "Audio: - Who is this? (Đây là ai vậy?) - It&#39;s my mom. (Đây là mẹ của tớ.)",
               "correct_answer": null,
               "student_answer": null,
               "requires_media": true,
@@ -2740,6 +3348,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 49,
+          "audio_turns": 60,
+          "avg_reaction_ms": 1723,
+          "fastest_reaction_ms": 465,
+          "total_duration_ms": 1263773,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-03-23",
@@ -2748,6 +3365,11 @@
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": []
       },
       "homework": {
@@ -2792,6 +3414,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 64,
+          "avg_reaction_ms": 2915,
+          "fastest_reaction_ms": 2011,
+          "total_duration_ms": 1143695,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2025-12-29",
@@ -2803,14 +3434,26 @@
           "accordant": 1,
           "inaccordant": 1
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": [
           {
+            "lms_type": "free_speaking",
             "question": "How are you today?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "The.",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2025-12-29"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2025-12-29",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/29/admin/mjr6975x-6ed936be-audio.wav",
+            "reaction_time_ms": 3029
           }
         ]
       },
@@ -2843,6 +3486,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+            "comment_plain": null,
             "correct_answer": "book",
             "student_answer": "wow",
             "requires_media": true,
@@ -2857,7 +3501,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 46174,
@@ -2865,6 +3510,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look, listen and answer (Con hãy nhìn tranh, nghe và trả lời nhé!) [Con nhớ trả lời cả câu nhé!] It's a ..........",
+            "comment_plain": null,
             "correct_answer": "It's a chair.",
             "student_answer": "is - this",
             "requires_media": true,
@@ -2879,7 +3525,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 46174,
@@ -2887,11 +3534,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Yes or No (Con hãy nghe và chọn Yes hoặc No nhé!)",
+            "comment_plain": "Audio : A - A - Alligator (con cá sấu) Trong h&igrave;nh là con cá mập (Shark) => NO",
             "correct_answer": "NO",
-            "student_answer": [
-              "1",
-              "0"
-            ],
+            "student_answer": "YES",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/12/16/2965_4.png"
@@ -2910,7 +3555,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 46174,
@@ -2918,6 +3564,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+            "comment_plain": null,
             "correct_answer": "alligator",
             "student_answer": "good",
             "requires_media": true,
@@ -2932,7 +3579,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 46174,
@@ -2940,12 +3588,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Look, listen and choose (Con hãy nhìn tranh, nghe và chọn nhé!)",
+            "comment_plain": "Audio đ&uacute;ng : chair (cái ghế)",
             "correct_answer": null,
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "option_1",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/12/13/c357_chair-3.png"
@@ -2976,7 +3621,8 @@
                   "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/12/13/69eb_book.mp3"
                 ]
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -2998,6 +3644,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 75,
+          "audio_turns": 231,
+          "avg_reaction_ms": 1623,
+          "fastest_reaction_ms": 444,
+          "total_duration_ms": 1321423,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-04-05",
@@ -3009,7 +3664,28 @@
           "accordant": 1,
           "lack_of_knowledge": 1
         },
-        "worst_speaking_items": []
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
+        "worst_speaking_items": [
+          {
+            "lms_type": "free_speaking",
+            "question": "How are you today?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "I don't know length.",
+            "score": 0,
+            "answer_type": "lack_of_knowledge",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-05",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnl01zzy-c4ded1e3-audio.wav",
+            "reaction_time_ms": 524
+          }
+        ]
       },
       "homework": {
         "attempted": true,
@@ -3040,12 +3716,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "comment_plain": "Audio A: I&#39;m a duck. (Tớ là 1 con vịt.) Audio B: I&#39;m a hen. (Tớ là 1 con gà mái.) Audio C: I&#39;m a cow. (Tớ là 1 con b&ograve;.)",
             "correct_answer": "C",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B",
             "requires_media": true,
             "stem_media_urls": [
               "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/05/14/6130_kindie-pictures-p2--28scale-vuong-29--2828-29.png"
@@ -3076,7 +3749,8 @@
                   "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/05/14/804c_i-m-a-cow--28girl-29.mp3"
                 ]
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 49802,
@@ -3084,6 +3758,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look, listen and answer (Con hãy nhìn tranh, nghe và trả lời nhé!) [Con nhớ trả lời cả câu nhé!]",
+            "comment_plain": null,
             "correct_answer": "It's a cow.",
             "student_answer": "- - okay",
             "requires_media": true,
@@ -3098,7 +3773,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 49802,
@@ -3106,12 +3782,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "comment_plain": "Audio A: I&#39;m a duck. (Tớ là 1 con vịt.) Audio B: I&#39;m a hen. (Tớ là 1 con gà mái.) Audio C: I&#39;m a cow. (Tớ là 1 con b&ograve;.)",
             "correct_answer": "C",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B",
             "requires_media": true,
             "stem_media_urls": [
               "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/05/14/6130_kindie-pictures-p2--28scale-vuong-29--2828-29.png"
@@ -3142,7 +3815,8 @@
                   "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/05/14/804c_i-m-a-cow--28girl-29.mp3"
                 ]
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 49802,
@@ -3150,11 +3824,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Yes or No (Con hãy nh&igrave;n tranh, nghe và chọn Yes nếu đ&uacute;ng, hoặc chọn No nếu sai nh&eacute;!)",
+            "comment_plain": "Audio: egg (quả trứng) Trong h&igrave;nh là quả trứng => Chọn YES .",
             "correct_answer": "YES",
-            "student_answer": [
-              "0",
-              "1"
-            ],
+            "student_answer": "NO",
             "requires_media": true,
             "stem_media_urls": [
               "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/05/14/58ad_200.png"
@@ -3173,7 +3845,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 49802,
@@ -3181,15 +3854,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Xứng-Hợp",
             "question_text": "Match (Con hãy di chuyển các từ để ghép với hình đúng nhé!)",
-            "correct_answer": null,
-            "student_answer": [
-              "4",
-              "1",
-              "2",
-              "5",
-              "3",
-              "6"
-            ],
+            "comment_plain": "fork (cái nĩa) elephant (con voi) dog (con ch&oacute;) fish (con cá) egg (quả trứng) desk (cái bàn)",
+            "correct_answer": "item_1→desk; item_2→fork; item_3→elephant; item_4→egg; item_5→dog; item_6→fish",
+            "student_answer": "wrong: item_1, item_6",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -3278,7 +3945,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -3300,6 +3968,15 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": 42,
+          "audio_turns": 36,
+          "avg_reaction_ms": 1737,
+          "fastest_reaction_ms": 464,
+          "total_duration_ms": 1181316,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-03-15",
@@ -3308,6 +3985,11 @@
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": []
       },
       "homework": {
@@ -3352,6 +4034,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 69,
+          "avg_reaction_ms": 1697,
+          "fastest_reaction_ms": 940,
+          "total_duration_ms": 1117150,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-02-08",
@@ -3360,6 +4051,11 @@
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": []
       },
       "homework": {
@@ -3391,13 +4087,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "comment_plain": "Audio: It&#39;s blue. (N&oacute; màu xanh nước biển.)",
             "correct_answer": null,
-            "student_answer": [
-              "0",
-              "0",
-              "0",
-              "1"
-            ],
+            "student_answer": "option_4",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -3434,7 +4126,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 48063,
@@ -3442,12 +4135,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "comment_plain": "Audio A: car (&ocirc; t&ocirc;) Audio B: alligator (con cá sấu) Audio C: bus (xe bu&yacute;t) Trong h&igrave;nh là xe bu&yacute;t => Chọn audio C .",
             "correct_answer": "C",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/12/18/1205_bus-3.png"
@@ -3478,7 +4168,8 @@
                   "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/01/17/79c0_phonic---bus.mp3"
                 ]
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 48063,
@@ -3486,12 +4177,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "comment_plain": "Audio A: apple (quả táo) Audio B: bus (xe bu&yacute;t) Audio C: car (&ocirc; t&ocirc;) Trong h&igrave;nh là quả táo => Chọn audio A .",
             "correct_answer": "A",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/12/16/54f2_5.png"
@@ -3522,7 +4210,8 @@
                   "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/01/17/08c0_car--28phonics-29.mp3"
                 ]
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 48063,
@@ -3530,12 +4219,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "comment_plain": "Audio A: car (&ocirc; t&ocirc;) Audio B: alligator (con cá sấu) Audio C: bus (xe bu&yacute;t) Trong h&igrave;nh là xe bu&yacute;t => Chọn audio C .",
             "correct_answer": "C",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/12/18/1205_bus-3.png"
@@ -3566,7 +4252,8 @@
                   "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/01/17/79c0_phonic---bus.mp3"
                 ]
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 48063,
@@ -3574,12 +4261,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "comment_plain": "Audio A: car (&ocirc; t&ocirc;) Audio B: alligator (con cá sấu) Audio C: bus (xe bu&yacute;t) Trong h&igrave;nh là xe bu&yacute;t => Chọn audio C .",
             "correct_answer": "C",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/12/18/1205_bus-3.png"
@@ -3610,7 +4294,8 @@
                   "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/01/17/79c0_phonic---bus.mp3"
                 ]
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -3632,6 +4317,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 58,
+          "avg_reaction_ms": 1496,
+          "fastest_reaction_ms": 824,
+          "total_duration_ms": 1151519,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-02-01",
@@ -3640,6 +4334,11 @@
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": []
       },
       "homework": {
@@ -3671,12 +4370,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "comment_plain": "Audio: car (&ocirc; t&ocirc;)",
             "correct_answer": null,
-            "student_answer": [
-              "0",
-              "0",
-              "1"
-            ],
+            "student_answer": "option_3",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -3705,7 +4401,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 47915,
@@ -3713,12 +4410,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "comment_plain": "Audio: car (&ocirc; t&ocirc;)",
             "correct_answer": null,
-            "student_answer": [
-              "0",
-              "0",
-              "1"
-            ],
+            "student_answer": "option_3",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -3747,7 +4441,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -3769,6 +4464,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 84,
+          "avg_reaction_ms": 2163,
+          "fastest_reaction_ms": 1075,
+          "total_duration_ms": 22426,
+          "session_status": "COMPLETED",
+          "completion_pct": 55
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-02-13",
@@ -3777,6 +4481,11 @@
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": []
       },
       "homework": {
@@ -3808,6 +4517,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+            "comment_plain": null,
             "correct_answer": "green",
             "student_answer": "girl",
             "requires_media": true,
@@ -3822,7 +4532,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 48069,
@@ -3830,11 +4541,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Yes or No (Con hãy nhìn tranh, nghe và chọn Yes hoặc No nhé!)",
+            "comment_plain": "Audio: bus (xe bu&yacute;t) Trong h&igrave;nh là &ocirc; t&ocirc; => NO .",
             "correct_answer": "NO",
-            "student_answer": [
-              "1",
-              "0"
-            ],
+            "student_answer": "YES",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/01/20/b4bf_5-281-29.png"
@@ -3853,7 +4562,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 48069,
@@ -3861,11 +4571,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Yes or No (Con hãy nhìn tranh, nghe và chọn Yes hoặc No nhé!)",
+            "comment_plain": "Audio: alligator (con cá sấu) Trong h&igrave;nh là con gấu => NO .",
             "correct_answer": "NO",
-            "student_answer": [
-              "1",
-              "0"
-            ],
+            "student_answer": "YES",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/01/20/38bf_bear-2.png"
@@ -3884,7 +4592,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -3906,6 +4615,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 24,
+          "avg_reaction_ms": 2539,
+          "fastest_reaction_ms": 1961,
+          "total_duration_ms": 0,
+          "session_status": "COMPLETED",
+          "completion_pct": 5
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-01-25",
@@ -3914,6 +4632,11 @@
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": []
       },
       "homework": {
@@ -3945,11 +4668,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Yes or No (Con hãy nhìn tranh, nghe và chọn Yes hoặc No nhé!)",
+            "comment_plain": "Audio: green (màu xanh lá) Trong h&igrave;nh là chiếc cặp màu xanh biển => NO .",
             "correct_answer": "NO",
-            "student_answer": [
-              "1",
-              "0"
-            ],
+            "student_answer": "YES",
             "requires_media": true,
             "stem_media_urls": [
               "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/03/20/6aec_kindie-pictures-p1--28scale-vuong-29--281-29.png"
@@ -3968,7 +4689,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 47693,
@@ -3976,12 +4698,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Look, listen and choose (Con hãy nhìn tranh, nghe và chọn tranh đúng nhé!)",
+            "comment_plain": "Audio: Jack: What color is this? Kate: It&#39;s blue. Tạm dịch: Jack: Cái này màu g&igrave; vậy? Kate: N&oacute; màu xanh nước biển.",
             "correct_answer": null,
-            "student_answer": [
-              "0",
-              "0",
-              "1"
-            ],
+            "student_answer": "option_3",
             "requires_media": true,
             "stem_media_urls": [
               "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/03/21/ef0e_216.png"
@@ -4012,7 +4731,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -4034,6 +4754,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 46,
+          "avg_reaction_ms": 2200,
+          "fastest_reaction_ms": 1647,
+          "total_duration_ms": 7637,
+          "session_status": "COMPLETED",
+          "completion_pct": 85
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-01-30",
@@ -4042,6 +4771,11 @@
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": []
       },
       "homework": {
@@ -4073,15 +4807,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Xứng-Hợp",
             "question_text": "Match (Con hãy di chuyển các hình để ghép với từ đúng nhé!)",
-            "correct_answer": "alligator, bus, car, cat, apple, bear",
-            "student_answer": [
-              "2",
-              "3",
-              "6",
-              "5",
-              "1",
-              "4"
-            ],
+            "comment_plain": "alligator (con cá sấu) bus (xe bu&yacute;t) car (&ocirc; t&ocirc;) cat (con m&egrave;o) apple (quả táo) bear (con gấu)",
+            "correct_answer": "alligator; bus; car; cat; apple; bear",
+            "student_answer": "wrong: car, cat",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -4170,7 +4898,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 47791,
@@ -4178,6 +4907,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Listen and repeat (Con hãy nghe và n&oacute;i theo nh&eacute;!)",
+            "comment_plain": null,
             "correct_answer": "alligator",
             "student_answer": "wait",
             "requires_media": true,
@@ -4192,7 +4922,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 47791,
@@ -4200,15 +4931,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Xứng-Hợp",
             "question_text": "Match (Con hãy di chuyển các hình để ghép với từ đúng nhé!)",
-            "correct_answer": "alligator, bus, car, cat, apple, bear",
-            "student_answer": [
-              "2",
-              "3",
-              "6",
-              "5",
-              "1",
-              "4"
-            ],
+            "comment_plain": "alligator (con cá sấu) bus (xe bu&yacute;t) car (&ocirc; t&ocirc;) cat (con m&egrave;o) apple (quả táo) bear (con gấu)",
+            "correct_answer": "alligator; bus; car; cat; apple; bear",
+            "student_answer": "wrong: car, cat",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -4297,7 +5022,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -4319,6 +5045,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 43,
+          "avg_reaction_ms": 2895,
+          "fastest_reaction_ms": 2228,
+          "total_duration_ms": 17292,
+          "session_status": "COMPLETED",
+          "completion_pct": 85
+        },
         "is_completed": true,
         "completion_pct": 85,
         "latest_session_date": "2026-01-04",
@@ -4329,6 +5064,11 @@
         "free_speaking_answer_type_dist": {
           "accordant": 1
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": []
       },
       "homework": {
@@ -4360,12 +5100,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Look, listen and choose (Con hãy nhìn tranh, nghe và chọn nhé!)",
+            "comment_plain": "Audio: crayon (b&uacute;t màu) chair (cái ghế) table (cái bàn) => Trong h&igrave;nh là cái bàn => Chọn Audio C: table",
             "correct_answer": "Audio C",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "Audio B",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/12/18/24be_table--282-29.png"
@@ -4396,7 +5133,8 @@
                   "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/12/18/c8f0_table.mp3"
                 ]
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 46371,
@@ -4404,6 +5142,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+            "comment_plain": null,
             "correct_answer": "crayon",
             "student_answer": "you",
             "requires_media": true,
@@ -4418,7 +5157,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 46371,
@@ -4426,6 +5166,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+            "comment_plain": null,
             "correct_answer": "bear",
             "student_answer": "mo",
             "requires_media": true,
@@ -4440,7 +5181,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 46371,
@@ -4448,6 +5190,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+            "comment_plain": null,
             "correct_answer": "bus",
             "student_answer": "um",
             "requires_media": true,
@@ -4462,7 +5205,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 46371,
@@ -4470,6 +5214,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look and say (Con hãy nhìn tranh và nói nhé!)",
+            "comment_plain": null,
             "correct_answer": "bear",
             "student_answer": "go",
             "requires_media": true,
@@ -4484,7 +5229,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -4506,6 +5252,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 52,
+          "avg_reaction_ms": 2422,
+          "fastest_reaction_ms": 1932,
+          "total_duration_ms": 2642801,
+          "session_status": "COMPLETED",
+          "completion_pct": 77
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-01-10",
@@ -4516,6 +5271,11 @@
         "free_speaking_answer_type_dist": {
           "accordant": 1
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": []
       },
       "homework": {
@@ -4547,12 +5307,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "comment_plain": "Audio: chair (cái ghế)",
             "correct_answer": null,
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "option_1",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -4581,7 +5338,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -4675,6 +5433,15 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": 41,
+          "audio_turns": 60,
+          "avg_reaction_ms": 1473,
+          "fastest_reaction_ms": 445,
+          "total_duration_ms": 1395139,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-03-28",
@@ -4685,6 +5452,11 @@
         "free_speaking_answer_type_dist": {
           "accordant": 1
         },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": []
       },
       "homework": {
@@ -4716,12 +5488,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "comment_plain": "Audio A: horse (con ngựa) Audio B: cow (con b&ograve;) Audio C: duck (con vịt)",
             "correct_answer": "C",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A",
             "requires_media": true,
             "stem_media_urls": [
               "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/05/08/1901_6.png"
@@ -4752,7 +5521,8 @@
                   "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/05/08/eb39_duck.mp3"
                 ]
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 49774,
@@ -4760,6 +5530,7 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look, listen and repeat (Con hãy nhìn tranh, nghe và nói theo nhé!)",
+            "comment_plain": null,
             "correct_answer": "It's my dad.",
             "student_answer": "its my dad",
             "requires_media": true,
@@ -4774,7 +5545,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 49774,
@@ -4782,12 +5554,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "comment_plain": "Audio: fish (con cá)",
             "correct_answer": null,
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "option_1",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -4816,7 +5585,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 49774,
@@ -4824,12 +5594,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+            "comment_plain": "Audio: fish (con cá)",
             "correct_answer": null,
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "option_1",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -4858,7 +5625,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 49774,
@@ -4866,12 +5634,9 @@
             "question_folder": "English Tutoring - Preschool",
             "question_type": "Một lựa chọn",
             "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+            "comment_plain": "Audio A: fork (cái nĩa) Audio B: dog (con ch&oacute;) Audio C: egg (quả trứng)",
             "correct_answer": "C",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A",
             "requires_media": true,
             "stem_media_urls": [
               "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/05/08/db0e_201.png"
@@ -4902,7 +5667,8 @@
                   "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/05/08/9384_egg--28phonics-29.mp3"
                 ]
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -4924,6 +5690,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 47,
+          "avg_reaction_ms": 1835,
+          "fastest_reaction_ms": 373,
+          "total_duration_ms": 0,
+          "session_status": "COMPLETED",
+          "completion_pct": 5
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-04-20",
@@ -4932,6 +5707,11 @@
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": []
       },
       "homework": {
@@ -4954,6 +5734,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+              "comment_plain": "Audio A: dad (bố) Audio B: mom (mẹ)",
               "correct_answer": "B",
               "student_answer": null,
               "requires_media": true,
@@ -4987,6 +5768,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+              "comment_plain": "Audio: brother (anh/em trai)",
               "correct_answer": null,
               "student_answer": null,
               "requires_media": true,
@@ -5018,7 +5800,8 @@
               "question_type": "Xứng-Hợp",
               "status": "not_attempted",
               "question_text": "Match (Con hãy di chuyển các h&igrave;nh để gh&eacute;p với từ đ&uacute;ng nh&eacute;!)",
-              "correct_answer": "mom, dad, sister, brother",
+              "comment_plain": "mom (mẹ) dad (bố) sister (chị/em gái) brother (anh/em trai)",
+              "correct_answer": "mom; dad; sister; brother",
               "student_answer": null,
               "requires_media": true,
               "stem_media_urls": [],
@@ -5089,6 +5872,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose (Con hãy nghe và chọn tranh đúng nhé!)",
+              "comment_plain": "Audio: cow (con b&ograve;)",
               "correct_answer": null,
               "student_answer": null,
               "requires_media": true,
@@ -5120,6 +5904,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Look and choose (Con hãy nhìn tranh và chọn nhé!)",
+              "comment_plain": "Audio A: duck (con vịt) Audio B: hen (con gà mái) Audio C: horse (con ngựa)",
               "correct_answer": null,
               "student_answer": null,
               "requires_media": true,

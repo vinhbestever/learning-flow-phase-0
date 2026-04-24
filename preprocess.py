@@ -19,7 +19,8 @@ Key features:
   - composite_priority_score = 0.5 * forgetting + 0.5 * weakness
   - scored_candidates list (top lessons pre-ranked for Agent 2)
   - worst_lms_questions per lesson (question-level failures from detail records)
-  - AUDIO subtypes separated: pronunciation_drill vs free_speaking
+  - AUDIO subtypes separated: pronunciation_drill, brainstorm (ảnh + từ mục tiêu), free_speaking (warmup / nói mở), conversation
+  - in_class.session_metrics: cups, audio_turns, reaction times (latest DT session)
 
 Supports tutor_lesson export variants:
   - 2102555 style: 'type' field = "Bài tập"/"Luyện tập", 'id' = lesson_id
@@ -214,14 +215,20 @@ def iso_to_date(iso_str):
 
 def classify_audio(result_record):
     """
-    pronunciation_drill: additionalData.speaking  (phonetic accuracy)
-    free_speaking:       additionalData.warmup or .brainstorm (open-ended)
-    other:               no recognised additionalData
+    conversation:        lmsType == "conversation"  (structured dialogue, grammar+pron scoring)
+    pronunciation_drill: additionalData.speaking    (phonetic accuracy drills)
+    brainstorm:          additionalData.brainstorm (nhìn ảnh / gợi ý, nói các từ mục tiêu)
+    free_speaking:       additionalData.warmup only (nói mở / icebreaker, không phải brainstorm)
+    other:               no recognised lmsType or additionalData
     """
+    if result_record.get("lmsType") == "conversation":
+        return "conversation"
     ad = (result_record.get("result") or {}).get("additionalData") or {}
     if "speaking" in ad:
         return "pronunciation_drill"
-    if "warmup" in ad or "brainstorm" in ad:
+    if "brainstorm" in ad:
+        return "brainstorm"
+    if "warmup" in ad:
         return "free_speaking"
     return "other"
 
@@ -309,23 +316,26 @@ def extract_question_content(row: dict) -> dict:
     # Parse student submission
     try:
         bai_lam = json.loads(raw_bai_lam)
-        student_answers = [item.get("u") for item in bai_lam if isinstance(item, dict)]
+        student_items = [item for item in bai_lam if isinstance(item, dict)]
     except Exception:
-        student_answers = []
+        student_items = []
 
     correct_answer = None
+    student_ans = None
 
-    if qt in ("Điền vào chỗ trống",):
-        # answers: [{"content": "", "option": "...", "is_true": "correct_word"}]
-        if isinstance(answers, list) and answers:
-            a = answers[0]
-            if isinstance(a, dict):
-                correct_answer = (
-                    str(a.get("is_true") or a.get("option") or "").strip() or None
-                )
-        student_ans = student_answers[0] if student_answers else None
+    if qt == "Điền vào chỗ trống":
+        # Each answers[i] is one blank; bai_lam[i].u is student's typed text.
+        # is_true holds the canonical correct value; option is a fallback.
+        if isinstance(answers, list):
+            correct_parts = [
+                str(a.get("is_true") or a.get("option") or "").strip()
+                for a in answers if isinstance(a, dict)
+            ]
+            correct_answer = " / ".join(p for p in correct_parts if p) or None
+            student_parts = [item.get("u") or "" for item in student_items[:len(answers)]]
+            student_ans = " / ".join(p for p in student_parts if p) or None
 
-    elif qt in ("Trả lời bằng giọng nói",):
+    elif qt == "Trả lời bằng giọng nói":
         # answers: ["correct text"] or [{"content": "correct text", "is_true": True}]
         if isinstance(answers, list) and answers:
             a0 = answers[0]
@@ -336,9 +346,10 @@ def extract_question_content(row: dict) -> dict:
                     a0.get("content") or a0.get("content_text") or ""
                 ) or None
                 requires_media = requires_media or _has_media(a0.get("content", ""))
-        student_ans = student_answers[0] if student_answers else None
+        student_ans = student_items[0].get("u") if student_items else None
 
     elif qt in ("Một lựa chọn", "Nhiều lựa chọn"):
+        # bai_lam: [{u:"1"|"0", is_correct:...}, ...] — u="1" means student selected that option
         if isinstance(answers, list):
             correct_items = [
                 a for a in answers
@@ -350,43 +361,77 @@ def extract_question_content(row: dict) -> dict:
             ]
             if correct_items:
                 ca = correct_items[0]
-                ca_text = _strip_html(
-                    ca.get("content") or ca.get("content_text") or ""
-                )
-                # Also flag if the answer itself is an image
+                ca_text = _strip_html(ca.get("content") or ca.get("content_text") or "")
                 if _has_media(ca.get("content", "")):
                     requires_media = True
                 correct_answer = ca_text or None
-        student_ans = student_answers
+
+            # Map selection flags (u="1") back to actual answer text
+            selected_texts = []
+            for i, item in enumerate(student_items):
+                if item.get("u") == "1" and i < len(answers):
+                    a = answers[i]
+                    if isinstance(a, dict):
+                        txt = _strip_html(a.get("content") or a.get("content_text") or "")
+                        if _has_media(a.get("content", "")):
+                            requires_media = True
+                        selected_texts.append(txt or f"option_{i+1}")
+                    elif isinstance(a, str):
+                        selected_texts.append(a)
+            student_ans = selected_texts[0] if (qt == "Một lựa chọn" and selected_texts) else (selected_texts or None)
 
     elif qt == "Xứng-Hợp":
-        # Matching: text terms in column1, often images in column2
+        # bai_lam: [{u: col2_index (1-based), is_correct:...}, ...] per col1 item
         if isinstance(answers, dict):
-            col1_texts = [
-                _strip_html(a.get("content", ""))
-                for a in answers.get("column1", [])
-                if isinstance(a, dict)
-            ]
-            correct_answer = ", ".join(t for t in col1_texts if t) or None
-            # column2 usually images
+            col1 = answers.get("column1", [])
             col2 = answers.get("column2", [])
             if any(_has_media(a.get("content", "")) for a in col2 if isinstance(a, dict)):
                 requires_media = True
-        student_ans = student_answers
+            # correct_answer: show which col1 terms were wrongly matched (or full pairs if text)
+            correct_pairs = []
+            for i, a in enumerate(col1):
+                if not isinstance(a, dict):
+                    continue
+                c1_text = _strip_html(a.get("content", "")) or f"item_{i+1}"
+                correct_idx = int(a.get("is_true", 0))
+                c2_item = col2[correct_idx - 1] if 0 < correct_idx <= len(col2) else {}
+                c2_text = _strip_html(c2_item.get("content", "")) if isinstance(c2_item, dict) else ""
+                correct_pairs.append(f"{c1_text}→{c2_text}" if c2_text else c1_text)
+            correct_answer = "; ".join(correct_pairs) or None
+            # student_ans: list the col1 terms the student matched incorrectly
+            wrong_terms = []
+            for i, item in enumerate(student_items):
+                if item.get("is_correct") == 0 and i < len(col1):
+                    c1 = col1[i]
+                    c1_text = _strip_html(c1.get("content", "")) if isinstance(c1, dict) else ""
+                    wrong_terms.append(c1_text or f"item_{i+1}")
+            student_ans = f"wrong: {', '.join(wrong_terms)}" if wrong_terms else None
 
     elif qt == "Kéo thả vào chỗ trống trong đoạn văn":
-        # Reorder letters/words — content has the shuffled pieces
+        # bai_lam: [{u: col2_index (1-based), is_correct:...}, ...] per slot
+        # answers.column2 holds the pieces; answers.correctAnswer is the target word/phrase
         if isinstance(answers, dict):
             correct_answer = _strip_html(answers.get("correctAnswer", "")) or None
             col2 = answers.get("column2", [])
-            pieces = [a.get("content_text") or _strip_html(a.get("raw_content", ""))
-                      for a in col2 if isinstance(a, dict)]
-            if not question_text or question_text.count("[{}]") > 0:
+            pieces = [
+                a.get("content_text") or a.get("content") or _strip_html(a.get("raw_content", ""))
+                for a in col2 if isinstance(a, dict)
+            ]
+            if not question_text or "[{}]" in question_text:
                 question_text = "Reorder: " + " | ".join(p for p in pieces if p)
-        student_ans = student_answers
+            # Reconstruct student's assembled sequence from slot indices
+            assembled = []
+            for item in student_items:
+                idx = int(item.get("u", 0))
+                if 0 < idx <= len(col2) and isinstance(col2[idx - 1], dict):
+                    piece = col2[idx - 1].get("content_text") or col2[idx - 1].get("content") or ""
+                else:
+                    piece = "?"
+                assembled.append(piece)
+            student_ans = "".join(assembled) or None
 
     else:
-        student_ans = student_answers
+        student_ans = [item.get("u") for item in student_items] or None
 
     rich = rich_question_fields(
         row,
@@ -400,8 +445,7 @@ def extract_question_content(row: dict) -> dict:
         "question_text": question_text[:300] if question_text else None,
         "comment_plain": comment_plain or None,
         "correct_answer": correct_answer,
-        "student_answer": student_answers[0] if isinstance(student_answers, list) and len(student_answers) == 1
-                          else (student_answers if student_answers else None),
+        "student_answer": student_ans,
         "requires_media": requires_media,
         **rich,
     }
@@ -517,6 +561,77 @@ def build_lms_homework(tutor_entry, pr_by_pid, detail_by_pid, lms_to_link, quest
     }
 
 
+def compute_session_metrics(sessions, results):
+    """
+    Session-level aggregates (Digital Teacher) — keep in sync with export_questions.compute_session_metrics.
+    Used in student_context.in_class for history UI and parity with questions_export.
+    """
+    if not sessions:
+        return None
+
+    def _ts(s):
+        for key in ("lastActiveAt", "updatedAt", "startedAt"):
+            v = s.get(key)
+            if isinstance(v, dict):
+                d = v.get("$date") or ""
+                if d:
+                    return d
+        return ""
+
+    latest = max(sessions, key=_ts)
+    ck = latest.get("checkpoint") or {}
+    audio = [r for r in results if r.get("interactionType") == "AUDIO"]
+    rts = [r["reactionTimeMs"] for r in audio if isinstance(r.get("reactionTimeMs"), (int, float))]
+    return {
+        "cups": ck.get("currentCups"),
+        "audio_turns": len(audio),
+        "avg_reaction_ms": int(round(sum(rts) / len(rts))) if rts else None,
+        "fastest_reaction_ms": int(min(rts)) if rts else None,
+        "total_duration_ms": latest.get("totalDurationMs"),
+        "session_status": latest.get("status"),
+        "completion_pct": latest.get("completionPercentage"),
+    }
+
+
+def _build_speaking_item(r, lms_type):
+    """Build a worst_speaking_items entry with system and student data clearly separated."""
+    result_data = r.get("result") or {}
+    lms_data = r.get("lmsData") or {}
+    ad = result_data.get("additionalData") or {}
+
+    # Brainstorm: extract target vocabulary objects and which ones the student got right
+    target_objects = None
+    correct_objects = None
+    if "brainstorm" in ad:
+        bst = ad["brainstorm"]
+        objs = bst.get("objects") or []
+        target_objects = [
+            o["name"] for o in objs if isinstance(o, dict) and o.get("isMain")
+        ] or None
+        correct_objects = (bst.get("result") or {}).get("correctObjects") or None
+
+    return {
+        # System data: what the platform expected
+        "lms_type": lms_type,
+        "question": lms_data.get("question"),
+        "expected_answer": lms_data.get("expectedTranscript"),
+        "target_objects": target_objects,
+        # Student data: what the student actually produced
+        "user_transcript": result_data.get("userTranscript"),
+        "score": result_data.get("score"),
+        "answer_type": (
+            extract_user_answer_type(ad) if lms_type in ("free_speaking", "brainstorm") else None
+        ),
+        "correct_objects": correct_objects,
+        "pronunciation_score": result_data.get("pronunciationScore"),
+        "grammar_score": result_data.get("grammarScore"),
+        "timestamp": iso_to_date(parse_mongo_date(r.get("timestamp"))),
+        # Parity with questions_export speaking rows (homework / history UI)
+        "audio_url": result_data.get("audioUrl"),
+        "reaction_time_ms": r.get("reactionTimeMs"),
+    }
+
+
 def build_dt_in_class(sessions, results):
     if not sessions:
         return {"participated": False}
@@ -539,7 +654,7 @@ def build_dt_in_class(sessions, results):
         round(sum(pron_scores) / len(pron_scores), 2) if pron_scores else None
     )
 
-    # Free speaking (open-ended, scored on semantic correctness)
+    # Warmup / unscripted free speaking (NOT brainstorm — see brainstorm_* below)
     free_items = [r for r in audio_results if classify_audio(r) == "free_speaking"]
     free_scores = [
         r["result"]["score"]
@@ -556,34 +671,65 @@ def build_dt_in_class(sessions, results):
         if uat:
             answer_type_dist[uat] += 1
 
-    # Worst free-speaking failures
-    failed = [
+    # Brainstorm: look at image / cues and name target vocabulary (objects in additionalData)
+    brainstorm_items = [r for r in audio_results if classify_audio(r) == "brainstorm"]
+    brainstorm_scores = [
+        r["result"]["score"]
+        for r in brainstorm_items
+        if (r.get("result") or {}).get("score") is not None
+    ]
+    brainstorm_score_avg = (
+        round(sum(brainstorm_scores) / len(brainstorm_scores), 2) if brainstorm_scores else None
+    )
+    brainstorm_answer_type_dist = defaultdict(int)
+    for r in brainstorm_items:
+        uat = extract_user_answer_type((r.get("result") or {}).get("additionalData"))
+        if uat:
+            brainstorm_answer_type_dist[uat] += 1
+
+    # Conversation (structured dialogue with grammar + pronunciation scoring)
+    convo_items = [r for r in audio_results if classify_audio(r) == "conversation"]
+    convo_scores = [
+        r["result"]["score"]
+        for r in convo_items
+        if (r.get("result") or {}).get("score") is not None
+    ]
+    conversation_score_avg = (
+        round(sum(convo_scores) / len(convo_scores), 2) if convo_scores else None
+    )
+
+    # Collect failures: warmup / brainstorm score==0, conversation score<70
+    failed_free = [
         r for r in free_items
         if (r.get("result") or {}).get("score", 1) == 0
-        and extract_user_answer_type((r.get("result") or {}).get("additionalData"))
-        in ("incorrect", "inaccordant")
     ]
-    failed_sorted = sorted(
-        failed,
-        key=lambda r: parse_mongo_date(r.get("timestamp", "")),
+    failed_brainstorm = [
+        r for r in brainstorm_items
+        if (r.get("result") or {}).get("score", 1) == 0
+    ]
+    failed_convo = [
+        r for r in convo_items
+        if ((r.get("result") or {}).get("score") or 100) < 70
+    ]
+    all_failed = (
+        [(r, "free_speaking") for r in failed_free]
+        + [(r, "brainstorm") for r in failed_brainstorm]
+        + [(r, "conversation") for r in failed_convo]
+    )
+    all_failed_sorted = sorted(
+        all_failed,
+        key=lambda x: parse_mongo_date(x[0].get("timestamp", "")),
         reverse=True,
     )
-    worst_speaking_items = []
-    for r in failed_sorted[:WORST_SPEAKING_LIMIT]:
-        result_data = r.get("result") or {}
-        lms_data = r.get("lmsData") or {}
-        worst_speaking_items.append({
-            "question": lms_data.get("question"),
-            "question_type": lms_data.get("questionType"),
-            "user_transcript": result_data.get("userTranscript"),
-            "score": result_data.get("score"),
-            "answer_type": extract_user_answer_type(result_data.get("additionalData")),
-            "timestamp": iso_to_date(parse_mongo_date(r.get("timestamp"))),
-        })
+    worst_speaking_items = [
+        _build_speaking_item(r, lms_type)
+        for r, lms_type in all_failed_sorted[:WORST_SPEAKING_LIMIT]
+    ]
 
     return {
         "participated": True,
         "session_count": len(sessions),
+        "session_metrics": compute_session_metrics(sessions, results),
         "is_completed": len(completed_sessions) > 0,
         "completion_pct": max_completion,
         "latest_session_date": latest_date,
@@ -592,6 +738,11 @@ def build_dt_in_class(sessions, results):
         "free_speaking_attempts": len(free_items),
         "free_speaking_score_avg": free_speaking_score_avg,
         "free_speaking_answer_type_dist": dict(answer_type_dist),
+        "brainstorm_attempts": len(brainstorm_items),
+        "brainstorm_score_avg": brainstorm_score_avg,
+        "brainstorm_answer_type_dist": dict(brainstorm_answer_type_dist),
+        "conversation_attempts": len(convo_items),
+        "conversation_score_avg": conversation_score_avg,
         "worst_speaking_items": worst_speaking_items,
     }
 
@@ -611,8 +762,8 @@ def derive_status(in_class, homework):
 def compute_weakness_score(homework, in_class) -> float:
     """
     Composite weakness 0.0–1.0 (higher = weaker).
-    Weights: bai_tap 35%, luyen_tap 15%, free_speaking 50%
-    Free speaking weighted highest: it's the hardest skill and least practiced.
+    Weights: bai_tap 35%, luyen_tap 15%, spoken production 50%
+    Spoken component uses the weaker of warmup free_speaking vs brainstorm (conservative).
     """
     components = []
 
@@ -625,8 +776,16 @@ def compute_weakness_score(homework, in_class) -> float:
         components.append((1.0 - lt["score"], 0.15))
 
     fs = in_class.get("free_speaking_score_avg")
-    if fs is not None:
-        components.append((1.0 - fs / 100.0, 0.50))
+    bs = in_class.get("brainstorm_score_avg")
+    spoken = None
+    if fs is not None and bs is not None:
+        spoken = min(fs, bs)
+    elif fs is not None:
+        spoken = fs
+    elif bs is not None:
+        spoken = bs
+    if spoken is not None:
+        components.append((1.0 - spoken / 100.0, 0.50))
     elif in_class.get("participated"):
         # Participated but no free speaking data: use pronunciation as weak proxy
         pron = in_class.get("pronunciation_score_avg")
@@ -831,8 +990,9 @@ def build_summary(records):
         if s["accuracy"] is not None and s["accuracy"] < 0.70
     ]
 
-    all_pron_scores, all_free_scores = [], []
+    all_pron_scores, all_free_scores, all_brain_scores, all_convo_scores = [], [], [], []
     all_answer_types = defaultdict(int)
+    all_brain_answer_types = defaultdict(int)
     for r in records:
         ic = r.get("in_class", {})
         pron_avg = ic.get("pronunciation_score_avg")
@@ -843,8 +1003,18 @@ def build_summary(records):
         free_n = ic.get("free_speaking_attempts", 0)
         if free_avg is not None and free_n > 0:
             all_free_scores.extend([free_avg] * free_n)
+        br_avg = ic.get("brainstorm_score_avg")
+        br_n = ic.get("brainstorm_attempts", 0)
+        if br_avg is not None and br_n > 0:
+            all_brain_scores.extend([br_avg] * br_n)
+        convo_avg = ic.get("conversation_score_avg")
+        convo_n = ic.get("conversation_attempts", 0)
+        if convo_avg is not None and convo_n > 0:
+            all_convo_scores.extend([convo_avg] * convo_n)
         for at, cnt in ic.get("free_speaking_answer_type_dist", {}).items():
             all_answer_types[at] += cnt
+        for at, cnt in ic.get("brainstorm_answer_type_dist", {}).items():
+            all_brain_answer_types[at] += cnt
 
     return {
         "student_id": STUDENT_ID,
@@ -859,7 +1029,14 @@ def build_summary(records):
         "overall_free_speaking_score_avg": (
             round(sum(all_free_scores) / len(all_free_scores), 2) if all_free_scores else None
         ),
+        "overall_brainstorm_score_avg": (
+            round(sum(all_brain_scores) / len(all_brain_scores), 2) if all_brain_scores else None
+        ),
+        "overall_conversation_score_avg": (
+            round(sum(all_convo_scores) / len(all_convo_scores), 2) if all_convo_scores else None
+        ),
         "overall_free_speaking_answer_type_dist": dict(all_answer_types),
+        "overall_brainstorm_answer_type_dist": dict(all_brain_answer_types),
         "forgetting_curve_note": (
             "All lessons have 1 prior attempt. Stability set to default 1 day. "
             "Lessons older than 7 days score >0.999 (fully forgotten). "
@@ -904,7 +1081,9 @@ def main():
     print(f"Status: {summary['lessons_by_status']}")
     print(f"Scored candidates (Agent 2 pool): {len(scored_candidates)}")
     print(f"Pronunciation avg: {summary['overall_pronunciation_score_avg']}")
-    print(f"Free speaking avg: {summary['overall_free_speaking_score_avg']}")
+    print(f"Free speaking (warmup) avg: {summary['overall_free_speaking_score_avg']}")
+    print(f"Brainstorm (ảnh→từ) avg:     {summary['overall_brainstorm_score_avg']}")
+    print(f"Conversation avg:  {summary['overall_conversation_score_avg']}")
     print(f"Global weak skills: {summary['weak_skills_global']}")
     print(f"\nTop 5 priority lessons for re-practice:")
     for r in [c for c in scored_candidates if c["composite_priority_score"]][:5]:

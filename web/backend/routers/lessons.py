@@ -21,6 +21,8 @@ def _build_question_list(qe_block: dict | None, failed_by_qid: dict) -> list:
     for q in qe_block.get("questions") or []:
         qid = q.get("question_id")
         failed = failed_by_qid.get(qid)
+        export_sa = q.get("student_answer")
+        failed_sa = failed.get("student_answer") if failed else None
         row = {
             "question_id": qid,
             "question_folder": q.get("question_folder"),
@@ -35,7 +37,7 @@ def _build_question_list(qe_block: dict | None, failed_by_qid: dict) -> list:
             "is_correct": q.get("is_correct"),
             "detail_result_id": q.get("detail_result_id"),
             "is_failed": failed is not None,
-            "student_answer": failed.get("student_answer") if failed else None,
+            "student_answer": failed_sa if failed_sa is not None else export_sa,
         }
         result.append(row)
     return result
@@ -104,13 +106,20 @@ def get_lesson_detail(student_id: str, lesson_id: int):
         "is_completed": sc_ic.get("is_completed", False),
         "completion_pct": sc_ic.get("completion_pct"),
         "session_count": sc_ic.get("session_count", 0),
+        "session_metrics": qe_ic.get("session_metrics") or sc_ic.get("session_metrics"),
         "pronunciation_score_avg": sc_ic.get("pronunciation_score_avg"),
         "pronunciation_attempts": sc_ic.get("pronunciation_attempts", 0),
         "free_speaking_score_avg": sc_ic.get("free_speaking_score_avg"),
         "free_speaking_attempts": sc_ic.get("free_speaking_attempts", 0),
+        "brainstorm_score_avg": sc_ic.get("brainstorm_score_avg"),
+        "brainstorm_attempts": sc_ic.get("brainstorm_attempts", 0),
+        "conversation_score_avg": sc_ic.get("conversation_score_avg"),
+        "conversation_attempts": sc_ic.get("conversation_attempts", 0),
         "worst_speaking_items": sc_ic.get("worst_speaking_items") or [],
         "pronunciation_drills": qe_ic.get("pronunciation_drills") or [],
         "free_speaking_questions": qe_ic.get("free_speaking") or [],
+        "brainstorm_questions": qe_ic.get("brainstorm") or [],
+        "conversation_questions": qe_ic.get("conversation") or [],
     }
 
     qe_hw = (qe_lesson or {}).get("homework") or {}

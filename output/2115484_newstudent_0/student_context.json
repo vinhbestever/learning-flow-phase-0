@@ -21,12 +21,16 @@
     },
     "weak_skills_global": [],
     "overall_pronunciation_score_avg": 57.4,
-    "overall_free_speaking_score_avg": 8.33,
+    "overall_free_speaking_score_avg": 22.22,
+    "overall_brainstorm_score_avg": 0.0,
+    "overall_conversation_score_avg": 69.19,
     "overall_free_speaking_answer_type_dist": {
-      "incorrect": 15,
       "inaccordant": 6,
       "lack_of_knowledge": 1,
       "accordant": 2
+    },
+    "overall_brainstorm_answer_type_dist": {
+      "incorrect": 15
     },
     "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
   },
@@ -47,36 +51,79 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
-          "question": "What is it?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "What do want?",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-04-17"
+          "lms_type": "conversation",
+          "question": "Goodbye! I look forward to talking again soon. 👋",
+          "expected_answer": "Goodbye! See you next time.",
+          "target_objects": null,
+          "user_transcript": "Hello.",
+          "score": 47,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 25,
+          "grammar_score": 69,
+          "timestamp": "2026-04-17",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2y7pjv-3fa98dc5-audio.wav",
+          "reaction_time_ms": 1837
         },
         {
-          "question": "What can you see?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "I Cani can see by.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-04-17"
+          "lms_type": "conversation",
+          "question": "Oh, do you mean “I have a family” or “I am ready”? 😊 Tell me one person in your family. 👪",
+          "expected_answer": "I have a mother and a brother.",
+          "target_objects": null,
+          "user_transcript": "I.",
+          "score": 19.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 39,
+          "timestamp": "2026-04-17",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2y680l-8329e984-audio.wav",
+          "reaction_time_ms": 1837
         },
         {
-          "question": "What did you eat today?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "But he, like, can be a strong end.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "timestamp": "2026-04-17"
+          "lms_type": "conversation",
+          "question": "Great. Tell me about your family. 👨‍👩‍👧‍👦",
+          "expected_answer": "I have a small family. I live with my mom, dad, and one sister.",
+          "target_objects": null,
+          "user_transcript": "I.",
+          "score": 59,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 18,
+          "timestamp": "2026-04-17",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2y5sdk-c490fb33-audio.wav",
+          "reaction_time_ms": 1837
         },
         {
-          "question": "What can you see?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "Mayy, I have A.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-04-16"
+          "lms_type": "conversation",
+          "question": "Okay, who is your friend? 😊",
+          "expected_answer": "My friend is Ana. She has brown hair and a beard.",
+          "target_objects": null,
+          "user_transcript": "My family is she has birthday.",
+          "score": 51.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 86,
+          "grammar_score": 17,
+          "timestamp": "2026-04-17",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2y3hup-fa26c276-audio.wav",
+          "reaction_time_ms": 1837
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Oh nice. Who is your friend? 😊",
+          "expected_answer": "My friend is Anna. She is a student and has brown hair.",
+          "target_objects": null,
+          "user_transcript": "My friend is.",
+          "score": 59,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 18,
+          "timestamp": "2026-04-17",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2y3423-c8356e0a-audio.wav",
+          "reaction_time_ms": 1837
         }
       ],
       "practice_ids": {
@@ -102,12 +149,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and reorder the correct sentence (Con hãy đọc và sắp xếp thành câu hoàn chỉnh.) /ladybugs/How/there?/are/many/",
+          "comment_plain": null,
           "correct_answer": "B. How many ladybugs are there?",
-          "student_answer": [
-            "1",
-            "0",
-            "0"
-          ],
+          "student_answer": "A. How are many ladybugs there?",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -130,27 +174,87 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         }
       ],
       "question_bank_preview": [],
       "failed_media_questions_count": 4,
       "worst_speaking_items": [
         {
-          "question": "Can you see this object I circled? What do you think it is?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "He.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-03-19"
+          "lms_type": "conversation",
+          "question": "I see. Do you mean the trees are in a park near your home? 🌳",
+          "expected_answer": "Yes, the trees are in a park near my home.",
+          "target_objects": null,
+          "user_transcript": "Yes, those two are in.",
+          "score": 58.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 53,
+          "grammar_score": 64,
+          "timestamp": "2026-03-19",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/19/admin/mmximfag-f7b3d5a4-audio.wav",
+          "reaction_time_ms": 1194
         },
         {
-          "question": "What can you see?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "Also, my I to.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-03-19"
+          "lms_type": "conversation",
+          "question": "Nice. Can you tell me where the trees are near your home 🌳",
+          "expected_answer": "They are in the park near my house.",
+          "target_objects": null,
+          "user_transcript": "They are in the process.",
+          "score": 53.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 70,
+          "grammar_score": 37,
+          "timestamp": "2026-03-19",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/19/admin/mmxilvxt-aedb924e-audio.wav",
+          "reaction_time_ms": 1194
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. Tell me where the trees are. 🌳",
+          "expected_answer": "They are near my house and the school. One is big and has green leaves.",
+          "target_objects": null,
+          "user_transcript": "There are.",
+          "score": 17,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 16,
+          "grammar_score": 18,
+          "timestamp": "2026-03-19",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/19/admin/mmxild82-0eaacf21-audio.wav",
+          "reaction_time_ms": 1194
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice, trees are lovely. Do you have a favorite tree near your home? 🌳",
+          "expected_answer": "Yes, I have a favorite tree near my home. It is an old oak tree with many leaves.",
+          "target_objects": null,
+          "user_transcript": "More.",
+          "score": 54.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 66,
+          "grammar_score": 43,
+          "timestamp": "2026-03-19",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/19/admin/mmxikka7-7aa75888-audio.wav",
+          "reaction_time_ms": 1194
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Great, let's start. Do you like trees or ponds more? 🌿",
+          "expected_answer": "I like trees more because they are big and give shade.",
+          "target_objects": null,
+          "user_transcript": "I like trees more.",
+          "score": 56.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 20,
+          "grammar_score": 93,
+          "timestamp": "2026-03-19",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/19/admin/mmxik5rw-8640fcbb-audio.wav",
+          "reaction_time_ms": 1194
         }
       ],
       "practice_ids": {
@@ -178,6 +282,7 @@
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
           "question_text": "Listen and choose. (Con hãy nghe và chọn tranh đúng nhé!)",
+          "comment_plain": "cat (con m&egrave;o)",
           "correct_answer": null,
           "student_answer": null,
           "requires_media": true,
@@ -217,6 +322,7 @@
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
           "question_text": "Listen and choose. (Con hãy nghe và chọn tranh đúng nhé!)",
+          "comment_plain": "dog (con ch&oacute;)",
           "correct_answer": null,
           "student_answer": null,
           "requires_media": true,
@@ -256,6 +362,7 @@
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
           "question_text": "Listen and choose. (Con hãy nghe và chọn tranh đúng nhé!)",
+          "comment_plain": "rabbit (con thỏ)",
           "correct_answer": null,
           "student_answer": null,
           "requires_media": true,
@@ -295,6 +402,7 @@
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
           "question_text": "Listen and choose. (Con hãy nghe và chọn tranh đúng nhé!)",
+          "comment_plain": "goldfish (cá vàng)",
           "correct_answer": null,
           "student_answer": null,
           "requires_media": true,
@@ -334,6 +442,7 @@
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
           "question_text": "Listen and choose. (Con hãy nghe và chọn tranh đúng nhé!)",
+          "comment_plain": "parrot (con vẹt)",
           "correct_answer": null,
           "student_answer": null,
           "requires_media": true,
@@ -370,12 +479,79 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
-          "question": "What else is there?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "I am.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-04-20"
+          "lms_type": "conversation",
+          "question": "Nice. Can you say the number? 🐶",
+          "expected_answer": "My dog is three years old.",
+          "target_objects": null,
+          "user_transcript": "No, my love is.",
+          "score": 57.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 15,
+          "timestamp": "2026-04-20",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/20/admin/mo76j6w7-b75727c0-audio.wav",
+          "reaction_time_ms": 1209
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Oh, okay. How old is your dog 🐶",
+          "expected_answer": "My dog is three years old.",
+          "target_objects": null,
+          "user_transcript": "My dog is.",
+          "score": 60.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 21,
+          "timestamp": "2026-04-20",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/20/admin/mo76itmf-8fe96c2e-audio.wav",
+          "reaction_time_ms": 1209
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. How old is your dog 🐶",
+          "expected_answer": "My dog is three years old.",
+          "target_objects": null,
+          "user_transcript": "My dog is this.",
+          "score": 31.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 49,
+          "grammar_score": 14,
+          "timestamp": "2026-04-20",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/20/admin/mo76ifya-4b656878-audio.wav",
+          "reaction_time_ms": 1209
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. How old is your dog? 🐶",
+          "expected_answer": "My dog is three years old.",
+          "target_objects": null,
+          "user_transcript": "My dog is.",
+          "score": 59,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 18,
+          "timestamp": "2026-04-20",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/20/admin/mo76hz4o-e23e5446-audio.wav",
+          "reaction_time_ms": 1209
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. How long is your walk with Son? 🚶‍♂️",
+          "expected_answer": "About 30 minutes every morning.",
+          "target_objects": null,
+          "user_transcript": "Over.",
+          "score": 67.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 35,
+          "timestamp": "2026-04-20",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/20/admin/mo76g6hs-0c87ab72-audio.wav",
+          "reaction_time_ms": 1209
         }
       ],
       "practice_ids": {
@@ -403,6 +579,7 @@
           "question_folder": "Biểu đồ",
           "question_type": "Trả lời bằng giọng nói",
           "question_text": "Look and say (Con hãy nhìn và nói.) She has small eyes.",
+          "comment_plain": null,
           "correct_answer": "She has small eyes.",
           "student_answer": "she have own ears",
           "requires_media": false,
@@ -415,27 +592,87 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         }
       ],
       "question_bank_preview": [],
       "failed_media_questions_count": 1,
       "worst_speaking_items": [
         {
-          "question": "Can you tell me what it is?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "By.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-04-06"
+          "lms_type": "conversation",
+          "question": "You mean \"The\" as a word, or did you mean \"thirty\" again? 🙂",
+          "expected_answer": "I meant thirty, I am thirty years old.",
+          "target_objects": null,
+          "user_transcript": "I miss.",
+          "score": 60.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 21,
+          "timestamp": "2026-04-06",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn7msrp-69d2e85b-audio.wav",
+          "reaction_time_ms": 2073
         },
         {
-          "question": "What do you like to play?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "Yes.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "timestamp": "2026-04-06"
+          "lms_type": "conversation",
+          "question": "Nice. Do you mean you are thirty years old? 🙂",
+          "expected_answer": "Yes, I am thirty years old.",
+          "target_objects": null,
+          "user_transcript": "The.",
+          "score": 56.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 13,
+          "timestamp": "2026-04-06",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn7mehk-6de3131b-audio.wav",
+          "reaction_time_ms": 2073
+        },
+        {
+          "lms_type": "conversation",
+          "question": "No problem. Do you mean blue eyes? 😊",
+          "expected_answer": "Yes, I mean blue eyes.",
+          "target_objects": null,
+          "user_transcript": "Thirty.",
+          "score": 18.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 37,
+          "timestamp": "2026-04-06",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn7m0li-f9752cbb-audio.wav",
+          "reaction_time_ms": 2073
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi! Nice to chat with you. Ready to talk about you? 😄",
+          "expected_answer": "Yes, I am ready. I want to talk about my family and myself.",
+          "target_objects": null,
+          "user_transcript": "Oh.",
+          "score": 20.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 41,
+          "timestamp": "2026-04-06",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn7ketz-252bec8c-audio.wav",
+          "reaction_time_ms": 2073
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. What do you do to help her? 😊",
+          "expected_answer": "I help by ironing and measuring the suits. I also cut fabric sometimes.",
+          "target_objects": null,
+          "user_transcript": "I help me this in room.",
+          "score": 35.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 54,
+          "grammar_score": 17,
+          "timestamp": "2026-04-06",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn7jk9t-e6936990-audio.wav",
+          "reaction_time_ms": 2073
         }
       ],
       "practice_ids": {
@@ -461,12 +698,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) Peter: Hi John, what do you look like? John: I have big eyes and blue hair. And you? Peter: I have a big nose and dark hair. John: What does Phong look like? Peter: He has long legs and dark hair. John: Oh, does he have a",
+          "comment_plain": null,
           "correct_answer": "B. He has big eyes and blue hair.",
-          "student_answer": [
-            "1",
-            "0",
-            "0"
-          ],
+          "student_answer": "A. He has a big nose and dark hair.",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -489,7 +723,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 7715,
@@ -497,12 +732,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) Peter: Hi John, what do you look like? John: I have big eyes and blue hair. And you? Peter: I have a big nose and dark hair. John: What does Phong look like? Peter: He has long legs and dark hair. John: Oh, does he have a",
+          "comment_plain": null,
           "correct_answer": "C. Yes, he does.",
-          "student_answer": [
-            "1",
-            "0",
-            "0"
-          ],
+          "student_answer": "A. Yes, she does.",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -525,27 +757,91 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         }
       ],
       "question_bank_preview": [],
       "failed_media_questions_count": 3,
       "worst_speaking_items": [
         {
+          "lms_type": "conversation",
+          "question": "Nice. What do you eat with your mom? 🍽️",
+          "expected_answer": "We eat rice and chicken together.",
+          "target_objects": null,
+          "user_transcript": "And.",
+          "score": 34,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 33,
+          "grammar_score": 35,
+          "timestamp": "2026-04-13",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx7jgty-4de9af59-audio.wav",
+          "reaction_time_ms": 781
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. That’s clear and useful. Where are you going? 🚗",
+          "expected_answer": "I need to leave for work.",
+          "target_objects": null,
+          "user_transcript": "I know where to live from.",
+          "score": 41.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 63,
+          "grammar_score": 20,
+          "timestamp": "2026-04-13",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx7gs9g-6776e4e6-audio.wav",
+          "reaction_time_ms": 781
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. Do you mean ‘I need to…’ plus a verb like ‘drink’ or ‘go’? 😊",
+          "expected_answer": "I need to drink tea from the pot.",
+          "target_objects": null,
+          "user_transcript": "I need to.",
+          "score": 61,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 83,
+          "grammar_score": 39,
+          "timestamp": "2026-04-13",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx7g0rl-b8bbf6ae-audio.wav",
+          "reaction_time_ms": 781
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Do you mean ‘I drink tea from the pot’ or something else? ☺️",
+          "expected_answer": "I drink tea from the pot.",
+          "target_objects": null,
+          "user_transcript": "I.",
+          "score": 58.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 17,
+          "timestamp": "2026-04-13",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx7fbcl-16f10b56-audio.wav",
+          "reaction_time_ms": 781
+        },
+        {
+          "lms_type": "brainstorm",
           "question": "What is it?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": [
+            "Car",
+            "Beard",
+            "Mustache"
+          ],
           "user_transcript": "The The.",
           "score": 0,
           "answer_type": "incorrect",
-          "timestamp": "2026-04-13"
-        },
-        {
-          "question": "How are you today?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "Thank you.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "timestamp": "2026-04-13"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-13",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx6kb3e-f6dfca87-audio.wav",
+          "reaction_time_ms": 2531
         }
       ],
       "practice_ids": {
@@ -571,12 +867,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
+          "comment_plain": "audio: There aren&#39;t any leaves. leaves: lá cây ( số &iacute;t: leaf)",
           "correct_answer": "B. There aren't any leaves.",
-          "student_answer": [
-            "1",
-            "0",
-            "0"
-          ],
+          "student_answer": "A. There are three trees.",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -599,43 +892,87 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         }
       ],
       "question_bank_preview": [],
       "failed_media_questions_count": 4,
       "worst_speaking_items": [
         {
-          "question": "What is it?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "Sure.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-03-13"
+          "lms_type": "conversation",
+          "question": "Nice. Do you run with friends or alone? 🏃‍♂️",
+          "expected_answer": "I run alone in the park. I like running near the trees.",
+          "target_objects": null,
+          "user_transcript": "I run.",
+          "score": 53.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 66,
+          "grammar_score": 41,
+          "timestamp": "2026-03-13",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoyyjeq-5901e859-audio.wav",
+          "reaction_time_ms": 944
         },
         {
-          "question": "What is it?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "Whatever you not be about there.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-03-12"
+          "lms_type": "conversation",
+          "question": "Good. What do you like to do in the park 🌳",
+          "expected_answer": "I like to walk and sit on a bench. I sometimes read a book or look at the flowers.",
+          "target_objects": null,
+          "user_transcript": "I like.",
+          "score": 58,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 16,
+          "timestamp": "2026-03-13",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoyxmi0-cee02a26-audio.wav",
+          "reaction_time_ms": 944
         },
         {
-          "question": "What can you see?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "I can see A.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-03-12"
+          "lms_type": "conversation",
+          "question": "Good, you saw a bird in the tree 😊 What did the bird look like",
+          "expected_answer": "It was small and brown with a red head",
+          "target_objects": null,
+          "user_transcript": "Is it from?",
+          "score": 33,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 16,
+          "timestamp": "2026-03-13",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoyvk7e-20176a10-audio.wav",
+          "reaction_time_ms": 944
         },
         {
-          "question": "What did you do today? Is there any fun activity?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "And.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "timestamp": "2026-03-12"
+          "lms_type": "conversation",
+          "question": "Nice, can you finish: I saw one in the... 🌲",
+          "expected_answer": "I saw one in the forest next to a big tree.",
+          "target_objects": null,
+          "user_transcript": "I saw.",
+          "score": 46,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 42,
+          "timestamp": "2026-03-13",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoyudvi-96ce8d56-audio.wav",
+          "reaction_time_ms": 944
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice, please finish the sentence about what you like in nature 😊",
+          "expected_answer": "I like to walk in the forest and look at trees and flowers.",
+          "target_objects": null,
+          "user_transcript": "I saw one in the",
+          "score": 57.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 73,
+          "grammar_score": 42,
+          "timestamp": "2026-03-13",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoyu3b1-37175b80-audio.wav",
+          "reaction_time_ms": 944
         }
       ],
       "practice_ids": {
@@ -661,12 +998,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and odd one out (Con hãy đọc và chọn phương án khác loại)",
+          "comment_plain": null,
           "correct_answer": "A. small",
-          "student_answer": [
-            "0",
-            "0",
-            "1"
-          ],
+          "student_answer": "C. eyes",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -689,77 +1023,103 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         }
       ],
       "question_bank_preview": [],
       "failed_media_questions_count": 4,
       "worst_speaking_items": [
         {
+          "lms_type": "conversation",
+          "question": "Hello — nice to see you. Ready to finish your sentence about your family? 😊",
+          "expected_answer": "I have a mother and a brother.",
+          "target_objects": null,
+          "user_transcript": "You'll be about.",
+          "score": 59.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 19,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng0frb0-787ebaf6-audio.wav",
+          "reaction_time_ms": 1641
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Great — tell me about your family. 👨‍👩‍👧‍👦",
+          "expected_answer": "I live with my mom, dad, and one sister. We eat dinner together every day.",
+          "target_objects": null,
+          "user_transcript": "I like.",
+          "score": 58,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 16,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng0efza-2236a096-audio.wav",
+          "reaction_time_ms": 1641
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice to meet you, Chang. How old are your parents? 😊",
+          "expected_answer": "My parents are thirty-five and thirty-two.",
+          "target_objects": null,
+          "user_transcript": "My parents are two.",
+          "score": 64,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 82,
+          "grammar_score": 46,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng0br3w-b8b1f563-audio.wav",
+          "reaction_time_ms": 1641
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Great. Tell me your name and age. 🙂",
+          "expected_answer": "My name is Ana and I am 12 years old.",
+          "target_objects": null,
+          "user_transcript": "My name is",
+          "score": 68.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 37,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng0auc6-5920f4aa-audio.wav",
+          "reaction_time_ms": 1641
+        },
+        {
+          "lms_type": "brainstorm",
           "question": "What is it?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": [
+            "eye",
+            "ears",
+            "nose",
+            "hand",
+            "leg",
+            "hair",
+            "foot",
+            "mouth",
+            "arm",
+            "neck"
+          ],
           "user_transcript": "And.",
           "score": 0,
           "answer_type": "incorrect",
-          "timestamp": "2026-04-01"
-        },
-        {
-          "question": "What can you see?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "I'm fine, thank you.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-03-26"
-        },
-        {
-          "question": "What's the weather like today?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "One key.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "timestamp": "2026-03-26"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzlfib-cfc0dcba-audio.wav",
+          "reaction_time_ms": null
         }
       ],
       "practice_ids": {
         "bai_tap": 7680,
         "luyen_tap": 13496
-      }
-    },
-    {
-      "lesson_id": 3812168,
-      "title": "Unit 1A : Nature - Lesson 1: There's one spider.",
-      "level": 3,
-      "last_activity_date": "2026-03-25",
-      "days_since_last_practice": 27,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.3509,
-      "composite_priority_score": 0.6754,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 5,
-      "worst_speaking_items": [
-        {
-          "question": "what can you see ?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "Can you see?",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-03-09"
-        },
-        {
-          "question": "How are you today?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "How are you today, heart Lady?",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "timestamp": "2026-03-09"
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7647,
-        "luyen_tap": 13410
       }
     },
     {
@@ -769,8 +1129,8 @@
       "last_activity_date": "2026-03-27",
       "days_since_last_practice": 25,
       "forgetting_score": 1.0,
-      "weakness_score": 0.275,
-      "composite_priority_score": 0.6375,
+      "weakness_score": 0.525,
+      "composite_priority_score": 0.7625,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -780,12 +1140,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) Harry: Lily, look at the sky, how many (17) ......... are there? Lily: There're five clouds. Is there any wind? Harry: No, (18) ............... . Are there any ponds? Lily: Yes, (19) .............. pond. Are there any flower",
+          "comment_plain": null,
           "correct_answer": "C. There isn't",
-          "student_answer": [
-            "0",
-            "1",
-            "0"
-          ],
+          "student_answer": "B. There are",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -808,7 +1165,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 7703,
@@ -816,12 +1174,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) Harry: Lily, look at the sky, how many (17) ......... are there? Lily: There're five clouds. Is there any wind? Harry: No, (18) ............... . Are there any ponds? Lily: Yes, (19) .............. . Are there any flowers? H",
+          "comment_plain": null,
           "correct_answer": "A. There are",
-          "student_answer": [
-            "0",
-            "0",
-            "1"
-          ],
+          "student_answer": "C. There is",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -844,7 +1199,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 7703,
@@ -852,12 +1208,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) Harry: Lily, look at the sky, how many (17) ......... are there? Lily: There're five clouds. Is there any wind? Harry: No, (18) ............... . Are there any ponds? Lily: Yes, (19) .............. . Are there any flowers? H",
+          "comment_plain": null,
           "correct_answer": "C. There aren't",
-          "student_answer": [
-            "0",
-            "1",
-            "0"
-          ],
+          "student_answer": "B. There is",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -880,7 +1233,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 7703,
@@ -888,12 +1242,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) Harry: Lily, look at the sky, how many (17) ......... are there? Lily: There're five clouds. Is there any wind? Harry: No, (18) ............... . Are there any ponds? Lily: Yes, (19) .............. . Are there any flowers? H",
+          "comment_plain": null,
           "correct_answer": "C. There aren't",
-          "student_answer": [
-            "0",
-            "1",
-            "0"
-          ],
+          "student_answer": "B. There is",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -916,7 +1267,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 13488,
@@ -924,12 +1276,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) David: Emily, look at the sky, is there any (1) ......... ? Emily: Yes, there is some wind. And how many clouds are there? David: There're five (2) ............... . Are there any ponds are there? Emily: Yes, (3) ...........",
+          "comment_plain": "Câu hỏi: how many clouds are there? C&oacute; bao nhi&ecirc;u đám mây? => Đáp án: (2) - B (C&oacute; 5 đám mây.)",
           "correct_answer": "B. clouds",
-          "student_answer": [
-            "0",
-            "0",
-            "1"
-          ],
+          "student_answer": "C. tree",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -952,7 +1301,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 13488,
@@ -960,12 +1310,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) David: Emily, look at the sky, is there any (1) ......... ? Emily: Yes, there is some wind. And how many clouds are there? David: There're five (2) ............... . Are there any ponds? Emily: Yes, (3) .............. . How ",
+          "comment_plain": "Câu hỏi: Are there any ponds: C&oacute; ao kh&ocirc;ng? => Đáp án: C (Câu khẳng định d&ugrave;ng Yes, there are)",
           "correct_answer": "C. there are",
-          "student_answer": [
-            "0",
-            "1",
-            "0"
-          ],
+          "student_answer": "B. flower",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -988,7 +1335,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 13488,
@@ -996,12 +1344,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and reorder the sentence (Con hãy đọc và sắp xếp thành câu hoàn chỉnh.) /There're/five/trees/ garden./in/the/",
+          "comment_plain": "There&#39;re five trees in the garden: C&oacute; 5 cái cây trong vườn. => Đáp án: C",
           "correct_answer": "C. There're five trees in the garden.",
-          "student_answer": [
-            "0",
-            "1",
-            "0"
-          ],
+          "student_answer": "B. There're trees in five the garden.",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -1024,24 +1369,136 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         }
       ],
       "question_bank_preview": [],
       "failed_media_questions_count": 2,
       "worst_speaking_items": [
         {
+          "lms_type": "brainstorm",
           "question": "What can you see?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": [
+            "sun",
+            "minus",
+            "plus",
+            "leaf",
+            "tree",
+            "equals",
+            "rainbow"
+          ],
           "user_transcript": "The.",
           "score": 0,
           "answer_type": "incorrect",
-          "timestamp": "2026-03-23"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-23",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/23/admin/mn37n1il-7b122715-audio.wav",
+          "reaction_time_ms": null
         }
       ],
       "practice_ids": {
         "bai_tap": 7703,
         "luyen_tap": 13488
+      }
+    },
+    {
+      "lesson_id": 3812168,
+      "title": "Unit 1A : Nature - Lesson 1: There's one spider.",
+      "level": 3,
+      "last_activity_date": "2026-03-25",
+      "days_since_last_practice": 27,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5175,
+      "composite_priority_score": 0.7588,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 5,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Good. Tell me one insect you like. 🐞",
+          "expected_answer": "I like butterflies.",
+          "target_objects": null,
+          "user_transcript": "I'mcon.",
+          "score": 7,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 14,
+          "timestamp": "2026-03-09",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/09/admin/mmj90rak-e8a27f41-audio.wav",
+          "reaction_time_ms": 2195
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Tell me the insect you like most 😄",
+          "expected_answer": "I like the butterfly most.",
+          "target_objects": null,
+          "user_transcript": "I like the insect.",
+          "score": 33,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 24,
+          "grammar_score": 42,
+          "timestamp": "2026-03-09",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/09/admin/mmj90ga0-1325f0f8-audio.wav",
+          "reaction_time_ms": 2195
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Which insect do you like most? 🐞",
+          "expected_answer": "I like butterflies the most because they are colorful and gentle.",
+          "target_objects": null,
+          "user_transcript": "I like the most.",
+          "score": 36,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 54,
+          "grammar_score": 18,
+          "timestamp": "2026-03-09",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/09/admin/mmj8zzwo-d71356e2-audio.wav",
+          "reaction_time_ms": 2195
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Can you try one word: butterfly, ladybug, or spider? 🦋",
+          "expected_answer": "Butterfly",
+          "target_objects": null,
+          "user_transcript": "Borthf.",
+          "score": 8,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 16,
+          "timestamp": "2026-03-09",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/09/admin/mmj8wt6j-fe5eaa8f-audio.wav",
+          "reaction_time_ms": 2195
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Can you name the insect you like most? 🐞",
+          "expected_answer": "I like butterflies the most.",
+          "target_objects": null,
+          "user_transcript": "I like.",
+          "score": 59.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 19,
+          "timestamp": "2026-03-09",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/09/admin/mmj8wgcr-4f7bab12-audio.wav",
+          "reaction_time_ms": 2195
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7647,
+        "luyen_tap": 13410
       }
     },
     {
@@ -1062,12 +1519,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and find the incorrect answer (Con hãy đọc và chọn đáp án sai.) Do he have strong arms ?",
+          "comment_plain": null,
           "correct_answer": "A. Do",
-          "student_answer": [
-            "0",
-            "1",
-            "0"
-          ],
+          "student_answer": "B. have",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -1090,7 +1544,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 7711,
@@ -1098,12 +1553,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and find the incorrect answer (Con hãy đọc và chọn đáp án sai.) Do you has big eyes ?",
+          "comment_plain": null,
           "correct_answer": "B. has",
-          "student_answer": [
-            "1",
-            "0",
-            "0"
-          ],
+          "student_answer": "A. Do",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -1126,7 +1578,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 7711,
@@ -1134,12 +1587,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and reorder the words to make the correct sentences (Con hãy đọc và sắp xếp thành câu hoàn chỉnh.) /a/strong/He/nose/and/arms./has/",
+          "comment_plain": null,
           "correct_answer": "C. He has a nose and strong arms.",
-          "student_answer": [
-            "0",
-            "1",
-            "0"
-          ],
+          "student_answer": "B. He has a strong and nose arms.",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -1162,12 +1612,89 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         }
       ],
       "question_bank_preview": [],
       "failed_media_questions_count": 2,
-      "worst_speaking_items": [],
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Okay, do you mean errors in English or in a different thing? 🤔",
+          "expected_answer": "I mean errors in my sentence.",
+          "target_objects": null,
+          "user_transcript": "I mean.",
+          "score": 52.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 66,
+          "grammar_score": 39,
+          "timestamp": "2026-04-12",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvtv7fn-d784ec5c-audio.wav",
+          "reaction_time_ms": 1201
+        },
+        {
+          "lms_type": "conversation",
+          "question": "I see. Do you mean errors in a sentence or problems in something else? 🤔",
+          "expected_answer": "I mean errors in my sentence about my family.",
+          "target_objects": null,
+          "user_transcript": "I mean.",
+          "score": 68,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 36,
+          "timestamp": "2026-04-12",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvtut69-208c9a69-audio.wav",
+          "reaction_time_ms": 1201
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Great. Tell me about your family. 👨‍👩‍👧‍👦",
+          "expected_answer": "I have a small family. I live with my mom and brother.",
+          "target_objects": null,
+          "user_transcript": "They have error.",
+          "score": 30,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 16,
+          "grammar_score": 44,
+          "timestamp": "2026-04-12",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvttgrp-4712341e-audio.wav",
+          "reaction_time_ms": 1201
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Okay. What do you like to do with your mom? 👩❤️",
+          "expected_answer": "We cook and eat together. We also go to the park on weekends.",
+          "target_objects": null,
+          "user_transcript": "What color are in.",
+          "score": 57,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 14,
+          "timestamp": "2026-04-12",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvtrdhp-8a12d4c7-audio.wav",
+          "reaction_time_ms": 1201
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Do you mean 'music' with your mom? 🎵",
+          "expected_answer": "Yes, I mean music. We listen to music and sing together.",
+          "target_objects": null,
+          "user_transcript": "I.",
+          "score": 60,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 20,
+          "timestamp": "2026-04-09",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/09/admin/mnrie68l-46d24694-audio.wav",
+          "reaction_time_ms": 964
+        }
+      ],
       "practice_ids": {
         "bai_tap": 7711,
         "luyen_tap": 13498
@@ -1191,11 +1718,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Listen and choose correct answer (Con hãy nghe và chọn câu trả lời đúng.) Is there ... wind?",
+          "comment_plain": "audio: Is there any wind? wind: gi&oacute;",
           "correct_answer": "B. any",
-          "student_answer": [
-            "1",
-            "0"
-          ],
+          "student_answer": "A. some",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -1212,7 +1737,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 7666,
@@ -1220,12 +1746,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Odd one out (Con hãy đọc và chọn phương án khác loại.)",
+          "comment_plain": null,
           "correct_answer": "C. Ladybug",
-          "student_answer": [
-            "1",
-            "0",
-            "0"
-          ],
+          "student_answer": "A. Sun",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -1248,7 +1771,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 7666,
@@ -1256,11 +1780,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) David: Emily, look! Is there any sun? Emily: (1) ....... , there isn't. There're some clouds. How many clouds are there? David: There're five .........(2). Is there (3) .......... wind? Emily: Yes, (4) .............. . It's",
+          "comment_plain": null,
           "correct_answer": "B. No",
-          "student_answer": [
-            "1",
-            "0"
-          ],
+          "student_answer": "A. Yes",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -1277,7 +1799,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 7666,
@@ -1285,11 +1808,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) David: Emily, look! Is there any sun? Emily: (1) ......., there isn't. There're some clouds. How many clouds are there? David: There're five .........(2). Is there (3) .......... wind? Emily: Yes, (4) .............. . It's ",
+          "comment_plain": null,
           "correct_answer": "A. any",
-          "student_answer": [
-            "0",
-            "1"
-          ],
+          "student_answer": "B. some",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -1306,7 +1827,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         }
       ],
       "question_bank_preview": [],
@@ -1335,49 +1857,107 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 33,
+          "audio_turns": 52,
+          "avg_reaction_ms": 1778,
+          "fastest_reaction_ms": 874,
+          "total_duration_ms": 1804069,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-04-17",
         "pronunciation_attempts": 28,
         "pronunciation_score_avg": 69.57,
-        "free_speaking_attempts": 4,
+        "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "incorrect": 3,
           "inaccordant": 1
         },
+        "brainstorm_attempts": 3,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 3
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 71.5,
         "worst_speaking_items": [
           {
-            "question": "What is it?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "What do want?",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-04-17"
+            "lms_type": "conversation",
+            "question": "Goodbye! I look forward to talking again soon. 👋",
+            "expected_answer": "Goodbye! See you next time.",
+            "target_objects": null,
+            "user_transcript": "Hello.",
+            "score": 47,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 25,
+            "grammar_score": 69,
+            "timestamp": "2026-04-17",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2y7pjv-3fa98dc5-audio.wav",
+            "reaction_time_ms": 1837
           },
           {
-            "question": "What can you see?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "I Cani can see by.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-04-17"
+            "lms_type": "conversation",
+            "question": "Oh, do you mean “I have a family” or “I am ready”? 😊 Tell me one person in your family. 👪",
+            "expected_answer": "I have a mother and a brother.",
+            "target_objects": null,
+            "user_transcript": "I.",
+            "score": 19.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 39,
+            "timestamp": "2026-04-17",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2y680l-8329e984-audio.wav",
+            "reaction_time_ms": 1837
           },
           {
-            "question": "What did you eat today?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "But he, like, can be a strong end.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "timestamp": "2026-04-17"
+            "lms_type": "conversation",
+            "question": "Great. Tell me about your family. 👨‍👩‍👧‍👦",
+            "expected_answer": "I have a small family. I live with my mom, dad, and one sister.",
+            "target_objects": null,
+            "user_transcript": "I.",
+            "score": 59,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 18,
+            "timestamp": "2026-04-17",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2y5sdk-c490fb33-audio.wav",
+            "reaction_time_ms": 1837
           },
           {
-            "question": "What can you see?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "Mayy, I have A.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-04-16"
+            "lms_type": "conversation",
+            "question": "Okay, who is your friend? 😊",
+            "expected_answer": "My friend is Ana. She has brown hair and a beard.",
+            "target_objects": null,
+            "user_transcript": "My family is she has birthday.",
+            "score": 51.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 86,
+            "grammar_score": 17,
+            "timestamp": "2026-04-17",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2y3hup-fa26c276-audio.wav",
+            "reaction_time_ms": 1837
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh nice. Who is your friend? 😊",
+            "expected_answer": "My friend is Anna. She is a student and has brown hair.",
+            "target_objects": null,
+            "user_transcript": "My friend is.",
+            "score": 59,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 18,
+            "timestamp": "2026-04-17",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2y3423-c8356e0a-audio.wav",
+            "reaction_time_ms": 1837
           }
         ]
       },
@@ -1417,33 +1997,107 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": 35,
+          "audio_turns": 54,
+          "avg_reaction_ms": 1310,
+          "fastest_reaction_ms": 832,
+          "total_duration_ms": 1518940,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-03-19",
         "pronunciation_attempts": 36,
         "pronunciation_score_avg": 54.42,
-        "free_speaking_attempts": 3,
+        "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "lack_of_knowledge": 1,
+          "lack_of_knowledge": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "incorrect": 2
         },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 64.46,
         "worst_speaking_items": [
           {
-            "question": "Can you see this object I circled? What do you think it is?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "He.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-03-19"
+            "lms_type": "conversation",
+            "question": "I see. Do you mean the trees are in a park near your home? 🌳",
+            "expected_answer": "Yes, the trees are in a park near my home.",
+            "target_objects": null,
+            "user_transcript": "Yes, those two are in.",
+            "score": 58.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 53,
+            "grammar_score": 64,
+            "timestamp": "2026-03-19",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/19/admin/mmximfag-f7b3d5a4-audio.wav",
+            "reaction_time_ms": 1194
           },
           {
-            "question": "What can you see?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "Also, my I to.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-03-19"
+            "lms_type": "conversation",
+            "question": "Nice. Can you tell me where the trees are near your home 🌳",
+            "expected_answer": "They are in the park near my house.",
+            "target_objects": null,
+            "user_transcript": "They are in the process.",
+            "score": 53.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 70,
+            "grammar_score": 37,
+            "timestamp": "2026-03-19",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/19/admin/mmxilvxt-aedb924e-audio.wav",
+            "reaction_time_ms": 1194
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. Tell me where the trees are. 🌳",
+            "expected_answer": "They are near my house and the school. One is big and has green leaves.",
+            "target_objects": null,
+            "user_transcript": "There are.",
+            "score": 17,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 16,
+            "grammar_score": 18,
+            "timestamp": "2026-03-19",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/19/admin/mmxild82-0eaacf21-audio.wav",
+            "reaction_time_ms": 1194
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice, trees are lovely. Do you have a favorite tree near your home? 🌳",
+            "expected_answer": "Yes, I have a favorite tree near my home. It is an old oak tree with many leaves.",
+            "target_objects": null,
+            "user_transcript": "More.",
+            "score": 54.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 66,
+            "grammar_score": 43,
+            "timestamp": "2026-03-19",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/19/admin/mmxikka7-7aa75888-audio.wav",
+            "reaction_time_ms": 1194
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Great, let's start. Do you like trees or ponds more? 🌿",
+            "expected_answer": "I like trees more because they are big and give shade.",
+            "target_objects": null,
+            "user_transcript": "I like trees more.",
+            "score": 56.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 20,
+            "grammar_score": 93,
+            "timestamp": "2026-03-19",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/19/admin/mmxik5rw-8640fcbb-audio.wav",
+            "reaction_time_ms": 1194
           }
         ]
       },
@@ -1487,12 +2141,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+            "comment_plain": "audio: there&#39;re three spiders. spider: con nhện three: 3",
             "correct_answer": null,
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "option_2",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -1521,7 +2172,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7690,
@@ -1529,11 +2181,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.) There isn't any wind.",
+            "comment_plain": "audio: Is there any wind? wind: gi&oacute;",
             "correct_answer": null,
-            "student_answer": [
-              "0",
-              "1"
-            ],
+            "student_answer": "option_2",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -1554,7 +2204,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7690,
@@ -1562,11 +2213,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.) There aren't any clouds.",
+            "comment_plain": "audio: Are there any cloud? cloud: đám mây",
             "correct_answer": null,
-            "student_answer": [
-              "1",
-              "0"
-            ],
+            "student_answer": "option_1",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -1587,7 +2236,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7690,
@@ -1595,12 +2245,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
+            "comment_plain": "Audio: How many rainbows? Two. rainbow: cầu vồng two: 2",
             "correct_answer": null,
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "option_2",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -1629,7 +2276,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7690,
@@ -1637,12 +2285,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and reorder the correct sentence (Con hãy đọc và sắp xếp thành câu hoàn chỉnh.) /ladybugs/How/there?/are/many/",
+            "comment_plain": null,
             "correct_answer": "B. How many ladybugs are there?",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A. How are many ladybugs there?",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -1665,7 +2310,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -1687,24 +2333,105 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": 39,
+          "audio_turns": 49,
+          "avg_reaction_ms": 1430,
+          "fastest_reaction_ms": 867,
+          "total_duration_ms": 1481854,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-04-20",
         "pronunciation_attempts": 31,
         "pronunciation_score_avg": 69.06,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "incorrect": 1
         },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 72.27,
         "worst_speaking_items": [
           {
-            "question": "What else is there?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "I am.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-04-20"
+            "lms_type": "conversation",
+            "question": "Nice. Can you say the number? 🐶",
+            "expected_answer": "My dog is three years old.",
+            "target_objects": null,
+            "user_transcript": "No, my love is.",
+            "score": 57.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 15,
+            "timestamp": "2026-04-20",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/20/admin/mo76j6w7-b75727c0-audio.wav",
+            "reaction_time_ms": 1209
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh, okay. How old is your dog 🐶",
+            "expected_answer": "My dog is three years old.",
+            "target_objects": null,
+            "user_transcript": "My dog is.",
+            "score": 60.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 21,
+            "timestamp": "2026-04-20",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/20/admin/mo76itmf-8fe96c2e-audio.wav",
+            "reaction_time_ms": 1209
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. How old is your dog 🐶",
+            "expected_answer": "My dog is three years old.",
+            "target_objects": null,
+            "user_transcript": "My dog is this.",
+            "score": 31.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 49,
+            "grammar_score": 14,
+            "timestamp": "2026-04-20",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/20/admin/mo76ifya-4b656878-audio.wav",
+            "reaction_time_ms": 1209
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. How old is your dog? 🐶",
+            "expected_answer": "My dog is three years old.",
+            "target_objects": null,
+            "user_transcript": "My dog is.",
+            "score": 59,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 18,
+            "timestamp": "2026-04-20",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/20/admin/mo76hz4o-e23e5446-audio.wav",
+            "reaction_time_ms": 1209
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. How long is your walk with Son? 🚶‍♂️",
+            "expected_answer": "About 30 minutes every morning.",
+            "target_objects": null,
+            "user_transcript": "Over.",
+            "score": 67.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 35,
+            "timestamp": "2026-04-20",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/20/admin/mo76g6hs-0c87ab72-audio.wav",
+            "reaction_time_ms": 1209
           }
         ]
       },
@@ -1728,6 +2455,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose. (Con hãy nghe và chọn tranh đúng nhé!)",
+              "comment_plain": "cat (con m&egrave;o)",
               "correct_answer": null,
               "student_answer": null,
               "requires_media": true,
@@ -1767,6 +2495,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose. (Con hãy nghe và chọn tranh đúng nhé!)",
+              "comment_plain": "dog (con ch&oacute;)",
               "correct_answer": null,
               "student_answer": null,
               "requires_media": true,
@@ -1806,6 +2535,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose. (Con hãy nghe và chọn tranh đúng nhé!)",
+              "comment_plain": "rabbit (con thỏ)",
               "correct_answer": null,
               "student_answer": null,
               "requires_media": true,
@@ -1845,6 +2575,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose. (Con hãy nghe và chọn tranh đúng nhé!)",
+              "comment_plain": "goldfish (cá vàng)",
               "correct_answer": null,
               "student_answer": null,
               "requires_media": true,
@@ -1884,6 +2615,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose. (Con hãy nghe và chọn tranh đúng nhé!)",
+              "comment_plain": "parrot (con vẹt)",
               "correct_answer": null,
               "student_answer": null,
               "requires_media": true,
@@ -1925,6 +2657,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose. (Con hãy nghe và chọn từ đúng nhé!)",
+              "comment_plain": null,
               "correct_answer": "cat",
               "student_answer": null,
               "requires_media": false,
@@ -1958,6 +2691,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose. (Con hãy nghe và chọn từ đúng nhé!)",
+              "comment_plain": null,
               "correct_answer": "dog",
               "student_answer": null,
               "requires_media": false,
@@ -1991,6 +2725,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose. (Con hãy nghe và chọn từ đúng nhé!)",
+              "comment_plain": null,
               "correct_answer": "rabbit",
               "student_answer": null,
               "requires_media": false,
@@ -2024,6 +2759,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose. (Con hãy nghe và chọn từ đúng nhé!)",
+              "comment_plain": null,
               "correct_answer": "goldfish",
               "student_answer": null,
               "requires_media": false,
@@ -2057,6 +2793,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose. (Con hãy nghe và chọn từ đúng nhé!)",
+              "comment_plain": null,
               "correct_answer": "parrot",
               "student_answer": null,
               "requires_media": false,
@@ -2103,33 +2840,107 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": 33,
+          "audio_turns": 60,
+          "avg_reaction_ms": 1512,
+          "fastest_reaction_ms": 641,
+          "total_duration_ms": 1494910,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-04-06",
         "pronunciation_attempts": 43,
         "pronunciation_score_avg": 57.19,
-        "free_speaking_attempts": 2,
+        "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "inaccordant": 1,
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "incorrect": 1
         },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 64.81,
         "worst_speaking_items": [
           {
-            "question": "Can you tell me what it is?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "By.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-04-06"
+            "lms_type": "conversation",
+            "question": "You mean \"The\" as a word, or did you mean \"thirty\" again? 🙂",
+            "expected_answer": "I meant thirty, I am thirty years old.",
+            "target_objects": null,
+            "user_transcript": "I miss.",
+            "score": 60.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 21,
+            "timestamp": "2026-04-06",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn7msrp-69d2e85b-audio.wav",
+            "reaction_time_ms": 2073
           },
           {
-            "question": "What do you like to play?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "Yes.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "timestamp": "2026-04-06"
+            "lms_type": "conversation",
+            "question": "Nice. Do you mean you are thirty years old? 🙂",
+            "expected_answer": "Yes, I am thirty years old.",
+            "target_objects": null,
+            "user_transcript": "The.",
+            "score": 56.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 13,
+            "timestamp": "2026-04-06",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn7mehk-6de3131b-audio.wav",
+            "reaction_time_ms": 2073
+          },
+          {
+            "lms_type": "conversation",
+            "question": "No problem. Do you mean blue eyes? 😊",
+            "expected_answer": "Yes, I mean blue eyes.",
+            "target_objects": null,
+            "user_transcript": "Thirty.",
+            "score": 18.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 37,
+            "timestamp": "2026-04-06",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn7m0li-f9752cbb-audio.wav",
+            "reaction_time_ms": 2073
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi! Nice to chat with you. Ready to talk about you? 😄",
+            "expected_answer": "Yes, I am ready. I want to talk about my family and myself.",
+            "target_objects": null,
+            "user_transcript": "Oh.",
+            "score": 20.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 41,
+            "timestamp": "2026-04-06",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn7ketz-252bec8c-audio.wav",
+            "reaction_time_ms": 2073
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. What do you do to help her? 😊",
+            "expected_answer": "I help by ironing and measuring the suits. I also cut fabric sometimes.",
+            "target_objects": null,
+            "user_transcript": "I help me this in room.",
+            "score": 35.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 54,
+            "grammar_score": 17,
+            "timestamp": "2026-04-06",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn7jk9t-e6936990-audio.wav",
+            "reaction_time_ms": 2073
           }
         ]
       },
@@ -2175,12 +2986,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+            "comment_plain": "audio: I have big eyes. eyes: đ&ocirc;i mắt big: lớn",
             "correct_answer": "A.",
-            "student_answer": [
-              "0",
-              "0",
-              "1"
-            ],
+            "student_answer": "C.",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -2209,7 +3017,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7700,
@@ -2217,6 +3026,7 @@
             "question_folder": "Biểu đồ",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look and say (Con hãy nhìn và nói.) She has small eyes.",
+            "comment_plain": null,
             "correct_answer": "She has small eyes.",
             "student_answer": "she have own ears",
             "requires_media": false,
@@ -2229,7 +3039,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -2251,33 +3062,111 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": 32,
+          "audio_turns": 50,
+          "avg_reaction_ms": 1331,
+          "fastest_reaction_ms": 648,
+          "total_duration_ms": 1784732,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-04-13",
         "pronunciation_attempts": 28,
         "pronunciation_score_avg": 60.32,
-        "free_speaking_attempts": 2,
+        "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "inaccordant": 1,
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "incorrect": 1
         },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 72.77,
         "worst_speaking_items": [
           {
+            "lms_type": "conversation",
+            "question": "Nice. What do you eat with your mom? 🍽️",
+            "expected_answer": "We eat rice and chicken together.",
+            "target_objects": null,
+            "user_transcript": "And.",
+            "score": 34,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 33,
+            "grammar_score": 35,
+            "timestamp": "2026-04-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx7jgty-4de9af59-audio.wav",
+            "reaction_time_ms": 781
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. That’s clear and useful. Where are you going? 🚗",
+            "expected_answer": "I need to leave for work.",
+            "target_objects": null,
+            "user_transcript": "I know where to live from.",
+            "score": 41.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 63,
+            "grammar_score": 20,
+            "timestamp": "2026-04-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx7gs9g-6776e4e6-audio.wav",
+            "reaction_time_ms": 781
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. Do you mean ‘I need to…’ plus a verb like ‘drink’ or ‘go’? 😊",
+            "expected_answer": "I need to drink tea from the pot.",
+            "target_objects": null,
+            "user_transcript": "I need to.",
+            "score": 61,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 83,
+            "grammar_score": 39,
+            "timestamp": "2026-04-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx7g0rl-b8bbf6ae-audio.wav",
+            "reaction_time_ms": 781
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Do you mean ‘I drink tea from the pot’ or something else? ☺️",
+            "expected_answer": "I drink tea from the pot.",
+            "target_objects": null,
+            "user_transcript": "I.",
+            "score": 58.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 17,
+            "timestamp": "2026-04-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx7fbcl-16f10b56-audio.wav",
+            "reaction_time_ms": 781
+          },
+          {
+            "lms_type": "brainstorm",
             "question": "What is it?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": [
+              "Car",
+              "Beard",
+              "Mustache"
+            ],
             "user_transcript": "The The.",
             "score": 0,
             "answer_type": "incorrect",
-            "timestamp": "2026-04-13"
-          },
-          {
-            "question": "How are you today?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "Thank you.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "timestamp": "2026-04-13"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx6kb3e-f6dfca87-audio.wav",
+            "reaction_time_ms": 2531
           }
         ]
       },
@@ -2321,6 +3210,7 @@
             "question_folder": "Biểu đồ",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look and say (Con hãy nhìn và nói.)",
+            "comment_plain": null,
             "correct_answer": "arm",
             "student_answer": "um",
             "requires_media": true,
@@ -2335,7 +3225,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7715,
@@ -2343,6 +3234,7 @@
             "question_folder": "Biểu đồ",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look and say (Con hãy nhìn và nói.)",
+            "comment_plain": null,
             "correct_answer": "mustache",
             "student_answer": "real",
             "requires_media": true,
@@ -2357,7 +3249,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7715,
@@ -2365,11 +3258,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Look and choose True/False (Con hãy nhìn tranh và chọn ĐÚNG/SAI.) short beard",
+            "comment_plain": "short beard: bộ râu ngắn",
             "correct_answer": "B. FALSE",
-            "student_answer": [
-              "1",
-              "0"
-            ],
+            "student_answer": "A. TRUE",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/27/9c2e_longbeard.png"
@@ -2388,7 +3279,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7715,
@@ -2396,12 +3288,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) Peter: Hi John, what do you look like? John: I have big eyes and blue hair. And you? Peter: I have a big nose and dark hair. John: What does Phong look like? Peter: He has long legs and dark hair. John: Oh, does he have a",
+            "comment_plain": null,
             "correct_answer": "B. He has big eyes and blue hair.",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A. He has a big nose and dark hair.",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -2424,7 +3313,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7715,
@@ -2432,12 +3322,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) Peter: Hi John, what do you look like? John: I have big eyes and blue hair. And you? Peter: I have a big nose and dark hair. John: What does Phong look like? Peter: He has long legs and dark hair. John: Oh, does he have a",
+            "comment_plain": null,
             "correct_answer": "C. Yes, he does.",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A. Yes, she does.",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -2460,7 +3347,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -2482,49 +3370,107 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 33,
+          "audio_turns": 130,
+          "avg_reaction_ms": 2036,
+          "fastest_reaction_ms": 750,
+          "total_duration_ms": 1626282,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-03-13",
         "pronunciation_attempts": 90,
         "pronunciation_score_avg": 40.59,
-        "free_speaking_attempts": 4,
+        "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "inaccordant": 1,
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 3,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "incorrect": 3
         },
+        "conversation_attempts": 28,
+        "conversation_score_avg": 68.65,
         "worst_speaking_items": [
           {
-            "question": "What is it?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "Sure.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-03-13"
+            "lms_type": "conversation",
+            "question": "Nice. Do you run with friends or alone? 🏃‍♂️",
+            "expected_answer": "I run alone in the park. I like running near the trees.",
+            "target_objects": null,
+            "user_transcript": "I run.",
+            "score": 53.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 66,
+            "grammar_score": 41,
+            "timestamp": "2026-03-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoyyjeq-5901e859-audio.wav",
+            "reaction_time_ms": 944
           },
           {
-            "question": "What is it?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "Whatever you not be about there.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-03-12"
+            "lms_type": "conversation",
+            "question": "Good. What do you like to do in the park 🌳",
+            "expected_answer": "I like to walk and sit on a bench. I sometimes read a book or look at the flowers.",
+            "target_objects": null,
+            "user_transcript": "I like.",
+            "score": 58,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 16,
+            "timestamp": "2026-03-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoyxmi0-cee02a26-audio.wav",
+            "reaction_time_ms": 944
           },
           {
-            "question": "What can you see?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "I can see A.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-03-12"
+            "lms_type": "conversation",
+            "question": "Good, you saw a bird in the tree 😊 What did the bird look like",
+            "expected_answer": "It was small and brown with a red head",
+            "target_objects": null,
+            "user_transcript": "Is it from?",
+            "score": 33,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 16,
+            "timestamp": "2026-03-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoyvk7e-20176a10-audio.wav",
+            "reaction_time_ms": 944
           },
           {
-            "question": "What did you do today? Is there any fun activity?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "And.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "timestamp": "2026-03-12"
+            "lms_type": "conversation",
+            "question": "Nice, can you finish: I saw one in the... 🌲",
+            "expected_answer": "I saw one in the forest next to a big tree.",
+            "target_objects": null,
+            "user_transcript": "I saw.",
+            "score": 46,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 42,
+            "timestamp": "2026-03-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoyudvi-96ce8d56-audio.wav",
+            "reaction_time_ms": 944
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice, please finish the sentence about what you like in nature 😊",
+            "expected_answer": "I like to walk in the forest and look at trees and flowers.",
+            "target_objects": null,
+            "user_transcript": "I saw one in the",
+            "score": 57.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 73,
+            "grammar_score": 42,
+            "timestamp": "2026-03-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoyu3b1-37175b80-audio.wav",
+            "reaction_time_ms": 944
           }
         ]
       },
@@ -2568,12 +3514,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+            "comment_plain": "audio:flower flower :b&ocirc;ng hoa",
             "correct_answer": "B.",
-            "student_answer": [
-              "0",
-              "0",
-              "1"
-            ],
+            "student_answer": "C.",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -2602,7 +3545,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7664,
@@ -2610,12 +3554,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+            "comment_plain": "audio: There are some leaves. leaves: lá cây ( số &iacute;t: leaf)",
             "correct_answer": "C.",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A.",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -2644,7 +3585,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7664,
@@ -2652,12 +3594,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
+            "comment_plain": "audio: There aren&#39;t any leaves. leaves: lá cây ( số &iacute;t: leaf)",
             "correct_answer": "B. There aren't any leaves.",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A. There are three trees.",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -2680,7 +3619,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7664,
@@ -2688,12 +3628,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
+            "comment_plain": "audio: How many trees are there? There aren&#39;t any trees. tree: cây",
             "correct_answer": "A.",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B.",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -2722,7 +3659,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7664,
@@ -2730,12 +3668,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Choose the correct answer. (Con hãy chọn phương án đúng.)",
+            "comment_plain": "leaves: lá cây",
             "correct_answer": "C. leaves",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A. leaf",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/25/a3c9_leaves.png"
@@ -2760,7 +3695,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -2782,41 +3718,118 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 59,
+          "audio_turns": 72,
+          "avg_reaction_ms": 1655,
+          "fastest_reaction_ms": 791,
+          "total_duration_ms": 1520793,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-04-01",
         "pronunciation_attempts": 52,
         "pronunciation_score_avg": 72.02,
-        "free_speaking_attempts": 3,
+        "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "inaccordant": 1,
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "incorrect": 2
         },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 76.15,
         "worst_speaking_items": [
           {
+            "lms_type": "conversation",
+            "question": "Hello — nice to see you. Ready to finish your sentence about your family? 😊",
+            "expected_answer": "I have a mother and a brother.",
+            "target_objects": null,
+            "user_transcript": "You'll be about.",
+            "score": 59.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 19,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng0frb0-787ebaf6-audio.wav",
+            "reaction_time_ms": 1641
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Great — tell me about your family. 👨‍👩‍👧‍👦",
+            "expected_answer": "I live with my mom, dad, and one sister. We eat dinner together every day.",
+            "target_objects": null,
+            "user_transcript": "I like.",
+            "score": 58,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 16,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng0efza-2236a096-audio.wav",
+            "reaction_time_ms": 1641
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice to meet you, Chang. How old are your parents? 😊",
+            "expected_answer": "My parents are thirty-five and thirty-two.",
+            "target_objects": null,
+            "user_transcript": "My parents are two.",
+            "score": 64,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 82,
+            "grammar_score": 46,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng0br3w-b8b1f563-audio.wav",
+            "reaction_time_ms": 1641
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Great. Tell me your name and age. 🙂",
+            "expected_answer": "My name is Ana and I am 12 years old.",
+            "target_objects": null,
+            "user_transcript": "My name is",
+            "score": 68.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 37,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng0auc6-5920f4aa-audio.wav",
+            "reaction_time_ms": 1641
+          },
+          {
+            "lms_type": "brainstorm",
             "question": "What is it?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": [
+              "eye",
+              "ears",
+              "nose",
+              "hand",
+              "leg",
+              "hair",
+              "foot",
+              "mouth",
+              "arm",
+              "neck"
+            ],
             "user_transcript": "And.",
             "score": 0,
             "answer_type": "incorrect",
-            "timestamp": "2026-04-01"
-          },
-          {
-            "question": "What can you see?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "I'm fine, thank you.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-03-26"
-          },
-          {
-            "question": "What's the weather like today?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "One key.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "timestamp": "2026-03-26"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzlfib-cfc0dcba-audio.wav",
+            "reaction_time_ms": null
           }
         ]
       },
@@ -2860,11 +3873,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
+            "comment_plain": "audio: ear ear: tai",
             "correct_answer": "B.",
-            "student_answer": [
-              "1",
-              "0"
-            ],
+            "student_answer": "A.",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/26/7121_eyes.png"
@@ -2887,7 +3898,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7680,
@@ -2895,6 +3907,7 @@
             "question_folder": "Biểu đồ",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look and say (Con hãy nhìn và nói.) I have a ....",
+            "comment_plain": null,
             "correct_answer": "small nose",
             "student_answer": "mo no",
             "requires_media": true,
@@ -2909,7 +3922,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7680,
@@ -2917,6 +3931,7 @@
             "question_folder": "Biểu đồ",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look and say (Con hãy nhìn và nói.) I have ....",
+            "comment_plain": null,
             "correct_answer": "small eyes",
             "student_answer": "seven areas",
             "requires_media": true,
@@ -2931,7 +3946,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7680,
@@ -2939,12 +3955,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and odd one out (Con hãy đọc và chọn phương án khác loại)",
+            "comment_plain": null,
             "correct_answer": "A. small",
-            "student_answer": [
-              "0",
-              "0",
-              "1"
-            ],
+            "student_answer": "C. eyes",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -2967,7 +3980,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7680,
@@ -2975,12 +3989,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Look and choose the correct answer. (Con hãy nhìn tranh và chọn phương án đúng.)",
+            "comment_plain": null,
             "correct_answer": "B. big eyes",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A. small eyes",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/14/dfad_big-eyes.png"
@@ -3005,248 +4016,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3812168,
-      "program_id": null,
-      "level": 3,
-      "position": 1,
-      "title": "Unit 1A : Nature - Lesson 1: There's one spider.",
-      "desc": "-  insects, ant, worm, spider, butterfly, ladybug\n- How many spiders are there? - There's one spider./There're three spiders.",
-      "status": "completed",
-      "last_activity_date": "2026-03-25",
-      "days_since_last_practice": 27,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.3509,
-      "composite_priority_score": 0.6754,
-      "in_class": {
-        "participated": true,
-        "session_count": 2,
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-03-10",
-        "pronunciation_attempts": 58,
-        "pronunciation_score_avg": 41.74,
-        "free_speaking_attempts": 3,
-        "free_speaking_score_avg": 33.33,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1,
-          "incorrect": 1,
-          "accordant": 1
-        },
-        "worst_speaking_items": [
-          {
-            "question": "what can you see ?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "Can you see?",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-03-09"
-          },
-          {
-            "question": "How are you today?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "How are you today, heart Lady?",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "timestamp": "2026-03-09"
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7647,
-          "score": 0.95,
-          "correct": 19,
-          "total": 20,
-          "submitted_date": "2026-03-25"
-        },
-        "luyen_tap": {
-          "practice_id": 13410,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-03-22"
-        },
-        "lms_ids": {
-          "bai_tap": 7647,
-          "luyen_tap": 13410
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 3": {
-            "correct": 221,
-            "total": 240,
-            "accuracy": 0.921
-          },
-          "Biểu đồ": {
-            "correct": 74,
-            "total": 80,
-            "accuracy": 0.925
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 7647,
-            "question_id": 302770,
-            "question_folder": "English Tutoring - Level 3",
-            "question_type": "Một lựa chọn",
-            "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
-            "correct_answer": "B.",
-            "student_answer": [
-              "1",
-              "0"
             ],
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/25/6f0a_butterfly.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/90cd_tick..png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/b73a_cross.png"
-                ],
-                "audio_urls": []
-              }
-            ]
-          },
-          {
-            "practice_id": 7647,
-            "question_id": 302775,
-            "question_folder": "English Tutoring - Level 3",
-            "question_type": "Một lựa chọn",
-            "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
-            "correct_answer": "B.",
-            "student_answer": [
-              "1",
-              "0"
-            ],
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/25/08fc_insect.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/90cd_tick..png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/b73a_cross.png"
-                ],
-                "audio_urls": []
-              }
-            ]
-          },
-          {
-            "practice_id": 7647,
-            "question_id": 302778,
-            "question_folder": "English Tutoring - Level 3",
-            "question_type": "Một lựa chọn",
-            "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-            "correct_answer": "B.",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/04/27/963d_3-ants.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/04/27/f634_10-ants.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/04/27/9bc1_5-ants.png"
-                ],
-                "audio_urls": []
-              }
-            ]
-          },
-          {
-            "practice_id": 7647,
-            "question_id": 392138,
-            "question_folder": "Biểu đồ",
-            "question_type": "Trả lời bằng giọng nói",
-            "question_text": "Look and say (Con hãy nhìn và nói.)",
-            "correct_answer": "butterfly",
-            "student_answer": "fly",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/16/548a_butterfly.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "butterfly",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ]
-          },
-          {
-            "practice_id": 7647,
-            "question_id": 392142,
-            "question_folder": "Biểu đồ",
-            "question_type": "Trả lời bằng giọng nói",
-            "question_text": "Look and say (Con hãy nhìn và nói.)",
-            "correct_answer": "worm",
-            "student_answer": "one",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/16/72c7_worms.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "worm",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ]
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -3263,30 +4034,60 @@
       "last_activity_date": "2026-03-27",
       "days_since_last_practice": 25,
       "forgetting_score": 1.0,
-      "weakness_score": 0.275,
-      "composite_priority_score": 0.6375,
+      "weakness_score": 0.525,
+      "composite_priority_score": 0.7625,
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 38,
+          "avg_reaction_ms": 1441,
+          "fastest_reaction_ms": 882,
+          "total_duration_ms": 0,
+          "session_status": "COMPLETED",
+          "completion_pct": 5
+        },
         "is_completed": true,
         "completion_pct": 71,
         "latest_session_date": "2026-03-24",
         "pronunciation_attempts": 35,
         "pronunciation_score_avg": 72.69,
-        "free_speaking_attempts": 2,
-        "free_speaking_score_avg": 50.0,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
         "free_speaking_answer_type_dist": {
-          "accordant": 1,
+          "accordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "incorrect": 1
         },
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": [
           {
+            "lms_type": "brainstorm",
             "question": "What can you see?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": [
+              "sun",
+              "minus",
+              "plus",
+              "leaf",
+              "tree",
+              "equals",
+              "rainbow"
+            ],
             "user_transcript": "The.",
             "score": 0,
             "answer_type": "incorrect",
-            "timestamp": "2026-03-23"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-23",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/23/admin/mn37n1il-7b122715-audio.wav",
+            "reaction_time_ms": null
           }
         ]
       },
@@ -3330,12 +4131,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) Harry: Lily, look at the sky, how many (17) ......... are there? Lily: There're five clouds. Is there any wind? Harry: No, (18) ............... . Are there any ponds? Lily: Yes, (19) .............. pond. Are there any flower",
+            "comment_plain": null,
             "correct_answer": "C. There isn't",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B. There are",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -3358,7 +4156,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7703,
@@ -3366,12 +4165,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) Harry: Lily, look at the sky, how many (17) ......... are there? Lily: There're five clouds. Is there any wind? Harry: No, (18) ............... . Are there any ponds? Lily: Yes, (19) .............. . Are there any flowers? H",
+            "comment_plain": null,
             "correct_answer": "A. There are",
-            "student_answer": [
-              "0",
-              "0",
-              "1"
-            ],
+            "student_answer": "C. There is",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -3394,7 +4190,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7703,
@@ -3402,12 +4199,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) Harry: Lily, look at the sky, how many (17) ......... are there? Lily: There're five clouds. Is there any wind? Harry: No, (18) ............... . Are there any ponds? Lily: Yes, (19) .............. . Are there any flowers? H",
+            "comment_plain": null,
             "correct_answer": "C. There aren't",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B. There is",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -3430,7 +4224,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7703,
@@ -3438,12 +4233,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) Harry: Lily, look at the sky, how many (17) ......... are there? Lily: There're five clouds. Is there any wind? Harry: No, (18) ............... . Are there any ponds? Lily: Yes, (19) .............. . Are there any flowers? H",
+            "comment_plain": null,
             "correct_answer": "C. There aren't",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B. There is",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -3466,7 +4258,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13488,
@@ -3474,12 +4267,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
+            "comment_plain": "Audio: There&#39;re ten ants: C&oacute; 10 con kiến. => Đáp án: A",
             "correct_answer": "A.",
-            "student_answer": [
-              "0",
-              "0",
-              "1"
-            ],
+            "student_answer": "C.",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -3508,7 +4298,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13488,
@@ -3516,12 +4307,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) David: Emily, look at the sky, is there any (1) ......... ? Emily: Yes, there is some wind. And how many clouds are there? David: There're five (2) ............... . Are there any ponds are there? Emily: Yes, (3) ...........",
+            "comment_plain": "Câu hỏi: how many clouds are there? C&oacute; bao nhi&ecirc;u đám mây? => Đáp án: (2) - B (C&oacute; 5 đám mây.)",
             "correct_answer": "B. clouds",
-            "student_answer": [
-              "0",
-              "0",
-              "1"
-            ],
+            "student_answer": "C. tree",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -3544,7 +4332,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13488,
@@ -3552,12 +4341,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) David: Emily, look at the sky, is there any (1) ......... ? Emily: Yes, there is some wind. And how many clouds are there? David: There're five (2) ............... . Are there any ponds? Emily: Yes, (3) .............. . How ",
+            "comment_plain": "Câu hỏi: Are there any ponds: C&oacute; ao kh&ocirc;ng? => Đáp án: C (Câu khẳng định d&ugrave;ng Yes, there are)",
             "correct_answer": "C. there are",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B. flower",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -3580,7 +4366,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13488,
@@ -3588,6 +4375,7 @@
             "question_folder": "Biểu đồ",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look and say (Con hãy nhìn và đặt câu dựa vào hình ảnh.)",
+            "comment_plain": null,
             "correct_answer": "How many flowers are there? There aren't any flowers.",
             "student_answer": "how many fruits - - - are - they",
             "requires_media": true,
@@ -3602,7 +4390,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13488,
@@ -3610,12 +4399,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and reorder the sentence (Con hãy đọc và sắp xếp thành câu hoàn chỉnh.) /There're/five/trees/ garden./in/the/",
+            "comment_plain": "There&#39;re five trees in the garden: C&oacute; 5 cái cây trong vườn. => Đáp án: C",
             "correct_answer": "C. There're five trees in the garden.",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B. There're trees in five the garden.",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -3638,7 +4424,323 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3812168,
+      "program_id": null,
+      "level": 3,
+      "position": 1,
+      "title": "Unit 1A : Nature - Lesson 1: There's one spider.",
+      "desc": "-  insects, ant, worm, spider, butterfly, ladybug\n- How many spiders are there? - There's one spider./There're three spiders.",
+      "status": "completed",
+      "last_activity_date": "2026-03-25",
+      "days_since_last_practice": 27,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5175,
+      "composite_priority_score": 0.7588,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "session_metrics": {
+          "cups": 15,
+          "audio_turns": 83,
+          "avg_reaction_ms": 1927,
+          "fastest_reaction_ms": 606,
+          "total_duration_ms": 71720,
+          "session_status": "COMPLETED",
+          "completion_pct": 71
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-10",
+        "pronunciation_attempts": 58,
+        "pronunciation_score_avg": 41.74,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 50.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1,
+          "accordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 60.42,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Good. Tell me one insect you like. 🐞",
+            "expected_answer": "I like butterflies.",
+            "target_objects": null,
+            "user_transcript": "I'mcon.",
+            "score": 7,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 14,
+            "timestamp": "2026-03-09",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/09/admin/mmj90rak-e8a27f41-audio.wav",
+            "reaction_time_ms": 2195
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Tell me the insect you like most 😄",
+            "expected_answer": "I like the butterfly most.",
+            "target_objects": null,
+            "user_transcript": "I like the insect.",
+            "score": 33,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 24,
+            "grammar_score": 42,
+            "timestamp": "2026-03-09",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/09/admin/mmj90ga0-1325f0f8-audio.wav",
+            "reaction_time_ms": 2195
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Which insect do you like most? 🐞",
+            "expected_answer": "I like butterflies the most because they are colorful and gentle.",
+            "target_objects": null,
+            "user_transcript": "I like the most.",
+            "score": 36,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 54,
+            "grammar_score": 18,
+            "timestamp": "2026-03-09",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/09/admin/mmj8zzwo-d71356e2-audio.wav",
+            "reaction_time_ms": 2195
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Can you try one word: butterfly, ladybug, or spider? 🦋",
+            "expected_answer": "Butterfly",
+            "target_objects": null,
+            "user_transcript": "Borthf.",
+            "score": 8,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 16,
+            "timestamp": "2026-03-09",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/09/admin/mmj8wt6j-fe5eaa8f-audio.wav",
+            "reaction_time_ms": 2195
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Can you name the insect you like most? 🐞",
+            "expected_answer": "I like butterflies the most.",
+            "target_objects": null,
+            "user_transcript": "I like.",
+            "score": 59.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 19,
+            "timestamp": "2026-03-09",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/09/admin/mmj8wgcr-4f7bab12-audio.wav",
+            "reaction_time_ms": 2195
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7647,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-03-25"
+        },
+        "luyen_tap": {
+          "practice_id": 13410,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-22"
+        },
+        "lms_ids": {
+          "bai_tap": 7647,
+          "luyen_tap": 13410
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 221,
+            "total": 240,
+            "accuracy": 0.921
+          },
+          "Biểu đồ": {
+            "correct": 74,
+            "total": 80,
+            "accuracy": 0.925
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7647,
+            "question_id": 302770,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
+            "comment_plain": "audio: ant ant: con kiến",
+            "correct_answer": "B.",
+            "student_answer": "A.",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/25/6f0a_butterfly.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/90cd_tick..png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/b73a_cross.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7647,
+            "question_id": 302775,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
+            "comment_plain": "audio: animal animal: động vật",
+            "correct_answer": "B.",
+            "student_answer": "A.",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/25/08fc_insect.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/90cd_tick..png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/b73a_cross.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7647,
+            "question_id": 302778,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+            "comment_plain": "audio: There are ten ants. ant: con kiến ten: 10",
+            "correct_answer": "B.",
+            "student_answer": "A.",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/04/27/963d_3-ants.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/04/27/f634_10-ants.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/04/27/9bc1_5-ants.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7647,
+            "question_id": 392138,
+            "question_folder": "Biểu đồ",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn và nói.)",
+            "comment_plain": null,
+            "correct_answer": "butterfly",
+            "student_answer": "fly",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/16/548a_butterfly.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "butterfly",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7647,
+            "question_id": 392142,
+            "question_folder": "Biểu đồ",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn và nói.)",
+            "comment_plain": null,
+            "correct_answer": "worm",
+            "student_answer": "one",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/16/72c7_worms.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "worm",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -3660,6 +4762,15 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 45,
+          "audio_turns": 121,
+          "avg_reaction_ms": 1170,
+          "fastest_reaction_ms": 578,
+          "total_duration_ms": 1468294,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-04-12",
@@ -3668,7 +4779,88 @@
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
-        "worst_speaking_items": []
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 28,
+        "conversation_score_avg": 70.72,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Okay, do you mean errors in English or in a different thing? 🤔",
+            "expected_answer": "I mean errors in my sentence.",
+            "target_objects": null,
+            "user_transcript": "I mean.",
+            "score": 52.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 66,
+            "grammar_score": 39,
+            "timestamp": "2026-04-12",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvtv7fn-d784ec5c-audio.wav",
+            "reaction_time_ms": 1201
+          },
+          {
+            "lms_type": "conversation",
+            "question": "I see. Do you mean errors in a sentence or problems in something else? 🤔",
+            "expected_answer": "I mean errors in my sentence about my family.",
+            "target_objects": null,
+            "user_transcript": "I mean.",
+            "score": 68,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 36,
+            "timestamp": "2026-04-12",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvtut69-208c9a69-audio.wav",
+            "reaction_time_ms": 1201
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Great. Tell me about your family. 👨‍👩‍👧‍👦",
+            "expected_answer": "I have a small family. I live with my mom and brother.",
+            "target_objects": null,
+            "user_transcript": "They have error.",
+            "score": 30,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 16,
+            "grammar_score": 44,
+            "timestamp": "2026-04-12",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvttgrp-4712341e-audio.wav",
+            "reaction_time_ms": 1201
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Okay. What do you like to do with your mom? 👩❤️",
+            "expected_answer": "We cook and eat together. We also go to the park on weekends.",
+            "target_objects": null,
+            "user_transcript": "What color are in.",
+            "score": 57,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 14,
+            "timestamp": "2026-04-12",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvtrdhp-8a12d4c7-audio.wav",
+            "reaction_time_ms": 1201
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Do you mean 'music' with your mom? 🎵",
+            "expected_answer": "Yes, I mean music. We listen to music and sing together.",
+            "target_objects": null,
+            "user_transcript": "I.",
+            "score": 60,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 20,
+            "timestamp": "2026-04-09",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/09/admin/mnrie68l-46d24694-audio.wav",
+            "reaction_time_ms": 964
+          }
+        ]
       },
       "homework": {
         "attempted": true,
@@ -3710,12 +4902,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and find the incorrect answer (Con hãy đọc và chọn đáp án sai.) Do he have strong arms ?",
+            "comment_plain": null,
             "correct_answer": "A. Do",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B. have",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -3738,7 +4927,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7711,
@@ -3746,12 +4936,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and find the incorrect answer (Con hãy đọc và chọn đáp án sai.) Do you has big eyes ?",
+            "comment_plain": null,
             "correct_answer": "B. has",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A. Do",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -3774,7 +4961,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7711,
@@ -3782,12 +4970,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and unsrcamble the letters (Đọc và sắp xếp các chữ cái thành từ đúng.) r m a s",
+            "comment_plain": null,
             "correct_answer": "C. arms",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A. amrs",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/16/6f3e_arms.png"
@@ -3812,7 +4997,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7711,
@@ -3820,12 +5006,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and reorder the words to make the correct sentences (Con hãy đọc và sắp xếp thành câu hoàn chỉnh.) /a/strong/He/nose/and/arms./has/",
+            "comment_plain": null,
             "correct_answer": "C. He has a nose and strong arms.",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B. He has a strong and nose arms.",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -3848,7 +5031,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7711,
@@ -3856,12 +5040,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose correct picture (Con hãy đọc và chọn tranh đúng.) Emma: Hey Henry, do you have brown eyes (1)? Henry: Yes, I do. I have brown eyes and long legs (2) . Emma: Peter is my friend. He has big eyes (3) and short hair. Henry: Oh, does he has strong arms (4)? Emma: Yes, he does. He has str",
+            "comment_plain": null,
             "correct_answer": "B.",
-            "student_answer": [
-              "0",
-              "0",
-              "1"
-            ],
+            "student_answer": "C.",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -3890,7 +5071,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -3912,6 +5094,15 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 1,
+          "avg_reaction_ms": null,
+          "fastest_reaction_ms": null,
+          "total_duration_ms": 53386,
+          "session_status": "COMPLETED",
+          "completion_pct": 14
+        },
         "is_completed": true,
         "completion_pct": 14,
         "latest_session_date": "2026-03-16",
@@ -3920,6 +5111,11 @@
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": []
       },
       "homework": {
@@ -3962,11 +5158,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Listen and choose correct answer (Con hãy nghe và chọn câu trả lời đúng.) Is there ... wind?",
+            "comment_plain": "audio: Is there any wind? wind: gi&oacute;",
             "correct_answer": "B. any",
-            "student_answer": [
-              "1",
-              "0"
-            ],
+            "student_answer": "A. some",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -3983,7 +5177,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7666,
@@ -3991,6 +5186,7 @@
             "question_folder": "Biểu đồ",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look and say (Con hãy nhìn và nói.)",
+            "comment_plain": null,
             "correct_answer": "cloud",
             "student_answer": "girl",
             "requires_media": true,
@@ -4005,7 +5201,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7666,
@@ -4013,12 +5210,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Odd one out (Con hãy đọc và chọn phương án khác loại.)",
+            "comment_plain": null,
             "correct_answer": "C. Ladybug",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A. Sun",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -4041,7 +5235,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7666,
@@ -4049,11 +5244,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) David: Emily, look! Is there any sun? Emily: (1) ....... , there isn't. There're some clouds. How many clouds are there? David: There're five .........(2). Is there (3) .......... wind? Emily: Yes, (4) .............. . It's",
+            "comment_plain": null,
             "correct_answer": "B. No",
-            "student_answer": [
-              "1",
-              "0"
-            ],
+            "student_answer": "A. Yes",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -4070,7 +5263,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7666,
@@ -4078,11 +5272,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) David: Emily, look! Is there any sun? Emily: (1) ......., there isn't. There're some clouds. How many clouds are there? David: There're five .........(2). Is there (3) .......... wind? Emily: Yes, (4) .............. . It's ",
+            "comment_plain": null,
             "correct_answer": "A. any",
-            "student_answer": [
-              "0",
-              "1"
-            ],
+            "student_answer": "B. some",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -4099,7 +5291,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}

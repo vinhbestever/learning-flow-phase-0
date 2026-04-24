@@ -4,7 +4,10 @@ from agents.diagnostic_agent import build_prompt, run_diagnostic
 
 SUMMARY = {
     "overall_pronunciation_score_avg": 86.96,
+    "overall_brainstorm_score_avg": 72.5,
     "overall_free_speaking_score_avg": 30.71,
+    "overall_conversation_score_avg": 86.26,
+    "overall_brainstorm_answer_type_dist": {"correct": 10, "incorrect": 2},
     "overall_free_speaking_answer_type_dist": {"correct": 48, "incorrect": 34, "inaccordant": 16},
     "total_lessons": 50,
     "lessons_by_status": {"completed": 48, "in_class_only": 2},
@@ -29,11 +32,31 @@ CANDIDATES = [
         ],
         "worst_speaking_items": [
             {
+                "lms_type": "free_speaking",
                 "question": "What do you eat?",
+                "expected_answer": None,
+                "target_objects": None,
                 "user_transcript": "I eat bitter.",
                 "score": 0,
                 "answer_type": "inaccordant",
-            }
+                "correct_objects": None,
+                "pronunciation_score": None,
+                "grammar_score": None,
+                "timestamp": "2026-03-01",
+            },
+            {
+                "lms_type": "conversation",
+                "question": "How do you go there usually?",
+                "expected_answer": "I usually walk. Sometimes I go by bus.",
+                "target_objects": None,
+                "user_transcript": "No, I'm ready.",
+                "score": 66,
+                "answer_type": None,
+                "correct_objects": None,
+                "pronunciation_score": 91,
+                "grammar_score": 41,
+                "timestamp": "2026-03-03",
+            },
         ],
         "usable_question_count": 8,
     },
@@ -55,7 +78,45 @@ CANDIDATES = [
 def test_build_prompt_contains_summary_stats():
     prompt = build_prompt(SUMMARY, CANDIDATES)
     assert "86.96" in prompt
+    assert "72.5" in prompt
     assert "30.71" in prompt
+    assert "86.26" in prompt  # conversation_avg
+    assert "Brainstorm" in prompt
+    assert "warmup" in prompt
+
+
+def test_build_prompt_formats_conversation_speaking_item():
+    prompt = build_prompt(SUMMARY, CANDIDATES)
+    assert "[conversation]" in prompt
+    assert "gram=41" in prompt
+    assert "pron=91" in prompt
+
+
+def test_build_prompt_formats_free_speaking_item():
+    prompt = build_prompt(SUMMARY, CANDIDATES)
+    assert "[free_speaking]" in prompt
+    assert "inaccordant" in prompt
+    assert "warmup" in prompt
+
+
+def test_build_prompt_formats_brainstorm_speaking_item():
+    cand = {
+        **CANDIDATES[0],
+        "worst_speaking_items": [
+            {
+                "lms_type": "brainstorm",
+                "question": "Look at the picture",
+                "user_transcript": "apple banana",
+                "score": 40,
+                "answer_type": "incorrect",
+                "target_objects": ["apple", "banana"],
+            }
+        ],
+    }
+    prompt = build_prompt(SUMMARY, [cand])
+    assert "[brainstorm]" in prompt
+    assert "brainstorm" in prompt
+    assert "targets=" in prompt
 
 
 def test_build_prompt_contains_lesson_titles():

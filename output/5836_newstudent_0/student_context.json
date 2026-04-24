@@ -17,8 +17,12 @@
     "weak_skills_global": [],
     "overall_pronunciation_score_avg": 56.78,
     "overall_free_speaking_score_avg": 0.0,
+    "overall_brainstorm_score_avg": 0.0,
+    "overall_conversation_score_avg": 60.54,
     "overall_free_speaking_answer_type_dist": {
-      "lack_of_knowledge": 2,
+      "lack_of_knowledge": 2
+    },
+    "overall_brainstorm_answer_type_dist": {
       "correct": 1,
       "incorrect": 5
     },
@@ -45,6 +49,7 @@
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
           "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+          "comment_plain": "Audio: fan (cái quạt) => Đáp án: B",
           "correct_answer": "B.",
           "student_answer": null,
           "requires_media": true,
@@ -84,6 +89,7 @@
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
           "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+          "comment_plain": "Audio: ball (quả bóng) => Đáp án: C",
           "correct_answer": "C.",
           "student_answer": null,
           "requires_media": true,
@@ -123,6 +129,7 @@
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
           "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+          "comment_plain": "Audio: one (số 1) => Đáp án: A",
           "correct_answer": "A.",
           "student_answer": null,
           "requires_media": true,
@@ -162,6 +169,7 @@
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
           "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+          "comment_plain": "Audio: four (số 4) => Đáp án: C",
           "correct_answer": "C.",
           "student_answer": null,
           "requires_media": true,
@@ -201,6 +209,7 @@
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
           "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn câu đúng nhé.)",
+          "comment_plain": "Audio: What is it? (Nó là gì?) Ảnh: gấu bông = teddy bear => Đáp án: A",
           "correct_answer": "A. It's a teddy bear.",
           "student_answer": null,
           "requires_media": true,
@@ -233,12 +242,79 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
-          "question": "Awesome! I see them too. What else is there?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "Door.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-03-16"
+          "lms_type": "conversation",
+          "question": "Hi! Nice to see you. Are you ready to talk about toys? 😄",
+          "expected_answer": "Yes, I'm ready. I like teddy bears.",
+          "target_objects": null,
+          "user_transcript": "Okay.",
+          "score": 46,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 92,
+          "timestamp": "2026-03-16",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/16/admin/mmtb7qa4-88f3966e-audio.wav",
+          "reaction_time_ms": 1913
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Okay. Do you mean 'let us play' or 'let us see'? 😊",
+          "expected_answer": "I mean 'let us play' with my teddy bear.",
+          "target_objects": null,
+          "user_transcript": "I mean",
+          "score": 69.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 39,
+          "timestamp": "2026-03-16",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/16/admin/mmtb6dmf-ac78bdff-audio.wav",
+          "reaction_time_ms": 1913
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice choice. How old is your teddy bear? 🧸",
+          "expected_answer": "He is three years old.",
+          "target_objects": null,
+          "user_transcript": "Let us.",
+          "score": 15.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 16,
+          "grammar_score": 15,
+          "timestamp": "2026-03-16",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/16/admin/mmtb609p-245f8473-audio.wav",
+          "reaction_time_ms": 1913
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. Which toy do you like the most? 🎲",
+          "expected_answer": "I like my teddy bear the most.",
+          "target_objects": null,
+          "user_transcript": "I like.",
+          "score": 58,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 16,
+          "timestamp": "2026-03-16",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/16/admin/mmtb5ac8-960b08da-audio.wav",
+          "reaction_time_ms": 1913
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi. Nice. What toy do you like? 😊",
+          "expected_answer": "I like my car toy. It is red and small.",
+          "target_objects": null,
+          "user_transcript": "Yeah, I like.",
+          "score": 26.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 33,
+          "grammar_score": 20,
+          "timestamp": "2026-03-16",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/16/admin/mmtb4x9a-38204188-audio.wav",
+          "reaction_time_ms": 1913
         }
       ],
       "practice_ids": {
@@ -264,12 +340,9 @@
           "question_folder": "English Tutoring - Level 2",
           "question_type": "Một lựa chọn",
           "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn câu đúng nhé.) I'm fine. Thanks.",
+          "comment_plain": "I'm fine. Thanks: Tôi ổn. Cảm ơn. => Đáp án: C (Bạn có khỏe không?)",
           "correct_answer": "C. How are you?",
-          "student_answer": [
-            "1",
-            "0",
-            "0"
-          ],
+          "student_answer": "A. What's your name?",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -292,7 +365,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 7670,
@@ -300,12 +374,9 @@
           "question_folder": "English Tutoring - Level 2",
           "question_type": "Một lựa chọn",
           "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn câu đúng nhé.) How old are you?",
+          "comment_plain": "How old are you? Bạn bao nhiêu tuổi? => Đáp án: B (Tôi 7 tuổi.)",
           "correct_answer": "B. I'm seven years old.",
-          "student_answer": [
-            "0",
-            "0",
-            "1"
-          ],
+          "student_answer": "C. It's a ball.",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -328,43 +399,95 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         }
       ],
       "question_bank_preview": [],
       "failed_media_questions_count": 3,
       "worst_speaking_items": [
         {
+          "lms_type": "brainstorm",
           "question": "What is it?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": [
+            "Doll",
+            "Ball",
+            "Teddy Bear"
+          ],
           "user_transcript": "The.",
           "score": 0,
           "answer_type": "incorrect",
-          "timestamp": "2026-03-08"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmhtnnir-2c95437e-audio.wav",
+          "reaction_time_ms": 914
         },
         {
+          "lms_type": "brainstorm",
           "question": "What can you see?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": [
+            "Doll",
+            "Ball",
+            "Teddy Bear"
+          ],
           "user_transcript": "W. Bell.",
           "score": 0,
           "answer_type": "incorrect",
-          "timestamp": "2026-03-08"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmhtng48-056b6fe3-audio.wav",
+          "reaction_time_ms": 3865
         },
         {
-          "question": "What is it?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "Belle My.",
+          "lms_type": "free_speaking",
+          "question": "What color is the sky today?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "The Doo.",
           "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-03-02"
+          "answer_type": "lack_of_knowledge",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmhtm99a-cb2c3a53-audio.wav",
+          "reaction_time_ms": 2913
         },
         {
-          "question": "What can you see?",
-          "question_type": "speaking_unscripted",
-          "user_transcript": "The.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "timestamp": "2026-03-02"
+          "lms_type": "conversation",
+          "question": "Nice. Do you have a favorite toy at home? 😊",
+          "expected_answer": "Yes, my favorite toy is a teddy bear. It is soft and I sleep with it.",
+          "target_objects": null,
+          "user_transcript": "Yes, I have a favorite toy at home.",
+          "score": 48,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 4,
+          "grammar_score": 92,
+          "timestamp": "2026-03-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm98ce3s-e9e2f661-audio.wav",
+          "reaction_time_ms": 1567
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Do you have a favorite toy at home? 😊",
+          "expected_answer": "I have a teddy bear. It is soft and brown.",
+          "target_objects": null,
+          "user_transcript": "I see.",
+          "score": 43.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 37,
+          "timestamp": "2026-03-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm98by19-1c503d69-audio.wav",
+          "reaction_time_ms": 1567
         }
       ],
       "practice_ids": {
@@ -390,26 +513,108 @@
       "in_class": {
         "participated": true,
         "session_count": 1,
+        "session_metrics": {
+          "cups": 56,
+          "audio_turns": 54,
+          "avg_reaction_ms": 1771,
+          "fastest_reaction_ms": 868,
+          "total_duration_ms": 1263463,
+          "session_status": "COMPLETED",
+          "completion_pct": 71
+        },
         "is_completed": true,
         "completion_pct": 71,
         "latest_session_date": "2026-03-16",
         "pronunciation_attempts": 43,
         "pronunciation_score_avg": 61.72,
-        "free_speaking_attempts": 3,
+        "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "lack_of_knowledge": 1,
+          "lack_of_knowledge": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "correct": 1,
           "incorrect": 1
         },
+        "conversation_attempts": 8,
+        "conversation_score_avg": 62.25,
         "worst_speaking_items": [
           {
-            "question": "Awesome! I see them too. What else is there?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "Door.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-03-16"
+            "lms_type": "conversation",
+            "question": "Hi! Nice to see you. Are you ready to talk about toys? 😄",
+            "expected_answer": "Yes, I'm ready. I like teddy bears.",
+            "target_objects": null,
+            "user_transcript": "Okay.",
+            "score": 46,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 92,
+            "timestamp": "2026-03-16",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/16/admin/mmtb7qa4-88f3966e-audio.wav",
+            "reaction_time_ms": 1913
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Okay. Do you mean 'let us play' or 'let us see'? 😊",
+            "expected_answer": "I mean 'let us play' with my teddy bear.",
+            "target_objects": null,
+            "user_transcript": "I mean",
+            "score": 69.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 39,
+            "timestamp": "2026-03-16",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/16/admin/mmtb6dmf-ac78bdff-audio.wav",
+            "reaction_time_ms": 1913
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice choice. How old is your teddy bear? 🧸",
+            "expected_answer": "He is three years old.",
+            "target_objects": null,
+            "user_transcript": "Let us.",
+            "score": 15.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 16,
+            "grammar_score": 15,
+            "timestamp": "2026-03-16",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/16/admin/mmtb609p-245f8473-audio.wav",
+            "reaction_time_ms": 1913
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. Which toy do you like the most? 🎲",
+            "expected_answer": "I like my teddy bear the most.",
+            "target_objects": null,
+            "user_transcript": "I like.",
+            "score": 58,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 16,
+            "timestamp": "2026-03-16",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/16/admin/mmtb5ac8-960b08da-audio.wav",
+            "reaction_time_ms": 1913
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi. Nice. What toy do you like? 😊",
+            "expected_answer": "I like my car toy. It is red and small.",
+            "target_objects": null,
+            "user_transcript": "Yeah, I like.",
+            "score": 26.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 33,
+            "grammar_score": 20,
+            "timestamp": "2026-03-16",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/16/admin/mmtb4x9a-38204188-audio.wav",
+            "reaction_time_ms": 1913
           }
         ]
       },
@@ -433,6 +638,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+              "comment_plain": "Audio: fan (cái quạt) => Đáp án: B",
               "correct_answer": "B.",
               "student_answer": null,
               "requires_media": true,
@@ -472,6 +678,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+              "comment_plain": "Audio: ball (quả bóng) => Đáp án: C",
               "correct_answer": "C.",
               "student_answer": null,
               "requires_media": true,
@@ -511,6 +718,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+              "comment_plain": "Audio: one (số 1) => Đáp án: A",
               "correct_answer": "A.",
               "student_answer": null,
               "requires_media": true,
@@ -550,6 +758,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+              "comment_plain": "Audio: four (số 4) => Đáp án: C",
               "correct_answer": "C.",
               "student_answer": null,
               "requires_media": true,
@@ -589,6 +798,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn câu đúng nhé.)",
+              "comment_plain": "Audio: What is it? (Nó là gì?) Ảnh: gấu bông = teddy bear => Đáp án: A",
               "correct_answer": "A. It's a teddy bear.",
               "student_answer": null,
               "requires_media": true,
@@ -626,6 +836,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai nhé.)",
+              "comment_plain": "Audio: fan (quạt) => Đáp án: B",
               "correct_answer": "B",
               "student_answer": null,
               "requires_media": true,
@@ -659,6 +870,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai nhé.)",
+              "comment_plain": "Audio: ball (quả bóng) => Đáp án: A",
               "correct_answer": "A",
               "student_answer": null,
               "requires_media": true,
@@ -692,6 +904,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai nhé.)",
+              "comment_plain": "Audio: doll (búp bê) => Đáp án: B",
               "correct_answer": "B",
               "student_answer": null,
               "requires_media": true,
@@ -725,6 +938,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai nhé.)",
+              "comment_plain": "Audio: teddy bear (gấu bông) => Đáp án: A",
               "correct_answer": "A",
               "student_answer": null,
               "requires_media": true,
@@ -758,6 +972,7 @@
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn câu đúng nhé.)",
+              "comment_plain": "Audio: What is this? (Đây là gì?) Ảnh: quả bóng = ball => Đáp án: C. It's a ball. (Đó là quả bóng.)",
               "correct_answer": "C. It's a ball.",
               "student_answer": null,
               "requires_media": true,
@@ -806,49 +1021,115 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": 56,
+          "audio_turns": 125,
+          "avg_reaction_ms": 1798,
+          "fastest_reaction_ms": 804,
+          "total_duration_ms": 316543,
+          "session_status": "COMPLETED",
+          "completion_pct": 71
+        },
         "is_completed": true,
         "completion_pct": 85,
         "latest_session_date": "2026-03-08",
         "pronunciation_attempts": 106,
         "pronunciation_score_avg": 54.77,
-        "free_speaking_attempts": 5,
+        "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "incorrect": 4,
           "lack_of_knowledge": 1
         },
+        "brainstorm_attempts": 4,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 4
+        },
+        "conversation_attempts": 7,
+        "conversation_score_avg": 58.58,
         "worst_speaking_items": [
           {
+            "lms_type": "brainstorm",
             "question": "What is it?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": [
+              "Doll",
+              "Ball",
+              "Teddy Bear"
+            ],
             "user_transcript": "The.",
             "score": 0,
             "answer_type": "incorrect",
-            "timestamp": "2026-03-08"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmhtnnir-2c95437e-audio.wav",
+            "reaction_time_ms": 914
           },
           {
+            "lms_type": "brainstorm",
             "question": "What can you see?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": [
+              "Doll",
+              "Ball",
+              "Teddy Bear"
+            ],
             "user_transcript": "W. Bell.",
             "score": 0,
             "answer_type": "incorrect",
-            "timestamp": "2026-03-08"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmhtng48-056b6fe3-audio.wav",
+            "reaction_time_ms": 3865
           },
           {
-            "question": "What is it?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "Belle My.",
+            "lms_type": "free_speaking",
+            "question": "What color is the sky today?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "The Doo.",
             "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-03-02"
+            "answer_type": "lack_of_knowledge",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmhtm99a-cb2c3a53-audio.wav",
+            "reaction_time_ms": 2913
           },
           {
-            "question": "What can you see?",
-            "question_type": "speaking_unscripted",
-            "user_transcript": "The.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "timestamp": "2026-03-02"
+            "lms_type": "conversation",
+            "question": "Nice. Do you have a favorite toy at home? 😊",
+            "expected_answer": "Yes, my favorite toy is a teddy bear. It is soft and I sleep with it.",
+            "target_objects": null,
+            "user_transcript": "Yes, I have a favorite toy at home.",
+            "score": 48,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 4,
+            "grammar_score": 92,
+            "timestamp": "2026-03-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm98ce3s-e9e2f661-audio.wav",
+            "reaction_time_ms": 1567
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Do you have a favorite toy at home? 😊",
+            "expected_answer": "I have a teddy bear. It is soft and brown.",
+            "target_objects": null,
+            "user_transcript": "I see.",
+            "score": 43.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 37,
+            "timestamp": "2026-03-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm98by19-1c503d69-audio.wav",
+            "reaction_time_ms": 1567
           }
         ]
       },
@@ -887,6 +1168,7 @@
             "question_folder": "English Tutoring - Level 2",
             "question_type": "Trả lời bằng giọng nói",
             "question_text": "Look and say (Con hãy nhìn tranh và nói nhé.)",
+            "comment_plain": null,
             "correct_answer": "ball",
             "student_answer": "bow",
             "requires_media": true,
@@ -901,7 +1183,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7670,
@@ -909,12 +1192,9 @@
             "question_folder": "English Tutoring - Level 2",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct picture (Con hãy đọc và chọn tranh đúng nhé.) It's a ball.",
+            "comment_plain": "It's a ball: Đó là một quả bóng. => Đáp án: A",
             "correct_answer": "A.",
-            "student_answer": [
-              "0",
-              "0",
-              "1"
-            ],
+            "student_answer": "C.",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -943,7 +1223,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7670,
@@ -951,12 +1232,9 @@
             "question_folder": "English Tutoring - Level 2",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct picture (Con hãy đọc và chọn tranh đúng nhé.) It's a fan.",
+            "comment_plain": "It's a fan: Đó là một cái quạt. => Đáp án: C",
             "correct_answer": "C.",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A.",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -985,7 +1263,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7670,
@@ -993,12 +1272,9 @@
             "question_folder": "English Tutoring - Level 2",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn câu đúng nhé.) I'm fine. Thanks.",
+            "comment_plain": "I'm fine. Thanks: Tôi ổn. Cảm ơn. => Đáp án: C (Bạn có khỏe không?)",
             "correct_answer": "C. How are you?",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A. What's your name?",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -1021,7 +1297,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 7670,
@@ -1029,12 +1306,9 @@
             "question_folder": "English Tutoring - Level 2",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn câu đúng nhé.) How old are you?",
+            "comment_plain": "How old are you? Bạn bao nhiêu tuổi? => Đáp án: B (Tôi 7 tuổi.)",
             "correct_answer": "B. I'm seven years old.",
-            "student_answer": [
-              "0",
-              "0",
-              "1"
-            ],
+            "student_answer": "C. It's a ball.",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -1057,7 +1331,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}

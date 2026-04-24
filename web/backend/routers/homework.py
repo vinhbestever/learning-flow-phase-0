@@ -98,6 +98,7 @@ def _attach_lms_question(q: dict, matched: dict, ctx_data: dict | None) -> None:
         "practice_id": matched.get("practice_id"),
         "questions_source": matched.get("questions_source"),
         "homework_section": matched.get("homework_section"),
+        "student_answer": matched.get("student_answer"),
     }
     if not (lms.get("correct_answer") or "").strip():
         lms["correct_answer"] = q.get("correct_answer")

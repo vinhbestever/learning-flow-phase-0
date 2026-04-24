@@ -20,11 +20,15 @@
     },
     "weak_skills_global": [],
     "overall_pronunciation_score_avg": 74.29,
-    "overall_free_speaking_score_avg": 25.0,
+    "overall_free_speaking_score_avg": 50.0,
+    "overall_brainstorm_score_avg": 16.67,
+    "overall_conversation_score_avg": 84.14,
     "overall_free_speaking_answer_type_dist": {
-      "correct": 6,
       "inaccordant": 1,
       "accordant": 1
+    },
+    "overall_brainstorm_answer_type_dist": {
+      "correct": 6
     },
     "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
   },
@@ -36,8 +40,8 @@
       "last_activity_date": "2026-01-19",
       "days_since_last_practice": 92,
       "forgetting_score": 1.0,
-      "weakness_score": 0.5128,
-      "composite_priority_score": 0.7564,
+      "weakness_score": 0.7692,
+      "composite_priority_score": 0.8846,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -45,12 +49,79 @@
       "failed_media_questions_count": 1,
       "worst_speaking_items": [
         {
+          "lms_type": "conversation",
+          "question": "Cool! 🌳 What do you like about trees? They give us shade!",
+          "expected_answer": "I like trees because they are big.",
+          "target_objects": null,
+          "user_transcript": "I like trees with the a big.",
+          "score": 69,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 81,
+          "grammar_score": 57,
+          "timestamp": "2026-01-12",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/12/admin/mkbbni6b-6b4008a7-audio.wav",
+          "reaction_time_ms": 3440
+        },
+        {
+          "lms_type": "free_speaking",
           "question": "What did you do today? Is there any fun activity?",
-          "question_type": "speaking_unscripted",
+          "expected_answer": null,
+          "target_objects": null,
           "user_transcript": "You right now?",
           "score": 0,
           "answer_type": "inaccordant",
-          "timestamp": "2026-01-12"
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-12",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/12/admin/mkbayihm-e8bf3db1-audio.wav",
+          "reaction_time_ms": 1516
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Cool! Leaves can be pretty. 🍁 What color are the leaves near you?",
+          "expected_answer": "The leaves are green.",
+          "target_objects": null,
+          "user_transcript": "They live in green.",
+          "score": 64.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 87,
+          "grammar_score": 42,
+          "timestamp": "2026-01-06",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/06/admin/mk2onyc6-73c455fc-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "That's okay. 😊 What about mushrooms? Have you ever seen a mushroom? 🍄",
+          "expected_answer": "Yes, I have. / No, I haven't.",
+          "target_objects": null,
+          "user_transcript": "Yes, I have, no, I haven't.",
+          "score": 69.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 39,
+          "timestamp": "2026-01-06",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/06/admin/mk2onql4-4dc09962-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Food is great! 😋 Do you like trees? I like climbing trees. 🌳",
+          "expected_answer": "Yes, I do. / No, I don't.",
+          "target_objects": null,
+          "user_transcript": "Yes, I do. No, I don't.",
+          "score": 68.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 37,
+          "timestamp": "2026-01-06",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/06/admin/mk2onf04-97e18f1b-audio.wav",
+          "reaction_time_ms": null
         }
       ],
       "practice_ids": {
@@ -76,12 +147,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and reorder the words (Con hãy đọc và sắp xếp các từ thành câu hoàn chỉnh.) /insects/there?/How/are/many/",
+          "comment_plain": null,
           "correct_answer": "B. How many insects are there?",
-          "student_answer": [
-            "1",
-            "0",
-            "0"
-          ],
+          "student_answer": "A. How many are there insects?",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -104,7 +172,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 13410,
@@ -112,12 +181,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and choose the correct answer (Con hãy đọc và chọn câu trả lời đúng.) How many ants are there?",
+          "comment_plain": "How many ants are there? C&oacute; bao nhi&ecirc;u con kiến. Trả lời: There&#39;s + danh từ số &iacute;t; There&#39;re + danh từ số nhiều => Đáp án: A (C&oacute; 6 con kiến.)",
           "correct_answer": "A. There're six ants.",
-          "student_answer": [
-            "0",
-            "0",
-            "1"
-          ],
+          "student_answer": "C. There're one ant.",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -140,7 +206,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 13410,
@@ -148,12 +215,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and choose the correct answer (Con hãy đọc và chọn câu trả lời đúng.) How many insects are there?",
+          "comment_plain": "How many insects are there? C&oacute; bao nhi&ecirc;u con c&ocirc;n tr&ugrave;ng? Trả lời: There&#39;s + danh từ số &iacute;t; There&#39;re + danh từ số nhiều => Đáp án: B (C&oacute; 5 con c&ocirc;n tr&ugrave;ng.)",
           "correct_answer": "B. There're five insects.",
-          "student_answer": [
-            "0",
-            "0",
-            "1"
-          ],
+          "student_answer": "C. There's two insects.",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -176,12 +240,68 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         }
       ],
       "question_bank_preview": [],
       "failed_media_questions_count": 0,
-      "worst_speaking_items": [],
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Nice! Worms help the plants grow. 🌱 Have you seen an ant today?",
+          "expected_answer": "Yes, I have. / No, I haven't.",
+          "target_objects": null,
+          "user_transcript": "Yes, I have no idea.",
+          "score": 59,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 68,
+          "timestamp": "2026-01-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/02/admin/mjwx9yew-4783fab8-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Great! Do you like insects? 🐛🦋",
+          "expected_answer": "Yes, I like insects./No, I don't like insects.",
+          "target_objects": null,
+          "user_transcript": "Yes, I like it. No, I don't like ice.",
+          "score": 68.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 92,
+          "grammar_score": 45,
+          "timestamp": "2026-01-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/02/admin/mjwx8rxh-4bdf8297-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "Look at the picture and the thing I circled. What is it?",
+          "expected_answer": null,
+          "target_objects": [
+            "ladybug",
+            "butterfly",
+            "spider",
+            "ant",
+            "insects",
+            "worm"
+          ],
+          "user_transcript": "It is a An.",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "ant"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/02/admin/mjwwci0w-569174bf-audio.wav",
+          "reaction_time_ms": 3260
+        }
+      ],
       "practice_ids": {
         "bai_tap": 7647,
         "luyen_tap": 13410
@@ -194,8 +314,8 @@
       "last_activity_date": "2026-03-14",
       "days_since_last_practice": 38,
       "forgetting_score": 1.0,
-      "weakness_score": 0.375,
-      "composite_priority_score": 0.6875,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -205,12 +325,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and find the mistake. (Con hãy đọc và tìm lỗi sai.) Is there some wind?",
+          "comment_plain": "=> Đáp án: B Trong câu hỏi d&ugrave;ng &quot;any&quot; Sửa lỗi: some --> any",
           "correct_answer": "B. some",
-          "student_answer": [
-            "1",
-            "0",
-            "0"
-          ],
+          "student_answer": "A. there",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -233,7 +350,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 13413,
@@ -241,6 +359,7 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Điền vào chỗ trống",
           "question_text": "Read and fill in the blank. (Con hãy đọc và điền đáp án đúng.) David: Emily, look! Is there any wind? Emily: (1) ......., there isn't. There're some clouds. How many clouds are there? David: There're eight .........(2). Is there (3) .......... rainbow? Emily: Yes, there is. It's beautiful. (3)",
+          "comment_plain": "Is there any rainbow? C&oacute; cầu vồng kh&ocirc;ng? &quot;any&quot; d&ugrave;ng trong câu hỏi => Đáp án: any",
           "correct_answer": "any",
           "student_answer": "a",
           "requires_media": false,
@@ -253,7 +372,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 13413,
@@ -261,12 +381,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and find the mistake. (Con hãy đọc và tìm lỗi sai.) Yes, there is not.",
+          "comment_plain": "=> Đáp án: A Câu trả lời với &quot;Yes&quot; kh&ocirc;ng d&ugrave;ng not Sửa lỗi: bỏ &quot;not&quot;",
           "correct_answer": "A. not",
-          "student_answer": [
-            "0",
-            "1",
-            "0"
-          ],
+          "student_answer": "B. is",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -289,7 +406,8 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         },
         {
           "practice_id": 13413,
@@ -297,12 +415,9 @@
           "question_folder": "English Tutoring - Level 3",
           "question_type": "Một lựa chọn",
           "question_text": "Read and find the mistake. (Con hãy đọc và tìm lỗi sai.) No, there isn't some wind.",
+          "comment_plain": "=> Đáp án: A Trong câu phủ định phải d&ugrave;ng &quot;any&quot; Sửa lỗi: some --> any",
           "correct_answer": "A. some",
-          "student_answer": [
-            "0",
-            "1",
-            "0"
-          ],
+          "student_answer": "B. wind",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -325,12 +440,87 @@
               "image_urls": [],
               "audio_urls": []
             }
-          ]
+          ],
+          "is_correct": 0
         }
       ],
       "question_bank_preview": [],
       "failed_media_questions_count": 0,
-      "worst_speaking_items": [],
+      "worst_speaking_items": [
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "Wind",
+            "Cloud",
+            "Rainbow",
+            "Sun",
+            "Sky"
+          ],
+          "user_transcript": "I can see a sun, I can see a rainbow can and I can see a tree.",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "sun",
+            "rainbow",
+            "tree"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-22",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/22/admin/mkpjffzq-9e4386bf-audio.wav",
+          "reaction_time_ms": 1176
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "Anything else?",
+          "expected_answer": null,
+          "target_objects": [
+            "Wind",
+            "Cloud",
+            "Rainbow",
+            "Sun",
+            "Sky"
+          ],
+          "user_transcript": "I can see a rainbow, I can see a tree.",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "rainbow",
+            "tree"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-20",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/20/admin/mkmm56l7-96e8c8d6-audio.wav",
+          "reaction_time_ms": 3909
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "Wind",
+            "Cloud",
+            "Rainbow",
+            "Sun",
+            "Sky"
+          ],
+          "user_transcript": "I can see a rock, I can see a tree, I can see a rainbow.",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "tree",
+            "rainbow"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-20",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/20/admin/mkmm4s58-31c4b3ce-audio.wav",
+          "reaction_time_ms": 1740
+        }
+      ],
       "practice_ids": {
         "bai_tap": 7666,
         "luyen_tap": 13413
@@ -349,30 +539,112 @@
       "last_activity_date": "2026-01-19",
       "days_since_last_practice": 92,
       "forgetting_score": 1.0,
-      "weakness_score": 0.5128,
-      "composite_priority_score": 0.7564,
+      "weakness_score": 0.7692,
+      "composite_priority_score": 0.8846,
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 73,
+          "avg_reaction_ms": 2172,
+          "fastest_reaction_ms": 566,
+          "total_duration_ms": 1250448,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-01-12",
         "pronunciation_attempts": 53,
         "pronunciation_score_avg": 72.19,
-        "free_speaking_attempts": 3,
-        "free_speaking_score_avg": 33.33,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "correct": 2,
           "inaccordant": 1
         },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 50.0,
+        "brainstorm_answer_type_dist": {
+          "correct": 2
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 80.46,
         "worst_speaking_items": [
           {
+            "lms_type": "conversation",
+            "question": "Cool! 🌳 What do you like about trees? They give us shade!",
+            "expected_answer": "I like trees because they are big.",
+            "target_objects": null,
+            "user_transcript": "I like trees with the a big.",
+            "score": 69,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 81,
+            "grammar_score": 57,
+            "timestamp": "2026-01-12",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/12/admin/mkbbni6b-6b4008a7-audio.wav",
+            "reaction_time_ms": 3440
+          },
+          {
+            "lms_type": "free_speaking",
             "question": "What did you do today? Is there any fun activity?",
-            "question_type": "speaking_unscripted",
+            "expected_answer": null,
+            "target_objects": null,
             "user_transcript": "You right now?",
             "score": 0,
             "answer_type": "inaccordant",
-            "timestamp": "2026-01-12"
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-12",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/12/admin/mkbayihm-e8bf3db1-audio.wav",
+            "reaction_time_ms": 1516
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Cool! Leaves can be pretty. 🍁 What color are the leaves near you?",
+            "expected_answer": "The leaves are green.",
+            "target_objects": null,
+            "user_transcript": "They live in green.",
+            "score": 64.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 87,
+            "grammar_score": 42,
+            "timestamp": "2026-01-06",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/06/admin/mk2onyc6-73c455fc-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "That's okay. 😊 What about mushrooms? Have you ever seen a mushroom? 🍄",
+            "expected_answer": "Yes, I have. / No, I haven't.",
+            "target_objects": null,
+            "user_transcript": "Yes, I have, no, I haven't.",
+            "score": 69.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 39,
+            "timestamp": "2026-01-06",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/06/admin/mk2onql4-4dc09962-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Food is great! 😋 Do you like trees? I like climbing trees. 🌳",
+            "expected_answer": "Yes, I do. / No, I don't.",
+            "target_objects": null,
+            "user_transcript": "Yes, I do. No, I don't.",
+            "score": 68.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 37,
+            "timestamp": "2026-01-06",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/06/admin/mk2onf04-97e18f1b-audio.wav",
+            "reaction_time_ms": null
           }
         ]
       },
@@ -416,12 +688,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct picture. (Con hãy đọc và chọn tranh đúng.) Anna: Tommy, look! How many trees are there? Tommy: There're some trees (1) . Anna: Oh, how many flowers are there? Tommy: There aren't any flowers (2).",
+            "comment_plain": "some trees: một vài cái cây => Đáp án: (1) - A",
             "correct_answer": "A.",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B.",
             "requires_media": true,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -450,7 +719,8 @@
                 ],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -472,17 +742,86 @@
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 48,
+          "avg_reaction_ms": 1889,
+          "fastest_reaction_ms": 541,
+          "total_duration_ms": 0,
+          "session_status": "COMPLETED",
+          "completion_pct": 5
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-01-03",
         "pronunciation_attempts": 39,
         "pronunciation_score_avg": 72.87,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "correct": 1
         },
-        "worst_speaking_items": []
+        "conversation_attempts": 5,
+        "conversation_score_avg": 78.1,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice! Worms help the plants grow. 🌱 Have you seen an ant today?",
+            "expected_answer": "Yes, I have. / No, I haven't.",
+            "target_objects": null,
+            "user_transcript": "Yes, I have no idea.",
+            "score": 59,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 68,
+            "timestamp": "2026-01-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/02/admin/mjwx9yew-4783fab8-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Great! Do you like insects? 🐛🦋",
+            "expected_answer": "Yes, I like insects./No, I don't like insects.",
+            "target_objects": null,
+            "user_transcript": "Yes, I like it. No, I don't like ice.",
+            "score": 68.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 92,
+            "grammar_score": 45,
+            "timestamp": "2026-01-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/02/admin/mjwx8rxh-4bdf8297-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "Look at the picture and the thing I circled. What is it?",
+            "expected_answer": null,
+            "target_objects": [
+              "ladybug",
+              "butterfly",
+              "spider",
+              "ant",
+              "insects",
+              "worm"
+            ],
+            "user_transcript": "It is a An.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "ant"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/02/admin/mjwwci0w-569174bf-audio.wav",
+            "reaction_time_ms": 3260
+          }
+        ]
       },
       "homework": {
         "attempted": true,
@@ -524,12 +863,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and reorder the words (Con hãy đọc và sắp xếp các từ thành câu hoàn chỉnh.) /insects/there?/How/are/many/",
+            "comment_plain": null,
             "correct_answer": "B. How many insects are there?",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A. How many are there insects?",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -552,7 +888,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13410,
@@ -560,12 +897,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct answer (Con hãy đọc và chọn câu trả lời đúng.) How many ants are there?",
+            "comment_plain": "How many ants are there? C&oacute; bao nhi&ecirc;u con kiến. Trả lời: There&#39;s + danh từ số &iacute;t; There&#39;re + danh từ số nhiều => Đáp án: A (C&oacute; 6 con kiến.)",
             "correct_answer": "A. There're six ants.",
-            "student_answer": [
-              "0",
-              "0",
-              "1"
-            ],
+            "student_answer": "C. There're one ant.",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -588,7 +922,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13410,
@@ -596,12 +931,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and choose the correct answer (Con hãy đọc và chọn câu trả lời đúng.) How many insects are there?",
+            "comment_plain": "How many insects are there? C&oacute; bao nhi&ecirc;u con c&ocirc;n tr&ugrave;ng? Trả lời: There&#39;s + danh từ số &iacute;t; There&#39;re + danh từ số nhiều => Đáp án: B (C&oacute; 5 con c&ocirc;n tr&ugrave;ng.)",
             "correct_answer": "B. There're five insects.",
-            "student_answer": [
-              "0",
-              "0",
-              "1"
-            ],
+            "student_answer": "C. There's two insects.",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -624,7 +956,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
@@ -641,23 +974,112 @@
       "last_activity_date": "2026-03-14",
       "days_since_last_practice": 38,
       "forgetting_score": 1.0,
-      "weakness_score": 0.375,
-      "composite_priority_score": 0.6875,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
       "in_class": {
         "participated": true,
         "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 36,
+          "avg_reaction_ms": 1712,
+          "fastest_reaction_ms": 770,
+          "total_duration_ms": 6000,
+          "session_status": "COMPLETED",
+          "completion_pct": 57
+        },
         "is_completed": true,
         "completion_pct": 100,
         "latest_session_date": "2026-01-22",
         "pronunciation_attempts": 22,
         "pronunciation_score_avg": 81.86,
-        "free_speaking_attempts": 4,
-        "free_speaking_score_avg": 25.0,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
         "free_speaking_answer_type_dist": {
-          "accordant": 1,
+          "accordant": 1
+        },
+        "brainstorm_attempts": 3,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
           "correct": 3
         },
-        "worst_speaking_items": []
+        "conversation_attempts": 7,
+        "conversation_score_avg": 95.83,
+        "worst_speaking_items": [
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "Wind",
+              "Cloud",
+              "Rainbow",
+              "Sun",
+              "Sky"
+            ],
+            "user_transcript": "I can see a sun, I can see a rainbow can and I can see a tree.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "sun",
+              "rainbow",
+              "tree"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-22",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/22/admin/mkpjffzq-9e4386bf-audio.wav",
+            "reaction_time_ms": 1176
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "Anything else?",
+            "expected_answer": null,
+            "target_objects": [
+              "Wind",
+              "Cloud",
+              "Rainbow",
+              "Sun",
+              "Sky"
+            ],
+            "user_transcript": "I can see a rainbow, I can see a tree.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "rainbow",
+              "tree"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-20",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/20/admin/mkmm56l7-96e8c8d6-audio.wav",
+            "reaction_time_ms": 3909
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "Wind",
+              "Cloud",
+              "Rainbow",
+              "Sun",
+              "Sky"
+            ],
+            "user_transcript": "I can see a rock, I can see a tree, I can see a rainbow.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "tree",
+              "rainbow"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-20",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/20/admin/mkmm4s58-31c4b3ce-audio.wav",
+            "reaction_time_ms": 1740
+          }
+        ]
       },
       "homework": {
         "attempted": true,
@@ -699,12 +1121,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and find the mistake. (Con hãy đọc và tìm lỗi sai.) Is there some wind?",
+            "comment_plain": "=> Đáp án: B Trong câu hỏi d&ugrave;ng &quot;any&quot; Sửa lỗi: some --> any",
             "correct_answer": "B. some",
-            "student_answer": [
-              "1",
-              "0",
-              "0"
-            ],
+            "student_answer": "A. there",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -727,7 +1146,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13413,
@@ -735,6 +1155,7 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Điền vào chỗ trống",
             "question_text": "Read and fill in the blank. (Con hãy đọc và điền đáp án đúng.) David: Emily, look! Is there any wind? Emily: (1) ......., there isn't. There're some clouds. How many clouds are there? David: There're eight .........(2). Is there (3) .......... rainbow? Emily: Yes, there is. It's beautiful. (3)",
+            "comment_plain": "Is there any rainbow? C&oacute; cầu vồng kh&ocirc;ng? &quot;any&quot; d&ugrave;ng trong câu hỏi => Đáp án: any",
             "correct_answer": "any",
             "student_answer": "a",
             "requires_media": false,
@@ -747,7 +1168,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13413,
@@ -755,12 +1177,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and find the mistake. (Con hãy đọc và tìm lỗi sai.) Yes, there is not.",
+            "comment_plain": "=> Đáp án: A Câu trả lời với &quot;Yes&quot; kh&ocirc;ng d&ugrave;ng not Sửa lỗi: bỏ &quot;not&quot;",
             "correct_answer": "A. not",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B. is",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -783,7 +1202,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           },
           {
             "practice_id": 13413,
@@ -791,12 +1211,9 @@
             "question_folder": "English Tutoring - Level 3",
             "question_type": "Một lựa chọn",
             "question_text": "Read and find the mistake. (Con hãy đọc và tìm lỗi sai.) No, there isn't some wind.",
+            "comment_plain": "=> Đáp án: A Trong câu phủ định phải d&ugrave;ng &quot;any&quot; Sửa lỗi: some --> any",
             "correct_answer": "A. some",
-            "student_answer": [
-              "0",
-              "1",
-              "0"
-            ],
+            "student_answer": "B. wind",
             "requires_media": false,
             "stem_media_urls": [],
             "comment_media_urls": [],
@@ -819,7 +1236,8 @@
                 "image_urls": [],
                 "audio_urls": []
               }
-            ]
+            ],
+            "is_correct": 0
           }
         ],
         "not_attempted_preview": {}
