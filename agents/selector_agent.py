@@ -13,6 +13,7 @@ chat.completions.parse), which expects a Pydantic model class.
 
 from __future__ import annotations
 
+import html
 import json
 import os
 
@@ -79,20 +80,28 @@ Select exactly 15 questions from the provided pool to create a balanced, targete
 SELECTION RULES:
 - Prioritise: critical signal > spaced_rep > maintenance
 - Include at least: 3 speaking, 4 grammar or fill-blank, 3 vocabulary
-- No duplicate skill coverage from the same lesson
+- Per-lesson cap: pick at most 2 questions from any single lesson. If two questions come from \
+the same lesson, they MUST have different skill_hint values (e.g. one grammar + one speaking).
 - Tie-break: prefer fill-blank > multiple-choice > speaking when signal_type and lesson are equal
-- MEDIA: pool lines tagged MEDIA=yes need image/audio on LMS. Include 2–4 such questions if the pool offers them; set requires_media=true and copy the same question_id as in the pool. For non-media lines set requires_media=false. For free-speaking pool rows (no question_id) use question_id=null and requires_media=false.
+- MEDIA: pool lines tagged MEDIA=yes need image/audio on LMS. Include 2–4 such questions if the \
+pool offers them; set requires_media=true and copy the same question_id as in the pool. For \
+non-media lines set requires_media=false. For free-speaking pool rows (no question_id) use \
+question_id=null and requires_media=false.
+- Use the skill_hint field on each pool line to guide skill_category assignment; \
+map "other" to whichever of grammar/vocabulary/speaking best fits the question_text.
 
 REASON FIELD RULES — this is the most important field:
 Write 1–2 sentences per question IN VIETNAMESE that are specific to THIS student's actual performance.
-Always reference at least one of: a specific wrong answer they gave, a speaking transcript, a forgetting duration, or a named skill gap from the diagnostic.
+Always reference at least one of: a specific wrong answer they gave, a speaking transcript \
+(e.g. "học sinh nói 'It's black' thay vì 'It's blue'"), a speaking score from speaking_scores \
+(e.g. "brainstorm=0/100"), a forgetting duration, or a named error pattern from the diagnostic.
 Do NOT write generic labels like "critical signal, grammar practice".
 The reason field MUST be written entirely in Vietnamese.
 
 Good reason examples (in Vietnamese):
 - "Học sinh điền 'cost' thay vì 'is' trong bài fill-blank này — lỗi chia động từ theo chủ ngữ xuất hiện ở 3 bài học khác nhau theo kết quả chẩn đoán. Bài đã học cách đây 20 ngày (đã quên hoàn toàn)."
-- "Điểm nói tự do 0/100 trong bài này: học sinh nói 'I eat bitter' khi được hỏi 'What do you eat?' — nhắm vào lỗ hổng trả lời câu hỏi mở mà chẩn đoán đã đánh dấu là kỹ năng yếu nhất (trung bình 30.71/100)."
-- "Bài chưa được luyện tập trong 18 ngày; độ chính xác từ vựng của học sinh trong bài này dưới 70%. Củng cố các từ về quần áo/mua sắm mà chẩn đoán xác định là chưa được ghi nhớ ổn định."
+- "Điểm brainstorm 0/100 trong bài này: học sinh nói 'Can see a bus stop, a train station' khi được yêu cầu liệt kê 4 targets — thiếu 'bus' và 'train' dù đã thấy chúng trong tranh."
+- "Bài chưa được luyện tập trong 18 ngày; học sinh chưa nộp bài tập về nhà nên không có bằng chứng ghi nhớ. Củng cố các từ về quần áo/mua sắm mà chẩn đoán xác định là chưa được kiểm chứng sau lớp học."
 
 Return ONLY valid JSON matching the schema. No markdown, no explanation.\
 """
@@ -128,13 +137,18 @@ def _pool_to_text(pool: list) -> str:
         media = "yes" if q.get("requires_media") else "no"
         n_stem = len(q.get("stem_media_urls") or [])
         n_com = len(q.get("comment_media_urls") or [])
+        skill_hint = q.get("skill_hint", "other")
+        comment = html.unescape((q.get("comment_plain") or "").strip())
+        comment_str = f' comment="{comment[:100]}"' if comment else ""
         lines.append(
             f'[{q.get("signal_type", "?")}] MEDIA={media} stem_files={n_stem} comment_files={n_com} '
+            f'skill_hint={skill_hint} '
             f'qid={qid_disp} lesson_id={q["lesson_id"]} '
             f'lesson_title="{q.get("lesson_title", "")}" '
             f'[{meta_str}] '
             f'type="{q["question_type"]}" '
-            f'text="{(q.get("question_text") or "")[:120]}" '
+            f'text="{(q.get("question_text") or "")[:120]}"'
+            f'{comment_str} '
             f'answer="{q.get("correct_answer") or "open"}"'
         )
     return "\n".join(lines)

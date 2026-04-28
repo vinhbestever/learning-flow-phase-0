@@ -1,0 +1,530 @@
+{
+  "version": 1,
+  "last_run_model": "gpt-5.4",
+  "models": {
+    "gpt-5.4": {
+      "updated_at": "2026-04-28T01:37:46.444289+00:00",
+      "diagnostic": "Ba mẫu lỗi và rủi ro nghiêm trọng nhất tôi thấy là: thứ nhất, học sinh gần như mất khả năng gọi từ khi nhìn tranh hoặc trả lời nói tự do rất ngắn, thể hiện ở brainstorm trung bình 0/100 và free speaking chỉ 10/100, lặp lại ở rất nhiều bài. Thứ hai, có một cụm rủi ro cực cao từ các bài đã học nhưng chưa nộp homework, đặc biệt là các bài cũ hơn 7 ngày; với dữ liệu forgetting curve hiện tại thì các bài này thực tế cần xem như quên gần hết và chưa có bằng chứng ghi nhớ sau lớp. Thứ ba, học sinh có khoảng cách rõ giữa nhận biết/cấu trúc đơn giản với khả năng tự tạo câu nói hoàn chỉnh: conversation trung bình còn tạm được 72.78/100 nhưng pronunciation chỉ 52.05/100, còn writing accuracy toàn cục chỉ 54.4%, cho thấy khi phải tự nói hoặc tự viết thì lỗi ngữ pháp, chọn từ và phát âm bộc lộ mạnh.\n\nMẫu đầu tiên là điểm yếu rất nặng ở nói tự phát và gọi từ theo hình. Đây là tín hiệu nổi bật nhất vì brainstorm trung bình bằng 0 tuyệt đối, phân bố câu trả lời brainstorm có 21 lần incorrect và chỉ 2 lần correct; ngay cả 2 lần correct đó cũng không có nghĩa là làm tốt, mà chỉ là nói ra từ hợp lệ nhưng chưa đủ số mục tiêu. Nói cách khác, học sinh thường không truy xuất được từ vựng đúng theo chủ đề khi nhìn tranh. Điều này xuất hiện xuyên suốt nhiều unit: ở bài Me Lesson 4, thay vì gọi các từ Beard, Mustache, Car thì học sinh nói “I good it.”, “I ball.”, “She hit a girl.”; ở Pets Lesson 1, thay vì tên con vật lại nói “O no, no, no.”, “You do.”; ở Pets Lesson 3, với bộ từ fur, feather, shell, turtle, dog… lại trả lời “I’m worse.”; ở Sports Lesson 4, thay vì “Do yoga / Play tennis / Play golf” thì nói “Than.”; ở Nature Lesson 1 và 3 cũng không gọi được các từ cơ bản như wind, cloud, rainbow, spider, ant. Free speaking cũng cùng một kiểu đứt mạch: câu hỏi “What did you eat today?” nhận câu trả lời “I’m fine.”, “Happy.”, “Yes.”; “What sports do you play?” nhận “Reign A.”; “What’s your favorite color?” nhận “Cant see.” Phân bố free speaking có 17 lần inaccordant và 1 lần lack_of_knowledge, nghĩa là phần lớn không phải chỉ phát âm kém mà là không hiểu yêu cầu hoặc không truy xuất được nội dung phù hợp. Với Phase 0 cấp 4–5, đây là lỗ hổng nền tảng: từ vựng chủ điểm chưa bám, phản xạ hỏi-đáp chưa hình thành, và học sinh có xu hướng dùng một từ rời rạc hoặc câu không liên quan để “lấp chỗ trống”. Những bài cần deep practice mạnh nhất theo mẫu này là Unit 2A Lesson 4, Unit 3A Lesson 1, Unit 3A Lesson 3, Unit 2B Lesson 4, Unit 3B Lesson 4, Unit 1A Lesson 1 và Lesson 3, vì ở các bài này lỗi nói theo tranh hoặc warmup sai hoàn toàn xuất hiện rất rõ. Dạng câu hỏi hiệu quả nhất cho nhóm bài này sẽ không phải nói mở ngay, mà nên bắt đầu từ nhận diện tranh-nghe-chọn, ghép từ với ảnh, lặp lại mẫu câu cực ngắn, rồi mới nâng lên “What can you see? – I can see a dog / It has fur / They are onions.” Nếu đi thẳng vào free speaking, khả năng học sinh tiếp tục trả lời lạc đề là rất cao.\n\nMẫu thứ hai là rủi ro ghi nhớ cực thấp ở các bài chưa nộp homework. Đây là vấn đề cần ưu tiên không kém lỗi kỹ năng, vì hw_status=not_attempted nghĩa là học sinh đã học trên lớp nhưng không có bằng chứng ôn lại sau lớp. Trong danh sách hiện tại, phần lớn bài critical lại rơi vào nhóm này: Unit 2A Lesson 5, Unit 3A Lesson 1, Unit 3A Lesson 3, Unit 4A Lesson 4, Unit 1B Lesson 2, Unit 2B Lesson 3, Unit 2B Lesson 4, Unit 3B Lesson 1, Lesson 2, Lesson 4. Nhiều bài đã cách 20 đến 127 ngày; theo quy tắc forgetting curve được cung cấp, tất cả các bài trên 7 ngày đều xem như đã quên hoàn toàn về mặt thực hành. Vì vậy, các bài chưa làm homework này không nên coi là “ôn nhẹ”, mà thực chất là học lại có kiểm tra. Đáng chú ý là một số bài tuy writing được ghi là “none” nhưng điều đó không có nghĩa là an toàn, vì đơn giản là chưa nộp bài nên không có dữ liệu lỗi viết cụ thể; rủi ro thực tế vẫn rất cao. Nhóm cần deep practice ưu tiên hàng đầu trong số bài chưa làm là Unit 3A Pets Lesson 1 và 3, Unit 2A Me Lesson 5, Unit 1B Clothes Lesson 2, và trọn cụm Unit 3B Food Lesson 1, 2, 4. Lý do là ngoài việc chưa nộp homework, các bài này còn có bằng chứng nói yếu hoặc conversation thấp. Ví dụ Clothes Lesson 2 có conversation chỉ 64/100, pronunciation 56/100, và câu trả lời như “I paint a.” cho mẫu “My pants are [color].”; Food Lesson 1 và 2 có conversation lần lượt 74 và 67, nhưng câu trả lời cho thấy học sinh bám từ khóa rời rạc như “C.”, “Cup.”, “Raise.”, “In this typo.” chứ chưa tạo được câu đúng ngữ cảnh. Với nhóm not_attempted, dạng câu hỏi hiệu quả nhất nên là chuỗi từ dễ đến khó: nghe-chọn và nhìn-chọn để khôi phục nhận biết, sau đó read and choose / reorder để củng cố mẫu câu, rồi cuối cùng mới dùng conversation có khung. Vì question bank preview của nhiều bài là audio/image media, đây lại càng phù hợp với giai đoạn phục hồi trí nhớ hơn là yêu cầu sản xuất ngôn ngữ tự do ngay.\n\nMẫu thứ ba là khoảng cách giữa khả năng làm theo khung với năng lực tự tạo câu, kèm phát âm và viết còn yếu. Conversation trung bình 72.78/100 cho thấy học sinh đôi lúc vẫn bám được luồng hội thoại khi có dẫn dắt, nhưng chất lượng không ổn định. Nhiều bài có conversation khá nhưng câu trả lời thực tế vẫn rất mỏng hoặc sai ngữ cảnh. Ở Food Lesson 1, học sinh trả lời “Cup.” cho câu hỏi về grapes, hoặc “I like better.” cho cấu trúc so sánh; ở Food Lesson 2, các câu “Raise.”, “In this typo.” cho thấy học sinh bắt được âm hoặc một từ khóa nhưng không xây được câu hoàn chỉnh. Ở Clothes Lesson 2, ngữ pháp conversation không quá thấp, nhưng pronunciation có lúc rơi về 0 hoặc 29, khiến câu nói gần như không dùng được. Toàn cục, pronunciation 52.05/100 là thấp đối với các bài cần nói; writing accuracy 54.4% cũng xác nhận rằng khi rời khỏi dạng nhận biết, học sinh dễ sai trật tự từ, chọn đáp án theo đoán, hoặc dùng mẫu câu chưa hoàn chỉnh. Các lỗi viết cụ thể cho thấy điều này rất rõ: “Is any there wind?” thay vì “Is there any wind?”, nhầm yes/no trong đọc hiểu, “It has a soft and beak feathers.” thay vì “It has a beak and soft feathers.”, và “- do have a seal” thay cho “It doesn’t have a shell.” Đây không chỉ là lỗi từ vựng mà là lỗi cấu trúc câu, phủ định, word order và phát âm gần âm. Vì vậy, những bài attempted có dữ liệu lỗi thật như Unit 1A Nature Lesson 3, Unit 3A Pets Lesson 5, Unit 1A Nature Lesson 1, và Unit 2A Me Lesson 4 cần deep practice theo hướng sửa mẫu câu và phát âm, không chỉ ôn từ đơn lẻ. Riêng Unit 3A Pets Lesson 2 cũng cần deep practice dù số usable questions ít, vì đã attempted nhưng vẫn có media-only failed questions và lại quá cũ, nên không thể xem là đã ổn.\n\nNếu phân loại bài cần deep practice so với light reinforcement, thì gần như toàn bộ các bài trong danh sách critical cũ hơn 7 ngày đều nên xếp deep practice, nhưng mức độ có thể chia tiếp. Deep practice mức cao nhất gồm Unit 2A Me Lesson 4 và 5, Unit 3A Pets Lesson 1, 2, 3, 5, Unit 1A Nature Lesson 1 và 3, Unit 1B Clothes Lesson 2, Unit 3B Food Lesson 1, 2, 4. Đây là các bài vừa cũ, vừa có bằng chứng nói rất yếu, hoặc có lỗi viết/cấu trúc rõ. Deep practice mức trung bình gồm Unit 4A Home Lesson 4, Unit 2B Sports Lesson 3 và 4; các bài này cũng đã quên, nhưng dữ liệu lỗi chi tiết ít hơn, nên có thể bắt đầu bằng phục hồi từ vựng và mẫu câu trước rồi đánh giá lại. Light reinforcement hiện gần như không có bài nào thật sự phù hợp, vì dữ liệu forgetting curve cho biết tất cả bài trong danh sách đều đã quá hạn ôn. Nếu buộc phải chọn bài nhẹ hơn tương đối, thì các bài có conversation còn khá như Unit 2A Me Lesson 5 hoặc Unit 3B Food Lesson 1 có thể phục hồi nhanh hơn sau khi ôn từ khóa, nhưng vẫn không nên xem là “chỉ nhắc lại”.\n\nVề loại câu hỏi hiệu quả theo từng nhóm bài, với Nature và Pets, học sinh cần ưu tiên nhìn tranh gọi từ, nghe-chọn, và mẫu câu mô tả cực ngắn như “It is a…”, “It has… / It doesn’t have…”, “Is there any…?” vì lỗi hiện tại nằm ở truy xuất từ và word order. Với Clothes, nên dùng look-and-say có khung “They are wearing… / My pants are blue.”, cộng với luyện phát âm từ quần áo và màu sắc theo cặp từ ngắn; conversation mở hiện tại quá khó. Với Food, nên dùng chọn tranh theo từ, trả lời yes/no có mở rộng một vế ngắn “Yes, I do. / No, I don’t.” rồi mới sang “I like grapes / I like broccoli more than cabbage.” vì học sinh đang mắc lỗi dùng một từ đơn thay cho cả câu. Với Sports, nên tập động từ hành động qua tranh và chunk cố định “He can… / She can…” trước khi hỏi mở “What sports do you play?” Với Home, nên ưu tiên giới từ vị trí bằng tranh và câu mẫu “The plates are in the cupboard.”, “Are the plates in the cupboard? – Yes, they are / No, they aren’t.” Nói chung, dạng hiệu quả nhất cho học sinh này là bài có hỗ trợ mạnh bằng hình, âm thanh, lựa chọn đáp án, và sentence frame; dạng kém hiệu quả nhất ở thời điểm hiện tại là free speaking/warmup không khung.\n\nTóm lại, hồ sơ này cho thấy điểm nghẽn chính không nằm ở một unit riêng lẻ mà là ở nền tảng truy xuất từ, hiểu yêu cầu nói, tạo câu ngắn đúng mẫu và phát âm đủ rõ. Các bài chưa nộp homework là rủi ro đặc biệt nghiêm trọng vì không có bằng chứng giữ bài, và theo forgetting curve thì phải xem như học lại. Khi chọn câu hỏi tiếp theo, nên ưu tiên các bài critical chưa làm homework và các bài attempted có lỗi cấu trúc thật, đồng thời dùng lộ trình từ nhận biết có hỗ trợ sang sản xuất có khung, thay vì yêu cầu nói tự do quá sớm.",
+      "homework": [
+        {
+          "question_no": 1,
+          "lesson_id": 3543796,
+          "lesson_title": "Unit 2A: Me  - Lesson 4: Does she have strong arms?",
+          "skill_category": "speaking",
+          "question_type": "Trả lời bằng giọng nói",
+          "question_text": "Look and say (Con hãy nhìn và nói.) He has strong arms.",
+          "correct_answer": "He has strong arms.",
+          "difficulty": "hard",
+          "reason": "Ở bài nói theo tranh của lesson này, học sinh đã nói lệch hẳn mục tiêu như “I good it.”, “I ball.”, “She hit a girl.” thay vì gọi đúng đặc điểm cơ thể. Brainstorm trung bình 0/100 và bài đã cách 141 ngày nên cần quay lại mẫu câu rất ngắn có khung rõ ràng.",
+          "question_id": 392791,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "He has strong arms.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "Biểu đồ"
+        },
+        {
+          "question_no": 2,
+          "lesson_id": 3574746,
+          "lesson_title": "Unit 3A: Pets - Lesson 1: What pet do you have?",
+          "skill_category": "vocabulary",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Match (Con hãy di chuyển các ô ở cột bên phải để nối từ với ảnh đúng.)",
+          "correct_answer": "→hamster; →rabbit; →parrot; →dog",
+          "difficulty": "medium",
+          "reason": "Ở Pets Lesson 1, khi cần gọi tên con vật học sinh lại nói “O no, no, no.” và “You do.”, cho thấy gần như không truy xuất được từ theo tranh. Bài này chưa nộp homework và đã 127 ngày, nên cần phục hồi nhận diện từ cơ bản trước khi yêu cầu nói câu.",
+          "question_id": 392798,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A1",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/16/b646_hamster.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A2",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/13/da9c_rabbit.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A3",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/16/07dc_parrot.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A4",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/14/9b44_dog.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B1",
+              "text": "rabbit",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B2",
+              "text": "parrot",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B3",
+              "text": "hamster",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B4",
+              "text": "dog",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "hamster: chuột hamster rabbit: con thỏ parrot: con vẹt dog: con ch&oacute;",
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 3,
+          "lesson_id": 3574747,
+          "lesson_title": "Unit 3A: Pets - Lesson 2: What does it look like?",
+          "skill_category": "speaking",
+          "question_type": "Trả lời bằng giọng nói",
+          "question_text": "Look and say (Con hãy nhìn tranh và nói.)",
+          "correct_answer": "wing",
+          "difficulty": "hard",
+          "reason": "Lesson này có media-only failed questions và quá cũ 105 ngày; trong các bài brainstorm cùng chủ đề, học sinh thường không gọi được từ bộ phận con vật. Vì brainstorm=0/100 và từng trả lời lạc như “I’m worse.” ở cụm Pets, cần luyện nói 1 từ mục tiêu có tranh hỗ trợ trước.",
+          "question_id": 389115,
+          "requires_media": true,
+          "stem_media_urls": [
+            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/16/b374_wing.png"
+          ],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "wing",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "Biểu đồ"
+        },
+        {
+          "question_no": 4,
+          "lesson_id": 3574748,
+          "lesson_title": "Unit 3A: Pets - Lesson 3: It has fur. It doesn't have feathers.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose correct answer (Con hãy nghe và chọn câu trả lời đúng.) Does a goldfish have ____?",
+          "correct_answer": "B. fins",
+          "difficulty": "medium",
+          "reason": "Ở Pets Lesson 3, học sinh không gọi được các từ như fur, feather, shell, turtle, dog mà chỉ nói “I’m worse.”. Bài chưa làm homework, đã 120 ngày và cần khôi phục vốn từ mô tả con vật bằng dạng nghe-chọn dễ hơn nói tự do.",
+          "question_id": 306050,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. shells",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. fins",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. feathers",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "audio: Does a goldfish have fins? fin: vây (cá)",
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 5,
+          "lesson_id": 3618657,
+          "lesson_title": "Unit 3A: Pets - Lesson 5: Does a parrot have a shell?",
+          "skill_category": "grammar",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and find the incorrect answer (Con hãy đọc và tìm ra đáp án sai) Does a rabbit have a beak? Yes , it doesn't.",
+          "correct_answer": "A. Yes",
+          "difficulty": "hard",
+          "reason": "Học sinh từng viết “- do have a seal” thay cho “It doesn’t have a shell.”, cho thấy lỗi rất rõ ở cấu trúc yes/no và phủ định trong chủ đề Pets. Bài này cũng đã 111 ngày nên cần sửa trực tiếp mẫu trả lời trái nghĩa kiểu “Yes, it doesn't”.",
+          "question_id": 306097,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Yes",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. rabbit",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. Does",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 6,
+          "lesson_id": 3513999,
+          "lesson_title": "Unit 1A : Nature - Lesson 3: Is there any wind?",
+          "skill_category": "grammar",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the sentence (Con hãy đọc và sắp xếp thành câu hoàn chỉnh.) /there/Is/wind?/any/",
+          "correct_answer": "B. Is there any wind?",
+          "difficulty": "hard",
+          "reason": "Học sinh đã viết sai đúng mẫu này thành “Is any there wind?”, đây là lỗi word order rất cụ thể đã xuất hiện trong chẩn đoán. Bài cách 159 ngày nên không phải ôn nhẹ mà là học lại cấu trúc câu hỏi hoàn chỉnh.",
+          "question_id": 303255,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Is any there wind?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. Is there any wind?",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 7,
+          "lesson_id": 3498237,
+          "lesson_title": "Unit 1A : Nature - Lesson 1: There's one spider.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer (Con hãy đọc và chọn câu trả lời đúng.) How many ants are there?",
+          "correct_answer": "A. There're six ants.",
+          "difficulty": "medium",
+          "reason": "Ở Nature Lesson 1 và 3, học sinh không gọi được các từ cơ bản như wind, cloud, rainbow, spider, ant khi nhìn tranh. Vì brainstorm nhiều lần incorrect và bài đã 169 ngày, cần củng cố lại từ vựng côn trùng kèm mẫu trả lời số lượng ngắn.",
+          "question_id": 372680,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. There're six ants.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. There's six ants.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. There're one ant.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "How many ants are there? C&oacute; bao nhi&ecirc;u con kiến. Trả lời: There&#39;s + danh từ số &iacute;t; There&#39;re + danh từ số nhiều => Đáp án: A (C&oacute; 6 con kiến.)",
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 8,
+          "lesson_id": 3632607,
+          "lesson_title": "Unit 1B: Clothes - Lesson 2: What are they wearing?",
+          "skill_category": "grammar",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the words to make the correct sentence (Con hãy đọcvà sắp xếp thành câu hoàn chỉnh. ) /they/ What/ wea",
+          "correct_answer": "B. What are they wearing?",
+          "difficulty": "medium",
+          "reason": "Ở Clothes Lesson 2, học sinh nói “I paint a.” cho mẫu “My pants are [color].”, cho thấy chưa giữ được khung câu hỏi/đáp về quần áo. Lesson này conversation chỉ 64/100, pronunciation 56/100 và chưa nộp homework sau 85 ngày.",
+          "question_id": 310146,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. What you are wearing?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. What are they wearing?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. What are you wearing?",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "=> Đáp án: What are they wearing? Họ đang làm g&igrave;?",
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 9,
+          "lesson_id": 3850720,
+          "lesson_title": "Unit 3B: Food - Lesson 1: Do you like grapes?",
+          "skill_category": "grammar",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and find the incorrect answer (Con hãy đọc và chọn đáp án sai.) Does you like corn ?",
+          "correct_answer": "A. Does",
+          "difficulty": "hard",
+          "reason": "Ở cụm Food, học sinh thường chỉ bật ra từ rời như “Cup.” hoặc “C.” thay vì câu hoàn chỉnh, nên rất dễ lẫn trợ động từ trong câu hỏi. Bài chưa làm homework, đã 29 ngày và cần sửa trực tiếp lỗi “Does you…” trước khi luyện hội thoại dài hơn.",
+          "question_id": 314440,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Does",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. like",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. corn",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "=> Đáp án: A &quot;you&quot; phải d&ugrave;ng trợ động từ &quot;Do&quot;. Sửa lỗi: Does --> Do",
+          "question_folder": "Từ vựng"
+        },
+        {
+          "question_no": 10,
+          "lesson_id": 3850721,
+          "lesson_title": "Unit 3B: Food - Lesson 2: I like pineapples and pears.",
+          "skill_category": "grammar",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the sentence (Con hãy đọc và sắp xếp thành câu hoàn chỉnh.) like / I / pears/ and / grapes / .",
+          "correct_answer": "A. I like pears and grapes.",
+          "difficulty": "medium",
+          "reason": "Ở Food Lesson 2, học sinh trả lời “Raise.” và “In this typo.”, tức là bắt được âm rời rạc nhưng không tự tạo được câu đúng ngữ cảnh. Lesson này chưa nộp homework, đã 27 ngày nên cần luyện câu khẳng định đơn giản với trật tự từ chuẩn.",
+          "question_id": 314490,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. I like pears and grapes.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. I like grapes pears and.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. I grapes pears and like.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "=> Đáp án: I like pears and grapes: T&ocirc;i th&iacute;ch l&ecirc; và nho.",
+          "question_folder": "Từ vựng"
+        },
+        {
+          "question_no": 11,
+          "lesson_id": 3785448,
+          "lesson_title": "Unit 2B: Sports - Lesson 4: She can swim and do karate.",
+          "skill_category": "grammar",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and find the incorrect answer (Con hãy đọc và chọn đáp án sai.) She can does karate and play tennis.",
+          "correct_answer": "B. does",
+          "difficulty": "hard",
+          "reason": "Ở Sports Lesson 4, học sinh không gọi được cụm hành động như “Do yoga / Play tennis / Play golf” mà chỉ nói “Than.” trong brainstorm. Bài chưa làm homework sau 41 ngày, nên cần chặn lỗi ngữ pháp rất hay gặp là chia động từ sau “can”.",
+          "question_id": 310458,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. and",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. does",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. play",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "=> Đáp án: B Động từ đừng sau &quot;can&quot; phải ở dạng nguy&ecirc;n thể, kh&ocirc;ng chia. Sửa lỗi: does --> do",
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 12,
+          "lesson_id": 3785447,
+          "lesson_title": "Unit 2B: Sports - Lesson 3: What can he do?",
+          "skill_category": "speaking",
+          "question_type": "Trả lời bằng giọng nói",
+          "question_text": "Look and say: What sports can you play? Say one full sentence using can.",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Ở free speaking với câu “What sports do you play?”, học sinh trả lời “Reign A.”, cho thấy không truy xuất được nội dung phù hợp dù hiểu chủ đề chung. Vì free speaking chỉ 10/100 và brainstorm trung bình 0/100, cần một câu nói có khung “I can …” thay vì nói mở hoàn toàn.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 13,
+          "lesson_id": 3618661,
+          "lesson_title": "Unit 4A: Home - Lesson 4: Are the plates in the cupboard?",
+          "skill_category": "speaking",
+          "question_type": "Trả lời bằng giọng nói",
+          "question_text": "Answer the question in one full sentence: Are the plates in the cupboard?",
+          "correct_answer": null,
+          "difficulty": "medium",
+          "reason": "Cụm Home chưa nộp homework và đã 92 ngày nên gần như không có bằng chứng ghi nhớ sau lớp. Học sinh thường làm tốt hơn khi có khung hội thoại hơn là nói tự do, vì conversation toàn cục còn 72.78/100 nhưng free speaking chỉ 10/100; bài này giúp luyện mẫu Yes, they are/No, they aren't.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 14,
+          "lesson_id": 3574747,
+          "lesson_title": "Unit 3A: Pets - Lesson 2: What does it look like?",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+          "correct_answer": "C",
+          "difficulty": "medium",
+          "reason": "Lesson này có câu media bị lỗi trước đó và đã 105 ngày, nên cần một bài nghe-chọn tranh để phục hồi nhận biết trước khi yêu cầu mô tả. Điều này phù hợp với mẫu lỗi học sinh không gọi được từ theo hình và thường trả lời sai hẳn mục tiêu trong brainstorm.",
+          "question_id": 372360,
+          "requires_media": true,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A",
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/8d83_cat.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B",
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/e0f6_hamster-.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C",
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/ee0b_rabbit.png"
+              ],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "audio: It&#39;s a rabbit: Đ&oacute; là một con thỏ. => Đáp án: C",
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 15,
+          "lesson_id": 3543796,
+          "lesson_title": "Unit 2A: Me  - Lesson 4: Does she have strong arms?",
+          "skill_category": "grammar",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) Peter: Hi John, what do you look like? Jo",
+          "correct_answer": "C. Yes, he does.",
+          "difficulty": "medium",
+          "reason": "Ngoài lỗi nói lệch như “I good it.” ở lesson này, hồ sơ còn cho thấy writing accuracy toàn cục chỉ 54.4%, nên khi tự tạo câu học sinh dễ sai cả ngữ pháp lẫn chọn từ. Bài đã 141 ngày và cần thêm một câu nhận biết có khung để nối từ phần đọc sang phần nói về ngoại hình.",
+          "question_id": 304079,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Yes, she does.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. No, he doesn&#39;t",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. Yes, he does.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        }
+      ]
+    }
+  }
+}

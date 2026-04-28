@@ -26,10 +26,21 @@ Giải thích các trường dữ liệu:
 không có dữ liệu lỗi cụ thể; "Question bank preview" chỉ là mẫu câu hỏi trong ngân hàng bài tập. \
 Đây là rủi ro học tập cao vì không có bằng chứng ghi nhớ sau lớp học.
 - Worst speaking items gồm ba loại: \
-[brainstorm] là nói theo ảnh/gợi ý, phải dùng các từ mục tiêu (targets) — khác với nói mở thuần; \
-[free_speaking] là nói mở / warmup (theo additionalData.warmup; score=0 nghĩa là sai hoàn toàn; có thể có answer_type); \
+[brainstorm] là nói theo ảnh/gợi ý với từ mục tiêu (targets) — score đo mức ĐẦY ĐỦ không phải đúng/sai; \
+answer_type=correct nghĩa là các từ học sinh nói ra đều hợp lệ nhưng chưa đủ số mục tiêu (score=0 KHÔNG có nghĩa là sai hoàn toàn); \
+answer_type=incorrect nghĩa là học sinh nói từ không nằm trong danh sách targets; \
+[free_speaking] là nói mở / warmup (score=0 nghĩa là sai hoàn toàn; answer_type=inaccordant = câu trả lời không liên quan; \
+answer_type=lack_of_knowledge = học sinh không biết); \
 [conversation] là hội thoại cấu trúc (score<70/100 mới được ghi nhận là thất bại; \
 "gram" = điểm ngữ pháp, "pron" = điểm phát âm — "expected" là câu trả lời mẫu).
+- Forgetting curve: tất cả bài học đều chỉ có 1 lần luyện tập trước. Bài học trên 7 ngày \
+coi như đã quên hoàn toàn (forgetting_score ≈ 1.0). Sự khác biệt giữa 20 ngày và 120 ngày \
+không có ý nghĩa thực tế — cả hai đều cần ôn lại từ đầu.
+- Weak skills (viết): dựa trên accuracy < 70% trong bài tập LMS. Nếu rỗng, học sinh làm \
+bài tập viết tốt — điểm yếu chủ yếu nằm ở kỹ năng nói (xem speaking_scores bên dưới).
+- speaking_scores: điểm trung bình per-lesson từ các phiên Digital Teacher. \
+Thang điểm brainstorm và free_speaking: 0–1 (nhân 100 để so sánh). \
+Conversation và pronunciation: 0–100.
 
 Trước khi viết phân tích, hãy xác định 3 mẫu lỗi hoặc rủi ro nghiêm trọng nhất bạn quan sát được \
 (bao gồm cả các bài chưa làm bài tập), sau đó trình bày chi tiết từng mẫu trong các đoạn văn rõ ràng. \
@@ -48,6 +59,11 @@ Conversation avg:  {convo}/100
 Brainstorm answer distribution: {brainstorm_answer_dist}
 Free speaking answer distribution: {answer_dist}
 
+Homework skill breakdown (writing accuracy by category):
+{skill_breakdown}
+
+{forgetting_note}
+
 LESSONS TO REVIEW
 -----------------
 {lesson_blocks}
@@ -59,8 +75,9 @@ are most effective per lesson.\
 
 LESSON_BLOCK_TEMPLATE = """\
 [{signal_type_upper}] "{title}" | hw_status={hw_status} | weakness={weakness:.2f} | {days}d ago | {q_count} usable questions
-  Weak skills: {skills}
-  {content_label}: {content_info}
+  Speaking scores: {speaking_summary}
+  Weak skills (writing): {skills}
+  {content_label}: {content_info}{media_failed}
   Worst speaking: {worst_sp}\
 """
 
@@ -95,7 +112,7 @@ def _fmt_speaking(items: list) -> str:
     if not items:
         return "none"
     parts = []
-    for s in items[:2]:
+    for s in items[:3]:
         lms_type = s.get("lms_type", "free_speaking")
         q = (s.get("question") or "")[:60]
         transcript = (s.get("user_transcript") or "")[:60]
@@ -123,10 +140,59 @@ def _fmt_speaking(items: list) -> str:
     return " | ".join(parts)
 
 
+def _fmt_speaking_scores(scores: dict) -> str:
+    """Format per-lesson speaking averages into a readable summary."""
+    if not scores:
+        return "no data"
+    parts = []
+    brain_avg = scores.get("brainstorm_avg")
+    brain_n = scores.get("brainstorm_attempts", 0)
+    if brain_n:
+        pct = round(brain_avg * 100) if brain_avg is not None else "?"
+        parts.append(f"brainstorm={pct}/100 ({brain_n} attempts)")
+    free_avg = scores.get("free_speaking_avg")
+    free_n = scores.get("free_speaking_attempts", 0)
+    if free_n:
+        pct = round(free_avg * 100) if free_avg is not None else "?"
+        parts.append(f"free_speaking={pct}/100 ({free_n} attempts)")
+    convo_avg = scores.get("conversation_avg")
+    convo_n = scores.get("conversation_attempts", 0)
+    if convo_n:
+        val = round(convo_avg) if convo_avg is not None else "?"
+        parts.append(f"conversation={val}/100 ({convo_n} attempts)")
+    pron_avg = scores.get("pronunciation_avg")
+    pron_n = scores.get("pronunciation_attempts", 0)
+    if pron_n:
+        val = round(pron_avg) if pron_avg is not None else "?"
+        parts.append(f"pronunciation={val}/100 ({pron_n} attempts)")
+    return ", ".join(parts) if parts else "no speaking activity recorded"
+
+
+def _fmt_skill_breakdown(breakdown: dict) -> str:
+    if not breakdown:
+        return "  (no homework data)"
+    lines = []
+    for folder, stats in breakdown.items():
+        acc = stats.get("accuracy")
+        total = stats.get("total", 0)
+        correct = stats.get("correct", 0)
+        acc_str = f"{acc:.1%}" if acc is not None else "N/A"
+        lines.append(f"  {folder}: {correct}/{total} correct ({acc_str})")
+    return "\n".join(lines)
+
+
 def build_prompt(summary: dict, candidates: list) -> str:
     by_status = summary.get("lessons_by_status", {})
     completed = by_status.get("completed", 0)
     total = summary.get("total_lessons", 0)
+
+    skill_breakdown_text = _fmt_skill_breakdown(
+        summary.get("overall_homework_skill_breakdown", {})
+    )
+    forgetting_note = summary.get(
+        "forgetting_curve_note",
+        "Forgetting curve: lessons older than 7 days are considered fully forgotten.",
+    )
 
     lesson_blocks = []
     for c in candidates:
@@ -137,6 +203,14 @@ def build_prompt(summary: dict, candidates: list) -> str:
         else:
             content_label = "Failed questions"
             content_info = _fmt_failed_q(c.get("failed_text_questions") or [])
+
+        media_failed_count = c.get("failed_media_questions_count", 0)
+        media_failed = (
+            f"\n  (+{media_failed_count} media-only failed questions not shown inline)"
+            if media_failed_count
+            else ""
+        )
+
         block = LESSON_BLOCK_TEMPLATE.format(
             signal_type_upper=c.get("signal_type", "").upper(),
             title=c.get("title", ""),
@@ -144,9 +218,11 @@ def build_prompt(summary: dict, candidates: list) -> str:
             weakness=c.get("weakness_score", 0),
             days=c.get("days_since_last_practice", 0),
             q_count=c.get("usable_question_count", 0),
-            skills=", ".join(c.get("weak_skills") or []) or "none identified",
+            speaking_summary=_fmt_speaking_scores(c.get("speaking_scores", {})),
+            skills=", ".join(c.get("weak_skills") or []) or "none (writing accuracy is good)",
             content_label=content_label,
             content_info=content_info,
+            media_failed=media_failed,
             worst_sp=_fmt_speaking(c.get("worst_speaking_items") or []),
         )
         lesson_blocks.append(block)
@@ -160,6 +236,8 @@ def build_prompt(summary: dict, candidates: list) -> str:
         convo=summary.get("overall_conversation_score_avg", "N/A"),
         brainstorm_answer_dist=summary.get("overall_brainstorm_answer_type_dist", {}),
         answer_dist=summary.get("overall_free_speaking_answer_type_dist", {}),
+        skill_breakdown=skill_breakdown_text,
+        forgetting_note=forgetting_note,
         lesson_blocks="\n\n".join(lesson_blocks),
     )
 

@@ -13,17 +13,56 @@ Cap: MAX_CANDIDATES total across all tiers.
 Question pool includes plain-text items and media-dependent LMS items (stub
 question_text when the stem is image/audio-only) so the selector can assign
 a bounded number of media questions.
+
+Pool pre-filtering: at most MAX_POOL_PER_LESSON questions per lesson are sent to
+the selector, chosen greedily for diversity (non-media first, then varied types).
 """
 
 from __future__ import annotations
 
 MAX_CANDIDATES = 15
 MIN_QUESTIONS = 2  # lessons with fewer usable questions are excluded
+MAX_POOL_PER_LESSON = 5  # cap questions per lesson sent to selector
 
 # Shown in pool / homework when stem is mostly image+audio (no plain text stem).
 MEDIA_QUESTION_TEXT_STUB = (
     "[Câu có hình/âm thanh — mở bài trên LMS hoặc xem phần đính kèm bên dưới]"
 )
+
+# Map Vietnamese question types → English skill_hint for the selector
+_SKILL_HINT_MAP: dict[str, str] = {
+    "Điền vào chỗ trống": "grammar",
+    "Sắp xếp câu": "grammar",
+    "Sắp xếp từ": "grammar",
+    "Nối từ": "grammar",
+    "Kéo thả": "grammar",
+    "Trả lời bằng giọng nói": "speaking",
+    "free_speaking": "speaking",
+    "brainstorm": "speaking",
+    "Một lựa chọn": "vocabulary",
+    "Nhiều lựa chọn": "vocabulary",
+}
+
+
+def _skill_hint(q: dict) -> str:
+    """Infer skill category from question type and folder."""
+    qtype = q.get("question_type", "")
+    folder = q.get("question_folder", "")
+    source = q.get("source", "")
+    interaction = q.get("interaction_type", "")
+
+    if source == "in_class" or interaction in ("free_speaking", "brainstorm"):
+        return "speaking"
+    if "Trả lời bằng giọng nói" in qtype:
+        return "speaking"
+    if any(k in qtype for k in ("Điền", "Sắp xếp", "Kéo thả", "Nối")):
+        return "grammar"
+    if "Từ vựng" in folder or "vocabulary" in folder.lower():
+        return "vocabulary"
+    hint = _SKILL_HINT_MAP.get(qtype)
+    if hint:
+        return hint
+    return "other"
 
 
 def _poolable_practice_question(q: dict) -> bool:
@@ -90,6 +129,41 @@ def _count_usable(lesson: dict) -> tuple[int, list]:
     return len(usable), usable
 
 
+def _filter_pool_for_lesson(questions: list, max_per_lesson: int) -> list:
+    """
+    Select up to max_per_lesson representative questions for one lesson.
+
+    Priority order (greedy for skill diversity):
+      1. Non-media questions with plain question_text (most usable offline)
+      2. Media questions that have a comment_plain (at least some context)
+      3. Remaining media questions
+
+    Within each tier we pick greedily to maximise skill_hint diversity.
+    """
+    def _priority(q: dict) -> int:
+        if not q.get("requires_media"):
+            return 0
+        if (q.get("comment_plain") or "").strip():
+            return 1
+        return 2
+
+    sorted_qs = sorted(questions, key=_priority)
+    selected: list[dict] = []
+    covered_skills: set[str] = set()
+
+    for q in sorted_qs:
+        if len(selected) >= max_per_lesson:
+            break
+        hint = _skill_hint(q)
+        # Always include the first question of a new skill type; after that
+        # allow duplicates only when we still have room.
+        if hint not in covered_skills or len(selected) < max_per_lesson:
+            selected.append(q)
+            covered_skills.add(hint)
+
+    return selected[:max_per_lesson]
+
+
 def tier_candidates(
     candidates: list,
     questions_export: dict | None = None,
@@ -150,36 +224,68 @@ def tier_candidates(
     return selected
 
 
-def build_question_pool(lesson_ids: set, questions_export: dict) -> list:
+def build_question_pool(
+    lesson_ids: set,
+    questions_export: dict,
+    max_per_lesson: int = MAX_POOL_PER_LESSON,
+) -> list:
     """
     Flatten usable questions from the given lesson_ids.
-    Attaches lesson_id, lesson_title, signal_type (from tiered_candidates if available).
+    Applies per-lesson cap via _filter_pool_for_lesson for manageable pool size.
+    Attaches lesson_id, lesson_title, signal_type (caller sets after tier_candidates).
     """
     q_map = {l["lesson_id"]: l for l in questions_export.get("lessons", [])}
     pool = []
     for lid in lesson_ids:
         lesson = q_map.get(lid, {})
         _, usable = _count_usable(lesson)
+        filtered = _filter_pool_for_lesson(usable, max_per_lesson)
         title = lesson.get("title", "")
-        for q in usable:
+        for q in filtered:
             pool.append({
                 "lesson_id": lid,
                 "lesson_title": title,
                 "signal_type": None,  # caller sets this after tier_candidates
+                "skill_hint": _skill_hint(q),
                 **q,
             })
     return pool
+
+
+def _enrich_candidates_with_speaking(
+    tiered: list,
+    student_context: dict,
+) -> None:
+    """
+    Attach per-lesson speaking averages from student_context['lessons'] to each
+    tiered candidate in-place. Fills speaking_scores dict with available metrics.
+    """
+    lessons_by_id = {l["lesson_id"]: l for l in student_context.get("lessons", [])}
+    for c in tiered:
+        lesson = lessons_by_id.get(c["lesson_id"], {})
+        ic = lesson.get("in_class", {})
+        c["speaking_scores"] = {
+            "brainstorm_avg": ic.get("brainstorm_score_avg"),
+            "brainstorm_attempts": ic.get("brainstorm_attempts", 0),
+            "free_speaking_avg": ic.get("free_speaking_score_avg"),
+            "free_speaking_attempts": ic.get("free_speaking_attempts", 0),
+            "conversation_avg": ic.get("conversation_score_avg"),
+            "conversation_attempts": ic.get("conversation_attempts", 0),
+            "pronunciation_avg": ic.get("pronunciation_score_avg"),
+            "pronunciation_attempts": ic.get("pronunciation_attempts", 0),
+        }
 
 
 def build_context(
     student_context: dict,
     questions_export: dict,
     max_candidates: int = MAX_CANDIDATES,
+    max_pool_per_lesson: int = MAX_POOL_PER_LESSON,
 ) -> tuple[list, list]:
     """
     Main entry: returns (tiered_candidates, question_pool).
-    tiered_candidates: enriched candidate list with signal_type
-    question_pool: flat list of usable questions from those lessons
+    tiered_candidates: enriched candidate list with signal_type + speaking_scores
+    question_pool: filtered list of representative questions from those lessons
     """
     raw_candidates = student_context.get("scored_candidates", [])
     tiered = tier_candidates(
@@ -187,13 +293,14 @@ def build_context(
         questions_export,
         max_candidates=max_candidates,
     )
+    _enrich_candidates_with_speaking(tiered, student_context)
 
     signal_map = {c["lesson_id"]: c["signal_type"] for c in tiered}
     days_map = {c["lesson_id"]: c.get("days_since_last_practice") for c in tiered}
     weakness_map = {c["lesson_id"]: c.get("weakness_score") for c in tiered}
     hw_status_map = {c["lesson_id"]: c.get("homework_status") for c in tiered}
     lesson_ids = set(signal_map.keys())
-    pool = build_question_pool(lesson_ids, questions_export)
+    pool = build_question_pool(lesson_ids, questions_export, max_per_lesson=max_pool_per_lesson)
     for q in pool:
         lid = q["lesson_id"]
         q["signal_type"] = signal_map.get(lid)
