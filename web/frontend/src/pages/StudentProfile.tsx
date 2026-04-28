@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { StationTag } from '../components/StationTag'
+import { isStationStudent } from '../lib/studentCohorts'
 import { parseStudentFolderId } from '../lib/studentFolderLabel'
 
 interface StudentSummary {
@@ -109,6 +111,7 @@ export default function StudentProfile() {
                   )}
                 </span>
               </span>
+              {isStationStudent(studentId) && <StationTag />}
               {folderLabel.isNewStudent && (
                 <span
                   className="student-new-badge inline-flex items-center rounded-full border border-teal-300/70 bg-gradient-to-br from-[#ecfdf5] via-[#f0fdfa] to-[#e0f2fe] px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.14em] text-teal-900 shadow-[0_1px_0_rgba(255,255,255,0.8)_inset,0_2px_8px_-2px_rgba(13,148,136,0.35)] ring-1 ring-teal-500/15 md:text-xs"

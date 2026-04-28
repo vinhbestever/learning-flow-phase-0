@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { StationTag } from '../components/StationTag'
+import { isStationStudent } from '../lib/studentCohorts'
 import { parseStudentFolderId } from '../lib/studentFolderLabel'
 
 interface StudentCard {
@@ -113,6 +115,7 @@ export default function StudentsList() {
                             </span>
                           )}
                         </p>
+                        {isStationStudent(s.student_id) && <StationTag />}
                         {folder.isNewStudent && (
                           <span
                             className="student-new-badge inline-flex shrink-0 items-center rounded-full border border-teal-300/70 bg-gradient-to-br from-[#ecfdf5] via-[#f0fdfa] to-[#e0f2fe] px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-[0.14em] text-teal-900 shadow-[0_1px_0_rgba(255,255,255,0.8)_inset,0_2px_8px_-2px_rgba(13,148,136,0.35)] ring-1 ring-teal-500/15 transition-[transform,box-shadow] duration-200 group-hover:-translate-y-px group-hover:ring-teal-400/35"

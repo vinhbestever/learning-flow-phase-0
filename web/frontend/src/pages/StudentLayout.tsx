@@ -1,4 +1,6 @@
 import { Link, NavLink, Outlet, useParams } from 'react-router-dom'
+import { StationTag } from '../components/StationTag'
+import { isStationStudent } from '../lib/studentCohorts'
 
 export default function StudentLayout() {
   const { studentId } = useParams<{ studentId: string }>()
@@ -24,13 +26,16 @@ export default function StudentLayout() {
             >
               ← Học sinh
             </Link>
-            <div>
+            <div className="min-w-0">
               <p className="font-display text-lg font-semibold leading-tight text-[var(--ink)] md:text-xl">
                 Phase 0
               </p>
-              <p className="text-xs uppercase tracking-[0.22em] text-[var(--muted)]">
-                #{studentId}
-              </p>
+              <div className="mt-0.5 flex flex-wrap items-center gap-2">
+                <p className="text-xs uppercase tracking-[0.22em] text-[var(--muted)]">
+                  #{studentId}
+                </p>
+                {studentId != null && isStationStudent(studentId) && <StationTag />}
+              </div>
             </div>
           </div>
 
