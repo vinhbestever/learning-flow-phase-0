@@ -25,6 +25,10 @@
       }
     },
     "weak_skills_global": [],
+    "critical_speaking_types": [
+      "brainstorm",
+      "free_speaking"
+    ],
     "overall_pronunciation_score_avg": 73.94,
     "overall_free_speaking_score_avg": 12.5,
     "overall_brainstorm_score_avg": 0.0,
@@ -37,7 +41,7 @@
       "incorrect": 13,
       "correct": 2
     },
-    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
     {
@@ -46,9 +50,9 @@
       "level": 5,
       "last_activity_date": "2026-03-20",
       "days_since_last_practice": 32,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9897,
       "weakness_score": 0.7692,
-      "composite_priority_score": 0.8846,
+      "composite_priority_score": 0.8795,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -137,120 +141,14 @@
       }
     },
     {
-      "lesson_id": 3915794,
-      "title": "Unit 2A: Jobs - Lesson 2: What do you want to be?",
-      "level": 5,
-      "last_activity_date": "2026-04-05",
-      "days_since_last_practice": 16,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice — playing games with pupils is fun 😊 What games do you play with them",
-          "expected_answer": "I play simple games like Simon Says and memory games with the pupils.",
-          "target_objects": null,
-          "user_transcript": "No.",
-          "score": 66,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 32,
-          "timestamp": "2026-04-05",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlossdh-796a386e-audio.wav",
-          "reaction_time_ms": 1413
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Oh good. Which job do you want — doctor, teacher, or something else? 😊",
-          "expected_answer": "I want to be a teacher.",
-          "target_objects": null,
-          "user_transcript": "I want to doctor.",
-          "score": 66,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 90,
-          "grammar_score": 42,
-          "timestamp": "2026-04-05",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlonj76-6e651596-audio.wav",
-          "reaction_time_ms": 1413
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "Do you know what is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "teacher",
-            "doctor",
-            "firefighter",
-            "pop star"
-          ],
-          "user_transcript": "Ishe is a daughter.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-05",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlo0g5o-d3c79037-audio.wav",
-          "reaction_time_ms": 2248
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "Look closely at this picture. What do you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "teacher",
-            "doctor",
-            "firefighter",
-            "pop star"
-          ],
-          "user_transcript": "D.C. editor.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-05",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlo07c0-3206355e-audio.wav",
-          "reaction_time_ms": 2030
-        },
-        {
-          "lms_type": "free_speaking",
-          "question": "What do you like to play?",
-          "expected_answer": null,
-          "target_objects": null,
-          "user_transcript": "The families.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-05",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlnz1dt-9156229e-audio.wav",
-          "reaction_time_ms": 5121
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 32049,
-        "luyen_tap": null
-      }
-    },
-    {
       "lesson_id": 3789948,
       "title": "Unit 1A: Friends - Lesson 2: He's handsome.",
       "level": 5,
       "last_activity_date": "2026-03-09",
       "days_since_last_practice": 43,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9979,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.749,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -357,9 +255,9 @@
       "level": 5,
       "last_activity_date": "2026-03-09",
       "days_since_last_practice": 43,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9979,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.749,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -494,9 +392,9 @@
       "level": 5,
       "last_activity_date": "2026-03-09",
       "days_since_last_practice": 43,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9979,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.749,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -669,9 +567,9 @@
       "level": 5,
       "last_activity_date": "2026-03-15",
       "days_since_last_practice": 37,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9949,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7474,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -807,111 +705,109 @@
       }
     },
     {
-      "lesson_id": 3993773,
-      "title": "Unit 2A: Jobs - Lesson 3: A hospital is where doctors work.",
+      "lesson_id": 3915794,
+      "title": "Unit 2A: Jobs - Lesson 2: What do you want to be?",
       "level": 5,
-      "last_activity_date": "2026-04-19",
-      "days_since_last_practice": 2,
-      "forgetting_score": 0.8647,
-      "weakness_score": 0.515,
-      "composite_priority_score": 0.6899,
+      "last_activity_date": "2026-04-05",
+      "days_since_last_practice": 16,
+      "forgetting_score": 0.8983,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7432,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
       "question_bank_preview": [],
-      "failed_media_questions_count": 2,
+      "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
           "lms_type": "conversation",
-          "question": "Nice. A teacher helps students learn and answers questions 😊 What other job do you know",
-          "expected_answer": "A doctor works at a hospital and helps sick people.",
+          "question": "Nice — playing games with pupils is fun 😊 What games do you play with them",
+          "expected_answer": "I play simple games like Simon Says and memory games with the pupils.",
           "target_objects": null,
-          "user_transcript": "A doctor works as a habit work.",
-          "score": 69,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 86,
-          "grammar_score": 52,
-          "timestamp": "2026-04-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5ppyg9-d2dab932-audio.wav",
-          "reaction_time_ms": 1397
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Great. Tell me one job you know and where that person works. 😊",
-          "expected_answer": "A teacher works at a school.",
-          "target_objects": null,
-          "user_transcript": "I like teacher.",
-          "score": 68.5,
+          "user_transcript": "No.",
+          "score": 66,
           "answer_type": null,
           "correct_objects": null,
           "pronunciation_score": 100,
-          "grammar_score": 37,
-          "timestamp": "2026-04-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5poc8e-a24804f1-audio.wav",
-          "reaction_time_ms": 1397
+          "grammar_score": 32,
+          "timestamp": "2026-04-05",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlossdh-796a386e-audio.wav",
+          "reaction_time_ms": 1413
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Oh good. Which job do you want — doctor, teacher, or something else? 😊",
+          "expected_answer": "I want to be a teacher.",
+          "target_objects": null,
+          "user_transcript": "I want to doctor.",
+          "score": 66,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 90,
+          "grammar_score": 42,
+          "timestamp": "2026-04-05",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlonj76-6e651596-audio.wav",
+          "reaction_time_ms": 1413
         },
         {
           "lms_type": "brainstorm",
-          "question": "What is it?",
+          "question": "Do you know what is it?",
           "expected_answer": null,
           "target_objects": [
-            "school",
-            "fire station",
-            "circus",
-            "hospital",
-            "farm"
+            "teacher",
+            "doctor",
+            "firefighter",
+            "pop star"
           ],
-          "user_transcript": "No, it's cool.",
+          "user_transcript": "Ishe is a daughter.",
           "score": 0,
           "answer_type": "incorrect",
           "correct_objects": null,
           "pronunciation_score": null,
           "grammar_score": null,
-          "timestamp": "2026-04-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5oss9u-7027bc33-audio.wav",
-          "reaction_time_ms": 4288
+          "timestamp": "2026-04-05",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlo0g5o-d3c79037-audio.wav",
+          "reaction_time_ms": 2248
         },
         {
           "lms_type": "brainstorm",
-          "question": "Look at this picture! What can you see?",
+          "question": "Look closely at this picture. What do you see?",
           "expected_answer": null,
           "target_objects": [
-            "school",
-            "fire station",
-            "circus",
-            "hospital",
-            "farm"
+            "teacher",
+            "doctor",
+            "firefighter",
+            "pop star"
           ],
-          "user_transcript": "This a hole because the hole in the trail.",
+          "user_transcript": "D.C. editor.",
           "score": 0,
           "answer_type": "incorrect",
           "correct_objects": null,
           "pronunciation_score": null,
           "grammar_score": null,
-          "timestamp": "2026-04-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5osbw4-466c8d85-audio.wav",
-          "reaction_time_ms": 1303
+          "timestamp": "2026-04-05",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlo07c0-3206355e-audio.wav",
+          "reaction_time_ms": 2030
         },
         {
           "lms_type": "free_speaking",
-          "question": "What do you like to do after school?",
+          "question": "What do you like to play?",
           "expected_answer": null,
           "target_objects": null,
-          "user_transcript": "Yes, the school.",
+          "user_transcript": "The families.",
           "score": 0,
           "answer_type": "inaccordant",
           "correct_objects": null,
           "pronunciation_score": null,
           "grammar_score": null,
-          "timestamp": "2026-04-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5or435-2c88a148-audio.wav",
-          "reaction_time_ms": 2011
+          "timestamp": "2026-04-05",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlnz1dt-9156229e-audio.wav",
+          "reaction_time_ms": 5121
         }
       ],
       "practice_ids": {
-        "bai_tap": 32050,
-        "luyen_tap": 32052
+        "bai_tap": 32049,
+        "luyen_tap": null
       }
     }
   ],
@@ -926,9 +822,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-02-27",
       "days_since_last_practice": 53,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9995,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9998,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -1067,9 +963,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-20",
       "days_since_last_practice": 32,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9897,
       "weakness_score": 0.7692,
-      "composite_priority_score": 0.8846,
+      "composite_priority_score": 0.8795,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -1235,162 +1131,6 @@
       }
     },
     {
-      "lesson_id": 3915794,
-      "program_id": null,
-      "level": 5,
-      "position": 8,
-      "title": "Unit 2A: Jobs - Lesson 2: What do you want to be?",
-      "desc": "abc",
-      "status": "completed",
-      "last_activity_date": "2026-04-05",
-      "days_since_last_practice": 16,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 41,
-          "audio_turns": 43,
-          "avg_reaction_ms": 1657,
-          "fastest_reaction_ms": 844,
-          "total_duration_ms": 1435549,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-05",
-        "pronunciation_attempts": 26,
-        "pronunciation_score_avg": 83.88,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 83.5,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice — playing games with pupils is fun 😊 What games do you play with them",
-            "expected_answer": "I play simple games like Simon Says and memory games with the pupils.",
-            "target_objects": null,
-            "user_transcript": "No.",
-            "score": 66,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 32,
-            "timestamp": "2026-04-05",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlossdh-796a386e-audio.wav",
-            "reaction_time_ms": 1413
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Oh good. Which job do you want — doctor, teacher, or something else? 😊",
-            "expected_answer": "I want to be a teacher.",
-            "target_objects": null,
-            "user_transcript": "I want to doctor.",
-            "score": 66,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 90,
-            "grammar_score": 42,
-            "timestamp": "2026-04-05",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlonj76-6e651596-audio.wav",
-            "reaction_time_ms": 1413
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "Do you know what is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "teacher",
-              "doctor",
-              "firefighter",
-              "pop star"
-            ],
-            "user_transcript": "Ishe is a daughter.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-05",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlo0g5o-d3c79037-audio.wav",
-            "reaction_time_ms": 2248
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "Look closely at this picture. What do you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "teacher",
-              "doctor",
-              "firefighter",
-              "pop star"
-            ],
-            "user_transcript": "D.C. editor.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-05",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlo07c0-3206355e-audio.wav",
-            "reaction_time_ms": 2030
-          },
-          {
-            "lms_type": "free_speaking",
-            "question": "What do you like to play?",
-            "expected_answer": null,
-            "target_objects": null,
-            "user_transcript": "The families.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-05",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlnz1dt-9156229e-audio.wav",
-            "reaction_time_ms": 5121
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 32049,
-          "score": 1,
-          "correct": 15,
-          "total": 15,
-          "submitted_date": "2026-04-05"
-        },
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 32049,
-          "luyen_tap": null
-        },
-        "skill_breakdown": {
-          "Tiếng Anh lớp 5": {
-            "correct": 15,
-            "total": 15,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
       "lesson_id": 3789948,
       "program_id": null,
       "level": 5,
@@ -1400,9 +1140,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-09",
       "days_since_last_practice": 43,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9979,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.749,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -1596,9 +1336,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-09",
       "days_since_last_practice": 43,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9979,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.749,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -1902,9 +1642,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-09",
       "days_since_last_practice": 43,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9979,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.749,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -2295,9 +2035,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-15",
       "days_since_last_practice": 37,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9949,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7474,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -2586,6 +2326,162 @@
       }
     },
     {
+      "lesson_id": 3915794,
+      "program_id": null,
+      "level": 5,
+      "position": 8,
+      "title": "Unit 2A: Jobs - Lesson 2: What do you want to be?",
+      "desc": "abc",
+      "status": "completed",
+      "last_activity_date": "2026-04-05",
+      "days_since_last_practice": 16,
+      "forgetting_score": 0.8983,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7432,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 41,
+          "audio_turns": 43,
+          "avg_reaction_ms": 1657,
+          "fastest_reaction_ms": 844,
+          "total_duration_ms": 1435549,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-05",
+        "pronunciation_attempts": 26,
+        "pronunciation_score_avg": 83.88,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 2
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 83.5,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice — playing games with pupils is fun 😊 What games do you play with them",
+            "expected_answer": "I play simple games like Simon Says and memory games with the pupils.",
+            "target_objects": null,
+            "user_transcript": "No.",
+            "score": 66,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 32,
+            "timestamp": "2026-04-05",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlossdh-796a386e-audio.wav",
+            "reaction_time_ms": 1413
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh good. Which job do you want — doctor, teacher, or something else? 😊",
+            "expected_answer": "I want to be a teacher.",
+            "target_objects": null,
+            "user_transcript": "I want to doctor.",
+            "score": 66,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 90,
+            "grammar_score": 42,
+            "timestamp": "2026-04-05",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlonj76-6e651596-audio.wav",
+            "reaction_time_ms": 1413
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "Do you know what is it?",
+            "expected_answer": null,
+            "target_objects": [
+              "teacher",
+              "doctor",
+              "firefighter",
+              "pop star"
+            ],
+            "user_transcript": "Ishe is a daughter.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-05",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlo0g5o-d3c79037-audio.wav",
+            "reaction_time_ms": 2248
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "Look closely at this picture. What do you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "teacher",
+              "doctor",
+              "firefighter",
+              "pop star"
+            ],
+            "user_transcript": "D.C. editor.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-05",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlo07c0-3206355e-audio.wav",
+            "reaction_time_ms": 2030
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "What do you like to play?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "The families.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-05",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/05/admin/mnlnz1dt-9156229e-audio.wav",
+            "reaction_time_ms": 5121
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 32049,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-04-05"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 32049,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "Tiếng Anh lớp 5": {
+            "correct": 15,
+            "total": 15,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3993773,
       "program_id": null,
       "level": 5,
@@ -2595,9 +2491,9 @@
       "status": "completed",
       "last_activity_date": "2026-04-19",
       "days_since_last_practice": 2,
-      "forgetting_score": 0.8647,
+      "forgetting_score": 0.2485,
       "weakness_score": 0.515,
-      "composite_priority_score": 0.6899,
+      "composite_priority_score": 0.3818,
       "in_class": {
         "participated": true,
         "session_count": 1,

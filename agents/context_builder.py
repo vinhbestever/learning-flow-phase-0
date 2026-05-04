@@ -21,6 +21,7 @@ the selector, chosen greedily for diversity (non-media first, then varied types)
 from __future__ import annotations
 
 MAX_CANDIDATES = 15
+MIN_SPACED_REP_SLOTS = 2  # reserved slots for spaced_rep tier when available
 MIN_QUESTIONS = 2  # lessons with fewer usable questions are excluded
 MAX_POOL_PER_LESSON = 5  # cap questions per lesson sent to selector
 
@@ -199,6 +200,12 @@ def tier_candidates(
             "skill_coverage": list(set(c.get("weak_skills") or [])),
         })
 
+    # Reserve MIN_SPACED_REP_SLOTS slots for spaced_rep so it always appears in the pool.
+    # Without this, 28 critical candidates would fill all 15 slots before spaced_rep is seen.
+    spaced_rep_available = sum(1 for c in enriched if c["signal_type"] == "spaced_rep")
+    reserved = min(MIN_SPACED_REP_SLOTS, spaced_rep_available)
+    critical_cap = max_candidates - reserved  # critical fills up to this many slots
+
     tier_order = ["critical", "spaced_rep", "maintenance"]
     selected = []
     covered_skills = set()
@@ -206,8 +213,9 @@ def tier_candidates(
     for tier in tier_order:
         if len(selected) >= max_candidates:
             break
+        tier_limit = critical_cap if tier == "critical" else max_candidates
         remaining = [c for c in enriched if c["signal_type"] == tier]
-        while remaining and len(selected) < max_candidates:
+        while remaining and len(selected) < tier_limit:
             # Re-score against current covered_skills so diversity boost is accurate
             for c in remaining:
                 new_skills = set(c.get("weak_skills") or []) - covered_skills
@@ -299,13 +307,27 @@ def build_context(
     days_map = {c["lesson_id"]: c.get("days_since_last_practice") for c in tiered}
     weakness_map = {c["lesson_id"]: c.get("weakness_score") for c in tiered}
     hw_status_map = {c["lesson_id"]: c.get("homework_status") for c in tiered}
+
+    # Build per-question map of previously failed attempts: (lesson_id, question_id) → answers
+    failed_map: dict[tuple, dict] = {}
+    for c in tiered:
+        for fq in c.get("failed_text_questions", []):
+            key = (c["lesson_id"], fq["question_id"])
+            failed_map[key] = {
+                "prev_student_answer": fq.get("student_answer"),
+                "prev_correct_answer": fq.get("correct_answer"),
+            }
+
     lesson_ids = set(signal_map.keys())
     pool = build_question_pool(lesson_ids, questions_export, max_per_lesson=max_pool_per_lesson)
     for q in pool:
         lid = q["lesson_id"]
+        qid = q.get("question_id")
         q["signal_type"] = signal_map.get(lid)
         q["days_since"] = days_map.get(lid)
         q["weakness_score"] = weakness_map.get(lid)
         q["hw_status"] = hw_status_map.get(lid)
+        if qid and (lid, qid) in failed_map:
+            q.update(failed_map[(lid, qid)])
 
     return tiered, pool

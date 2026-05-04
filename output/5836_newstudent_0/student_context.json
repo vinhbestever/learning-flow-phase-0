@@ -15,6 +15,10 @@
       }
     },
     "weak_skills_global": [],
+    "critical_speaking_types": [
+      "brainstorm",
+      "free_speaking"
+    ],
     "overall_pronunciation_score_avg": 56.78,
     "overall_free_speaking_score_avg": 0.0,
     "overall_brainstorm_score_avg": 0.0,
@@ -26,7 +30,7 @@
       "correct": 1,
       "incorrect": 5
     },
-    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
     {
@@ -35,9 +39,9 @@
       "level": 2,
       "last_activity_date": "2026-03-16",
       "days_since_last_practice": 36,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9942,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9971,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -328,9 +332,9 @@
       "level": 2,
       "last_activity_date": "2026-03-13",
       "days_since_last_practice": 39,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9962,
       "weakness_score": 0.6125,
-      "composite_priority_score": 0.8063,
+      "composite_priority_score": 0.8044,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -507,9 +511,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-16",
       "days_since_last_practice": 36,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9942,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9971,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -1015,9 +1019,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-13",
       "days_since_last_practice": 39,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9962,
       "weakness_score": 0.6125,
-      "composite_priority_score": 0.8063,
+      "composite_priority_score": 0.8044,
       "in_class": {
         "participated": true,
         "session_count": 2,

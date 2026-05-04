@@ -1,0 +1,399 @@
+{
+  "version": 1,
+  "last_run_model": "gpt-5.4",
+  "models": {
+    "gpt-5.4": {
+      "updated_at": "2026-05-04T04:57:40.794999+00:00",
+      "diagnostic": "Ba mẫu lỗi và rủi ro nghiêm trọng nhất tôi thấy là: thứ nhất, học sinh đang yếu rất rõ ở nói tự tạo đầu ra, đặc biệt là gọi tên đồ vật theo ảnh và trả lời nói mở, với điểm brainstorm và free speaking đều bằng 0 ở cả hai bài. Thứ hai, học sinh gặp khó khăn khi duy trì câu trả lời hội thoại đầy đủ, thường trả lời cụt, lạc ý hoặc lấy nhầm mảnh ngôn ngữ từ câu trước, nên dù đôi lúc phát âm hoặc ngữ pháp từng phần không quá thấp, câu trả lời vẫn không đúng chức năng giao tiếp. Thứ ba, có rủi ro ghi nhớ rất cao ở bài “Toys - Lesson 2” vì bài đã học từ 36 ngày trước nhưng chưa nộp homework, nên gần như không có bằng chứng giữ được kiến thức sau lớp; với forgetting score ở mốc này thì cần xem như gần quên hoàn toàn.\n\nĐiểm yếu nổi bật nhất là năng lực gọi từ và nói ra ý từ hình ảnh/gợi ý gần như chưa hình thành ổn định. Ở cả hai bài, brainstorm trung bình đều 0/100, và phân bố câu trả lời cho thấy 5 lần là incorrect, chỉ 1 lần là correct nhưng vẫn không đủ mục tiêu. Điều này rất quan trọng vì ở dạng [brainstorm], score đo độ đầy đủ của số từ mục tiêu, nên điểm 0 không phải lúc nào cũng là sai hoàn toàn; tuy nhiên trong dữ liệu này, phần lớn câu trả lời thực sự không chạm đúng từ đích. Ví dụ ở “Hello!”, khi được hỏi “What is it?” học sinh trả lời “The.”, và khi hỏi “What can you see?” lại nói “W. Bell.” thay vì các từ mục tiêu như Doll, Ball, Teddy Bear. Mẫu này cho thấy học sinh chưa truy xuất được từ vựng cốt lõi theo tranh, dễ bật ra âm gần giống hoặc từ rời rạc không hoàn chỉnh. Vì writing accuracy vẫn tốt, vấn đề không nằm ở nhận diện bài viết cơ bản mà nằm ở việc kéo từ ra để nói. Với Phase 0 cấp 4–5, đây là khoảng trống rất nền tảng: học sinh có thể đã từng nhìn thấy từ, nhưng chưa biến được thành phản xạ nói. Do đó, hai bài đều cần luyện mạnh bằng câu hỏi ảnh → một từ, ảnh → chọn từ, nghe từ → chỉ ảnh, rồi mới nâng lên “What is it? It’s a ball/doll/teddy bear.” Trong hai bài, “Toys - Lesson 2” nên ưu tiên sâu hơn vì vừa yếu tương đương vừa cũ hơn và chưa có homework xác nhận.\n\nMẫu thứ hai là học sinh chưa giữ được cấu trúc câu hội thoại trọn ý, thường trả lời quá ngắn hoặc không đúng mục đích câu hỏi. Conversation trung bình chỉ khoảng 59–62, tức là dưới mức vững, và các ví dụ lỗi rất điển hình. Khi được chào và mời vào chủ đề “Are you ready to talk about toys?”, học sinh chỉ đáp “Okay.”; ngữ pháp chấm 92 nhưng phát âm 0 và tổng điểm chỉ 46 vì câu trả lời không đạt kỳ vọng giao tiếp đầy đủ. Khi được hỏi làm rõ “Do you mean ‘let us play’ or ‘let us see’?”, học sinh nói “I mean”, tức là có khởi đầu đúng khung nhưng không hoàn tất nội dung. Nặng nhất là câu “How old is your teddy bear?” lại trả lời “Let us.”, cho thấy hiện tượng bám nhầm cụm từ vừa xuất hiện trước đó thay vì xử lý câu hỏi mới. Đây là dấu hiệu học sinh chưa hiểu chắc chức năng của mẫu câu hỏi-đáp, và đang dựa vào bắt chước âm rời rạc hơn là hiểu để trả lời. Ở homework của “Hello!”, lỗi chọn đáp án “How are you?” nhưng chọn nhầm “What’s your name?”, và câu hỏi tuổi lại chọn “It’s a ball” thay vì “I’m seven years old”, cũng củng cố đúng mẫu này: học sinh lẫn giữa các công thức giao tiếp cơ bản như chào hỏi, hỏi tên, hỏi tuổi, và trả lời về đồ vật. Vì vậy, cần xem đây là lỗ hổng về mapping giữa câu hỏi và chức năng trả lời. Dạng câu hỏi hiệu quả nhất sẽ là matching question-to-answer, nghe câu hỏi chọn đáp án đúng, sắp xếp hội thoại ngắn, rồi luyện khung thay thế có kiểm soát như “How old are you? — I’m ___ years old.”, “What is it? — It’s a ___.”, “Are you ready? — Yes, I’m ready.” Bài “Hello!” đặc biệt phù hợp để đào sâu nhóm mẫu câu nền này vì đã có bằng chứng lỗi thực tế trong homework.\n\nMẫu rủi ro thứ ba là mức quên bài rất cao, đặc biệt ở “Toys - Lesson 2”, nơi bài đã qua 36 ngày, weakness 1.00, nhưng homework lại not_attempted. Theo mô tả dữ liệu, ở mốc trên 21 ngày thì forgetting score đã từ 0.95 trở lên, tức gần như quên hoàn toàn. Vì chưa nộp bài, phần “Question bank preview” không phải lỗi thật mà chỉ cho biết ngân hàng bài có câu hỏi audio/image; điều này làm rủi ro còn lớn hơn, vì đây lại đúng là loại câu hỏi mà học sinh đang yếu nhất trong speaking. Nói cách khác, bài này không chỉ cũ mà còn thiếu hoàn toàn bằng chứng rằng học sinh còn nhớ được từ vựng toys sau giờ học. Do đó, đây là bài cần deep practice rõ ràng, không phải ôn nhẹ. Cần bắt đầu như một bài tái học: nhận diện đồ chơi bằng ảnh và âm thanh, gọi tên từng món, nối câu hỏi với câu trả lời, rồi mới quay lại hội thoại ngắn. Ngược lại, “Hello!” tuy cũng đã 39 ngày và rất cũ, nhưng ít nhất có homework attempted và ta đã biết writing không phải điểm nghẽn chính; bài này cũng cần luyện sâu, nhưng có thể đi theo hướng sửa đúng các cặp mẫu câu giao tiếp cơ bản và tăng độ chính xác phản xạ. Nếu phải chia mức ưu tiên, “Toys - Lesson 2” là deep practice khẩn cấp nhất vì composite risk cao hơn: weakness tối đa, chưa làm homework, và kỹ năng nói đều yếu. “Hello!” cũng là deep practice, nhưng có thể xem là bài củng cố có mục tiêu rõ hơn vì đã lộ ra cụ thể các lỗi nhầm câu hỏi-câu trả lời.\n\nTổng thể, đây không phải hồ sơ yếu về viết; accuracy viết 73.3% và từng bài đều không có weak skills writing, nên không nên dồn thời lượng vào bài tập chữ đơn thuần. Trọng tâm phải là nói có hỗ trợ mạnh, đặc biệt các dạng audio/image, gọi tên từ vựng, và hội thoại mẫu ngắn theo chức năng. Với “Toys - Lesson 2”, loại câu hỏi hiệu quả nhất là ảnh → từ, nghe → chọn ảnh, lặp lại từ mục tiêu, rồi mẫu câu rất ngắn về toys như “It’s a ball”, “I like teddy bears.”, “He is three years old.” Với “Hello!”, loại câu hỏi hiệu quả nhất là phân biệt và ghép đúng mẫu giao tiếp nền: “What’s your name?”, “How are you?”, “How old are you?”, cùng đáp án tương ứng; sau đó mới chuyển sang hỏi-đáp nói có khung. Free speaking hiện 0/100 với answer type là lack_of_knowledge, nên chưa nên dùng câu mở rộng ngay; cần warmup cực đơn giản, có lựa chọn hoặc có mẫu đỡ, để tránh học sinh rơi vào trạng thái không biết nói gì. Nói ngắn gọn, học sinh đang thiếu khả năng truy xuất từ và chọn đúng mẫu trả lời khi nói; hai bài đều cần ôn lại sâu, trong đó “Toys - Lesson 2” là ưu tiên cao nhất vì nguy cơ quên gần như hoàn toàn và chưa có dữ liệu homework xác nhận ghi nhớ sau lớp.",
+      "homework": [
+        {
+          "question_no": 1,
+          "lesson_id": 3834262,
+          "lesson_title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
+          "skill_category": "grammar",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Fill in the blank. (Con hãy điền từ còn thiếu nhé.) What ... it?",
+          "correct_answer": "is",
+          "difficulty": "easy",
+          "reason": "Bài này đã học 36 ngày trước và còn thuộc bài có nguy cơ quên rất cao vì chưa nộp homework. Chẩn đoán cho thấy học sinh yếu ở mapping câu hỏi–câu trả lời và free speaking/brainstorm đều 0/100, nên cần củng cố mẫu nền 'What is it?' từ đầu.",
+          "question_id": 370386,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "What is it? Nó là gì? => Đáp án: is (\"it\" đi với động từ tobe \"is\")",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 2,
+          "lesson_id": 3789324,
+          "lesson_title": "Unit 1A: Toys - Lesson 1: Hello!",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn câu đúng nhé.) I'm fine. Thanks.",
+          "correct_answer": "C. How are you?",
+          "difficulty": "easy",
+          "reason": "Bài này đã học 39 ngày trước. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"A. What's your name?\" thay vì \"C. How are you?\"; đây đúng với mẫu lỗi chẩn đoán là lẫn giữa các công thức giao tiếp cơ bản.",
+          "question_id": 303522,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. What's your name?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. What's this?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. How are you?",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "I'm fine. Thanks: Tôi ổn. Cảm ơn. => Đáp án: C (Bạn có khỏe không?)",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 3,
+          "lesson_id": 3789324,
+          "lesson_title": "Unit 1A: Toys - Lesson 1: Hello!",
+          "skill_category": "speaking",
+          "question_type": "free_speaking",
+          "question_text": "Look at toy pictures and answer: What is it? Say 3 short sentences, for example: It's a ball. It's a doll. It's a teddy bear.",
+          "correct_answer": null,
+          "difficulty": "medium",
+          "reason": "Bài gốc đã học 39 ngày trước, và chẩn đoán ghi brainstorm trung bình 0/100; học sinh từng nói \"The.\" hoặc \"W. Bell.\" khi cần gọi tên đồ vật theo tranh. Cần luyện nói có khung rất ngắn để kéo từ vựng ra miệng thay vì chỉ nhận diện khi đọc.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 4,
+          "lesson_id": 3834262,
+          "lesson_title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng nhé.) What is this?",
+          "correct_answer": "B. It's a teddy bear.",
+          "difficulty": "easy",
+          "reason": "Bài này đã học 36 ngày trước và chưa nộp homework nên gần như không có bằng chứng còn nhớ từ vựng toys. Chẩn đoán nêu rõ brainstorm 0/100 và học sinh không truy xuất được từ đích theo tranh, nên cần quay lại mẫu nhận diện–gọi tên cơ bản.",
+          "question_id": 303618,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. There're 5 balls.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. It's a teddy bear.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. There's one doll.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "What is this? (Đây là gì?) => Đáp án: B (Đó là một con gấu bông.)",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 5,
+          "lesson_id": 3834262,
+          "lesson_title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
+          "skill_category": "speaking",
+          "question_type": "free_speaking",
+          "question_text": "Answer with a full sentence: What is this? What are they? Say 4 answers using toy words.",
+          "correct_answer": null,
+          "difficulty": "medium",
+          "reason": "Bài này đã học 36 ngày trước; đây là bài được chẩn đoán có nguy cơ quên gần như hoàn toàn vì weakness=1.00 và chưa làm homework. Học sinh còn có free speaking 0/100 và thường trả lời cụt/lạc ý, nên cần luyện nói đủ câu theo đúng chức năng giao tiếp.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 6,
+          "lesson_id": 3789324,
+          "lesson_title": "Unit 1A: Toys - Lesson 1: Hello!",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn câu đúng nhé.) How old are you?",
+          "correct_answer": "B. I'm seven years old.",
+          "difficulty": "easy",
+          "reason": "Bài này đã học 39 ngày trước. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"C. It's a ball.\" thay vì \"B. I'm seven years old.\"; lỗi này trùng khớp hoàn toàn với nhận định chẩn đoán rằng em nhầm giữa câu hỏi tuổi và câu trả lời về đồ vật.",
+          "question_id": 303524,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. My name's Maria.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. I'm seven years old.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. It's a ball.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "How old are you? Bạn bao nhiêu tuổi? => Đáp án: B (Tôi 7 tuổi.)",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 7,
+          "lesson_id": 3834262,
+          "lesson_title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
+          "skill_category": "grammar",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Fill in the blank. (Con hãy điền từ còn thiếu nhé.) What ... they?",
+          "correct_answer": "are",
+          "difficulty": "easy",
+          "reason": "Bài này đã học 36 ngày trước và chưa có homework xác nhận ghi nhớ. Chẩn đoán cho thấy học sinh chưa giữ được khung câu hỏi–đáp trọn ý, nên cần ôn cặp nền 'What are they?' để tránh trả lời nhầm chức năng như các lỗi hội thoại trước đó.",
+          "question_id": 370389,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "What are they? (Chúng là gì?) => Đáp án: are (\"they\" đi với động từ tobe \"are\")",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 8,
+          "lesson_id": 3789324,
+          "lesson_title": "Unit 1A: Toys - Lesson 1: Hello!",
+          "skill_category": "grammar",
+          "question_type": "free_speaking",
+          "question_text": "Answer the questions in full sentences: How are you? What's your name? How old are you?",
+          "correct_answer": null,
+          "difficulty": "medium",
+          "reason": "Bài này đã học 39 ngày trước. Chẩn đoán ghi conversation chỉ khoảng 59–62 và học sinh từng đáp \"Okay.\", \"I mean\", hoặc \"Let us.\" không đúng chức năng; vì vậy cần luyện trả lời đủ câu cho đúng mẫu giao tiếp nền.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 9,
+          "lesson_id": 3834262,
+          "lesson_title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
+          "skill_category": "vocabulary",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Match (Con hãy nối từ với ảnh đúng nhé.)",
+          "correct_answer": "→doll; →ball; →teddy bear",
+          "difficulty": "easy",
+          "reason": "Bài này đã học 36 ngày trước và là bài chưa nộp homework nên rủi ro quên từ rất cao. Chẩn đoán nêu rõ học sinh yếu gọi tên đồ vật theo ảnh, từng nói lệch mục tiêu như \"W. Bell.\", nên bài nối từ–ảnh sẽ giúp xây lại liên kết hình ảnh với từ vựng.",
+          "question_id": 389382,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A1",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/17/e7fd_doll.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A2",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/17/4bda_ball.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A3",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/17/9df5_teddy-bear.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B1",
+              "text": "doll",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B2",
+              "text": "teddy bear",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B3",
+              "text": "ball",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "doll: búp bê ball: quả bóng teddy bear: gấu bông => Đáp án: Ảnh 1: doll Ảnh 2: ball Ảnh 3: teddy bear",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 10,
+          "lesson_id": 3789324,
+          "lesson_title": "Unit 1A: Toys - Lesson 1: Hello!",
+          "skill_category": "grammar",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the words (Con hãy đọc và sắp xếp thành câu nhé.) /a/teddy/It/'s/bear./",
+          "correct_answer": "C. It's a teddy bear.",
+          "difficulty": "easy",
+          "reason": "Bài này đã học 39 ngày trước. Dù writing accuracy khá hơn speaking, chẩn đoán cho thấy học sinh chưa chuyển được từ nhận diện sang câu hoàn chỉnh khi nói, nên bài sắp xếp câu này giúp củng cố mẫu 'It's a ...' để hỗ trợ nói đúng sau đó.",
+          "question_id": 303532,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. It a teddy's bear.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. It's teddy a bear.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. It's a teddy bear.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "It's a teddy bear. (Đó là một con gấu bông.) => Đáp án: C",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 11,
+          "lesson_id": 3834262,
+          "lesson_title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
+          "skill_category": "speaking",
+          "question_type": "free_speaking",
+          "question_text": "Say the toy names aloud: doll, ball, teddy bear. Then make 3 sentences with It's a ...",
+          "correct_answer": null,
+          "difficulty": "easy",
+          "reason": "Bài này đã học 36 ngày trước và chưa làm homework, nên cần xem như tái học từ đầu. Brainstorm 0/100 cho thấy học sinh chưa truy xuất ổn định từ vựng theo tranh/ý, vì vậy cần bài nói cực ngắn có mẫu đỡ để tránh rơi vào trạng thái không biết nói gì.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 12,
+          "lesson_id": 3789324,
+          "lesson_title": "Unit 1A: Toys - Lesson 1: Hello!",
+          "skill_category": "speaking",
+          "question_type": "free_speaking",
+          "question_text": "Practice a mini dialogue: A: How are you? B: I'm fine, thanks. A: How old are you? B: I'm seven years old.",
+          "correct_answer": null,
+          "difficulty": "medium",
+          "reason": "Bài này đã học 39 ngày trước. Học sinh đã nhầm \"How are you?\" với \"What's your name?\" và nhầm câu hỏi tuổi với \"It's a ball\", đồng thời conversation cho thấy em hay trả lời cụt; vì vậy cần luyện hội thoại mẫu ngắn để gắn đúng câu hỏi với đúng chức năng trả lời.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 13,
+          "lesson_id": 3834262,
+          "lesson_title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn câu đúng nhé.)",
+          "correct_answer": "B.It's a teddy bear.",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 36 ngày trước và chưa nộp homework nên cần ôn sâu cả nghe–từ vựng. Chẩn đoán nói rõ học sinh yếu nhất ở dạng audio/image và brainstorm 0/100, nên bài nghe chọn đáp án sẽ giúp nối âm thanh với từ đích 'teddy bear'.",
+          "question_id": 303578,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. It's a doll.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B.It's a teddy bear.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. It's a ball.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Audio: It's a teddy bear. Dịch: Đó là gấu bông. => Đáp án: B",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 14,
+          "lesson_id": 3789324,
+          "lesson_title": "Unit 1A: Toys - Lesson 1: Hello!",
+          "skill_category": "speaking",
+          "question_type": "free_speaking",
+          "question_text": "Look and answer in full sentences: What is it? It is a teddy bear. What is it? It is a ball.",
+          "correct_answer": null,
+          "difficulty": "easy",
+          "reason": "Bài này đã học 39 ngày trước. Chẩn đoán ghi học sinh từng trả lời \"The.\" khi được hỏi \"What is it?\", cho thấy chưa hình thành phản xạ gọi tên đồ vật bằng câu đầy đủ; bài này nhắm đúng lỗ hổng đó với mẫu lặp đơn giản.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 15,
+          "lesson_id": 3834262,
+          "lesson_title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
+          "skill_category": "grammar",
+          "question_type": "free_speaking",
+          "question_text": "Say and complete the patterns aloud: What is it? — It's a ____. What are they? — They are ____.",
+          "correct_answer": null,
+          "difficulty": "medium",
+          "reason": "Bài này đã học 36 ngày trước và là bài ưu tiên cao nhất theo chẩn đoán vì nguy cơ quên gần như hoàn toàn. Học sinh có free speaking 0/100 và hay lấy nhầm mảnh ngôn ngữ từ câu trước như \"Let us.\", nên cần luyện khung hỏi–đáp cố định để giữ đúng cấu trúc và chức năng.",
+          "question_id": null,
+          "requires_media": false
+        }
+      ]
+    }
+  }
+}

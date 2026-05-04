@@ -1,0 +1,1301 @@
+{
+  "student_id": "2102555",
+  "evaluated_at": "2026-05-04T08:27:06.675951+00:00",
+  "preprocess": {
+    "score_distribution": {
+      "count": 40,
+      "mean": 0.7645,
+      "std": 0.0506,
+      "min": 0.6375,
+      "max": 1.0,
+      "p25": 0.75,
+      "median": 0.7588,
+      "p75": 0.7675
+    },
+    "tier_breakdown": {
+      "critical": 28,
+      "spaced_rep": 12,
+      "maintenance": 0,
+      "total": 40
+    },
+    "signal_coverage": {
+      "with_failed_text": 0.35,
+      "with_speaking_items": 1.0,
+      "with_question_preview": 0.025,
+      "with_media_failures": 0.425,
+      "no_signal_count": 0
+    },
+    "forgetting_curve": {
+      "at_ceiling_count": 31,
+      "at_ceiling_pct": 0.775,
+      "stability_days": 7.0,
+      "note": "All lessons have 1 prior attempt. Stability=7d."
+    },
+    "speaking_summary": {
+      "brainstorm_avg": 15.85,
+      "free_speaking_avg": 57.78,
+      "pronunciation_avg": 86.96,
+      "conversation_avg": 86.26,
+      "weak_skills_global_empty": true,
+      "critical_speaking_types": [
+        "brainstorm"
+      ]
+    },
+    "issues": [],
+    "issue_count": 0
+  },
+  "model_ranking": [
+    "gpt-5.4",
+    "gemini-2.5-pro",
+    "gemini-3.1-pro-preview",
+    "gpt-5.4-mini",
+    "gpt-4.1",
+    "gemini-2.5-flash",
+    "gpt-4.1-mini",
+    "gpt-5.4-nano",
+    "gemini-2.5-flash-lite",
+    "gpt-4.1-nano"
+  ],
+  "models": {
+    "gemini-2.5-flash": {
+      "constraint": {
+        "score": 1.0,
+        "passed": 9,
+        "total": 9,
+        "checks": {
+          "count_15": true,
+          "speaking_ge3": true,
+          "grammar_ge4": true,
+          "vocab_ge3": true,
+          "per_lesson_le2": true,
+          "different_skills_when_paired": true,
+          "media_count_le4": true,
+          "all_reasons_vietnamese": true,
+          "valid_lesson_ids": true
+        },
+        "skill_distribution": {
+          "grammar": 5,
+          "vocabulary": 5,
+          "speaking": 5
+        },
+        "per_lesson_max": 2,
+        "media_count": 0,
+        "reasons_vn_count": 15,
+        "paired_skill_violations": [],
+        "invalid_lesson_ids": []
+      },
+      "signal": {
+        "score": 0.7389,
+        "avg_priority_score_selected": 0.7986,
+        "critical_tier_coverage": 0.3571,
+        "top3_urgent_covered": 3,
+        "not_attempted_coverage": 1.0,
+        "speaking_count": 5,
+        "brainstorm_needed_speaking": 5,
+        "brainstorm_emphasis_ok": true,
+        "oldest5_covered": 3,
+        "tier_distribution": {
+          "critical": 12,
+          "spaced_rep": 3,
+          "maintenance": 0,
+          "unknown": 0
+        }
+      },
+      "llm_judge": {
+        "reason_scores_per_question": [
+          {
+            "specificity": 2,
+            "timing": 5,
+            "data_accuracy": 4,
+            "actionability": 3,
+            "language_quality": 5,
+            "comment": "The reason mentions general grammar issues but lacks concrete examples from the student's actual answers.",
+            "question_no": 7,
+            "reason_preview": "Bài này đã học 153 ngày trước. Học sinh thường gặp lỗi ngữ pháp khi cố gắng diễn"
+          },
+          {
+            "specificity": 3,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "The reason is accurate and clear, but could be more specific by referencing the student's actual speaking errors or transcripts.",
+            "question_no": 4,
+            "reason_preview": "Bài này đã học 20 ngày trước và học sinh có điểm yếu cao (0.79). Câu hỏi này giú"
+          },
+          {
+            "specificity": 3,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "The reason is accurate and clear, but could be more specific by referencing the student's actual errors or responses.",
+            "question_no": 8,
+            "reason_preview": "Bài này đã học 86 ngày trước. Học sinh cần củng cố từ vựng và chính tả liên quan"
+          },
+          {
+            "specificity": 2,
+            "timing": 5,
+            "data_accuracy": 4,
+            "actionability": 2,
+            "language_quality": 5,
+            "comment": "The reason is accurate and natural but lacks specific reference to the student's critical vocabulary weakness or any concrete student errors.",
+            "question_no": 10,
+            "reason_preview": "Bài này đã học 28 ngày trước. Câu hỏi này củng cố từ vựng và cấu trúc 'How much."
+          },
+          {
+            "specificity": 3,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "The reason is accurate and clear, but could be more specific by referencing the student's actual answer or error.",
+            "question_no": 5,
+            "reason_preview": "Bài này đã học 28 ngày trước. Câu hỏi 'What can you see?' giúp học sinh luyện tậ"
+          }
+        ],
+        "reason_aggregated": {
+          "specificity": 2.6,
+          "timing": 5,
+          "data_accuracy": 4.6,
+          "actionability": 3.4,
+          "language_quality": 5,
+          "overall": 4.12
+        },
+        "diagnostic_score": {
+          "weakness_identification": 4,
+          "pattern_depth": 3,
+          "actionability": 3,
+          "specificity": 4,
+          "comment": "The diagnostic correctly flags brainstorm as the main weakness and gives some context, but overemphasizes missing homework and could be more actionable and analytical about underlying causes."
+        },
+        "diagnostic_avg": 3.5
+      },
+      "summary": {
+        "model": "gemini-2.5-flash",
+        "overall_score": 82.0,
+        "tier": "A",
+        "constraint_score": 100.0,
+        "signal_score": 73.9,
+        "reason_score": 4.12,
+        "diagnostic_score": 3.5
+      }
+    },
+    "gemini-2.5-flash-lite": {
+      "constraint": {
+        "score": 1.0,
+        "passed": 9,
+        "total": 9,
+        "checks": {
+          "count_15": true,
+          "speaking_ge3": true,
+          "grammar_ge4": true,
+          "vocab_ge3": true,
+          "per_lesson_le2": true,
+          "different_skills_when_paired": true,
+          "media_count_le4": true,
+          "all_reasons_vietnamese": true,
+          "valid_lesson_ids": true
+        },
+        "skill_distribution": {
+          "vocabulary": 6,
+          "grammar": 4,
+          "speaking": 5
+        },
+        "per_lesson_max": 2,
+        "media_count": 0,
+        "reasons_vn_count": 15,
+        "paired_skill_violations": [],
+        "invalid_lesson_ids": []
+      },
+      "signal": {
+        "score": 0.7313,
+        "avg_priority_score_selected": 0.8033,
+        "critical_tier_coverage": 0.3214,
+        "top3_urgent_covered": 3,
+        "not_attempted_coverage": 1.0,
+        "speaking_count": 5,
+        "brainstorm_needed_speaking": 5,
+        "brainstorm_emphasis_ok": true,
+        "oldest5_covered": 3,
+        "tier_distribution": {
+          "critical": 13,
+          "spaced_rep": 2,
+          "maintenance": 0,
+          "unknown": 0
+        }
+      },
+      "llm_judge": {
+        "reason_scores_per_question": [
+          {
+            "specificity": 5,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "Clear, accurate, and specific; could suggest a concrete practice activity for more actionability.",
+            "question_no": 13,
+            "reason_preview": "Bài học này đã học 72 ngày trước. Học sinh đã từng trả lời sai câu này trước đó:"
+          },
+          {
+            "specificity": 1,
+            "timing": 1,
+            "data_accuracy": 3,
+            "actionability": 1,
+            "language_quality": 4,
+            "comment": "The reason is generic, lacks reference to student errors or timing, but the Vietnamese is natural.",
+            "question_no": 14,
+            "reason_preview": "[Câu được điều chỉnh tự động để đảm bảo đa dạng bài học.]"
+          },
+          {
+            "specificity": 2,
+            "timing": 5,
+            "data_accuracy": 2,
+            "actionability": 3,
+            "language_quality": 5,
+            "comment": "The reason incorrectly claims the student made a specific 'does'/'do' mistake, which is not supported by the data; timing and language are strong.",
+            "question_no": 1,
+            "reason_preview": "Bài học này đã học 118 ngày trước và chưa được làm, cần ưu tiên ôn tập kiến thức"
+          },
+          {
+            "specificity": 1,
+            "timing": 1,
+            "data_accuracy": 3,
+            "actionability": 1,
+            "language_quality": 4,
+            "comment": "The reason is generic, lacks details about student performance, and does not guide improvement.",
+            "question_no": 3,
+            "reason_preview": "[Câu được điều chỉnh tự động để đảm bảo đa dạng bài học.]"
+          },
+          {
+            "specificity": 1,
+            "timing": 1,
+            "data_accuracy": 3,
+            "actionability": 1,
+            "language_quality": 4,
+            "comment": "The reason is generic, lacks reference to student answers or timing, and gives no actionable feedback.",
+            "question_no": 7,
+            "reason_preview": "[Câu được điều chỉnh tự động để đảm bảo đa dạng bài học.]"
+          }
+        ],
+        "reason_aggregated": {
+          "specificity": 2,
+          "timing": 2.6,
+          "data_accuracy": 3.2,
+          "actionability": 2,
+          "language_quality": 4.4,
+          "overall": 2.84
+        },
+        "diagnostic_score": {
+          "weakness_identification": 5,
+          "pattern_depth": 4,
+          "actionability": 3,
+          "specificity": 4,
+          "comment": "The diagnostic correctly flags brainstorm as the critical weakness and provides some explanation and lesson-specific details, but action steps for the selector agent are not fully explicit."
+        },
+        "diagnostic_avg": 4
+      },
+      "summary": {
+        "model": "gemini-2.5-flash-lite",
+        "overall_score": 76.8,
+        "tier": "B",
+        "constraint_score": 100.0,
+        "signal_score": 73.1,
+        "reason_score": 2.84,
+        "diagnostic_score": 4
+      }
+    },
+    "gemini-2.5-pro": {
+      "constraint": {
+        "score": 1.0,
+        "passed": 9,
+        "total": 9,
+        "checks": {
+          "count_15": true,
+          "speaking_ge3": true,
+          "grammar_ge4": true,
+          "vocab_ge3": true,
+          "per_lesson_le2": true,
+          "different_skills_when_paired": true,
+          "media_count_le4": true,
+          "all_reasons_vietnamese": true,
+          "valid_lesson_ids": true
+        },
+        "skill_distribution": {
+          "grammar": 4,
+          "vocabulary": 6,
+          "speaking": 5
+        },
+        "per_lesson_max": 2,
+        "media_count": 0,
+        "reasons_vn_count": 15,
+        "paired_skill_violations": [],
+        "invalid_lesson_ids": []
+      },
+      "signal": {
+        "score": 0.7113,
+        "avg_priority_score_selected": 0.8033,
+        "critical_tier_coverage": 0.3214,
+        "top3_urgent_covered": 3,
+        "not_attempted_coverage": 1.0,
+        "speaking_count": 5,
+        "brainstorm_needed_speaking": 5,
+        "brainstorm_emphasis_ok": true,
+        "oldest5_covered": 2,
+        "tier_distribution": {
+          "critical": 11,
+          "spaced_rep": 4,
+          "maintenance": 0,
+          "unknown": 0
+        }
+      },
+      "llm_judge": {
+        "reason_scores_per_question": [
+          {
+            "specificity": 5,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "Clear, accurate, and specific; could suggest a concrete next step for improvement.",
+            "question_no": 6,
+            "reason_preview": "Học sinh đã trả lời sai câu này trước đó: chọn \"B. is\" thay vì \"D. is that\". Lỗi"
+          },
+          {
+            "specificity": 4,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 3,
+            "language_quality": 5,
+            "comment": "Accurately cites the student's wrong answer and timing, but could be more actionable by connecting to the student's broader listening/brainstorming weaknesses.",
+            "question_no": 5,
+            "reason_preview": "Học sinh đã trả lời sai câu này trước đó: chọn \"A. She is from Russia.\" thay vì "
+          },
+          {
+            "specificity": 5,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 5,
+            "language_quality": 5,
+            "comment": "Clear, accurate, and actionable feedback with natural Vietnamese; all key details are present.",
+            "question_no": 3,
+            "reason_preview": "Học sinh đã trả lời sai câu này trước đó: chọn \"walk\" thay vì \"walks\". Đây là lỗ"
+          },
+          {
+            "specificity": 5,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "Clear, accurate, and specific; could suggest a next step for improvement.",
+            "question_no": 4,
+            "reason_preview": "Học sinh đã trả lời sai câu này trước đó: chọn \"B. It’s in the south of the city"
+          },
+          {
+            "specificity": 2,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 3,
+            "language_quality": 5,
+            "comment": "The reason is accurate and fluent but lacks reference to the student's specific errors or weaknesses in this lesson.",
+            "question_no": 15,
+            "reason_preview": "Đây là bài học từ 191 ngày trước, kiến thức có thể đã bị quên. Câu hỏi giúp củng"
+          }
+        ],
+        "reason_aggregated": {
+          "specificity": 4.2,
+          "timing": 5,
+          "data_accuracy": 5,
+          "actionability": 3.8,
+          "language_quality": 5,
+          "overall": 4.6
+        },
+        "diagnostic_score": {
+          "weakness_identification": 5,
+          "pattern_depth": 5,
+          "actionability": 3,
+          "specificity": 4,
+          "comment": "The diagnostic accurately identifies the critical weakness and explains underlying causes with specific examples, but actionable guidance for the selector agent is limited."
+        },
+        "diagnostic_avg": 4.25
+      },
+      "summary": {
+        "model": "gemini-2.5-pro",
+        "overall_score": 85.6,
+        "tier": "A",
+        "constraint_score": 100.0,
+        "signal_score": 71.1,
+        "reason_score": 4.6,
+        "diagnostic_score": 4.25
+      }
+    },
+    "gemini-3.1-pro-preview": {
+      "constraint": {
+        "score": 1.0,
+        "passed": 9,
+        "total": 9,
+        "checks": {
+          "count_15": true,
+          "speaking_ge3": true,
+          "grammar_ge4": true,
+          "vocab_ge3": true,
+          "per_lesson_le2": true,
+          "different_skills_when_paired": true,
+          "media_count_le4": true,
+          "all_reasons_vietnamese": true,
+          "valid_lesson_ids": true
+        },
+        "skill_distribution": {
+          "grammar": 4,
+          "vocabulary": 6,
+          "speaking": 5
+        },
+        "per_lesson_max": 2,
+        "media_count": 0,
+        "reasons_vn_count": 15,
+        "paired_skill_violations": [],
+        "invalid_lesson_ids": []
+      },
+      "signal": {
+        "score": 0.7397,
+        "avg_priority_score_selected": 0.8013,
+        "critical_tier_coverage": 0.3571,
+        "top3_urgent_covered": 3,
+        "not_attempted_coverage": 1.0,
+        "speaking_count": 5,
+        "brainstorm_needed_speaking": 5,
+        "brainstorm_emphasis_ok": true,
+        "oldest5_covered": 3,
+        "tier_distribution": {
+          "critical": 12,
+          "spaced_rep": 3,
+          "maintenance": 0,
+          "unknown": 0
+        }
+      },
+      "llm_judge": {
+        "reason_scores_per_question": [
+          {
+            "specificity": 2,
+            "timing": 5,
+            "data_accuracy": 4,
+            "actionability": 3,
+            "language_quality": 5,
+            "comment": "The reason mentions timing and general performance, but lacks specific error details or clear next steps.",
+            "question_no": 2,
+            "reason_preview": "Bài học đã qua 118 ngày và điểm nói bằng 0 do chưa từng nộp bài tập. Học sinh là"
+          },
+          {
+            "specificity": 2,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "The reason mentions the long gap and suggests targeted practice, but lacks reference to any specific student error or example.",
+            "question_no": 15,
+            "reason_preview": "Bài đã học 167 ngày trước, khoảng cách thời gian quá lâu. Cần sử dụng câu hỏi ng"
+          },
+          {
+            "specificity": 4,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 3,
+            "language_quality": 5,
+            "comment": "The reason is accurate and specific, but could be more actionable by referencing the student's critical listening/brainstorming weakness.",
+            "question_no": 7,
+            "reason_preview": "Học sinh đã trả lời sai câu này trước đó: điền/chọn \"A. She is from Russia.\" tha"
+          },
+          {
+            "specificity": 2,
+            "timing": 5,
+            "data_accuracy": 4,
+            "actionability": 3,
+            "language_quality": 5,
+            "comment": "The reason is generally accurate and well-written, but lacks specific reference to the student's critical listening/brainstorming weakness or concrete errors.",
+            "question_no": 14,
+            "reason_preview": "Bài đã học 86 ngày trước. Vì học sinh làm bài tập viết cực kỳ xuất sắc (độ chính"
+          },
+          {
+            "specificity": 5,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "Clear, specific, and accurate; could suggest more concrete next steps for improvement.",
+            "question_no": 6,
+            "reason_preview": "Học sinh đã trả lời sai câu này trước đó: điền/chọn \"B. It’s in the south of the"
+          }
+        ],
+        "reason_aggregated": {
+          "specificity": 3,
+          "timing": 5,
+          "data_accuracy": 4.6,
+          "actionability": 3.4,
+          "language_quality": 5,
+          "overall": 4.2
+        },
+        "diagnostic_score": {
+          "weakness_identification": 5,
+          "pattern_depth": 5,
+          "actionability": 4,
+          "specificity": 3,
+          "comment": "The diagnostic accurately identifies the critical weakness and explains underlying causes, but lacks specific lesson titles or transcript excerpts."
+        },
+        "diagnostic_avg": 4.25
+      },
+      "summary": {
+        "model": "gemini-3.1-pro-preview",
+        "overall_score": 84.6,
+        "tier": "A",
+        "constraint_score": 100.0,
+        "signal_score": 74.0,
+        "reason_score": 4.2,
+        "diagnostic_score": 4.25
+      }
+    },
+    "gpt-4.1": {
+      "constraint": {
+        "score": 1.0,
+        "passed": 9,
+        "total": 9,
+        "checks": {
+          "count_15": true,
+          "speaking_ge3": true,
+          "grammar_ge4": true,
+          "vocab_ge3": true,
+          "per_lesson_le2": true,
+          "different_skills_when_paired": true,
+          "media_count_le4": true,
+          "all_reasons_vietnamese": true,
+          "valid_lesson_ids": true
+        },
+        "skill_distribution": {
+          "vocabulary": 5,
+          "grammar": 5,
+          "speaking": 5
+        },
+        "per_lesson_max": 2,
+        "media_count": 0,
+        "reasons_vn_count": 15,
+        "paired_skill_violations": [],
+        "invalid_lesson_ids": []
+      },
+      "signal": {
+        "score": 0.7035,
+        "avg_priority_score_selected": 0.8071,
+        "critical_tier_coverage": 0.2857,
+        "top3_urgent_covered": 3,
+        "not_attempted_coverage": 1.0,
+        "speaking_count": 5,
+        "brainstorm_needed_speaking": 5,
+        "brainstorm_emphasis_ok": true,
+        "oldest5_covered": 2,
+        "tier_distribution": {
+          "critical": 13,
+          "spaced_rep": 2,
+          "maintenance": 0,
+          "unknown": 0
+        }
+      },
+      "llm_judge": {
+        "reason_scores_per_question": [
+          {
+            "specificity": 2,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 3,
+            "language_quality": 5,
+            "comment": "The reason is accurate and natural but lacks specific reference to the student's errors or weaknesses in this lesson.",
+            "question_no": 11,
+            "reason_preview": "Bài này đã học 55 ngày trước; học sinh cần luyện nói và hiểu các chỉ dẫn đường đ"
+          },
+          {
+            "specificity": 2,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 3,
+            "language_quality": 5,
+            "comment": "The reason is accurate and natural but lacks specific reference to the student's critical weakness in brainstorming or any concrete error from this lesson.",
+            "question_no": 2,
+            "reason_preview": "Bài này đã học 118 ngày trước và chưa nộp bài tập về nhà; học sinh cần luyện lại"
+          },
+          {
+            "specificity": 3,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "Accurately summarizes the situation and error, but could be more specific by referencing the student's actual performance or errors.",
+            "question_no": 1,
+            "reason_preview": "Bài này đã học 118 ngày trước nhưng học sinh chưa làm bài tập về nhà, nguy cơ qu"
+          },
+          {
+            "specificity": 5,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "Clear, accurate, and specific; could suggest a concrete practice activity for more actionability.",
+            "question_no": 12,
+            "reason_preview": "Bài này đã học 72 ngày trước; học sinh đã trả lời sai câu này trước đó: chọn 'B."
+          },
+          {
+            "specificity": 3,
+            "timing": 5,
+            "data_accuracy": 4,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "The reason is generally accurate and actionable, but could be more specific by quoting the student's actual answers.",
+            "question_no": 5,
+            "reason_preview": "Bài này đã học 28 ngày trước; học sinh có điểm brainstorm rất thấp ở các bài tươ"
+          }
+        ],
+        "reason_aggregated": {
+          "specificity": 3,
+          "timing": 5,
+          "data_accuracy": 4.8,
+          "actionability": 3.6,
+          "language_quality": 5,
+          "overall": 4.28
+        },
+        "diagnostic_score": {
+          "weakness_identification": 4,
+          "pattern_depth": 4,
+          "actionability": 3,
+          "specificity": 5,
+          "comment": "The diagnostic correctly highlights brainstorm as the main weakness and provides specific examples, but overstates issues with homework and memory, which are not fully supported by the data."
+        },
+        "diagnostic_avg": 4
+      },
+      "summary": {
+        "model": "gpt-4.1",
+        "overall_score": 83.0,
+        "tier": "A",
+        "constraint_score": 100.0,
+        "signal_score": 70.3,
+        "reason_score": 4.28,
+        "diagnostic_score": 4
+      }
+    },
+    "gpt-4.1-mini": {
+      "constraint": {
+        "score": 1.0,
+        "passed": 9,
+        "total": 9,
+        "checks": {
+          "count_15": true,
+          "speaking_ge3": true,
+          "grammar_ge4": true,
+          "vocab_ge3": true,
+          "per_lesson_le2": true,
+          "different_skills_when_paired": true,
+          "media_count_le4": true,
+          "all_reasons_vietnamese": true,
+          "valid_lesson_ids": true
+        },
+        "skill_distribution": {
+          "vocabulary": 6,
+          "grammar": 4,
+          "speaking": 5
+        },
+        "per_lesson_max": 2,
+        "media_count": 0,
+        "reasons_vn_count": 15,
+        "paired_skill_violations": [],
+        "invalid_lesson_ids": []
+      },
+      "signal": {
+        "score": 0.7235,
+        "avg_priority_score_selected": 0.8068,
+        "critical_tier_coverage": 0.2857,
+        "top3_urgent_covered": 3,
+        "not_attempted_coverage": 1.0,
+        "speaking_count": 5,
+        "brainstorm_needed_speaking": 5,
+        "brainstorm_emphasis_ok": true,
+        "oldest5_covered": 3,
+        "tier_distribution": {
+          "critical": 11,
+          "spaced_rep": 4,
+          "maintenance": 0,
+          "unknown": 0
+        }
+      },
+      "llm_judge": {
+        "reason_scores_per_question": [
+          {
+            "specificity": 4,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "The reason is specific about the error and timing, but could mention the student's critical weakness in brainstorming for more actionable feedback.",
+            "question_no": 4,
+            "reason_preview": "Bài này đã học 176 ngày trước, học sinh cần ôn lại lỗi sai về cấu trúc câu hỏi v"
+          },
+          {
+            "specificity": 2,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 3,
+            "language_quality": 5,
+            "comment": "Mentions low brainstorm score but lacks concrete examples or specific errors from the student's answers.",
+            "question_no": 15,
+            "reason_preview": "Bài này đã học 28 ngày trước, điểm brainstorm rất thấp, học sinh cần luyện nói t"
+          },
+          {
+            "specificity": 1,
+            "timing": 1,
+            "data_accuracy": 3,
+            "actionability": 1,
+            "language_quality": 4,
+            "comment": "The reason is generic, lacks any reference to student performance or timing, and does not guide improvement.",
+            "question_no": 3,
+            "reason_preview": "[Câu được điều chỉnh tự động để đảm bảo đa dạng bài học.]"
+          },
+          {
+            "specificity": 2,
+            "timing": 5,
+            "data_accuracy": 4,
+            "actionability": 3,
+            "language_quality": 5,
+            "comment": "The reason is accurate and natural but lacks specific reference to the student's actual error or answer.",
+            "question_no": 12,
+            "reason_preview": "Bài này đã học 167 ngày trước, học sinh cần luyện nghe và viết đúng từ 'farmer' "
+          },
+          {
+            "specificity": 2,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 3,
+            "language_quality": 5,
+            "comment": "Mentions the correct answer but lacks reference to any specific student error or transcript detail.",
+            "question_no": 2,
+            "reason_preview": "Bài này đã học 118 ngày trước nhưng chưa làm bài tập về nhà, học sinh cần luyện "
+          }
+        ],
+        "reason_aggregated": {
+          "specificity": 2.2,
+          "timing": 4.2,
+          "data_accuracy": 4.4,
+          "actionability": 2.8,
+          "language_quality": 4.8,
+          "overall": 3.68
+        },
+        "diagnostic_score": {
+          "weakness_identification": 5,
+          "pattern_depth": 4,
+          "actionability": 3,
+          "specificity": 5,
+          "comment": "The diagnostic accurately identifies the brainstorm weakness and provides specific lesson data, but actionability could be improved with more explicit recommendations for the homework-selector agent."
+        },
+        "diagnostic_avg": 4.25
+      },
+      "summary": {
+        "model": "gpt-4.1-mini",
+        "overall_score": 81.5,
+        "tier": "A",
+        "constraint_score": 100.0,
+        "signal_score": 72.4,
+        "reason_score": 3.68,
+        "diagnostic_score": 4.25
+      }
+    },
+    "gpt-4.1-nano": {
+      "constraint": {
+        "score": 1.0,
+        "passed": 9,
+        "total": 9,
+        "checks": {
+          "count_15": true,
+          "speaking_ge3": true,
+          "grammar_ge4": true,
+          "vocab_ge3": true,
+          "per_lesson_le2": true,
+          "different_skills_when_paired": true,
+          "media_count_le4": true,
+          "all_reasons_vietnamese": true,
+          "valid_lesson_ids": true
+        },
+        "skill_distribution": {
+          "vocabulary": 6,
+          "grammar": 4,
+          "speaking": 5
+        },
+        "per_lesson_max": 2,
+        "media_count": 0,
+        "reasons_vn_count": 15,
+        "paired_skill_violations": [],
+        "invalid_lesson_ids": []
+      },
+      "signal": {
+        "score": 0.7313,
+        "avg_priority_score_selected": 0.8033,
+        "critical_tier_coverage": 0.3214,
+        "top3_urgent_covered": 3,
+        "not_attempted_coverage": 1.0,
+        "speaking_count": 5,
+        "brainstorm_needed_speaking": 5,
+        "brainstorm_emphasis_ok": true,
+        "oldest5_covered": 3,
+        "tier_distribution": {
+          "critical": 12,
+          "spaced_rep": 3,
+          "maintenance": 0,
+          "unknown": 0
+        }
+      },
+      "llm_judge": {
+        "reason_scores_per_question": [
+          {
+            "specificity": 1,
+            "timing": 1,
+            "data_accuracy": 3,
+            "actionability": 1,
+            "language_quality": 4,
+            "comment": "The reason is generic, lacks any reference to student performance or timing, and does not guide next steps.",
+            "question_no": 11,
+            "reason_preview": "[Câu được điều chỉnh tự động để đảm bảo đa dạng bài học.]"
+          },
+          {
+            "specificity": 1,
+            "timing": 1,
+            "data_accuracy": 3,
+            "actionability": 1,
+            "language_quality": 4,
+            "comment": "The reason is generic, lacks reference to student performance or timing, but the Vietnamese is natural.",
+            "question_no": 12,
+            "reason_preview": "[Câu được điều chỉnh tự động để đảm bảo đa dạng bài học.]"
+          },
+          {
+            "specificity": 1,
+            "timing": 1,
+            "data_accuracy": 3,
+            "actionability": 1,
+            "language_quality": 4,
+            "comment": "The reason is generic, lacks details about the student's performance, and does not guide improvement.",
+            "question_no": 9,
+            "reason_preview": "[Câu được điều chỉnh tự động để đảm bảo đa dạng bài học.]"
+          },
+          {
+            "specificity": 1,
+            "timing": 1,
+            "data_accuracy": 3,
+            "actionability": 1,
+            "language_quality": 4,
+            "comment": "The reason is generic, lacks reference to student errors or timing, but the Vietnamese is natural.",
+            "question_no": 2,
+            "reason_preview": "[Câu được điều chỉnh tự động để đảm bảo đa dạng bài học.]"
+          },
+          {
+            "specificity": 2,
+            "timing": 5,
+            "data_accuracy": 4,
+            "actionability": 3,
+            "language_quality": 5,
+            "comment": "The reason is accurate and natural but lacks specific examples or errors from the student's answers.",
+            "question_no": 10,
+            "reason_preview": "Bài này đã học 20 ngày trước — học sinh đã trả lời đúng nhưng còn yếu trong phản"
+          }
+        ],
+        "reason_aggregated": {
+          "specificity": 1.2,
+          "timing": 1.8,
+          "data_accuracy": 3.2,
+          "actionability": 1.4,
+          "language_quality": 4.2,
+          "overall": 2.36
+        },
+        "diagnostic_score": {
+          "weakness_identification": 4,
+          "pattern_depth": 3,
+          "actionability": 2,
+          "specificity": 2,
+          "comment": "The diagnostic correctly flags brainstorm and speaking as weaknesses but is vague about actionable steps and lacks specific lesson or score references."
+        },
+        "diagnostic_avg": 2.75
+      },
+      "summary": {
+        "model": "gpt-4.1-nano",
+        "overall_score": 70.6,
+        "tier": "B",
+        "constraint_score": 100.0,
+        "signal_score": 73.1,
+        "reason_score": 2.36,
+        "diagnostic_score": 2.75
+      }
+    },
+    "gpt-5.4": {
+      "constraint": {
+        "score": 1.0,
+        "passed": 9,
+        "total": 9,
+        "checks": {
+          "count_15": true,
+          "speaking_ge3": true,
+          "grammar_ge4": true,
+          "vocab_ge3": true,
+          "per_lesson_le2": true,
+          "different_skills_when_paired": true,
+          "media_count_le4": true,
+          "all_reasons_vietnamese": true,
+          "valid_lesson_ids": true
+        },
+        "skill_distribution": {
+          "grammar": 4,
+          "speaking": 5,
+          "vocabulary": 6
+        },
+        "per_lesson_max": 2,
+        "media_count": 0,
+        "reasons_vn_count": 15,
+        "paired_skill_violations": [],
+        "invalid_lesson_ids": []
+      },
+      "signal": {
+        "score": 0.7561,
+        "avg_priority_score_selected": 0.7965,
+        "critical_tier_coverage": 0.4286,
+        "top3_urgent_covered": 3,
+        "not_attempted_coverage": 1.0,
+        "speaking_count": 5,
+        "brainstorm_needed_speaking": 5,
+        "brainstorm_emphasis_ok": true,
+        "oldest5_covered": 3,
+        "tier_distribution": {
+          "critical": 12,
+          "spaced_rep": 3,
+          "maintenance": 0,
+          "unknown": 0
+        }
+      },
+      "llm_judge": {
+        "reason_scores_per_question": [
+          {
+            "specificity": 4,
+            "timing": 5,
+            "data_accuracy": 4,
+            "actionability": 5,
+            "language_quality": 5,
+            "comment": "Strong, actionable reasoning with accurate timing and good use of student quotes, but slightly overstates the '0/100' free speaking score.",
+            "question_no": 7,
+            "reason_preview": "Bài này mới học 20 ngày trước nhưng vẫn là điểm yếu nặng, nên cần can thiệp sớm "
+          },
+          {
+            "specificity": 4,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 5,
+            "language_quality": 5,
+            "comment": "The reason is detailed, accurate, and actionable, but could be even more specific by quoting the student's exact responses.",
+            "question_no": 1,
+            "reason_preview": "Bài này đã học 118 ngày trước và còn ở trạng thái chưa làm homework, nên rủi ro "
+          },
+          {
+            "specificity": 3,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "Reason is accurate and clear, but could be more specific by citing an actual student error or transcript.",
+            "question_no": 14,
+            "reason_preview": "Bài này đã học 132 ngày trước nên cần phục hồi trí nhớ theo chủ điểm Around the "
+          },
+          {
+            "specificity": 4,
+            "timing": 5,
+            "data_accuracy": 3,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "Accurately references timing and the student's brainstorm weakness, but slightly misrepresents the actual answers given.",
+            "question_no": 2,
+            "reason_preview": "Bài này đã học 122 ngày trước — cần phục hồi mạnh khả năng gọi từ theo tranh. Ch"
+          },
+          {
+            "specificity": 5,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "Very specific and accurate; could suggest a concrete next step for improvement.",
+            "question_no": 4,
+            "reason_preview": "Bài này đã học 139 ngày trước nên nguy cơ quên rất cao. Học sinh đã trả lời sai "
+          }
+        ],
+        "reason_aggregated": {
+          "specificity": 4,
+          "timing": 5,
+          "data_accuracy": 4.4,
+          "actionability": 4.4,
+          "language_quality": 5,
+          "overall": 4.56
+        },
+        "diagnostic_score": {
+          "weakness_identification": 5,
+          "pattern_depth": 5,
+          "actionability": 4,
+          "specificity": 5,
+          "comment": "The diagnostic accurately pinpoints brainstorm as the critical weakness, explains underlying causes, and cites concrete examples, though action steps could be more explicit."
+        },
+        "diagnostic_avg": 4.75
+      },
+      "summary": {
+        "model": "gpt-5.4",
+        "overall_score": 88.5,
+        "tier": "A",
+        "constraint_score": 100.0,
+        "signal_score": 75.6,
+        "reason_score": 4.56,
+        "diagnostic_score": 4.75
+      }
+    },
+    "gpt-5.4-mini": {
+      "constraint": {
+        "score": 1.0,
+        "passed": 9,
+        "total": 9,
+        "checks": {
+          "count_15": true,
+          "speaking_ge3": true,
+          "grammar_ge4": true,
+          "vocab_ge3": true,
+          "per_lesson_le2": true,
+          "different_skills_when_paired": true,
+          "media_count_le4": true,
+          "all_reasons_vietnamese": true,
+          "valid_lesson_ids": true
+        },
+        "skill_distribution": {
+          "grammar": 4,
+          "speaking": 6,
+          "vocabulary": 5
+        },
+        "per_lesson_max": 2,
+        "media_count": 0,
+        "reasons_vn_count": 15,
+        "paired_skill_violations": [],
+        "invalid_lesson_ids": []
+      },
+      "signal": {
+        "score": 0.6345,
+        "avg_priority_score_selected": 0.7993,
+        "critical_tier_coverage": 0.2857,
+        "top3_urgent_covered": 2,
+        "not_attempted_coverage": 1.0,
+        "speaking_count": 6,
+        "brainstorm_needed_speaking": 5,
+        "brainstorm_emphasis_ok": true,
+        "oldest5_covered": 2,
+        "tier_distribution": {
+          "critical": 14,
+          "spaced_rep": 1,
+          "maintenance": 0,
+          "unknown": 0
+        }
+      },
+      "llm_judge": {
+        "reason_scores_per_question": [
+          {
+            "specificity": 3,
+            "timing": 5,
+            "data_accuracy": 4,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "The reason is clear and natural, but could be more specific by citing an actual student answer or error.",
+            "question_no": 4,
+            "reason_preview": "Bài này đã học 167 ngày trước và là dạng nói mở, rất phù hợp để kiểm tra khả năn"
+          },
+          {
+            "specificity": 3,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "The reason is accurate and well-written, but could be more specific by referencing an actual student error or transcript.",
+            "question_no": 9,
+            "reason_preview": "Bài này đã học 153 ngày trước, nên mẫu quá khứ tiếp diễn rất dễ bị quên. Chẩn đo"
+          },
+          {
+            "specificity": 5,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 5,
+            "language_quality": 5,
+            "comment": "Clear, accurate, and actionable feedback with natural Vietnamese; all key details are included.",
+            "question_no": 10,
+            "reason_preview": "Bài này đã học 70 ngày trước và học sinh từng trả lời sai câu này trước đó: điền"
+          },
+          {
+            "specificity": 4,
+            "timing": 5,
+            "data_accuracy": 4,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "Good use of timing and relevant error, but the claim about a previous wrong answer is not supported by the provided data.",
+            "question_no": 1,
+            "reason_preview": "Bài này đã học 118 ngày trước và còn chưa làm bài tập về nhà, nên đây là kiến th"
+          },
+          {
+            "specificity": 3,
+            "timing": 5,
+            "data_accuracy": 4,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "The reason is clear and mostly accurate, but could be more specific by referencing the student's actual brainstorm answer or error.",
+            "question_no": 14,
+            "reason_preview": "Bài này đã học 132 ngày trước và cần một câu nói mở để kiểm tra khả năng gọi tên"
+          }
+        ],
+        "reason_aggregated": {
+          "specificity": 3.6,
+          "timing": 5,
+          "data_accuracy": 4.4,
+          "actionability": 4.2,
+          "language_quality": 5,
+          "overall": 4.44
+        },
+        "diagnostic_score": {
+          "weakness_identification": 5,
+          "pattern_depth": 5,
+          "actionability": 4,
+          "specificity": 5,
+          "comment": "The diagnostic accurately identifies and explains the main weaknesses with specific examples, though actionability could be improved with more explicit homework recommendations."
+        },
+        "diagnostic_avg": 4.75
+      },
+      "summary": {
+        "model": "gpt-5.4-mini",
+        "overall_score": 83.7,
+        "tier": "A",
+        "constraint_score": 100.0,
+        "signal_score": 63.4,
+        "reason_score": 4.44,
+        "diagnostic_score": 4.75
+      }
+    },
+    "gpt-5.4-nano": {
+      "constraint": {
+        "score": 1.0,
+        "passed": 9,
+        "total": 9,
+        "checks": {
+          "count_15": true,
+          "speaking_ge3": true,
+          "grammar_ge4": true,
+          "vocab_ge3": true,
+          "per_lesson_le2": true,
+          "different_skills_when_paired": true,
+          "media_count_le4": true,
+          "all_reasons_vietnamese": true,
+          "valid_lesson_ids": true
+        },
+        "skill_distribution": {
+          "grammar": 4,
+          "vocabulary": 6,
+          "speaking": 5
+        },
+        "per_lesson_max": 2,
+        "media_count": 0,
+        "reasons_vn_count": 15,
+        "paired_skill_violations": [],
+        "invalid_lesson_ids": []
+      },
+      "signal": {
+        "score": 0.7313,
+        "avg_priority_score_selected": 0.8033,
+        "critical_tier_coverage": 0.3214,
+        "top3_urgent_covered": 3,
+        "not_attempted_coverage": 1.0,
+        "speaking_count": 5,
+        "brainstorm_needed_speaking": 5,
+        "brainstorm_emphasis_ok": true,
+        "oldest5_covered": 3,
+        "tier_distribution": {
+          "critical": 12,
+          "spaced_rep": 3,
+          "maintenance": 0,
+          "unknown": 0
+        }
+      },
+      "llm_judge": {
+        "reason_scores_per_question": [
+          {
+            "specificity": 1,
+            "timing": 1,
+            "data_accuracy": 3,
+            "actionability": 1,
+            "language_quality": 4,
+            "comment": "The reason is generic, lacks any reference to student performance or timing, and does not guide improvement.",
+            "question_no": 4,
+            "reason_preview": "[Câu được điều chỉnh tự động để đảm bảo đa dạng bài học.]"
+          },
+          {
+            "specificity": 3,
+            "timing": 5,
+            "data_accuracy": 4,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "The reason is generally accurate and actionable, but could be more specific by referencing the student's actual errors or confusion with country names.",
+            "question_no": 12,
+            "reason_preview": "Bài này đã học cách đây 132 ngày trước — cần ôn lại từ đầu vì học sinh hay quên "
+          },
+          {
+            "specificity": 1,
+            "timing": 1,
+            "data_accuracy": 3,
+            "actionability": 1,
+            "language_quality": 4,
+            "comment": "The reason is generic, lacks reference to student performance or timing, but the Vietnamese is natural.",
+            "question_no": 11,
+            "reason_preview": "[Câu được điều chỉnh tự động để đảm bảo đa dạng bài học.]"
+          },
+          {
+            "specificity": 1,
+            "timing": 1,
+            "data_accuracy": 3,
+            "actionability": 1,
+            "language_quality": 4,
+            "comment": "The reason is generic, lacks reference to student errors or timing, but the Vietnamese is natural.",
+            "question_no": 14,
+            "reason_preview": "[Câu được điều chỉnh tự động để đảm bảo đa dạng bài học.]"
+          },
+          {
+            "specificity": 3,
+            "timing": 5,
+            "data_accuracy": 5,
+            "actionability": 4,
+            "language_quality": 5,
+            "comment": "The reason is accurate and actionable, but would be stronger if it quoted or summarized a specific student error.",
+            "question_no": 9,
+            "reason_preview": "Bài này đã học cách đây 176 ngày trước — cần ôn lại từ đầu vì free speaking của "
+          }
+        ],
+        "reason_aggregated": {
+          "specificity": 1.8,
+          "timing": 2.6,
+          "data_accuracy": 3.6,
+          "actionability": 2.2,
+          "language_quality": 4.4,
+          "overall": 2.92
+        },
+        "diagnostic_score": {
+          "weakness_identification": 5,
+          "pattern_depth": 5,
+          "actionability": 4,
+          "specificity": 4,
+          "comment": "The diagnostic accurately identifies the brainstorm weakness, explains underlying issues, and provides actionable insights, but could include more specific lesson or transcript references."
+        },
+        "diagnostic_avg": 4.5
+      },
+      "summary": {
+        "model": "gpt-5.4-nano",
+        "overall_score": 78.7,
+        "tier": "B",
+        "constraint_score": 100.0,
+        "signal_score": 73.1,
+        "reason_score": 2.92,
+        "diagnostic_score": 4.5
+      }
+    }
+  }
+}

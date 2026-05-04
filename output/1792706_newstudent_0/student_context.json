@@ -7,11 +7,6 @@
       "completed": 12
     },
     "overall_homework_skill_breakdown": {
-      "English Tutoring - Level 1": {
-        "correct": 157,
-        "total": 181,
-        "accuracy": 0.867
-      },
       "Kĩ năng nghe": {
         "correct": 83,
         "total": 91,
@@ -27,6 +22,11 @@
         "total": 30,
         "accuracy": 0.967
       },
+      "English Tutoring - Level 1": {
+        "correct": 157,
+        "total": 181,
+        "accuracy": 0.867
+      },
       "English Tutoring Level 0": {
         "correct": 1,
         "total": 1,
@@ -34,330 +34,35 @@
       }
     },
     "weak_skills_global": [],
+    "critical_speaking_types": [
+      "brainstorm",
+      "free_speaking"
+    ],
     "overall_pronunciation_score_avg": 54.06,
     "overall_free_speaking_score_avg": 9.09,
     "overall_brainstorm_score_avg": 0.0,
     "overall_conversation_score_avg": 70.34,
     "overall_free_speaking_answer_type_dist": {
       "inaccordant": 8,
-      "lack_of_knowledge": 2,
-      "accordant": 1
+      "accordant": 1,
+      "lack_of_knowledge": 2
     },
     "overall_brainstorm_answer_type_dist": {
-      "correct": 6,
-      "incorrect": 17
+      "incorrect": 17,
+      "correct": 6
     },
-    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
-    {
-      "lesson_id": 3830583,
-      "title": "Unit 3A: School things - Lesson 1: It's a red notebook.",
-      "level": 1,
-      "last_activity_date": "2026-04-17",
-      "days_since_last_practice": 4,
-      "forgetting_score": 0.9817,
-      "weakness_score": 1.0,
-      "composite_priority_score": 0.9909,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice. What is your name? 😊",
-          "expected_answer": "My name is Ana.",
-          "target_objects": null,
-          "user_transcript": "I am Theon.",
-          "score": 64,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 33,
-          "grammar_score": 95,
-          "timestamp": "2026-04-15",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo024kfx-ded91c6b-audio.wav",
-          "reaction_time_ms": 1485
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. What is your name? 😊",
-          "expected_answer": "My name is Ana.",
-          "target_objects": null,
-          "user_transcript": "My name.",
-          "score": 69.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 39,
-          "timestamp": "2026-04-15",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo0245k6-6271e6dc-audio.wav",
-          "reaction_time_ms": 1485
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. What is your name? 😊",
-          "expected_answer": "My name is Ana.",
-          "target_objects": null,
-          "user_transcript": "I am",
-          "score": 32,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 50,
-          "grammar_score": 14,
-          "timestamp": "2026-04-15",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo023sf9-6754fb2a-audio.wav",
-          "reaction_time_ms": 1485
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Oh, do you mean “My name is ___”? 😊",
-          "expected_answer": "My name is [your name].",
-          "target_objects": null,
-          "user_transcript": "My name is.",
-          "score": 57,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 14,
-          "timestamp": "2026-04-15",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo023g4e-055d25e4-audio.wav",
-          "reaction_time_ms": 1485
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Oh, do you mean your name? 😊",
-          "expected_answer": "Yes, my name is Anna.",
-          "target_objects": null,
-          "user_transcript": "I let me.",
-          "score": 56.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 13,
-          "timestamp": "2026-04-15",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo0230pa-c96ddf47-audio.wav",
-          "reaction_time_ms": 1485
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7212,
-        "luyen_tap": 13133
-      }
-    },
-    {
-      "lesson_id": 3836969,
-      "title": "Unit 3A: School things - Lesson 2: I have a yellow pencil.",
-      "level": 1,
-      "last_activity_date": "2026-04-19",
-      "days_since_last_practice": 2,
-      "forgetting_score": 0.8647,
-      "weakness_score": 0.7992,
-      "composite_priority_score": 0.8319,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [
-        {
-          "practice_id": 13136,
-          "question_id": 385157,
-          "question_folder": "English Tutoring - Level 1",
-          "question_type": "Xứng-Hợp",
-          "question_text": "Match (Con hãy di chuyển các ô ở cột bên phải để nối từ với ảnh đúng.)",
-          "comment_plain": "Đáp án: pen: b&uacute;t ch&igrave; ruler: thước kẻ school bag: cặp sách rubber: cục tẩy",
-          "correct_answer": "item_1→school bag; item_2→pen; item_3→rubber; item_4→ruler",
-          "student_answer": "wrong: item_3, item_4",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A1",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/29/2da7_blue-school-bag.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "A2",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/29/4008_pen.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "A3",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/29/2502_rubber.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "A4",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/01/16/7260_blue_ruler.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B1",
-              "text": "rubber",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B2",
-              "text": "pen",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B3",
-              "text": "school bag",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B4",
-              "text": "ruler",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        },
-        {
-          "practice_id": 13136,
-          "question_id": 369464,
-          "question_folder": "English Tutoring - Level 1",
-          "question_type": "Một lựa chọn",
-          "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.) How many rulers ... there?",
-          "comment_plain": "How many rulers are there? C&oacute; bao nhi&ecirc;u cái thước kẻ? => Đáp án: C (&quot;rulers&quot; số nhiều --> d&ugrave;ng động từ tobe &quot;are&quot;)",
-          "correct_answer": "C. are",
-          "student_answer": "B. is",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. am",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. is",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. are",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        }
-      ],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Oh, okay. Would you like to talk about your school or your house? 🏠",
-          "expected_answer": "I want to talk about my school.",
-          "target_objects": null,
-          "user_transcript": "That.",
-          "score": 68.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 37,
-          "timestamp": "2026-04-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5oux3e-453305d3-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. What color is your pen? 🖊️",
-          "expected_answer": "My pen is blue.",
-          "target_objects": null,
-          "user_transcript": "I like pen.",
-          "score": 63.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 88,
-          "grammar_score": 39,
-          "timestamp": "2026-04-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5oqohv-de516b47-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Good. Tell me one school thing you have today.",
-          "expected_answer": "I have a pencil today.",
-          "target_objects": null,
-          "user_transcript": "Hen.",
-          "score": 37.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 33,
-          "grammar_score": 42,
-          "timestamp": "2026-04-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5oppd0-5dc78d26-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi! Nice to see you. Are you ready to talk about school things? 😄",
-          "expected_answer": "Yes, I am ready. I like school.",
-          "target_objects": null,
-          "user_transcript": "That I learned.",
-          "score": 45.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 73,
-          "grammar_score": 18,
-          "timestamp": "2026-04-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5ope3q-a83aa773-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Do you like reading at home? 📖",
-          "expected_answer": "Yes, I like reading at home.",
-          "target_objects": null,
-          "user_transcript": "Let I do a book I like book.",
-          "score": 68.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 91,
-          "grammar_score": 46,
-          "timestamp": "2026-04-17",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo319t4k-dc5b66f5-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7213,
-        "luyen_tap": 13136
-      }
-    },
     {
       "lesson_id": 3824530,
       "title": "Unit 1A: Greetings - Lesson 4: I'm good!",
       "level": 1,
       "last_activity_date": "2026-03-25",
       "days_since_last_practice": 27,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9789,
       "weakness_score": 0.6195,
-      "composite_priority_score": 0.8097,
+      "composite_priority_score": 0.7992,
       "homework_status": "attempted",
       "weak_skills": [
         "English Tutoring - Level 1"
@@ -561,400 +266,14 @@
       }
     },
     {
-      "lesson_id": 3824532,
-      "title": "Unit 2A: Colors - Lesson 1: It's red.",
-      "level": 1,
-      "last_activity_date": "2026-03-29",
-      "days_since_last_practice": 23,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.57,
-      "composite_priority_score": 0.785,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 3,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Where do you wear your purple dress? 👗",
-          "expected_answer": "I wear it to school and parties.",
-          "target_objects": null,
-          "user_transcript": "I need to.",
-          "score": 59.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 77,
-          "grammar_score": 42,
-          "timestamp": "2026-03-28",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9rbp2x-3fd5816b-audio.wav",
-          "reaction_time_ms": 1068
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Okay. Do you have a blue dress or a blue toy? 😊",
-          "expected_answer": "Yes, I have a blue dress. It is very pretty.",
-          "target_objects": null,
-          "user_transcript": "I like.",
-          "score": 34.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 50,
-          "grammar_score": 19,
-          "timestamp": "2026-03-28",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9r9nmt-27783d61-audio.wav",
-          "reaction_time_ms": 1068
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice, we both like blue 😊 What blue things do you have at home?",
-          "expected_answer": "I have a blue dress and a blue cup.",
-          "target_objects": null,
-          "user_transcript": "No.",
-          "score": 69.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 39,
-          "timestamp": "2026-03-28",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9r9az7-d2ef4f21-audio.wav",
-          "reaction_time_ms": 1068
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Great. Tell me your favorite color and why. 🙂",
-          "expected_answer": "My favorite color is blue because it is calm.",
-          "target_objects": null,
-          "user_transcript": "Oh.",
-          "score": 68,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 36,
-          "timestamp": "2026-03-28",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9r7rq9-f03ab3df-audio.wav",
-          "reaction_time_ms": 1068
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hello! It’s nice to chat about colors today. Are you ready to practice with me? 😄",
-          "expected_answer": "Yes, I am ready.",
-          "target_objects": null,
-          "user_transcript": "Yes, I am ready.",
-          "score": 69.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 50,
-          "grammar_score": 89,
-          "timestamp": "2026-03-28",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9r7fhr-e3c2c234-audio.wav",
-          "reaction_time_ms": 1068
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7201,
-        "luyen_tap": 13139
-      }
-    },
-    {
-      "lesson_id": 3824533,
-      "title": "Unit 2A: Colors - Lesson 2: It's a red flower.",
-      "level": 1,
-      "last_activity_date": "2026-04-02",
-      "days_since_last_practice": 19,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.565,
-      "composite_priority_score": 0.7825,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [
-        {
-          "practice_id": 13140,
-          "question_id": 369547,
-          "question_folder": "English Tutoring - Level 1",
-          "question_type": "Một lựa chọn",
-          "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.)",
-          "comment_plain": "Audio: What is this ? It&#39;s a purple egg. => Đáp án: A",
-          "correct_answer": "A. It's a purple egg.",
-          "student_answer": "B. It's a blue egg.",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. It's a purple egg.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. It's a blue egg.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. It's a yellow egg.",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        },
-        {
-          "practice_id": 13140,
-          "question_id": 369550,
-          "question_folder": "English Tutoring - Level 1",
-          "question_type": "Một lựa chọn",
-          "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.)",
-          "comment_plain": "Audio: What is this? It&#39;s a blue elephant. => Đáp án: B",
-          "correct_answer": "B. It's a blue elephant",
-          "student_answer": "A. It's a red elephant",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. It's a red elephant",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. It's a blue elephant",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. It's a green elephant",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        },
-        {
-          "practice_id": 13140,
-          "question_id": 369561,
-          "question_folder": "English Tutoring - Level 1",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Fill in the blank (Con hãy điền từ vào ô trống.) Is it purple? Y_s, it is.",
-          "comment_plain": "Is it purple? Yes, it is: N&oacute; c&oacute; phải màu t&iacute;m kh&ocirc;ng? Đ&uacute;ng vậy. => Đáp án: e",
-          "correct_answer": "e",
-          "student_answer": "u",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        }
-      ],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 1,
-      "worst_speaking_items": [
-        {
-          "lms_type": "brainstorm",
-          "question": "Look at this picture and tell me, what can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "egg",
-            "elephant"
-          ],
-          "user_transcript": "Baking elephant.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "elephant"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-02",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnheluok-656a441d-audio.wav",
-          "reaction_time_ms": 2966
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice, let’s try again. Do you like red or black? 🎨",
-          "expected_answer": "I like red.",
-          "target_objects": null,
-          "user_transcript": "I like red.",
-          "score": 50.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 11,
-          "grammar_score": 90,
-          "timestamp": "2026-04-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng2an4w-21b0bcfd-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Do you mean 'a' color like red or 'a' pepper color? 🌶️",
-          "expected_answer": "I mean red.",
-          "target_objects": null,
-          "user_transcript": "Let.",
-          "score": 9,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 0,
-          "grammar_score": 18,
-          "timestamp": "2026-04-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng2958n-126aa6af-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Pepper? Do you mean the color black or red? 🌶️",
-          "expected_answer": "I mean black.",
-          "target_objects": null,
-          "user_transcript": "When I mean a.",
-          "score": 14,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 8,
-          "grammar_score": 20,
-          "timestamp": "2026-04-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng28nyt-b23b92c1-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Great. Tell me one color you like. 🎨",
-          "expected_answer": "I like blue.",
-          "target_objects": null,
-          "user_transcript": "I like pepper.",
-          "score": 68.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 37,
-          "timestamp": "2026-04-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng28blj-633ba50b-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7202,
-        "luyen_tap": 13140
-      }
-    },
-    {
-      "lesson_id": 3824535,
-      "title": "Unit 2A: Colors - Lesson 4: Is it orange?",
-      "level": 1,
-      "last_activity_date": "2026-04-10",
-      "days_since_last_practice": 11,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5455,
-      "composite_priority_score": 0.7728,
-      "homework_status": "attempted",
-      "weak_skills": [
-        "Biểu đồ"
-      ],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 2,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Where do you wear your black clothes? 🖤",
-          "expected_answer": "I wear my black clothes at school and when I go out.",
-          "target_objects": null,
-          "user_transcript": "What I do.",
-          "score": 49,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 77,
-          "grammar_score": 21,
-          "timestamp": "2026-04-10",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp8x9t-90f22575-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Good. Which color do you like best? 🎨",
-          "expected_answer": "I like pink best.",
-          "target_objects": null,
-          "user_transcript": "That, I do.",
-          "score": 58.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 17,
-          "timestamp": "2026-04-10",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp7pif-14060fba-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. What color do you like best? 🎨",
-          "expected_answer": "I like pink. 😄",
-          "target_objects": null,
-          "user_transcript": "Then I like.",
-          "score": 57,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 14,
-          "timestamp": "2026-04-10",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp77ps-81ba2d70-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hello again, let’s talk about colors and things. What color do you like? 🎨",
-          "expected_answer": "I like pink. or I like blue.",
-          "target_objects": null,
-          "user_transcript": "That I do.",
-          "score": 45,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 77,
-          "grammar_score": 13,
-          "timestamp": "2026-04-10",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp6vl4-ea2557fb-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Goodbye! I hope we talk again soon. 😊",
-          "expected_answer": "Thank you, see you later!",
-          "target_objects": null,
-          "user_transcript": "Begin.",
-          "score": 31,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 20,
-          "grammar_score": 42,
-          "timestamp": "2026-04-10",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp5ksq-11f3be18-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7206,
-        "luyen_tap": 13117
-      }
-    },
-    {
       "lesson_id": 3824527,
       "title": "Unit 1A: Greetings - Lesson 1: Hello!",
       "level": 1,
       "last_activity_date": "2026-03-12",
       "days_since_last_practice": 40,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9967,
       "weakness_score": 0.5405,
-      "composite_priority_score": 0.7702,
+      "composite_priority_score": 0.7686,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1053,14 +372,110 @@
       }
     },
     {
+      "lesson_id": 3824532,
+      "title": "Unit 2A: Colors - Lesson 1: It's red.",
+      "level": 1,
+      "last_activity_date": "2026-03-29",
+      "days_since_last_practice": 23,
+      "forgetting_score": 0.9626,
+      "weakness_score": 0.57,
+      "composite_priority_score": 0.7663,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 3,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Where do you wear your purple dress? 👗",
+          "expected_answer": "I wear it to school and parties.",
+          "target_objects": null,
+          "user_transcript": "I need to.",
+          "score": 59.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 77,
+          "grammar_score": 42,
+          "timestamp": "2026-03-28",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9rbp2x-3fd5816b-audio.wav",
+          "reaction_time_ms": 1068
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Okay. Do you have a blue dress or a blue toy? 😊",
+          "expected_answer": "Yes, I have a blue dress. It is very pretty.",
+          "target_objects": null,
+          "user_transcript": "I like.",
+          "score": 34.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 19,
+          "timestamp": "2026-03-28",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9r9nmt-27783d61-audio.wav",
+          "reaction_time_ms": 1068
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice, we both like blue 😊 What blue things do you have at home?",
+          "expected_answer": "I have a blue dress and a blue cup.",
+          "target_objects": null,
+          "user_transcript": "No.",
+          "score": 69.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 39,
+          "timestamp": "2026-03-28",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9r9az7-d2ef4f21-audio.wav",
+          "reaction_time_ms": 1068
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Great. Tell me your favorite color and why. 🙂",
+          "expected_answer": "My favorite color is blue because it is calm.",
+          "target_objects": null,
+          "user_transcript": "Oh.",
+          "score": 68,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 36,
+          "timestamp": "2026-03-28",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9r7rq9-f03ab3df-audio.wav",
+          "reaction_time_ms": 1068
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hello! It’s nice to chat about colors today. Are you ready to practice with me? 😄",
+          "expected_answer": "Yes, I am ready.",
+          "target_objects": null,
+          "user_transcript": "Yes, I am ready.",
+          "score": 69.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 89,
+          "timestamp": "2026-03-28",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9r7fhr-e3c2c234-audio.wav",
+          "reaction_time_ms": 1068
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7201,
+        "luyen_tap": 13139
+      }
+    },
+    {
       "lesson_id": 3824531,
       "title": "Unit 1A: Greetings - Lesson 5: Review & culture",
       "level": 1,
       "last_activity_date": "2026-03-25",
       "days_since_last_practice": 27,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9789,
       "weakness_score": 0.5405,
-      "composite_priority_score": 0.7702,
+      "composite_priority_score": 0.7597,
       "homework_status": "attempted",
       "weak_skills": [
         "Từ vựng"
@@ -1254,84 +669,14 @@
       }
     },
     {
-      "lesson_id": 3824536,
-      "title": "Unit 2A: Colors - Lesson 5: Review & value",
-      "level": 1,
-      "last_activity_date": "2026-04-11",
-      "days_since_last_practice": 10,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5195,
-      "composite_priority_score": 0.7597,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 2,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Do you like blue or purple more? 🙂",
-          "expected_answer": "I like purple more.",
-          "target_objects": null,
-          "user_transcript": "I like to.",
-          "score": 48.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 83,
-          "grammar_score": 14,
-          "timestamp": "2026-04-10",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsyl5gq-e65bb01c-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Is your shirt purple or blue now? 😊",
-          "expected_answer": "My shirt is purple now.",
-          "target_objects": null,
-          "user_transcript": "Y.",
-          "score": 20.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 0,
-          "grammar_score": 41,
-          "timestamp": "2026-04-10",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsyipg0-78fdde3a-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "Green",
-            "Red",
-            "Pink"
-          ],
-          "user_transcript": "Like.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-10",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsxqdut-01686ad5-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7210,
-        "luyen_tap": 13131
-      }
-    },
-    {
       "lesson_id": 3824528,
       "title": "Unit 1A: Greetings - Lesson 2: Nice to meet you!",
       "level": 1,
       "last_activity_date": "2026-03-14",
       "days_since_last_practice": 38,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9956,
       "weakness_score": 0.5105,
-      "composite_priority_score": 0.7552,
+      "composite_priority_score": 0.753,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1432,9 +777,9 @@
       "level": 1,
       "last_activity_date": "2026-03-19",
       "days_since_last_practice": 33,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.991,
       "weakness_score": 0.5105,
-      "composite_priority_score": 0.7552,
+      "composite_priority_score": 0.7508,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1527,14 +872,302 @@
       }
     },
     {
+      "lesson_id": 3824533,
+      "title": "Unit 2A: Colors - Lesson 2: It's a red flower.",
+      "level": 1,
+      "last_activity_date": "2026-04-02",
+      "days_since_last_practice": 19,
+      "forgetting_score": 0.9337,
+      "weakness_score": 0.565,
+      "composite_priority_score": 0.7493,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 13140,
+          "question_id": 369547,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Một lựa chọn",
+          "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.)",
+          "comment_plain": "Audio: What is this ? It&#39;s a purple egg. => Đáp án: A",
+          "correct_answer": "A. It's a purple egg.",
+          "student_answer": "B. It's a blue egg.",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. It's a purple egg.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. It's a blue egg.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. It's a yellow egg.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        },
+        {
+          "practice_id": 13140,
+          "question_id": 369550,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Một lựa chọn",
+          "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.)",
+          "comment_plain": "Audio: What is this? It&#39;s a blue elephant. => Đáp án: B",
+          "correct_answer": "B. It's a blue elephant",
+          "student_answer": "A. It's a red elephant",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. It's a red elephant",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. It's a blue elephant",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. It's a green elephant",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        },
+        {
+          "practice_id": 13140,
+          "question_id": 369561,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Fill in the blank (Con hãy điền từ vào ô trống.) Is it purple? Y_s, it is.",
+          "comment_plain": "Is it purple? Yes, it is: N&oacute; c&oacute; phải màu t&iacute;m kh&ocirc;ng? Đ&uacute;ng vậy. => Đáp án: e",
+          "correct_answer": "e",
+          "student_answer": "u",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "lms_type": "brainstorm",
+          "question": "Look at this picture and tell me, what can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "egg",
+            "elephant"
+          ],
+          "user_transcript": "Baking elephant.",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "elephant"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnheluok-656a441d-audio.wav",
+          "reaction_time_ms": 2966
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice, let’s try again. Do you like red or black? 🎨",
+          "expected_answer": "I like red.",
+          "target_objects": null,
+          "user_transcript": "I like red.",
+          "score": 50.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 11,
+          "grammar_score": 90,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng2an4w-21b0bcfd-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Do you mean 'a' color like red or 'a' pepper color? 🌶️",
+          "expected_answer": "I mean red.",
+          "target_objects": null,
+          "user_transcript": "Let.",
+          "score": 9,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 18,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng2958n-126aa6af-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Pepper? Do you mean the color black or red? 🌶️",
+          "expected_answer": "I mean black.",
+          "target_objects": null,
+          "user_transcript": "When I mean a.",
+          "score": 14,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 8,
+          "grammar_score": 20,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng28nyt-b23b92c1-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Great. Tell me one color you like. 🎨",
+          "expected_answer": "I like blue.",
+          "target_objects": null,
+          "user_transcript": "I like pepper.",
+          "score": 68.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 37,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng28blj-633ba50b-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7202,
+        "luyen_tap": 13140
+      }
+    },
+    {
+      "lesson_id": 3830583,
+      "title": "Unit 3A: School things - Lesson 1: It's a red notebook.",
+      "level": 1,
+      "last_activity_date": "2026-04-17",
+      "days_since_last_practice": 4,
+      "forgetting_score": 0.4353,
+      "weakness_score": 1.0,
+      "composite_priority_score": 0.7177,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Nice. What is your name? 😊",
+          "expected_answer": "My name is Ana.",
+          "target_objects": null,
+          "user_transcript": "I am Theon.",
+          "score": 64,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 33,
+          "grammar_score": 95,
+          "timestamp": "2026-04-15",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo024kfx-ded91c6b-audio.wav",
+          "reaction_time_ms": 1485
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. What is your name? 😊",
+          "expected_answer": "My name is Ana.",
+          "target_objects": null,
+          "user_transcript": "My name.",
+          "score": 69.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 39,
+          "timestamp": "2026-04-15",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo0245k6-6271e6dc-audio.wav",
+          "reaction_time_ms": 1485
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. What is your name? 😊",
+          "expected_answer": "My name is Ana.",
+          "target_objects": null,
+          "user_transcript": "I am",
+          "score": 32,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 14,
+          "timestamp": "2026-04-15",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo023sf9-6754fb2a-audio.wav",
+          "reaction_time_ms": 1485
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Oh, do you mean “My name is ___”? 😊",
+          "expected_answer": "My name is [your name].",
+          "target_objects": null,
+          "user_transcript": "My name is.",
+          "score": 57,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 14,
+          "timestamp": "2026-04-15",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo023g4e-055d25e4-audio.wav",
+          "reaction_time_ms": 1485
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Oh, do you mean your name? 😊",
+          "expected_answer": "Yes, my name is Anna.",
+          "target_objects": null,
+          "user_transcript": "I let me.",
+          "score": 56.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 13,
+          "timestamp": "2026-04-15",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo0230pa-c96ddf47-audio.wav",
+          "reaction_time_ms": 1485
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7212,
+        "luyen_tap": 13133
+      }
+    },
+    {
       "lesson_id": 3824534,
       "title": "Unit 2A: Colors - Lesson 3: Is it green?",
       "level": 1,
       "last_activity_date": "2026-04-05",
       "days_since_last_practice": 16,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8983,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.6991,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -1656,414 +1289,380 @@
         "bai_tap": 7203,
         "luyen_tap": 13145
       }
-    }
-  ],
-  "lessons": [
+    },
     {
-      "lesson_id": 3830583,
-      "program_id": null,
+      "lesson_id": 3824535,
+      "title": "Unit 2A: Colors - Lesson 4: Is it orange?",
       "level": 1,
-      "position": 13,
-      "title": "Unit 3A: School things - Lesson 1: It's a red notebook.",
-      "desc": "- pencil, pen, ruler, rubber, school bag\n  glass, goat \n- Letter Gg and sound /g/\n- What color is this/ the notebook? It's (red).\n - What is this? It's (a red notebook).",
-      "status": "completed",
-      "last_activity_date": "2026-04-17",
-      "days_since_last_practice": 4,
-      "forgetting_score": 0.9817,
-      "weakness_score": 1.0,
-      "composite_priority_score": 0.9909,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 46,
-          "audio_turns": 62,
-          "avg_reaction_ms": 1631,
-          "fastest_reaction_ms": 429,
-          "total_duration_ms": 1617602,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
+      "last_activity_date": "2026-04-10",
+      "days_since_last_practice": 11,
+      "forgetting_score": 0.7923,
+      "weakness_score": 0.5455,
+      "composite_priority_score": 0.6689,
+      "homework_status": "attempted",
+      "weak_skills": [
+        "Biểu đồ"
+      ],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 2,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Where do you wear your black clothes? 🖤",
+          "expected_answer": "I wear my black clothes at school and when I go out.",
+          "target_objects": null,
+          "user_transcript": "What I do.",
+          "score": 49,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 77,
+          "grammar_score": 21,
+          "timestamp": "2026-04-10",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp8x9t-90f22575-audio.wav",
+          "reaction_time_ms": null
         },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-15",
-        "pronunciation_attempts": 34,
-        "pronunciation_score_avg": 53.0,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
+        {
+          "lms_type": "conversation",
+          "question": "Good. Which color do you like best? 🎨",
+          "expected_answer": "I like pink best.",
+          "target_objects": null,
+          "user_transcript": "That, I do.",
+          "score": 58.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 17,
+          "timestamp": "2026-04-10",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp7pif-14060fba-audio.wav",
+          "reaction_time_ms": null
         },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1
+        {
+          "lms_type": "conversation",
+          "question": "Nice. What color do you like best? 🎨",
+          "expected_answer": "I like pink. 😄",
+          "target_objects": null,
+          "user_transcript": "Then I like.",
+          "score": 57,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 14,
+          "timestamp": "2026-04-10",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp77ps-81ba2d70-audio.wav",
+          "reaction_time_ms": null
         },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 54.81,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice. What is your name? 😊",
-            "expected_answer": "My name is Ana.",
-            "target_objects": null,
-            "user_transcript": "I am Theon.",
-            "score": 64,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 33,
-            "grammar_score": 95,
-            "timestamp": "2026-04-15",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo024kfx-ded91c6b-audio.wav",
-            "reaction_time_ms": 1485
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. What is your name? 😊",
-            "expected_answer": "My name is Ana.",
-            "target_objects": null,
-            "user_transcript": "My name.",
-            "score": 69.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 39,
-            "timestamp": "2026-04-15",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo0245k6-6271e6dc-audio.wav",
-            "reaction_time_ms": 1485
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. What is your name? 😊",
-            "expected_answer": "My name is Ana.",
-            "target_objects": null,
-            "user_transcript": "I am",
-            "score": 32,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 50,
-            "grammar_score": 14,
-            "timestamp": "2026-04-15",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo023sf9-6754fb2a-audio.wav",
-            "reaction_time_ms": 1485
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Oh, do you mean “My name is ___”? 😊",
-            "expected_answer": "My name is [your name].",
-            "target_objects": null,
-            "user_transcript": "My name is.",
-            "score": 57,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 14,
-            "timestamp": "2026-04-15",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo023g4e-055d25e4-audio.wav",
-            "reaction_time_ms": 1485
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Oh, do you mean your name? 😊",
-            "expected_answer": "Yes, my name is Anna.",
-            "target_objects": null,
-            "user_transcript": "I let me.",
-            "score": 56.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 13,
-            "timestamp": "2026-04-15",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo0230pa-c96ddf47-audio.wav",
-            "reaction_time_ms": 1485
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7212,
-          "score": null,
-          "correct": 0,
-          "total": 15,
-          "submitted_date": "2026-04-17"
+        {
+          "lms_type": "conversation",
+          "question": "Hello again, let’s talk about colors and things. What color do you like? 🎨",
+          "expected_answer": "I like pink. or I like blue.",
+          "target_objects": null,
+          "user_transcript": "That I do.",
+          "score": 45,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 77,
+          "grammar_score": 13,
+          "timestamp": "2026-04-10",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp6vl4-ea2557fb-audio.wav",
+          "reaction_time_ms": null
         },
-        "luyen_tap": {
-          "practice_id": 13133,
-          "score": null,
-          "correct": 0,
-          "total": 15,
-          "submitted_date": "2026-04-17"
+        {
+          "lms_type": "conversation",
+          "question": "Goodbye! I hope we talk again soon. 😊",
+          "expected_answer": "Thank you, see you later!",
+          "target_objects": null,
+          "user_transcript": "Begin.",
+          "score": 31,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 20,
+          "grammar_score": 42,
+          "timestamp": "2026-04-10",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp5ksq-11f3be18-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7206,
+        "luyen_tap": 13117
+      }
+    },
+    {
+      "lesson_id": 3824536,
+      "title": "Unit 2A: Colors - Lesson 5: Review & value",
+      "level": 1,
+      "last_activity_date": "2026-04-11",
+      "days_since_last_practice": 10,
+      "forgetting_score": 0.7603,
+      "weakness_score": 0.5195,
+      "composite_priority_score": 0.6399,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 2,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Do you like blue or purple more? 🙂",
+          "expected_answer": "I like purple more.",
+          "target_objects": null,
+          "user_transcript": "I like to.",
+          "score": 48.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 83,
+          "grammar_score": 14,
+          "timestamp": "2026-04-10",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsyl5gq-e65bb01c-audio.wav",
+          "reaction_time_ms": null
         },
-        "lms_ids": {
-          "bai_tap": 7212,
-          "luyen_tap": 13133
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Is your shirt purple or blue now? 😊",
+          "expected_answer": "My shirt is purple now.",
+          "target_objects": null,
+          "user_transcript": "Y.",
+          "score": 20.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 41,
+          "timestamp": "2026-04-10",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsyipg0-78fdde3a-audio.wav",
+          "reaction_time_ms": null
         },
-        "skill_breakdown": {},
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "Green",
+            "Red",
+            "Pink"
+          ],
+          "user_transcript": "Like.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-10",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsxqdut-01686ad5-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7210,
+        "luyen_tap": 13131
       }
     },
     {
       "lesson_id": 3836969,
-      "program_id": null,
-      "level": 1,
-      "position": 14,
       "title": "Unit 3A: School things - Lesson 2: I have a yellow pencil.",
-      "desc": "- pencil, pen, ruler, rubber, school bag, \n  head, house\n- Letter Hh and sound /h/ \n- What color is this/ the notebook? It's (red).\n - What is this? It's (a red notebook).\n - What do you have? I have",
-      "status": "completed",
+      "level": 1,
       "last_activity_date": "2026-04-19",
       "days_since_last_practice": 2,
-      "forgetting_score": 0.8647,
+      "forgetting_score": 0.2485,
       "weakness_score": 0.7992,
-      "composite_priority_score": 0.8319,
-      "in_class": {
-        "participated": true,
-        "session_count": 2,
-        "session_metrics": {
-          "cups": 37,
-          "audio_turns": 125,
-          "avg_reaction_ms": 1947,
-          "fastest_reaction_ms": 429,
-          "total_duration_ms": 265745,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-19",
-        "pronunciation_attempts": 62,
-        "pronunciation_score_avg": 55.6,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1
-        },
-        "conversation_attempts": 34,
-        "conversation_score_avg": 70.78,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Oh, okay. Would you like to talk about your school or your house? 🏠",
-            "expected_answer": "I want to talk about my school.",
-            "target_objects": null,
-            "user_transcript": "That.",
-            "score": 68.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 37,
-            "timestamp": "2026-04-19",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5oux3e-453305d3-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. What color is your pen? 🖊️",
-            "expected_answer": "My pen is blue.",
-            "target_objects": null,
-            "user_transcript": "I like pen.",
-            "score": 63.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 88,
-            "grammar_score": 39,
-            "timestamp": "2026-04-19",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5oqohv-de516b47-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Good. Tell me one school thing you have today.",
-            "expected_answer": "I have a pencil today.",
-            "target_objects": null,
-            "user_transcript": "Hen.",
-            "score": 37.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 33,
-            "grammar_score": 42,
-            "timestamp": "2026-04-19",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5oppd0-5dc78d26-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi! Nice to see you. Are you ready to talk about school things? 😄",
-            "expected_answer": "Yes, I am ready. I like school.",
-            "target_objects": null,
-            "user_transcript": "That I learned.",
-            "score": 45.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 73,
-            "grammar_score": 18,
-            "timestamp": "2026-04-19",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5ope3q-a83aa773-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Do you like reading at home? 📖",
-            "expected_answer": "Yes, I like reading at home.",
-            "target_objects": null,
-            "user_transcript": "Let I do a book I like book.",
-            "score": 68.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 91,
-            "grammar_score": 46,
-            "timestamp": "2026-04-17",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo319t4k-dc5b66f5-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7213,
-          "score": null,
-          "correct": 0,
-          "total": 15,
-          "submitted_date": "2026-04-19"
-        },
-        "luyen_tap": {
+      "composite_priority_score": 0.5239,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
           "practice_id": 13136,
-          "score": 0.87,
-          "correct": 13,
-          "total": 15,
-          "submitted_date": "2026-04-19"
+          "question_id": 385157,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Match (Con hãy di chuyển các ô ở cột bên phải để nối từ với ảnh đúng.)",
+          "comment_plain": "Đáp án: pen: b&uacute;t ch&igrave; ruler: thước kẻ school bag: cặp sách rubber: cục tẩy",
+          "correct_answer": "item_1→school bag; item_2→pen; item_3→rubber; item_4→ruler",
+          "student_answer": "wrong: item_3, item_4",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A1",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/29/2da7_blue-school-bag.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A2",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/29/4008_pen.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A3",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/29/2502_rubber.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A4",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/01/16/7260_blue_ruler.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B1",
+              "text": "rubber",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B2",
+              "text": "pen",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B3",
+              "text": "school bag",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B4",
+              "text": "ruler",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
         },
-        "lms_ids": {
-          "bai_tap": 7213,
-          "luyen_tap": 13136
+        {
+          "practice_id": 13136,
+          "question_id": 369464,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Một lựa chọn",
+          "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.) How many rulers ... there?",
+          "comment_plain": "How many rulers are there? C&oacute; bao nhi&ecirc;u cái thước kẻ? => Đáp án: C (&quot;rulers&quot; số nhiều --> d&ugrave;ng động từ tobe &quot;are&quot;)",
+          "correct_answer": "C. are",
+          "student_answer": "B. is",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. am",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. is",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. are",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Oh, okay. Would you like to talk about your school or your house? 🏠",
+          "expected_answer": "I want to talk about my school.",
+          "target_objects": null,
+          "user_transcript": "That.",
+          "score": 68.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 37,
+          "timestamp": "2026-04-19",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5oux3e-453305d3-audio.wav",
+          "reaction_time_ms": null
         },
-        "skill_breakdown": {
-          "English Tutoring - Level 1": {
-            "correct": 13,
-            "total": 15,
-            "accuracy": 0.867
-          }
+        {
+          "lms_type": "conversation",
+          "question": "Nice. What color is your pen? 🖊️",
+          "expected_answer": "My pen is blue.",
+          "target_objects": null,
+          "user_transcript": "I like pen.",
+          "score": 63.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 88,
+          "grammar_score": 39,
+          "timestamp": "2026-04-19",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5oqohv-de516b47-audio.wav",
+          "reaction_time_ms": null
         },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 13136,
-            "question_id": 385157,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Xứng-Hợp",
-            "question_text": "Match (Con hãy di chuyển các ô ở cột bên phải để nối từ với ảnh đúng.)",
-            "comment_plain": "Đáp án: pen: b&uacute;t ch&igrave; ruler: thước kẻ school bag: cặp sách rubber: cục tẩy",
-            "correct_answer": "item_1→school bag; item_2→pen; item_3→rubber; item_4→ruler",
-            "student_answer": "wrong: item_3, item_4",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A1",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/29/2da7_blue-school-bag.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "A2",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/29/4008_pen.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "A3",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/29/2502_rubber.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "A4",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/01/16/7260_blue_ruler.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B1",
-                "text": "rubber",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B2",
-                "text": "pen",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B3",
-                "text": "school bag",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B4",
-                "text": "ruler",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13136,
-            "question_id": 369464,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Một lựa chọn",
-            "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.) How many rulers ... there?",
-            "comment_plain": "How many rulers are there? C&oacute; bao nhi&ecirc;u cái thước kẻ? => Đáp án: C (&quot;rulers&quot; số nhiều --> d&ugrave;ng động từ tobe &quot;are&quot;)",
-            "correct_answer": "C. are",
-            "student_answer": "B. is",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. am",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. is",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. are",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
+        {
+          "lms_type": "conversation",
+          "question": "Good. Tell me one school thing you have today.",
+          "expected_answer": "I have a pencil today.",
+          "target_objects": null,
+          "user_transcript": "Hen.",
+          "score": 37.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 33,
+          "grammar_score": 42,
+          "timestamp": "2026-04-19",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5oppd0-5dc78d26-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi! Nice to see you. Are you ready to talk about school things? 😄",
+          "expected_answer": "Yes, I am ready. I like school.",
+          "target_objects": null,
+          "user_transcript": "That I learned.",
+          "score": 45.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 73,
+          "grammar_score": 18,
+          "timestamp": "2026-04-19",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5ope3q-a83aa773-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Do you like reading at home? 📖",
+          "expected_answer": "Yes, I like reading at home.",
+          "target_objects": null,
+          "user_transcript": "Let I do a book I like book.",
+          "score": 68.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 91,
+          "grammar_score": 46,
+          "timestamp": "2026-04-17",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo319t4k-dc5b66f5-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7213,
+        "luyen_tap": 13136
       }
-    },
+    }
+  ],
+  "lessons": [
     {
       "lesson_id": 3824530,
       "program_id": null,
@@ -2074,9 +1673,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-25",
       "days_since_last_practice": 27,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9789,
       "weakness_score": 0.6195,
-      "composite_priority_score": 0.8097,
+      "composite_priority_score": 0.7992,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -2488,808 +2087,6 @@
       }
     },
     {
-      "lesson_id": 3824532,
-      "program_id": null,
-      "level": 1,
-      "position": 7,
-      "title": "Unit 2A: Colors - Lesson 1: It's red.",
-      "desc": "- red, blue, yellow, purple, green\n- duck, dress \n- Letter Dd and sound /d/ \n- What is this? It's (a dress).\n- What color is it/ the dress? It's (red).",
-      "status": "completed",
-      "last_activity_date": "2026-03-29",
-      "days_since_last_practice": 23,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.57,
-      "composite_priority_score": 0.785,
-      "in_class": {
-        "participated": true,
-        "session_count": 2,
-        "session_metrics": {
-          "cups": 60,
-          "audio_turns": 121,
-          "avg_reaction_ms": 1238,
-          "fastest_reaction_ms": 382,
-          "total_duration_ms": 1994883,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-03-28",
-        "pronunciation_attempts": 81,
-        "pronunciation_score_avg": 58.09,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 4,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 3,
-          "correct": 1
-        },
-        "conversation_attempts": 28,
-        "conversation_score_avg": 73.5,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Where do you wear your purple dress? 👗",
-            "expected_answer": "I wear it to school and parties.",
-            "target_objects": null,
-            "user_transcript": "I need to.",
-            "score": 59.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 77,
-            "grammar_score": 42,
-            "timestamp": "2026-03-28",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9rbp2x-3fd5816b-audio.wav",
-            "reaction_time_ms": 1068
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Okay. Do you have a blue dress or a blue toy? 😊",
-            "expected_answer": "Yes, I have a blue dress. It is very pretty.",
-            "target_objects": null,
-            "user_transcript": "I like.",
-            "score": 34.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 50,
-            "grammar_score": 19,
-            "timestamp": "2026-03-28",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9r9nmt-27783d61-audio.wav",
-            "reaction_time_ms": 1068
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice, we both like blue 😊 What blue things do you have at home?",
-            "expected_answer": "I have a blue dress and a blue cup.",
-            "target_objects": null,
-            "user_transcript": "No.",
-            "score": 69.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 39,
-            "timestamp": "2026-03-28",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9r9az7-d2ef4f21-audio.wav",
-            "reaction_time_ms": 1068
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Great. Tell me your favorite color and why. 🙂",
-            "expected_answer": "My favorite color is blue because it is calm.",
-            "target_objects": null,
-            "user_transcript": "Oh.",
-            "score": 68,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 36,
-            "timestamp": "2026-03-28",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9r7rq9-f03ab3df-audio.wav",
-            "reaction_time_ms": 1068
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hello! It’s nice to chat about colors today. Are you ready to practice with me? 😄",
-            "expected_answer": "Yes, I am ready.",
-            "target_objects": null,
-            "user_transcript": "Yes, I am ready.",
-            "score": 69.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 50,
-            "grammar_score": 89,
-            "timestamp": "2026-03-28",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9r7fhr-e3c2c234-audio.wav",
-            "reaction_time_ms": 1068
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7201,
-          "score": 0.8,
-          "correct": 12,
-          "total": 15,
-          "submitted_date": "2026-03-29"
-        },
-        "luyen_tap": {
-          "practice_id": 13139,
-          "score": 1,
-          "correct": 15,
-          "total": 15,
-          "submitted_date": "2026-03-29"
-        },
-        "lms_ids": {
-          "bai_tap": 7201,
-          "luyen_tap": 13139
-        },
-        "skill_breakdown": {
-          "Kĩ năng nghe": {
-            "correct": 7,
-            "total": 10,
-            "accuracy": 0.7
-          },
-          "Biểu đồ": {
-            "correct": 3,
-            "total": 3,
-            "accuracy": 1.0
-          },
-          "Từ vựng": {
-            "correct": 2,
-            "total": 2,
-            "accuracy": 1.0
-          },
-          "English Tutoring - Level 1": {
-            "correct": 15,
-            "total": 15,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 7201,
-            "question_id": 296876,
-            "question_folder": "Kĩ năng nghe",
-            "question_type": "Một lựa chọn",
-            "question_text": "Listen and choose the correct answer. Con hãy nghe và chọn đáp án đúng.",
-            "comment_plain": "audio script: Letter D --> C",
-            "correct_answer": null,
-            "student_answer": "option_2",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/2ec8_letter-a.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/a876_letter-b.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/8f8f_letter-d1.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 7201,
-            "question_id": 296880,
-            "question_folder": "Kĩ năng nghe",
-            "question_type": "Một lựa chọn",
-            "question_text": "Tick or Cross Con hãy chọn đúng hoặc sai.",
-            "comment_plain": "audio script: N&oacute; là màu xanh nước biển --> A",
-            "correct_answer": null,
-            "student_answer": "option_2",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/70f0_blue.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/bdcf_tick-removebg-preview.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/c4c4_cross-removebg-preview.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 7201,
-            "question_id": 296884,
-            "question_folder": "Kĩ năng nghe",
-            "question_type": "Một lựa chọn",
-            "question_text": "Read and choose the correct answer. Con hãy đọc và chọn đáp án đúng. What color is this? - It's purple.",
-            "comment_plain": "What color is this? - It&#39;s purple.: Đây là màu g&igrave;? N&oacute; màu t&iacute;m --> B",
-            "correct_answer": null,
-            "student_answer": "option_1",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/70f0_blue.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/5bf3_purple.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3824533,
-      "program_id": null,
-      "level": 1,
-      "position": 8,
-      "title": "Unit 2A: Colors - Lesson 2: It's a red flower.",
-      "desc": "- red, blue, yellow, purple, green\n- elephant, egg\n- Letter Ee and sound /e/\n - What is this? It's (a red flower).\n- What color is it / the flower? It's (red).\n - Is it red? Yes, it is/ No, it isn't.",
-      "status": "completed",
-      "last_activity_date": "2026-04-02",
-      "days_since_last_practice": 19,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.565,
-      "composite_priority_score": 0.7825,
-      "in_class": {
-        "participated": true,
-        "session_count": 2,
-        "session_metrics": {
-          "cups": 55,
-          "audio_turns": 120,
-          "avg_reaction_ms": 1921,
-          "fastest_reaction_ms": 584,
-          "total_duration_ms": 8542,
-          "session_status": "COMPLETED",
-          "completion_pct": 71
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-02",
-        "pronunciation_attempts": 77,
-        "pronunciation_score_avg": 39.84,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 3,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2,
-          "correct": 1
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 63.88,
-        "worst_speaking_items": [
-          {
-            "lms_type": "brainstorm",
-            "question": "Look at this picture and tell me, what can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "egg",
-              "elephant"
-            ],
-            "user_transcript": "Baking elephant.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "elephant"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnheluok-656a441d-audio.wav",
-            "reaction_time_ms": 2966
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice, let’s try again. Do you like red or black? 🎨",
-            "expected_answer": "I like red.",
-            "target_objects": null,
-            "user_transcript": "I like red.",
-            "score": 50.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 11,
-            "grammar_score": 90,
-            "timestamp": "2026-04-01",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng2an4w-21b0bcfd-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Do you mean 'a' color like red or 'a' pepper color? 🌶️",
-            "expected_answer": "I mean red.",
-            "target_objects": null,
-            "user_transcript": "Let.",
-            "score": 9,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 0,
-            "grammar_score": 18,
-            "timestamp": "2026-04-01",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng2958n-126aa6af-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Pepper? Do you mean the color black or red? 🌶️",
-            "expected_answer": "I mean black.",
-            "target_objects": null,
-            "user_transcript": "When I mean a.",
-            "score": 14,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 8,
-            "grammar_score": 20,
-            "timestamp": "2026-04-01",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng28nyt-b23b92c1-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Great. Tell me one color you like. 🎨",
-            "expected_answer": "I like blue.",
-            "target_objects": null,
-            "user_transcript": "I like pepper.",
-            "score": 68.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 37,
-            "timestamp": "2026-04-01",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng28blj-633ba50b-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7202,
-          "score": 0.93,
-          "correct": 14,
-          "total": 15,
-          "submitted_date": "2026-04-02"
-        },
-        "luyen_tap": {
-          "practice_id": 13140,
-          "score": 0.73,
-          "correct": 11,
-          "total": 15,
-          "submitted_date": "2026-04-02"
-        },
-        "lms_ids": {
-          "bai_tap": 7202,
-          "luyen_tap": 13140
-        },
-        "skill_breakdown": {
-          "Kĩ năng nghe": {
-            "correct": 9,
-            "total": 10,
-            "accuracy": 0.9
-          },
-          "Biểu đồ": {
-            "correct": 3,
-            "total": 3,
-            "accuracy": 1.0
-          },
-          "Từ vựng": {
-            "correct": 2,
-            "total": 2,
-            "accuracy": 1.0
-          },
-          "English Tutoring - Level 1": {
-            "correct": 11,
-            "total": 14,
-            "accuracy": 0.786
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 7202,
-            "question_id": 296900,
-            "question_folder": "Kĩ năng nghe",
-            "question_type": "Một lựa chọn",
-            "question_text": "Choose the correct answer. Con hãy chọn đáp án đúng. What color is this? - It's purple.",
-            "comment_plain": "What color is this? - It&#39;s purple.: Đây là màu g&igrave;? N&oacute; màu t&iacute;m --> B",
-            "correct_answer": null,
-            "student_answer": "option_1",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/9457_green-removebg-preview.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/5bf3_purple.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13140,
-            "question_id": 369547,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Một lựa chọn",
-            "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.)",
-            "comment_plain": "Audio: What is this ? It&#39;s a purple egg. => Đáp án: A",
-            "correct_answer": "A. It's a purple egg.",
-            "student_answer": "B. It's a blue egg.",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. It's a purple egg.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. It's a blue egg.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. It's a yellow egg.",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13140,
-            "question_id": 369550,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Một lựa chọn",
-            "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.)",
-            "comment_plain": "Audio: What is this? It&#39;s a blue elephant. => Đáp án: B",
-            "correct_answer": "B. It's a blue elephant",
-            "student_answer": "A. It's a red elephant",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. It's a red elephant",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. It's a blue elephant",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. It's a green elephant",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13140,
-            "question_id": 369561,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Fill in the blank (Con hãy điền từ vào ô trống.) Is it purple? Y_s, it is.",
-            "comment_plain": "Is it purple? Yes, it is: N&oacute; c&oacute; phải màu t&iacute;m kh&ocirc;ng? Đ&uacute;ng vậy. => Đáp án: e",
-            "correct_answer": "e",
-            "student_answer": "u",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3824535,
-      "program_id": null,
-      "level": 1,
-      "position": 10,
-      "title": "Unit 2A: Colors - Lesson 4: Is it orange?",
-      "desc": "- orange, black, white, pink\n- duck, dress, elephant, egg, frog, flower\n- Review Dd, Ee, Ff\n- What is this? It's (a red flower).\n- What color is it / the flower? It's (red).",
-      "status": "completed",
-      "last_activity_date": "2026-04-10",
-      "days_since_last_practice": 11,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5455,
-      "composite_priority_score": 0.7728,
-      "in_class": {
-        "participated": true,
-        "session_count": 2,
-        "session_metrics": {
-          "cups": 22,
-          "audio_turns": 139,
-          "avg_reaction_ms": 2489,
-          "fastest_reaction_ms": 422,
-          "total_duration_ms": 383759,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-10",
-        "pronunciation_attempts": 45,
-        "pronunciation_score_avg": 52.31,
-        "free_speaking_attempts": 2,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "lack_of_knowledge": 1,
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1
-        },
-        "conversation_attempts": 28,
-        "conversation_score_avg": 66.12,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Where do you wear your black clothes? 🖤",
-            "expected_answer": "I wear my black clothes at school and when I go out.",
-            "target_objects": null,
-            "user_transcript": "What I do.",
-            "score": 49,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 77,
-            "grammar_score": 21,
-            "timestamp": "2026-04-10",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp8x9t-90f22575-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Good. Which color do you like best? 🎨",
-            "expected_answer": "I like pink best.",
-            "target_objects": null,
-            "user_transcript": "That, I do.",
-            "score": 58.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 17,
-            "timestamp": "2026-04-10",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp7pif-14060fba-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. What color do you like best? 🎨",
-            "expected_answer": "I like pink. 😄",
-            "target_objects": null,
-            "user_transcript": "Then I like.",
-            "score": 57,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 14,
-            "timestamp": "2026-04-10",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp77ps-81ba2d70-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hello again, let’s talk about colors and things. What color do you like? 🎨",
-            "expected_answer": "I like pink. or I like blue.",
-            "target_objects": null,
-            "user_transcript": "That I do.",
-            "score": 45,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 77,
-            "grammar_score": 13,
-            "timestamp": "2026-04-10",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp6vl4-ea2557fb-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Goodbye! I hope we talk again soon. 😊",
-            "expected_answer": "Thank you, see you later!",
-            "target_objects": null,
-            "user_transcript": "Begin.",
-            "score": 31,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 20,
-            "grammar_score": 42,
-            "timestamp": "2026-04-10",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp5ksq-11f3be18-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7206,
-          "score": 0.87,
-          "correct": 13,
-          "total": 15,
-          "submitted_date": "2026-04-09"
-        },
-        "luyen_tap": {
-          "practice_id": 13117,
-          "score": 1,
-          "correct": 15,
-          "total": 15,
-          "submitted_date": "2026-04-09"
-        },
-        "lms_ids": {
-          "bai_tap": 7206,
-          "luyen_tap": 13117
-        },
-        "skill_breakdown": {
-          "Kĩ năng nghe": {
-            "correct": 9,
-            "total": 10,
-            "accuracy": 0.9
-          },
-          "Biểu đồ": {
-            "correct": 2,
-            "total": 3,
-            "accuracy": 0.667
-          },
-          "Từ vựng": {
-            "correct": 2,
-            "total": 2,
-            "accuracy": 1.0
-          },
-          "English Tutoring - Level 1": {
-            "correct": 15,
-            "total": 15,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [
-          "Biểu đồ"
-        ],
-        "worst_questions": [
-          {
-            "practice_id": 7206,
-            "question_id": 297046,
-            "question_folder": "Kĩ năng nghe",
-            "question_type": "Một lựa chọn",
-            "question_text": "Find a picture beginning with letter ... Con hãy tìm bức tranh bắt đầu bằng chữ cái ... Letter F",
-            "comment_plain": "A. dress B. egg C. frog --> C",
-            "correct_answer": null,
-            "student_answer": "option_2",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/22/d6c1_dress.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/22/933c_egg-removebg-preview.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/22/4fd5_frog.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 7206,
-            "question_id": 384696,
-            "question_folder": "Biểu đồ",
-            "question_type": "Trả lời bằng giọng nói",
-            "question_text": "Look and say Con hãy nhìn và nói.",
-            "comment_plain": null,
-            "correct_answer": "dress",
-            "student_answer": "say",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/28/9e21_dress.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "dress",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
       "lesson_id": 3824527,
       "program_id": null,
       "level": 1,
@@ -3299,9 +2096,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-12",
       "days_since_last_practice": 40,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9967,
       "weakness_score": 0.5405,
-      "composite_priority_score": 0.7702,
+      "composite_priority_score": 0.7686,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -3608,6 +2405,279 @@
       }
     },
     {
+      "lesson_id": 3824532,
+      "program_id": null,
+      "level": 1,
+      "position": 7,
+      "title": "Unit 2A: Colors - Lesson 1: It's red.",
+      "desc": "- red, blue, yellow, purple, green\n- duck, dress \n- Letter Dd and sound /d/ \n- What is this? It's (a dress).\n- What color is it/ the dress? It's (red).",
+      "status": "completed",
+      "last_activity_date": "2026-03-29",
+      "days_since_last_practice": 23,
+      "forgetting_score": 0.9626,
+      "weakness_score": 0.57,
+      "composite_priority_score": 0.7663,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "session_metrics": {
+          "cups": 60,
+          "audio_turns": 121,
+          "avg_reaction_ms": 1238,
+          "fastest_reaction_ms": 382,
+          "total_duration_ms": 1994883,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-28",
+        "pronunciation_attempts": 81,
+        "pronunciation_score_avg": 58.09,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 4,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 3,
+          "correct": 1
+        },
+        "conversation_attempts": 28,
+        "conversation_score_avg": 73.5,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Where do you wear your purple dress? 👗",
+            "expected_answer": "I wear it to school and parties.",
+            "target_objects": null,
+            "user_transcript": "I need to.",
+            "score": 59.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 77,
+            "grammar_score": 42,
+            "timestamp": "2026-03-28",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9rbp2x-3fd5816b-audio.wav",
+            "reaction_time_ms": 1068
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Okay. Do you have a blue dress or a blue toy? 😊",
+            "expected_answer": "Yes, I have a blue dress. It is very pretty.",
+            "target_objects": null,
+            "user_transcript": "I like.",
+            "score": 34.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 19,
+            "timestamp": "2026-03-28",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9r9nmt-27783d61-audio.wav",
+            "reaction_time_ms": 1068
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice, we both like blue 😊 What blue things do you have at home?",
+            "expected_answer": "I have a blue dress and a blue cup.",
+            "target_objects": null,
+            "user_transcript": "No.",
+            "score": 69.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 39,
+            "timestamp": "2026-03-28",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9r9az7-d2ef4f21-audio.wav",
+            "reaction_time_ms": 1068
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Great. Tell me your favorite color and why. 🙂",
+            "expected_answer": "My favorite color is blue because it is calm.",
+            "target_objects": null,
+            "user_transcript": "Oh.",
+            "score": 68,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 36,
+            "timestamp": "2026-03-28",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9r7rq9-f03ab3df-audio.wav",
+            "reaction_time_ms": 1068
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hello! It’s nice to chat about colors today. Are you ready to practice with me? 😄",
+            "expected_answer": "Yes, I am ready.",
+            "target_objects": null,
+            "user_transcript": "Yes, I am ready.",
+            "score": 69.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 89,
+            "timestamp": "2026-03-28",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mn9r7fhr-e3c2c234-audio.wav",
+            "reaction_time_ms": 1068
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7201,
+          "score": 0.8,
+          "correct": 12,
+          "total": 15,
+          "submitted_date": "2026-03-29"
+        },
+        "luyen_tap": {
+          "practice_id": 13139,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-03-29"
+        },
+        "lms_ids": {
+          "bai_tap": 7201,
+          "luyen_tap": 13139
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 7,
+            "total": 10,
+            "accuracy": 0.7
+          },
+          "Biểu đồ": {
+            "correct": 3,
+            "total": 3,
+            "accuracy": 1.0
+          },
+          "Từ vựng": {
+            "correct": 2,
+            "total": 2,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 1": {
+            "correct": 15,
+            "total": 15,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7201,
+            "question_id": 296876,
+            "question_folder": "Kĩ năng nghe",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer. Con hãy nghe và chọn đáp án đúng.",
+            "comment_plain": "audio script: Letter D --> C",
+            "correct_answer": null,
+            "student_answer": "option_2",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/2ec8_letter-a.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/a876_letter-b.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/8f8f_letter-d1.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7201,
+            "question_id": 296880,
+            "question_folder": "Kĩ năng nghe",
+            "question_type": "Một lựa chọn",
+            "question_text": "Tick or Cross Con hãy chọn đúng hoặc sai.",
+            "comment_plain": "audio script: N&oacute; là màu xanh nước biển --> A",
+            "correct_answer": null,
+            "student_answer": "option_2",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/70f0_blue.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/bdcf_tick-removebg-preview.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/c4c4_cross-removebg-preview.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7201,
+            "question_id": 296884,
+            "question_folder": "Kĩ năng nghe",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose the correct answer. Con hãy đọc và chọn đáp án đúng. What color is this? - It's purple.",
+            "comment_plain": "What color is this? - It&#39;s purple.: Đây là màu g&igrave;? N&oacute; màu t&iacute;m --> B",
+            "correct_answer": null,
+            "student_answer": "option_1",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/70f0_blue.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/5bf3_purple.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3824531,
       "program_id": null,
       "level": 1,
@@ -3617,9 +2687,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-25",
       "days_since_last_practice": 27,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9789,
       "weakness_score": 0.5405,
-      "composite_priority_score": 0.7702,
+      "composite_priority_score": 0.7597,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -3961,223 +3031,6 @@
       }
     },
     {
-      "lesson_id": 3824536,
-      "program_id": null,
-      "level": 1,
-      "position": 11,
-      "title": "Unit 2A: Colors - Lesson 5: Review & value",
-      "desc": "- red, blue, yellow, purple, green, orange, black, white, pink\n - What is this? It's (a red flower).\n- What color is it/ the flower? It's (red).\n - Is it red? Yes, it is/ No, it isn't.",
-      "status": "completed",
-      "last_activity_date": "2026-04-11",
-      "days_since_last_practice": 10,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5195,
-      "composite_priority_score": 0.7597,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 17,
-          "audio_turns": 60,
-          "avg_reaction_ms": 2021,
-          "fastest_reaction_ms": 493,
-          "total_duration_ms": 1585263,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-10",
-        "pronunciation_attempts": 31,
-        "pronunciation_score_avg": 43.87,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1
-        },
-        "conversation_attempts": 13,
-        "conversation_score_avg": 74.5,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Do you like blue or purple more? 🙂",
-            "expected_answer": "I like purple more.",
-            "target_objects": null,
-            "user_transcript": "I like to.",
-            "score": 48.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 83,
-            "grammar_score": 14,
-            "timestamp": "2026-04-10",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsyl5gq-e65bb01c-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Is your shirt purple or blue now? 😊",
-            "expected_answer": "My shirt is purple now.",
-            "target_objects": null,
-            "user_transcript": "Y.",
-            "score": 20.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 0,
-            "grammar_score": 41,
-            "timestamp": "2026-04-10",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsyipg0-78fdde3a-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "Green",
-              "Red",
-              "Pink"
-            ],
-            "user_transcript": "Like.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-10",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsxqdut-01686ad5-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7210,
-          "score": 1,
-          "correct": 15,
-          "total": 15,
-          "submitted_date": "2026-04-11"
-        },
-        "luyen_tap": {
-          "practice_id": 13131,
-          "score": 0.87,
-          "correct": 13,
-          "total": 15,
-          "submitted_date": "2026-04-11"
-        },
-        "lms_ids": {
-          "bai_tap": 7210,
-          "luyen_tap": 13131
-        },
-        "skill_breakdown": {
-          "Kĩ năng nghe": {
-            "correct": 10,
-            "total": 10,
-            "accuracy": 1.0
-          },
-          "Biểu đồ": {
-            "correct": 3,
-            "total": 3,
-            "accuracy": 1.0
-          },
-          "Từ vựng": {
-            "correct": 2,
-            "total": 2,
-            "accuracy": 1.0
-          },
-          "English Tutoring - Level 1": {
-            "correct": 12,
-            "total": 14,
-            "accuracy": 0.857
-          },
-          "English Tutoring Level 0": {
-            "correct": 1,
-            "total": 1,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 13131,
-            "question_id": 369374,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Một lựa chọn",
-            "question_text": "Reorder the letter. (Con hãy sắp xếp lại các chữ cái để tạo thành từ đúng.) l a b c k",
-            "comment_plain": "black: màu đen => Đáp án: B",
-            "correct_answer": "B. black",
-            "student_answer": "A. blakc",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/28/cdfa_black-color.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. blakc",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. black",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. balck",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13131,
-            "question_id": 387610,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Một lựa chọn",
-            "question_text": "Reorder the letter. (Con hãy sắp xếp lại các chữ cái để tạo thành từ đúng.) g r n e e",
-            "comment_plain": null,
-            "correct_answer": "B. green",
-            "student_answer": "A. grene",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/01/16/4190_green.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. grene",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. green",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. grnee",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
       "lesson_id": 3824528,
       "program_id": null,
       "level": 1,
@@ -4187,9 +3040,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-14",
       "days_since_last_practice": 38,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9956,
       "weakness_score": 0.5105,
-      "composite_priority_score": 0.7552,
+      "composite_priority_score": 0.753,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -4363,9 +3216,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-19",
       "days_since_last_practice": 33,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.991,
       "weakness_score": 0.5105,
-      "composite_priority_score": 0.7552,
+      "composite_priority_score": 0.7508,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -4550,6 +3403,446 @@
       }
     },
     {
+      "lesson_id": 3824533,
+      "program_id": null,
+      "level": 1,
+      "position": 8,
+      "title": "Unit 2A: Colors - Lesson 2: It's a red flower.",
+      "desc": "- red, blue, yellow, purple, green\n- elephant, egg\n- Letter Ee and sound /e/\n - What is this? It's (a red flower).\n- What color is it / the flower? It's (red).\n - Is it red? Yes, it is/ No, it isn't.",
+      "status": "completed",
+      "last_activity_date": "2026-04-02",
+      "days_since_last_practice": 19,
+      "forgetting_score": 0.9337,
+      "weakness_score": 0.565,
+      "composite_priority_score": 0.7493,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "session_metrics": {
+          "cups": 55,
+          "audio_turns": 120,
+          "avg_reaction_ms": 1921,
+          "fastest_reaction_ms": 584,
+          "total_duration_ms": 8542,
+          "session_status": "COMPLETED",
+          "completion_pct": 71
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-02",
+        "pronunciation_attempts": 77,
+        "pronunciation_score_avg": 39.84,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 3,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 2,
+          "correct": 1
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 63.88,
+        "worst_speaking_items": [
+          {
+            "lms_type": "brainstorm",
+            "question": "Look at this picture and tell me, what can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "egg",
+              "elephant"
+            ],
+            "user_transcript": "Baking elephant.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "elephant"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnheluok-656a441d-audio.wav",
+            "reaction_time_ms": 2966
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice, let’s try again. Do you like red or black? 🎨",
+            "expected_answer": "I like red.",
+            "target_objects": null,
+            "user_transcript": "I like red.",
+            "score": 50.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 11,
+            "grammar_score": 90,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng2an4w-21b0bcfd-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Do you mean 'a' color like red or 'a' pepper color? 🌶️",
+            "expected_answer": "I mean red.",
+            "target_objects": null,
+            "user_transcript": "Let.",
+            "score": 9,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 18,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng2958n-126aa6af-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Pepper? Do you mean the color black or red? 🌶️",
+            "expected_answer": "I mean black.",
+            "target_objects": null,
+            "user_transcript": "When I mean a.",
+            "score": 14,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 8,
+            "grammar_score": 20,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng28nyt-b23b92c1-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Great. Tell me one color you like. 🎨",
+            "expected_answer": "I like blue.",
+            "target_objects": null,
+            "user_transcript": "I like pepper.",
+            "score": 68.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 37,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng28blj-633ba50b-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7202,
+          "score": 0.93,
+          "correct": 14,
+          "total": 15,
+          "submitted_date": "2026-04-02"
+        },
+        "luyen_tap": {
+          "practice_id": 13140,
+          "score": 0.73,
+          "correct": 11,
+          "total": 15,
+          "submitted_date": "2026-04-02"
+        },
+        "lms_ids": {
+          "bai_tap": 7202,
+          "luyen_tap": 13140
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 9,
+            "total": 10,
+            "accuracy": 0.9
+          },
+          "Biểu đồ": {
+            "correct": 3,
+            "total": 3,
+            "accuracy": 1.0
+          },
+          "Từ vựng": {
+            "correct": 2,
+            "total": 2,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 1": {
+            "correct": 11,
+            "total": 14,
+            "accuracy": 0.786
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7202,
+            "question_id": 296900,
+            "question_folder": "Kĩ năng nghe",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. Con hãy chọn đáp án đúng. What color is this? - It's purple.",
+            "comment_plain": "What color is this? - It&#39;s purple.: Đây là màu g&igrave;? N&oacute; màu t&iacute;m --> B",
+            "correct_answer": null,
+            "student_answer": "option_1",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/9457_green-removebg-preview.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/5bf3_purple.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13140,
+            "question_id": 369547,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.)",
+            "comment_plain": "Audio: What is this ? It&#39;s a purple egg. => Đáp án: A",
+            "correct_answer": "A. It's a purple egg.",
+            "student_answer": "B. It's a blue egg.",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. It's a purple egg.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. It's a blue egg.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. It's a yellow egg.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13140,
+            "question_id": 369550,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.)",
+            "comment_plain": "Audio: What is this? It&#39;s a blue elephant. => Đáp án: B",
+            "correct_answer": "B. It's a blue elephant",
+            "student_answer": "A. It's a red elephant",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. It's a red elephant",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. It's a blue elephant",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. It's a green elephant",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13140,
+            "question_id": 369561,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Fill in the blank (Con hãy điền từ vào ô trống.) Is it purple? Y_s, it is.",
+            "comment_plain": "Is it purple? Yes, it is: N&oacute; c&oacute; phải màu t&iacute;m kh&ocirc;ng? Đ&uacute;ng vậy. => Đáp án: e",
+            "correct_answer": "e",
+            "student_answer": "u",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3830583,
+      "program_id": null,
+      "level": 1,
+      "position": 13,
+      "title": "Unit 3A: School things - Lesson 1: It's a red notebook.",
+      "desc": "- pencil, pen, ruler, rubber, school bag\n  glass, goat \n- Letter Gg and sound /g/\n- What color is this/ the notebook? It's (red).\n - What is this? It's (a red notebook).",
+      "status": "completed",
+      "last_activity_date": "2026-04-17",
+      "days_since_last_practice": 4,
+      "forgetting_score": 0.4353,
+      "weakness_score": 1.0,
+      "composite_priority_score": 0.7177,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 46,
+          "audio_turns": 62,
+          "avg_reaction_ms": 1631,
+          "fastest_reaction_ms": 429,
+          "total_duration_ms": 1617602,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-15",
+        "pronunciation_attempts": 34,
+        "pronunciation_score_avg": 53.0,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "correct": 1
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 54.81,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What is your name? 😊",
+            "expected_answer": "My name is Ana.",
+            "target_objects": null,
+            "user_transcript": "I am Theon.",
+            "score": 64,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 33,
+            "grammar_score": 95,
+            "timestamp": "2026-04-15",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo024kfx-ded91c6b-audio.wav",
+            "reaction_time_ms": 1485
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What is your name? 😊",
+            "expected_answer": "My name is Ana.",
+            "target_objects": null,
+            "user_transcript": "My name.",
+            "score": 69.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 39,
+            "timestamp": "2026-04-15",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo0245k6-6271e6dc-audio.wav",
+            "reaction_time_ms": 1485
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What is your name? 😊",
+            "expected_answer": "My name is Ana.",
+            "target_objects": null,
+            "user_transcript": "I am",
+            "score": 32,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 14,
+            "timestamp": "2026-04-15",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo023sf9-6754fb2a-audio.wav",
+            "reaction_time_ms": 1485
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh, do you mean “My name is ___”? 😊",
+            "expected_answer": "My name is [your name].",
+            "target_objects": null,
+            "user_transcript": "My name is.",
+            "score": 57,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 14,
+            "timestamp": "2026-04-15",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo023g4e-055d25e4-audio.wav",
+            "reaction_time_ms": 1485
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh, do you mean your name? 😊",
+            "expected_answer": "Yes, my name is Anna.",
+            "target_objects": null,
+            "user_transcript": "I let me.",
+            "score": 56.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 13,
+            "timestamp": "2026-04-15",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo0230pa-c96ddf47-audio.wav",
+            "reaction_time_ms": 1485
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7212,
+          "score": null,
+          "correct": 0,
+          "total": 15,
+          "submitted_date": "2026-04-17"
+        },
+        "luyen_tap": {
+          "practice_id": 13133,
+          "score": null,
+          "correct": 0,
+          "total": 15,
+          "submitted_date": "2026-04-17"
+        },
+        "lms_ids": {
+          "bai_tap": 7212,
+          "luyen_tap": 13133
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3824534,
       "program_id": null,
       "level": 1,
@@ -4559,9 +3852,9 @@
       "status": "completed",
       "last_activity_date": "2026-04-05",
       "days_since_last_practice": 16,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8983,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.6991,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -4845,6 +4138,717 @@
               {
                 "letter": "C",
                 "text": "C. It's a pink flower.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3824535,
+      "program_id": null,
+      "level": 1,
+      "position": 10,
+      "title": "Unit 2A: Colors - Lesson 4: Is it orange?",
+      "desc": "- orange, black, white, pink\n- duck, dress, elephant, egg, frog, flower\n- Review Dd, Ee, Ff\n- What is this? It's (a red flower).\n- What color is it / the flower? It's (red).",
+      "status": "completed",
+      "last_activity_date": "2026-04-10",
+      "days_since_last_practice": 11,
+      "forgetting_score": 0.7923,
+      "weakness_score": 0.5455,
+      "composite_priority_score": 0.6689,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "session_metrics": {
+          "cups": 22,
+          "audio_turns": 139,
+          "avg_reaction_ms": 2489,
+          "fastest_reaction_ms": 422,
+          "total_duration_ms": 383759,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-10",
+        "pronunciation_attempts": 45,
+        "pronunciation_score_avg": 52.31,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "lack_of_knowledge": 1,
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1
+        },
+        "conversation_attempts": 28,
+        "conversation_score_avg": 66.12,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Where do you wear your black clothes? 🖤",
+            "expected_answer": "I wear my black clothes at school and when I go out.",
+            "target_objects": null,
+            "user_transcript": "What I do.",
+            "score": 49,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 77,
+            "grammar_score": 21,
+            "timestamp": "2026-04-10",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp8x9t-90f22575-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. Which color do you like best? 🎨",
+            "expected_answer": "I like pink best.",
+            "target_objects": null,
+            "user_transcript": "That, I do.",
+            "score": 58.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 17,
+            "timestamp": "2026-04-10",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp7pif-14060fba-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What color do you like best? 🎨",
+            "expected_answer": "I like pink. 😄",
+            "target_objects": null,
+            "user_transcript": "Then I like.",
+            "score": 57,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 14,
+            "timestamp": "2026-04-10",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp77ps-81ba2d70-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hello again, let’s talk about colors and things. What color do you like? 🎨",
+            "expected_answer": "I like pink. or I like blue.",
+            "target_objects": null,
+            "user_transcript": "That I do.",
+            "score": 45,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 77,
+            "grammar_score": 13,
+            "timestamp": "2026-04-10",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp6vl4-ea2557fb-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Goodbye! I hope we talk again soon. 😊",
+            "expected_answer": "Thank you, see you later!",
+            "target_objects": null,
+            "user_transcript": "Begin.",
+            "score": 31,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 20,
+            "grammar_score": 42,
+            "timestamp": "2026-04-10",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsp5ksq-11f3be18-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7206,
+          "score": 0.87,
+          "correct": 13,
+          "total": 15,
+          "submitted_date": "2026-04-09"
+        },
+        "luyen_tap": {
+          "practice_id": 13117,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-04-09"
+        },
+        "lms_ids": {
+          "bai_tap": 7206,
+          "luyen_tap": 13117
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 9,
+            "total": 10,
+            "accuracy": 0.9
+          },
+          "Biểu đồ": {
+            "correct": 2,
+            "total": 3,
+            "accuracy": 0.667
+          },
+          "Từ vựng": {
+            "correct": 2,
+            "total": 2,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 1": {
+            "correct": 15,
+            "total": 15,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [
+          "Biểu đồ"
+        ],
+        "worst_questions": [
+          {
+            "practice_id": 7206,
+            "question_id": 297046,
+            "question_folder": "Kĩ năng nghe",
+            "question_type": "Một lựa chọn",
+            "question_text": "Find a picture beginning with letter ... Con hãy tìm bức tranh bắt đầu bằng chữ cái ... Letter F",
+            "comment_plain": "A. dress B. egg C. frog --> C",
+            "correct_answer": null,
+            "student_answer": "option_2",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/22/d6c1_dress.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/22/933c_egg-removebg-preview.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/22/4fd5_frog.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7206,
+            "question_id": 384696,
+            "question_folder": "Biểu đồ",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say Con hãy nhìn và nói.",
+            "comment_plain": null,
+            "correct_answer": "dress",
+            "student_answer": "say",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/28/9e21_dress.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "dress",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3824536,
+      "program_id": null,
+      "level": 1,
+      "position": 11,
+      "title": "Unit 2A: Colors - Lesson 5: Review & value",
+      "desc": "- red, blue, yellow, purple, green, orange, black, white, pink\n - What is this? It's (a red flower).\n- What color is it/ the flower? It's (red).\n - Is it red? Yes, it is/ No, it isn't.",
+      "status": "completed",
+      "last_activity_date": "2026-04-11",
+      "days_since_last_practice": 10,
+      "forgetting_score": 0.7603,
+      "weakness_score": 0.5195,
+      "composite_priority_score": 0.6399,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 17,
+          "audio_turns": 60,
+          "avg_reaction_ms": 2021,
+          "fastest_reaction_ms": 493,
+          "total_duration_ms": 1585263,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-10",
+        "pronunciation_attempts": 31,
+        "pronunciation_score_avg": 43.87,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1
+        },
+        "conversation_attempts": 13,
+        "conversation_score_avg": 74.5,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Do you like blue or purple more? 🙂",
+            "expected_answer": "I like purple more.",
+            "target_objects": null,
+            "user_transcript": "I like to.",
+            "score": 48.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 83,
+            "grammar_score": 14,
+            "timestamp": "2026-04-10",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsyl5gq-e65bb01c-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Is your shirt purple or blue now? 😊",
+            "expected_answer": "My shirt is purple now.",
+            "target_objects": null,
+            "user_transcript": "Y.",
+            "score": 20.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 41,
+            "timestamp": "2026-04-10",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsyipg0-78fdde3a-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "Green",
+              "Red",
+              "Pink"
+            ],
+            "user_transcript": "Like.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-10",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsxqdut-01686ad5-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7210,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-04-11"
+        },
+        "luyen_tap": {
+          "practice_id": 13131,
+          "score": 0.87,
+          "correct": 13,
+          "total": 15,
+          "submitted_date": "2026-04-11"
+        },
+        "lms_ids": {
+          "bai_tap": 7210,
+          "luyen_tap": 13131
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 10,
+            "total": 10,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 3,
+            "total": 3,
+            "accuracy": 1.0
+          },
+          "Từ vựng": {
+            "correct": 2,
+            "total": 2,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 1": {
+            "correct": 12,
+            "total": 14,
+            "accuracy": 0.857
+          },
+          "English Tutoring Level 0": {
+            "correct": 1,
+            "total": 1,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 13131,
+            "question_id": 369374,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Reorder the letter. (Con hãy sắp xếp lại các chữ cái để tạo thành từ đúng.) l a b c k",
+            "comment_plain": "black: màu đen => Đáp án: B",
+            "correct_answer": "B. black",
+            "student_answer": "A. blakc",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/28/cdfa_black-color.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. blakc",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. black",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. balck",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13131,
+            "question_id": 387610,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Reorder the letter. (Con hãy sắp xếp lại các chữ cái để tạo thành từ đúng.) g r n e e",
+            "comment_plain": null,
+            "correct_answer": "B. green",
+            "student_answer": "A. grene",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/01/16/4190_green.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. grene",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. green",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. grnee",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3836969,
+      "program_id": null,
+      "level": 1,
+      "position": 14,
+      "title": "Unit 3A: School things - Lesson 2: I have a yellow pencil.",
+      "desc": "- pencil, pen, ruler, rubber, school bag, \n  head, house\n- Letter Hh and sound /h/ \n- What color is this/ the notebook? It's (red).\n - What is this? It's (a red notebook).\n - What do you have? I have",
+      "status": "completed",
+      "last_activity_date": "2026-04-19",
+      "days_since_last_practice": 2,
+      "forgetting_score": 0.2485,
+      "weakness_score": 0.7992,
+      "composite_priority_score": 0.5239,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "session_metrics": {
+          "cups": 37,
+          "audio_turns": 125,
+          "avg_reaction_ms": 1947,
+          "fastest_reaction_ms": 429,
+          "total_duration_ms": 265745,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-19",
+        "pronunciation_attempts": 62,
+        "pronunciation_score_avg": 55.6,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1
+        },
+        "conversation_attempts": 34,
+        "conversation_score_avg": 70.78,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Oh, okay. Would you like to talk about your school or your house? 🏠",
+            "expected_answer": "I want to talk about my school.",
+            "target_objects": null,
+            "user_transcript": "That.",
+            "score": 68.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 37,
+            "timestamp": "2026-04-19",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5oux3e-453305d3-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What color is your pen? 🖊️",
+            "expected_answer": "My pen is blue.",
+            "target_objects": null,
+            "user_transcript": "I like pen.",
+            "score": 63.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 88,
+            "grammar_score": 39,
+            "timestamp": "2026-04-19",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5oqohv-de516b47-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. Tell me one school thing you have today.",
+            "expected_answer": "I have a pencil today.",
+            "target_objects": null,
+            "user_transcript": "Hen.",
+            "score": 37.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 33,
+            "grammar_score": 42,
+            "timestamp": "2026-04-19",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5oppd0-5dc78d26-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi! Nice to see you. Are you ready to talk about school things? 😄",
+            "expected_answer": "Yes, I am ready. I like school.",
+            "target_objects": null,
+            "user_transcript": "That I learned.",
+            "score": 45.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 73,
+            "grammar_score": 18,
+            "timestamp": "2026-04-19",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5ope3q-a83aa773-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Do you like reading at home? 📖",
+            "expected_answer": "Yes, I like reading at home.",
+            "target_objects": null,
+            "user_transcript": "Let I do a book I like book.",
+            "score": 68.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 91,
+            "grammar_score": 46,
+            "timestamp": "2026-04-17",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo319t4k-dc5b66f5-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7213,
+          "score": null,
+          "correct": 0,
+          "total": 15,
+          "submitted_date": "2026-04-19"
+        },
+        "luyen_tap": {
+          "practice_id": 13136,
+          "score": 0.87,
+          "correct": 13,
+          "total": 15,
+          "submitted_date": "2026-04-19"
+        },
+        "lms_ids": {
+          "bai_tap": 7213,
+          "luyen_tap": 13136
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 1": {
+            "correct": 13,
+            "total": 15,
+            "accuracy": 0.867
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 13136,
+            "question_id": 385157,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Xứng-Hợp",
+            "question_text": "Match (Con hãy di chuyển các ô ở cột bên phải để nối từ với ảnh đúng.)",
+            "comment_plain": "Đáp án: pen: b&uacute;t ch&igrave; ruler: thước kẻ school bag: cặp sách rubber: cục tẩy",
+            "correct_answer": "item_1→school bag; item_2→pen; item_3→rubber; item_4→ruler",
+            "student_answer": "wrong: item_3, item_4",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A1",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/29/2da7_blue-school-bag.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "A2",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/29/4008_pen.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "A3",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/29/2502_rubber.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "A4",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/01/16/7260_blue_ruler.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B1",
+                "text": "rubber",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B2",
+                "text": "pen",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B3",
+                "text": "school bag",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B4",
+                "text": "ruler",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13136,
+            "question_id": 369464,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.) How many rulers ... there?",
+            "comment_plain": "How many rulers are there? C&oacute; bao nhi&ecirc;u cái thước kẻ? => Đáp án: C (&quot;rulers&quot; số nhiều --> d&ugrave;ng động từ tobe &quot;are&quot;)",
+            "correct_answer": "C. are",
+            "student_answer": "B. is",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. am",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. is",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. are",
                 "image_urls": [],
                 "audio_urls": []
               }

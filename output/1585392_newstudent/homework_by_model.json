@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_run_model": "gemini-3.1-pro-preview",
+  "last_run_model": "gpt-5.4",
   "models": {
     "gpt-5.4-pro": {
       "updated_at": "2026-04-23T04:40:21.774Z",
@@ -8,45 +8,247 @@
       "homework": []
     },
     "gpt-5.4": {
-      "updated_at": "2026-04-24T10:42:42.952714+00:00",
-      "diagnostic": "Ba mẫu lỗi và rủi ro nghiêm trọng nhất đang nổi lên là: thứ nhất, học sinh gần như chưa tạo được câu nói cơ bản một cách ổn định, đặc biệt ở các mẫu chào hỏi và tự giới thiệu rất nền tảng; thứ hai, khả năng nghe–nói gắn với nhận diện âm và lặp lại mẫu câu còn rất yếu, thể hiện qua điểm phát âm rất thấp và nhiều câu trả lời bị méo âm hoặc lệch hoàn toàn; thứ ba, có rủi ro ghi nhớ sau giờ học rất cao ở bài Letters A(a) vì học sinh chưa nộp bài tập về nhà, trong khi đây lại là bài phụ thuộc nhiều vào audio/image nên nếu không luyện lại thì khả năng quên rất nhanh.\n\nMẫu lỗi nghiêm trọng nhất là học sinh chưa làm chủ được các mẫu câu nền tảng của Phase 0 như “Hello”, “Hello, my name is…”, “I’m … years old”, “My last name is …”. Đây không phải lỗi đơn lẻ mà lặp lại ở nhiều bài và nhiều ngày khác nhau. Ở Lesson 5 Review & culture, khi được yêu cầu nói “Hello, my name is Maria.”, học sinh trả lời “OeX.” hoặc nói lệch hẳn sang “Yeah, Amazon is top.”, cho thấy không chỉ thiếu từ mà còn chưa bám được nhiệm vụ giao tiếp. Ở Lesson 4, câu mẫu “Hello, my name is Ana.” bị rút còn “H.” hoặc “Hello, my name.”, nghĩa là học sinh nhớ được mảnh câu đầu nhưng không hoàn thành được cấu trúc. Ở Lesson 1 Hello!, câu “Hello” bị trả thành “I”, còn “My last name is Brown.” chỉ nói được “My last name is.”. Điều này cho thấy lỗ hổng chính nằm ở khả năng gọi lại nguyên cụm mẫu, không phải chỉ ở một từ riêng lẻ. Với cấp độ 4–5 giai đoạn đầu, đây là khoảng trống rất quan trọng vì toàn bộ các bài sau đều xây trên các khung câu này. Ngoài ra, phần free speaking cũng xác nhận vấn đề này: khi được hỏi “How do you feel now?”, học sinh trả lời “Hello, teacher, teacher.”, tức là phản xạ nói chưa gắn đúng với ý nghĩa câu hỏi. Cần xem đây là nhu cầu deep practice rất cao cho các bài Greetings Lesson 1, 2, 4, 5 và cả Lesson 3 vì bài này cũng cho thấy học sinh trả lời lạc hướng ở câu hỏi về đồng hồ. Hướng luyện hiệu quả nhất cho nhóm bài này là hội thoại cấu trúc ngắn, lặp mẫu câu cố định, nghe rồi nhại lại, điền nửa câu còn thiếu, và luyện thay thế biến tố rất nhỏ như đổi tên, đổi tuổi, đổi họ. Free speaking mở hoàn toàn hiện chưa phải dạng câu hỏi hiệu quả vì học sinh dễ nói lệch chủ đề.\n\nMẫu lỗi nghiêm trọng thứ hai là yếu ở nghe–phát âm–bắt chước âm thanh, kéo theo việc nói ra bị méo âm hoặc thêm đuôi sai ngữ pháp. Điểm pronunciation trung bình chỉ 35.52/100 là rất thấp, và conversation tuy đạt khoảng 58.51 nhưng nhiều câu có gram tạm được trong khi pron rất thấp, nghĩa là học sinh đôi khi đoán đúng cấu trúc nhưng không phát âm đủ rõ để hệ thống nhận diện. Ví dụ “Hello” chỉ được pron 0; “Hello, my name is …” có lúc pron 25 hoặc 50; ở Lesson 3, câu “It is eight o’clock.” bị nói thành “It’s 8:00.” với ngữ pháp khá ổn nhưng phát âm chỉ 41. Trong bài tập nghe, học sinh cũng nhầm các đáp án rất cơ bản như “I am Tony” với “This is Tony”, hoặc tạo dạng sai “I’m eight years olds”, “I’m ten year olds”, “Nice tu meet you”. Những lỗi này cho thấy học sinh chưa phân biệt chắc các cụm âm quen thuộc và hay gắn thêm /s/ sai vào “old”, “year”, đồng thời chưa cố định được mẫu “Nice to meet you”. Đây là mẫu lỗi xuyên cả nghe lẫn nói, nên không nên tách riêng pronunciation khỏi grammar. Với học sinh này, dạng câu hỏi hiệu quả nhất sẽ là nghe–chọn đáp án tối giản, nghe và lặp lại từng chunk ngắn, đối chiếu cặp dễ nhầm như “I am” / “This is”, “year old” / “years old”, “to” / “tu” theo âm chuẩn. Các bài cần deep practice theo hướng này là Lesson 5 Review & culture, Lesson 4 I’m good!, Lesson 3 I’m six years old., vì ở đây đã có bằng chứng lỗi thực tế trong homework attempted. Riêng các lỗi “eight years olds”, “ten year olds” là lỗi hình thái lặp lại, cần luyện theo mẫu cố định chứ chưa nên dạy quy tắc dài.\n\nMẫu rủi ro nghiêm trọng thứ ba là khả năng gắn từ với hình ảnh và nhiệm vụ nói theo gợi ý đang rất yếu, cộng thêm bài Letters A(a) chưa làm homework làm tăng nguy cơ mất kiến thức nền về chữ cái và từ vựng đầu vào. Brainstorm trung bình 0.0/100 là tín hiệu đỏ rõ nhất. Phân bố đáp án cho thấy 14 câu sai, chỉ 3 câu đúng, nhưng ngay cả một câu được gắn “correct” thì câu trả lời “One one.” vẫn cho thấy mức độ kiểm soát rất thấp. Ở các câu “What is it?” hoặc “What can you see?”, học sinh trả lời “Hion.”, “I my.”, “I.”, tức là không truy xuất được từ mục tiêu từ tranh/gợi ý. Điều này đặc biệt đáng lo vì brainstorm ở đây không phải nói mở hoàn toàn mà là nói theo ảnh với bộ từ mục tiêu đã giới hạn; nếu vẫn không làm được thì nghĩa là liên kết hình–âm–từ chưa hình thành chắc. Rủi ro này càng cao ở “Letters ABC - Lesson 1: Letter A(a)” vì bài chưa nộp homework, trong khi preview cho thấy toàn bộ câu hỏi mẫu đều cần audio/image media. Nói cách khác, đây là bài rất cần ôn lại bằng nghe nhìn sau lớp, nhưng hiện không có bằng chứng học sinh đã ghi nhớ. Phần speaking của bài này cũng rất yếu: “Hello, my name is Tom.” chỉ ra “Hel.” hoặc “The.”. Vì vậy, bài Letters A(a) cần được xếp vào deep practice dù chưa có failed questions cụ thể, bởi trạng thái not_attempted ở một bài nền như vậy là rủi ro học tập cao hơn bình thường. Dạng câu hỏi hiệu quả nhất cho bài này sẽ là nhận diện chữ–âm–tranh theo bước rất nhỏ: nghe âm /æ/ hoặc tên chữ A, chọn tranh đúng; nhìn tranh nói một từ đơn trước khi nói cả cụm; nối chữ với từ quen thuộc như apple, ant, alligator; sau đó mới chuyển sang câu ngắn. Với trạng thái hiện tại, không nên bắt đầu bằng nói mở hay câu dài.\n\nXét theo mức độ ưu tiên ôn tập, nhóm cần deep practice rõ ràng nhất là Unit 1A Greetings Lesson 1, 2, 4, 5 và Unit 1A Letters ABC Lesson 1. Lesson 1 và 4 cần đào sâu vì lỗi nằm ở chính mẫu câu chào hỏi/tự giới thiệu cốt lõi. Lesson 5 cần đào sâu vì đây là bài review nhưng vẫn sai cả nghe hiểu lẫn nói, nghĩa là kiến thức chưa được củng cố sau chuỗi bài trước. Lesson 2 cần đào sâu chủ yếu ở brainstorm và free speaking vì học sinh chưa gắn được câu trả lời với câu hỏi và chưa gọi được từ theo tranh. Lesson Letters A(a) cần đào sâu do chưa làm homework và speaking rất yếu. Lesson 3 “I’m six years old.” có thể xếp ở mức giữa deep practice và light reinforcement: bài này có lỗi thật trong listening và conversation, nhưng đã xuất hiện một số dấu hiệu học sinh nắm được ý phần nào, ví dụ câu về giờ có ngữ pháp tương đối khá hơn các bài khác. Nếu thời lượng hạn chế, có thể xem Lesson 3 là bài củng cố có kiểm soát sau khi xử lý xong các mẫu chào hỏi nền tảng.\n\nVề light reinforcement, bài spaced repetition của Lesson 2 có weakness thấp và không có speaking fail, nên chỉ cần ôn nhẹ để giữ nhịp. Tuy nhiên, vì toàn cục speaking của học sinh vẫn yếu, “ôn nhẹ” ở đây không có nghĩa là bỏ qua hoàn toàn, mà chỉ nên dùng như bài thành công để tạo cảm giác làm được: ví dụ nghe–chọn, lặp lại từ số đếm, nhận diện “book”, “one–five” bằng tranh. Những hoạt động này có thể dùng như bước khởi động trước khi quay lại các bài khó hơn.\n\nNếu nhìn theo loại câu hỏi hiệu quả nhất cho từng nhóm bài, thì với các bài Greetings, hội thoại cấu trúc ngắn là hiệu quả nhất, miễn là câu mẫu rất cố định và có hỗ trợ nhắc lại. Học sinh hiện phản ứng tốt hơn khi có khung rõ ràng hơn là nói mở. Với Lesson 1 và 4, nên ưu tiên “repeat after me”, “complete the sentence”, “choose the correct response”, “arrange the words” cho các mẫu Hello / My name is / I’m … years old. Với Lesson 5 review, nên dùng nghe–chọn đáp án và nối câu hỏi–trả lời vì homework đã cho thấy học sinh đang nhầm đúng ở các cặp giao tiếp cơ bản như “What’s your name?” và “How old are you?”. Với Lesson 2 và các phần brainstorm, nên dùng nhận diện tranh + từ mục tiêu, bắt đầu từ từ đơn trước rồi mới lên câu. Với Lesson 3, nên dùng nghe–nói theo mẫu cho “Nice to meet you” và “It is eight o’clock”, tránh để học sinh tự do diễn đạt quá sớm vì hiện em có xu hướng nói lệch sang dạng quen miệng nhưng không đúng mẫu bài học.\n\nTóm lại, hồ sơ này cho thấy vấn đề không nằm ở một kỹ năng riêng lẻ mà là một cụm khó khăn nền tảng: học sinh chưa giữ được mẫu câu cơ bản trong trí nhớ làm việc, phát âm chưa đủ rõ để củng cố nghe–nói, và khả năng gọi từ theo tranh gần như chưa hình thành ổn định. Vì vậy, chiến lược phù hợp không phải mở rộng nội dung mới, mà là quay lại các khung câu siêu cơ bản, luyện cực ngắn, lặp nhiều, đa giác quan, và đặc biệt phải bù ngay bài Letters A(a) chưa nộp homework để tránh hổng nền chữ–âm–từ ở giai đoạn đầu.",
+      "updated_at": "2026-05-04T04:27:06.916022+00:00",
+      "diagnostic": "Ba mẫu lỗi và rủi ro nghiêm trọng nhất là: thứ nhất, học sinh gặp khó khăn rất nặng ở nói tự tạo đầu ra, đặc biệt là brainstorm và free speaking; thứ hai, học sinh thường chỉ nói được mẩu câu ngắn, thiếu thành phần bắt buộc hoặc trả lời lạc đề trong các mẫu hội thoại rất cơ bản; thứ ba, có rủi ro quên bài rất cao ở các bài Greetings cách đây 30–31 ngày, đồng thời còn xuất hiện thêm một bài mới chưa nộp homework nên chưa có bằng chứng ghi nhớ sau lớp.\n\nMẫu nghiêm trọng nhất là năng lực gọi từ và nói tự do gần như chưa hình thành ổn định. Chỉ số brainstorm trung bình là 0/100, đây là mức rất đáng lo vì dạng này đo độ đầy đủ của vốn từ mục tiêu khi nhìn ảnh hoặc gợi ý. Phân bố câu trả lời cho thấy 14 lần “incorrect” và chỉ 3 lần “correct”, nhưng ngay cả các lần “correct” cũng vẫn không đủ số từ mục tiêu nên điểm vẫn bằng 0. Điều này nghĩa là học sinh không chỉ thiếu từ mà còn rất khó truy xuất đủ nhóm từ đã học. Ví dụ ở Lesson 1, khi cần gọi các từ như apple, ant, alligator, letter a, học sinh nói “Hion.”; ở Lesson 2, thay vì nhóm từ one, two, three, four, five, book, học sinh nói “I my.” hoặc “I.”; có trường hợp nói “One one.” được chấm answer_type=correct nhưng vẫn score=0 vì chỉ lặp lại một phần rất nhỏ của danh sách mục tiêu. Free speaking cũng yếu rõ, trung bình chỉ 20/100, với 4/5 lần là inaccordant. Ví dụ câu hỏi “How do you feel now?” lại trả lời “Hello, teacher, teacher.”, cho thấy học sinh chưa hiểu yêu cầu hoặc chưa có khả năng chọn đúng ngôn ngữ theo ngữ cảnh. Đây là dấu hiệu của thiếu tự động hóa đầu ra nói ở mức từ và cụm từ cơ bản. Vì writing accuracy tổng thể vẫn khá ổn, điểm yếu chính không nằm ở nhận biết trên giấy mà nằm ở việc nghe hiểu prompt và tự bật ra từ/câu bằng miệng.\n\nMẫu thứ hai là lỗi hội thoại cấu trúc: học sinh thường bỏ thiếu phần quan trọng của câu, lặp lại khung câu nhưng không điền được nội dung, hoặc trả lời không đúng ý hỏi. Đây là lỗi xuất hiện lặp đi lặp lại ở nhiều bài Greetings. Trong Lesson 1, thay vì “Hello” học sinh nói “I”; thay vì “I am ready” lại nói “Do I”. Ở phần giới thiệu tên, học sinh nói “My last name is.”, “Hello, my name is.” hoặc “My name is B.”, tức là có nhận ra mẫu câu nhưng không hoàn thành được thông tin cốt lõi. Ở Lesson 3, khi được hỏi “How old are you?” học sinh trả lời “I am.”; ở Lesson 4, mẫu “Hello, my name is Ana.” chỉ nói được “H.” hoặc “Hello, my name.”. Ngay cả khi điểm conversation trung bình không quá thấp ở một vài bài, lỗi thực tế vẫn cho thấy khả năng tái tạo câu hoàn chỉnh rất mong manh. Điểm pronunciation trung bình toàn khóa chỉ 35.52/100 càng làm vấn đề nặng hơn: nhiều câu có grammar không quá tệ nhưng pron rất thấp, hoặc ngược lại pron cao hơn nhưng grammar thiếu nặng. Điều này cho thấy học sinh chưa ổn cả hai tầng: vừa chưa giữ được cấu trúc câu, vừa phát âm chưa đủ rõ để hệ thống nhận diện. Với học sinh Phase 0 cấp 4–5, đây là khoảng trống nền tảng cần xử lý sớm vì các mẫu “Hello, my name is…”, “I am … years old”, “Nice to meet you” là khung giao tiếp cốt lõi.\n\nMẫu thứ ba là rủi ro ghi nhớ và theo dõi học tập. Các bài Greetings Lesson 1 và Lesson 2 đều đã cách 30–31 ngày, theo forgetting curve thì gần như đã quên phần lớn, và đúng là các chỉ số nói ở các bài này rất yếu. Đây là nhóm cần ưu tiên cao hơn các bài 5 ngày nếu mức yếu tương đương, vì khoảng cách thời gian làm tăng nguy cơ mất gốc. Đặc biệt Lesson 1 xuất hiện hai bản ghi đều rất yếu, conversation chỉ 47–61, pronunciation 28, brainstorm 0, cho thấy đây không phải lỗi nhất thời mà là lỗ hổng bền vững. Lesson 2 cũng tương tự: brainstorm 0 ở cả hai lần, free speaking 0, pronunciation chỉ 38–39. Ngoài ra còn có bài “Letters ABC - Lesson 1: Letter A(a)” mới học 3 ngày nhưng hw_status=not_attempted. Trường hợp này là rủi ro cao vì học sinh đã học trên lớp nhưng chưa có bằng chứng ôn lại sau buổi học; question bank preview đều là câu hỏi cần audio/image, tức là bài phụ thuộc mạnh vào nhận diện âm và hình, đúng vào vùng đang yếu của học sinh. Nếu không làm homework sớm, bài mới này rất dễ trôi khỏi trí nhớ ngắn hạn và nhập vào nhóm “quên sớm”.\n\nVề khoảng trống kỹ năng, bức tranh chung cho thấy viết và nhận biết không phải vùng yếu nhất. Kĩ năng nghe 90.9%, Biểu đồ 90.9%, từ vựng 77.8%, tổng English Tutoring 78.2% là chấp nhận được so với mức nói. Một số lỗi viết/nghe vẫn đáng chú ý nhưng mang tính cục bộ hơn, như nhầm mẫu trả lời “I am Tony” với “This is Tony”, hoặc lỗi số nhiều “I’m eight years olds”, “I’m ten year olds”, và lỗi chính tả-phát âm ảnh hưởng lựa chọn đáp án như “Nice tu meet you.”. Những lỗi này cho thấy học sinh chưa chắc về chunk hoàn chỉnh và hình thức chuẩn của câu, nhưng mức độ chưa nghiêm trọng bằng phần nói. Nói cách khác, học sinh có dấu hiệu nhận ra nội dung khi làm bài đóng, nhưng khi phải tự nói thì không giữ được câu.\n\nNếu chia mức ưu tiên ôn tập, nhóm cần deep practice trước hết là Unit 1A Greetings Lesson 1: Hello! và Lesson 2: Nice to meet you!. Đây là hai bài vừa rất cũ vừa có lỗi nói nền tảng lặp lại nhiều lần. Lesson 1 cần đào sâu nhất vì có cả brainstorm 0, conversation thấp, pronunciation rất thấp, và lỗi ở chính các câu chào hỏi mở đầu. Lesson 2 cũng cần deep practice vì free speaking 0, brainstorm 0, và học sinh trả lời lạc đề ngay ở câu warmup đơn giản. Tiếp theo là Lesson 5: Review & culture vì đây là bài tổng hợp, conversation chỉ 41, lại có lỗi homework thật ở matching câu hỏi–trả lời, nghe chọn đáp án, và ngữ pháp “years old”. Bài này rất hữu ích để kiểm tra xem học sinh có nối được các mảnh kiến thức greetings thành mạng lưới hay không. Sau đó là Lesson 3 và Lesson 4, mức ưu tiên trung bình-cao: chúng mới hơn nên chưa quên nhiều bằng bài 30 ngày, nhưng vẫn có lỗi rõ ở mẫu tuổi, lời chào, và câu trả lời theo ngữ cảnh. “Letters ABC - Lesson 1: Letter A(a)” cần can thiệp sớm nhưng theo hướng hoàn thành homework và kiểm tra nhớ bài, vì hiện chưa có dữ liệu lỗi viết; đây là bài rủi ro theo dõi học tập hơn là bài đã xác nhận hổng sâu. Bản ghi spaced repetition của Lesson 2 có weakness thấp và không có speaking activity, nên chỉ cần light reinforcement sau khi xử lý xong các bài yếu thật.\n\nVề loại câu hỏi hiệu quả nhất cho từng bài, với Lesson 1 và Lesson 2 nên ưu tiên câu hỏi bắt chước có khung cố định, lặp ngắn, và thay thế một thành phần. Học sinh chưa sẵn sàng cho free speaking mở. Hiệu quả nhất sẽ là nghe-nhắc lại và nói theo mẫu cực ngắn như “Hello”, “I am ready”, “My name is Ben”, “Nice to meet you”, sau đó mới chuyển sang điền tên của mình. Với brainstorm ở hai bài này, không nên yêu cầu gọi cả nhóm từ cùng lúc; nên dùng nhận diện một ảnh–một từ, rồi ghép 2 từ, rồi mới mở rộng. Với Lesson 3, câu hỏi hiệu quả là pattern drill cho tuổi và đồng hồ, nhưng cần giữ một mục tiêu mỗi lượt: “How old are you? — I am six years old.” trước, rồi mới sang “What time is it? — It is eight o’clock.” vì dữ liệu cho thấy học sinh dễ trộn ngữ cảnh. Với Lesson 4, nên dùng câu hỏi chọn đáp án đúng/sai và sửa câu mẫu ngắn quanh “Good morning”, “I’m good”, “Hello, my name is…”, vì conversation đang thấp nhưng pronunciation lại khá hơn các bài khác; đây là cơ hội dùng lặp mẫu để kéo grammar lên. Với Lesson 5, nên dùng matching question-answer, nghe chọn đáp án, và sửa lỗi chunk hoàn chỉnh như “I’m eight years old” vì bài này đã có failed questions cụ thể trong homework. Với Letter A(a), do chưa làm homework và preview đều là audio/image, loại câu hỏi hiệu quả nhất là nhận diện âm đầu /æ/ hoặc tên chữ A qua hình-âm đơn giản, sau đó nói một từ đơn như apple, ant trước khi yêu cầu câu dài.\n\nTóm lại, học sinh không yếu đồng đều ở mọi mặt mà yếu tập trung ở đầu ra nói: gọi từ theo ảnh, trả lời tự do, và hoàn thành câu hội thoại cơ bản. Các bài Greetings cũ 30–31 ngày là vùng cần cứu gấp vì vừa yếu vừa gần như đã quên. Sau khi củng cố lại các mẫu câu cực ngắn và phát âm rõ, mới nên mở dần sang câu hoàn chỉnh và free speaking. Bài chưa nộp homework cần được xử lý sớm để tránh tạo thêm một lỗ hổng mới trong đúng vùng âm-hình đang yếu.",
       "homework": [
         {
           "question_no": 1,
-          "lesson_id": 3995531,
-          "lesson_title": "Unit 1A: Letters ABC - Lesson 1: Letter A(a)",
+          "lesson_id": 3847168,
+          "lesson_title": "Unit 1A: Greetings - Lesson 1: Hello!",
           "skill_category": "speaking",
-          "question_type": "Trả lời bằng giọng nói",
-          "question_text": "Look, listen and repeat after the audio (Con hãy nhìn tranh, lắng nghe và lặp lại sau audio nhé!)",
-          "correct_answer": "apple",
-          "difficulty": "easy",
-          "reason": "Bài Letters A(a) chưa nộp homework suốt 3 ngày nên nguy cơ quên nền chữ–âm–từ rất cao. Ở phần nói trước đó, học sinh chỉ nói \"Hel.\" hoặc \"The.\" thay vì câu mẫu đầy đủ, nên cần quay lại bước nghe rồi nhại lại thật ngắn với từ quen thuộc này.",
-          "question_id": 675696,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/d14b_apple-2.png"
-          ],
+          "question_type": "speaking_unscripted",
+          "question_text": "How are you today?",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Điểm brainstorm trung bình của học sinh là 0/100 và free speaking chỉ 20/100, cho thấy khả năng tự bật ra câu nói rất yếu. Bài này đã học 31 ngày trước; trong chẩn đoán học sinh còn trả lời lạc đề kiểu “Hello, teacher, teacher.” nên cần luyện lại mẫu trả lời đúng ngữ cảnh.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 2,
+          "lesson_id": 3813139,
+          "lesson_title": "Unit 1A: Greetings - Lesson 2: Nice to meet you!",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "How do you feel now?",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Đây là đúng dạng câu mà chẩn đoán ghi nhận học sinh trả lời “Hello, teacher, teacher.” thay vì nói cảm xúc, cho thấy chưa hiểu yêu cầu và chưa chọn đúng ngôn ngữ theo ngữ cảnh. Bài đã học 31 ngày trước nên nguy cơ quên rất cao, đặc biệt khi brainstorm vẫn 0/100.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 3,
+          "lesson_id": 3847172,
+          "lesson_title": "Unit 1A: Greetings - Lesson 5: Review & culture",
+          "skill_category": "grammar",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Match (Con hãy di chuyển các ô ở cột bên phải để nối câu hỏi với câu trả lời đúng con nhé.)",
+          "correct_answer": "What is this?→It's a book.; What's your name?→I'm Ben.; How old are you?→I'm five years old.",
+          "difficulty": "medium",
+          "reason": "Học sinh đã trả lời sai câu này trước đó: điền/chọn \"wrong: What is this?, What's your name?, How old are you?\" thay vì \"What is this?→It's a book.; What's your name?→I'm Ben.; How old are you?→I'm five years old.\" Bài đã học 5 ngày trước nhưng lỗi này khớp với mẫu chẩn đoán là hay lặp khung câu mà không nối đúng câu hỏi–trả lời.",
+          "question_id": 384653,
+          "requires_media": false,
+          "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
             {
-              "letter": "A",
-              "text": "apple",
+              "letter": "A1",
+              "text": "What is this?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "A2",
+              "text": "What's your name?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "A3",
+              "text": "How old are you?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B1",
+              "text": "I'm five years old.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B2",
+              "text": "It's a book.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B3",
+              "text": "I'm Ben.",
               "image_urls": [],
               "audio_urls": []
             }
           ],
-          "question_folder": "English Tutoring Level 0"
+          "comment_plain": "A-1: Đây là cái g&igrave;? N&oacute; là một quyển sách. B-2: T&ecirc;n của bạn là g&igrave;? T&ocirc;i là Ben. C-3: Bạn bao nhi&ecirc;u tuổi? T&ocirc;i 5 tuổi.",
+          "question_folder": "English Tutoring - Level 1"
         },
         {
-          "question_no": 2,
+          "question_no": 4,
+          "lesson_id": 3847172,
+          "lesson_title": "Unit 1A: Greetings - Lesson 5: Review & culture",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct answer. ( Con hãy nghe và chọn đáp án đúng.)",
+          "correct_answer": "C. I am Tony",
+          "difficulty": "medium",
+          "reason": "Học sinh đã trả lời sai câu này trước đó: điền/chọn \"A. This is Tony\" thay vì \"C. I am Tony\". Bài đã học 5 ngày trước; đây đúng với lỗi chẩn đoán đã nêu là nhầm mẫu trả lời “I am Tony” với “This is Tony”.",
+          "question_id": 369516,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. This is Tony",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. I is Tony",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. I am Tony",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Audio: What&#39;s your name? T&ecirc;n bạn là g&igrave;? => Đáp án: C (&quot;I&quot; đi với động từ tobe &quot;am&quot;)",
+          "question_folder": "English Tutoring - Level 1"
+        },
+        {
+          "question_no": 5,
+          "lesson_id": 3847171,
+          "lesson_title": "Unit 1A: Greetings - Lesson 4: I'm good!",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.) How old are you?",
+          "correct_answer": "C. I'm ten years old.",
+          "difficulty": "medium",
+          "reason": "Học sinh đã trả lời sai câu này trước đó: điền/chọn \"A. I'm ten year olds.\" thay vì \"C. I'm ten years old.\" Bài đã học 5 ngày trước; lỗi này trùng với mẫu sai số nhiều trong chẩn đoán như “I’m eight years olds”, nên cần sửa chunk hoàn chỉnh.",
+          "question_id": 369269,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. I'm ten year olds.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. I'm ten year old.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. I'm ten years old.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 1"
+        },
+        {
+          "question_no": 6,
+          "lesson_id": 3847171,
+          "lesson_title": "Unit 1A: Greetings - Lesson 4: I'm good!",
+          "skill_category": "grammar",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Fill in the blank (Con hãy điền từ vào ô trống.) What is this? - It's a clo_k.",
+          "correct_answer": "c",
+          "difficulty": "easy",
+          "reason": "Bài đã học 5 ngày trước và phù hợp để kéo lại độ chính xác chữ-cái trong từ đơn, vì phát âm toàn khóa chỉ 35.52/100 nên học sinh dễ nhầm âm với chữ khi nói và nhận diện. Chẩn đoán cũng cho thấy học sinh giữ câu chưa chắc, nên bài điền chữ ngắn này giúp củng cố từ vựng trong khung câu rất cơ bản.",
+          "question_id": 387599,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 1"
+        },
+        {
+          "question_no": 7,
+          "lesson_id": 3847170,
+          "lesson_title": "Unit 1A: Greetings - Lesson 3: I'm six years old.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
+          "correct_answer": "A. Nice to meet you.",
+          "difficulty": "medium",
+          "reason": "Học sinh đã trả lời sai câu này trước đó: điền/chọn \"C. Nice tu meet you.\" thay vì \"A. Nice to meet you.\" Bài đã học 5 ngày trước; lỗi này cho thấy học sinh chưa chắc chunk chào hỏi hoàn chỉnh và còn bị ảnh hưởng bởi chính tả-phát âm như chẩn đoán đã nêu.",
+          "question_id": 369233,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Nice to meet you.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. Nise to meet you.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. Nice tu meet you.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Audio: Nice to meet you => Đáp án: A",
+          "question_folder": "English Tutoring - Level 1"
+        },
+        {
+          "question_no": 8,
+          "lesson_id": 3847170,
+          "lesson_title": "Unit 1A: Greetings - Lesson 3: I'm six years old.",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "What’s the weather like today?",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Điểm brainstorm trung bình 0/100 cho thấy học sinh rất khó tự gọi từ khi phải nói không có khung sẵn, nên cần thêm một câu speaking có mục tiêu ngắn để luyện phản xạ. Bài này đã học 5 ngày trước; chẩn đoán cũng nói học sinh thường trả lời thiếu thành phần hoặc lạc đề trong mẫu hội thoại cơ bản.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 9,
           "lesson_id": 3995531,
           "lesson_title": "Unit 1A: Letters ABC - Lesson 1: Letter A(a)",
-          "skill_category": "grammar",
+          "skill_category": "vocabulary",
           "question_type": "Một lựa chọn",
           "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn câu trả lời đúng nhé!) A: Hello! => B: ............",
           "correct_answer": "Hi!",
           "difficulty": "easy",
-          "reason": "Chẩn đoán cho thấy học sinh chưa làm chủ mẫu chào hỏi cơ bản; ở Lesson 1, từ \"Hello\" từng bị trả lời thành \"I\". Bài này bù đúng lỗ hổng phản xạ chào đáp lại trong bài chưa làm cách đây 3 ngày.",
+          "reason": "Bài này mới học 3 ngày trước nhưng chưa làm homework, nên chưa có bằng chứng ghi nhớ sau lớp và cần xử lý sớm để tránh quên sớm. Chẩn đoán nhấn mạnh đây là vùng âm-hình đang yếu; đồng thời học sinh từng nói các câu chào rất mong manh như “I” thay vì “Hello”.",
           "question_id": 675711,
           "requires_media": false,
           "stem_media_urls": [],
@@ -75,345 +277,79 @@
           "question_folder": "English Tutoring Level 0"
         },
         {
-          "question_no": 3,
-          "lesson_id": 3995531,
-          "lesson_title": "Unit 1A: Letters ABC - Lesson 1: Letter A(a)",
-          "skill_category": "grammar",
-          "question_type": "Một lựa chọn",
-          "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn đáp án đúng nhé!) A; What's your name? => B: ............",
-          "correct_answer": "I'm Tim.",
-          "difficulty": "easy",
-          "reason": "Học sinh nhiều lần không hoàn thành được mẫu tự giới thiệu: từng nói \"Hello, my name.\" hoặc chỉ còn \"My last name is.\". Câu này luyện đúng khung trả lời tên mà chẩn đoán xác định là lỗ hổng nền tảng nhất.",
-          "question_id": 675712,
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "I'm Tim.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "I'm fine.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "Goodbye!",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "Đáp án chi tiết: Nhân vật A hỏi: What&#39;s your name? (T&ecirc;n của bạn là g&igrave;?) Nhân vật B đáp: I&#39;m Tim. (M&igrave;nh là Tim.) Câu trả lời ch&iacute;nh xác là: I&#39;m Tim. (M&igrave;nh là Tim.)",
-          "question_folder": "English Tutoring Level 0"
-        },
-        {
-          "question_no": 4,
-          "lesson_id": 3995531,
-          "lesson_title": "Unit 1A: Letters ABC - Lesson 1: Letter A(a)",
-          "skill_category": "vocabulary",
-          "question_type": "Một lựa chọn",
-          "question_text": "Listen, look and choose the correct beginning letter (Con hãy nghe, nhìn tranh và chọn chữ cái đầu đúng nhé!)",
-          "correct_answer": "A",
-          "difficulty": "easy",
-          "reason": "Bài chữ cái A(a) là điểm rủi ro cao nhất vì chưa có bằng chứng học sinh đã luyện ở nhà. Chẩn đoán cũng nêu rõ liên kết hình–âm–từ còn yếu, nên cần bài nhận diện chữ cái đầu thật nhỏ trước khi lên câu.",
-          "question_id": 675690,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/26d5_ant-1.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "B",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "A",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "A nt: con kiến",
-          "question_folder": "English Tutoring Level 0"
-        },
-        {
-          "question_no": 5,
-          "lesson_id": 3813138,
-          "lesson_title": "Unit 1A: Greetings - Lesson 1: Hello!",
-          "skill_category": "grammar",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Look and write. (Con hãy nhìn và viết từ đúng.) What is this? It's an ___ .",
-          "correct_answer": "ant",
-          "difficulty": "easy",
-          "reason": "Ở các câu hỏi theo tranh, học sinh từng trả lời rất lệch như \"Hion.\", \"I my.\" và \"I.\" khi được hỏi \"What is it?/What can you see?\". Bài điền từ này giúp gắn lại tranh với từ mục tiêu đơn giản thay vì bắt nói mở.",
-          "question_id": 369219,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/adb8_ant.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "Ảnh: con kiến = ant => Đáp án: ant",
-          "question_folder": "English Tutoring - Level 1"
-        },
-        {
-          "question_no": 6,
-          "lesson_id": 3813138,
-          "lesson_title": "Unit 1A: Greetings - Lesson 1: Hello!",
-          "skill_category": "speaking",
-          "question_type": "Trả lời bằng giọng nói",
-          "question_text": "Look and say (Con hãy nhìn và nói.)",
-          "correct_answer": "alligator",
-          "difficulty": "medium",
-          "reason": "Phần brainstorm của học sinh gần như 0 điểm, cho thấy em chưa gọi được từ từ tranh dù bộ từ rất giới hạn. Sau khi đã ôn chữ A và từ apple/ant, bài nói một từ này giúp kiểm tra xem em có phát âm và truy xuất được từ A khác hay không.",
-          "question_id": 385108,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/5991_alligator.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "alligator",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "question_folder": "English Tutoring - Level 1"
-        },
-        {
-          "question_no": 7,
-          "lesson_id": 3813138,
-          "lesson_title": "Unit 1A: Greetings - Lesson 1: Hello!",
-          "skill_category": "grammar",
-          "question_type": "Một lựa chọn",
-          "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.) What's your name?",
-          "correct_answer": "B. I'm Tony",
-          "difficulty": "easy",
-          "reason": "Ở Lesson 5 Review, khi cần nói mẫu giới thiệu, học sinh trả lời \"OeX.\" hoặc lạc sang \"Yeah, Amazon is top.\" thay vì bám nhiệm vụ. Câu chọn đáp án này giảm tải nói tự do nhưng vẫn ép em nhận ra mẫu đúng cho câu hỏi \"What's your name?\".",
-          "question_id": 369217,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/18/f082_thi-E1-BA-BFt-k-E1-BA-BF-ch-C6-B0a-co-ten--2837-29.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. Bye",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. I'm Tony",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. Hello",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "What&#39;s your name? T&ecirc;n bạn là g&igrave;? => Đáp án: B (T&ecirc;n t&ocirc;i là Tony)",
-          "question_folder": "English Tutoring - Level 1"
-        },
-        {
-          "question_no": 8,
-          "lesson_id": 3813139,
-          "lesson_title": "Unit 1A: Greetings - Lesson 2: Nice to meet you!",
-          "skill_category": "grammar",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Fill in the blank. (Con hãy điền từ vào ô trống.) What is this? - It's a _ook .",
-          "correct_answer": "b",
-          "difficulty": "easy",
-          "reason": "Chẩn đoán cho thấy học sinh chưa gắn chắc từ với tranh; ở câu hỏi theo ảnh em thường trả lời sai hoàn toàn. Bài này giữ cấu trúc rất ngắn để củng cố từ \"book\" trước khi yêu cầu nói cả câu.",
-          "question_id": 369258,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/28/5f6b_book.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "question_folder": "English Tutoring - Level 1"
-        },
-        {
-          "question_no": 9,
-          "lesson_id": 3813139,
-          "lesson_title": "Unit 1A: Greetings - Lesson 2: Nice to meet you!",
-          "skill_category": "vocabulary",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Fill in the blank. (Con hãy điền từ vào ô trống.) What color is this? - It's bl_ck .",
-          "correct_answer": "a",
-          "difficulty": "easy",
-          "reason": "Ở Lesson 2, phần brainstorm/free speaking là vùng yếu rõ rệt nên cần quay về nhận diện từ mục tiêu thật nhỏ. Từ màu sắc này cũng hỗ trợ sửa xu hướng nói méo âm và thiếu âm giữa từ mà chẩn đoán đã ghi nhận ở nhiều bài nghe–nói.",
-          "question_id": 369259,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/28/cdfa_black-color.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "question_folder": "English Tutoring - Level 1"
-        },
-        {
           "question_no": 10,
-          "lesson_id": 3813139,
-          "lesson_title": "Unit 1A: Greetings - Lesson 2: Nice to meet you!",
+          "lesson_id": 3995531,
+          "lesson_title": "Unit 1A: Letters ABC - Lesson 1: Letter A(a)",
           "skill_category": "speaking",
           "question_type": "speaking_unscripted",
-          "question_text": "How do you feel now?",
-          "correct_answer": "open",
+          "question_text": "How are you today?",
+          "correct_answer": null,
           "difficulty": "hard",
-          "reason": "Ở đúng dạng hỏi cảm xúc này, học sinh từng trả lời \"Hello, teacher, teacher.\" thay vì nói cảm xúc của mình. Cần giữ một câu nói mở có kiểm soát để sửa lỗi phản xạ trả lời lạc nghĩa mà chẩn đoán đánh dấu là rất nghiêm trọng.",
+          "reason": "Bài mới này đã học 3 ngày trước nhưng chưa nộp homework, nên cần một câu speaking ngắn để kiểm tra nhớ bài ngay sau lớp. Điểm brainstorm 0/100 và free speaking 20/100 cho thấy nếu không luyện sớm, học sinh rất dễ tiếp tục trả lời lạc đề hoặc chỉ nói mẩu ngắn.",
           "question_id": null,
           "requires_media": false
         },
         {
           "question_no": 11,
-          "lesson_id": 3847170,
-          "lesson_title": "Unit 1A: Greetings - Lesson 3: I'm six years old.",
-          "skill_category": "grammar",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Fill in the blank (Con hãy điền chữ cái còn thiếu vào ô trống.) How old are you?",
-          "correct_answer": "f",
-          "difficulty": "medium",
-          "reason": "Học sinh từng tạo dạng sai như \"I'm eight years olds\" và \"I'm ten year olds\", cho thấy mẫu tuổi chưa cố định. Bài điền chữ cái này giúp em nhìn lại cụm hỏi–đáp về tuổi theo mẫu ngắn thay vì tự suy đoán thêm đuôi sai.",
-          "question_id": 369238,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/28/f10a_alligator--285-29.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "I'm |ive years old.",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "five: số 5 => Đáp án: f",
-          "question_folder": "English Tutoring - Level 1"
-        },
-        {
-          "question_no": 12,
-          "lesson_id": 3847170,
-          "lesson_title": "Unit 1A: Greetings - Lesson 3: I'm six years old.",
+          "lesson_id": 3813138,
+          "lesson_title": "Unit 1A: Greetings - Lesson 1: Hello!",
           "skill_category": "vocabulary",
           "question_type": "Một lựa chọn",
-          "question_text": "Choose the correct answer. Con hãy chọn đáp án đúng.",
-          "correct_answer": "A. Clock",
-          "difficulty": "easy",
-          "reason": "Trong Lesson 3, học sinh có dấu hiệu hiểu ý phần nào nhưng vẫn yếu ở gọi từ theo tranh; chẩn đoán cũng nhắc em trả lời lạc hướng ở câu về đồng hồ. Chọn đúng từ \"clock\" là bước nhẹ để củng cố trước khi nói hoặc nghe câu dài hơn.",
-          "question_id": 296450,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/20/5300_time.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. Clock",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. Apple",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "đồng hồ: clock --> A",
-          "question_folder": "Từ vựng"
-        },
-        {
-          "question_no": 13,
-          "lesson_id": 3847171,
-          "lesson_title": "Unit 1A: Greetings - Lesson 4: I'm good!",
-          "skill_category": "grammar",
-          "question_type": "Một lựa chọn",
-          "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.) What's your name?",
-          "correct_answer": "C. I'm Tony.",
-          "difficulty": "easy",
-          "reason": "Ở Lesson 4, câu mẫu \"Hello, my name is Ana.\" từng bị học sinh rút còn \"H.\" hoặc \"Hello, my name.\" nên cấu trúc giới thiệu vẫn chưa hoàn chỉnh. Bài chọn đáp án này nhắm đúng khung trả lời tên mà em đang nhớ rời rạc.",
-          "question_id": 369270,
+          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
+          "correct_answer": "B. It's an apple.",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 31 ngày trước, thuộc nhóm Greetings cũ có rủi ro quên rất cao theo chẩn đoán. Ở Lesson 1, học sinh từng brainstorm rất yếu và nói “Hion.” thay vì gọi đúng các từ như apple, ant, alligator, letter a, nên cần ôn lại nhận diện từ cơ bản.",
+          "question_id": 369196,
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
             {
               "letter": "A",
-              "text": "A. I are Tony.",
+              "text": "A. It's an ant.",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "B",
-              "text": "B. This is a alligator.",
+              "text": "B. It's an apple.",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "C",
-              "text": "C. I'm Tony.",
+              "text": "C. It's an alligator.",
               "image_urls": [],
               "audio_urls": []
             }
           ],
+          "comment_plain": "Audio: It&#39;s an apple: Đ&oacute; là một quả táo. => Đáp án: B",
           "question_folder": "English Tutoring - Level 1"
         },
         {
-          "question_no": 14,
-          "lesson_id": 3847171,
-          "lesson_title": "Unit 1A: Greetings - Lesson 4: I'm good!",
+          "question_no": 12,
+          "lesson_id": 3813138,
+          "lesson_title": "Unit 1A: Greetings - Lesson 1: Hello!",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "what can you see?",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Đây là đúng vùng yếu nhất của học sinh: gọi từ theo tranh, vì brainstorm trung bình chỉ 0/100. Bài đã học 31 ngày trước; chẩn đoán ghi rõ ở Lesson 1 học sinh không gọi được nhóm từ mục tiêu như apple/ant/alligator/letter a mà nói “Hion.”.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 13,
+          "lesson_id": 3623885,
+          "lesson_title": "Unit 1A: Greetings - Lesson 2: Nice to meet you!",
           "skill_category": "vocabulary",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Fill in the blank (Con hãy điền từ vào ô trống.) What is this? - It's a clo_k.",
-          "correct_answer": "c",
+          "question_type": "Một lựa chọn",
+          "question_text": "Choose the correct answer. Con hãy chọn đáp án đúng. What is this? - It's a book.",
+          "correct_answer": "open",
           "difficulty": "easy",
-          "reason": "Điểm phát âm trung bình chỉ 35.52/100 và học sinh hay bỏ/méo âm trong từ quen thuộc. Điền chữ còn thiếu ở \"clock\" giúp em chú ý âm /k/ cuối và tránh nói mơ hồ như các mẫu đã bị hệ thống nhận diện rất thấp.",
-          "question_id": 387599,
+          "reason": "Đây là bài spaced repetition đã học 31 ngày trước nên cần được đưa vào để ôn cách quãng, nhất là khi quy tắc quên bài đang rất rõ ở nhóm Greetings cũ. Chẩn đoán cho thấy Lesson 2 có brainstorm 0 ở cả hai lần và free speaking 0, nên cần một câu nhận biết đóng để giữ lại từ cơ bản trước khi nói.",
+          "question_id": 296433,
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
@@ -422,21 +358,67 @@
               "letter": "A",
               "text": null,
               "image_urls": [],
+              "audio_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/07/7cc0_it-s-a-book.mp3"
+              ]
+            },
+            {
+              "letter": "B",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/07/7cc0_it-s-an-ant.mp3"
+              ]
+            }
+          ],
+          "comment_plain": "audio script A: It&#39;s a book audio script B: It&#39;s an ant --> A",
+          "question_folder": "Từ vựng"
+        },
+        {
+          "question_no": 14,
+          "lesson_id": 3623885,
+          "lesson_title": "Unit 1A: Greetings - Lesson 2: Nice to meet you!",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct answer. Con hãy nghe và chọn đáp án đúng.",
+          "correct_answer": "open",
+          "difficulty": "easy",
+          "reason": "Bài spaced repetition này đã học 31 ngày trước và giúp củng cố liên kết âm-chữ rất cần thiết vì phát âm trung bình chỉ 35.52/100. Chẩn đoán cũng nêu Lesson 2 là vùng yếu bền vững với brainstorm 0/100, nên cần ôn lại nhận diện từ đơn giản theo âm.",
+          "question_id": 296426,
+          "requires_media": true,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/20/3a25_letter-a.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/20/33ee_letter-b.png"
+              ],
               "audio_urls": []
             }
           ],
-          "question_folder": "English Tutoring - Level 1"
+          "comment_plain": "audio script: Letter B --> B",
+          "question_folder": "Kĩ năng nghe"
         },
         {
           "question_no": 15,
-          "lesson_id": 3847172,
-          "lesson_title": "Unit 1A: Greetings - Lesson 5: Review & culture",
+          "lesson_id": 3813139,
+          "lesson_title": "Unit 1A: Greetings - Lesson 2: Nice to meet you!",
           "skill_category": "speaking",
           "question_type": "speaking_unscripted",
-          "question_text": "How are you today?",
-          "correct_answer": "open",
+          "question_text": "What is it?",
+          "correct_answer": null,
           "difficulty": "hard",
-          "reason": "Ở Lesson 5 review, khi được yêu cầu nói \"Hello, my name is Maria.\", học sinh đáp \"OeX.\" hoặc \"Yeah, Amazon is top.\", cho thấy em rất dễ trượt khỏi nhiệm vụ giao tiếp. Giữ một câu hỏi nói ngắn ở bài review giúp kiểm tra xem sau khi ôn lại các mẫu nền tảng, em đã bám đúng ý hỏi–đáp chưa.",
+          "reason": "Bài này đã học 31 ngày trước và thuộc nhóm cần deep practice vì Lesson 2 có free speaking 0 và brainstorm 0 theo chẩn đoán. Học sinh thường chỉ nói mẩu ngắn hoặc lạc đề trong câu hỏi rất cơ bản, nên cần luyện lại mẫu trả lời cực ngắn đúng trọng tâm.",
           "question_id": null,
           "requires_media": false
         }

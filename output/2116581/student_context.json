@@ -8,6 +8,10 @@
     },
     "overall_homework_skill_breakdown": {},
     "weak_skills_global": [],
+    "critical_speaking_types": [
+      "brainstorm",
+      "free_speaking"
+    ],
     "overall_pronunciation_score_avg": 30.74,
     "overall_free_speaking_score_avg": 11.11,
     "overall_brainstorm_score_avg": 0.0,
@@ -20,7 +24,7 @@
     "overall_brainstorm_answer_type_dist": {
       "incorrect": 12
     },
-    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
     {
@@ -524,9 +528,9 @@
       "level": 0,
       "last_activity_date": "2026-03-05",
       "days_since_last_practice": 47,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9988,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9994,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -791,9 +795,9 @@
       "level": 0,
       "last_activity_date": "2026-03-12",
       "days_since_last_practice": 40,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9967,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9984,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1083,9 +1087,9 @@
       "level": 0,
       "last_activity_date": "2026-03-27",
       "days_since_last_practice": 25,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9719,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9859,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1352,9 +1356,9 @@
       "level": 0,
       "last_activity_date": "2026-04-02",
       "days_since_last_practice": 19,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9337,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9668,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1593,9 +1597,9 @@
       "level": 0,
       "last_activity_date": "2026-04-08",
       "days_since_last_practice": 13,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8439,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.922,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1858,9 +1862,9 @@
       "level": 0,
       "last_activity_date": "2026-04-09",
       "days_since_last_practice": 12,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8199,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.91,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2118,283 +2122,14 @@
       }
     },
     {
-      "lesson_id": 3911622,
-      "title": "Unit 2A: Letters DEF - Lesson 5: Review 2",
-      "level": 0,
-      "last_activity_date": "2026-04-18",
-      "days_since_last_practice": 3,
-      "forgetting_score": 0.9502,
-      "weakness_score": 1.0,
-      "composite_priority_score": 0.9751,
-      "homework_status": "not_attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [
-        {
-          "practice_id": 49497,
-          "question_id": 679967,
-          "question_folder": "English Tutoring Level 0",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Look at the picture and choose the correct answer (Con hãy nhìn tranh và chọn đáp án đúng nhé.)",
-          "comment_plain": "fox: con cáo",
-          "correct_answer": "A. fox",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/08/11/9863_fox.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. fox",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. fish",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. fan",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 49497,
-          "question_id": 679968,
-          "question_folder": "English Tutoring Level 0",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Look at the picture and choose the correct answer (Con hãy nhìn tranh và chọn đáp án đúng nhé.)",
-          "comment_plain": "fan: cái quạt",
-          "correct_answer": "B. fan",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/08/11/3a65_fan.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. fish",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. fan",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. fox",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 49497,
-          "question_id": 679969,
-          "question_folder": "English Tutoring Level 0",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Look at the picture and choose the correct answer (Con hãy nhìn tranh và chọn đáp án đúng nhé.)",
-          "comment_plain": "fish: con cá",
-          "correct_answer": "B. fish",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/08/11/e290_fish.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. fan.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. fish",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. fox",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 49497,
-          "question_id": 679970,
-          "question_folder": "English Tutoring Level 0",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn bức ảnh đúng nhé.)",
-          "comment_plain": "Đáp án chi tiết: Audio: Happy (Tạm dịch: Vui vẻ)",
-          "correct_answer": null,
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/08/11/97e7_sad.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/08/11/f98e_happy.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 49497,
-          "question_id": 679971,
-          "question_folder": "English Tutoring Level 0",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn bức ảnh đúng nhé.)",
-          "comment_plain": "Đáp án chi tiết: Audio: Angry (Tạm dịch: Tức giận)",
-          "correct_answer": null,
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/08/11/f98e_happy.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/08/11/368c_angry.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        }
-      ],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice answer. Do you have a pet fish? 🐟",
-          "expected_answer": "Yes, I have a fish.",
-          "target_objects": null,
-          "user_transcript": "Yes, I have a fish.",
-          "score": 53.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 20,
-          "grammar_score": 87,
-          "timestamp": "2026-04-18",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo441oqp-011d1813-audio.wav",
-          "reaction_time_ms": 1978
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Do you have a pet fish? 🐟",
-          "expected_answer": "Yes, I have a fish. / No, I don't have a fish.",
-          "target_objects": null,
-          "user_transcript": "Fish.",
-          "score": 68.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 37,
-          "timestamp": "2026-04-18",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo4417r1-96d5cc58-audio.wav",
-          "reaction_time_ms": 1978
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi! Good to see you. Are you ready to practice letters D, E, F? 😄",
-          "expected_answer": "Yes, I am ready.",
-          "target_objects": null,
-          "user_transcript": "I go.",
-          "score": 24.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 0,
-          "grammar_score": 49,
-          "timestamp": "2026-04-18",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo43z9dl-175182ab-audio.wav",
-          "reaction_time_ms": 1978
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Do you want to practice the sound /f/? 😊",
-          "expected_answer": "Yes, please. How do I make /f/?",
-          "target_objects": null,
-          "user_transcript": "Ah.",
-          "score": 9,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 0,
-          "grammar_score": 18,
-          "timestamp": "2026-04-18",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo43xupc-80a71d77-audio.wav",
-          "reaction_time_ms": 1978
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Do you sing or play in class? 🎶",
-          "expected_answer": "I sing songs and play games in class.",
-          "target_objects": null,
-          "user_transcript": "O.",
-          "score": 68,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 36,
-          "timestamp": "2026-04-18",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo43x133-fcbfa759-audio.wav",
-          "reaction_time_ms": 1978
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 49497,
-        "luyen_tap": 49498
-      }
-    },
-    {
       "lesson_id": 3788687,
       "title": "Unit 1A: Letters ABC - Lesson 3: Letter C(c)",
       "level": 0,
       "last_activity_date": "2026-03-04",
       "days_since_last_practice": 48,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9989,
       "weakness_score": 0.7383,
-      "composite_priority_score": 0.8691,
+      "composite_priority_score": 0.8686,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2653,6 +2388,275 @@
       "practice_ids": {
         "bai_tap": 49480,
         "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3911622,
+      "title": "Unit 2A: Letters DEF - Lesson 5: Review 2",
+      "level": 0,
+      "last_activity_date": "2026-04-18",
+      "days_since_last_practice": 3,
+      "forgetting_score": 0.3486,
+      "weakness_score": 1.0,
+      "composite_priority_score": 0.6743,
+      "homework_status": "not_attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [
+        {
+          "practice_id": 49497,
+          "question_id": 679967,
+          "question_folder": "English Tutoring Level 0",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Look at the picture and choose the correct answer (Con hãy nhìn tranh và chọn đáp án đúng nhé.)",
+          "comment_plain": "fox: con cáo",
+          "correct_answer": "A. fox",
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [
+            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/08/11/9863_fox.png"
+          ],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. fox",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. fish",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. fan",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ]
+        },
+        {
+          "practice_id": 49497,
+          "question_id": 679968,
+          "question_folder": "English Tutoring Level 0",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Look at the picture and choose the correct answer (Con hãy nhìn tranh và chọn đáp án đúng nhé.)",
+          "comment_plain": "fan: cái quạt",
+          "correct_answer": "B. fan",
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [
+            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/08/11/3a65_fan.png"
+          ],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. fish",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. fan",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. fox",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ]
+        },
+        {
+          "practice_id": 49497,
+          "question_id": 679969,
+          "question_folder": "English Tutoring Level 0",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Look at the picture and choose the correct answer (Con hãy nhìn tranh và chọn đáp án đúng nhé.)",
+          "comment_plain": "fish: con cá",
+          "correct_answer": "B. fish",
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [
+            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/08/11/e290_fish.png"
+          ],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. fan.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. fish",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. fox",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ]
+        },
+        {
+          "practice_id": 49497,
+          "question_id": 679970,
+          "question_folder": "English Tutoring Level 0",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn bức ảnh đúng nhé.)",
+          "comment_plain": "Đáp án chi tiết: Audio: Happy (Tạm dịch: Vui vẻ)",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/08/11/97e7_sad.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/08/11/f98e_happy.png"
+              ],
+              "audio_urls": []
+            }
+          ]
+        },
+        {
+          "practice_id": 49497,
+          "question_id": 679971,
+          "question_folder": "English Tutoring Level 0",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn bức ảnh đúng nhé.)",
+          "comment_plain": "Đáp án chi tiết: Audio: Angry (Tạm dịch: Tức giận)",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/08/11/f98e_happy.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/08/11/368c_angry.png"
+              ],
+              "audio_urls": []
+            }
+          ]
+        }
+      ],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Nice answer. Do you have a pet fish? 🐟",
+          "expected_answer": "Yes, I have a fish.",
+          "target_objects": null,
+          "user_transcript": "Yes, I have a fish.",
+          "score": 53.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 20,
+          "grammar_score": 87,
+          "timestamp": "2026-04-18",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo441oqp-011d1813-audio.wav",
+          "reaction_time_ms": 1978
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Do you have a pet fish? 🐟",
+          "expected_answer": "Yes, I have a fish. / No, I don't have a fish.",
+          "target_objects": null,
+          "user_transcript": "Fish.",
+          "score": 68.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 37,
+          "timestamp": "2026-04-18",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo4417r1-96d5cc58-audio.wav",
+          "reaction_time_ms": 1978
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi! Good to see you. Are you ready to practice letters D, E, F? 😄",
+          "expected_answer": "Yes, I am ready.",
+          "target_objects": null,
+          "user_transcript": "I go.",
+          "score": 24.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 49,
+          "timestamp": "2026-04-18",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo43z9dl-175182ab-audio.wav",
+          "reaction_time_ms": 1978
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Do you want to practice the sound /f/? 😊",
+          "expected_answer": "Yes, please. How do I make /f/?",
+          "target_objects": null,
+          "user_transcript": "Ah.",
+          "score": 9,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 18,
+          "timestamp": "2026-04-18",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo43xupc-80a71d77-audio.wav",
+          "reaction_time_ms": 1978
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Do you sing or play in class? 🎶",
+          "expected_answer": "I sing songs and play games in class.",
+          "target_objects": null,
+          "user_transcript": "O.",
+          "score": 68,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 36,
+          "timestamp": "2026-04-18",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo43x133-fcbfa759-audio.wav",
+          "reaction_time_ms": 1978
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 49497,
+        "luyen_tap": 49498
       }
     },
     {
@@ -3483,9 +3487,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-05",
       "days_since_last_practice": 47,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9988,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9994,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -3788,9 +3792,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-12",
       "days_since_last_practice": 40,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9967,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9984,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -4336,9 +4340,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-27",
       "days_since_last_practice": 25,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9719,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9859,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -4645,9 +4649,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-02",
       "days_since_last_practice": 19,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9337,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9668,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -5077,9 +5081,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-08",
       "days_since_last_practice": 13,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8439,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.922,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -5532,9 +5536,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-09",
       "days_since_last_practice": 12,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8199,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.91,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -5970,6 +5974,311 @@
       }
     },
     {
+      "lesson_id": 3788687,
+      "program_id": null,
+      "level": 0,
+      "position": 3,
+      "title": "Unit 1A: Letters ABC - Lesson 3: Letter C(c)",
+      "desc": "- banana, book, bird\n- letter B(b) and sound /b/\n- What's your name? \n I'm (Tony).\n - What is this? It's (an ant).",
+      "status": "in_class_only",
+      "last_activity_date": "2026-03-04",
+      "days_since_last_practice": 48,
+      "forgetting_score": 0.9989,
+      "weakness_score": 0.7383,
+      "composite_priority_score": 0.8686,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 83,
+          "avg_reaction_ms": 993,
+          "fastest_reaction_ms": 349,
+          "total_duration_ms": 728518,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-04",
+        "pronunciation_attempts": 29,
+        "pronunciation_score_avg": 26.17,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 14,
+        "conversation_score_avg": 64.68,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice to meet you too, Zoom Namem 😄 What is your favorite greeting word?",
+            "expected_answer": "I like to say \"Hi\".",
+            "target_objects": null,
+            "user_transcript": "You're right.",
+            "score": 35,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 33,
+            "grammar_score": 37,
+            "timestamp": "2026-03-04",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/04/admin/mmc3e8so-a25d1113-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. I like your sentence. What is your last name? 😄",
+            "expected_answer": "My last name is Smith.",
+            "target_objects": null,
+            "user_transcript": "Namem.",
+            "score": 29.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 40,
+            "grammar_score": 19,
+            "timestamp": "2026-03-04",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/04/admin/mmc3dk6a-22bc76f0-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi! It’s nice to see you. Are you ready to talk about greetings with me? 😄",
+            "expected_answer": "Yes, I am ready.",
+            "target_objects": null,
+            "user_transcript": "You say.",
+            "score": 55,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 75,
+            "grammar_score": 35,
+            "timestamp": "2026-03-04",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/04/admin/mmc3cr7j-554c0092-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Do you have a cat at home? 🐱",
+            "expected_answer": "Yes, I have a cat at home.",
+            "target_objects": null,
+            "user_transcript": "Yes, I have a cat.",
+            "score": 47,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 94,
+            "timestamp": "2026-03-04",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/04/admin/mmc3bsn5-5d471030-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Blue is a calm color. Do you like cats? 🐱",
+            "expected_answer": "Yes, I like cats.",
+            "target_objects": null,
+            "user_transcript": "Yes, I like cats.",
+            "score": 50,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 8,
+            "grammar_score": 92,
+            "timestamp": "2026-03-04",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/04/admin/mmc3azzx-13b33832-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49480,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {
+          "bai_tap": [
+            {
+              "practice_id": 49480,
+              "question_id": 675354,
+              "question_folder": "English Tutoring Level 0",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose (Con hãy nghe và chọn đáp đúng nhé!)",
+              "comment_plain": null,
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/0abf_cc.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/eeba_bb.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 49480,
+              "question_id": 675355,
+              "question_folder": "English Tutoring Level 0",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose (Con hãy nghe và chọn đáp đúng nhé!)",
+              "comment_plain": null,
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/dc32_b.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/e0ae_k.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 49480,
+              "question_id": 675356,
+              "question_folder": "English Tutoring Level 0",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose (Con hãy nghe và chọn đáp đúng nhé!)",
+              "comment_plain": "Đáp án chi tiết: Audio: cake (cái bánh)",
+              "correct_answer": "cake",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/11/06/cac9_cake.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "cat",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "cake",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "candy",
+                  "image_urls": [],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 49480,
+              "question_id": 675357,
+              "question_folder": "English Tutoring Level 0",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose (Con hãy nghe và chọn đáp đúng nhé!)",
+              "comment_plain": "Đáp án chi tiết: Audio: candy (cái kẹo)",
+              "correct_answer": "candy",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/11/06/cd4c_candy.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "cake",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "banana",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "candy",
+                  "image_urls": [],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 49480,
+              "question_id": 675359,
+              "question_folder": "English Tutoring Level 0",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose (Con hãy nghe và chọn đáp đúng nhé!)",
+              "comment_plain": "Đáp án chi tiết: Audio: cat (con m&egrave;o)",
+              "correct_answer": "cat",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/11/06/d700_cat.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "alligator",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "cat",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "bird",
+                  "image_urls": [],
+                  "audio_urls": []
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
       "lesson_id": 3911622,
       "program_id": null,
       "level": 0,
@@ -5979,9 +6288,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-18",
       "days_since_last_practice": 3,
-      "forgetting_score": 0.9502,
+      "forgetting_score": 0.3486,
       "weakness_score": 1.0,
-      "composite_priority_score": 0.9751,
+      "composite_priority_score": 0.6743,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -6421,311 +6730,6 @@
                 {
                   "letter": "A",
                   "text": null,
-                  "image_urls": [],
-                  "audio_urls": []
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    {
-      "lesson_id": 3788687,
-      "program_id": null,
-      "level": 0,
-      "position": 3,
-      "title": "Unit 1A: Letters ABC - Lesson 3: Letter C(c)",
-      "desc": "- banana, book, bird\n- letter B(b) and sound /b/\n- What's your name? \n I'm (Tony).\n - What is this? It's (an ant).",
-      "status": "in_class_only",
-      "last_activity_date": "2026-03-04",
-      "days_since_last_practice": 48,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.7383,
-      "composite_priority_score": 0.8691,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 0,
-          "audio_turns": 83,
-          "avg_reaction_ms": 993,
-          "fastest_reaction_ms": 349,
-          "total_duration_ms": 728518,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-03-04",
-        "pronunciation_attempts": 29,
-        "pronunciation_score_avg": 26.17,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 0,
-        "brainstorm_score_avg": null,
-        "brainstorm_answer_type_dist": {},
-        "conversation_attempts": 14,
-        "conversation_score_avg": 64.68,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice to meet you too, Zoom Namem 😄 What is your favorite greeting word?",
-            "expected_answer": "I like to say \"Hi\".",
-            "target_objects": null,
-            "user_transcript": "You're right.",
-            "score": 35,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 33,
-            "grammar_score": 37,
-            "timestamp": "2026-03-04",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/04/admin/mmc3e8so-a25d1113-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. I like your sentence. What is your last name? 😄",
-            "expected_answer": "My last name is Smith.",
-            "target_objects": null,
-            "user_transcript": "Namem.",
-            "score": 29.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 40,
-            "grammar_score": 19,
-            "timestamp": "2026-03-04",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/04/admin/mmc3dk6a-22bc76f0-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi! It’s nice to see you. Are you ready to talk about greetings with me? 😄",
-            "expected_answer": "Yes, I am ready.",
-            "target_objects": null,
-            "user_transcript": "You say.",
-            "score": 55,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 75,
-            "grammar_score": 35,
-            "timestamp": "2026-03-04",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/04/admin/mmc3cr7j-554c0092-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Do you have a cat at home? 🐱",
-            "expected_answer": "Yes, I have a cat at home.",
-            "target_objects": null,
-            "user_transcript": "Yes, I have a cat.",
-            "score": 47,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 0,
-            "grammar_score": 94,
-            "timestamp": "2026-03-04",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/04/admin/mmc3bsn5-5d471030-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Blue is a calm color. Do you like cats? 🐱",
-            "expected_answer": "Yes, I like cats.",
-            "target_objects": null,
-            "user_transcript": "Yes, I like cats.",
-            "score": 50,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 8,
-            "grammar_score": 92,
-            "timestamp": "2026-03-04",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/04/admin/mmc3azzx-13b33832-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": false,
-        "bai_tap": null,
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 49480,
-          "luyen_tap": null
-        },
-        "skill_breakdown": {},
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {
-          "bai_tap": [
-            {
-              "practice_id": 49480,
-              "question_id": 675354,
-              "question_folder": "English Tutoring Level 0",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose (Con hãy nghe và chọn đáp đúng nhé!)",
-              "comment_plain": null,
-              "correct_answer": null,
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/0abf_cc.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/eeba_bb.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 49480,
-              "question_id": 675355,
-              "question_folder": "English Tutoring Level 0",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose (Con hãy nghe và chọn đáp đúng nhé!)",
-              "comment_plain": null,
-              "correct_answer": null,
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/dc32_b.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/e0ae_k.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 49480,
-              "question_id": 675356,
-              "question_folder": "English Tutoring Level 0",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose (Con hãy nghe và chọn đáp đúng nhé!)",
-              "comment_plain": "Đáp án chi tiết: Audio: cake (cái bánh)",
-              "correct_answer": "cake",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/11/06/cac9_cake.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "cat",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "cake",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "candy",
-                  "image_urls": [],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 49480,
-              "question_id": 675357,
-              "question_folder": "English Tutoring Level 0",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose (Con hãy nghe và chọn đáp đúng nhé!)",
-              "comment_plain": "Đáp án chi tiết: Audio: candy (cái kẹo)",
-              "correct_answer": "candy",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/11/06/cd4c_candy.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "cake",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "banana",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "candy",
-                  "image_urls": [],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 49480,
-              "question_id": 675359,
-              "question_folder": "English Tutoring Level 0",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose (Con hãy nghe và chọn đáp đúng nhé!)",
-              "comment_plain": "Đáp án chi tiết: Audio: cat (con m&egrave;o)",
-              "correct_answer": "cat",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/11/06/d700_cat.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "alligator",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "cat",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "bird",
                   "image_urls": [],
                   "audio_urls": []
                 }

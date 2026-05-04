@@ -141,6 +141,10 @@ def main() -> None:
 
     print(f"      Diagnostic done ({len(diagnostic_text)} chars) — stored in homework_by_model.json")
 
+    brainstorm_avg = student_context["summary"].get("overall_brainstorm_score_avg", 100)
+    min_speaking = 5 if brainstorm_avg < 30 else 4 if brainstorm_avg < 50 else 3
+    print(f"      brainstorm_avg={brainstorm_avg} → min_speaking={min_speaking}")
+
     print(f"[3/3] Running selector ({model})...")
     if provider == "openai":
         from agents.selector_agent import run_selector
@@ -150,6 +154,7 @@ def main() -> None:
             question_pool=question_pool,
             save_path=str(paths["homework"]),
             model=model,
+            min_speaking=min_speaking,
         )
     else:
         from agents.selector_gemini import run_selector_gemini_sync
@@ -159,6 +164,7 @@ def main() -> None:
             question_pool=question_pool,
             save_path=str(paths["homework"]),
             model=model,
+            min_speaking=min_speaking,
         )
 
     save_model_result(

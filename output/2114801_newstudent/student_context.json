@@ -15,20 +15,24 @@
       }
     },
     "weak_skills_global": [],
+    "critical_speaking_types": [
+      "brainstorm",
+      "free_speaking"
+    ],
     "overall_pronunciation_score_avg": 79.23,
     "overall_free_speaking_score_avg": 33.33,
     "overall_brainstorm_score_avg": 0.0,
     "overall_conversation_score_avg": 74.3,
     "overall_free_speaking_answer_type_dist": {
       "accordant": 2,
-      "lack_of_knowledge": 1,
-      "inaccordant": 3
+      "inaccordant": 3,
+      "lack_of_knowledge": 1
     },
     "overall_brainstorm_answer_type_dist": {
       "correct": 8,
       "incorrect": 21
     },
-    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
     {
@@ -37,9 +41,9 @@
       "level": 2,
       "last_activity_date": "2026-02-24",
       "days_since_last_practice": 56,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9997,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9999,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -125,9 +129,9 @@
       "level": 2,
       "last_activity_date": "2026-03-15",
       "days_since_last_practice": 37,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9949,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9974,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -418,9 +422,9 @@
       "level": 2,
       "last_activity_date": "2026-03-21",
       "days_since_last_practice": 31,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9881,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.994,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -704,9 +708,9 @@
       "level": 2,
       "last_activity_date": "2026-03-29",
       "days_since_last_practice": 23,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9626,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9813,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -987,9 +991,9 @@
       "level": 2,
       "last_activity_date": "2026-04-04",
       "days_since_last_practice": 17,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9118,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9559,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1252,9 +1256,9 @@
       "level": 2,
       "last_activity_date": "2026-04-05",
       "days_since_last_practice": 16,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8983,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9491,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1537,9 +1541,9 @@
       "level": 2,
       "last_activity_date": "2026-04-11",
       "days_since_last_practice": 10,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.7603,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.8801,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1828,9 +1832,9 @@
       "level": 2,
       "last_activity_date": "2026-04-12",
       "days_since_last_practice": 9,
-      "forgetting_score": 0.9999,
+      "forgetting_score": 0.7235,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.8618,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2124,14 +2128,759 @@
       }
     },
     {
+      "lesson_id": 3718974,
+      "title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
+      "level": 2,
+      "last_activity_date": "2026-02-08",
+      "days_since_last_practice": 72,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.6088,
+      "composite_priority_score": 0.8044,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Number one toy — is it a teddy bear or something else? 🧸",
+          "expected_answer": "I like a teddy bear. It is my number one toy.",
+          "target_objects": null,
+          "user_transcript": "The.",
+          "score": 59,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 18,
+          "timestamp": "2026-02-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld26fmw-ecff140d-audio.wav",
+          "reaction_time_ms": 2512
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. Tell me one toy you like. 🧸",
+          "expected_answer": "I like my teddy bear. It is number one for me.",
+          "target_objects": null,
+          "user_transcript": "I like it is number one.",
+          "score": 42.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 66,
+          "grammar_score": 19,
+          "timestamp": "2026-02-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld263j6-5d0057b6-audio.wav",
+          "reaction_time_ms": 2512
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi! Nice to see you. Ready to talk about toys? 😄",
+          "expected_answer": "Yes, I am ready. I like toys.",
+          "target_objects": null,
+          "user_transcript": "I like to see this.",
+          "score": 39,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 36,
+          "grammar_score": 42,
+          "timestamp": "2026-02-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld25elb-df954652-audio.wav",
+          "reaction_time_ms": 2512
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. Do you give it a name? 🧸",
+          "expected_answer": "Yes, I name it Bella. It sleeps with me every night.",
+          "target_objects": null,
+          "user_transcript": "Yes, my name is sleeps with.",
+          "score": 65.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 80,
+          "grammar_score": 51,
+          "timestamp": "2026-02-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld23iuc-5f2e72d0-audio.wav",
+          "reaction_time_ms": 2512
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. What toy do you like best? 😊",
+          "expected_answer": "I like a teddy bear. It's soft and I sleep with it.",
+          "target_objects": null,
+          "user_transcript": "I buy a toy. It's soft and a sleeping pink.",
+          "score": 52,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 55,
+          "grammar_score": 49,
+          "timestamp": "2026-02-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld22nho-43b1092b-audio.wav",
+          "reaction_time_ms": 2512
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7693,
+        "luyen_tap": 13217
+      }
+    },
+    {
+      "lesson_id": 3718973,
+      "title": "Unit 1A: Toys - Lesson 1: Hello!",
+      "level": 2,
+      "last_activity_date": "2026-02-07",
+      "days_since_last_practice": 73,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7941,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "I play with my ball now. Do you play with your toys today? 😊",
+          "expected_answer": "Yes, I play with my toys today. I play with my doll and my teddy bear.",
+          "target_objects": null,
+          "user_transcript": "I play with my ball. Do you play with?",
+          "score": 51.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 88,
+          "grammar_score": 15,
+          "timestamp": "2026-02-07",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbn29md-e7c4da3b-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. Do you play with your doll and teddy bear now? 😊",
+          "expected_answer": "Yes, I play with them now. I play in my room.",
+          "target_objects": null,
+          "user_transcript": "What do you play with?",
+          "score": 67.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 66,
+          "grammar_score": 69,
+          "timestamp": "2026-02-07",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbn1tkz-6c7d8776-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. I have a doll and a teddy bear. Do you play with them at home? 😊",
+          "expected_answer": "Yes, I play with my doll and teddy bear at home.",
+          "target_objects": null,
+          "user_transcript": "Nice, I have a doll and teddy bear. Replay with them at home.",
+          "score": 56,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 94,
+          "grammar_score": 18,
+          "timestamp": "2026-02-07",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbn1dro-34959461-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi! Good. Tell me one toy you like 😊",
+          "expected_answer": "I like my teddy bear.",
+          "target_objects": null,
+          "user_transcript": "Hi, what toy you like?",
+          "score": 67,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 86,
+          "grammar_score": 48,
+          "timestamp": "2026-02-07",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbn024a-5985cd4d-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Where do you keep your teddy bear? 🧸",
+          "expected_answer": "I keep my teddy bear on my bed or in my closet.",
+          "target_objects": null,
+          "user_transcript": "Nice, where do you keep your teddy bear?",
+          "score": 65,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 87,
+          "grammar_score": 43,
+          "timestamp": "2026-02-07",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbmykps-6acee911-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7670,
+        "luyen_tap": 13216
+      }
+    },
+    {
+      "lesson_id": 3763402,
+      "title": "Unit 2A: My home - Lesson 2: They're my parents.",
+      "level": 2,
+      "last_activity_date": "2026-03-01",
+      "days_since_last_practice": 51,
+      "forgetting_score": 0.9993,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7937,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "grandfather",
+            "grandmother",
+            "father",
+            "mother",
+            "son",
+            "daughter"
+          ],
+          "user_transcript": "This is a.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/01/admin/mm77ixje-a7e46b21-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7704,
+        "luyen_tap": 13323
+      }
+    },
+    {
+      "lesson_id": 3763403,
+      "title": "Unit 2A: My home - Lesson 3: She's in the living room.",
+      "level": 2,
+      "last_activity_date": "2026-03-07",
+      "days_since_last_practice": 45,
+      "forgetting_score": 0.9984,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7933,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "brainstorm",
+          "question": "Anything else?",
+          "expected_answer": null,
+          "target_objects": [
+            "bathroom",
+            "bedroom",
+            "kitchen",
+            "living room"
+          ],
+          "user_transcript": "It's.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-07",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmfplhyn-09d5985c-audio.wav",
+          "reaction_time_ms": 4114
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "Have a look at this picture. What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "bathroom",
+            "bedroom",
+            "kitchen",
+            "living room"
+          ],
+          "user_transcript": "Is it a home?",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "house"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-07",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmfpl6pe-a2eced61-audio.wav",
+          "reaction_time_ms": 2509
+        },
+        {
+          "lms_type": "free_speaking",
+          "question": "How do you feel now?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "His family?",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-07",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmfpk36p-000cb747-audio.wav",
+          "reaction_time_ms": 2519
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7708,
+        "luyen_tap": 13327
+      }
+    },
+    {
+      "lesson_id": 3763399,
+      "title": "Unit 1A: Toys - Lesson 4: There's one ball.",
+      "level": 2,
+      "last_activity_date": "2026-03-08",
+      "days_since_last_practice": 44,
+      "forgetting_score": 0.9981,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7932,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Interesting! Do you ride the bike with the bus often? 🚲",
+          "expected_answer": "Yes, I ride the bike with the bus often.",
+          "target_objects": null,
+          "user_transcript": "This, I ride the bike with the.",
+          "score": 58,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 16,
+          "timestamp": "2026-02-21",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/21/admin/mlvot7co-4c81404e-audio.wav",
+          "reaction_time_ms": 1207
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Oh, I see. Do you mean the bike comes to you or it has a special part? 😊",
+          "expected_answer": "My bike comes with a basket and bell.",
+          "target_objects": null,
+          "user_transcript": "My bike comes with a bus.",
+          "score": 67.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 88,
+          "grammar_score": 47,
+          "timestamp": "2026-02-21",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/21/admin/mlvosrum-fbad8e5d-audio.wav",
+          "reaction_time_ms": 1207
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What is it?",
+          "expected_answer": null,
+          "target_objects": [
+            "Bike",
+            "Car",
+            "Block",
+            "Puzzle"
+          ],
+          "user_transcript": "This is a bike.",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "bike"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-02-21",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/21/admin/mlvo4619-24d3825f-audio.wav",
+          "reaction_time_ms": 1120
+        },
+        {
+          "lms_type": "free_speaking",
+          "question": "What toys do you like?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "And.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-02-21",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/21/admin/mlvo2sp1-b7708351-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7707,
+        "luyen_tap": 13224
+      }
+    },
+    {
+      "lesson_id": 3763400,
+      "title": "Unit 1A: Toys - Lesson 5: There're 5 balls.",
+      "level": 2,
+      "last_activity_date": "2026-03-08",
+      "days_since_last_practice": 44,
+      "forgetting_score": 0.9981,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7932,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Do you mean she leaves it where you sleep? 🧸",
+          "expected_answer": "Yes, she leaves it on my bed.",
+          "target_objects": null,
+          "user_transcript": "Yes, she loves it on my.",
+          "score": 63,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 80,
+          "grammar_score": 46,
+          "timestamp": "2026-02-22",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx8cy8k-21e4e12d-audio.wav",
+          "reaction_time_ms": 913
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Oh, maybe you mean she gave it when you were small. 😊",
+          "expected_answer": "Yes, she gave it when I was small.",
+          "target_objects": null,
+          "user_transcript": "Yes, she leaves it where I.",
+          "score": 51,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 87,
+          "grammar_score": 15,
+          "timestamp": "2026-02-22",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx8cmei-9aa5210b-audio.wav",
+          "reaction_time_ms": 913
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. Who gave you the teddy bear? 🧸",
+          "expected_answer": "My mom gave me the teddy bear when I was three.",
+          "target_objects": null,
+          "user_transcript": "My mom gave it to me.",
+          "score": 64,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 33,
+          "grammar_score": 95,
+          "timestamp": "2026-02-22",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx8buf5-da7b5651-audio.wav",
+          "reaction_time_ms": 913
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice, toys are fun. What toy do you like best? 😄",
+          "expected_answer": "I like my teddy bear. It is soft and I sleep with it.",
+          "target_objects": null,
+          "user_transcript": "I like my teddy bear. It is sharp and I sleep.",
+          "score": 66.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 85,
+          "grammar_score": 48,
+          "timestamp": "2026-02-22",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx8azmd-aecfe151-audio.wav",
+          "reaction_time_ms": 913
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What is it?",
+          "expected_answer": null,
+          "target_objects": [
+            "bike",
+            "ball",
+            "blocks",
+            "teddy bear",
+            "doll",
+            "car",
+            "puzzles"
+          ],
+          "user_transcript": "This is a bike.",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "bike"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-02-22",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx7i295-fb2a5a6b-audio.wav",
+          "reaction_time_ms": 1647
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7710,
+        "luyen_tap": 13309
+      }
+    },
+    {
+      "lesson_id": 3763401,
+      "title": "Unit 2A: My home - Lesson 1: He's my father.",
+      "level": 2,
+      "last_activity_date": "2026-03-08",
+      "days_since_last_practice": 44,
+      "forgetting_score": 0.9981,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7932,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "brainstorm",
+          "question": "What is it?",
+          "expected_answer": null,
+          "target_objects": [
+            "father",
+            "mother",
+            "son",
+            "family"
+          ],
+          "user_transcript": "This is a family.",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "family"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-02-28",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/28/admin/mm5nb8jb-70973d11-audio.wav",
+          "reaction_time_ms": 1916
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7695,
+        "luyen_tap": 13313
+      }
+    },
+    {
+      "lesson_id": 3763404,
+      "title": "Unit 2A: My home - Lesson 4: They're in the garden.",
+      "level": 2,
+      "last_activity_date": "2026-03-08",
+      "days_since_last_practice": 44,
+      "forgetting_score": 0.9981,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7932,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Good. Who do you eat with on the boat 😊",
+          "expected_answer": "I eat with my family on the boat.",
+          "target_objects": null,
+          "user_transcript": "I eat with my favorite on the",
+          "score": 59,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 18,
+          "timestamp": "2026-03-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh6hhy6-9666859d-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Do you mean you talk about cheese on the boat or on the table? 🧀",
+          "expected_answer": "I mean cheese on the boat. I eat cheese on the boat.",
+          "target_objects": null,
+          "user_transcript": "I watch dress on the boat. I eat on.",
+          "score": 65,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 91,
+          "grammar_score": 39,
+          "timestamp": "2026-03-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh6fvkm-3398cba1-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Oh, you want to walk a boat — do you mean take a boat trip or walk near the water? 🌊",
+          "expected_answer": "I mean take a boat trip on the river.",
+          "target_objects": null,
+          "user_transcript": "I talk about cheese on the",
+          "score": 57.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 15,
+          "timestamp": "2026-03-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh6ffcz-af3967ac-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi, nice to see you. Ready to practice Unit 2A - Lesson 4 review? 🌟",
+          "expected_answer": "Yes, I am ready. I want to talk about my house.",
+          "target_objects": null,
+          "user_transcript": "Yes, I want to walk a boat.",
+          "score": 58,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 78,
+          "grammar_score": 38,
+          "timestamp": "2026-03-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh6eze4-98041864-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Oh, do you mean you read the lesson? 😊 Tell me one sentence from it.",
+          "expected_answer": "I read the lesson about rooms. It says: This is the living room.",
+          "target_objects": null,
+          "user_transcript": "I read the lesson and rooms it says this is the.",
+          "score": 58.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 17,
+          "timestamp": "2026-03-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh67tnf-e24f7545-audio.wav",
+          "reaction_time_ms": 1219
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7712,
+        "luyen_tap": 13441
+      }
+    },
+    {
+      "lesson_id": 3763405,
+      "title": "Unit 2A: My home - Lesson 5: They're in the living room.",
+      "level": 2,
+      "last_activity_date": "2026-03-14",
+      "days_since_last_practice": 38,
+      "forgetting_score": 0.9956,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7919,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Nice. What do you watch on TV together? 📺",
+          "expected_answer": "We watch cartoons and news together.",
+          "target_objects": null,
+          "user_transcript": "Which we read carrots and news.",
+          "score": 49.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 83,
+          "grammar_score": 16,
+          "timestamp": "2026-03-14",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/14/admin/mmpncf2s-a263f452-audio.wav",
+          "reaction_time_ms": 1011
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi, nice to see you. Are you ready to practice Unit 2A - Lesson 5? 😄",
+          "expected_answer": "Yes, I'm ready. Let's practice family words.",
+          "target_objects": null,
+          "user_transcript": "Yes, I read this family.",
+          "score": 63.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 86,
+          "grammar_score": 41,
+          "timestamp": "2026-03-14",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/14/admin/mmpna08v-dd1ffe92-audio.wav",
+          "reaction_time_ms": 1011
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What is it?",
+          "expected_answer": null,
+          "target_objects": [
+            "Parents",
+            "Mother",
+            "Father",
+            "Grandmother",
+            "Grandfather",
+            "Grandparents",
+            "Son",
+            "Daughter"
+          ],
+          "user_transcript": "I went that in nowhere.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-14",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/14/admin/mmpmmyfy-3ecb933a-audio.wav",
+          "reaction_time_ms": 416
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "Parents",
+            "Mother",
+            "Father",
+            "Grandmother",
+            "Grandfather",
+            "Grandparents",
+            "Son",
+            "Daughter"
+          ],
+          "user_transcript": "I can see family.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-14",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/14/admin/mmpmmqdb-608ad707-audio.wav",
+          "reaction_time_ms": 1304
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7714,
+        "luyen_tap": 13450
+      }
+    },
+    {
       "lesson_id": 3891860,
       "title": "Unit 4A: My face - Lesson 3: I have straight hair.",
       "level": 2,
       "last_activity_date": "2026-04-18",
       "days_since_last_practice": 3,
-      "forgetting_score": 0.9502,
+      "forgetting_score": 0.3486,
       "weakness_score": 1.0,
-      "composite_priority_score": 0.9751,
+      "composite_priority_score": 0.6743,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2386,9 +3135,9 @@
       "level": 2,
       "last_activity_date": "2026-04-19",
       "days_since_last_practice": 2,
-      "forgetting_score": 0.8647,
+      "forgetting_score": 0.2485,
       "weakness_score": 1.0,
-      "composite_priority_score": 0.9324,
+      "composite_priority_score": 0.6242,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2680,751 +3429,6 @@
         "bai_tap": 7948,
         "luyen_tap": 13364
       }
-    },
-    {
-      "lesson_id": 3718974,
-      "title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
-      "level": 2,
-      "last_activity_date": "2026-02-08",
-      "days_since_last_practice": 72,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.6088,
-      "composite_priority_score": 0.8044,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 1,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Number one toy — is it a teddy bear or something else? 🧸",
-          "expected_answer": "I like a teddy bear. It is my number one toy.",
-          "target_objects": null,
-          "user_transcript": "The.",
-          "score": 59,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 18,
-          "timestamp": "2026-02-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld26fmw-ecff140d-audio.wav",
-          "reaction_time_ms": 2512
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Good. Tell me one toy you like. 🧸",
-          "expected_answer": "I like my teddy bear. It is number one for me.",
-          "target_objects": null,
-          "user_transcript": "I like it is number one.",
-          "score": 42.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 66,
-          "grammar_score": 19,
-          "timestamp": "2026-02-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld263j6-5d0057b6-audio.wav",
-          "reaction_time_ms": 2512
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi! Nice to see you. Ready to talk about toys? 😄",
-          "expected_answer": "Yes, I am ready. I like toys.",
-          "target_objects": null,
-          "user_transcript": "I like to see this.",
-          "score": 39,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 36,
-          "grammar_score": 42,
-          "timestamp": "2026-02-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld25elb-df954652-audio.wav",
-          "reaction_time_ms": 2512
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Good. Do you give it a name? 🧸",
-          "expected_answer": "Yes, I name it Bella. It sleeps with me every night.",
-          "target_objects": null,
-          "user_transcript": "Yes, my name is sleeps with.",
-          "score": 65.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 80,
-          "grammar_score": 51,
-          "timestamp": "2026-02-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld23iuc-5f2e72d0-audio.wav",
-          "reaction_time_ms": 2512
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. What toy do you like best? 😊",
-          "expected_answer": "I like a teddy bear. It's soft and I sleep with it.",
-          "target_objects": null,
-          "user_transcript": "I buy a toy. It's soft and a sleeping pink.",
-          "score": 52,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 55,
-          "grammar_score": 49,
-          "timestamp": "2026-02-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld22nho-43b1092b-audio.wav",
-          "reaction_time_ms": 2512
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7693,
-        "luyen_tap": 13217
-      }
-    },
-    {
-      "lesson_id": 3718973,
-      "title": "Unit 1A: Toys - Lesson 1: Hello!",
-      "level": 2,
-      "last_activity_date": "2026-02-07",
-      "days_since_last_practice": 73,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "I play with my ball now. Do you play with your toys today? 😊",
-          "expected_answer": "Yes, I play with my toys today. I play with my doll and my teddy bear.",
-          "target_objects": null,
-          "user_transcript": "I play with my ball. Do you play with?",
-          "score": 51.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 88,
-          "grammar_score": 15,
-          "timestamp": "2026-02-07",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbn29md-e7c4da3b-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Good. Do you play with your doll and teddy bear now? 😊",
-          "expected_answer": "Yes, I play with them now. I play in my room.",
-          "target_objects": null,
-          "user_transcript": "What do you play with?",
-          "score": 67.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 66,
-          "grammar_score": 69,
-          "timestamp": "2026-02-07",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbn1tkz-6c7d8776-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. I have a doll and a teddy bear. Do you play with them at home? 😊",
-          "expected_answer": "Yes, I play with my doll and teddy bear at home.",
-          "target_objects": null,
-          "user_transcript": "Nice, I have a doll and teddy bear. Replay with them at home.",
-          "score": 56,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 94,
-          "grammar_score": 18,
-          "timestamp": "2026-02-07",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbn1dro-34959461-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi! Good. Tell me one toy you like 😊",
-          "expected_answer": "I like my teddy bear.",
-          "target_objects": null,
-          "user_transcript": "Hi, what toy you like?",
-          "score": 67,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 86,
-          "grammar_score": 48,
-          "timestamp": "2026-02-07",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbn024a-5985cd4d-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Where do you keep your teddy bear? 🧸",
-          "expected_answer": "I keep my teddy bear on my bed or in my closet.",
-          "target_objects": null,
-          "user_transcript": "Nice, where do you keep your teddy bear?",
-          "score": 65,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 87,
-          "grammar_score": 43,
-          "timestamp": "2026-02-07",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbmykps-6acee911-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7670,
-        "luyen_tap": 13216
-      }
-    },
-    {
-      "lesson_id": 3763402,
-      "title": "Unit 2A: My home - Lesson 2: They're my parents.",
-      "level": 2,
-      "last_activity_date": "2026-03-01",
-      "days_since_last_practice": 51,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "grandfather",
-            "grandmother",
-            "father",
-            "mother",
-            "son",
-            "daughter"
-          ],
-          "user_transcript": "This is a.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/01/admin/mm77ixje-a7e46b21-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7704,
-        "luyen_tap": 13323
-      }
-    },
-    {
-      "lesson_id": 3763403,
-      "title": "Unit 2A: My home - Lesson 3: She's in the living room.",
-      "level": 2,
-      "last_activity_date": "2026-03-07",
-      "days_since_last_practice": 45,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "brainstorm",
-          "question": "Anything else?",
-          "expected_answer": null,
-          "target_objects": [
-            "bathroom",
-            "bedroom",
-            "kitchen",
-            "living room"
-          ],
-          "user_transcript": "It's.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-07",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmfplhyn-09d5985c-audio.wav",
-          "reaction_time_ms": 4114
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "Have a look at this picture. What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "bathroom",
-            "bedroom",
-            "kitchen",
-            "living room"
-          ],
-          "user_transcript": "Is it a home?",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "house"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-07",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmfpl6pe-a2eced61-audio.wav",
-          "reaction_time_ms": 2509
-        },
-        {
-          "lms_type": "free_speaking",
-          "question": "How do you feel now?",
-          "expected_answer": null,
-          "target_objects": null,
-          "user_transcript": "His family?",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-07",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmfpk36p-000cb747-audio.wav",
-          "reaction_time_ms": 2519
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7708,
-        "luyen_tap": 13327
-      }
-    },
-    {
-      "lesson_id": 3763399,
-      "title": "Unit 1A: Toys - Lesson 4: There's one ball.",
-      "level": 2,
-      "last_activity_date": "2026-03-08",
-      "days_since_last_practice": 44,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Interesting! Do you ride the bike with the bus often? 🚲",
-          "expected_answer": "Yes, I ride the bike with the bus often.",
-          "target_objects": null,
-          "user_transcript": "This, I ride the bike with the.",
-          "score": 58,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 16,
-          "timestamp": "2026-02-21",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/21/admin/mlvot7co-4c81404e-audio.wav",
-          "reaction_time_ms": 1207
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Oh, I see. Do you mean the bike comes to you or it has a special part? 😊",
-          "expected_answer": "My bike comes with a basket and bell.",
-          "target_objects": null,
-          "user_transcript": "My bike comes with a bus.",
-          "score": 67.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 88,
-          "grammar_score": 47,
-          "timestamp": "2026-02-21",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/21/admin/mlvosrum-fbad8e5d-audio.wav",
-          "reaction_time_ms": 1207
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "Bike",
-            "Car",
-            "Block",
-            "Puzzle"
-          ],
-          "user_transcript": "This is a bike.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "bike"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-02-21",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/21/admin/mlvo4619-24d3825f-audio.wav",
-          "reaction_time_ms": 1120
-        },
-        {
-          "lms_type": "free_speaking",
-          "question": "What toys do you like?",
-          "expected_answer": null,
-          "target_objects": null,
-          "user_transcript": "And.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-02-21",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/21/admin/mlvo2sp1-b7708351-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7707,
-        "luyen_tap": 13224
-      }
-    },
-    {
-      "lesson_id": 3763400,
-      "title": "Unit 1A: Toys - Lesson 5: There're 5 balls.",
-      "level": 2,
-      "last_activity_date": "2026-03-08",
-      "days_since_last_practice": 44,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Do you mean she leaves it where you sleep? 🧸",
-          "expected_answer": "Yes, she leaves it on my bed.",
-          "target_objects": null,
-          "user_transcript": "Yes, she loves it on my.",
-          "score": 63,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 80,
-          "grammar_score": 46,
-          "timestamp": "2026-02-22",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx8cy8k-21e4e12d-audio.wav",
-          "reaction_time_ms": 913
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Oh, maybe you mean she gave it when you were small. 😊",
-          "expected_answer": "Yes, she gave it when I was small.",
-          "target_objects": null,
-          "user_transcript": "Yes, she leaves it where I.",
-          "score": 51,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 87,
-          "grammar_score": 15,
-          "timestamp": "2026-02-22",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx8cmei-9aa5210b-audio.wav",
-          "reaction_time_ms": 913
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Good. Who gave you the teddy bear? 🧸",
-          "expected_answer": "My mom gave me the teddy bear when I was three.",
-          "target_objects": null,
-          "user_transcript": "My mom gave it to me.",
-          "score": 64,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 33,
-          "grammar_score": 95,
-          "timestamp": "2026-02-22",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx8buf5-da7b5651-audio.wav",
-          "reaction_time_ms": 913
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice, toys are fun. What toy do you like best? 😄",
-          "expected_answer": "I like my teddy bear. It is soft and I sleep with it.",
-          "target_objects": null,
-          "user_transcript": "I like my teddy bear. It is sharp and I sleep.",
-          "score": 66.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 85,
-          "grammar_score": 48,
-          "timestamp": "2026-02-22",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx8azmd-aecfe151-audio.wav",
-          "reaction_time_ms": 913
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "bike",
-            "ball",
-            "blocks",
-            "teddy bear",
-            "doll",
-            "car",
-            "puzzles"
-          ],
-          "user_transcript": "This is a bike.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "bike"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-02-22",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx7i295-fb2a5a6b-audio.wav",
-          "reaction_time_ms": 1647
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7710,
-        "luyen_tap": 13309
-      }
-    },
-    {
-      "lesson_id": 3763401,
-      "title": "Unit 2A: My home - Lesson 1: He's my father.",
-      "level": 2,
-      "last_activity_date": "2026-03-08",
-      "days_since_last_practice": 44,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "father",
-            "mother",
-            "son",
-            "family"
-          ],
-          "user_transcript": "This is a family.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "family"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-02-28",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/28/admin/mm5nb8jb-70973d11-audio.wav",
-          "reaction_time_ms": 1916
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7695,
-        "luyen_tap": 13313
-      }
-    },
-    {
-      "lesson_id": 3763404,
-      "title": "Unit 2A: My home - Lesson 4: They're in the garden.",
-      "level": 2,
-      "last_activity_date": "2026-03-08",
-      "days_since_last_practice": 44,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Good. Who do you eat with on the boat 😊",
-          "expected_answer": "I eat with my family on the boat.",
-          "target_objects": null,
-          "user_transcript": "I eat with my favorite on the",
-          "score": 59,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 18,
-          "timestamp": "2026-03-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh6hhy6-9666859d-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Do you mean you talk about cheese on the boat or on the table? 🧀",
-          "expected_answer": "I mean cheese on the boat. I eat cheese on the boat.",
-          "target_objects": null,
-          "user_transcript": "I watch dress on the boat. I eat on.",
-          "score": 65,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 91,
-          "grammar_score": 39,
-          "timestamp": "2026-03-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh6fvkm-3398cba1-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Oh, you want to walk a boat — do you mean take a boat trip or walk near the water? 🌊",
-          "expected_answer": "I mean take a boat trip on the river.",
-          "target_objects": null,
-          "user_transcript": "I talk about cheese on the",
-          "score": 57.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 15,
-          "timestamp": "2026-03-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh6ffcz-af3967ac-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi, nice to see you. Ready to practice Unit 2A - Lesson 4 review? 🌟",
-          "expected_answer": "Yes, I am ready. I want to talk about my house.",
-          "target_objects": null,
-          "user_transcript": "Yes, I want to walk a boat.",
-          "score": 58,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 78,
-          "grammar_score": 38,
-          "timestamp": "2026-03-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh6eze4-98041864-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Oh, do you mean you read the lesson? 😊 Tell me one sentence from it.",
-          "expected_answer": "I read the lesson about rooms. It says: This is the living room.",
-          "target_objects": null,
-          "user_transcript": "I read the lesson and rooms it says this is the.",
-          "score": 58.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 17,
-          "timestamp": "2026-03-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh67tnf-e24f7545-audio.wav",
-          "reaction_time_ms": 1219
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7712,
-        "luyen_tap": 13441
-      }
-    },
-    {
-      "lesson_id": 3763405,
-      "title": "Unit 2A: My home - Lesson 5: They're in the living room.",
-      "level": 2,
-      "last_activity_date": "2026-03-14",
-      "days_since_last_practice": 38,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice. What do you watch on TV together? 📺",
-          "expected_answer": "We watch cartoons and news together.",
-          "target_objects": null,
-          "user_transcript": "Which we read carrots and news.",
-          "score": 49.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 83,
-          "grammar_score": 16,
-          "timestamp": "2026-03-14",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/14/admin/mmpncf2s-a263f452-audio.wav",
-          "reaction_time_ms": 1011
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi, nice to see you. Are you ready to practice Unit 2A - Lesson 5? 😄",
-          "expected_answer": "Yes, I'm ready. Let's practice family words.",
-          "target_objects": null,
-          "user_transcript": "Yes, I read this family.",
-          "score": 63.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 86,
-          "grammar_score": 41,
-          "timestamp": "2026-03-14",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/14/admin/mmpna08v-dd1ffe92-audio.wav",
-          "reaction_time_ms": 1011
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "Parents",
-            "Mother",
-            "Father",
-            "Grandmother",
-            "Grandfather",
-            "Grandparents",
-            "Son",
-            "Daughter"
-          ],
-          "user_transcript": "I went that in nowhere.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-14",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/14/admin/mmpmmyfy-3ecb933a-audio.wav",
-          "reaction_time_ms": 416
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "Parents",
-            "Mother",
-            "Father",
-            "Grandmother",
-            "Grandfather",
-            "Grandparents",
-            "Son",
-            "Daughter"
-          ],
-          "user_transcript": "I can see family.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-14",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/14/admin/mmpmmqdb-608ad707-audio.wav",
-          "reaction_time_ms": 1304
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7714,
-        "luyen_tap": 13450
-      }
     }
   ],
   "lessons": [
@@ -3438,9 +3442,9 @@
       "status": "completed",
       "last_activity_date": "2026-02-24",
       "days_since_last_practice": 56,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9997,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9999,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -3568,9 +3572,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-15",
       "days_since_last_practice": 37,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9949,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9974,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -4097,9 +4101,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-21",
       "days_since_last_practice": 31,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9881,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.994,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -4594,9 +4598,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-29",
       "days_since_last_practice": 23,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9626,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9813,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -5117,9 +5121,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-04",
       "days_since_last_practice": 17,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9118,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9559,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -5624,9 +5628,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-05",
       "days_since_last_practice": 16,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8983,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9491,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -6143,9 +6147,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-11",
       "days_since_last_practice": 10,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.7603,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.8801,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -6668,9 +6672,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-12",
       "days_since_last_practice": 9,
-      "forgetting_score": 0.9999,
+      "forgetting_score": 0.7235,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.8618,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -7188,6 +7192,1227 @@
       }
     },
     {
+      "lesson_id": 3718974,
+      "program_id": null,
+      "level": 2,
+      "position": 2,
+      "title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
+      "desc": "- Toys: ball, doll, teddy bear (review)\n- Numbers: 1-5",
+      "status": "completed",
+      "last_activity_date": "2026-02-08",
+      "days_since_last_practice": 72,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.6088,
+      "composite_priority_score": 0.8044,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 59,
+          "avg_reaction_ms": 1555,
+          "fastest_reaction_ms": 349,
+          "total_duration_ms": 1415150,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-08",
+        "pronunciation_attempts": 25,
+        "pronunciation_score_avg": 78.48,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "correct": 1
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 67.61,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Number one toy — is it a teddy bear or something else? 🧸",
+            "expected_answer": "I like a teddy bear. It is my number one toy.",
+            "target_objects": null,
+            "user_transcript": "The.",
+            "score": 59,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 18,
+            "timestamp": "2026-02-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld26fmw-ecff140d-audio.wav",
+            "reaction_time_ms": 2512
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. Tell me one toy you like. 🧸",
+            "expected_answer": "I like my teddy bear. It is number one for me.",
+            "target_objects": null,
+            "user_transcript": "I like it is number one.",
+            "score": 42.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 66,
+            "grammar_score": 19,
+            "timestamp": "2026-02-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld263j6-5d0057b6-audio.wav",
+            "reaction_time_ms": 2512
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi! Nice to see you. Ready to talk about toys? 😄",
+            "expected_answer": "Yes, I am ready. I like toys.",
+            "target_objects": null,
+            "user_transcript": "I like to see this.",
+            "score": 39,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 36,
+            "grammar_score": 42,
+            "timestamp": "2026-02-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld25elb-df954652-audio.wav",
+            "reaction_time_ms": 2512
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. Do you give it a name? 🧸",
+            "expected_answer": "Yes, I name it Bella. It sleeps with me every night.",
+            "target_objects": null,
+            "user_transcript": "Yes, my name is sleeps with.",
+            "score": 65.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 80,
+            "grammar_score": 51,
+            "timestamp": "2026-02-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld23iuc-5f2e72d0-audio.wav",
+            "reaction_time_ms": 2512
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What toy do you like best? 😊",
+            "expected_answer": "I like a teddy bear. It's soft and I sleep with it.",
+            "target_objects": null,
+            "user_transcript": "I buy a toy. It's soft and a sleeping pink.",
+            "score": 52,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 55,
+            "grammar_score": 49,
+            "timestamp": "2026-02-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld22nho-43b1092b-audio.wav",
+            "reaction_time_ms": 2512
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7693,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-02-08"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 7693,
+          "luyen_tap": 13217
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 19,
+            "total": 20,
+            "accuracy": 0.95
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7693,
+            "question_id": 389379,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn tranh và nói nhé.)",
+            "comment_plain": null,
+            "correct_answer": "doll",
+            "student_answer": "blue",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/06/02/114f_doll.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "doll",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3718973,
+      "program_id": null,
+      "level": 2,
+      "position": 1,
+      "title": "Unit 1A: Toys - Lesson 1: Hello!",
+      "desc": "- Greetings\n - numbers 1-10\n - Toys\n - sounds: æ, e\n - Math: plus, minus, equal",
+      "status": "completed",
+      "last_activity_date": "2026-02-07",
+      "days_since_last_practice": 73,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7941,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 65,
+          "avg_reaction_ms": 1547,
+          "fastest_reaction_ms": 333,
+          "total_duration_ms": 395779,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-07",
+        "pronunciation_attempts": 29,
+        "pronunciation_score_avg": 77.0,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 76.61,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "I play with my ball now. Do you play with your toys today? 😊",
+            "expected_answer": "Yes, I play with my toys today. I play with my doll and my teddy bear.",
+            "target_objects": null,
+            "user_transcript": "I play with my ball. Do you play with?",
+            "score": 51.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 88,
+            "grammar_score": 15,
+            "timestamp": "2026-02-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbn29md-e7c4da3b-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. Do you play with your doll and teddy bear now? 😊",
+            "expected_answer": "Yes, I play with them now. I play in my room.",
+            "target_objects": null,
+            "user_transcript": "What do you play with?",
+            "score": 67.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 66,
+            "grammar_score": 69,
+            "timestamp": "2026-02-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbn1tkz-6c7d8776-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. I have a doll and a teddy bear. Do you play with them at home? 😊",
+            "expected_answer": "Yes, I play with my doll and teddy bear at home.",
+            "target_objects": null,
+            "user_transcript": "Nice, I have a doll and teddy bear. Replay with them at home.",
+            "score": 56,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 94,
+            "grammar_score": 18,
+            "timestamp": "2026-02-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbn1dro-34959461-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi! Good. Tell me one toy you like 😊",
+            "expected_answer": "I like my teddy bear.",
+            "target_objects": null,
+            "user_transcript": "Hi, what toy you like?",
+            "score": 67,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 86,
+            "grammar_score": 48,
+            "timestamp": "2026-02-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbn024a-5985cd4d-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Where do you keep your teddy bear? 🧸",
+            "expected_answer": "I keep my teddy bear on my bed or in my closet.",
+            "target_objects": null,
+            "user_transcript": "Nice, where do you keep your teddy bear?",
+            "score": 65,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 87,
+            "grammar_score": 43,
+            "timestamp": "2026-02-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbmykps-6acee911-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7670,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-02-07"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 7670,
+          "luyen_tap": 13216
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 20,
+            "total": 20,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3763402,
+      "program_id": null,
+      "level": 2,
+      "position": 8,
+      "title": "Unit 2A: My home - Lesson 2: They're my parents.",
+      "desc": "- family members: mother, father, brother, sister, parents, son, daughter (R); grandfather, grandmother, grandparents\n- sound /ə/: mother, sister (review)\n- Who's he/ she? He/She's my father/ mother.",
+      "status": "completed",
+      "last_activity_date": "2026-03-01",
+      "days_since_last_practice": 51,
+      "forgetting_score": 0.9993,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7937,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 59,
+          "audio_turns": 42,
+          "avg_reaction_ms": 2347,
+          "fastest_reaction_ms": 685,
+          "total_duration_ms": 6072,
+          "session_status": "COMPLETED",
+          "completion_pct": 85
+        },
+        "is_completed": true,
+        "completion_pct": 85,
+        "latest_session_date": "2026-03-01",
+        "pronunciation_attempts": 31,
+        "pronunciation_score_avg": 77.74,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1
+        },
+        "conversation_attempts": 7,
+        "conversation_score_avg": 84.57,
+        "worst_speaking_items": [
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "grandfather",
+              "grandmother",
+              "father",
+              "mother",
+              "son",
+              "daughter"
+            ],
+            "user_transcript": "This is a.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/01/admin/mm77ixje-a7e46b21-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7704,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-01"
+        },
+        "luyen_tap": {
+          "practice_id": 13323,
+          "score": null,
+          "correct": 0,
+          "total": 20,
+          "submitted_date": "2026-03-01"
+        },
+        "lms_ids": {
+          "bai_tap": 7704,
+          "luyen_tap": 13323
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 20,
+            "total": 20,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3763403,
+      "program_id": null,
+      "level": 2,
+      "position": 9,
+      "title": "Unit 2A: My home - Lesson 3: She's in the living room.",
+      "desc": "- parts of house: living room, kitchen, bedroom, bathroom, toilet, garden\n- Where's he/she? He/She's in the living room.",
+      "status": "completed",
+      "last_activity_date": "2026-03-07",
+      "days_since_last_practice": 45,
+      "forgetting_score": 0.9984,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7933,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 44,
+          "audio_turns": 37,
+          "avg_reaction_ms": 1543,
+          "fastest_reaction_ms": 703,
+          "total_duration_ms": 5953,
+          "session_status": "COMPLETED",
+          "completion_pct": 85
+        },
+        "is_completed": true,
+        "completion_pct": 85,
+        "latest_session_date": "2026-03-07",
+        "pronunciation_attempts": 27,
+        "pronunciation_score_avg": 97.0,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "correct": 1,
+          "incorrect": 1
+        },
+        "conversation_attempts": 7,
+        "conversation_score_avg": 87.29,
+        "worst_speaking_items": [
+          {
+            "lms_type": "brainstorm",
+            "question": "Anything else?",
+            "expected_answer": null,
+            "target_objects": [
+              "bathroom",
+              "bedroom",
+              "kitchen",
+              "living room"
+            ],
+            "user_transcript": "It's.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmfplhyn-09d5985c-audio.wav",
+            "reaction_time_ms": 4114
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "Have a look at this picture. What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "bathroom",
+              "bedroom",
+              "kitchen",
+              "living room"
+            ],
+            "user_transcript": "Is it a home?",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "house"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmfpl6pe-a2eced61-audio.wav",
+            "reaction_time_ms": 2509
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "How do you feel now?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "His family?",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmfpk36p-000cb747-audio.wav",
+            "reaction_time_ms": 2519
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7708,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-07"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 7708,
+          "luyen_tap": 13327
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 20,
+            "total": 20,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3763399,
+      "program_id": null,
+      "level": 2,
+      "position": 4,
+      "title": "Unit 1A: Toys - Lesson 4: There's one ball.",
+      "desc": "- Từ vựng: - Toys: ball, doll, teddy bear, car, bike, puzzle, block; Numbers: 1-10\n- Mẫu câu: \n+ What's this? It's a ball.\n+ What are they? They're cars and balls.\n+ How many balls are there? There's",
+      "status": "completed",
+      "last_activity_date": "2026-03-08",
+      "days_since_last_practice": 44,
+      "forgetting_score": 0.9981,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7932,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 50,
+          "avg_reaction_ms": 1189,
+          "fastest_reaction_ms": 348,
+          "total_duration_ms": 6069,
+          "session_status": "COMPLETED",
+          "completion_pct": 85
+        },
+        "is_completed": true,
+        "completion_pct": 85,
+        "latest_session_date": "2026-02-21",
+        "pronunciation_attempts": 22,
+        "pronunciation_score_avg": 91.64,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "correct": 1
+        },
+        "conversation_attempts": 7,
+        "conversation_score_avg": 81.79,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Interesting! Do you ride the bike with the bus often? 🚲",
+            "expected_answer": "Yes, I ride the bike with the bus often.",
+            "target_objects": null,
+            "user_transcript": "This, I ride the bike with the.",
+            "score": 58,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 16,
+            "timestamp": "2026-02-21",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/21/admin/mlvot7co-4c81404e-audio.wav",
+            "reaction_time_ms": 1207
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh, I see. Do you mean the bike comes to you or it has a special part? 😊",
+            "expected_answer": "My bike comes with a basket and bell.",
+            "target_objects": null,
+            "user_transcript": "My bike comes with a bus.",
+            "score": 67.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 88,
+            "grammar_score": 47,
+            "timestamp": "2026-02-21",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/21/admin/mlvosrum-fbad8e5d-audio.wav",
+            "reaction_time_ms": 1207
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What is it?",
+            "expected_answer": null,
+            "target_objects": [
+              "Bike",
+              "Car",
+              "Block",
+              "Puzzle"
+            ],
+            "user_transcript": "This is a bike.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "bike"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-02-21",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/21/admin/mlvo4619-24d3825f-audio.wav",
+            "reaction_time_ms": 1120
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "What toys do you like?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "And.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-02-21",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/21/admin/mlvo2sp1-b7708351-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7707,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-08"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 7707,
+          "luyen_tap": 13224
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 20,
+            "total": 20,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3763400,
+      "program_id": null,
+      "level": 2,
+      "position": 5,
+      "title": "Unit 1A: Toys - Lesson 5: There're 5 balls.",
+      "desc": "- Từ và âm: \n+ /æ/: cat, fan\n+ /e/:  ten, pen\n- Từ vựng: ball, doll, teddy bear, car, bike, puzzle, block; Numbers: 1-10\n- Mẫu câu: \n+ Hello, What's your name? My name's Tony.\n+ How are you? I'm good/",
+      "status": "completed",
+      "last_activity_date": "2026-03-08",
+      "days_since_last_practice": 44,
+      "forgetting_score": 0.9981,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7932,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 72,
+          "avg_reaction_ms": 1185,
+          "fastest_reaction_ms": 351,
+          "total_duration_ms": 5968,
+          "session_status": "COMPLETED",
+          "completion_pct": 85
+        },
+        "is_completed": true,
+        "completion_pct": 85,
+        "latest_session_date": "2026-02-22",
+        "pronunciation_attempts": 39,
+        "pronunciation_score_avg": 58.31,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "correct": 1
+        },
+        "conversation_attempts": 7,
+        "conversation_score_avg": 72.07,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Do you mean she leaves it where you sleep? 🧸",
+            "expected_answer": "Yes, she leaves it on my bed.",
+            "target_objects": null,
+            "user_transcript": "Yes, she loves it on my.",
+            "score": 63,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 80,
+            "grammar_score": 46,
+            "timestamp": "2026-02-22",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx8cy8k-21e4e12d-audio.wav",
+            "reaction_time_ms": 913
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh, maybe you mean she gave it when you were small. 😊",
+            "expected_answer": "Yes, she gave it when I was small.",
+            "target_objects": null,
+            "user_transcript": "Yes, she leaves it where I.",
+            "score": 51,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 87,
+            "grammar_score": 15,
+            "timestamp": "2026-02-22",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx8cmei-9aa5210b-audio.wav",
+            "reaction_time_ms": 913
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. Who gave you the teddy bear? 🧸",
+            "expected_answer": "My mom gave me the teddy bear when I was three.",
+            "target_objects": null,
+            "user_transcript": "My mom gave it to me.",
+            "score": 64,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 33,
+            "grammar_score": 95,
+            "timestamp": "2026-02-22",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx8buf5-da7b5651-audio.wav",
+            "reaction_time_ms": 913
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice, toys are fun. What toy do you like best? 😄",
+            "expected_answer": "I like my teddy bear. It is soft and I sleep with it.",
+            "target_objects": null,
+            "user_transcript": "I like my teddy bear. It is sharp and I sleep.",
+            "score": 66.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 85,
+            "grammar_score": 48,
+            "timestamp": "2026-02-22",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx8azmd-aecfe151-audio.wav",
+            "reaction_time_ms": 913
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What is it?",
+            "expected_answer": null,
+            "target_objects": [
+              "bike",
+              "ball",
+              "blocks",
+              "teddy bear",
+              "doll",
+              "car",
+              "puzzles"
+            ],
+            "user_transcript": "This is a bike.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "bike"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-02-22",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx7i295-fb2a5a6b-audio.wav",
+            "reaction_time_ms": 1647
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7710,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-08"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 7710,
+          "luyen_tap": 13309
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 20,
+            "total": 20,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3763401,
+      "program_id": null,
+      "level": 2,
+      "position": 7,
+      "title": "Unit 2A: My home - Lesson 1: He's my father.",
+      "desc": "- Family members\n- parts of house\n- sound: ə\n- Social science: Nuclear family and extended family",
+      "status": "completed",
+      "last_activity_date": "2026-03-08",
+      "days_since_last_practice": 44,
+      "forgetting_score": 0.9981,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7932,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 59,
+          "audio_turns": 43,
+          "avg_reaction_ms": 1669,
+          "fastest_reaction_ms": 810,
+          "total_duration_ms": 5944,
+          "session_status": "COMPLETED",
+          "completion_pct": 85
+        },
+        "is_completed": true,
+        "completion_pct": 85,
+        "latest_session_date": "2026-02-28",
+        "pronunciation_attempts": 32,
+        "pronunciation_score_avg": 84.75,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "correct": 1
+        },
+        "conversation_attempts": 7,
+        "conversation_score_avg": 85.79,
+        "worst_speaking_items": [
+          {
+            "lms_type": "brainstorm",
+            "question": "What is it?",
+            "expected_answer": null,
+            "target_objects": [
+              "father",
+              "mother",
+              "son",
+              "family"
+            ],
+            "user_transcript": "This is a family.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "family"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-02-28",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/28/admin/mm5nb8jb-70973d11-audio.wav",
+            "reaction_time_ms": 1916
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7695,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-08"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 7695,
+          "luyen_tap": 13313
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 20,
+            "total": 20,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3763404,
+      "program_id": null,
+      "level": 2,
+      "position": 10,
+      "title": "Unit 2A: My home - Lesson 4: They're in the garden.",
+      "desc": "- parts of house: living room, kitchen, bedroom, bathroom, toilet, garden (R)\n- Where are they? They're in the garden.",
+      "status": "completed",
+      "last_activity_date": "2026-03-08",
+      "days_since_last_practice": 44,
+      "forgetting_score": 0.9981,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7932,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 44,
+          "audio_turns": 50,
+          "avg_reaction_ms": 1781,
+          "fastest_reaction_ms": 868,
+          "total_duration_ms": 5979,
+          "session_status": "COMPLETED",
+          "completion_pct": 85
+        },
+        "is_completed": true,
+        "completion_pct": 85,
+        "latest_session_date": "2026-03-08",
+        "pronunciation_attempts": 33,
+        "pronunciation_score_avg": 87.33,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 74.36,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Good. Who do you eat with on the boat 😊",
+            "expected_answer": "I eat with my family on the boat.",
+            "target_objects": null,
+            "user_transcript": "I eat with my favorite on the",
+            "score": 59,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 18,
+            "timestamp": "2026-03-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh6hhy6-9666859d-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Do you mean you talk about cheese on the boat or on the table? 🧀",
+            "expected_answer": "I mean cheese on the boat. I eat cheese on the boat.",
+            "target_objects": null,
+            "user_transcript": "I watch dress on the boat. I eat on.",
+            "score": 65,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 91,
+            "grammar_score": 39,
+            "timestamp": "2026-03-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh6fvkm-3398cba1-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh, you want to walk a boat — do you mean take a boat trip or walk near the water? 🌊",
+            "expected_answer": "I mean take a boat trip on the river.",
+            "target_objects": null,
+            "user_transcript": "I talk about cheese on the",
+            "score": 57.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 15,
+            "timestamp": "2026-03-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh6ffcz-af3967ac-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi, nice to see you. Ready to practice Unit 2A - Lesson 4 review? 🌟",
+            "expected_answer": "Yes, I am ready. I want to talk about my house.",
+            "target_objects": null,
+            "user_transcript": "Yes, I want to walk a boat.",
+            "score": 58,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 78,
+            "grammar_score": 38,
+            "timestamp": "2026-03-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh6eze4-98041864-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh, do you mean you read the lesson? 😊 Tell me one sentence from it.",
+            "expected_answer": "I read the lesson about rooms. It says: This is the living room.",
+            "target_objects": null,
+            "user_transcript": "I read the lesson and rooms it says this is the.",
+            "score": 58.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 17,
+            "timestamp": "2026-03-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh67tnf-e24f7545-audio.wav",
+            "reaction_time_ms": 1219
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7712,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-08"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 7712,
+          "luyen_tap": 13441
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 20,
+            "total": 20,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3763405,
+      "program_id": null,
+      "level": 2,
+      "position": 11,
+      "title": "Unit 2A: My home - Lesson 5: They're in the living room.",
+      "desc": "- family members:  mother, father, brother, sister, grandmother, grandfather, parents, grandparents, son, daughter (R) \n- Who's he/ she? He/She's my father/ mother.\n- Who are they? They're my parents.",
+      "status": "completed",
+      "last_activity_date": "2026-03-14",
+      "days_since_last_practice": 38,
+      "forgetting_score": 0.9956,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7919,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 52,
+          "audio_turns": 54,
+          "avg_reaction_ms": 1312,
+          "fastest_reaction_ms": 410,
+          "total_duration_ms": 5938,
+          "session_status": "COMPLETED",
+          "completion_pct": 85
+        },
+        "is_completed": true,
+        "completion_pct": 85,
+        "latest_session_date": "2026-03-14",
+        "pronunciation_attempts": 40,
+        "pronunciation_score_avg": 79.97,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 2
+        },
+        "conversation_attempts": 7,
+        "conversation_score_avg": 76.5,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What do you watch on TV together? 📺",
+            "expected_answer": "We watch cartoons and news together.",
+            "target_objects": null,
+            "user_transcript": "Which we read carrots and news.",
+            "score": 49.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 83,
+            "grammar_score": 16,
+            "timestamp": "2026-03-14",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/14/admin/mmpncf2s-a263f452-audio.wav",
+            "reaction_time_ms": 1011
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi, nice to see you. Are you ready to practice Unit 2A - Lesson 5? 😄",
+            "expected_answer": "Yes, I'm ready. Let's practice family words.",
+            "target_objects": null,
+            "user_transcript": "Yes, I read this family.",
+            "score": 63.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 86,
+            "grammar_score": 41,
+            "timestamp": "2026-03-14",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/14/admin/mmpna08v-dd1ffe92-audio.wav",
+            "reaction_time_ms": 1011
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What is it?",
+            "expected_answer": null,
+            "target_objects": [
+              "Parents",
+              "Mother",
+              "Father",
+              "Grandmother",
+              "Grandfather",
+              "Grandparents",
+              "Son",
+              "Daughter"
+            ],
+            "user_transcript": "I went that in nowhere.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-14",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/14/admin/mmpmmyfy-3ecb933a-audio.wav",
+            "reaction_time_ms": 416
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "Parents",
+              "Mother",
+              "Father",
+              "Grandmother",
+              "Grandfather",
+              "Grandparents",
+              "Son",
+              "Daughter"
+            ],
+            "user_transcript": "I can see family.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-14",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/14/admin/mmpmmqdb-608ad707-audio.wav",
+            "reaction_time_ms": 1304
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7714,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-14"
+        },
+        "luyen_tap": {
+          "practice_id": 13450,
+          "score": null,
+          "correct": 0,
+          "total": 20,
+          "submitted_date": "2026-03-14"
+        },
+        "lms_ids": {
+          "bai_tap": 7714,
+          "luyen_tap": 13450
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 20,
+            "total": 20,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3891860,
       "program_id": null,
       "level": 2,
@@ -7197,9 +8422,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-18",
       "days_since_last_practice": 3,
-      "forgetting_score": 0.9502,
+      "forgetting_score": 0.3486,
       "weakness_score": 1.0,
-      "composite_priority_score": 0.9751,
+      "composite_priority_score": 0.6743,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -7694,9 +8919,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-19",
       "days_since_last_practice": 2,
-      "forgetting_score": 0.8647,
+      "forgetting_score": 0.2485,
       "weakness_score": 1.0,
-      "composite_priority_score": 0.9324,
+      "composite_priority_score": 0.6242,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -8196,1227 +9421,6 @@
             }
           ]
         }
-      }
-    },
-    {
-      "lesson_id": 3718974,
-      "program_id": null,
-      "level": 2,
-      "position": 2,
-      "title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
-      "desc": "- Toys: ball, doll, teddy bear (review)\n- Numbers: 1-5",
-      "status": "completed",
-      "last_activity_date": "2026-02-08",
-      "days_since_last_practice": 72,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.6088,
-      "composite_priority_score": 0.8044,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 0,
-          "audio_turns": 59,
-          "avg_reaction_ms": 1555,
-          "fastest_reaction_ms": 349,
-          "total_duration_ms": 1415150,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-02-08",
-        "pronunciation_attempts": 25,
-        "pronunciation_score_avg": 78.48,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 67.61,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Number one toy — is it a teddy bear or something else? 🧸",
-            "expected_answer": "I like a teddy bear. It is my number one toy.",
-            "target_objects": null,
-            "user_transcript": "The.",
-            "score": 59,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 18,
-            "timestamp": "2026-02-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld26fmw-ecff140d-audio.wav",
-            "reaction_time_ms": 2512
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Good. Tell me one toy you like. 🧸",
-            "expected_answer": "I like my teddy bear. It is number one for me.",
-            "target_objects": null,
-            "user_transcript": "I like it is number one.",
-            "score": 42.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 66,
-            "grammar_score": 19,
-            "timestamp": "2026-02-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld263j6-5d0057b6-audio.wav",
-            "reaction_time_ms": 2512
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi! Nice to see you. Ready to talk about toys? 😄",
-            "expected_answer": "Yes, I am ready. I like toys.",
-            "target_objects": null,
-            "user_transcript": "I like to see this.",
-            "score": 39,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 36,
-            "grammar_score": 42,
-            "timestamp": "2026-02-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld25elb-df954652-audio.wav",
-            "reaction_time_ms": 2512
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Good. Do you give it a name? 🧸",
-            "expected_answer": "Yes, I name it Bella. It sleeps with me every night.",
-            "target_objects": null,
-            "user_transcript": "Yes, my name is sleeps with.",
-            "score": 65.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 80,
-            "grammar_score": 51,
-            "timestamp": "2026-02-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld23iuc-5f2e72d0-audio.wav",
-            "reaction_time_ms": 2512
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. What toy do you like best? 😊",
-            "expected_answer": "I like a teddy bear. It's soft and I sleep with it.",
-            "target_objects": null,
-            "user_transcript": "I buy a toy. It's soft and a sleeping pink.",
-            "score": 52,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 55,
-            "grammar_score": 49,
-            "timestamp": "2026-02-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/08/admin/mld22nho-43b1092b-audio.wav",
-            "reaction_time_ms": 2512
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7693,
-          "score": 0.95,
-          "correct": 19,
-          "total": 20,
-          "submitted_date": "2026-02-08"
-        },
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 7693,
-          "luyen_tap": 13217
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 19,
-            "total": 20,
-            "accuracy": 0.95
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 7693,
-            "question_id": 389379,
-            "question_folder": "English Tutoring - Level 2",
-            "question_type": "Trả lời bằng giọng nói",
-            "question_text": "Look and say (Con hãy nhìn tranh và nói nhé.)",
-            "comment_plain": null,
-            "correct_answer": "doll",
-            "student_answer": "blue",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/06/02/114f_doll.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "doll",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3718973,
-      "program_id": null,
-      "level": 2,
-      "position": 1,
-      "title": "Unit 1A: Toys - Lesson 1: Hello!",
-      "desc": "- Greetings\n - numbers 1-10\n - Toys\n - sounds: æ, e\n - Math: plus, minus, equal",
-      "status": "completed",
-      "last_activity_date": "2026-02-07",
-      "days_since_last_practice": 73,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 0,
-          "audio_turns": 65,
-          "avg_reaction_ms": 1547,
-          "fastest_reaction_ms": 333,
-          "total_duration_ms": 395779,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-02-07",
-        "pronunciation_attempts": 29,
-        "pronunciation_score_avg": 77.0,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 76.61,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "I play with my ball now. Do you play with your toys today? 😊",
-            "expected_answer": "Yes, I play with my toys today. I play with my doll and my teddy bear.",
-            "target_objects": null,
-            "user_transcript": "I play with my ball. Do you play with?",
-            "score": 51.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 88,
-            "grammar_score": 15,
-            "timestamp": "2026-02-07",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbn29md-e7c4da3b-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Good. Do you play with your doll and teddy bear now? 😊",
-            "expected_answer": "Yes, I play with them now. I play in my room.",
-            "target_objects": null,
-            "user_transcript": "What do you play with?",
-            "score": 67.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 66,
-            "grammar_score": 69,
-            "timestamp": "2026-02-07",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbn1tkz-6c7d8776-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. I have a doll and a teddy bear. Do you play with them at home? 😊",
-            "expected_answer": "Yes, I play with my doll and teddy bear at home.",
-            "target_objects": null,
-            "user_transcript": "Nice, I have a doll and teddy bear. Replay with them at home.",
-            "score": 56,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 94,
-            "grammar_score": 18,
-            "timestamp": "2026-02-07",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbn1dro-34959461-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi! Good. Tell me one toy you like 😊",
-            "expected_answer": "I like my teddy bear.",
-            "target_objects": null,
-            "user_transcript": "Hi, what toy you like?",
-            "score": 67,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 86,
-            "grammar_score": 48,
-            "timestamp": "2026-02-07",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbn024a-5985cd4d-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Where do you keep your teddy bear? 🧸",
-            "expected_answer": "I keep my teddy bear on my bed or in my closet.",
-            "target_objects": null,
-            "user_transcript": "Nice, where do you keep your teddy bear?",
-            "score": 65,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 87,
-            "grammar_score": 43,
-            "timestamp": "2026-02-07",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/07/admin/mlbmykps-6acee911-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7670,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-02-07"
-        },
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 7670,
-          "luyen_tap": 13216
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 20,
-            "total": 20,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3763402,
-      "program_id": null,
-      "level": 2,
-      "position": 8,
-      "title": "Unit 2A: My home - Lesson 2: They're my parents.",
-      "desc": "- family members: mother, father, brother, sister, parents, son, daughter (R); grandfather, grandmother, grandparents\n- sound /ə/: mother, sister (review)\n- Who's he/ she? He/She's my father/ mother.",
-      "status": "completed",
-      "last_activity_date": "2026-03-01",
-      "days_since_last_practice": 51,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 59,
-          "audio_turns": 42,
-          "avg_reaction_ms": 2347,
-          "fastest_reaction_ms": 685,
-          "total_duration_ms": 6072,
-          "session_status": "COMPLETED",
-          "completion_pct": 85
-        },
-        "is_completed": true,
-        "completion_pct": 85,
-        "latest_session_date": "2026-03-01",
-        "pronunciation_attempts": 31,
-        "pronunciation_score_avg": 77.74,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1
-        },
-        "conversation_attempts": 7,
-        "conversation_score_avg": 84.57,
-        "worst_speaking_items": [
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "grandfather",
-              "grandmother",
-              "father",
-              "mother",
-              "son",
-              "daughter"
-            ],
-            "user_transcript": "This is a.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-01",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/01/admin/mm77ixje-a7e46b21-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7704,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-03-01"
-        },
-        "luyen_tap": {
-          "practice_id": 13323,
-          "score": null,
-          "correct": 0,
-          "total": 20,
-          "submitted_date": "2026-03-01"
-        },
-        "lms_ids": {
-          "bai_tap": 7704,
-          "luyen_tap": 13323
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 20,
-            "total": 20,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3763403,
-      "program_id": null,
-      "level": 2,
-      "position": 9,
-      "title": "Unit 2A: My home - Lesson 3: She's in the living room.",
-      "desc": "- parts of house: living room, kitchen, bedroom, bathroom, toilet, garden\n- Where's he/she? He/She's in the living room.",
-      "status": "completed",
-      "last_activity_date": "2026-03-07",
-      "days_since_last_practice": 45,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 44,
-          "audio_turns": 37,
-          "avg_reaction_ms": 1543,
-          "fastest_reaction_ms": 703,
-          "total_duration_ms": 5953,
-          "session_status": "COMPLETED",
-          "completion_pct": 85
-        },
-        "is_completed": true,
-        "completion_pct": 85,
-        "latest_session_date": "2026-03-07",
-        "pronunciation_attempts": 27,
-        "pronunciation_score_avg": 97.0,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1,
-          "incorrect": 1
-        },
-        "conversation_attempts": 7,
-        "conversation_score_avg": 87.29,
-        "worst_speaking_items": [
-          {
-            "lms_type": "brainstorm",
-            "question": "Anything else?",
-            "expected_answer": null,
-            "target_objects": [
-              "bathroom",
-              "bedroom",
-              "kitchen",
-              "living room"
-            ],
-            "user_transcript": "It's.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-07",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmfplhyn-09d5985c-audio.wav",
-            "reaction_time_ms": 4114
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "Have a look at this picture. What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "bathroom",
-              "bedroom",
-              "kitchen",
-              "living room"
-            ],
-            "user_transcript": "Is it a home?",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "house"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-07",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmfpl6pe-a2eced61-audio.wav",
-            "reaction_time_ms": 2509
-          },
-          {
-            "lms_type": "free_speaking",
-            "question": "How do you feel now?",
-            "expected_answer": null,
-            "target_objects": null,
-            "user_transcript": "His family?",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-07",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmfpk36p-000cb747-audio.wav",
-            "reaction_time_ms": 2519
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7708,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-03-07"
-        },
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 7708,
-          "luyen_tap": 13327
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 20,
-            "total": 20,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3763399,
-      "program_id": null,
-      "level": 2,
-      "position": 4,
-      "title": "Unit 1A: Toys - Lesson 4: There's one ball.",
-      "desc": "- Từ vựng: - Toys: ball, doll, teddy bear, car, bike, puzzle, block; Numbers: 1-10\n- Mẫu câu: \n+ What's this? It's a ball.\n+ What are they? They're cars and balls.\n+ How many balls are there? There's",
-      "status": "completed",
-      "last_activity_date": "2026-03-08",
-      "days_since_last_practice": 44,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 0,
-          "audio_turns": 50,
-          "avg_reaction_ms": 1189,
-          "fastest_reaction_ms": 348,
-          "total_duration_ms": 6069,
-          "session_status": "COMPLETED",
-          "completion_pct": 85
-        },
-        "is_completed": true,
-        "completion_pct": 85,
-        "latest_session_date": "2026-02-21",
-        "pronunciation_attempts": 22,
-        "pronunciation_score_avg": 91.64,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1
-        },
-        "conversation_attempts": 7,
-        "conversation_score_avg": 81.79,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Interesting! Do you ride the bike with the bus often? 🚲",
-            "expected_answer": "Yes, I ride the bike with the bus often.",
-            "target_objects": null,
-            "user_transcript": "This, I ride the bike with the.",
-            "score": 58,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 16,
-            "timestamp": "2026-02-21",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/21/admin/mlvot7co-4c81404e-audio.wav",
-            "reaction_time_ms": 1207
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Oh, I see. Do you mean the bike comes to you or it has a special part? 😊",
-            "expected_answer": "My bike comes with a basket and bell.",
-            "target_objects": null,
-            "user_transcript": "My bike comes with a bus.",
-            "score": 67.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 88,
-            "grammar_score": 47,
-            "timestamp": "2026-02-21",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/21/admin/mlvosrum-fbad8e5d-audio.wav",
-            "reaction_time_ms": 1207
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "Bike",
-              "Car",
-              "Block",
-              "Puzzle"
-            ],
-            "user_transcript": "This is a bike.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "bike"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-02-21",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/21/admin/mlvo4619-24d3825f-audio.wav",
-            "reaction_time_ms": 1120
-          },
-          {
-            "lms_type": "free_speaking",
-            "question": "What toys do you like?",
-            "expected_answer": null,
-            "target_objects": null,
-            "user_transcript": "And.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-02-21",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/21/admin/mlvo2sp1-b7708351-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7707,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-03-08"
-        },
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 7707,
-          "luyen_tap": 13224
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 20,
-            "total": 20,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3763400,
-      "program_id": null,
-      "level": 2,
-      "position": 5,
-      "title": "Unit 1A: Toys - Lesson 5: There're 5 balls.",
-      "desc": "- Từ và âm: \n+ /æ/: cat, fan\n+ /e/:  ten, pen\n- Từ vựng: ball, doll, teddy bear, car, bike, puzzle, block; Numbers: 1-10\n- Mẫu câu: \n+ Hello, What's your name? My name's Tony.\n+ How are you? I'm good/",
-      "status": "completed",
-      "last_activity_date": "2026-03-08",
-      "days_since_last_practice": 44,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 0,
-          "audio_turns": 72,
-          "avg_reaction_ms": 1185,
-          "fastest_reaction_ms": 351,
-          "total_duration_ms": 5968,
-          "session_status": "COMPLETED",
-          "completion_pct": 85
-        },
-        "is_completed": true,
-        "completion_pct": 85,
-        "latest_session_date": "2026-02-22",
-        "pronunciation_attempts": 39,
-        "pronunciation_score_avg": 58.31,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1
-        },
-        "conversation_attempts": 7,
-        "conversation_score_avg": 72.07,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Do you mean she leaves it where you sleep? 🧸",
-            "expected_answer": "Yes, she leaves it on my bed.",
-            "target_objects": null,
-            "user_transcript": "Yes, she loves it on my.",
-            "score": 63,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 80,
-            "grammar_score": 46,
-            "timestamp": "2026-02-22",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx8cy8k-21e4e12d-audio.wav",
-            "reaction_time_ms": 913
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Oh, maybe you mean she gave it when you were small. 😊",
-            "expected_answer": "Yes, she gave it when I was small.",
-            "target_objects": null,
-            "user_transcript": "Yes, she leaves it where I.",
-            "score": 51,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 87,
-            "grammar_score": 15,
-            "timestamp": "2026-02-22",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx8cmei-9aa5210b-audio.wav",
-            "reaction_time_ms": 913
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Good. Who gave you the teddy bear? 🧸",
-            "expected_answer": "My mom gave me the teddy bear when I was three.",
-            "target_objects": null,
-            "user_transcript": "My mom gave it to me.",
-            "score": 64,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 33,
-            "grammar_score": 95,
-            "timestamp": "2026-02-22",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx8buf5-da7b5651-audio.wav",
-            "reaction_time_ms": 913
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice, toys are fun. What toy do you like best? 😄",
-            "expected_answer": "I like my teddy bear. It is soft and I sleep with it.",
-            "target_objects": null,
-            "user_transcript": "I like my teddy bear. It is sharp and I sleep.",
-            "score": 66.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 85,
-            "grammar_score": 48,
-            "timestamp": "2026-02-22",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx8azmd-aecfe151-audio.wav",
-            "reaction_time_ms": 913
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "bike",
-              "ball",
-              "blocks",
-              "teddy bear",
-              "doll",
-              "car",
-              "puzzles"
-            ],
-            "user_transcript": "This is a bike.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "bike"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-02-22",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/22/admin/mlx7i295-fb2a5a6b-audio.wav",
-            "reaction_time_ms": 1647
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7710,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-03-08"
-        },
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 7710,
-          "luyen_tap": 13309
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 20,
-            "total": 20,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3763401,
-      "program_id": null,
-      "level": 2,
-      "position": 7,
-      "title": "Unit 2A: My home - Lesson 1: He's my father.",
-      "desc": "- Family members\n- parts of house\n- sound: ə\n- Social science: Nuclear family and extended family",
-      "status": "completed",
-      "last_activity_date": "2026-03-08",
-      "days_since_last_practice": 44,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 59,
-          "audio_turns": 43,
-          "avg_reaction_ms": 1669,
-          "fastest_reaction_ms": 810,
-          "total_duration_ms": 5944,
-          "session_status": "COMPLETED",
-          "completion_pct": 85
-        },
-        "is_completed": true,
-        "completion_pct": 85,
-        "latest_session_date": "2026-02-28",
-        "pronunciation_attempts": 32,
-        "pronunciation_score_avg": 84.75,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1
-        },
-        "conversation_attempts": 7,
-        "conversation_score_avg": 85.79,
-        "worst_speaking_items": [
-          {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "father",
-              "mother",
-              "son",
-              "family"
-            ],
-            "user_transcript": "This is a family.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "family"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-02-28",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/28/admin/mm5nb8jb-70973d11-audio.wav",
-            "reaction_time_ms": 1916
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7695,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-03-08"
-        },
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 7695,
-          "luyen_tap": 13313
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 20,
-            "total": 20,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3763404,
-      "program_id": null,
-      "level": 2,
-      "position": 10,
-      "title": "Unit 2A: My home - Lesson 4: They're in the garden.",
-      "desc": "- parts of house: living room, kitchen, bedroom, bathroom, toilet, garden (R)\n- Where are they? They're in the garden.",
-      "status": "completed",
-      "last_activity_date": "2026-03-08",
-      "days_since_last_practice": 44,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 44,
-          "audio_turns": 50,
-          "avg_reaction_ms": 1781,
-          "fastest_reaction_ms": 868,
-          "total_duration_ms": 5979,
-          "session_status": "COMPLETED",
-          "completion_pct": 85
-        },
-        "is_completed": true,
-        "completion_pct": 85,
-        "latest_session_date": "2026-03-08",
-        "pronunciation_attempts": 33,
-        "pronunciation_score_avg": 87.33,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 74.36,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Good. Who do you eat with on the boat 😊",
-            "expected_answer": "I eat with my family on the boat.",
-            "target_objects": null,
-            "user_transcript": "I eat with my favorite on the",
-            "score": 59,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 18,
-            "timestamp": "2026-03-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh6hhy6-9666859d-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Do you mean you talk about cheese on the boat or on the table? 🧀",
-            "expected_answer": "I mean cheese on the boat. I eat cheese on the boat.",
-            "target_objects": null,
-            "user_transcript": "I watch dress on the boat. I eat on.",
-            "score": 65,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 91,
-            "grammar_score": 39,
-            "timestamp": "2026-03-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh6fvkm-3398cba1-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Oh, you want to walk a boat — do you mean take a boat trip or walk near the water? 🌊",
-            "expected_answer": "I mean take a boat trip on the river.",
-            "target_objects": null,
-            "user_transcript": "I talk about cheese on the",
-            "score": 57.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 15,
-            "timestamp": "2026-03-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh6ffcz-af3967ac-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi, nice to see you. Ready to practice Unit 2A - Lesson 4 review? 🌟",
-            "expected_answer": "Yes, I am ready. I want to talk about my house.",
-            "target_objects": null,
-            "user_transcript": "Yes, I want to walk a boat.",
-            "score": 58,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 78,
-            "grammar_score": 38,
-            "timestamp": "2026-03-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh6eze4-98041864-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Oh, do you mean you read the lesson? 😊 Tell me one sentence from it.",
-            "expected_answer": "I read the lesson about rooms. It says: This is the living room.",
-            "target_objects": null,
-            "user_transcript": "I read the lesson and rooms it says this is the.",
-            "score": 58.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 17,
-            "timestamp": "2026-03-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/08/admin/mmh67tnf-e24f7545-audio.wav",
-            "reaction_time_ms": 1219
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7712,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-03-08"
-        },
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 7712,
-          "luyen_tap": 13441
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 20,
-            "total": 20,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3763405,
-      "program_id": null,
-      "level": 2,
-      "position": 11,
-      "title": "Unit 2A: My home - Lesson 5: They're in the living room.",
-      "desc": "- family members:  mother, father, brother, sister, grandmother, grandfather, parents, grandparents, son, daughter (R) \n- Who's he/ she? He/She's my father/ mother.\n- Who are they? They're my parents.",
-      "status": "completed",
-      "last_activity_date": "2026-03-14",
-      "days_since_last_practice": 38,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 52,
-          "audio_turns": 54,
-          "avg_reaction_ms": 1312,
-          "fastest_reaction_ms": 410,
-          "total_duration_ms": 5938,
-          "session_status": "COMPLETED",
-          "completion_pct": 85
-        },
-        "is_completed": true,
-        "completion_pct": 85,
-        "latest_session_date": "2026-03-14",
-        "pronunciation_attempts": 40,
-        "pronunciation_score_avg": 79.97,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
-        "conversation_attempts": 7,
-        "conversation_score_avg": 76.5,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice. What do you watch on TV together? 📺",
-            "expected_answer": "We watch cartoons and news together.",
-            "target_objects": null,
-            "user_transcript": "Which we read carrots and news.",
-            "score": 49.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 83,
-            "grammar_score": 16,
-            "timestamp": "2026-03-14",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/14/admin/mmpncf2s-a263f452-audio.wav",
-            "reaction_time_ms": 1011
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi, nice to see you. Are you ready to practice Unit 2A - Lesson 5? 😄",
-            "expected_answer": "Yes, I'm ready. Let's practice family words.",
-            "target_objects": null,
-            "user_transcript": "Yes, I read this family.",
-            "score": 63.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 86,
-            "grammar_score": 41,
-            "timestamp": "2026-03-14",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/14/admin/mmpna08v-dd1ffe92-audio.wav",
-            "reaction_time_ms": 1011
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "Parents",
-              "Mother",
-              "Father",
-              "Grandmother",
-              "Grandfather",
-              "Grandparents",
-              "Son",
-              "Daughter"
-            ],
-            "user_transcript": "I went that in nowhere.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-14",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/14/admin/mmpmmyfy-3ecb933a-audio.wav",
-            "reaction_time_ms": 416
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "Parents",
-              "Mother",
-              "Father",
-              "Grandmother",
-              "Grandfather",
-              "Grandparents",
-              "Son",
-              "Daughter"
-            ],
-            "user_transcript": "I can see family.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-14",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/14/admin/mmpmmqdb-608ad707-audio.wav",
-            "reaction_time_ms": 1304
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7714,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-03-14"
-        },
-        "luyen_tap": {
-          "practice_id": 13450,
-          "score": null,
-          "correct": 0,
-          "total": 20,
-          "submitted_date": "2026-03-14"
-        },
-        "lms_ids": {
-          "bai_tap": 7714,
-          "luyen_tap": 13450
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 20,
-            "total": 20,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
       }
     }
   ]

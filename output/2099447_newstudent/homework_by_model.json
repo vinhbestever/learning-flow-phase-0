@@ -1,0 +1,531 @@
+{
+  "version": 1,
+  "last_run_model": "gpt-5.4",
+  "models": {
+    "gpt-5.4": {
+      "updated_at": "2026-05-04T04:30:59.854783+00:00",
+      "diagnostic": "Ba rủi ro nghiêm trọng nhất tôi quan sát được là: thứ nhất, kỹ năng brainstorm nói theo ảnh đang rất yếu và yếu một cách lặp lại ở cả 3 bài; thứ hai, học sinh có mẫu lỗi ngữ pháp cốt lõi với cấu trúc there is/there are, some/any, số ít/số nhiều và trật tự từ trong câu hỏi; thứ ba, trí nhớ sau học đang xuống mạnh vì cả 3 bài đều đã cách khá lâu, đặc biệt 2 bài cách 92 ngày gần như thuộc nhóm có nguy cơ quên gần hoàn toàn, nên nếu không ôn lại có hệ thống thì phần nói và phần ngữ pháp dễ rơi rụng thêm.\n\nMẫu lỗi lớn nhất là brainstorm rất yếu dù các từ học sinh nói ra thường vẫn “hợp lệ”. Điểm brainstorm trung bình chỉ 16.67/100, ở mức critical. Điều quan trọng là ở đây không nên hiểu là học sinh nói sai hoàn toàn; dữ liệu cho thấy phân bố answer đều là correct, nghĩa là các từ em nói ra vẫn nằm trong phạm vi chấp nhận được, nhưng em không gọi đúng hoặc không gọi đủ các từ mục tiêu cần lấy từ bức tranh. Đây là dấu hiệu của thiếu độ bao phủ từ vựng chủ điểm và thiếu kỹ năng quét tranh để liệt kê đúng nhóm từ đã học. Ở Lesson 1, khi nhìn tranh côn trùng, em trả lời “It is a An.” trong khi targets là ladybug, butterfly, spider, ant, insects, worm; điều này cho thấy em có thể nhận ra có con vật nhưng không truy xuất được từ mục tiêu chính xác. Ở Lesson 3, em nói được rainbow nhưng lại thêm tree, rock là các từ không thuộc bộ mục tiêu, đồng thời bỏ sót Wind, Cloud, Sky; đây là kiểu “nói lan sang vật nhìn thấy” thay vì bám đúng bộ từ đã học. Ngay cả Lesson 2, điểm brainstorm hiển thị rất cao bất thường trong dữ liệu tổng hợp, nhưng khi nhìn toàn cục thì kỹ năng brainstorm vẫn bị hệ thống gắn nhãn critical, vì vậy về mặt sư phạm vẫn nên xem đây là lỗ hổng ưu tiên số một: học sinh chưa ổn ở việc nhìn tranh và bật ra đúng danh sách từ mục tiêu của bài. Dạng câu hỏi hiệu quả nhất cho cả 3 bài sẽ là gọi tên theo ảnh có giới hạn mục tiêu, đặc biệt dạng “chỉ vào vật được khoanh tròn”, “nhìn tranh và chọn đúng từ”, “nhìn tranh và nói đủ 3–5 từ mục tiêu”, rồi tăng dần sang “What can you see?” nhưng có khung gợi ý từ khóa. Với Lesson 1 nên tập trung vào ant, spider, butterfly, ladybug, worm, insects. Với Lesson 3 nên ép bám đúng bộ weather/nature words như wind, cloud, rainbow, sun, sky, tránh để em kể thêm tree/rock là từ ngoài mục tiêu. Lesson 2 có thể dùng brainstorm nhẹ hơn, nhưng vẫn nên kiểm tra lại khả năng gọi tên flowers/trees/leaves trước khi chuyển sang câu đầy đủ.\n\nMẫu lỗi nghiêm trọng thứ hai là ngữ pháp nền tảng của chủ điểm còn chông chênh, đặc biệt ở các cấu trúc đếm số lượng và tồn tại. Đây là lỗi xuất hiện ở cả bài tập viết lẫn hội thoại nói, nên không phải lỗi nhất thời. Ở Lesson 1, em sai “How many are there insects?” thay vì “How many insects are there?”, cho thấy chưa vững trật tự từ trong câu hỏi. Em cũng chọn “There’re one ant” và “There’s two insects”, cho thấy nhầm giữa số ít/số nhiều và giữa there’s/there’re. Ở Lesson 3, em sai “Is there some wind?” và điền “a” thay vì “any”, đồng thời không nhận ra lỗi trong “Yes, there is not.”; điều này cho thấy cặp some/any và mẫu trả lời yes/no với there is vẫn chưa tự động hóa. Trong phần conversation của Lesson 2, em nói “I like trees with the a big.” thay vì “because they are big”, và “They live in green.” thay vì “The leaves are green.”; đây là dấu hiệu em có ý tưởng nhưng chưa ráp được câu mô tả đúng cấu trúc. Nhìn chung, học sinh không yếu viết theo diện rộng vì accuracy tổng thể vẫn rất cao, nên đây là lỗi điểm rơi vào đúng các cấu trúc ngữ pháp mục tiêu của unit, chứ không phải yếu toàn bộ kỹ năng viết. Vì vậy, dạng luyện hiệu quả nhất không phải bài viết dài, mà là drill ngắn, lặp có kiểm soát: đổi số ít/số nhiều, chọn there is/there are, sửa câu sai, sắp xếp từ thành câu hỏi đúng, và hỏi–đáp nhanh với any/some. Lesson 1 cần deep practice mạnh nhất cho “How many … are there?” và “There is/There are + singular/plural noun”. Lesson 3 cần deep practice cho “Is there any …?”, “Yes, there is./No, there isn’t.” và phân biệt some/any. Lesson 2 chỉ cần reinforcement mức vừa cho mẫu câu mô tả “I like … because …” và “The leaves are green.”\n\nMẫu rủi ro thứ ba là quên bài theo thời gian, khiến các điểm yếu trên có khả năng là lỗi do rơi trí nhớ chứ không chỉ do chưa hiểu. Cả 3 bài đều chỉ có 1 lần luyện trước, nên độ bền trí nhớ thấp. Hai bài Lesson 1 và Lesson 2 đã cách 92 ngày, tức thuộc nhóm gần như quên gần hoàn toàn; Lesson 3 cách 38 ngày cũng đã ở mức quên đáng kể. Vì vậy, xét ưu tiên ôn tập, Lesson 2 cần đào sâu nhất vì vừa rất cũ vừa có weakness cao nhất 0.77, lại có free speaking bằng 0 và conversation còn lỗi ngữ pháp rõ. Lesson 1 cũng cần deep practice vì rất cũ 92 ngày và có lỗi thật trong homework lẫn brainstorm bằng 0. Đây là bài nên ôn lại gần như từ nền: từ vựng côn trùng, đếm số lượng, hỏi “How many…?”, và trả lời there are. Lesson 3 có thể xếp mức ôn sâu vừa phải hoặc deep practice ngắn: conversation của em khá tốt 96 và pronunciation 82, free speaking cũng tốt, nhưng homework cho thấy em vẫn hổng đúng cấu trúc mục tiêu some/any và brainstorm vẫn bằng 0, nên không nên chỉ ôn lướt. Nói ngắn gọn, Lesson 2 là ưu tiên số một, Lesson 1 là ưu tiên số hai rất sát, Lesson 3 là ưu tiên số ba nhưng vẫn cần ôn có mục tiêu chứ không chỉ nhắc lại.\n\nNếu nhìn theo kỹ năng, phần viết không phải vùng yếu chính vì accuracy LMS rất cao và không có weak skills viết diện rộng. Điểm yếu thật sự nằm ở nói, nhất là brainstorm, và ở việc chuyển từ biết rời rạc sang dùng đúng cấu trúc mục tiêu. Pronunciation trung bình 74.29 là tạm được, không phải nút thắt lớn nhất; conversation trung bình 84.14 cũng cho thấy khi có khung hội thoại rõ, em vẫn theo được khá ổn. Điều này rất quan trọng cho việc chọn câu hỏi: nên ưu tiên câu hỏi có scaffold, từ nhận diện đến sản xuất có kiểm soát, thay vì ném ngay câu mở hoàn toàn. Free speaking hiện không ổn định: một bài 0, một bài 100, nên không nên dùng warmup mở làm công cụ chính để chẩn đoán kiến thức bài học. Nó phù hợp hơn để khởi động ngắn, còn phần luyện chính nên là tranh + mẫu câu.\n\nCụ thể theo từng bài, Lesson 2 cần deep practice toàn diện nhất. Nên dùng câu hỏi hội thoại ngắn có mẫu rõ để sửa câu mô tả sở thích và đặc điểm sự vật, ví dụ “What do you like about trees?” với khung “I like trees because they are …”, và “What color are the leaves?” với khung “The leaves are …”. Có thể thêm nhắc từ vựng flowers, leaves, trees bằng tranh trước khi vào câu. Vì bài này còn có free speaking 0 với câu trả lời không liên quan, nên khi warmup cần câu cực ngắn, gần gũi, có lựa chọn, tránh câu quá mở.\n\nLesson 1 cần deep practice theo hướng ngữ pháp + từ vựng. Đây là bài phù hợp nhất với dạng sắp xếp từ thành câu, chọn đáp án đúng theo số lượng, nhìn tranh đếm rồi trả lời, và drill hỏi–đáp “How many insects are there?” → “There are six ants.” Cần ép học sinh phân biệt one ant với two insects, there’s với there’re, và gọi đúng tên côn trùng trong tranh. Đây cũng là bài nên dùng nhiều câu hỏi nhận diện trước, vì brainstorm hiện cho thấy em chưa truy xuất từ mục tiêu ổn định.\n\nLesson 3 cần reinforcement có trọng tâm hơn là ôn tràn lan. Vì conversation và pronunciation ở bài này khá tốt, nên không cần dành quá nhiều thời lượng cho hội thoại mở. Hiệu quả nhất là câu hỏi sửa lỗi, điền từ some/any, yes/no answer với there is, và brainstorm theo tranh thời tiết nhưng giới hạn đúng bộ từ mục tiêu. Mục tiêu là kéo em từ mức “nhìn thấy gì cũng kể” sang “nói đúng những từ của bài”. Nếu làm tốt phần này, bài 3 có thể phục hồi khá nhanh hơn hai bài còn lại.\n\nTóm lại, hồ sơ này cho thấy học sinh không yếu toàn diện mà yếu tập trung ở truy xuất từ vựng theo tranh và dùng đúng cấu trúc ngữ pháp mục tiêu khi nói. Hai bài 92 ngày cần xem như ôn phục hồi trí nhớ sâu, không chỉ nhắc lại. Thứ tự ưu tiên nên là Lesson 2, rồi Lesson 1, rồi Lesson 3. Dạng câu hỏi hiệu quả nhất là tranh có mục tiêu rõ, drill câu mẫu ngắn, sửa lỗi ngữ pháp có kiểm soát, và hỏi–đáp cấu trúc thay vì free speaking quá mở.",
+      "homework": [
+        {
+          "question_no": 1,
+          "lesson_id": 3640586,
+          "lesson_title": "Unit 1A : Nature - Lesson 2: There're some flowers.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
+          "correct_answer": "B. There aren't any leaves.",
+          "difficulty": "hard",
+          "reason": "Bài Lesson 2 là ưu tiên số 1 trong chẩn đoán vì weakness=0.77 và đã học cách đây 92 ngày nên nguy cơ quên gần như hoàn toàn. Phần nói của bài này có free speaking = 0 và học sinh từng nói lệch cấu trúc như \"They live in green.\" thay vì \"The leaves are green.\", nên cần ôn lại cụm leaves và mẫu phủ định there aren't any.",
+          "question_id": 302897,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. There are three trees.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. There aren't any leaves.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. There are some leaves.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "audio: There aren&#39;t any leaves. leaves: lá cây ( số &iacute;t: leaf)",
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 2,
+          "lesson_id": 3640585,
+          "lesson_title": "Unit 1A : Nature - Lesson 1: There's one spider.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the words (Con hãy đọc và sắp xếp các từ thành câu hoàn chỉnh.) /insects/there?/How/are/many/",
+          "correct_answer": "B. How many insects are there?",
+          "difficulty": "hard",
+          "reason": "Học sinh đã trả lời sai câu này trước đó: điền/chọn \"A. How many are there insects?\" thay vì \"B. How many insects are there?\". Bài đã học cách đây 92 ngày, và chẩn đoán nêu rõ lỗi trật tự từ trong câu hỏi \"How many ... are there?\" là lỗi ngữ pháp cốt lõi cần sửa ngay.",
+          "question_id": 302824,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. How many are there insects?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. How many insects are there?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. How many insects there are?",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 3,
+          "lesson_id": 3681506,
+          "lesson_title": "Unit 1A : Nature - Lesson 3: Is there any wind?",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose correct answer (Con hãy nghe và chọn câu trả lời đúng.) Is there ... wind?",
+          "correct_answer": "B. any",
+          "difficulty": "medium",
+          "reason": "Bài này đã học cách đây 38 ngày và chẩn đoán cho thấy học sinh sai đúng cấu trúc mục tiêu: dùng \"some\" trong câu hỏi \"Is there some wind?\" và còn điền \"a\" thay vì \"any\". Vì brainstorm của Lesson 3 cũng bằng 0/100, cần củng cố lại mẫu câu ngắn có kiểm soát trước khi nói mở rộng.",
+          "question_id": 303175,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. some",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. any",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "audio: Is there any wind? wind: gi&oacute;",
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 4,
+          "lesson_id": 3640586,
+          "lesson_title": "Unit 1A : Nature - Lesson 2: There're some flowers.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the correct sentence (Con hãy đọc và sắp xếp thành câu hoàn chỉnh.) /many/How/there?/are/flowers/",
+          "correct_answer": "B. How many flowers are there?",
+          "difficulty": "hard",
+          "reason": "Bài đã học cách đây 92 ngày nên cần phục hồi trí nhớ sâu, nhất là vì Lesson 2 được chẩn đoán là bài yếu nhất. Mẫu lỗi trật tự từ trong câu hỏi đã xuất hiện ở Lesson 1 với \"How many are there insects?\", nên câu này giúp chuyển lỗi đó sang chủ điểm flowers để tránh học thuộc máy móc.",
+          "question_id": 302916,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. How many flowers there are?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. How many flowers are there?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. How are there many flowers?",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 5,
+          "lesson_id": 3640585,
+          "lesson_title": "Unit 1A : Nature - Lesson 1: There's one spider.",
+          "skill_category": "grammar",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Match (Con hãy di chuyển các ô ở cột bên phải để nối từ với ảnh đúng.)",
+          "correct_answer": "→spider; →ant; →butterfly; →ladybug",
+          "difficulty": "medium",
+          "reason": "Bài này đã học cách đây 92 ngày và brainstorm của Lesson 1 chỉ 0/100; học sinh nói \"It is a An.\" thay vì gọi đúng các từ mục tiêu như ant, spider, butterfly, ladybug. Câu nối từ với ảnh giúp sửa đúng lỗ hổng truy xuất từ vựng theo tranh mà chẩn đoán xem là rủi ro nghiêm trọng nhất.",
+          "question_id": 392135,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A1",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/16/3d34_spider.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A2",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/16/f3d5_ant.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A3",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/16/548a_butterfly.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A4",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/16/d3dd_ladybug.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B1",
+              "text": "ladybug",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B2",
+              "text": "spider",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B3",
+              "text": "butterfly",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B4",
+              "text": "ant",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 6,
+          "lesson_id": 3681506,
+          "lesson_title": "Unit 1A : Nature - Lesson 3: Is there any wind?",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the sentence (Con hãy đọc và sắp xếp thành câu hoàn chỉnh.) /there/Is/wind?/any/",
+          "correct_answer": "B. Is there any wind?",
+          "difficulty": "medium",
+          "reason": "Bài đã học cách đây 38 ngày; đây đúng là cấu trúc mà học sinh đang hổng vì từng nói \"Is there some wind?\" thay vì dùng \"any\" trong câu hỏi. Chẩn đoán cũng nêu em chưa tự động hóa mẫu yes/no với there is, nên cần drill lại từ câu hỏi chuẩn trước.",
+          "question_id": 303255,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Is any there wind?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. Is there any wind?",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 7,
+          "lesson_id": 3640585,
+          "lesson_title": "Unit 1A : Nature - Lesson 1: There's one spider.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer (Con hãy đọc và chọn câu trả lời đúng.) How many ants are there?",
+          "correct_answer": "A. There're six ants.",
+          "difficulty": "hard",
+          "reason": "Học sinh đã trả lời sai câu này trước đó: điền/chọn \"C. There're one ant.\" thay vì \"A. There're six ants.\". Bài đã học cách đây 92 ngày, và chẩn đoán chỉ ra lỗi số ít/số nhiều cùng nhầm there is/there are là lỗi lặp lại ở Lesson 1.",
+          "question_id": 372680,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. There're six ants.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. There's six ants.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. There're one ant.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "How many ants are there? C&oacute; bao nhi&ecirc;u con kiến. Trả lời: There&#39;s + danh từ số &iacute;t; There&#39;re + danh từ số nhiều => Đáp án: A (C&oacute; 6 con kiến.)",
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 8,
+          "lesson_id": 3640586,
+          "lesson_title": "Unit 1A : Nature - Lesson 2: There're some flowers.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the correct sentence (Con hãy đọc và sắp xếp thành câu hoàn chỉnh.) /aren't/any/There/leaves/./",
+          "correct_answer": "A. There aren't any leaves.",
+          "difficulty": "medium",
+          "reason": "Bài đã học cách đây 92 ngày và Lesson 2 là bài cần deep practice mạnh nhất theo chẩn đoán. Học sinh có free speaking 0/100 ở bài này và từng nói câu mô tả sai cấu trúc như \"They live in green.\", nên cần quay về mẫu câu ngắn chuẩn với there aren't any + danh từ số nhiều.",
+          "question_id": 302917,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. There aren't any leaves.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. There aren't leaves any.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. There any aren't leaves.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 9,
+          "lesson_id": 3681506,
+          "lesson_title": "Unit 1A : Nature - Lesson 3: Is there any wind?",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose correct answer (Con hãy nghe và chọn câu trả lời đúng.) Is there any ...?",
+          "correct_answer": "A. sun",
+          "difficulty": "medium",
+          "reason": "Bài này đã học cách đây 38 ngày; dù conversation khá tốt, brainstorm của Lesson 3 vẫn 0/100 và học sinh có xu hướng kể lan sang từ ngoài mục tiêu như \"tree, rock\" thay vì bám bộ weather words. Câu này giúp kéo em quay lại đúng nhóm từ mục tiêu của bài như sun/wind/cloud/sky.",
+          "question_id": 303170,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. sun",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. wind",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "audio: Is there any sun? sun: mặt trời",
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 10,
+          "lesson_id": 3640586,
+          "lesson_title": "Unit 1A : Nature - Lesson 2: There're some flowers.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Choose the correct answer. (Con hãy chọn phương án đúng.) How many flowers are there?",
+          "correct_answer": "B. There're some flowers.",
+          "difficulty": "medium",
+          "reason": "Bài đã học cách đây 92 ngày nên cần ôn lại từ nền; Lesson 2 cũng là bài có weakness cao nhất 0.77. Trong phần conversation, học sinh nói \"I like trees with the a big.\" thay vì \"because they are big\", cho thấy em có ý nhưng ráp câu chưa chắc; vì vậy câu hỏi ngắn theo mẫu cố định sẽ phù hợp hơn nói mở.",
+          "question_id": 302915,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. There're any mushrooms.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. There're some flowers.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. There're some trees.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "flower: b&ocirc;ng hoa",
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 11,
+          "lesson_id": 3681506,
+          "lesson_title": "Unit 1A : Nature - Lesson 3: Is there any wind?",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Odd one out (Con hãy đọc và chọn phương án khác loại.)",
+          "correct_answer": "C. Ladybug",
+          "difficulty": "easy",
+          "reason": "Bài đã học cách đây 38 ngày; chẩn đoán cho thấy học sinh ở Lesson 3 hay nói các từ nhìn thấy nhưng không thuộc bộ mục tiêu, ví dụ thêm \"tree, rock\" và bỏ sót \"Wind, Cloud, Sky\". Câu phân loại này giúp em tách rõ nhóm weather/nature của Lesson 3 với nhóm côn trùng như ladybug.",
+          "question_id": 303248,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Sun",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. Sky",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. Ladybug",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 12,
+          "lesson_id": 3640586,
+          "lesson_title": "Unit 1A : Nature - Lesson 2: There're some flowers.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the correct sentence (Con hãy đọc và sắp xếp thành câu hoàn chỉnh.) /There're/five/trees/ garden./in/t",
+          "correct_answer": "C. There're five trees in the garden.",
+          "difficulty": "medium",
+          "reason": "Bài đã học cách đây 92 ngày và Lesson 2 cần phục hồi mạnh vì chỉ có 1 lần luyện trước đó. Chẩn đoán ghi nhận học sinh từng nói \"I like trees with the a big.\" nên cần thêm một câu mẫu đúng về trees để củng cố both từ vựng và trật tự câu.",
+          "question_id": 302918,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. There're trees in the five garden.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. There're trees in five the garden.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. There're five trees in the garden.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 13,
+          "lesson_id": 3681506,
+          "lesson_title": "Unit 1A : Nature - Lesson 3: Is there any wind?",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Odd one out (Con hãy đọc và chọn phương án khác loại.)",
+          "correct_answer": "C. Insects",
+          "difficulty": "easy",
+          "reason": "Bài này đã học cách đây 38 ngày; vì học sinh đang lẫn nhóm từ khi brainstorm, cần bài tách loại để tránh kể sai chủ điểm. Ở Lesson 3 em nói được \"rainbow\" nhưng lại thêm từ ngoài bộ mục tiêu như \"tree, rock\", nên việc nhận ra \"insects\" là khác loại sẽ giúp khóa lại phạm vi từ vựng đúng.",
+          "question_id": 303252,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Sky",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. Wind",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. Insects",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 14,
+          "lesson_id": 3640585,
+          "lesson_title": "Unit 1A : Nature - Lesson 1: There's one spider.",
+          "skill_category": "speaking",
+          "question_type": "speaking",
+          "question_text": "Look at insect pictures and say 4 target words only: ant, spider, butterfly, ladybug.",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Bài Lesson 1 đã học cách đây 92 ngày và brainstorm của bài này là 0/100. Học sinh từng nói \"It is a An.\" thay vì gọi đúng các từ mục tiêu, nên cần một bài nói có khung rất rõ để luyện truy xuất đúng từ theo tranh.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 15,
+          "lesson_id": 3640586,
+          "lesson_title": "Unit 1A : Nature - Lesson 2: There're some flowers.",
+          "skill_category": "speaking",
+          "question_type": "speaking",
+          "question_text": "Answer with a full sentence: What do you like about trees? Use the frame \"I like trees because they are ____.\"",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Bài này đã học cách đây 92 ngày và Lesson 2 là bài yếu nhất theo chẩn đoán; free speaking của bài còn 0/100 nên cần nói có scaffold. Học sinh từng nói \"I like trees with the a big.\" thay vì \"because they are big\", vì vậy câu này nhắm đúng lỗi ráp câu mô tả sở thích.",
+          "question_id": null,
+          "requires_media": false
+        }
+      ]
+    }
+  }
+}

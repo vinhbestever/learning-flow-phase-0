@@ -1,0 +1,465 @@
+{
+  "version": 1,
+  "last_run_model": "gpt-5.4",
+  "models": {
+    "gpt-5.4": {
+      "updated_at": "2026-05-04T04:28:26.330323+00:00",
+      "diagnostic": "Ba mẫu lỗi và rủi ro nghiêm trọng nhất là: thứ nhất, học sinh yếu rất nặng ở nói tự tạo câu, đặc biệt brainstorm và free speaking, gần như không lấy được từ mục tiêu và thường trả lời lạc đề hoặc chỉ nói mẩu rất ngắn; thứ hai, có mẫu lỗi lặp lại về hội thoại cấu trúc ở mức câu cơ bản, tức là dù gặp các mẫu cực quen như giới thiệu tên, tuổi, màu sắc, đồ vật, học sinh vẫn thường trả lời thiếu chủ-vị, dùng câu không khớp câu hỏi, hoặc bám vào một vài mảnh câu như “I am”, “I like”, “That”; thứ ba, trí nhớ sau học đang là rủi ro lớn ở các bài cũ 23–40 ngày, vì tất cả bài chỉ mới có 1 lần luyện trước nên các bài Greetings cũ nhiều khả năng đã quên mạnh, trong khi kỹ năng viết nhìn chung vẫn tốt, nghĩa là vấn đề chính không phải nhận biết trên giấy mà là gọi lại ngôn ngữ khi phải nói.\n\nMẫu nghiêm trọng nhất là khoảng trống ở kỹ năng nói chủ động. Dữ liệu tổng cho thấy brainstorm trung bình 0/100 ở toàn bộ chương trình và free speaking chỉ 9.09/100, đây là mức rất yếu đối với Phase 0. Phân bố câu trả lời cũng xác nhận điều này: brainstorm có 17 lần incorrect và chỉ 6 lần correct, nhưng ngay cả các lần correct cũng theo định nghĩa là từ nói ra hợp lệ chứ chưa đủ số mục tiêu; vì vậy học sinh không chỉ thiếu độ đầy đủ mà còn thường không truy xuất đúng nhóm từ cần nói. Ở free speaking, 8 câu inaccordant và 2 câu lack_of_knowledge cho thấy học sinh thường không hiểu cần đáp gì hoặc không có ngôn ngữ để đáp. Điều này xuất hiện xuyên suốt nhiều bài: ở Unit 1A Lesson 3, câu warmup “What’s the weather like today?” lại trả lời “No dollar”; ở Colors Lesson 3, “How are you today?” trả lời “The.”; ở nhiều bài brainstorm, học sinh nói ra từ không liên quan như “Like”, “I want A.”, hoặc cụm méo âm như “Baking elephant.” Điểm quan trọng là phần viết không xấu: từ vựng, nghe, biểu đồ đều trên 90% hoặc gần đó, nên đây không phải lỗ hổng nhận diện từ đơn thuần mà là lỗ hổng chuyển từ nhận biết sang gọi lại và nói thành lời. Với kiểu hồ sơ này, các câu hỏi hiệu quả nhất sẽ không phải là nói mở hoàn toàn ngay từ đầu, mà là chuỗi hỗ trợ tăng dần: nhìn tranh gọi 1 từ, rồi 2 từ, rồi mẫu câu ngắn cố định, rồi mới sang trả lời cá nhân hóa. Những bài cần deep practice theo hướng này là toàn bộ các bài có brainstorm/free speaking bằng 0, đặc biệt Unit 3A Lesson 1 và 2 vì vừa mới học mà vẫn không bật ra được câu, chứng tỏ năng lực nói chủ động hiện tại chưa hình thành.\n\nMẫu thứ hai là học sinh chưa ổn ở các khung câu hội thoại cơ bản, dù conversation trung bình 70.34/100 nhìn bề ngoài không quá thấp. Khi xem lỗi chi tiết, vấn đề nằm ở ngữ pháp tối thiểu và độ khớp ý với câu hỏi. Học sinh thường trả lời bằng mảnh câu thiếu hoàn chỉnh như “I am”, “My name.”, “I like pen.”, “That.”, “Let.”, “Y.” hoặc trả lời sai loại thông tin như được hỏi tên nhưng đáp nội dung khác. Ở Greetings Lesson 4, “Are you ready to practice greetings” được đáp “That hello.”; “It is my name” được đáp “Tea.”; “So your full name is…” được đáp “What is it?”. Ở Greetings Lesson 5, “Hello. Say your name, please” được đáp “My name is.”, tức là có khung nhưng thiếu phần thông tin chính. Ở Colors Lesson 4, “Which color do you like best?” được đáp “That, I do.” hoặc “Then I like.”, cho thấy học sinh có vẻ nhớ vài mảnh âm thanh tiếng Anh nhưng chưa gắn đúng vào chức năng giao tiếp. Ở School things Lesson 1 và 2, ngay cả câu cực cơ bản “What is your name?” vẫn có các đáp án “I am Theon.”, “My name.”, “I am”, nghĩa là cấu trúc “My name is …” chưa tự động hóa. Phần phát âm trung bình 54.06/100 cũng làm tình hình nặng hơn: có những câu ngữ pháp đúng nhưng pronunciation quá thấp nên vẫn rơi vào thất bại, như Colors Lesson 2 câu “I like red.” gram 90 nhưng pron 11. Vì vậy, conversation ở đây không nên hiểu là học sinh giao tiếp ổn; thực chất em đang dựa nhiều vào bắt chước từng phần và trả lời may rủi. Các câu hỏi hiệu quả nhất cho nhóm lỗi này là dạng substitution drill và pattern completion: đổi tên, đổi tuổi, đổi màu, đổi đồ vật trong cùng một khung câu; hỏi-đáp cặp đôi rất ngắn với một đáp án mục tiêu rõ ràng; luyện đối lập câu hỏi gần nhau như “What is your name?” / “How old are you?” / “How are you?” để giảm nhầm chức năng. Những bài cần deep practice mạnh về mẫu câu là Unit 1A Lessons 4–5, Unit 2A Lesson 4, và Unit 3A Lessons 1–2, vì ở các bài này lỗi hội thoại lặp lại nhiều và điểm conversation cũng thấp hơn mặt bằng.\n\nMẫu thứ ba là rủi ro quên bài rất cao, đặc biệt ở cụm Greetings cũ. Theo forgetting curve đã cho, các bài trên 21 ngày gần như đã quên phần lớn. Ở đây Unit 1A Lesson 1 đã 40 ngày, Lesson 2 là 38 ngày, Lesson 3 là 33 ngày, Lesson 4 và 5 là 27 ngày. Đây lại đúng là cụm nền tảng nhất: chào hỏi, tên, tuổi, đáp lại xã giao. Nếu các bài nền này không chắc, các bài sau về màu sắc và đồ dùng học tập sẽ tiếp tục bị kéo xuống vì học sinh không có khung câu cơ bản để gắn từ mới vào. Dữ liệu bài tập viết ở cụm này không quá tệ, nhưng khi nói thì lỗi rất rõ, nên nguy cơ là học sinh “nhìn thì nhận ra, hỏi trực tiếp thì không bật ra được”. Trong nhóm bài cũ, Unit 1A Lesson 4 cần ưu tiên sâu nhất vì vừa cũ 27 ngày vừa có lỗi bài tập thật khá rõ: nhầm đáp án cho “What’s your name?”, sai “I’m ten year old”, và điền chữ cái rất yếu; thêm vào đó speaking ở cả brainstorm và free speaking đều 0. Unit 1A Lesson 5 cũng cần sâu vì conversation chỉ 64 và có lỗi “I is Tony”, nhầm chức năng câu chào. Unit 1A Lessons 1–3 cũng nên ôn sâu chứ không chỉ lướt, vì tuy một số bài không lộ nhiều lỗi homework, phần nói vẫn cho thấy học sinh chưa làm chủ các mẫu nền. Ngược lại, các bài Colors cỡ 10–19 ngày như Lessons 3–5 phù hợp light reinforcement hơn nếu thời gian hạn chế, trừ Lesson 4 vẫn nên xếp deep practice vì conversation thấp và free speaking bằng 0. Hai bài School things mới học 2–4 ngày không phải do quên mà do chưa nắm ngay từ đầu, nên cũng cần deep practice nhưng theo hướng dạy lại có scaffold, không phải ôn nhắc đơn thuần.\n\nXét theo bài học, nhóm cần deep practice rõ ràng nhất là Unit 1A Lesson 4, Unit 1A Lesson 5, Unit 1A Lesson 1, Unit 1A Lesson 2, Unit 1A Lesson 3 vì đều cũ và là nền tảng greetings; thêm Unit 2A Lesson 4 vì nói rất yếu dù homework không lộ lỗi chữ viết; thêm Unit 3A Lesson 1 và 2 vì mới học mà conversation vẫn thấp, cho thấy chưa hình thành kỹ năng. Unit 2A Lesson 2 cũng nên deep practice vì có cả lỗi nhận biết màu sắc trong homework lẫn pronunciation rất thấp 40/100. Nhóm phù hợp light reinforcement là Unit 2A Lesson 1, 3, 5: các bài này vẫn yếu ở brainstorm nhưng conversation tương đối đỡ hơn, có thể dùng để củng cố từ màu sắc và mẫu câu ngắn sau khi đã sửa nền greetings.\n\nVề loại câu hỏi hiệu quả theo từng bài, với Unit 1A Lessons 1–5 nên ưu tiên câu hỏi đóng có mẫu đáp án cố định trước, như “What’s your name? — My name is …”, “How are you? — I’m fine, thank you”, “How old are you? — I’m … years old”, rồi chuyển sang phân biệt các câu hỏi gần nhau để tránh trả lời nhầm chức năng. Với Lessons 4–5, nên thêm bài sửa lỗi tối thiểu kiểu chọn giữa “I am Tony” và “I is Tony”, “ten years old” và “ten year old”, vì homework cho thấy lỗi hình thái cơ bản vẫn còn. Với Unit 2A Colors, dạng hiệu quả nhất là nhìn tranh nói từ màu, rồi nói cụm danh từ “a red flower”, rồi trả lời yes/no “Is it green? — No, it isn’t. It’s red”, sau đó mới sang câu sở thích “I like blue” và câu cá nhân hóa “My pen is blue”. Với Unit 2A Lesson 2, cần đặc biệt dùng bài nghe-nói cặp tối thiểu cho màu và đồ vật vì em đã nhầm red/blue/purple trong homework. Với Unit 3A School things, nên dùng matching nói theo tranh và sentence frame rất ngắn: “It’s a ruler”, “I have a pencil”, “My pen is blue”, “There are … rulers”, vì bài Lesson 2 cho thấy em còn nhầm cả từ đồ dùng lẫn are/is. Nhìn chung, câu hỏi hiệu quả nhất cho học sinh này là câu có một mục tiêu ngôn ngữ duy nhất, ngắn, lặp lại nhiều, có hỗ trợ hình ảnh và khung câu; còn câu hỏi mở rộng như warmup tự do hoặc brainstorm nhiều mục tiêu nên để sau cùng vì hiện tại gần như luôn thất bại.\n\nTóm lại, hồ sơ này cho thấy viết và nhận biết trên LMS tương đối ổn, nhưng nói chủ động là điểm nghẽn lớn nhất. Học sinh chưa tự động hóa được các mẫu câu nền, thường trả lời lạc đề hoặc chỉ nói mảnh câu, và các bài greetings cũ đang ở vùng quên mạnh nên cần ưu tiên phục hồi trước. Nếu phải chọn trọng tâm can thiệp, nên bắt đầu từ greetings nền tảng cũ, sau đó chuyển sang colors và school things bằng các bài nói có scaffold rất chặt, thay vì tiếp tục hỏi mở.",
+      "homework": [
+        {
+          "question_no": 1,
+          "lesson_id": 3824530,
+          "lesson_title": "Unit 1A: Greetings - Lesson 4: I'm good!",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.) How old are you?",
+          "correct_answer": "C. I'm ten years old.",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 27 ngày trước nên nguy cơ quên rất cao ở cụm Greetings nền tảng. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"B. I'm ten year old.\" thay vì \"C. I'm ten years old.\"; chẩn đoán cũng nêu lỗi lặp lại về mẫu câu cơ bản và thiếu hình thái như \"I is Tony\".",
+          "question_id": 369269,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. I'm ten year olds.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. I'm ten year old.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. I'm ten years old.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 1"
+        },
+        {
+          "question_no": 2,
+          "lesson_id": 3824531,
+          "lesson_title": "Unit 1A: Greetings - Lesson 5: Review & culture",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct answer. ( Con hãy nghe và chọn đáp án đúng.)",
+          "correct_answer": "C. I am Tony",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 27 ngày trước, đúng vùng 23–40 ngày mà chẩn đoán cảnh báo đang quên mạnh. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"B. I is Tony\" thay vì \"C. I am Tony\"; đây trùng đúng mẫu lỗi cấu trúc chủ-vị rất cơ bản đã xuất hiện nhiều lần trong phần nói.",
+          "question_id": 369516,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. This is Tony",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. I is Tony",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. I am Tony",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Audio: What&#39;s your name? T&ecirc;n bạn là g&igrave;? => Đáp án: C (&quot;I&quot; đi với động từ tobe &quot;am&quot;)",
+          "question_folder": "English Tutoring - Level 1"
+        },
+        {
+          "question_no": 3,
+          "lesson_id": 3836969,
+          "lesson_title": "Unit 3A: School things - Lesson 2: I have a yellow pencil.",
+          "skill_category": "grammar",
+          "question_type": "Một lựa chọn",
+          "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.) How many rulers ... there?",
+          "correct_answer": "C. are",
+          "difficulty": "hard",
+          "reason": "Bài này mới học 2 ngày trước mà vẫn sai, cho thấy không phải do quên mà do chưa nắm ngay từ đầu. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"B. is\" thay vì \"C. are\"; chẩn đoán cũng nhắc rõ ở School things Lesson 2 em còn nhầm are/is.",
+          "question_id": 369464,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. am",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. is",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. are",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "How many rulers are there? C&oacute; bao nhi&ecirc;u cái thước kẻ? => Đáp án: C (&quot;rulers&quot; số nhiều --> d&ugrave;ng động từ tobe &quot;are&quot;)",
+          "question_folder": "English Tutoring - Level 1"
+        },
+        {
+          "question_no": 4,
+          "lesson_id": 3824533,
+          "lesson_title": "Unit 2A: Colors - Lesson 2: It's a red flower.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.)",
+          "correct_answer": "A. It's a purple egg.",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 19 ngày trước, đủ lâu để trí nhớ bắt đầu rơi và cần củng cố trước khi quên sâu hơn. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"B. It's a blue egg.\" thay vì \"A. It's a purple egg.\"; chẩn đoán cũng nêu em hay nhầm màu red/blue/purple ở Unit 2A Lesson 2.",
+          "question_id": 369547,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. It's a purple egg.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. It's a blue egg.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. It's a yellow egg.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Audio: What is this ? It&#39;s a purple egg. => Đáp án: A",
+          "question_folder": "English Tutoring - Level 1"
+        },
+        {
+          "question_no": 5,
+          "lesson_id": 3824530,
+          "lesson_title": "Unit 1A: Greetings - Lesson 4: I'm good!",
+          "skill_category": "grammar",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Fill in the blank (Con hãy điền từ vào ô trống.) Nice to m_et you.",
+          "correct_answer": "e",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 27 ngày trước nên cần ôn lại từ đầu vì đây là mẫu chào hỏi nền tảng. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"ioekdj\" thay vì \"e\"; lỗi này phù hợp với nhận định rằng khi phải tự gọi lại ngôn ngữ, em rất dễ rối dù phần viết nhìn chung không quá yếu.",
+          "question_id": 369274,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 1"
+        },
+        {
+          "question_no": 6,
+          "lesson_id": 3824533,
+          "lesson_title": "Unit 2A: Colors - Lesson 2: It's a red flower.",
+          "skill_category": "grammar",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Fill in the blank (Con hãy điền từ vào ô trống.) Is it purple? Y_s, it is.",
+          "correct_answer": "e",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 19 ngày trước và cần ôn vì màu sắc là nhóm từ em hay nhầm khi nói. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"u\" thay vì \"e\"; chẩn đoán còn ghi nhận pronunciation thấp và nhầm màu ở Lesson 2 nên cần quay lại mẫu yes/no rất ngắn này.",
+          "question_id": 369561,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Is it purple? Yes, it is: N&oacute; c&oacute; phải màu t&iacute;m kh&ocirc;ng? Đ&uacute;ng vậy. => Đáp án: e",
+          "question_folder": "English Tutoring - Level 1"
+        },
+        {
+          "question_no": 7,
+          "lesson_id": 3836969,
+          "lesson_title": "Unit 3A: School things - Lesson 2: I have a yellow pencil.",
+          "skill_category": "vocabulary",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Match (Con hãy di chuyển các ô ở cột bên phải để nối từ với ảnh đúng.)",
+          "correct_answer": "→school bag; →pen; →rubber; →ruler",
+          "difficulty": "hard",
+          "reason": "Bài này mới học 2 ngày trước nhưng đã lộ rõ việc chưa nắm từ đồ dùng học tập. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"wrong: item_3, item_4\" thay vì \"item_1→school bag; item_2→pen; item_3→rubber; item_4→ruler\"; điều này khớp với chẩn đoán rằng Unit 3A Lesson 2 cần dạy lại có scaffold chứ không chỉ ôn nhắc.",
+          "question_id": 385157,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A1",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/29/2da7_blue-school-bag.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A2",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/29/4008_pen.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A3",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/29/2502_rubber.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A4",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/01/16/7260_blue_ruler.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B1",
+              "text": "rubber",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B2",
+              "text": "pen",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B3",
+              "text": "school bag",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B4",
+              "text": "ruler",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Đáp án: pen: b&uacute;t ch&igrave; ruler: thước kẻ school bag: cặp sách rubber: cục tẩy",
+          "question_folder": "English Tutoring - Level 1"
+        },
+        {
+          "question_no": 8,
+          "lesson_id": 3824527,
+          "lesson_title": "Unit 1A: Greetings - Lesson 1: Hello!",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "How are you today?",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Bài này đã học 40 ngày trước, là bài cũ nhất nên rất dễ quên khung chào hỏi cơ bản. Chẩn đoán cho thấy brainstorm trung bình 0/100 và free speaking chỉ 9.09/100; ở Colors Lesson 3, học sinh còn trả lời \"The.\" cho đúng mẫu hỏi này, nên cần luyện lại câu đáp ngắn đúng chức năng.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 9,
+          "lesson_id": 3824528,
+          "lesson_title": "Unit 1A: Greetings - Lesson 2: Nice to meet you!",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "What is it?",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Bài này đã học 38 ngày trước nên nằm trong vùng quên mạnh của cụm Greetings. Chẩn đoán nêu học sinh thường trả lời mảnh câu như \"That.\" hoặc lệch chức năng khi gặp câu hỏi rất cơ bản; với brainstorm=0/100, em cần luyện gọi tên đồ vật bằng mẫu cực ngắn trước.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 10,
+          "lesson_id": 3824529,
+          "lesson_title": "Unit 1A: Greetings - Lesson 3: I'm six years old.",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "What’s the weather like today?",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Bài này đã học 33 ngày trước và là một bằng chứng trực tiếp của lỗi nói lạc đề. Trong chẩn đoán, ở đúng Unit 1A Lesson 3 học sinh đã trả lời \"No dollar\" cho câu \"What’s the weather like today?\"; cùng với brainstorm 0/100, đây là câu cần luyện lại để sửa lỗi không khớp câu hỏi.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 11,
+          "lesson_id": 3824535,
+          "lesson_title": "Unit 2A: Colors - Lesson 4: Is it orange?",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "What toys do you like?",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Bài này đã học 11 ngày trước, chưa quá cũ nhưng chẩn đoán xếp Lesson 4 vào nhóm cần deep practice vì conversation thấp và free speaking bằng 0. Học sinh thường bám vào mảnh câu như \"I like\" hoặc trả lời sai kiểu như \"That, I do.\" / \"Then I like.\" khi được hỏi sở thích màu sắc, nên cần luyện câu sở thích hoàn chỉnh hơn.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 12,
+          "lesson_id": 3830583,
+          "lesson_title": "Unit 3A: School things - Lesson 1: It's a red notebook.",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "What is it?",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Bài này mới học 4 ngày trước mà vẫn cần chọn vì chẩn đoán nói rõ Unit 3A Lesson 1 vừa mới học nhưng nói chủ động chưa hình thành. Với brainstorm trung bình 0/100 và mẫu lỗi trả lời rất ngắn, câu này phù hợp để luyện gọi tên đồ vật theo khung \"It’s a ...\" thay vì đáp rời rạc.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 13,
+          "lesson_id": 3824532,
+          "lesson_title": "Unit 2A: Colors - Lesson 1: It's red.",
+          "skill_category": "grammar",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Look and write. (Con hãy nhìn và viết từ đúng.) What color is the duck? It's ye_low.",
+          "correct_answer": "l",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 23 ngày trước, đúng ngưỡng bắt đầu quên mạnh theo chẩn đoán. Dù phần viết nhìn chung ổn, học sinh lại rất yếu ở việc gọi lại từ khi nói với brainstorm=0/100, nên bài điền chữ còn thiếu này giúp neo lại từ màu cơ bản trước khi chuyển sang nói.",
+          "question_id": 369518,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "What color is the duck? It&#39;s yellow: Con vịt màu g&igrave;? N&oacute; màu vàng. => Đáp án: l",
+          "question_folder": "English Tutoring - Level 1"
+        },
+        {
+          "question_no": 14,
+          "lesson_id": 3824534,
+          "lesson_title": "Unit 2A: Colors - Lesson 3: Is it green?",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct answer. Con hãy nghe và chọn đáp án đúng.",
+          "correct_answer": "A. Frog",
+          "difficulty": "easy",
+          "reason": "Bài này đã học 16 ngày trước và thuộc nhóm spaced repetition cần được đưa vào để tránh rơi trí nhớ. Chẩn đoán cho thấy phần nhận biết từ đơn lẻ tốt hơn phần nói, nên thêm một mục từ vựng nghe-chọn như thế này để duy trì vốn từ màu/chủ đề con vật làm nền cho câu nói sau đó.",
+          "question_id": 296911,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Frog",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. Duck",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "audio script: frog: con ếch --> A",
+          "question_folder": "Kĩ năng nghe"
+        },
+        {
+          "question_no": 15,
+          "lesson_id": 3824534,
+          "lesson_title": "Unit 2A: Colors - Lesson 3: Is it green?",
+          "skill_category": "other",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Match (Con hãy di chuyển các ô ở cột bên phải để nối từ với ảnh đúng.)",
+          "correct_answer": "→pink; →black; →orange",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 16 ngày trước và cũng là bài spaced repetition để giữ nhịp ôn tập giữa các bài critical. Chẩn đoán nói học sinh thường không bật ra đủ từ mục tiêu khi brainstorm=0/100, nên bài nối từ với hình giúp củng cố nhanh các màu trước khi yêu cầu nói thành câu.",
+          "question_id": 384685,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A1",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/01/16/a79a_pink.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A2",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/01/16/6615_black.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A3",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/28/9939_orange-color.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B1",
+              "text": "black",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B2",
+              "text": "pink",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B3",
+              "text": "orange",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "A-1: pink - màu hồng B-2: black: màu đen C-3: orange - màu cam",
+          "question_folder": "English Tutoring - Level 1"
+        }
+      ]
+    }
+  }
+}

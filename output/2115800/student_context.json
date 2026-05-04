@@ -15,6 +15,10 @@
       }
     },
     "weak_skills_global": [],
+    "critical_speaking_types": [
+      "brainstorm",
+      "free_speaking"
+    ],
     "overall_pronunciation_score_avg": 30.61,
     "overall_free_speaking_score_avg": 14.29,
     "overall_brainstorm_score_avg": 0.0,
@@ -27,7 +31,7 @@
       "incorrect": 17,
       "correct": 1
     },
-    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
     {
@@ -36,9 +40,9 @@
       "level": 0,
       "last_activity_date": "2026-04-08",
       "days_since_last_practice": 13,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8439,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.922,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -127,14 +131,326 @@
       }
     },
     {
+      "lesson_id": 3873109,
+      "title": "Unit 1A: Letters ABC - Lesson 1: Letter A(a)",
+      "level": 0,
+      "last_activity_date": "2026-03-25",
+      "days_since_last_practice": 27,
+      "forgetting_score": 0.9789,
+      "weakness_score": 0.7241,
+      "composite_priority_score": 0.8515,
+      "homework_status": "attempted",
+      "weak_skills": [
+        "English Tutoring Level 0"
+      ],
+      "failed_text_questions": [
+        {
+          "practice_id": 49476,
+          "question_id": 675711,
+          "question_folder": "English Tutoring Level 0",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn câu trả lời đúng nhé!) A: Hello! => B: ............",
+          "comment_plain": "Đáp án chi tiết: Nhân vật A n&oacute;i: Hello! (Tạm dịch: Xin chào!) Nhân vật B đáp: Hi! (Tạm dịch: Xin chào!) Câu trả lời ch&iacute;nh xác là: Hi! (Tạm dịch: Xin chào!)",
+          "correct_answer": "Hi!",
+          "student_answer": "Hello!",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "Bye!",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "Hi!",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "Hello!",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 4,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Hello! Nice hello. How are you today? 😊",
+          "expected_answer": "I am fine, thank you.",
+          "target_objects": null,
+          "user_transcript": "He.",
+          "score": 43.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 37,
+          "timestamp": "2026-03-25",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn6362wv-d6155f61-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi. Nice. Say “Hi” back to me. 👋",
+          "expected_answer": "Hi",
+          "target_objects": null,
+          "user_transcript": "Liidly.",
+          "score": 44,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 38,
+          "timestamp": "2026-03-25",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn635ayp-4f3ead09-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hello! Say “Hi” to me when you are ready. 👋",
+          "expected_answer": "Hi",
+          "target_objects": null,
+          "user_transcript": "YT.",
+          "score": 45,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 40,
+          "timestamp": "2026-03-25",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn634xna-a8324153-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi The. Nice to meet you. How are you now? 😊",
+          "expected_answer": "I am fine, thank you.",
+          "target_objects": null,
+          "user_transcript": "Hel.",
+          "score": 55,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 66,
+          "grammar_score": 44,
+          "timestamp": "2026-03-25",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn6334sq-52c7caaf-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi The. Nice name. How are you today? 🙂",
+          "expected_answer": "I am fine, thank you.",
+          "target_objects": null,
+          "user_transcript": "Let me.",
+          "score": 25.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 33,
+          "grammar_score": 18,
+          "timestamp": "2026-03-25",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn632itc-f0ad6832-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 49476,
+        "luyen_tap": null
+      }
+    },
+    {
+      "lesson_id": 3873110,
+      "title": "Unit 1A: Letters ABC - Lesson 2: Letter B(b)",
+      "level": 0,
+      "last_activity_date": "2026-03-26",
+      "days_since_last_practice": 26,
+      "forgetting_score": 0.9756,
+      "weakness_score": 0.7241,
+      "composite_priority_score": 0.8498,
+      "homework_status": "attempted",
+      "weak_skills": [
+        "English Tutoring Level 0"
+      ],
+      "failed_text_questions": [
+        {
+          "practice_id": 49478,
+          "question_id": 675759,
+          "question_folder": "English Tutoring Level 0",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Read and match (Con hãy đọc và nối nhé!)",
+          "comment_plain": "1. What&#39;s your name? - I&#39;m David. Tạm dịch: T&ecirc;n của cậu là g&igrave; vậy? - Tớ là David. 2. What is this? - It&#39;s a bird. Tạm dịch: Đây là g&igrave;? - N&oacute; là con chim.",
+          "correct_answer": "What's your name?→I'm David.; What is this?→It's a bird.",
+          "student_answer": "wrong: What's your name?, What is this?",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A1",
+              "text": "What's your name?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "A2",
+              "text": "What is this?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B1",
+              "text": "It's a bird.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B2",
+              "text": "I'm David.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        },
+        {
+          "practice_id": 49478,
+          "question_id": 675822,
+          "question_folder": "English Tutoring Level 0",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Read and match (Con hãy đọc và nối nhé!)",
+          "comment_plain": null,
+          "correct_answer": "Hello!→Hi!; Goodbye!→Bye!",
+          "student_answer": "wrong: Hello!, Goodbye!",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A1",
+              "text": "Hello!",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "A2",
+              "text": "Goodbye!",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B1",
+              "text": "Bye!",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B2",
+              "text": "Hi!",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 3,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Say: apple slowly. 🍎",
+          "expected_answer": "A-p-p-l-e. Apple.",
+          "target_objects": null,
+          "user_transcript": "Now.",
+          "score": 69.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 39,
+          "timestamp": "2026-03-26",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7il694-0078c9e3-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. Say: apple. 🍎",
+          "expected_answer": "Apple.",
+          "target_objects": null,
+          "user_transcript": "Apple here.",
+          "score": 50.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 12,
+          "grammar_score": 89,
+          "timestamp": "2026-03-26",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7ikm7q-3a18b85c-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "I think you meant “they could say it again.” Nice try 😄 Would you like to say “apple” now?",
+          "expected_answer": "Apple. 🍎",
+          "target_objects": null,
+          "user_transcript": "The.",
+          "score": 56.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 13,
+          "timestamp": "2026-03-26",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7ikaoi-699ef0fd-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Great. Let's start with A. Say the word 'apple' slowly. 🍎",
+          "expected_answer": "Apple. A - a - apple.",
+          "target_objects": null,
+          "user_transcript": "hen they could again",
+          "score": 29,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 41,
+          "grammar_score": 17,
+          "timestamp": "2026-03-26",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7ijrem-0567bf4b-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hello! Ready to practice letters and words from the ABC lesson? 😄",
+          "expected_answer": "Yes, I am ready. I like the letter A.",
+          "target_objects": null,
+          "user_transcript": "Yes, I will.",
+          "score": 52,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 11,
+          "grammar_score": 93,
+          "timestamp": "2026-03-26",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7ijgay-07899cac-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 49478,
+        "luyen_tap": null
+      }
+    },
+    {
       "lesson_id": 3971868,
       "title": "Unit 2A: Letters DEF - Lesson 2: Letter E(e)",
       "level": 0,
       "last_activity_date": "2026-04-15",
       "days_since_last_practice": 6,
-      "forgetting_score": 0.9975,
+      "forgetting_score": 0.5756,
       "weakness_score": 1.0,
-      "composite_priority_score": 0.9988,
+      "composite_priority_score": 0.7878,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -372,14 +688,110 @@
       }
     },
     {
+      "lesson_id": 3873111,
+      "title": "Unit 1A: Letters ABC - Lesson 3: Letter C(c)",
+      "level": 0,
+      "last_activity_date": "2026-04-01",
+      "days_since_last_practice": 20,
+      "forgetting_score": 0.9426,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7654,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Hi The. Good. Where are you from? 🌟",
+          "expected_answer": "I am from [country].",
+          "target_objects": null,
+          "user_transcript": "The that said.",
+          "score": 41,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 66,
+          "grammar_score": 16,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3ec5x-daf03476-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi. Good. Tell me your name. 🙂",
+          "expected_answer": "My name is [Your Name].",
+          "target_objects": null,
+          "user_transcript": "The.",
+          "score": 59.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 19,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3d4zx-e50a0f96-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hello! Nice to see you today. Are you ready to practice greetings with me? 😄",
+          "expected_answer": "Yes, I am ready.",
+          "target_objects": null,
+          "user_transcript": "I.",
+          "score": 7.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 15,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3cs12-78208fa4-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Do you want to say 'bye' with me? 👋",
+          "expected_answer": "Bye",
+          "target_objects": null,
+          "user_transcript": "Go.",
+          "score": 59,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 68,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3boa5-5797b8e9-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Say hi with me. Hi 👋",
+          "expected_answer": "Hi 👋",
+          "target_objects": null,
+          "user_transcript": "Hi.",
+          "score": 45.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 91,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3baoy-87a5eb8a-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 49480,
+        "luyen_tap": null
+      }
+    },
+    {
       "lesson_id": 3982658,
       "title": "Unit 2A: Letters DEF - Lesson 3: Letter F(f)",
       "level": 0,
       "last_activity_date": "2026-04-17",
       "days_since_last_practice": 4,
-      "forgetting_score": 0.9817,
+      "forgetting_score": 0.4353,
       "weakness_score": 1.0,
-      "composite_priority_score": 0.9909,
+      "composite_priority_score": 0.7177,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -478,414 +890,6 @@
         "bai_tap": 49493,
         "luyen_tap": 49494
       }
-    },
-    {
-      "lesson_id": 3873109,
-      "title": "Unit 1A: Letters ABC - Lesson 1: Letter A(a)",
-      "level": 0,
-      "last_activity_date": "2026-03-25",
-      "days_since_last_practice": 27,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.7241,
-      "composite_priority_score": 0.862,
-      "homework_status": "attempted",
-      "weak_skills": [
-        "English Tutoring Level 0"
-      ],
-      "failed_text_questions": [
-        {
-          "practice_id": 49476,
-          "question_id": 675711,
-          "question_folder": "English Tutoring Level 0",
-          "question_type": "Một lựa chọn",
-          "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn câu trả lời đúng nhé!) A: Hello! => B: ............",
-          "comment_plain": "Đáp án chi tiết: Nhân vật A n&oacute;i: Hello! (Tạm dịch: Xin chào!) Nhân vật B đáp: Hi! (Tạm dịch: Xin chào!) Câu trả lời ch&iacute;nh xác là: Hi! (Tạm dịch: Xin chào!)",
-          "correct_answer": "Hi!",
-          "student_answer": "Hello!",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "Bye!",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "Hi!",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "Hello!",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        }
-      ],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 4,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Hello! Nice hello. How are you today? 😊",
-          "expected_answer": "I am fine, thank you.",
-          "target_objects": null,
-          "user_transcript": "He.",
-          "score": 43.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 50,
-          "grammar_score": 37,
-          "timestamp": "2026-03-25",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn6362wv-d6155f61-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi. Nice. Say “Hi” back to me. 👋",
-          "expected_answer": "Hi",
-          "target_objects": null,
-          "user_transcript": "Liidly.",
-          "score": 44,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 50,
-          "grammar_score": 38,
-          "timestamp": "2026-03-25",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn635ayp-4f3ead09-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hello! Say “Hi” to me when you are ready. 👋",
-          "expected_answer": "Hi",
-          "target_objects": null,
-          "user_transcript": "YT.",
-          "score": 45,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 50,
-          "grammar_score": 40,
-          "timestamp": "2026-03-25",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn634xna-a8324153-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi The. Nice to meet you. How are you now? 😊",
-          "expected_answer": "I am fine, thank you.",
-          "target_objects": null,
-          "user_transcript": "Hel.",
-          "score": 55,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 66,
-          "grammar_score": 44,
-          "timestamp": "2026-03-25",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn6334sq-52c7caaf-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi The. Nice name. How are you today? 🙂",
-          "expected_answer": "I am fine, thank you.",
-          "target_objects": null,
-          "user_transcript": "Let me.",
-          "score": 25.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 33,
-          "grammar_score": 18,
-          "timestamp": "2026-03-25",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn632itc-f0ad6832-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 49476,
-        "luyen_tap": null
-      }
-    },
-    {
-      "lesson_id": 3873110,
-      "title": "Unit 1A: Letters ABC - Lesson 2: Letter B(b)",
-      "level": 0,
-      "last_activity_date": "2026-03-26",
-      "days_since_last_practice": 26,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.7241,
-      "composite_priority_score": 0.862,
-      "homework_status": "attempted",
-      "weak_skills": [
-        "English Tutoring Level 0"
-      ],
-      "failed_text_questions": [
-        {
-          "practice_id": 49478,
-          "question_id": 675759,
-          "question_folder": "English Tutoring Level 0",
-          "question_type": "Xứng-Hợp",
-          "question_text": "Read and match (Con hãy đọc và nối nhé!)",
-          "comment_plain": "1. What&#39;s your name? - I&#39;m David. Tạm dịch: T&ecirc;n của cậu là g&igrave; vậy? - Tớ là David. 2. What is this? - It&#39;s a bird. Tạm dịch: Đây là g&igrave;? - N&oacute; là con chim.",
-          "correct_answer": "What's your name?→I'm David.; What is this?→It's a bird.",
-          "student_answer": "wrong: What's your name?, What is this?",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A1",
-              "text": "What's your name?",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "A2",
-              "text": "What is this?",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B1",
-              "text": "It's a bird.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B2",
-              "text": "I'm David.",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        },
-        {
-          "practice_id": 49478,
-          "question_id": 675822,
-          "question_folder": "English Tutoring Level 0",
-          "question_type": "Xứng-Hợp",
-          "question_text": "Read and match (Con hãy đọc và nối nhé!)",
-          "comment_plain": null,
-          "correct_answer": "Hello!→Hi!; Goodbye!→Bye!",
-          "student_answer": "wrong: Hello!, Goodbye!",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A1",
-              "text": "Hello!",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "A2",
-              "text": "Goodbye!",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B1",
-              "text": "Bye!",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B2",
-              "text": "Hi!",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        }
-      ],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 3,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Say: apple slowly. 🍎",
-          "expected_answer": "A-p-p-l-e. Apple.",
-          "target_objects": null,
-          "user_transcript": "Now.",
-          "score": 69.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 39,
-          "timestamp": "2026-03-26",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7il694-0078c9e3-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Good. Say: apple. 🍎",
-          "expected_answer": "Apple.",
-          "target_objects": null,
-          "user_transcript": "Apple here.",
-          "score": 50.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 12,
-          "grammar_score": 89,
-          "timestamp": "2026-03-26",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7ikm7q-3a18b85c-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "I think you meant “they could say it again.” Nice try 😄 Would you like to say “apple” now?",
-          "expected_answer": "Apple. 🍎",
-          "target_objects": null,
-          "user_transcript": "The.",
-          "score": 56.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 13,
-          "timestamp": "2026-03-26",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7ikaoi-699ef0fd-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Great. Let's start with A. Say the word 'apple' slowly. 🍎",
-          "expected_answer": "Apple. A - a - apple.",
-          "target_objects": null,
-          "user_transcript": "hen they could again",
-          "score": 29,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 41,
-          "grammar_score": 17,
-          "timestamp": "2026-03-26",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7ijrem-0567bf4b-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hello! Ready to practice letters and words from the ABC lesson? 😄",
-          "expected_answer": "Yes, I am ready. I like the letter A.",
-          "target_objects": null,
-          "user_transcript": "Yes, I will.",
-          "score": 52,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 11,
-          "grammar_score": 93,
-          "timestamp": "2026-03-26",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7ijgay-07899cac-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 49478,
-        "luyen_tap": null
-      }
-    },
-    {
-      "lesson_id": 3873111,
-      "title": "Unit 1A: Letters ABC - Lesson 3: Letter C(c)",
-      "level": 0,
-      "last_activity_date": "2026-04-01",
-      "days_since_last_practice": 20,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Hi The. Good. Where are you from? 🌟",
-          "expected_answer": "I am from [country].",
-          "target_objects": null,
-          "user_transcript": "The that said.",
-          "score": 41,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 66,
-          "grammar_score": 16,
-          "timestamp": "2026-04-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3ec5x-daf03476-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi. Good. Tell me your name. 🙂",
-          "expected_answer": "My name is [Your Name].",
-          "target_objects": null,
-          "user_transcript": "The.",
-          "score": 59.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 19,
-          "timestamp": "2026-04-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3d4zx-e50a0f96-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hello! Nice to see you today. Are you ready to practice greetings with me? 😄",
-          "expected_answer": "Yes, I am ready.",
-          "target_objects": null,
-          "user_transcript": "I.",
-          "score": 7.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 0,
-          "grammar_score": 15,
-          "timestamp": "2026-04-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3cs12-78208fa4-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Do you want to say 'bye' with me? 👋",
-          "expected_answer": "Bye",
-          "target_objects": null,
-          "user_transcript": "Go.",
-          "score": 59,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 50,
-          "grammar_score": 68,
-          "timestamp": "2026-04-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3boa5-5797b8e9-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Say hi with me. Hi 👋",
-          "expected_answer": "Hi 👋",
-          "target_objects": null,
-          "user_transcript": "Hi.",
-          "score": 45.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 0,
-          "grammar_score": 91,
-          "timestamp": "2026-04-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3baoy-87a5eb8a-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 49480,
-        "luyen_tap": null
-      }
     }
   ],
   "lessons": [
@@ -899,9 +903,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-06",
       "days_since_last_practice": 15,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8827,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9414,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -1033,9 +1037,9 @@
       "status": "completed",
       "last_activity_date": "2026-04-08",
       "days_since_last_practice": 13,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8439,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.922,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -1173,9 +1177,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-09",
       "days_since_last_practice": 12,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8199,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.91,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -1304,6 +1308,648 @@
       }
     },
     {
+      "lesson_id": 3873109,
+      "program_id": null,
+      "level": 0,
+      "position": 1,
+      "title": "Unit 1A: Letters ABC - Lesson 1: Letter A(a)",
+      "desc": "- Hello, Hi, Goodbye, Bye\nant, apple, alligator \n- letter A(a) and sound /æ/\n- What's your name? I'm (Tony).\n-  What is this? It's (an ant).",
+      "status": "completed",
+      "last_activity_date": "2026-03-25",
+      "days_since_last_practice": 27,
+      "forgetting_score": 0.9789,
+      "weakness_score": 0.7241,
+      "composite_priority_score": 0.8515,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 31,
+          "audio_turns": 71,
+          "avg_reaction_ms": null,
+          "fastest_reaction_ms": null,
+          "total_duration_ms": 1726547,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-25",
+        "pronunciation_attempts": 40,
+        "pronunciation_score_avg": 30.55,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 58.0,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Hello! Nice hello. How are you today? 😊",
+            "expected_answer": "I am fine, thank you.",
+            "target_objects": null,
+            "user_transcript": "He.",
+            "score": 43.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 37,
+            "timestamp": "2026-03-25",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn6362wv-d6155f61-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi. Nice. Say “Hi” back to me. 👋",
+            "expected_answer": "Hi",
+            "target_objects": null,
+            "user_transcript": "Liidly.",
+            "score": 44,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 38,
+            "timestamp": "2026-03-25",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn635ayp-4f3ead09-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hello! Say “Hi” to me when you are ready. 👋",
+            "expected_answer": "Hi",
+            "target_objects": null,
+            "user_transcript": "YT.",
+            "score": 45,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 40,
+            "timestamp": "2026-03-25",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn634xna-a8324153-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi The. Nice to meet you. How are you now? 😊",
+            "expected_answer": "I am fine, thank you.",
+            "target_objects": null,
+            "user_transcript": "Hel.",
+            "score": 55,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 66,
+            "grammar_score": 44,
+            "timestamp": "2026-03-25",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn6334sq-52c7caaf-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi The. Nice name. How are you today? 🙂",
+            "expected_answer": "I am fine, thank you.",
+            "target_objects": null,
+            "user_transcript": "Let me.",
+            "score": 25.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 33,
+            "grammar_score": 18,
+            "timestamp": "2026-03-25",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn632itc-f0ad6832-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49476,
+          "score": 0.67,
+          "correct": 10,
+          "total": 15,
+          "submitted_date": "2026-03-25"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49476,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring Level 0": {
+            "correct": 10,
+            "total": 15,
+            "accuracy": 0.667
+          }
+        },
+        "weak_skills": [
+          "English Tutoring Level 0"
+        ],
+        "worst_questions": [
+          {
+            "practice_id": 49476,
+            "question_id": 675691,
+            "question_folder": "English Tutoring Level 0",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen, look and choose the correct beginning letter (Con hãy nghe, nhìn tranh và chọn chữ cái đầu đúng nhé!)",
+            "comment_plain": "A pple: quả táo",
+            "correct_answer": "A",
+            "student_answer": "B",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/90b4_apple-1.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 49476,
+            "question_id": 675707,
+            "question_folder": "English Tutoring Level 0",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look and choose the best response for Linda (Con hãy nhìn tranh và chọn câu trả lời phù hợp cho Linda nhé!)",
+            "comment_plain": "Đáp án chi tiết: What&#39;s your name? - I&#39;m Linda. Tạm dịch: Bạn t&ecirc;n g&igrave; vậy? - Tớ là Linda.",
+            "correct_answer": "I'm Linda.",
+            "student_answer": "How are you?",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/83b7_10.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "Goodbye!",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "I'm Linda.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "How are you?",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 49476,
+            "question_id": 675709,
+            "question_folder": "English Tutoring Level 0",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look and choose the best response for Linda (Con hãy nhìn tranh và chọn câu trả lời phù hợp cho Linda nhé!)",
+            "comment_plain": "Đáp án chi tiết: Hello! - Hi! Tạm dịch: Xin chào! - Xin chào!",
+            "correct_answer": "Hi!",
+            "student_answer": "Bye.",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/be2b_9.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "I'm great!",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "Bye.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "Hi!",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 49476,
+            "question_id": 675711,
+            "question_folder": "English Tutoring Level 0",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn câu trả lời đúng nhé!) A: Hello! => B: ............",
+            "comment_plain": "Đáp án chi tiết: Nhân vật A n&oacute;i: Hello! (Tạm dịch: Xin chào!) Nhân vật B đáp: Hi! (Tạm dịch: Xin chào!) Câu trả lời ch&iacute;nh xác là: Hi! (Tạm dịch: Xin chào!)",
+            "correct_answer": "Hi!",
+            "student_answer": "Hello!",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "Bye!",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "Hi!",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "Hello!",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 49476,
+            "question_id": 675722,
+            "question_folder": "English Tutoring Level 0",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose True or False (Con hãy đọc và chọn Đúng hoặc Sai nhé!) A: What's your name? B: I'm 3 years old.",
+            "comment_plain": "Đáp án chi tiết: A hỏi: What&#39;s your name? (Bạn t&ecirc;n g&igrave;?) B đáp: I&#39;m 3 years old. (Hiện tại m&igrave;nh 3 tuổi.) Giải th&iacute;ch: A hỏi về t&ecirc;n nhưng B lại trả lời về tuổi => Câu trả lời này sai => Đáp án : False (Sai)",
+            "correct_answer": null,
+            "student_answer": "option_1",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/1fb7_36.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/1c93_37.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3873110,
+      "program_id": null,
+      "level": 0,
+      "position": 2,
+      "title": "Unit 1A: Letters ABC - Lesson 2: Letter B(b)",
+      "desc": "- Hello, Hi, Goodbye, Bye\nant, apple, alligator\n- letter A(a) and sound /æ/\n- What's your name? I'm (Tony).\n-  What is this? It's (an ant).",
+      "status": "completed",
+      "last_activity_date": "2026-03-26",
+      "days_since_last_practice": 26,
+      "forgetting_score": 0.9756,
+      "weakness_score": 0.7241,
+      "composite_priority_score": 0.8498,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 28,
+          "audio_turns": 67,
+          "avg_reaction_ms": 3134,
+          "fastest_reaction_ms": 422,
+          "total_duration_ms": 1760076,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-26",
+        "pronunciation_attempts": 33,
+        "pronunciation_score_avg": 24.0,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 53.15,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Say: apple slowly. 🍎",
+            "expected_answer": "A-p-p-l-e. Apple.",
+            "target_objects": null,
+            "user_transcript": "Now.",
+            "score": 69.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 39,
+            "timestamp": "2026-03-26",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7il694-0078c9e3-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. Say: apple. 🍎",
+            "expected_answer": "Apple.",
+            "target_objects": null,
+            "user_transcript": "Apple here.",
+            "score": 50.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 12,
+            "grammar_score": 89,
+            "timestamp": "2026-03-26",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7ikm7q-3a18b85c-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "I think you meant “they could say it again.” Nice try 😄 Would you like to say “apple” now?",
+            "expected_answer": "Apple. 🍎",
+            "target_objects": null,
+            "user_transcript": "The.",
+            "score": 56.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 13,
+            "timestamp": "2026-03-26",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7ikaoi-699ef0fd-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Great. Let's start with A. Say the word 'apple' slowly. 🍎",
+            "expected_answer": "Apple. A - a - apple.",
+            "target_objects": null,
+            "user_transcript": "hen they could again",
+            "score": 29,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 41,
+            "grammar_score": 17,
+            "timestamp": "2026-03-26",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7ijrem-0567bf4b-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hello! Ready to practice letters and words from the ABC lesson? 😄",
+            "expected_answer": "Yes, I am ready. I like the letter A.",
+            "target_objects": null,
+            "user_transcript": "Yes, I will.",
+            "score": 52,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 11,
+            "grammar_score": 93,
+            "timestamp": "2026-03-26",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7ijgay-07899cac-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49478,
+          "score": 0.67,
+          "correct": 10,
+          "total": 15,
+          "submitted_date": "2026-03-26"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49478,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring Level 0": {
+            "correct": 10,
+            "total": 15,
+            "accuracy": 0.667
+          }
+        },
+        "weak_skills": [
+          "English Tutoring Level 0"
+        ],
+        "worst_questions": [
+          {
+            "practice_id": 49478,
+            "question_id": 675735,
+            "question_folder": "English Tutoring Level 0",
+            "question_type": "Một lựa chọn",
+            "question_text": "Tick or Cross (Con hãy chọn Đúng ✓ hoặc Sai X nhé!) alligator",
+            "comment_plain": "alligator: con cá sấu Giải th&iacute;ch: Tuy nhi&ecirc;n trong h&igrave;nh cho thấy h&igrave;nh con chim trong tiếng Anh là &quot;bird&quot;. => Đáp án: Câu này sai (False)",
+            "correct_answer": null,
+            "student_answer": "option_1",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/97a2_bird-removebg-preview.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/05/23/6777_pic-of-tick.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/05/23/46f1_pic-of-cross.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 49478,
+            "question_id": 675750,
+            "question_folder": "English Tutoring Level 0",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say the word (Con hãy nhìn tranh và nói từ đó nhé!)",
+            "comment_plain": null,
+            "correct_answer": "ant",
+            "student_answer": "what",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/7933_ant-removebg-preview.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "ant",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 49478,
+            "question_id": 675752,
+            "question_folder": "English Tutoring Level 0",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look and choose the correct answer (Con hãy nhìn tranh và chọn đáp án đúng nhé!) What is this?",
+            "comment_plain": "What is this? - It&#39;s an apple. Tạm dịch: Đây là cái g&igrave;? - N&oacute; là một quả táo.",
+            "correct_answer": "It's an apple.",
+            "student_answer": "It's a banana.",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/f658_apple-removebg-preview.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "It's a banana.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "It's an apple.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "It's a bird.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 49478,
+            "question_id": 675759,
+            "question_folder": "English Tutoring Level 0",
+            "question_type": "Xứng-Hợp",
+            "question_text": "Read and match (Con hãy đọc và nối nhé!)",
+            "comment_plain": "1. What&#39;s your name? - I&#39;m David. Tạm dịch: T&ecirc;n của cậu là g&igrave; vậy? - Tớ là David. 2. What is this? - It&#39;s a bird. Tạm dịch: Đây là g&igrave;? - N&oacute; là con chim.",
+            "correct_answer": "What's your name?→I'm David.; What is this?→It's a bird.",
+            "student_answer": "wrong: What's your name?, What is this?",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A1",
+                "text": "What's your name?",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "A2",
+                "text": "What is this?",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B1",
+                "text": "It's a bird.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B2",
+                "text": "I'm David.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 49478,
+            "question_id": 675822,
+            "question_folder": "English Tutoring Level 0",
+            "question_type": "Xứng-Hợp",
+            "question_text": "Read and match (Con hãy đọc và nối nhé!)",
+            "comment_plain": null,
+            "correct_answer": "Hello!→Hi!; Goodbye!→Bye!",
+            "student_answer": "wrong: Hello!, Goodbye!",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A1",
+                "text": "Hello!",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "A2",
+                "text": "Goodbye!",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B1",
+                "text": "Bye!",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B2",
+                "text": "Hi!",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3971868,
       "program_id": null,
       "level": 0,
@@ -1313,9 +1959,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-15",
       "days_since_last_practice": 6,
-      "forgetting_score": 0.9975,
+      "forgetting_score": 0.5756,
       "weakness_score": 1.0,
-      "composite_priority_score": 0.9988,
+      "composite_priority_score": 0.7878,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -1739,6 +2385,152 @@
       }
     },
     {
+      "lesson_id": 3873111,
+      "program_id": null,
+      "level": 0,
+      "position": 3,
+      "title": "Unit 1A: Letters ABC - Lesson 3: Letter C(c)",
+      "desc": "- banana, book, bird\n- letter B(b) and sound /b/\n- What's your name? \n I'm (Tony).\n - What is this? It's (an ant).",
+      "status": "completed",
+      "last_activity_date": "2026-04-01",
+      "days_since_last_practice": 20,
+      "forgetting_score": 0.9426,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.7654,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 50,
+          "audio_turns": 74,
+          "avg_reaction_ms": 1260,
+          "fastest_reaction_ms": 428,
+          "total_duration_ms": 551147,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-01",
+        "pronunciation_attempts": 49,
+        "pronunciation_score_avg": 44.27,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 66.04,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Hi The. Good. Where are you from? 🌟",
+            "expected_answer": "I am from [country].",
+            "target_objects": null,
+            "user_transcript": "The that said.",
+            "score": 41,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 66,
+            "grammar_score": 16,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3ec5x-daf03476-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi. Good. Tell me your name. 🙂",
+            "expected_answer": "My name is [Your Name].",
+            "target_objects": null,
+            "user_transcript": "The.",
+            "score": 59.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 19,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3d4zx-e50a0f96-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hello! Nice to see you today. Are you ready to practice greetings with me? 😄",
+            "expected_answer": "Yes, I am ready.",
+            "target_objects": null,
+            "user_transcript": "I.",
+            "score": 7.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 15,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3cs12-78208fa4-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Do you want to say 'bye' with me? 👋",
+            "expected_answer": "Bye",
+            "target_objects": null,
+            "user_transcript": "Go.",
+            "score": 59,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 68,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3boa5-5797b8e9-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Say hi with me. Hi 👋",
+            "expected_answer": "Hi 👋",
+            "target_objects": null,
+            "user_transcript": "Hi.",
+            "score": 45.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 91,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3baoy-87a5eb8a-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49480,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-04-01"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 49480,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {
+          "English Tutoring Level 0": {
+            "correct": 15,
+            "total": 15,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3982658,
       "program_id": null,
       "level": 0,
@@ -1748,9 +2540,9 @@
       "status": "completed",
       "last_activity_date": "2026-04-17",
       "days_since_last_practice": 4,
-      "forgetting_score": 0.9817,
+      "forgetting_score": 0.4353,
       "weakness_score": 1.0,
-      "composite_priority_score": 0.9909,
+      "composite_priority_score": 0.7177,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -1885,794 +2677,6 @@
           "luyen_tap": 49494
         },
         "skill_breakdown": {},
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3873109,
-      "program_id": null,
-      "level": 0,
-      "position": 1,
-      "title": "Unit 1A: Letters ABC - Lesson 1: Letter A(a)",
-      "desc": "- Hello, Hi, Goodbye, Bye\nant, apple, alligator \n- letter A(a) and sound /æ/\n- What's your name? I'm (Tony).\n-  What is this? It's (an ant).",
-      "status": "completed",
-      "last_activity_date": "2026-03-25",
-      "days_since_last_practice": 27,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.7241,
-      "composite_priority_score": 0.862,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 31,
-          "audio_turns": 71,
-          "avg_reaction_ms": null,
-          "fastest_reaction_ms": null,
-          "total_duration_ms": 1726547,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-03-25",
-        "pronunciation_attempts": 40,
-        "pronunciation_score_avg": 30.55,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 58.0,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Hello! Nice hello. How are you today? 😊",
-            "expected_answer": "I am fine, thank you.",
-            "target_objects": null,
-            "user_transcript": "He.",
-            "score": 43.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 50,
-            "grammar_score": 37,
-            "timestamp": "2026-03-25",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn6362wv-d6155f61-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi. Nice. Say “Hi” back to me. 👋",
-            "expected_answer": "Hi",
-            "target_objects": null,
-            "user_transcript": "Liidly.",
-            "score": 44,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 50,
-            "grammar_score": 38,
-            "timestamp": "2026-03-25",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn635ayp-4f3ead09-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hello! Say “Hi” to me when you are ready. 👋",
-            "expected_answer": "Hi",
-            "target_objects": null,
-            "user_transcript": "YT.",
-            "score": 45,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 50,
-            "grammar_score": 40,
-            "timestamp": "2026-03-25",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn634xna-a8324153-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi The. Nice to meet you. How are you now? 😊",
-            "expected_answer": "I am fine, thank you.",
-            "target_objects": null,
-            "user_transcript": "Hel.",
-            "score": 55,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 66,
-            "grammar_score": 44,
-            "timestamp": "2026-03-25",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn6334sq-52c7caaf-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi The. Nice name. How are you today? 🙂",
-            "expected_answer": "I am fine, thank you.",
-            "target_objects": null,
-            "user_transcript": "Let me.",
-            "score": 25.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 33,
-            "grammar_score": 18,
-            "timestamp": "2026-03-25",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn632itc-f0ad6832-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 49476,
-          "score": 0.67,
-          "correct": 10,
-          "total": 15,
-          "submitted_date": "2026-03-25"
-        },
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 49476,
-          "luyen_tap": null
-        },
-        "skill_breakdown": {
-          "English Tutoring Level 0": {
-            "correct": 10,
-            "total": 15,
-            "accuracy": 0.667
-          }
-        },
-        "weak_skills": [
-          "English Tutoring Level 0"
-        ],
-        "worst_questions": [
-          {
-            "practice_id": 49476,
-            "question_id": 675691,
-            "question_folder": "English Tutoring Level 0",
-            "question_type": "Một lựa chọn",
-            "question_text": "Listen, look and choose the correct beginning letter (Con hãy nghe, nhìn tranh và chọn chữ cái đầu đúng nhé!)",
-            "comment_plain": "A pple: quả táo",
-            "correct_answer": "A",
-            "student_answer": "B",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/90b4_apple-1.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 49476,
-            "question_id": 675707,
-            "question_folder": "English Tutoring Level 0",
-            "question_type": "Một lựa chọn",
-            "question_text": "Look and choose the best response for Linda (Con hãy nhìn tranh và chọn câu trả lời phù hợp cho Linda nhé!)",
-            "comment_plain": "Đáp án chi tiết: What&#39;s your name? - I&#39;m Linda. Tạm dịch: Bạn t&ecirc;n g&igrave; vậy? - Tớ là Linda.",
-            "correct_answer": "I'm Linda.",
-            "student_answer": "How are you?",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/83b7_10.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "Goodbye!",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "I'm Linda.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "How are you?",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 49476,
-            "question_id": 675709,
-            "question_folder": "English Tutoring Level 0",
-            "question_type": "Một lựa chọn",
-            "question_text": "Look and choose the best response for Linda (Con hãy nhìn tranh và chọn câu trả lời phù hợp cho Linda nhé!)",
-            "comment_plain": "Đáp án chi tiết: Hello! - Hi! Tạm dịch: Xin chào! - Xin chào!",
-            "correct_answer": "Hi!",
-            "student_answer": "Bye.",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/be2b_9.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "I'm great!",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "Bye.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "Hi!",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 49476,
-            "question_id": 675711,
-            "question_folder": "English Tutoring Level 0",
-            "question_type": "Một lựa chọn",
-            "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn câu trả lời đúng nhé!) A: Hello! => B: ............",
-            "comment_plain": "Đáp án chi tiết: Nhân vật A n&oacute;i: Hello! (Tạm dịch: Xin chào!) Nhân vật B đáp: Hi! (Tạm dịch: Xin chào!) Câu trả lời ch&iacute;nh xác là: Hi! (Tạm dịch: Xin chào!)",
-            "correct_answer": "Hi!",
-            "student_answer": "Hello!",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "Bye!",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "Hi!",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "Hello!",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 49476,
-            "question_id": 675722,
-            "question_folder": "English Tutoring Level 0",
-            "question_type": "Một lựa chọn",
-            "question_text": "Read and choose True or False (Con hãy đọc và chọn Đúng hoặc Sai nhé!) A: What's your name? B: I'm 3 years old.",
-            "comment_plain": "Đáp án chi tiết: A hỏi: What&#39;s your name? (Bạn t&ecirc;n g&igrave;?) B đáp: I&#39;m 3 years old. (Hiện tại m&igrave;nh 3 tuổi.) Giải th&iacute;ch: A hỏi về t&ecirc;n nhưng B lại trả lời về tuổi => Câu trả lời này sai => Đáp án : False (Sai)",
-            "correct_answer": null,
-            "student_answer": "option_1",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/1fb7_36.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/1c93_37.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3873110,
-      "program_id": null,
-      "level": 0,
-      "position": 2,
-      "title": "Unit 1A: Letters ABC - Lesson 2: Letter B(b)",
-      "desc": "- Hello, Hi, Goodbye, Bye\nant, apple, alligator\n- letter A(a) and sound /æ/\n- What's your name? I'm (Tony).\n-  What is this? It's (an ant).",
-      "status": "completed",
-      "last_activity_date": "2026-03-26",
-      "days_since_last_practice": 26,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.7241,
-      "composite_priority_score": 0.862,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 28,
-          "audio_turns": 67,
-          "avg_reaction_ms": 3134,
-          "fastest_reaction_ms": 422,
-          "total_duration_ms": 1760076,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-03-26",
-        "pronunciation_attempts": 33,
-        "pronunciation_score_avg": 24.0,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 53.15,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Say: apple slowly. 🍎",
-            "expected_answer": "A-p-p-l-e. Apple.",
-            "target_objects": null,
-            "user_transcript": "Now.",
-            "score": 69.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 39,
-            "timestamp": "2026-03-26",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7il694-0078c9e3-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Good. Say: apple. 🍎",
-            "expected_answer": "Apple.",
-            "target_objects": null,
-            "user_transcript": "Apple here.",
-            "score": 50.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 12,
-            "grammar_score": 89,
-            "timestamp": "2026-03-26",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7ikm7q-3a18b85c-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "I think you meant “they could say it again.” Nice try 😄 Would you like to say “apple” now?",
-            "expected_answer": "Apple. 🍎",
-            "target_objects": null,
-            "user_transcript": "The.",
-            "score": 56.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 13,
-            "timestamp": "2026-03-26",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7ikaoi-699ef0fd-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Great. Let's start with A. Say the word 'apple' slowly. 🍎",
-            "expected_answer": "Apple. A - a - apple.",
-            "target_objects": null,
-            "user_transcript": "hen they could again",
-            "score": 29,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 41,
-            "grammar_score": 17,
-            "timestamp": "2026-03-26",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7ijrem-0567bf4b-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hello! Ready to practice letters and words from the ABC lesson? 😄",
-            "expected_answer": "Yes, I am ready. I like the letter A.",
-            "target_objects": null,
-            "user_transcript": "Yes, I will.",
-            "score": 52,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 11,
-            "grammar_score": 93,
-            "timestamp": "2026-03-26",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/26/admin/mn7ijgay-07899cac-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 49478,
-          "score": 0.67,
-          "correct": 10,
-          "total": 15,
-          "submitted_date": "2026-03-26"
-        },
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 49478,
-          "luyen_tap": null
-        },
-        "skill_breakdown": {
-          "English Tutoring Level 0": {
-            "correct": 10,
-            "total": 15,
-            "accuracy": 0.667
-          }
-        },
-        "weak_skills": [
-          "English Tutoring Level 0"
-        ],
-        "worst_questions": [
-          {
-            "practice_id": 49478,
-            "question_id": 675735,
-            "question_folder": "English Tutoring Level 0",
-            "question_type": "Một lựa chọn",
-            "question_text": "Tick or Cross (Con hãy chọn Đúng ✓ hoặc Sai X nhé!) alligator",
-            "comment_plain": "alligator: con cá sấu Giải th&iacute;ch: Tuy nhi&ecirc;n trong h&igrave;nh cho thấy h&igrave;nh con chim trong tiếng Anh là &quot;bird&quot;. => Đáp án: Câu này sai (False)",
-            "correct_answer": null,
-            "student_answer": "option_1",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/97a2_bird-removebg-preview.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/05/23/6777_pic-of-tick.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/05/23/46f1_pic-of-cross.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 49478,
-            "question_id": 675750,
-            "question_folder": "English Tutoring Level 0",
-            "question_type": "Trả lời bằng giọng nói",
-            "question_text": "Look and say the word (Con hãy nhìn tranh và nói từ đó nhé!)",
-            "comment_plain": null,
-            "correct_answer": "ant",
-            "student_answer": "what",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/7933_ant-removebg-preview.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "ant",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 49478,
-            "question_id": 675752,
-            "question_folder": "English Tutoring Level 0",
-            "question_type": "Một lựa chọn",
-            "question_text": "Look and choose the correct answer (Con hãy nhìn tranh và chọn đáp án đúng nhé!) What is this?",
-            "comment_plain": "What is this? - It&#39;s an apple. Tạm dịch: Đây là cái g&igrave;? - N&oacute; là một quả táo.",
-            "correct_answer": "It's an apple.",
-            "student_answer": "It's a banana.",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/f658_apple-removebg-preview.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "It's a banana.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "It's an apple.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "It's a bird.",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 49478,
-            "question_id": 675759,
-            "question_folder": "English Tutoring Level 0",
-            "question_type": "Xứng-Hợp",
-            "question_text": "Read and match (Con hãy đọc và nối nhé!)",
-            "comment_plain": "1. What&#39;s your name? - I&#39;m David. Tạm dịch: T&ecirc;n của cậu là g&igrave; vậy? - Tớ là David. 2. What is this? - It&#39;s a bird. Tạm dịch: Đây là g&igrave;? - N&oacute; là con chim.",
-            "correct_answer": "What's your name?→I'm David.; What is this?→It's a bird.",
-            "student_answer": "wrong: What's your name?, What is this?",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A1",
-                "text": "What's your name?",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "A2",
-                "text": "What is this?",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B1",
-                "text": "It's a bird.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B2",
-                "text": "I'm David.",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 49478,
-            "question_id": 675822,
-            "question_folder": "English Tutoring Level 0",
-            "question_type": "Xứng-Hợp",
-            "question_text": "Read and match (Con hãy đọc và nối nhé!)",
-            "comment_plain": null,
-            "correct_answer": "Hello!→Hi!; Goodbye!→Bye!",
-            "student_answer": "wrong: Hello!, Goodbye!",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A1",
-                "text": "Hello!",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "A2",
-                "text": "Goodbye!",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B1",
-                "text": "Bye!",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B2",
-                "text": "Hi!",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3873111,
-      "program_id": null,
-      "level": 0,
-      "position": 3,
-      "title": "Unit 1A: Letters ABC - Lesson 3: Letter C(c)",
-      "desc": "- banana, book, bird\n- letter B(b) and sound /b/\n- What's your name? \n I'm (Tony).\n - What is this? It's (an ant).",
-      "status": "completed",
-      "last_activity_date": "2026-04-01",
-      "days_since_last_practice": 20,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7941,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 50,
-          "audio_turns": 74,
-          "avg_reaction_ms": 1260,
-          "fastest_reaction_ms": 428,
-          "total_duration_ms": 551147,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-01",
-        "pronunciation_attempts": 49,
-        "pronunciation_score_avg": 44.27,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 66.04,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Hi The. Good. Where are you from? 🌟",
-            "expected_answer": "I am from [country].",
-            "target_objects": null,
-            "user_transcript": "The that said.",
-            "score": 41,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 66,
-            "grammar_score": 16,
-            "timestamp": "2026-04-01",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3ec5x-daf03476-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi. Good. Tell me your name. 🙂",
-            "expected_answer": "My name is [Your Name].",
-            "target_objects": null,
-            "user_transcript": "The.",
-            "score": 59.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 19,
-            "timestamp": "2026-04-01",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3d4zx-e50a0f96-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hello! Nice to see you today. Are you ready to practice greetings with me? 😄",
-            "expected_answer": "Yes, I am ready.",
-            "target_objects": null,
-            "user_transcript": "I.",
-            "score": 7.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 0,
-            "grammar_score": 15,
-            "timestamp": "2026-04-01",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3cs12-78208fa4-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Do you want to say 'bye' with me? 👋",
-            "expected_answer": "Bye",
-            "target_objects": null,
-            "user_transcript": "Go.",
-            "score": 59,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 50,
-            "grammar_score": 68,
-            "timestamp": "2026-04-01",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3boa5-5797b8e9-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Say hi with me. Hi 👋",
-            "expected_answer": "Hi 👋",
-            "target_objects": null,
-            "user_transcript": "Hi.",
-            "score": 45.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 0,
-            "grammar_score": 91,
-            "timestamp": "2026-04-01",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mng3baoy-87a5eb8a-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 49480,
-          "score": 1,
-          "correct": 15,
-          "total": 15,
-          "submitted_date": "2026-04-01"
-        },
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 49480,
-          "luyen_tap": null
-        },
-        "skill_breakdown": {
-          "English Tutoring Level 0": {
-            "correct": 15,
-            "total": 15,
-            "accuracy": 1.0
-          }
-        },
         "weak_skills": [],
         "worst_questions": [],
         "not_attempted_preview": {}

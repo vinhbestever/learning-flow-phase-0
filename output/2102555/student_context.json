@@ -13,11 +13,6 @@
         "total": 1178,
         "accuracy": 0.941
       },
-      "English Tutoring - Level 4": {
-        "correct": 1,
-        "total": 1,
-        "accuracy": 1.0
-      },
       "Biểu đồ": {
         "correct": 172,
         "total": 174,
@@ -33,6 +28,11 @@
         "total": 15,
         "accuracy": 1.0
       },
+      "English Tutoring - Level 4": {
+        "correct": 1,
+        "total": 1,
+        "accuracy": 1.0
+      },
       "Tiếng Anh lớp 5": {
         "correct": 72,
         "total": 74,
@@ -40,6 +40,10 @@
       }
     },
     "weak_skills_global": [],
+    "critical_speaking_types": [
+      "brainstorm"
+    ],
+    "stability_days": 7.0,
     "overall_pronunciation_score_avg": 86.96,
     "overall_free_speaking_score_avg": 57.78,
     "overall_brainstorm_score_avg": 15.85,
@@ -53,7 +57,7 @@
       "correct": 48,
       "incorrect": 34
     },
-    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
     {
@@ -297,9 +301,9 @@
       "level": 5,
       "last_activity_date": "2026-04-01",
       "days_since_last_practice": 20,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9426,
       "weakness_score": 0.7923,
-      "composite_priority_score": 0.8962,
+      "composite_priority_score": 0.8675,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -408,153 +412,14 @@
       }
     },
     {
-      "lesson_id": 3968761,
-      "title": "Unit 2C: Shopping - Lesson 5: Review 2",
-      "level": 5,
-      "last_activity_date": "2026-04-15",
-      "days_since_last_practice": 6,
-      "forgetting_score": 0.9975,
-      "weakness_score": 0.6155,
-      "composite_priority_score": 0.8065,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [
-        {
-          "practice_id": 40809,
-          "question_id": 691139,
-          "question_folder": "English Tutoring - Level 5",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Fill the blank and speak (Con hãy điền từ vào chỗ trống và nói cả câu nhé!) The pyjama (1) ............... / (2) ............... 300,000 dongs.",
-          "comment_plain": "Đáp án chi tiết: Cấu tr&uacute;c n&oacute;i về giá tiền: S + be (is/are) + price. &rarr; (1) is S + cost(s) + price. &rarr; (2) costs The pyjama is 300,000 dongs./ The pyjama costs 300,000 dongs. Tạm dịch: Bộ đồ ngủ c&oacute; giá 300.000 đồng.",
-          "correct_answer": "is / costs",
-          "student_answer": "cost / price",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "(1) |",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "(2) |",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        }
-      ],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 4,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Good. What clothes do you buy? 👕",
-          "expected_answer": "I buy pyjamas and trainers sometimes.",
-          "target_objects": null,
-          "user_transcript": "I buy.",
-          "score": 69,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 38,
-          "timestamp": "2026-04-15",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo043q0z-67c548dc-audio.wav",
-          "reaction_time_ms": 1856
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi, I’m Alex. Nice to meet you 😄 What do you like to buy when you go shopping?",
-          "expected_answer": "I like to buy sunglasses and trainers.",
-          "target_objects": null,
-          "user_transcript": "The.",
-          "score": 10,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 0,
-          "grammar_score": 20,
-          "timestamp": "2026-04-15",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo042nyp-3c5b8cd4-audio.wav",
-          "reaction_time_ms": 1856
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "Anything more?",
-          "expected_answer": null,
-          "target_objects": [
-            "ring",
-            "earrings",
-            "necklace",
-            "sunglasses"
-          ],
-          "user_transcript": "A earrings price Twenty three hundred Twenty dollar.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "earrings"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-15",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo03aimu-0b547f2d-audio.wav",
-          "reaction_time_ms": 2028
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "Look at this picture and tell me, what can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "ring",
-            "earrings",
-            "necklace",
-            "sunglasses"
-          ],
-          "user_transcript": "I can see a ring price two thousand dollars.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "ring"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-15",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo03a5fv-55741f43-audio.wav",
-          "reaction_time_ms": 2151
-        },
-        {
-          "lms_type": "free_speaking",
-          "question": "What do you like to eat?",
-          "expected_answer": null,
-          "target_objects": null,
-          "user_transcript": "I like to eat bitter.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-15",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo038y5y-4b6a3e73-audio.wav",
-          "reaction_time_ms": 2659
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 40801,
-        "luyen_tap": 40809
-      }
-    },
-    {
       "lesson_id": 3767001,
       "title": "Unit 2C: Shopping - Lesson 1: How much is the belt?",
       "level": 5,
       "last_activity_date": "2026-03-24",
       "days_since_last_practice": 28,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9817,
       "weakness_score": 0.6095,
-      "composite_priority_score": 0.8048,
+      "composite_priority_score": 0.7956,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -630,9 +495,9 @@
       "level": 5,
       "last_activity_date": "2026-03-04",
       "days_since_last_practice": 48,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9989,
       "weakness_score": 0.5755,
-      "composite_priority_score": 0.7877,
+      "composite_priority_score": 0.7872,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -947,97 +812,6 @@
       "practice_ids": {
         "bai_tap": 40414,
         "luyen_tap": 40427
-      }
-    },
-    {
-      "lesson_id": 3781880,
-      "title": "Unit 2C: Shopping - Lesson 3: The ring is the most expensive.",
-      "level": 5,
-      "last_activity_date": "2026-03-31",
-      "days_since_last_practice": 21,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5665,
-      "composite_priority_score": 0.7833,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 3,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Hi, I’m Alex. What’s your name? 😊",
-          "expected_answer": "My name is Maria.",
-          "target_objects": null,
-          "user_transcript": "My name is.",
-          "score": 57.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 15,
-          "timestamp": "2026-03-31",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnemjzlb-490cd4ac-audio.wav",
-          "reaction_time_ms": 939
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What is this?",
-          "expected_answer": null,
-          "target_objects": [
-            "necklace",
-            "earrings",
-            "sunglasses",
-            "ring"
-          ],
-          "user_transcript": "It's a.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-31",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnelr0rl-318940f5-audio.wav",
-          "reaction_time_ms": 972
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "necklace",
-            "earrings",
-            "sunglasses",
-            "ring"
-          ],
-          "user_transcript": "I can see are green.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-31",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnelqtlj-80be49a7-audio.wav",
-          "reaction_time_ms": 2692
-        },
-        {
-          "lms_type": "free_speaking",
-          "question": "How do you feel now?",
-          "expected_answer": null,
-          "target_objects": null,
-          "user_transcript": "Y.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-31",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnelpmk5-2308a5b7-audio.wav",
-          "reaction_time_ms": 1066
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 38926,
-        "luyen_tap": 38927
       }
     },
     {
@@ -1814,118 +1588,14 @@
       }
     },
     {
-      "lesson_id": 3767002,
-      "title": "Unit 2C: Shopping - Lesson 2: The costume is cheaper than the pyjamas.",
-      "level": 5,
-      "last_activity_date": "2026-03-25",
-      "days_since_last_practice": 27,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.53,
-      "composite_priority_score": 0.765,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [
-        {
-          "practice_id": 38473,
-          "question_id": 687466,
-          "question_folder": "English Tutoring - Level 5",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Reorder the words (Con hãy sắp xếp lại câu nhé!) 3. cheaper / The / belt. / than / is / wallet / the",
-          "comment_plain": "Đáp án chi tiết: The wallet is cheaper than the belt. Tạm dịch: V&iacute; tiền rẻ hơn thắt lưng.",
-          "correct_answer": "The wallet is cheaper than the belt.",
-          "student_answer": "The belt is cheaper than the wallet .",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        },
-        {
-          "practice_id": 38473,
-          "question_id": 687467,
-          "question_folder": "English Tutoring - Level 5",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Reorder the words (Con hãy sắp xếp lại câu nhé!) 4. is / The / dress / million / one / dongs.",
-          "comment_plain": "Đáp án chi tiết: The dress is one million dongs. Tạm dịch: Chiếc váy c&oacute; giá 1 triệu đồng.",
-          "correct_answer": "The dress is one million dongs.",
-          "student_answer": "The dress is one million d í nh .",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        }
-      ],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "brainstorm",
-          "question": "What is this?",
-          "expected_answer": null,
-          "target_objects": [
-            "Costume",
-            "Pyjamas",
-            "trainers"
-          ],
-          "user_transcript": "It's a close.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-25",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn63j6mz-14b6afe7-audio.wav",
-          "reaction_time_ms": 1214
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "Costume",
-            "Pyjamas",
-            "trainers"
-          ],
-          "user_transcript": "I can see a shoes price, sixty dollars.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-25",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn63iyjv-b5889fb1-audio.wav",
-          "reaction_time_ms": 2203
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 38398,
-        "luyen_tap": 38473
-      }
-    },
-    {
       "lesson_id": 3766994,
       "title": "Unit 4B: My City - Lesson 5: Review 2",
       "level": 5,
       "last_activity_date": "2026-02-25",
       "days_since_last_practice": 55,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 0.5255,
-      "composite_priority_score": 0.7628,
+      "composite_priority_score": 0.7626,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2100,7 +1770,7 @@
       "level": 5,
       "last_activity_date": "2026-02-11",
       "days_since_last_practice": 69,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9999,
       "weakness_score": 0.5245,
       "composite_priority_score": 0.7622,
       "homework_status": "attempted",
@@ -2186,9 +1856,9 @@
       "level": 5,
       "last_activity_date": "2026-03-17",
       "days_since_last_practice": 35,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9933,
       "weakness_score": 0.5245,
-      "composite_priority_score": 0.7622,
+      "composite_priority_score": 0.7589,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2733,6 +2403,97 @@
       }
     },
     {
+      "lesson_id": 3781880,
+      "title": "Unit 2C: Shopping - Lesson 3: The ring is the most expensive.",
+      "level": 5,
+      "last_activity_date": "2026-03-31",
+      "days_since_last_practice": 21,
+      "forgetting_score": 0.9502,
+      "weakness_score": 0.5665,
+      "composite_priority_score": 0.7584,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 3,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Hi, I’m Alex. What’s your name? 😊",
+          "expected_answer": "My name is Maria.",
+          "target_objects": null,
+          "user_transcript": "My name is.",
+          "score": 57.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 15,
+          "timestamp": "2026-03-31",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnemjzlb-490cd4ac-audio.wav",
+          "reaction_time_ms": 939
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What is this?",
+          "expected_answer": null,
+          "target_objects": [
+            "necklace",
+            "earrings",
+            "sunglasses",
+            "ring"
+          ],
+          "user_transcript": "It's a.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-31",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnelr0rl-318940f5-audio.wav",
+          "reaction_time_ms": 972
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "necklace",
+            "earrings",
+            "sunglasses",
+            "ring"
+          ],
+          "user_transcript": "I can see are green.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-31",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnelqtlj-80be49a7-audio.wav",
+          "reaction_time_ms": 2692
+        },
+        {
+          "lms_type": "free_speaking",
+          "question": "How do you feel now?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "Y.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-31",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnelpmk5-2308a5b7-audio.wav",
+          "reaction_time_ms": 1066
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 38926,
+        "luyen_tap": 38927
+      }
+    },
+    {
       "lesson_id": 3687463,
       "title": "Unit 3B: Materials - Lesson 1: I have a spoon to eat rice.",
       "level": 5,
@@ -2818,9 +2579,9 @@
       "level": 5,
       "last_activity_date": "2026-03-11",
       "days_since_last_practice": 41,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9971,
       "weakness_score": 0.515,
-      "composite_priority_score": 0.7575,
+      "composite_priority_score": 0.756,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -2932,14 +2693,118 @@
       }
     },
     {
+      "lesson_id": 3767002,
+      "title": "Unit 2C: Shopping - Lesson 2: The costume is cheaper than the pyjamas.",
+      "level": 5,
+      "last_activity_date": "2026-03-25",
+      "days_since_last_practice": 27,
+      "forgetting_score": 0.9789,
+      "weakness_score": 0.53,
+      "composite_priority_score": 0.7545,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 38473,
+          "question_id": 687466,
+          "question_folder": "English Tutoring - Level 5",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Reorder the words (Con hãy sắp xếp lại câu nhé!) 3. cheaper / The / belt. / than / is / wallet / the",
+          "comment_plain": "Đáp án chi tiết: The wallet is cheaper than the belt. Tạm dịch: V&iacute; tiền rẻ hơn thắt lưng.",
+          "correct_answer": "The wallet is cheaper than the belt.",
+          "student_answer": "The belt is cheaper than the wallet .",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        },
+        {
+          "practice_id": 38473,
+          "question_id": 687467,
+          "question_folder": "English Tutoring - Level 5",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Reorder the words (Con hãy sắp xếp lại câu nhé!) 4. is / The / dress / million / one / dongs.",
+          "comment_plain": "Đáp án chi tiết: The dress is one million dongs. Tạm dịch: Chiếc váy c&oacute; giá 1 triệu đồng.",
+          "correct_answer": "The dress is one million dongs.",
+          "student_answer": "The dress is one million d í nh .",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "brainstorm",
+          "question": "What is this?",
+          "expected_answer": null,
+          "target_objects": [
+            "Costume",
+            "Pyjamas",
+            "trainers"
+          ],
+          "user_transcript": "It's a close.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-25",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn63j6mz-14b6afe7-audio.wav",
+          "reaction_time_ms": 1214
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "Costume",
+            "Pyjamas",
+            "trainers"
+          ],
+          "user_transcript": "I can see a shoes price, sixty dollars.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-25",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn63iyjv-b5889fb1-audio.wav",
+          "reaction_time_ms": 2203
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 38398,
+        "luyen_tap": 38473
+      }
+    },
+    {
       "lesson_id": 3767000,
       "title": "Unit 1C: - Lesson 5: Review 2",
       "level": 5,
       "last_activity_date": "2026-03-18",
       "days_since_last_practice": 34,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9922,
       "weakness_score": 0.515,
-      "composite_priority_score": 0.7575,
+      "composite_priority_score": 0.7536,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -3624,9 +3489,9 @@
       "level": 5,
       "last_activity_date": "2026-02-24",
       "days_since_last_practice": 56,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9997,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7499,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -3675,9 +3540,9 @@
       "level": 5,
       "last_activity_date": "2026-03-10",
       "days_since_last_practice": 42,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9975,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7488,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -3835,6 +3700,48 @@
       "practice_ids": {
         "bai_tap": 9098,
         "luyen_tap": 14113
+      }
+    },
+    {
+      "lesson_id": 3528955,
+      "title": "Unit 3A: Free time - Lesson 4: Was he/she going to school at 7 AM yesterday?",
+      "level": 5,
+      "last_activity_date": "2025-11-24",
+      "days_since_last_practice": 148,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.275,
+      "composite_priority_score": 0.6375,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 2,
+      "worst_speaking_items": [
+        {
+          "lms_type": "brainstorm",
+          "question": "What are they doing?",
+          "expected_answer": null,
+          "target_objects": [
+            "trampolining",
+            "diving",
+            "telling jokes",
+            "going sailing",
+            "going shopping"
+          ],
+          "user_transcript": "They are selling, going, selling, they are going selling, falling.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2025-11-24",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2025/11/24/admin/mid5palh-42e8da97-audio.wav",
+          "reaction_time_ms": 1640
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 15022,
+        "luyen_tap": 14095
       }
     }
   ],
@@ -4238,9 +4145,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-03",
       "days_since_last_practice": 49,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9991,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9995,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -4325,9 +4232,9 @@
       "status": "completed",
       "last_activity_date": "2026-04-01",
       "days_since_last_practice": 20,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9426,
       "weakness_score": 0.7923,
-      "composite_priority_score": 0.8962,
+      "composite_priority_score": 0.8675,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -4519,309 +4426,6 @@
       }
     },
     {
-      "lesson_id": 3968761,
-      "program_id": null,
-      "level": 5,
-      "position": 11,
-      "title": "Unit 2C: Shopping - Lesson 5: Review 2",
-      "desc": "- costume, pyjamas, trainers, ring, earrings, necklace, sunglasses, cheaper, more expensive, the cheapest, the most expensive\"\t\"*Review\n- The ... is cheaper than the ... \n- The ... is more expensive t",
-      "status": "completed",
-      "last_activity_date": "2026-04-15",
-      "days_since_last_practice": 6,
-      "forgetting_score": 0.9975,
-      "weakness_score": 0.6155,
-      "composite_priority_score": 0.8065,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 65,
-          "audio_turns": 50,
-          "avg_reaction_ms": 1605,
-          "fastest_reaction_ms": 585,
-          "total_duration_ms": 1672239,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-15",
-        "pronunciation_attempts": 32,
-        "pronunciation_score_avg": 79.41,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 2
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 80.86,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Good. What clothes do you buy? 👕",
-            "expected_answer": "I buy pyjamas and trainers sometimes.",
-            "target_objects": null,
-            "user_transcript": "I buy.",
-            "score": 69,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 38,
-            "timestamp": "2026-04-15",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo043q0z-67c548dc-audio.wav",
-            "reaction_time_ms": 1856
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi, I’m Alex. Nice to meet you 😄 What do you like to buy when you go shopping?",
-            "expected_answer": "I like to buy sunglasses and trainers.",
-            "target_objects": null,
-            "user_transcript": "The.",
-            "score": 10,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 0,
-            "grammar_score": 20,
-            "timestamp": "2026-04-15",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo042nyp-3c5b8cd4-audio.wav",
-            "reaction_time_ms": 1856
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "Anything more?",
-            "expected_answer": null,
-            "target_objects": [
-              "ring",
-              "earrings",
-              "necklace",
-              "sunglasses"
-            ],
-            "user_transcript": "A earrings price Twenty three hundred Twenty dollar.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "earrings"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-15",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo03aimu-0b547f2d-audio.wav",
-            "reaction_time_ms": 2028
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "Look at this picture and tell me, what can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "ring",
-              "earrings",
-              "necklace",
-              "sunglasses"
-            ],
-            "user_transcript": "I can see a ring price two thousand dollars.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "ring"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-15",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo03a5fv-55741f43-audio.wav",
-            "reaction_time_ms": 2151
-          },
-          {
-            "lms_type": "free_speaking",
-            "question": "What do you like to eat?",
-            "expected_answer": null,
-            "target_objects": null,
-            "user_transcript": "I like to eat bitter.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-15",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo038y5y-4b6a3e73-audio.wav",
-            "reaction_time_ms": 2659
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 40801,
-          "score": 0.73,
-          "correct": 11,
-          "total": 15,
-          "submitted_date": "2026-04-15"
-        },
-        "luyen_tap": {
-          "practice_id": 40809,
-          "score": 0.86,
-          "correct": 6,
-          "total": 7,
-          "submitted_date": "2026-04-15"
-        },
-        "lms_ids": {
-          "bai_tap": 40801,
-          "luyen_tap": 40809
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 5": {
-            "correct": 17,
-            "total": 22,
-            "accuracy": 0.773
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 40801,
-            "question_id": 691082,
-            "question_folder": "English Tutoring - Level 5",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Look and fill in the blank with one word (Con hãy nhìn tranh điền một từ vào chỗ trống nhé!) The (2) ............ are the cheapest.",
-            "comment_plain": "Đáp án chi tiết: The sunglasses are the cheapest. Tạm dịch: K&iacute;nh râm là rẻ nhất.",
-            "correct_answer": "sunglasses",
-            "student_answer": "sunglassed",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/09/17/022d_41.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 40801,
-            "question_id": 691094,
-            "question_folder": "English Tutoring - Level 5",
-            "question_type": "Một lựa chọn",
-            "question_text": "Look and choose the correct answer. (Con hãy nhìn tranh và chọn đáp án phù hợp nhé!) How are the earrings? (3) ...............................................................",
-            "comment_plain": "Đáp án chi tiết: The earrings are cheaper than the ring. Tạm dịch: Đ&ocirc;i khuy&ecirc;n tai rẻ hơn chiếc nhẫn.",
-            "correct_answer": "The earrings are cheaper than the ring.",
-            "student_answer": "The earrings are cheaper than the sunglasses.",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/09/17/022d_41.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "The earrings are cheaper than the ring.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "The earrings are more expensive than the necklace.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "The earrings are cheaper than the sunglasses.",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 40801,
-            "question_id": 691112,
-            "question_folder": "English Tutoring - Level 5",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Look and answer (Con hãy nhìn tranh và trả lời câu hỏi nhé!) Is the costume more expensive than the pyjama?",
-            "comment_plain": "Đáp án chi tiết: Is the costume more expensive than the pyjama? Yes, it is. Tạm dịch: Bộ trang phục c&oacute; đắt hơn bộ đồ ngủ kh&ocirc;ng? C&oacute;, n&oacute; đắt hơn.",
-            "correct_answer": "Yes, it is.",
-            "student_answer": "yes is it",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/09/17/a7c3_41.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 40801,
-            "question_id": 691113,
-            "question_folder": "English Tutoring - Level 5",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Look and answer (Con hãy nhìn tranh và viết lại cả câu trả lời nhé!) How are the trainers? The trainers are ....................................",
-            "comment_plain": "Đáp án chi tiết: How are the trainers? The trainers are more expensive than the sunglasses.|more expensive than the sunglasses|more expensive than the sunglasses. Tạm dịch: Giày thể thao c&oacute; giá bao nhi&ecirc;u? Giày thể thao đắt hơn k&iacute;nh râm.",
-            "correct_answer": "The trainers are more expensive than the sunglasses.|more expensive than the sunglasses|more expensive than the sunglasses.",
-            "student_answer": "most expensive",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/09/17/7192_42.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 40809,
-            "question_id": 691139,
-            "question_folder": "English Tutoring - Level 5",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Fill the blank and speak (Con hãy điền từ vào chỗ trống và nói cả câu nhé!) The pyjama (1) ............... / (2) ............... 300,000 dongs.",
-            "comment_plain": "Đáp án chi tiết: Cấu tr&uacute;c n&oacute;i về giá tiền: S + be (is/are) + price. &rarr; (1) is S + cost(s) + price. &rarr; (2) costs The pyjama is 300,000 dongs./ The pyjama costs 300,000 dongs. Tạm dịch: Bộ đồ ngủ c&oacute; giá 300.000 đồng.",
-            "correct_answer": "is / costs",
-            "student_answer": "cost / price",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "(1) |",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "(2) |",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
       "lesson_id": 3767001,
       "program_id": null,
       "level": 5,
@@ -4831,9 +4435,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-24",
       "days_since_last_practice": 28,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9817,
       "weakness_score": 0.6095,
-      "composite_priority_score": 0.8048,
+      "composite_priority_score": 0.7956,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -5122,9 +4726,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-04",
       "days_since_last_practice": 48,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9989,
       "weakness_score": 0.5755,
-      "composite_priority_score": 0.7877,
+      "composite_priority_score": 0.7872,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -5626,255 +5230,6 @@
               {
                 "letter": "C",
                 "text": "There are three striped bottles.",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3781880,
-      "program_id": null,
-      "level": 5,
-      "position": 9,
-      "title": "Unit 2C: Shopping - Lesson 3: The ring is the most expensive.",
-      "desc": "- ring, earrings, necklace, sunglasses\n- the cheapest, the most expensive\n- The ... is the cheapest.\n- The ... is the most expensive.\"",
-      "status": "completed",
-      "last_activity_date": "2026-03-31",
-      "days_since_last_practice": 21,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5665,
-      "composite_priority_score": 0.7833,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 52,
-          "audio_turns": 50,
-          "avg_reaction_ms": 1307,
-          "fastest_reaction_ms": 825,
-          "total_duration_ms": 1688204,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-03-31",
-        "pronunciation_attempts": 33,
-        "pronunciation_score_avg": 83.03,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 88.96,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Hi, I’m Alex. What’s your name? 😊",
-            "expected_answer": "My name is Maria.",
-            "target_objects": null,
-            "user_transcript": "My name is.",
-            "score": 57.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 15,
-            "timestamp": "2026-03-31",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnemjzlb-490cd4ac-audio.wav",
-            "reaction_time_ms": 939
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What is this?",
-            "expected_answer": null,
-            "target_objects": [
-              "necklace",
-              "earrings",
-              "sunglasses",
-              "ring"
-            ],
-            "user_transcript": "It's a.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-31",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnelr0rl-318940f5-audio.wav",
-            "reaction_time_ms": 972
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "necklace",
-              "earrings",
-              "sunglasses",
-              "ring"
-            ],
-            "user_transcript": "I can see are green.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-31",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnelqtlj-80be49a7-audio.wav",
-            "reaction_time_ms": 2692
-          },
-          {
-            "lms_type": "free_speaking",
-            "question": "How do you feel now?",
-            "expected_answer": null,
-            "target_objects": null,
-            "user_transcript": "Y.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-31",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnelpmk5-2308a5b7-audio.wav",
-            "reaction_time_ms": 1066
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 38926,
-          "score": 0.87,
-          "correct": 13,
-          "total": 15,
-          "submitted_date": "2026-03-31"
-        },
-        "luyen_tap": {
-          "practice_id": 38927,
-          "score": 0.86,
-          "correct": 6,
-          "total": 7,
-          "submitted_date": "2026-03-31"
-        },
-        "lms_ids": {
-          "bai_tap": 38926,
-          "luyen_tap": 38927
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 5": {
-            "correct": 18,
-            "total": 21,
-            "accuracy": 0.857
-          },
-          "English Tutoring - Level 4": {
-            "correct": 1,
-            "total": 1,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 38926,
-            "question_id": 688419,
-            "question_folder": "English Tutoring - Level 5",
-            "question_type": "Một lựa chọn",
-            "question_text": "Read and choose the correct answer to fill in the blank. (Con hãy đọc và chọn đáp án đúng để điền vào chỗ trống nhé!) A Day at the Jewelry Store Mike goes to a jewelry store. He (1)........... a beautiful ring. He asks the price. \"That ring is 100 dollars.\" the salesperson says. Mike thinks it is ex",
-            "comment_plain": "Đáp án chi tiết: Mike goes to a jewelry store. He (1) sees a beautiful ring. He asks the price. \"That ring is 100 dollars.\" the salesperson says. Mike thinks it is expensive. He sees earrings. They are 50 dollars. \"They are cheaper (2) than the ring.\" Mike thinks. Then, Mike sees a necklace. (3) It's 200 dollars. \"That is very expensive,\" Mike says. Finally, he sees sunglasses. They are 500 dollars. \"Wow! They are the (4) most expensive thing in the store,\" Mike says. He decides to buy the earri",
-            "correct_answer": "C. sees",
-            "student_answer": "B. saw",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/09/08/be54_content-hwsp-level-5--282-29.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. see",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. saw",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. sees",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 38926,
-            "question_id": 688426,
-            "question_folder": "English Tutoring - Level 5",
-            "question_type": "Một lựa chọn",
-            "question_text": "Look and choose the correct answer. (Con hãy nhìn tranh và chọn đáp án phù hợp nhé!) How are the earrings? (3) ...............................................................",
-            "comment_plain": "Đáp án chi tiết: The earrings are the cheapest. Tạm dịch: B&ocirc;ng tai là rẻ nhất.",
-            "correct_answer": "B. The earrings are the cheapest.",
-            "student_answer": "C. The earrings are the ugliest.",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/09/08/2548_content-hwsp-level-5--283-29.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. The earrings are the most expensive.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. The earrings are the cheapest.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. The earrings are the ugliest.",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 38927,
-            "question_id": 688433,
-            "question_folder": "English Tutoring - Level 5",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Look and fill in the blank (Con hãy nh&igrave;n tranh và điền từ vào chỗ trống nh&eacute;!) 1. The ............... is the cheapest.",
-            "comment_plain": "Đáp án chi tiết: The ring is the cheapest. Tạm dịch: Chiếc nhẫn là rẻ nhất.",
-            "correct_answer": "ring",
-            "student_answer": "sunglassed",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/09/08/b964_-245--282-29.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
                 "image_urls": [],
                 "audio_urls": []
               }
@@ -7276,166 +6631,6 @@
       }
     },
     {
-      "lesson_id": 3767002,
-      "program_id": null,
-      "level": 5,
-      "position": 8,
-      "title": "Unit 2C: Shopping - Lesson 2: The costume is cheaper than the pyjamas.",
-      "desc": "- costume, pyjamas, trainers, cheaper, more expensive\n- The ... is cheaper than the ...\n- The ... is more expensive than the ...",
-      "status": "completed",
-      "last_activity_date": "2026-03-25",
-      "days_since_last_practice": 27,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.53,
-      "composite_priority_score": 0.765,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 52,
-          "audio_turns": 50,
-          "avg_reaction_ms": 1622,
-          "fastest_reaction_ms": 722,
-          "total_duration_ms": 1516344,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-03-25",
-        "pronunciation_attempts": 32,
-        "pronunciation_score_avg": 88.91,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 100.0,
-        "free_speaking_answer_type_dist": {
-          "accordant": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 89.82,
-        "worst_speaking_items": [
-          {
-            "lms_type": "brainstorm",
-            "question": "What is this?",
-            "expected_answer": null,
-            "target_objects": [
-              "Costume",
-              "Pyjamas",
-              "trainers"
-            ],
-            "user_transcript": "It's a close.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-25",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn63j6mz-14b6afe7-audio.wav",
-            "reaction_time_ms": 1214
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "Costume",
-              "Pyjamas",
-              "trainers"
-            ],
-            "user_transcript": "I can see a shoes price, sixty dollars.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-25",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn63iyjv-b5889fb1-audio.wav",
-            "reaction_time_ms": 2203
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 38398,
-          "score": 1,
-          "correct": 15,
-          "total": 15,
-          "submitted_date": "2026-03-25"
-        },
-        "luyen_tap": {
-          "practice_id": 38473,
-          "score": 0.8,
-          "correct": 8,
-          "total": 10,
-          "submitted_date": "2026-03-25"
-        },
-        "lms_ids": {
-          "bai_tap": 38398,
-          "luyen_tap": 38473
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 5": {
-            "correct": 23,
-            "total": 25,
-            "accuracy": 0.92
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 38473,
-            "question_id": 687466,
-            "question_folder": "English Tutoring - Level 5",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Reorder the words (Con hãy sắp xếp lại câu nhé!) 3. cheaper / The / belt. / than / is / wallet / the",
-            "comment_plain": "Đáp án chi tiết: The wallet is cheaper than the belt. Tạm dịch: V&iacute; tiền rẻ hơn thắt lưng.",
-            "correct_answer": "The wallet is cheaper than the belt.",
-            "student_answer": "The belt is cheaper than the wallet .",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 38473,
-            "question_id": 687467,
-            "question_folder": "English Tutoring - Level 5",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Reorder the words (Con hãy sắp xếp lại câu nhé!) 4. is / The / dress / million / one / dongs.",
-            "comment_plain": "Đáp án chi tiết: The dress is one million dongs. Tạm dịch: Chiếc váy c&oacute; giá 1 triệu đồng.",
-            "correct_answer": "The dress is one million dongs.",
-            "student_answer": "The dress is one million d í nh .",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
       "lesson_id": 3766994,
       "program_id": null,
       "level": 5,
@@ -7445,9 +6640,9 @@
       "status": "completed",
       "last_activity_date": "2026-02-25",
       "days_since_last_practice": 55,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 0.5255,
-      "composite_priority_score": 0.7628,
+      "composite_priority_score": 0.7626,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -7735,7 +6930,7 @@
       "status": "completed",
       "last_activity_date": "2026-02-11",
       "days_since_last_practice": 69,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9999,
       "weakness_score": 0.5245,
       "composite_priority_score": 0.7622,
       "in_class": {
@@ -7876,9 +7071,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-17",
       "days_since_last_practice": 35,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9933,
       "weakness_score": 0.5245,
-      "composite_priority_score": 0.7622,
+      "composite_priority_score": 0.7589,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -9152,6 +8347,255 @@
       }
     },
     {
+      "lesson_id": 3781880,
+      "program_id": null,
+      "level": 5,
+      "position": 9,
+      "title": "Unit 2C: Shopping - Lesson 3: The ring is the most expensive.",
+      "desc": "- ring, earrings, necklace, sunglasses\n- the cheapest, the most expensive\n- The ... is the cheapest.\n- The ... is the most expensive.\"",
+      "status": "completed",
+      "last_activity_date": "2026-03-31",
+      "days_since_last_practice": 21,
+      "forgetting_score": 0.9502,
+      "weakness_score": 0.5665,
+      "composite_priority_score": 0.7584,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 52,
+          "audio_turns": 50,
+          "avg_reaction_ms": 1307,
+          "fastest_reaction_ms": 825,
+          "total_duration_ms": 1688204,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-31",
+        "pronunciation_attempts": 33,
+        "pronunciation_score_avg": 83.03,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 2
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 88.96,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Hi, I’m Alex. What’s your name? 😊",
+            "expected_answer": "My name is Maria.",
+            "target_objects": null,
+            "user_transcript": "My name is.",
+            "score": 57.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 15,
+            "timestamp": "2026-03-31",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnemjzlb-490cd4ac-audio.wav",
+            "reaction_time_ms": 939
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What is this?",
+            "expected_answer": null,
+            "target_objects": [
+              "necklace",
+              "earrings",
+              "sunglasses",
+              "ring"
+            ],
+            "user_transcript": "It's a.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-31",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnelr0rl-318940f5-audio.wav",
+            "reaction_time_ms": 972
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "necklace",
+              "earrings",
+              "sunglasses",
+              "ring"
+            ],
+            "user_transcript": "I can see are green.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-31",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnelqtlj-80be49a7-audio.wav",
+            "reaction_time_ms": 2692
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "How do you feel now?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "Y.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-31",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnelpmk5-2308a5b7-audio.wav",
+            "reaction_time_ms": 1066
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 38926,
+          "score": 0.87,
+          "correct": 13,
+          "total": 15,
+          "submitted_date": "2026-03-31"
+        },
+        "luyen_tap": {
+          "practice_id": 38927,
+          "score": 0.86,
+          "correct": 6,
+          "total": 7,
+          "submitted_date": "2026-03-31"
+        },
+        "lms_ids": {
+          "bai_tap": 38926,
+          "luyen_tap": 38927
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 5": {
+            "correct": 18,
+            "total": 21,
+            "accuracy": 0.857
+          },
+          "English Tutoring - Level 4": {
+            "correct": 1,
+            "total": 1,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 38926,
+            "question_id": 688419,
+            "question_folder": "English Tutoring - Level 5",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose the correct answer to fill in the blank. (Con hãy đọc và chọn đáp án đúng để điền vào chỗ trống nhé!) A Day at the Jewelry Store Mike goes to a jewelry store. He (1)........... a beautiful ring. He asks the price. \"That ring is 100 dollars.\" the salesperson says. Mike thinks it is ex",
+            "comment_plain": "Đáp án chi tiết: Mike goes to a jewelry store. He (1) sees a beautiful ring. He asks the price. \"That ring is 100 dollars.\" the salesperson says. Mike thinks it is expensive. He sees earrings. They are 50 dollars. \"They are cheaper (2) than the ring.\" Mike thinks. Then, Mike sees a necklace. (3) It's 200 dollars. \"That is very expensive,\" Mike says. Finally, he sees sunglasses. They are 500 dollars. \"Wow! They are the (4) most expensive thing in the store,\" Mike says. He decides to buy the earri",
+            "correct_answer": "C. sees",
+            "student_answer": "B. saw",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/09/08/be54_content-hwsp-level-5--282-29.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. see",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. saw",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. sees",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 38926,
+            "question_id": 688426,
+            "question_folder": "English Tutoring - Level 5",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look and choose the correct answer. (Con hãy nhìn tranh và chọn đáp án phù hợp nhé!) How are the earrings? (3) ...............................................................",
+            "comment_plain": "Đáp án chi tiết: The earrings are the cheapest. Tạm dịch: B&ocirc;ng tai là rẻ nhất.",
+            "correct_answer": "B. The earrings are the cheapest.",
+            "student_answer": "C. The earrings are the ugliest.",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/09/08/2548_content-hwsp-level-5--283-29.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. The earrings are the most expensive.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. The earrings are the cheapest.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. The earrings are the ugliest.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 38927,
+            "question_id": 688433,
+            "question_folder": "English Tutoring - Level 5",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Look and fill in the blank (Con hãy nh&igrave;n tranh và điền từ vào chỗ trống nh&eacute;!) 1. The ............... is the cheapest.",
+            "comment_plain": "Đáp án chi tiết: The ring is the cheapest. Tạm dịch: Chiếc nhẫn là rẻ nhất.",
+            "correct_answer": "ring",
+            "student_answer": "sunglassed",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/09/08/b964_-245--282-29.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3687463,
       "program_id": null,
       "level": 5,
@@ -9322,9 +8766,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-11",
       "days_since_last_practice": 41,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9971,
       "weakness_score": 0.515,
-      "composite_priority_score": 0.7575,
+      "composite_priority_score": 0.756,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -9489,6 +8933,166 @@
       }
     },
     {
+      "lesson_id": 3767002,
+      "program_id": null,
+      "level": 5,
+      "position": 8,
+      "title": "Unit 2C: Shopping - Lesson 2: The costume is cheaper than the pyjamas.",
+      "desc": "- costume, pyjamas, trainers, cheaper, more expensive\n- The ... is cheaper than the ...\n- The ... is more expensive than the ...",
+      "status": "completed",
+      "last_activity_date": "2026-03-25",
+      "days_since_last_practice": 27,
+      "forgetting_score": 0.9789,
+      "weakness_score": 0.53,
+      "composite_priority_score": 0.7545,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 52,
+          "audio_turns": 50,
+          "avg_reaction_ms": 1622,
+          "fastest_reaction_ms": 722,
+          "total_duration_ms": 1516344,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-25",
+        "pronunciation_attempts": 32,
+        "pronunciation_score_avg": 88.91,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 2
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 89.82,
+        "worst_speaking_items": [
+          {
+            "lms_type": "brainstorm",
+            "question": "What is this?",
+            "expected_answer": null,
+            "target_objects": [
+              "Costume",
+              "Pyjamas",
+              "trainers"
+            ],
+            "user_transcript": "It's a close.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-25",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn63j6mz-14b6afe7-audio.wav",
+            "reaction_time_ms": 1214
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "Costume",
+              "Pyjamas",
+              "trainers"
+            ],
+            "user_transcript": "I can see a shoes price, sixty dollars.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-25",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn63iyjv-b5889fb1-audio.wav",
+            "reaction_time_ms": 2203
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 38398,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-03-25"
+        },
+        "luyen_tap": {
+          "practice_id": 38473,
+          "score": 0.8,
+          "correct": 8,
+          "total": 10,
+          "submitted_date": "2026-03-25"
+        },
+        "lms_ids": {
+          "bai_tap": 38398,
+          "luyen_tap": 38473
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 5": {
+            "correct": 23,
+            "total": 25,
+            "accuracy": 0.92
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 38473,
+            "question_id": 687466,
+            "question_folder": "English Tutoring - Level 5",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Reorder the words (Con hãy sắp xếp lại câu nhé!) 3. cheaper / The / belt. / than / is / wallet / the",
+            "comment_plain": "Đáp án chi tiết: The wallet is cheaper than the belt. Tạm dịch: V&iacute; tiền rẻ hơn thắt lưng.",
+            "correct_answer": "The wallet is cheaper than the belt.",
+            "student_answer": "The belt is cheaper than the wallet .",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 38473,
+            "question_id": 687467,
+            "question_folder": "English Tutoring - Level 5",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Reorder the words (Con hãy sắp xếp lại câu nhé!) 4. is / The / dress / million / one / dongs.",
+            "comment_plain": "Đáp án chi tiết: The dress is one million dongs. Tạm dịch: Chiếc váy c&oacute; giá 1 triệu đồng.",
+            "correct_answer": "The dress is one million dongs.",
+            "student_answer": "The dress is one million d í nh .",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3767000,
       "program_id": null,
       "level": 5,
@@ -9498,9 +9102,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-18",
       "days_since_last_practice": 34,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9922,
       "weakness_score": 0.515,
-      "composite_priority_score": 0.7575,
+      "composite_priority_score": 0.7536,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -10711,9 +10315,9 @@
       "status": "completed",
       "last_activity_date": "2026-02-24",
       "days_since_last_practice": 56,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9997,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7499,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -10818,9 +10422,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-10",
       "days_since_last_practice": 42,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9975,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7488,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -11343,6 +10947,309 @@
                 "image_urls": [
                   "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/db4e_cross.png"
                 ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3968761,
+      "program_id": null,
+      "level": 5,
+      "position": 11,
+      "title": "Unit 2C: Shopping - Lesson 5: Review 2",
+      "desc": "- costume, pyjamas, trainers, ring, earrings, necklace, sunglasses, cheaper, more expensive, the cheapest, the most expensive\"\t\"*Review\n- The ... is cheaper than the ... \n- The ... is more expensive t",
+      "status": "completed",
+      "last_activity_date": "2026-04-15",
+      "days_since_last_practice": 6,
+      "forgetting_score": 0.5756,
+      "weakness_score": 0.6155,
+      "composite_priority_score": 0.5956,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 65,
+          "audio_turns": 50,
+          "avg_reaction_ms": 1605,
+          "fastest_reaction_ms": 585,
+          "total_duration_ms": 1672239,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-15",
+        "pronunciation_attempts": 32,
+        "pronunciation_score_avg": 79.41,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "correct": 2
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 80.86,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Good. What clothes do you buy? 👕",
+            "expected_answer": "I buy pyjamas and trainers sometimes.",
+            "target_objects": null,
+            "user_transcript": "I buy.",
+            "score": 69,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 38,
+            "timestamp": "2026-04-15",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo043q0z-67c548dc-audio.wav",
+            "reaction_time_ms": 1856
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi, I’m Alex. Nice to meet you 😄 What do you like to buy when you go shopping?",
+            "expected_answer": "I like to buy sunglasses and trainers.",
+            "target_objects": null,
+            "user_transcript": "The.",
+            "score": 10,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 20,
+            "timestamp": "2026-04-15",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo042nyp-3c5b8cd4-audio.wav",
+            "reaction_time_ms": 1856
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "Anything more?",
+            "expected_answer": null,
+            "target_objects": [
+              "ring",
+              "earrings",
+              "necklace",
+              "sunglasses"
+            ],
+            "user_transcript": "A earrings price Twenty three hundred Twenty dollar.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "earrings"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-15",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo03aimu-0b547f2d-audio.wav",
+            "reaction_time_ms": 2028
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "Look at this picture and tell me, what can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "ring",
+              "earrings",
+              "necklace",
+              "sunglasses"
+            ],
+            "user_transcript": "I can see a ring price two thousand dollars.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "ring"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-15",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo03a5fv-55741f43-audio.wav",
+            "reaction_time_ms": 2151
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "What do you like to eat?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "I like to eat bitter.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-15",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo038y5y-4b6a3e73-audio.wav",
+            "reaction_time_ms": 2659
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 40801,
+          "score": 0.73,
+          "correct": 11,
+          "total": 15,
+          "submitted_date": "2026-04-15"
+        },
+        "luyen_tap": {
+          "practice_id": 40809,
+          "score": 0.86,
+          "correct": 6,
+          "total": 7,
+          "submitted_date": "2026-04-15"
+        },
+        "lms_ids": {
+          "bai_tap": 40801,
+          "luyen_tap": 40809
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 5": {
+            "correct": 17,
+            "total": 22,
+            "accuracy": 0.773
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 40801,
+            "question_id": 691082,
+            "question_folder": "English Tutoring - Level 5",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Look and fill in the blank with one word (Con hãy nhìn tranh điền một từ vào chỗ trống nhé!) The (2) ............ are the cheapest.",
+            "comment_plain": "Đáp án chi tiết: The sunglasses are the cheapest. Tạm dịch: K&iacute;nh râm là rẻ nhất.",
+            "correct_answer": "sunglasses",
+            "student_answer": "sunglassed",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/09/17/022d_41.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 40801,
+            "question_id": 691094,
+            "question_folder": "English Tutoring - Level 5",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look and choose the correct answer. (Con hãy nhìn tranh và chọn đáp án phù hợp nhé!) How are the earrings? (3) ...............................................................",
+            "comment_plain": "Đáp án chi tiết: The earrings are cheaper than the ring. Tạm dịch: Đ&ocirc;i khuy&ecirc;n tai rẻ hơn chiếc nhẫn.",
+            "correct_answer": "The earrings are cheaper than the ring.",
+            "student_answer": "The earrings are cheaper than the sunglasses.",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/09/17/022d_41.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "The earrings are cheaper than the ring.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "The earrings are more expensive than the necklace.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "The earrings are cheaper than the sunglasses.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 40801,
+            "question_id": 691112,
+            "question_folder": "English Tutoring - Level 5",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Look and answer (Con hãy nhìn tranh và trả lời câu hỏi nhé!) Is the costume more expensive than the pyjama?",
+            "comment_plain": "Đáp án chi tiết: Is the costume more expensive than the pyjama? Yes, it is. Tạm dịch: Bộ trang phục c&oacute; đắt hơn bộ đồ ngủ kh&ocirc;ng? C&oacute;, n&oacute; đắt hơn.",
+            "correct_answer": "Yes, it is.",
+            "student_answer": "yes is it",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/09/17/a7c3_41.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 40801,
+            "question_id": 691113,
+            "question_folder": "English Tutoring - Level 5",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Look and answer (Con hãy nhìn tranh và viết lại cả câu trả lời nhé!) How are the trainers? The trainers are ....................................",
+            "comment_plain": "Đáp án chi tiết: How are the trainers? The trainers are more expensive than the sunglasses.|more expensive than the sunglasses|more expensive than the sunglasses. Tạm dịch: Giày thể thao c&oacute; giá bao nhi&ecirc;u? Giày thể thao đắt hơn k&iacute;nh râm.",
+            "correct_answer": "The trainers are more expensive than the sunglasses.|more expensive than the sunglasses|more expensive than the sunglasses.",
+            "student_answer": "most expensive",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/09/17/7192_42.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 40809,
+            "question_id": 691139,
+            "question_folder": "English Tutoring - Level 5",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Fill the blank and speak (Con hãy điền từ vào chỗ trống và nói cả câu nhé!) The pyjama (1) ............... / (2) ............... 300,000 dongs.",
+            "comment_plain": "Đáp án chi tiết: Cấu tr&uacute;c n&oacute;i về giá tiền: S + be (is/are) + price. &rarr; (1) is S + cost(s) + price. &rarr; (2) costs The pyjama is 300,000 dongs./ The pyjama costs 300,000 dongs. Tạm dịch: Bộ đồ ngủ c&oacute; giá 300.000 đồng.",
+            "correct_answer": "is / costs",
+            "student_answer": "cost / price",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "(1) |",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "(2) |",
+                "image_urls": [],
                 "audio_urls": []
               }
             ],

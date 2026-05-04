@@ -20,6 +20,10 @@
       }
     },
     "weak_skills_global": [],
+    "critical_speaking_types": [
+      "brainstorm",
+      "free_speaking"
+    ],
     "overall_pronunciation_score_avg": 65.27,
     "overall_free_speaking_score_avg": 16.67,
     "overall_brainstorm_score_avg": 7.69,
@@ -33,7 +37,7 @@
       "incorrect": 5,
       "correct": 8
     },
-    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
     {
@@ -42,9 +46,9 @@
       "level": 3,
       "last_activity_date": "2026-02-26",
       "days_since_last_practice": 54,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9998,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -138,9 +142,9 @@
       "level": 3,
       "last_activity_date": "2026-03-16",
       "days_since_last_practice": 36,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9942,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9971,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -258,9 +262,9 @@
       "level": 3,
       "last_activity_date": "2026-03-23",
       "days_since_last_practice": 29,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9841,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.992,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -543,9 +547,9 @@
       "level": 3,
       "last_activity_date": "2026-03-26",
       "days_since_last_practice": 26,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9756,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9878,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -836,9 +840,9 @@
       "level": 3,
       "last_activity_date": "2026-03-30",
       "days_since_last_practice": 22,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9568,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9784,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1143,9 +1147,9 @@
       "level": 3,
       "last_activity_date": "2026-04-02",
       "days_since_last_practice": 19,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9337,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9668,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1425,9 +1429,9 @@
       "level": 3,
       "last_activity_date": "2026-04-06",
       "days_since_last_practice": 15,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8827,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9414,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1514,9 +1518,9 @@
       "level": 3,
       "last_activity_date": "2026-04-13",
       "days_since_last_practice": 8,
-      "forgetting_score": 0.9997,
+      "forgetting_score": 0.6811,
       "weakness_score": 1.0,
-      "composite_priority_score": 0.9999,
+      "composite_priority_score": 0.8406,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1782,14 +1786,315 @@
       }
     },
     {
+      "lesson_id": 3770145,
+      "title": "Unit 1A : Nature - Lesson 3: Is there any wind?",
+      "level": 3,
+      "last_activity_date": "2026-03-15",
+      "days_since_last_practice": 37,
+      "forgetting_score": 0.9949,
+      "weakness_score": 0.65,
+      "composite_priority_score": 0.8225,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 7666,
+          "question_id": 303269,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) David: Emily, look! Is there any sun? Emily: (1) ......., there isn't. There're some clouds. How many clouds are there? David: There're five .........(2) . Is there (3) .......... wind? Emily: Yes, (4) .............. . It's",
+          "comment_plain": null,
+          "correct_answer": "B. clouds",
+          "student_answer": "C. sun",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. rainbows",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. clouds",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. sun",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        },
+        {
+          "practice_id": 7666,
+          "question_id": 303279,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) David: Emily, look! Is there any sun? Emily: (1) ......., there isn't. There're some clouds. How many clouds are there? David: There're five .........(2). Is there (3) .......... wind? Emily: Yes, (4) .............. . It's ",
+          "comment_plain": null,
+          "correct_answer": "A. any",
+          "student_answer": "B. some",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. any",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. some",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Good. Do you see clouds often where you live? ☁️",
+          "expected_answer": "Yes, I see clouds every day.",
+          "target_objects": null,
+          "user_transcript": "Yes, I am. I really good.",
+          "score": 45,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 75,
+          "grammar_score": 15,
+          "timestamp": "2026-03-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm97t2do-8a7e1dad-audio.wav",
+          "reaction_time_ms": 3824
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. What do you like about clouds? ☁️",
+          "expected_answer": "I like clouds because they look soft and change shape.",
+          "target_objects": null,
+          "user_transcript": "Yes, I like.",
+          "score": 56.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 13,
+          "timestamp": "2026-03-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm97so4m-d1efec61-audio.wav",
+          "reaction_time_ms": 3824
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice to meet you too 😊 I like clouds because they make the sky interesting.",
+          "expected_answer": "I like the wind because it cools me and moves the trees.",
+          "target_objects": null,
+          "user_transcript": "I like red because it's good for me.",
+          "score": 54.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 44,
+          "grammar_score": 65,
+          "timestamp": "2026-03-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm97qvn6-3c39496b-audio.wav",
+          "reaction_time_ms": 3824
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. I like the sun too, it feels warm and bright. What other things do you notice outside? 🌤️",
+          "expected_answer": "I notice clouds and sometimes wind, and sometimes I see a rainbow.",
+          "target_objects": null,
+          "user_transcript": "I know in it.",
+          "score": 33.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 17,
+          "timestamp": "2026-03-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm97phav-3f39a54d-audio.wav",
+          "reaction_time_ms": 3824
+        },
+        {
+          "lms_type": "free_speaking",
+          "question": "How are you today?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "I like.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm96vgs5-76ba2cc9-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7666,
+        "luyen_tap": 13413
+      }
+    },
+    {
+      "lesson_id": 3836177,
+      "title": "Unit 1A: Nature  - Lesson 5: There are some mushrooms.",
+      "level": 3,
+      "last_activity_date": "2026-03-13",
+      "days_since_last_practice": 39,
+      "forgetting_score": 0.9962,
+      "weakness_score": 0.6294,
+      "composite_priority_score": 0.8128,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 7703,
+          "question_id": 303818,
+          "question_folder": "English Tutoring - Level 3",
+          "question_type": "Một lựa chọn",
+          "question_text": "Odd one out (Con hãy đọc và chọn phương án khác loại.)",
+          "comment_plain": null,
+          "correct_answer": "C. Leaves",
+          "student_answer": "B. Tree",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Leaf",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. Tree",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. Leaves",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "A leaf makes food for the tree using sun and air. It helps the tree grow. 🌿",
+          "expected_answer": "Oh, I see. So a leaf makes food with sunlight and air?",
+          "target_objects": null,
+          "user_transcript": "go in",
+          "score": 22,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 25,
+          "grammar_score": 19,
+          "timestamp": "2026-03-13",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoz1okz-bcc1c31e-audio.wav",
+          "reaction_time_ms": 1321
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Great, let’s start. What is your favorite thing in nature? 🌿",
+          "expected_answer": "My favorite thing is the sun because it makes me happy.",
+          "target_objects": null,
+          "user_transcript": "What is a leaf doing?",
+          "score": 53,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 66,
+          "grammar_score": 40,
+          "timestamp": "2026-03-13",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoz19tz-dcb8ad2d-audio.wav",
+          "reaction_time_ms": 1321
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Do you take photos of the flowers or of yourself with them? 📷",
+          "expected_answer": "I take photos of the flowers and sometimes of myself with them.",
+          "target_objects": null,
+          "user_transcript": "Yes, I am in the flower.",
+          "score": 57.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 15,
+          "timestamp": "2026-03-13",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoz03v3-53fcac3e-audio.wav",
+          "reaction_time_ms": 1321
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. I like the sun too 🌞 What flowers do you like the most?",
+          "expected_answer": "I like roses and sunflowers. I like their colors and smell.",
+          "target_objects": null,
+          "user_transcript": "Yes, a rose on sunflower, I like their flower.",
+          "score": 62.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 59,
+          "grammar_score": 66,
+          "timestamp": "2026-03-13",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoyxn90-816fea32-audio.wav",
+          "reaction_time_ms": 1321
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "sun",
+            "minus",
+            "plus",
+            "leaf",
+            "tree",
+            "equals",
+            "rainbow"
+          ],
+          "user_transcript": "I can see a sun, a flower and a tree.",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "sun",
+            "tree"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-13",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoxtvec-877d1cfb-audio.wav",
+          "reaction_time_ms": 1407
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7703,
+        "luyen_tap": 13488
+      }
+    },
+    {
       "lesson_id": 3937188,
       "title": "Unit 3A: Pets - Lesson 4: Does a parrot have soft feathers?",
       "level": 3,
       "last_activity_date": "2026-04-16",
       "days_since_last_practice": 5,
-      "forgetting_score": 0.9933,
+      "forgetting_score": 0.5105,
       "weakness_score": 1.0,
-      "composite_priority_score": 0.9967,
+      "composite_priority_score": 0.7552,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2022,315 +2327,14 @@
       }
     },
     {
-      "lesson_id": 3770145,
-      "title": "Unit 1A : Nature - Lesson 3: Is there any wind?",
-      "level": 3,
-      "last_activity_date": "2026-03-15",
-      "days_since_last_practice": 37,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.65,
-      "composite_priority_score": 0.825,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [
-        {
-          "practice_id": 7666,
-          "question_id": 303269,
-          "question_folder": "English Tutoring - Level 3",
-          "question_type": "Một lựa chọn",
-          "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) David: Emily, look! Is there any sun? Emily: (1) ......., there isn't. There're some clouds. How many clouds are there? David: There're five .........(2) . Is there (3) .......... wind? Emily: Yes, (4) .............. . It's",
-          "comment_plain": null,
-          "correct_answer": "B. clouds",
-          "student_answer": "C. sun",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. rainbows",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. clouds",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. sun",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        },
-        {
-          "practice_id": 7666,
-          "question_id": 303279,
-          "question_folder": "English Tutoring - Level 3",
-          "question_type": "Một lựa chọn",
-          "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) David: Emily, look! Is there any sun? Emily: (1) ......., there isn't. There're some clouds. How many clouds are there? David: There're five .........(2). Is there (3) .......... wind? Emily: Yes, (4) .............. . It's ",
-          "comment_plain": null,
-          "correct_answer": "A. any",
-          "student_answer": "B. some",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. any",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. some",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        }
-      ],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Good. Do you see clouds often where you live? ☁️",
-          "expected_answer": "Yes, I see clouds every day.",
-          "target_objects": null,
-          "user_transcript": "Yes, I am. I really good.",
-          "score": 45,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 75,
-          "grammar_score": 15,
-          "timestamp": "2026-03-02",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm97t2do-8a7e1dad-audio.wav",
-          "reaction_time_ms": 3824
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. What do you like about clouds? ☁️",
-          "expected_answer": "I like clouds because they look soft and change shape.",
-          "target_objects": null,
-          "user_transcript": "Yes, I like.",
-          "score": 56.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 13,
-          "timestamp": "2026-03-02",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm97so4m-d1efec61-audio.wav",
-          "reaction_time_ms": 3824
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice to meet you too 😊 I like clouds because they make the sky interesting.",
-          "expected_answer": "I like the wind because it cools me and moves the trees.",
-          "target_objects": null,
-          "user_transcript": "I like red because it's good for me.",
-          "score": 54.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 44,
-          "grammar_score": 65,
-          "timestamp": "2026-03-02",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm97qvn6-3c39496b-audio.wav",
-          "reaction_time_ms": 3824
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. I like the sun too, it feels warm and bright. What other things do you notice outside? 🌤️",
-          "expected_answer": "I notice clouds and sometimes wind, and sometimes I see a rainbow.",
-          "target_objects": null,
-          "user_transcript": "I know in it.",
-          "score": 33.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 50,
-          "grammar_score": 17,
-          "timestamp": "2026-03-02",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm97phav-3f39a54d-audio.wav",
-          "reaction_time_ms": 3824
-        },
-        {
-          "lms_type": "free_speaking",
-          "question": "How are you today?",
-          "expected_answer": null,
-          "target_objects": null,
-          "user_transcript": "I like.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-02",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm96vgs5-76ba2cc9-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7666,
-        "luyen_tap": 13413
-      }
-    },
-    {
-      "lesson_id": 3836177,
-      "title": "Unit 1A: Nature  - Lesson 5: There are some mushrooms.",
-      "level": 3,
-      "last_activity_date": "2026-03-13",
-      "days_since_last_practice": 39,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.6294,
-      "composite_priority_score": 0.8147,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [
-        {
-          "practice_id": 7703,
-          "question_id": 303818,
-          "question_folder": "English Tutoring - Level 3",
-          "question_type": "Một lựa chọn",
-          "question_text": "Odd one out (Con hãy đọc và chọn phương án khác loại.)",
-          "comment_plain": null,
-          "correct_answer": "C. Leaves",
-          "student_answer": "B. Tree",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. Leaf",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. Tree",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. Leaves",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        }
-      ],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "A leaf makes food for the tree using sun and air. It helps the tree grow. 🌿",
-          "expected_answer": "Oh, I see. So a leaf makes food with sunlight and air?",
-          "target_objects": null,
-          "user_transcript": "go in",
-          "score": 22,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 25,
-          "grammar_score": 19,
-          "timestamp": "2026-03-13",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoz1okz-bcc1c31e-audio.wav",
-          "reaction_time_ms": 1321
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Great, let’s start. What is your favorite thing in nature? 🌿",
-          "expected_answer": "My favorite thing is the sun because it makes me happy.",
-          "target_objects": null,
-          "user_transcript": "What is a leaf doing?",
-          "score": 53,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 66,
-          "grammar_score": 40,
-          "timestamp": "2026-03-13",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoz19tz-dcb8ad2d-audio.wav",
-          "reaction_time_ms": 1321
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Do you take photos of the flowers or of yourself with them? 📷",
-          "expected_answer": "I take photos of the flowers and sometimes of myself with them.",
-          "target_objects": null,
-          "user_transcript": "Yes, I am in the flower.",
-          "score": 57.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 15,
-          "timestamp": "2026-03-13",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoz03v3-53fcac3e-audio.wav",
-          "reaction_time_ms": 1321
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. I like the sun too 🌞 What flowers do you like the most?",
-          "expected_answer": "I like roses and sunflowers. I like their colors and smell.",
-          "target_objects": null,
-          "user_transcript": "Yes, a rose on sunflower, I like their flower.",
-          "score": 62.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 59,
-          "grammar_score": 66,
-          "timestamp": "2026-03-13",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoyxn90-816fea32-audio.wav",
-          "reaction_time_ms": 1321
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "sun",
-            "minus",
-            "plus",
-            "leaf",
-            "tree",
-            "equals",
-            "rainbow"
-          ],
-          "user_transcript": "I can see a sun, a flower and a tree.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "sun",
-            "tree"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-13",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoxtvec-877d1cfb-audio.wav",
-          "reaction_time_ms": 1407
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7703,
-        "luyen_tap": 13488
-      }
-    },
-    {
       "lesson_id": 3770143,
       "title": "Unit 1A : Nature - Lesson 1: There's one spider.",
       "level": 3,
       "last_activity_date": "2026-02-24",
       "days_since_last_practice": 56,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9997,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7499,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2364,9 +2368,9 @@
       "level": 3,
       "last_activity_date": "2026-03-10",
       "days_since_last_practice": 42,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9975,
       "weakness_score": 0.322,
-      "composite_priority_score": 0.661,
+      "composite_priority_score": 0.6598,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -2523,9 +2527,9 @@
       "level": 3,
       "last_activity_date": "2026-03-22",
       "days_since_last_practice": 30,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9862,
       "weakness_score": 0.1755,
-      "composite_priority_score": 0.5877,
+      "composite_priority_score": 0.5808,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -2660,9 +2664,9 @@
       "status": "completed",
       "last_activity_date": "2026-02-26",
       "days_since_last_practice": 54,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9998,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -2798,9 +2802,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-16",
       "days_since_last_practice": 36,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9942,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9971,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -2961,9 +2965,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-23",
       "days_since_last_practice": 29,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9841,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.992,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -3456,9 +3460,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-26",
       "days_since_last_practice": 26,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9756,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9878,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -3969,9 +3973,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-30",
       "days_since_last_practice": 22,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9568,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9784,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -4510,9 +4514,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-02",
       "days_since_last_practice": 19,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9337,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9668,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -5004,9 +5008,9 @@
       "status": "completed",
       "last_activity_date": "2026-04-06",
       "days_since_last_practice": 15,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8827,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9414,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -5137,9 +5141,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-13",
       "days_since_last_practice": 8,
-      "forgetting_score": 0.9997,
+      "forgetting_score": 0.6811,
       "weakness_score": 1.0,
-      "composite_priority_score": 0.9999,
+      "composite_priority_score": 0.8406,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -5591,6 +5595,419 @@
       }
     },
     {
+      "lesson_id": 3770145,
+      "program_id": null,
+      "level": 3,
+      "position": 3,
+      "title": "Unit 1A : Nature - Lesson 3: Is there any wind?",
+      "desc": "- sun, sky, cloud, wind, rainbow\n- Is there any wind? Yes, there is (some wind)./ No, there isn't (any wind)",
+      "status": "completed",
+      "last_activity_date": "2026-03-15",
+      "days_since_last_practice": 37,
+      "forgetting_score": 0.9949,
+      "weakness_score": 0.65,
+      "composite_priority_score": 0.8225,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 50,
+          "audio_turns": 58,
+          "avg_reaction_ms": 3402,
+          "fastest_reaction_ms": 545,
+          "total_duration_ms": 1668756,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-02",
+        "pronunciation_attempts": 31,
+        "pronunciation_score_avg": 59.06,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 13,
+        "conversation_score_avg": 75.31,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Good. Do you see clouds often where you live? ☁️",
+            "expected_answer": "Yes, I see clouds every day.",
+            "target_objects": null,
+            "user_transcript": "Yes, I am. I really good.",
+            "score": 45,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 75,
+            "grammar_score": 15,
+            "timestamp": "2026-03-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm97t2do-8a7e1dad-audio.wav",
+            "reaction_time_ms": 3824
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What do you like about clouds? ☁️",
+            "expected_answer": "I like clouds because they look soft and change shape.",
+            "target_objects": null,
+            "user_transcript": "Yes, I like.",
+            "score": 56.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 13,
+            "timestamp": "2026-03-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm97so4m-d1efec61-audio.wav",
+            "reaction_time_ms": 3824
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice to meet you too 😊 I like clouds because they make the sky interesting.",
+            "expected_answer": "I like the wind because it cools me and moves the trees.",
+            "target_objects": null,
+            "user_transcript": "I like red because it's good for me.",
+            "score": 54.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 44,
+            "grammar_score": 65,
+            "timestamp": "2026-03-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm97qvn6-3c39496b-audio.wav",
+            "reaction_time_ms": 3824
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. I like the sun too, it feels warm and bright. What other things do you notice outside? 🌤️",
+            "expected_answer": "I notice clouds and sometimes wind, and sometimes I see a rainbow.",
+            "target_objects": null,
+            "user_transcript": "I know in it.",
+            "score": 33.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 17,
+            "timestamp": "2026-03-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm97phav-3f39a54d-audio.wav",
+            "reaction_time_ms": 3824
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "How are you today?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "I like.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm96vgs5-76ba2cc9-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7666,
+          "score": 0.85,
+          "correct": 17,
+          "total": 20,
+          "submitted_date": "2026-03-03"
+        },
+        "luyen_tap": {
+          "practice_id": 13413,
+          "score": null,
+          "correct": 0,
+          "total": 20,
+          "submitted_date": "2026-03-15"
+        },
+        "lms_ids": {
+          "bai_tap": 7666,
+          "luyen_tap": 13413
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 14,
+            "total": 16,
+            "accuracy": 0.875
+          },
+          "Biểu đồ": {
+            "correct": 3,
+            "total": 3,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7666,
+            "question_id": 303269,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) David: Emily, look! Is there any sun? Emily: (1) ......., there isn't. There're some clouds. How many clouds are there? David: There're five .........(2) . Is there (3) .......... wind? Emily: Yes, (4) .............. . It's",
+            "comment_plain": null,
+            "correct_answer": "B. clouds",
+            "student_answer": "C. sun",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. rainbows",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. clouds",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. sun",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7666,
+            "question_id": 303279,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) David: Emily, look! Is there any sun? Emily: (1) ......., there isn't. There're some clouds. How many clouds are there? David: There're five .........(2). Is there (3) .......... wind? Emily: Yes, (4) .............. . It's ",
+            "comment_plain": null,
+            "correct_answer": "A. any",
+            "student_answer": "B. some",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. any",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. some",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3836177,
+      "program_id": null,
+      "level": 3,
+      "position": 5,
+      "title": "Unit 1A: Nature  - Lesson 5: There are some mushrooms.",
+      "desc": "- Maths: plus, minus, equals (in context, dạng BT tính toán bằng TA) (xem ODI 3)\n- Review all structures:\n How many spiders are there? - There's one spider./There're three spiders.\n How many flowers a",
+      "status": "completed",
+      "last_activity_date": "2026-03-13",
+      "days_since_last_practice": 39,
+      "forgetting_score": 0.9962,
+      "weakness_score": 0.6294,
+      "composite_priority_score": 0.8128,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 47,
+          "audio_turns": 52,
+          "avg_reaction_ms": 1440,
+          "fastest_reaction_ms": 464,
+          "total_duration_ms": 2368998,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-13",
+        "pronunciation_attempts": 35,
+        "pronunciation_score_avg": 78.14,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "correct": 1
+        },
+        "conversation_attempts": 12,
+        "conversation_score_avg": 68.86,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "A leaf makes food for the tree using sun and air. It helps the tree grow. 🌿",
+            "expected_answer": "Oh, I see. So a leaf makes food with sunlight and air?",
+            "target_objects": null,
+            "user_transcript": "go in",
+            "score": 22,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 25,
+            "grammar_score": 19,
+            "timestamp": "2026-03-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoz1okz-bcc1c31e-audio.wav",
+            "reaction_time_ms": 1321
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Great, let’s start. What is your favorite thing in nature? 🌿",
+            "expected_answer": "My favorite thing is the sun because it makes me happy.",
+            "target_objects": null,
+            "user_transcript": "What is a leaf doing?",
+            "score": 53,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 66,
+            "grammar_score": 40,
+            "timestamp": "2026-03-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoz19tz-dcb8ad2d-audio.wav",
+            "reaction_time_ms": 1321
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Do you take photos of the flowers or of yourself with them? 📷",
+            "expected_answer": "I take photos of the flowers and sometimes of myself with them.",
+            "target_objects": null,
+            "user_transcript": "Yes, I am in the flower.",
+            "score": 57.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 15,
+            "timestamp": "2026-03-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoz03v3-53fcac3e-audio.wav",
+            "reaction_time_ms": 1321
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. I like the sun too 🌞 What flowers do you like the most?",
+            "expected_answer": "I like roses and sunflowers. I like their colors and smell.",
+            "target_objects": null,
+            "user_transcript": "Yes, a rose on sunflower, I like their flower.",
+            "score": 62.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 59,
+            "grammar_score": 66,
+            "timestamp": "2026-03-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoyxn90-816fea32-audio.wav",
+            "reaction_time_ms": 1321
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "sun",
+              "minus",
+              "plus",
+              "leaf",
+              "tree",
+              "equals",
+              "rainbow"
+            ],
+            "user_transcript": "I can see a sun, a flower and a tree.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "sun",
+              "tree"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoxtvec-877d1cfb-audio.wav",
+            "reaction_time_ms": 1407
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7703,
+          "score": 0.9,
+          "correct": 18,
+          "total": 20,
+          "submitted_date": "2026-03-13"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 7703,
+          "luyen_tap": 13488
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 14,
+            "total": 15,
+            "accuracy": 0.933
+          },
+          "Biểu đồ": {
+            "correct": 4,
+            "total": 4,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7703,
+            "question_id": 303818,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Odd one out (Con hãy đọc và chọn phương án khác loại.)",
+            "comment_plain": null,
+            "correct_answer": "C. Leaves",
+            "student_answer": "B. Tree",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. Leaf",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. Tree",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. Leaves",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3937188,
       "program_id": null,
       "level": 3,
@@ -5600,9 +6017,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-16",
       "days_since_last_practice": 5,
-      "forgetting_score": 0.9933,
+      "forgetting_score": 0.5105,
       "weakness_score": 1.0,
-      "composite_priority_score": 0.9967,
+      "composite_priority_score": 0.7552,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -6048,419 +6465,6 @@
       }
     },
     {
-      "lesson_id": 3770145,
-      "program_id": null,
-      "level": 3,
-      "position": 3,
-      "title": "Unit 1A : Nature - Lesson 3: Is there any wind?",
-      "desc": "- sun, sky, cloud, wind, rainbow\n- Is there any wind? Yes, there is (some wind)./ No, there isn't (any wind)",
-      "status": "completed",
-      "last_activity_date": "2026-03-15",
-      "days_since_last_practice": 37,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.65,
-      "composite_priority_score": 0.825,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 50,
-          "audio_turns": 58,
-          "avg_reaction_ms": 3402,
-          "fastest_reaction_ms": 545,
-          "total_duration_ms": 1668756,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-03-02",
-        "pronunciation_attempts": 31,
-        "pronunciation_score_avg": 59.06,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 0,
-        "brainstorm_score_avg": null,
-        "brainstorm_answer_type_dist": {},
-        "conversation_attempts": 13,
-        "conversation_score_avg": 75.31,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Good. Do you see clouds often where you live? ☁️",
-            "expected_answer": "Yes, I see clouds every day.",
-            "target_objects": null,
-            "user_transcript": "Yes, I am. I really good.",
-            "score": 45,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 75,
-            "grammar_score": 15,
-            "timestamp": "2026-03-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm97t2do-8a7e1dad-audio.wav",
-            "reaction_time_ms": 3824
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. What do you like about clouds? ☁️",
-            "expected_answer": "I like clouds because they look soft and change shape.",
-            "target_objects": null,
-            "user_transcript": "Yes, I like.",
-            "score": 56.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 13,
-            "timestamp": "2026-03-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm97so4m-d1efec61-audio.wav",
-            "reaction_time_ms": 3824
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice to meet you too 😊 I like clouds because they make the sky interesting.",
-            "expected_answer": "I like the wind because it cools me and moves the trees.",
-            "target_objects": null,
-            "user_transcript": "I like red because it's good for me.",
-            "score": 54.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 44,
-            "grammar_score": 65,
-            "timestamp": "2026-03-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm97qvn6-3c39496b-audio.wav",
-            "reaction_time_ms": 3824
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. I like the sun too, it feels warm and bright. What other things do you notice outside? 🌤️",
-            "expected_answer": "I notice clouds and sometimes wind, and sometimes I see a rainbow.",
-            "target_objects": null,
-            "user_transcript": "I know in it.",
-            "score": 33.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 50,
-            "grammar_score": 17,
-            "timestamp": "2026-03-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm97phav-3f39a54d-audio.wav",
-            "reaction_time_ms": 3824
-          },
-          {
-            "lms_type": "free_speaking",
-            "question": "How are you today?",
-            "expected_answer": null,
-            "target_objects": null,
-            "user_transcript": "I like.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/02/admin/mm96vgs5-76ba2cc9-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7666,
-          "score": 0.85,
-          "correct": 17,
-          "total": 20,
-          "submitted_date": "2026-03-03"
-        },
-        "luyen_tap": {
-          "practice_id": 13413,
-          "score": null,
-          "correct": 0,
-          "total": 20,
-          "submitted_date": "2026-03-15"
-        },
-        "lms_ids": {
-          "bai_tap": 7666,
-          "luyen_tap": 13413
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 3": {
-            "correct": 14,
-            "total": 16,
-            "accuracy": 0.875
-          },
-          "Biểu đồ": {
-            "correct": 3,
-            "total": 3,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 7666,
-            "question_id": 303269,
-            "question_folder": "English Tutoring - Level 3",
-            "question_type": "Một lựa chọn",
-            "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) David: Emily, look! Is there any sun? Emily: (1) ......., there isn't. There're some clouds. How many clouds are there? David: There're five .........(2) . Is there (3) .......... wind? Emily: Yes, (4) .............. . It's",
-            "comment_plain": null,
-            "correct_answer": "B. clouds",
-            "student_answer": "C. sun",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. rainbows",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. clouds",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. sun",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 7666,
-            "question_id": 303279,
-            "question_folder": "English Tutoring - Level 3",
-            "question_type": "Một lựa chọn",
-            "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) David: Emily, look! Is there any sun? Emily: (1) ......., there isn't. There're some clouds. How many clouds are there? David: There're five .........(2). Is there (3) .......... wind? Emily: Yes, (4) .............. . It's ",
-            "comment_plain": null,
-            "correct_answer": "A. any",
-            "student_answer": "B. some",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. any",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. some",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3836177,
-      "program_id": null,
-      "level": 3,
-      "position": 5,
-      "title": "Unit 1A: Nature  - Lesson 5: There are some mushrooms.",
-      "desc": "- Maths: plus, minus, equals (in context, dạng BT tính toán bằng TA) (xem ODI 3)\n- Review all structures:\n How many spiders are there? - There's one spider./There're three spiders.\n How many flowers a",
-      "status": "completed",
-      "last_activity_date": "2026-03-13",
-      "days_since_last_practice": 39,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.6294,
-      "composite_priority_score": 0.8147,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 47,
-          "audio_turns": 52,
-          "avg_reaction_ms": 1440,
-          "fastest_reaction_ms": 464,
-          "total_duration_ms": 2368998,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-03-13",
-        "pronunciation_attempts": 35,
-        "pronunciation_score_avg": 78.14,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1
-        },
-        "conversation_attempts": 12,
-        "conversation_score_avg": 68.86,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "A leaf makes food for the tree using sun and air. It helps the tree grow. 🌿",
-            "expected_answer": "Oh, I see. So a leaf makes food with sunlight and air?",
-            "target_objects": null,
-            "user_transcript": "go in",
-            "score": 22,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 25,
-            "grammar_score": 19,
-            "timestamp": "2026-03-13",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoz1okz-bcc1c31e-audio.wav",
-            "reaction_time_ms": 1321
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Great, let’s start. What is your favorite thing in nature? 🌿",
-            "expected_answer": "My favorite thing is the sun because it makes me happy.",
-            "target_objects": null,
-            "user_transcript": "What is a leaf doing?",
-            "score": 53,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 66,
-            "grammar_score": 40,
-            "timestamp": "2026-03-13",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoz19tz-dcb8ad2d-audio.wav",
-            "reaction_time_ms": 1321
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Do you take photos of the flowers or of yourself with them? 📷",
-            "expected_answer": "I take photos of the flowers and sometimes of myself with them.",
-            "target_objects": null,
-            "user_transcript": "Yes, I am in the flower.",
-            "score": 57.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 15,
-            "timestamp": "2026-03-13",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoz03v3-53fcac3e-audio.wav",
-            "reaction_time_ms": 1321
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. I like the sun too 🌞 What flowers do you like the most?",
-            "expected_answer": "I like roses and sunflowers. I like their colors and smell.",
-            "target_objects": null,
-            "user_transcript": "Yes, a rose on sunflower, I like their flower.",
-            "score": 62.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 59,
-            "grammar_score": 66,
-            "timestamp": "2026-03-13",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoyxn90-816fea32-audio.wav",
-            "reaction_time_ms": 1321
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "sun",
-              "minus",
-              "plus",
-              "leaf",
-              "tree",
-              "equals",
-              "rainbow"
-            ],
-            "user_transcript": "I can see a sun, a flower and a tree.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "sun",
-              "tree"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-13",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/13/admin/mmoxtvec-877d1cfb-audio.wav",
-            "reaction_time_ms": 1407
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7703,
-          "score": 0.9,
-          "correct": 18,
-          "total": 20,
-          "submitted_date": "2026-03-13"
-        },
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 7703,
-          "luyen_tap": 13488
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 3": {
-            "correct": 14,
-            "total": 15,
-            "accuracy": 0.933
-          },
-          "Biểu đồ": {
-            "correct": 4,
-            "total": 4,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 7703,
-            "question_id": 303818,
-            "question_folder": "English Tutoring - Level 3",
-            "question_type": "Một lựa chọn",
-            "question_text": "Odd one out (Con hãy đọc và chọn phương án khác loại.)",
-            "comment_plain": null,
-            "correct_answer": "C. Leaves",
-            "student_answer": "B. Tree",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. Leaf",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. Tree",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. Leaves",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
       "lesson_id": 3770143,
       "program_id": null,
       "level": 3,
@@ -6470,9 +6474,9 @@
       "status": "completed",
       "last_activity_date": "2026-02-24",
       "days_since_last_practice": 56,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9997,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7499,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -6602,9 +6606,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-10",
       "days_since_last_practice": 42,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9975,
       "weakness_score": 0.322,
-      "composite_priority_score": 0.661,
+      "composite_priority_score": 0.6598,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -6930,9 +6934,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-22",
       "days_since_last_practice": 30,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9862,
       "weakness_score": 0.1755,
-      "composite_priority_score": 0.5877,
+      "composite_priority_score": 0.5808,
       "in_class": {
         "participated": true,
         "session_count": 1,

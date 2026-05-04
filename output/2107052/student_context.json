@@ -35,6 +35,10 @@
       }
     },
     "weak_skills_global": [],
+    "critical_speaking_types": [
+      "brainstorm",
+      "free_speaking"
+    ],
     "overall_pronunciation_score_avg": 50.51,
     "overall_free_speaking_score_avg": 4.55,
     "overall_brainstorm_score_avg": 0.0,
@@ -48,7 +52,7 @@
       "incorrect": 72,
       "correct": 11
     },
-    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
     {
@@ -193,9 +197,9 @@
       "level": 1,
       "last_activity_date": "2026-03-04",
       "days_since_last_practice": 48,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9989,
       "weakness_score": 0.7992,
-      "composite_priority_score": 0.8996,
+      "composite_priority_score": 0.8991,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -478,9 +482,9 @@
       "level": 1,
       "last_activity_date": "2026-03-11",
       "days_since_last_practice": 41,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9971,
       "weakness_score": 0.6706,
-      "composite_priority_score": 0.8353,
+      "composite_priority_score": 0.8338,
       "homework_status": "attempted",
       "weak_skills": [
         "Biểu đồ"
@@ -781,9 +785,9 @@
       "level": 1,
       "last_activity_date": "2026-03-18",
       "days_since_last_practice": 34,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9922,
       "weakness_score": 0.6105,
-      "composite_priority_score": 0.8053,
+      "composite_priority_score": 0.8014,
       "homework_status": "attempted",
       "weak_skills": [
         "Kĩ năng nghe",
@@ -897,9 +901,9 @@
       "level": 1,
       "last_activity_date": "2026-03-21",
       "days_since_last_practice": 31,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9881,
       "weakness_score": 0.6105,
-      "composite_priority_score": 0.8053,
+      "composite_priority_score": 0.7993,
       "homework_status": "attempted",
       "weak_skills": [
         "Biểu đồ"
@@ -1047,404 +1051,6 @@
       }
     },
     {
-      "lesson_id": 3786888,
-      "title": "Unit 2B: Pets - Lesson 4: Is it big?",
-      "level": 1,
-      "last_activity_date": "2026-03-29",
-      "days_since_last_practice": 23,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.6,
-      "composite_priority_score": 0.8,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [
-        {
-          "practice_id": 13147,
-          "question_id": 385830,
-          "question_folder": "English Tutoring - Level 1",
-          "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
-          "question_text": "Reorder: rabbit | big | pet | have",
-          "comment_plain": null,
-          "correct_answer": "Is it big? - Yes, it is.",
-          "student_answer": "pet",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "1",
-              "text": "rabbit",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "2",
-              "text": "big",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "3",
-              "text": "pet",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "4",
-              "text": "have",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        }
-      ],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 5,
-      "worst_speaking_items": [
-        {
-          "lms_type": "free_speaking",
-          "question": "How are you today?",
-          "expected_answer": null,
-          "target_objects": null,
-          "user_transcript": "Oh.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-29",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbrxaa8-1f877df9-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Good. Do you like a cat, dog, or fish? 🐶",
-          "expected_answer": "I like a dog. It is small and friendly.",
-          "target_objects": null,
-          "user_transcript": "I like it.",
-          "score": 69.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 39,
-          "timestamp": "2026-03-29",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbroe7x-ae941fb0-audio.wav",
-          "reaction_time_ms": 596
-        },
-        {
-          "lms_type": "conversation",
-          "question": "I see you typed \"I.\" Can you tell me: do you like a cat, dog, or fish? 🐱",
-          "expected_answer": "I like dogs. I have a small dog. It is brown.",
-          "target_objects": null,
-          "user_transcript": "I like",
-          "score": 69,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 38,
-          "timestamp": "2026-03-29",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbrnv6f-6c4bf30c-audio.wav",
-          "reaction_time_ms": 596
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Tell me about a cat, dog, or fish you like. 🐱🐶🐟",
-          "expected_answer": "I like dogs. I have one dog. His name is Max.",
-          "target_objects": null,
-          "user_transcript": "I.",
-          "score": 59,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 18,
-          "timestamp": "2026-03-29",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbrnd69-f1857420-audio.wav",
-          "reaction_time_ms": 596
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. I like cats 😺 Do you play with your cat at home? 🐱",
-          "expected_answer": "Yes, I play with my cat. I give her a toy and pet her.",
-          "target_objects": null,
-          "user_transcript": "Yes, I believe I play with my cat.",
-          "score": 65,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 37,
-          "grammar_score": 93,
-          "timestamp": "2026-03-29",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbrksgm-6e0a89a4-audio.wav",
-          "reaction_time_ms": 596
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7235,
-        "luyen_tap": 13147
-      }
-    },
-    {
-      "lesson_id": 3920449,
-      "title": "Unit 3B: House - Lesson 2: It's in the living room.",
-      "level": 1,
-      "last_activity_date": "2026-04-12",
-      "days_since_last_practice": 9,
-      "forgetting_score": 0.9999,
-      "weakness_score": 0.5895,
-      "composite_priority_score": 0.7947,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [
-        {
-          "practice_id": 13153,
-          "question_id": 369730,
-          "question_folder": "English Tutoring - Level 1",
-          "question_type": "Một lựa chọn",
-          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
-          "comment_plain": "Audio This is the bedroom. bedroom: ph&ograve;ng ngủ",
-          "correct_answer": "C. This is the bedroom.",
-          "student_answer": "A. This is the bathroom.",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. This is the bathroom.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. This is the living room.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. This is the bedroom.",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        },
-        {
-          "practice_id": 13153,
-          "question_id": 369732,
-          "question_folder": "English Tutoring - Level 1",
-          "question_type": "Một lựa chọn",
-          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
-          "comment_plain": "Audio This is the bathroom. bathroom: ph&ograve;ng tắm",
-          "correct_answer": "C. This is the bathroom.",
-          "student_answer": "B. This is the bedroom.",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. This is the kitchen.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. This is the bedroom.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. This is the bathroom.",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        }
-      ],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 2,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Great. Do you live in a house or an apartment? 🏠",
-          "expected_answer": "I live in a house.",
-          "target_objects": null,
-          "user_transcript": "I live in.",
-          "score": 45,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 77,
-          "grammar_score": 13,
-          "timestamp": "2026-04-12",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvrk0ic-cd16d98c-audio.wav",
-          "reaction_time_ms": 1129
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Who cooks at home? 🍳",
-          "expected_answer": "My mother cooks at home.",
-          "target_objects": null,
-          "user_transcript": "My mom cooks at home.",
-          "score": 62,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 33,
-          "grammar_score": 91,
-          "timestamp": "2026-04-12",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvriugu-3730125c-audio.wav",
-          "reaction_time_ms": 1129
-        },
-        {
-          "lms_type": "conversation",
-          "question": "I see. You live with your father and... who else? 👨‍👦",
-          "expected_answer": "I live with my father and my mother.",
-          "target_objects": null,
-          "user_transcript": "I'm mom.",
-          "score": 37,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 41,
-          "grammar_score": 33,
-          "timestamp": "2026-04-12",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvri2hp-0e993d12-audio.wav",
-          "reaction_time_ms": 1129
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Who else is in your home? 👨‍👦",
-          "expected_answer": "I live with my father and my sister.",
-          "target_objects": null,
-          "user_transcript": "I with my father and my",
-          "score": 36.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 58,
-          "grammar_score": 15,
-          "timestamp": "2026-04-12",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvrhqoz-148b608a-audio.wav",
-          "reaction_time_ms": 1129
-        },
-        {
-          "lms_type": "conversation",
-          "question": "I see. You live in a small house. Who lives with you? 🏠",
-          "expected_answer": "I live with my mother and father.",
-          "target_objects": null,
-          "user_transcript": "I live with my father.",
-          "score": 68.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 46,
-          "grammar_score": 91,
-          "timestamp": "2026-04-12",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvrh7ap-21ce52f2-audio.wav",
-          "reaction_time_ms": 1129
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7255,
-        "luyen_tap": 13153
-      }
-    },
-    {
-      "lesson_id": 3786887,
-      "title": "Unit 2B: Pets - Lesson 3: I have a big cat.",
-      "level": 1,
-      "last_activity_date": "2026-03-28",
-      "days_since_last_practice": 24,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.586,
-      "composite_priority_score": 0.793,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 4,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Tell me: is your pet big or small? 🐾",
-          "expected_answer": "My pet is small.",
-          "target_objects": null,
-          "user_transcript": "My.",
-          "score": 56.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 13,
-          "timestamp": "2026-03-28",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnacuqc7-fb1e171e-audio.wav",
-          "reaction_time_ms": 1319
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Oh, okay. Is your pet small or big? 🐾",
-          "expected_answer": "My pet is small.",
-          "target_objects": null,
-          "user_transcript": "O.",
-          "score": 69,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 38,
-          "timestamp": "2026-03-28",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnacucgf-2f65c4d7-audio.wav",
-          "reaction_time_ms": 1319
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Is your pet big or small? 🐾",
-          "expected_answer": "My pet is small. It is a rabbit.",
-          "target_objects": null,
-          "user_transcript": "Me.",
-          "score": 68.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 37,
-          "timestamp": "2026-03-28",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnacu18s-c5ac41d1-audio.wav",
-          "reaction_time_ms": 1319
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. What pet do you have? 🐰",
-          "expected_answer": "I have a rabbit. It is small and soft.",
-          "target_objects": null,
-          "user_transcript": "What?",
-          "score": 22,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 0,
-          "grammar_score": 44,
-          "timestamp": "2026-03-28",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnact5ct-24b01ae3-audio.wav",
-          "reaction_time_ms": 1319
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Is the pet white or another color? 😊",
-          "expected_answer": "Yes, my pet is white.",
-          "target_objects": null,
-          "user_transcript": "It's my.",
-          "score": 35,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 50,
-          "grammar_score": 20,
-          "timestamp": "2026-03-28",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnacrpot-b43dfbeb-audio.wav",
-          "reaction_time_ms": 1319
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7234,
-        "luyen_tap": 13342
-      }
-    },
-    {
       "lesson_id": 3557240,
       "title": "Unit 1A: Greetings - Lesson 5: Review & culture",
       "level": 1,
@@ -1574,99 +1180,110 @@
       }
     },
     {
-      "lesson_id": 3786886,
-      "title": "Unit 2B: Pets - Lesson 2: I have a cat.",
+      "lesson_id": 3557245,
+      "title": "Unit 2A: Colors - Lesson 4: Is it orange?",
       "level": 1,
-      "last_activity_date": "2026-03-24",
-      "days_since_last_practice": 28,
+      "last_activity_date": "2025-12-27",
+      "days_since_last_practice": 115,
       "forgetting_score": 1.0,
-      "weakness_score": 0.5805,
-      "composite_priority_score": 0.7903,
+      "weakness_score": 0.574,
+      "composite_priority_score": 0.787,
       "homework_status": "attempted",
-      "weak_skills": [],
+      "weak_skills": [
+        "Biểu đồ",
+        "English Tutoring - Level 1"
+      ],
       "failed_text_questions": [],
       "question_bank_preview": [],
-      "failed_media_questions_count": 4,
+      "failed_media_questions_count": 6,
       "worst_speaking_items": [
         {
           "lms_type": "conversation",
-          "question": "Oh, she? Is she a dog, cat, or other pet? 🐾",
-          "expected_answer": "She is a dog.",
+          "question": "I see. Is it an egg? 🥚 Or is it a frog? 🐸",
+          "expected_answer": "It is an egg.",
           "target_objects": null,
-          "user_transcript": "O.D.",
-          "score": 18,
+          "user_transcript": "Is it an egg.",
+          "score": 62.5,
           "answer_type": null,
           "correct_objects": null,
-          "pronunciation_score": 0,
+          "pronunciation_score": 89,
           "grammar_score": 36,
-          "timestamp": "2026-03-24",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l85c2-b939883d-audio.wav",
+          "timestamp": "2025-12-27",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/27/admin/mjobzkrf-058b0893-audio.wav",
           "reaction_time_ms": null
         },
         {
           "lms_type": "conversation",
-          "question": "Hi! Good to see you. Do you have a pet at home? 🐶",
-          "expected_answer": "Yes, I have a rabbit. It is small and cute.",
+          "question": "Awesome! What is orange? Is it a flower? 🌸 Or a duck? 🦆",
+          "expected_answer": "It is a duck.",
           "target_objects": null,
-          "user_transcript": "She.",
-          "score": 58.5,
+          "user_transcript": "It is a duck.",
+          "score": 66,
           "answer_type": null,
           "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 17,
-          "timestamp": "2026-03-24",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l7r7x-b15b0160-audio.wav",
+          "pronunciation_score": 56,
+          "grammar_score": 76,
+          "timestamp": "2025-12-27",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/27/admin/mjobyvxo-a9f17db0-audio.wav",
           "reaction_time_ms": null
         },
         {
           "lms_type": "conversation",
-          "question": "Nice. Do you have a pet at home? 🐶",
-          "expected_answer": "Yes, I have a rabbit. It is small and white.",
+          "question": "Hi! Are you having fun today? 😄 What color is your shirt?",
+          "expected_answer": "My shirt is [color].",
           "target_objects": null,
-          "user_transcript": "IhI.",
-          "score": 26,
+          "user_transcript": "My shirt.",
+          "score": 62.5,
           "answer_type": null,
           "correct_objects": null,
-          "pronunciation_score": 33,
-          "grammar_score": 19,
-          "timestamp": "2026-03-24",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l7bt4-3b3c6b02-audio.wav",
+          "pronunciation_score": 57,
+          "grammar_score": 68,
+          "timestamp": "2025-12-27",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/27/admin/mjobxyvo-b8e55f35-audio.wav",
           "reaction_time_ms": null
         },
         {
-          "lms_type": "conversation",
-          "question": "Hello! Good to see you. Are you ready to talk about pets? 🐶",
-          "expected_answer": "Yes, I am ready. I have a pet rabbit.",
-          "target_objects": null,
-          "user_transcript": "Iyeah.",
-          "score": 59,
-          "answer_type": null,
+          "lms_type": "brainstorm",
+          "question": "What is it?",
+          "expected_answer": null,
+          "target_objects": [
+            "elephant",
+            "duck",
+            "flower"
+          ],
+          "user_transcript": "What is it?",
+          "score": 0,
+          "answer_type": "incorrect",
           "correct_objects": null,
-          "pronunciation_score": 25,
-          "grammar_score": 93,
-          "timestamp": "2026-03-24",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l6m9c-84ac3c54-audio.wav",
-          "reaction_time_ms": null
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2025-12-27",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/27/admin/mjob9fjv-d8df22c2-audio.wav",
+          "reaction_time_ms": 1330
         },
         {
-          "lms_type": "conversation",
-          "question": "Hi, I am Sam. Nice to meet you 😊",
-          "expected_answer": "My name is Myra.",
-          "target_objects": null,
-          "user_transcript": "My.",
-          "score": 56,
-          "answer_type": null,
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "elephant",
+            "duck",
+            "flower"
+          ],
+          "user_transcript": "Book, book, book, book, book.",
+          "score": 0,
+          "answer_type": "incorrect",
           "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 12,
-          "timestamp": "2026-03-24",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l5psz-ff210e34-audio.wav",
-          "reaction_time_ms": null
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2025-12-27",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/27/admin/mjob97mk-eb9bfe0c-audio.wav",
+          "reaction_time_ms": 456
         }
       ],
       "practice_ids": {
-        "bai_tap": 7233,
-        "luyen_tap": 13339
+        "bai_tap": 7206,
+        "luyen_tap": 13117
       }
     },
     {
@@ -1675,9 +1292,9 @@
       "level": 1,
       "last_activity_date": "2026-03-08",
       "days_since_last_practice": 44,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9981,
       "weakness_score": 0.5755,
-      "composite_priority_score": 0.7877,
+      "composite_priority_score": 0.7868,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -1869,113 +1486,6 @@
       }
     },
     {
-      "lesson_id": 3557245,
-      "title": "Unit 2A: Colors - Lesson 4: Is it orange?",
-      "level": 1,
-      "last_activity_date": "2025-12-27",
-      "days_since_last_practice": 115,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.574,
-      "composite_priority_score": 0.787,
-      "homework_status": "attempted",
-      "weak_skills": [
-        "Biểu đồ",
-        "English Tutoring - Level 1"
-      ],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 6,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "I see. Is it an egg? 🥚 Or is it a frog? 🐸",
-          "expected_answer": "It is an egg.",
-          "target_objects": null,
-          "user_transcript": "Is it an egg.",
-          "score": 62.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 89,
-          "grammar_score": 36,
-          "timestamp": "2025-12-27",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/27/admin/mjobzkrf-058b0893-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Awesome! What is orange? Is it a flower? 🌸 Or a duck? 🦆",
-          "expected_answer": "It is a duck.",
-          "target_objects": null,
-          "user_transcript": "It is a duck.",
-          "score": 66,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 56,
-          "grammar_score": 76,
-          "timestamp": "2025-12-27",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/27/admin/mjobyvxo-a9f17db0-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi! Are you having fun today? 😄 What color is your shirt?",
-          "expected_answer": "My shirt is [color].",
-          "target_objects": null,
-          "user_transcript": "My shirt.",
-          "score": 62.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 57,
-          "grammar_score": 68,
-          "timestamp": "2025-12-27",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/27/admin/mjobxyvo-b8e55f35-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "elephant",
-            "duck",
-            "flower"
-          ],
-          "user_transcript": "What is it?",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2025-12-27",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/27/admin/mjob9fjv-d8df22c2-audio.wav",
-          "reaction_time_ms": 1330
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "elephant",
-            "duck",
-            "flower"
-          ],
-          "user_transcript": "Book, book, book, book, book.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2025-12-27",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/27/admin/mjob97mk-eb9bfe0c-audio.wav",
-          "reaction_time_ms": 456
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7206,
-        "luyen_tap": 13117
-      }
-    },
-    {
       "lesson_id": 3557236,
       "title": "Unit 1A: Greetings - Lesson 1: Hello!",
       "level": 1,
@@ -2116,6 +1626,239 @@
       "practice_ids": {
         "bai_tap": 7190,
         "luyen_tap": 13126
+      }
+    },
+    {
+      "lesson_id": 3786888,
+      "title": "Unit 2B: Pets - Lesson 4: Is it big?",
+      "level": 1,
+      "last_activity_date": "2026-03-29",
+      "days_since_last_practice": 23,
+      "forgetting_score": 0.9626,
+      "weakness_score": 0.6,
+      "composite_priority_score": 0.7813,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 13147,
+          "question_id": 385830,
+          "question_folder": "English Tutoring - Level 1",
+          "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
+          "question_text": "Reorder: rabbit | big | pet | have",
+          "comment_plain": null,
+          "correct_answer": "Is it big? - Yes, it is.",
+          "student_answer": "pet",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "1",
+              "text": "rabbit",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "2",
+              "text": "big",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "3",
+              "text": "pet",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "4",
+              "text": "have",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 5,
+      "worst_speaking_items": [
+        {
+          "lms_type": "free_speaking",
+          "question": "How are you today?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "Oh.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-29",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbrxaa8-1f877df9-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. Do you like a cat, dog, or fish? 🐶",
+          "expected_answer": "I like a dog. It is small and friendly.",
+          "target_objects": null,
+          "user_transcript": "I like it.",
+          "score": 69.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 39,
+          "timestamp": "2026-03-29",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbroe7x-ae941fb0-audio.wav",
+          "reaction_time_ms": 596
+        },
+        {
+          "lms_type": "conversation",
+          "question": "I see you typed \"I.\" Can you tell me: do you like a cat, dog, or fish? 🐱",
+          "expected_answer": "I like dogs. I have a small dog. It is brown.",
+          "target_objects": null,
+          "user_transcript": "I like",
+          "score": 69,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 38,
+          "timestamp": "2026-03-29",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbrnv6f-6c4bf30c-audio.wav",
+          "reaction_time_ms": 596
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Tell me about a cat, dog, or fish you like. 🐱🐶🐟",
+          "expected_answer": "I like dogs. I have one dog. His name is Max.",
+          "target_objects": null,
+          "user_transcript": "I.",
+          "score": 59,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 18,
+          "timestamp": "2026-03-29",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbrnd69-f1857420-audio.wav",
+          "reaction_time_ms": 596
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. I like cats 😺 Do you play with your cat at home? 🐱",
+          "expected_answer": "Yes, I play with my cat. I give her a toy and pet her.",
+          "target_objects": null,
+          "user_transcript": "Yes, I believe I play with my cat.",
+          "score": 65,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 37,
+          "grammar_score": 93,
+          "timestamp": "2026-03-29",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbrksgm-6e0a89a4-audio.wav",
+          "reaction_time_ms": 596
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7235,
+        "luyen_tap": 13147
+      }
+    },
+    {
+      "lesson_id": 3786886,
+      "title": "Unit 2B: Pets - Lesson 2: I have a cat.",
+      "level": 1,
+      "last_activity_date": "2026-03-24",
+      "days_since_last_practice": 28,
+      "forgetting_score": 0.9817,
+      "weakness_score": 0.5805,
+      "composite_priority_score": 0.7811,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 4,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Oh, she? Is she a dog, cat, or other pet? 🐾",
+          "expected_answer": "She is a dog.",
+          "target_objects": null,
+          "user_transcript": "O.D.",
+          "score": 18,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 36,
+          "timestamp": "2026-03-24",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l85c2-b939883d-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi! Good to see you. Do you have a pet at home? 🐶",
+          "expected_answer": "Yes, I have a rabbit. It is small and cute.",
+          "target_objects": null,
+          "user_transcript": "She.",
+          "score": 58.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 17,
+          "timestamp": "2026-03-24",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l7r7x-b15b0160-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Do you have a pet at home? 🐶",
+          "expected_answer": "Yes, I have a rabbit. It is small and white.",
+          "target_objects": null,
+          "user_transcript": "IhI.",
+          "score": 26,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 33,
+          "grammar_score": 19,
+          "timestamp": "2026-03-24",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l7bt4-3b3c6b02-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hello! Good to see you. Are you ready to talk about pets? 🐶",
+          "expected_answer": "Yes, I am ready. I have a pet rabbit.",
+          "target_objects": null,
+          "user_transcript": "Iyeah.",
+          "score": 59,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 25,
+          "grammar_score": 93,
+          "timestamp": "2026-03-24",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l6m9c-84ac3c54-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi, I am Sam. Nice to meet you 😊",
+          "expected_answer": "My name is Myra.",
+          "target_objects": null,
+          "user_transcript": "My.",
+          "score": 56,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 12,
+          "timestamp": "2026-03-24",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l5psz-ff210e34-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7233,
+        "luyen_tap": 13339
       }
     },
     {
@@ -2305,6 +2048,102 @@
       }
     },
     {
+      "lesson_id": 3786887,
+      "title": "Unit 2B: Pets - Lesson 3: I have a big cat.",
+      "level": 1,
+      "last_activity_date": "2026-03-28",
+      "days_since_last_practice": 24,
+      "forgetting_score": 0.9676,
+      "weakness_score": 0.586,
+      "composite_priority_score": 0.7768,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 4,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Tell me: is your pet big or small? 🐾",
+          "expected_answer": "My pet is small.",
+          "target_objects": null,
+          "user_transcript": "My.",
+          "score": 56.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 13,
+          "timestamp": "2026-03-28",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnacuqc7-fb1e171e-audio.wav",
+          "reaction_time_ms": 1319
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Oh, okay. Is your pet small or big? 🐾",
+          "expected_answer": "My pet is small.",
+          "target_objects": null,
+          "user_transcript": "O.",
+          "score": 69,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 38,
+          "timestamp": "2026-03-28",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnacucgf-2f65c4d7-audio.wav",
+          "reaction_time_ms": 1319
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Is your pet big or small? 🐾",
+          "expected_answer": "My pet is small. It is a rabbit.",
+          "target_objects": null,
+          "user_transcript": "Me.",
+          "score": 68.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 37,
+          "timestamp": "2026-03-28",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnacu18s-c5ac41d1-audio.wav",
+          "reaction_time_ms": 1319
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. What pet do you have? 🐰",
+          "expected_answer": "I have a rabbit. It is small and soft.",
+          "target_objects": null,
+          "user_transcript": "What?",
+          "score": 22,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 44,
+          "timestamp": "2026-03-28",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnact5ct-24b01ae3-audio.wav",
+          "reaction_time_ms": 1319
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Is the pet white or another color? 😊",
+          "expected_answer": "Yes, my pet is white.",
+          "target_objects": null,
+          "user_transcript": "It's my.",
+          "score": 35,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 20,
+          "timestamp": "2026-03-28",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnacrpot-b43dfbeb-audio.wav",
+          "reaction_time_ms": 1319
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7234,
+        "luyen_tap": 13342
+      }
+    },
+    {
       "lesson_id": 3643936,
       "title": "Unit 3A: School things - Lesson 3: There is one pencil.",
       "level": 1,
@@ -2422,9 +2261,9 @@
       "level": 1,
       "last_activity_date": "2026-02-26",
       "days_since_last_practice": 54,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 0.535,
-      "composite_priority_score": 0.7675,
+      "composite_priority_score": 0.7673,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2921,120 +2760,6 @@
       "practice_ids": {
         "bai_tap": 7228,
         "luyen_tap": 13241
-      }
-    },
-    {
-      "lesson_id": 3788406,
-      "title": "Unit 2B: Pets - Lesson 5: Review & value",
-      "level": 1,
-      "last_activity_date": "2026-04-02",
-      "days_since_last_practice": 19,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5245,
-      "composite_priority_score": 0.7622,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 1,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Oh, do you mean you have a pet and people at home? 😊",
-          "expected_answer": "Yes, I live with my family and my dog.",
-          "target_objects": null,
-          "user_transcript": "The.",
-          "score": 57,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 14,
-          "timestamp": "2026-04-02",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhh46uu-0ce02586-audio.wav",
-          "reaction_time_ms": 684
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. What pet do you have at home? 🐾",
-          "expected_answer": "I have a small hamster.",
-          "target_objects": null,
-          "user_transcript": "Oh, and people.",
-          "score": 68,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 36,
-          "timestamp": "2026-04-02",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhh3wrk-1cec96bc-audio.wav",
-          "reaction_time_ms": 684
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "Bird",
-            "Dog",
-            "Cat",
-            "Fish",
-            "Rabbit",
-            "Frog",
-            "Hamster",
-            "Monkey"
-          ],
-          "user_transcript": "The.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-02",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhgejoa-0bad87b8-audio.wav",
-          "reaction_time_ms": 2118
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "Bird",
-            "Dog",
-            "Cat",
-            "Fish",
-            "Rabbit",
-            "Frog",
-            "Hamster",
-            "Monkey"
-          ],
-          "user_transcript": "What can you see?",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-02",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhgeckl-93ca7571-audio.wav",
-          "reaction_time_ms": 599
-        },
-        {
-          "lms_type": "free_speaking",
-          "question": "How are you today?",
-          "expected_answer": null,
-          "target_objects": null,
-          "user_transcript": "By by By.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-02",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhgd7nd-dce20c91-audio.wav",
-          "reaction_time_ms": 3898
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7238,
-        "luyen_tap": 13151
       }
     },
     {
@@ -3727,9 +3452,9 @@
       "level": 1,
       "last_activity_date": "2026-03-15",
       "days_since_last_practice": 37,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9949,
       "weakness_score": 0.5105,
-      "composite_priority_score": 0.7552,
+      "composite_priority_score": 0.7527,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -3818,51 +3543,159 @@
       }
     },
     {
-      "lesson_id": 3920451,
-      "title": "Unit 3B: House - Lesson 4: Is the cat in the living room?",
+      "lesson_id": 3788406,
+      "title": "Unit 2B: Pets - Lesson 5: Review & value",
       "level": 1,
-      "last_activity_date": "2026-04-20",
-      "days_since_last_practice": 1,
-      "forgetting_score": 0.6321,
-      "weakness_score": 0.6455,
-      "composite_priority_score": 0.6388,
+      "last_activity_date": "2026-04-02",
+      "days_since_last_practice": 19,
+      "forgetting_score": 0.9337,
+      "weakness_score": 0.5245,
+      "composite_priority_score": 0.7291,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Oh, do you mean you have a pet and people at home? 😊",
+          "expected_answer": "Yes, I live with my family and my dog.",
+          "target_objects": null,
+          "user_transcript": "The.",
+          "score": 57,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 14,
+          "timestamp": "2026-04-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhh46uu-0ce02586-audio.wav",
+          "reaction_time_ms": 684
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. What pet do you have at home? 🐾",
+          "expected_answer": "I have a small hamster.",
+          "target_objects": null,
+          "user_transcript": "Oh, and people.",
+          "score": 68,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 36,
+          "timestamp": "2026-04-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhh3wrk-1cec96bc-audio.wav",
+          "reaction_time_ms": 684
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What is it?",
+          "expected_answer": null,
+          "target_objects": [
+            "Bird",
+            "Dog",
+            "Cat",
+            "Fish",
+            "Rabbit",
+            "Frog",
+            "Hamster",
+            "Monkey"
+          ],
+          "user_transcript": "The.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhgejoa-0bad87b8-audio.wav",
+          "reaction_time_ms": 2118
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "Bird",
+            "Dog",
+            "Cat",
+            "Fish",
+            "Rabbit",
+            "Frog",
+            "Hamster",
+            "Monkey"
+          ],
+          "user_transcript": "What can you see?",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhgeckl-93ca7571-audio.wav",
+          "reaction_time_ms": 599
+        },
+        {
+          "lms_type": "free_speaking",
+          "question": "How are you today?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "By by By.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhgd7nd-dce20c91-audio.wav",
+          "reaction_time_ms": 3898
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7238,
+        "luyen_tap": 13151
+      }
+    },
+    {
+      "lesson_id": 3920449,
+      "title": "Unit 3B: House - Lesson 2: It's in the living room.",
+      "level": 1,
+      "last_activity_date": "2026-04-12",
+      "days_since_last_practice": 9,
+      "forgetting_score": 0.7235,
+      "weakness_score": 0.5895,
+      "composite_priority_score": 0.6565,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
         {
-          "practice_id": 7257,
-          "question_id": 385790,
+          "practice_id": 13153,
+          "question_id": 369730,
           "question_folder": "English Tutoring - Level 1",
-          "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
-          "question_text": "Reorder: it | on | is | in",
-          "comment_plain": null,
-          "correct_answer": "1. Where is the cat? 2. Is the dog in the living room? 3. It's on the table. 4. No, it isn't.",
-          "student_answer": "isonitin",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
+          "comment_plain": "Audio This is the bedroom. bedroom: ph&ograve;ng ngủ",
+          "correct_answer": "C. This is the bedroom.",
+          "student_answer": "A. This is the bathroom.",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
             {
-              "letter": "1",
-              "text": "it",
+              "letter": "A",
+              "text": "A. This is the bathroom.",
               "image_urls": [],
               "audio_urls": []
             },
             {
-              "letter": "2",
-              "text": "on",
+              "letter": "B",
+              "text": "B. This is the living room.",
               "image_urls": [],
               "audio_urls": []
             },
             {
-              "letter": "3",
-              "text": "is",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "4",
-              "text": "in",
+              "letter": "C",
+              "text": "C. This is the bedroom.",
               "image_urls": [],
               "audio_urls": []
             }
@@ -3870,33 +3703,33 @@
           "is_correct": 0
         },
         {
-          "practice_id": 13177,
-          "question_id": 369849,
+          "practice_id": 13153,
+          "question_id": 369732,
           "question_folder": "English Tutoring - Level 1",
           "question_type": "Một lựa chọn",
-          "question_text": "Read and odd one out. (Con hãy đọc và chọn ra từ không cùng loại.)",
-          "comment_plain": null,
-          "correct_answer": "C. van",
-          "student_answer": "B. on",
+          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
+          "comment_plain": "Audio This is the bathroom. bathroom: ph&ograve;ng tắm",
+          "correct_answer": "C. This is the bathroom.",
+          "student_answer": "B. This is the bedroom.",
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
             {
               "letter": "A",
-              "text": "A. in",
+              "text": "A. This is the kitchen.",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "B",
-              "text": "B. on",
+              "text": "B. This is the bedroom.",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "C",
-              "text": "C. van",
+              "text": "C. This is the bathroom.",
               "image_urls": [],
               "audio_urls": []
             }
@@ -3905,94 +3738,87 @@
         }
       ],
       "question_bank_preview": [],
-      "failed_media_questions_count": 5,
+      "failed_media_questions_count": 2,
       "worst_speaking_items": [
         {
           "lms_type": "conversation",
-          "question": "Nice. Is the sofa under the window? 😊",
-          "expected_answer": "Yes, the sofa is under the window.",
+          "question": "Great. Do you live in a house or an apartment? 🏠",
+          "expected_answer": "I live in a house.",
           "target_objects": null,
-          "user_transcript": "The sofa no window.",
-          "score": 57,
+          "user_transcript": "I live in.",
+          "score": 45,
           "answer_type": null,
           "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 14,
-          "timestamp": "2026-04-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5s4cyq-72c14d84-audio.wav",
-          "reaction_time_ms": 676
+          "pronunciation_score": 77,
+          "grammar_score": 13,
+          "timestamp": "2026-04-12",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvrk0ic-cd16d98c-audio.wav",
+          "reaction_time_ms": 1129
         },
         {
           "lms_type": "conversation",
-          "question": "Hello! I like your answer. Do you mean 'meet' or 'meat'? 😄",
-          "expected_answer": "I meant 'meet'.",
+          "question": "Nice. Who cooks at home? 🍳",
+          "expected_answer": "My mother cooks at home.",
           "target_objects": null,
-          "user_transcript": "Yes, I'm ready.",
-          "score": 67,
+          "user_transcript": "My mom cooks at home.",
+          "score": 62,
           "answer_type": null,
           "correct_objects": null,
-          "pronunciation_score": 66,
-          "grammar_score": 68,
-          "timestamp": "2026-04-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5ryn71-5a077d62-audio.wav",
-          "reaction_time_ms": 676
+          "pronunciation_score": 33,
+          "grammar_score": 91,
+          "timestamp": "2026-04-12",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvriugu-3730125c-audio.wav",
+          "reaction_time_ms": 1129
         },
         {
           "lms_type": "conversation",
-          "question": "Hi! Nice to see you. Are you ready to talk about the house? 😄",
-          "expected_answer": "Yes, I am ready. I want to talk about my house.",
+          "question": "I see. You live with your father and... who else? 👨‍👦",
+          "expected_answer": "I live with my father and my mother.",
           "target_objects": null,
-          "user_transcript": "Meet'.",
-          "score": 57.5,
+          "user_transcript": "I'm mom.",
+          "score": 37,
           "answer_type": null,
           "correct_objects": null,
-          "pronunciation_score": 100,
+          "pronunciation_score": 41,
+          "grammar_score": 33,
+          "timestamp": "2026-04-12",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvri2hp-0e993d12-audio.wav",
+          "reaction_time_ms": 1129
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Who else is in your home? 👨‍👦",
+          "expected_answer": "I live with my father and my sister.",
+          "target_objects": null,
+          "user_transcript": "I with my father and my",
+          "score": 36.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 58,
           "grammar_score": 15,
-          "timestamp": "2026-04-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5ry5um-fe94a309-audio.wav",
-          "reaction_time_ms": 676
+          "timestamp": "2026-04-12",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvrhqoz-148b608a-audio.wav",
+          "reaction_time_ms": 1129
         },
         {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "window",
-            "sofa",
-            "living room",
-            "vase"
-          ],
-          "user_transcript": "This is living room.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "living room"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5r4lg4-8c820fa8-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "free_speaking",
-          "question": "How are you today?",
-          "expected_answer": null,
+          "lms_type": "conversation",
+          "question": "I see. You live in a small house. Who lives with you? 🏠",
+          "expected_answer": "I live with my mother and father.",
           "target_objects": null,
-          "user_transcript": "Hello.",
-          "score": 0,
-          "answer_type": "inaccordant",
+          "user_transcript": "I live with my father.",
+          "score": 68.5,
+          "answer_type": null,
           "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5r387n-ccf5a052-audio.wav",
-          "reaction_time_ms": 811
+          "pronunciation_score": 46,
+          "grammar_score": 91,
+          "timestamp": "2026-04-12",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvrh7ap-21ce52f2-audio.wav",
+          "reaction_time_ms": 1129
         }
       ],
       "practice_ids": {
-        "bai_tap": 7257,
-        "luyen_tap": 13177
+        "bai_tap": 7255,
+        "luyen_tap": 13153
       }
     }
   ],
@@ -4007,9 +3833,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-02-28",
       "days_since_last_practice": 52,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9994,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9997,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -4139,9 +3965,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-07",
       "days_since_last_practice": 14,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8647,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9324,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -4601,9 +4427,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-04",
       "days_since_last_practice": 48,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9989,
       "weakness_score": 0.7992,
-      "composite_priority_score": 0.8996,
+      "composite_priority_score": 0.8991,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -5301,9 +5127,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-11",
       "days_since_last_practice": 41,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9971,
       "weakness_score": 0.6706,
-      "composite_priority_score": 0.8353,
+      "composite_priority_score": 0.8338,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -6002,9 +5828,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-18",
       "days_since_last_practice": 34,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9922,
       "weakness_score": 0.6105,
-      "composite_priority_score": 0.8053,
+      "composite_priority_score": 0.8014,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -6445,9 +6271,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-21",
       "days_since_last_practice": 31,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9881,
       "weakness_score": 0.6105,
-      "composite_priority_score": 0.8053,
+      "composite_priority_score": 0.7993,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -6804,965 +6630,6 @@
       }
     },
     {
-      "lesson_id": 3786888,
-      "program_id": null,
-      "level": 1,
-      "position": 10,
-      "title": "Unit 2B: Pets - Lesson 4: Is it big?",
-      "desc": "- dog, cat, rabbit, bird, fish, monkey, tortoise, frog, snake, hamster\n- small, big\n - pencil, pineapple, question, queen, rabbit, rainbow\n- Letter PQR and sounds\n- Do you have a ....?  Yes, I do/ No,",
-      "status": "completed",
-      "last_activity_date": "2026-03-29",
-      "days_since_last_practice": 23,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.6,
-      "composite_priority_score": 0.8,
-      "in_class": {
-        "participated": true,
-        "session_count": 2,
-        "session_metrics": {
-          "cups": 0,
-          "audio_turns": 63,
-          "avg_reaction_ms": 1338,
-          "fastest_reaction_ms": 591,
-          "total_duration_ms": 0,
-          "session_status": "COMPLETED",
-          "completion_pct": 5
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-03-29",
-        "pronunciation_attempts": 43,
-        "pronunciation_score_avg": 62.93,
-        "free_speaking_attempts": 2,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 2
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 76.5,
-        "worst_speaking_items": [
-          {
-            "lms_type": "free_speaking",
-            "question": "How are you today?",
-            "expected_answer": null,
-            "target_objects": null,
-            "user_transcript": "Oh.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-29",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbrxaa8-1f877df9-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Good. Do you like a cat, dog, or fish? 🐶",
-            "expected_answer": "I like a dog. It is small and friendly.",
-            "target_objects": null,
-            "user_transcript": "I like it.",
-            "score": 69.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 39,
-            "timestamp": "2026-03-29",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbroe7x-ae941fb0-audio.wav",
-            "reaction_time_ms": 596
-          },
-          {
-            "lms_type": "conversation",
-            "question": "I see you typed \"I.\" Can you tell me: do you like a cat, dog, or fish? 🐱",
-            "expected_answer": "I like dogs. I have a small dog. It is brown.",
-            "target_objects": null,
-            "user_transcript": "I like",
-            "score": 69,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 38,
-            "timestamp": "2026-03-29",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbrnv6f-6c4bf30c-audio.wav",
-            "reaction_time_ms": 596
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Tell me about a cat, dog, or fish you like. 🐱🐶🐟",
-            "expected_answer": "I like dogs. I have one dog. His name is Max.",
-            "target_objects": null,
-            "user_transcript": "I.",
-            "score": 59,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 18,
-            "timestamp": "2026-03-29",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbrnd69-f1857420-audio.wav",
-            "reaction_time_ms": 596
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. I like cats 😺 Do you play with your cat at home? 🐱",
-            "expected_answer": "Yes, I play with my cat. I give her a toy and pet her.",
-            "target_objects": null,
-            "user_transcript": "Yes, I believe I play with my cat.",
-            "score": 65,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 37,
-            "grammar_score": 93,
-            "timestamp": "2026-03-29",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbrksgm-6e0a89a4-audio.wav",
-            "reaction_time_ms": 596
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7235,
-          "score": 0.8,
-          "correct": 12,
-          "total": 15,
-          "submitted_date": "2026-03-29"
-        },
-        "luyen_tap": {
-          "practice_id": 13147,
-          "score": 0.8,
-          "correct": 12,
-          "total": 15,
-          "submitted_date": "2026-03-29"
-        },
-        "lms_ids": {
-          "bai_tap": 7235,
-          "luyen_tap": 13147
-        },
-        "skill_breakdown": {
-          "Kĩ năng nghe": {
-            "correct": 4,
-            "total": 5,
-            "accuracy": 0.8
-          },
-          "English Tutoring - Level 1": {
-            "correct": 17,
-            "total": 21,
-            "accuracy": 0.81
-          },
-          "Từ vựng": {
-            "correct": 3,
-            "total": 4,
-            "accuracy": 0.75
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 7235,
-            "question_id": 297505,
-            "question_folder": "Kĩ năng nghe",
-            "question_type": "Một lựa chọn",
-            "question_text": "Find a picture beginning with letter ... Con hãy tìm bức tranh bắt đầu bằng chữ cái .... Letter P",
-            "comment_plain": "Ảnh 1: b&uacute;t ch&igrave; = pencil Ảnh 2: nữ hoàng = queen Ảnh 3: cầu vồng = rainbow => Đáp án: A",
-            "correct_answer": null,
-            "student_answer": "option_2",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/23/5474_pencilll.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/23/781c_queen1.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/23/8ce2_rainbow-removebg-preview.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 7235,
-            "question_id": 297529,
-            "question_folder": "Từ vựng",
-            "question_type": "Một lựa chọn",
-            "question_text": "Choose the correct answer. Con hãy chọn đáp án đúng.",
-            "comment_plain": "Ảnh: con thỏ = rabbit => Đáp án: B",
-            "correct_answer": "B. Rabbit",
-            "student_answer": "A. Rainbow",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/23/c4a4_rabbittt-removebg-preview.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. Rainbow",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. Rabbit",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 7235,
-            "question_id": 385412,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Trả lời bằng giọng nói",
-            "question_text": "Look and say Con hãy nhìn và nói.",
-            "comment_plain": null,
-            "correct_answer": "rainbow",
-            "student_answer": "window",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/07/2ee4_rainbow.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "rainbow",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13147,
-            "question_id": 369634,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Một lựa chọn",
-            "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
-            "comment_plain": "audio: letter P letter P: chữ P",
-            "correct_answer": "B",
-            "student_answer": "C",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/e1e8_letter-r.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/ec96_letter-p.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/2599_letter-q.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13147,
-            "question_id": 369638,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Một lựa chọn",
-            "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
-            "comment_plain": "audio: question question: câu hỏi",
-            "correct_answer": "B",
-            "student_answer": "A",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/6fb6_queen.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/2bde_question.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/17/2dde_pencil.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13147,
-            "question_id": 385830,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
-            "question_text": "Reorder: rabbit | big | pet | have",
-            "comment_plain": null,
-            "correct_answer": "Is it big? - Yes, it is.",
-            "student_answer": "pet",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "1",
-                "text": "rabbit",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "2",
-                "text": "big",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "3",
-                "text": "pet",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "4",
-                "text": "have",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3920449,
-      "program_id": null,
-      "level": 1,
-      "position": 14,
-      "title": "Unit 3B: House - Lesson 2: It's in the living room.",
-      "desc": "- living room, kitchen, bedroom, bathroom, window, door, bed, TV\n- TV, table\n- Letter Tt and sound t\n- What is this? This is the living room.",
-      "status": "completed",
-      "last_activity_date": "2026-04-12",
-      "days_since_last_practice": 9,
-      "forgetting_score": 0.9999,
-      "weakness_score": 0.5895,
-      "composite_priority_score": 0.7947,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 70,
-          "audio_turns": 51,
-          "avg_reaction_ms": 1724,
-          "fastest_reaction_ms": 549,
-          "total_duration_ms": 1477934,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-12",
-        "pronunciation_attempts": 35,
-        "pronunciation_score_avg": 65.29,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "lack_of_knowledge": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1,
-          "correct": 1
-        },
-        "conversation_attempts": 13,
-        "conversation_score_avg": 74.17,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Great. Do you live in a house or an apartment? 🏠",
-            "expected_answer": "I live in a house.",
-            "target_objects": null,
-            "user_transcript": "I live in.",
-            "score": 45,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 77,
-            "grammar_score": 13,
-            "timestamp": "2026-04-12",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvrk0ic-cd16d98c-audio.wav",
-            "reaction_time_ms": 1129
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Who cooks at home? 🍳",
-            "expected_answer": "My mother cooks at home.",
-            "target_objects": null,
-            "user_transcript": "My mom cooks at home.",
-            "score": 62,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 33,
-            "grammar_score": 91,
-            "timestamp": "2026-04-12",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvriugu-3730125c-audio.wav",
-            "reaction_time_ms": 1129
-          },
-          {
-            "lms_type": "conversation",
-            "question": "I see. You live with your father and... who else? 👨‍👦",
-            "expected_answer": "I live with my father and my mother.",
-            "target_objects": null,
-            "user_transcript": "I'm mom.",
-            "score": 37,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 41,
-            "grammar_score": 33,
-            "timestamp": "2026-04-12",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvri2hp-0e993d12-audio.wav",
-            "reaction_time_ms": 1129
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Who else is in your home? 👨‍👦",
-            "expected_answer": "I live with my father and my sister.",
-            "target_objects": null,
-            "user_transcript": "I with my father and my",
-            "score": 36.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 58,
-            "grammar_score": 15,
-            "timestamp": "2026-04-12",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvrhqoz-148b608a-audio.wav",
-            "reaction_time_ms": 1129
-          },
-          {
-            "lms_type": "conversation",
-            "question": "I see. You live in a small house. Who lives with you? 🏠",
-            "expected_answer": "I live with my mother and father.",
-            "target_objects": null,
-            "user_transcript": "I live with my father.",
-            "score": 68.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 46,
-            "grammar_score": 91,
-            "timestamp": "2026-04-12",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvrh7ap-21ce52f2-audio.wav",
-            "reaction_time_ms": 1129
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7255,
-          "score": 0.8,
-          "correct": 12,
-          "total": 15,
-          "submitted_date": "2026-04-12"
-        },
-        "luyen_tap": {
-          "practice_id": 13153,
-          "score": 0.87,
-          "correct": 13,
-          "total": 15,
-          "submitted_date": "2026-04-12"
-        },
-        "lms_ids": {
-          "bai_tap": 7255,
-          "luyen_tap": 13153
-        },
-        "skill_breakdown": {
-          "Kĩ năng nghe": {
-            "correct": 4,
-            "total": 5,
-            "accuracy": 0.8
-          },
-          "English Tutoring - Level 1": {
-            "correct": 16,
-            "total": 19,
-            "accuracy": 0.842
-          },
-          "Từ vựng": {
-            "correct": 4,
-            "total": 4,
-            "accuracy": 1.0
-          },
-          "Biểu đồ": {
-            "correct": 1,
-            "total": 1,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 7255,
-            "question_id": 297778,
-            "question_folder": "Kĩ năng nghe",
-            "question_type": "Một lựa chọn",
-            "question_text": "Listen and choose the correct answer. Con hãy nghe và chọn đáp án đúng.",
-            "comment_plain": "Audio: window: cửa sổ => Đáp án: A",
-            "correct_answer": null,
-            "student_answer": "option_3",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/24/d927_window-removebg-preview.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/24/b88f_pen.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/24/e8a7_rainbow-removebg-preview.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 7255,
-            "question_id": 385492,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Trả lời bằng giọng nói",
-            "question_text": "Look and say Con hãy nhìn và nói.",
-            "comment_plain": null,
-            "correct_answer": "door",
-            "student_answer": "no",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/893d_door.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "door",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13153,
-            "question_id": 369730,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Một lựa chọn",
-            "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
-            "comment_plain": "Audio This is the bedroom. bedroom: ph&ograve;ng ngủ",
-            "correct_answer": "C. This is the bedroom.",
-            "student_answer": "A. This is the bathroom.",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. This is the bathroom.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. This is the living room.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. This is the bedroom.",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13153,
-            "question_id": 369732,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Một lựa chọn",
-            "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
-            "comment_plain": "Audio This is the bathroom. bathroom: ph&ograve;ng tắm",
-            "correct_answer": "C. This is the bathroom.",
-            "student_answer": "B. This is the bedroom.",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. This is the kitchen.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. This is the bedroom.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. This is the bathroom.",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3786887,
-      "program_id": null,
-      "level": 1,
-      "position": 9,
-      "title": "Unit 2B: Pets - Lesson 3: I have a big cat.",
-      "desc": "- dog, cat, rabbit, bird, fish, monkey, tortoise, frog, snake, hamster\n- small, big\n - rabbit, rainbow\n- Letter Rr and sound r\n- What pet do you have? I have (a big cat).",
-      "status": "completed",
-      "last_activity_date": "2026-03-28",
-      "days_since_last_practice": 24,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.586,
-      "composite_priority_score": 0.793,
-      "in_class": {
-        "participated": true,
-        "session_count": 2,
-        "session_metrics": {
-          "cups": 58,
-          "audio_turns": 127,
-          "avg_reaction_ms": 1743,
-          "fastest_reaction_ms": 524,
-          "total_duration_ms": 1448721,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-03-28",
-        "pronunciation_attempts": 84,
-        "pronunciation_score_avg": 55.62,
-        "free_speaking_attempts": 2,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "lack_of_knowledge": 1,
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 4,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 4
-        },
-        "conversation_attempts": 28,
-        "conversation_score_avg": 72.78,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Tell me: is your pet big or small? 🐾",
-            "expected_answer": "My pet is small.",
-            "target_objects": null,
-            "user_transcript": "My.",
-            "score": 56.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 13,
-            "timestamp": "2026-03-28",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnacuqc7-fb1e171e-audio.wav",
-            "reaction_time_ms": 1319
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Oh, okay. Is your pet small or big? 🐾",
-            "expected_answer": "My pet is small.",
-            "target_objects": null,
-            "user_transcript": "O.",
-            "score": 69,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 38,
-            "timestamp": "2026-03-28",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnacucgf-2f65c4d7-audio.wav",
-            "reaction_time_ms": 1319
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Is your pet big or small? 🐾",
-            "expected_answer": "My pet is small. It is a rabbit.",
-            "target_objects": null,
-            "user_transcript": "Me.",
-            "score": 68.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 37,
-            "timestamp": "2026-03-28",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnacu18s-c5ac41d1-audio.wav",
-            "reaction_time_ms": 1319
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. What pet do you have? 🐰",
-            "expected_answer": "I have a rabbit. It is small and soft.",
-            "target_objects": null,
-            "user_transcript": "What?",
-            "score": 22,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 0,
-            "grammar_score": 44,
-            "timestamp": "2026-03-28",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnact5ct-24b01ae3-audio.wav",
-            "reaction_time_ms": 1319
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Is the pet white or another color? 😊",
-            "expected_answer": "Yes, my pet is white.",
-            "target_objects": null,
-            "user_transcript": "It's my.",
-            "score": 35,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 50,
-            "grammar_score": 20,
-            "timestamp": "2026-03-28",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnacrpot-b43dfbeb-audio.wav",
-            "reaction_time_ms": 1319
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7234,
-          "score": 0.87,
-          "correct": 13,
-          "total": 15,
-          "submitted_date": "2026-03-28"
-        },
-        "luyen_tap": {
-          "practice_id": 13342,
-          "score": 0.73,
-          "correct": 11,
-          "total": 15,
-          "submitted_date": "2026-03-28"
-        },
-        "lms_ids": {
-          "bai_tap": 7234,
-          "luyen_tap": 13342
-        },
-        "skill_breakdown": {
-          "Kĩ năng nghe": {
-            "correct": 5,
-            "total": 5,
-            "accuracy": 1.0
-          },
-          "Biểu đồ": {
-            "correct": 3,
-            "total": 4,
-            "accuracy": 0.75
-          },
-          "Từ vựng": {
-            "correct": 6,
-            "total": 6,
-            "accuracy": 1.0
-          },
-          "English Tutoring - Level 1": {
-            "correct": 10,
-            "total": 13,
-            "accuracy": 0.769
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 7234,
-            "question_id": 385408,
-            "question_folder": "Biểu đồ",
-            "question_type": "Trả lời bằng giọng nói",
-            "question_text": "Look and say Con hãy nhìn và nói.",
-            "comment_plain": null,
-            "correct_answer": "frog",
-            "student_answer": "shop",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/28/f96e_frog.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "frog",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13342,
-            "question_id": 385820,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Trả lời bằng giọng nói",
-            "question_text": "Look and say (Con hãy nhìn và nói.)",
-            "comment_plain": null,
-            "correct_answer": "frog",
-            "student_answer": "fish",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/28/f96e_frog.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "frog",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13342,
-            "question_id": 371977,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Look and write (Con hãy nhìn điền từ vào ô trống.) What pet do you have? I have a big _ortoise.",
-            "comment_plain": null,
-            "correct_answer": "t",
-            "student_answer": "k",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/16/832e_tortoise.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13342,
-            "question_id": 371979,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Một lựa chọn",
-            "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.)",
-            "comment_plain": "audio: What pet do you have? I have a small frog. pet: con vật small: nhỏ frog: con ếch",
-            "correct_answer": "A.",
-            "student_answer": "C.",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/29/1dd5_frog.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/c7da_snake.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/17/1bf0_hamster-removebg-preview.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
       "lesson_id": 3557240,
       "program_id": null,
       "level": 1,
@@ -8020,602 +6887,6 @@
               {
                 "letter": "C",
                 "text": "C. I'm eight years old.",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3786886,
-      "program_id": null,
-      "level": 1,
-      "position": 8,
-      "title": "Unit 2B: Pets - Lesson 2: I have a cat.",
-      "desc": "- dog, cat, , bird, fish, rabbit, monkey, tortoise,\n - question, queen\n- Letter Qq and sound kw\n- What pet do you have? I have (a cat).",
-      "status": "completed",
-      "last_activity_date": "2026-03-24",
-      "days_since_last_practice": 28,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5805,
-      "composite_priority_score": 0.7903,
-      "in_class": {
-        "participated": true,
-        "session_count": 2,
-        "session_metrics": {
-          "cups": 45,
-          "audio_turns": 119,
-          "avg_reaction_ms": 1654,
-          "fastest_reaction_ms": 557,
-          "total_duration_ms": 1358526,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-03-24",
-        "pronunciation_attempts": 62,
-        "pronunciation_score_avg": 47.53,
-        "free_speaking_attempts": 2,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 2
-        },
-        "brainstorm_attempts": 4,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 4
-        },
-        "conversation_attempts": 26,
-        "conversation_score_avg": 65.12,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Oh, she? Is she a dog, cat, or other pet? 🐾",
-            "expected_answer": "She is a dog.",
-            "target_objects": null,
-            "user_transcript": "O.D.",
-            "score": 18,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 0,
-            "grammar_score": 36,
-            "timestamp": "2026-03-24",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l85c2-b939883d-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi! Good to see you. Do you have a pet at home? 🐶",
-            "expected_answer": "Yes, I have a rabbit. It is small and cute.",
-            "target_objects": null,
-            "user_transcript": "She.",
-            "score": 58.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 17,
-            "timestamp": "2026-03-24",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l7r7x-b15b0160-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Do you have a pet at home? 🐶",
-            "expected_answer": "Yes, I have a rabbit. It is small and white.",
-            "target_objects": null,
-            "user_transcript": "IhI.",
-            "score": 26,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 33,
-            "grammar_score": 19,
-            "timestamp": "2026-03-24",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l7bt4-3b3c6b02-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hello! Good to see you. Are you ready to talk about pets? 🐶",
-            "expected_answer": "Yes, I am ready. I have a pet rabbit.",
-            "target_objects": null,
-            "user_transcript": "Iyeah.",
-            "score": 59,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 25,
-            "grammar_score": 93,
-            "timestamp": "2026-03-24",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l6m9c-84ac3c54-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi, I am Sam. Nice to meet you 😊",
-            "expected_answer": "My name is Myra.",
-            "target_objects": null,
-            "user_transcript": "My.",
-            "score": 56,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 12,
-            "timestamp": "2026-03-24",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l5psz-ff210e34-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7233,
-          "score": 0.8,
-          "correct": 12,
-          "total": 15,
-          "submitted_date": "2026-03-24"
-        },
-        "luyen_tap": {
-          "practice_id": 13339,
-          "score": 0.93,
-          "correct": 14,
-          "total": 15,
-          "submitted_date": "2026-03-24"
-        },
-        "lms_ids": {
-          "bai_tap": 7233,
-          "luyen_tap": 13339
-        },
-        "skill_breakdown": {
-          "Kĩ năng nghe": {
-            "correct": 7,
-            "total": 8,
-            "accuracy": 0.875
-          },
-          "Từ vựng": {
-            "correct": 3,
-            "total": 4,
-            "accuracy": 0.75
-          },
-          "Biểu đồ": {
-            "correct": 4,
-            "total": 5,
-            "accuracy": 0.8
-          },
-          "English Tutoring - Level 1": {
-            "correct": 12,
-            "total": 13,
-            "accuracy": 0.923
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 7233,
-            "question_id": 297469,
-            "question_folder": "Kĩ năng nghe",
-            "question_type": "Một lựa chọn",
-            "question_text": "Choose the correct answer. Con hãy chọn đáp án đúng. I have a rabbit.",
-            "comment_plain": "I have a rabbit: T&ocirc;i c&oacute; một con thỏ. => Đáp án: C",
-            "correct_answer": null,
-            "student_answer": "option_2",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/23/9d6f_fish-removebg-preview.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/23/a5b0_bird-removebg-preview.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/24/7f30_rabbittt-removebg-preview.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 7233,
-            "question_id": 297472,
-            "question_folder": "Từ vựng",
-            "question_type": "Một lựa chọn",
-            "question_text": "Fill in the blank Con hãy điền từ vào ô trống. mon_ey",
-            "comment_plain": "monkey: con khỉ => Đáp án: k",
-            "correct_answer": "A. k",
-            "student_answer": "B. p",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/24/d31e_monkey-removebg-preview.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. k",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. p",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 7233,
-            "question_id": 385405,
-            "question_folder": "Biểu đồ",
-            "question_type": "Trả lời bằng giọng nói",
-            "question_text": "Look and say Con hãy nhìn và nói.",
-            "comment_plain": null,
-            "correct_answer": "question",
-            "student_answer": "sitter",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/2bde_question.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "question",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13339,
-            "question_id": 371901,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Một lựa chọn",
-            "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
-            "comment_plain": "audio: rabbit rabbit: con thỏ",
-            "correct_answer": "A.",
-            "student_answer": "C.",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/edce_th-E1-BB-8E.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/c200_kh-E1-BB-88.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/140f_rUa.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3786881,
-      "program_id": null,
-      "level": 1,
-      "position": 2,
-      "title": "Unit 1B: Family - Lesson 2: They are my mother and father.",
-      "desc": "- mother, father, brother, sister, grandmother, grandfather\n - nut, nose\n- Letter N and sound n\n- Who are they? They are my mother and father.",
-      "status": "completed",
-      "last_activity_date": "2026-03-08",
-      "days_since_last_practice": 44,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5755,
-      "composite_priority_score": 0.7877,
-      "in_class": {
-        "participated": true,
-        "session_count": 2,
-        "session_metrics": {
-          "cups": 32,
-          "audio_turns": 103,
-          "avg_reaction_ms": 1755,
-          "fastest_reaction_ms": 553,
-          "total_duration_ms": 6144,
-          "session_status": "COMPLETED",
-          "completion_pct": 85
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-03-07",
-        "pronunciation_attempts": 72,
-        "pronunciation_score_avg": 65.57,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
-        "conversation_attempts": 21,
-        "conversation_score_avg": 60.38,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice. What games do you play with your sister? 😊",
-            "expected_answer": "We play hide and seek and we draw together.",
-            "target_objects": null,
-            "user_transcript": "We play soccer and.",
-            "score": 58,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 16,
-            "timestamp": "2026-03-07",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmg3hqt9-4aad2f5f-audio.wav",
-            "reaction_time_ms": 2438
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Do you play with your sister? 😊",
-            "expected_answer": "Yes, we play games. We play with dolls and blocks.",
-            "target_objects": null,
-            "user_transcript": "Yes, we.",
-            "score": 47,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 50,
-            "grammar_score": 44,
-            "timestamp": "2026-03-07",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmg3h9uv-bd534d1f-audio.wav",
-            "reaction_time_ms": 2438
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. How old is your sister? 😊",
-            "expected_answer": "She is ten years old.",
-            "target_objects": null,
-            "user_transcript": "She is four years old.",
-            "score": 61.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 35,
-            "grammar_score": 88,
-            "timestamp": "2026-03-07",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmg3gv74-da43046c-audio.wav",
-            "reaction_time_ms": 2438
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Do you mean: I have a mother and a father? 😊",
-            "expected_answer": "Yes, I have a mother and a father.",
-            "target_objects": null,
-            "user_transcript": "Yes, I have a mother and.",
-            "score": 69,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 38,
-            "timestamp": "2026-03-07",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmg3fy33-b0211552-audio.wav",
-            "reaction_time_ms": 2438
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Who is in your family? 👨‍👩‍👧‍👦",
-            "expected_answer": "I have a mother, a father, and one sister.",
-            "target_objects": null,
-            "user_transcript": "I have.",
-            "score": 56.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 13,
-            "timestamp": "2026-03-07",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmg3fiy3-02ab9afa-audio.wav",
-            "reaction_time_ms": 2438
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7218,
-          "score": 0.87,
-          "correct": 13,
-          "total": 15,
-          "submitted_date": "2026-03-08"
-        },
-        "luyen_tap": {
-          "practice_id": 13267,
-          "score": 0.8,
-          "correct": 12,
-          "total": 15,
-          "submitted_date": "2026-03-08"
-        },
-        "lms_ids": {
-          "bai_tap": 7218,
-          "luyen_tap": 13267
-        },
-        "skill_breakdown": {
-          "Kĩ năng nghe": {
-            "correct": 5,
-            "total": 5,
-            "accuracy": 1.0
-          },
-          "Biểu đồ": {
-            "correct": 3,
-            "total": 4,
-            "accuracy": 0.75
-          },
-          "English Tutoring - Level 1": {
-            "correct": 12,
-            "total": 15,
-            "accuracy": 0.8
-          },
-          "Từ vựng": {
-            "correct": 5,
-            "total": 5,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 7218,
-            "question_id": 385785,
-            "question_folder": "Biểu đồ",
-            "question_type": "Trả lời bằng giọng nói",
-            "question_text": "Look and say Con hãy nhìn và nói.",
-            "comment_plain": null,
-            "correct_answer": "grandfather",
-            "student_answer": "it",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/260c_grandfather.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "grandfather",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 7218,
-            "question_id": 385786,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
-            "question_text": "Reorder: and | Who | are",
-            "comment_plain": null,
-            "correct_answer": "1. Who are they? - They are my father and mother. 2. Who are they? - They are my brother and sister. 3. Who are they? - They are my grandmother and grandfather.",
-            "student_answer": "Whoandare",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "1",
-                "text": "and",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "2",
-                "text": "Who",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "3",
-                "text": "are",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13267,
-            "question_id": 371008,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Một lựa chọn",
-            "question_text": "Read and odd one out. ( Con hãy đọc và chọn ra từ không cùng loại. )",
-            "comment_plain": null,
-            "correct_answer": "B. nut",
-            "student_answer": "A. mother",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. mother",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. nut",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. father",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13267,
-            "question_id": 371009,
-            "question_folder": "English Tutoring - Level 1",
-            "question_type": "Một lựa chọn",
-            "question_text": "Read and odd one out. ( Con hãy đọc và chọn ra từ không cùng loại. )",
-            "comment_plain": null,
-            "correct_answer": "A. grandfather",
-            "student_answer": "C. nut",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. grandfather",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. nose",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. nut",
                 "image_urls": [],
                 "audio_urls": []
               }
@@ -8995,6 +7266,300 @@
               {
                 "letter": "C",
                 "text": "C. Yes, it is.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3786881,
+      "program_id": null,
+      "level": 1,
+      "position": 2,
+      "title": "Unit 1B: Family - Lesson 2: They are my mother and father.",
+      "desc": "- mother, father, brother, sister, grandmother, grandfather\n - nut, nose\n- Letter N and sound n\n- Who are they? They are my mother and father.",
+      "status": "completed",
+      "last_activity_date": "2026-03-08",
+      "days_since_last_practice": 44,
+      "forgetting_score": 0.9981,
+      "weakness_score": 0.5755,
+      "composite_priority_score": 0.7868,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "session_metrics": {
+          "cups": 32,
+          "audio_turns": 103,
+          "avg_reaction_ms": 1755,
+          "fastest_reaction_ms": 553,
+          "total_duration_ms": 6144,
+          "session_status": "COMPLETED",
+          "completion_pct": 85
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-07",
+        "pronunciation_attempts": 72,
+        "pronunciation_score_avg": 65.57,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 2
+        },
+        "conversation_attempts": 21,
+        "conversation_score_avg": 60.38,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What games do you play with your sister? 😊",
+            "expected_answer": "We play hide and seek and we draw together.",
+            "target_objects": null,
+            "user_transcript": "We play soccer and.",
+            "score": 58,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 16,
+            "timestamp": "2026-03-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmg3hqt9-4aad2f5f-audio.wav",
+            "reaction_time_ms": 2438
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Do you play with your sister? 😊",
+            "expected_answer": "Yes, we play games. We play with dolls and blocks.",
+            "target_objects": null,
+            "user_transcript": "Yes, we.",
+            "score": 47,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 44,
+            "timestamp": "2026-03-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmg3h9uv-bd534d1f-audio.wav",
+            "reaction_time_ms": 2438
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. How old is your sister? 😊",
+            "expected_answer": "She is ten years old.",
+            "target_objects": null,
+            "user_transcript": "She is four years old.",
+            "score": 61.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 35,
+            "grammar_score": 88,
+            "timestamp": "2026-03-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmg3gv74-da43046c-audio.wav",
+            "reaction_time_ms": 2438
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Do you mean: I have a mother and a father? 😊",
+            "expected_answer": "Yes, I have a mother and a father.",
+            "target_objects": null,
+            "user_transcript": "Yes, I have a mother and.",
+            "score": 69,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 38,
+            "timestamp": "2026-03-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmg3fy33-b0211552-audio.wav",
+            "reaction_time_ms": 2438
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Who is in your family? 👨‍👩‍👧‍👦",
+            "expected_answer": "I have a mother, a father, and one sister.",
+            "target_objects": null,
+            "user_transcript": "I have.",
+            "score": 56.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 13,
+            "timestamp": "2026-03-07",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/07/admin/mmg3fiy3-02ab9afa-audio.wav",
+            "reaction_time_ms": 2438
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7218,
+          "score": 0.87,
+          "correct": 13,
+          "total": 15,
+          "submitted_date": "2026-03-08"
+        },
+        "luyen_tap": {
+          "practice_id": 13267,
+          "score": 0.8,
+          "correct": 12,
+          "total": 15,
+          "submitted_date": "2026-03-08"
+        },
+        "lms_ids": {
+          "bai_tap": 7218,
+          "luyen_tap": 13267
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 5,
+            "total": 5,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 3,
+            "total": 4,
+            "accuracy": 0.75
+          },
+          "English Tutoring - Level 1": {
+            "correct": 12,
+            "total": 15,
+            "accuracy": 0.8
+          },
+          "Từ vựng": {
+            "correct": 5,
+            "total": 5,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7218,
+            "question_id": 385785,
+            "question_folder": "Biểu đồ",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say Con hãy nhìn và nói.",
+            "comment_plain": null,
+            "correct_answer": "grandfather",
+            "student_answer": "it",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/260c_grandfather.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "grandfather",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7218,
+            "question_id": 385786,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
+            "question_text": "Reorder: and | Who | are",
+            "comment_plain": null,
+            "correct_answer": "1. Who are they? - They are my father and mother. 2. Who are they? - They are my brother and sister. 3. Who are they? - They are my grandmother and grandfather.",
+            "student_answer": "Whoandare",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "1",
+                "text": "and",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "2",
+                "text": "Who",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "3",
+                "text": "are",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13267,
+            "question_id": 371008,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and odd one out. ( Con hãy đọc và chọn ra từ không cùng loại. )",
+            "comment_plain": null,
+            "correct_answer": "B. nut",
+            "student_answer": "A. mother",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. mother",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. nut",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. father",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13267,
+            "question_id": 371009,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and odd one out. ( Con hãy đọc và chọn ra từ không cùng loại. )",
+            "comment_plain": null,
+            "correct_answer": "A. grandfather",
+            "student_answer": "C. nut",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. grandfather",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. nose",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. nut",
                 "image_urls": [],
                 "audio_urls": []
               }
@@ -9404,6 +7969,685 @@
                 "letter": "C",
                 "text": "C. Hello",
                 "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3786888,
+      "program_id": null,
+      "level": 1,
+      "position": 10,
+      "title": "Unit 2B: Pets - Lesson 4: Is it big?",
+      "desc": "- dog, cat, rabbit, bird, fish, monkey, tortoise, frog, snake, hamster\n- small, big\n - pencil, pineapple, question, queen, rabbit, rainbow\n- Letter PQR and sounds\n- Do you have a ....?  Yes, I do/ No,",
+      "status": "completed",
+      "last_activity_date": "2026-03-29",
+      "days_since_last_practice": 23,
+      "forgetting_score": 0.9626,
+      "weakness_score": 0.6,
+      "composite_priority_score": 0.7813,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 63,
+          "avg_reaction_ms": 1338,
+          "fastest_reaction_ms": 591,
+          "total_duration_ms": 0,
+          "session_status": "COMPLETED",
+          "completion_pct": 5
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-29",
+        "pronunciation_attempts": 43,
+        "pronunciation_score_avg": 62.93,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 2
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 2
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 76.5,
+        "worst_speaking_items": [
+          {
+            "lms_type": "free_speaking",
+            "question": "How are you today?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "Oh.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-29",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbrxaa8-1f877df9-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. Do you like a cat, dog, or fish? 🐶",
+            "expected_answer": "I like a dog. It is small and friendly.",
+            "target_objects": null,
+            "user_transcript": "I like it.",
+            "score": 69.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 39,
+            "timestamp": "2026-03-29",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbroe7x-ae941fb0-audio.wav",
+            "reaction_time_ms": 596
+          },
+          {
+            "lms_type": "conversation",
+            "question": "I see you typed \"I.\" Can you tell me: do you like a cat, dog, or fish? 🐱",
+            "expected_answer": "I like dogs. I have a small dog. It is brown.",
+            "target_objects": null,
+            "user_transcript": "I like",
+            "score": 69,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 38,
+            "timestamp": "2026-03-29",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbrnv6f-6c4bf30c-audio.wav",
+            "reaction_time_ms": 596
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Tell me about a cat, dog, or fish you like. 🐱🐶🐟",
+            "expected_answer": "I like dogs. I have one dog. His name is Max.",
+            "target_objects": null,
+            "user_transcript": "I.",
+            "score": 59,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 18,
+            "timestamp": "2026-03-29",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbrnd69-f1857420-audio.wav",
+            "reaction_time_ms": 596
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. I like cats 😺 Do you play with your cat at home? 🐱",
+            "expected_answer": "Yes, I play with my cat. I give her a toy and pet her.",
+            "target_objects": null,
+            "user_transcript": "Yes, I believe I play with my cat.",
+            "score": 65,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 37,
+            "grammar_score": 93,
+            "timestamp": "2026-03-29",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/29/admin/mnbrksgm-6e0a89a4-audio.wav",
+            "reaction_time_ms": 596
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7235,
+          "score": 0.8,
+          "correct": 12,
+          "total": 15,
+          "submitted_date": "2026-03-29"
+        },
+        "luyen_tap": {
+          "practice_id": 13147,
+          "score": 0.8,
+          "correct": 12,
+          "total": 15,
+          "submitted_date": "2026-03-29"
+        },
+        "lms_ids": {
+          "bai_tap": 7235,
+          "luyen_tap": 13147
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "English Tutoring - Level 1": {
+            "correct": 17,
+            "total": 21,
+            "accuracy": 0.81
+          },
+          "Từ vựng": {
+            "correct": 3,
+            "total": 4,
+            "accuracy": 0.75
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7235,
+            "question_id": 297505,
+            "question_folder": "Kĩ năng nghe",
+            "question_type": "Một lựa chọn",
+            "question_text": "Find a picture beginning with letter ... Con hãy tìm bức tranh bắt đầu bằng chữ cái .... Letter P",
+            "comment_plain": "Ảnh 1: b&uacute;t ch&igrave; = pencil Ảnh 2: nữ hoàng = queen Ảnh 3: cầu vồng = rainbow => Đáp án: A",
+            "correct_answer": null,
+            "student_answer": "option_2",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/23/5474_pencilll.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/23/781c_queen1.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/23/8ce2_rainbow-removebg-preview.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7235,
+            "question_id": 297529,
+            "question_folder": "Từ vựng",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. Con hãy chọn đáp án đúng.",
+            "comment_plain": "Ảnh: con thỏ = rabbit => Đáp án: B",
+            "correct_answer": "B. Rabbit",
+            "student_answer": "A. Rainbow",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/23/c4a4_rabbittt-removebg-preview.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. Rainbow",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. Rabbit",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7235,
+            "question_id": 385412,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say Con hãy nhìn và nói.",
+            "comment_plain": null,
+            "correct_answer": "rainbow",
+            "student_answer": "window",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/07/2ee4_rainbow.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "rainbow",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13147,
+            "question_id": 369634,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
+            "comment_plain": "audio: letter P letter P: chữ P",
+            "correct_answer": "B",
+            "student_answer": "C",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/e1e8_letter-r.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/ec96_letter-p.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/2599_letter-q.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13147,
+            "question_id": 369638,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
+            "comment_plain": "audio: question question: câu hỏi",
+            "correct_answer": "B",
+            "student_answer": "A",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/6fb6_queen.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/2bde_question.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/17/2dde_pencil.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13147,
+            "question_id": 385830,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
+            "question_text": "Reorder: rabbit | big | pet | have",
+            "comment_plain": null,
+            "correct_answer": "Is it big? - Yes, it is.",
+            "student_answer": "pet",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "1",
+                "text": "rabbit",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "2",
+                "text": "big",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "3",
+                "text": "pet",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "4",
+                "text": "have",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3786886,
+      "program_id": null,
+      "level": 1,
+      "position": 8,
+      "title": "Unit 2B: Pets - Lesson 2: I have a cat.",
+      "desc": "- dog, cat, , bird, fish, rabbit, monkey, tortoise,\n - question, queen\n- Letter Qq and sound kw\n- What pet do you have? I have (a cat).",
+      "status": "completed",
+      "last_activity_date": "2026-03-24",
+      "days_since_last_practice": 28,
+      "forgetting_score": 0.9817,
+      "weakness_score": 0.5805,
+      "composite_priority_score": 0.7811,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "session_metrics": {
+          "cups": 45,
+          "audio_turns": 119,
+          "avg_reaction_ms": 1654,
+          "fastest_reaction_ms": 557,
+          "total_duration_ms": 1358526,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-24",
+        "pronunciation_attempts": 62,
+        "pronunciation_score_avg": 47.53,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 2
+        },
+        "brainstorm_attempts": 4,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 4
+        },
+        "conversation_attempts": 26,
+        "conversation_score_avg": 65.12,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Oh, she? Is she a dog, cat, or other pet? 🐾",
+            "expected_answer": "She is a dog.",
+            "target_objects": null,
+            "user_transcript": "O.D.",
+            "score": 18,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 36,
+            "timestamp": "2026-03-24",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l85c2-b939883d-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi! Good to see you. Do you have a pet at home? 🐶",
+            "expected_answer": "Yes, I have a rabbit. It is small and cute.",
+            "target_objects": null,
+            "user_transcript": "She.",
+            "score": 58.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 17,
+            "timestamp": "2026-03-24",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l7r7x-b15b0160-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Do you have a pet at home? 🐶",
+            "expected_answer": "Yes, I have a rabbit. It is small and white.",
+            "target_objects": null,
+            "user_transcript": "IhI.",
+            "score": 26,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 33,
+            "grammar_score": 19,
+            "timestamp": "2026-03-24",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l7bt4-3b3c6b02-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hello! Good to see you. Are you ready to talk about pets? 🐶",
+            "expected_answer": "Yes, I am ready. I have a pet rabbit.",
+            "target_objects": null,
+            "user_transcript": "Iyeah.",
+            "score": 59,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 25,
+            "grammar_score": 93,
+            "timestamp": "2026-03-24",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l6m9c-84ac3c54-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi, I am Sam. Nice to meet you 😊",
+            "expected_answer": "My name is Myra.",
+            "target_objects": null,
+            "user_transcript": "My.",
+            "score": 56,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 12,
+            "timestamp": "2026-03-24",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l5psz-ff210e34-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7233,
+          "score": 0.8,
+          "correct": 12,
+          "total": 15,
+          "submitted_date": "2026-03-24"
+        },
+        "luyen_tap": {
+          "practice_id": 13339,
+          "score": 0.93,
+          "correct": 14,
+          "total": 15,
+          "submitted_date": "2026-03-24"
+        },
+        "lms_ids": {
+          "bai_tap": 7233,
+          "luyen_tap": 13339
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 7,
+            "total": 8,
+            "accuracy": 0.875
+          },
+          "Từ vựng": {
+            "correct": 3,
+            "total": 4,
+            "accuracy": 0.75
+          },
+          "Biểu đồ": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "English Tutoring - Level 1": {
+            "correct": 12,
+            "total": 13,
+            "accuracy": 0.923
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7233,
+            "question_id": 297469,
+            "question_folder": "Kĩ năng nghe",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. Con hãy chọn đáp án đúng. I have a rabbit.",
+            "comment_plain": "I have a rabbit: T&ocirc;i c&oacute; một con thỏ. => Đáp án: C",
+            "correct_answer": null,
+            "student_answer": "option_2",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/23/9d6f_fish-removebg-preview.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/23/a5b0_bird-removebg-preview.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/24/7f30_rabbittt-removebg-preview.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7233,
+            "question_id": 297472,
+            "question_folder": "Từ vựng",
+            "question_type": "Một lựa chọn",
+            "question_text": "Fill in the blank Con hãy điền từ vào ô trống. mon_ey",
+            "comment_plain": "monkey: con khỉ => Đáp án: k",
+            "correct_answer": "A. k",
+            "student_answer": "B. p",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/24/d31e_monkey-removebg-preview.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. k",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. p",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7233,
+            "question_id": 385405,
+            "question_folder": "Biểu đồ",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say Con hãy nhìn và nói.",
+            "comment_plain": null,
+            "correct_answer": "question",
+            "student_answer": "sitter",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/2bde_question.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "question",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13339,
+            "question_id": 371901,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
+            "comment_plain": "audio: rabbit rabbit: con thỏ",
+            "correct_answer": "A.",
+            "student_answer": "C.",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/edce_th-E1-BB-8E.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/c200_kh-E1-BB-88.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/140f_rUa.png"
+                ],
                 "audio_urls": []
               }
             ],
@@ -9977,6 +9221,287 @@
       }
     },
     {
+      "lesson_id": 3786887,
+      "program_id": null,
+      "level": 1,
+      "position": 9,
+      "title": "Unit 2B: Pets - Lesson 3: I have a big cat.",
+      "desc": "- dog, cat, rabbit, bird, fish, monkey, tortoise, frog, snake, hamster\n- small, big\n - rabbit, rainbow\n- Letter Rr and sound r\n- What pet do you have? I have (a big cat).",
+      "status": "completed",
+      "last_activity_date": "2026-03-28",
+      "days_since_last_practice": 24,
+      "forgetting_score": 0.9676,
+      "weakness_score": 0.586,
+      "composite_priority_score": 0.7768,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "session_metrics": {
+          "cups": 58,
+          "audio_turns": 127,
+          "avg_reaction_ms": 1743,
+          "fastest_reaction_ms": 524,
+          "total_duration_ms": 1448721,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-28",
+        "pronunciation_attempts": 84,
+        "pronunciation_score_avg": 55.62,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "lack_of_knowledge": 1,
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 4,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 4
+        },
+        "conversation_attempts": 28,
+        "conversation_score_avg": 72.78,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Tell me: is your pet big or small? 🐾",
+            "expected_answer": "My pet is small.",
+            "target_objects": null,
+            "user_transcript": "My.",
+            "score": 56.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 13,
+            "timestamp": "2026-03-28",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnacuqc7-fb1e171e-audio.wav",
+            "reaction_time_ms": 1319
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh, okay. Is your pet small or big? 🐾",
+            "expected_answer": "My pet is small.",
+            "target_objects": null,
+            "user_transcript": "O.",
+            "score": 69,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 38,
+            "timestamp": "2026-03-28",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnacucgf-2f65c4d7-audio.wav",
+            "reaction_time_ms": 1319
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Is your pet big or small? 🐾",
+            "expected_answer": "My pet is small. It is a rabbit.",
+            "target_objects": null,
+            "user_transcript": "Me.",
+            "score": 68.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 37,
+            "timestamp": "2026-03-28",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnacu18s-c5ac41d1-audio.wav",
+            "reaction_time_ms": 1319
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What pet do you have? 🐰",
+            "expected_answer": "I have a rabbit. It is small and soft.",
+            "target_objects": null,
+            "user_transcript": "What?",
+            "score": 22,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 44,
+            "timestamp": "2026-03-28",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnact5ct-24b01ae3-audio.wav",
+            "reaction_time_ms": 1319
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Is the pet white or another color? 😊",
+            "expected_answer": "Yes, my pet is white.",
+            "target_objects": null,
+            "user_transcript": "It's my.",
+            "score": 35,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 20,
+            "timestamp": "2026-03-28",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/28/admin/mnacrpot-b43dfbeb-audio.wav",
+            "reaction_time_ms": 1319
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7234,
+          "score": 0.87,
+          "correct": 13,
+          "total": 15,
+          "submitted_date": "2026-03-28"
+        },
+        "luyen_tap": {
+          "practice_id": 13342,
+          "score": 0.73,
+          "correct": 11,
+          "total": 15,
+          "submitted_date": "2026-03-28"
+        },
+        "lms_ids": {
+          "bai_tap": 7234,
+          "luyen_tap": 13342
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 5,
+            "total": 5,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 3,
+            "total": 4,
+            "accuracy": 0.75
+          },
+          "Từ vựng": {
+            "correct": 6,
+            "total": 6,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 1": {
+            "correct": 10,
+            "total": 13,
+            "accuracy": 0.769
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7234,
+            "question_id": 385408,
+            "question_folder": "Biểu đồ",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say Con hãy nhìn và nói.",
+            "comment_plain": null,
+            "correct_answer": "frog",
+            "student_answer": "shop",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/28/f96e_frog.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "frog",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13342,
+            "question_id": 385820,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn và nói.)",
+            "comment_plain": null,
+            "correct_answer": "frog",
+            "student_answer": "fish",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/28/f96e_frog.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "frog",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13342,
+            "question_id": 371977,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Look and write (Con hãy nhìn điền từ vào ô trống.) What pet do you have? I have a big _ortoise.",
+            "comment_plain": null,
+            "correct_answer": "t",
+            "student_answer": "k",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/16/832e_tortoise.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13342,
+            "question_id": 371979,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng.)",
+            "comment_plain": "audio: What pet do you have? I have a small frog. pet: con vật small: nhỏ frog: con ếch",
+            "correct_answer": "A.",
+            "student_answer": "C.",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/29/1dd5_frog.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/c7da_snake.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/17/1bf0_hamster-removebg-preview.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3643936,
       "program_id": null,
       "level": 1,
@@ -10243,9 +9768,9 @@
       "status": "completed",
       "last_activity_date": "2026-02-26",
       "days_since_last_practice": 54,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 0.535,
-      "composite_priority_score": 0.7675,
+      "composite_priority_score": 0.7673,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -11290,227 +10815,6 @@
                 "text": "B.",
                 "image_urls": [
                   "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3788406,
-      "program_id": null,
-      "level": 1,
-      "position": 11,
-      "title": "Unit 2B: Pets - Lesson 5: Review & value",
-      "desc": "- dog, cat, rabbit, bird, fish, monkey, tortoise, frog, snake, hamster\n- small, big\nValues: I love my cat.\n- Letter PQR and sounds\n- Do you have a ....?  Yes, I do/ No, I don't.\nWhat pet do you have?",
-      "status": "completed",
-      "last_activity_date": "2026-04-02",
-      "days_since_last_practice": 19,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5245,
-      "composite_priority_score": 0.7622,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 46,
-          "audio_turns": 43,
-          "avg_reaction_ms": 1355,
-          "fastest_reaction_ms": 553,
-          "total_duration_ms": 1341108,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-02",
-        "pronunciation_attempts": 32,
-        "pronunciation_score_avg": 52.28,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
-        "conversation_attempts": 7,
-        "conversation_score_avg": 74.0,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Oh, do you mean you have a pet and people at home? 😊",
-            "expected_answer": "Yes, I live with my family and my dog.",
-            "target_objects": null,
-            "user_transcript": "The.",
-            "score": 57,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 14,
-            "timestamp": "2026-04-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhh46uu-0ce02586-audio.wav",
-            "reaction_time_ms": 684
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. What pet do you have at home? 🐾",
-            "expected_answer": "I have a small hamster.",
-            "target_objects": null,
-            "user_transcript": "Oh, and people.",
-            "score": 68,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 36,
-            "timestamp": "2026-04-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhh3wrk-1cec96bc-audio.wav",
-            "reaction_time_ms": 684
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "Bird",
-              "Dog",
-              "Cat",
-              "Fish",
-              "Rabbit",
-              "Frog",
-              "Hamster",
-              "Monkey"
-            ],
-            "user_transcript": "The.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhgejoa-0bad87b8-audio.wav",
-            "reaction_time_ms": 2118
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "Bird",
-              "Dog",
-              "Cat",
-              "Fish",
-              "Rabbit",
-              "Frog",
-              "Hamster",
-              "Monkey"
-            ],
-            "user_transcript": "What can you see?",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhgeckl-93ca7571-audio.wav",
-            "reaction_time_ms": 599
-          },
-          {
-            "lms_type": "free_speaking",
-            "question": "How are you today?",
-            "expected_answer": null,
-            "target_objects": null,
-            "user_transcript": "By by By.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhgd7nd-dce20c91-audio.wav",
-            "reaction_time_ms": 3898
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7238,
-          "score": 0.93,
-          "correct": 14,
-          "total": 15,
-          "submitted_date": "2026-04-02"
-        },
-        "luyen_tap": {
-          "practice_id": 13151,
-          "score": 1,
-          "correct": 15,
-          "total": 15,
-          "submitted_date": "2026-04-02"
-        },
-        "lms_ids": {
-          "bai_tap": 7238,
-          "luyen_tap": 13151
-        },
-        "skill_breakdown": {
-          "Kĩ năng nghe": {
-            "correct": 7,
-            "total": 8,
-            "accuracy": 0.875
-          },
-          "English Tutoring - Level 1": {
-            "correct": 19,
-            "total": 19,
-            "accuracy": 1.0
-          },
-          "Từ vựng": {
-            "correct": 3,
-            "total": 3,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 7238,
-            "question_id": 297542,
-            "question_folder": "Kĩ năng nghe",
-            "question_type": "Một lựa chọn",
-            "question_text": "Choose the correct answer. Con hãy chọn đáp án đúng. I have a big hamster.",
-            "comment_plain": "I have a big hamster: T&ocirc;i c&oacute; một con chuột to. => Đáp án: A",
-            "correct_answer": null,
-            "student_answer": "option_2",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/23/2106_big-hamster.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/23/4cbe_hamster1.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/25/ee56_cat.png"
                 ],
                 "audio_urls": []
               }
@@ -13146,9 +12450,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-15",
       "days_since_last_practice": 37,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9949,
       "weakness_score": 0.5105,
-      "composite_priority_score": 0.7552,
+      "composite_priority_score": 0.7527,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -13330,6 +12634,528 @@
       }
     },
     {
+      "lesson_id": 3788406,
+      "program_id": null,
+      "level": 1,
+      "position": 11,
+      "title": "Unit 2B: Pets - Lesson 5: Review & value",
+      "desc": "- dog, cat, rabbit, bird, fish, monkey, tortoise, frog, snake, hamster\n- small, big\nValues: I love my cat.\n- Letter PQR and sounds\n- Do you have a ....?  Yes, I do/ No, I don't.\nWhat pet do you have?",
+      "status": "completed",
+      "last_activity_date": "2026-04-02",
+      "days_since_last_practice": 19,
+      "forgetting_score": 0.9337,
+      "weakness_score": 0.5245,
+      "composite_priority_score": 0.7291,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 46,
+          "audio_turns": 43,
+          "avg_reaction_ms": 1355,
+          "fastest_reaction_ms": 553,
+          "total_duration_ms": 1341108,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-02",
+        "pronunciation_attempts": 32,
+        "pronunciation_score_avg": 52.28,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 2
+        },
+        "conversation_attempts": 7,
+        "conversation_score_avg": 74.0,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Oh, do you mean you have a pet and people at home? 😊",
+            "expected_answer": "Yes, I live with my family and my dog.",
+            "target_objects": null,
+            "user_transcript": "The.",
+            "score": 57,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 14,
+            "timestamp": "2026-04-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhh46uu-0ce02586-audio.wav",
+            "reaction_time_ms": 684
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What pet do you have at home? 🐾",
+            "expected_answer": "I have a small hamster.",
+            "target_objects": null,
+            "user_transcript": "Oh, and people.",
+            "score": 68,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 36,
+            "timestamp": "2026-04-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhh3wrk-1cec96bc-audio.wav",
+            "reaction_time_ms": 684
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What is it?",
+            "expected_answer": null,
+            "target_objects": [
+              "Bird",
+              "Dog",
+              "Cat",
+              "Fish",
+              "Rabbit",
+              "Frog",
+              "Hamster",
+              "Monkey"
+            ],
+            "user_transcript": "The.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhgejoa-0bad87b8-audio.wav",
+            "reaction_time_ms": 2118
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "Bird",
+              "Dog",
+              "Cat",
+              "Fish",
+              "Rabbit",
+              "Frog",
+              "Hamster",
+              "Monkey"
+            ],
+            "user_transcript": "What can you see?",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhgeckl-93ca7571-audio.wav",
+            "reaction_time_ms": 599
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "How are you today?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "By by By.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhgd7nd-dce20c91-audio.wav",
+            "reaction_time_ms": 3898
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7238,
+          "score": 0.93,
+          "correct": 14,
+          "total": 15,
+          "submitted_date": "2026-04-02"
+        },
+        "luyen_tap": {
+          "practice_id": 13151,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-04-02"
+        },
+        "lms_ids": {
+          "bai_tap": 7238,
+          "luyen_tap": 13151
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 7,
+            "total": 8,
+            "accuracy": 0.875
+          },
+          "English Tutoring - Level 1": {
+            "correct": 19,
+            "total": 19,
+            "accuracy": 1.0
+          },
+          "Từ vựng": {
+            "correct": 3,
+            "total": 3,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7238,
+            "question_id": 297542,
+            "question_folder": "Kĩ năng nghe",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. Con hãy chọn đáp án đúng. I have a big hamster.",
+            "comment_plain": "I have a big hamster: T&ocirc;i c&oacute; một con chuột to. => Đáp án: A",
+            "correct_answer": null,
+            "student_answer": "option_2",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/23/2106_big-hamster.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/23/4cbe_hamster1.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/25/ee56_cat.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3920449,
+      "program_id": null,
+      "level": 1,
+      "position": 14,
+      "title": "Unit 3B: House - Lesson 2: It's in the living room.",
+      "desc": "- living room, kitchen, bedroom, bathroom, window, door, bed, TV\n- TV, table\n- Letter Tt and sound t\n- What is this? This is the living room.",
+      "status": "completed",
+      "last_activity_date": "2026-04-12",
+      "days_since_last_practice": 9,
+      "forgetting_score": 0.7235,
+      "weakness_score": 0.5895,
+      "composite_priority_score": 0.6565,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 70,
+          "audio_turns": 51,
+          "avg_reaction_ms": 1724,
+          "fastest_reaction_ms": 549,
+          "total_duration_ms": 1477934,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-12",
+        "pronunciation_attempts": 35,
+        "pronunciation_score_avg": 65.29,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "lack_of_knowledge": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1,
+          "correct": 1
+        },
+        "conversation_attempts": 13,
+        "conversation_score_avg": 74.17,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Great. Do you live in a house or an apartment? 🏠",
+            "expected_answer": "I live in a house.",
+            "target_objects": null,
+            "user_transcript": "I live in.",
+            "score": 45,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 77,
+            "grammar_score": 13,
+            "timestamp": "2026-04-12",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvrk0ic-cd16d98c-audio.wav",
+            "reaction_time_ms": 1129
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Who cooks at home? 🍳",
+            "expected_answer": "My mother cooks at home.",
+            "target_objects": null,
+            "user_transcript": "My mom cooks at home.",
+            "score": 62,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 33,
+            "grammar_score": 91,
+            "timestamp": "2026-04-12",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvriugu-3730125c-audio.wav",
+            "reaction_time_ms": 1129
+          },
+          {
+            "lms_type": "conversation",
+            "question": "I see. You live with your father and... who else? 👨‍👦",
+            "expected_answer": "I live with my father and my mother.",
+            "target_objects": null,
+            "user_transcript": "I'm mom.",
+            "score": 37,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 41,
+            "grammar_score": 33,
+            "timestamp": "2026-04-12",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvri2hp-0e993d12-audio.wav",
+            "reaction_time_ms": 1129
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Who else is in your home? 👨‍👦",
+            "expected_answer": "I live with my father and my sister.",
+            "target_objects": null,
+            "user_transcript": "I with my father and my",
+            "score": 36.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 58,
+            "grammar_score": 15,
+            "timestamp": "2026-04-12",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvrhqoz-148b608a-audio.wav",
+            "reaction_time_ms": 1129
+          },
+          {
+            "lms_type": "conversation",
+            "question": "I see. You live in a small house. Who lives with you? 🏠",
+            "expected_answer": "I live with my mother and father.",
+            "target_objects": null,
+            "user_transcript": "I live with my father.",
+            "score": 68.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 46,
+            "grammar_score": 91,
+            "timestamp": "2026-04-12",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/12/admin/mnvrh7ap-21ce52f2-audio.wav",
+            "reaction_time_ms": 1129
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7255,
+          "score": 0.8,
+          "correct": 12,
+          "total": 15,
+          "submitted_date": "2026-04-12"
+        },
+        "luyen_tap": {
+          "practice_id": 13153,
+          "score": 0.87,
+          "correct": 13,
+          "total": 15,
+          "submitted_date": "2026-04-12"
+        },
+        "lms_ids": {
+          "bai_tap": 7255,
+          "luyen_tap": 13153
+        },
+        "skill_breakdown": {
+          "Kĩ năng nghe": {
+            "correct": 4,
+            "total": 5,
+            "accuracy": 0.8
+          },
+          "English Tutoring - Level 1": {
+            "correct": 16,
+            "total": 19,
+            "accuracy": 0.842
+          },
+          "Từ vựng": {
+            "correct": 4,
+            "total": 4,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 1,
+            "total": 1,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7255,
+            "question_id": 297778,
+            "question_folder": "Kĩ năng nghe",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer. Con hãy nghe và chọn đáp án đúng.",
+            "comment_plain": "Audio: window: cửa sổ => Đáp án: A",
+            "correct_answer": null,
+            "student_answer": "option_3",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/24/d927_window-removebg-preview.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/24/b88f_pen.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/24/e8a7_rainbow-removebg-preview.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7255,
+            "question_id": 385492,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say Con hãy nhìn và nói.",
+            "comment_plain": null,
+            "correct_answer": "door",
+            "student_answer": "no",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/893d_door.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "door",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13153,
+            "question_id": 369730,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
+            "comment_plain": "Audio This is the bedroom. bedroom: ph&ograve;ng ngủ",
+            "correct_answer": "C. This is the bedroom.",
+            "student_answer": "A. This is the bathroom.",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. This is the bathroom.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. This is the living room.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. This is the bedroom.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13153,
+            "question_id": 369732,
+            "question_folder": "English Tutoring - Level 1",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn đáp án đúng.)",
+            "comment_plain": "Audio This is the bathroom. bathroom: ph&ograve;ng tắm",
+            "correct_answer": "C. This is the bathroom.",
+            "student_answer": "B. This is the bedroom.",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. This is the kitchen.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. This is the bedroom.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. This is the bathroom.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3920451,
       "program_id": null,
       "level": 1,
@@ -13339,9 +13165,9 @@
       "status": "completed",
       "last_activity_date": "2026-04-20",
       "days_since_last_practice": 1,
-      "forgetting_score": 0.6321,
+      "forgetting_score": 0.1331,
       "weakness_score": 0.6455,
-      "composite_priority_score": 0.6388,
+      "composite_priority_score": 0.3893,
       "in_class": {
         "participated": true,
         "session_count": 1,

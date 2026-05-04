@@ -15,6 +15,10 @@
       }
     },
     "weak_skills_global": [],
+    "critical_speaking_types": [
+      "brainstorm",
+      "free_speaking"
+    ],
     "overall_pronunciation_score_avg": 68.18,
     "overall_free_speaking_score_avg": 48.39,
     "overall_brainstorm_score_avg": 3.12,
@@ -28,7 +32,7 @@
       "incorrect": 47,
       "correct": 17
     },
-    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
     {
@@ -817,7 +821,7 @@
       "level": 4,
       "last_activity_date": "2026-02-13",
       "days_since_last_practice": 67,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9999,
       "weakness_score": 1.0,
       "composite_priority_score": 1.0,
       "homework_status": "not_attempted",
@@ -1074,9 +1078,9 @@
       "level": 4,
       "last_activity_date": "2026-03-19",
       "days_since_last_practice": 33,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.991,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9955,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1527,9 +1531,9 @@
       "level": 4,
       "last_activity_date": "2026-03-26",
       "days_since_last_practice": 26,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9756,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9878,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1808,9 +1812,9 @@
       "level": 4,
       "last_activity_date": "2026-04-02",
       "days_since_last_practice": 19,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9337,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9668,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1879,9 +1883,9 @@
       "level": 4,
       "last_activity_date": "2026-04-02",
       "days_since_last_practice": 19,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9337,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9668,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1975,9 +1979,9 @@
       "level": 4,
       "last_activity_date": "2026-04-04",
       "days_since_last_practice": 17,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9118,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9559,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2412,14 +2416,186 @@
       }
     },
     {
+      "lesson_id": 3621999,
+      "title": "Unit 4A: The seasons (Extra) - Lesson 5: Review 2",
+      "level": 4,
+      "last_activity_date": "2026-01-16",
+      "days_since_last_practice": 95,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.8353,
+      "composite_priority_score": 0.9177,
+      "homework_status": "attempted",
+      "weak_skills": [
+        "English Tutoring - Level 4"
+      ],
+      "failed_text_questions": [
+        {
+          "practice_id": 32677,
+          "question_id": 646103,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Read the definitions and write the correct word (Con hãy đọc định nghĩa và chọn từ đúng để điền vào chỗ trống) skateboarding, camping, skiing, go swimming, flying a kite, riding a bike 1. The action of playing in water, like in a lake, ocean, or pool. Con hãy điền từ vào ô trống (1):",
+          "comment_plain": "The action of playing in water, like in a lake, ocean, or pool. (Hành động chơi đ&ugrave;a trong nước, chẳng hạn như ở hồ, đại dương hoặc hồ bơi.) => go swimming (đi bơi)",
+          "correct_answer": "go swimming",
+          "student_answer": "hn",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        },
+        {
+          "practice_id": 32677,
+          "question_id": 646104,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Read the definitions and write the correct word (Con hãy đọc định nghĩa và chọn từ đúng để điền vào chỗ trống) skateboarding, camping, skiing, go swimming, flying a kite, riding a bike 2. The action of holding a string attached to a light toy that floats in the wind Con hãy điền từ vào ô trống (2):",
+          "comment_plain": "The action of holding a string attached to a light toy that floats in the wind. (Hành động giữ một sợi dây gắn vào một m&oacute;n đồ chơi nhẹ bay trong gi&oacute;.) => flying a kite (thả diều)",
+          "correct_answer": "flying a kite",
+          "student_answer": "h nn",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "|",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        },
+        {
+          "practice_id": 32677,
+          "question_id": 646105,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Read the definitions and write the correct word (Con hãy đọc định nghĩa và chọn từ đúng để điền vào chỗ trống) skateboarding, camping, skiing, go swimming, flying a kite, riding a bike 3. The activity or sport of riding a skateboard. Con hãy điền từ vào ô trống (3):",
+          "comment_plain": "The activity or sport of riding a skateboard. (Hoạt động hoặc m&ocirc;n thể thao trượt ván.) => skateboarding (trượt ván)",
+          "correct_answer": "skateboarding",
+          "student_answer": "n b",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "|",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        },
+        {
+          "practice_id": 32677,
+          "question_id": 646106,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Read the definitions and write the correct word (Con hãy đọc định nghĩa và chọn từ đúng để điền vào chỗ trống) skateboarding, camping, skiing, go swimming, flying a kite, riding a bike 4. The sport of moving on skis. Con hãy điền từ vào ô trống (4):",
+          "comment_plain": "The sport of moving on skis. (M&ocirc;n thể thao di chuyển tr&ecirc;n ván trượt.) => skiing (trượt tuyết)",
+          "correct_answer": "skiing",
+          "student_answer": "b",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "went camping",
+            " went skiing",
+            "went swimming",
+            " flew a kite"
+          ],
+          "user_transcript": "I.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-09",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/09/admin/mk6te2zf-5c8e743a-audio.wav",
+          "reaction_time_ms": 2637
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What activity is this?",
+          "expected_answer": null,
+          "target_objects": [
+            "went camping",
+            " went skiing",
+            "went swimming",
+            " flew a kite"
+          ],
+          "user_transcript": "This is swimminging.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-09",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/09/admin/mk6tdkgb-8a0944b7-audio.wav",
+          "reaction_time_ms": 545
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "went camping",
+            " went skiing",
+            "went swimming",
+            " flew a kite"
+          ],
+          "user_transcript": "Hobby.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-09",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/09/admin/mk6tdcar-7d6c03a6-audio.wav",
+          "reaction_time_ms": 2718
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 32677,
+        "luyen_tap": 32678
+      }
+    },
+    {
       "lesson_id": 3891908,
       "title": "Unit 3B: School Subjects - Lesson 5: Review 2",
       "level": 4,
       "last_activity_date": "2026-04-09",
       "days_since_last_practice": 12,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8199,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.91,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2824,14 +3000,458 @@
       }
     },
     {
+      "lesson_id": 3768188,
+      "title": "Unit 2B: My day - Lesson 4: When do you do your homework?",
+      "level": 4,
+      "last_activity_date": "2026-02-27",
+      "days_since_last_practice": 53,
+      "forgetting_score": 0.9995,
+      "weakness_score": 0.8085,
+      "composite_priority_score": 0.904,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 49415,
+          "question_id": 748551,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Look and match. (Con hãy nhìn tranh và nối với từ đúng.)",
+          "comment_plain": "Đáp án chi tiết: 1. get up: thức dậy 2. have breakfast: ăn sáng 3. go to school: đi tới trường 4. play sports: chơi thể thao 5. go home: đi về nhà",
+          "correct_answer": "item_1→get up; item_2→have breakfast; item_3→go to school; item_4→play sports; item_5→go home",
+          "student_answer": "wrong: item_1, item_2, item_3, item_4, item_5",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A1",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/7fae_1-283-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A2",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/877b_2-286-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A3",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/e63d_4-285-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A4",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/2200_3-285-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A5",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/c734_5-286-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B1",
+              "text": "play sports",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B2",
+              "text": "go home",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B3",
+              "text": "get up",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B4",
+              "text": "have breakfast",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B5",
+              "text": "go to school",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Did you have breakfast before or after skiing? 🥐",
+          "expected_answer": "I had breakfast before skiing.",
+          "target_objects": null,
+          "user_transcript": "Yes.",
+          "score": 68,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 36,
+          "timestamp": "2026-02-27",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/27/admin/mm4uhk82-13baa8e1-audio.wav",
+          "reaction_time_ms": 1156
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi! Great to see you. Ready to talk about your day? 😄",
+          "expected_answer": "Yes, I am ready. I get up at seven and have breakfast.",
+          "target_objects": null,
+          "user_transcript": "I have.",
+          "score": 60.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 21,
+          "timestamp": "2026-02-27",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/27/admin/mm4ufbba-27ef54dc-audio.wav",
+          "reaction_time_ms": 1156
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Do you play sports with one friend or with more friends? ⚽️",
+          "expected_answer": "We play sports with three friends. We play football and basketball after school.",
+          "target_objects": null,
+          "user_transcript": "We play out with friends.",
+          "score": 68,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 46,
+          "grammar_score": 90,
+          "timestamp": "2026-02-27",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/27/admin/mm4udyzu-51aa4e85-audio.wav",
+          "reaction_time_ms": 1156
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "get up",
+            " have breakfast",
+            " go to school",
+            "play sports"
+          ],
+          "user_transcript": "See, get up.",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "get up"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-02-27",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/27/admin/mm4tmrnc-e110fe18-audio.wav",
+          "reaction_time_ms": 1513
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 49402,
+        "luyen_tap": 49415
+      }
+    },
+    {
+      "lesson_id": 3621998,
+      "title": "Unit 4A: The seasons (Extra) - Lesson 4: Review 1",
+      "level": 4,
+      "last_activity_date": "2026-01-16",
+      "days_since_last_practice": 95,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.7735,
+      "composite_priority_score": 0.8867,
+      "homework_status": "attempted",
+      "weak_skills": [
+        "English Tutoring - Level 4"
+      ],
+      "failed_text_questions": [
+        {
+          "practice_id": 32675,
+          "question_id": 646087,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Write the correct word to fill in blanks (Con hãy viết từ đúng để điền vào chỗ trống) Last (1)......, the Rogers went to Hawaii for vacation. It was hot and (2)...... every day. They swam in the blue, warm water. At night, they (3)..... on the beach and saw many stars. On their last day, they saw ma",
+          "comment_plain": "Giải th&iacute;ch: Dựa vào &quot;hot&quot; => (1) summer => Last (1) summer, the Rogers went to Hawaii for vacation. (M&ugrave;a h&egrave; năm ngoái, gia đ&igrave;nh Rogers đã đi nghỉ ở Hawaii.)",
+          "correct_answer": "summer",
+          "student_answer": "sumer",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        },
+        {
+          "practice_id": 32675,
+          "question_id": 646089,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Write the correct word to fill in blanks (Con hãy viết từ đúng để điền vào chỗ trống) Last (1)......, the Rogers went to Hawaii for vacation. It was hot and (2)...... every day. They swam in the blue, warm water. At night, they (3)..... on the beach and saw many stars. On their last day, they saw ma",
+          "comment_plain": "Giải th&iacute;ch: At night, they (3)..... on the beach and saw many stars. Dựa vào nghĩa câu th&igrave; vào ban đ&ecirc;m hành động đi bộ và ngắm sao tr&ecirc;n bãi biển là hợp l&yacute;. => walk, tuy nhi&ecirc;n câu c&oacute; &quot;saw&quot; đang chia th&igrave; quá khứ đơn => walked",
+          "correct_answer": "walked",
+          "student_answer": "6gtv",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        },
+        {
+          "practice_id": 32675,
+          "question_id": 646090,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Write the correct word to fill in blanks (Con hãy viết từ đúng để điền vào chỗ trống) Last (1)......, the Rogers went to Hawaii for vacation. It was hot and (2)...... every day. They swam in the blue, warm water. At night, they (3)..... on the beach and saw many stars. On their last day, they saw ma",
+          "comment_plain": "Giải th&iacute;ch: Các cụm từ kh&oacute;a như &quot;in the sky&quot;, &quot;rained&quot; => tr&ecirc;n trời sẽ c&oacute; mây xám xịt => sau grey là danh từ số nhiều v&igrave; c&oacute; &quot;many&quot; => clouds. On their last day, they saw many grey clouds in the sky. It rained a little bit, but not for long. (Vào ngày cuối c&ugrave;ng, họ nh&igrave;n thấy nhiều đám mây xám tr&ecirc;n bầu trời. Trời mưa một ch&uacute;t, nhưng kh&ocirc;ng k&eacute;o dài.)",
+          "correct_answer": "clouds",
+          "student_answer": "fL ew",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Oh, really? What kind of weather do you like? 🤔",
+          "expected_answer": "I like rainy days.",
+          "target_objects": null,
+          "user_transcript": "I like rainy day.",
+          "score": 68.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 77,
+          "grammar_score": 60,
+          "timestamp": "2026-01-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/08/admin/mk5g9r58-c93ab7d5-audio.wav",
+          "reaction_time_ms": 652
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice! Do you like sunny days? 😎 I like sunny days.",
+          "expected_answer": "Yes, I like sunny days.",
+          "target_objects": null,
+          "user_transcript": "I don't like sunny day.",
+          "score": 64.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 88,
+          "grammar_score": 41,
+          "timestamp": "2026-01-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/08/admin/mk5g9jdf-376f3158-audio.wav",
+          "reaction_time_ms": 652
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What is it?",
+          "expected_answer": null,
+          "target_objects": [
+            "sunny",
+            "stormy",
+            "snowy"
+          ],
+          "user_transcript": "It's flower.",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "flower"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/08/admin/mk5fmc33-fefe5be6-audio.wav",
+          "reaction_time_ms": 1011
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "sunny",
+            "stormy",
+            "snowy"
+          ],
+          "user_transcript": "I see.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/08/admin/mk5fm03n-5bde816f-audio.wav",
+          "reaction_time_ms": 617
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 32675,
+        "luyen_tap": 32676
+      }
+    },
+    {
+      "lesson_id": 3586823,
+      "title": "Unit 4A: The seasons (Extra) - Lesson 1: What was the weather like?",
+      "level": 4,
+      "last_activity_date": "2025-12-26",
+      "days_since_last_practice": 116,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.7615,
+      "composite_priority_score": 0.8807,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 32394,
+          "question_id": 642724,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Một lựa chọn",
+          "question_text": "Choose the correct word (Con hãy chọn từ thích hợp để điền vào chỗ trống) The weather last week was very unpredictable! On Monday, it was (1).... and hot, so we had ice cream. The next day, the weather was windy and (2).... , perfect for flying kites. On Thursday, it was (3)..... . We could see many",
+          "comment_plain": "Giải th&iacute;ch: Cụm &quot;run inside&quot; - chạy vào bởi v&igrave; trời mưa, avoid + Ving: tránh làm g&igrave;/bị g&igrave; => tránh bị ướt khi chạy vào bởi v&igrave; trời mưa => avoid getting wet We had to run inside to avoid getting wet . (Ch&uacute;ng t&ocirc;i phải chạy vào trong để tránh bị ướt.)",
+          "correct_answer": "B. wet",
+          "student_answer": "A. dry",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. dry",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. wet",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. cool",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        },
+        {
+          "practice_id": 32395,
+          "question_id": 642783,
+          "question_folder": "English Tutoring - Level 4",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Fill in the blanks (Con hãy điền từ vào chỗ trống) wet, sunny, weather, cool 1. What was the ___ like? 2. It is often ___ in fall. The weather is no longer sunny like summer. 3. It was rainy and ___ .",
+          "comment_plain": "Giải th&iacute;ch: 1. Cấu tr&uacute;c hỏi về thời tiết như thế nào => &quot;weather&quot; 2. Dựa vào &quot;fall&quot; => &quot;cool&quot; 3. Dựa vào từ &quot;and&quot; và &quot;rainy&quot; => thời tiết kết hợp h&ograve;a hợp, logic => &quot;wet&quot; => Đáp án: 1. What was the _weather__ like? (Thời tiết h&ocirc;m đ&oacute; như thế nào?) 2. It is often _cool__ in fall. The weather is no longer sunny like summer. (Trời thường mát mẻ vào m&ugrave;a thu. Thời tiết kh&ocirc;ng c&ograve;n nắng như m&",
+          "correct_answer": "weather / cool / wet",
+          "student_answer": "weather / wet / cool",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "(1)",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "(2)",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "(3)",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "lms_type": "brainstorm",
+          "question": "Look at this picture and tell me, what can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "Snowy",
+            "Sunny",
+            "Cool"
+          ],
+          "user_transcript": "I see.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2025-12-25",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/25/admin/mjld5ulh-19011902-audio.wav",
+          "reaction_time_ms": 1510
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 32394,
+        "luyen_tap": 32395
+      }
+    },
+    {
       "lesson_id": 3891915,
       "title": "Unit 4B: My town - Lesson 1: Where is the cafe?",
       "level": 4,
       "last_activity_date": "2026-04-11",
       "days_since_last_practice": 10,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.7603,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.8801,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -3278,622 +3898,6 @@
       "practice_ids": {
         "bai_tap": 49732,
         "luyen_tap": 49734
-      }
-    },
-    {
-      "lesson_id": 3621999,
-      "title": "Unit 4A: The seasons (Extra) - Lesson 5: Review 2",
-      "level": 4,
-      "last_activity_date": "2026-01-16",
-      "days_since_last_practice": 95,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.8353,
-      "composite_priority_score": 0.9177,
-      "homework_status": "attempted",
-      "weak_skills": [
-        "English Tutoring - Level 4"
-      ],
-      "failed_text_questions": [
-        {
-          "practice_id": 32677,
-          "question_id": 646103,
-          "question_folder": "English Tutoring - Level 4",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Read the definitions and write the correct word (Con hãy đọc định nghĩa và chọn từ đúng để điền vào chỗ trống) skateboarding, camping, skiing, go swimming, flying a kite, riding a bike 1. The action of playing in water, like in a lake, ocean, or pool. Con hãy điền từ vào ô trống (1):",
-          "comment_plain": "The action of playing in water, like in a lake, ocean, or pool. (Hành động chơi đ&ugrave;a trong nước, chẳng hạn như ở hồ, đại dương hoặc hồ bơi.) => go swimming (đi bơi)",
-          "correct_answer": "go swimming",
-          "student_answer": "hn",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        },
-        {
-          "practice_id": 32677,
-          "question_id": 646104,
-          "question_folder": "English Tutoring - Level 4",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Read the definitions and write the correct word (Con hãy đọc định nghĩa và chọn từ đúng để điền vào chỗ trống) skateboarding, camping, skiing, go swimming, flying a kite, riding a bike 2. The action of holding a string attached to a light toy that floats in the wind Con hãy điền từ vào ô trống (2):",
-          "comment_plain": "The action of holding a string attached to a light toy that floats in the wind. (Hành động giữ một sợi dây gắn vào một m&oacute;n đồ chơi nhẹ bay trong gi&oacute;.) => flying a kite (thả diều)",
-          "correct_answer": "flying a kite",
-          "student_answer": "h nn",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "|",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        },
-        {
-          "practice_id": 32677,
-          "question_id": 646105,
-          "question_folder": "English Tutoring - Level 4",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Read the definitions and write the correct word (Con hãy đọc định nghĩa và chọn từ đúng để điền vào chỗ trống) skateboarding, camping, skiing, go swimming, flying a kite, riding a bike 3. The activity or sport of riding a skateboard. Con hãy điền từ vào ô trống (3):",
-          "comment_plain": "The activity or sport of riding a skateboard. (Hoạt động hoặc m&ocirc;n thể thao trượt ván.) => skateboarding (trượt ván)",
-          "correct_answer": "skateboarding",
-          "student_answer": "n b",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "|",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        },
-        {
-          "practice_id": 32677,
-          "question_id": 646106,
-          "question_folder": "English Tutoring - Level 4",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Read the definitions and write the correct word (Con hãy đọc định nghĩa và chọn từ đúng để điền vào chỗ trống) skateboarding, camping, skiing, go swimming, flying a kite, riding a bike 4. The sport of moving on skis. Con hãy điền từ vào ô trống (4):",
-          "comment_plain": "The sport of moving on skis. (M&ocirc;n thể thao di chuyển tr&ecirc;n ván trượt.) => skiing (trượt tuyết)",
-          "correct_answer": "skiing",
-          "student_answer": "b",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        }
-      ],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 1,
-      "worst_speaking_items": [
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "went camping",
-            " went skiing",
-            "went swimming",
-            " flew a kite"
-          ],
-          "user_transcript": "I.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-09",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/09/admin/mk6te2zf-5c8e743a-audio.wav",
-          "reaction_time_ms": 2637
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What activity is this?",
-          "expected_answer": null,
-          "target_objects": [
-            "went camping",
-            " went skiing",
-            "went swimming",
-            " flew a kite"
-          ],
-          "user_transcript": "This is swimminging.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-09",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/09/admin/mk6tdkgb-8a0944b7-audio.wav",
-          "reaction_time_ms": 545
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "went camping",
-            " went skiing",
-            "went swimming",
-            " flew a kite"
-          ],
-          "user_transcript": "Hobby.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-09",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/09/admin/mk6tdcar-7d6c03a6-audio.wav",
-          "reaction_time_ms": 2718
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 32677,
-        "luyen_tap": 32678
-      }
-    },
-    {
-      "lesson_id": 3768188,
-      "title": "Unit 2B: My day - Lesson 4: When do you do your homework?",
-      "level": 4,
-      "last_activity_date": "2026-02-27",
-      "days_since_last_practice": 53,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.8085,
-      "composite_priority_score": 0.9042,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [
-        {
-          "practice_id": 49415,
-          "question_id": 748551,
-          "question_folder": "English Tutoring - Level 4",
-          "question_type": "Xứng-Hợp",
-          "question_text": "Look and match. (Con hãy nhìn tranh và nối với từ đúng.)",
-          "comment_plain": "Đáp án chi tiết: 1. get up: thức dậy 2. have breakfast: ăn sáng 3. go to school: đi tới trường 4. play sports: chơi thể thao 5. go home: đi về nhà",
-          "correct_answer": "item_1→get up; item_2→have breakfast; item_3→go to school; item_4→play sports; item_5→go home",
-          "student_answer": "wrong: item_1, item_2, item_3, item_4, item_5",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A1",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/7fae_1-283-29.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "A2",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/877b_2-286-29.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "A3",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/e63d_4-285-29.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "A4",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/2200_3-285-29.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "A5",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/c734_5-286-29.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B1",
-              "text": "play sports",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B2",
-              "text": "go home",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B3",
-              "text": "get up",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B4",
-              "text": "have breakfast",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B5",
-              "text": "go to school",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        }
-      ],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Did you have breakfast before or after skiing? 🥐",
-          "expected_answer": "I had breakfast before skiing.",
-          "target_objects": null,
-          "user_transcript": "Yes.",
-          "score": 68,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 36,
-          "timestamp": "2026-02-27",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/27/admin/mm4uhk82-13baa8e1-audio.wav",
-          "reaction_time_ms": 1156
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi! Great to see you. Ready to talk about your day? 😄",
-          "expected_answer": "Yes, I am ready. I get up at seven and have breakfast.",
-          "target_objects": null,
-          "user_transcript": "I have.",
-          "score": 60.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 21,
-          "timestamp": "2026-02-27",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/27/admin/mm4ufbba-27ef54dc-audio.wav",
-          "reaction_time_ms": 1156
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Do you play sports with one friend or with more friends? ⚽️",
-          "expected_answer": "We play sports with three friends. We play football and basketball after school.",
-          "target_objects": null,
-          "user_transcript": "We play out with friends.",
-          "score": 68,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 46,
-          "grammar_score": 90,
-          "timestamp": "2026-02-27",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/27/admin/mm4udyzu-51aa4e85-audio.wav",
-          "reaction_time_ms": 1156
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "get up",
-            " have breakfast",
-            " go to school",
-            "play sports"
-          ],
-          "user_transcript": "See, get up.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "get up"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-02-27",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/27/admin/mm4tmrnc-e110fe18-audio.wav",
-          "reaction_time_ms": 1513
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 49402,
-        "luyen_tap": 49415
-      }
-    },
-    {
-      "lesson_id": 3621998,
-      "title": "Unit 4A: The seasons (Extra) - Lesson 4: Review 1",
-      "level": 4,
-      "last_activity_date": "2026-01-16",
-      "days_since_last_practice": 95,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.7735,
-      "composite_priority_score": 0.8867,
-      "homework_status": "attempted",
-      "weak_skills": [
-        "English Tutoring - Level 4"
-      ],
-      "failed_text_questions": [
-        {
-          "practice_id": 32675,
-          "question_id": 646087,
-          "question_folder": "English Tutoring - Level 4",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Write the correct word to fill in blanks (Con hãy viết từ đúng để điền vào chỗ trống) Last (1)......, the Rogers went to Hawaii for vacation. It was hot and (2)...... every day. They swam in the blue, warm water. At night, they (3)..... on the beach and saw many stars. On their last day, they saw ma",
-          "comment_plain": "Giải th&iacute;ch: Dựa vào &quot;hot&quot; => (1) summer => Last (1) summer, the Rogers went to Hawaii for vacation. (M&ugrave;a h&egrave; năm ngoái, gia đ&igrave;nh Rogers đã đi nghỉ ở Hawaii.)",
-          "correct_answer": "summer",
-          "student_answer": "sumer",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        },
-        {
-          "practice_id": 32675,
-          "question_id": 646089,
-          "question_folder": "English Tutoring - Level 4",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Write the correct word to fill in blanks (Con hãy viết từ đúng để điền vào chỗ trống) Last (1)......, the Rogers went to Hawaii for vacation. It was hot and (2)...... every day. They swam in the blue, warm water. At night, they (3)..... on the beach and saw many stars. On their last day, they saw ma",
-          "comment_plain": "Giải th&iacute;ch: At night, they (3)..... on the beach and saw many stars. Dựa vào nghĩa câu th&igrave; vào ban đ&ecirc;m hành động đi bộ và ngắm sao tr&ecirc;n bãi biển là hợp l&yacute;. => walk, tuy nhi&ecirc;n câu c&oacute; &quot;saw&quot; đang chia th&igrave; quá khứ đơn => walked",
-          "correct_answer": "walked",
-          "student_answer": "6gtv",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        },
-        {
-          "practice_id": 32675,
-          "question_id": 646090,
-          "question_folder": "English Tutoring - Level 4",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Write the correct word to fill in blanks (Con hãy viết từ đúng để điền vào chỗ trống) Last (1)......, the Rogers went to Hawaii for vacation. It was hot and (2)...... every day. They swam in the blue, warm water. At night, they (3)..... on the beach and saw many stars. On their last day, they saw ma",
-          "comment_plain": "Giải th&iacute;ch: Các cụm từ kh&oacute;a như &quot;in the sky&quot;, &quot;rained&quot; => tr&ecirc;n trời sẽ c&oacute; mây xám xịt => sau grey là danh từ số nhiều v&igrave; c&oacute; &quot;many&quot; => clouds. On their last day, they saw many grey clouds in the sky. It rained a little bit, but not for long. (Vào ngày cuối c&ugrave;ng, họ nh&igrave;n thấy nhiều đám mây xám tr&ecirc;n bầu trời. Trời mưa một ch&uacute;t, nhưng kh&ocirc;ng k&eacute;o dài.)",
-          "correct_answer": "clouds",
-          "student_answer": "fL ew",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        }
-      ],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Oh, really? What kind of weather do you like? 🤔",
-          "expected_answer": "I like rainy days.",
-          "target_objects": null,
-          "user_transcript": "I like rainy day.",
-          "score": 68.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 77,
-          "grammar_score": 60,
-          "timestamp": "2026-01-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/08/admin/mk5g9r58-c93ab7d5-audio.wav",
-          "reaction_time_ms": 652
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice! Do you like sunny days? 😎 I like sunny days.",
-          "expected_answer": "Yes, I like sunny days.",
-          "target_objects": null,
-          "user_transcript": "I don't like sunny day.",
-          "score": 64.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 88,
-          "grammar_score": 41,
-          "timestamp": "2026-01-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/08/admin/mk5g9jdf-376f3158-audio.wav",
-          "reaction_time_ms": 652
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "sunny",
-            "stormy",
-            "snowy"
-          ],
-          "user_transcript": "It's flower.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "flower"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/08/admin/mk5fmc33-fefe5be6-audio.wav",
-          "reaction_time_ms": 1011
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "sunny",
-            "stormy",
-            "snowy"
-          ],
-          "user_transcript": "I see.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/08/admin/mk5fm03n-5bde816f-audio.wav",
-          "reaction_time_ms": 617
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 32675,
-        "luyen_tap": 32676
-      }
-    },
-    {
-      "lesson_id": 3586823,
-      "title": "Unit 4A: The seasons (Extra) - Lesson 1: What was the weather like?",
-      "level": 4,
-      "last_activity_date": "2025-12-26",
-      "days_since_last_practice": 116,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.7615,
-      "composite_priority_score": 0.8807,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [
-        {
-          "practice_id": 32394,
-          "question_id": 642724,
-          "question_folder": "English Tutoring - Level 4",
-          "question_type": "Một lựa chọn",
-          "question_text": "Choose the correct word (Con hãy chọn từ thích hợp để điền vào chỗ trống) The weather last week was very unpredictable! On Monday, it was (1).... and hot, so we had ice cream. The next day, the weather was windy and (2).... , perfect for flying kites. On Thursday, it was (3)..... . We could see many",
-          "comment_plain": "Giải th&iacute;ch: Cụm &quot;run inside&quot; - chạy vào bởi v&igrave; trời mưa, avoid + Ving: tránh làm g&igrave;/bị g&igrave; => tránh bị ướt khi chạy vào bởi v&igrave; trời mưa => avoid getting wet We had to run inside to avoid getting wet . (Ch&uacute;ng t&ocirc;i phải chạy vào trong để tránh bị ướt.)",
-          "correct_answer": "B. wet",
-          "student_answer": "A. dry",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. dry",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. wet",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. cool",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        },
-        {
-          "practice_id": 32395,
-          "question_id": 642783,
-          "question_folder": "English Tutoring - Level 4",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Fill in the blanks (Con hãy điền từ vào chỗ trống) wet, sunny, weather, cool 1. What was the ___ like? 2. It is often ___ in fall. The weather is no longer sunny like summer. 3. It was rainy and ___ .",
-          "comment_plain": "Giải th&iacute;ch: 1. Cấu tr&uacute;c hỏi về thời tiết như thế nào => &quot;weather&quot; 2. Dựa vào &quot;fall&quot; => &quot;cool&quot; 3. Dựa vào từ &quot;and&quot; và &quot;rainy&quot; => thời tiết kết hợp h&ograve;a hợp, logic => &quot;wet&quot; => Đáp án: 1. What was the _weather__ like? (Thời tiết h&ocirc;m đ&oacute; như thế nào?) 2. It is often _cool__ in fall. The weather is no longer sunny like summer. (Trời thường mát mẻ vào m&ugrave;a thu. Thời tiết kh&ocirc;ng c&ograve;n nắng như m&",
-          "correct_answer": "weather / cool / wet",
-          "student_answer": "weather / wet / cool",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "(1)",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "(2)",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "(3)",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        }
-      ],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 1,
-      "worst_speaking_items": [
-        {
-          "lms_type": "brainstorm",
-          "question": "Look at this picture and tell me, what can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "Snowy",
-            "Sunny",
-            "Cool"
-          ],
-          "user_transcript": "I see.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2025-12-25",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/25/admin/mjld5ulh-19011902-audio.wav",
-          "reaction_time_ms": 1510
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 32394,
-        "luyen_tap": 32395
       }
     },
     {
@@ -5060,112 +5064,6 @@
       "practice_ids": {
         "bai_tap": 32398,
         "luyen_tap": 32399
-      }
-    },
-    {
-      "lesson_id": 3891922,
-      "title": "Unit 4B: My town - Lesson 2: Is the market on the left of the funfair?",
-      "level": 4,
-      "last_activity_date": "2026-04-16",
-      "days_since_last_practice": 5,
-      "forgetting_score": 0.9933,
-      "weakness_score": 0.5845,
-      "composite_priority_score": 0.7889,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 5,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Tell me one place in your town, please 😊",
-          "expected_answer": "There is a market near my house.",
-          "target_objects": null,
-          "user_transcript": "Okay.",
-          "score": 68.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 37,
-          "timestamp": "2026-04-16",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1fbq6v-15dab035-audio.wav",
-          "reaction_time_ms": 2132
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Great. Tell me one place in your town. 😊",
-          "expected_answer": "There is a market near my house.",
-          "target_objects": null,
-          "user_transcript": "Okay.",
-          "score": 68,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 36,
-          "timestamp": "2026-04-16",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1fbe8z-20bbd672-audio.wav",
-          "reaction_time_ms": 2132
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hello, nice to see you. Ready to talk about your town? 😄",
-          "expected_answer": "Yes, I'm ready. I live near a big square with a market and a supermarket on the left.",
-          "target_objects": null,
-          "user_transcript": "He's.",
-          "score": 42.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 66,
-          "grammar_score": 19,
-          "timestamp": "2026-04-16",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1f7yyx-8673fc5a-audio.wav",
-          "reaction_time_ms": 2132
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What else do you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "market",
-            "funfair",
-            "square"
-          ],
-          "user_transcript": "I see fun.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-16",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1ejobm-1fcc2397-audio.wav",
-          "reaction_time_ms": 4318
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "market",
-            "funfair",
-            "square"
-          ],
-          "user_transcript": "I see Mickey and Funfa.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": [
-            "funfair"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-16",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1ejd6v-a74d5d17-audio.wav",
-          "reaction_time_ms": 1588
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 49740,
-        "luyen_tap": 49743
       }
     },
     {
@@ -6359,14 +6257,120 @@
       }
     },
     {
+      "lesson_id": 3891922,
+      "title": "Unit 4B: My town - Lesson 2: Is the market on the left of the funfair?",
+      "level": 4,
+      "last_activity_date": "2026-04-16",
+      "days_since_last_practice": 5,
+      "forgetting_score": 0.5105,
+      "weakness_score": 0.5845,
+      "composite_priority_score": 0.5475,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 5,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Tell me one place in your town, please 😊",
+          "expected_answer": "There is a market near my house.",
+          "target_objects": null,
+          "user_transcript": "Okay.",
+          "score": 68.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 37,
+          "timestamp": "2026-04-16",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1fbq6v-15dab035-audio.wav",
+          "reaction_time_ms": 2132
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Great. Tell me one place in your town. 😊",
+          "expected_answer": "There is a market near my house.",
+          "target_objects": null,
+          "user_transcript": "Okay.",
+          "score": 68,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 36,
+          "timestamp": "2026-04-16",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1fbe8z-20bbd672-audio.wav",
+          "reaction_time_ms": 2132
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hello, nice to see you. Ready to talk about your town? 😄",
+          "expected_answer": "Yes, I'm ready. I live near a big square with a market and a supermarket on the left.",
+          "target_objects": null,
+          "user_transcript": "He's.",
+          "score": 42.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 66,
+          "grammar_score": 19,
+          "timestamp": "2026-04-16",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1f7yyx-8673fc5a-audio.wav",
+          "reaction_time_ms": 2132
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What else do you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "market",
+            "funfair",
+            "square"
+          ],
+          "user_transcript": "I see fun.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-16",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1ejobm-1fcc2397-audio.wav",
+          "reaction_time_ms": 4318
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "market",
+            "funfair",
+            "square"
+          ],
+          "user_transcript": "I see Mickey and Funfa.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": [
+            "funfair"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-16",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1ejd6v-a74d5d17-audio.wav",
+          "reaction_time_ms": 1588
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 49740,
+        "luyen_tap": 49743
+      }
+    },
+    {
       "lesson_id": 3768187,
       "title": "Unit 2B: My day - Lesson 3: I have to clean my house.",
       "level": 4,
       "last_activity_date": "2026-02-26",
       "days_since_last_practice": 54,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 0.0392,
-      "composite_priority_score": 0.5196,
+      "composite_priority_score": 0.5194,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -7781,7 +7785,7 @@
       "status": "in_class_only",
       "last_activity_date": "2026-02-13",
       "days_since_last_practice": 67,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9999,
       "weakness_score": 1.0,
       "composite_priority_score": 1.0,
       "in_class": {
@@ -8280,9 +8284,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-19",
       "days_since_last_practice": 33,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.991,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9955,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -8960,9 +8964,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-26",
       "days_since_last_practice": 26,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9756,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9878,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -9433,9 +9437,9 @@
       "status": "completed",
       "last_activity_date": "2026-04-02",
       "days_since_last_practice": 19,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9337,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9668,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -9554,9 +9558,9 @@
       "status": "completed",
       "last_activity_date": "2026-04-02",
       "days_since_last_practice": 19,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9337,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9668,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -9701,9 +9705,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-04",
       "days_since_last_practice": 17,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9118,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9559,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -10350,6 +10354,330 @@
       }
     },
     {
+      "lesson_id": 3621999,
+      "program_id": null,
+      "level": 4,
+      "position": 23,
+      "title": "Unit 4A: The seasons (Extra) - Lesson 5: Review 2",
+      "desc": "Vocabulary Review:\n- activities: went camping, went swimming, went skiing, flew a kite\nGrammar Reviewr:\n- What did you do last summer? I went swimming last summer.\n- What did she/he do last spring? He",
+      "status": "completed",
+      "last_activity_date": "2026-01-16",
+      "days_since_last_practice": 95,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.8353,
+      "composite_priority_score": 0.9177,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 45,
+          "avg_reaction_ms": 1789,
+          "fastest_reaction_ms": 527,
+          "total_duration_ms": 1270776,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-09",
+        "pronunciation_attempts": 27,
+        "pronunciation_score_avg": 52.56,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "brainstorm_attempts": 3,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 3
+        },
+        "conversation_attempts": 7,
+        "conversation_score_avg": null,
+        "worst_speaking_items": [
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "went camping",
+              " went skiing",
+              "went swimming",
+              " flew a kite"
+            ],
+            "user_transcript": "I.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-09",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/09/admin/mk6te2zf-5c8e743a-audio.wav",
+            "reaction_time_ms": 2637
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What activity is this?",
+            "expected_answer": null,
+            "target_objects": [
+              "went camping",
+              " went skiing",
+              "went swimming",
+              " flew a kite"
+            ],
+            "user_transcript": "This is swimminging.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-09",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/09/admin/mk6tdkgb-8a0944b7-audio.wav",
+            "reaction_time_ms": 545
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "went camping",
+              " went skiing",
+              "went swimming",
+              " flew a kite"
+            ],
+            "user_transcript": "Hobby.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-09",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/09/admin/mk6tdcar-7d6c03a6-audio.wav",
+            "reaction_time_ms": 2718
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 32677,
+          "score": 0.4,
+          "correct": 4,
+          "total": 10,
+          "submitted_date": "2026-01-09"
+        },
+        "luyen_tap": {
+          "practice_id": 32678,
+          "score": null,
+          "correct": 0,
+          "total": 10,
+          "submitted_date": "2026-01-16"
+        },
+        "lms_ids": {
+          "bai_tap": 32677,
+          "luyen_tap": 32678
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 4,
+            "total": 9,
+            "accuracy": 0.444
+          }
+        },
+        "weak_skills": [
+          "English Tutoring - Level 4"
+        ],
+        "worst_questions": [
+          {
+            "practice_id": 32677,
+            "question_id": 646098,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Xứng-Hợp",
+            "question_text": "Listen and match (Con hãy nghe và nối tên của những người sau với bức tranh thích hợp)",
+            "comment_plain": "Audio: Presenter: Listen and match Cleo: I&#39;m curious about people&#39;s favorite types of weather. Cleo: Let&#39;s ask each of them. Cleo: Right, the first one. Max, what&#39;s your favorite weather? Max: I like cloudy days. Because it&#39;s not sunny on those days. Cleo: Haha me too. What about you, Lala? Lala: I think I like dry days. That&#39;s when my clothes can get dry easily. Cleo: I understand. Ryan, what do you think? Ryan: Cool weather is the best. Cleo: Why? Ryan: Because I can fl",
+            "correct_answer": "item_1; item_2; item_3; item_4; item_5",
+            "student_answer": "wrong: item_1, item_2, item_3, item_4, item_5",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A1",
+                "text": null,
+                "image_urls": [
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/f8e4_15.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "A2",
+                "text": null,
+                "image_urls": [
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/75f9_16.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "A3",
+                "text": null,
+                "image_urls": [
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/2e76_17.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "A4",
+                "text": null,
+                "image_urls": [
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/b20c_18.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "A5",
+                "text": null,
+                "image_urls": [
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/b017_20.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B1",
+                "text": null,
+                "image_urls": [
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/45e4_kindie-pictures-p3--28scale-vuong-29--2882-29.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B2",
+                "text": null,
+                "image_urls": [
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/4546_kindie-pictures-p3--28scale-vuong-29--2876-29.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B3",
+                "text": null,
+                "image_urls": [
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/92fe_kindie-pictures-p3--28scale-vuong-29--2877-29.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B4",
+                "text": null,
+                "image_urls": [
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/c458_kindie-pictures-p3--28scale-vuong-29--2873-29.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B5",
+                "text": null,
+                "image_urls": [
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/5295_12.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 32677,
+            "question_id": 646103,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Read the definitions and write the correct word (Con hãy đọc định nghĩa và chọn từ đúng để điền vào chỗ trống) skateboarding, camping, skiing, go swimming, flying a kite, riding a bike 1. The action of playing in water, like in a lake, ocean, or pool. Con hãy điền từ vào ô trống (1):",
+            "comment_plain": "The action of playing in water, like in a lake, ocean, or pool. (Hành động chơi đ&ugrave;a trong nước, chẳng hạn như ở hồ, đại dương hoặc hồ bơi.) => go swimming (đi bơi)",
+            "correct_answer": "go swimming",
+            "student_answer": "hn",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 32677,
+            "question_id": 646104,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Read the definitions and write the correct word (Con hãy đọc định nghĩa và chọn từ đúng để điền vào chỗ trống) skateboarding, camping, skiing, go swimming, flying a kite, riding a bike 2. The action of holding a string attached to a light toy that floats in the wind Con hãy điền từ vào ô trống (2):",
+            "comment_plain": "The action of holding a string attached to a light toy that floats in the wind. (Hành động giữ một sợi dây gắn vào một m&oacute;n đồ chơi nhẹ bay trong gi&oacute;.) => flying a kite (thả diều)",
+            "correct_answer": "flying a kite",
+            "student_answer": "h nn",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "|",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 32677,
+            "question_id": 646105,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Read the definitions and write the correct word (Con hãy đọc định nghĩa và chọn từ đúng để điền vào chỗ trống) skateboarding, camping, skiing, go swimming, flying a kite, riding a bike 3. The activity or sport of riding a skateboard. Con hãy điền từ vào ô trống (3):",
+            "comment_plain": "The activity or sport of riding a skateboard. (Hoạt động hoặc m&ocirc;n thể thao trượt ván.) => skateboarding (trượt ván)",
+            "correct_answer": "skateboarding",
+            "student_answer": "n b",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "|",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 32677,
+            "question_id": 646106,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Read the definitions and write the correct word (Con hãy đọc định nghĩa và chọn từ đúng để điền vào chỗ trống) skateboarding, camping, skiing, go swimming, flying a kite, riding a bike 4. The sport of moving on skis. Con hãy điền từ vào ô trống (4):",
+            "comment_plain": "The sport of moving on skis. (M&ocirc;n thể thao di chuyển tr&ecirc;n ván trượt.) => skiing (trượt tuyết)",
+            "correct_answer": "skiing",
+            "student_answer": "b",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3891908,
       "program_id": null,
       "level": 4,
@@ -10359,9 +10687,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-09",
       "days_since_last_practice": 12,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8199,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.91,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -10974,6 +11302,657 @@
       }
     },
     {
+      "lesson_id": 3768188,
+      "program_id": null,
+      "level": 4,
+      "position": 10,
+      "title": "Unit 2B: My day - Lesson 4: When do you do your homework?",
+      "desc": "Vocabulary Review: \n- Daily routine: get up, have breakfast, go to school, play sports, have lunch, go home\n- Numbers: 1-10\nGrammar Review:\n- What time is it? It's 10 a.m.\n- When do you do your homewo",
+      "status": "completed",
+      "last_activity_date": "2026-02-27",
+      "days_since_last_practice": 53,
+      "forgetting_score": 0.9995,
+      "weakness_score": 0.8085,
+      "composite_priority_score": 0.904,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 56,
+          "audio_turns": 56,
+          "avg_reaction_ms": 1630,
+          "fastest_reaction_ms": 583,
+          "total_duration_ms": 1551081,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-27",
+        "pronunciation_attempts": 38,
+        "pronunciation_score_avg": 73.61,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "correct": 1
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 78.69,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Did you have breakfast before or after skiing? 🥐",
+            "expected_answer": "I had breakfast before skiing.",
+            "target_objects": null,
+            "user_transcript": "Yes.",
+            "score": 68,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 36,
+            "timestamp": "2026-02-27",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/27/admin/mm4uhk82-13baa8e1-audio.wav",
+            "reaction_time_ms": 1156
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi! Great to see you. Ready to talk about your day? 😄",
+            "expected_answer": "Yes, I am ready. I get up at seven and have breakfast.",
+            "target_objects": null,
+            "user_transcript": "I have.",
+            "score": 60.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 21,
+            "timestamp": "2026-02-27",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/27/admin/mm4ufbba-27ef54dc-audio.wav",
+            "reaction_time_ms": 1156
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Do you play sports with one friend or with more friends? ⚽️",
+            "expected_answer": "We play sports with three friends. We play football and basketball after school.",
+            "target_objects": null,
+            "user_transcript": "We play out with friends.",
+            "score": 68,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 46,
+            "grammar_score": 90,
+            "timestamp": "2026-02-27",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/27/admin/mm4udyzu-51aa4e85-audio.wav",
+            "reaction_time_ms": 1156
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "get up",
+              " have breakfast",
+              " go to school",
+              "play sports"
+            ],
+            "user_transcript": "See, get up.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "get up"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-02-27",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/27/admin/mm4tmrnc-e110fe18-audio.wav",
+            "reaction_time_ms": 1513
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49402,
+          "score": null,
+          "correct": 0,
+          "total": 15,
+          "submitted_date": "2026-02-27"
+        },
+        "luyen_tap": {
+          "practice_id": 49415,
+          "score": 0.83,
+          "correct": 5,
+          "total": 6,
+          "submitted_date": "2026-02-27"
+        },
+        "lms_ids": {
+          "bai_tap": 49402,
+          "luyen_tap": 49415
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 5,
+            "total": 6,
+            "accuracy": 0.833
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 49415,
+            "question_id": 748551,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Xứng-Hợp",
+            "question_text": "Look and match. (Con hãy nhìn tranh và nối với từ đúng.)",
+            "comment_plain": "Đáp án chi tiết: 1. get up: thức dậy 2. have breakfast: ăn sáng 3. go to school: đi tới trường 4. play sports: chơi thể thao 5. go home: đi về nhà",
+            "correct_answer": "item_1→get up; item_2→have breakfast; item_3→go to school; item_4→play sports; item_5→go home",
+            "student_answer": "wrong: item_1, item_2, item_3, item_4, item_5",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A1",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/7fae_1-283-29.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "A2",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/877b_2-286-29.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "A3",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/e63d_4-285-29.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "A4",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/2200_3-285-29.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "A5",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/c734_5-286-29.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B1",
+                "text": "play sports",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B2",
+                "text": "go home",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B3",
+                "text": "get up",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B4",
+                "text": "have breakfast",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B5",
+                "text": "go to school",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3621998,
+      "program_id": null,
+      "level": 4,
+      "position": 22,
+      "title": "Unit 4A: The seasons (Extra) - Lesson 4: Review 1",
+      "desc": "Vocabulary Review:\n- Weather: sunny, rainy, cloudy, snowy, stormy, hot, warm, cool, cold, dry, wet\n- Season: spring, summer, fall, winter\nGrammar Reviewr:\n- What was the weather like? It was stormy.\n-",
+      "status": "completed",
+      "last_activity_date": "2026-01-16",
+      "days_since_last_practice": 95,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.7735,
+      "composite_priority_score": 0.8867,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 36,
+          "avg_reaction_ms": 1092,
+          "fastest_reaction_ms": 376,
+          "total_duration_ms": 1207102,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-08",
+        "pronunciation_attempts": 26,
+        "pronunciation_score_avg": 78.65,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1,
+          "correct": 1
+        },
+        "conversation_attempts": 7,
+        "conversation_score_avg": 83.64,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Oh, really? What kind of weather do you like? 🤔",
+            "expected_answer": "I like rainy days.",
+            "target_objects": null,
+            "user_transcript": "I like rainy day.",
+            "score": 68.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 77,
+            "grammar_score": 60,
+            "timestamp": "2026-01-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/08/admin/mk5g9r58-c93ab7d5-audio.wav",
+            "reaction_time_ms": 652
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice! Do you like sunny days? 😎 I like sunny days.",
+            "expected_answer": "Yes, I like sunny days.",
+            "target_objects": null,
+            "user_transcript": "I don't like sunny day.",
+            "score": 64.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 88,
+            "grammar_score": 41,
+            "timestamp": "2026-01-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/08/admin/mk5g9jdf-376f3158-audio.wav",
+            "reaction_time_ms": 652
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What is it?",
+            "expected_answer": null,
+            "target_objects": [
+              "sunny",
+              "stormy",
+              "snowy"
+            ],
+            "user_transcript": "It's flower.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "flower"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/08/admin/mk5fmc33-fefe5be6-audio.wav",
+            "reaction_time_ms": 1011
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "sunny",
+              "stormy",
+              "snowy"
+            ],
+            "user_transcript": "I see.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-01-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/08/admin/mk5fm03n-5bde816f-audio.wav",
+            "reaction_time_ms": 617
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 32675,
+          "score": 0.55,
+          "correct": 6,
+          "total": 11,
+          "submitted_date": "2026-01-09"
+        },
+        "luyen_tap": {
+          "practice_id": 32676,
+          "score": null,
+          "correct": 0,
+          "total": 7,
+          "submitted_date": "2026-01-16"
+        },
+        "lms_ids": {
+          "bai_tap": 32675,
+          "luyen_tap": 32676
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 6,
+            "total": 9,
+            "accuracy": 0.667
+          }
+        },
+        "weak_skills": [
+          "English Tutoring - Level 4"
+        ],
+        "worst_questions": [
+          {
+            "practice_id": 32675,
+            "question_id": 646087,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Write the correct word to fill in blanks (Con hãy viết từ đúng để điền vào chỗ trống) Last (1)......, the Rogers went to Hawaii for vacation. It was hot and (2)...... every day. They swam in the blue, warm water. At night, they (3)..... on the beach and saw many stars. On their last day, they saw ma",
+            "comment_plain": "Giải th&iacute;ch: Dựa vào &quot;hot&quot; => (1) summer => Last (1) summer, the Rogers went to Hawaii for vacation. (M&ugrave;a h&egrave; năm ngoái, gia đ&igrave;nh Rogers đã đi nghỉ ở Hawaii.)",
+            "correct_answer": "summer",
+            "student_answer": "sumer",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 32675,
+            "question_id": 646089,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Write the correct word to fill in blanks (Con hãy viết từ đúng để điền vào chỗ trống) Last (1)......, the Rogers went to Hawaii for vacation. It was hot and (2)...... every day. They swam in the blue, warm water. At night, they (3)..... on the beach and saw many stars. On their last day, they saw ma",
+            "comment_plain": "Giải th&iacute;ch: At night, they (3)..... on the beach and saw many stars. Dựa vào nghĩa câu th&igrave; vào ban đ&ecirc;m hành động đi bộ và ngắm sao tr&ecirc;n bãi biển là hợp l&yacute;. => walk, tuy nhi&ecirc;n câu c&oacute; &quot;saw&quot; đang chia th&igrave; quá khứ đơn => walked",
+            "correct_answer": "walked",
+            "student_answer": "6gtv",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 32675,
+            "question_id": 646090,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Write the correct word to fill in blanks (Con hãy viết từ đúng để điền vào chỗ trống) Last (1)......, the Rogers went to Hawaii for vacation. It was hot and (2)...... every day. They swam in the blue, warm water. At night, they (3)..... on the beach and saw many stars. On their last day, they saw ma",
+            "comment_plain": "Giải th&iacute;ch: Các cụm từ kh&oacute;a như &quot;in the sky&quot;, &quot;rained&quot; => tr&ecirc;n trời sẽ c&oacute; mây xám xịt => sau grey là danh từ số nhiều v&igrave; c&oacute; &quot;many&quot; => clouds. On their last day, they saw many grey clouds in the sky. It rained a little bit, but not for long. (Vào ngày cuối c&ugrave;ng, họ nh&igrave;n thấy nhiều đám mây xám tr&ecirc;n bầu trời. Trời mưa một ch&uacute;t, nhưng kh&ocirc;ng k&eacute;o dài.)",
+            "correct_answer": "clouds",
+            "student_answer": "fL ew",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3586823,
+      "program_id": null,
+      "level": 4,
+      "position": 19,
+      "title": "Unit 4A: The seasons (Extra) - Lesson 1: What was the weather like?",
+      "desc": "Vocabulary:\nsunny, rainy, cloudy, snowy, stormy, cool, dry, wet\nGrammar:\nWhat was the weather like? - It was stormy.",
+      "status": "completed",
+      "last_activity_date": "2025-12-26",
+      "days_since_last_practice": 116,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.7615,
+      "composite_priority_score": 0.8807,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 51,
+          "avg_reaction_ms": 1287,
+          "fastest_reaction_ms": 333,
+          "total_duration_ms": 350206,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-12-25",
+        "pronunciation_attempts": 37,
+        "pronunciation_score_avg": 68.11,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1
+        },
+        "conversation_attempts": 7,
+        "conversation_score_avg": 88.2,
+        "worst_speaking_items": [
+          {
+            "lms_type": "brainstorm",
+            "question": "Look at this picture and tell me, what can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "Snowy",
+              "Sunny",
+              "Cool"
+            ],
+            "user_transcript": "I see.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2025-12-25",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/25/admin/mjld5ulh-19011902-audio.wav",
+            "reaction_time_ms": 1510
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 32394,
+          "score": 0.36,
+          "correct": 4,
+          "total": 11,
+          "submitted_date": "2025-12-26"
+        },
+        "luyen_tap": {
+          "practice_id": 32395,
+          "score": 0.75,
+          "correct": 6,
+          "total": 8,
+          "submitted_date": "2025-12-26"
+        },
+        "lms_ids": {
+          "bai_tap": 32394,
+          "luyen_tap": 32395
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 10,
+            "total": 13,
+            "accuracy": 0.769
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 32394,
+            "question_id": 642724,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct word (Con hãy chọn từ thích hợp để điền vào chỗ trống) The weather last week was very unpredictable! On Monday, it was (1).... and hot, so we had ice cream. The next day, the weather was windy and (2).... , perfect for flying kites. On Thursday, it was (3)..... . We could see many",
+            "comment_plain": "Giải th&iacute;ch: Cụm &quot;run inside&quot; - chạy vào bởi v&igrave; trời mưa, avoid + Ving: tránh làm g&igrave;/bị g&igrave; => tránh bị ướt khi chạy vào bởi v&igrave; trời mưa => avoid getting wet We had to run inside to avoid getting wet . (Ch&uacute;ng t&ocirc;i phải chạy vào trong để tránh bị ướt.)",
+            "correct_answer": "B. wet",
+            "student_answer": "A. dry",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. dry",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. wet",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. cool",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 32395,
+            "question_id": 642769,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn bức tranh đúng) What was the weather like?",
+            "comment_plain": "It was snowy. (Trời c&oacute; tuyết)",
+            "correct_answer": null,
+            "student_answer": "option_1",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/b618_3.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": null,
+                "image_urls": [
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/854b_4.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": null,
+                "image_urls": [
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/7224_5.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 32395,
+            "question_id": 642783,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Fill in the blanks (Con hãy điền từ vào chỗ trống) wet, sunny, weather, cool 1. What was the ___ like? 2. It is often ___ in fall. The weather is no longer sunny like summer. 3. It was rainy and ___ .",
+            "comment_plain": "Giải th&iacute;ch: 1. Cấu tr&uacute;c hỏi về thời tiết như thế nào => &quot;weather&quot; 2. Dựa vào &quot;fall&quot; => &quot;cool&quot; 3. Dựa vào từ &quot;and&quot; và &quot;rainy&quot; => thời tiết kết hợp h&ograve;a hợp, logic => &quot;wet&quot; => Đáp án: 1. What was the _weather__ like? (Thời tiết h&ocirc;m đ&oacute; như thế nào?) 2. It is often _cool__ in fall. The weather is no longer sunny like summer. (Trời thường mát mẻ vào m&ugrave;a thu. Thời tiết kh&ocirc;ng c&ograve;n nắng như m&",
+            "correct_answer": "weather / cool / wet",
+            "student_answer": "weather / wet / cool",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "(1)",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "(2)",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "(3)",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3891915,
       "program_id": null,
       "level": 4,
@@ -10983,9 +11962,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-11",
       "days_since_last_practice": 10,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.7603,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.8801,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -11688,981 +12667,6 @@
             }
           ]
         }
-      }
-    },
-    {
-      "lesson_id": 3621999,
-      "program_id": null,
-      "level": 4,
-      "position": 23,
-      "title": "Unit 4A: The seasons (Extra) - Lesson 5: Review 2",
-      "desc": "Vocabulary Review:\n- activities: went camping, went swimming, went skiing, flew a kite\nGrammar Reviewr:\n- What did you do last summer? I went swimming last summer.\n- What did she/he do last spring? He",
-      "status": "completed",
-      "last_activity_date": "2026-01-16",
-      "days_since_last_practice": 95,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.8353,
-      "composite_priority_score": 0.9177,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": null,
-          "audio_turns": 45,
-          "avg_reaction_ms": 1789,
-          "fastest_reaction_ms": 527,
-          "total_duration_ms": 1270776,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-01-09",
-        "pronunciation_attempts": 27,
-        "pronunciation_score_avg": 52.56,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 100.0,
-        "free_speaking_answer_type_dist": {
-          "accordant": 1
-        },
-        "brainstorm_attempts": 3,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 3
-        },
-        "conversation_attempts": 7,
-        "conversation_score_avg": null,
-        "worst_speaking_items": [
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "went camping",
-              " went skiing",
-              "went swimming",
-              " flew a kite"
-            ],
-            "user_transcript": "I.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-09",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/09/admin/mk6te2zf-5c8e743a-audio.wav",
-            "reaction_time_ms": 2637
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What activity is this?",
-            "expected_answer": null,
-            "target_objects": [
-              "went camping",
-              " went skiing",
-              "went swimming",
-              " flew a kite"
-            ],
-            "user_transcript": "This is swimminging.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-09",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/09/admin/mk6tdkgb-8a0944b7-audio.wav",
-            "reaction_time_ms": 545
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "went camping",
-              " went skiing",
-              "went swimming",
-              " flew a kite"
-            ],
-            "user_transcript": "Hobby.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-09",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/09/admin/mk6tdcar-7d6c03a6-audio.wav",
-            "reaction_time_ms": 2718
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 32677,
-          "score": 0.4,
-          "correct": 4,
-          "total": 10,
-          "submitted_date": "2026-01-09"
-        },
-        "luyen_tap": {
-          "practice_id": 32678,
-          "score": null,
-          "correct": 0,
-          "total": 10,
-          "submitted_date": "2026-01-16"
-        },
-        "lms_ids": {
-          "bai_tap": 32677,
-          "luyen_tap": 32678
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 4": {
-            "correct": 4,
-            "total": 9,
-            "accuracy": 0.444
-          }
-        },
-        "weak_skills": [
-          "English Tutoring - Level 4"
-        ],
-        "worst_questions": [
-          {
-            "practice_id": 32677,
-            "question_id": 646098,
-            "question_folder": "English Tutoring - Level 4",
-            "question_type": "Xứng-Hợp",
-            "question_text": "Listen and match (Con hãy nghe và nối tên của những người sau với bức tranh thích hợp)",
-            "comment_plain": "Audio: Presenter: Listen and match Cleo: I&#39;m curious about people&#39;s favorite types of weather. Cleo: Let&#39;s ask each of them. Cleo: Right, the first one. Max, what&#39;s your favorite weather? Max: I like cloudy days. Because it&#39;s not sunny on those days. Cleo: Haha me too. What about you, Lala? Lala: I think I like dry days. That&#39;s when my clothes can get dry easily. Cleo: I understand. Ryan, what do you think? Ryan: Cool weather is the best. Cleo: Why? Ryan: Because I can fl",
-            "correct_answer": "item_1; item_2; item_3; item_4; item_5",
-            "student_answer": "wrong: item_1, item_2, item_3, item_4, item_5",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A1",
-                "text": null,
-                "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/f8e4_15.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "A2",
-                "text": null,
-                "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/75f9_16.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "A3",
-                "text": null,
-                "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/2e76_17.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "A4",
-                "text": null,
-                "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/b20c_18.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "A5",
-                "text": null,
-                "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/b017_20.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B1",
-                "text": null,
-                "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/45e4_kindie-pictures-p3--28scale-vuong-29--2882-29.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B2",
-                "text": null,
-                "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/4546_kindie-pictures-p3--28scale-vuong-29--2876-29.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B3",
-                "text": null,
-                "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/92fe_kindie-pictures-p3--28scale-vuong-29--2877-29.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B4",
-                "text": null,
-                "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/c458_kindie-pictures-p3--28scale-vuong-29--2873-29.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B5",
-                "text": null,
-                "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/5295_12.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 32677,
-            "question_id": 646103,
-            "question_folder": "English Tutoring - Level 4",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Read the definitions and write the correct word (Con hãy đọc định nghĩa và chọn từ đúng để điền vào chỗ trống) skateboarding, camping, skiing, go swimming, flying a kite, riding a bike 1. The action of playing in water, like in a lake, ocean, or pool. Con hãy điền từ vào ô trống (1):",
-            "comment_plain": "The action of playing in water, like in a lake, ocean, or pool. (Hành động chơi đ&ugrave;a trong nước, chẳng hạn như ở hồ, đại dương hoặc hồ bơi.) => go swimming (đi bơi)",
-            "correct_answer": "go swimming",
-            "student_answer": "hn",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 32677,
-            "question_id": 646104,
-            "question_folder": "English Tutoring - Level 4",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Read the definitions and write the correct word (Con hãy đọc định nghĩa và chọn từ đúng để điền vào chỗ trống) skateboarding, camping, skiing, go swimming, flying a kite, riding a bike 2. The action of holding a string attached to a light toy that floats in the wind Con hãy điền từ vào ô trống (2):",
-            "comment_plain": "The action of holding a string attached to a light toy that floats in the wind. (Hành động giữ một sợi dây gắn vào một m&oacute;n đồ chơi nhẹ bay trong gi&oacute;.) => flying a kite (thả diều)",
-            "correct_answer": "flying a kite",
-            "student_answer": "h nn",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "|",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 32677,
-            "question_id": 646105,
-            "question_folder": "English Tutoring - Level 4",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Read the definitions and write the correct word (Con hãy đọc định nghĩa và chọn từ đúng để điền vào chỗ trống) skateboarding, camping, skiing, go swimming, flying a kite, riding a bike 3. The activity or sport of riding a skateboard. Con hãy điền từ vào ô trống (3):",
-            "comment_plain": "The activity or sport of riding a skateboard. (Hoạt động hoặc m&ocirc;n thể thao trượt ván.) => skateboarding (trượt ván)",
-            "correct_answer": "skateboarding",
-            "student_answer": "n b",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "|",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 32677,
-            "question_id": 646106,
-            "question_folder": "English Tutoring - Level 4",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Read the definitions and write the correct word (Con hãy đọc định nghĩa và chọn từ đúng để điền vào chỗ trống) skateboarding, camping, skiing, go swimming, flying a kite, riding a bike 4. The sport of moving on skis. Con hãy điền từ vào ô trống (4):",
-            "comment_plain": "The sport of moving on skis. (M&ocirc;n thể thao di chuyển tr&ecirc;n ván trượt.) => skiing (trượt tuyết)",
-            "correct_answer": "skiing",
-            "student_answer": "b",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3768188,
-      "program_id": null,
-      "level": 4,
-      "position": 10,
-      "title": "Unit 2B: My day - Lesson 4: When do you do your homework?",
-      "desc": "Vocabulary Review: \n- Daily routine: get up, have breakfast, go to school, play sports, have lunch, go home\n- Numbers: 1-10\nGrammar Review:\n- What time is it? It's 10 a.m.\n- When do you do your homewo",
-      "status": "completed",
-      "last_activity_date": "2026-02-27",
-      "days_since_last_practice": 53,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.8085,
-      "composite_priority_score": 0.9042,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 56,
-          "audio_turns": 56,
-          "avg_reaction_ms": 1630,
-          "fastest_reaction_ms": 583,
-          "total_duration_ms": 1551081,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-02-27",
-        "pronunciation_attempts": 38,
-        "pronunciation_score_avg": 73.61,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 100.0,
-        "free_speaking_answer_type_dist": {
-          "accordant": 1
-        },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 78.69,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Did you have breakfast before or after skiing? 🥐",
-            "expected_answer": "I had breakfast before skiing.",
-            "target_objects": null,
-            "user_transcript": "Yes.",
-            "score": 68,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 36,
-            "timestamp": "2026-02-27",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/27/admin/mm4uhk82-13baa8e1-audio.wav",
-            "reaction_time_ms": 1156
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi! Great to see you. Ready to talk about your day? 😄",
-            "expected_answer": "Yes, I am ready. I get up at seven and have breakfast.",
-            "target_objects": null,
-            "user_transcript": "I have.",
-            "score": 60.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 21,
-            "timestamp": "2026-02-27",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/27/admin/mm4ufbba-27ef54dc-audio.wav",
-            "reaction_time_ms": 1156
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Do you play sports with one friend or with more friends? ⚽️",
-            "expected_answer": "We play sports with three friends. We play football and basketball after school.",
-            "target_objects": null,
-            "user_transcript": "We play out with friends.",
-            "score": 68,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 46,
-            "grammar_score": 90,
-            "timestamp": "2026-02-27",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/27/admin/mm4udyzu-51aa4e85-audio.wav",
-            "reaction_time_ms": 1156
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "get up",
-              " have breakfast",
-              " go to school",
-              "play sports"
-            ],
-            "user_transcript": "See, get up.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "get up"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-02-27",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/27/admin/mm4tmrnc-e110fe18-audio.wav",
-            "reaction_time_ms": 1513
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 49402,
-          "score": null,
-          "correct": 0,
-          "total": 15,
-          "submitted_date": "2026-02-27"
-        },
-        "luyen_tap": {
-          "practice_id": 49415,
-          "score": 0.83,
-          "correct": 5,
-          "total": 6,
-          "submitted_date": "2026-02-27"
-        },
-        "lms_ids": {
-          "bai_tap": 49402,
-          "luyen_tap": 49415
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 4": {
-            "correct": 5,
-            "total": 6,
-            "accuracy": 0.833
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 49415,
-            "question_id": 748551,
-            "question_folder": "English Tutoring - Level 4",
-            "question_type": "Xứng-Hợp",
-            "question_text": "Look and match. (Con hãy nhìn tranh và nối với từ đúng.)",
-            "comment_plain": "Đáp án chi tiết: 1. get up: thức dậy 2. have breakfast: ăn sáng 3. go to school: đi tới trường 4. play sports: chơi thể thao 5. go home: đi về nhà",
-            "correct_answer": "item_1→get up; item_2→have breakfast; item_3→go to school; item_4→play sports; item_5→go home",
-            "student_answer": "wrong: item_1, item_2, item_3, item_4, item_5",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A1",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/7fae_1-283-29.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "A2",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/877b_2-286-29.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "A3",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/e63d_4-285-29.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "A4",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/2200_3-285-29.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "A5",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/c734_5-286-29.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B1",
-                "text": "play sports",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B2",
-                "text": "go home",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B3",
-                "text": "get up",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B4",
-                "text": "have breakfast",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B5",
-                "text": "go to school",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3621998,
-      "program_id": null,
-      "level": 4,
-      "position": 22,
-      "title": "Unit 4A: The seasons (Extra) - Lesson 4: Review 1",
-      "desc": "Vocabulary Review:\n- Weather: sunny, rainy, cloudy, snowy, stormy, hot, warm, cool, cold, dry, wet\n- Season: spring, summer, fall, winter\nGrammar Reviewr:\n- What was the weather like? It was stormy.\n-",
-      "status": "completed",
-      "last_activity_date": "2026-01-16",
-      "days_since_last_practice": 95,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.7735,
-      "composite_priority_score": 0.8867,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": null,
-          "audio_turns": 36,
-          "avg_reaction_ms": 1092,
-          "fastest_reaction_ms": 376,
-          "total_duration_ms": 1207102,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-01-08",
-        "pronunciation_attempts": 26,
-        "pronunciation_score_avg": 78.65,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 100.0,
-        "free_speaking_answer_type_dist": {
-          "accordant": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1,
-          "correct": 1
-        },
-        "conversation_attempts": 7,
-        "conversation_score_avg": 83.64,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Oh, really? What kind of weather do you like? 🤔",
-            "expected_answer": "I like rainy days.",
-            "target_objects": null,
-            "user_transcript": "I like rainy day.",
-            "score": 68.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 77,
-            "grammar_score": 60,
-            "timestamp": "2026-01-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/08/admin/mk5g9r58-c93ab7d5-audio.wav",
-            "reaction_time_ms": 652
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice! Do you like sunny days? 😎 I like sunny days.",
-            "expected_answer": "Yes, I like sunny days.",
-            "target_objects": null,
-            "user_transcript": "I don't like sunny day.",
-            "score": 64.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 88,
-            "grammar_score": 41,
-            "timestamp": "2026-01-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/08/admin/mk5g9jdf-376f3158-audio.wav",
-            "reaction_time_ms": 652
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "sunny",
-              "stormy",
-              "snowy"
-            ],
-            "user_transcript": "It's flower.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "flower"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/08/admin/mk5fmc33-fefe5be6-audio.wav",
-            "reaction_time_ms": 1011
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "sunny",
-              "stormy",
-              "snowy"
-            ],
-            "user_transcript": "I see.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/08/admin/mk5fm03n-5bde816f-audio.wav",
-            "reaction_time_ms": 617
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 32675,
-          "score": 0.55,
-          "correct": 6,
-          "total": 11,
-          "submitted_date": "2026-01-09"
-        },
-        "luyen_tap": {
-          "practice_id": 32676,
-          "score": null,
-          "correct": 0,
-          "total": 7,
-          "submitted_date": "2026-01-16"
-        },
-        "lms_ids": {
-          "bai_tap": 32675,
-          "luyen_tap": 32676
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 4": {
-            "correct": 6,
-            "total": 9,
-            "accuracy": 0.667
-          }
-        },
-        "weak_skills": [
-          "English Tutoring - Level 4"
-        ],
-        "worst_questions": [
-          {
-            "practice_id": 32675,
-            "question_id": 646087,
-            "question_folder": "English Tutoring - Level 4",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Write the correct word to fill in blanks (Con hãy viết từ đúng để điền vào chỗ trống) Last (1)......, the Rogers went to Hawaii for vacation. It was hot and (2)...... every day. They swam in the blue, warm water. At night, they (3)..... on the beach and saw many stars. On their last day, they saw ma",
-            "comment_plain": "Giải th&iacute;ch: Dựa vào &quot;hot&quot; => (1) summer => Last (1) summer, the Rogers went to Hawaii for vacation. (M&ugrave;a h&egrave; năm ngoái, gia đ&igrave;nh Rogers đã đi nghỉ ở Hawaii.)",
-            "correct_answer": "summer",
-            "student_answer": "sumer",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 32675,
-            "question_id": 646089,
-            "question_folder": "English Tutoring - Level 4",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Write the correct word to fill in blanks (Con hãy viết từ đúng để điền vào chỗ trống) Last (1)......, the Rogers went to Hawaii for vacation. It was hot and (2)...... every day. They swam in the blue, warm water. At night, they (3)..... on the beach and saw many stars. On their last day, they saw ma",
-            "comment_plain": "Giải th&iacute;ch: At night, they (3)..... on the beach and saw many stars. Dựa vào nghĩa câu th&igrave; vào ban đ&ecirc;m hành động đi bộ và ngắm sao tr&ecirc;n bãi biển là hợp l&yacute;. => walk, tuy nhi&ecirc;n câu c&oacute; &quot;saw&quot; đang chia th&igrave; quá khứ đơn => walked",
-            "correct_answer": "walked",
-            "student_answer": "6gtv",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 32675,
-            "question_id": 646090,
-            "question_folder": "English Tutoring - Level 4",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Write the correct word to fill in blanks (Con hãy viết từ đúng để điền vào chỗ trống) Last (1)......, the Rogers went to Hawaii for vacation. It was hot and (2)...... every day. They swam in the blue, warm water. At night, they (3)..... on the beach and saw many stars. On their last day, they saw ma",
-            "comment_plain": "Giải th&iacute;ch: Các cụm từ kh&oacute;a như &quot;in the sky&quot;, &quot;rained&quot; => tr&ecirc;n trời sẽ c&oacute; mây xám xịt => sau grey là danh từ số nhiều v&igrave; c&oacute; &quot;many&quot; => clouds. On their last day, they saw many grey clouds in the sky. It rained a little bit, but not for long. (Vào ngày cuối c&ugrave;ng, họ nh&igrave;n thấy nhiều đám mây xám tr&ecirc;n bầu trời. Trời mưa một ch&uacute;t, nhưng kh&ocirc;ng k&eacute;o dài.)",
-            "correct_answer": "clouds",
-            "student_answer": "fL ew",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3586823,
-      "program_id": null,
-      "level": 4,
-      "position": 19,
-      "title": "Unit 4A: The seasons (Extra) - Lesson 1: What was the weather like?",
-      "desc": "Vocabulary:\nsunny, rainy, cloudy, snowy, stormy, cool, dry, wet\nGrammar:\nWhat was the weather like? - It was stormy.",
-      "status": "completed",
-      "last_activity_date": "2025-12-26",
-      "days_since_last_practice": 116,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.7615,
-      "composite_priority_score": 0.8807,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": null,
-          "audio_turns": 51,
-          "avg_reaction_ms": 1287,
-          "fastest_reaction_ms": 333,
-          "total_duration_ms": 350206,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2025-12-25",
-        "pronunciation_attempts": 37,
-        "pronunciation_score_avg": 68.11,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1
-        },
-        "conversation_attempts": 7,
-        "conversation_score_avg": 88.2,
-        "worst_speaking_items": [
-          {
-            "lms_type": "brainstorm",
-            "question": "Look at this picture and tell me, what can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "Snowy",
-              "Sunny",
-              "Cool"
-            ],
-            "user_transcript": "I see.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2025-12-25",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2025/12/25/admin/mjld5ulh-19011902-audio.wav",
-            "reaction_time_ms": 1510
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 32394,
-          "score": 0.36,
-          "correct": 4,
-          "total": 11,
-          "submitted_date": "2025-12-26"
-        },
-        "luyen_tap": {
-          "practice_id": 32395,
-          "score": 0.75,
-          "correct": 6,
-          "total": 8,
-          "submitted_date": "2025-12-26"
-        },
-        "lms_ids": {
-          "bai_tap": 32394,
-          "luyen_tap": 32395
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 4": {
-            "correct": 10,
-            "total": 13,
-            "accuracy": 0.769
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 32394,
-            "question_id": 642724,
-            "question_folder": "English Tutoring - Level 4",
-            "question_type": "Một lựa chọn",
-            "question_text": "Choose the correct word (Con hãy chọn từ thích hợp để điền vào chỗ trống) The weather last week was very unpredictable! On Monday, it was (1).... and hot, so we had ice cream. The next day, the weather was windy and (2).... , perfect for flying kites. On Thursday, it was (3)..... . We could see many",
-            "comment_plain": "Giải th&iacute;ch: Cụm &quot;run inside&quot; - chạy vào bởi v&igrave; trời mưa, avoid + Ving: tránh làm g&igrave;/bị g&igrave; => tránh bị ướt khi chạy vào bởi v&igrave; trời mưa => avoid getting wet We had to run inside to avoid getting wet . (Ch&uacute;ng t&ocirc;i phải chạy vào trong để tránh bị ướt.)",
-            "correct_answer": "B. wet",
-            "student_answer": "A. dry",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. dry",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. wet",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. cool",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 32395,
-            "question_id": 642769,
-            "question_folder": "English Tutoring - Level 4",
-            "question_type": "Một lựa chọn",
-            "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn bức tranh đúng) What was the weather like?",
-            "comment_plain": "It was snowy. (Trời c&oacute; tuyết)",
-            "correct_answer": null,
-            "student_answer": "option_1",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/b618_3.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": null,
-                "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/854b_4.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": null,
-                "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/06/26/7224_5.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 32395,
-            "question_id": 642783,
-            "question_folder": "English Tutoring - Level 4",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Fill in the blanks (Con hãy điền từ vào chỗ trống) wet, sunny, weather, cool 1. What was the ___ like? 2. It is often ___ in fall. The weather is no longer sunny like summer. 3. It was rainy and ___ .",
-            "comment_plain": "Giải th&iacute;ch: 1. Cấu tr&uacute;c hỏi về thời tiết như thế nào => &quot;weather&quot; 2. Dựa vào &quot;fall&quot; => &quot;cool&quot; 3. Dựa vào từ &quot;and&quot; và &quot;rainy&quot; => thời tiết kết hợp h&ograve;a hợp, logic => &quot;wet&quot; => Đáp án: 1. What was the _weather__ like? (Thời tiết h&ocirc;m đ&oacute; như thế nào?) 2. It is often _cool__ in fall. The weather is no longer sunny like summer. (Trời thường mát mẻ vào m&ugrave;a thu. Thời tiết kh&ocirc;ng c&ograve;n nắng như m&",
-            "correct_answer": "weather / cool / wet",
-            "student_answer": "weather / wet / cool",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "(1)",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "(2)",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "(3)",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
       }
     },
     {
@@ -14841,301 +14845,6 @@
       }
     },
     {
-      "lesson_id": 3891922,
-      "program_id": null,
-      "level": 4,
-      "position": 20,
-      "title": "Unit 4B: My town - Lesson 2: Is the market on the left of the funfair?",
-      "desc": "Vocabulary: \n- Places: market, supermarket, square, funfair\n- Prep: on the left of, on the right of\nGrammar:\n- Where is the supermarket? It's on the right of the funfair.\n- Is the market on the left o",
-      "status": "completed",
-      "last_activity_date": "2026-04-16",
-      "days_since_last_practice": 5,
-      "forgetting_score": 0.9933,
-      "weakness_score": 0.5845,
-      "composite_priority_score": 0.7889,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 43,
-          "audio_turns": 56,
-          "avg_reaction_ms": 1801,
-          "fastest_reaction_ms": 767,
-          "total_duration_ms": 1323315,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-16",
-        "pronunciation_attempts": 38,
-        "pronunciation_score_avg": 73.55,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 100.0,
-        "free_speaking_answer_type_dist": {
-          "accordant": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 82.57,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Tell me one place in your town, please 😊",
-            "expected_answer": "There is a market near my house.",
-            "target_objects": null,
-            "user_transcript": "Okay.",
-            "score": 68.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 37,
-            "timestamp": "2026-04-16",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1fbq6v-15dab035-audio.wav",
-            "reaction_time_ms": 2132
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Great. Tell me one place in your town. 😊",
-            "expected_answer": "There is a market near my house.",
-            "target_objects": null,
-            "user_transcript": "Okay.",
-            "score": 68,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 36,
-            "timestamp": "2026-04-16",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1fbe8z-20bbd672-audio.wav",
-            "reaction_time_ms": 2132
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hello, nice to see you. Ready to talk about your town? 😄",
-            "expected_answer": "Yes, I'm ready. I live near a big square with a market and a supermarket on the left.",
-            "target_objects": null,
-            "user_transcript": "He's.",
-            "score": 42.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 66,
-            "grammar_score": 19,
-            "timestamp": "2026-04-16",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1f7yyx-8673fc5a-audio.wav",
-            "reaction_time_ms": 2132
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What else do you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "market",
-              "funfair",
-              "square"
-            ],
-            "user_transcript": "I see fun.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-16",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1ejobm-1fcc2397-audio.wav",
-            "reaction_time_ms": 4318
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "market",
-              "funfair",
-              "square"
-            ],
-            "user_transcript": "I see Mickey and Funfa.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": [
-              "funfair"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-16",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1ejd6v-a74d5d17-audio.wav",
-            "reaction_time_ms": 1588
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 49740,
-          "score": 0.93,
-          "correct": 14,
-          "total": 15,
-          "submitted_date": "2026-04-16"
-        },
-        "luyen_tap": {
-          "practice_id": 49743,
-          "score": 0.6,
-          "correct": 6,
-          "total": 10,
-          "submitted_date": "2026-04-16"
-        },
-        "lms_ids": {
-          "bai_tap": 49740,
-          "luyen_tap": 49743
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 4": {
-            "correct": 20,
-            "total": 25,
-            "accuracy": 0.8
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 49740,
-            "question_id": 751898,
-            "question_folder": "English Tutoring - Level 4",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Look, read and write (Con hãy nhìn tranh, đọc và viết từ nhé!) 4. Is the car park in front of the supermarket?",
-            "comment_plain": "Đáp án chi tiết: - Is the car park in front of the supermarket? - No, it isn&#39;t. Tạm dịch: - Bãi đậu xe nằm trước si&ecirc;u thị phải kh&ocirc;ng? - Kh&ocirc;ng phải.",
-            "correct_answer": "No, it isn't. | No, it isn't | No, it is not. | No, it is not | No, it's not. | No, it's not",
-            "student_answer": "no",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/04/25/eba6_design--28scale-ngang-29--2860-29.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 49743,
-            "question_id": 751917,
-            "question_folder": "English Tutoring - Level 4",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Write the missing words (Con hãy nhìn và điền từ còn thiếu nhé!)",
-            "comment_plain": "Đáp án chi tiết: - Where is the market? - It&#39;s to the left of the square . Tạm dịch: - Chợ nằm ở đâu thế? - N&oacute; nằm ở b&ecirc;n trái quảng trường.",
-            "correct_answer": "square",
-            "student_answer": "sqare",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/04/25/e9c4_design--28scale-ngang-29--2864-29.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "1. - Where is the market? - It's to the left of the |.",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 49743,
-            "question_id": 751916,
-            "question_folder": "English Tutoring - Level 4",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Write the missing words (Con hãy nhìn và điền từ còn thiếu nhé!)",
-            "comment_plain": "Đáp án chi tiết: - Is the police station to the right of the funfair? - Yes, it is. Tạm dịch: - Đồn cảnh sát nằm b&ecirc;n phải hội chợ vui chơi phải kh&ocirc;ng? - Đ&uacute;ng vậy.",
-            "correct_answer": "police station",
-            "student_answer": "police",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/04/25/b26d_design--28scale-ngang-29--2867-29.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "2. - Is the | to the right of the funfair? - Yes, it is.",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 49743,
-            "question_id": 751920,
-            "question_folder": "English Tutoring - Level 4",
-            "question_type": "Một lựa chọn",
-            "question_text": "Look, read and choose (Con hãy nhìn, đọc, chọn đáp án đúng nhé!) 2. Is the supermarket to the right of the car park?",
-            "comment_plain": "Is the supermarket to the right of the car park? (C&oacute; phải si&ecirc;u thị nằm b&ecirc;n phải bãi đậu xe kh&ocirc;ng?) => Yes, it is. (Đ&uacute;ng vậy.)",
-            "correct_answer": "Yes, it is.",
-            "student_answer": "No, it isn't. It's behind the car park.",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/04/25/62c4_design--28scale-ngang-29--2871-29.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "No, it isn't. It's behind the car park.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "Yes, it is.",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 49743,
-            "question_id": 751922,
-            "question_folder": "English Tutoring - Level 4",
-            "question_type": "Một lựa chọn",
-            "question_text": "Look, read and choose (Con hãy nhìn, đọc, chọn đáp án đúng nhé!) 3. Where is the police station?",
-            "comment_plain": "Where is the police station? (Đồn cảnh sát nằm ở đâu vậy?) => It&#39;s to the right of the supermarket. (N&oacute; nằm ở b&ecirc;n phải si&ecirc;u thị.)",
-            "correct_answer": "It's to the right of the supermarket.",
-            "student_answer": "It's to the left of the supermarket.",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/04/25/213e_design--28scale-ngang-29--2869-29.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "It's to the left of the supermarket.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "It's to the right of the supermarket.",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
       "lesson_id": 3492586,
       "program_id": null,
       "level": 4,
@@ -17090,6 +16799,301 @@
       }
     },
     {
+      "lesson_id": 3891922,
+      "program_id": null,
+      "level": 4,
+      "position": 20,
+      "title": "Unit 4B: My town - Lesson 2: Is the market on the left of the funfair?",
+      "desc": "Vocabulary: \n- Places: market, supermarket, square, funfair\n- Prep: on the left of, on the right of\nGrammar:\n- Where is the supermarket? It's on the right of the funfair.\n- Is the market on the left o",
+      "status": "completed",
+      "last_activity_date": "2026-04-16",
+      "days_since_last_practice": 5,
+      "forgetting_score": 0.5105,
+      "weakness_score": 0.5845,
+      "composite_priority_score": 0.5475,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 43,
+          "audio_turns": 56,
+          "avg_reaction_ms": 1801,
+          "fastest_reaction_ms": 767,
+          "total_duration_ms": 1323315,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-16",
+        "pronunciation_attempts": 38,
+        "pronunciation_score_avg": 73.55,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 2
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 82.57,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Tell me one place in your town, please 😊",
+            "expected_answer": "There is a market near my house.",
+            "target_objects": null,
+            "user_transcript": "Okay.",
+            "score": 68.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 37,
+            "timestamp": "2026-04-16",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1fbq6v-15dab035-audio.wav",
+            "reaction_time_ms": 2132
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Great. Tell me one place in your town. 😊",
+            "expected_answer": "There is a market near my house.",
+            "target_objects": null,
+            "user_transcript": "Okay.",
+            "score": 68,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 36,
+            "timestamp": "2026-04-16",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1fbe8z-20bbd672-audio.wav",
+            "reaction_time_ms": 2132
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hello, nice to see you. Ready to talk about your town? 😄",
+            "expected_answer": "Yes, I'm ready. I live near a big square with a market and a supermarket on the left.",
+            "target_objects": null,
+            "user_transcript": "He's.",
+            "score": 42.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 66,
+            "grammar_score": 19,
+            "timestamp": "2026-04-16",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1f7yyx-8673fc5a-audio.wav",
+            "reaction_time_ms": 2132
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What else do you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "market",
+              "funfair",
+              "square"
+            ],
+            "user_transcript": "I see fun.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-16",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1ejobm-1fcc2397-audio.wav",
+            "reaction_time_ms": 4318
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "market",
+              "funfair",
+              "square"
+            ],
+            "user_transcript": "I see Mickey and Funfa.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": [
+              "funfair"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-16",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1ejd6v-a74d5d17-audio.wav",
+            "reaction_time_ms": 1588
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 49740,
+          "score": 0.93,
+          "correct": 14,
+          "total": 15,
+          "submitted_date": "2026-04-16"
+        },
+        "luyen_tap": {
+          "practice_id": 49743,
+          "score": 0.6,
+          "correct": 6,
+          "total": 10,
+          "submitted_date": "2026-04-16"
+        },
+        "lms_ids": {
+          "bai_tap": 49740,
+          "luyen_tap": 49743
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 20,
+            "total": 25,
+            "accuracy": 0.8
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 49740,
+            "question_id": 751898,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Look, read and write (Con hãy nhìn tranh, đọc và viết từ nhé!) 4. Is the car park in front of the supermarket?",
+            "comment_plain": "Đáp án chi tiết: - Is the car park in front of the supermarket? - No, it isn&#39;t. Tạm dịch: - Bãi đậu xe nằm trước si&ecirc;u thị phải kh&ocirc;ng? - Kh&ocirc;ng phải.",
+            "correct_answer": "No, it isn't. | No, it isn't | No, it is not. | No, it is not | No, it's not. | No, it's not",
+            "student_answer": "no",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/04/25/eba6_design--28scale-ngang-29--2860-29.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 49743,
+            "question_id": 751917,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Write the missing words (Con hãy nhìn và điền từ còn thiếu nhé!)",
+            "comment_plain": "Đáp án chi tiết: - Where is the market? - It&#39;s to the left of the square . Tạm dịch: - Chợ nằm ở đâu thế? - N&oacute; nằm ở b&ecirc;n trái quảng trường.",
+            "correct_answer": "square",
+            "student_answer": "sqare",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/04/25/e9c4_design--28scale-ngang-29--2864-29.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "1. - Where is the market? - It's to the left of the |.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 49743,
+            "question_id": 751916,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Write the missing words (Con hãy nhìn và điền từ còn thiếu nhé!)",
+            "comment_plain": "Đáp án chi tiết: - Is the police station to the right of the funfair? - Yes, it is. Tạm dịch: - Đồn cảnh sát nằm b&ecirc;n phải hội chợ vui chơi phải kh&ocirc;ng? - Đ&uacute;ng vậy.",
+            "correct_answer": "police station",
+            "student_answer": "police",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/04/25/b26d_design--28scale-ngang-29--2867-29.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "2. - Is the | to the right of the funfair? - Yes, it is.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 49743,
+            "question_id": 751920,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look, read and choose (Con hãy nhìn, đọc, chọn đáp án đúng nhé!) 2. Is the supermarket to the right of the car park?",
+            "comment_plain": "Is the supermarket to the right of the car park? (C&oacute; phải si&ecirc;u thị nằm b&ecirc;n phải bãi đậu xe kh&ocirc;ng?) => Yes, it is. (Đ&uacute;ng vậy.)",
+            "correct_answer": "Yes, it is.",
+            "student_answer": "No, it isn't. It's behind the car park.",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/04/25/62c4_design--28scale-ngang-29--2871-29.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "No, it isn't. It's behind the car park.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "Yes, it is.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 49743,
+            "question_id": 751922,
+            "question_folder": "English Tutoring - Level 4",
+            "question_type": "Một lựa chọn",
+            "question_text": "Look, read and choose (Con hãy nhìn, đọc, chọn đáp án đúng nhé!) 3. Where is the police station?",
+            "comment_plain": "Where is the police station? (Đồn cảnh sát nằm ở đâu vậy?) => It&#39;s to the right of the supermarket. (N&oacute; nằm ở b&ecirc;n phải si&ecirc;u thị.)",
+            "correct_answer": "It's to the right of the supermarket.",
+            "student_answer": "It's to the left of the supermarket.",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/04/25/213e_design--28scale-ngang-29--2869-29.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "It's to the left of the supermarket.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "It's to the right of the supermarket.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3768187,
       "program_id": null,
       "level": 4,
@@ -17099,9 +17103,9 @@
       "status": "completed",
       "last_activity_date": "2026-02-26",
       "days_since_last_practice": 54,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 0.0392,
-      "composite_priority_score": 0.5196,
+      "composite_priority_score": 0.5194,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -17328,9 +17332,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-12",
       "days_since_last_practice": 40,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9967,
       "weakness_score": 0.0,
-      "composite_priority_score": 0.5,
+      "composite_priority_score": 0.4984,
       "in_class": {
         "participated": true,
         "session_count": 1,

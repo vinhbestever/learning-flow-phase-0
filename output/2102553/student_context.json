@@ -31,6 +31,10 @@
       }
     },
     "weak_skills_global": [],
+    "critical_speaking_types": [
+      "brainstorm",
+      "free_speaking"
+    ],
     "overall_pronunciation_score_avg": 70.02,
     "overall_free_speaking_score_avg": 35.0,
     "overall_brainstorm_score_avg": 7.89,
@@ -44,7 +48,7 @@
       "incorrect": 24,
       "correct": 14
     },
-    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
     {
@@ -440,9 +444,9 @@
       "level": 4,
       "last_activity_date": "2026-03-12",
       "days_since_last_practice": 40,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9967,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9984,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1651,9 +1655,9 @@
       "level": 4,
       "last_activity_date": "2026-03-12",
       "days_since_last_practice": 40,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9967,
       "weakness_score": 0.576,
-      "composite_priority_score": 0.788,
+      "composite_priority_score": 0.7863,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1828,9 +1832,9 @@
       "level": 4,
       "last_activity_date": "2026-02-26",
       "days_since_last_practice": 54,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 0.515,
-      "composite_priority_score": 0.7575,
+      "composite_priority_score": 0.7573,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2431,9 +2435,9 @@
       "level": 4,
       "last_activity_date": "2026-03-26",
       "days_since_last_practice": 26,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9756,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7378,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2504,9 +2508,9 @@
       "level": 4,
       "last_activity_date": "2026-03-26",
       "days_since_last_practice": 26,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9756,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7378,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2606,9 +2610,9 @@
       "level": 4,
       "last_activity_date": "2026-03-26",
       "days_since_last_practice": 26,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9756,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7378,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2692,367 +2696,14 @@
       }
     },
     {
-      "lesson_id": 3781742,
-      "title": "Unit 1C: My house - Lesson 2: That is the kitchen where mother cooks.",
-      "level": 4,
-      "last_activity_date": "2026-04-14",
-      "days_since_last_practice": 7,
-      "forgetting_score": 0.9991,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.7495,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Hi — tell me one thing in your house you like. 🌟",
-          "expected_answer": "I like my bedroom because I can sleep and watch TV there.",
-          "target_objects": null,
-          "user_transcript": "Y.",
-          "score": 22,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 0,
-          "grammar_score": 44,
-          "timestamp": "2026-03-31",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnelbhou-5ccdc42f-audio.wav",
-          "reaction_time_ms": 2285
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "watch TV",
-            "sleep",
-            "cook"
-          ],
-          "user_transcript": "O.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-31",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnekk856-2e7e4974-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 35778,
-        "luyen_tap": 35781
-      }
-    },
-    {
-      "lesson_id": 3788391,
-      "title": "Unit 1C: My house - Lesson 3: Which toothbrush do you prefer?",
-      "level": 4,
-      "last_activity_date": "2026-04-14",
-      "days_since_last_practice": 7,
-      "forgetting_score": 0.9991,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.7495,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice — a house sounds cozy. What rooms are in your house? 🏠",
-          "expected_answer": "I have a kitchen, living room, two bedrooms, and one bathroom.",
-          "target_objects": null,
-          "user_transcript": "I have",
-          "score": 69,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 38,
-          "timestamp": "2026-04-02",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhgay6b-d2feccfb-audio.wav",
-          "reaction_time_ms": 1394
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Oh — can you finish the sentence about where you live? 🏠",
-          "expected_answer": "I live in an apartment with my family.",
-          "target_objects": null,
-          "user_transcript": "I.",
-          "score": 58.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 17,
-          "timestamp": "2026-04-02",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhga34a-43f7d3d1-audio.wav",
-          "reaction_time_ms": 1394
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Great, let’s start. Tell me about your house. 🏠",
-          "expected_answer": "I live in a small apartment with my parents and a brother.",
-          "target_objects": null,
-          "user_transcript": "I live in.",
-          "score": 40.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 66,
-          "grammar_score": 15,
-          "timestamp": "2026-04-02",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhg9q8a-a518ffba-audio.wav",
-          "reaction_time_ms": 1394
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Do you keep your toothbrush and toothpaste in the bathroom? 🪥",
-          "expected_answer": "Yes, I keep my toothbrush and toothpaste in the bathroom. I also have a towel and a comb there.",
-          "target_objects": null,
-          "user_transcript": "Yes, I.",
-          "score": 56.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 13,
-          "timestamp": "2026-04-02",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhg85bn-44831c01-audio.wav",
-          "reaction_time_ms": 1394
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What are they doing?",
-          "expected_answer": null,
-          "target_objects": [
-            "toothpaste",
-            "toothbrush",
-            "towel",
-            "comb"
-          ],
-          "user_transcript": "It break your big.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-02",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhfd1cp-bbf44e4a-audio.wav",
-          "reaction_time_ms": 4575
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 35788,
-        "luyen_tap": 35789
-      }
-    },
-    {
-      "lesson_id": 3937148,
-      "title": "Unit 1C: My house - Lesson 4: Review 1",
-      "level": 4,
-      "last_activity_date": "2026-04-14",
-      "days_since_last_practice": 7,
-      "forgetting_score": 0.9991,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.7495,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice, you enjoy the view from the balcony 😊 What can you see from there?",
-          "expected_answer": "I can see the garden and some trees from the balcony.",
-          "target_objects": null,
-          "user_transcript": "It's a garden and sometimes.",
-          "score": 44.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 78,
-          "grammar_score": 11,
-          "timestamp": "2026-04-14",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnylejts-9afdd763-audio.wav",
-          "reaction_time_ms": 690
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Good, watching TV on the sofa is relaxing 😊 What else is near your living room?",
-          "expected_answer": "There is a small balcony next to it and the kitchen is close by.",
-          "target_objects": null,
-          "user_transcript": "The nearest a living room is the balcony next to the.",
-          "score": 56,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 95,
-          "grammar_score": 17,
-          "timestamp": "2026-04-14",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnyldjea-29dede3b-audio.wav",
-          "reaction_time_ms": 690
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "Where is this?",
-          "expected_answer": null,
-          "target_objects": [
-            "living room",
-            "bedroom",
-            "bathroom"
-          ],
-          "user_transcript": "This is a living room.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "living room"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-14",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnykm3t8-55f169d6-audio.wav",
-          "reaction_time_ms": 1364
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "living room",
-            "bedroom",
-            "bathroom"
-          ],
-          "user_transcript": "This is a hall.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-14",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnyklvih-c3031f5c-audio.wav",
-          "reaction_time_ms": 863
-        },
-        {
-          "lms_type": "free_speaking",
-          "question": "How do you feel now?",
-          "expected_answer": null,
-          "target_objects": null,
-          "user_transcript": "How do you feel now?",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-14",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnykktvk-e10aebed-audio.wav",
-          "reaction_time_ms": 1356
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 35790,
-        "luyen_tap": 35790
-      }
-    },
-    {
-      "lesson_id": 3937151,
-      "title": "Unit 1C: My house - Lesson 5: Review 2",
-      "level": 4,
-      "last_activity_date": "2026-04-16",
-      "days_since_last_practice": 5,
-      "forgetting_score": 0.9933,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.7467,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Hi, nice to see you. Are you ready to talk about your house? 😄",
-          "expected_answer": "Yes, I'm ready. I live in a small apartment with my family.",
-          "target_objects": null,
-          "user_transcript": "Y.",
-          "score": 44.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 50,
-          "grammar_score": 39,
-          "timestamp": "2026-04-16",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1gehzu-57dc9a86-audio.wav",
-          "reaction_time_ms": 2586
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. How often do you cook rice and vegetables? 🍚",
-          "expected_answer": "I cook them almost every day, usually for dinner.",
-          "target_objects": null,
-          "user_transcript": "I cook them a month every day.",
-          "score": 62.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 75,
-          "grammar_score": 50,
-          "timestamp": "2026-04-16",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1gcnfl-2bad54c9-audio.wav",
-          "reaction_time_ms": 2586
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "Can you tell me what it is?",
-          "expected_answer": null,
-          "target_objects": [
-            "towel ",
-            "comb",
-            "toothbrush",
-            "toothpaste"
-          ],
-          "user_transcript": "This is a tower.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-16",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1fjrhm-31f87523-audio.wav",
-          "reaction_time_ms": 999
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "towel ",
-            "comb",
-            "toothbrush",
-            "toothpaste"
-          ],
-          "user_transcript": "This is a bathroom room.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-16",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1fjj5w-960e6b13-audio.wav",
-          "reaction_time_ms": 2669
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 36053,
-        "luyen_tap": 36049
-      }
-    },
-    {
       "lesson_id": 3765269,
       "title": "Unit 3B: School Subjects - Lesson 3: Where do you learn music?",
       "level": 4,
       "last_activity_date": "2026-02-24",
       "days_since_last_practice": 56,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9997,
       "weakness_score": 0.467,
-      "composite_priority_score": 0.7335,
+      "composite_priority_score": 0.7334,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -3484,9 +3135,9 @@
       "level": 4,
       "last_activity_date": "2026-03-19",
       "days_since_last_practice": 33,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.991,
       "weakness_score": 0.3825,
-      "composite_priority_score": 0.6913,
+      "composite_priority_score": 0.6867,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -3520,9 +3171,9 @@
       "level": 4,
       "last_activity_date": "2026-03-12",
       "days_since_last_practice": 40,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9967,
       "weakness_score": 0.2548,
-      "composite_priority_score": 0.6274,
+      "composite_priority_score": 0.6258,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -3581,14 +3232,276 @@
       }
     },
     {
+      "lesson_id": 3781742,
+      "title": "Unit 1C: My house - Lesson 2: That is the kitchen where mother cooks.",
+      "level": 4,
+      "last_activity_date": "2026-04-14",
+      "days_since_last_practice": 7,
+      "forgetting_score": 0.6321,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.566,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Hi — tell me one thing in your house you like. 🌟",
+          "expected_answer": "I like my bedroom because I can sleep and watch TV there.",
+          "target_objects": null,
+          "user_transcript": "Y.",
+          "score": 22,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 44,
+          "timestamp": "2026-03-31",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnelbhou-5ccdc42f-audio.wav",
+          "reaction_time_ms": 2285
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "watch TV",
+            "sleep",
+            "cook"
+          ],
+          "user_transcript": "O.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-31",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnekk856-2e7e4974-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 35778,
+        "luyen_tap": 35781
+      }
+    },
+    {
+      "lesson_id": 3788391,
+      "title": "Unit 1C: My house - Lesson 3: Which toothbrush do you prefer?",
+      "level": 4,
+      "last_activity_date": "2026-04-14",
+      "days_since_last_practice": 7,
+      "forgetting_score": 0.6321,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.566,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Nice — a house sounds cozy. What rooms are in your house? 🏠",
+          "expected_answer": "I have a kitchen, living room, two bedrooms, and one bathroom.",
+          "target_objects": null,
+          "user_transcript": "I have",
+          "score": 69,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 38,
+          "timestamp": "2026-04-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhgay6b-d2feccfb-audio.wav",
+          "reaction_time_ms": 1394
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Oh — can you finish the sentence about where you live? 🏠",
+          "expected_answer": "I live in an apartment with my family.",
+          "target_objects": null,
+          "user_transcript": "I.",
+          "score": 58.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 17,
+          "timestamp": "2026-04-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhga34a-43f7d3d1-audio.wav",
+          "reaction_time_ms": 1394
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Great, let’s start. Tell me about your house. 🏠",
+          "expected_answer": "I live in a small apartment with my parents and a brother.",
+          "target_objects": null,
+          "user_transcript": "I live in.",
+          "score": 40.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 66,
+          "grammar_score": 15,
+          "timestamp": "2026-04-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhg9q8a-a518ffba-audio.wav",
+          "reaction_time_ms": 1394
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Do you keep your toothbrush and toothpaste in the bathroom? 🪥",
+          "expected_answer": "Yes, I keep my toothbrush and toothpaste in the bathroom. I also have a towel and a comb there.",
+          "target_objects": null,
+          "user_transcript": "Yes, I.",
+          "score": 56.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 13,
+          "timestamp": "2026-04-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhg85bn-44831c01-audio.wav",
+          "reaction_time_ms": 1394
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What are they doing?",
+          "expected_answer": null,
+          "target_objects": [
+            "toothpaste",
+            "toothbrush",
+            "towel",
+            "comb"
+          ],
+          "user_transcript": "It break your big.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-02",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhfd1cp-bbf44e4a-audio.wav",
+          "reaction_time_ms": 4575
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 35788,
+        "luyen_tap": 35789
+      }
+    },
+    {
+      "lesson_id": 3937148,
+      "title": "Unit 1C: My house - Lesson 4: Review 1",
+      "level": 4,
+      "last_activity_date": "2026-04-14",
+      "days_since_last_practice": 7,
+      "forgetting_score": 0.6321,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.566,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Nice, you enjoy the view from the balcony 😊 What can you see from there?",
+          "expected_answer": "I can see the garden and some trees from the balcony.",
+          "target_objects": null,
+          "user_transcript": "It's a garden and sometimes.",
+          "score": 44.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 78,
+          "grammar_score": 11,
+          "timestamp": "2026-04-14",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnylejts-9afdd763-audio.wav",
+          "reaction_time_ms": 690
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good, watching TV on the sofa is relaxing 😊 What else is near your living room?",
+          "expected_answer": "There is a small balcony next to it and the kitchen is close by.",
+          "target_objects": null,
+          "user_transcript": "The nearest a living room is the balcony next to the.",
+          "score": 56,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 95,
+          "grammar_score": 17,
+          "timestamp": "2026-04-14",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnyldjea-29dede3b-audio.wav",
+          "reaction_time_ms": 690
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "Where is this?",
+          "expected_answer": null,
+          "target_objects": [
+            "living room",
+            "bedroom",
+            "bathroom"
+          ],
+          "user_transcript": "This is a living room.",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "living room"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-14",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnykm3t8-55f169d6-audio.wav",
+          "reaction_time_ms": 1364
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "living room",
+            "bedroom",
+            "bathroom"
+          ],
+          "user_transcript": "This is a hall.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-14",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnyklvih-c3031f5c-audio.wav",
+          "reaction_time_ms": 863
+        },
+        {
+          "lms_type": "free_speaking",
+          "question": "How do you feel now?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "How do you feel now?",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-14",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnykktvk-e10aebed-audio.wav",
+          "reaction_time_ms": 1356
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 35790,
+        "luyen_tap": 35790
+      }
+    },
+    {
       "lesson_id": 3729130,
       "title": "Unit 3B: School Subjects - Lesson 1: I'm good at English.",
       "level": 4,
       "last_activity_date": "2026-02-26",
       "days_since_last_practice": 54,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 0.0741,
-      "composite_priority_score": 0.5371,
+      "composite_priority_score": 0.5369,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -3776,6 +3689,97 @@
       "practice_ids": {
         "bai_tap": 32390,
         "luyen_tap": 32391
+      }
+    },
+    {
+      "lesson_id": 3937151,
+      "title": "Unit 1C: My house - Lesson 5: Review 2",
+      "level": 4,
+      "last_activity_date": "2026-04-16",
+      "days_since_last_practice": 5,
+      "forgetting_score": 0.5105,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.5052,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Hi, nice to see you. Are you ready to talk about your house? 😄",
+          "expected_answer": "Yes, I'm ready. I live in a small apartment with my family.",
+          "target_objects": null,
+          "user_transcript": "Y.",
+          "score": 44.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 39,
+          "timestamp": "2026-04-16",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1gehzu-57dc9a86-audio.wav",
+          "reaction_time_ms": 2586
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. How often do you cook rice and vegetables? 🍚",
+          "expected_answer": "I cook them almost every day, usually for dinner.",
+          "target_objects": null,
+          "user_transcript": "I cook them a month every day.",
+          "score": 62.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 75,
+          "grammar_score": 50,
+          "timestamp": "2026-04-16",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1gcnfl-2bad54c9-audio.wav",
+          "reaction_time_ms": 2586
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "Can you tell me what it is?",
+          "expected_answer": null,
+          "target_objects": [
+            "towel ",
+            "comb",
+            "toothbrush",
+            "toothpaste"
+          ],
+          "user_transcript": "This is a tower.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-16",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1fjrhm-31f87523-audio.wav",
+          "reaction_time_ms": 999
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "towel ",
+            "comb",
+            "toothbrush",
+            "toothpaste"
+          ],
+          "user_transcript": "This is a bathroom room.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-16",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1fjj5w-960e6b13-audio.wav",
+          "reaction_time_ms": 2669
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 36053,
+        "luyen_tap": 36049
       }
     },
     {
@@ -4741,9 +4745,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-12",
       "days_since_last_practice": 40,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9967,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9984,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -6758,9 +6762,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-12",
       "days_since_last_practice": 40,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9967,
       "weakness_score": 0.576,
-      "composite_priority_score": 0.788,
+      "composite_priority_score": 0.7863,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -7156,9 +7160,9 @@
       "status": "completed",
       "last_activity_date": "2026-02-26",
       "days_since_last_practice": 54,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 0.515,
-      "composite_priority_score": 0.7575,
+      "composite_priority_score": 0.7573,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -8489,9 +8493,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-26",
       "days_since_last_practice": 26,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9756,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7378,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -8618,9 +8622,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-26",
       "days_since_last_practice": 26,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9756,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7378,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -8776,9 +8780,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-26",
       "days_since_last_practice": 26,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9756,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7378,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -8920,584 +8924,6 @@
       }
     },
     {
-      "lesson_id": 3781742,
-      "program_id": null,
-      "level": 4,
-      "position": 2,
-      "title": "Unit 1C: My house - Lesson 2: That is the kitchen where mother cooks.",
-      "desc": "- cook, sleep, watch TV, grow plants, enjoy the view, go upstairs, go downstairs\n- That is the kitchen where mother cooks.",
-      "status": "completed",
-      "last_activity_date": "2026-04-14",
-      "days_since_last_practice": 7,
-      "forgetting_score": 0.9991,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.7495,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 41,
-          "audio_turns": 51,
-          "avg_reaction_ms": 1682,
-          "fastest_reaction_ms": 819,
-          "total_duration_ms": 1381971,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-03-31",
-        "pronunciation_attempts": 29,
-        "pronunciation_score_avg": 81.9,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 100.0,
-        "free_speaking_answer_type_dist": {
-          "accordant": 1
-        },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 83.35,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Hi — tell me one thing in your house you like. 🌟",
-            "expected_answer": "I like my bedroom because I can sleep and watch TV there.",
-            "target_objects": null,
-            "user_transcript": "Y.",
-            "score": 22,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 0,
-            "grammar_score": 44,
-            "timestamp": "2026-03-31",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnelbhou-5ccdc42f-audio.wav",
-            "reaction_time_ms": 2285
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "watch TV",
-              "sleep",
-              "cook"
-            ],
-            "user_transcript": "O.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-31",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnekk856-2e7e4974-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 35778,
-          "score": 1,
-          "correct": 15,
-          "total": 15,
-          "submitted_date": "2026-04-14"
-        },
-        "luyen_tap": {
-          "practice_id": 35781,
-          "score": 1,
-          "correct": 10,
-          "total": 10,
-          "submitted_date": "2026-04-14"
-        },
-        "lms_ids": {
-          "bai_tap": 35778,
-          "luyen_tap": 35781
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 4": {
-            "correct": 25,
-            "total": 25,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3788391,
-      "program_id": null,
-      "level": 4,
-      "position": 3,
-      "title": "Unit 1C: My house - Lesson 3: Which toothbrush do you prefer?",
-      "desc": "- toothbrush, toothpaste, towel, comb, take a bath, take a shower\n- Which toothbrush do you prefer?\n+ I prefer the toothbrush which is yellow.\n- Do you prefer taking a bath or taking a shower?",
-      "status": "completed",
-      "last_activity_date": "2026-04-14",
-      "days_since_last_practice": 7,
-      "forgetting_score": 0.9991,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.7495,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 54,
-          "audio_turns": 55,
-          "avg_reaction_ms": 1441,
-          "fastest_reaction_ms": 846,
-          "total_duration_ms": 1733857,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-02",
-        "pronunciation_attempts": 34,
-        "pronunciation_score_avg": 77.21,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 100.0,
-        "free_speaking_answer_type_dist": {
-          "accordant": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 81.25,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice — a house sounds cozy. What rooms are in your house? 🏠",
-            "expected_answer": "I have a kitchen, living room, two bedrooms, and one bathroom.",
-            "target_objects": null,
-            "user_transcript": "I have",
-            "score": 69,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 38,
-            "timestamp": "2026-04-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhgay6b-d2feccfb-audio.wav",
-            "reaction_time_ms": 1394
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Oh — can you finish the sentence about where you live? 🏠",
-            "expected_answer": "I live in an apartment with my family.",
-            "target_objects": null,
-            "user_transcript": "I.",
-            "score": 58.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 17,
-            "timestamp": "2026-04-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhga34a-43f7d3d1-audio.wav",
-            "reaction_time_ms": 1394
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Great, let’s start. Tell me about your house. 🏠",
-            "expected_answer": "I live in a small apartment with my parents and a brother.",
-            "target_objects": null,
-            "user_transcript": "I live in.",
-            "score": 40.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 66,
-            "grammar_score": 15,
-            "timestamp": "2026-04-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhg9q8a-a518ffba-audio.wav",
-            "reaction_time_ms": 1394
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Do you keep your toothbrush and toothpaste in the bathroom? 🪥",
-            "expected_answer": "Yes, I keep my toothbrush and toothpaste in the bathroom. I also have a towel and a comb there.",
-            "target_objects": null,
-            "user_transcript": "Yes, I.",
-            "score": 56.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 13,
-            "timestamp": "2026-04-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhg85bn-44831c01-audio.wav",
-            "reaction_time_ms": 1394
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What are they doing?",
-            "expected_answer": null,
-            "target_objects": [
-              "toothpaste",
-              "toothbrush",
-              "towel",
-              "comb"
-            ],
-            "user_transcript": "It break your big.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhfd1cp-bbf44e4a-audio.wav",
-            "reaction_time_ms": 4575
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 35788,
-          "score": 1,
-          "correct": 15,
-          "total": 15,
-          "submitted_date": "2026-04-14"
-        },
-        "luyen_tap": {
-          "practice_id": 35789,
-          "score": 1,
-          "correct": 6,
-          "total": 6,
-          "submitted_date": "2026-04-14"
-        },
-        "lms_ids": {
-          "bai_tap": 35788,
-          "luyen_tap": 35789
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 4": {
-            "correct": 21,
-            "total": 21,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3937148,
-      "program_id": null,
-      "level": 4,
-      "position": 4,
-      "title": "Unit 1C: My house - Lesson 4: Review 1",
-      "desc": "- living room, kitchen, bedroom, balcony, elevator, garden, bathroom\ncook, sleep, watch TV, grow plants, enjoy the view, go upstairs, go downstairs\n- Are there any elevators in your house?\n(+) Yes, th",
-      "status": "completed",
-      "last_activity_date": "2026-04-14",
-      "days_since_last_practice": 7,
-      "forgetting_score": 0.9991,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.7495,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 52,
-          "audio_turns": 56,
-          "avg_reaction_ms": 1020,
-          "fastest_reaction_ms": 690,
-          "total_duration_ms": 1417493,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-14",
-        "pronunciation_attempts": 36,
-        "pronunciation_score_avg": 92.72,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1,
-          "correct": 1
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 83.71,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice, you enjoy the view from the balcony 😊 What can you see from there?",
-            "expected_answer": "I can see the garden and some trees from the balcony.",
-            "target_objects": null,
-            "user_transcript": "It's a garden and sometimes.",
-            "score": 44.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 78,
-            "grammar_score": 11,
-            "timestamp": "2026-04-14",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnylejts-9afdd763-audio.wav",
-            "reaction_time_ms": 690
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Good, watching TV on the sofa is relaxing 😊 What else is near your living room?",
-            "expected_answer": "There is a small balcony next to it and the kitchen is close by.",
-            "target_objects": null,
-            "user_transcript": "The nearest a living room is the balcony next to the.",
-            "score": 56,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 95,
-            "grammar_score": 17,
-            "timestamp": "2026-04-14",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnyldjea-29dede3b-audio.wav",
-            "reaction_time_ms": 690
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "Where is this?",
-            "expected_answer": null,
-            "target_objects": [
-              "living room",
-              "bedroom",
-              "bathroom"
-            ],
-            "user_transcript": "This is a living room.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "living room"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-14",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnykm3t8-55f169d6-audio.wav",
-            "reaction_time_ms": 1364
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "living room",
-              "bedroom",
-              "bathroom"
-            ],
-            "user_transcript": "This is a hall.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-14",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnyklvih-c3031f5c-audio.wav",
-            "reaction_time_ms": 863
-          },
-          {
-            "lms_type": "free_speaking",
-            "question": "How do you feel now?",
-            "expected_answer": null,
-            "target_objects": null,
-            "user_transcript": "How do you feel now?",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-14",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnykktvk-e10aebed-audio.wav",
-            "reaction_time_ms": 1356
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 35790,
-          "score": 1,
-          "correct": 10,
-          "total": 10,
-          "submitted_date": "2026-04-14"
-        },
-        "luyen_tap": {
-          "practice_id": 35790,
-          "score": 1,
-          "correct": 10,
-          "total": 10,
-          "submitted_date": "2026-04-14"
-        },
-        "lms_ids": {
-          "bai_tap": 35790,
-          "luyen_tap": 35790
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 4": {
-            "correct": 20,
-            "total": 20,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3937151,
-      "program_id": null,
-      "level": 4,
-      "position": 5,
-      "title": "Unit 1C: My house - Lesson 5: Review 2",
-      "desc": "- toothbrush, toothpaste, towel, comb, take a bath, take a shower\n- Which toothbrush do you prefer?\n+ I prefer the toothbrush which is yellow.\n- Do you prefer taking a bath or taking a shower?",
-      "status": "completed",
-      "last_activity_date": "2026-04-16",
-      "days_since_last_practice": 5,
-      "forgetting_score": 0.9933,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.7467,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 63,
-          "audio_turns": 58,
-          "avg_reaction_ms": 1808,
-          "fastest_reaction_ms": 889,
-          "total_duration_ms": 1657496,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-16",
-        "pronunciation_attempts": 40,
-        "pronunciation_score_avg": 73.9,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 100.0,
-        "free_speaking_answer_type_dist": {
-          "accordant": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 83.46,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Hi, nice to see you. Are you ready to talk about your house? 😄",
-            "expected_answer": "Yes, I'm ready. I live in a small apartment with my family.",
-            "target_objects": null,
-            "user_transcript": "Y.",
-            "score": 44.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 50,
-            "grammar_score": 39,
-            "timestamp": "2026-04-16",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1gehzu-57dc9a86-audio.wav",
-            "reaction_time_ms": 2586
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. How often do you cook rice and vegetables? 🍚",
-            "expected_answer": "I cook them almost every day, usually for dinner.",
-            "target_objects": null,
-            "user_transcript": "I cook them a month every day.",
-            "score": 62.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 75,
-            "grammar_score": 50,
-            "timestamp": "2026-04-16",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1gcnfl-2bad54c9-audio.wav",
-            "reaction_time_ms": 2586
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "Can you tell me what it is?",
-            "expected_answer": null,
-            "target_objects": [
-              "towel ",
-              "comb",
-              "toothbrush",
-              "toothpaste"
-            ],
-            "user_transcript": "This is a tower.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-16",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1fjrhm-31f87523-audio.wav",
-            "reaction_time_ms": 999
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "towel ",
-              "comb",
-              "toothbrush",
-              "toothpaste"
-            ],
-            "user_transcript": "This is a bathroom room.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-16",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1fjj5w-960e6b13-audio.wav",
-            "reaction_time_ms": 2669
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 36053,
-          "score": 1,
-          "correct": 15,
-          "total": 15,
-          "submitted_date": "2026-04-16"
-        },
-        "luyen_tap": {
-          "practice_id": 36049,
-          "score": 1,
-          "correct": 10,
-          "total": 10,
-          "submitted_date": "2026-04-16"
-        },
-        "lms_ids": {
-          "bai_tap": 36053,
-          "luyen_tap": 36049
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 4": {
-            "correct": 25,
-            "total": 25,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
       "lesson_id": 3765269,
       "program_id": null,
       "level": 4,
@@ -9507,9 +8933,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-02-24",
       "days_since_last_practice": 56,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9997,
       "weakness_score": 0.467,
-      "composite_priority_score": 0.7335,
+      "composite_priority_score": 0.7334,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -10224,9 +9650,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-19",
       "days_since_last_practice": 33,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.991,
       "weakness_score": 0.3825,
-      "composite_priority_score": 0.6913,
+      "composite_priority_score": 0.6867,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -10300,9 +9726,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-12",
       "days_since_last_practice": 40,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9967,
       "weakness_score": 0.2548,
-      "composite_priority_score": 0.6274,
+      "composite_priority_score": 0.6258,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -10569,9 +9995,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-26",
       "days_since_last_practice": 26,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9756,
       "weakness_score": 0.1864,
-      "composite_priority_score": 0.5932,
+      "composite_priority_score": 0.581,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -10614,6 +10040,437 @@
           "luyen_tap": 49743
         },
         "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3781742,
+      "program_id": null,
+      "level": 4,
+      "position": 2,
+      "title": "Unit 1C: My house - Lesson 2: That is the kitchen where mother cooks.",
+      "desc": "- cook, sleep, watch TV, grow plants, enjoy the view, go upstairs, go downstairs\n- That is the kitchen where mother cooks.",
+      "status": "completed",
+      "last_activity_date": "2026-04-14",
+      "days_since_last_practice": 7,
+      "forgetting_score": 0.6321,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.566,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 41,
+          "audio_turns": 51,
+          "avg_reaction_ms": 1682,
+          "fastest_reaction_ms": 819,
+          "total_duration_ms": 1381971,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-31",
+        "pronunciation_attempts": 29,
+        "pronunciation_score_avg": 81.9,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 83.35,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Hi — tell me one thing in your house you like. 🌟",
+            "expected_answer": "I like my bedroom because I can sleep and watch TV there.",
+            "target_objects": null,
+            "user_transcript": "Y.",
+            "score": 22,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 44,
+            "timestamp": "2026-03-31",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnelbhou-5ccdc42f-audio.wav",
+            "reaction_time_ms": 2285
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "watch TV",
+              "sleep",
+              "cook"
+            ],
+            "user_transcript": "O.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-31",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/31/admin/mnekk856-2e7e4974-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 35778,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-04-14"
+        },
+        "luyen_tap": {
+          "practice_id": 35781,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-04-14"
+        },
+        "lms_ids": {
+          "bai_tap": 35778,
+          "luyen_tap": 35781
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 25,
+            "total": 25,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3788391,
+      "program_id": null,
+      "level": 4,
+      "position": 3,
+      "title": "Unit 1C: My house - Lesson 3: Which toothbrush do you prefer?",
+      "desc": "- toothbrush, toothpaste, towel, comb, take a bath, take a shower\n- Which toothbrush do you prefer?\n+ I prefer the toothbrush which is yellow.\n- Do you prefer taking a bath or taking a shower?",
+      "status": "completed",
+      "last_activity_date": "2026-04-14",
+      "days_since_last_practice": 7,
+      "forgetting_score": 0.6321,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.566,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 54,
+          "audio_turns": 55,
+          "avg_reaction_ms": 1441,
+          "fastest_reaction_ms": 846,
+          "total_duration_ms": 1733857,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-02",
+        "pronunciation_attempts": 34,
+        "pronunciation_score_avg": 77.21,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 2
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 81.25,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice — a house sounds cozy. What rooms are in your house? 🏠",
+            "expected_answer": "I have a kitchen, living room, two bedrooms, and one bathroom.",
+            "target_objects": null,
+            "user_transcript": "I have",
+            "score": 69,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 38,
+            "timestamp": "2026-04-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhgay6b-d2feccfb-audio.wav",
+            "reaction_time_ms": 1394
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh — can you finish the sentence about where you live? 🏠",
+            "expected_answer": "I live in an apartment with my family.",
+            "target_objects": null,
+            "user_transcript": "I.",
+            "score": 58.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 17,
+            "timestamp": "2026-04-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhga34a-43f7d3d1-audio.wav",
+            "reaction_time_ms": 1394
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Great, let’s start. Tell me about your house. 🏠",
+            "expected_answer": "I live in a small apartment with my parents and a brother.",
+            "target_objects": null,
+            "user_transcript": "I live in.",
+            "score": 40.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 66,
+            "grammar_score": 15,
+            "timestamp": "2026-04-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhg9q8a-a518ffba-audio.wav",
+            "reaction_time_ms": 1394
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Do you keep your toothbrush and toothpaste in the bathroom? 🪥",
+            "expected_answer": "Yes, I keep my toothbrush and toothpaste in the bathroom. I also have a towel and a comb there.",
+            "target_objects": null,
+            "user_transcript": "Yes, I.",
+            "score": 56.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 13,
+            "timestamp": "2026-04-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhg85bn-44831c01-audio.wav",
+            "reaction_time_ms": 1394
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What are they doing?",
+            "expected_answer": null,
+            "target_objects": [
+              "toothpaste",
+              "toothbrush",
+              "towel",
+              "comb"
+            ],
+            "user_transcript": "It break your big.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-02",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/02/admin/mnhfd1cp-bbf44e4a-audio.wav",
+            "reaction_time_ms": 4575
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 35788,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-04-14"
+        },
+        "luyen_tap": {
+          "practice_id": 35789,
+          "score": 1,
+          "correct": 6,
+          "total": 6,
+          "submitted_date": "2026-04-14"
+        },
+        "lms_ids": {
+          "bai_tap": 35788,
+          "luyen_tap": 35789
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 21,
+            "total": 21,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3937148,
+      "program_id": null,
+      "level": 4,
+      "position": 4,
+      "title": "Unit 1C: My house - Lesson 4: Review 1",
+      "desc": "- living room, kitchen, bedroom, balcony, elevator, garden, bathroom\ncook, sleep, watch TV, grow plants, enjoy the view, go upstairs, go downstairs\n- Are there any elevators in your house?\n(+) Yes, th",
+      "status": "completed",
+      "last_activity_date": "2026-04-14",
+      "days_since_last_practice": 7,
+      "forgetting_score": 0.6321,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.566,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 52,
+          "audio_turns": 56,
+          "avg_reaction_ms": 1020,
+          "fastest_reaction_ms": 690,
+          "total_duration_ms": 1417493,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-14",
+        "pronunciation_attempts": 36,
+        "pronunciation_score_avg": 92.72,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1,
+          "correct": 1
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 83.71,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice, you enjoy the view from the balcony 😊 What can you see from there?",
+            "expected_answer": "I can see the garden and some trees from the balcony.",
+            "target_objects": null,
+            "user_transcript": "It's a garden and sometimes.",
+            "score": 44.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 78,
+            "grammar_score": 11,
+            "timestamp": "2026-04-14",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnylejts-9afdd763-audio.wav",
+            "reaction_time_ms": 690
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good, watching TV on the sofa is relaxing 😊 What else is near your living room?",
+            "expected_answer": "There is a small balcony next to it and the kitchen is close by.",
+            "target_objects": null,
+            "user_transcript": "The nearest a living room is the balcony next to the.",
+            "score": 56,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 95,
+            "grammar_score": 17,
+            "timestamp": "2026-04-14",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnyldjea-29dede3b-audio.wav",
+            "reaction_time_ms": 690
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "Where is this?",
+            "expected_answer": null,
+            "target_objects": [
+              "living room",
+              "bedroom",
+              "bathroom"
+            ],
+            "user_transcript": "This is a living room.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "living room"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-14",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnykm3t8-55f169d6-audio.wav",
+            "reaction_time_ms": 1364
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "living room",
+              "bedroom",
+              "bathroom"
+            ],
+            "user_transcript": "This is a hall.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-14",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnyklvih-c3031f5c-audio.wav",
+            "reaction_time_ms": 863
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "How do you feel now?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "How do you feel now?",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-14",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnykktvk-e10aebed-audio.wav",
+            "reaction_time_ms": 1356
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 35790,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-04-14"
+        },
+        "luyen_tap": {
+          "practice_id": 35790,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-04-14"
+        },
+        "lms_ids": {
+          "bai_tap": 35790,
+          "luyen_tap": 35790
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 20,
+            "total": 20,
+            "accuracy": 1.0
+          }
+        },
         "weak_skills": [],
         "worst_questions": [],
         "not_attempted_preview": {}
@@ -10701,9 +10558,9 @@
       "status": "completed",
       "last_activity_date": "2026-02-26",
       "days_since_last_practice": 54,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 0.0741,
-      "composite_priority_score": 0.5371,
+      "composite_priority_score": 0.5369,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -11080,6 +10937,153 @@
       }
     },
     {
+      "lesson_id": 3937151,
+      "program_id": null,
+      "level": 4,
+      "position": 5,
+      "title": "Unit 1C: My house - Lesson 5: Review 2",
+      "desc": "- toothbrush, toothpaste, towel, comb, take a bath, take a shower\n- Which toothbrush do you prefer?\n+ I prefer the toothbrush which is yellow.\n- Do you prefer taking a bath or taking a shower?",
+      "status": "completed",
+      "last_activity_date": "2026-04-16",
+      "days_since_last_practice": 5,
+      "forgetting_score": 0.5105,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.5052,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 63,
+          "audio_turns": 58,
+          "avg_reaction_ms": 1808,
+          "fastest_reaction_ms": 889,
+          "total_duration_ms": 1657496,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-16",
+        "pronunciation_attempts": 40,
+        "pronunciation_score_avg": 73.9,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 2
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 83.46,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Hi, nice to see you. Are you ready to talk about your house? 😄",
+            "expected_answer": "Yes, I'm ready. I live in a small apartment with my family.",
+            "target_objects": null,
+            "user_transcript": "Y.",
+            "score": 44.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 39,
+            "timestamp": "2026-04-16",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1gehzu-57dc9a86-audio.wav",
+            "reaction_time_ms": 2586
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. How often do you cook rice and vegetables? 🍚",
+            "expected_answer": "I cook them almost every day, usually for dinner.",
+            "target_objects": null,
+            "user_transcript": "I cook them a month every day.",
+            "score": 62.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 75,
+            "grammar_score": 50,
+            "timestamp": "2026-04-16",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1gcnfl-2bad54c9-audio.wav",
+            "reaction_time_ms": 2586
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "Can you tell me what it is?",
+            "expected_answer": null,
+            "target_objects": [
+              "towel ",
+              "comb",
+              "toothbrush",
+              "toothpaste"
+            ],
+            "user_transcript": "This is a tower.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-16",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1fjrhm-31f87523-audio.wav",
+            "reaction_time_ms": 999
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "towel ",
+              "comb",
+              "toothbrush",
+              "toothpaste"
+            ],
+            "user_transcript": "This is a bathroom room.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-16",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1fjj5w-960e6b13-audio.wav",
+            "reaction_time_ms": 2669
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 36053,
+          "score": 1,
+          "correct": 15,
+          "total": 15,
+          "submitted_date": "2026-04-16"
+        },
+        "luyen_tap": {
+          "practice_id": 36049,
+          "score": 1,
+          "correct": 10,
+          "total": 10,
+          "submitted_date": "2026-04-16"
+        },
+        "lms_ids": {
+          "bai_tap": 36053,
+          "luyen_tap": 36049
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 4": {
+            "correct": 25,
+            "total": 25,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3492725,
       "program_id": null,
       "level": 4,
@@ -11391,123 +11395,6 @@
             "accuracy": 1.0
           }
         },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3765277,
-      "program_id": null,
-      "level": null,
-      "position": null,
-      "title": null,
-      "desc": null,
-      "status": "in_class_only",
-      "last_activity_date": "2026-03-24",
-      "days_since_last_practice": 28,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.0,
-      "composite_priority_score": 0.5,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 56,
-          "audio_turns": 41,
-          "avg_reaction_ms": 2039,
-          "fastest_reaction_ms": 835,
-          "total_duration_ms": 1388779,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-03-24",
-        "pronunciation_attempts": 28,
-        "pronunciation_score_avg": 85.68,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 100.0,
-        "free_speaking_answer_type_dist": {
-          "accordant": 1
-        },
-        "brainstorm_attempts": 0,
-        "brainstorm_score_avg": null,
-        "brainstorm_answer_type_dist": {},
-        "conversation_attempts": 10,
-        "conversation_score_avg": 82.55,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Do you read that book in the library? 😊",
-            "expected_answer": "Yes, I read it in the library.",
-            "target_objects": null,
-            "user_transcript": "I read.",
-            "score": 68.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 37,
-            "timestamp": "2026-03-24",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l8lfj-d8fd451c-audio.wav",
-            "reaction_time_ms": 3287
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Do you have a favorite book about history? 😊",
-            "expected_answer": "Yes, I have a favorite book about history. It is about ancient Egypt and I like the stories.",
-            "target_objects": null,
-            "user_transcript": "I like to read a book.",
-            "score": 61.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 55,
-            "grammar_score": 68,
-            "timestamp": "2026-03-24",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l87w0-49376b10-audio.wav",
-            "reaction_time_ms": 3287
-          },
-          {
-            "lms_type": "conversation",
-            "question": "History is interesting. Why do you like history? 😊",
-            "expected_answer": "I like history because I enjoy stories about the past and famous people.",
-            "target_objects": null,
-            "user_transcript": "I like history because it enjoys stories about you.",
-            "score": 69,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 90,
-            "grammar_score": 48,
-            "timestamp": "2026-03-24",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l6to8-19d1d685-audio.wav",
-            "reaction_time_ms": 3287
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Good. Let’s start with a sentence about school subjects. Tell me one subject you like.",
-            "expected_answer": "I like Science because it is interesting and not too difficult.",
-            "target_objects": null,
-            "user_transcript": "I like.",
-            "score": 67.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 35,
-            "timestamp": "2026-03-24",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l2j94-17993104-audio.wav",
-            "reaction_time_ms": 3287
-          }
-        ]
-      },
-      "homework": {
-        "attempted": false,
-        "bai_tap": null,
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": null,
-          "luyen_tap": null
-        },
-        "skill_breakdown": {},
         "weak_skills": [],
         "worst_questions": [],
         "not_attempted_preview": {}
@@ -12321,6 +12208,123 @@
             }
           ]
         }
+      }
+    },
+    {
+      "lesson_id": 3765277,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-03-24",
+      "days_since_last_practice": 28,
+      "forgetting_score": 0.9817,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.4909,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 56,
+          "audio_turns": 41,
+          "avg_reaction_ms": 2039,
+          "fastest_reaction_ms": 835,
+          "total_duration_ms": 1388779,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-24",
+        "pronunciation_attempts": 28,
+        "pronunciation_score_avg": 85.68,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 10,
+        "conversation_score_avg": 82.55,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Do you read that book in the library? 😊",
+            "expected_answer": "Yes, I read it in the library.",
+            "target_objects": null,
+            "user_transcript": "I read.",
+            "score": 68.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 37,
+            "timestamp": "2026-03-24",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l8lfj-d8fd451c-audio.wav",
+            "reaction_time_ms": 3287
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Do you have a favorite book about history? 😊",
+            "expected_answer": "Yes, I have a favorite book about history. It is about ancient Egypt and I like the stories.",
+            "target_objects": null,
+            "user_transcript": "I like to read a book.",
+            "score": 61.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 55,
+            "grammar_score": 68,
+            "timestamp": "2026-03-24",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l87w0-49376b10-audio.wav",
+            "reaction_time_ms": 3287
+          },
+          {
+            "lms_type": "conversation",
+            "question": "History is interesting. Why do you like history? 😊",
+            "expected_answer": "I like history because I enjoy stories about the past and famous people.",
+            "target_objects": null,
+            "user_transcript": "I like history because it enjoys stories about you.",
+            "score": 69,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 90,
+            "grammar_score": 48,
+            "timestamp": "2026-03-24",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l6to8-19d1d685-audio.wav",
+            "reaction_time_ms": 3287
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. Let’s start with a sentence about school subjects. Tell me one subject you like.",
+            "expected_answer": "I like Science because it is interesting and not too difficult.",
+            "target_objects": null,
+            "user_transcript": "I like.",
+            "score": 67.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 35,
+            "timestamp": "2026-03-24",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/24/admin/mn4l2j94-17993104-audio.wav",
+            "reaction_time_ms": 3287
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
       }
     }
   ]

@@ -38,6 +38,10 @@
       "Từ vựng",
       "English Tutoring - Level 2"
     ],
+    "critical_speaking_types": [
+      "brainstorm",
+      "free_speaking"
+    ],
     "overall_pronunciation_score_avg": 44.76,
     "overall_free_speaking_score_avg": 0.0,
     "overall_brainstorm_score_avg": 0.0,
@@ -50,7 +54,7 @@
       "incorrect": 6,
       "correct": 2
     },
-    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
     {
@@ -59,9 +63,9 @@
       "level": 1,
       "last_activity_date": "2026-04-11",
       "days_since_last_practice": 10,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.7603,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.8801,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -184,9 +188,9 @@
       "level": 1,
       "last_activity_date": "2026-04-11",
       "days_since_last_practice": 10,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.7603,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.8801,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -457,9 +461,9 @@
       "level": 1,
       "last_activity_date": "2026-03-28",
       "days_since_last_practice": 24,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9676,
       "weakness_score": 0.6455,
-      "composite_priority_score": 0.8227,
+      "composite_priority_score": 0.8065,
       "homework_status": "attempted",
       "weak_skills": [
         "Biểu đồ"
@@ -550,14 +554,210 @@
       }
     },
     {
+      "lesson_id": 3890667,
+      "title": "Unit 1A: Greetings - Lesson 3: I'm six years old.",
+      "level": 1,
+      "last_activity_date": "2026-04-04",
+      "days_since_last_practice": 17,
+      "forgetting_score": 0.9118,
+      "weakness_score": 0.6171,
+      "composite_priority_score": 0.7645,
+      "homework_status": "attempted",
+      "weak_skills": [
+        "Từ vựng"
+      ],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Nice! Try: “Hello, how are you?” 😊",
+          "expected_answer": "Hello, how are you?",
+          "target_objects": null,
+          "user_transcript": "Hello, how are you?",
+          "score": 58.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 25,
+          "grammar_score": 92,
+          "timestamp": "2026-04-04",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk9u8q6-7c02adb5-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. Try: “Hello, how are you?” 🙂",
+          "expected_answer": "Hello, how are you?",
+          "target_objects": null,
+          "user_transcript": "Gool.",
+          "score": 25.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 33,
+          "grammar_score": 18,
+          "timestamp": "2026-04-04",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk9tgu5-dc5bc633-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi, nice to see you. Are you ready to practice greetings with me? 😄",
+          "expected_answer": "Yes, I am ready.",
+          "target_objects": null,
+          "user_transcript": "That's wing.",
+          "score": 15,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 12,
+          "grammar_score": 18,
+          "timestamp": "2026-04-04",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk9sax6-bd14ab3d-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. Ask: “What is your name?” 😊",
+          "expected_answer": "What is your name?",
+          "target_objects": null,
+          "user_transcript": "Look, I want.",
+          "score": 25,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 33,
+          "grammar_score": 17,
+          "timestamp": "2026-04-04",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk9qzca-82205793-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Do you want to try asking my name next? 😊",
+          "expected_answer": "What is your name?",
+          "target_objects": null,
+          "user_transcript": "I'll make the name job.",
+          "score": 9.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 6,
+          "grammar_score": 13,
+          "timestamp": "2026-04-04",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk9qp8l-d200d583-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7192,
+        "luyen_tap": 13128
+      }
+    },
+    {
+      "lesson_id": 3890666,
+      "title": "Unit 1A: Greetings - Lesson 2: Nice to meet you!",
+      "level": 1,
+      "last_activity_date": "2026-04-04",
+      "days_since_last_practice": 17,
+      "forgetting_score": 0.9118,
+      "weakness_score": 0.6,
+      "composite_priority_score": 0.7559,
+      "homework_status": "attempted",
+      "weak_skills": [
+        "Từ vựng"
+      ],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 4,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "No hurry. Try when you want. 😊",
+          "expected_answer": "Hello, my name is [your name].",
+          "target_objects": null,
+          "user_transcript": "Go.",
+          "score": 45.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 41,
+          "timestamp": "2026-04-04",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk8a8o3-82f2435f-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi! Nice to see you. Are you ready to practice greetings with me? 😄",
+          "expected_answer": "Yes, I am ready.",
+          "target_objects": null,
+          "user_transcript": "No, not again.",
+          "score": 52,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 33,
+          "grammar_score": 71,
+          "timestamp": "2026-04-04",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk89buo-141d5cbc-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Try: “Hello, my name is [your name].” 😄",
+          "expected_answer": "Hello, my name is Anna.",
+          "target_objects": null,
+          "user_transcript": "I have.",
+          "score": 36,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 22,
+          "timestamp": "2026-04-04",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk8865y-9aaecf4e-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. Say: “Hello, my name is ___.” 😄",
+          "expected_answer": "Hello, my name is Anna.",
+          "target_objects": null,
+          "user_transcript": "Hello, my name is you.",
+          "score": 18.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 37,
+          "timestamp": "2026-04-04",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk87xc4-7c3049de-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hello! I’m ready when you are 😄",
+          "expected_answer": "Yes, I am ready.",
+          "target_objects": null,
+          "user_transcript": "Yes.",
+          "score": 61.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 33,
+          "grammar_score": 90,
+          "timestamp": "2026-04-04",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk87eqh-69113485-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7191,
+        "luyen_tap": 13127
+      }
+    },
+    {
       "lesson_id": 3996145,
       "title": "Unit 1A: Toys - Lesson 1: Hello!",
       "level": 2,
       "last_activity_date": "2026-04-18",
       "days_since_last_practice": 3,
-      "forgetting_score": 0.9502,
+      "forgetting_score": 0.3486,
       "weakness_score": 0.6912,
-      "composite_priority_score": 0.8207,
+      "composite_priority_score": 0.5199,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -713,495 +913,6 @@
         "bai_tap": 7670,
         "luyen_tap": 13216
       }
-    },
-    {
-      "lesson_id": 3890667,
-      "title": "Unit 1A: Greetings - Lesson 3: I'm six years old.",
-      "level": 1,
-      "last_activity_date": "2026-04-04",
-      "days_since_last_practice": 17,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.6171,
-      "composite_priority_score": 0.8085,
-      "homework_status": "attempted",
-      "weak_skills": [
-        "Từ vựng"
-      ],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 1,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice! Try: “Hello, how are you?” 😊",
-          "expected_answer": "Hello, how are you?",
-          "target_objects": null,
-          "user_transcript": "Hello, how are you?",
-          "score": 58.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 25,
-          "grammar_score": 92,
-          "timestamp": "2026-04-04",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk9u8q6-7c02adb5-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Good. Try: “Hello, how are you?” 🙂",
-          "expected_answer": "Hello, how are you?",
-          "target_objects": null,
-          "user_transcript": "Gool.",
-          "score": 25.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 33,
-          "grammar_score": 18,
-          "timestamp": "2026-04-04",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk9tgu5-dc5bc633-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi, nice to see you. Are you ready to practice greetings with me? 😄",
-          "expected_answer": "Yes, I am ready.",
-          "target_objects": null,
-          "user_transcript": "That's wing.",
-          "score": 15,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 12,
-          "grammar_score": 18,
-          "timestamp": "2026-04-04",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk9sax6-bd14ab3d-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Good. Ask: “What is your name?” 😊",
-          "expected_answer": "What is your name?",
-          "target_objects": null,
-          "user_transcript": "Look, I want.",
-          "score": 25,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 33,
-          "grammar_score": 17,
-          "timestamp": "2026-04-04",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk9qzca-82205793-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Do you want to try asking my name next? 😊",
-          "expected_answer": "What is your name?",
-          "target_objects": null,
-          "user_transcript": "I'll make the name job.",
-          "score": 9.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 6,
-          "grammar_score": 13,
-          "timestamp": "2026-04-04",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk9qp8l-d200d583-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7192,
-        "luyen_tap": 13128
-      }
-    },
-    {
-      "lesson_id": 3890666,
-      "title": "Unit 1A: Greetings - Lesson 2: Nice to meet you!",
-      "level": 1,
-      "last_activity_date": "2026-04-04",
-      "days_since_last_practice": 17,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.6,
-      "composite_priority_score": 0.8,
-      "homework_status": "attempted",
-      "weak_skills": [
-        "Từ vựng"
-      ],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 4,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "No hurry. Try when you want. 😊",
-          "expected_answer": "Hello, my name is [your name].",
-          "target_objects": null,
-          "user_transcript": "Go.",
-          "score": 45.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 50,
-          "grammar_score": 41,
-          "timestamp": "2026-04-04",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk8a8o3-82f2435f-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi! Nice to see you. Are you ready to practice greetings with me? 😄",
-          "expected_answer": "Yes, I am ready.",
-          "target_objects": null,
-          "user_transcript": "No, not again.",
-          "score": 52,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 33,
-          "grammar_score": 71,
-          "timestamp": "2026-04-04",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk89buo-141d5cbc-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Try: “Hello, my name is [your name].” 😄",
-          "expected_answer": "Hello, my name is Anna.",
-          "target_objects": null,
-          "user_transcript": "I have.",
-          "score": 36,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 50,
-          "grammar_score": 22,
-          "timestamp": "2026-04-04",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk8865y-9aaecf4e-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Good. Say: “Hello, my name is ___.” 😄",
-          "expected_answer": "Hello, my name is Anna.",
-          "target_objects": null,
-          "user_transcript": "Hello, my name is you.",
-          "score": 18.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 0,
-          "grammar_score": 37,
-          "timestamp": "2026-04-04",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk87xc4-7c3049de-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hello! I’m ready when you are 😄",
-          "expected_answer": "Yes, I am ready.",
-          "target_objects": null,
-          "user_transcript": "Yes.",
-          "score": 61.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 33,
-          "grammar_score": 90,
-          "timestamp": "2026-04-04",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/04/admin/mnk87eqh-69113485-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7191,
-        "luyen_tap": 13127
-      }
-    },
-    {
-      "lesson_id": 3996146,
-      "title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
-      "level": 2,
-      "last_activity_date": "2026-04-18",
-      "days_since_last_practice": 3,
-      "forgetting_score": 0.9502,
-      "weakness_score": 0.5549,
-      "composite_priority_score": 0.7526,
-      "homework_status": "not_attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [
-        {
-          "practice_id": 7693,
-          "question_id": 303559,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
-          "comment_plain": "Audio: fan (cái quạt) => Đáp án: B",
-          "correct_answer": "B.",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/25/ee56_cat.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/02/d2a9_fan.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/85db_doll.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 7693,
-          "question_id": 303560,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
-          "comment_plain": "Audio: ball (quả bóng) => Đáp án: C",
-          "correct_answer": "C.",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/25/ee56_cat.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/27/a792_image-removebg-preview--2813-29.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/27/e917_image-removebg-preview--2812-29.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 7693,
-          "question_id": 303565,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
-          "comment_plain": "Audio: one (số 1) => Đáp án: A",
-          "correct_answer": "A.",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/10f2_one-removebg-preview.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/3003_four-removebg-preview.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/20/1f74_five-removebg-preview.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 7693,
-          "question_id": 303572,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
-          "comment_plain": "Audio: four (số 4) => Đáp án: C",
-          "correct_answer": "C.",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/10f2_one-removebg-preview.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/21/ee44_three-removebg-preview.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/04/20/08ae_four-removebg-preview.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 7693,
-          "question_id": 303576,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn câu đúng nhé.)",
-          "comment_plain": "Audio: What is it? (Nó là gì?) Ảnh: gấu bông = teddy bear => Đáp án: A",
-          "correct_answer": "A. It's a teddy bear.",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/06/02/efdd_teddy-bear.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. It's a teddy bear.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. There's one ball.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. It's a ball.",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ]
-        }
-      ],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice. I like dolls too 😊 What color is your doll’s dress?",
-          "expected_answer": "My doll’s dress is pink.",
-          "target_objects": null,
-          "user_transcript": "Name.",
-          "score": 69.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 39,
-          "timestamp": "2026-04-18",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo49vos1-203d734f-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Oh, I see. Do you want to tell me a toy you like? 😊",
-          "expected_answer": "I like my car. It's number one for me.",
-          "target_objects": null,
-          "user_transcript": "I like a doll.",
-          "score": 48.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 8,
-          "grammar_score": 89,
-          "timestamp": "2026-04-18",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo49veli-3c8bcb68-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Oh, okay — they are your toys. What toy do you like the most? 😊",
-          "expected_answer": "My favorite toy is a small car.",
-          "target_objects": null,
-          "user_transcript": "Me.",
-          "score": 68,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 36,
-          "timestamp": "2026-04-18",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo49utlb-a15250eb-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hello again — I’m here when you’re ready to talk about toys 😄",
-          "expected_answer": "Yes, I’m ready. I like cars. What about you?",
-          "target_objects": null,
-          "user_transcript": "They.",
-          "score": 68.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 37,
-          "timestamp": "2026-04-18",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo49u9rz-3ac21bff-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Good. Can you say the toy name, please? 😊",
-          "expected_answer": "A doll.",
-          "target_objects": null,
-          "user_transcript": "I don't.",
-          "score": 47,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 25,
-          "grammar_score": 69,
-          "timestamp": "2026-04-18",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo49te2l-36a2ff5c-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7693,
-        "luyen_tap": 13217
-      }
     }
   ],
   "lessons": [
@@ -1215,9 +926,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-28",
       "days_since_last_practice": 24,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9676,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9838,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -1287,9 +998,9 @@
       "status": "completed",
       "last_activity_date": "2026-04-11",
       "days_since_last_practice": 10,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.7603,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.8801,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -1512,9 +1223,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-11",
       "days_since_last_practice": 10,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.7603,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.8801,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -1993,9 +1704,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-28",
       "days_since_last_practice": 24,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9676,
       "weakness_score": 0.6455,
-      "composite_priority_score": 0.8227,
+      "composite_priority_score": 0.8065,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -2363,295 +2074,6 @@
       }
     },
     {
-      "lesson_id": 3996145,
-      "program_id": null,
-      "level": 2,
-      "position": 1,
-      "title": "Unit 1A: Toys - Lesson 1: Hello!",
-      "desc": "- Greetings\n - numbers 1-10\n - Toys\n - sounds: æ, e\n - Math: plus, minus, equal",
-      "status": "completed",
-      "last_activity_date": "2026-04-18",
-      "days_since_last_practice": 3,
-      "forgetting_score": 0.9502,
-      "weakness_score": 0.6912,
-      "composite_priority_score": 0.8207,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 36,
-          "audio_turns": 81,
-          "avg_reaction_ms": 4797,
-          "fastest_reaction_ms": 504,
-          "total_duration_ms": 2054436,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-18",
-        "pronunciation_attempts": 51,
-        "pronunciation_score_avg": 47.59,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 50.18,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Do you mean the teddy bear? 🧸",
-            "expected_answer": "Yes, I mean the teddy bear.",
-            "target_objects": null,
-            "user_transcript": "This.",
-            "score": 37.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 33,
-            "grammar_score": 42,
-            "timestamp": "2026-04-18",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo48iyyr-9710a9bd-audio.wav",
-            "reaction_time_ms": 5001
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Oh, do you mean the doll? 🪆",
-            "expected_answer": "Yes, the doll. I played with it every day.",
-            "target_objects": null,
-            "user_transcript": "TheThe.",
-            "score": 10.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 0,
-            "grammar_score": 21,
-            "timestamp": "2026-04-18",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo48ilfe-6a767c6f-audio.wav",
-            "reaction_time_ms": 5001
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice to meet you too. What toy did you like as a child? 🧸",
-            "expected_answer": "I liked a teddy bear when I was little.",
-            "target_objects": null,
-            "user_transcript": "The.",
-            "score": 59.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 19,
-            "timestamp": "2026-04-18",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo48hwgx-e97bd58d-audio.wav",
-            "reaction_time_ms": 5001
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Good, a ball is fun to play with 😊 Do you play with it inside or outside?",
-            "expected_answer": "I play with it outside in the park.",
-            "target_objects": null,
-            "user_transcript": "I play.",
-            "score": 69.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 39,
-            "timestamp": "2026-04-18",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo48gbt4-b1160122-audio.wav",
-            "reaction_time_ms": 5001
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Oh, I see. Do you like a doll or a ball? 🧸⚽",
-            "expected_answer": "I like a doll./I like a ball./I like a teddy bear.",
-            "target_objects": null,
-            "user_transcript": "I'm on.",
-            "score": 34,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 50,
-            "grammar_score": 18,
-            "timestamp": "2026-04-18",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo48ezpu-4c709982-audio.wav",
-            "reaction_time_ms": 5001
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7670,
-          "score": 0.75,
-          "correct": 15,
-          "total": 20,
-          "submitted_date": "2026-04-18"
-        },
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 7670,
-          "luyen_tap": 13216
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 15,
-            "total": 19,
-            "accuracy": 0.789
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 7670,
-            "question_id": 303068,
-            "question_folder": "English Tutoring - Level 2",
-            "question_type": "Một lựa chọn",
-            "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai nhé.)",
-            "comment_plain": "Audio: ball (quả bóng) Hình: teddy bear (gấu bông) => Sai => Đáp án: B",
-            "correct_answer": "B.",
-            "student_answer": "A.",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/06/02/efdd_teddy-bear.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/09/06/f4ed_tick.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B.",
-                "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/12/22/2cc3_cross.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 7670,
-            "question_id": 303476,
-            "question_folder": "English Tutoring - Level 2",
-            "question_type": "Một lựa chọn",
-            "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
-            "comment_plain": "Audio: ball (quả bóng) => Đáp án: C",
-            "correct_answer": "C.",
-            "student_answer": "B.",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/27/4e5c_image-removebg-preview--2817-29.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/27/a792_image-removebg-preview--2813-29.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/27/e917_image-removebg-preview--2812-29.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 7670,
-            "question_id": 303522,
-            "question_folder": "English Tutoring - Level 2",
-            "question_type": "Một lựa chọn",
-            "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn câu đúng nhé.) I'm fine. Thanks.",
-            "comment_plain": "I'm fine. Thanks: Tôi ổn. Cảm ơn. => Đáp án: C (Bạn có khỏe không?)",
-            "correct_answer": "C. How are you?",
-            "student_answer": "B. What's this?",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. What's your name?",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. What's this?",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. How are you?",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 7670,
-            "question_id": 303532,
-            "question_folder": "English Tutoring - Level 2",
-            "question_type": "Một lựa chọn",
-            "question_text": "Read and reorder the words (Con hãy đọc và sắp xếp thành câu nhé.) /a/teddy/It/'s/bear./",
-            "comment_plain": "It's a teddy bear. (Đó là một con gấu bông.) => Đáp án: C",
-            "correct_answer": "C. It's a teddy bear.",
-            "student_answer": "A. It a teddy's bear.",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. It a teddy's bear.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. It's teddy a bear.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. It's a teddy bear.",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
       "lesson_id": 3890667,
       "program_id": null,
       "level": 1,
@@ -2661,9 +2083,9 @@
       "status": "completed",
       "last_activity_date": "2026-04-04",
       "days_since_last_practice": 17,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9118,
       "weakness_score": 0.6171,
-      "composite_priority_score": 0.8085,
+      "composite_priority_score": 0.7645,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -2855,9 +2277,9 @@
       "status": "completed",
       "last_activity_date": "2026-04-04",
       "days_since_last_practice": 17,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9118,
       "weakness_score": 0.6,
-      "composite_priority_score": 0.8,
+      "composite_priority_score": 0.7559,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -3151,6 +2573,295 @@
       }
     },
     {
+      "lesson_id": 3996145,
+      "program_id": null,
+      "level": 2,
+      "position": 1,
+      "title": "Unit 1A: Toys - Lesson 1: Hello!",
+      "desc": "- Greetings\n - numbers 1-10\n - Toys\n - sounds: æ, e\n - Math: plus, minus, equal",
+      "status": "completed",
+      "last_activity_date": "2026-04-18",
+      "days_since_last_practice": 3,
+      "forgetting_score": 0.3486,
+      "weakness_score": 0.6912,
+      "composite_priority_score": 0.5199,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 36,
+          "audio_turns": 81,
+          "avg_reaction_ms": 4797,
+          "fastest_reaction_ms": 504,
+          "total_duration_ms": 2054436,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-18",
+        "pronunciation_attempts": 51,
+        "pronunciation_score_avg": 47.59,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 50.18,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Do you mean the teddy bear? 🧸",
+            "expected_answer": "Yes, I mean the teddy bear.",
+            "target_objects": null,
+            "user_transcript": "This.",
+            "score": 37.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 33,
+            "grammar_score": 42,
+            "timestamp": "2026-04-18",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo48iyyr-9710a9bd-audio.wav",
+            "reaction_time_ms": 5001
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh, do you mean the doll? 🪆",
+            "expected_answer": "Yes, the doll. I played with it every day.",
+            "target_objects": null,
+            "user_transcript": "TheThe.",
+            "score": 10.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 21,
+            "timestamp": "2026-04-18",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo48ilfe-6a767c6f-audio.wav",
+            "reaction_time_ms": 5001
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice to meet you too. What toy did you like as a child? 🧸",
+            "expected_answer": "I liked a teddy bear when I was little.",
+            "target_objects": null,
+            "user_transcript": "The.",
+            "score": 59.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 19,
+            "timestamp": "2026-04-18",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo48hwgx-e97bd58d-audio.wav",
+            "reaction_time_ms": 5001
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good, a ball is fun to play with 😊 Do you play with it inside or outside?",
+            "expected_answer": "I play with it outside in the park.",
+            "target_objects": null,
+            "user_transcript": "I play.",
+            "score": 69.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 39,
+            "timestamp": "2026-04-18",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo48gbt4-b1160122-audio.wav",
+            "reaction_time_ms": 5001
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh, I see. Do you like a doll or a ball? 🧸⚽",
+            "expected_answer": "I like a doll./I like a ball./I like a teddy bear.",
+            "target_objects": null,
+            "user_transcript": "I'm on.",
+            "score": 34,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 18,
+            "timestamp": "2026-04-18",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/18/admin/mo48ezpu-4c709982-audio.wav",
+            "reaction_time_ms": 5001
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7670,
+          "score": 0.75,
+          "correct": 15,
+          "total": 20,
+          "submitted_date": "2026-04-18"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 7670,
+          "luyen_tap": 13216
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 15,
+            "total": 19,
+            "accuracy": 0.789
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 7670,
+            "question_id": 303068,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai nhé.)",
+            "comment_plain": "Audio: ball (quả bóng) Hình: teddy bear (gấu bông) => Sai => Đáp án: B",
+            "correct_answer": "B.",
+            "student_answer": "A.",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/06/02/efdd_teddy-bear.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/09/06/f4ed_tick.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B.",
+                "image_urls": [
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/12/22/2cc3_cross.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7670,
+            "question_id": 303476,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+            "comment_plain": "Audio: ball (quả bóng) => Đáp án: C",
+            "correct_answer": "C.",
+            "student_answer": "B.",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/27/4e5c_image-removebg-preview--2817-29.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/27/a792_image-removebg-preview--2813-29.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/27/e917_image-removebg-preview--2812-29.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7670,
+            "question_id": 303522,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn câu đúng nhé.) I'm fine. Thanks.",
+            "comment_plain": "I'm fine. Thanks: Tôi ổn. Cảm ơn. => Đáp án: C (Bạn có khỏe không?)",
+            "correct_answer": "C. How are you?",
+            "student_answer": "B. What's this?",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. What's your name?",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. What's this?",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. How are you?",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7670,
+            "question_id": 303532,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and reorder the words (Con hãy đọc và sắp xếp thành câu nhé.) /a/teddy/It/'s/bear./",
+            "comment_plain": "It's a teddy bear. (Đó là một con gấu bông.) => Đáp án: C",
+            "correct_answer": "C. It's a teddy bear.",
+            "student_answer": "A. It a teddy's bear.",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. It a teddy's bear.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. It's teddy a bear.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. It's a teddy bear.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3996146,
       "program_id": null,
       "level": 2,
@@ -3160,9 +2871,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-18",
       "days_since_last_practice": 3,
-      "forgetting_score": 0.9502,
+      "forgetting_score": 0.3486,
       "weakness_score": 0.5549,
-      "composite_priority_score": 0.7526,
+      "composite_priority_score": 0.4517,
       "in_class": {
         "participated": true,
         "session_count": 1,

@@ -1,0 +1,607 @@
+{
+  "version": 1,
+  "last_run_model": "gpt-5.4",
+  "models": {
+    "gpt-5.4": {
+      "updated_at": "2026-05-04T04:37:58.933398+00:00",
+      "diagnostic": "Ba mẫu lỗi và rủi ro nghiêm trọng nhất tôi thấy là: thứ nhất, học sinh yếu rất nặng ở nói theo tranh/từ mục tiêu, gần như không gọi đúng được từ hoặc cụm từ đã học; thứ hai, có một nhóm lớn bài đã học nhưng chưa nộp homework, đặc biệt nhiều bài đã cách đây 67–88 ngày nên rủi ro quên gần như hoàn toàn; thứ ba, khi nói tự do và hội thoại, học sinh thường trả lời lạc đề, trả lời quá ngắn hoặc ghép từ rời rạc, cho thấy vấn đề ở mức hiểu câu hỏi và truy xuất mẫu câu chứ không chỉ là phát âm.\n\nMẫu nghiêm trọng nhất là đứt gãy ở kỹ năng gọi từ theo tranh và gắn đúng ngôn ngữ với ngữ cảnh. Điểm brainstorm trung bình chỉ 3.12/100 là mức cực thấp, và phân bố câu trả lời cho thấy số lần “incorrect” áp đảo. Đây không phải lỗi nhỏ ở một vài bài mà lặp lại xuyên suốt nhiều chủ điểm: thời gian trong ngày, hoạt động hằng ngày, môn học, phòng học, thời tiết, mùa, địa điểm trong thị trấn. Học sinh thường nói ra từ không liên quan như “Hobby”, “Sam.”, “It’s work.”, “It’s Friday.”, “It’s a bedroom.” hoặc chỉ nói “I.”, “I see.” khi cần gọi đúng cụm mục tiêu như went swimming, morning, have breakfast, classroom, sunny. Điều này cho thấy vốn từ tiếp nhận có thể có một phần, nhưng khả năng truy xuất chủ động rất yếu; đồng thời học sinh chưa bám được dạng từ cần nói, nhất là cụm động từ và cụm danh từ. Những bài cần deep practice mạnh nhất cho mẫu lỗi này là Unit 1B Lesson 3, Unit 2B Lesson 1, Unit 2B Lesson 2, Unit 3B Lesson 5, Unit 4A Lesson 5, vì vừa brainstorm = 0 vừa đã cũ hoặc chưa có bằng chứng homework. Với các bài attempted nhưng lỗi viết cũng chạm đúng từ vựng cốt lõi như Unit 4A Lesson 5 và Unit 4A Lesson 4, cần luyện sâu cả nhận diện tranh → nói từ → viết từ. Dạng câu hỏi hiệu quả nhất cho nhóm bài này sẽ là nhìn tranh gọi tên với số lựa chọn ít trước, rồi chuyển sang nói có khung “It’s … / They are … / He is … / She is …”, sau đó mới bỏ khung. Với học sinh này, nên ưu tiên matching tranh-từ, chọn đáp án đúng theo tranh, rồi drill nói lặp cụm mục tiêu; chưa nên bắt đầu bằng nói mở.\n\nMẫu rủi ro thứ hai là khoảng trống homework ở nhiều bài đã học từ lâu, làm cho nguy cơ quên sau lớp rất cao. Có nhiều bài hw_status=not_attempted với weakness=1.00, đặc biệt Unit 1B Lesson 3 cách 88 ngày, Unit 2B Lesson 1 cách 74 ngày, Unit 2B Lesson 2 cách 67 ngày, cùng chuỗi Unit 3B Lesson 1–5 và Unit 4B Lesson 1. Theo forgetting curve, các bài trên 21 ngày gần như đã quên gần hết nếu chỉ có một lần luyện trước, nên việc chưa nộp homework ở đây là rủi ro nghiêm trọng hơn cả một số bài attempted có lỗi cụ thể. Đáng chú ý là kỹ năng viết tổng thể trên LMS vẫn tốt 83.7%, nên việc không có homework không thể hiểu là “không biết làm”, mà đúng hơn là thiếu bằng chứng củng cố sau học và rất dễ mất kiến thức chủ điểm. Vì vậy, các bài not_attempted lâu ngày cần được xếp vào deep practice trước cả một số bài attempted mới hơn. Mức ưu tiên cao nhất nên là Unit 1B Lesson 3, Unit 2B Lesson 1, Unit 2B Lesson 2; tiếp theo là Unit 3B Lesson 1 và 2 vì vẫn còn khá cũ và pronunciation/conversation cũng yếu; sau đó mới đến Unit 3B Lesson 4, 5 và Unit 4B Lesson 1 là các bài gần hơn nhưng vẫn cần lấp khoảng trống. Với nhóm chưa làm homework, dạng câu hỏi hiệu quả nhất là bài kiểm tra nhớ lại có hỗ trợ: read-and-choose, look-and-match, nghe/chọn tranh, điền từ có ngân hàng từ. Vì chưa có dữ liệu lỗi viết cụ thể, nên nên dùng câu hỏi đóng để xác định lại mức nhớ thật trước, rồi mới chuyển sang câu hỏi nói.\n\nMẫu nghiêm trọng thứ ba là học sinh gặp khó khi hiểu câu hỏi và tạo câu trả lời phù hợp trong nói tự do/hội thoại. Free speaking trung bình 48.39/100 là yếu, với nhiều câu “inaccordant” và cả “lack_of_knowledge”. Trong hội thoại, dù điểm trung bình 77.78/100 không quá thấp, các lỗi thất bại cho thấy học sinh thường trả lời lệch chức năng giao tiếp: được hỏi về sở thích thì nói “Hi”, hỏi về thói quen thì đáp “Yes, I do.”, hỏi câu wh- cần nội dung thì chỉ trả lời một từ như “Easy.” hoặc phát ngôn không liên quan như “Goodbye, my stomach.”, “I don’t eat breakfast.”, “Yes, I go.”. Điều này phản ánh ba vấn đề cùng lúc: chưa phân biệt dạng câu hỏi yes/no với wh-, chưa giữ được khung câu trả lời đầy đủ, và khả năng xử lý ngôn ngữ thời gian thực còn yếu. Điểm pronunciation trung bình 68.18/100, nhiều bài ở mức 46–60, làm vấn đề này nặng hơn vì phát âm chưa rõ có thể kéo theo nhận diện sai và tự tin thấp. Những bài cần deep practice cho mẫu này là Unit 2B Lesson 1, Unit 3B Lesson 3, Unit 3B Lesson 4, Unit 4B Lesson 1, và Unit 2B Lesson 5; đây là các bài có conversation thấp hoặc nhiều câu trả lời lạc đề. Dạng câu hỏi hiệu quả nhất là hội thoại có khung cố định, biến đổi một thành phần mỗi lần, ví dụ “What time do you …? — I … at …”, “What subject do you like? — I like … because …”, “Where is the …? — It’s next to …”. Nên tránh warmup quá mở ở giai đoạn đầu vì dữ liệu cho thấy câu hỏi mở dễ tạo ra đáp án không liên quan.\n\nNhìn tổng thể, khoảng cách kỹ năng của học sinh không nằm nhiều ở viết cơ bản trên LMS, vì accuracy 83.7% là ổn. Điểm yếu chính nằm ở nói chủ động: gọi từ theo tranh, hiểu câu hỏi, và dựng câu trả lời đúng chức năng. Điều này giải thích vì sao có những bài “không có failed questions” nhưng vẫn là bài yếu nặng: phần viết có thể ổn hoặc chưa có dữ liệu, nhưng speaking cho thấy kiến thức chưa thực sự sẵn sàng để dùng. Vì vậy, nếu chỉ nhìn homework accuracy sẽ đánh giá thấp mức độ rủi ro thật.\n\nVề lesson cần deep practice, nhóm ưu tiên cao nhất là các bài vừa rất cũ vừa chưa làm homework hoặc có speaking cực yếu: Unit 1B Lesson 3, Unit 2B Lesson 1, Unit 2B Lesson 2, Unit 4A Lesson 5, Unit 4A Lesson 4, Unit 4A Lesson 1. Đây là nhóm có nguy cơ quên gần hoàn toàn và chạm vào các nền tảng rất cơ bản như hoạt động hằng ngày, thời gian, thời tiết, hoạt động cuối tuần. Nhóm deep practice tiếp theo là chuỗi Unit 3B Lesson 1–5 vì cả brainstorm lẫn conversation/pronunciation đều yếu, dù một số bài mới hơn; đặc biệt Lesson 3, 4, 5 cho thấy học sinh không giữ được mạch hội thoại về school subjects. Unit 4B Lesson 1 cũng nên xếp deep practice dù mới 10 ngày, vì đây là bài mới vào chủ điểm mới nhưng conversation đã rơi thấp, báo hiệu nguy cơ đuối ngay từ đầu chủ đề.\n\nNhững bài có thể xếp light reinforcement là các bài attempted có conversation tương đối khá hơn và lỗi mang tính chỉnh mẫu câu hơn là mất hoàn toàn kiến thức, như Unit 2B Lesson 5 và phần nào Unit 2B Lesson 4. Tuy nhiên “light” ở đây vẫn cần ôn có mục tiêu, không phải chỉ lướt qua, vì brainstorm ở các bài này vẫn bằng 0. Với Unit 2B Lesson 4, lỗi look-and-match sai toàn bộ 5 mục cho thấy từ vựng hoạt động hằng ngày chưa chắc; do đó bài này nằm giữa deep và light, nghiêng về deep nếu mục tiêu là phục hồi nền tảng chủ điểm My day.\n\nXét theo loại câu hỏi hiệu quả nhất từng cụm bài, với Unit 1B My week nên ưu tiên tranh-hành động, chọn đúng cụm quá khứ đơn, rồi nói theo mẫu “I met my friend / I watched TV last weekend.” vì học sinh đang lẫn mạnh giữa ngữ cảnh và từ mục tiêu. Với Unit 2B My day nên dùng matching hoạt động–thời gian, sắp xếp trình tự trong ngày, hỏi đáp có khung về giờ giấc; đây là chủ điểm học sinh thường trả lời sai chức năng dù có vẻ hiểu một phần. Với Unit 3B School Subjects, nên tập nhận diện môn học/phòng học bằng tranh và hội thoại lựa chọn đôi “Do you like A or B more? — I like A more because …”, vì lỗi hiện tại cho thấy học sinh trả lời quá ngắn hoặc lạc đề khi phải tự tạo lý do. Với Unit 4A The seasons, nên ưu tiên từ vựng thời tiết và hoạt động theo mùa bằng bài nhìn tranh-chọn từ, điền chữ còn thiếu, rồi nói câu ngắn “It’s sunny / I went swimming.” vì có cả lỗi viết chính tả lẫn lỗi gọi từ. Với Unit 4B My town, nên bắt đầu từ từ vựng địa điểm và giới từ vị trí bằng tranh và map đơn giản trước khi hỏi đáp lý do yêu thích địa điểm.\n\nTóm lại, hồ sơ này cho thấy một học sinh viết trên LMS không quá yếu nhưng nói chủ động rất mong manh. Trọng tâm can thiệp không nên là ngữ pháp viết chung, mà là phục hồi từ vựng chủ điểm theo tranh, tăng khả năng hiểu đúng loại câu hỏi, và luyện mẫu trả lời đầy đủ trong hội thoại ngắn. Nếu phải chọn thứ tự hành động, nên xử lý trước các bài chưa làm homework và đã quá lâu, đồng thời dùng dạng câu hỏi đóng và có khung để kéo lại khả năng truy xuất; sau khi học sinh trả lời ổn định ở mức nhận diện và mẫu câu ngắn, mới tăng dần sang free speaking.",
+      "homework": [
+        {
+          "question_no": 1,
+          "lesson_id": 3622003,
+          "lesson_title": "Unit 1B: My week - Lesson 3: When did you meet your friends?",
+          "skill_category": "vocabulary",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Look and match. (Con hãy nhìn tranh và ghép với cụm từ đúng.)",
+          "correct_answer": "→met my friends; →went out with my family; →did my homework",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 88 ngày trước và chưa nộp homework, đúng nhóm rủi ro quên gần như hoàn toàn mà chẩn đoán nhấn mạnh. Học sinh có brainstorm trung bình chỉ 3.12/100 và thường gọi sai từ theo tranh như nói “Hobby” hoặc “It’s work.” thay vì cụm đúng, nên cần kéo lại khả năng nối tranh với cụm hành động cuối tuần.",
+          "question_id": 747501,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A1",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/07/25ac_6-284-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A2",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/07/c015_4-284-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A3",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/07/3494_5-285-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B1",
+              "text": "went out with my family",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B2",
+              "text": "did my homework",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B3",
+              "text": "met my friends",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "went out with my family (đi ra ngoài với gia đ&igrave;nh) did my homework (làm bài tập về nhà) met my friends (gặp gỡ bạn b&egrave;)",
+          "question_folder": "English Tutoring - Level 4"
+        },
+        {
+          "question_no": 2,
+          "lesson_id": 3715073,
+          "lesson_title": "Unit 2B: My day - Lesson 1: When do you do your homework?",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer to fill in the blank. (Con hãy đọc và chọn từ đúng để điền vào chỗ trống nhé!) Mary's",
+          "correct_answer": "A. have",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 74 ngày trước và chưa nộp homework, nằm đúng nhóm ưu tiên cao nhất trong chẩn đoán. Học sinh từng nói lệch mục tiêu ở chủ điểm My day như “I don’t eat breakfast.” và brainstorm rất thấp 3.12/100, nên cần ôn lại cụm nền tảng “have breakfast”.",
+          "question_id": 672296,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. have",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. take",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. get",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Giải th&iacute;ch: (2)............ breakfast with her family... => Cụm cố định: have breakfast (ăn sáng) => Đáp án: A. have",
+          "question_folder": "English Tutoring - Level 4"
+        },
+        {
+          "question_no": 3,
+          "lesson_id": 3758611,
+          "lesson_title": "Unit 2B: My day - Lesson 2: What time is it?",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "What are they doing?",
+          "correct_answer": "open",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 67 ngày trước và chưa nộp homework; đây là khoảng trống lâu ngày mà chẩn đoán đánh giá rất nguy hiểm. Điểm brainstorm trung bình chỉ 3.12/100, học sinh thường chỉ nói rời rạc như “I.” hoặc “I see.” khi cần gọi đúng hành động theo tranh, nên cần luyện nói có mục tiêu từ tranh.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 4,
+          "lesson_id": 3621999,
+          "lesson_title": "Unit 4A: The seasons (Extra) - Lesson 5: Review 2",
+          "skill_category": "grammar",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Read the definitions and write the correct word (Con hãy đọc định nghĩa và chọn từ đúng để điền vào chỗ trống) skateboar",
+          "correct_answer": "go swimming",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 95 ngày trước — cần ôn lại rất sâu vì vừa cũ vừa chạm đúng mẫu lỗi gọi từ theo tranh/ngữ cảnh. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"hn\" thay vì \"go swimming\"; chẩn đoán cũng nêu rõ em từng nói từ không liên quan khi cần cụm mục tiêu như hoạt động theo mùa.",
+          "question_id": 646103,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "The action of playing in water, like in a lake, ocean, or pool. (Hành động chơi đ&ugrave;a trong nước, chẳng hạn như ở hồ, đại dương hoặc hồ bơi.) => go swimming (đi bơi)",
+          "question_folder": "English Tutoring - Level 4"
+        },
+        {
+          "question_no": 5,
+          "lesson_id": 3621998,
+          "lesson_title": "Unit 4A: The seasons (Extra) - Lesson 4: Review 1",
+          "skill_category": "grammar",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Write the correct word to fill in blanks (Con hãy viết từ đúng để điền vào chỗ trống) Last (1)......, the Rogers went to",
+          "correct_answer": "walked",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 95 ngày trước và thuộc nhóm Unit 4A mà chẩn đoán yêu cầu deep practice vì có lỗi viết chạm đúng từ vựng cốt lõi. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"6gtv\" thay vì \"walked\"; lỗi truy xuất từ rất nặng này phù hợp với mẫu brainstorm=3.12/100 và hay nói sai/ngắn/lạc đề.",
+          "question_id": 646089,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Giải th&iacute;ch: At night, they (3)..... on the beach and saw many stars. Dựa vào nghĩa câu th&igrave; vào ban đ&ecirc;m hành động đi bộ và ngắm sao tr&ecirc;n bãi biển là hợp l&yacute;. => walk, tuy nhi&ecirc;n câu c&oacute; &quot;saw&quot; đang chia th&igrave; quá khứ đơn => walked",
+          "question_folder": "English Tutoring - Level 4"
+        },
+        {
+          "question_no": 6,
+          "lesson_id": 3768188,
+          "lesson_title": "Unit 2B: My day - Lesson 4: When do you do your homework?",
+          "skill_category": "vocabulary",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Look and match. (Con hãy nhìn tranh và nối với từ đúng.)",
+          "correct_answer": "→get up; →have breakfast; →go to school; →play sports; →go home",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 53 ngày trước và là bằng chứng lỗi rất mạnh ở chủ điểm My day. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"wrong: item_1, item_2, item_3, item_4, item_5\" thay vì \"item_1→get up; item_2→have breakfast; item_3→go to school; item_4→play sports; item_5→go home\"; chẩn đoán cũng nói em yếu nặng ở gọi từ theo tranh và gắn đúng ngôn ngữ với ngữ cảnh.",
+          "question_id": 748551,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A1",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/7fae_1-283-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A2",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/877b_2-286-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A3",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/e63d_4-285-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A4",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/2200_3-285-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A5",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2025/03/09/c734_5-286-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B1",
+              "text": "play sports",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B2",
+              "text": "go home",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B3",
+              "text": "get up",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B4",
+              "text": "have breakfast",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B5",
+              "text": "go to school",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Đáp án chi tiết: 1. get up: thức dậy 2. have breakfast: ăn sáng 3. go to school: đi tới trường 4. play sports: chơi thể thao 5. go home: đi về nhà",
+          "question_folder": "English Tutoring - Level 4"
+        },
+        {
+          "question_no": 7,
+          "lesson_id": 3891915,
+          "lesson_title": "Unit 4B: My town - Lesson 1: Where is the cafe?",
+          "skill_category": "grammar",
+          "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
+          "question_text": "Reorder the words (Con hãy sắp xếp các từ thành câu nhé!) 1. [{}] [{}] [{}] [{}] [{}] [{}]: is | shopping | the | ",
+          "correct_answer": "Where is the shopping centre?",
+          "difficulty": "medium",
+          "reason": "Bài này mới học 10 ngày trước nhưng chẩn đoán xếp Unit 4B Lesson 1 vào deep practice vì conversation đã thấp ngay từ đầu chủ đề. Học sinh thường trả lời sai chức năng giao tiếp như gặp câu wh- lại đáp ngắn hoặc lệch kiểu “Yes, I go.”, nên cần củng cố mẫu hỏi địa điểm đầy đủ.",
+          "question_id": 751771,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "1",
+              "text": "is",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "2",
+              "text": "shopping",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "3",
+              "text": "the",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "4",
+              "text": "Where",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "5",
+              "text": "centre",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "6",
+              "text": "?",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Đáp án chi tiết: Where is the shopping centre? Tạm dịch: Trung tâm mua sắm ở đâu?",
+          "question_folder": "English Tutoring - Level 4"
+        },
+        {
+          "question_no": 8,
+          "lesson_id": 3891904,
+          "lesson_title": "Unit 3B: School Subjects - Lesson 4: Review 1",
+          "skill_category": "speaking",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Read and match (Con hãy ghép câu trả lời tương ứng nhé!)",
+          "correct_answer": "Where do you learn IT?→I learn it in the computer room.; When do you have PE?→I have it on Thursday.; What subjects do you have on Tuesday?→I have Music and Maths on Tuesday.",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 17 ngày trước nhưng chưa nộp homework, trong khi chẩn đoán cho thấy học sinh hay trả lời lạc chức năng giao tiếp. Em từng có kiểu đáp sai như được hỏi về thói quen thì nói “Yes, I do.” hoặc trả lời một từ “Easy.” cho câu wh-, nên bài ghép câu hỏi–câu trả lời này giúp sửa đúng mẫu hỏi đáp môn học.",
+          "question_id": 751308,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A1",
+              "text": "Where do you learn IT?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "A2",
+              "text": "When do you have PE?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "A3",
+              "text": "What subjects do you have on Tuesday?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B1",
+              "text": "I have Music and Maths on Tuesday.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B2",
+              "text": "I learn it in the computer room.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B3",
+              "text": "I have it on Thursday.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Where do you learn IT? - I learn IT in the computer room. (Cậu học Tin học ở đâu? - Tớ học ở ph&ograve;ng máy t&iacute;nh.) When do you have PE? - I have it on Thursday. (Bao giờ cậu học Thể dục? - Tớ học vào thứ Năm.) What subjects do you have on Tuesday? - I have Music and Maths on Tuesday. (Thứ Ba cậu học những m&ocirc;n g&igrave;? - Tớ học &Acirc;m nhạc và Toán vào thứ Ba.)",
+          "question_folder": "English Tutoring - Level 4"
+        },
+        {
+          "question_no": 9,
+          "lesson_id": 3891908,
+          "lesson_title": "Unit 3B: School Subjects - Lesson 5: Review 2",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "What is this room?",
+          "correct_answer": "open",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 12 ngày trước và chưa nộp homework; dù chưa quá cũ nhưng nằm trong chuỗi School Subjects mà chẩn đoán cho thấy brainstorm rất yếu. Học sinh thường gọi sai ngữ cảnh như nói “It’s a bedroom.” khi cần gọi đúng phòng học, nên cần luyện nói ngắn theo tranh để sửa lỗi truy xuất từ.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 10,
+          "lesson_id": 3891901,
+          "lesson_title": "Unit 3B: School Subjects - Lesson 3: Where do you learn music?",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose (Con hãy nghe và chọn đáp án đúng nhé!) 1. Where do you learn Music?",
+          "correct_answer": "I learn it in the music room.",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 19 ngày trước và thuộc nhóm bài mà chẩn đoán nói học sinh khó hiểu câu hỏi và trả lời đúng chức năng. Em thường trả lời lạc đề trong hội thoại như “Hi” hoặc “Goodbye, my stomach.”, nên cần câu hỏi đóng để củng cố mẫu “Where do you learn …? — I learn it in …”.",
+          "question_id": 751109,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "I learn it in the classroom.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "I learn it in the library.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "I learn it in the music room.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Audio: Girl: Where do you learn music? Boy: I learn it in the music room. Tạm dịch: Bạn nữ: Cậu học &Acirc;m nhạc ở đâu? Bạn nam: Tớ học ở ph&ograve;ng &Acirc;m nhạc.",
+          "question_folder": "English Tutoring - Level 4"
+        },
+        {
+          "question_no": 11,
+          "lesson_id": 3861491,
+          "lesson_title": "Unit 3B: School Subjects - Lesson 2: When do you have Maths?",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "What subject is this?",
+          "correct_answer": "open",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 26 ngày trước và chưa nộp homework; đây là đúng chủ điểm mà chẩn đoán ghi nhận học sinh không gọi đúng từ mục tiêu theo tranh. Với brainstorm trung bình chỉ 3.12/100 và các câu trả lời sai kiểu “Sam.” hoặc “It’s Friday.” thay vì tên môn học/thời gian, em cần luyện nói nhận diện môn học thật ngắn và đúng trọng tâm.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 12,
+          "lesson_id": 3836952,
+          "lesson_title": "Unit 3B: School Subjects - Lesson 1: I'm good at English.",
+          "skill_category": "grammar",
+          "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
+          "question_text": "Reorder the words (Con hãy xếp các từ thành câu đúng nhé!) 2. [{}] [{}] [{}] [{}] [{}] [{}]: do | you | Geography ",
+          "correct_answer": "When do you have Geography?",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 33 ngày trước và chưa nộp homework, nên cần lấp khoảng trống củng cố sau học. Chẩn đoán cho thấy học sinh chưa phân biệt tốt câu hỏi yes/no với wh- và thường trả lời quá ngắn hoặc lạc đề, vì vậy việc sắp xếp lại mẫu câu hỏi “When do you have …?” là rất cần thiết.",
+          "question_id": 750870,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "1",
+              "text": "do",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "2",
+              "text": "you",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "3",
+              "text": "Geography",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "4",
+              "text": "When",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "5",
+              "text": "have",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "6",
+              "text": "?",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "When do you have Geography? (Bao giờ cậu c&oacute; tiết Địa L&yacute;?)",
+          "question_folder": "English Tutoring - Level 4"
+        },
+        {
+          "question_no": 13,
+          "lesson_id": 3768189,
+          "lesson_title": "Unit 2B: My day - Lesson 5: Be on time!",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "What color is the sky?",
+          "correct_answer": "open",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 19 ngày trước và chẩn đoán nêu rõ Unit 2B Lesson 5 có nhiều câu trả lời lạc đề trong nói. Học sinh từng nói “It’s black” thay vì “It’s blue” ở dạng gọi màu theo tranh, nên cần luyện lại câu hỏi rất cơ bản này; thêm nữa brainstorm trung bình chỉ 3.12/100 cho thấy khả năng gọi từ vẫn rất yếu.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 14,
+          "lesson_id": 3622002,
+          "lesson_title": "Unit 1B: My week - Lesson 2: Did she play sports yesterday morning?",
+          "skill_category": "grammar",
+          "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
+          "question_text": "Reorder the words. (Con hãy sắp x&ecirc;́p các từ thành câu đúng.) 1. [{}] [{}] [{}] [{}] [{}] [{}] [{}] [{}]: you",
+          "correct_answer": "Did you stay at home yesterday morning?",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 82 ngày trước, rất lâu rồi nên cần ôn lại từ đầu dù chưa có lỗi viết cụ thể. Chẩn đoán cho thấy học sinh hay trả lời sai chức năng giao tiếp, đặc biệt với câu hỏi về thói quen/thời gian có thể đáp “Yes, I do.” hoặc câu không liên quan, nên cần củng cố khung câu hỏi quá khứ đơn rõ ràng.",
+          "question_id": 745939,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "1",
+              "text": "you",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "2",
+              "text": "yesterday",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "3",
+              "text": "stay",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "4",
+              "text": "Did",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "5",
+              "text": "home",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "6",
+              "text": "morning",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "7",
+              "text": "at",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "8",
+              "text": "?",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Đáp án chi ti&ecirc;́t: Did you stay at home yesterday morning? Tạm dịch: Cậu đã ở nhà sáng h&ocirc;m qua phải kh&ocirc;ng?",
+          "question_folder": "English Tutoring - Level 4"
+        },
+        {
+          "question_no": 15,
+          "lesson_id": 3621999,
+          "lesson_title": "Unit 4A: The seasons (Extra) - Lesson 5: Review 2",
+          "skill_category": "speaking",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn đáp án đúng)",
+          "correct_answer": "C. It was so hot that I just wanted to stay at home.",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 95 ngày trước và thuộc nhóm Unit 4A cần deep practice theo chẩn đoán vì vừa cũ vừa yếu ở từ vựng thời tiết. Học sinh thường gọi sai từ theo ngữ cảnh như nói “It’s Friday.” hoặc “It’s a bedroom.” khi nhìn tranh/chủ đề khác, nên câu nghe-chọn đóng này giúp kiểm tra lại hiểu nghĩa thời tiết trước khi chuyển sang nói.",
+          "question_id": 646108,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. It was hot and rainy yesterday.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. I went out yesterday although it was hot.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. It was so hot that I just wanted to stay at home.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Audio: It was hot yesterday. I didn&#39;t want to go out at all. I miss rainy days! Dịch: H&ocirc;m qua trời n&oacute;ng quá. T&ocirc;i kh&ocirc;ng muốn ra ngoài ch&uacute;t nào. T&ocirc;i nhớ những ngày mưa!) => C. It was so hot that I just wanted to stay at home. (Trời n&oacute;ng đến mức t&ocirc;i chỉ muốn ở nhà.)",
+          "question_folder": "English Tutoring - Level 4"
+        }
+      ]
+    }
+  }
+}

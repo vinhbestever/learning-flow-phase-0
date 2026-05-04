@@ -42,7 +42,7 @@ STUDENT_ID = "2102555"
 OUTPUT_FILE = "output/student_context.json"
 
 TODAY = date(2026, 4, 21)           # injected reference date
-EBBINGHAUS_STABILITY_DAYS = 1.0     # default stability for first exposure (no repetitions)
+EBBINGHAUS_STABILITY_DAYS = 7.0     # default stability for first exposure (no repetitions)
 WORST_SPEAKING_LIMIT = 5
 WORST_LMS_Q_LIMIT = 5
 MAX_CANDIDATE_POOL_SIZE = 40        # hard ceiling for Agent 2 context
@@ -1016,6 +1016,19 @@ def build_summary(records):
         for at, cnt in ic.get("brainstorm_answer_type_dist", {}).items():
             all_brain_answer_types[at] += cnt
 
+    brain_avg = round(sum(all_brain_scores) / len(all_brain_scores), 2) if all_brain_scores else None
+    free_avg = round(sum(all_free_scores) / len(all_free_scores), 2) if all_free_scores else None
+    pron_avg = round(sum(all_pron_scores) / len(all_pron_scores), 2) if all_pron_scores else None
+    convo_avg = round(sum(all_convo_scores) / len(all_convo_scores), 2) if all_convo_scores else None
+
+    # Speaking weakness is invisible in weak_skills_global (LMS accuracy only).
+    # critical_speaking_types explicitly surfaces which speaking modalities are failing.
+    critical_speaking = []
+    if brain_avg is not None and brain_avg < 30:
+        critical_speaking.append("brainstorm")
+    if free_avg is not None and free_avg < 50:
+        critical_speaking.append("free_speaking")
+
     return {
         "student_id": STUDENT_ID,
         "reference_date": str(TODAY),
@@ -1023,23 +1036,17 @@ def build_summary(records):
         "lessons_by_status": dict(by_status),
         "overall_homework_skill_breakdown": overall_skill,
         "weak_skills_global": weak_skills_global,
-        "overall_pronunciation_score_avg": (
-            round(sum(all_pron_scores) / len(all_pron_scores), 2) if all_pron_scores else None
-        ),
-        "overall_free_speaking_score_avg": (
-            round(sum(all_free_scores) / len(all_free_scores), 2) if all_free_scores else None
-        ),
-        "overall_brainstorm_score_avg": (
-            round(sum(all_brain_scores) / len(all_brain_scores), 2) if all_brain_scores else None
-        ),
-        "overall_conversation_score_avg": (
-            round(sum(all_convo_scores) / len(all_convo_scores), 2) if all_convo_scores else None
-        ),
+        "critical_speaking_types": critical_speaking,
+        "stability_days": EBBINGHAUS_STABILITY_DAYS,
+        "overall_pronunciation_score_avg": pron_avg,
+        "overall_free_speaking_score_avg": free_avg,
+        "overall_brainstorm_score_avg": brain_avg,
+        "overall_conversation_score_avg": convo_avg,
         "overall_free_speaking_answer_type_dist": dict(all_answer_types),
         "overall_brainstorm_answer_type_dist": dict(all_brain_answer_types),
         "forgetting_curve_note": (
-            "All lessons have 1 prior attempt. Stability set to default 1 day. "
-            "Lessons older than 7 days score >0.999 (fully forgotten). "
+            f"All lessons have 1 prior attempt. Stability set to {EBBINGHAUS_STABILITY_DAYS:.0f} days. "
+            "Lessons older than ~21 days score >0.95 (mostly forgotten). "
             "Agent should prioritise by composite_priority_score."
         ),
     }

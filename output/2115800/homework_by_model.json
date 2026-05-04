@@ -3,24 +3,11 @@
   "last_run_model": "gpt-5.4",
   "models": {
     "gpt-5.4": {
-      "updated_at": "2026-04-28T02:36:37.533720+00:00",
-      "diagnostic": "Ba mẫu lỗi và rủi ro nghiêm trọng nhất tôi quan sát được là: thứ nhất, học sinh gặp khó khăn rất nặng ở kỹ năng nói đầu ra, đặc biệt là nói theo mẫu hội thoại và nói tự do, thường trả lời bằng từ rời rạc, lệch ý hoặc không tạo được câu hoàn chỉnh; thứ hai, khả năng gọi tên từ theo tranh/gợi ý gần như chưa hình thành, thể hiện ở brainstorm trung bình 0/100 trên toàn bộ các bài; thứ ba, rủi ro ghi nhớ sau giờ học rất cao vì có nhiều bài đã quá 7 ngày nên coi như quên gần hết, đồng thời có bài Unit 2A Lesson 2 chưa nộp homework nên hoàn toàn thiếu bằng chứng củng cố sau lớp.\n\nĐiểm yếu lớn nhất là kỹ năng nói chủ động đang thấp hơn hẳn kỹ năng làm bài viết. Dữ liệu viết nhìn chung ổn, accuracy 87.6% cho thấy khi có chữ, có lựa chọn, hoặc có cấu trúc bài tập LMS, học sinh vẫn xử lý được tương đối tốt. Nhưng khi chuyển sang nói, đặc biệt là conversation trung bình chỉ 54.7/100, free speaking chỉ 14.29/100, và pronunciation chỉ 30.61/100, thì năng lực thực tế giảm rất mạnh. Mẫu lỗi lặp lại rất rõ là học sinh thường chỉ bật ra một âm hoặc một từ đơn như “I.”, “The.”, “He.”, “I’m.”, hoặc nói ra chuỗi âm không phù hợp như “Liidly”, “YT”, “The oil”. Điều này cho thấy vấn đề không chỉ là phát âm, mà còn là chưa giữ được mẫu câu cơ bản trong trí nhớ làm việc để phản hồi đúng ngữ cảnh. Ở các câu hội thoại rất nền tảng như “How are you today?”, “Are you ready?”, “Tell me your name”, “Where are you from?”, học sinh vẫn không tạo được câu mẫu hoàn chỉnh. Vì vậy, khoảng trống chính không nằm ở nhận diện chữ cái đơn lẻ, mà nằm ở việc nối âm thanh với nghĩa và bật ra câu trả lời đúng tình huống. Đây là lý do các bài Unit 1A Lesson 5, Unit 2A Lesson 2, Unit 2A Lesson 3 cần deep practice về speaking chứ không chỉ ôn nhẹ. Đặc biệt Unit 1A Lesson 5 có conversation 51 và pronunciation 26 sau 13 ngày, lại đã rơi vào vùng quên hoàn toàn; Unit 2A Lesson 3 còn thấp hơn với conversation 44 và pronunciation 23 dù mới 4 ngày, nghĩa là đây là lỗ hổng hiện tại chứ không chỉ do quên. Với các bài này, dạng câu hỏi hiệu quả nhất sẽ là hội thoại cấu trúc cực ngắn, lặp mẫu cao, bắt chước rồi thay thế từ, ví dụ Yes, I am ready; I have a cat; It is a fish; I am fine. Học sinh chưa phù hợp với câu hỏi mở rộng hoặc yêu cầu tự diễn đạt dài.\n\nMẫu nghiêm trọng thứ hai là khả năng gọi đúng từ mục tiêu từ tranh gần như bằng 0. Brainstorm trung bình toàn bộ là 0.0/100, phân bố câu trả lời cho thấy 17 lần là incorrect và chỉ 1 lần là correct nhưng vẫn chưa đủ ý. Cần hiểu đây không phải chỉ là “nói chưa đủ”, mà trong đa số trường hợp học sinh thực sự nói ra từ ngoài danh sách mục tiêu. Ví dụ ở bài Letter E, khi cần nói các cảm xúc angry, sad, happy thì học sinh trả lời “I.”; ở bài Letter F, khi cần fox, fan, fish thì học sinh nói “This is a scooid lion.” hoặc “I can Seeki.”. Điều này cho thấy liên kết giữa hình ảnh, âm đầu chữ cái, và từ vựng mục tiêu còn rất yếu. Với Phase 0 level 4–5, đây là rủi ro nền tảng vì nếu không gọi được từ theo tranh thì các bài phonics sau sẽ tiếp tục đứt mạch. Unit 2A Lesson 3 là bài cần can thiệp sâu nhất cho nhóm kỹ năng này vì có 4 lần brainstorm đều 0, lại sai đúng vào bộ từ khóa cốt lõi của chữ F. Unit 2A Lesson 2 cũng rất đáng lo vì chưa làm homework, trong khi ngay trên lớp brainstorm đã 0 với nhóm từ cảm xúc. Unit 1A Lessons 1–3 và Lesson 5 cũng đều brainstorm 0, cho thấy đây là lỗi xuyên suốt chứ không phải lỗi cục bộ một bài. Với nhóm bài này, dạng câu hỏi hiệu quả nhất không nên bắt đầu bằng “What can you see?” quá mở, mà nên dùng nhận diện có hỗ trợ mạnh: nghe và chọn tranh, nhìn tranh chọn từ, lặp lại từ đơn, đối chiếu tối thiểu 2 lựa chọn như fox or fish, happy or sad, cat or book. Sau khi học sinh ổn ở nhận diện, mới nâng lên nói một từ đơn, rồi mới đến mẫu “It is a fish.”. Nếu đi thẳng vào nói mở, khả năng cao học sinh sẽ tiếp tục trả lời lệch mục tiêu.\n\nMẫu rủi ro thứ ba là quên bài và thiếu củng cố sau lớp. Theo forgetting curve được cung cấp, tất cả bài đều mới chỉ có 1 lần luyện tập trước, và bài trên 7 ngày xem như đã quên hoàn toàn. Vì vậy Unit 1A Lesson 1 cách 27 ngày, Lesson 2 cách 26 ngày, Lesson 3 cách 20 ngày, Lesson 5 cách 13 ngày đều cần xem như học lại từ đầu, không phải ôn lướt. Trong nhóm này, Lesson 1 và Lesson 2 còn có lỗi viết thực tế, nên không thể coi là chỉ yếu nói. Lesson 1 nhầm “Hi!” với “Hello!”, cho thấy học sinh chưa chắc về ghép lời chào tương đương theo đúng yêu cầu nghe-chọn. Lesson 2 sai ở read and match với các cặp rất cơ bản như What’s your name? → I’m David, What is this? → It’s a bird, Hello! → Hi!, Goodbye! → Bye!, nghĩa là phần hiểu chức năng câu và nối đáp án cũng còn hổng. Tuy accuracy viết tổng thể vẫn tốt, hai bài này vẫn cần deep practice hơn các bài cũ khác vì có bằng chứng lỗi ở cả tiếp nhận lẫn sản xuất. Riêng Unit 2A Lesson 2 là rủi ro đặc biệt cao vì hw_status là not_attempted. Ở bài này không có dữ liệu lỗi homework cụ thể, nên không thể kết luận học sinh nhớ được gì sau giờ học; trong bối cảnh speaking đã yếu, việc chưa nộp bài khiến nguy cơ mất trắng kiến thức sau lớp rất cao. Bài này nên được ưu tiên như một bài cần kiểm tra lại từ đầu, không nên xem là “chỉ thiếu nộp”. Dạng câu hỏi hiệu quả nhất cho các bài quên lâu là ôn phục hồi có scaffold: nghe-nhắc lại, chọn đáp án đúng, nối câu ngắn, rồi mới sang hội thoại. Với Lesson 1 và 2, nên dùng nhiều bài matching, listen-and-choose, greeting-response, name/this-is pattern. Với Lesson 5, nên tập trung vào cat/book, at home, I have… vì dữ liệu hội thoại cho thấy học sinh lẫn mạnh ở các mẫu này.\n\nNếu chia mức độ ưu tiên ôn tập, các bài cần deep practice rõ ràng là Unit 2A Lesson 2, Unit 2A Lesson 3, Unit 1A Lesson 5, Unit 1A Lesson 1 và Unit 1A Lesson 2. Unit 2A Lesson 2 cần deep practice vì chưa làm homework và speaking rất thấp. Unit 2A Lesson 3 cần deep practice vì đây là bài mới nhưng vẫn thất bại nặng ở brainstorm, free speaking, conversation và pronunciation, chứng tỏ chưa nắm bài ngay từ đầu. Unit 1A Lesson 5 cần deep practice vì đã quên theo thời gian và hội thoại rất yếu ở các mẫu câu cốt lõi. Unit 1A Lesson 1 và 2 cần deep practice vì vừa quên lâu vừa có lỗi viết thật. Unit 1A Lesson 3 có thể xếp giữa deep và light reinforcement: conversation của bài này là 66, cao nhất trong nhóm, writing không có vấn đề, nhưng vì đã 20 ngày nên vẫn cần ôn lại từ đầu ở mức vừa phải, nhất là các mẫu “My name is…”, “I am from…”, “Yes, I am ready.”. Nếu buộc phải chọn bài nhẹ nhất để reinforcement, thì Lesson 3 là nhẹ nhất tương đối, nhưng vẫn không thể xem là đã vững.\n\nTổng thể, hồ sơ này cho thấy học sinh có sự chênh lệch lớn giữa làm bài có hỗ trợ và nói không có hỗ trợ. Vì vậy chiến lược câu hỏi nên đi từ đóng đến mở. Hiệu quả nhất sẽ là câu hỏi nghe-chọn, nhìn-chọn, lặp lại từ đơn, hoàn thành mẫu câu ngắn, rồi mới đến hội thoại một lượt một câu. Câu hỏi kém hiệu quả ở giai đoạn này là free speaking/warmup quá mở và brainstorm yêu cầu tự gọi nhiều từ mục tiêu cùng lúc. Với học sinh này, cần ưu tiên xây lại các “câu khung” siêu ngắn và từ vựng hình ảnh cốt lõi trước; nếu không, các lỗi kiểu “The.”, “I.”, “I’m.” sẽ tiếp tục lặp lại ở mọi bài sau.",
+      "updated_at": "2026-05-04T04:48:39.636601+00:00",
+      "diagnostic": "Ba mẫu lỗi và rủi ro nghiêm trọng nhất là: thứ nhất, học sinh gặp khó khăn rất nặng ở nói tự tạo đầu ra, đặc biệt là brainstorm theo ảnh và free speaking; thứ hai, phát âm và khả năng lặp lại/cấu trúc câu hội thoại rất yếu, khiến câu trả lời thường chỉ còn 1 âm, 1 từ rời hoặc lệch hoàn toàn mẫu; thứ ba, có rủi ro quên bài rất cao ở các bài cũ và thêm một điểm đỏ là có bài đã học nhưng chưa làm homework, nên không có bằng chứng ghi nhớ sau lớp.\n\nMẫu nghiêm trọng nhất là đứt gãy ở kỹ năng nói chủ động. Dữ liệu rất rõ: brainstorm trung bình 0/100 là mức báo động, free speaking chỉ 14.29/100, và phân bố câu trả lời cho thấy brainstorm có 17 lần incorrect, chỉ 1 lần correct; free speaking có 6 lần inaccordant, chỉ 1 lần accordant. Điều này nghĩa là khi phải nhìn ảnh rồi tự gọi tên từ mục tiêu, hoặc khi phải trả lời câu hỏi mở rất ngắn như “How are you today?”, học sinh hầu như không truy xuất được từ đúng hoặc nói ra câu không liên quan. Cần lưu ý ở brainstorm, score 0 không phải lúc nào cũng là “sai hoàn toàn”, nhưng trong bộ dữ liệu này phần lớn là incorrect, tức là học sinh nói từ ngoài danh sách mục tiêu chứ không chỉ thiếu ý. Ví dụ ở bài Letter E, câu “what can you see?” với targets angry, sad, happy, học sinh trả lời “I.”; ở bài Letter F, khi cần gọi tên fox/fan/fish, học sinh nói “This is a scooid lion.” hoặc “I can Seeki.” Đây không còn là vấn đề thiếu một từ, mà là chưa gắn được hình ảnh với vốn từ cốt lõi của bài. Vì vậy các bài cần deep practice mạnh nhất theo mẫu lỗi này là Unit 2A Lesson 3: Letter F(f), Unit 2A Lesson 2: Letter E(e), Unit 1A Lesson 5: Review 2, rồi đến Unit 1A Lesson 3: Letter C(c). F và E là ưu tiên rất cao vì vừa mới học mà nói vẫn rơi về 0 ở brainstorm/free speaking, cho thấy lỗ hổng hiện tại chứ không chỉ do quên. Dạng câu hỏi hiệu quả nhất cho nhóm bài này sẽ không nên bắt đầu bằng nói mở ngay, mà nên đi theo chuỗi nhận diện rồi mới sản xuất: nghe-chọn ảnh, nhìn ảnh-chọn từ, lặp lại từ đơn, rồi mới chuyển sang “What is it?” hoặc “What can you see?” với số lựa chọn rất hẹp. Với E, nên tập riêng bộ từ cảm xúc happy/sad/angry bằng ảnh đối lập. Với F, nên tập cực nhiều cặp ảnh-từ fox/fan/fish vì học sinh đang không neo được từ mục tiêu vào hình.\n\nMẫu thứ hai là phát âm yếu đi kèm khả năng hội thoại cấu trúc chưa ổn, làm học sinh thường trả lời bằng âm rời, từ rời hoặc câu lệch mẫu. Điểm pronunciation trung bình chỉ 30.61/100 là rất thấp; conversation trung bình 54.7/100 cũng dưới mức an toàn. Nhiều câu trả lời cho thấy học sinh chưa giữ được khung câu tối thiểu, ví dụ ở Letter A: “How are you today?” trả lời “He.”, “Say Hi back to me” trả lời “Liidly.”, “Say Hi to me” trả lời “YT.” Ở Review 2, câu “Is the cat at home?” lại trả lời “I’m.” với điểm 7/100; ở Letter C, “Tell me your name” trả lời “The.”, “Where are you from?” trả lời “The that said.” Đây là mẫu lỗi xuyên suốt nhiều bài: học sinh không chỉ thiếu từ vựng, mà còn chưa nghe-bắt mẫu và tái tạo được câu khung rất cơ bản như “Hi”, “Yes, I am ready”, “My name is…”, “I am from…”, “I have a cat”, “The cat is at home.” Điểm đáng chú ý là có lúc pronunciation được chấm 100 nhưng grammar rất thấp, như trả lời “The.” hoặc “Apple here.” Điều đó cho thấy có những lần âm thanh được máy nhận khá rõ, nhưng nội dung câu vẫn sai cấu trúc. Ngược lại cũng có nhiều lần grammar không quá thấp nhưng pronunciation gần 0, nghĩa là phát âm làm hệ thống khó nhận diện. Vì vậy đây là lỗi kép: vừa yếu mẫu câu, vừa yếu phát âm. Các bài cần deep practice nhất theo hướng này là Review 2, Letter F, Letter E, Letter A và Letter B. Review 2 đặc biệt quan trọng vì là bài tổng ôn mà conversation chỉ 51 và pronunciation 26, chứng tỏ kiến thức chưa được gom lại thành phản xạ. Letter A và B lại là bài rất cũ, conversation quanh 53–58 và pronunciation 24–31, nên vừa yếu gốc vừa có nguy cơ quên sâu. Dạng câu hỏi hiệu quả nhất cho nhóm này là hội thoại đóng, bắt chước mẫu ngắn, thay vì hỏi mở. Nên ưu tiên các câu một khuôn cố định: “Hi.”, “I am fine, thank you.”, “Yes, I am ready.”, “My name is …”, “It’s a bird.”, “I have a cat.”, “The cat is at home.” Kèm theo đó là luyện phát âm từ đơn cực cơ bản như apple, bird, cat, hi, bye, yes, no. Với Letter B, dữ liệu homework cũng xác nhận học sinh còn lẫn ở các cặp chào hỏi và nối câu-đáp án như “What’s your name? → I’m David”, “What is this? → It’s a bird”, “Hello! → Hi!”, “Goodbye! → Bye!” nên bài này cần quay lại đúng các mẫu đối đáp nền tảng.\n\nMẫu thứ ba là rủi ro ghi nhớ rất cao do độ lùi thời gian và do thiếu dữ liệu homework ở một bài mới học. Theo forgetting curve, các bài trên 21 ngày gần như quên hoàn toàn; ở đây Letter A đã 27 ngày, Letter B 26 ngày, Letter C 20 ngày, nên A và B đặc biệt đáng lo. Cả hai bài này không chỉ cũ mà còn có lỗi thật trong homework, nghĩa là không phải chỉ nói yếu mà cả nhận diện/ghép nối trên LMS cũng đã có vấn đề. Letter A có lỗi nghe-chọn khi phân biệt “Hi!” và “Hello!”, cho thấy học sinh chưa chắc các mẫu chào cơ bản. Letter B có lỗi read and match ở cả câu hỏi thông tin lẫn chào tạm biệt, cho thấy nền ngôn ngữ đầu vào còn lung lay. Trong khi đó Letter E là bài chưa nộp homework dù đã học trên lớp. Vì hw_status=not_attempted, hiện không có bằng chứng nào rằng học sinh còn nhớ phần viết/nhận diện sau giờ học; “Question bank preview” chỉ là mẫu ngân hàng, không phải lỗi thực tế. Đây là rủi ro cao vì bài mới học 6 ngày, chưa quá xa, nhưng speaking đã yếu nặng: brainstorm 0, conversation 45, pronunciation 35. Nếu không chốt lại ngay bằng bài tập có kiểm chứng, bài này rất dễ trôi sang trạng thái quên sâu như A và B. Vì vậy về ưu tiên ôn tập tổng thể, deep practice nên chia làm hai nhóm. Nhóm deep practice do vừa yếu vừa cũ: Letter A và Letter B cần ôn sâu để cứu nền tảng. Nhóm deep practice do vừa yếu hiện tại vừa chưa ổn đầu ra: Letter E, Letter F và Review 2. Riêng Letter C có thể xếp giữa deep và medium: bài này cũ vừa phải, conversation 66 nhỉnh hơn các bài khác, pronunciation 44 cũng đỡ hơn, nhưng free speaking và brainstorm vẫn 0 nên chưa thể chỉ ôn nhẹ. Nếu buộc phải phân loại light reinforcement, hiện gần như chưa có bài nào thật sự đủ an toàn để chỉ ôn nhẹ; gần nhất với mức reinforcement là Letter C, nhưng vẫn cần kiểm tra lại nói chủ động.\n\nNhìn toàn cục, kỹ năng viết trên LMS không phải điểm nghẽn chính vì accuracy chung 87.6%, và nhiều bài ghi nhận “writing accuracy is good”. Điều này cho thấy học sinh có thể làm được một phần bài nhận diện/chọn đáp án khi có hỗ trợ, nhưng khi chuyển sang nói thì đầu ra sụt rất mạnh. Vì vậy chiến lược câu hỏi hiệu quả nhất nên là từ dễ đến khó, ưu tiên bắc cầu từ nhận diện sang nói. Với Letter A và B, nên dùng nghe-chọn, nối câu với đáp án, chọn giữa hai mẫu gần nhau như Hi/Hello, Bye/Goodbye, rồi mới yêu cầu lặp lại và trả lời hội thoại một câu. Với Letter C, nên tập các mẫu giới thiệu bản thân cực ngắn: “My name is…”, “I am from…”, “Yes, I am ready.” bằng shadowing và substitution drill. Với Review 2, cần dùng câu hỏi hội thoại đóng để gom lại các mẫu “I have…”, “It’s the cat.”, “Yes, the cat is at home.” trước khi hỏi mở. Với Letter E và F, nên ưu tiên ảnh-từ, nghe-từ-chọn ảnh, rồi nói từ đơn theo ảnh; chưa nên đẩy nhanh sang free speaking vì dữ liệu hiện tại cho thấy học sinh chưa có vốn truy xuất đủ để trả lời mở.\n\nTóm lại, đây là hồ sơ của một học sinh viết/nhận diện tạm ổn nhưng nói rất yếu, đặc biệt ở truy xuất từ theo ảnh, trả lời mở và phát âm. Cần xem các bài A, B, E, F và Review 2 là vùng can thiệp sâu; C là vùng cần củng cố có kiểm tra lại. Nếu agent chọn câu hỏi, nên ưu tiên trước các bài cũ A và B vì nguy cơ quên gần như hoàn toàn, đồng thời chèn E vì chưa làm homework nên rủi ro không có bằng chứng ghi nhớ. Sau đó dùng F và Review 2 để xử lý lỗ hổng nói hiện tại. Chọn câu hỏi theo hướng đóng-khung, nhiều nhận diện, nhiều lặp lại mẫu ngắn, rồi mới nâng dần sang nói tự tạo.",
       "homework": [
         {
           "question_no": 1,
-          "lesson_id": 3982658,
-          "lesson_title": "Unit 2A: Letters DEF - Lesson 3: Letter F(f)",
-          "skill_category": "speaking",
-          "question_type": "speaking_unscripted",
-          "question_text": "How are you today?",
-          "correct_answer": null,
-          "difficulty": "hard",
-          "reason": "Bài này là lỗ hổng hiện tại chứ không chỉ do quên: conversation chỉ 44/100 và pronunciation 23/100 dù mới học 4 ngày. Chẩn đoán cho thấy học sinh thường chỉ bật ra từ rời rạc như “I.” hoặc trả lời lệch mẫu ở các câu rất cơ bản, nên cần luyện đúng khung “I’m happy/sad/angry.”.",
-          "question_id": null,
-          "requires_media": false
-        },
-        {
-          "question_no": 2,
           "lesson_id": 3971868,
           "lesson_title": "Unit 2A: Letters DEF - Lesson 2: Letter E(e)",
           "skill_category": "vocabulary",
@@ -28,7 +15,7 @@
           "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn phương án đúng nhé.) How are you? ... .",
           "correct_answer": "B. I'm happy.",
           "difficulty": "easy",
-          "reason": "Unit 2A Lesson 2 chưa nộp homework nên hoàn toàn thiếu bằng chứng củng cố sau lớp. Trên lớp brainstorm của nhóm từ cảm xúc là 0/100, học sinh từng nói “I.” thay vì gọi đúng từ angry/sad/happy nên cần quay lại nhận diện có hỗ trợ mạnh.",
+          "reason": "Bài này đã học 6 ngày trước nhưng vẫn là vùng rủi ro rất cao vì bài E chưa nộp homework, nên chưa có bằng chứng ghi nhớ sau lớp. Chẩn đoán cho thấy brainstorm=0/100 và học sinh từng trả lời lệch hẳn mục tiêu ở bài E như nói \"I.\" khi cần gọi tên happy/sad/angry, nên cần chốt lại mẫu trả lời cảm xúc cơ bản.",
           "question_id": 678216,
           "requires_media": false,
           "stem_media_urls": [],
@@ -57,15 +44,28 @@
           "question_folder": "English Tutoring Level 0"
         },
         {
+          "question_no": 2,
+          "lesson_id": 3982658,
+          "lesson_title": "Unit 2A: Letters DEF - Lesson 3: Letter F(f)",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "How are you today?",
+          "correct_answer": "open",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 4 ngày trước nhưng nói chủ động vẫn rất yếu; chẩn đoán ghi brainstorm trung bình 0/100 và free speaking chỉ 14.29/100. Ở nhóm bài F, học sinh từng nói lệch hoàn toàn như \"This is a scooid lion.\" hoặc \"I can Seeki.\" thay vì từ mục tiêu, nên cần luyện lại câu hỏi mở rất ngắn này.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
           "question_no": 3,
           "lesson_id": 3931432,
           "lesson_title": "Unit 1A: Letters ABC - Lesson 5: Review 2",
           "skill_category": "speaking",
           "question_type": "speaking_unscripted",
           "question_text": "How are you today?",
-          "correct_answer": null,
+          "correct_answer": "open",
           "difficulty": "hard",
-          "reason": "Bài này đã cách 13 ngày và được xem như quên gần hết; đồng thời conversation chỉ 51/100, pronunciation 26/100. Học sinh có mẫu lỗi nói câu cụt như “I’m.” hoặc không giữ được mẫu trả lời hoàn chỉnh cho câu chào hỏi cơ bản.",
+          "reason": "Bài này đã học 13 ngày trước và Review 2 là điểm đỏ vì conversation chỉ khoảng 51 và pronunciation chỉ khoảng 26 theo chẩn đoán. Học sinh từng trả lời \"I’m.\" cho câu \"Is the cat at home?\" nên rõ ràng đang mất khung câu hội thoại cơ bản; thêm nữa brainstorm=0/100 nên cần một câu speaking ngắn để kiểm tra phản xạ thật.",
           "question_id": null,
           "requires_media": false
         },
@@ -78,7 +78,7 @@
           "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn câu trả lời đúng nhé!) A: Hello! => B: ............",
           "correct_answer": "Hi!",
           "difficulty": "easy",
-          "reason": "Ở Lesson 1 học sinh đã làm sai đúng cặp chào hỏi này, nhầm “Hi!” với “Hello!”. Bài cũng đã 27 ngày nên theo forgetting curve coi như quên hoàn toàn, cần phục hồi lại phản xạ greeting-response rất cơ bản.",
+          "reason": "Bài này đã học 27 ngày trước — nguy cơ quên rất cao. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"Hello!\" thay vì \"Hi!\"; chẩn đoán cũng nêu rõ em còn lẫn cặp chào hỏi Hi/Hello và từng đáp các câu chào bằng âm rời như \"Liidly.\" hoặc \"YT.\".",
           "question_id": 675711,
           "requires_media": false,
           "stem_media_urls": [],
@@ -110,12 +110,12 @@
           "question_no": 5,
           "lesson_id": 3873110,
           "lesson_title": "Unit 1A: Letters ABC - Lesson 2: Letter B(b)",
-          "skill_category": "grammar",
+          "skill_category": "vocabulary",
           "question_type": "Xứng-Hợp",
           "question_text": "Read and match (Con hãy đọc và nối nhé!)",
           "correct_answer": "What's your name?→I'm David.; What is this?→It's a bird.",
           "difficulty": "medium",
-          "reason": "Lesson 2 có lỗi viết thật ở bài read and match với các cặp rất cơ bản như “What’s your name?” và “What is this?”. Bài đã 26 ngày và học sinh còn yếu nói mẫu câu hoàn chỉnh, nên cần nối lại đúng chức năng câu trước khi chuyển sang nói.",
+          "reason": "Bài này đã học 26 ngày trước nên gần như đã vào vùng quên sâu. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"wrong: What's your name?, What is this?\" thay vì \"What's your name?→I'm David.; What is this?→It's a bird.\"; chẩn đoán cũng chỉ ra em đang yếu các mẫu nền như \"What's your name?\" và \"It's a bird.\".",
           "question_id": 675759,
           "requires_media": false,
           "stem_media_urls": [],
@@ -151,40 +151,16 @@
         },
         {
           "question_no": 6,
-          "lesson_id": 3982658,
-          "lesson_title": "Unit 2A: Letters DEF - Lesson 3: Letter F(f)",
-          "skill_category": "grammar",
-          "question_type": "Một lựa chọn",
-          "question_text": "Fill in the blank a missing word (Con hãy điền vào chỗ trống từ còn thiếu nhé.) Are you angry? Yes, I ______.",
-          "correct_answer": "A. am",
-          "difficulty": "easy",
-          "reason": "Bài này bám đúng mẫu câu mà học sinh đang không bật ra được khi nói; chẩn đoán cho thấy em thường trả lời bằng mảnh câu như “I.” thay vì “Yes, I am.”. Vì Lesson 3 có brainstorm 0/100 và speaking rất thấp, cần chốt lại từ khóa “am” trong khung trả lời ngắn.",
-          "question_id": 679392,
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. am",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. is",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. are",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "Tạm dịch: Bạn đang tức giận phải kh&ocirc;ng? - Đ&uacute;ng vậy.",
-          "question_folder": "English Tutoring Level 0"
+          "lesson_id": 3873110,
+          "lesson_title": "Unit 1A: Letters ABC - Lesson 2: Letter B(b)",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "Look at the picture. Do you know what is it?",
+          "correct_answer": "open",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 26 ngày trước và cần cứu nền tảng nói vì brainstorm trung bình toàn bộ chỉ 0/100. Chẩn đoán cho thấy ở các câu hỏi mở tương tự học sinh thường chỉ nói từ rời hoặc lệch mẫu như \"The.\" hay \"Apple here.\", nên cần luyện gọi tên đồ vật theo tranh với khung câu ngắn.",
+          "question_id": null,
+          "requires_media": false
         },
         {
           "question_no": 7,
@@ -195,7 +171,7 @@
           "question_text": "Read and reorder the sentence (Con hãy đọc và sắp xếp thành câu hoàn chỉnh nhé.) you/ are/ How/?/",
           "correct_answer": "B. How are you?",
           "difficulty": "medium",
-          "reason": "Bài chưa được luyện sau lớp vì trạng thái homework là chưa làm bài, nên không có bằng chứng học sinh còn nhớ mẫu câu này. Đây cũng là mẫu hội thoại nền tảng mà hồ sơ nói cho thấy em thường không tạo được câu hoàn chỉnh khi được hỏi trực tiếp.",
+          "reason": "Bài này đã học 6 ngày trước nhưng chưa làm homework nên chưa có dữ liệu xác nhận em còn nhớ cấu trúc câu. Chẩn đoán cho thấy conversation chỉ khoảng 45 ở bài E và học sinh rất yếu ở mẫu hỏi-đáp cơ bản, nên cần củng cố lại trật tự từ của câu \"How are you?\" trước khi yêu cầu nói tự do.",
           "question_id": 678222,
           "requires_media": false,
           "stem_media_urls": [],
@@ -219,103 +195,71 @@
         },
         {
           "question_no": 8,
+          "lesson_id": 3982658,
+          "lesson_title": "Unit 2A: Letters DEF - Lesson 3: Letter F(f)",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn đáp án đúng nhé.) Are you angry?",
+          "correct_answer": "B. No, I'm not. I'm sad.",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 4 ngày trước nhưng F là bài ưu tiên rất cao vì nói theo ảnh rơi về 0/100. Học sinh từng nói lệch hoàn toàn ở bài F như \"This is a scooid lion.\" và \"I can Seeki.\", nên cần quay về nhận diện câu trả lời đúng cho mẫu cảm xúc trước khi nâng lên nói.",
+          "question_id": 679397,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Yes, I am.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. No, I'm not. I'm sad.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Tạm dịch: Bạn đang tức giận phải kh&ocirc;ng? - Kh&ocirc;ng. T&ocirc;i cảm thấy buồn.",
+          "question_folder": "English Tutoring Level 0"
+        },
+        {
+          "question_no": 9,
           "lesson_id": 3873111,
           "lesson_title": "Unit 1A: Letters ABC - Lesson 3: Letter C(c)",
           "skill_category": "speaking",
           "question_type": "speaking_unscripted",
-          "question_text": "What color is the sky?",
-          "correct_answer": null,
-          "difficulty": "medium",
-          "reason": "Lesson 3 là bài nhẹ nhất tương đối nhưng vẫn đã 20 ngày nên cần ôn lại từ đầu ở mức vừa phải. Chẩn đoán cho thấy học sinh hay trả lời lệch ý trong speaking; dạng câu hỏi đóng như câu này phù hợp hơn free speaking mở để luyện câu hoàn chỉnh “It’s blue.”.",
+          "question_text": "Look at this picture. What can you see?",
+          "correct_answer": "open",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 20 ngày trước, đủ lâu để quên đáng kể, trong khi chẩn đoán nói rõ brainstorm ở C vẫn 0/100. Đây đúng kiểu câu hỏi mà học sinh đang đứt gãy truy xuất từ theo ảnh; ở các bài tương tự em thường nói ngoài danh sách mục tiêu hoặc chỉ nói 1 từ rời, nên cần kiểm tra lại có kiểm soát.",
           "question_id": null,
           "requires_media": false
         },
         {
-          "question_no": 9,
+          "question_no": 10,
           "lesson_id": 3873109,
           "lesson_title": "Unit 1A: Letters ABC - Lesson 1: Letter A(a)",
-          "skill_category": "vocabulary",
-          "question_type": "Một lựa chọn",
-          "question_text": "Listen, look and choose the correct beginning letter (Con hãy nghe, nhìn tranh và chọn chữ cái đầu đúng nhé!)",
-          "correct_answer": "A",
-          "difficulty": "easy",
-          "reason": "Brainstorm toàn bộ đang trung bình 0/100, cho thấy liên kết giữa hình ảnh và từ mục tiêu còn rất yếu. Với bài đã 27 ngày như Lesson 1, cần quay về mức nhận diện có hỗ trợ mạnh qua tranh và âm đầu thay vì bắt em nói mở ngay.",
-          "question_id": 675690,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/26d5_ant-1.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "B",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "A",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "A nt: con kiến",
-          "question_folder": "English Tutoring Level 0"
-        },
-        {
-          "question_no": 10,
-          "lesson_id": 3873110,
-          "lesson_title": "Unit 1A: Letters ABC - Lesson 2: Letter B(b)",
-          "skill_category": "vocabulary",
-          "question_type": "Một lựa chọn",
-          "question_text": "Tick or Cross (Con hãy chọn Đúng ✓ hoặc Sai X nhé!) banana",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "Now, look carefully at the circled thing. What is it?",
           "correct_answer": "open",
-          "difficulty": "easy",
-          "reason": "Khả năng gọi tên từ theo tranh/gợi ý gần như chưa hình thành, brainstorm trung bình 0/100 trên toàn bộ các bài. Lesson 2 lại đã 26 ngày và chưa vững cả phần matching, nên bài nhận diện từ đơn với tranh như “banana” sẽ giúp kiểm tra lại nền tảng trước khi yêu cầu nói.",
-          "question_id": 675728,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/07/31/d5ff_banana-removebg-preview.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/05/23/6777_pic-of-tick.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2024/05/23/46f1_pic-of-cross.png"
-              ],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "banana: quả chuối",
-          "question_folder": "English Tutoring Level 0"
+          "difficulty": "hard",
+          "reason": "Bài này đã học 27 ngày trước — rất dễ quên hoàn toàn. Chẩn đoán cho thấy ở các câu hỏi hội thoại/nói ngắn của bài A học sinh từng đáp \"He.\", \"Liidly.\" và \"YT.\" thay vì mẫu đúng, nên cần luyện lại câu gọi tên đồ vật cực cơ bản với khung \"It’s a/an ...\".",
+          "question_id": null,
+          "requires_media": false
         },
         {
           "question_no": 11,
           "lesson_id": 3931432,
           "lesson_title": "Unit 1A: Letters ABC - Lesson 5: Review 2",
-          "skill_category": "vocabulary",
+          "skill_category": "grammar",
           "question_type": "Xứng-Hợp",
           "question_text": "Let's match! (Con hãy nối với bức tranh với câu trả lời đ&uacute;ng nh&eacute;)",
-          "correct_answer": "→It&#39;s a cat.; →It&#39;s a cake.",
+          "correct_answer": "→It's a cat.; →It's a cake.",
           "difficulty": "medium",
-          "reason": "Ở Lesson 5, chẩn đoán nêu rõ cần tập trung vào cat/book vì học sinh lẫn mạnh ở các mẫu này; brainstorm cũng 0/100 nên việc gọi tên theo tranh chưa chắc. Bài đã 13 ngày và speaking yếu, nên nối tranh với câu mẫu “It’s a cat/cake.” sẽ là bước đệm an toàn trước khi nói.",
+          "reason": "Bài này đã học 13 ngày trước và Review 2 cần gom lại kiến thức nền vì conversation/pronunciation đều thấp theo chẩn đoán. Học sinh từng trả lời \"I’m.\" cho câu về con mèo ở nhà, cho thấy mẫu \"It’s a ...\" chưa ổn định; bài nối tranh với câu này giúp kéo em về đúng cấu trúc trước khi nói.",
           "question_id": 675769,
           "requires_media": false,
           "stem_media_urls": [],
@@ -362,7 +306,7 @@
           "question_text": "Listen and choose (Con hãy nghe và chọn đáp đúng nhé!)",
           "correct_answer": "cat",
           "difficulty": "easy",
-          "reason": "Dù Lesson 3 không phải bài yếu nhất, bài đã cách 20 ngày nên nguy cơ quên cao. Vì học sinh thường nói ra từ ngoài danh sách mục tiêu trong brainstorm, bài nghe-chọn từ đơn như “cat” phù hợp để củng cố liên kết âm thanh-nghĩa trước khi yêu cầu tự nói.",
+          "reason": "Bài này đã học 20 ngày trước nên cần ôn lại từ vựng cốt lõi trước khi yêu cầu nói. Chẩn đoán cho thấy brainstorm=0/100 và học sinh thường không gắn được hình với từ mục tiêu, vì vậy nhận diện từ đơn như \"cat\" là bước đệm cần thiết để hỗ trợ câu hỏi speaking của bài C.",
           "question_id": 675359,
           "requires_media": true,
           "stem_media_urls": [
@@ -394,43 +338,6 @@
         },
         {
           "question_no": 13,
-          "lesson_id": 3982658,
-          "lesson_title": "Unit 2A: Letters DEF - Lesson 3: Letter F(f)",
-          "skill_category": "grammar",
-          "question_type": "Một lựa chọn",
-          "question_text": "Fill in the blank a missing word (Con hãy điền vào chỗ trống từ còn thiếu nhé.) Are you angry? _______, I'm not. I'm hap",
-          "correct_answer": "B. No",
-          "difficulty": "easy",
-          "reason": "Ở nhóm câu hỏi cảm xúc, học sinh chưa giữ được mẫu đối đáp đầy đủ và brainstorm của bài này đều 0. Bài này giúp khóa phản xạ phủ định “No, I’m not” thay vì trả lời rời rạc hoặc lệch ý như các mẫu lỗi nói đã ghi nhận.",
-          "question_id": 679394,
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. Yes",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. No",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. Do",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "Tạm dịch: Bạn đang tức giận phải kh&ocirc;ng? - Kh&ocirc;ng. T&ocirc;i cảm thấy vui vẻ.",
-          "question_folder": "English Tutoring Level 0"
-        },
-        {
-          "question_no": 14,
           "lesson_id": 3971868,
           "lesson_title": "Unit 2A: Letters DEF - Lesson 2: Letter E(e)",
           "skill_category": "grammar",
@@ -438,7 +345,7 @@
           "question_text": "Read and reorder the sentence (Con hãy đọc và sắp xếp thành câu hoàn chỉnh nhé.) angry/ I'm/./",
           "correct_answer": "A. I'm angry.",
           "difficulty": "easy",
-          "reason": "Vì Lesson 2 chưa làm homework, cần kiểm tra lại từ đầu cả nhận diện lẫn tạo câu ngắn. Mẫu “I’m angry.” bám sát lỗ hổng học sinh từng thể hiện khi chỉ nói “I.” ở các bài cảm xúc, nên rất phù hợp để xây lại câu khung siêu ngắn.",
+          "reason": "Bài này đã học 6 ngày trước nhưng chưa làm homework nên chưa có bằng chứng em nhớ được mẫu câu cảm xúc sau giờ học. Chẩn đoán ghi brainstorm=0/100 ở bài E và học sinh từng nói \"I.\" khi cần gọi tên happy/sad/angry, nên cần chốt lại câu hoàn chỉnh \"I'm angry.\" để tránh chỉ nói từ rời.",
           "question_id": 678223,
           "requires_media": false,
           "stem_media_urls": [],
@@ -461,17 +368,83 @@
           "question_folder": "English Tutoring Level 0"
         },
         {
+          "question_no": 14,
+          "lesson_id": 3982658,
+          "lesson_title": "Unit 2A: Letters DEF - Lesson 3: Letter F(f)",
+          "skill_category": "grammar",
+          "question_type": "Một lựa chọn",
+          "question_text": "Fill in the blank a missing word (Con hãy điền vào chỗ trống từ còn thiếu nhé.) Are you angry? Yes, I ______.",
+          "correct_answer": "A. am",
+          "difficulty": "easy",
+          "reason": "Bài này đã học 4 ngày trước nhưng F vẫn là vùng yếu hiện tại, không chỉ do quên. Chẩn đoán cho thấy học sinh rất yếu ở mẫu câu ngắn và thường trả lời lệch hoàn toàn ở bài F; bài điền từ này giúp khóa lại khung ngữ pháp tối thiểu \"Yes, I am\" trước khi nói.",
+          "question_id": 679392,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. am",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. is",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. are",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Tạm dịch: Bạn đang tức giận phải kh&ocirc;ng? - Đ&uacute;ng vậy.",
+          "question_folder": "English Tutoring Level 0"
+        },
+        {
           "question_no": 15,
           "lesson_id": 3873110,
           "lesson_title": "Unit 1A: Letters ABC - Lesson 2: Letter B(b)",
-          "skill_category": "speaking",
-          "question_type": "speaking_unscripted",
-          "question_text": "Look at the picture. Do you know what is it?",
-          "correct_answer": null,
-          "difficulty": "hard",
-          "reason": "Lesson 2 vừa có lỗi viết ở phần matching vừa đã 26 ngày nên cần kiểm tra khả năng gọi tên đồ vật bằng câu hoàn chỉnh. Chẩn đoán cho thấy khi nhìn tranh học sinh thường không gọi đúng từ mục tiêu và dễ trả lời bằng từ rời rạc, nên câu này giúp kiểm tra xem em có nói được mẫu “It’s a bird/book/banana.” hay không.",
-          "question_id": null,
-          "requires_media": false
+          "skill_category": "grammar",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Read and match (Con hãy đọc và nối nhé!)",
+          "correct_answer": "Hello!→Hi!; Goodbye!→Bye!",
+          "difficulty": "easy",
+          "reason": "Bài này đã học 26 ngày trước nên cần ôn lại từ đầu các mẫu chào hỏi nền tảng. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"wrong: Hello!, Goodbye!\" thay vì \"Hello!→Hi!; Goodbye!→Bye!\"; chẩn đoán cũng nêu rõ em còn lẫn các cặp Hi/Hello và Bye/Goodbye.",
+          "question_id": 675822,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A1",
+              "text": "Hello!",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "A2",
+              "text": "Goodbye!",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B1",
+              "text": "Bye!",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B2",
+              "text": "Hi!",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring Level 0"
         }
       ]
     }

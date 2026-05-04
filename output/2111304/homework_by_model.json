@@ -1,0 +1,416 @@
+{
+  "version": 1,
+  "last_run_model": "gpt-5.4",
+  "models": {
+    "gpt-5.4": {
+      "updated_at": "2026-05-04T04:40:30.789687+00:00",
+      "diagnostic": "Ba mẫu lỗi và rủi ro nghiêm trọng nhất là: thứ nhất, học sinh yếu rất nặng ở dạng nói brainstorm theo tranh, lặp lại trên hầu hết các bài và đặc biệt nghiêm trọng ở các bài đã học từ lâu nên khả năng quên gần như hoàn toàn; thứ hai, học sinh thường không giữ được câu trả lời đúng trọng tâm trong nói tự do và một phần hội thoại, dẫn đến trả lời lạc đề, đứt câu hoặc chuyển sang câu quen miệng không liên quan; thứ ba, có khoảng cách rất lớn giữa năng lực làm bài tập viết gần như hoàn hảo và năng lực gọi từ/nói thành câu, cho thấy em nhận diện tốt trên giấy nhưng chưa thật sự ghi nhớ để bật ra bằng lời nói.\n\nMẫu nghiêm trọng nhất là lỗ hổng ở brainstorm. Điểm trung bình brainstorm chỉ 19.72/100, dưới ngưỡng nguy cấp, và phân bố câu trả lời cũng cho thấy vấn đề không chỉ là phát âm mà là thiếu khả năng truy xuất từ mục tiêu khi nhìn tranh. Nhiều trường hợp answer_type là correct nhưng score vẫn bằng 0, nghĩa là em có nói ra từ hợp lệ nhưng quá thiếu ý, không đủ số lượng target cần nêu. Điều này xuất hiện rất rõ ở các bài như Unit 1A Nature Lesson 4, Unit 1B Clothes Lesson 1, Unit 2A Me Lessons 3–5, Unit 3A Pets Lessons 2–5, Unit 4A Home Lessons 3–4. Ví dụ em nhìn tranh quần áo chỉ nói “I I see a dress skirt”, nhìn tranh nhà bếp chỉ nói vài từ rời như “fridge”, “stove”, “cupboard”, hoặc nhìn tranh thú cưng nói lẫn lộn, thiếu gần hết các từ mục tiêu. Ngoài ra còn có nhiều câu brainstorm answer_type=incorrect, cho thấy em không chỉ thiếu số lượng mà còn gọi sai trường từ vựng, như nói “short hair” khi target là nhóm màu mắt/tóc, hoặc nói “flower” khi target là leaf, rock, tree, pond. Vì các bài này đã cách 50 đến 110 ngày, theo forgetting curve thì phần lớn đã ở mức gần như quên hoàn toàn, nên đây là nhóm cần deep practice chứ không phải ôn nhẹ. Cần ưu tiên sâu nhất cho Unit 1A Nature Lesson 4, Unit 2A Me Lessons 4–5, Unit 2A Me Lesson 2, rồi đến chuỗi Unit 3A Pets và Unit 4A Home vì vừa cũ vừa có brainstorm liên tục bằng 0. Dạng câu hỏi hiệu quả nhất cho các bài này sẽ là nhìn tranh gọi tên từng mục tiêu, chọn từ đúng theo ảnh, rồi nâng dần lên “What can you see?” nhưng có khung bắt buộc nói đủ 3–5 từ mục tiêu thay vì nói tự do hoàn toàn. Với em này, câu hỏi nói mở quá rộng hiện chưa hiệu quả bằng bài gọi từ có kiểm soát và liệt kê theo tranh.\n\nMẫu thứ hai là trả lời nói tự do và hội thoại thường bị lạc đề hoặc gãy cấu trúc, dù điểm conversation trung bình tổng thể vẫn khá. Điểm free speaking trung bình 62/100 không quá thấp, nhưng phân bố có tới 18 câu inaccordant và 1 câu lack_of_knowledge, nghĩa là rủi ro thực tế lớn hơn con số trung bình. Nhiều ví dụ cho thấy em nghe câu hỏi nhưng bật ra câu quen thuộc không liên quan: hỏi “What did you eat today?” thì trả lời “Yeah.”; hỏi “How are you today?” thì nói “Thank you.”; hỏi thời tiết thì nói “It’s me Unit Two, a lesson, one.” Trong conversation, em thường bám được khung đối thoại đơn giản nhưng khi cần tạo câu riêng thì dễ trượt khỏi ý chính hoặc ghép từ vô nghĩa. Điều này thấy rõ ở Unit 3A Pets Lessons 3–5, Unit 4A Home Lessons 1–2, và một phần Unit 2A Me Lesson 2. Ví dụ ở Pets, khi được hỏi màu lông hoặc thú cưng thích làm gì, em trả lời cụt hoặc chuyển sang thông tin khác; ở Home, các câu như “Itty”, “I have two blue nose on my bed”, “I’m ready. I talk on my help teacher” cho thấy em chưa ổn ở việc hiểu ý hỏi và ráp câu đúng ngữ cảnh. Các bài này cần deep practice ở dạng hội thoại cấu trúc ngắn, đặc biệt là Unit 4A Home Lesson 2 vì conversation chỉ 74/100, Unit 4A Home Lesson 1 là 79/100, Unit 3A Pets Lessons 4–5 là 77/100, Unit 3A Pets Lesson 3 có câu gram rất thấp. Nên dùng câu hỏi đóng hoặc bán mở với mẫu câu rõ ràng, ví dụ Yes/No + complete sentence, hoặc hỏi một thông tin duy nhất như color, age, place, number. Sau đó mới tăng lên follow-up ngắn. Với em này, dạng hiệu quả nhất là luyện phản xạ theo cặp hỏi–đáp cố định, điền một từ vào khung câu, và sửa câu sai thành câu đúng; còn warmup quá mở nên dùng rất ngắn và chỉ sau khi đã gợi mẫu.\n\nMẫu thứ ba là chênh lệch rất lớn giữa viết và nói, cho thấy em làm bài LMS rất tốt nhưng chưa chuyển hóa thành trí nhớ chủ động khi giao tiếp. Toàn bộ kỹ năng viết gần như tuyệt đối, không có weak skills về writing, các mục Vocabulary, Grammar, Reading, Writing đều 100% hoặc xấp xỉ tuyệt đối. Tuy nhiên trong bài tập thực tế vẫn có vài lỗi ngữ pháp nền ở Unit 2A Me Lesson 5 như thiếu mạo từ và sai số nhiều: “She has big nose and a strong arms”, “He has a short hair and big nose”, cùng lỗi chọn từ “nose/ears”. Điều này cho thấy khi có áp lực sản xuất ngôn ngữ, em vẫn chưa tự động hóa được các mẫu rất cơ bản như has/have, a/an, số ít/số nhiều, và cụm mô tả ngoại hình. Vì thế không nên nhìn điểm homework cao mà kết luận em đã vững. Với nhóm bài attempted nhưng failed questions ít hoặc không có, dữ liệu nói mới là tín hiệu đáng tin hơn. Các bài như Unit 2A Me Lesson 5 cần deep practice vì vừa có lỗi viết thật vừa có brainstorm và free speaking bằng 0. Unit 2A Me Lesson 4 và Unit 1B Clothes Lesson 1 tuy không lộ nhiều lỗi viết, nhưng nói vẫn rất yếu nên cũng không thể chỉ ôn nhẹ. Ngược lại, những bài có conversation và pronunciation còn khá ổn, chỉ thiếu độ đầy đủ ở brainstorm, có thể xếp light reinforcement sau khi đã xử lý nhóm nguy cấp nhất. Ví dụ Unit 4A Home Lesson 3 có conversation 85 và pronunciation 87, nên chủ yếu cần ôn từ mục tiêu theo tranh; Unit 2A Me Lesson 3 cũng tương tự, cần củng cố từ/cụm “strong arms”, “doing yoga”, “long legs” hơn là dạy lại toàn bài.\n\nXét theo mức ưu tiên thực hành sâu, nhóm cần deep practice trước là Unit 1A Nature Lesson 4, Unit 2A Me Lessons 4–5, Unit 2A Me Lesson 2, Unit 3A Pets Lessons 3–5, Unit 4A Home Lessons 1–2. Lý do là các bài này vừa cũ 50–110 ngày, vừa có điểm brainstorm hoặc free speaking rất thấp, và một số có conversation xuống dưới vùng an toàn. Unit 1B Clothes Lesson 1 cũng nên xếp deep practice vì brainstorm bằng 0 và có một câu conversation lệch hẳn ngữ cảnh, dù pronunciation tốt. Nhóm có thể light reinforcement là Unit 2A Me Lesson 3, Unit 4A Home Lessons 3–4, và một phần Unit 3A Pets Lesson 2 nếu mục tiêu chính là gọi đúng từ vựng theo tranh và sửa vài phản xạ warmup. Riêng Unit 2A Me Lesson 1 có dữ liệu brainstorm hiển thị bất thường 10000/100, nhưng free speaking bằng 0 và bài đã 104 ngày, nên vẫn nên ôn lại nhẹ để xác minh trí nhớ thật thay vì tin hoàn toàn vào một chỉ số bất thường.\n\nVề loại câu hỏi hiệu quả theo từng cụm bài, với Unit 2A Me và Unit 1B Clothes nên ưu tiên nhận diện và mô tả ngoại hình/quần áo theo tranh, bắt đầu từ gọi tên đơn lẻ rồi ghép mẫu “He/She has…”, “He/She is wearing…”. Với Unit 1A Nature, hiệu quả nhất là chỉ tranh chọn từ đúng, đếm số lượng đơn giản, rồi nói câu có “There is/There are” hoặc “I can see…”. Với Unit 3A Pets, nên tập trung câu hỏi ghép đặc điểm với con vật, ví dụ fur/feathers/shell/beak/tail/wing, sau đó mới sang Yes/No về “Does it have…?” và mô tả ngắn “It has… It doesn’t have…”. Với Unit 4A Home, nên dùng câu hỏi vị trí và đồ vật trong nhà có khung rất rõ như “Where is the…? It’s in/on/next to…”, “Are the … in the …? Yes, they are/No, they aren’t.” Nhìn chung, dạng hiệu quả nhất cho học sinh này không phải câu hỏi mở dài, mà là chuỗi từ nhận diện → câu mẫu ngắn → hội thoại có khung → nói mở rất ngắn. Điều cần nhất lúc này là tăng khả năng bật đúng từ mục tiêu và giữ câu trả lời bám sát câu hỏi.",
+      "homework": [
+        {
+          "question_no": 1,
+          "lesson_id": 3599689,
+          "lesson_title": "Unit 2A: Me  - Lesson 5: What do you look like?",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the sentence (Con hãy đọc và sắp xếp thành câu hoàn chỉnh.) /has/She/a/nose/big/and/arms./strong/",
+          "correct_answer": "C. She has a big nose and strong arms.",
+          "difficulty": "hard",
+          "reason": "Học sinh đã trả lời sai câu này trước đó: điền/chọn \"A. She has big nose and a strong arms.\" thay vì \"C. She has a big nose and strong arms.\" Bài đã học 83 ngày trước; chẩn đoán cũng nêu đúng lỗi thiếu mạo từ và sai số nhiều ở mẫu mô tả ngoại hình của bài này.",
+          "question_id": 304159,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. She has big nose and a strong arms.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. She has a strong nose and big arms.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. She has a big nose and strong arms.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 2,
+          "lesson_id": 3599689,
+          "lesson_title": "Unit 2A: Me  - Lesson 5: What do you look like?",
+          "skill_category": "speaking",
+          "question_type": "Trả lời bằng giọng nói",
+          "question_text": "Say 3 sentences to describe a person: He/She has ...",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Bài này đã học 83 ngày trước và đây là đúng nhóm deep practice vì brainstorm/free speaking của Unit 2A Me Lesson 5 được chẩn đoán là rất yếu, có lúc bằng 0. Học sinh từng viết sai kiểu \"He has a short hair and big nose\", nên cần nói lại theo khung để sửa a/an, trật tự từ và số ít/số nhiều.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 3,
+          "lesson_id": 3599688,
+          "lesson_title": "Unit 2A: Me  - Lesson 4: Does she have strong arms?",
+          "skill_category": "speaking",
+          "question_type": "Trả lời bằng giọng nói",
+          "question_text": "Look at a person and say 3 features using: He/She has ...",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Bài này đã học 92 ngày trước; chẩn đoán xếp Unit 2A Me Lesson 4 vào nhóm cần deep practice vì brainstorm rất yếu và khả năng gọi từ theo tranh gần như quên. Điểm brainstorm trung bình toàn bộ chỉ 19.72/100, nên cần luyện nói có khung thay vì nói mở.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 4,
+          "lesson_id": 3599688,
+          "lesson_title": "Unit 2A: Me  - Lesson 4: Does she have strong arms?",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) Peter: Hi John, what do you look like? Jo",
+          "correct_answer": "C. Yes, he does.",
+          "difficulty": "medium",
+          "reason": "Bài đã học 92 ngày trước và Unit 2A Me Lesson 4 được chẩn đoán là nhóm nguy cấp vì yếu ở brainstorm/nói đúng trọng tâm. Câu này giúp củng cố phản xạ hỏi–đáp ngắn có khung, phù hợp với lỗi hay trả lời lạc đề trong free speaking.",
+          "question_id": 304079,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Yes, she does.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. No, he doesn&#39;t",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. Yes, he does.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 5,
+          "lesson_id": 3599683,
+          "lesson_title": "Unit 1A: Nature - Lesson 4: Are there any rocks?",
+          "skill_category": "speaking",
+          "question_type": "Trả lời bằng giọng nói",
+          "question_text": "Look at a nature picture and say 4 things you can see using: I can see ...",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Bài này đã học 110 ngày trước — rất cũ, và chẩn đoán nêu Unit 1A Nature Lesson 4 là ưu tiên sâu nhất vì brainstorm theo tranh gần như quên hoàn toàn. Học sinh từng nói lệch trường từ như \"flower\" khi target là leaf, rock, tree, pond; điểm brainstorm trung bình chỉ 19.72/100.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 6,
+          "lesson_id": 3599683,
+          "lesson_title": "Unit 1A: Nature - Lesson 4: Are there any rocks?",
+          "skill_category": "grammar",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer. (con hãy đọc và chọn phương án đúng) Alice: Henry, look! How many clouds are there? ",
+          "correct_answer": "B. any",
+          "difficulty": "medium",
+          "reason": "Bài đã học 110 ngày trước nên cần ôn lại từ đầu; đây cũng là bài được chẩn đoán là quên mạnh ở phần gọi từ theo tranh. Sau khi học sinh hay gọi sai như \"flower\" thay vì các từ mục tiêu, câu này giúp khóa lại mẫu hỏi số lượng và từ đi kèm đúng.",
+          "question_id": 303633,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. some",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. any",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 7,
+          "lesson_id": 3766261,
+          "lesson_title": "Unit 1B: Clothes - Lesson 1: What are you wearing?",
+          "skill_category": "speaking",
+          "question_type": "Trả lời bằng giọng nói",
+          "question_text": "Answer the question: What are you wearing? Say a full sentence.",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Bài này đã học 41 ngày trước và Unit 1B Clothes Lesson 1 được chẩn đoán vẫn cần deep practice vì brainstorm bằng 0 dù pronunciation tốt. Học sinh từng nhìn tranh quần áo chỉ nói \"I I see a dress skirt\", nên cần luyện trả lời đúng trọng tâm bằng câu đầy đủ thay vì liệt kê thiếu ý.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 8,
+          "lesson_id": 3766261,
+          "lesson_title": "Unit 1B: Clothes - Lesson 1: What are you wearing?",
+          "skill_category": "grammar",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and find the incorrect answer (Con hãy đọc và tìm ra lỗi sai) What are you wearing? I is wearing a shirt.",
+          "correct_answer": "B. is",
+          "difficulty": "medium",
+          "reason": "Bài đã học 41 ngày trước; chẩn đoán cho thấy học sinh hay bật ra câu quen miệng sai cấu trúc khi nói. Câu này sửa trực tiếp lỗi chia động từ trong mẫu trả lời quần áo, rất cần vì em đang yếu ở việc chuyển từ nhận diện sang nói thành câu.",
+          "question_id": 310127,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. wearing",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. is",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. a shirt",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "=> Đáp án: B &quot;I&quot; đi với động từ tobe &quot;am&quot; Sửa lỗi: is --> am",
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 9,
+          "lesson_id": 3766256,
+          "lesson_title": "Unit 4A: Home - Lesson 2: It's in the bedroom.",
+          "skill_category": "speaking",
+          "question_type": "Trả lời bằng giọng nói",
+          "question_text": "Answer with a full sentence: Where's the lamp? / Where's the pillow?",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Bài này đã học 57 ngày trước và Unit 4A Home Lesson 2 được chẩn đoán cần deep practice vì conversation chỉ 74/100, học sinh hay trả lời lạc đề hoặc gãy câu. Các ví dụ như \"Itty\" và \"I have two blue nose on my bed\" cho thấy em cần luyện mẫu vị trí thật ngắn, bám sát câu hỏi.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 10,
+          "lesson_id": 3766256,
+          "lesson_title": "Unit 4A: Home - Lesson 2: It's in the bedroom.",
+          "skill_category": "grammar",
+          "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
+          "question_text": "Fill in blank missing word (Con hãy điền từ vào chỗ trống.) 1. What's [{}]? 2. Where's the [{}]? 3. Is the pillow [{}] t",
+          "correct_answer": "1. What's this? 2. Where's the closet? 3. Is the pillow on the sofa? 4. It's in the bedroom.",
+          "difficulty": "medium",
+          "reason": "Bài đã học 57 ngày trước; đây là dạng có khung rõ ràng phù hợp với chẩn đoán rằng học sinh trả lời tốt hơn khi không phải nói mở quá rộng. Unit 4A Home Lesson 2 còn có conversation 74/100 nên cần củng cố mẫu hỏi–đáp vị trí trước khi nói tự do.",
+          "question_id": 392830,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "1",
+              "text": "on",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "2",
+              "text": "closet",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "3",
+              "text": "in",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "4",
+              "text": "this",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 11,
+          "lesson_id": 3632561,
+          "lesson_title": "Unit 3A: Pets - Lesson 3: It has fur. It doesn't have feathers.",
+          "skill_category": "speaking",
+          "question_type": "Trả lời bằng giọng nói",
+          "question_text": "Say 2 sentences about an animal: It has ... / It doesn't have ...",
+          "correct_answer": null,
+          "difficulty": "hard",
+          "reason": "Bài này đã học 78 ngày trước; chẩn đoán nêu Unit 3A Pets Lessons 3–5 thường có câu trả lời cụt hoặc chuyển sang ý khác trong nói tự do/hội thoại. Vì học sinh hay không giữ đúng trọng tâm, bài nói có khung \"It has... / It doesn't have...\" sẽ giúp em bám ý tốt hơn.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 12,
+          "lesson_id": 3632561,
+          "lesson_title": "Unit 3A: Pets - Lesson 3: It has fur. It doesn't have feathers.",
+          "skill_category": "grammar",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose. (Con hãy đọc và chọn đáp án đúng nhé!) Does a dog have feathers?",
+          "correct_answer": "No, it doesn’t.",
+          "difficulty": "easy",
+          "reason": "Bài đã học 78 ngày trước và thuộc chuỗi Pets được chẩn đoán cần deep practice vì học sinh hay trả lời cụt hoặc lệch ý khi nói về đặc điểm con vật. Câu hỏi Yes/No có mẫu cố định này phù hợp với khuyến nghị dùng hỏi–đáp ngắn để sửa lỗi giữ đúng trọng tâm.",
+          "question_id": 805439,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "Yes, it does.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "No, it doesn’t.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "No, it doesn&rsquo;t.",
+          "question_folder": "Grammar"
+        },
+        {
+          "question_no": 13,
+          "lesson_id": 3652690,
+          "lesson_title": "Unit 3A: Pets - Lesson 5: Does a parrot have a shell?",
+          "skill_category": "grammar",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and find the incorrect answer (Con hãy đọc và tìm ra đáp án sai) Does a rabbit have a beak? Yes , it doesn't.",
+          "correct_answer": "A. Yes",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 71 ngày trước; Unit 3A Pets Lesson 5 được chẩn đoán có conversation khoảng 77/100 và học sinh dễ ghép câu vô nghĩa hoặc trả lời sai logic. Câu này giúp sửa phản xạ Yes/No + câu hoàn chỉnh, đúng với nhu cầu luyện hội thoại có khung ngắn.",
+          "question_id": 306097,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Yes",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. rabbit",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. Does",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 14,
+          "lesson_id": 3599685,
+          "lesson_title": "Unit 2A: Me - Lesson 1: I don't have short hair.",
+          "skill_category": "grammar",
+          "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
+          "question_text": "Fill in blank missing word (Con hãy điền từ vào chỗ trống.) 1. What do you look [{}]? 2. I [{}] a small nose. 3. I [{}] ",
+          "correct_answer": "1. What do you look like? 2. I have a small nose. 3. I don't have long hair. 4. I have big ears.",
+          "difficulty": "medium",
+          "reason": "Bài đã học 104 ngày trước nên cần ôn lại để xác minh trí nhớ thật; chẩn đoán nói Unit 2A Me Lesson 1 có chỉ số brainstorm bất thường nhưng free speaking bằng 0 nên không thể xem là đã vững. Dạng điền khuyết này giúp khóa lại mẫu nền trước khi yêu cầu nói mô tả ngoại hình.",
+          "question_id": 392760,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "1",
+              "text": "don't",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "2",
+              "text": "like",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "3",
+              "text": "have",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "4",
+              "text": "ears",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 15,
+          "lesson_id": 3658534,
+          "lesson_title": "Unit 4A: Home - Lesson 1: Where's the sofa?",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the words to make the correct sentences (Con hãy đọc câu và sắp xếp câu lại thành câu hoàn chỉnh.) / l",
+          "correct_answer": "B. The table is in the living room.",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 69 ngày trước; Unit 4A Home Lesson 1 được chẩn đoán có conversation 79/100 và nhiều câu trả lời lạc đề như \"I’m ready. I talk on my help teacher\". Câu sắp xếp này củng cố mẫu vị trí đồ vật trong nhà để hỗ trợ trả lời đúng trọng tâm hơn khi nói.",
+          "question_id": 307553,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. The table in is the living room.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. The table is in the living room.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. The in table is the living room.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        }
+      ]
+    }
+  }
+}

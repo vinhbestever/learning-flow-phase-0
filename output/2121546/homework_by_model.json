@@ -1,0 +1,543 @@
+{
+  "version": 1,
+  "last_run_model": "gpt-5.4",
+  "models": {
+    "gpt-5.4": {
+      "updated_at": "2026-05-04T04:55:21.805497+00:00",
+      "diagnostic": "Ba mẫu lỗi và rủi ro nghiêm trọng nhất tôi quan sát được là: thứ nhất, điểm brainstorm cực thấp và lặp lại gần như toàn bộ các bài, cho thấy học sinh rất yếu ở việc gọi đúng từ mục tiêu theo tranh hoặc liệt kê đủ các mục tiêu cần có; đây là lỗ hổng nói từ vựng chủ đạo và là điểm yếu nghiêm trọng nhất. Thứ hai, học sinh thường nói được một phần trong hội thoại nhưng hay trả lời cụt, lệch ý, hoặc ráp từ sai ngữ pháp khi phải tự tạo câu, đặc biệt ở các câu mô tả, trả lời wh-question và mẫu câu có động từ “like / have / can / there is-are / does-do”. Thứ ba, dù bài tập viết nhìn chung tốt, vẫn có rủi ro ghi nhớ và chuyển hóa sang nói rất thấp ở nhiều bài đã học từ 21–38 ngày trước; các bài cũ có forgetting score gần mức quên hoàn toàn nên cần ưu tiên ôn sâu hơn các bài mới nếu mức yếu tương đương.\n\nMẫu đầu tiên là lỗ hổng từ vựng nói theo tranh, và đây là vấn đề nổi bật nhất của toàn bộ hồ sơ. Điểm brainstorm trung bình chỉ 9.68/100, ở mức critical, trong khi phân bố câu trả lời cho thấy cả hai kiểu lỗi đều nhiều: có 33 lần nói sai mục tiêu và 29 lần nói từ hợp lệ nhưng không đủ. Điều này rất quan trọng vì nhiều câu brainstorm có answer_type=correct nhưng vẫn score 0, nghĩa là học sinh không sai hoàn toàn mà chỉ mới gọi được một phần quá nhỏ của tập từ cần nói. Ví dụ ở bài Toys Lesson 2, học sinh nói các từ không liên quan như boat, rocket thay vì ball, doll, horse, puzzle. Ở My home Lesson 2, học sinh nói “Family” khi mục tiêu cần là các thành viên cụ thể như grandfather, grandmother, father, mother, son, daughter; tức là biết trường nghĩa chung nhưng không truy xuất được từ đích. Ở Nature Lesson 2, học sinh nói “A tree” hoặc câu sai như “I can see much shoes” khi cần liệt kê mushroom, butterfly, tree, flower; nghĩa là vừa thiếu độ phủ từ vựng vừa dễ nhiễu bởi từ ngoài ngữ cảnh. Ở Body parts Lesson 3, học sinh chỉ nói “Head” hoặc “I can see a body” khi mục tiêu gồm head, hand, leg, body; đây là kiểu nhớ rời rạc một từ chứ chưa nắm nhóm từ. Ở My face Lesson 1, học sinh nói “It’s a face” thay vì eyes, ears, nose, mouth; tiếp tục cho thấy xu hướng dùng nhãn tổng quát thay cho từ cụ thể. Điểm đáng chú ý là lỗi này xuất hiện xuyên chủ đề: đồ chơi, thiên nhiên, thú cưng, cơ thể, gia đình, ngoại hình. Vì vậy đây không phải lỗ hổng của một bài riêng lẻ mà là vấn đề nền tảng về truy xuất từ vựng chủ điểm khi nói. Những bài cần deep practice mạnh nhất cho mẫu lỗi này là các bài cũ và vẫn brainstorm=0 như Unit 1A Toys Lesson 2, Unit 1A Toys Lesson 4, Unit 2A My home Lesson 2, Unit 2A My home Lesson 5, Unit 3A Body parts Lesson 3, Unit 3A Body parts Lesson 5, Unit 1A Nature Lesson 2, Unit 4A My face Lesson 1. Trong số này, Toys Lesson 2 cách 38 ngày, Toys Lesson 4 cách 32 ngày, My home Lesson 2 cách 29 ngày, My home Lesson 5 cách 27 ngày, Body parts Lesson 3 cách 26 ngày, Body parts Lesson 5 cách 24 ngày, Nature Lesson 2 cách 21 ngày là nhóm nên ưu tiên cao vì vừa yếu vừa đã qua ngưỡng quên mạnh. Dạng câu hỏi hiệu quả nhất cho các bài này sẽ là gọi tên theo tranh với số mục tiêu nhỏ trước rồi tăng dần, phân biệt từ gần nghĩa và từ tổng quát-cụ thể, nhắc lại theo nhóm semantic set, và bài “nói đủ tất cả từ nhìn thấy” thay vì chỉ “what is it?”.\n\nMẫu thứ hai là học sinh có thể theo hội thoại ở mức trung bình khá, nhưng khi phải tự tạo câu hoàn chỉnh thì thường rơi vào trả lời cụt, sai cấu trúc hoặc lệch nội dung. Điều này thể hiện ở chênh lệch rất lớn giữa conversation trung bình 85.06/100 và brainstorm cực thấp, đồng thời free speaking chỉ 59.38/100. Nói cách khác, học sinh bám được khung hội thoại nhưng khả năng tự huy động ngôn ngữ còn thiếu ổn định. Nhiều câu trả lời cho thấy học sinh hiểu một phần ý hỏi nhưng không dựng được câu đầy đủ: “Like to play”, “Monty like to play”, “The rabbit is”, “I play”, “It has.”, “My ears is on.”, “This is an.” Đây là kiểu thiếu hoàn thiện câu, thường rơi vào thiếu chủ ngữ, thiếu động từ chia đúng, hoặc thiếu bổ ngữ. Một nhóm lỗi khác là trả lời lệch ý hoặc nhiễu ngôn ngữ: “I have a red bed” khi được hỏi có nuôi thú cưng không, “This lady” khi được hỏi chơi với đồ chơi ở đâu, “Tommato” khi được hỏi thích xem gì trên TV, “I read, Baby” hoặc “My.” ở free speaking. Ngoài ra có lỗi ngữ pháp cốt lõi lặp lại trong bài tập và nói: “I dance can” thay vì “I can dance”, nhầm “There isn’t / There aren’t”, nhầm “Do he…” và nhầm ngôi he/she trong nghe hiểu. Điều này cho thấy học sinh chưa tự động hóa các mẫu câu nền của cấp độ này. Các bài cần deep practice cho mẫu này là Unit 3A Pets Lesson 1, Lesson 2, Lesson 3, Lesson 4 vì cùng một cụm chủ đề nhưng liên tục có câu hội thoại thiếu hoàn chỉnh; Unit 1A Toys Lesson 4 vì conversation chỉ 71/100 và có nhiều câu lệch ý; Unit 1A Nature Lesson 5 vì vừa có lỗi ngữ pháp viết vừa có câu nói rời rạc; Unit 4A My face Lesson 1 vì lỗi “ears/eyes”, “is/are” và mô tả vị trí cơ thể; Unit 2A Me Lesson 3 và Lesson 5 vì vừa brainstorm sai vừa free speaking rất yếu. Dạng câu hỏi hiệu quả nhất ở nhóm này là hội thoại có scaffold mạnh: cho khung câu ngắn để hoàn thành, biến đổi mẫu “I have… / It has… / He can… / There are… / Does it have…?”, hỏi-đáp theo cặp gần nhau, và drill mở rộng từ câu ngắn thành câu đầy đủ. Với học sinh này, câu hỏi mở hoàn toàn chưa phải lựa chọn tốt ở giai đoạn đầu; nên dùng câu hỏi bán mở, có từ khóa hoặc tranh hỗ trợ.\n\nMẫu thứ ba là rủi ro ghi nhớ dài hạn và sự lệch pha giữa kỹ năng làm bài với kỹ năng nói. Tổng quan bài tập LMS rất tốt ở Vocabulary, Grammar, Reading, Speaking, thậm chí Listening cũng khá, nhưng Writing chỉ 66.7% và nói lại yếu rõ ở brainstorm và free speaking. Điều này cho thấy học sinh có thể nhận diện đáp án đúng trong bài tập, nhưng chưa chuyển được kiến thức sang truy xuất chủ động khi nói. Rủi ro càng cao ở các bài cũ vì tất cả bài chỉ mới có 1 lần luyện trước, nên các bài 21–38 ngày gần như đã quên nhiều hoặc gần quên hoàn toàn. Nhóm cần ưu tiên ôn sâu nhất theo cả độ yếu và độ cũ là Unit 1A Toys Lesson 2, Unit 1A Toys Lesson 4, Unit 2A My home Lesson 2, Unit 2A My home Lesson 5, Unit 3A Body parts Lesson 3, Unit 3A Body parts Lesson 5, Unit 4A My face Lesson 1, Unit 1A Nature Lesson 2 và Unit 1A Nature Lesson 5. Trong đó Toys Lesson 2 và Toys Lesson 4 đặc biệt đáng chú ý vì đã hơn 1 tháng, brainstorm vẫn 0, phát âm cũng không cao ở Toys Lesson 2. Nature Lesson 5 cũng cần ôn sâu vì có lỗi cả ngữ pháp “There aren’t” lẫn pronunciation chỉ 70 và conversation chỉ 80. Ngược lại, các bài mới hơn trong 8–14 ngày như Pets Lesson 1, 2, 3, 4 và Me Lesson 3, 5 vẫn cần can thiệp nhưng có thể xếp sau nhóm cũ nếu mục tiêu là tối ưu phục hồi trí nhớ. Đây là nhóm nên ôn theo hướng “deep practice” vì không chỉ nhắc lại mà phải tái xây dựng khả năng nói chủ động. Những bài có thể chỉ cần “light reinforcement” tương đối là các bài có conversation và pronunciation tốt hơn, ít lỗi viết hơn, và thời gian chưa quá xa, ví dụ Pets Lesson 2, Pets Lesson 3 nếu thời lượng hạn chế; tuy nhiên vẫn phải chạm vào brainstorm vì đó là điểm yếu xuyên suốt.\n\nXét theo từng cụm bài, Unit 1A Toys Lesson 2 cần ôn sâu từ vựng đồ chơi theo tranh và phát âm vì brainstorm=0, pronunciation=70 và bài đã 38 ngày. Câu hỏi hiệu quả nhất là nhận diện và gọi tên từng món đồ chơi, sau đó chuyển sang mẫu “I can see a…”, rồi “They’re…”. Unit 1A Toys Lesson 4 cũng cần ôn sâu vì conversation chỉ 71 và free speaking=0; nên dùng câu hỏi về số lượng và sở thích có khung như “There is one… / I like… because… / I play with it at…”. Unit 2A My home Lesson 2 và Lesson 5 cần ôn sâu cả từ gia đình lẫn vị trí trong nhà; học sinh hay dùng từ quá chung hoặc trả lời sai vai nghĩa. Nên dùng câu hỏi phân biệt thành viên gia đình, sau đó ghép với mẫu “They’re my…”, “He’s in the…”, “I play with…”. Unit 3A Body parts Lesson 3 và Lesson 5 cần ôn sâu vì đây là nhóm từ cơ bản nhưng học sinh vẫn chỉ gọi được lẻ tẻ hoặc nói sai trật tự “I dance can”. Dạng hiệu quả là tranh bộ phận cơ thể, sau đó drill “I can… / He can…”, cuối cùng hỏi đáp ngắn có hành động. Unit 1A Nature Lesson 2 và Lesson 5 cần ôn sâu vì vừa cũ vừa có lỗi “there is/are”, “there isn’t/aren’t”, từ vựng thiên nhiên và câu mô tả số lượng. Nên dùng tranh đếm đồ vật, chọn số nhiều-số ít, rồi nói câu hoàn chỉnh. Unit 4A My face Lesson 1 cần ôn sâu ở từ vựng bộ phận mặt và cấu trúc “My ears are…”, “I have big eyes.” vì học sinh đang lẫn cả từ lẫn ngữ pháp số nhiều.\n\nCụm Pets là nhóm có mức cần luyện cao nhưng có thể chia tầng. Pets Lesson 1 rất đáng chú ý vì brainstorm=0, free speaking=0, listening yếu và conversation có nhiều câu méo nghĩa như “Mary likes to eat”, “Where would I like to eat tables?”, “I feed him straight and they.” Điều này cho thấy học sinh chưa giữ được nội dung khi nói về pet care. Pets Lesson 2 và Lesson 3 có conversation khoảng 85 nhưng vẫn brainstorm=0, nghĩa là có thể theo khung hỏi đáp nhưng chưa nắm từ mô tả bộ phận và đặc điểm. Pets Lesson 4 hơi khác vì brainstorm lại cao nhưng free speaking=0 và writing yếu; bài này cần tập trung vào mẫu câu yes/no và mô tả đầy đủ “Yes, it does. / No, it doesn’t. / My rabbit is two years old.” Nhìn chung, với cụm Pets, câu hỏi hiệu quả nhất là hội thoại cấu trúc chặt, có mẫu câu lặp, kết hợp tranh chỉ bộ phận và đặc điểm con vật. Không nên bắt đầu bằng câu mở rộng quá sớm.\n\nVề free speaking, dù có một số dòng hiển thị 10000/100 rõ ràng là bất thường dữ liệu, phân bố câu trả lời vẫn cho thấy 11 lần inaccordant và 2 lần lack_of_knowledge, nên đây vẫn là vùng rủi ro thật. Học sinh có xu hướng mất kiểm soát khi gặp câu warmup không bám trực tiếp bài học, ví dụ “What did you eat today?”, “How do you feel now?” Điều này gợi ý rằng khả năng phản xạ nói tự nhiên ngoài mẫu bài học còn yếu. Tuy nhiên, vì điểm yếu lớn nhất vẫn là brainstorm, free speaking nên được xử lý theo hướng nhẹ hơn: dùng câu rất quen, ngắn, có khung đáp án, không nên ưu tiên hơn các bài cũ đang gần quên. Những bài free speaking cần chú ý hơn là Pets Lesson 1, Toys Lesson 4, Body parts Lesson 5, Body parts Lesson 3, Me Lesson 3, Me Lesson 5, Nature Lesson 5 vì ở đây câu trả lời không liên quan hoặc thể hiện không biết.\n\nTóm lại, hồ sơ này không cho thấy vấn đề lớn ở làm bài nhận diện, mà cho thấy khoảng cách rất rõ giữa “biết khi nhìn đáp án” và “tự nói ra đúng từ, đúng mẫu”. Trọng tâm can thiệp nên là phục hồi từ vựng nói theo tranh và hoàn thiện câu nói ngắn có cấu trúc. Nếu phải ưu tiên theo thứ tự, nên đi từ các bài cũ và yếu nhất: Toys 2, Toys 4, My home 2, My home 5, Body parts 3, Body parts 5, Nature 2, Nature 5, My face 1; sau đó đến cụm Pets và Me. Với học sinh này, dạng câu hỏi hiệu quả nhất không phải câu mở hoàn toàn mà là tranh + gọi tên mục tiêu, câu khung ngắn để hoàn thành, hỏi đáp lặp mẫu, rồi mới mở rộng dần sang hội thoại và free speaking. Chỉ cần chọn đúng dạng câu hỏi, khả năng cải thiện sẽ khá nhanh vì nền nhận diện và bài tập viết nhìn chung vẫn tốt.",
+      "homework": [
+        {
+          "question_no": 1,
+          "lesson_id": 3835959,
+          "lesson_title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
+          "skill_category": "grammar",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Fill in the blank. (Con hãy điền từ còn thiếu nhé.) What ... it?",
+          "correct_answer": "is",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 38 ngày trước — thuộc nhóm cũ có nguy cơ quên rất cao và được chẩn đoán ưu tiên ôn sâu. Hồ sơ cho thấy brainstorm trung bình chỉ 9.68/100; ở Toys Lesson 2 học sinh còn nói lệch sang \"boat, rocket\" thay vì các đồ chơi mục tiêu, nên cần quay lại mẫu câu nền \"What is it?\" để hỗ trợ gọi đúng từ.",
+          "question_id": 370386,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "What is it? Nó là gì? => Đáp án: is (\"it\" đi với động từ tobe \"is\")",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 2,
+          "lesson_id": 3835959,
+          "lesson_title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng nhé.) What is this?",
+          "correct_answer": "B. It's a teddy bear.",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 38 ngày trước — cần ôn lại vì đây là một trong những bài yếu nhất theo chẩn đoán. Ở đúng chủ đề Toys, học sinh từng nói các từ không liên quan như \"boat, rocket\" thay vì từ đích như ball, doll, horse, puzzle; câu này giúp kéo lại khả năng nhận diện và gọi tên đồ chơi đúng.",
+          "question_id": 303618,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. There're 5 balls.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. It's a teddy bear.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. There's one doll.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "What is this? (Đây là gì?) => Đáp án: B (Đó là một con gấu bông.)",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 3,
+          "lesson_id": 3842154,
+          "lesson_title": "Unit 1A: Toys - Lesson 4: There's one ball.",
+          "skill_category": "grammar",
+          "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
+          "question_text": "Fill in blank missing word (Con hãy điền từ vào chỗ trống nhé.) 1. What [{}] they? 2. It's [{}] teddy bear. 3. How [{}] ",
+          "correct_answer": "1. What are they? 2. It's a teddy bear. 3. How many balls are there? 4. There're five cars.",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 32 ngày trước — nằm trong nhóm bài cũ cần deep practice vì conversation của bài chỉ 71/100 và free speaking từng 0. Học sinh hay ráp câu thiếu hoàn chỉnh như \"Like to play\" và trả lời cụt, nên bài điền khung này giúp củng cố đồng thời \"are / a / how many / there are\".",
+          "question_id": 389401,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "1",
+              "text": "a",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "2",
+              "text": "five",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "3",
+              "text": "many",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "4",
+              "text": "are",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "a: một five: 5 many: nhiều are: là => Đáp án: 1. What are they? Chúng là gì? 2. It's a teddy bear: Đó là một con gấu bông. 3. How many balls are there? Có bao nhiêu quả bóng? 4. There're five cars: Có 5 chiếc ô tô.",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 4,
+          "lesson_id": 3842154,
+          "lesson_title": "Unit 1A: Toys - Lesson 4: There's one ball.",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "What can you see?",
+          "correct_answer": "open",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 32 ngày trước — rất phù hợp vì điểm brainstorm toàn hồ sơ chỉ 9.68/100, là lỗ hổng nghiêm trọng nhất. Ở các bài nói theo tranh, học sinh thường chỉ gọi được một phần hoặc nói sai mục tiêu; dạng hỏi này buộc con luyện nói đủ các đồ vật nhìn thấy thay vì trả lời một từ rời rạc.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 5,
+          "lesson_id": 3857727,
+          "lesson_title": "Unit 2A: My home - Lesson 2: They're my parents.",
+          "skill_category": "vocabulary",
+          "question_type": "Xứng-Hợp",
+          "question_text": "Match (Con hãy nối từ với ảnh đúng nhé.)",
+          "correct_answer": "→grandfather; →mother; →c",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 29 ngày trước — thuộc nhóm My home cần ưu tiên vì đã qua ngưỡng quên mạnh. Chẩn đoán ghi rõ ở My home Lesson 2 học sinh nói \"Family\" thay vì các thành viên cụ thể như grandfather, grandmother, father, mother, son, daughter; bài nối tranh này xử lý đúng lỗi dùng nhãn quá chung đó.",
+          "question_id": 389432,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A1",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/14/f138_grandfather.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A2",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/17/04c2_mother--281-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "A3",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/17/d967_brother.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B1",
+              "text": "mother",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B2",
+              "text": "grandfather",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B3",
+              "text": "c",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "grandfather: ông mother: mẹ brother: anh/ em trai => Đáp án: Ảnh 1: grandfather Ảnh 2: mother Ảnh 3: brother",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 6,
+          "lesson_id": 3857727,
+          "lesson_title": "Unit 2A: My home - Lesson 2: They're my parents.",
+          "skill_category": "speaking",
+          "question_type": "Một lựa chọn",
+          "question_text": "Choose the correct answer. (Con hãy chọn phương án đúng nhé.) Who are they?",
+          "correct_answer": "A. They're my parents.",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 29 ngày trước — cần ôn lại để chuyển từ nhận diện sang nói câu đầy đủ về gia đình. Chẩn đoán cho thấy học sinh hay trả lời cụt hoặc lệch ý, và ở chủ đề gia đình từng dùng từ quá chung; mẫu câu \"They're my parents\" giúp con luyện câu hoàn chỉnh thay vì chỉ nói một danh từ đơn lẻ.",
+          "question_id": 303761,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. They&#39;re my parents.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. He&#39;s my brother",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. She&#39;s my sister.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Who are they? Họ là ai? => Đáp án: A (Họ là bố mẹ tôi.)",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 7,
+          "lesson_id": 3864426,
+          "lesson_title": "Unit 2A: My home - Lesson 5: They're in the living room.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose correct answer (Con hãy đọc và chọn đáp án đúng nhé.) Where's he?",
+          "correct_answer": "B. He's in the garden.",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 27 ngày trước — cần ôn sâu vì bài cũ và học sinh còn lẫn giữa câu hỏi về người và vị trí. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"C. He&#39;s my father.\" thay vì \"B. He&#39;s in the garden.\"; đây cũng đúng với mẫu lỗi chẩn đoán là trả lời lệch ý khi gặp wh-question.",
+          "question_id": 304092,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. There&#39;re two bikes.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. He&#39;s in the garden.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. He&#39;s my father.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Where's he? Anh ấy đang ở đâu? => Đáp án: B (Anh ấy đang ở vườn.)",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 8,
+          "lesson_id": 3864426,
+          "lesson_title": "Unit 2A: My home - Lesson 5: They're in the living room.",
+          "skill_category": "speaking",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the correct sentence (Con hãy đọc và sắp xếp thành câu nhé.) /'re/They/the/in/ living room/./",
+          "correct_answer": "C. They&#39;re in the living room.",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 27 ngày trước — thuộc nhóm bài cũ được chẩn đoán có forgetting score cao. Học sinh thường nói câu thiếu hoặc ráp từ sai như \"The rabbit is\"; việc sắp xếp lại câu hoàn chỉnh giúp chuẩn hóa mẫu nói vị trí \"They’re in the living room\" trước khi chuyển sang nói tự do.",
+          "question_id": 304090,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. They the &#39;re in living room.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. They&#39;re the in garden.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. They&#39;re in the living room.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "They're in the living room: Họ đang ở trong phòng khách. => Đáp án: C",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 9,
+          "lesson_id": 3899787,
+          "lesson_title": "Unit 1A : Nature - Lesson 2: There're some flowers.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the correct sentence (Con hãy đọc và sắp xếp thành câu hoàn chỉnh.) /aren't/any/There/leaves/./",
+          "correct_answer": "A. There aren't any leaves.",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 21 ngày trước — là bài cũ trong nhóm Nature cần ưu tiên vì chẩn đoán nêu rõ vừa yếu từ vựng vừa yếu cấu trúc there is/are. Học sinh từng nói \"A tree\" hoặc câu sai \"I can see much shoes\" khi cần liệt kê mushroom, butterfly, tree, flower; câu này giúp sửa mẫu phủ định \"There aren’t any...\" vốn cũng được nêu là lỗi lặp lại.",
+          "question_id": 302917,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. There aren't any leaves.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. There aren't leaves any.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. There any aren't leaves.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 10,
+          "lesson_id": 3899787,
+          "lesson_title": "Unit 1A : Nature - Lesson 2: There're some flowers.",
+          "skill_category": "speaking",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the correct sentence (Con hãy đọc và sắp xếp thành câu hoàn chỉnh.) /many/How/there?/are/flowers/",
+          "correct_answer": "B. How many flowers are there?",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 21 ngày trước — cần ôn vì brainstorm ở nhóm Nature từng 0 và học sinh không nói đủ mục tiêu trong tranh. Chẩn đoán cho thấy con rất yếu ở việc gọi đúng từ theo tranh (brainstorm trung bình 9.68/100), nên mẫu hỏi số lượng này hỗ trợ chuyển từ nhìn tranh sang nói câu đầy đủ thay vì chỉ nêu một từ.",
+          "question_id": 302916,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. How many flowers there are?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. How many flowers are there?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. How are there many flowers?",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 11,
+          "lesson_id": 3918294,
+          "lesson_title": "Unit 1A: Nature  - Lesson 5: There are some mushrooms.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Odd one out (Con hãy đọc và chọn phương án khác loại.)",
+          "correct_answer": "C. Leaves",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 17 ngày trước — tuy mới hơn nhóm 21–38 ngày nhưng vẫn được chẩn đoán cần ôn sâu vì có lỗi cả ngữ pháp lẫn từ vựng. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"B. Tree\" thay vì \"C. Leaves.\"; lỗi này cho thấy vốn từ trong cùng trường nghĩa thiên nhiên còn dễ nhiễu.",
+          "question_id": 303818,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Leaf",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. Tree",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. Leaves",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 12,
+          "lesson_id": 3918294,
+          "lesson_title": "Unit 1A: Nature  - Lesson 5: There are some mushrooms.",
+          "skill_category": "speaking",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the sentence (Con hãy đọc và sắp xếp thành câu hoàn chỉnh.) there/Are/butterflies?/any/",
+          "correct_answer": "B. Are there any butterflies?",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 17 ngày trước — bài Nature 5 được chẩn đoán có rủi ro chuyển hóa sang nói thấp và cần drill mẫu câu có scaffold. Học sinh hay tạo câu méo ngữ pháp như \"I dance can\" và trả lời rời rạc, nên câu hỏi yes/no với khung \"Are there any...?\" là bước phù hợp trước khi nói tự do.",
+          "question_id": 303803,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Are any there butterflies?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. Are there any butterflies?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. Are there butterflies any?",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 13,
+          "lesson_id": 3887955,
+          "lesson_title": "Unit 4A: My face - Lesson 1: I have big eyes.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose odd one out (Con hãy đọc và chọn từ khác loại nhé.)",
+          "correct_answer": "B. mother",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 23 ngày trước — My face Lesson 1 được chẩn đoán cần ôn sâu vì học sinh lẫn cả từ vựng bộ phận mặt lẫn cấu trúc số ít/số nhiều. Ở bài nói, học sinh từng nói \"It’s a face\" thay vì eyes, ears, nose, mouth; câu phân loại này giúp tách rõ nhóm từ bộ phận cơ thể khỏi từ ngoài nhóm.",
+          "question_id": 307277,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. mouth",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. mother",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. nose",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "mouth: miệng mother: mẹ nose: mũi => Đáp án: B",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 14,
+          "lesson_id": 3925795,
+          "lesson_title": "Unit 2A: Me - Lesson 3: Do you have strong arms?",
+          "skill_category": "grammar",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and find the incorrect answer (Con hãy đọc và chọn đáp án sai.) Do he have strong arms ?",
+          "correct_answer": "A. Do",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 14 ngày trước — dù chưa quá cũ nhưng là lỗi ngữ pháp cốt lõi được chẩn đoán lặp lại nhiều lần. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"C. arms\" thay vì \"A. Do\"; chẩn đoán cũng nêu rõ lỗi mẫu \"Do he...\" nên cần sửa ngay để tránh fossilization.",
+          "question_id": 303945,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Do",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. have",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. arms",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 3"
+        },
+        {
+          "question_no": 15,
+          "lesson_id": 3941016,
+          "lesson_title": "Unit 3A: Pets - Lesson 2: What does it look like?",
+          "skill_category": "speaking",
+          "question_type": "Trả lời bằng giọng nói",
+          "question_text": "Listen and answer. (Con hãy nghe và trả lời câu hỏi nhé!)",
+          "correct_answer": "No, it doesn’t.",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 9 ngày trước — cần chạm vào cụm Pets vì chẩn đoán cho thấy học sinh theo hội thoại được nhưng khi tự nói thì hay cụt hoặc sai mẫu. Ở nhóm Pets, học sinh có nhiều câu méo nghĩa như \"It has.\" và free speaking yếu; câu trả lời ngắn có khung \"No, it doesn’t.\" giúp luyện phản xạ đúng với mẫu does/doesn’t.",
+          "question_id": 804960,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "No, it doesn’t.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "Speaking"
+        }
+      ]
+    }
+  }
+}

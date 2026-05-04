@@ -21,6 +21,10 @@
       }
     },
     "weak_skills_global": [],
+    "critical_speaking_types": [
+      "brainstorm",
+      "free_speaking"
+    ],
     "overall_pronunciation_score_avg": 74.59,
     "overall_free_speaking_score_avg": 8.82,
     "overall_brainstorm_score_avg": 8.2,
@@ -34,7 +38,7 @@
       "correct": 32,
       "incorrect": 29
     },
-    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
     {
@@ -1707,9 +1711,9 @@
       "level": 2,
       "last_activity_date": "2026-02-24",
       "days_since_last_practice": 56,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9997,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9999,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1787,9 +1791,9 @@
       "level": 2,
       "last_activity_date": "2026-02-24",
       "days_since_last_practice": 56,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9997,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9999,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2045,9 +2049,9 @@
       "level": 2,
       "last_activity_date": "2026-02-26",
       "days_since_last_practice": 54,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9998,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2332,9 +2336,9 @@
       "level": 2,
       "last_activity_date": "2026-03-03",
       "days_since_last_practice": 49,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9991,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9995,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2625,9 +2629,9 @@
       "level": 2,
       "last_activity_date": "2026-03-10",
       "days_since_last_practice": 42,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9975,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9988,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2868,9 +2872,9 @@
       "level": 2,
       "last_activity_date": "2026-03-12",
       "days_since_last_practice": 40,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9967,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9984,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -3139,9 +3143,9 @@
       "level": 2,
       "last_activity_date": "2026-03-19",
       "days_since_last_practice": 33,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.991,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9955,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -3434,9 +3438,9 @@
       "level": 2,
       "last_activity_date": "2026-03-24",
       "days_since_last_practice": 28,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9817,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9909,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -3686,9 +3690,9 @@
       "level": 2,
       "last_activity_date": "2026-03-26",
       "days_since_last_practice": 26,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9756,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9878,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -3946,9 +3950,9 @@
       "level": 2,
       "last_activity_date": "2026-03-31",
       "days_since_last_practice": 21,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9502,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9751,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -4209,9 +4213,9 @@
       "level": 2,
       "last_activity_date": "2026-04-02",
       "days_since_last_practice": 19,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9337,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9668,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -4451,9 +4455,9 @@
       "level": 2,
       "last_activity_date": "2026-04-07",
       "days_since_last_practice": 14,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8647,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9324,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -4676,9 +4680,9 @@
       "level": 2,
       "last_activity_date": "2026-04-09",
       "days_since_last_practice": 12,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8199,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.91,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -4921,475 +4925,6 @@
       "practice_ids": {
         "bai_tap": 8992,
         "luyen_tap": 13300
-      }
-    },
-    {
-      "lesson_id": 3926834,
-      "title": "Unit 4B: Weather - Lesson 3: It's sunny and hot.",
-      "level": 2,
-      "last_activity_date": "2026-04-14",
-      "days_since_last_practice": 7,
-      "forgetting_score": 0.9991,
-      "weakness_score": 1.0,
-      "composite_priority_score": 0.9995,
-      "homework_status": "not_attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [
-        {
-          "practice_id": 9004,
-          "question_id": 311933,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
-          "comment_plain": "Audio: windy: gió => Đáp án: B",
-          "correct_answer": null,
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/d9a3_cloudy.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/b8db_windy.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6da4_sunny.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9004,
-          "question_id": 311934,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
-          "comment_plain": "Audio: snowy: có tuyết => Đáp án: B",
-          "correct_answer": null,
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/d9a3_cloudy.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/c4ee_snowy.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6da4_sunny.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9004,
-          "question_id": 311935,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
-          "comment_plain": "Audio: It's snowy and stormy: Trời có tuyết và bão. => Đáp án: A",
-          "correct_answer": null,
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/c4ee_snowy.png",
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/3c77_stormy.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6da4_sunny.png",
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/3c77_stormy.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/b8db_windy.png",
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/3c77_stormy.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9004,
-          "question_id": 311936,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.) It's rainy.",
-          "comment_plain": "Audio: What's the weather like today? It's cloudy and windy: Thời tiết hôm nay thế nào? Trời nhiều mây và có gió. It's rainy: Trời mưa. => Đáp án: B",
-          "correct_answer": null,
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/8529_tick.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/a9c9_cross.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9004,
-          "question_id": 311937,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.) It's cloudy and windy.",
-          "comment_plain": "Audio: What's the weather like today? It's cloudy and windy: Thời tiết hôm nay thế nào? Trời nhiều mây và có gió. It's cloudy and windy: Trời nhiều mây và có gió. => Đáp án: A",
-          "correct_answer": null,
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/8529_tick.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/a9c9_cross.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        }
-      ],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "sunny",
-            "rainy",
-            "cloudy, ",
-            "snowy"
-          ],
-          "user_transcript": "Send up, sign up.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-14",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnymt2ee-e3b3025e-audio.wav",
-          "reaction_time_ms": 4077
-        },
-        {
-          "lms_type": "free_speaking",
-          "question": "What's the weather like today?",
-          "expected_answer": null,
-          "target_objects": null,
-          "user_transcript": "Um, water water.",
-          "score": 0,
-          "answer_type": "lack_of_knowledge",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-14",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnymrw7c-ebe09b82-audio.wav",
-          "reaction_time_ms": 1797
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 9004,
-        "luyen_tap": 13301
-      }
-    },
-    {
-      "lesson_id": 3926835,
-      "title": "Unit 4B: Weather - Lesson 4: I like rainy days.",
-      "level": 2,
-      "last_activity_date": "2026-04-16",
-      "days_since_last_practice": 5,
-      "forgetting_score": 0.9933,
-      "weakness_score": 1.0,
-      "composite_priority_score": 0.9967,
-      "homework_status": "not_attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [
-        {
-          "practice_id": 9029,
-          "question_id": 311961,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
-          "comment_plain": "Audio: warm: ấm áp => Đáp án: C",
-          "correct_answer": null,
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/b56f_image-removebg-preview---2022-07-07t153517.139.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/ef60_image-removebg-preview---2022-07-07t153510.108.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/86dc_image-removebg-preview---2022-07-07t153520.663.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9029,
-          "question_id": 311962,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
-          "comment_plain": "Audio: hot: nóng => Đáp án: C",
-          "correct_answer": null,
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6093_cool.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/86dc_image-removebg-preview---2022-07-07t153520.663.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/b56f_image-removebg-preview---2022-07-07t153517.139.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9029,
-          "question_id": 311963,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
-          "comment_plain": "Audio: I like rainy days: Tôi thích những ngày trời mưa. => Đáp án: A",
-          "correct_answer": null,
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/b0b8_rainy.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/d9a3_cloudy.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6da4_sunny.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9029,
-          "question_id": 311964,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
-          "comment_plain": "Audio: stormy: bão => Đáp án: B",
-          "correct_answer": null,
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/c4ee_snowy.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/8529_tick.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/a9c9_cross.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9029,
-          "question_id": 311965,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
-          "comment_plain": "Audio: cold: lạnh => Đáp án: A",
-          "correct_answer": null,
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/ef60_image-removebg-preview---2022-07-07t153510.108.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/8529_tick.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/a9c9_cross.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        }
-      ],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "free_speaking",
-          "question": "How are you today?",
-          "expected_answer": null,
-          "target_objects": null,
-          "user_transcript": "A hot a heart.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-16",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1hn7rb-66ec3c24-audio.wav",
-          "reaction_time_ms": 1572
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 9029,
-        "luyen_tap": 13306
       }
     },
     {
@@ -5783,9 +5318,9 @@
       "level": 2,
       "last_activity_date": "2026-03-10",
       "days_since_last_practice": 42,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9975,
       "weakness_score": 0.6912,
-      "composite_priority_score": 0.8456,
+      "composite_priority_score": 0.8444,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -6577,6 +6112,250 @@
       }
     },
     {
+      "lesson_id": 3926834,
+      "title": "Unit 4B: Weather - Lesson 3: It's sunny and hot.",
+      "level": 2,
+      "last_activity_date": "2026-04-14",
+      "days_since_last_practice": 7,
+      "forgetting_score": 0.6321,
+      "weakness_score": 1.0,
+      "composite_priority_score": 0.816,
+      "homework_status": "not_attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [
+        {
+          "practice_id": 9004,
+          "question_id": 311933,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
+          "comment_plain": "Audio: windy: gió => Đáp án: B",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/d9a3_cloudy.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/b8db_windy.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6da4_sunny.png"
+              ],
+              "audio_urls": []
+            }
+          ]
+        },
+        {
+          "practice_id": 9004,
+          "question_id": 311934,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
+          "comment_plain": "Audio: snowy: có tuyết => Đáp án: B",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/d9a3_cloudy.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/c4ee_snowy.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6da4_sunny.png"
+              ],
+              "audio_urls": []
+            }
+          ]
+        },
+        {
+          "practice_id": 9004,
+          "question_id": 311935,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
+          "comment_plain": "Audio: It's snowy and stormy: Trời có tuyết và bão. => Đáp án: A",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/c4ee_snowy.png",
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/3c77_stormy.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6da4_sunny.png",
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/3c77_stormy.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/b8db_windy.png",
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/3c77_stormy.png"
+              ],
+              "audio_urls": []
+            }
+          ]
+        },
+        {
+          "practice_id": 9004,
+          "question_id": 311936,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.) It's rainy.",
+          "comment_plain": "Audio: What's the weather like today? It's cloudy and windy: Thời tiết hôm nay thế nào? Trời nhiều mây và có gió. It's rainy: Trời mưa. => Đáp án: B",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/8529_tick.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/a9c9_cross.png"
+              ],
+              "audio_urls": []
+            }
+          ]
+        },
+        {
+          "practice_id": 9004,
+          "question_id": 311937,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.) It's cloudy and windy.",
+          "comment_plain": "Audio: What's the weather like today? It's cloudy and windy: Thời tiết hôm nay thế nào? Trời nhiều mây và có gió. It's cloudy and windy: Trời nhiều mây và có gió. => Đáp án: A",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/8529_tick.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/a9c9_cross.png"
+              ],
+              "audio_urls": []
+            }
+          ]
+        }
+      ],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "sunny",
+            "rainy",
+            "cloudy, ",
+            "snowy"
+          ],
+          "user_transcript": "Send up, sign up.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-14",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnymt2ee-e3b3025e-audio.wav",
+          "reaction_time_ms": 4077
+        },
+        {
+          "lms_type": "free_speaking",
+          "question": "What's the weather like today?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "Um, water water.",
+          "score": 0,
+          "answer_type": "lack_of_knowledge",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-14",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnymrw7c-ebe09b82-audio.wav",
+          "reaction_time_ms": 1797
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 9004,
+        "luyen_tap": 13301
+      }
+    },
+    {
       "lesson_id": 3520351,
       "title": "Unit 2A: My home - Lesson 5: They're in the living room.",
       "level": 2,
@@ -6910,6 +6689,231 @@
       "practice_ids": {
         "bai_tap": 7710,
         "luyen_tap": 13309
+      }
+    },
+    {
+      "lesson_id": 3926835,
+      "title": "Unit 4B: Weather - Lesson 4: I like rainy days.",
+      "level": 2,
+      "last_activity_date": "2026-04-16",
+      "days_since_last_practice": 5,
+      "forgetting_score": 0.5105,
+      "weakness_score": 1.0,
+      "composite_priority_score": 0.7552,
+      "homework_status": "not_attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [
+        {
+          "practice_id": 9029,
+          "question_id": 311961,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
+          "comment_plain": "Audio: warm: ấm áp => Đáp án: C",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/b56f_image-removebg-preview---2022-07-07t153517.139.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/ef60_image-removebg-preview---2022-07-07t153510.108.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/86dc_image-removebg-preview---2022-07-07t153520.663.png"
+              ],
+              "audio_urls": []
+            }
+          ]
+        },
+        {
+          "practice_id": 9029,
+          "question_id": 311962,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
+          "comment_plain": "Audio: hot: nóng => Đáp án: C",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6093_cool.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/86dc_image-removebg-preview---2022-07-07t153520.663.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/b56f_image-removebg-preview---2022-07-07t153517.139.png"
+              ],
+              "audio_urls": []
+            }
+          ]
+        },
+        {
+          "practice_id": 9029,
+          "question_id": 311963,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
+          "comment_plain": "Audio: I like rainy days: Tôi thích những ngày trời mưa. => Đáp án: A",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/b0b8_rainy.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/d9a3_cloudy.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6da4_sunny.png"
+              ],
+              "audio_urls": []
+            }
+          ]
+        },
+        {
+          "practice_id": 9029,
+          "question_id": 311964,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
+          "comment_plain": "Audio: stormy: bão => Đáp án: B",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [
+            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/c4ee_snowy.png"
+          ],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/8529_tick.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/a9c9_cross.png"
+              ],
+              "audio_urls": []
+            }
+          ]
+        },
+        {
+          "practice_id": 9029,
+          "question_id": 311965,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
+          "comment_plain": "Audio: cold: lạnh => Đáp án: A",
+          "correct_answer": null,
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [
+            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/ef60_image-removebg-preview---2022-07-07t153510.108.png"
+          ],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/8529_tick.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": null,
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/a9c9_cross.png"
+              ],
+              "audio_urls": []
+            }
+          ]
+        }
+      ],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "free_speaking",
+          "question": "How are you today?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "A hot a heart.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-16",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1hn7rb-66ec3c24-audio.wav",
+          "reaction_time_ms": 1572
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 9029,
+        "luyen_tap": 13306
       }
     },
     {
@@ -10943,9 +10947,9 @@
       "status": "completed",
       "last_activity_date": "2026-02-24",
       "days_since_last_practice": 56,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9997,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9999,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -11067,9 +11071,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-02-24",
       "days_since_last_practice": 56,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9997,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9999,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -11566,9 +11570,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-02-26",
       "days_since_last_practice": 54,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9998,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -12076,9 +12080,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-03",
       "days_since_last_practice": 49,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9991,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9995,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -12587,9 +12591,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-10",
       "days_since_last_practice": 42,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9975,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9988,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -13056,9 +13060,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-12",
       "days_since_last_practice": 40,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9967,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9984,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -13557,9 +13561,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-17",
       "days_since_last_practice": 35,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9933,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9967,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -13689,9 +13693,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-19",
       "days_since_last_practice": 33,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.991,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9955,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -14226,9 +14230,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-24",
       "days_since_last_practice": 28,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9817,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9909,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -14696,9 +14700,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-26",
       "days_since_last_practice": 26,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9756,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9878,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -15196,9 +15200,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-31",
       "days_since_last_practice": 21,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9502,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9751,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -15672,9 +15676,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-02",
       "days_since_last_practice": 19,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9337,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9668,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -16124,9 +16128,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-07",
       "days_since_last_practice": 14,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8647,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9324,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -16591,9 +16595,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-09",
       "days_since_last_practice": 12,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8199,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.91,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -17033,927 +17037,6 @@
               "requires_media": true,
               "stem_media_urls": [
                 "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/e22b_hear.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    {
-      "lesson_id": 3926834,
-      "program_id": null,
-      "level": 2,
-      "position": 21,
-      "title": "Unit 4B: Weather - Lesson 3: It's sunny and hot.",
-      "desc": "- Weather types: sunny, cloudy, rainy, windy (R); snowy, stormy\n- sound eə: bear, hair\n- What's the weather like today? It's rainy and stormy.",
-      "status": "in_class_only",
-      "last_activity_date": "2026-04-14",
-      "days_since_last_practice": 7,
-      "forgetting_score": 0.9991,
-      "weakness_score": 1.0,
-      "composite_priority_score": 0.9995,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 16,
-          "audio_turns": 13,
-          "avg_reaction_ms": 2042,
-          "fastest_reaction_ms": 1160,
-          "total_duration_ms": 45409,
-          "session_status": "COMPLETED",
-          "completion_pct": 71
-        },
-        "is_completed": true,
-        "completion_pct": 71,
-        "latest_session_date": "2026-04-14",
-        "pronunciation_attempts": 10,
-        "pronunciation_score_avg": 88.3,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "lack_of_knowledge": 1
-        },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1
-        },
-        "conversation_attempts": 0,
-        "conversation_score_avg": null,
-        "worst_speaking_items": [
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "sunny",
-              "rainy",
-              "cloudy, ",
-              "snowy"
-            ],
-            "user_transcript": "Send up, sign up.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-14",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnymt2ee-e3b3025e-audio.wav",
-            "reaction_time_ms": 4077
-          },
-          {
-            "lms_type": "free_speaking",
-            "question": "What's the weather like today?",
-            "expected_answer": null,
-            "target_objects": null,
-            "user_transcript": "Um, water water.",
-            "score": 0,
-            "answer_type": "lack_of_knowledge",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-14",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnymrw7c-ebe09b82-audio.wav",
-            "reaction_time_ms": 1797
-          }
-        ]
-      },
-      "homework": {
-        "attempted": false,
-        "bai_tap": null,
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 9004,
-          "luyen_tap": 13301
-        },
-        "skill_breakdown": {},
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {
-          "bai_tap": [
-            {
-              "practice_id": 9004,
-              "question_id": 311933,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
-              "comment_plain": "Audio: windy: gió => Đáp án: B",
-              "correct_answer": null,
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/d9a3_cloudy.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/b8db_windy.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6da4_sunny.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 9004,
-              "question_id": 311934,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
-              "comment_plain": "Audio: snowy: có tuyết => Đáp án: B",
-              "correct_answer": null,
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/d9a3_cloudy.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/c4ee_snowy.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6da4_sunny.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 9004,
-              "question_id": 311935,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
-              "comment_plain": "Audio: It's snowy and stormy: Trời có tuyết và bão. => Đáp án: A",
-              "correct_answer": null,
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/c4ee_snowy.png",
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/3c77_stormy.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6da4_sunny.png",
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/3c77_stormy.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/b8db_windy.png",
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/3c77_stormy.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 9004,
-              "question_id": 311936,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.) It's rainy.",
-              "comment_plain": "Audio: What's the weather like today? It's cloudy and windy: Thời tiết hôm nay thế nào? Trời nhiều mây và có gió. It's rainy: Trời mưa. => Đáp án: B",
-              "correct_answer": null,
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/8529_tick.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/a9c9_cross.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 9004,
-              "question_id": 311937,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.) It's cloudy and windy.",
-              "comment_plain": "Audio: What's the weather like today? It's cloudy and windy: Thời tiết hôm nay thế nào? Trời nhiều mây và có gió. It's cloudy and windy: Trời nhiều mây và có gió. => Đáp án: A",
-              "correct_answer": null,
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/8529_tick.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/a9c9_cross.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            }
-          ],
-          "luyen_tap": [
-            {
-              "practice_id": 13301,
-              "question_id": 371366,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
-              "comment_plain": "Audio: /eə/, /eə/, hair: tóc => Đáp án: B",
-              "correct_answer": "B",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/0409_ear.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/365d_hair.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "C",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/e22b_hear.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 13301,
-              "question_id": 371380,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
-              "comment_plain": "Audio: snowy: có tuyết => Đáp án: C",
-              "correct_answer": "C",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/94bb_cloudy.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/3a12_sunny.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "C",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/6a65_snowy.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 13301,
-              "question_id": 371383,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
-              "comment_plain": "Audio: It's cloudy: trời nhiều mây => Đáp án: A",
-              "correct_answer": "A",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/94bb_cloudy.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/6a65_snowy.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "C",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/0918_rainy.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 13301,
-              "question_id": 371396,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
-              "comment_plain": "Audio: stormy, sunny, rainy: bão, nắng, mưa => Đáp án: A",
-              "correct_answer": "A",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/d585_stormy-2C-sunny-2C-rainy.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/eaef_sunny-2C-stormy-2C-rainy.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "C",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/d1c9_rainy-2C-sunny-2C-stormy.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 13301,
-              "question_id": 371401,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
-              "comment_plain": "Audio: What's the weather like today? It's rainy and windy: Thời tiết hôm nay thế nào? Trời mưa và có gió. => Đáp án: B",
-              "correct_answer": "B",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/1d8e_rainy-and-cloudy.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/ee0c_rainy-and-windy.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "C",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/a7fa_snowy--281-29.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            }
-          ]
-        }
-      }
-    },
-    {
-      "lesson_id": 3926835,
-      "program_id": null,
-      "level": 2,
-      "position": 22,
-      "title": "Unit 4B: Weather - Lesson 4: I like rainy days.",
-      "desc": "- Weather types: sunny, cloudy, rainy, windy, snowy, stormy (R); warm, cool, cold, hot\n- sound eə: bear, hair\n- What's the weather like today? It's sunny and hot.\n- I like rainy days. \n- I don't like",
-      "status": "in_class_only",
-      "last_activity_date": "2026-04-16",
-      "days_since_last_practice": 5,
-      "forgetting_score": 0.9933,
-      "weakness_score": 1.0,
-      "composite_priority_score": 0.9967,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 43,
-          "audio_turns": 32,
-          "avg_reaction_ms": 1764,
-          "fastest_reaction_ms": 802,
-          "total_duration_ms": 10356,
-          "session_status": "COMPLETED",
-          "completion_pct": 71
-        },
-        "is_completed": true,
-        "completion_pct": 71,
-        "latest_session_date": "2026-04-16",
-        "pronunciation_attempts": 28,
-        "pronunciation_score_avg": 83.36,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 0,
-        "brainstorm_score_avg": null,
-        "brainstorm_answer_type_dist": {},
-        "conversation_attempts": 0,
-        "conversation_score_avg": null,
-        "worst_speaking_items": [
-          {
-            "lms_type": "free_speaking",
-            "question": "How are you today?",
-            "expected_answer": null,
-            "target_objects": null,
-            "user_transcript": "A hot a heart.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-16",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1hn7rb-66ec3c24-audio.wav",
-            "reaction_time_ms": 1572
-          }
-        ]
-      },
-      "homework": {
-        "attempted": false,
-        "bai_tap": null,
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 9029,
-          "luyen_tap": 13306
-        },
-        "skill_breakdown": {},
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {
-          "bai_tap": [
-            {
-              "practice_id": 9029,
-              "question_id": 311961,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
-              "comment_plain": "Audio: warm: ấm áp => Đáp án: C",
-              "correct_answer": null,
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/b56f_image-removebg-preview---2022-07-07t153517.139.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/ef60_image-removebg-preview---2022-07-07t153510.108.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/86dc_image-removebg-preview---2022-07-07t153520.663.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 9029,
-              "question_id": 311962,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
-              "comment_plain": "Audio: hot: nóng => Đáp án: C",
-              "correct_answer": null,
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6093_cool.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/86dc_image-removebg-preview---2022-07-07t153520.663.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/b56f_image-removebg-preview---2022-07-07t153517.139.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 9029,
-              "question_id": 311963,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
-              "comment_plain": "Audio: I like rainy days: Tôi thích những ngày trời mưa. => Đáp án: A",
-              "correct_answer": null,
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/b0b8_rainy.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/d9a3_cloudy.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6da4_sunny.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 9029,
-              "question_id": 311964,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
-              "comment_plain": "Audio: stormy: bão => Đáp án: B",
-              "correct_answer": null,
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/c4ee_snowy.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/8529_tick.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/a9c9_cross.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 9029,
-              "question_id": 311965,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
-              "comment_plain": "Audio: cold: lạnh => Đáp án: A",
-              "correct_answer": null,
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/ef60_image-removebg-preview---2022-07-07t153510.108.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/8529_tick.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": null,
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/a9c9_cross.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            }
-          ],
-          "luyen_tap": [
-            {
-              "practice_id": 13306,
-              "question_id": 371440,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
-              "comment_plain": "Audio: cool: mát mẻ => Đáp án: B",
-              "correct_answer": "B",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/1037_hot.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 13306,
-              "question_id": 371442,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
-              "comment_plain": "Audio: snowy: có tuyết => Đáp án: A",
-              "correct_answer": "A",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/a7fa_snowy--281-29.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 13306,
-              "question_id": 371445,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
-              "comment_plain": "Audio: It's stormy: Trời có bão => Đáp án: B",
-              "correct_answer": "B",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/3a12_sunny.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 13306,
-              "question_id": 371449,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
-              "comment_plain": "Audio: I like windy days: Tôi thích những ngày có gió. => Đáp án: B",
-              "correct_answer": "B",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/e2ae_dislike-windy.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 13306,
-              "question_id": 371453,
-              "question_folder": "English Tutoring - Level 2",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
-              "comment_plain": "Audio: I don't like rainy days: Tôi không thích những ngày mưa. => Đáp án: A",
-              "correct_answer": "A",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/c088_dislike-rainy.png"
               ],
               "comment_media_urls": [],
               "choice_previews": [
@@ -18894,9 +17977,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-10",
       "days_since_last_practice": 42,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9975,
       "weakness_score": 0.6912,
-      "composite_priority_score": 0.8456,
+      "composite_priority_score": 0.8444,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -20583,6 +19666,492 @@
       }
     },
     {
+      "lesson_id": 3926834,
+      "program_id": null,
+      "level": 2,
+      "position": 21,
+      "title": "Unit 4B: Weather - Lesson 3: It's sunny and hot.",
+      "desc": "- Weather types: sunny, cloudy, rainy, windy (R); snowy, stormy\n- sound eə: bear, hair\n- What's the weather like today? It's rainy and stormy.",
+      "status": "in_class_only",
+      "last_activity_date": "2026-04-14",
+      "days_since_last_practice": 7,
+      "forgetting_score": 0.6321,
+      "weakness_score": 1.0,
+      "composite_priority_score": 0.816,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 16,
+          "audio_turns": 13,
+          "avg_reaction_ms": 2042,
+          "fastest_reaction_ms": 1160,
+          "total_duration_ms": 45409,
+          "session_status": "COMPLETED",
+          "completion_pct": 71
+        },
+        "is_completed": true,
+        "completion_pct": 71,
+        "latest_session_date": "2026-04-14",
+        "pronunciation_attempts": 10,
+        "pronunciation_score_avg": 88.3,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "lack_of_knowledge": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1
+        },
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
+        "worst_speaking_items": [
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "sunny",
+              "rainy",
+              "cloudy, ",
+              "snowy"
+            ],
+            "user_transcript": "Send up, sign up.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-14",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnymt2ee-e3b3025e-audio.wav",
+            "reaction_time_ms": 4077
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "What's the weather like today?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "Um, water water.",
+            "score": 0,
+            "answer_type": "lack_of_knowledge",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-14",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/14/admin/mnymrw7c-ebe09b82-audio.wav",
+            "reaction_time_ms": 1797
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 9004,
+          "luyen_tap": 13301
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {
+          "bai_tap": [
+            {
+              "practice_id": 9004,
+              "question_id": 311933,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
+              "comment_plain": "Audio: windy: gió => Đáp án: B",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/d9a3_cloudy.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/b8db_windy.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6da4_sunny.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 9004,
+              "question_id": 311934,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
+              "comment_plain": "Audio: snowy: có tuyết => Đáp án: B",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/d9a3_cloudy.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/c4ee_snowy.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6da4_sunny.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 9004,
+              "question_id": 311935,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng.)",
+              "comment_plain": "Audio: It's snowy and stormy: Trời có tuyết và bão. => Đáp án: A",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/c4ee_snowy.png",
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/3c77_stormy.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6da4_sunny.png",
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/3c77_stormy.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/b8db_windy.png",
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/3c77_stormy.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 9004,
+              "question_id": 311936,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.) It's rainy.",
+              "comment_plain": "Audio: What's the weather like today? It's cloudy and windy: Thời tiết hôm nay thế nào? Trời nhiều mây và có gió. It's rainy: Trời mưa. => Đáp án: B",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/8529_tick.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/a9c9_cross.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 9004,
+              "question_id": 311937,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.) It's cloudy and windy.",
+              "comment_plain": "Audio: What's the weather like today? It's cloudy and windy: Thời tiết hôm nay thế nào? Trời nhiều mây và có gió. It's cloudy and windy: Trời nhiều mây và có gió. => Đáp án: A",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/8529_tick.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/a9c9_cross.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            }
+          ],
+          "luyen_tap": [
+            {
+              "practice_id": 13301,
+              "question_id": 371366,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
+              "comment_plain": "Audio: /eə/, /eə/, hair: tóc => Đáp án: B",
+              "correct_answer": "B",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/0409_ear.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/365d_hair.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "C",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/e22b_hear.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 13301,
+              "question_id": 371380,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
+              "comment_plain": "Audio: snowy: có tuyết => Đáp án: C",
+              "correct_answer": "C",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/94bb_cloudy.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/3a12_sunny.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "C",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/6a65_snowy.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 13301,
+              "question_id": 371383,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
+              "comment_plain": "Audio: It's cloudy: trời nhiều mây => Đáp án: A",
+              "correct_answer": "A",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/94bb_cloudy.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/6a65_snowy.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "C",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/0918_rainy.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 13301,
+              "question_id": 371396,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
+              "comment_plain": "Audio: stormy, sunny, rainy: bão, nắng, mưa => Đáp án: A",
+              "correct_answer": "A",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/d585_stormy-2C-sunny-2C-rainy.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/eaef_sunny-2C-stormy-2C-rainy.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "C",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/d1c9_rainy-2C-sunny-2C-stormy.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 13301,
+              "question_id": 371401,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
+              "comment_plain": "Audio: What's the weather like today? It's rainy and windy: Thời tiết hôm nay thế nào? Trời mưa và có gió. => Đáp án: B",
+              "correct_answer": "B",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/1d8e_rainy-and-cloudy.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/ee0c_rainy-and-windy.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "C",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/a7fa_snowy--281-29.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
       "lesson_id": 3520351,
       "program_id": null,
       "level": 2,
@@ -21241,6 +20810,441 @@
           }
         ],
         "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3926835,
+      "program_id": null,
+      "level": 2,
+      "position": 22,
+      "title": "Unit 4B: Weather - Lesson 4: I like rainy days.",
+      "desc": "- Weather types: sunny, cloudy, rainy, windy, snowy, stormy (R); warm, cool, cold, hot\n- sound eə: bear, hair\n- What's the weather like today? It's sunny and hot.\n- I like rainy days. \n- I don't like",
+      "status": "in_class_only",
+      "last_activity_date": "2026-04-16",
+      "days_since_last_practice": 5,
+      "forgetting_score": 0.5105,
+      "weakness_score": 1.0,
+      "composite_priority_score": 0.7552,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 43,
+          "audio_turns": 32,
+          "avg_reaction_ms": 1764,
+          "fastest_reaction_ms": 802,
+          "total_duration_ms": 10356,
+          "session_status": "COMPLETED",
+          "completion_pct": 71
+        },
+        "is_completed": true,
+        "completion_pct": 71,
+        "latest_session_date": "2026-04-16",
+        "pronunciation_attempts": 28,
+        "pronunciation_score_avg": 83.36,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
+        "worst_speaking_items": [
+          {
+            "lms_type": "free_speaking",
+            "question": "How are you today?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "A hot a heart.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-16",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/16/admin/mo1hn7rb-66ec3c24-audio.wav",
+            "reaction_time_ms": 1572
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 9029,
+          "luyen_tap": 13306
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {
+          "bai_tap": [
+            {
+              "practice_id": 9029,
+              "question_id": 311961,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
+              "comment_plain": "Audio: warm: ấm áp => Đáp án: C",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/b56f_image-removebg-preview---2022-07-07t153517.139.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/ef60_image-removebg-preview---2022-07-07t153510.108.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/86dc_image-removebg-preview---2022-07-07t153520.663.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 9029,
+              "question_id": 311962,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
+              "comment_plain": "Audio: hot: nóng => Đáp án: C",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6093_cool.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/86dc_image-removebg-preview---2022-07-07t153520.663.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/b56f_image-removebg-preview---2022-07-07t153517.139.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 9029,
+              "question_id": 311963,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture. (Con hãy nghe và chọn tranh đúng.)",
+              "comment_plain": "Audio: I like rainy days: Tôi thích những ngày trời mưa. => Đáp án: A",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/b0b8_rainy.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/d9a3_cloudy.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/6da4_sunny.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 9029,
+              "question_id": 311964,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
+              "comment_plain": "Audio: stormy: bão => Đáp án: B",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/05/28/c4ee_snowy.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/8529_tick.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/a9c9_cross.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 9029,
+              "question_id": 311965,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
+              "comment_plain": "Audio: cold: lạnh => Đáp án: A",
+              "correct_answer": null,
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/07/ef60_image-removebg-preview---2022-07-07t153510.108.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/8529_tick.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": null,
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/05/a9c9_cross.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            }
+          ],
+          "luyen_tap": [
+            {
+              "practice_id": 13306,
+              "question_id": 371440,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
+              "comment_plain": "Audio: cool: mát mẻ => Đáp án: B",
+              "correct_answer": "B",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/1037_hot.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 13306,
+              "question_id": 371442,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
+              "comment_plain": "Audio: snowy: có tuyết => Đáp án: A",
+              "correct_answer": "A",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/a7fa_snowy--281-29.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 13306,
+              "question_id": 371445,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
+              "comment_plain": "Audio: It's stormy: Trời có bão => Đáp án: B",
+              "correct_answer": "B",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/3a12_sunny.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 13306,
+              "question_id": 371449,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
+              "comment_plain": "Audio: I like windy days: Tôi thích những ngày có gió. => Đáp án: B",
+              "correct_answer": "B",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/e2ae_dislike-windy.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 13306,
+              "question_id": 371453,
+              "question_folder": "English Tutoring - Level 2",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai.)",
+              "comment_plain": "Audio: I don't like rainy days: Tôi không thích những ngày mưa. => Đáp án: A",
+              "correct_answer": "A",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/c088_dislike-rainy.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            }
+          ]
+        }
       }
     },
     {

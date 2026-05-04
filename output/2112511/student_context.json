@@ -20,6 +20,10 @@
       }
     },
     "weak_skills_global": [],
+    "critical_speaking_types": [
+      "brainstorm",
+      "free_speaking"
+    ],
     "overall_pronunciation_score_avg": 71.79,
     "overall_free_speaking_score_avg": 31.82,
     "overall_brainstorm_score_avg": 10.81,
@@ -33,7 +37,7 @@
       "correct": 23,
       "incorrect": 14
     },
-    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
     {
@@ -877,9 +881,9 @@
       "level": 2,
       "last_activity_date": "2026-03-06",
       "days_since_last_practice": 46,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9986,
       "weakness_score": 0.6505,
-      "composite_priority_score": 0.8253,
+      "composite_priority_score": 0.8246,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -1076,9 +1080,9 @@
       "level": 2,
       "last_activity_date": "2026-03-18",
       "days_since_last_practice": 34,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9922,
       "weakness_score": 0.5925,
-      "composite_priority_score": 0.7963,
+      "composite_priority_score": 0.7923,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -1240,260 +1244,6 @@
       }
     },
     {
-      "lesson_id": 3830649,
-      "title": "Unit 2B: Food - Lesson 5: I don't like noodles.",
-      "level": 2,
-      "last_activity_date": "2026-04-15",
-      "days_since_last_practice": 6,
-      "forgetting_score": 0.9975,
-      "weakness_score": 0.5525,
-      "composite_priority_score": 0.775,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [
-        {
-          "practice_id": 8198,
-          "question_id": 308992,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "question_text": "Odd one out (Con hãy đọc và chọn từ khác loại nhé.)",
-          "comment_plain": "sn a ke: /eɪ/ b o y: /ɔɪ/ t o y: /ɔɪ/ => Đáp án: A",
-          "correct_answer": "A. snake",
-          "student_answer": "B. boy",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. snake",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. boy",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. toy",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        },
-        {
-          "practice_id": 8198,
-          "question_id": 308998,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng nhé.) A: _____(17)? B: I like pizza and beef. How about you? A: I like ___(18). Do you like fish? B: ____(19). Fish is yucky. Do you like bread? A: Yes, I do. Bread is ___(20). (19)",
-          "comment_plain": "Dịch: B: Không, tớ không. Cá rất kinh khủng. Cậu có thích bánh mì không? => Đáp án: B ( Không, tớ không.)",
-          "correct_answer": "B. No, I don't.",
-          "student_answer": "A. Yes, I do.",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. Yes, I do.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. No, I don't.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. No, I do.",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        }
-      ],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Good. Who cooks the chicken at your home? 🍗",
-          "expected_answer": "My mom cooks the chicken at home. She makes it with soy sauce and spices.",
-          "target_objects": null,
-          "user_transcript": "Yes, I like chicken at your home.",
-          "score": 68,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 36,
-          "timestamp": "2026-04-15",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mnzyrg5f-6470c4fc-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice choice. Do you like pizza with chicken or beef toppings? 🍕",
-          "expected_answer": "I like pizza with chicken and cheese.",
-          "target_objects": null,
-          "user_transcript": "I like chicken and.",
-          "score": 57,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 14,
-          "timestamp": "2026-04-15",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mnzyn0hy-9f23cd73-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "Beef",
-            "Pizza",
-            "Rice",
-            "Fish",
-            "Pork",
-            "Chicken",
-            "Noodles",
-            "Bread"
-          ],
-          "user_transcript": "It's a pizza.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "pizza"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-15",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mnzxwq0h-54b561b4-audio.wav",
-          "reaction_time_ms": 1883
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What food can you see here?",
-          "expected_answer": null,
-          "target_objects": [
-            "Beef",
-            "Pizza",
-            "Rice",
-            "Fish",
-            "Pork",
-            "Chicken",
-            "Noodles",
-            "Bread"
-          ],
-          "user_transcript": "I A.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-15",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mnzxwig7-717abe29-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 8198,
-        "luyen_tap": 13213
-      }
-    },
-    {
-      "lesson_id": 3768637,
-      "title": "Unit 1B: Animals - Lesson 5: These are cows and horses.",
-      "level": 2,
-      "last_activity_date": "2026-04-03",
-      "days_since_last_practice": 18,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5475,
-      "composite_priority_score": 0.7737,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 4,
-      "worst_speaking_items": [
-        {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "Snake",
-            "Lion",
-            "Bear",
-            "Tiger",
-            "Zebra",
-            "Cow",
-            "Duck"
-          ],
-          "user_transcript": "It's a snake.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "snake"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-27",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/27/admin/mn8tvd0w-2f8e29a6-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "Snake",
-            "Lion",
-            "Bear",
-            "Tiger",
-            "Zebra",
-            "Cow",
-            "Duck"
-          ],
-          "user_transcript": "The morning.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-27",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/27/admin/mn8tv555-fb431634-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "free_speaking",
-          "question": "What do you like to play?",
-          "expected_answer": null,
-          "target_objects": null,
-          "user_transcript": "She gave us the pathway.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-27",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/27/admin/mn8tu28u-4bf3f7aa-audio.wav",
-          "reaction_time_ms": 689
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 8025,
-        "luyen_tap": 13439
-      }
-    },
-    {
       "lesson_id": 3690827,
       "title": "Unit 2A: My home - Lesson 5: They're in the living room.",
       "level": 2,
@@ -1648,178 +1398,6 @@
       }
     },
     {
-      "lesson_id": 3806319,
-      "title": "Unit 2B: Food - Lesson 3: Do you like potato?",
-      "level": 2,
-      "last_activity_date": "2026-04-08",
-      "days_since_last_practice": 13,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5325,
-      "composite_priority_score": 0.7662,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [
-        {
-          "practice_id": 8196,
-          "question_id": 308949,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "question_text": "Odd one out (Con hãy đọc và chọn từ khác loại nhé.)",
-          "comment_plain": "chicken: thịt gà pork: thịt lợn mango: xoài => Đáp án: C",
-          "correct_answer": "C. mango",
-          "student_answer": "B. pork",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. chicken",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. pork",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. mango",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        },
-        {
-          "practice_id": 13367,
-          "question_id": 372352,
-          "question_folder": "English Tutoring - Level 2",
-          "question_type": "Một lựa chọn",
-          "question_text": "Read and reorder the sentence (Con hãy đọc và sắp xếp thành câu nhé.) like/ Do/ you/ beans/?",
-          "comment_plain": "Do you like beans? Dịch: Bạn có thích đậu không? => Đáp án: C",
-          "correct_answer": "C. Do you like beans?",
-          "student_answer": "B. Do like you beans?",
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. Beans do you like?",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. Do like you beans?",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. Do you like beans?",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "is_correct": 0
-        }
-      ],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Game food? Do you mean food from games, or food for a game? 🍽️",
-          "expected_answer": "I mean food in video games, like apples and bread.",
-          "target_objects": null,
-          "user_transcript": "Game food.",
-          "score": 68,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 36,
-          "timestamp": "2026-04-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpza8j5-82afa1a4-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Good. Who do you give food to at home? 🍽️",
-          "expected_answer": "I give food to my family at home.",
-          "target_objects": null,
-          "user_transcript": "Yes, I.",
-          "score": 32,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 50,
-          "grammar_score": 14,
-          "timestamp": "2026-04-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpz95dp-60d3fb71-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Who do you give food to? 🍎",
-          "expected_answer": "I give food to my family. We eat together.",
-          "target_objects": null,
-          "user_transcript": "Yes, I do.",
-          "score": 69,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 38,
-          "timestamp": "2026-04-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpz84xt-ba927cfe-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi! Nice to see you. Are you ready to talk about food today? 😄",
-          "expected_answer": "Yes, I am ready. I like mango and watermelon.",
-          "target_objects": null,
-          "user_transcript": "Yes, I give food.",
-          "score": 61,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 75,
-          "grammar_score": 47,
-          "timestamp": "2026-04-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpz77b6-e579d2b5-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "Anything else?",
-          "expected_answer": null,
-          "target_objects": [
-            "potato",
-            "watermelon",
-            "mango",
-            "beans"
-          ],
-          "user_transcript": "Watermelon watermelon.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "watermelon"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpyju82-e6400586-audio.wav",
-          "reaction_time_ms": 5025
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 8196,
-        "luyen_tap": 13367
-      }
-    },
-    {
       "lesson_id": 3622534,
       "title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
       "level": 2,
@@ -1963,110 +1541,14 @@
       }
     },
     {
-      "lesson_id": 3814880,
-      "title": "Unit 2B:  Food - Lesson 4: Pizza is yummy.",
-      "level": 2,
-      "last_activity_date": "2026-04-10",
-      "days_since_last_practice": 11,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.525,
-      "composite_priority_score": 0.7625,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 1,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice choice, watermelon is yummy 😊 What else do you like to eat? 🍽️",
-          "expected_answer": "I also like mango and potato. I don't like beans.",
-          "target_objects": null,
-          "user_transcript": "It's in the house.",
-          "score": 64,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 87,
-          "grammar_score": 41,
-          "timestamp": "2026-04-10",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu8cmz-a0e34eb4-audio.wav",
-          "reaction_time_ms": 1328
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Oh, do you mean ‘help’ or a food name? 😊",
-          "expected_answer": "I mean ‘help’ — I can’t say the word.",
-          "target_objects": null,
-          "user_transcript": "Hell, put me name.",
-          "score": 58.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 17,
-          "timestamp": "2026-04-10",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu72ea-3ef17dfd-audio.wav",
-          "reaction_time_ms": 1328
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. What food do you like to eat? 🍉",
-          "expected_answer": "I like mango and potato. I also like beans and watermelon.",
-          "target_objects": null,
-          "user_transcript": "Hel.",
-          "score": 43,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 66,
-          "grammar_score": 20,
-          "timestamp": "2026-04-10",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu6op9-590131d1-audio.wav",
-          "reaction_time_ms": 1328
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Great. What food do you like? 🍉",
-          "expected_answer": "I like mango and potato. I think mango is yummy, beans are okay, and broccoli is yucky.",
-          "target_objects": null,
-          "user_transcript": "I like to",
-          "score": 58.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 17,
-          "timestamp": "2026-04-10",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu5hsd-d3c25296-audio.wav",
-          "reaction_time_ms": 1328
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Oh, I see. Do you mean “You are full” about me or about you? 😊",
-          "expected_answer": "I mean I am full. I ate a lot.",
-          "target_objects": null,
-          "user_transcript": "Oh.",
-          "score": 69,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 38,
-          "timestamp": "2026-04-10",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu4fq3-6a2056cc-audio.wav",
-          "reaction_time_ms": 1328
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 8197,
-        "luyen_tap": 13211
-      }
-    },
-    {
       "lesson_id": 3768633,
       "title": "Unit 1B: Animals - Lesson 1: That is a lion.",
       "level": 2,
       "last_activity_date": "2026-03-13",
       "days_since_last_practice": 39,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9962,
       "weakness_score": 0.5225,
-      "composite_priority_score": 0.7612,
+      "composite_priority_score": 0.7593,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -2360,102 +1842,6 @@
       }
     },
     {
-      "lesson_id": 3785565,
-      "title": "Unit 2B: Food - Lesson 1: What food do you like?",
-      "level": 2,
-      "last_activity_date": "2026-04-01",
-      "days_since_last_practice": 20,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.515,
-      "composite_priority_score": 0.7575,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 1,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Good. What snack do you eat when you watch hockey? 🍿",
-          "expected_answer": "I eat chips and bread with butter.",
-          "target_objects": null,
-          "user_transcript": "Y.",
-          "score": 20,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 0,
-          "grammar_score": 40,
-          "timestamp": "2026-04-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzkajy-5d1900cc-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Great! We can play a simple food game. I say a food, you say if you like it. Ready? 😄",
-          "expected_answer": "Yes, I'm ready. I like chicken.",
-          "target_objects": null,
-          "user_transcript": "Just I like hockey.",
-          "score": 48.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 83,
-          "grammar_score": 14,
-          "timestamp": "2026-04-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzj8zr-4af3fbc7-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. What food do you like to eat? 🍽️",
-          "expected_answer": "I like chicken and rice.",
-          "target_objects": null,
-          "user_transcript": "I like playing a game for what.",
-          "score": 46,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 76,
-          "grammar_score": 16,
-          "timestamp": "2026-04-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzigp8-f99e5684-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi! Nice to see you. Are you ready to talk about food? 😄",
-          "expected_answer": "Yes, I am ready. I like chicken and rice.",
-          "target_objects": null,
-          "user_transcript": "Y.",
-          "score": 21.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 0,
-          "grammar_score": 43,
-          "timestamp": "2026-04-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzi4zn-bdb7a0ad-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "free_speaking",
-          "question": "What did you eat today?",
-          "expected_answer": null,
-          "target_objects": null,
-          "user_transcript": "I eat some.",
-          "score": 0,
-          "answer_type": "lack_of_knowledge",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfys85m-255de2e5-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 8027,
-        "luyen_tap": 13365
-      }
-    },
-    {
       "lesson_id": 3662592,
       "title": "Unit 2A: My home - Lesson 1: He's my father.",
       "level": 3,
@@ -2517,9 +1903,9 @@
       "level": 2,
       "last_activity_date": "2026-02-25",
       "days_since_last_practice": 55,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 0.5075,
-      "composite_priority_score": 0.7537,
+      "composite_priority_score": 0.7535,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -2651,93 +2037,6 @@
       }
     },
     {
-      "lesson_id": 3768635,
-      "title": "Unit 1B: Animals - Lesson 3: These are lions and zebras.",
-      "level": 2,
-      "last_activity_date": "2026-03-20",
-      "days_since_last_practice": 32,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5075,
-      "composite_priority_score": 0.7537,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 1,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Do you like frogs or snakes more? 🐸🐍",
-          "expected_answer": "I like frogs more. They are small and jump. 🐸",
-          "target_objects": null,
-          "user_transcript": "Snake frog.",
-          "score": 61,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 22,
-          "timestamp": "2026-03-20",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/20/admin/mmyu99ds-6214d0ab-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Great. What is your favorite animal? 🐶",
-          "expected_answer": "My favorite animal is a frog.",
-          "target_objects": null,
-          "user_transcript": "Animal is happily study.",
-          "score": 60,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 20,
-          "timestamp": "2026-03-20",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/20/admin/mmyu8ox8-f5010bc0-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What animal is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "Bat",
-            "Snake",
-            "Frog"
-          ],
-          "user_transcript": "It's a frog.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "frog"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-20",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/20/admin/mmyteu0s-20cd5a3e-audio.wav",
-          "reaction_time_ms": 1767
-        },
-        {
-          "lms_type": "free_speaking",
-          "question": "What color is the sky today?",
-          "expected_answer": null,
-          "target_objects": null,
-          "user_transcript": "No.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-20",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/20/admin/mmytdnw8-906b7613-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 8017,
-        "luyen_tap": 13425
-      }
-    },
-    {
       "lesson_id": 3690830,
       "title": "Unit 3A: Body parts - Lesson 3: I can swim.",
       "level": 2,
@@ -2839,7 +2138,7 @@
       "level": 2,
       "last_activity_date": "2026-02-13",
       "days_since_last_practice": 67,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9999,
       "weakness_score": 0.5,
       "composite_priority_score": 0.75,
       "homework_status": "attempted",
@@ -2930,39 +2229,538 @@
       }
     },
     {
-      "lesson_id": 3768636,
-      "title": "Unit 1B: Animals - Lesson 4: This is a pig.",
+      "lesson_id": 3768635,
+      "title": "Unit 1B: Animals - Lesson 3: These are lions and zebras.",
       "level": 2,
-      "last_activity_date": "2026-03-25",
-      "days_since_last_practice": 27,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.2553,
-      "composite_priority_score": 0.6277,
+      "last_activity_date": "2026-03-20",
+      "days_since_last_practice": 32,
+      "forgetting_score": 0.9897,
+      "weakness_score": 0.5075,
+      "composite_priority_score": 0.7486,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
       "question_bank_preview": [],
-      "failed_media_questions_count": 3,
+      "failed_media_questions_count": 1,
       "worst_speaking_items": [
         {
           "lms_type": "conversation",
-          "question": "Nice. What color is Math? 🐶",
-          "expected_answer": "He is brown and white.",
+          "question": "Nice. Do you like frogs or snakes more? 🐸🐍",
+          "expected_answer": "I like frogs more. They are small and jump. 🐸",
           "target_objects": null,
-          "user_transcript": "He has brown.",
-          "score": 49,
+          "user_transcript": "Snake frog.",
+          "score": 61,
           "answer_type": null,
           "correct_objects": null,
-          "pronunciation_score": 55,
-          "grammar_score": 43,
-          "timestamp": "2026-03-25",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn5zlkt0-832ea748-audio.wav",
+          "pronunciation_score": 100,
+          "grammar_score": 22,
+          "timestamp": "2026-03-20",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/20/admin/mmyu99ds-6214d0ab-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Great. What is your favorite animal? 🐶",
+          "expected_answer": "My favorite animal is a frog.",
+          "target_objects": null,
+          "user_transcript": "Animal is happily study.",
+          "score": 60,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 20,
+          "timestamp": "2026-03-20",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/20/admin/mmyu8ox8-f5010bc0-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What animal is it?",
+          "expected_answer": null,
+          "target_objects": [
+            "Bat",
+            "Snake",
+            "Frog"
+          ],
+          "user_transcript": "It's a frog.",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "frog"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-20",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/20/admin/mmyteu0s-20cd5a3e-audio.wav",
+          "reaction_time_ms": 1767
+        },
+        {
+          "lms_type": "free_speaking",
+          "question": "What color is the sky today?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "No.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-20",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/20/admin/mmytdnw8-906b7613-audio.wav",
           "reaction_time_ms": null
         }
       ],
       "practice_ids": {
-        "bai_tap": 8023,
-        "luyen_tap": 13435
+        "bai_tap": 8017,
+        "luyen_tap": 13425
+      }
+    },
+    {
+      "lesson_id": 3768637,
+      "title": "Unit 1B: Animals - Lesson 5: These are cows and horses.",
+      "level": 2,
+      "last_activity_date": "2026-04-03",
+      "days_since_last_practice": 18,
+      "forgetting_score": 0.9236,
+      "weakness_score": 0.5475,
+      "composite_priority_score": 0.7355,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 4,
+      "worst_speaking_items": [
+        {
+          "lms_type": "brainstorm",
+          "question": "What is it?",
+          "expected_answer": null,
+          "target_objects": [
+            "Snake",
+            "Lion",
+            "Bear",
+            "Tiger",
+            "Zebra",
+            "Cow",
+            "Duck"
+          ],
+          "user_transcript": "It's a snake.",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "snake"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-27",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/27/admin/mn8tvd0w-2f8e29a6-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "Snake",
+            "Lion",
+            "Bear",
+            "Tiger",
+            "Zebra",
+            "Cow",
+            "Duck"
+          ],
+          "user_transcript": "The morning.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-27",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/27/admin/mn8tv555-fb431634-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "free_speaking",
+          "question": "What do you like to play?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "She gave us the pathway.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-03-27",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/27/admin/mn8tu28u-4bf3f7aa-audio.wav",
+          "reaction_time_ms": 689
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 8025,
+        "luyen_tap": 13439
+      }
+    },
+    {
+      "lesson_id": 3785565,
+      "title": "Unit 2B: Food - Lesson 1: What food do you like?",
+      "level": 2,
+      "last_activity_date": "2026-04-01",
+      "days_since_last_practice": 20,
+      "forgetting_score": 0.9426,
+      "weakness_score": 0.515,
+      "composite_priority_score": 0.7288,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Good. What snack do you eat when you watch hockey? 🍿",
+          "expected_answer": "I eat chips and bread with butter.",
+          "target_objects": null,
+          "user_transcript": "Y.",
+          "score": 20,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 40,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzkajy-5d1900cc-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Great! We can play a simple food game. I say a food, you say if you like it. Ready? 😄",
+          "expected_answer": "Yes, I'm ready. I like chicken.",
+          "target_objects": null,
+          "user_transcript": "Just I like hockey.",
+          "score": 48.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 83,
+          "grammar_score": 14,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzj8zr-4af3fbc7-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. What food do you like to eat? 🍽️",
+          "expected_answer": "I like chicken and rice.",
+          "target_objects": null,
+          "user_transcript": "I like playing a game for what.",
+          "score": 46,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 76,
+          "grammar_score": 16,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzigp8-f99e5684-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi! Nice to see you. Are you ready to talk about food? 😄",
+          "expected_answer": "Yes, I am ready. I like chicken and rice.",
+          "target_objects": null,
+          "user_transcript": "Y.",
+          "score": 21.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 0,
+          "grammar_score": 43,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzi4zn-bdb7a0ad-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "free_speaking",
+          "question": "What did you eat today?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "I eat some.",
+          "score": 0,
+          "answer_type": "lack_of_knowledge",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-01",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfys85m-255de2e5-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 8027,
+        "luyen_tap": 13365
+      }
+    },
+    {
+      "lesson_id": 3806319,
+      "title": "Unit 2B: Food - Lesson 3: Do you like potato?",
+      "level": 2,
+      "last_activity_date": "2026-04-08",
+      "days_since_last_practice": 13,
+      "forgetting_score": 0.8439,
+      "weakness_score": 0.5325,
+      "composite_priority_score": 0.6882,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 8196,
+          "question_id": 308949,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "question_text": "Odd one out (Con hãy đọc và chọn từ khác loại nhé.)",
+          "comment_plain": "chicken: thịt gà pork: thịt lợn mango: xoài => Đáp án: C",
+          "correct_answer": "C. mango",
+          "student_answer": "B. pork",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. chicken",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. pork",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. mango",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        },
+        {
+          "practice_id": 13367,
+          "question_id": 372352,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the sentence (Con hãy đọc và sắp xếp thành câu nhé.) like/ Do/ you/ beans/?",
+          "comment_plain": "Do you like beans? Dịch: Bạn có thích đậu không? => Đáp án: C",
+          "correct_answer": "C. Do you like beans?",
+          "student_answer": "B. Do like you beans?",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Beans do you like?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. Do like you beans?",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. Do you like beans?",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Game food? Do you mean food from games, or food for a game? 🍽️",
+          "expected_answer": "I mean food in video games, like apples and bread.",
+          "target_objects": null,
+          "user_transcript": "Game food.",
+          "score": 68,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 36,
+          "timestamp": "2026-04-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpza8j5-82afa1a4-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. Who do you give food to at home? 🍽️",
+          "expected_answer": "I give food to my family at home.",
+          "target_objects": null,
+          "user_transcript": "Yes, I.",
+          "score": 32,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 50,
+          "grammar_score": 14,
+          "timestamp": "2026-04-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpz95dp-60d3fb71-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. Who do you give food to? 🍎",
+          "expected_answer": "I give food to my family. We eat together.",
+          "target_objects": null,
+          "user_transcript": "Yes, I do.",
+          "score": 69,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 38,
+          "timestamp": "2026-04-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpz84xt-ba927cfe-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi! Nice to see you. Are you ready to talk about food today? 😄",
+          "expected_answer": "Yes, I am ready. I like mango and watermelon.",
+          "target_objects": null,
+          "user_transcript": "Yes, I give food.",
+          "score": 61,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 75,
+          "grammar_score": 47,
+          "timestamp": "2026-04-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpz77b6-e579d2b5-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "Anything else?",
+          "expected_answer": null,
+          "target_objects": [
+            "potato",
+            "watermelon",
+            "mango",
+            "beans"
+          ],
+          "user_transcript": "Watermelon watermelon.",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "watermelon"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpyju82-e6400586-audio.wav",
+          "reaction_time_ms": 5025
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 8196,
+        "luyen_tap": 13367
+      }
+    },
+    {
+      "lesson_id": 3814880,
+      "title": "Unit 2B:  Food - Lesson 4: Pizza is yummy.",
+      "level": 2,
+      "last_activity_date": "2026-04-10",
+      "days_since_last_practice": 11,
+      "forgetting_score": 0.7923,
+      "weakness_score": 0.525,
+      "composite_priority_score": 0.6586,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 1,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Nice choice, watermelon is yummy 😊 What else do you like to eat? 🍽️",
+          "expected_answer": "I also like mango and potato. I don't like beans.",
+          "target_objects": null,
+          "user_transcript": "It's in the house.",
+          "score": 64,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 87,
+          "grammar_score": 41,
+          "timestamp": "2026-04-10",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu8cmz-a0e34eb4-audio.wav",
+          "reaction_time_ms": 1328
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Oh, do you mean ‘help’ or a food name? 😊",
+          "expected_answer": "I mean ‘help’ — I can’t say the word.",
+          "target_objects": null,
+          "user_transcript": "Hell, put me name.",
+          "score": 58.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 17,
+          "timestamp": "2026-04-10",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu72ea-3ef17dfd-audio.wav",
+          "reaction_time_ms": 1328
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. What food do you like to eat? 🍉",
+          "expected_answer": "I like mango and potato. I also like beans and watermelon.",
+          "target_objects": null,
+          "user_transcript": "Hel.",
+          "score": 43,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 66,
+          "grammar_score": 20,
+          "timestamp": "2026-04-10",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu6op9-590131d1-audio.wav",
+          "reaction_time_ms": 1328
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Great. What food do you like? 🍉",
+          "expected_answer": "I like mango and potato. I think mango is yummy, beans are okay, and broccoli is yucky.",
+          "target_objects": null,
+          "user_transcript": "I like to",
+          "score": 58.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 17,
+          "timestamp": "2026-04-10",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu5hsd-d3c25296-audio.wav",
+          "reaction_time_ms": 1328
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Oh, I see. Do you mean “You are full” about me or about you? 😊",
+          "expected_answer": "I mean I am full. I ate a lot.",
+          "target_objects": null,
+          "user_transcript": "Oh.",
+          "score": 69,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 38,
+          "timestamp": "2026-04-10",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu4fq3-6a2056cc-audio.wav",
+          "reaction_time_ms": 1328
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 8197,
+        "luyen_tap": 13211
       }
     },
     {
@@ -2971,9 +2769,9 @@
       "level": 2,
       "last_activity_date": "2026-03-04",
       "days_since_last_practice": 48,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9989,
       "weakness_score": 0.2353,
-      "composite_priority_score": 0.6177,
+      "composite_priority_score": 0.6171,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -3059,6 +2857,42 @@
       "practice_ids": {
         "bai_tap": 7948,
         "luyen_tap": 13364
+      }
+    },
+    {
+      "lesson_id": 3768636,
+      "title": "Unit 1B: Animals - Lesson 4: This is a pig.",
+      "level": 2,
+      "last_activity_date": "2026-03-25",
+      "days_since_last_practice": 27,
+      "forgetting_score": 0.9789,
+      "weakness_score": 0.2553,
+      "composite_priority_score": 0.6171,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 3,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Nice. What color is Math? 🐶",
+          "expected_answer": "He is brown and white.",
+          "target_objects": null,
+          "user_transcript": "He has brown.",
+          "score": 49,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 55,
+          "grammar_score": 43,
+          "timestamp": "2026-03-25",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn5zlkt0-832ea748-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 8023,
+        "luyen_tap": 13435
       }
     },
     {
@@ -3183,9 +3017,9 @@
       "level": 2,
       "last_activity_date": "2026-02-27",
       "days_since_last_practice": 53,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9995,
       "weakness_score": 0.1985,
-      "composite_priority_score": 0.5993,
+      "composite_priority_score": 0.599,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -3314,7 +3148,7 @@
       "level": 2,
       "last_activity_date": "2026-02-11",
       "days_since_last_practice": 69,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9999,
       "weakness_score": 0.1674,
       "composite_priority_score": 0.5837,
       "homework_status": "attempted",
@@ -3402,6 +3236,176 @@
       "practice_ids": {
         "bai_tap": 7859,
         "luyen_tap": 13291
+      }
+    },
+    {
+      "lesson_id": 3830649,
+      "title": "Unit 2B: Food - Lesson 5: I don't like noodles.",
+      "level": 2,
+      "last_activity_date": "2026-04-15",
+      "days_since_last_practice": 6,
+      "forgetting_score": 0.5756,
+      "weakness_score": 0.5525,
+      "composite_priority_score": 0.564,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [
+        {
+          "practice_id": 8198,
+          "question_id": 308992,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "question_text": "Odd one out (Con hãy đọc và chọn từ khác loại nhé.)",
+          "comment_plain": "sn a ke: /eɪ/ b o y: /ɔɪ/ t o y: /ɔɪ/ => Đáp án: A",
+          "correct_answer": "A. snake",
+          "student_answer": "B. boy",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. snake",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. boy",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. toy",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        },
+        {
+          "practice_id": 8198,
+          "question_id": 308998,
+          "question_folder": "English Tutoring - Level 2",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng nhé.) A: _____(17)? B: I like pizza and beef. How about you? A: I like ___(18). Do you like fish? B: ____(19). Fish is yucky. Do you like bread? A: Yes, I do. Bread is ___(20). (19)",
+          "comment_plain": "Dịch: B: Không, tớ không. Cá rất kinh khủng. Cậu có thích bánh mì không? => Đáp án: B ( Không, tớ không.)",
+          "correct_answer": "B. No, I don't.",
+          "student_answer": "A. Yes, I do.",
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Yes, I do.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. No, I don't.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. No, I do.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "is_correct": 0
+        }
+      ],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Good. Who cooks the chicken at your home? 🍗",
+          "expected_answer": "My mom cooks the chicken at home. She makes it with soy sauce and spices.",
+          "target_objects": null,
+          "user_transcript": "Yes, I like chicken at your home.",
+          "score": 68,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 36,
+          "timestamp": "2026-04-15",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mnzyrg5f-6470c4fc-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice choice. Do you like pizza with chicken or beef toppings? 🍕",
+          "expected_answer": "I like pizza with chicken and cheese.",
+          "target_objects": null,
+          "user_transcript": "I like chicken and.",
+          "score": 57,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 14,
+          "timestamp": "2026-04-15",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mnzyn0hy-9f23cd73-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What is it?",
+          "expected_answer": null,
+          "target_objects": [
+            "Beef",
+            "Pizza",
+            "Rice",
+            "Fish",
+            "Pork",
+            "Chicken",
+            "Noodles",
+            "Bread"
+          ],
+          "user_transcript": "It's a pizza.",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "pizza"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-15",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mnzxwq0h-54b561b4-audio.wav",
+          "reaction_time_ms": 1883
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What food can you see here?",
+          "expected_answer": null,
+          "target_objects": [
+            "Beef",
+            "Pizza",
+            "Rice",
+            "Fish",
+            "Pork",
+            "Chicken",
+            "Noodles",
+            "Bread"
+          ],
+          "user_transcript": "I A.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-15",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mnzxwig7-717abe29-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 8198,
+        "luyen_tap": 13213
       }
     },
     {
@@ -3641,42 +3645,6 @@
       "practice_ids": {
         "bai_tap": 7856,
         "luyen_tap": 13289
-      }
-    },
-    {
-      "lesson_id": 3791260,
-      "title": "Unit 2B: Food - Lesson 2: I like fish and beef.",
-      "level": 2,
-      "last_activity_date": "2026-04-03",
-      "days_since_last_practice": 18,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.0,
-      "composite_priority_score": 0.5,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice. Do you like pizza or noodles more? 🍕🍜",
-          "expected_answer": "I like pizza more. I eat it with cheese and tomato.",
-          "target_objects": null,
-          "user_transcript": "Yes, I like pizza.",
-          "score": 59,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 30,
-          "grammar_score": 88,
-          "timestamp": "2026-04-03",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/03/admin/mniv3hjc-fdb06c41-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 8028,
-        "luyen_tap": 13366
       }
     }
   ],
@@ -5322,9 +5290,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-11",
       "days_since_last_practice": 41,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9971,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9986,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -5446,138 +5414,6 @@
       }
     },
     {
-      "lesson_id": 3837078,
-      "program_id": null,
-      "level": null,
-      "position": null,
-      "title": null,
-      "desc": null,
-      "status": "in_class_only",
-      "last_activity_date": "2026-04-17",
-      "days_since_last_practice": 4,
-      "forgetting_score": 0.9817,
-      "weakness_score": 1.0,
-      "composite_priority_score": 0.9909,
-      "in_class": {
-        "participated": true,
-        "session_count": 2,
-        "session_metrics": {
-          "cups": 0,
-          "audio_turns": 45,
-          "avg_reaction_ms": 1007,
-          "fastest_reaction_ms": 488,
-          "total_duration_ms": 0,
-          "session_status": "COMPLETED",
-          "completion_pct": 5
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-17",
-        "pronunciation_attempts": 26,
-        "pronunciation_score_avg": 89.42,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 0,
-        "brainstorm_score_avg": null,
-        "brainstorm_answer_type_dist": {},
-        "conversation_attempts": 16,
-        "conversation_score_avg": 79.79,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Good. What color is your toy horse? 🐴",
-            "expected_answer": "My toy horse is brown.",
-            "target_objects": null,
-            "user_transcript": "Um, my toy.",
-            "score": 53.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 66,
-            "grammar_score": 41,
-            "timestamp": "2026-04-17",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2v8zke-cfc831d9-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Good try. Do you mean “I wear a uniform” or something else? 😊",
-            "expected_answer": "I wear a uniform to school.",
-            "target_objects": null,
-            "user_transcript": "Yes, I wear something else.",
-            "score": 60.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 53,
-            "grammar_score": 68,
-            "timestamp": "2026-04-17",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2v6hot-1667df47-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Say one sentence from U2B now, please 🙂",
-            "expected_answer": "I like pizza and noodles, they are yummy.",
-            "target_objects": null,
-            "user_transcript": "Yes, I please.",
-            "score": 58,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 16,
-            "timestamp": "2026-04-17",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2v59uv-f1b65387-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Tell me one sentence from Unit U2B you remember. 🙂",
-            "expected_answer": "I like pizza and noodles.",
-            "target_objects": null,
-            "user_transcript": "Yes.",
-            "score": 69.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 39,
-            "timestamp": "2026-04-17",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2v4gls-f21b2a08-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "free_speaking",
-            "question": "How are you today?",
-            "expected_answer": null,
-            "target_objects": null,
-            "user_transcript": "Y.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-17",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2uj6qr-46b951e5-audio.wav",
-            "reaction_time_ms": 488
-          }
-        ]
-      },
-      "homework": {
-        "attempted": false,
-        "bai_tap": null,
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": null,
-          "luyen_tap": null
-        },
-        "skill_breakdown": {},
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
       "lesson_id": 3768631,
       "program_id": null,
       "level": 2,
@@ -5587,9 +5423,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-06",
       "days_since_last_practice": 46,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9986,
       "weakness_score": 0.6505,
-      "composite_priority_score": 0.8253,
+      "composite_priority_score": 0.8246,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -5888,9 +5724,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-18",
       "days_since_last_practice": 34,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9922,
       "weakness_score": 0.5925,
-      "composite_priority_score": 0.7963,
+      "composite_priority_score": 0.7923,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -6250,487 +6086,6 @@
       }
     },
     {
-      "lesson_id": 3830649,
-      "program_id": null,
-      "level": 2,
-      "position": 11,
-      "title": "Unit 2B: Food - Lesson 5: I don't like noodles.",
-      "desc": "- food: fish, beef, pork, chicken, bread, rice, noodles, pizza; mango, watermelon, beans, potato (R)\n- Adjs: yummy, yucky\n- sound /eɪ/ snake, potato\n- /ɔɪ/ toy, boy\n- What food do you like? I like fis",
-      "status": "completed",
-      "last_activity_date": "2026-04-15",
-      "days_since_last_practice": 6,
-      "forgetting_score": 0.9975,
-      "weakness_score": 0.5525,
-      "composite_priority_score": 0.775,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 63,
-          "audio_turns": 53,
-          "avg_reaction_ms": 2457,
-          "fastest_reaction_ms": 686,
-          "total_duration_ms": 1544509,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-15",
-        "pronunciation_attempts": 31,
-        "pronunciation_score_avg": 93.23,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 100.0,
-        "free_speaking_answer_type_dist": {
-          "accordant": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1,
-          "correct": 1
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 87.5,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Good. Who cooks the chicken at your home? 🍗",
-            "expected_answer": "My mom cooks the chicken at home. She makes it with soy sauce and spices.",
-            "target_objects": null,
-            "user_transcript": "Yes, I like chicken at your home.",
-            "score": 68,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 36,
-            "timestamp": "2026-04-15",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mnzyrg5f-6470c4fc-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice choice. Do you like pizza with chicken or beef toppings? 🍕",
-            "expected_answer": "I like pizza with chicken and cheese.",
-            "target_objects": null,
-            "user_transcript": "I like chicken and.",
-            "score": 57,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 14,
-            "timestamp": "2026-04-15",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mnzyn0hy-9f23cd73-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "Beef",
-              "Pizza",
-              "Rice",
-              "Fish",
-              "Pork",
-              "Chicken",
-              "Noodles",
-              "Bread"
-            ],
-            "user_transcript": "It's a pizza.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "pizza"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-15",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mnzxwq0h-54b561b4-audio.wav",
-            "reaction_time_ms": 1883
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What food can you see here?",
-            "expected_answer": null,
-            "target_objects": [
-              "Beef",
-              "Pizza",
-              "Rice",
-              "Fish",
-              "Pork",
-              "Chicken",
-              "Noodles",
-              "Bread"
-            ],
-            "user_transcript": "I A.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-15",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mnzxwig7-717abe29-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 8198,
-          "score": 0.85,
-          "correct": 17,
-          "total": 20,
-          "submitted_date": "2026-04-15"
-        },
-        "luyen_tap": {
-          "practice_id": 13213,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-04-15"
-        },
-        "lms_ids": {
-          "bai_tap": 8198,
-          "luyen_tap": 13213
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 37,
-            "total": 39,
-            "accuracy": 0.949
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 8198,
-            "question_id": 308992,
-            "question_folder": "English Tutoring - Level 2",
-            "question_type": "Một lựa chọn",
-            "question_text": "Odd one out (Con hãy đọc và chọn từ khác loại nhé.)",
-            "comment_plain": "sn a ke: /eɪ/ b o y: /ɔɪ/ t o y: /ɔɪ/ => Đáp án: A",
-            "correct_answer": "A. snake",
-            "student_answer": "B. boy",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. snake",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. boy",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. toy",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 8198,
-            "question_id": 308998,
-            "question_folder": "English Tutoring - Level 2",
-            "question_type": "Một lựa chọn",
-            "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng nhé.) A: _____(17)? B: I like pizza and beef. How about you? A: I like ___(18). Do you like fish? B: ____(19). Fish is yucky. Do you like bread? A: Yes, I do. Bread is ___(20). (19)",
-            "comment_plain": "Dịch: B: Không, tớ không. Cá rất kinh khủng. Cậu có thích bánh mì không? => Đáp án: B ( Không, tớ không.)",
-            "correct_answer": "B. No, I don't.",
-            "student_answer": "A. Yes, I do.",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. Yes, I do.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. No, I don't.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. No, I do.",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3768637,
-      "program_id": null,
-      "level": 2,
-      "position": 5,
-      "title": "Unit 1B: Animals - Lesson 5: These are cows and horses.",
-      "desc": "- farm animals: chicken, duck, pig, cow, horse, goat (R)\n- sound /aɪ/ eye, lion\n/aʊ/ cow, house\n- What's this/that? This/ That is a pig.\n- What are these/ those? These/ Those are cows and horses.",
-      "status": "completed",
-      "last_activity_date": "2026-04-03",
-      "days_since_last_practice": 18,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5475,
-      "composite_priority_score": 0.7737,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 15,
-          "audio_turns": 21,
-          "avg_reaction_ms": 1261,
-          "fastest_reaction_ms": 689,
-          "total_duration_ms": 8345,
-          "session_status": "COMPLETED",
-          "completion_pct": 57
-        },
-        "is_completed": true,
-        "completion_pct": 57,
-        "latest_session_date": "2026-03-27",
-        "pronunciation_attempts": 9,
-        "pronunciation_score_avg": 91.11,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1,
-          "correct": 1
-        },
-        "conversation_attempts": 0,
-        "conversation_score_avg": null,
-        "worst_speaking_items": [
-          {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "Snake",
-              "Lion",
-              "Bear",
-              "Tiger",
-              "Zebra",
-              "Cow",
-              "Duck"
-            ],
-            "user_transcript": "It's a snake.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "snake"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-27",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/27/admin/mn8tvd0w-2f8e29a6-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "Snake",
-              "Lion",
-              "Bear",
-              "Tiger",
-              "Zebra",
-              "Cow",
-              "Duck"
-            ],
-            "user_transcript": "The morning.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-27",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/27/admin/mn8tv555-fb431634-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "free_speaking",
-            "question": "What do you like to play?",
-            "expected_answer": null,
-            "target_objects": null,
-            "user_transcript": "She gave us the pathway.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-27",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/27/admin/mn8tu28u-4bf3f7aa-audio.wav",
-            "reaction_time_ms": 689
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 8025,
-          "score": 0.95,
-          "correct": 19,
-          "total": 20,
-          "submitted_date": "2026-04-03"
-        },
-        "luyen_tap": {
-          "practice_id": 13439,
-          "score": 0.8,
-          "correct": 16,
-          "total": 20,
-          "submitted_date": "2026-04-03"
-        },
-        "lms_ids": {
-          "bai_tap": 8025,
-          "luyen_tap": 13439
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 35,
-            "total": 39,
-            "accuracy": 0.897
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 8025,
-            "question_id": 308597,
-            "question_folder": "English Tutoring - Level 2",
-            "question_type": "Một lựa chọn",
-            "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
-            "comment_plain": "Audio: chicken, cow, goat Dịch: con gà, con bò, con dê => Đáp án: C",
-            "correct_answer": "C.",
-            "student_answer": "B.",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A.",
-                "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2026/01/07/e1b2_thi-E1-BA-BFt-k-E1-BA-BF-ch-C6-B0a-co-ten---2026-01-07t161234.083.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B.",
-                "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2026/01/07/6979_thi-E1-BA-BFt-k-E1-BA-BF-ch-C6-B0a-co-ten---2026-01-07t161314.851.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C.",
-                "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2026/01/07/887d_thi-E1-BA-BFt-k-E1-BA-BF-ch-C6-B0a-co-ten---2026-01-07t161403.662.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13439,
-            "question_id": 373109,
-            "question_folder": "English Tutoring - Level 2",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Listen and fill in blank missing words (Con hãy nghe và điền vào chỗ trống nhé.) This is a _____.",
-            "comment_plain": "Audio: What's this? Dịch: Đây là gì? Ảnh: con bò = cow => Đáp án: cow",
-            "correct_answer": "cow",
-            "student_answer": "c ơ",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/09/10/dd5d_cow.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13439,
-            "question_id": 373114,
-            "question_folder": "English Tutoring - Level 2",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Listen and fill in blank missing words (Con hãy nghe và điền vào chỗ trống nhé.) These are _______.",
-            "comment_plain": "Audio: What are these? Dịch: Đây là gì? Ảnh: những con ngựa và những con dê = horses and goats => Đáp án: horses and goats",
-            "correct_answer": "horses and goats|goats and horses",
-            "student_answer": "hoses",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2026/01/08/2307_thi-E1-BA-BFt-k-E1-BA-BF-ch-C6-B0a-co-ten---2026-01-08t095015.149.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13439,
-            "question_id": 373119,
-            "question_folder": "English Tutoring - Level 2",
-            "question_type": "Điền vào chỗ trống",
-            "question_text": "Listen and fill in blank missing words (Con hãy nghe và điền vào chỗ trống nhé.) Those are _______",
-            "comment_plain": "Audio: What are those? Dịch: Đ&oacute; là g&igrave;? Ảnh: những con gà và những con vịt = chickens and ducks => Đáp án: chickens and ducks",
-            "correct_answer": "chickens and ducks|ducks and chickens",
-            "student_answer": "chicken and ducks",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/09/26/a90e_ducks-and-chickens.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
       "lesson_id": 3690827,
       "program_id": null,
       "level": 2,
@@ -6954,234 +6309,6 @@
               {
                 "letter": "A",
                 "text": null,
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3806319,
-      "program_id": null,
-      "level": 2,
-      "position": 9,
-      "title": "Unit 2B: Food - Lesson 3: Do you like potato?",
-      "desc": "- food: fish, beef, pork, chicken, bread, rice, noodles, pizza (R); mango, watermelon, beans, potato\n- sound /ɔɪ/ toy, boy\n- Do you like potato? Yes, I do./ No, I don't.",
-      "status": "completed",
-      "last_activity_date": "2026-04-08",
-      "days_since_last_practice": 13,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5325,
-      "composite_priority_score": 0.7662,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 66,
-          "audio_turns": 44,
-          "avg_reaction_ms": 3017,
-          "fastest_reaction_ms": 1398,
-          "total_duration_ms": 1419385,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-08",
-        "pronunciation_attempts": 27,
-        "pronunciation_score_avg": 98.26,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 100.0,
-        "free_speaking_answer_type_dist": {
-          "accordant": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 2
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 77.0,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Game food? Do you mean food from games, or food for a game? 🍽️",
-            "expected_answer": "I mean food in video games, like apples and bread.",
-            "target_objects": null,
-            "user_transcript": "Game food.",
-            "score": 68,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 36,
-            "timestamp": "2026-04-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpza8j5-82afa1a4-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Good. Who do you give food to at home? 🍽️",
-            "expected_answer": "I give food to my family at home.",
-            "target_objects": null,
-            "user_transcript": "Yes, I.",
-            "score": 32,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 50,
-            "grammar_score": 14,
-            "timestamp": "2026-04-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpz95dp-60d3fb71-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Who do you give food to? 🍎",
-            "expected_answer": "I give food to my family. We eat together.",
-            "target_objects": null,
-            "user_transcript": "Yes, I do.",
-            "score": 69,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 38,
-            "timestamp": "2026-04-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpz84xt-ba927cfe-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi! Nice to see you. Are you ready to talk about food today? 😄",
-            "expected_answer": "Yes, I am ready. I like mango and watermelon.",
-            "target_objects": null,
-            "user_transcript": "Yes, I give food.",
-            "score": 61,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 75,
-            "grammar_score": 47,
-            "timestamp": "2026-04-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpz77b6-e579d2b5-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "Anything else?",
-            "expected_answer": null,
-            "target_objects": [
-              "potato",
-              "watermelon",
-              "mango",
-              "beans"
-            ],
-            "user_transcript": "Watermelon watermelon.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "watermelon"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpyju82-e6400586-audio.wav",
-            "reaction_time_ms": 5025
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 8196,
-          "score": 0.95,
-          "correct": 19,
-          "total": 20,
-          "submitted_date": "2026-04-08"
-        },
-        "luyen_tap": {
-          "practice_id": 13367,
-          "score": 0.9,
-          "correct": 18,
-          "total": 20,
-          "submitted_date": "2026-04-08"
-        },
-        "lms_ids": {
-          "bai_tap": 8196,
-          "luyen_tap": 13367
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 37,
-            "total": 39,
-            "accuracy": 0.949
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 8196,
-            "question_id": 308949,
-            "question_folder": "English Tutoring - Level 2",
-            "question_type": "Một lựa chọn",
-            "question_text": "Odd one out (Con hãy đọc và chọn từ khác loại nhé.)",
-            "comment_plain": "chicken: thịt gà pork: thịt lợn mango: xoài => Đáp án: C",
-            "correct_answer": "C. mango",
-            "student_answer": "B. pork",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. chicken",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. pork",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. mango",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13367,
-            "question_id": 372352,
-            "question_folder": "English Tutoring - Level 2",
-            "question_type": "Một lựa chọn",
-            "question_text": "Read and reorder the sentence (Con hãy đọc và sắp xếp thành câu nhé.) like/ Do/ you/ beans/?",
-            "comment_plain": "Do you like beans? Dịch: Bạn có thích đậu không? => Đáp án: C",
-            "correct_answer": "C. Do you like beans?",
-            "student_answer": "B. Do like you beans?",
-            "requires_media": false,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A. Beans do you like?",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. Do like you beans?",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. Do you like beans?",
                 "image_urls": [],
                 "audio_urls": []
               }
@@ -7570,193 +6697,6 @@
       }
     },
     {
-      "lesson_id": 3814880,
-      "program_id": null,
-      "level": 2,
-      "position": 10,
-      "title": "Unit 2B:  Food - Lesson 4: Pizza is yummy.",
-      "desc": "- food: fish, beef, pork, chicken, bread, rice, noodles, pizza (R); mango, watermelon, beans, potato\n- Adjs: yummy, yucky\n- sound /ɔɪ/ toy, boy\n- Pizza is yummy.",
-      "status": "completed",
-      "last_activity_date": "2026-04-10",
-      "days_since_last_practice": 11,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.525,
-      "composite_priority_score": 0.7625,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 43,
-          "audio_turns": 42,
-          "avg_reaction_ms": 1597,
-          "fastest_reaction_ms": 999,
-          "total_duration_ms": 1369997,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-10",
-        "pronunciation_attempts": 24,
-        "pronunciation_score_avg": 92.96,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 100.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 68.54,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice choice, watermelon is yummy 😊 What else do you like to eat? 🍽️",
-            "expected_answer": "I also like mango and potato. I don't like beans.",
-            "target_objects": null,
-            "user_transcript": "It's in the house.",
-            "score": 64,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 87,
-            "grammar_score": 41,
-            "timestamp": "2026-04-10",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu8cmz-a0e34eb4-audio.wav",
-            "reaction_time_ms": 1328
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Oh, do you mean ‘help’ or a food name? 😊",
-            "expected_answer": "I mean ‘help’ — I can’t say the word.",
-            "target_objects": null,
-            "user_transcript": "Hell, put me name.",
-            "score": 58.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 17,
-            "timestamp": "2026-04-10",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu72ea-3ef17dfd-audio.wav",
-            "reaction_time_ms": 1328
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. What food do you like to eat? 🍉",
-            "expected_answer": "I like mango and potato. I also like beans and watermelon.",
-            "target_objects": null,
-            "user_transcript": "Hel.",
-            "score": 43,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 66,
-            "grammar_score": 20,
-            "timestamp": "2026-04-10",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu6op9-590131d1-audio.wav",
-            "reaction_time_ms": 1328
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Great. What food do you like? 🍉",
-            "expected_answer": "I like mango and potato. I think mango is yummy, beans are okay, and broccoli is yucky.",
-            "target_objects": null,
-            "user_transcript": "I like to",
-            "score": 58.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 17,
-            "timestamp": "2026-04-10",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu5hsd-d3c25296-audio.wav",
-            "reaction_time_ms": 1328
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Oh, I see. Do you mean “You are full” about me or about you? 😊",
-            "expected_answer": "I mean I am full. I ate a lot.",
-            "target_objects": null,
-            "user_transcript": "Oh.",
-            "score": 69,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 38,
-            "timestamp": "2026-04-10",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu4fq3-6a2056cc-audio.wav",
-            "reaction_time_ms": 1328
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 8197,
-          "score": 0.95,
-          "correct": 19,
-          "total": 20,
-          "submitted_date": "2026-04-10"
-        },
-        "luyen_tap": {
-          "practice_id": 13211,
-          "score": 0.95,
-          "correct": 19,
-          "total": 20,
-          "submitted_date": "2026-04-10"
-        },
-        "lms_ids": {
-          "bai_tap": 8197,
-          "luyen_tap": 13211
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 38,
-            "total": 39,
-            "accuracy": 0.974
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 13211,
-            "question_id": 370225,
-            "question_folder": "English Tutoring - Level 2",
-            "question_type": "Một lựa chọn",
-            "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai nhé.)",
-            "comment_plain": "Audio: Bread is yucky. Dịch: Bánh mì rất kinh tởm. => Đáp án: A",
-            "correct_answer": "A.",
-            "student_answer": "B.",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/11/06/e7a0_pic-of-don-t-like-bread.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
       "lesson_id": 3768633,
       "program_id": null,
       "level": 2,
@@ -7766,9 +6706,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-13",
       "days_since_last_practice": 39,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9962,
       "weakness_score": 0.5225,
-      "composite_priority_score": 0.7612,
+      "composite_priority_score": 0.7593,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -8325,193 +7265,6 @@
       }
     },
     {
-      "lesson_id": 3785565,
-      "program_id": null,
-      "level": 2,
-      "position": 7,
-      "title": "Unit 2B: Food - Lesson 1: What food do you like?",
-      "desc": "- food items: fish, beef, pork, chicken, bread, rice\n- sound /eɪ/ snake, potato\n- What food do you like? I like fish and beef.",
-      "status": "completed",
-      "last_activity_date": "2026-04-01",
-      "days_since_last_practice": 20,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.515,
-      "composite_priority_score": 0.7575,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 64,
-          "audio_turns": 45,
-          "avg_reaction_ms": 2562,
-          "fastest_reaction_ms": 1973,
-          "total_duration_ms": 1348118,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-01",
-        "pronunciation_attempts": 24,
-        "pronunciation_score_avg": 97.46,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "lack_of_knowledge": 1
-        },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 100.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1
-        },
-        "conversation_attempts": 7,
-        "conversation_score_avg": 50.42,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Good. What snack do you eat when you watch hockey? 🍿",
-            "expected_answer": "I eat chips and bread with butter.",
-            "target_objects": null,
-            "user_transcript": "Y.",
-            "score": 20,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 0,
-            "grammar_score": 40,
-            "timestamp": "2026-04-01",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzkajy-5d1900cc-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Great! We can play a simple food game. I say a food, you say if you like it. Ready? 😄",
-            "expected_answer": "Yes, I'm ready. I like chicken.",
-            "target_objects": null,
-            "user_transcript": "Just I like hockey.",
-            "score": 48.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 83,
-            "grammar_score": 14,
-            "timestamp": "2026-04-01",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzj8zr-4af3fbc7-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. What food do you like to eat? 🍽️",
-            "expected_answer": "I like chicken and rice.",
-            "target_objects": null,
-            "user_transcript": "I like playing a game for what.",
-            "score": 46,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 76,
-            "grammar_score": 16,
-            "timestamp": "2026-04-01",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzigp8-f99e5684-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi! Nice to see you. Are you ready to talk about food? 😄",
-            "expected_answer": "Yes, I am ready. I like chicken and rice.",
-            "target_objects": null,
-            "user_transcript": "Y.",
-            "score": 21.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 0,
-            "grammar_score": 43,
-            "timestamp": "2026-04-01",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzi4zn-bdb7a0ad-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "free_speaking",
-            "question": "What did you eat today?",
-            "expected_answer": null,
-            "target_objects": null,
-            "user_transcript": "I eat some.",
-            "score": 0,
-            "answer_type": "lack_of_knowledge",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-01",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfys85m-255de2e5-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 8027,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-04-01"
-        },
-        "luyen_tap": {
-          "practice_id": 13365,
-          "score": 0.9,
-          "correct": 18,
-          "total": 20,
-          "submitted_date": "2026-04-01"
-        },
-        "lms_ids": {
-          "bai_tap": 8027,
-          "luyen_tap": 13365
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 38,
-            "total": 39,
-            "accuracy": 0.974
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 13365,
-            "question_id": 372313,
-            "question_folder": "English Tutoring - Level 2",
-            "question_type": "Một lựa chọn",
-            "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai nhé.) I like chicken and bread.",
-            "comment_plain": "I like chicken and bread. Dịch: Tôi thích gà và bánh mì. => Đáp án: A",
-            "correct_answer": "A.",
-            "student_answer": "B.",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/11/05/26de_like-bread-and-chicken.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/fe8c_tick.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B.",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/db4e_cross.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
       "lesson_id": 3662592,
       "program_id": null,
       "level": 3,
@@ -8656,9 +7409,9 @@
       "status": "completed",
       "last_activity_date": "2026-02-25",
       "days_since_last_practice": 55,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 0.5075,
-      "composite_priority_score": 0.7537,
+      "composite_priority_score": 0.7535,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -8840,6 +7593,315 @@
       }
     },
     {
+      "lesson_id": 3690830,
+      "program_id": null,
+      "level": 2,
+      "position": 15,
+      "title": "Unit 3A: Body parts - Lesson 3: I can swim.",
+      "desc": "- Vs of abilities: swim, dance, sing, draw\n- sound /ʌ/ touch, puzzle\n- What can you do? I can swim.",
+      "status": "completed",
+      "last_activity_date": "2026-02-04",
+      "days_since_last_practice": 76,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 68,
+          "avg_reaction_ms": 3825,
+          "fastest_reaction_ms": 970,
+          "total_duration_ms": 295716,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-04",
+        "pronunciation_attempts": 15,
+        "pronunciation_score_avg": 83.33,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "lack_of_knowledge": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "correct": 1
+        },
+        "conversation_attempts": 21,
+        "conversation_score_avg": 81.0,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Touch your nose. 👃",
+            "expected_answer": "I touched my nose.",
+            "target_objects": null,
+            "user_transcript": "Yes, I am.",
+            "score": 69,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 38,
+            "timestamp": "2026-02-04",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/04/admin/ml7z1w0t-dcf55e42-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Do you draw the cat’s eyes big or small? 🐱",
+            "expected_answer": "I draw the cat’s eyes big. I like big eyes because they look cute.",
+            "target_objects": null,
+            "user_transcript": "I draw the cat.",
+            "score": 59,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 83,
+            "grammar_score": 35,
+            "timestamp": "2026-02-04",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/04/admin/ml7z0buc-75a13626-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Do you draw the cat’s eyes big or small? 🐱",
+            "expected_answer": "I draw the cat’s eyes big because they look cute.",
+            "target_objects": null,
+            "user_transcript": "I draw the cat.",
+            "score": 68.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 37,
+            "timestamp": "2026-02-04",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/04/admin/ml7yzw2y-4b0ff927-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Cats are lovely. Do you draw the cat’s eyes big or small? 🐱",
+            "expected_answer": "I draw the cat's eyes big. I like big eyes on cats.",
+            "target_objects": null,
+            "user_transcript": "I draw the cat.",
+            "score": 59,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 83,
+            "grammar_score": 35,
+            "timestamp": "2026-02-04",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/04/admin/ml7yzka7-ea9f9292-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What part of the body do you draw? 🎨",
+            "expected_answer": "I draw the head and the hands. I like drawing eyes and hair.",
+            "target_objects": null,
+            "user_transcript": "I draw in I adore.",
+            "score": 50,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 80,
+            "grammar_score": 20,
+            "timestamp": "2026-02-04",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/04/admin/ml7ysg74-b8c71efc-audio.wav",
+            "reaction_time_ms": 4423
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7855,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-02-04"
+        },
+        "luyen_tap": {
+          "practice_id": 13287,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-02-04"
+        },
+        "lms_ids": {
+          "bai_tap": 7855,
+          "luyen_tap": 13287
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 40,
+            "total": 40,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3690833,
+      "program_id": null,
+      "level": 2,
+      "position": 19,
+      "title": "Unit 4A: My face - Lesson 1: I have big eyes.",
+      "desc": "- eye(s), ear(s), nose, mouth\n- Adjs to describe: small, big\n- sound /ɪ/ insect, six\n- I have big eyes.\n- I have a big nose.",
+      "status": "completed",
+      "last_activity_date": "2026-02-13",
+      "days_since_last_practice": 67,
+      "forgetting_score": 0.9999,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.75,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 46,
+          "avg_reaction_ms": 2199,
+          "fastest_reaction_ms": 752,
+          "total_duration_ms": 1313230,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-02-13",
+        "pronunciation_attempts": 27,
+        "pronunciation_score_avg": 84.52,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 2
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 72.86,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Hello! Nice to talk with you about faces. Are you ready to practice? 😄",
+            "expected_answer": "Yes, I'm ready to practice.",
+            "target_objects": null,
+            "user_transcript": "Yes, the park is cat dog cow.",
+            "score": 56,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 96,
+            "grammar_score": 16,
+            "timestamp": "2026-02-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/13/admin/mlksr12i-dac1b414-audio.wav",
+            "reaction_time_ms": 1907
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh, the cat is bright or has light on its face. 😄 What does the cat’s face look like?",
+            "expected_answer": "The cat has big eyes, small ears, and a small nose.",
+            "target_objects": null,
+            "user_transcript": "The cat is fair brown and.",
+            "score": 57.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 15,
+            "timestamp": "2026-02-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/13/admin/mlkspzs6-bc4d434d-audio.wav",
+            "reaction_time_ms": 1907
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh, you mean a fly is on the cat’s face. That’s funny 😄 What does the cat’s face look like?",
+            "expected_answer": "The cat has big eyes and a small nose.",
+            "target_objects": null,
+            "user_transcript": "The cat is the light.",
+            "score": 55.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 93,
+            "grammar_score": 18,
+            "timestamp": "2026-02-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/13/admin/mlkspmd2-80f85f71-audio.wav",
+            "reaction_time_ms": 1907
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice colors! Yellow and blue cat—fun. What does the cat’s face look like? 😄",
+            "expected_answer": "The cat has big eyes, a small nose, and a happy mouth.",
+            "target_objects": null,
+            "user_transcript": "The fly is.",
+            "score": 58,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 16,
+            "timestamp": "2026-02-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/13/admin/mlksp8u6-18a38413-audio.wav",
+            "reaction_time_ms": 1907
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi, nice to see you. Ready to talk about faces and parts? 😄",
+            "expected_answer": "Yes, I am ready. I want to talk about eyes and nose.",
+            "target_objects": null,
+            "user_transcript": "Park, yeah, it is the park is.",
+            "score": 53,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 92,
+            "grammar_score": 14,
+            "timestamp": "2026-02-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/13/admin/mlkso7xl-c7923d96-audio.wav",
+            "reaction_time_ms": 1907
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7943,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-02-13"
+        },
+        "luyen_tap": {
+          "practice_id": 13292,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-02-13"
+        },
+        "lms_ids": {
+          "bai_tap": 7943,
+          "luyen_tap": 13292
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 39,
+            "total": 39,
+            "accuracy": 1.0
+          },
+          "English Tutoring - Level 1": {
+            "correct": 1,
+            "total": 1,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3768635,
       "program_id": null,
       "level": 2,
@@ -8849,9 +7911,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-20",
       "days_since_last_practice": 32,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9897,
       "weakness_score": 0.5075,
-      "composite_priority_score": 0.7537,
+      "composite_priority_score": 0.7486,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -9024,407 +8086,151 @@
       }
     },
     {
-      "lesson_id": 3690830,
+      "lesson_id": 3768637,
       "program_id": null,
       "level": 2,
-      "position": 15,
-      "title": "Unit 3A: Body parts - Lesson 3: I can swim.",
-      "desc": "- Vs of abilities: swim, dance, sing, draw\n- sound /ʌ/ touch, puzzle\n- What can you do? I can swim.",
+      "position": 5,
+      "title": "Unit 1B: Animals - Lesson 5: These are cows and horses.",
+      "desc": "- farm animals: chicken, duck, pig, cow, horse, goat (R)\n- sound /aɪ/ eye, lion\n/aʊ/ cow, house\n- What's this/that? This/ That is a pig.\n- What are these/ those? These/ Those are cows and horses.",
       "status": "completed",
-      "last_activity_date": "2026-02-04",
-      "days_since_last_practice": 76,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "last_activity_date": "2026-04-03",
+      "days_since_last_practice": 18,
+      "forgetting_score": 0.9236,
+      "weakness_score": 0.5475,
+      "composite_priority_score": 0.7355,
       "in_class": {
         "participated": true,
         "session_count": 1,
         "session_metrics": {
-          "cups": null,
-          "audio_turns": 68,
-          "avg_reaction_ms": 3825,
-          "fastest_reaction_ms": 970,
-          "total_duration_ms": 295716,
+          "cups": 15,
+          "audio_turns": 21,
+          "avg_reaction_ms": 1261,
+          "fastest_reaction_ms": 689,
+          "total_duration_ms": 8345,
           "session_status": "COMPLETED",
-          "completion_pct": 100
+          "completion_pct": 57
         },
         "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-02-04",
-        "pronunciation_attempts": 15,
-        "pronunciation_score_avg": 83.33,
+        "completion_pct": 57,
+        "latest_session_date": "2026-03-27",
+        "pronunciation_attempts": 9,
+        "pronunciation_score_avg": 91.11,
         "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
-          "lack_of_knowledge": 1
-        },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1
-        },
-        "conversation_attempts": 21,
-        "conversation_score_avg": 81.0,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Touch your nose. 👃",
-            "expected_answer": "I touched my nose.",
-            "target_objects": null,
-            "user_transcript": "Yes, I am.",
-            "score": 69,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 38,
-            "timestamp": "2026-02-04",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/04/admin/ml7z1w0t-dcf55e42-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Do you draw the cat’s eyes big or small? 🐱",
-            "expected_answer": "I draw the cat’s eyes big. I like big eyes because they look cute.",
-            "target_objects": null,
-            "user_transcript": "I draw the cat.",
-            "score": 59,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 83,
-            "grammar_score": 35,
-            "timestamp": "2026-02-04",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/04/admin/ml7z0buc-75a13626-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Do you draw the cat’s eyes big or small? 🐱",
-            "expected_answer": "I draw the cat’s eyes big because they look cute.",
-            "target_objects": null,
-            "user_transcript": "I draw the cat.",
-            "score": 68.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 37,
-            "timestamp": "2026-02-04",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/04/admin/ml7yzw2y-4b0ff927-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Cats are lovely. Do you draw the cat’s eyes big or small? 🐱",
-            "expected_answer": "I draw the cat's eyes big. I like big eyes on cats.",
-            "target_objects": null,
-            "user_transcript": "I draw the cat.",
-            "score": 59,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 83,
-            "grammar_score": 35,
-            "timestamp": "2026-02-04",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/04/admin/ml7yzka7-ea9f9292-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. What part of the body do you draw? 🎨",
-            "expected_answer": "I draw the head and the hands. I like drawing eyes and hair.",
-            "target_objects": null,
-            "user_transcript": "I draw in I adore.",
-            "score": 50,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 80,
-            "grammar_score": 20,
-            "timestamp": "2026-02-04",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/04/admin/ml7ysg74-b8c71efc-audio.wav",
-            "reaction_time_ms": 4423
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7855,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-02-04"
-        },
-        "luyen_tap": {
-          "practice_id": 13287,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-02-04"
-        },
-        "lms_ids": {
-          "bai_tap": 7855,
-          "luyen_tap": 13287
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 40,
-            "total": 40,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3690833,
-      "program_id": null,
-      "level": 2,
-      "position": 19,
-      "title": "Unit 4A: My face - Lesson 1: I have big eyes.",
-      "desc": "- eye(s), ear(s), nose, mouth\n- Adjs to describe: small, big\n- sound /ɪ/ insect, six\n- I have big eyes.\n- I have a big nose.",
-      "status": "completed",
-      "last_activity_date": "2026-02-13",
-      "days_since_last_practice": 67,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 0,
-          "audio_turns": 46,
-          "avg_reaction_ms": 2199,
-          "fastest_reaction_ms": 752,
-          "total_duration_ms": 1313230,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-02-13",
-        "pronunciation_attempts": 27,
-        "pronunciation_score_avg": 84.52,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 100.0,
-        "free_speaking_answer_type_dist": {
-          "accordant": 1
+          "inaccordant": 1
         },
         "brainstorm_attempts": 2,
         "brainstorm_score_avg": 0.0,
         "brainstorm_answer_type_dist": {
-          "incorrect": 2
+          "incorrect": 1,
+          "correct": 1
         },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 72.86,
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
         "worst_speaking_items": [
           {
-            "lms_type": "conversation",
-            "question": "Hello! Nice to talk with you about faces. Are you ready to practice? 😄",
-            "expected_answer": "Yes, I'm ready to practice.",
-            "target_objects": null,
-            "user_transcript": "Yes, the park is cat dog cow.",
-            "score": 56,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 96,
-            "grammar_score": 16,
-            "timestamp": "2026-02-13",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/13/admin/mlksr12i-dac1b414-audio.wav",
-            "reaction_time_ms": 1907
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Oh, the cat is bright or has light on its face. 😄 What does the cat’s face look like?",
-            "expected_answer": "The cat has big eyes, small ears, and a small nose.",
-            "target_objects": null,
-            "user_transcript": "The cat is fair brown and.",
-            "score": 57.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 15,
-            "timestamp": "2026-02-13",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/13/admin/mlkspzs6-bc4d434d-audio.wav",
-            "reaction_time_ms": 1907
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Oh, you mean a fly is on the cat’s face. That’s funny 😄 What does the cat’s face look like?",
-            "expected_answer": "The cat has big eyes and a small nose.",
-            "target_objects": null,
-            "user_transcript": "The cat is the light.",
-            "score": 55.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 93,
-            "grammar_score": 18,
-            "timestamp": "2026-02-13",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/13/admin/mlkspmd2-80f85f71-audio.wav",
-            "reaction_time_ms": 1907
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice colors! Yellow and blue cat—fun. What does the cat’s face look like? 😄",
-            "expected_answer": "The cat has big eyes, a small nose, and a happy mouth.",
-            "target_objects": null,
-            "user_transcript": "The fly is.",
-            "score": 58,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 16,
-            "timestamp": "2026-02-13",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/13/admin/mlksp8u6-18a38413-audio.wav",
-            "reaction_time_ms": 1907
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi, nice to see you. Ready to talk about faces and parts? 😄",
-            "expected_answer": "Yes, I am ready. I want to talk about eyes and nose.",
-            "target_objects": null,
-            "user_transcript": "Park, yeah, it is the park is.",
-            "score": 53,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 92,
-            "grammar_score": 14,
-            "timestamp": "2026-02-13",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/13/admin/mlkso7xl-c7923d96-audio.wav",
-            "reaction_time_ms": 1907
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7943,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-02-13"
-        },
-        "luyen_tap": {
-          "practice_id": 13292,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-02-13"
-        },
-        "lms_ids": {
-          "bai_tap": 7943,
-          "luyen_tap": 13292
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 39,
-            "total": 39,
-            "accuracy": 1.0
-          },
-          "English Tutoring - Level 1": {
-            "correct": 1,
-            "total": 1,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3768636,
-      "program_id": null,
-      "level": 2,
-      "position": 4,
-      "title": "Unit 1B: Animals - Lesson 4: This is a pig.",
-      "desc": "- farm animals: chicken, duck, pig, cow, horse, goat \n- sound /aʊ/ cow, house\n- What's this/that? This/ That is a pig.\n- What are these/ those? These/ Those are cows and horses.",
-      "status": "completed",
-      "last_activity_date": "2026-03-25",
-      "days_since_last_practice": 27,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.2553,
-      "composite_priority_score": 0.6277,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 0,
-          "audio_turns": 53,
-          "avg_reaction_ms": 2119,
-          "fastest_reaction_ms": 1294,
-          "total_duration_ms": 1338970,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-03-25",
-        "pronunciation_attempts": 22,
-        "pronunciation_score_avg": 36.41,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 0,
-        "brainstorm_score_avg": null,
-        "brainstorm_answer_type_dist": {},
-        "conversation_attempts": 7,
-        "conversation_score_avg": 80.43,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice. What color is Math? 🐶",
-            "expected_answer": "He is brown and white.",
-            "target_objects": null,
-            "user_transcript": "He has brown.",
-            "score": 49,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 55,
-            "grammar_score": 43,
-            "timestamp": "2026-03-25",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn5zlkt0-832ea748-audio.wav",
+            "lms_type": "brainstorm",
+            "question": "What is it?",
+            "expected_answer": null,
+            "target_objects": [
+              "Snake",
+              "Lion",
+              "Bear",
+              "Tiger",
+              "Zebra",
+              "Cow",
+              "Duck"
+            ],
+            "user_transcript": "It's a snake.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "snake"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-27",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/27/admin/mn8tvd0w-2f8e29a6-audio.wav",
             "reaction_time_ms": null
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "Snake",
+              "Lion",
+              "Bear",
+              "Tiger",
+              "Zebra",
+              "Cow",
+              "Duck"
+            ],
+            "user_transcript": "The morning.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-27",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/27/admin/mn8tv555-fb431634-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "What do you like to play?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "She gave us the pathway.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-27",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/27/admin/mn8tu28u-4bf3f7aa-audio.wav",
+            "reaction_time_ms": 689
           }
         ]
       },
       "homework": {
         "attempted": true,
         "bai_tap": {
-          "practice_id": 8023,
+          "practice_id": 8025,
           "score": 0.95,
           "correct": 19,
           "total": 20,
-          "submitted_date": "2026-03-25"
+          "submitted_date": "2026-04-03"
         },
         "luyen_tap": {
-          "practice_id": 13435,
-          "score": 0.9,
-          "correct": 18,
+          "practice_id": 13439,
+          "score": 0.8,
+          "correct": 16,
           "total": 20,
-          "submitted_date": "2026-03-25"
+          "submitted_date": "2026-04-03"
         },
         "lms_ids": {
-          "bai_tap": 8023,
-          "luyen_tap": 13435
+          "bai_tap": 8025,
+          "luyen_tap": 13439
         },
         "skill_breakdown": {
           "English Tutoring - Level 2": {
-            "correct": 37,
-            "total": 40,
-            "accuracy": 0.925
+            "correct": 35,
+            "total": 39,
+            "accuracy": 0.897
           }
         },
         "weak_skills": [],
         "worst_questions": [
           {
-            "practice_id": 8023,
-            "question_id": 308562,
+            "practice_id": 8025,
+            "question_id": 308597,
             "question_folder": "English Tutoring - Level 2",
             "question_type": "Một lựa chọn",
-            "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai nhé.) Those are pigs and horses.",
-            "comment_plain": "Audio: This's a cow and those are pigs and horses. Dịch: Đây là một con bò và đó là những con lợn và những con ngựa. Those are pigs and horses: Đó là những con lợn và những con ngựa. => Đáp án: A",
-            "correct_answer": "A.",
+            "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng nhé.)",
+            "comment_plain": "Audio: chicken, cow, goat Dịch: con gà, con bò, con dê => Đáp án: C",
+            "correct_answer": "C.",
             "student_answer": "B.",
             "requires_media": true,
             "stem_media_urls": [],
@@ -9434,7 +8240,7 @@
                 "letter": "A",
                 "text": "A.",
                 "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/09/06/f4ed_tick.png"
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2026/01/07/e1b2_thi-E1-BA-BFt-k-E1-BA-BF-ch-C6-B0a-co-ten---2026-01-07t161234.083.png"
                 ],
                 "audio_urls": []
               },
@@ -9442,7 +8248,15 @@
                 "letter": "B",
                 "text": "B.",
                 "image_urls": [
-                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/12/22/2cc3_cross.png"
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2026/01/07/6979_thi-E1-BA-BFt-k-E1-BA-BF-ch-C6-B0a-co-ten---2026-01-07t161314.851.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C.",
+                "image_urls": [
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2026/01/07/887d_thi-E1-BA-BFt-k-E1-BA-BF-ch-C6-B0a-co-ten---2026-01-07t161403.662.png"
                 ],
                 "audio_urls": []
               }
@@ -9450,35 +8264,23 @@
             "is_correct": 0
           },
           {
-            "practice_id": 13435,
-            "question_id": 373065,
+            "practice_id": 13439,
+            "question_id": 373109,
             "question_folder": "English Tutoring - Level 2",
-            "question_type": "Một lựa chọn",
-            "question_text": "Choose the correct answer. (Con hãy chọn phương án đúng nhé.)",
-            "comment_plain": "Ảnh: những con dê = goats; những con bò = cows => Đáp án: B (\"These are\" cộng với danh từ số nhiều)",
-            "correct_answer": "B. These are goats and cows.",
-            "student_answer": "C. This is goats and cows.",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Listen and fill in blank missing words (Con hãy nghe và điền vào chỗ trống nhé.) This is a _____.",
+            "comment_plain": "Audio: What's this? Dịch: Đây là gì? Ảnh: con bò = cow => Đáp án: cow",
+            "correct_answer": "cow",
+            "student_answer": "c ơ",
             "requires_media": true,
             "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/09/26/9e6f_cows-and-goats.png"
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/09/10/dd5d_cow.png"
             ],
             "comment_media_urls": [],
             "choice_previews": [
               {
                 "letter": "A",
-                "text": "A. This is a goat and cow.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B. These are goats and cows.",
-                "image_urls": [],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C. This is goats and cows.",
+                "text": null,
                 "image_urls": [],
                 "audio_urls": []
               }
@@ -9486,14 +8288,38 @@
             "is_correct": 0
           },
           {
-            "practice_id": 13435,
-            "question_id": 373069,
+            "practice_id": 13439,
+            "question_id": 373114,
             "question_folder": "English Tutoring - Level 2",
-            "question_type": "Một lựa chọn",
-            "question_text": "Choose the correct answer. (Con hãy chọn phương án đúng nhé.)",
-            "comment_plain": "Ảnh: những con gà = chickens; những con vịt = ducks => Đáp án: C (\"Those are\" cộng với danh từ số nhiều)",
-            "correct_answer": "C. Those are chickens and ducks.",
-            "student_answer": "A. That is a chickens and ducks.",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Listen and fill in blank missing words (Con hãy nghe và điền vào chỗ trống nhé.) These are _______.",
+            "comment_plain": "Audio: What are these? Dịch: Đây là gì? Ảnh: những con ngựa và những con dê = horses and goats => Đáp án: horses and goats",
+            "correct_answer": "horses and goats|goats and horses",
+            "student_answer": "hoses",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2026/01/08/2307_thi-E1-BA-BFt-k-E1-BA-BF-ch-C6-B0a-co-ten---2026-01-08t095015.149.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13439,
+            "question_id": 373119,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Điền vào chỗ trống",
+            "question_text": "Listen and fill in blank missing words (Con hãy nghe và điền vào chỗ trống nhé.) Those are _______",
+            "comment_plain": "Audio: What are those? Dịch: Đ&oacute; là g&igrave;? Ảnh: những con gà và những con vịt = chickens and ducks => Đáp án: chickens and ducks",
+            "correct_answer": "chickens and ducks|ducks and chickens",
+            "student_answer": "chicken and ducks",
             "requires_media": true,
             "stem_media_urls": [
               "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/09/26/a90e_ducks-and-chickens.png"
@@ -9502,20 +8328,742 @@
             "choice_previews": [
               {
                 "letter": "A",
-                "text": "A. That is a chickens and ducks.",
+                "text": null,
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3785565,
+      "program_id": null,
+      "level": 2,
+      "position": 7,
+      "title": "Unit 2B: Food - Lesson 1: What food do you like?",
+      "desc": "- food items: fish, beef, pork, chicken, bread, rice\n- sound /eɪ/ snake, potato\n- What food do you like? I like fish and beef.",
+      "status": "completed",
+      "last_activity_date": "2026-04-01",
+      "days_since_last_practice": 20,
+      "forgetting_score": 0.9426,
+      "weakness_score": 0.515,
+      "composite_priority_score": 0.7288,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 64,
+          "audio_turns": 45,
+          "avg_reaction_ms": 2562,
+          "fastest_reaction_ms": 1973,
+          "total_duration_ms": 1348118,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-01",
+        "pronunciation_attempts": 24,
+        "pronunciation_score_avg": 97.46,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "lack_of_knowledge": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 100.0,
+        "brainstorm_answer_type_dist": {
+          "correct": 1
+        },
+        "conversation_attempts": 7,
+        "conversation_score_avg": 50.42,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Good. What snack do you eat when you watch hockey? 🍿",
+            "expected_answer": "I eat chips and bread with butter.",
+            "target_objects": null,
+            "user_transcript": "Y.",
+            "score": 20,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 40,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzkajy-5d1900cc-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Great! We can play a simple food game. I say a food, you say if you like it. Ready? 😄",
+            "expected_answer": "Yes, I'm ready. I like chicken.",
+            "target_objects": null,
+            "user_transcript": "Just I like hockey.",
+            "score": 48.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 83,
+            "grammar_score": 14,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzj8zr-4af3fbc7-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What food do you like to eat? 🍽️",
+            "expected_answer": "I like chicken and rice.",
+            "target_objects": null,
+            "user_transcript": "I like playing a game for what.",
+            "score": 46,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 76,
+            "grammar_score": 16,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzigp8-f99e5684-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi! Nice to see you. Are you ready to talk about food? 😄",
+            "expected_answer": "Yes, I am ready. I like chicken and rice.",
+            "target_objects": null,
+            "user_transcript": "Y.",
+            "score": 21.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 0,
+            "grammar_score": 43,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfzi4zn-bdb7a0ad-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "What did you eat today?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "I eat some.",
+            "score": 0,
+            "answer_type": "lack_of_knowledge",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-01",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfys85m-255de2e5-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 8027,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-01"
+        },
+        "luyen_tap": {
+          "practice_id": 13365,
+          "score": 0.9,
+          "correct": 18,
+          "total": 20,
+          "submitted_date": "2026-04-01"
+        },
+        "lms_ids": {
+          "bai_tap": 8027,
+          "luyen_tap": 13365
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 38,
+            "total": 39,
+            "accuracy": 0.974
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 13365,
+            "question_id": 372313,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai nhé.) I like chicken and bread.",
+            "comment_plain": "I like chicken and bread. Dịch: Tôi thích gà và bánh mì. => Đáp án: A",
+            "correct_answer": "A.",
+            "student_answer": "B.",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/11/05/26de_like-bread-and-chicken.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/fe8c_tick.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/db4e_cross.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3837078,
+      "program_id": null,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-04-17",
+      "days_since_last_practice": 4,
+      "forgetting_score": 0.4353,
+      "weakness_score": 1.0,
+      "composite_priority_score": 0.7177,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 45,
+          "avg_reaction_ms": 1007,
+          "fastest_reaction_ms": 488,
+          "total_duration_ms": 0,
+          "session_status": "COMPLETED",
+          "completion_pct": 5
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-17",
+        "pronunciation_attempts": 26,
+        "pronunciation_score_avg": 89.42,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 16,
+        "conversation_score_avg": 79.79,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Good. What color is your toy horse? 🐴",
+            "expected_answer": "My toy horse is brown.",
+            "target_objects": null,
+            "user_transcript": "Um, my toy.",
+            "score": 53.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 66,
+            "grammar_score": 41,
+            "timestamp": "2026-04-17",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2v8zke-cfc831d9-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good try. Do you mean “I wear a uniform” or something else? 😊",
+            "expected_answer": "I wear a uniform to school.",
+            "target_objects": null,
+            "user_transcript": "Yes, I wear something else.",
+            "score": 60.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 53,
+            "grammar_score": 68,
+            "timestamp": "2026-04-17",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2v6hot-1667df47-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Say one sentence from U2B now, please 🙂",
+            "expected_answer": "I like pizza and noodles, they are yummy.",
+            "target_objects": null,
+            "user_transcript": "Yes, I please.",
+            "score": 58,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 16,
+            "timestamp": "2026-04-17",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2v59uv-f1b65387-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Tell me one sentence from Unit U2B you remember. 🙂",
+            "expected_answer": "I like pizza and noodles.",
+            "target_objects": null,
+            "user_transcript": "Yes.",
+            "score": 69.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 39,
+            "timestamp": "2026-04-17",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2v4gls-f21b2a08-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "How are you today?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "Y.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-17",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2uj6qr-46b951e5-audio.wav",
+            "reaction_time_ms": 488
+          }
+        ]
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": null,
+          "luyen_tap": null
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3806319,
+      "program_id": null,
+      "level": 2,
+      "position": 9,
+      "title": "Unit 2B: Food - Lesson 3: Do you like potato?",
+      "desc": "- food: fish, beef, pork, chicken, bread, rice, noodles, pizza (R); mango, watermelon, beans, potato\n- sound /ɔɪ/ toy, boy\n- Do you like potato? Yes, I do./ No, I don't.",
+      "status": "completed",
+      "last_activity_date": "2026-04-08",
+      "days_since_last_practice": 13,
+      "forgetting_score": 0.8439,
+      "weakness_score": 0.5325,
+      "composite_priority_score": 0.6882,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 66,
+          "audio_turns": 44,
+          "avg_reaction_ms": 3017,
+          "fastest_reaction_ms": 1398,
+          "total_duration_ms": 1419385,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-08",
+        "pronunciation_attempts": 27,
+        "pronunciation_score_avg": 98.26,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "correct": 2
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 77.0,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Game food? Do you mean food from games, or food for a game? 🍽️",
+            "expected_answer": "I mean food in video games, like apples and bread.",
+            "target_objects": null,
+            "user_transcript": "Game food.",
+            "score": 68,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 36,
+            "timestamp": "2026-04-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpza8j5-82afa1a4-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. Who do you give food to at home? 🍽️",
+            "expected_answer": "I give food to my family at home.",
+            "target_objects": null,
+            "user_transcript": "Yes, I.",
+            "score": 32,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 50,
+            "grammar_score": 14,
+            "timestamp": "2026-04-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpz95dp-60d3fb71-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. Who do you give food to? 🍎",
+            "expected_answer": "I give food to my family. We eat together.",
+            "target_objects": null,
+            "user_transcript": "Yes, I do.",
+            "score": 69,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 38,
+            "timestamp": "2026-04-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpz84xt-ba927cfe-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi! Nice to see you. Are you ready to talk about food today? 😄",
+            "expected_answer": "Yes, I am ready. I like mango and watermelon.",
+            "target_objects": null,
+            "user_transcript": "Yes, I give food.",
+            "score": 61,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 75,
+            "grammar_score": 47,
+            "timestamp": "2026-04-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpz77b6-e579d2b5-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "Anything else?",
+            "expected_answer": null,
+            "target_objects": [
+              "potato",
+              "watermelon",
+              "mango",
+              "beans"
+            ],
+            "user_transcript": "Watermelon watermelon.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "watermelon"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpyju82-e6400586-audio.wav",
+            "reaction_time_ms": 5025
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 8196,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-04-08"
+        },
+        "luyen_tap": {
+          "practice_id": 13367,
+          "score": 0.9,
+          "correct": 18,
+          "total": 20,
+          "submitted_date": "2026-04-08"
+        },
+        "lms_ids": {
+          "bai_tap": 8196,
+          "luyen_tap": 13367
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 37,
+            "total": 39,
+            "accuracy": 0.949
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 8196,
+            "question_id": 308949,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Odd one out (Con hãy đọc và chọn từ khác loại nhé.)",
+            "comment_plain": "chicken: thịt gà pork: thịt lợn mango: xoài => Đáp án: C",
+            "correct_answer": "C. mango",
+            "student_answer": "B. pork",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. chicken",
                 "image_urls": [],
                 "audio_urls": []
               },
               {
                 "letter": "B",
-                "text": "B. Those are chicken and duck.",
+                "text": "B. pork",
                 "image_urls": [],
                 "audio_urls": []
               },
               {
                 "letter": "C",
-                "text": "C. Those are chickens and ducks.",
+                "text": "C. mango",
                 "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13367,
+            "question_id": 372352,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and reorder the sentence (Con hãy đọc và sắp xếp thành câu nhé.) like/ Do/ you/ beans/?",
+            "comment_plain": "Do you like beans? Dịch: Bạn có thích đậu không? => Đáp án: C",
+            "correct_answer": "C. Do you like beans?",
+            "student_answer": "B. Do like you beans?",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. Beans do you like?",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. Do like you beans?",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. Do you like beans?",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3814880,
+      "program_id": null,
+      "level": 2,
+      "position": 10,
+      "title": "Unit 2B:  Food - Lesson 4: Pizza is yummy.",
+      "desc": "- food: fish, beef, pork, chicken, bread, rice, noodles, pizza (R); mango, watermelon, beans, potato\n- Adjs: yummy, yucky\n- sound /ɔɪ/ toy, boy\n- Pizza is yummy.",
+      "status": "completed",
+      "last_activity_date": "2026-04-10",
+      "days_since_last_practice": 11,
+      "forgetting_score": 0.7923,
+      "weakness_score": 0.525,
+      "composite_priority_score": 0.6586,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 43,
+          "audio_turns": 42,
+          "avg_reaction_ms": 1597,
+          "fastest_reaction_ms": 999,
+          "total_duration_ms": 1369997,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-10",
+        "pronunciation_attempts": 24,
+        "pronunciation_score_avg": 92.96,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 100.0,
+        "brainstorm_answer_type_dist": {
+          "correct": 1
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 68.54,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice choice, watermelon is yummy 😊 What else do you like to eat? 🍽️",
+            "expected_answer": "I also like mango and potato. I don't like beans.",
+            "target_objects": null,
+            "user_transcript": "It's in the house.",
+            "score": 64,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 87,
+            "grammar_score": 41,
+            "timestamp": "2026-04-10",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu8cmz-a0e34eb4-audio.wav",
+            "reaction_time_ms": 1328
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh, do you mean ‘help’ or a food name? 😊",
+            "expected_answer": "I mean ‘help’ — I can’t say the word.",
+            "target_objects": null,
+            "user_transcript": "Hell, put me name.",
+            "score": 58.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 17,
+            "timestamp": "2026-04-10",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu72ea-3ef17dfd-audio.wav",
+            "reaction_time_ms": 1328
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What food do you like to eat? 🍉",
+            "expected_answer": "I like mango and potato. I also like beans and watermelon.",
+            "target_objects": null,
+            "user_transcript": "Hel.",
+            "score": 43,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 66,
+            "grammar_score": 20,
+            "timestamp": "2026-04-10",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu6op9-590131d1-audio.wav",
+            "reaction_time_ms": 1328
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Great. What food do you like? 🍉",
+            "expected_answer": "I like mango and potato. I think mango is yummy, beans are okay, and broccoli is yucky.",
+            "target_objects": null,
+            "user_transcript": "I like to",
+            "score": 58.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 17,
+            "timestamp": "2026-04-10",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu5hsd-d3c25296-audio.wav",
+            "reaction_time_ms": 1328
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh, I see. Do you mean “You are full” about me or about you? 😊",
+            "expected_answer": "I mean I am full. I ate a lot.",
+            "target_objects": null,
+            "user_transcript": "Oh.",
+            "score": 69,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 38,
+            "timestamp": "2026-04-10",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/10/admin/mnsu4fq3-6a2056cc-audio.wav",
+            "reaction_time_ms": 1328
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 8197,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-04-10"
+        },
+        "luyen_tap": {
+          "practice_id": 13211,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-04-10"
+        },
+        "lms_ids": {
+          "bai_tap": 8197,
+          "luyen_tap": 13211
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 38,
+            "total": 39,
+            "accuracy": 0.974
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 13211,
+            "question_id": 370225,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Tick or Cross. (Con hãy chọn đúng hoặc sai nhé.)",
+            "comment_plain": "Audio: Bread is yucky. Dịch: Bánh mì rất kinh tởm. => Đáp án: A",
+            "correct_answer": "A.",
+            "student_answer": "B.",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/11/06/e7a0_pic-of-don-t-like-bread.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
+                ],
                 "audio_urls": []
               }
             ],
@@ -9535,9 +9083,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-04",
       "days_since_last_practice": 48,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9989,
       "weakness_score": 0.2353,
-      "composite_priority_score": 0.6177,
+      "composite_priority_score": 0.6171,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -9775,6 +9323,199 @@
       }
     },
     {
+      "lesson_id": 3768636,
+      "program_id": null,
+      "level": 2,
+      "position": 4,
+      "title": "Unit 1B: Animals - Lesson 4: This is a pig.",
+      "desc": "- farm animals: chicken, duck, pig, cow, horse, goat \n- sound /aʊ/ cow, house\n- What's this/that? This/ That is a pig.\n- What are these/ those? These/ Those are cows and horses.",
+      "status": "completed",
+      "last_activity_date": "2026-03-25",
+      "days_since_last_practice": 27,
+      "forgetting_score": 0.9789,
+      "weakness_score": 0.2553,
+      "composite_priority_score": 0.6171,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 0,
+          "audio_turns": 53,
+          "avg_reaction_ms": 2119,
+          "fastest_reaction_ms": 1294,
+          "total_duration_ms": 1338970,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-25",
+        "pronunciation_attempts": 22,
+        "pronunciation_score_avg": 36.41,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 7,
+        "conversation_score_avg": 80.43,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What color is Math? 🐶",
+            "expected_answer": "He is brown and white.",
+            "target_objects": null,
+            "user_transcript": "He has brown.",
+            "score": 49,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 55,
+            "grammar_score": 43,
+            "timestamp": "2026-03-25",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn5zlkt0-832ea748-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 8023,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-03-25"
+        },
+        "luyen_tap": {
+          "practice_id": 13435,
+          "score": 0.9,
+          "correct": 18,
+          "total": 20,
+          "submitted_date": "2026-03-25"
+        },
+        "lms_ids": {
+          "bai_tap": 8023,
+          "luyen_tap": 13435
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 37,
+            "total": 40,
+            "accuracy": 0.925
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 8023,
+            "question_id": 308562,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai nhé.) Those are pigs and horses.",
+            "comment_plain": "Audio: This's a cow and those are pigs and horses. Dịch: Đây là một con bò và đó là những con lợn và những con ngựa. Those are pigs and horses: Đó là những con lợn và những con ngựa. => Đáp án: A",
+            "correct_answer": "A.",
+            "student_answer": "B.",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A.",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/09/06/f4ed_tick.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B.",
+                "image_urls": [
+                  "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/12/22/2cc3_cross.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13435,
+            "question_id": 373065,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. (Con hãy chọn phương án đúng nhé.)",
+            "comment_plain": "Ảnh: những con dê = goats; những con bò = cows => Đáp án: B (\"These are\" cộng với danh từ số nhiều)",
+            "correct_answer": "B. These are goats and cows.",
+            "student_answer": "C. This is goats and cows.",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/09/26/9e6f_cows-and-goats.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. This is a goat and cow.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. These are goats and cows.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. This is goats and cows.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13435,
+            "question_id": 373069,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Choose the correct answer. (Con hãy chọn phương án đúng nhé.)",
+            "comment_plain": "Ảnh: những con gà = chickens; những con vịt = ducks => Đáp án: C (\"Those are\" cộng với danh từ số nhiều)",
+            "correct_answer": "C. Those are chickens and ducks.",
+            "student_answer": "A. That is a chickens and ducks.",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/09/26/a90e_ducks-and-chickens.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. That is a chickens and ducks.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. Those are chicken and duck.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. Those are chickens and ducks.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3690826,
       "program_id": null,
       "level": 2,
@@ -9952,9 +9693,9 @@
       "status": "completed",
       "last_activity_date": "2026-02-27",
       "days_since_last_practice": 53,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9995,
       "weakness_score": 0.1985,
-      "composite_priority_score": 0.5993,
+      "composite_priority_score": 0.599,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -10215,7 +9956,7 @@
       "status": "completed",
       "last_activity_date": "2026-02-11",
       "days_since_last_practice": 69,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9999,
       "weakness_score": 0.1674,
       "composite_priority_score": 0.5837,
       "in_class": {
@@ -10350,6 +10091,233 @@
         },
         "weak_skills": [],
         "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3830649,
+      "program_id": null,
+      "level": 2,
+      "position": 11,
+      "title": "Unit 2B: Food - Lesson 5: I don't like noodles.",
+      "desc": "- food: fish, beef, pork, chicken, bread, rice, noodles, pizza; mango, watermelon, beans, potato (R)\n- Adjs: yummy, yucky\n- sound /eɪ/ snake, potato\n- /ɔɪ/ toy, boy\n- What food do you like? I like fis",
+      "status": "completed",
+      "last_activity_date": "2026-04-15",
+      "days_since_last_practice": 6,
+      "forgetting_score": 0.5756,
+      "weakness_score": 0.5525,
+      "composite_priority_score": 0.564,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 63,
+          "audio_turns": 53,
+          "avg_reaction_ms": 2457,
+          "fastest_reaction_ms": 686,
+          "total_duration_ms": 1544509,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-15",
+        "pronunciation_attempts": 31,
+        "pronunciation_score_avg": 93.23,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 1,
+          "correct": 1
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 87.5,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Good. Who cooks the chicken at your home? 🍗",
+            "expected_answer": "My mom cooks the chicken at home. She makes it with soy sauce and spices.",
+            "target_objects": null,
+            "user_transcript": "Yes, I like chicken at your home.",
+            "score": 68,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 36,
+            "timestamp": "2026-04-15",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mnzyrg5f-6470c4fc-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice choice. Do you like pizza with chicken or beef toppings? 🍕",
+            "expected_answer": "I like pizza with chicken and cheese.",
+            "target_objects": null,
+            "user_transcript": "I like chicken and.",
+            "score": 57,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 14,
+            "timestamp": "2026-04-15",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mnzyn0hy-9f23cd73-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What is it?",
+            "expected_answer": null,
+            "target_objects": [
+              "Beef",
+              "Pizza",
+              "Rice",
+              "Fish",
+              "Pork",
+              "Chicken",
+              "Noodles",
+              "Bread"
+            ],
+            "user_transcript": "It's a pizza.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "pizza"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-15",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mnzxwq0h-54b561b4-audio.wav",
+            "reaction_time_ms": 1883
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What food can you see here?",
+            "expected_answer": null,
+            "target_objects": [
+              "Beef",
+              "Pizza",
+              "Rice",
+              "Fish",
+              "Pork",
+              "Chicken",
+              "Noodles",
+              "Bread"
+            ],
+            "user_transcript": "I A.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-15",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mnzxwig7-717abe29-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 8198,
+          "score": 0.85,
+          "correct": 17,
+          "total": 20,
+          "submitted_date": "2026-04-15"
+        },
+        "luyen_tap": {
+          "practice_id": 13213,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-15"
+        },
+        "lms_ids": {
+          "bai_tap": 8198,
+          "luyen_tap": 13213
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 37,
+            "total": 39,
+            "accuracy": 0.949
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 8198,
+            "question_id": 308992,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Odd one out (Con hãy đọc và chọn từ khác loại nhé.)",
+            "comment_plain": "sn a ke: /eɪ/ b o y: /ɔɪ/ t o y: /ɔɪ/ => Đáp án: A",
+            "correct_answer": "A. snake",
+            "student_answer": "B. boy",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. snake",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. boy",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. toy",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 8198,
+            "question_id": 308998,
+            "question_folder": "English Tutoring - Level 2",
+            "question_type": "Một lựa chọn",
+            "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng nhé.) A: _____(17)? B: I like pizza and beef. How about you? A: I like ___(18). Do you like fish? B: ____(19). Fish is yucky. Do you like bread? A: Yes, I do. Bread is ___(20). (19)",
+            "comment_plain": "Dịch: B: Không, tớ không. Cá rất kinh khủng. Cậu có thích bánh mì không? => Đáp án: B ( Không, tớ không.)",
+            "correct_answer": "B. No, I don't.",
+            "student_answer": "A. Yes, I do.",
+            "requires_media": false,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A. Yes, I do.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B. No, I don't.",
+                "image_urls": [],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C. No, I do.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
         "not_attempted_preview": {}
       }
     },
@@ -10786,9 +10754,9 @@
       "status": "completed",
       "last_activity_date": "2026-04-03",
       "days_since_last_practice": 18,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9236,
       "weakness_score": 0.0,
-      "composite_priority_score": 0.5,
+      "composite_priority_score": 0.4618,
       "in_class": {
         "participated": true,
         "session_count": 1,

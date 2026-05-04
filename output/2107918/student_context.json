@@ -23,6 +23,10 @@
       "English Tutoring - Level 3",
       "Biểu đồ"
     ],
+    "critical_speaking_types": [
+      "brainstorm",
+      "free_speaking"
+    ],
     "overall_pronunciation_score_avg": 52.05,
     "overall_free_speaking_score_avg": 10.0,
     "overall_brainstorm_score_avg": 0.0,
@@ -36,7 +40,7 @@
       "incorrect": 21,
       "correct": 2
     },
-    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
     {
@@ -1275,9 +1279,9 @@
       "level": 3,
       "last_activity_date": "2026-03-09",
       "days_since_last_practice": 43,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9979,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.999,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1494,9 +1498,9 @@
       "level": 3,
       "last_activity_date": "2026-03-11",
       "days_since_last_practice": 41,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9971,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9986,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1732,9 +1736,9 @@
       "level": 3,
       "last_activity_date": "2026-03-23",
       "days_since_last_practice": 29,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9841,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.992,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2011,9 +2015,9 @@
       "level": 3,
       "last_activity_date": "2026-03-25",
       "days_since_last_practice": 27,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9789,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9894,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2285,14 +2289,36 @@
       }
     },
     {
+      "lesson_id": 3574747,
+      "title": "Unit 3A: Pets - Lesson 2: What does it look like?",
+      "level": 3,
+      "last_activity_date": "2026-01-06",
+      "days_since_last_practice": 105,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.97,
+      "composite_priority_score": 0.985,
+      "homework_status": "attempted",
+      "weak_skills": [
+        "English Tutoring - Level 3"
+      ],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 3,
+      "worst_speaking_items": [],
+      "practice_ids": {
+        "bai_tap": 7842,
+        "luyen_tap": 13371
+      }
+    },
+    {
       "lesson_id": 3850723,
       "title": "Unit 3B: Food - Lesson 4: Do they like onions?",
       "level": 3,
       "last_activity_date": "2026-04-01",
       "days_since_last_practice": 20,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9426,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9713,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -2516,28 +2542,6 @@
       "practice_ids": {
         "bai_tap": 9210,
         "luyen_tap": 13631
-      }
-    },
-    {
-      "lesson_id": 3574747,
-      "title": "Unit 3A: Pets - Lesson 2: What does it look like?",
-      "level": 3,
-      "last_activity_date": "2026-01-06",
-      "days_since_last_practice": 105,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.97,
-      "composite_priority_score": 0.985,
-      "homework_status": "attempted",
-      "weak_skills": [
-        "English Tutoring - Level 3"
-      ],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 3,
-      "worst_speaking_items": [],
-      "practice_ids": {
-        "bai_tap": 7842,
-        "luyen_tap": 13371
       }
     },
     {
@@ -3772,9 +3776,9 @@
       "level": 3,
       "last_activity_date": "2026-03-16",
       "days_since_last_practice": 36,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9942,
       "weakness_score": 0.665,
-      "composite_priority_score": 0.8325,
+      "composite_priority_score": 0.8296,
       "homework_status": "attempted",
       "weak_skills": [
         "Biểu đồ"
@@ -3931,219 +3935,6 @@
       "practice_ids": {
         "bai_tap": 8296,
         "luyen_tap": 13535
-      }
-    },
-    {
-      "lesson_id": 3850725,
-      "title": "Unit 4B: Things we do - Lesson 1: What are you doing?",
-      "level": 3,
-      "last_activity_date": "2026-04-08",
-      "days_since_last_practice": 13,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.6574,
-      "composite_priority_score": 0.8287,
-      "homework_status": "not_attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [
-        {
-          "practice_id": 9194,
-          "question_id": 314258,
-          "question_folder": "Kĩ năng nghe",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-          "comment_plain": "Audio: eating: ăn => Đáp án: A",
-          "correct_answer": "A",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/86d6_image-removebg-preview--2817-29.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/a138_image-removebg-preview--286-29.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/0269_image-removebg-preview--281-29.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9194,
-          "question_id": 314260,
-          "question_folder": "Kĩ năng nghe",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-          "comment_plain": "Audio: sleeping: ngủ => Đáp án: B",
-          "correct_answer": "B",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/f805_image-removebg-preview--282-29.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/0269_image-removebg-preview--281-29.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b04_image-removebg-preview--283-29.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9194,
-          "question_id": 314264,
-          "question_folder": "Kĩ năng nghe",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-          "comment_plain": "Audio: running: chạy => Đáp án: C",
-          "correct_answer": "C",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/d11a_image-removebg-preview--284-29.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/86d6_image-removebg-preview--2817-29.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b04_image-removebg-preview--283-29.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9194,
-          "question_id": 314267,
-          "question_folder": "Kĩ năng nghe",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen, look and choose the correct answer (Con hãy nghe, nhìn tranh và chọn phương án đúng.)",
-          "comment_plain": "Audio: What are you doing? Bạn đang làm g&igrave;? Ảnh: đi bộ = walking => Đáp án: B (T&ocirc;i đang đi bộ.)",
-          "correct_answer": "B. I'm walking.",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/f805_image-removebg-preview--282-29.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. I'm drinking.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. I'm walking.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. I'm eating.",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9194,
-          "question_id": 314268,
-          "question_folder": "Kĩ năng nghe",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen, look and choose the correct answer (Con hãy nghe, nhìn tranh và chọn phương án đúng.)",
-          "comment_plain": "Audio: What are you doing? Bạn đang làm g&igrave;? Ảnh: chạy = running => Đáp án: C (T&ocirc;i đang chạy.)",
-          "correct_answer": "C. I'm running.",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b04_image-removebg-preview--283-29.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. I'm sleeping.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. I'm eating.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. I'm running.",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ]
-        }
-      ],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [],
-      "practice_ids": {
-        "bai_tap": 9194,
-        "luyen_tap": 13634
       }
     },
     {
@@ -4486,171 +4277,205 @@
       }
     },
     {
-      "lesson_id": 3850727,
-      "title": "Unit 4B: Things we do - Lesson 3: What are they doing?",
+      "lesson_id": 3850725,
+      "title": "Unit 4B: Things we do - Lesson 1: What are you doing?",
       "level": 3,
-      "last_activity_date": "2026-04-15",
-      "days_since_last_practice": 6,
-      "forgetting_score": 0.9975,
-      "weakness_score": 0.5284,
-      "composite_priority_score": 0.763,
+      "last_activity_date": "2026-04-08",
+      "days_since_last_practice": 13,
+      "forgetting_score": 0.8439,
+      "weakness_score": 0.6574,
+      "composite_priority_score": 0.7507,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
       "question_bank_preview": [
         {
-          "practice_id": 9213,
-          "question_id": 314612,
+          "practice_id": 9194,
+          "question_id": 314258,
           "question_folder": "Kĩ năng nghe",
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
-          "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
-          "comment_plain": "Audio: What is she doing? She is doing yoga C&ocirc; ấy đang làm g&igrave;? C&ocirc; ấy đang tập yoga. => Đáp án: A",
-          "correct_answer": "A. TRUE",
+          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+          "comment_plain": "Audio: eating: ăn => Đáp án: A",
+          "correct_answer": "A",
           "student_answer": null,
           "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b80_image-removebg-preview--2828-29.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. TRUE",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. FALSE",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9213,
-          "question_id": 314613,
-          "question_folder": "Kĩ năng nghe",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
-          "comment_plain": "Audio: Are they riding bikes? Yes, they are. Họ c&oacute; đang đi xe đạp kh&ocirc;ng? C&oacute;, họ c&oacute;. => Đáp án: A",
-          "correct_answer": "A. TRUE",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/39ea_image-removebg-preview--2829-29.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. TRUE",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. FALSE",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9213,
-          "question_id": 314614,
-          "question_folder": "Kĩ năng nghe",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
-          "comment_plain": "Audio: What is he doing? He&#39;s playing football. Anh ấy đang làm g&igrave;? Anh ấy đang chơi đá b&oacute;ng. => Đáp án: B",
-          "correct_answer": "B. FALSE",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/65ec_image-removebg-preview--2830-29.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. TRUE",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. FALSE",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9213,
-          "question_id": 314615,
-          "question_folder": "Kĩ năng nghe",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct word (Con hãy nghe và chọn từ đúng.) They're ...... .",
-          "comment_plain": "Audio: They&#39;re riding bikes. => Đáp án: B",
-          "correct_answer": "B. riding bikes",
-          "student_answer": null,
-          "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
             {
               "letter": "A",
-              "text": "A. doing yoga",
+              "text": "A",
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/86d6_image-removebg-preview--2817-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B",
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/a138_image-removebg-preview--286-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C",
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/0269_image-removebg-preview--281-29.png"
+              ],
+              "audio_urls": []
+            }
+          ]
+        },
+        {
+          "practice_id": 9194,
+          "question_id": 314260,
+          "question_folder": "Kĩ năng nghe",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+          "comment_plain": "Audio: sleeping: ngủ => Đáp án: B",
+          "correct_answer": "B",
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A",
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/f805_image-removebg-preview--282-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B",
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/0269_image-removebg-preview--281-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C",
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b04_image-removebg-preview--283-29.png"
+              ],
+              "audio_urls": []
+            }
+          ]
+        },
+        {
+          "practice_id": 9194,
+          "question_id": 314264,
+          "question_folder": "Kĩ năng nghe",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+          "comment_plain": "Audio: running: chạy => Đáp án: C",
+          "correct_answer": "C",
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A",
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/d11a_image-removebg-preview--284-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B",
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/86d6_image-removebg-preview--2817-29.png"
+              ],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C",
+              "image_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b04_image-removebg-preview--283-29.png"
+              ],
+              "audio_urls": []
+            }
+          ]
+        },
+        {
+          "practice_id": 9194,
+          "question_id": 314267,
+          "question_folder": "Kĩ năng nghe",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen, look and choose the correct answer (Con hãy nghe, nhìn tranh và chọn phương án đúng.)",
+          "comment_plain": "Audio: What are you doing? Bạn đang làm g&igrave;? Ảnh: đi bộ = walking => Đáp án: B (T&ocirc;i đang đi bộ.)",
+          "correct_answer": "B. I'm walking.",
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [
+            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/f805_image-removebg-preview--282-29.png"
+          ],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. I'm drinking.",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "B",
-              "text": "B. riding bikes",
+              "text": "B. I'm walking.",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "C",
-              "text": "C. playing football",
+              "text": "C. I'm eating.",
               "image_urls": [],
               "audio_urls": []
             }
           ]
         },
         {
-          "practice_id": 9213,
-          "question_id": 314616,
+          "practice_id": 9194,
+          "question_id": 314268,
           "question_folder": "Kĩ năng nghe",
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
-          "question_text": "Listen and choose the correct word (Con hãy nghe và chọn từ đúng.) What is he doing? He's ...... .",
-          "comment_plain": "Audio: What is he doing? He&#39;s playing football. => Đáp án: A",
-          "correct_answer": "A. playing football",
+          "question_text": "Listen, look and choose the correct answer (Con hãy nghe, nhìn tranh và chọn phương án đúng.)",
+          "comment_plain": "Audio: What are you doing? Bạn đang làm g&igrave;? Ảnh: chạy = running => Đáp án: C (T&ocirc;i đang chạy.)",
+          "correct_answer": "C. I'm running.",
           "student_answer": null,
-          "requires_media": false,
-          "stem_media_urls": [],
+          "requires_media": true,
+          "stem_media_urls": [
+            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b04_image-removebg-preview--283-29.png"
+          ],
           "comment_media_urls": [],
           "choice_previews": [
             {
               "letter": "A",
-              "text": "A. playing football",
+              "text": "A. I'm sleeping.",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "B",
-              "text": "B. doing yoga",
+              "text": "B. I'm eating.",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "C",
-              "text": "C. riding a bike",
+              "text": "C. I'm running.",
               "image_urls": [],
               "audio_urls": []
             }
@@ -4660,8 +4485,8 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [],
       "practice_ids": {
-        "bai_tap": 9213,
-        "luyen_tap": 13509
+        "bai_tap": 9194,
+        "luyen_tap": 13634
       }
     },
     {
@@ -4703,14 +4528,65 @@
       }
     },
     {
+      "lesson_id": 3618658,
+      "title": "Unit 4A: Home - Lesson 1: Where's the sofa?",
+      "level": 3,
+      "last_activity_date": "2026-01-07",
+      "days_since_last_practice": 104,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.4148,
+      "composite_priority_score": 0.7074,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Cool! Do you like to play in your bedroom?🧸",
+          "expected_answer": "Yes, I like to play in my bedroom.",
+          "target_objects": null,
+          "user_transcript": "Yeah, I keep.",
+          "score": 66,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 32,
+          "timestamp": "2026-01-05",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk1889z3-01694522-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Wonderful! Is your bathroom next to your bedroom? 🛏️",
+          "expected_answer": "Yes, it is.",
+          "target_objects": null,
+          "user_transcript": "Yes, it is your bedroom.",
+          "score": 65,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 61,
+          "grammar_score": 69,
+          "timestamp": "2026-01-05",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk188235-807756ad-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7957,
+        "luyen_tap": 13430
+      }
+    },
+    {
       "lesson_id": 3850722,
       "title": "Unit 3B: Food - Lesson 3: I like cucumbers but I don't like pumpkins.",
       "level": 3,
       "last_activity_date": "2026-03-30",
       "days_since_last_practice": 22,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9568,
       "weakness_score": 0.4494,
-      "composite_priority_score": 0.7247,
+      "composite_priority_score": 0.7031,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -4905,57 +4781,6 @@
       "practice_ids": {
         "bai_tap": 9208,
         "luyen_tap": 13630
-      }
-    },
-    {
-      "lesson_id": 3618658,
-      "title": "Unit 4A: Home - Lesson 1: Where's the sofa?",
-      "level": 3,
-      "last_activity_date": "2026-01-07",
-      "days_since_last_practice": 104,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.4148,
-      "composite_priority_score": 0.7074,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Cool! Do you like to play in your bedroom?🧸",
-          "expected_answer": "Yes, I like to play in my bedroom.",
-          "target_objects": null,
-          "user_transcript": "Yeah, I keep.",
-          "score": 66,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 32,
-          "timestamp": "2026-01-05",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk1889z3-01694522-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Wonderful! Is your bathroom next to your bedroom? 🛏️",
-          "expected_answer": "Yes, it is.",
-          "target_objects": null,
-          "user_transcript": "Yes, it is your bedroom.",
-          "score": 65,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 61,
-          "grammar_score": 69,
-          "timestamp": "2026-01-05",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk188235-807756ad-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7957,
-        "luyen_tap": 13430
       }
     },
     {
@@ -5912,26 +5737,56 @@
       }
     },
     {
-      "lesson_id": 3850728,
-      "title": "Unit 4B: Things we do - Lesson 4: What is he doing?",
+      "lesson_id": 3850727,
+      "title": "Unit 4B: Things we do - Lesson 3: What are they doing?",
       "level": 3,
-      "last_activity_date": "2026-04-20",
-      "days_since_last_practice": 1,
-      "forgetting_score": 0.6321,
-      "weakness_score": 0.4696,
-      "composite_priority_score": 0.5509,
+      "last_activity_date": "2026-04-15",
+      "days_since_last_practice": 6,
+      "forgetting_score": 0.5756,
+      "weakness_score": 0.5284,
+      "composite_priority_score": 0.552,
       "homework_status": "not_attempted",
       "weak_skills": [],
       "failed_text_questions": [],
       "question_bank_preview": [
         {
-          "practice_id": 9214,
-          "question_id": 314647,
+          "practice_id": 9213,
+          "question_id": 314612,
           "question_folder": "Kĩ năng nghe",
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
           "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
-          "comment_plain": "Audio: What are they doing? They&#39;re riding bikes. Họ đang làm g&igrave;? Họ đang đi xe đạp. => Đáp án: A",
+          "comment_plain": "Audio: What is she doing? She is doing yoga C&ocirc; ấy đang làm g&igrave;? C&ocirc; ấy đang tập yoga. => Đáp án: A",
+          "correct_answer": "A. TRUE",
+          "student_answer": null,
+          "requires_media": true,
+          "stem_media_urls": [
+            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b80_image-removebg-preview--2828-29.png"
+          ],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. TRUE",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. FALSE",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ]
+        },
+        {
+          "practice_id": 9213,
+          "question_id": 314613,
+          "question_folder": "Kĩ năng nghe",
+          "question_type": "Một lựa chọn",
+          "status": "not_attempted",
+          "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
+          "comment_plain": "Audio: Are they riding bikes? Yes, they are. Họ c&oacute; đang đi xe đạp kh&ocirc;ng? C&oacute;, họ c&oacute;. => Đáp án: A",
           "correct_answer": "A. TRUE",
           "student_answer": null,
           "requires_media": true,
@@ -5955,18 +5810,18 @@
           ]
         },
         {
-          "practice_id": 9214,
-          "question_id": 314648,
+          "practice_id": 9213,
+          "question_id": 314614,
           "question_folder": "Kĩ năng nghe",
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
           "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
-          "comment_plain": "Audio: Is she doing yoga? Yes, she is. C&ocirc; ấy c&oacute; đang tập yoga kh&ocirc;ng? C&oacute;, c&ocirc; ấy c&oacute;. => Đáp án: B",
+          "comment_plain": "Audio: What is he doing? He&#39;s playing football. Anh ấy đang làm g&igrave;? Anh ấy đang chơi đá b&oacute;ng. => Đáp án: B",
           "correct_answer": "B. FALSE",
           "student_answer": null,
           "requires_media": true,
           "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/89df_capture.png"
+            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/65ec_image-removebg-preview--2830-29.png"
           ],
           "comment_media_urls": [],
           "choice_previews": [
@@ -5985,111 +5840,69 @@
           ]
         },
         {
-          "practice_id": 9214,
-          "question_id": 314649,
+          "practice_id": 9213,
+          "question_id": 314615,
           "question_folder": "Kĩ năng nghe",
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
-          "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
-          "comment_plain": "Audio: Is he playing football? Yes, he is. Anh ấy c&oacute; đang chơi đá b&oacute;ng kh&ocirc;ng? C&oacute;, anh ấy c&oacute;. => Đáp án: A",
-          "correct_answer": "A. TRUE",
+          "question_text": "Listen and choose the correct word (Con hãy nghe và chọn từ đúng.) They're ...... .",
+          "comment_plain": "Audio: They&#39;re riding bikes. => Đáp án: B",
+          "correct_answer": "B. riding bikes",
           "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/ca9c_image-removebg-preview--2869-29.png"
-          ],
+          "requires_media": false,
+          "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
             {
               "letter": "A",
-              "text": "A. TRUE",
+              "text": "A. doing yoga",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "B",
-              "text": "B. FALSE",
+              "text": "B. riding bikes",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. playing football",
               "image_urls": [],
               "audio_urls": []
             }
           ]
         },
         {
-          "practice_id": 9214,
-          "question_id": 314650,
+          "practice_id": 9213,
+          "question_id": 314616,
           "question_folder": "Kĩ năng nghe",
           "question_type": "Một lựa chọn",
           "status": "not_attempted",
-          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-          "comment_plain": "Audio: They are eating: Họ đang ăn. => Đáp án: C",
-          "correct_answer": "C.",
+          "question_text": "Listen and choose the correct word (Con hãy nghe và chọn từ đúng.) What is he doing? He's ...... .",
+          "comment_plain": "Audio: What is he doing? He&#39;s playing football. => Đáp án: A",
+          "correct_answer": "A. playing football",
           "student_answer": null,
-          "requires_media": true,
+          "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
             {
               "letter": "A",
-              "text": "A.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/6293_image-removebg-preview--287-29.png"
-              ],
+              "text": "A. playing football",
+              "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "B",
-              "text": "B.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/86d6_image-removebg-preview--2817-29.png"
-              ],
+              "text": "B. doing yoga",
+              "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "C",
-              "text": "C.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/b702_image-removebg-preview--2866-29.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9214,
-          "question_id": 314651,
-          "question_folder": "Kĩ năng nghe",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-          "comment_plain": "Audio: She is playing football: C&ocirc; ấy đang chơi đá b&oacute;ng. => Đáp án: B",
-          "correct_answer": "B",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b80_image-removebg-preview--2828-29.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/b3ae_image-removebg-preview--2867-29.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/cad9_image-removebg-preview--285-29.png"
-              ],
+              "text": "C. riding a bike",
+              "image_urls": [],
               "audio_urls": []
             }
           ]
@@ -6098,8 +5911,8 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [],
       "practice_ids": {
-        "bai_tap": 9214,
-        "luyen_tap": 13510
+        "bai_tap": 9213,
+        "luyen_tap": 13509
       }
     },
     {
@@ -6540,603 +6353,6 @@
       "practice_ids": {
         "bai_tap": 7963,
         "luyen_tap": 13459
-      }
-    },
-    {
-      "lesson_id": 3785445,
-      "title": "Unit 2B: Sports - Lesson 1: What can you do?",
-      "level": 3,
-      "last_activity_date": "2026-03-02",
-      "days_since_last_practice": 50,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.0,
-      "composite_priority_score": 0.5,
-      "homework_status": "not_attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [
-        {
-          "practice_id": 8290,
-          "question_id": 310287,
-          "question_folder": "English Tutoring - Level 3",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Tick or Cross (Con hãy chọn đ&uacute;ng hoặc sai.)",
-          "comment_plain": "Audio: run: chạy => Đáp án: B",
-          "correct_answer": "B.",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/7ea3_image-removebg-preview---2022-06-29t092813.432.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/1f13_image-removebg-preview---2022-06-29t103954.034.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/9c03_image-removebg-preview---2022-06-29t103955.598.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 8290,
-          "question_id": 310288,
-          "question_folder": "English Tutoring - Level 3",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Tick or Cross (Con hãy chọn đ&uacute;ng hoặc sai.)",
-          "comment_plain": "Audio: swim: bơi => Đáp án: A",
-          "correct_answer": "A.",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/4fdb_image-removebg-preview---2022-06-29t092815.566.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/1f13_image-removebg-preview---2022-06-29t103954.034.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/9c03_image-removebg-preview---2022-06-29t103955.598.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 8290,
-          "question_id": 310289,
-          "question_folder": "English Tutoring - Level 3",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Tick or Cross (Con hãy chọn đ&uacute;ng hoặc sai.)",
-          "comment_plain": "Audio: skip: nhảy dây => Đáp án: A",
-          "correct_answer": "A.",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/7d4d_image-removebg-preview---2022-06-29t092817.027.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/1f13_image-removebg-preview---2022-06-29t103954.034.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/9c03_image-removebg-preview---2022-06-29t103955.598.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 8290,
-          "question_id": 310291,
-          "question_folder": "English Tutoring - Level 3",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn phương án đúng.) I can ____.",
-          "comment_plain": "audio: I can skateboard => Đáp án: C",
-          "correct_answer": "C. skateboard",
-          "student_answer": null,
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. swim",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. skip",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. skateboard",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 8290,
-          "question_id": 310293,
-          "question_folder": "English Tutoring - Level 3",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn phương án đúng.) I can ____ a bike.",
-          "comment_plain": "audio: I can ride a bike. => Đáp án: B",
-          "correct_answer": "B. ride",
-          "student_answer": null,
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. run",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. ride",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. swim",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ]
-        }
-      ],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [],
-      "practice_ids": {
-        "bai_tap": 8290,
-        "luyen_tap": 13544
-      }
-    },
-    {
-      "lesson_id": 3785446,
-      "title": "Unit 2B: Sports - Lesson 2: I can play football but I can't play basketball.",
-      "level": 3,
-      "last_activity_date": "2026-03-04",
-      "days_since_last_practice": 48,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.0,
-      "composite_priority_score": 0.5,
-      "homework_status": "not_attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [
-        {
-          "practice_id": 8292,
-          "question_id": 310360,
-          "question_folder": "English Tutoring - Level 3",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
-          "comment_plain": "Audio: football: b&oacute;ng đá => Đáp án: A",
-          "correct_answer": "A.",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/0c9e_image-removebg-preview---2022-06-29t112913.697.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/1f13_image-removebg-preview---2022-06-29t103954.034.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/9c03_image-removebg-preview---2022-06-29t103955.598.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 8292,
-          "question_id": 310366,
-          "question_folder": "English Tutoring - Level 3",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
-          "comment_plain": "Audio: volleyball: b&oacute;ng chuyền => Đáp án: B",
-          "correct_answer": "B.",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/2cb1_image-removebg-preview---2022-06-29t114408.329.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/1f13_image-removebg-preview---2022-06-29t103954.034.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/9c03_image-removebg-preview---2022-06-29t103955.598.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 8292,
-          "question_id": 310367,
-          "question_folder": "English Tutoring - Level 3",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
-          "comment_plain": "Audio: basketball: b&oacute;ng rổ => Đáp án: B",
-          "correct_answer": "B.p>",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/0c9e_image-removebg-preview---2022-06-29t112913.697.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/1f13_image-removebg-preview---2022-06-29t103954.034.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B.p>",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/9c03_image-removebg-preview---2022-06-29t103955.598.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 8292,
-          "question_id": 310369,
-          "question_folder": "English Tutoring - Level 3",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-          "comment_plain": "audio: I can play volleyball: T&ocirc;i c&oacute; thể chơi b&oacute;ng chuyền. => Đáp án: A",
-          "correct_answer": "A.",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/25/d4bb_volleyball.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/0c9e_image-removebg-preview---2022-06-29t112913.697.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/2cb1_image-removebg-preview---2022-06-29t114408.329.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 8292,
-          "question_id": 310371,
-          "question_folder": "English Tutoring - Level 3",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-          "comment_plain": "audio: I can play badminton: T&ocirc;i c&oacute; thể chơi cầu l&ocirc;ng. => Đáp án: B",
-          "correct_answer": "B.",
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/d09f_image-removebg-preview---2022-06-29t112918.541.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B.",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/2cb1_image-removebg-preview---2022-06-29t114408.329.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C.p>",
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/29/436a_image-removebg-preview---2022-06-29t112920.378.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        }
-      ],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [],
-      "practice_ids": {
-        "bai_tap": 8292,
-        "luyen_tap": 13550
-      }
-    },
-    {
-      "lesson_id": 3850724,
-      "title": "Unit 3B: Food - Lesson 5: Do they like onions?",
-      "level": 3,
-      "last_activity_date": "2026-04-06",
-      "days_since_last_practice": 15,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.0,
-      "composite_priority_score": 0.5,
-      "homework_status": "not_attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [
-        {
-          "practice_id": 9211,
-          "question_id": 314571,
-          "question_folder": "Kĩ năng nghe",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Tick or Cross (Con hãy chọn đ&uacute;ng hoặc sai.)",
-          "comment_plain": "Audio: mushroom: nấm => Đáp án: A",
-          "correct_answer": null,
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/20/116e_mushroom.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/90cd_tick..png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/b73a_cross.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9211,
-          "question_id": 314572,
-          "question_folder": "Kĩ năng nghe",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Tick or Cross (Con hãy chọn đ&uacute;ng hoặc sai.)",
-          "comment_plain": "Audio: broccoli: s&uacute;p lơ => Đáp án: B",
-          "correct_answer": null,
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/20/1507_cabbage.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/90cd_tick..png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/b73a_cross.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9211,
-          "question_id": 314573,
-          "question_folder": "Kĩ năng nghe",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Tick or Cross (Con hãy chọn đ&uacute;ng hoặc sai.)",
-          "comment_plain": "audio: I like coconuts and pears: T&ocirc;i th&iacute;ch dừa và l&ecirc;, => Đáp án: B",
-          "correct_answer": null,
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [
-            "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/25/1600_thi-E1-BA-BFt-k-E1-BA-BF-ch-C6-B0a-co-ten--289-29.png"
-          ],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/90cd_tick..png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/b73a_cross.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9211,
-          "question_id": 314574,
-          "question_folder": "Kĩ năng nghe",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and omit the picture (Con hãy nghe và chọn loại quả không có trong audio.)",
-          "comment_plain": "audio: grapes, pineapple, peach: nho, dứa, đào. Quả chuối (banana) kh&ocirc;ng c&oacute; trong audio => Đáp án: C",
-          "correct_answer": null,
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/25/63e0_peach--281-29.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/25/ea86_pineapple.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": null,
-              "image_urls": [
-                "https://d17pvycz1g8p67.cloudfront.net/upload/5c209fe6176b0/2025/12/11/bbc8_thie-CC-82-CC-81t-ke-CC-82-CC-81-chu-CC-9Ba-co-CC-81-te-CC-82n--283-29.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        },
-        {
-          "practice_id": 9211,
-          "question_id": 314575,
-          "question_folder": "Kĩ năng nghe",
-          "question_type": "Một lựa chọn",
-          "status": "not_attempted",
-          "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đ&uacute;ng.)",
-          "comment_plain": "audio: I like pumpkins: T&ocirc;i th&iacute;ch b&iacute; ng&ocirc;. => Đáp án: A",
-          "correct_answer": null,
-          "student_answer": null,
-          "requires_media": true,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/212f_pumpkin.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/20/1507_cabbage.png"
-              ],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": null,
-              "image_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/d852_cucumber.png"
-              ],
-              "audio_urls": []
-            }
-          ]
-        }
-      ],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [],
-      "practice_ids": {
-        "bai_tap": 9211,
-        "luyen_tap": 13632
       }
     }
   ],
@@ -9453,9 +8669,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-09",
       "days_since_last_practice": 43,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9979,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.999,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -9902,9 +9118,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-11",
       "days_since_last_practice": 41,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9971,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9986,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -10376,9 +9592,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-18",
       "days_since_last_practice": 34,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9922,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9961,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -10448,9 +9664,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-23",
       "days_since_last_practice": 29,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9841,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.992,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -10955,9 +10171,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-25",
       "days_since_last_practice": 27,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9789,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9894,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -11459,6 +10675,206 @@
       }
     },
     {
+      "lesson_id": 3574747,
+      "program_id": null,
+      "level": 3,
+      "position": 14,
+      "title": "Unit 3A: Pets - Lesson 2: What does it look like?",
+      "desc": "- Review pets \n - Animal body parts: tail, beak, wing, claw\n- What animal is this? - It's a cat.",
+      "status": "completed",
+      "last_activity_date": "2026-01-06",
+      "days_since_last_practice": 105,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.97,
+      "composite_priority_score": 0.985,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 61,
+          "avg_reaction_ms": null,
+          "fastest_reaction_ms": null,
+          "total_duration_ms": 1716411,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2025-12-17",
+        "pronunciation_attempts": 0,
+        "pronunciation_score_avg": null,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 7,
+        "conversation_score_avg": null,
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7842,
+          "score": 0,
+          "correct": 0,
+          "total": 20,
+          "submitted_date": "2026-01-06"
+        },
+        "luyen_tap": {
+          "practice_id": 13371,
+          "score": 0.1,
+          "correct": 2,
+          "total": 20,
+          "submitted_date": "2025-12-17"
+        },
+        "lms_ids": {
+          "bai_tap": 7842,
+          "luyen_tap": 13371
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 0,
+            "total": 3,
+            "accuracy": 0.0
+          },
+          "Biểu đồ": {
+            "correct": 2,
+            "total": 2,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [
+          "English Tutoring - Level 3"
+        ],
+        "worst_questions": [
+          {
+            "practice_id": 7842,
+            "question_id": 305813,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+            "comment_plain": "audio: a tail tail: cái đu&ocirc;i",
+            "correct_answer": null,
+            "student_answer": "option_1",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/07/b17b_a-beak.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/07/3298_wings.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/07/3468_a-tail.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 7842,
+            "question_id": 305813,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+            "comment_plain": "audio: a tail tail: cái đu&ocirc;i",
+            "correct_answer": null,
+            "student_answer": "option_1",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/07/b17b_a-beak.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/07/3298_wings.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": null,
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/07/3468_a-tail.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 13371,
+            "question_id": 372360,
+            "question_folder": "English Tutoring - Level 3",
+            "question_type": "Một lựa chọn",
+            "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+            "comment_plain": "audio: It&#39;s a rabbit: Đ&oacute; là một con thỏ. => Đáp án: C",
+            "correct_answer": "C",
+            "student_answer": "A",
+            "requires_media": true,
+            "stem_media_urls": [],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "A",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/8d83_cat.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "B",
+                "text": "B",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/e0f6_hamster-.png"
+                ],
+                "audio_urls": []
+              },
+              {
+                "letter": "C",
+                "text": "C",
+                "image_urls": [
+                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/ee0b_rabbit.png"
+                ],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3850723,
       "program_id": null,
       "level": 3,
@@ -11468,9 +10884,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-01",
       "days_since_last_practice": 20,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9426,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9713,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -11926,206 +11342,6 @@
             }
           ]
         }
-      }
-    },
-    {
-      "lesson_id": 3574747,
-      "program_id": null,
-      "level": 3,
-      "position": 14,
-      "title": "Unit 3A: Pets - Lesson 2: What does it look like?",
-      "desc": "- Review pets \n - Animal body parts: tail, beak, wing, claw\n- What animal is this? - It's a cat.",
-      "status": "completed",
-      "last_activity_date": "2026-01-06",
-      "days_since_last_practice": 105,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.97,
-      "composite_priority_score": 0.985,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": null,
-          "audio_turns": 61,
-          "avg_reaction_ms": null,
-          "fastest_reaction_ms": null,
-          "total_duration_ms": 1716411,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2025-12-17",
-        "pronunciation_attempts": 0,
-        "pronunciation_score_avg": null,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 0,
-        "brainstorm_score_avg": null,
-        "brainstorm_answer_type_dist": {},
-        "conversation_attempts": 7,
-        "conversation_score_avg": null,
-        "worst_speaking_items": []
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7842,
-          "score": 0,
-          "correct": 0,
-          "total": 20,
-          "submitted_date": "2026-01-06"
-        },
-        "luyen_tap": {
-          "practice_id": 13371,
-          "score": 0.1,
-          "correct": 2,
-          "total": 20,
-          "submitted_date": "2025-12-17"
-        },
-        "lms_ids": {
-          "bai_tap": 7842,
-          "luyen_tap": 13371
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 3": {
-            "correct": 0,
-            "total": 3,
-            "accuracy": 0.0
-          },
-          "Biểu đồ": {
-            "correct": 2,
-            "total": 2,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [
-          "English Tutoring - Level 3"
-        ],
-        "worst_questions": [
-          {
-            "practice_id": 7842,
-            "question_id": 305813,
-            "question_folder": "English Tutoring - Level 3",
-            "question_type": "Một lựa chọn",
-            "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-            "comment_plain": "audio: a tail tail: cái đu&ocirc;i",
-            "correct_answer": null,
-            "student_answer": "option_1",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/07/b17b_a-beak.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/07/3298_wings.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/07/3468_a-tail.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 7842,
-            "question_id": 305813,
-            "question_folder": "English Tutoring - Level 3",
-            "question_type": "Một lựa chọn",
-            "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-            "comment_plain": "audio: a tail tail: cái đu&ocirc;i",
-            "correct_answer": null,
-            "student_answer": "option_1",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/07/b17b_a-beak.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/07/3298_wings.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": null,
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/06/07/3468_a-tail.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 13371,
-            "question_id": 372360,
-            "question_folder": "English Tutoring - Level 3",
-            "question_type": "Một lựa chọn",
-            "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-            "comment_plain": "audio: It&#39;s a rabbit: Đ&oacute; là một con thỏ. => Đáp án: C",
-            "correct_answer": "C",
-            "student_answer": "A",
-            "requires_media": true,
-            "stem_media_urls": [],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "A",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/8d83_cat.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "B",
-                "text": "B",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/03/e0f6_hamster-.png"
-                ],
-                "audio_urls": []
-              },
-              {
-                "letter": "C",
-                "text": "C",
-                "image_urls": [
-                  "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/30/ee0b_rabbit.png"
-                ],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
       }
     },
     {
@@ -15424,9 +14640,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-16",
       "days_since_last_practice": 36,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9942,
       "weakness_score": 0.665,
-      "composite_priority_score": 0.8325,
+      "composite_priority_score": 0.8296,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -15728,411 +14944,6 @@
           }
         ],
         "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3850725,
-      "program_id": null,
-      "level": 3,
-      "position": 19,
-      "title": "Unit 4B: Things we do - Lesson 1: What are you doing?",
-      "desc": "- Actions: eating, drinking, sleeping, walking, running\n- What are you doing? I'm eating.",
-      "status": "in_class_only",
-      "last_activity_date": "2026-04-08",
-      "days_since_last_practice": 13,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.6574,
-      "composite_priority_score": 0.8287,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 11,
-          "audio_turns": 53,
-          "avg_reaction_ms": 2380,
-          "fastest_reaction_ms": 1250,
-          "total_duration_ms": 112791,
-          "session_status": "COMPLETED",
-          "completion_pct": 71
-        },
-        "is_completed": true,
-        "completion_pct": 71,
-        "latest_session_date": "2026-04-08",
-        "pronunciation_attempts": 31,
-        "pronunciation_score_avg": 34.26,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 0,
-        "brainstorm_score_avg": null,
-        "brainstorm_answer_type_dist": {},
-        "conversation_attempts": 0,
-        "conversation_score_avg": null,
-        "worst_speaking_items": []
-      },
-      "homework": {
-        "attempted": false,
-        "bai_tap": null,
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 9194,
-          "luyen_tap": 13634
-        },
-        "skill_breakdown": {},
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {
-          "bai_tap": [
-            {
-              "practice_id": 9194,
-              "question_id": 314258,
-              "question_folder": "Kĩ năng nghe",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-              "comment_plain": "Audio: eating: ăn => Đáp án: A",
-              "correct_answer": "A",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/86d6_image-removebg-preview--2817-29.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/a138_image-removebg-preview--286-29.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "C",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/0269_image-removebg-preview--281-29.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 9194,
-              "question_id": 314260,
-              "question_folder": "Kĩ năng nghe",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-              "comment_plain": "Audio: sleeping: ngủ => Đáp án: B",
-              "correct_answer": "B",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/f805_image-removebg-preview--282-29.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/0269_image-removebg-preview--281-29.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "C",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b04_image-removebg-preview--283-29.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 9194,
-              "question_id": 314264,
-              "question_folder": "Kĩ năng nghe",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-              "comment_plain": "Audio: running: chạy => Đáp án: C",
-              "correct_answer": "C",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/d11a_image-removebg-preview--284-29.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/86d6_image-removebg-preview--2817-29.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "C",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b04_image-removebg-preview--283-29.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 9194,
-              "question_id": 314267,
-              "question_folder": "Kĩ năng nghe",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen, look and choose the correct answer (Con hãy nghe, nhìn tranh và chọn phương án đúng.)",
-              "comment_plain": "Audio: What are you doing? Bạn đang làm g&igrave;? Ảnh: đi bộ = walking => Đáp án: B (T&ocirc;i đang đi bộ.)",
-              "correct_answer": "B. I'm walking.",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/f805_image-removebg-preview--282-29.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A. I'm drinking.",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B. I'm walking.",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "C. I'm eating.",
-                  "image_urls": [],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 9194,
-              "question_id": 314268,
-              "question_folder": "Kĩ năng nghe",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen, look and choose the correct answer (Con hãy nghe, nhìn tranh và chọn phương án đúng.)",
-              "comment_plain": "Audio: What are you doing? Bạn đang làm g&igrave;? Ảnh: chạy = running => Đáp án: C (T&ocirc;i đang chạy.)",
-              "correct_answer": "C. I'm running.",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b04_image-removebg-preview--283-29.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A. I'm sleeping.",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B. I'm eating.",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "C. I'm running.",
-                  "image_urls": [],
-                  "audio_urls": []
-                }
-              ]
-            }
-          ],
-          "luyen_tap": [
-            {
-              "practice_id": 13634,
-              "question_id": 375521,
-              "question_folder": "English Tutoring - Level 3",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
-              "comment_plain": "audio: sleeping: ngủ => Đáp án: A",
-              "correct_answer": "A. TRUE",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/02/10/8864_sleeping.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A. TRUE",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B. FALSE",
-                  "image_urls": [],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 13634,
-              "question_id": 375522,
-              "question_folder": "English Tutoring - Level 3",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
-              "comment_plain": "audio: drinking: uống => Đáp án: B",
-              "correct_answer": "B. FALSE",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://cdn-cf.vuihoc.vn/upload/5c209fe6176b0/2021/12/04/1dd7_eat.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A. TRUE",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B. FALSE",
-                  "image_urls": [],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 13634,
-              "question_id": 375523,
-              "question_folder": "English Tutoring - Level 3",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
-              "comment_plain": "audio: I&#39;m running: T&ocirc;i đang chạy. => Đáp án: B",
-              "correct_answer": "B. FALSE",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/3fc2_drinking.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A. TRUE",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B. FALSE",
-                  "image_urls": [],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 13634,
-              "question_id": 375534,
-              "question_folder": "English Tutoring - Level 3",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
-              "comment_plain": "audio: Are you walking? Yes, I am: Bạn c&oacute; đang đi bộ kh&ocirc;ng? C&oacute;, t&ocirc;i c&oacute;. => Đáp án: A",
-              "correct_answer": "A. TRUE",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/02/10/badf_boy_walking_the_dog.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A. TRUE",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B. FALSE",
-                  "image_urls": [],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 13634,
-              "question_id": 375536,
-              "question_folder": "English Tutoring - Level 3",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn phương án đúng.)",
-              "comment_plain": "audio: eating => Đáp án: C",
-              "correct_answer": "C. eating",
-              "student_answer": null,
-              "requires_media": false,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A. drinking",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B. sleeping",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "C. eating",
-                  "image_urls": [],
-                  "audio_urls": []
-                }
-              ]
-            }
-          ]
-        }
       }
     },
     {
@@ -16885,35 +15696,35 @@
       }
     },
     {
-      "lesson_id": 3850727,
+      "lesson_id": 3850725,
       "program_id": null,
       "level": 3,
-      "position": 21,
-      "title": "Unit 4B: Things we do - Lesson 3: What are they doing?",
-      "desc": "- Review words from L2\n- Actions: riding a bike, playing football, doing yoga \n- What are they doing? They're riding a bike.\n- Are they riding bikes? Yes, they are./ No, they aren't. They're playing f",
+      "position": 19,
+      "title": "Unit 4B: Things we do - Lesson 1: What are you doing?",
+      "desc": "- Actions: eating, drinking, sleeping, walking, running\n- What are you doing? I'm eating.",
       "status": "in_class_only",
-      "last_activity_date": "2026-04-15",
-      "days_since_last_practice": 6,
-      "forgetting_score": 0.9975,
-      "weakness_score": 0.5284,
-      "composite_priority_score": 0.763,
+      "last_activity_date": "2026-04-08",
+      "days_since_last_practice": 13,
+      "forgetting_score": 0.8439,
+      "weakness_score": 0.6574,
+      "composite_priority_score": 0.7507,
       "in_class": {
         "participated": true,
         "session_count": 1,
         "session_metrics": {
-          "cups": 10,
-          "audio_turns": 42,
-          "avg_reaction_ms": 1963,
-          "fastest_reaction_ms": 724,
-          "total_duration_ms": 46006,
+          "cups": 11,
+          "audio_turns": 53,
+          "avg_reaction_ms": 2380,
+          "fastest_reaction_ms": 1250,
+          "total_duration_ms": 112791,
           "session_status": "COMPLETED",
           "completion_pct": 71
         },
         "is_completed": true,
         "completion_pct": 71,
-        "latest_session_date": "2026-04-15",
-        "pronunciation_attempts": 19,
-        "pronunciation_score_avg": 47.16,
+        "latest_session_date": "2026-04-08",
+        "pronunciation_attempts": 31,
+        "pronunciation_score_avg": 34.26,
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
@@ -16929,8 +15740,8 @@
         "bai_tap": null,
         "luyen_tap": null,
         "lms_ids": {
-          "bai_tap": 9213,
-          "luyen_tap": 13509
+          "bai_tap": 9194,
+          "luyen_tap": 13634
         },
         "skill_breakdown": {},
         "weak_skills": [],
@@ -16938,253 +15749,13 @@
         "not_attempted_preview": {
           "bai_tap": [
             {
-              "practice_id": 9213,
-              "question_id": 314612,
+              "practice_id": 9194,
+              "question_id": 314258,
               "question_folder": "Kĩ năng nghe",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
-              "comment_plain": "Audio: What is she doing? She is doing yoga C&ocirc; ấy đang làm g&igrave;? C&ocirc; ấy đang tập yoga. => Đáp án: A",
-              "correct_answer": "A. TRUE",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b80_image-removebg-preview--2828-29.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A. TRUE",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B. FALSE",
-                  "image_urls": [],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 9213,
-              "question_id": 314613,
-              "question_folder": "Kĩ năng nghe",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
-              "comment_plain": "Audio: Are they riding bikes? Yes, they are. Họ c&oacute; đang đi xe đạp kh&ocirc;ng? C&oacute;, họ c&oacute;. => Đáp án: A",
-              "correct_answer": "A. TRUE",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/39ea_image-removebg-preview--2829-29.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A. TRUE",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B. FALSE",
-                  "image_urls": [],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 9213,
-              "question_id": 314614,
-              "question_folder": "Kĩ năng nghe",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
-              "comment_plain": "Audio: What is he doing? He&#39;s playing football. Anh ấy đang làm g&igrave;? Anh ấy đang chơi đá b&oacute;ng. => Đáp án: B",
-              "correct_answer": "B. FALSE",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/65ec_image-removebg-preview--2830-29.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A. TRUE",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B. FALSE",
-                  "image_urls": [],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 9213,
-              "question_id": 314615,
-              "question_folder": "Kĩ năng nghe",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct word (Con hãy nghe và chọn từ đúng.) They're ...... .",
-              "comment_plain": "Audio: They&#39;re riding bikes. => Đáp án: B",
-              "correct_answer": "B. riding bikes",
-              "student_answer": null,
-              "requires_media": false,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A. doing yoga",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B. riding bikes",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "C. playing football",
-                  "image_urls": [],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 9213,
-              "question_id": 314616,
-              "question_folder": "Kĩ năng nghe",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct word (Con hãy nghe và chọn từ đúng.) What is he doing? He's ...... .",
-              "comment_plain": "Audio: What is he doing? He&#39;s playing football. => Đáp án: A",
-              "correct_answer": "A. playing football",
-              "student_answer": null,
-              "requires_media": false,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A. playing football",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B. doing yoga",
-                  "image_urls": [],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "C. riding a bike",
-                  "image_urls": [],
-                  "audio_urls": []
-                }
-              ]
-            }
-          ],
-          "luyen_tap": [
-            {
-              "practice_id": 13509,
-              "question_id": 374227,
-              "question_folder": "English Tutoring - Level 3",
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-              "comment_plain": "audio: playing football: chơi đá b&oacute;ng => Đáp án: C",
-              "correct_answer": "C",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/09/4b13_riding-a-bike.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/09/aff7_doing-yoga--281-29.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "C",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/09/6f32_playing-football.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 13509,
-              "question_id": 374930,
-              "question_folder": "English Tutoring - Level 3",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-              "comment_plain": "audio: doing yoga: tập yoga => Đáp án: C",
-              "correct_answer": "C",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/09/d1d5_talking.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/09/fcf9_swim.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "C",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/09/aff7_doing-yoga--281-29.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 13509,
-              "question_id": 374934,
-              "question_folder": "English Tutoring - Level 3",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-              "comment_plain": "audio: What are they doing? They&#39;re dancing: Họ đang làm g&igrave;? Họ đang nhảy. => Đáp án: A",
+              "comment_plain": "Audio: eating: ăn => Đáp án: A",
               "correct_answer": "A",
               "student_answer": null,
               "requires_media": true,
@@ -17195,7 +15766,7 @@
                   "letter": "A",
                   "text": "A",
                   "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/def8_dancing--281-29.png"
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/86d6_image-removebg-preview--2817-29.png"
                   ],
                   "audio_urls": []
                 },
@@ -17203,7 +15774,7 @@
                   "letter": "B",
                   "text": "B",
                   "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/09/670d_people-singing.png"
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/a138_image-removebg-preview--286-29.png"
                   ],
                   "audio_urls": []
                 },
@@ -17211,20 +15782,20 @@
                   "letter": "C",
                   "text": "C",
                   "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/735a_playing-football--281-29.png"
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/0269_image-removebg-preview--281-29.png"
                   ],
                   "audio_urls": []
                 }
               ]
             },
             {
-              "practice_id": 13509,
-              "question_id": 374941,
-              "question_folder": "English Tutoring - Level 3",
+              "practice_id": 9194,
+              "question_id": 314260,
+              "question_folder": "Kĩ năng nghe",
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-              "comment_plain": "audio: What is he doing? He&#39;s riding a bike: Anh ấy đang làm g&igrave;? Anh ấy đang đạp xe đạp. => Đáp án: B",
+              "comment_plain": "Audio: sleeping: ngủ => Đáp án: B",
               "correct_answer": "B",
               "student_answer": null,
               "requires_media": true,
@@ -17235,7 +15806,7 @@
                   "letter": "A",
                   "text": "A",
                   "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/fdf4_dancing-boy.png"
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/f805_image-removebg-preview--282-29.png"
                   ],
                   "audio_urls": []
                 },
@@ -17243,7 +15814,7 @@
                   "letter": "B",
                   "text": "B",
                   "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/b5bc_riding-boy.png"
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/0269_image-removebg-preview--281-29.png"
                   ],
                   "audio_urls": []
                 },
@@ -17251,21 +15822,255 @@
                   "letter": "C",
                   "text": "C",
                   "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/de68_singing-boy.png"
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b04_image-removebg-preview--283-29.png"
                   ],
                   "audio_urls": []
                 }
               ]
             },
             {
-              "practice_id": 13509,
-              "question_id": 374947,
+              "practice_id": 9194,
+              "question_id": 314264,
+              "question_folder": "Kĩ năng nghe",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+              "comment_plain": "Audio: running: chạy => Đáp án: C",
+              "correct_answer": "C",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/d11a_image-removebg-preview--284-29.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/86d6_image-removebg-preview--2817-29.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "C",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b04_image-removebg-preview--283-29.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 9194,
+              "question_id": 314267,
+              "question_folder": "Kĩ năng nghe",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen, look and choose the correct answer (Con hãy nghe, nhìn tranh và chọn phương án đúng.)",
+              "comment_plain": "Audio: What are you doing? Bạn đang làm g&igrave;? Ảnh: đi bộ = walking => Đáp án: B (T&ocirc;i đang đi bộ.)",
+              "correct_answer": "B. I'm walking.",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/f805_image-removebg-preview--282-29.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A. I'm drinking.",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B. I'm walking.",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "C. I'm eating.",
+                  "image_urls": [],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 9194,
+              "question_id": 314268,
+              "question_folder": "Kĩ năng nghe",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen, look and choose the correct answer (Con hãy nghe, nhìn tranh và chọn phương án đúng.)",
+              "comment_plain": "Audio: What are you doing? Bạn đang làm g&igrave;? Ảnh: chạy = running => Đáp án: C (T&ocirc;i đang chạy.)",
+              "correct_answer": "C. I'm running.",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b04_image-removebg-preview--283-29.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A. I'm sleeping.",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B. I'm eating.",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "C. I'm running.",
+                  "image_urls": [],
+                  "audio_urls": []
+                }
+              ]
+            }
+          ],
+          "luyen_tap": [
+            {
+              "practice_id": 13634,
+              "question_id": 375521,
               "question_folder": "English Tutoring - Level 3",
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
-              "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn phương án đúng.) Is he dancing? - ...",
-              "comment_plain": "audio: Is he dancing? No, he isn&#39;t. => Đáp án: B",
-              "correct_answer": "B. No, he isn't.",
+              "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
+              "comment_plain": "audio: sleeping: ngủ => Đáp án: A",
+              "correct_answer": "A. TRUE",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/02/10/8864_sleeping.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A. TRUE",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B. FALSE",
+                  "image_urls": [],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 13634,
+              "question_id": 375522,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
+              "comment_plain": "audio: drinking: uống => Đáp án: B",
+              "correct_answer": "B. FALSE",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://cdn-cf.vuihoc.vn/upload/5c209fe6176b0/2021/12/04/1dd7_eat.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A. TRUE",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B. FALSE",
+                  "image_urls": [],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 13634,
+              "question_id": 375523,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
+              "comment_plain": "audio: I&#39;m running: T&ocirc;i đang chạy. => Đáp án: B",
+              "correct_answer": "B. FALSE",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/3fc2_drinking.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A. TRUE",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B. FALSE",
+                  "image_urls": [],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 13634,
+              "question_id": 375534,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
+              "comment_plain": "audio: Are you walking? Yes, I am: Bạn c&oacute; đang đi bộ kh&ocirc;ng? C&oacute;, t&ocirc;i c&oacute;. => Đáp án: A",
+              "correct_answer": "A. TRUE",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/02/10/badf_boy_walking_the_dog.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A. TRUE",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B. FALSE",
+                  "image_urls": [],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 13634,
+              "question_id": 375536,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn phương án đúng.)",
+              "comment_plain": "audio: eating => Đáp án: C",
+              "correct_answer": "C. eating",
               "student_answer": null,
               "requires_media": false,
               "stem_media_urls": [],
@@ -17273,19 +16078,19 @@
               "choice_previews": [
                 {
                   "letter": "A",
-                  "text": "A. No, he is.",
+                  "text": "A. drinking",
                   "image_urls": [],
                   "audio_urls": []
                 },
                 {
                   "letter": "B",
-                  "text": "B. No, he isn't.",
+                  "text": "B. sleeping",
                   "image_urls": [],
                   "audio_urls": []
                 },
                 {
                   "letter": "C",
-                  "text": "C. Yes, he is.",
+                  "text": "C. eating",
                   "image_urls": [],
                   "audio_urls": []
                 }
@@ -17574,6 +16379,97 @@
       }
     },
     {
+      "lesson_id": 3618658,
+      "program_id": null,
+      "level": 3,
+      "position": 19,
+      "title": "Unit 4A: Home - Lesson 1: Where's the sofa?",
+      "desc": "- Rooms: living room, bedroom, bathroom, kitchen\n - Furniture: sofa, table, lamp\n- What's this? It's a sofa/ a living room.\n - Where's the sofa? It's in the living room.",
+      "status": "completed",
+      "last_activity_date": "2026-01-07",
+      "days_since_last_practice": 104,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.4148,
+      "composite_priority_score": 0.7074,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "session_metrics": {
+          "cups": null,
+          "audio_turns": 63,
+          "avg_reaction_ms": 1514,
+          "fastest_reaction_ms": 845,
+          "total_duration_ms": 9202,
+          "session_status": "IN_PROGRESS",
+          "completion_pct": 14
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-01-07",
+        "pronunciation_attempts": 25,
+        "pronunciation_score_avg": 58.52,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 7,
+        "conversation_score_avg": 79.83,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Cool! Do you like to play in your bedroom?🧸",
+            "expected_answer": "Yes, I like to play in my bedroom.",
+            "target_objects": null,
+            "user_transcript": "Yeah, I keep.",
+            "score": 66,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 32,
+            "timestamp": "2026-01-05",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk1889z3-01694522-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Wonderful! Is your bathroom next to your bedroom? 🛏️",
+            "expected_answer": "Yes, it is.",
+            "target_objects": null,
+            "user_transcript": "Yes, it is your bedroom.",
+            "score": 65,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 61,
+            "grammar_score": 69,
+            "timestamp": "2026-01-05",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk188235-807756ad-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 7957,
+          "score": null,
+          "correct": 0,
+          "total": 20,
+          "submitted_date": "2026-01-05"
+        },
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 7957,
+          "luyen_tap": 13430
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3850722,
       "program_id": null,
       "level": 3,
@@ -17583,9 +16479,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-30",
       "days_since_last_practice": 22,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9568,
       "weakness_score": 0.4494,
-      "composite_priority_score": 0.7247,
+      "composite_priority_score": 0.7031,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -17991,97 +16887,6 @@
             }
           ]
         }
-      }
-    },
-    {
-      "lesson_id": 3618658,
-      "program_id": null,
-      "level": 3,
-      "position": 19,
-      "title": "Unit 4A: Home - Lesson 1: Where's the sofa?",
-      "desc": "- Rooms: living room, bedroom, bathroom, kitchen\n - Furniture: sofa, table, lamp\n- What's this? It's a sofa/ a living room.\n - Where's the sofa? It's in the living room.",
-      "status": "completed",
-      "last_activity_date": "2026-01-07",
-      "days_since_last_practice": 104,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.4148,
-      "composite_priority_score": 0.7074,
-      "in_class": {
-        "participated": true,
-        "session_count": 2,
-        "session_metrics": {
-          "cups": null,
-          "audio_turns": 63,
-          "avg_reaction_ms": 1514,
-          "fastest_reaction_ms": 845,
-          "total_duration_ms": 9202,
-          "session_status": "IN_PROGRESS",
-          "completion_pct": 14
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-01-07",
-        "pronunciation_attempts": 25,
-        "pronunciation_score_avg": 58.52,
-        "free_speaking_attempts": 0,
-        "free_speaking_score_avg": null,
-        "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 0,
-        "brainstorm_score_avg": null,
-        "brainstorm_answer_type_dist": {},
-        "conversation_attempts": 7,
-        "conversation_score_avg": 79.83,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Cool! Do you like to play in your bedroom?🧸",
-            "expected_answer": "Yes, I like to play in my bedroom.",
-            "target_objects": null,
-            "user_transcript": "Yeah, I keep.",
-            "score": 66,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 32,
-            "timestamp": "2026-01-05",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk1889z3-01694522-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Wonderful! Is your bathroom next to your bedroom? 🛏️",
-            "expected_answer": "Yes, it is.",
-            "target_objects": null,
-            "user_transcript": "Yes, it is your bedroom.",
-            "score": 65,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 61,
-            "grammar_score": 69,
-            "timestamp": "2026-01-05",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk188235-807756ad-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 7957,
-          "score": null,
-          "correct": 0,
-          "total": 20,
-          "submitted_date": "2026-01-05"
-        },
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": 7957,
-          "luyen_tap": 13430
-        },
-        "skill_breakdown": {},
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
       }
     },
     {
@@ -19953,35 +18758,35 @@
       }
     },
     {
-      "lesson_id": 3850728,
+      "lesson_id": 3850727,
       "program_id": null,
       "level": 3,
-      "position": 22,
-      "title": "Unit 4B: Things we do - Lesson 4: What is he doing?",
-      "desc": "- Review words from L3 + some of L1 or L2:\nriding a bike, playing football, doing yoga, eating, drinking, sleeping\n- consonant: /dʒ/ (jacket, jeans: Jack is wearing a jacket and jeans.)\n- What is he d",
+      "position": 21,
+      "title": "Unit 4B: Things we do - Lesson 3: What are they doing?",
+      "desc": "- Review words from L2\n- Actions: riding a bike, playing football, doing yoga \n- What are they doing? They're riding a bike.\n- Are they riding bikes? Yes, they are./ No, they aren't. They're playing f",
       "status": "in_class_only",
-      "last_activity_date": "2026-04-20",
-      "days_since_last_practice": 1,
-      "forgetting_score": 0.6321,
-      "weakness_score": 0.4696,
-      "composite_priority_score": 0.5509,
+      "last_activity_date": "2026-04-15",
+      "days_since_last_practice": 6,
+      "forgetting_score": 0.5756,
+      "weakness_score": 0.5284,
+      "composite_priority_score": 0.552,
       "in_class": {
         "participated": true,
         "session_count": 1,
         "session_metrics": {
-          "cups": 15,
-          "audio_turns": 44,
-          "avg_reaction_ms": 1601,
-          "fastest_reaction_ms": 481,
-          "total_duration_ms": 215269,
+          "cups": 10,
+          "audio_turns": 42,
+          "avg_reaction_ms": 1963,
+          "fastest_reaction_ms": 724,
+          "total_duration_ms": 46006,
           "session_status": "COMPLETED",
           "completion_pct": 71
         },
         "is_completed": true,
         "completion_pct": 71,
-        "latest_session_date": "2026-04-20",
-        "pronunciation_attempts": 24,
-        "pronunciation_score_avg": 53.04,
+        "latest_session_date": "2026-04-15",
+        "pronunciation_attempts": 19,
+        "pronunciation_score_avg": 47.16,
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
@@ -19997,8 +18802,8 @@
         "bai_tap": null,
         "luyen_tap": null,
         "lms_ids": {
-          "bai_tap": 9214,
-          "luyen_tap": 13510
+          "bai_tap": 9213,
+          "luyen_tap": 13509
         },
         "skill_breakdown": {},
         "weak_skills": [],
@@ -20006,13 +18811,43 @@
         "not_attempted_preview": {
           "bai_tap": [
             {
-              "practice_id": 9214,
-              "question_id": 314647,
+              "practice_id": 9213,
+              "question_id": 314612,
               "question_folder": "Kĩ năng nghe",
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
-              "comment_plain": "Audio: What are they doing? They&#39;re riding bikes. Họ đang làm g&igrave;? Họ đang đi xe đạp. => Đáp án: A",
+              "comment_plain": "Audio: What is she doing? She is doing yoga C&ocirc; ấy đang làm g&igrave;? C&ocirc; ấy đang tập yoga. => Đáp án: A",
+              "correct_answer": "A. TRUE",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b80_image-removebg-preview--2828-29.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A. TRUE",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B. FALSE",
+                  "image_urls": [],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 9213,
+              "question_id": 314613,
+              "question_folder": "Kĩ năng nghe",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
+              "comment_plain": "Audio: Are they riding bikes? Yes, they are. Họ c&oacute; đang đi xe đạp kh&ocirc;ng? C&oacute;, họ c&oacute;. => Đáp án: A",
               "correct_answer": "A. TRUE",
               "student_answer": null,
               "requires_media": true,
@@ -20036,18 +18871,18 @@
               ]
             },
             {
-              "practice_id": 9214,
-              "question_id": 314648,
+              "practice_id": 9213,
+              "question_id": 314614,
               "question_folder": "Kĩ năng nghe",
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
               "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
-              "comment_plain": "Audio: Is she doing yoga? Yes, she is. C&ocirc; ấy c&oacute; đang tập yoga kh&ocirc;ng? C&oacute;, c&ocirc; ấy c&oacute;. => Đáp án: B",
+              "comment_plain": "Audio: What is he doing? He&#39;s playing football. Anh ấy đang làm g&igrave;? Anh ấy đang chơi đá b&oacute;ng. => Đáp án: B",
               "correct_answer": "B. FALSE",
               "student_answer": null,
               "requires_media": true,
               "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/89df_capture.png"
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/65ec_image-removebg-preview--2830-29.png"
               ],
               "comment_media_urls": [],
               "choice_previews": [
@@ -20066,111 +18901,69 @@
               ]
             },
             {
-              "practice_id": 9214,
-              "question_id": 314649,
+              "practice_id": 9213,
+              "question_id": 314615,
               "question_folder": "Kĩ năng nghe",
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
-              "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
-              "comment_plain": "Audio: Is he playing football? Yes, he is. Anh ấy c&oacute; đang chơi đá b&oacute;ng kh&ocirc;ng? C&oacute;, anh ấy c&oacute;. => Đáp án: A",
-              "correct_answer": "A. TRUE",
+              "question_text": "Listen and choose the correct word (Con hãy nghe và chọn từ đúng.) They're ...... .",
+              "comment_plain": "Audio: They&#39;re riding bikes. => Đáp án: B",
+              "correct_answer": "B. riding bikes",
               "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/ca9c_image-removebg-preview--2869-29.png"
-              ],
+              "requires_media": false,
+              "stem_media_urls": [],
               "comment_media_urls": [],
               "choice_previews": [
                 {
                   "letter": "A",
-                  "text": "A. TRUE",
+                  "text": "A. doing yoga",
                   "image_urls": [],
                   "audio_urls": []
                 },
                 {
                   "letter": "B",
-                  "text": "B. FALSE",
+                  "text": "B. riding bikes",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "C. playing football",
                   "image_urls": [],
                   "audio_urls": []
                 }
               ]
             },
             {
-              "practice_id": 9214,
-              "question_id": 314650,
+              "practice_id": 9213,
+              "question_id": 314616,
               "question_folder": "Kĩ năng nghe",
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
-              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-              "comment_plain": "Audio: They are eating: Họ đang ăn. => Đáp án: C",
-              "correct_answer": "C.",
+              "question_text": "Listen and choose the correct word (Con hãy nghe và chọn từ đúng.) What is he doing? He's ...... .",
+              "comment_plain": "Audio: What is he doing? He&#39;s playing football. => Đáp án: A",
+              "correct_answer": "A. playing football",
               "student_answer": null,
-              "requires_media": true,
+              "requires_media": false,
               "stem_media_urls": [],
               "comment_media_urls": [],
               "choice_previews": [
                 {
                   "letter": "A",
-                  "text": "A.",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/6293_image-removebg-preview--287-29.png"
-                  ],
+                  "text": "A. playing football",
+                  "image_urls": [],
                   "audio_urls": []
                 },
                 {
                   "letter": "B",
-                  "text": "B.",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/86d6_image-removebg-preview--2817-29.png"
-                  ],
+                  "text": "B. doing yoga",
+                  "image_urls": [],
                   "audio_urls": []
                 },
                 {
                   "letter": "C",
-                  "text": "C.",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/b702_image-removebg-preview--2866-29.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 9214,
-              "question_id": 314651,
-              "question_folder": "Kĩ năng nghe",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
-              "comment_plain": "Audio: She is playing football: C&ocirc; ấy đang chơi đá b&oacute;ng. => Đáp án: B",
-              "correct_answer": "B",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b80_image-removebg-preview--2828-29.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "B",
-                  "text": "B",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/b3ae_image-removebg-preview--2867-29.png"
-                  ],
-                  "audio_urls": []
-                },
-                {
-                  "letter": "C",
-                  "text": "C",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/cad9_image-removebg-preview--285-29.png"
-                  ],
+                  "text": "C. riding a bike",
+                  "image_urls": [],
                   "audio_urls": []
                 }
               ]
@@ -20178,26 +18971,24 @@
           ],
           "luyen_tap": [
             {
-              "practice_id": 13510,
-              "question_id": 374228,
+              "practice_id": 13509,
+              "question_id": 374227,
               "question_folder": "English Tutoring - Level 3",
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
-              "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
-              "comment_plain": "audio: riding a bike: đạp xe đạp => Đáp án: B",
-              "correct_answer": "B",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+              "comment_plain": "audio: playing football: chơi đá b&oacute;ng => Đáp án: C",
+              "correct_answer": "C",
               "student_answer": null,
               "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/09/aff7_doing-yoga--281-29.png"
-              ],
+              "stem_media_urls": [],
               "comment_media_urls": [],
               "choice_previews": [
                 {
                   "letter": "A",
                   "text": "A",
                   "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/09/4b13_riding-a-bike.png"
                   ],
                   "audio_urls": []
                 },
@@ -20205,33 +18996,79 @@
                   "letter": "B",
                   "text": "B",
                   "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/09/aff7_doing-yoga--281-29.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "C",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/09/6f32_playing-football.png"
                   ],
                   "audio_urls": []
                 }
               ]
             },
             {
-              "practice_id": 13510,
-              "question_id": 374967,
+              "practice_id": 13509,
+              "question_id": 374930,
               "question_folder": "English Tutoring - Level 3",
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
-              "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
-              "comment_plain": "audio: sleeping: ngủ => Đáp án: A",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+              "comment_plain": "audio: doing yoga: tập yoga => Đáp án: C",
+              "correct_answer": "C",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/09/d1d5_talking.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/09/fcf9_swim.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "C",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/09/aff7_doing-yoga--281-29.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 13509,
+              "question_id": 374934,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+              "comment_plain": "audio: What are they doing? They&#39;re dancing: Họ đang làm g&igrave;? Họ đang nhảy. => Đáp án: A",
               "correct_answer": "A",
               "student_answer": null,
               "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/c9fc_sleeping.png"
-              ],
+              "stem_media_urls": [],
               "comment_media_urls": [],
               "choice_previews": [
                 {
                   "letter": "A",
                   "text": "A",
                   "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/def8_dancing--281-29.png"
                   ],
                   "audio_urls": []
                 },
@@ -20239,33 +19076,39 @@
                   "letter": "B",
                   "text": "B",
                   "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/09/670d_people-singing.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "C",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/735a_playing-football--281-29.png"
                   ],
                   "audio_urls": []
                 }
               ]
             },
             {
-              "practice_id": 13510,
-              "question_id": 374971,
+              "practice_id": 13509,
+              "question_id": 374941,
               "question_folder": "English Tutoring - Level 3",
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
-              "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
-              "comment_plain": "audio: They&#39;re drinking: Họ đang uống. => Đáp án: B",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+              "comment_plain": "audio: What is he doing? He&#39;s riding a bike: Anh ấy đang làm g&igrave;? Anh ấy đang đạp xe đạp. => Đáp án: B",
               "correct_answer": "B",
               "student_answer": null,
               "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/a4cd_eating-people.png"
-              ],
+              "stem_media_urls": [],
               "comment_media_urls": [],
               "choice_previews": [
                 {
                   "letter": "A",
                   "text": "A",
                   "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/fdf4_dancing-boy.png"
                   ],
                   "audio_urls": []
                 },
@@ -20273,77 +19116,49 @@
                   "letter": "B",
                   "text": "B",
                   "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
-                  ],
-                  "audio_urls": []
-                }
-              ]
-            },
-            {
-              "practice_id": 13510,
-              "question_id": 374973,
-              "question_folder": "English Tutoring - Level 3",
-              "question_type": "Một lựa chọn",
-              "status": "not_attempted",
-              "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
-              "comment_plain": "audio: What is he doing? He&#39;s playing football: Anh ấy đang làm g&igrave;? Anh ấy đang chơi đá b&oacute;ng. => Đáp án: B",
-              "correct_answer": "B",
-              "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/b5bc_riding-boy.png"
-              ],
-              "comment_media_urls": [],
-              "choice_previews": [
-                {
-                  "letter": "A",
-                  "text": "A",
-                  "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/b5bc_riding-boy.png"
                   ],
                   "audio_urls": []
                 },
                 {
-                  "letter": "B",
-                  "text": "B",
+                  "letter": "C",
+                  "text": "C",
                   "image_urls": [
-                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/de68_singing-boy.png"
                   ],
                   "audio_urls": []
                 }
               ]
             },
             {
-              "practice_id": 13510,
-              "question_id": 374978,
+              "practice_id": 13509,
+              "question_id": 374947,
               "question_folder": "English Tutoring - Level 3",
               "question_type": "Một lựa chọn",
               "status": "not_attempted",
-              "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn phương án đúng.)",
-              "comment_plain": "audio: What is he doing? Anh ấy đang làm g&igrave;? Ảnh: ăn = eating => Đáp án: C",
-              "correct_answer": "C. He's eating.",
+              "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn phương án đúng.) Is he dancing? - ...",
+              "comment_plain": "audio: Is he dancing? No, he isn&#39;t. => Đáp án: B",
+              "correct_answer": "B. No, he isn't.",
               "student_answer": null,
-              "requires_media": true,
-              "stem_media_urls": [
-                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/461f_eating.png"
-              ],
+              "requires_media": false,
+              "stem_media_urls": [],
               "comment_media_urls": [],
               "choice_previews": [
                 {
                   "letter": "A",
-                  "text": "A. He's drinking.",
+                  "text": "A. No, he is.",
                   "image_urls": [],
                   "audio_urls": []
                 },
                 {
                   "letter": "B",
-                  "text": "B. He's sleeping.",
+                  "text": "B. No, he isn't.",
                   "image_urls": [],
                   "audio_urls": []
                 },
                 {
                   "letter": "C",
-                  "text": "C. He's eating.",
+                  "text": "C. Yes, he is.",
                   "image_urls": [],
                   "audio_urls": []
                 }
@@ -21239,9 +20054,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-02",
       "days_since_last_practice": 50,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9992,
       "weakness_score": 0.0,
-      "composite_priority_score": 0.5,
+      "composite_priority_score": 0.4996,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -21656,9 +20471,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-04",
       "days_since_last_practice": 48,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9989,
       "weakness_score": 0.0,
-      "composite_priority_score": 0.5,
+      "composite_priority_score": 0.4995,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -22091,9 +20906,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-06",
       "days_since_last_practice": 15,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8827,
       "weakness_score": 0.0,
-      "composite_priority_score": 0.5,
+      "composite_priority_score": 0.4414,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -22508,9 +21323,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-14",
       "days_since_last_practice": 7,
-      "forgetting_score": 0.9991,
+      "forgetting_score": 0.6321,
       "weakness_score": 0.0,
-      "composite_priority_score": 0.4995,
+      "composite_priority_score": 0.316,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -22931,6 +21746,407 @@
                   "image_urls": [
                     "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
                   ],
+                  "audio_urls": []
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "lesson_id": 3850728,
+      "program_id": null,
+      "level": 3,
+      "position": 22,
+      "title": "Unit 4B: Things we do - Lesson 4: What is he doing?",
+      "desc": "- Review words from L3 + some of L1 or L2:\nriding a bike, playing football, doing yoga, eating, drinking, sleeping\n- consonant: /dʒ/ (jacket, jeans: Jack is wearing a jacket and jeans.)\n- What is he d",
+      "status": "in_class_only",
+      "last_activity_date": "2026-04-20",
+      "days_since_last_practice": 1,
+      "forgetting_score": 0.1331,
+      "weakness_score": 0.4696,
+      "composite_priority_score": 0.3014,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 15,
+          "audio_turns": 44,
+          "avg_reaction_ms": 1601,
+          "fastest_reaction_ms": 481,
+          "total_duration_ms": 215269,
+          "session_status": "COMPLETED",
+          "completion_pct": 71
+        },
+        "is_completed": true,
+        "completion_pct": 71,
+        "latest_session_date": "2026-04-20",
+        "pronunciation_attempts": 24,
+        "pronunciation_score_avg": 53.04,
+        "free_speaking_attempts": 0,
+        "free_speaking_score_avg": null,
+        "free_speaking_answer_type_dist": {},
+        "brainstorm_attempts": 0,
+        "brainstorm_score_avg": null,
+        "brainstorm_answer_type_dist": {},
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
+        "worst_speaking_items": []
+      },
+      "homework": {
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
+        "lms_ids": {
+          "bai_tap": 9214,
+          "luyen_tap": 13510
+        },
+        "skill_breakdown": {},
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {
+          "bai_tap": [
+            {
+              "practice_id": 9214,
+              "question_id": 314647,
+              "question_folder": "Kĩ năng nghe",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
+              "comment_plain": "Audio: What are they doing? They&#39;re riding bikes. Họ đang làm g&igrave;? Họ đang đi xe đạp. => Đáp án: A",
+              "correct_answer": "A. TRUE",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/39ea_image-removebg-preview--2829-29.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A. TRUE",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B. FALSE",
+                  "image_urls": [],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 9214,
+              "question_id": 314648,
+              "question_folder": "Kĩ năng nghe",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
+              "comment_plain": "Audio: Is she doing yoga? Yes, she is. C&ocirc; ấy c&oacute; đang tập yoga kh&ocirc;ng? C&oacute;, c&ocirc; ấy c&oacute;. => Đáp án: B",
+              "correct_answer": "B. FALSE",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/89df_capture.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A. TRUE",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B. FALSE",
+                  "image_urls": [],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 9214,
+              "question_id": 314649,
+              "question_folder": "Kĩ năng nghe",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose True or False (Con hãy nghe và chọn đúng hoặc sai.)",
+              "comment_plain": "Audio: Is he playing football? Yes, he is. Anh ấy c&oacute; đang chơi đá b&oacute;ng kh&ocirc;ng? C&oacute;, anh ấy c&oacute;. => Đáp án: A",
+              "correct_answer": "A. TRUE",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/ca9c_image-removebg-preview--2869-29.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A. TRUE",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B. FALSE",
+                  "image_urls": [],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 9214,
+              "question_id": 314650,
+              "question_folder": "Kĩ năng nghe",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+              "comment_plain": "Audio: They are eating: Họ đang ăn. => Đáp án: C",
+              "correct_answer": "C.",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A.",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/6293_image-removebg-preview--287-29.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B.",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/86d6_image-removebg-preview--2817-29.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "C.",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/b702_image-removebg-preview--2866-29.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 9214,
+              "question_id": 314651,
+              "question_folder": "Kĩ năng nghe",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct picture (Con hãy nghe và chọn tranh đúng.)",
+              "comment_plain": "Audio: She is playing football: C&ocirc; ấy đang chơi đá b&oacute;ng. => Đáp án: B",
+              "correct_answer": "B",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/3b80_image-removebg-preview--2828-29.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/b3ae_image-removebg-preview--2867-29.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "C",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2022/07/19/cad9_image-removebg-preview--285-29.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            }
+          ],
+          "luyen_tap": [
+            {
+              "practice_id": 13510,
+              "question_id": 374228,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
+              "comment_plain": "audio: riding a bike: đạp xe đạp => Đáp án: B",
+              "correct_answer": "B",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/09/aff7_doing-yoga--281-29.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 13510,
+              "question_id": 374967,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
+              "comment_plain": "audio: sleeping: ngủ => Đáp án: A",
+              "correct_answer": "A",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/c9fc_sleeping.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 13510,
+              "question_id": 374971,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
+              "comment_plain": "audio: They&#39;re drinking: Họ đang uống. => Đáp án: B",
+              "correct_answer": "B",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/a4cd_eating-people.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 13510,
+              "question_id": 374973,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Tick or Cross (Con hãy chọn đúng hoặc sai.)",
+              "comment_plain": "audio: What is he doing? He&#39;s playing football: Anh ấy đang làm g&igrave;? Anh ấy đang chơi đá b&oacute;ng. => Đáp án: B",
+              "correct_answer": "B",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/b5bc_riding-boy.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/6233_tick.png"
+                  ],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B",
+                  "image_urls": [
+                    "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/01/16/8732_cross.png"
+                  ],
+                  "audio_urls": []
+                }
+              ]
+            },
+            {
+              "practice_id": 13510,
+              "question_id": 374978,
+              "question_folder": "English Tutoring - Level 3",
+              "question_type": "Một lựa chọn",
+              "status": "not_attempted",
+              "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn phương án đúng.)",
+              "comment_plain": "audio: What is he doing? Anh ấy đang làm g&igrave;? Ảnh: ăn = eating => Đáp án: C",
+              "correct_answer": "C. He's eating.",
+              "student_answer": null,
+              "requires_media": true,
+              "stem_media_urls": [
+                "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/02/10/461f_eating.png"
+              ],
+              "comment_media_urls": [],
+              "choice_previews": [
+                {
+                  "letter": "A",
+                  "text": "A. He's drinking.",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "B",
+                  "text": "B. He's sleeping.",
+                  "image_urls": [],
+                  "audio_urls": []
+                },
+                {
+                  "letter": "C",
+                  "text": "C. He's eating.",
+                  "image_urls": [],
                   "audio_urls": []
                 }
               ]

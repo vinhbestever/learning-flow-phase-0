@@ -15,6 +15,10 @@
       }
     },
     "weak_skills_global": [],
+    "critical_speaking_types": [
+      "brainstorm",
+      "free_speaking"
+    ],
     "overall_pronunciation_score_avg": 68.84,
     "overall_free_speaking_score_avg": 0.0,
     "overall_brainstorm_score_avg": 6.38,
@@ -27,7 +31,7 @@
       "incorrect": 36,
       "correct": 11
     },
-    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
     {
@@ -36,7 +40,7 @@
       "level": 2,
       "last_activity_date": "2026-02-11",
       "days_since_last_practice": 69,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9999,
       "weakness_score": 1.0,
       "composite_priority_score": 1.0,
       "homework_status": "attempted",
@@ -101,7 +105,7 @@
       "level": 2,
       "last_activity_date": "2026-02-11",
       "days_since_last_practice": 69,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9999,
       "weakness_score": 1.0,
       "composite_priority_score": 1.0,
       "homework_status": "not_attempted",
@@ -351,7 +355,7 @@
       "level": 2,
       "last_activity_date": "2026-02-15",
       "days_since_last_practice": 65,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9999,
       "weakness_score": 1.0,
       "composite_priority_score": 1.0,
       "homework_status": "attempted",
@@ -440,9 +444,9 @@
       "level": 2,
       "last_activity_date": "2026-03-14",
       "days_since_last_practice": 38,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9956,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9978,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1763,42 +1767,6 @@
       }
     },
     {
-      "lesson_id": 3941715,
-      "title": "Unit 1B: Animals - Lesson 1: That is a lion.",
-      "level": 2,
-      "last_activity_date": "2026-04-19",
-      "days_since_last_practice": 2,
-      "forgetting_score": 0.8647,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7265,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "free_speaking",
-          "question": "How are you today?",
-          "expected_answer": null,
-          "target_objects": null,
-          "user_transcript": "Yes, I do I, this is Lion Tiger.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-17",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2yc00a-8d2b3259-audio.wav",
-          "reaction_time_ms": 1383
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 8015,
-        "luyen_tap": 13418
-      }
-    },
-    {
       "lesson_id": 3748408,
       "title": "Unit 3A: Body parts - Lesson 1: This is my arm.",
       "level": 2,
@@ -2159,7 +2127,7 @@
       "status": "completed",
       "last_activity_date": "2026-02-11",
       "days_since_last_practice": 69,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9999,
       "weakness_score": 1.0,
       "composite_priority_score": 1.0,
       "in_class": {
@@ -2268,7 +2236,7 @@
       "status": "in_class_only",
       "last_activity_date": "2026-02-11",
       "days_since_last_practice": 69,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9999,
       "weakness_score": 1.0,
       "composite_priority_score": 1.0,
       "in_class": {
@@ -2730,7 +2698,7 @@
       "status": "in_class_only",
       "last_activity_date": "2026-02-12",
       "days_since_last_practice": 68,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9999,
       "weakness_score": 1.0,
       "composite_priority_score": 1.0,
       "in_class": {
@@ -2875,7 +2843,7 @@
       "status": "completed",
       "last_activity_date": "2026-02-15",
       "days_since_last_practice": 65,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9999,
       "weakness_score": 1.0,
       "composite_priority_score": 1.0,
       "in_class": {
@@ -3009,7 +2977,7 @@
       "status": "in_class_only",
       "last_activity_date": "2026-02-15",
       "days_since_last_practice": 65,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9999,
       "weakness_score": 1.0,
       "composite_priority_score": 1.0,
       "in_class": {
@@ -3123,9 +3091,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-02-21",
       "days_since_last_practice": 59,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9998,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9999,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -3195,9 +3163,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-02-23",
       "days_since_last_practice": 57,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9997,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9999,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -3310,9 +3278,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-04",
       "days_since_last_practice": 48,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9989,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9994,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -3420,9 +3388,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-14",
       "days_since_last_practice": 38,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9956,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9978,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -3561,9 +3529,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-25",
       "days_since_last_practice": 27,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9789,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.9894,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -3720,9 +3688,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-11",
       "days_since_last_practice": 10,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.7603,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.8801,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -3814,103 +3782,6 @@
             "timestamp": "2026-04-11",
             "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/11/admin/mnu9ae7j-8eba55fd-audio.wav",
             "reaction_time_ms": 1888
-          }
-        ]
-      },
-      "homework": {
-        "attempted": false,
-        "bai_tap": null,
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": null,
-          "luyen_tap": null
-        },
-        "skill_breakdown": {},
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 4003075,
-      "program_id": null,
-      "level": null,
-      "position": null,
-      "title": null,
-      "desc": null,
-      "status": "in_class_only",
-      "last_activity_date": "2026-04-19",
-      "days_since_last_practice": 2,
-      "forgetting_score": 0.8647,
-      "weakness_score": 1.0,
-      "composite_priority_score": 0.9324,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 1,
-          "audio_turns": 6,
-          "avg_reaction_ms": 1504,
-          "fastest_reaction_ms": 681,
-          "total_duration_ms": 10585,
-          "session_status": "COMPLETED",
-          "completion_pct": 57
-        },
-        "is_completed": true,
-        "completion_pct": 57,
-        "latest_session_date": "2026-04-19",
-        "pronunciation_attempts": 1,
-        "pronunciation_score_avg": 100.0,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1
-        },
-        "conversation_attempts": 0,
-        "conversation_score_avg": null,
-        "worst_speaking_items": [
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "Frog",
-              "Snake",
-              "Bat"
-            ],
-            "user_transcript": "I see a zebra, I see a monkey, I see a frog.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "zebra",
-              "monkey",
-              "frog"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-19",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5ttb9q-bcbf00ef-audio.wav",
-            "reaction_time_ms": 1645
-          },
-          {
-            "lms_type": "free_speaking",
-            "question": "What do you like to do after school?",
-            "expected_answer": null,
-            "target_objects": null,
-            "user_transcript": "Gueess I see I cell phone.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-19",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5ts4oa-23cb6d38-audio.wav",
-            "reaction_time_ms": 2185
           }
         ]
       },
@@ -6221,42 +6092,42 @@
       }
     },
     {
-      "lesson_id": 3941715,
+      "lesson_id": 4003075,
       "program_id": null,
-      "level": 2,
-      "position": 1,
-      "title": "Unit 1B: Animals - Lesson 1: That is a lion.",
-      "desc": "- wild animals: lion, tiger, bear, zebra\n- Demonstrative pron: this, that.\n- sound /aɪ/ eye, lion\n- What's this/that? This/ That is a lion.",
-      "status": "completed",
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
       "last_activity_date": "2026-04-19",
       "days_since_last_practice": 2,
-      "forgetting_score": 0.8647,
-      "weakness_score": 0.5882,
-      "composite_priority_score": 0.7265,
+      "forgetting_score": 0.2485,
+      "weakness_score": 1.0,
+      "composite_priority_score": 0.6242,
       "in_class": {
         "participated": true,
         "session_count": 1,
         "session_metrics": {
-          "cups": 31,
-          "audio_turns": 10,
-          "avg_reaction_ms": 1047,
-          "fastest_reaction_ms": 630,
-          "total_duration_ms": 8505,
+          "cups": 1,
+          "audio_turns": 6,
+          "avg_reaction_ms": 1504,
+          "fastest_reaction_ms": 681,
+          "total_duration_ms": 10585,
           "session_status": "COMPLETED",
-          "completion_pct": 71
+          "completion_pct": 57
         },
         "is_completed": true,
-        "completion_pct": 71,
-        "latest_session_date": "2026-04-17",
-        "pronunciation_attempts": 8,
-        "pronunciation_score_avg": 84.5,
+        "completion_pct": 57,
+        "latest_session_date": "2026-04-19",
+        "pronunciation_attempts": 1,
+        "pronunciation_score_avg": 100.0,
         "free_speaking_attempts": 1,
         "free_speaking_score_avg": 0.0,
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
         "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 100.0,
+        "brainstorm_score_avg": 0.0,
         "brainstorm_answer_type_dist": {
           "correct": 1
         },
@@ -6264,49 +6135,54 @@
         "conversation_score_avg": null,
         "worst_speaking_items": [
           {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "Frog",
+              "Snake",
+              "Bat"
+            ],
+            "user_transcript": "I see a zebra, I see a monkey, I see a frog.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "zebra",
+              "monkey",
+              "frog"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-19",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5ttb9q-bcbf00ef-audio.wav",
+            "reaction_time_ms": 1645
+          },
+          {
             "lms_type": "free_speaking",
-            "question": "How are you today?",
+            "question": "What do you like to do after school?",
             "expected_answer": null,
             "target_objects": null,
-            "user_transcript": "Yes, I do I, this is Lion Tiger.",
+            "user_transcript": "Gueess I see I cell phone.",
             "score": 0,
             "answer_type": "inaccordant",
             "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
-            "timestamp": "2026-04-17",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2yc00a-8d2b3259-audio.wav",
-            "reaction_time_ms": 1383
+            "timestamp": "2026-04-19",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5ts4oa-23cb6d38-audio.wav",
+            "reaction_time_ms": 2185
           }
         ]
       },
       "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 8015,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-04-19"
-        },
-        "luyen_tap": {
-          "practice_id": 13418,
-          "score": null,
-          "correct": 0,
-          "total": 20,
-          "submitted_date": "2026-04-19"
-        },
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
         "lms_ids": {
-          "bai_tap": 8015,
-          "luyen_tap": 13418
+          "bai_tap": null,
+          "luyen_tap": null
         },
-        "skill_breakdown": {
-          "English Tutoring - Level 2": {
-            "correct": 20,
-            "total": 20,
-            "accuracy": 1.0
-          }
-        },
+        "skill_breakdown": {},
         "weak_skills": [],
         "worst_questions": [],
         "not_attempted_preview": {}
@@ -6745,6 +6621,98 @@
             }
           ]
         }
+      }
+    },
+    {
+      "lesson_id": 3941715,
+      "program_id": null,
+      "level": 2,
+      "position": 1,
+      "title": "Unit 1B: Animals - Lesson 1: That is a lion.",
+      "desc": "- wild animals: lion, tiger, bear, zebra\n- Demonstrative pron: this, that.\n- sound /aɪ/ eye, lion\n- What's this/that? This/ That is a lion.",
+      "status": "completed",
+      "last_activity_date": "2026-04-19",
+      "days_since_last_practice": 2,
+      "forgetting_score": 0.2485,
+      "weakness_score": 0.5882,
+      "composite_priority_score": 0.4183,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 31,
+          "audio_turns": 10,
+          "avg_reaction_ms": 1047,
+          "fastest_reaction_ms": 630,
+          "total_duration_ms": 8505,
+          "session_status": "COMPLETED",
+          "completion_pct": 71
+        },
+        "is_completed": true,
+        "completion_pct": 71,
+        "latest_session_date": "2026-04-17",
+        "pronunciation_attempts": 8,
+        "pronunciation_score_avg": 84.5,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 1,
+        "brainstorm_score_avg": 100.0,
+        "brainstorm_answer_type_dist": {
+          "correct": 1
+        },
+        "conversation_attempts": 0,
+        "conversation_score_avg": null,
+        "worst_speaking_items": [
+          {
+            "lms_type": "free_speaking",
+            "question": "How are you today?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "Yes, I do I, this is Lion Tiger.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-17",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/17/admin/mo2yc00a-8d2b3259-audio.wav",
+            "reaction_time_ms": 1383
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 8015,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-19"
+        },
+        "luyen_tap": {
+          "practice_id": 13418,
+          "score": null,
+          "correct": 0,
+          "total": 20,
+          "submitted_date": "2026-04-19"
+        },
+        "lms_ids": {
+          "bai_tap": 8015,
+          "luyen_tap": 13418
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 2": {
+            "correct": 20,
+            "total": 20,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
       }
     }
   ]

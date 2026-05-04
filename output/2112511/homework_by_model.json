@@ -3,8 +3,8 @@
   "last_run_model": "gpt-5.4",
   "models": {
     "gpt-5.4": {
-      "updated_at": "2026-04-28T02:33:21.451462+00:00",
-      "diagnostic": "Ba mẫu lỗi và rủi ro nghiêm trọng nhất tôi quan sát được là: thứ nhất, rủi ro quên gần như hoàn toàn ở nhiều bài rất cũ, đặc biệt có 3 bài chưa nộp homework thuộc Unit 1A: Toys sau hơn 100 ngày nên hiện không có bằng chứng ghi nhớ sau lớp học; thứ hai, điểm nói tự tạo rất yếu, nhất là brainstorm trung bình chỉ 10.81/100 và free speaking chỉ 31.82/100, cho thấy học sinh thường không gọi được đúng/đủ từ mục tiêu hoặc trả lời lạc đề khi phải tự nói; thứ ba, có một khoảng cách rõ giữa viết và nói, vì accuracy bài tập viết đạt 95% nhưng speaking conversation chỉ ở mức trung bình và pronunciation trung bình 71.79, nghĩa là học sinh nhận diện/chọn đáp án khá tốt nhưng khi tự tạo câu vẫn thiếu từ, thiếu cấu trúc và đôi lúc phát âm chưa ổn.\n\nRủi ro lớn nhất nằm ở nhóm bài cũ và đặc biệt là các bài chưa làm homework. Ba bài Unit 1A: Toys Lesson 3, 4, 5 đều ở trạng thái not_attempted, đã qua 102–111 ngày, mà theo forgetting curve thì đều xem như quên hoàn toàn và cần ôn lại từ đầu. Đây không chỉ là “chưa làm bài” đơn thuần mà là thiếu hẳn dữ liệu kiểm chứng việc nhớ bài sau giờ học. Nguy hiểm hơn, cả ba bài này đều có speaking rất yếu ở phần tự nói: brainstorm đều 0/100, hai bài có free speaking 0/100, và dù conversation còn quanh 79–86 thì các câu trả lời cho thấy học sinh đang bám mẫu rất hẹp, dễ lẫn yes/no, dễ thêm phần thừa hoặc bỏ mất danh từ chính. Ví dụ ở Lesson 3, câu “Yes, I have six puzzles. I do not.” cho thấy em biết một phần cấu trúc nhưng không chốt phủ định đúng mẫu “No, I don’t.”; ở Lesson 5, câu “Yes, I do. No, I don’t.” là ghép cả hai đáp án trái ngược vào cùng một lượt nói; ở Lesson 4, “Yes, I have a car.” gần đúng nhưng thiếu từ “toy”, nghĩa là em chưa giữ được đầy đủ cụm mục tiêu. Vì đây là cụm bài nền tảng rất sớm của chương trình, nếu không ôn sâu thì lỗi về toys, số lượng, this/there is/there are sẽ tiếp tục kéo dài sang các bài sau. Nhóm này cần deep practice, không phải ôn nhẹ. Dạng câu hỏi hiệu quả nhất cho từng bài nên đi theo thứ tự từ dễ đến khó: nhận diện qua ảnh và nghe, gọi tên đồ vật đơn lẻ, rồi mới sang mẫu câu đếm số lượng và hỏi-đáp yes/no. Vì preview cho thấy ngân hàng câu hỏi đều cần audio/image, nên nên ưu tiên drill ảnh + nghe + lặp lại ngắn thay vì hỏi mở ngay từ đầu.\n\nMẫu lỗi thứ hai là năng lực nói tự tạo rất yếu và lặp lại ở nhiều chủ đề. Chỉ số tổng quan đã nói rất rõ: brainstorm 10.81/100 là cực thấp, free speaking 31.82/100 cũng thấp, trong khi phân bố câu trả lời cho brainstorm có nhiều lượt “correct” nhưng vẫn điểm 0. Điều này rất quan trọng: ở dạng brainstorm, answer_type=correct không có nghĩa là em làm tốt, mà chỉ có nghĩa là những từ em nói ra không sai hoàn toàn; vấn đề là em nói quá ít, không đủ số targets. Ta thấy điều này lặp lại liên tục: “This is a bike.” ở bài Toys hoặc “It’s a pizza.” ở bài Food đều bị 0 điểm dù từ nói ra hợp lệ, vì bài yêu cầu liệt kê nhiều mục tiêu trong tranh chứ không phải chỉ nêu một món. Nghĩa là học sinh chưa hiểu nhiệm vụ “nói đủ những gì nhìn thấy”, hoặc vốn từ chủ động quá mỏng nên chỉ bật ra được một từ quen thuộc. Khi answer_type là incorrect thì lỗi còn rõ hơn: “I.”, “I, you.”, “The morning.”, “This is a hat.”, “This is Aizzor.” đều cho thấy em hoặc không nhận diện được tranh, hoặc không truy xuất được từ vựng đúng chủ đề. Free speaking cũng cho cùng một bức tranh: nhiều câu inaccordant như “No.” cho câu hỏi “What do you like to do after school?”, “She gave us the pathway.” cho “What do you like to play?”, hoặc lack_of_knowledge như “I like, I like a we.” cho câu hỏi màu sắc. Điều này cho thấy khi không có khung câu rõ ràng, em dễ mất định hướng và trả lời không liên quan. Vì vậy, điểm yếu cốt lõi không phải viết mà là active retrieval trong nói. Nhóm bài cần deep practice theo mẫu này gồm gần như toàn bộ các bài có brainstorm 0/100: Unit 1A Toys 2–5, Unit 1B Animals 1, 2, 5, Unit 3A Body parts 1, 2, và cả Unit 2B Food 3, 5. Cách hỏi hiệu quả nhất là câu ngắn, có hình, có giới hạn đáp án, yêu cầu gọi tên 1–3 từ trước rồi mới nâng lên câu đầy đủ. Với brainstorm, nên dùng “What is it?”, “What can you see?” nhưng chấm theo mục tiêu nhỏ dần: trước hết chỉ cần đúng từ đơn, sau đó mới ghép “This is a…”, rồi cuối cùng mới yêu cầu liệt kê nhiều món trong cùng một tranh. Với free speaking, không nên bắt đầu bằng câu quá mở; nên dùng khung có lựa chọn như “Do you like lions or bears?”, “Do you like chicken or fish?” rồi mới mở rộng sang “Why?” hoặc “What else?”.\n\nMẫu lỗi thứ ba là học sinh làm bài viết/nhận diện khá tốt nhưng khi nói hội thoại lại thiếu kiểm soát ngữ pháp và nội dung, đặc biệt ở câu trả lời dài hơn một mệnh đề. Điều này thể hiện qua writing accuracy toàn cục 95%, weak skills viết trống, nhưng conversation chỉ 76.35/100 và nhiều câu fail có gram rất thấp dù pron đôi khi cao. Nói cách khác, em có thể nhận ra đáp án đúng trên LMS nhưng chưa tự xây được câu đúng khi phải phản xạ miệng. Các lỗi lặp lại gồm đảo trật tự từ, dùng sai đại từ chỉ định, trả lời lệch loại câu hỏi, và tạo câu cụt. Ở Animals Lesson 2, em nhầm “these/those” cả trong đọc lẫn nghe, cho thấy cặp chỉ định gần-xa chưa chắc. Ở Food Lesson 3, em viết “Do like you beans?” là lỗi trật tự từ cơ bản của câu hỏi yes/no. Ở My home Lesson 5, em viết “They my are parents.”, cũng là lỗi sắp xếp từ. Trong hội thoại, lỗi còn rõ hơn: “Yes, I.”, “It’s.”, “Lion big.”, “The tiger is.”, “I like chicken and.” đều là câu chưa hoàn chỉnh; “Yes, I like chicken at your home.” trả lời sai trọng tâm câu hỏi “Who cooks…?”; “I’m hungry.” chen vào hội thoại về sở thích động vật là trả lời lạc hướng. Nhóm bài cần deep practice về cấu trúc câu là Unit 2B Food 3 và 4, Unit 4A My face 5, Unit 1B Animals 1 và 2, cùng Unit 2A My home 5. Đây là các bài không chỉ thiếu từ mà còn sai khung ngữ pháp hoặc sai loại phản hồi. Dạng câu hỏi hiệu quả nhất ở các bài này là hội thoại có scaffold rất rõ: cho mẫu đầu câu để em hoàn thành, hoặc cho cặp hỏi-đáp cố định để luyện phản xạ đúng loại. Ví dụ với Food nên tập “Do you like ___? – Yes, I do./No, I don’t.” trước, rồi mới sang “What food do you like?”; với Animals nên tách riêng “This/That” và “These/Those” bằng ảnh gần-xa; với My home nên luyện mẫu “He’s in… / She’s my…” để tránh lẫn câu chỉ vị trí với câu chỉ quan hệ.\n\nNếu phân loại mức độ ưu tiên ôn tập, nhóm cần deep practice nhất là ba bài chưa nộp homework của Unit 1A Toys Lesson 3–5 vì vừa quá cũ vừa không có bằng chứng nhớ bài; tiếp theo là các bài attempted nhưng rất cũ và nói yếu như Unit 1A Toys Lesson 2, Unit 2A My home Lesson 2 và 5, Unit 3A Body parts Lesson 1 và 2. Dù một số bài có conversation hoặc pronunciation tạm ổn, tuổi bài trên 80–116 ngày khiến việc ôn phải xem như học lại. Nhóm deep practice gần hạn nhưng lỗi cấu trúc rõ là Unit 1B Animals Lesson 2, Unit 2B Food Lesson 3, 4, 5 và Unit 4A My face Lesson 5. Các bài này chưa quá cũ bằng nhưng đang bộc lộ lỗi ngữ pháp, chỉ định từ, hoặc trả lời sai trọng tâm nên cần can thiệp sớm. Nhóm có thể light reinforcement là những bài conversation còn khá cao và lỗi chủ yếu ở mở rộng câu, ví dụ Unit 2A My home Lesson 5 hoặc Unit 2B Food Lesson 5, nhưng chỉ sau khi đã xử lý phần nói tự tạo cơ bản; nếu ôn nhẹ quá sớm thì em vẫn sẽ tiếp tục trả lời bằng mảnh câu.\n\nXét theo từng lesson, loại câu hỏi nên ưu tiên cũng khá rõ. Với Unit 1A Toys 2–5, nên dùng ảnh + nghe + đếm số lượng + yes/no ngắn, vì vấn đề chính là từ vựng đồ chơi, số nhiều, và mẫu “Do you have…?”, “There is/There are…”. Với Unit 1B Animals 1–2–5, nên ưu tiên phân biệt this/that/these/those bằng tranh gần-xa, sau đó gọi tên con vật trong ảnh, rồi mới sang nói sở thích về con vật. Với Unit 2B Food 3–5, nên dùng drill hỏi-đáp sở thích ăn uống theo khung cố định, rồi mở rộng bằng lựa chọn đôi trước khi yêu cầu câu dài. Với Unit 2A My home 2 và 5, nên tập matching người-thân-vị trí, reorder câu đơn giản, rồi hội thoại ngắn “Who is he/she?” và “Where is he/she?”. Với Unit 3A Body parts 1–2, nên quay lại nhận diện từ vựng cơ thể bằng ảnh và phát âm từng từ trước, vì lỗi hiện tại cho thấy em chưa gọi đúng từ. Với Unit 4A My face 5, nên ưu tiên nghe phân biệt đặc điểm ngoại hình và luyện mẫu “I have… / She has…” vì bài có lỗi cả nghe, đọc và pronunciation.\n\nTóm lại, hồ sơ này không cho thấy vấn đề chính ở kỹ năng viết hay làm bài chọn đáp án, mà là ở khả năng nhớ lại và nói ra đúng từ/câu khi không có nhiều gợi ý. Trọng tâm can thiệp nên là ôn lại từ đầu các bài cũ, đặc biệt ba bài Toys chưa làm homework; giảm độ mở của câu hỏi nói; tăng bài ảnh-nghe-nhắc lại có khung; và chỉ nâng dần sang câu dài khi em đã ổn ở mức từ đơn và mẫu câu ngắn. Nếu chọn câu hỏi đúng mức, học sinh có nền nhận diện khá để tiến bộ nhanh, nhưng nếu tiếp tục dùng câu hỏi mở quá sớm thì em sẽ còn trả lời lạc đề hoặc câu cụt.",
+      "updated_at": "2026-05-04T08:35:22.135534+00:00",
+      "diagnostic": "Ba mẫu lỗi và rủi ro nghiêm trọng nhất là: thứ nhất, học sinh yếu rất nặng ở nói gợi ý theo tranh/từ mục tiêu và nói mở, thể hiện việc không tự gọi được từ hoặc không tạo được câu phù hợp dù phần viết vẫn rất tốt; thứ hai, có một cụm bài đầu chương Unit 1A: Toys chưa nộp bài tập về nhà trong thời gian rất lâu, nên đây là vùng rủi ro quên gần như hoàn toàn mà hiện không có bằng chứng ghi nhớ sau lớp; thứ ba, học sinh lặp lại lỗi ngữ pháp-hội thoại ở các mẫu câu nền tảng như this/that/these/those, have/has, câu trả lời Yes/No, và trả lời lạc đề hoặc quá ngắn, cho thấy kiến thức nhận biết có nhưng khả năng truy xuất khi nói còn yếu.\n\nMẫu nghiêm trọng nhất là khoảng cách rất lớn giữa kỹ năng viết và kỹ năng nói. Dữ liệu viết gần như không có vấn đề, accuracy đạt 95%, weak skills phần viết đều trống, nghĩa là khi làm bài LMS học sinh nhận diện và chọn đáp án khá tốt. Nhưng ở nói, brainstorm trung bình chỉ 10.81/100 là mức rất thấp, free speaking 31.82/100 cũng yếu rõ rệt. Phân bố câu trả lời càng xác nhận điều này: brainstorm có nhiều lượt incorrect và cả nhiều lượt correct nhưng vẫn điểm 0, nghĩa là học sinh đôi khi nói từ hợp lệ nhưng không đủ số từ mục tiêu cần nêu; free speaking có nhiều inaccordant và lack_of_knowledge, tức là hoặc trả lời không liên quan, hoặc thực sự không biết nói gì. Điều này xuất hiện xuyên suốt nhiều chủ đề: Toys, Animals, Body parts, My home, My face. Ví dụ ở Unit 1A Lesson 4, câu brainstorm “What is it?” học sinh nói “This is a bike.” được gắn correct nhưng vẫn 0 điểm vì chưa liệt kê đủ các mục tiêu Bike, Car, Block, Puzzle. Ở Unit 1A Lesson 3, “Find it a car.” cũng cho thấy em cố tạo câu nhưng không kiểm soát được mẫu diễn đạt. Ở Animals Lesson 2, câu “I.” cho brainstorm gần như là không truy xuất được từ vựng. Ở Body parts Lesson 1 và 2, em gọi sai hoàn toàn như “This is a hat.” hoặc “This is Aizzor.” Điều này cho thấy vấn đề cốt lõi không phải chỉ là phát âm hay ngữ pháp riêng lẻ, mà là năng lực gọi tên từ theo hình và nói ra đủ ý còn rất yếu. Vì vậy, các bài có brainstorm 0 cần deep practice, đặc biệt là những bài vừa cũ vừa có lỗi nói rõ ràng như Unit 1A Lesson 2, Unit 1B Lesson 1–2, Unit 3A Lesson 1–2, Unit 4A Lesson 2. Dạng câu hỏi hiệu quả nhất cho nhóm này sẽ là audio/image naming rất ngắn, gọi tên 1 từ rồi tăng dần lên 2–3 từ, sau đó mới chuyển sang mẫu “I can see…/This is…/These are…”. Với brainstorm, nên ưu tiên câu hỏi theo ảnh có số lượng mục tiêu ít trước, vì hiện tại yêu cầu liệt kê nhiều mục tiêu cùng lúc đang quá sức.\n\nMẫu thứ hai là rủi ro quên rất cao ở các bài chưa làm homework, đặc biệt cụm Unit 1A: Toys Lesson 3, 4, 5. Đây là ba bài đều hw_status=not_attempted, đều hơn 100 ngày, forgetting score thực tế có thể xem là gần quên hoàn toàn. Vì chưa nộp bài tập, không có dữ liệu lỗi viết cụ thể; phần question bank preview chỉ cho thấy ngân hàng câu hỏi chủ yếu là audio/image, tức là đúng vào vùng kỹ năng học sinh đang yếu nhất. Cả ba bài này đều có weakness 1.00, là mức ưu tiên cao nhất. Nói cách khác, đây không chỉ là “bài cũ cần ôn”, mà là “lỗ hổng chưa được kiểm chứng sau lớp học”. Dữ liệu nói trong lớp cũng báo động: Lesson 3 có brainstorm 0, free speaking 0, pronunciation chỉ 56; Lesson 4 có brainstorm 0 dù conversation và pronunciation khá hơn; Lesson 5 có brainstorm 0, free speaking 0. Các câu hội thoại sai cho thấy học sinh nhớ lơ mơ mẫu câu nhưng ghép câu không ổn định, như “My toy is called.”, “Yes, I have six puzzles. I do not.”, “Yes, I do. No, I don't.” Vì các bài này rất cũ và chưa có bài tập về nhà, chúng cần deep practice mạnh hơn các bài attempted có weakness tương đương. Thứ tự nên ưu tiên là Unit 1A Lesson 2 trước hoặc song song với Lesson 3–5, vì Lesson 2 cũng rất cũ 116 ngày, đã attempted nhưng brainstorm 0 và conversation chỉ 68, cho thấy nền từ vựng Toys từ đầu cụm bài đã lung lay. Với nhóm Toys, dạng câu hỏi hiệu quả nhất là nhận diện và gọi tên đồ chơi theo ảnh, đếm số lượng, phân biệt số ít/số nhiều, rồi mới đến hỏi-đáp có/không và sở thích. Không nên bắt đầu bằng free speaking mở rộng như “What do you like to do after school?” vì dữ liệu cho thấy em thường trả lời “No.” hoặc lạc đề; nên đi từ câu đóng, có khung, có hình hỗ trợ.\n\nMẫu thứ ba là lỗi cấu trúc nền tảng khi nói: học sinh thường hiểu chủ đề nhưng không giữ được mẫu câu đúng, đặc biệt ở chỉ định từ, hòa hợp chủ ngữ-động từ, và câu trả lời hội thoại. Ở Animals Lesson 1 và 2, em nhầm this/that/these/those cả trong nghe lẫn chọn đáp án: “This is a tiger.” bị chọn thành “That is a tiger.”, “What are these?” bị chọn thành “What are those?”. Đây là lỗi ngữ pháp cốt lõi vì nó lặp lại ở cả receptive skill lẫn speaking. Ở My face Lesson 2 và 5, em nhầm have/has và mô tả đặc điểm cơ thể: “She have a small nose”, chọn sai giữa big eyes và big nose, nghe nhầm small ears/big ears. Trong hội thoại, em thường trả lời đúng hướng nhưng thiếu thành phần bắt buộc hoặc dùng mẫu cụt: “Yes, I.”, “It’s.”, “Y.”, “I see.”, “This.”, “Co.”, “Lion big.”, “The tiger is.” Những câu này cho thấy em có ý định phản hồi nhưng không hoàn thiện được câu. Một số bài conversation vẫn có điểm trung bình khá, như Unit 2A Lesson 5 conversation 90 và Unit 2A Lesson 2 conversation 91, nhưng các lỗi lẻ vẫn cho thấy nền câu chưa chắc, ví dụ “They my are parents.”, “My father is the old.”, hoặc trả lời sai loại thông tin như “He’s my father” cho câu hỏi vị trí. Vì vậy, không nên nhìn conversation average khá mà kết luận học sinh nói ổn; thực tế em đang dựa nhiều vào bắt chước hoặc trả lời quen thuộc, còn khi câu hỏi đổi nhẹ là dễ gãy cấu trúc. Nhóm bài cần deep practice theo mẫu lỗi này là Unit 4A Lesson 2 và 5, Unit 1B Lesson 1 và 2, Unit 2A Lesson 5, vì ở đây vừa có lỗi nghe/đọc chọn đáp án, vừa có lỗi nói cấu trúc. Dạng câu hỏi hiệu quả nhất là biến đổi tối thiểu theo cặp đối lập rõ ràng: this/that, these/those, he/she/they, have/has, is/are, yes-no response một vế duy nhất. Cần dùng câu hỏi ngắn, một mục tiêu ngữ pháp mỗi lần, tránh câu mở dài.\n\nXét toàn bộ danh sách, các bài cần deep practice trước là Unit 1A Toys Lesson 2, 3, 4, 5 vì vừa rất cũ vừa là vùng từ vựng nền tảng đang yếu; tiếp theo là Unit 2A My home Lesson 1, 2, 5 và Unit 3A Body parts Lesson 1, 2 vì cũng cũ 76–96 ngày, brainstorm/free speaking yếu, pronunciation ở vài bài thấp; sau đó là Unit 4A My face Lesson 2 và 5 cùng Unit 1B Animals Lesson 1 và 2 vì tuy mới hơn nhưng có lỗi cấu trúc rõ và nói tự phát rất yếu. Các bài chỉ cần light reinforcement là những bài conversation trung bình vẫn khá và lỗi chủ yếu là một vài câu lẻ, như Unit 3A Lesson 3 và Unit 4A Lesson 1; tuy nhiên vẫn phải ôn nhẹ theo hướng nói có khung, không phải chỉ làm trắc nghiệm.\n\nVề loại câu hỏi phù hợp theo từng bài, với Unit 1A Toys Lesson 2–5 nên ưu tiên ảnh + gọi tên đồ chơi, đếm số lượng, singular/plural, có/không có đồ chơi, rồi mới đến sở thích về đồ chơi. Với Unit 1B Animals Lesson 1–2 nên tập cặp this/that và these/those bằng ảnh gần-xa, một con-nhiều con, sau đó mới sang câu “I like…”. Với Unit 2A My home Lesson 1–2 nên dùng ảnh gia đình để gọi đúng father/mother/grandfather… và mẫu “He’s/She’s/They’re…”, còn Lesson 5 nên tập vị trí in the living room/garden/bedroom bằng ảnh và câu hỏi where. Với Unit 3A Body parts Lesson 1–2 nên dùng chỉ tranh bộ phận cơ thể, gọi tên đơn lẻ trước rồi ghép “This is my arm/These are my feet.” Với Unit 4A My face Lesson 2 và 5 nên dùng mô tả khuôn mặt theo cặp đối lập big/small, long/short, have/has, và câu mẫu đầy đủ “I have…/She has…”. Nhìn chung, loại câu hỏi hiệu quả nhất cho học sinh này là câu ngắn, có hình hoặc lựa chọn giới hạn, yêu cầu một cấu trúc duy nhất; kém hiệu quả nhất là free speaking mở hoàn toàn, vì dữ liệu cho thấy em dễ lạc đề hoặc im ý.\n\nTóm lại, hồ sơ này cho thấy học sinh không yếu ở nhận biết trên giấy mà yếu ở truy xuất ngôn ngữ khi nói. Trọng tâm can thiệp không nên là làm thêm bài viết, mà là ôn lại từ vựng nền theo ảnh, luyện câu mẫu cực ngắn, và kiểm tra lại các bài chưa nộp homework đã quá cũ. Nếu agent cần chọn câu hỏi, nên ưu tiên trước các câu audio/image của cụm Toys cũ chưa làm bài, sau đó đến các câu phân biệt this/that/these/those, have/has, và các câu trả lời yes/no hoàn chỉnh. Chỉ khi học sinh đã trả lời ổn ở mức có khung, mới nên mở sang free speaking.",
       "homework": [
         {
           "question_no": 1,
@@ -15,7 +15,7 @@
           "question_text": "Fill in blank missing word (Con hãy điền từ vào chỗ trống nhé.) 1. What [{}] they? 2. It's [{}] teddy bear. 3. How [{}] ",
           "correct_answer": "1. What are they? 2. It's a teddy bear. 3. How many balls are there? 4. There're five cars.",
           "difficulty": "hard",
-          "reason": "Bài này thuộc nhóm chưa nộp homework sau 104 ngày nên theo chẩn đoán gần như đã quên hoàn toàn. Em cũng có lỗi nói thiếu danh từ ở mẫu tương tự: từng nói “Yes, I have a car.” thay vì “Yes, I have a toy car.” nên cần kéo lại cả are/a/many trong cùng một bài.",
+          "reason": "Bài này đã học 104 ngày trước và còn là bài chưa nộp homework nên rủi ro quên gần như hoàn toàn. Chẩn đoán cho thấy học sinh hay gãy ở mẫu câu nền như this/that/these/those và câu trả lời quá ngắn như “It’s.”, nên cần ôn lại dạng điền từ có khung rõ ràng.",
           "question_id": 389401,
           "requires_media": false,
           "stem_media_urls": [],
@@ -55,133 +55,15 @@
           "lesson_title": "Unit 1A: Toys - Lesson 4: There's one ball.",
           "skill_category": "speaking",
           "question_type": "speaking_unscripted",
-          "question_text": "What toys do you like?",
-          "correct_answer": null,
+          "question_text": "What can you see?",
+          "correct_answer": "open",
           "difficulty": "hard",
-          "reason": "Brainstorm ở nhóm Toys rất yếu, nhiều bài 0/100; với câu hỏi mở em thường chỉ bật ra rất ít từ hoặc trả lời lạc hướng. Bài này cũng đã 104 ngày chưa được kiểm chứng, nên cần luyện nói có chủ đề đồ chơi để tránh kiểu câu cụt như các lượt free speaking 0/100.",
+          "reason": "Bài này đã học 104 ngày trước; ở Lesson 4 học sinh có brainstorm 0/100, từng nói “This is a bike.” nhưng vẫn không liệt kê đủ các mục tiêu Bike, Car, Block, Puzzle. Câu nói ngắn theo tranh này bám đúng điểm yếu truy xuất từ vựng khi nói mà chẩn đoán nêu là nghiêm trọng nhất.",
           "question_id": null,
           "requires_media": false
         },
         {
           "question_no": 3,
-          "lesson_id": 3622535,
-          "lesson_title": "Unit 1A: Toys - Lesson 3: How many balls are there?",
-          "skill_category": "vocabulary",
-          "question_type": "Một lựa chọn",
-          "question_text": "Read and choose the correct word. (Con hãy đọc và chọn từ đúng nhé.) There ... 2 puzzles.",
-          "correct_answer": "C. are",
-          "difficulty": "easy",
-          "reason": "Lesson này chưa làm homework suốt 111 ngày nên cần ôn lại từ đầu. Em từng nói “Yes, I have six puzzles. I do not.” cho thấy biết một phần mẫu nhưng chưa chốt đúng cấu trúc số nhiều và phản hồi, nên câu “There are …” cần được củng cố lại.",
-          "question_id": 303807,
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. am",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. is",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. are",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "There are 2 puzzles. (Có 2 miếng ghép hình.) => Đáp án: C (tobe \"are\" cộng với danh từ số nhiều)",
-          "question_folder": "English Tutoring - Level 2"
-        },
-        {
-          "question_no": 4,
-          "lesson_id": 3622535,
-          "lesson_title": "Unit 1A: Toys - Lesson 3: How many balls are there?",
-          "skill_category": "speaking",
-          "question_type": "speaking_unscripted",
-          "question_text": "What can you see?",
-          "correct_answer": null,
-          "difficulty": "hard",
-          "reason": "Ở dạng brainstorm, em thường nói quá ít dù từ không sai; chẩn đoán nêu rõ nhiều lượt 0/100 vì không kể đủ mục tiêu, ví dụ chỉ nói “This is a bike.”. Câu này giúp luyện active retrieval trong chủ đề Toys thay vì chỉ nhận diện đáp án.",
-          "question_id": null,
-          "requires_media": false
-        },
-        {
-          "question_no": 5,
-          "lesson_id": 3641688,
-          "lesson_title": "Unit 1A: Toys - Lesson 5: There're 5 balls.",
-          "skill_category": "vocabulary",
-          "question_type": "Xứng-Hợp",
-          "question_text": "Match (Con hãy nối câu hỏi - câu trả lời nhé.)",
-          "correct_answer": "What are they?→They're balls and blocks.; How many dolls are there?→There's one doll.; What is it?→It's a car.",
-          "difficulty": "medium",
-          "reason": "Đây là bài chưa nộp homework sau 102 ngày, mức quên rất cao. Em từng trả lời mâu thuẫn “Yes, I do. No, I don’t.” ở Lesson 5, nên bài nối hỏi-đáp này giúp em phân biệt đúng loại câu trả lời cho What is it?/What are they?/How many…?.",
-          "question_id": 389416,
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A1",
-              "text": "What are they?",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "A2",
-              "text": "How many dolls are there?",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "A3",
-              "text": "What is it?",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B1",
-              "text": "They're balls and blocks.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B2",
-              "text": "It's a car.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B3",
-              "text": "There's one doll.",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "What are they? (Chúng là gì?) How many dolls are there? (Có bao nhiêu con búp bê?) What is it? (Nó là gì?) They're balls and blocks: Chúng là những quả bóng và những khối hình. There's one doll: Có 1 con búp bê. It's a car: Đó là một chiếc ô tô. => Đáp án: 1 - They're balls and blocks. 2 - There's one doll. 3 - It's a car.",
-          "question_folder": "English Tutoring - Level 2"
-        },
-        {
-          "question_no": 6,
-          "lesson_id": 3641688,
-          "lesson_title": "Unit 1A: Toys - Lesson 5: There're 5 balls.",
-          "skill_category": "speaking",
-          "question_type": "speaking_unscripted",
-          "question_text": "What toys do you like?",
-          "correct_answer": null,
-          "difficulty": "hard",
-          "reason": "Free speaking ở nhóm bài chưa nộp này có bài 0/100, và em từng ghép hai đáp án trái ngược trong một lượt nói: “Yes, I do. No, I don’t.”. Cần luyện nói ngắn theo chủ đề đồ chơi để em chọn một câu trả lời nhất quán và gọi đúng từ mục tiêu.",
-          "question_id": null,
-          "requires_media": false
-        },
-        {
-          "question_no": 7,
           "lesson_id": 3622534,
           "lesson_title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
           "skill_category": "grammar",
@@ -189,7 +71,7 @@
           "question_text": "Fill in the blank. (Con hãy điền từ còn thiếu nhé.) What ... it?",
           "correct_answer": "is",
           "difficulty": "easy",
-          "reason": "Bài đã 116 ngày, rất cũ, nên dù là mẫu cơ bản vẫn cần ôn lại như học mới. Chẩn đoán cho thấy em có khoảng cách giữa viết và nói; khi nói em hay tạo câu cụt như “It’s.” nên cần khóa lại khung “What is it?”.",
+          "reason": "Bài này đã học 116 ngày trước, rất cũ nên cần kéo lại nền tảng từ đầu. Chẩn đoán cho thấy học sinh lặp lại lỗi hòa hợp chủ ngữ-động từ và mẫu câu nền; câu điền “What ... it?” giúp củng cố trực tiếp cặp it + is.",
           "question_id": 370386,
           "requires_media": false,
           "stem_media_urls": [],
@@ -206,139 +88,115 @@
           "question_folder": "English Tutoring - Level 2"
         },
         {
-          "question_no": 8,
-          "lesson_id": 3662593,
-          "lesson_title": "Unit 2A: My home - Lesson 2: They're my parents.",
+          "question_no": 4,
+          "lesson_id": 3622534,
+          "lesson_title": "Unit 1A: Toys - Lesson 2: They're balls and doll",
           "skill_category": "vocabulary",
           "question_type": "Một lựa chọn",
-          "question_text": "Choose the correct answer. (Con hãy chọn phương án đúng nhé.) Who are they?",
-          "correct_answer": "A. They&#39;re my parents.",
+          "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng nhé.) What is this?",
+          "correct_answer": "B. It's a teddy bear.",
           "difficulty": "easy",
-          "reason": "Bài này đã 96 ngày chưa được ôn lại, trong khi chẩn đoán nêu lỗi trật tự từ rất rõ ở chủ đề này: em viết “They my are parents.”. Câu hỏi ngắn giúp kéo lại mẫu trả lời đúng cho “Who are they?” trước khi sang câu dài hơn.",
-          "question_id": 303761,
+          "reason": "Bài này đã học 116 ngày trước và thuộc cụm Toys nền tảng đang có nguy cơ quên cao theo chẩn đoán. Lesson 2 cũng được nêu là brainstorm 0/100, nên cần một câu nhận diện đồ chơi rất ngắn để hỗ trợ gọi tên từ trước khi nói câu dài hơn.",
+          "question_id": 303618,
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
             {
               "letter": "A",
-              "text": "A. They&#39;re my parents.",
+              "text": "A. There're 5 balls.",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "B",
-              "text": "B. He&#39;s my brother",
+              "text": "B. It's a teddy bear.",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "C",
-              "text": "C. She&#39;s my sister.",
+              "text": "C. There's one doll.",
               "image_urls": [],
               "audio_urls": []
             }
           ],
-          "comment_plain": "Who are they? Họ là ai? => Đáp án: A (Họ là bố mẹ tôi.)",
+          "comment_plain": "What is this? (Đây là gì?) => Đáp án: B (Đó là một con gấu bông.)",
           "question_folder": "English Tutoring - Level 2"
         },
         {
-          "question_no": 9,
-          "lesson_id": 3690827,
-          "lesson_title": "Unit 2A: My home - Lesson 5: They're in the living room.",
-          "skill_category": "vocabulary",
-          "question_type": "Một lựa chọn",
-          "question_text": "Read and choose correct answer (Con hãy đọc và chọn đáp án đúng nhé.) Where's he?",
-          "correct_answer": "B. He&#39;s in the garden.",
-          "difficulty": "easy",
-          "reason": "Ở chủ đề My home, em không chỉ sai trật tự từ mà còn dễ lẫn loại câu hỏi giữa người thân và vị trí. Chẩn đoán đã nêu lỗi “They my are parents.” và khuyến nghị luyện riêng mẫu “He’s in…” để tránh lẫn với câu chỉ quan hệ.",
-          "question_id": 304092,
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. There&#39;re two bikes.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. He&#39;s in the garden.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. He&#39;s my father.",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "Where's he? Anh ấy đang ở đâu? => Đáp án: B (Anh ấy đang ở vườn.)",
-          "question_folder": "English Tutoring - Level 2"
-        },
-        {
-          "question_no": 10,
-          "lesson_id": 3806319,
-          "lesson_title": "Unit 2B: Food - Lesson 3: Do you like potato?",
-          "skill_category": "grammar",
-          "question_type": "Một lựa chọn",
-          "question_text": "Read and reorder the correct sentence (Con hãy đọc và sắp xếp thành câu nhé.) /like/Do/potatoes/you/?/",
-          "correct_answer": "B. Do you like potatoes?",
-          "difficulty": "medium",
-          "reason": "Đây là đúng điểm lỗi ngữ pháp đã được nêu đích danh: em từng viết “Do like you beans?” nên cần sửa trật tự từ câu hỏi yes/no. Bài mới hơn nhưng là lỗi cấu trúc nền, nếu không sửa sớm sẽ tiếp tục ảnh hưởng phần nói hội thoại.",
-          "question_id": 308950,
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. Do you potatoes like?",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. Do you like potatoes?",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. Do potatoes like you?",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "Do you like potatoes? Dịch: Bạn có thích khoai tây không? => Đáp án: B",
-          "question_folder": "English Tutoring - Level 2"
-        },
-        {
-          "question_no": 11,
-          "lesson_id": 3806319,
-          "lesson_title": "Unit 2B: Food - Lesson 3: Do you like potato?",
+          "question_no": 5,
+          "lesson_id": 3622535,
+          "lesson_title": "Unit 1A: Toys - Lesson 3: How many balls are there?",
           "skill_category": "speaking",
           "question_type": "speaking_unscripted",
-          "question_text": "Do you like potatoes? Why?",
+          "question_text": "How many balls are there?",
           "correct_answer": null,
-          "difficulty": "hard",
-          "reason": "Free speaking của em trung bình chỉ 31.82/100 và ở chủ đề Food từng có câu lạc hướng như “No.” hoặc “I like, I like a we.”. Sau khi luyện reorder, cần nói theo khung hẹp để em trả lời đúng loại câu hỏi rồi mới thêm lý do ngắn.",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 111 ngày trước và là bài chưa nộp homework nên chưa có bằng chứng ghi nhớ sau lớp. Chẩn đoán ghi rõ Lesson 3 có brainstorm 0/100, free speaking 0/100 và học sinh từng nói “Find it a car.”, cho thấy em nhớ lơ mơ từ nhưng không giữ được mẫu câu; vì vậy cần luyện nói có khung về số lượng.",
           "question_id": null,
           "requires_media": false
         },
         {
-          "question_no": 12,
+          "question_no": 6,
+          "lesson_id": 3641688,
+          "lesson_title": "Unit 1A: Toys - Lesson 5: There're 5 balls.",
+          "skill_category": "grammar",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Fill in the blank. There ... five balls.",
+          "correct_answer": "are",
+          "difficulty": "easy",
+          "reason": "Bài này đã học 102 ngày trước và cũng là bài chưa nộp homework nên cần ôn sâu. Chẩn đoán cho thấy học sinh yếu ở mẫu số ít/số nhiều và câu trả lời nền tảng; câu này tập trung đúng vào there + are với danh từ số nhiều.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 7,
+          "lesson_id": 3641688,
+          "lesson_title": "Unit 1A: Toys - Lesson 5: There're 5 balls.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and reorder the sentence (Con hãy đọc và sắp xếp thành câu nhé.) /blocks/'re/There/ten/./",
+          "correct_answer": "A. There're ten blocks.",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 102 ngày trước và thuộc cụm Toys chưa làm bài tập về nhà, là vùng rủi ro quên gần như hoàn toàn. Câu này giúp ôn lại từ vựng đồ chơi và mẫu đếm số lượng trong đúng chủ điểm mà chẩn đoán yêu cầu ưu tiên trước.",
+          "question_id": 304121,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. There're ten blocks.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. There're blocks ten.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. There ten're blocks.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "There're ten blocks: Có 10 khối hình. => Đáp án: A",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 8,
           "lesson_id": 3768634,
           "lesson_title": "Unit 1B: Animals - Lesson 2: Those are lions and zebras.",
           "skill_category": "grammar",
           "question_type": "Một lựa chọn",
           "question_text": "Choose the correct answer. (Con hãy chọn phương án đúng nhé.) What are these? ___ are lions.",
           "correct_answer": "C. These",
-          "difficulty": "easy",
-          "reason": "Chẩn đoán ghi rõ em nhầm cặp chỉ định “these/those” ở Animals Lesson 2 trong cả đọc lẫn nghe. Bài này đánh đúng lỗi gần-xa và số nhiều, là phần cần deep practice trước khi yêu cầu em tự nói dài.",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 34 ngày trước. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"B. Those\" thay vì \"C. These\". Đây đúng là mẫu lỗi this/that/these/those được chẩn đoán là lặp lại nhiều lần nên cần sửa ngay khi còn mới.",
           "question_id": 308500,
           "requires_media": false,
           "stem_media_urls": [],
@@ -367,77 +225,200 @@
           "question_folder": "English Tutoring - Level 2"
         },
         {
-          "question_no": 13,
+          "question_no": 9,
+          "lesson_id": 3768634,
+          "lesson_title": "Unit 1B: Animals - Lesson 2: Those are lions and zebras.",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "What are these?",
+          "correct_answer": "open",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 34 ngày trước; ở nhóm Animals Lesson 2, chẩn đoán ghi học sinh từng chỉ nói “I.” trong brainstorm, cho thấy gần như không truy xuất được từ khi nói. Sau lỗi nhầm these/those, cần thêm một câu nói có khung rất ngắn để buộc em gọi đúng mẫu “These are …”.",
+          "question_id": null,
+          "requires_media": false
+        },
+        {
+          "question_no": 10,
           "lesson_id": 3768633,
           "lesson_title": "Unit 1B: Animals - Lesson 1: That is a lion.",
           "skill_category": "vocabulary",
           "question_type": "Một lựa chọn",
-          "question_text": "Listen and fill in the blank (Con hãy nghe và điền vào chỗ trống nhé.) This is a _____.",
-          "correct_answer": "A. lion",
-          "difficulty": "easy",
-          "reason": "Brainstorm ở nhóm Animals có nhiều bài 0/100, nghĩa là em không gọi được đủ từ mục tiêu khi tự nói. Câu nghe-điền ngắn này giúp kéo lại từ vựng chủ động theo đúng khuyến nghị “ảnh/nghe rồi mới nói”.",
-          "question_id": 308415,
+          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn câu đúng nhé.)",
+          "correct_answer": "A. This is a tiger.",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 39 ngày trước. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"C. That is a tiger.\" thay vì \"A. This is a tiger.\". Lỗi đổi this thành that trùng khớp hoàn toàn với mẫu lỗi chỉ định từ được nêu trong chẩn đoán.",
+          "question_id": 372875,
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
             {
               "letter": "A",
-              "text": "A. lion",
+              "text": "A. This is a tiger.",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "B",
-              "text": "B. zebra",
+              "text": "B. This is a lion.",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "C",
-              "text": "C. bear",
+              "text": "C. That is a tiger.",
               "image_urls": [],
               "audio_urls": []
             }
           ],
-          "comment_plain": "Audio: What's this? This is a lion. Dịch: Đây là gì vậy? Đây là con sư tử. => Đáp án: A",
+          "comment_plain": "Audio: This is a tiger. Dịch: Đây là con hổ. => Đáp án: A",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 11,
+          "lesson_id": 3690827,
+          "lesson_title": "Unit 2A: My home - Lesson 5: They're in the living room.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose correct answer (Con hãy đọc và chọn đáp án đúng nhé.) Where's he?",
+          "correct_answer": "B. He's in the garden.",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 83 ngày trước. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"C. He&#39;s my father.\" thay vì \"B. He&#39;s in the garden.\". Đây là lỗi trả lời sai loại thông tin (trả lời người thay vì vị trí), đúng với nhận định chẩn đoán rằng em hay trả lời lạc đề trong hội thoại.",
+          "question_id": 304092,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. There&#39;re two bikes.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. He&#39;s in the garden.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. He&#39;s my father.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Where's he? Anh ấy đang ở đâu? => Đáp án: B (Anh ấy đang ở vườn.)",
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 12,
+          "lesson_id": 3690830,
+          "lesson_title": "Unit 3A: Body parts - Lesson 3: I can swim.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the best answer (Con hãy đọc và chọn câu trả lời đúng.) What can you do?",
+          "correct_answer": "C. I can sing.",
+          "difficulty": "easy",
+          "reason": "Bài này đã học 76 ngày trước và là câu spaced repetition nên cần đưa vào để giữ nhịp ôn cách quãng. Chẩn đoán cho thấy khoảng cách giữa viết và nói rất lớn; câu hỏi-đáp ngắn “What can you do? – I can …” là bước đệm tốt trước khi yêu cầu nói tự do.",
+          "question_id": 306058,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. It's a doll.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. There's 8 cars.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. I can sing.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "question_folder": "English Tutoring - Level 2"
+        },
+        {
+          "question_no": 13,
+          "lesson_id": 3690833,
+          "lesson_title": "Unit 4A: My face - Lesson 1: I have big eyes.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose odd one out (Con hãy đọc và chọn từ khác loại nhé.)",
+          "correct_answer": "B. mother",
+          "difficulty": "easy",
+          "reason": "Bài này đã học 67 ngày trước và là câu spaced repetition thứ hai cần có để đảm bảo ôn cách quãng. Chủ điểm khuôn mặt/cơ thể vẫn là vùng nói yếu theo chẩn đoán, nên cần củng cố lại nhóm từ vựng cơ bản trước khi quay lại mẫu câu mô tả.",
+          "question_id": 307277,
+          "requires_media": false,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. mouth",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. mother",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. nose",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "mouth: miệng mother: mẹ nose: mũi => Đáp án: B",
           "question_folder": "English Tutoring - Level 2"
         },
         {
           "question_no": 14,
-          "lesson_id": 3690829,
-          "lesson_title": "Unit 3A: Body parts - Lesson 2: They're my feet.",
-          "skill_category": "vocabulary",
+          "lesson_id": 3768628,
+          "lesson_title": "Unit 4A: My face - Lesson 2: I have long hair.",
+          "skill_category": "grammar",
           "question_type": "Một lựa chọn",
-          "question_text": "Choose the correct answer. (Con hãy chọn phương án đúng nhé.) What are these?",
-          "correct_answer": "A. These are my feet.",
-          "difficulty": "easy",
-          "reason": "Chẩn đoán xếp Body parts 1–2 vào nhóm cần học lại vì đã 81 ngày và em chưa gọi đúng từ cơ thể khi nói. Câu này vừa ôn từ “feet” vừa củng cố mẫu số nhiều “These are…”, phù hợp với lỗi active retrieval yếu của em.",
-          "question_id": 371186,
+          "question_text": "Choose the correct answer. (Con hãy chọn phương án đúng nhé.)",
+          "correct_answer": "B. I have a small nose.",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 55 ngày trước. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"A. She have a small nose.\" thay vì \"B. I have a small nose.\". Lỗi này chạm đúng hai điểm chẩn đoán nêu rõ: nhầm have/has và dùng chủ ngữ không phù hợp khi nói/câu mẫu.",
+          "question_id": 372130,
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
             {
               "letter": "A",
-              "text": "A. These are my feet.",
+              "text": "A. She have a small nose.",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "B",
-              "text": "B. These are my leg.",
+              "text": "B. I have a small nose.",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "C",
-              "text": "C. These are my toe.",
+              "text": "C. I have a nose small.",
               "image_urls": [],
               "audio_urls": []
             }
           ],
-          "comment_plain": "What are these? Dịch: Đây là gì? => Đáp án: A: Đây là những bàn chân của tôi. (Câu hỏi số nhiều => câu trả lời phải có danh từ số nhiều \"feet\")",
+          "comment_plain": "Audio: I have a small nose. Dịch: Tớ có chiếc mũi nhỏ. => Đáp án: B",
           "question_folder": "English Tutoring - Level 2"
         },
         {
@@ -446,35 +427,35 @@
           "lesson_title": "Unit 4A: My face - Lesson 5: She has short hair.",
           "skill_category": "vocabulary",
           "question_type": "Một lựa chọn",
-          "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn phương án đúng nhé.)",
-          "correct_answer": "A. I have a small nose and big eyes.",
+          "question_text": "Read and choose correct answer (Con hãy đọc và chọn phương án đúng nhé.) I have a ...",
+          "correct_answer": "C. big nose",
           "difficulty": "medium",
-          "reason": "Bài này có weakness 0.65 và chẩn đoán nêu rõ Unit 4A My face 5 có lỗi cả nghe, đọc và pronunciation. Vì pronunciation trung bình chỉ 71.79, câu nghe đầy đủ với mẫu “I have…” sẽ giúp em nối phát âm với cấu trúc miêu tả khuôn mặt.",
-          "question_id": 372245,
+          "reason": "Bài này đã học 46 ngày trước. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"A. big eyes\" thay vì \"C. big nose.\". Chẩn đoán cũng nêu rõ em hay nhầm mô tả đặc điểm khuôn mặt như big eyes/big nose, nên cần ôn lại cặp từ dễ lẫn này.",
+          "question_id": 307422,
           "requires_media": false,
           "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
             {
               "letter": "A",
-              "text": "A. I have a small nose and big eyes.",
+              "text": "A. big eyes",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "B",
-              "text": "B. She has a small nose and big eyes.",
+              "text": "B. small ears",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "C",
-              "text": "C. I have a small nose and big mouth.",
+              "text": "C. big nose",
               "image_urls": [],
               "audio_urls": []
             }
           ],
-          "comment_plain": "Audio: I have a small nose and big eyes. Dịch: Tớ có cái mũi nhỏ và đôi mắt to. => Đáp án: A",
+          "comment_plain": "I have a big nose. Dịch: Tôi có một cái mũi to. => Đáp án: C (\"a\" cộng với danh từ số ít)",
           "question_folder": "English Tutoring - Level 2"
         }
       ]

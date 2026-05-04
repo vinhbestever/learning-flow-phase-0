@@ -65,6 +65,9 @@
       }
     },
     "weak_skills_global": [],
+    "critical_speaking_types": [
+      "brainstorm"
+    ],
     "overall_pronunciation_score_avg": 88.11,
     "overall_free_speaking_score_avg": 62.0,
     "overall_brainstorm_score_avg": 19.72,
@@ -78,7 +81,7 @@
       "correct": 47,
       "incorrect": 24
     },
-    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to default 1 day. Lessons older than 7 days score >0.999 (fully forgotten). Agent should prioritise by composite_priority_score."
+    "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
   "scored_candidates": [
     {
@@ -297,14 +300,75 @@
       }
     },
     {
+      "lesson_id": 3599688,
+      "title": "Unit 2A: Me  - Lesson 4: Does she have strong arms?",
+      "level": 3,
+      "last_activity_date": "2026-01-19",
+      "days_since_last_practice": 92,
+      "forgetting_score": 1.0,
+      "weakness_score": 0.515,
+      "composite_priority_score": 0.7575,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 3,
+      "worst_speaking_items": [
+        {
+          "lms_type": "brainstorm",
+          "question": "Anything else?",
+          "expected_answer": null,
+          "target_objects": [
+            "Car",
+            "Beard",
+            "Mustache"
+          ],
+          "user_transcript": "Fyments.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-19",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/19/admin/mkl7hvw7-a1ebe302-audio.wav",
+          "reaction_time_ms": 1127
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "What can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "Car",
+            "Beard",
+            "Mustache"
+          ],
+          "user_transcript": "Is it the two four cars and towel?",
+          "score": 0,
+          "answer_type": "correct",
+          "correct_objects": [
+            "car"
+          ],
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-01-19",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/19/admin/mkl7hlxj-948b60cf-audio.wav",
+          "reaction_time_ms": 365
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 7715,
+        "luyen_tap": 13368
+      }
+    },
+    {
       "lesson_id": 3766261,
       "title": "Unit 1B: Clothes - Lesson 1: What are you wearing?",
       "level": 3,
       "last_activity_date": "2026-03-11",
       "days_since_last_practice": 41,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9971,
       "weakness_score": 0.5175,
-      "composite_priority_score": 0.7588,
+      "composite_priority_score": 0.7573,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -375,67 +439,6 @@
       "practice_ids": {
         "bai_tap": 8278,
         "luyen_tap": 13467
-      }
-    },
-    {
-      "lesson_id": 3599688,
-      "title": "Unit 2A: Me  - Lesson 4: Does she have strong arms?",
-      "level": 3,
-      "last_activity_date": "2026-01-19",
-      "days_since_last_practice": 92,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.515,
-      "composite_priority_score": 0.7575,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 3,
-      "worst_speaking_items": [
-        {
-          "lms_type": "brainstorm",
-          "question": "Anything else?",
-          "expected_answer": null,
-          "target_objects": [
-            "Car",
-            "Beard",
-            "Mustache"
-          ],
-          "user_transcript": "Fyments.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/19/admin/mkl7hvw7-a1ebe302-audio.wav",
-          "reaction_time_ms": 1127
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "Car",
-            "Beard",
-            "Mustache"
-          ],
-          "user_transcript": "Is it the two four cars and towel?",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "car"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/19/admin/mkl7hlxj-948b60cf-audio.wav",
-          "reaction_time_ms": 365
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7715,
-        "luyen_tap": 13368
       }
     },
     {
@@ -1092,7 +1095,7 @@
       "level": 3,
       "last_activity_date": "2026-02-11",
       "days_since_last_practice": 69,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9999,
       "weakness_score": 0.5,
       "composite_priority_score": 0.75,
       "homework_status": "attempted",
@@ -1199,9 +1202,9 @@
       "level": 3,
       "last_activity_date": "2026-02-23",
       "days_since_last_practice": 57,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9997,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7499,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1308,9 +1311,9 @@
       "level": 3,
       "last_activity_date": "2026-02-25",
       "days_since_last_practice": 55,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7498,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1414,9 +1417,9 @@
       "level": 3,
       "last_activity_date": "2026-03-02",
       "days_since_last_practice": 50,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9992,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7496,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1537,9 +1540,9 @@
       "level": 3,
       "last_activity_date": "2026-03-16",
       "days_since_last_practice": 36,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9942,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7471,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1608,9 +1611,9 @@
       "level": 3,
       "last_activity_date": "2026-03-18",
       "days_since_last_practice": 34,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9922,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7461,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1669,9 +1672,9 @@
       "level": 3,
       "last_activity_date": "2026-03-23",
       "days_since_last_practice": 29,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9841,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.742,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1802,9 +1805,9 @@
       "level": 3,
       "last_activity_date": "2026-03-30",
       "days_since_last_practice": 22,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9568,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7284,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [],
@@ -1887,206 +1890,6 @@
       "practice_ids": {
         "bai_tap": 8290,
         "luyen_tap": 13544
-      }
-    },
-    {
-      "lesson_id": 3798866,
-      "title": "Unit 2B: Sports - Lesson 3: What can he do?",
-      "level": 3,
-      "last_activity_date": "2026-04-06",
-      "days_since_last_practice": 15,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Good. How many days a week do you play tennis? 🎾",
-          "expected_answer": "I play tennis three times a week, on Monday, Wednesday, and Saturday.",
-          "target_objects": null,
-          "user_transcript": "In the afternoon.",
-          "score": 53,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 66,
-          "grammar_score": 40,
-          "timestamp": "2026-04-06",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn0smpd-d8ab675c-audio.wav",
-          "reaction_time_ms": 1024
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice. What sport do you play? 🎾",
-          "expected_answer": "I play tennis and sometimes chess with my friends.",
-          "target_objects": null,
-          "user_transcript": "I like tennis.",
-          "score": 66.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 44,
-          "grammar_score": 89,
-          "timestamp": "2026-04-06",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn0rzrs-621103b0-audio.wav",
-          "reaction_time_ms": 1024
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi! Nice to see you. Are you ready to talk about sports today? 😄",
-          "expected_answer": "Yes, I am ready. I like football and running.",
-          "target_objects": null,
-          "user_transcript": "Yes, but I think.",
-          "score": 68,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 36,
-          "timestamp": "2026-04-06",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn0qtwa-8a853a67-audio.wav",
-          "reaction_time_ms": 1024
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Good. How often do you play tennis? 🎾",
-          "expected_answer": "I play tennis twice a week.",
-          "target_objects": null,
-          "user_transcript": "At nine o'clock.",
-          "score": 68.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 37,
-          "timestamp": "2026-04-06",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn0pmf9-e135b257-audio.wav",
-          "reaction_time_ms": 1024
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "Can you tell me what are they doing?",
-          "expected_answer": null,
-          "target_objects": [
-            "Play golf",
-            "Play chess",
-            "Play tennis"
-          ],
-          "user_transcript": "Playing hockey.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-06",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn058g5-431c8743-audio.wav",
-          "reaction_time_ms": 717
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 8294,
-        "luyen_tap": 13603
-      }
-    },
-    {
-      "lesson_id": 3806167,
-      "title": "Unit 2B: Sports - Lesson 4: She can swim and do karate.",
-      "level": 3,
-      "last_activity_date": "2026-04-08",
-      "days_since_last_practice": 13,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "brainstorm",
-          "question": "What activities can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "Do yoga",
-            "Play tennis",
-            "Play golf"
-          ],
-          "user_transcript": "Lin.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnq0865h-507b0947-audio.wav",
-          "reaction_time_ms": 622
-        },
-        {
-          "lms_type": "free_speaking",
-          "question": "What did you eat today?",
-          "expected_answer": null,
-          "target_objects": null,
-          "user_transcript": "Fortu to eighteen.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnq06z1d-eb74ac23-audio.wav",
-          "reaction_time_ms": 813
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Oh, I see. Do you play at seven or nine o'clock? ⏰",
-          "expected_answer": "I play at seven o'clock in the evening.",
-          "target_objects": null,
-          "user_transcript": "All o'clock.",
-          "score": 59,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 18,
-          "timestamp": "2026-04-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpx1d20-b63a2e23-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice, basketball and football. How often do you play them? 🏀⚽️",
-          "expected_answer": "I play basketball twice a week and football every weekend.",
-          "target_objects": null,
-          "user_transcript": "At seven nine o'clock.",
-          "score": 60.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 21,
-          "timestamp": "2026-04-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpx13as-0e176d89-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Cool, watching is fun. How often do you watch football? 📺",
-          "expected_answer": "I watch football twice a week.",
-          "target_objects": null,
-          "user_transcript": "At seven thirty.",
-          "score": 68,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 36,
-          "timestamp": "2026-04-08",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpwz0an-5c707882-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 8295,
-        "luyen_tap": 13524
       }
     },
     {
@@ -2257,6 +2060,206 @@
       }
     },
     {
+      "lesson_id": 3798866,
+      "title": "Unit 2B: Sports - Lesson 3: What can he do?",
+      "level": 3,
+      "last_activity_date": "2026-04-06",
+      "days_since_last_practice": 15,
+      "forgetting_score": 0.8827,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.6914,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "conversation",
+          "question": "Good. How many days a week do you play tennis? 🎾",
+          "expected_answer": "I play tennis three times a week, on Monday, Wednesday, and Saturday.",
+          "target_objects": null,
+          "user_transcript": "In the afternoon.",
+          "score": 53,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 66,
+          "grammar_score": 40,
+          "timestamp": "2026-04-06",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn0smpd-d8ab675c-audio.wav",
+          "reaction_time_ms": 1024
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice. What sport do you play? 🎾",
+          "expected_answer": "I play tennis and sometimes chess with my friends.",
+          "target_objects": null,
+          "user_transcript": "I like tennis.",
+          "score": 66.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 44,
+          "grammar_score": 89,
+          "timestamp": "2026-04-06",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn0rzrs-621103b0-audio.wav",
+          "reaction_time_ms": 1024
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Hi! Nice to see you. Are you ready to talk about sports today? 😄",
+          "expected_answer": "Yes, I am ready. I like football and running.",
+          "target_objects": null,
+          "user_transcript": "Yes, but I think.",
+          "score": 68,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 36,
+          "timestamp": "2026-04-06",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn0qtwa-8a853a67-audio.wav",
+          "reaction_time_ms": 1024
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Good. How often do you play tennis? 🎾",
+          "expected_answer": "I play tennis twice a week.",
+          "target_objects": null,
+          "user_transcript": "At nine o'clock.",
+          "score": 68.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 37,
+          "timestamp": "2026-04-06",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn0pmf9-e135b257-audio.wav",
+          "reaction_time_ms": 1024
+        },
+        {
+          "lms_type": "brainstorm",
+          "question": "Can you tell me what are they doing?",
+          "expected_answer": null,
+          "target_objects": [
+            "Play golf",
+            "Play chess",
+            "Play tennis"
+          ],
+          "user_transcript": "Playing hockey.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-06",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn058g5-431c8743-audio.wav",
+          "reaction_time_ms": 717
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 8294,
+        "luyen_tap": 13603
+      }
+    },
+    {
+      "lesson_id": 3806167,
+      "title": "Unit 2B: Sports - Lesson 4: She can swim and do karate.",
+      "level": 3,
+      "last_activity_date": "2026-04-08",
+      "days_since_last_practice": 13,
+      "forgetting_score": 0.8439,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.672,
+      "homework_status": "attempted",
+      "weak_skills": [],
+      "failed_text_questions": [],
+      "question_bank_preview": [],
+      "failed_media_questions_count": 0,
+      "worst_speaking_items": [
+        {
+          "lms_type": "brainstorm",
+          "question": "What activities can you see?",
+          "expected_answer": null,
+          "target_objects": [
+            "Do yoga",
+            "Play tennis",
+            "Play golf"
+          ],
+          "user_transcript": "Lin.",
+          "score": 0,
+          "answer_type": "incorrect",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnq0865h-507b0947-audio.wav",
+          "reaction_time_ms": 622
+        },
+        {
+          "lms_type": "free_speaking",
+          "question": "What did you eat today?",
+          "expected_answer": null,
+          "target_objects": null,
+          "user_transcript": "Fortu to eighteen.",
+          "score": 0,
+          "answer_type": "inaccordant",
+          "correct_objects": null,
+          "pronunciation_score": null,
+          "grammar_score": null,
+          "timestamp": "2026-04-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnq06z1d-eb74ac23-audio.wav",
+          "reaction_time_ms": 813
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Oh, I see. Do you play at seven or nine o'clock? ⏰",
+          "expected_answer": "I play at seven o'clock in the evening.",
+          "target_objects": null,
+          "user_transcript": "All o'clock.",
+          "score": 59,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 18,
+          "timestamp": "2026-04-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpx1d20-b63a2e23-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Nice, basketball and football. How often do you play them? 🏀⚽️",
+          "expected_answer": "I play basketball twice a week and football every weekend.",
+          "target_objects": null,
+          "user_transcript": "At seven nine o'clock.",
+          "score": 60.5,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 21,
+          "timestamp": "2026-04-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpx13as-0e176d89-audio.wav",
+          "reaction_time_ms": null
+        },
+        {
+          "lms_type": "conversation",
+          "question": "Cool, watching is fun. How often do you watch football? 📺",
+          "expected_answer": "I watch football twice a week.",
+          "target_objects": null,
+          "user_transcript": "At seven thirty.",
+          "score": 68,
+          "answer_type": null,
+          "correct_objects": null,
+          "pronunciation_score": 100,
+          "grammar_score": 36,
+          "timestamp": "2026-04-08",
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpwz0an-5c707882-audio.wav",
+          "reaction_time_ms": null
+        }
+      ],
+      "practice_ids": {
+        "bai_tap": 8295,
+        "luyen_tap": 13524
+      }
+    },
+    {
       "lesson_id": 3610790,
       "title": "Unit 3A: Pets - Lesson 1: What pet do you have?",
       "level": 3,
@@ -2356,57 +2359,6 @@
       }
     },
     {
-      "lesson_id": 3822819,
-      "title": "Unit 2B: Sports - Lesson 5: He can swim but he can't do karate.",
-      "level": 3,
-      "last_activity_date": "2026-04-13",
-      "days_since_last_practice": 8,
-      "forgetting_score": 0.9997,
-      "weakness_score": 0.25,
-      "composite_priority_score": 0.6249,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice. How often do you play with your friend? ⚽️",
-          "expected_answer": "We play twice a week, on Tuesdays and Saturdays.",
-          "target_objects": null,
-          "user_transcript": "As twice a week, I'm once a day.",
-          "score": 33.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 51,
-          "grammar_score": 16,
-          "timestamp": "2026-04-13",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx30veq-fb994596-audio.wav",
-          "reaction_time_ms": 4171
-        },
-        {
-          "lms_type": "free_speaking",
-          "question": "How are you today?",
-          "expected_answer": null,
-          "target_objects": null,
-          "user_transcript": "I thank you.",
-          "score": 0,
-          "answer_type": "inaccordant",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-04-13",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx28nxo-1d3caf54-audio.wav",
-          "reaction_time_ms": 820
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 8296,
-        "luyen_tap": 13535
-      }
-    },
-    {
       "lesson_id": 3599684,
       "title": "Unit 1A: Nature  - Lesson 5: There are some mushrooms.",
       "level": 3,
@@ -2493,189 +2445,6 @@
       "practice_ids": {
         "bai_tap": 7703,
         "luyen_tap": 13488
-      }
-    },
-    {
-      "lesson_id": 3766259,
-      "title": "Unit 4A: Home - Lesson 5: It's between the table and the sofa.",
-      "level": 3,
-      "last_activity_date": "2026-03-04",
-      "days_since_last_practice": 48,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.0,
-      "composite_priority_score": 0.5,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Oh, chicken — yum. Is the plate on the table or on the sofa? 🍗",
-          "expected_answer": "The plate is on the table.",
-          "target_objects": null,
-          "user_transcript": "You are in the place, bear.",
-          "score": 46.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 75,
-          "grammar_score": 18,
-          "timestamp": "2026-03-04",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/04/admin/mmbyb0i8-42923bf8-audio.wav",
-          "reaction_time_ms": 601
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Okay, I understand. Do you mean there is nothing in the living room? 😊",
-          "expected_answer": "Yes, there is nothing in the living room.",
-          "target_objects": null,
-          "user_transcript": "Yes, there is nothing in the tree.",
-          "score": 61.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 53,
-          "grammar_score": 70,
-          "timestamp": "2026-03-04",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/04/admin/mmby8n6a-d7550d1c-audio.wav",
-          "reaction_time_ms": 601
-        },
-        {
-          "lms_type": "conversation",
-          "question": "So your home has a living room, kitchen, and bathroom. What is in the living room? 😊",
-          "expected_answer": "There is a sofa and a lamp in the living room.",
-          "target_objects": null,
-          "user_transcript": "They are so far and none.",
-          "score": 58,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 16,
-          "timestamp": "2026-03-04",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/04/admin/mmby7x82-3258d7c7-audio.wav",
-          "reaction_time_ms": 601
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi, nice to see you. Ready to practice Unit 4A - Lesson 5? 😄",
-          "expected_answer": "Yes, I'm ready. Let's practice the home vocabulary.",
-          "target_objects": null,
-          "user_transcript": "Ready? You live for a lesson five. Let's practice you for a lesson five.",
-          "score": 49.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 83,
-          "grammar_score": 16,
-          "timestamp": "2026-03-04",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/04/admin/mmby6pa6-f04977e7-audio.wav",
-          "reaction_time_ms": 601
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 7963,
-        "luyen_tap": 13459
-      }
-    },
-    {
-      "lesson_id": 3766265,
-      "title": "Unit 1B: Clothes - Lesson 5: I'm wearing a T-shirt.",
-      "level": 3,
-      "last_activity_date": "2026-03-25",
-      "days_since_last_practice": 27,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.0,
-      "composite_priority_score": 0.5,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice— a uniform and skirt sound smart. Do you fold your skirt after washing it? 😄",
-          "expected_answer": "Yes, I fold my skirt and put it in my closet.",
-          "target_objects": null,
-          "user_transcript": "Yes, I do. Is she wearing a dress?",
-          "score": 68,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 100,
-          "grammar_score": 36,
-          "timestamp": "2026-03-25",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn5vpez4-09d3bf52-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 8289,
-        "luyen_tap": 13538
-      }
-    },
-    {
-      "lesson_id": 3785342,
-      "title": "Unit 2B: Sports - Lesson 2: I can play football but I can't play basketball.",
-      "level": 3,
-      "last_activity_date": "2026-04-05",
-      "days_since_last_practice": 16,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.0,
-      "composite_priority_score": 0.5,
-      "homework_status": "attempted",
-      "weak_skills": [],
-      "failed_text_questions": [],
-      "question_bank_preview": [],
-      "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "conversation",
-          "question": "Nice, football is fun. How often do you play football? ⚽️",
-          "expected_answer": "I play football twice a week, on Tuesdays and Saturdays.",
-          "target_objects": null,
-          "user_transcript": "Toss with team, bye bye.",
-          "score": 39.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 66,
-          "grammar_score": 13,
-          "timestamp": "2026-04-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfvn10i-b0652070-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Hi, nice to see you. Ready to talk about sports with me? 😄",
-          "expected_answer": "Yes, I'm ready. I like football and badminton.",
-          "target_objects": null,
-          "user_transcript": "Yes, are you ready?",
-          "score": 60.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 25,
-          "grammar_score": 96,
-          "timestamp": "2026-04-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfvlweu-2123be61-audio.wav",
-          "reaction_time_ms": null
-        },
-        {
-          "lms_type": "conversation",
-          "question": "Nice, football is fun ⚽️ What position do you play",
-          "expected_answer": "I play as a forward / defender / goalkeeper.",
-          "target_objects": null,
-          "user_transcript": "I play a.",
-          "score": 40.5,
-          "answer_type": null,
-          "correct_objects": null,
-          "pronunciation_score": 66,
-          "grammar_score": 15,
-          "timestamp": "2026-04-01",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/01/admin/mnfvjnyo-5e15ecbe-audio.wav",
-          "reaction_time_ms": null
-        }
-      ],
-      "practice_ids": {
-        "bai_tap": 8292,
-        "luyen_tap": 13550
       }
     }
   ],
@@ -2825,9 +2594,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-03-09",
       "days_since_last_practice": 43,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9979,
       "weakness_score": 1.0,
-      "composite_priority_score": 1.0,
+      "composite_priority_score": 0.999,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -2957,9 +2726,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-15",
       "days_since_last_practice": 6,
-      "forgetting_score": 0.9975,
+      "forgetting_score": 0.5756,
       "weakness_score": 1.0,
-      "composite_priority_score": 0.9988,
+      "composite_priority_score": 0.7878,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -3028,123 +2797,6 @@
             "timestamp": "2026-04-15",
             "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/15/admin/mo004lvk-4d9db22f-audio.wav",
             "reaction_time_ms": 756
-          }
-        ]
-      },
-      "homework": {
-        "attempted": false,
-        "bai_tap": null,
-        "luyen_tap": null,
-        "lms_ids": {
-          "bai_tap": null,
-          "luyen_tap": null
-        },
-        "skill_breakdown": {},
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3995248,
-      "program_id": null,
-      "level": null,
-      "position": null,
-      "title": null,
-      "desc": null,
-      "status": "in_class_only",
-      "last_activity_date": "2026-04-20",
-      "days_since_last_practice": 1,
-      "forgetting_score": 0.6321,
-      "weakness_score": 1.0,
-      "composite_priority_score": 0.816,
-      "in_class": {
-        "participated": true,
-        "session_count": 2,
-        "session_metrics": {
-          "cups": 66,
-          "audio_turns": 48,
-          "avg_reaction_ms": 2537,
-          "fastest_reaction_ms": 630,
-          "total_duration_ms": 1450416,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-20",
-        "pronunciation_attempts": 29,
-        "pronunciation_score_avg": 90.21,
-        "free_speaking_attempts": 2,
-        "free_speaking_score_avg": 100.0,
-        "free_speaking_answer_type_dist": {
-          "accordant": 2
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1,
-          "incorrect": 1
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 89.75,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Nice. Do you like apple with peanut butter? 🥜",
-            "expected_answer": "Yes, I like apple with peanut butter.",
-            "target_objects": null,
-            "user_transcript": "Yes, apple with peanut butter.",
-            "score": 66,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 44,
-            "grammar_score": 88,
-            "timestamp": "2026-04-20",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/20/admin/mo714lv4-3c8cd773-audio.wav",
-            "reaction_time_ms": 3130
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What else can you find?",
-            "expected_answer": null,
-            "target_objects": [
-              "pear",
-              "pineapple",
-              "cabbage",
-              "broccoli "
-            ],
-            "user_transcript": "IAPp.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-20",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/20/admin/mo70etsc-fed33fb5-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "pear",
-              "pineapple",
-              "cabbage",
-              "broccoli "
-            ],
-            "user_transcript": "I a pair.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "pear"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-20",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/20/admin/mo70ei0x-8d369734-audio.wav",
-            "reaction_time_ms": 843
           }
         ]
       },
@@ -3445,198 +3097,6 @@
       }
     },
     {
-      "lesson_id": 3766261,
-      "program_id": null,
-      "level": 3,
-      "position": 1,
-      "title": "Unit 1B: Clothes - Lesson 1: What are you wearing?",
-      "desc": "Tech Test- Clothes: T-shirt, dress, skirt, sweater, jacket\n- What are you wearing? - I'm wearing a T-shirt.",
-      "status": "completed",
-      "last_activity_date": "2026-03-11",
-      "days_since_last_practice": 41,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5175,
-      "composite_priority_score": 0.7588,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 50,
-          "audio_turns": 41,
-          "avg_reaction_ms": 1397,
-          "fastest_reaction_ms": 598,
-          "total_duration_ms": 1092499,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-03-11",
-        "pronunciation_attempts": 24,
-        "pronunciation_score_avg": 90.83,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 100.0,
-        "free_speaking_answer_type_dist": {
-          "accordant": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1,
-          "incorrect": 1
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 88.68,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "I like wearing a blue dress sometimes 😊",
-            "expected_answer": "I like blue dresses. What color is your jacket?",
-            "target_objects": null,
-            "user_transcript": "Good care for you. Bye bye. See you next time.",
-            "score": 62,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 80,
-            "grammar_score": 44,
-            "timestamp": "2026-03-11",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/11/admin/mmlv13am-bf42f4a5-audio.wav",
-            "reaction_time_ms": 1797
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What else can you find?",
-            "expected_answer": null,
-            "target_objects": [
-              "dress",
-              "jacket",
-              " T-shirt",
-              "skirt",
-              "sweater"
-            ],
-            "user_transcript": "I, I can see the.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-11",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/11/admin/mmluiqdz-d5eab029-audio.wav",
-            "reaction_time_ms": 700
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "dress",
-              "jacket",
-              " T-shirt",
-              "skirt",
-              "sweater"
-            ],
-            "user_transcript": "I I see a dress skirt.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "dress",
-              "skirt"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-11",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/11/admin/mmluicza-f9379173-audio.wav",
-            "reaction_time_ms": 677
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 8278,
-          "score": 0.95,
-          "correct": 19,
-          "total": 20,
-          "submitted_date": "2026-03-11"
-        },
-        "luyen_tap": {
-          "practice_id": 13467,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-03-11"
-        },
-        "lms_ids": {
-          "bai_tap": 8278,
-          "luyen_tap": 13467
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 3": {
-            "correct": 40,
-            "total": 40,
-            "accuracy": 1.0
-          },
-          "Biểu đồ": {
-            "correct": 18,
-            "total": 20,
-            "accuracy": 0.9
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [
-          {
-            "practice_id": 8278,
-            "question_id": 392550,
-            "question_folder": "Biểu đồ",
-            "question_type": "Trả lời bằng giọng nói",
-            "question_text": "Look and say (Con hãy nhìn và nói.)",
-            "comment_plain": null,
-            "correct_answer": "T-shirt",
-            "student_answer": "shirt",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/25/0179_t-shirt.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "T-shirt",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          },
-          {
-            "practice_id": 8278,
-            "question_id": 392550,
-            "question_folder": "Biểu đồ",
-            "question_type": "Trả lời bằng giọng nói",
-            "question_text": "Look and say (Con hãy nhìn và nói.)",
-            "comment_plain": null,
-            "correct_answer": "T-shirt",
-            "student_answer": "shirt",
-            "requires_media": true,
-            "stem_media_urls": [
-              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/25/0179_t-shirt.png"
-            ],
-            "comment_media_urls": [],
-            "choice_previews": [
-              {
-                "letter": "A",
-                "text": "T-shirt",
-                "image_urls": [],
-                "audio_urls": []
-              }
-            ],
-            "is_correct": 0
-          }
-        ],
-        "not_attempted_preview": {}
-      }
-    },
-    {
       "lesson_id": 3599688,
       "program_id": null,
       "level": 3,
@@ -3834,6 +3294,198 @@
               {
                 "letter": "A",
                 "text": "I have a mustache and beard.",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          }
+        ],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3766261,
+      "program_id": null,
+      "level": 3,
+      "position": 1,
+      "title": "Unit 1B: Clothes - Lesson 1: What are you wearing?",
+      "desc": "Tech Test- Clothes: T-shirt, dress, skirt, sweater, jacket\n- What are you wearing? - I'm wearing a T-shirt.",
+      "status": "completed",
+      "last_activity_date": "2026-03-11",
+      "days_since_last_practice": 41,
+      "forgetting_score": 0.9971,
+      "weakness_score": 0.5175,
+      "composite_priority_score": 0.7573,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 50,
+          "audio_turns": 41,
+          "avg_reaction_ms": 1397,
+          "fastest_reaction_ms": 598,
+          "total_duration_ms": 1092499,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-03-11",
+        "pronunciation_attempts": 24,
+        "pronunciation_score_avg": 90.83,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 100.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "correct": 1,
+          "incorrect": 1
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 88.68,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "I like wearing a blue dress sometimes 😊",
+            "expected_answer": "I like blue dresses. What color is your jacket?",
+            "target_objects": null,
+            "user_transcript": "Good care for you. Bye bye. See you next time.",
+            "score": 62,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 80,
+            "grammar_score": 44,
+            "timestamp": "2026-03-11",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/11/admin/mmlv13am-bf42f4a5-audio.wav",
+            "reaction_time_ms": 1797
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What else can you find?",
+            "expected_answer": null,
+            "target_objects": [
+              "dress",
+              "jacket",
+              " T-shirt",
+              "skirt",
+              "sweater"
+            ],
+            "user_transcript": "I, I can see the.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-11",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/11/admin/mmluiqdz-d5eab029-audio.wav",
+            "reaction_time_ms": 700
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "dress",
+              "jacket",
+              " T-shirt",
+              "skirt",
+              "sweater"
+            ],
+            "user_transcript": "I I see a dress skirt.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "dress",
+              "skirt"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-03-11",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/11/admin/mmluicza-f9379173-audio.wav",
+            "reaction_time_ms": 677
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 8278,
+          "score": 0.95,
+          "correct": 19,
+          "total": 20,
+          "submitted_date": "2026-03-11"
+        },
+        "luyen_tap": {
+          "practice_id": 13467,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-03-11"
+        },
+        "lms_ids": {
+          "bai_tap": 8278,
+          "luyen_tap": 13467
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 40,
+            "total": 40,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 18,
+            "total": 20,
+            "accuracy": 0.9
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [
+          {
+            "practice_id": 8278,
+            "question_id": 392550,
+            "question_folder": "Biểu đồ",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn và nói.)",
+            "comment_plain": null,
+            "correct_answer": "T-shirt",
+            "student_answer": "shirt",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/25/0179_t-shirt.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "T-shirt",
+                "image_urls": [],
+                "audio_urls": []
+              }
+            ],
+            "is_correct": 0
+          },
+          {
+            "practice_id": 8278,
+            "question_id": 392550,
+            "question_folder": "Biểu đồ",
+            "question_type": "Trả lời bằng giọng nói",
+            "question_text": "Look and say (Con hãy nhìn và nói.)",
+            "comment_plain": null,
+            "correct_answer": "T-shirt",
+            "student_answer": "shirt",
+            "requires_media": true,
+            "stem_media_urls": [
+              "https://xcdn-cf.vuihoc.vn/upload/5c209fe6176b0/2023/03/25/0179_t-shirt.png"
+            ],
+            "comment_media_urls": [],
+            "choice_previews": [
+              {
+                "letter": "A",
+                "text": "T-shirt",
                 "image_urls": [],
                 "audio_urls": []
               }
@@ -5029,7 +4681,7 @@
       "status": "completed",
       "last_activity_date": "2026-02-11",
       "days_since_last_practice": 69,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9999,
       "weakness_score": 0.5,
       "composite_priority_score": 0.75,
       "in_class": {
@@ -5197,9 +4849,9 @@
       "status": "completed",
       "last_activity_date": "2026-02-23",
       "days_since_last_practice": 57,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9997,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7499,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -5368,9 +5020,9 @@
       "status": "completed",
       "last_activity_date": "2026-02-25",
       "days_since_last_practice": 55,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9996,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7498,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -5536,9 +5188,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-02",
       "days_since_last_practice": 50,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9992,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7496,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -5720,9 +5372,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-16",
       "days_since_last_practice": 36,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9942,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7471,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -5852,9 +5504,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-18",
       "days_since_last_practice": 34,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9922,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7461,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -5975,9 +5627,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-23",
       "days_since_last_practice": 29,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9841,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.742,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -6170,9 +5822,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-30",
       "days_since_last_practice": 22,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9568,
       "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "composite_priority_score": 0.7284,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -6306,329 +5958,6 @@
           "Biểu đồ": {
             "correct": 6,
             "total": 6,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3798866,
-      "program_id": null,
-      "level": 3,
-      "position": 9,
-      "title": "Unit 2B: Sports - Lesson 3: What can he do?",
-      "desc": "- Review words in L2\n- Sports and exercise (con.t): play tennis, play chess, play golf\n- What can he do? He can play chess.\n- What can she do? She can play chess.",
-      "status": "completed",
-      "last_activity_date": "2026-04-06",
-      "days_since_last_practice": 15,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
-      "in_class": {
-        "participated": true,
-        "session_count": 1,
-        "session_metrics": {
-          "cups": 48,
-          "audio_turns": 43,
-          "avg_reaction_ms": 996,
-          "fastest_reaction_ms": 652,
-          "total_duration_ms": 846647,
-          "session_status": "COMPLETED",
-          "completion_pct": 100
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-06",
-        "pronunciation_attempts": 26,
-        "pronunciation_score_avg": 92.19,
-        "free_speaking_attempts": 1,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 1
-        },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 77.5,
-        "worst_speaking_items": [
-          {
-            "lms_type": "conversation",
-            "question": "Good. How many days a week do you play tennis? 🎾",
-            "expected_answer": "I play tennis three times a week, on Monday, Wednesday, and Saturday.",
-            "target_objects": null,
-            "user_transcript": "In the afternoon.",
-            "score": 53,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 66,
-            "grammar_score": 40,
-            "timestamp": "2026-04-06",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn0smpd-d8ab675c-audio.wav",
-            "reaction_time_ms": 1024
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice. What sport do you play? 🎾",
-            "expected_answer": "I play tennis and sometimes chess with my friends.",
-            "target_objects": null,
-            "user_transcript": "I like tennis.",
-            "score": 66.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 44,
-            "grammar_score": 89,
-            "timestamp": "2026-04-06",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn0rzrs-621103b0-audio.wav",
-            "reaction_time_ms": 1024
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Hi! Nice to see you. Are you ready to talk about sports today? 😄",
-            "expected_answer": "Yes, I am ready. I like football and running.",
-            "target_objects": null,
-            "user_transcript": "Yes, but I think.",
-            "score": 68,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 36,
-            "timestamp": "2026-04-06",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn0qtwa-8a853a67-audio.wav",
-            "reaction_time_ms": 1024
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Good. How often do you play tennis? 🎾",
-            "expected_answer": "I play tennis twice a week.",
-            "target_objects": null,
-            "user_transcript": "At nine o'clock.",
-            "score": 68.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 37,
-            "timestamp": "2026-04-06",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn0pmf9-e135b257-audio.wav",
-            "reaction_time_ms": 1024
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "Can you tell me what are they doing?",
-            "expected_answer": null,
-            "target_objects": [
-              "Play golf",
-              "Play chess",
-              "Play tennis"
-            ],
-            "user_transcript": "Playing hockey.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-06",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn058g5-431c8743-audio.wav",
-            "reaction_time_ms": 717
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 8294,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-04-06"
-        },
-        "luyen_tap": {
-          "practice_id": 13603,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-04-06"
-        },
-        "lms_ids": {
-          "bai_tap": 8294,
-          "luyen_tap": 13603
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 3": {
-            "correct": 33,
-            "total": 33,
-            "accuracy": 1.0
-          },
-          "Biểu đồ": {
-            "correct": 7,
-            "total": 7,
-            "accuracy": 1.0
-          }
-        },
-        "weak_skills": [],
-        "worst_questions": [],
-        "not_attempted_preview": {}
-      }
-    },
-    {
-      "lesson_id": 3806167,
-      "program_id": null,
-      "level": 3,
-      "position": 10,
-      "title": "Unit 2B: Sports - Lesson 4: She can swim and do karate.",
-      "desc": "- consonant: /ʃ/ (chef, fish, dish, eg: the chef makes a dish of fish.)\n- Review words in L3\n- do karate, do yoga\n- What can he do? He can swim and do karate.\n- What can she do? She can swim and do ka",
-      "status": "completed",
-      "last_activity_date": "2026-04-08",
-      "days_since_last_practice": 13,
-      "forgetting_score": 1.0,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
-      "in_class": {
-        "participated": true,
-        "session_count": 2,
-        "session_metrics": {
-          "cups": 41,
-          "audio_turns": 77,
-          "avg_reaction_ms": 1178,
-          "fastest_reaction_ms": 557,
-          "total_duration_ms": 10481,
-          "session_status": "COMPLETED",
-          "completion_pct": 71
-        },
-        "is_completed": true,
-        "completion_pct": 100,
-        "latest_session_date": "2026-04-08",
-        "pronunciation_attempts": 55,
-        "pronunciation_score_avg": 93.15,
-        "free_speaking_attempts": 2,
-        "free_speaking_score_avg": 0.0,
-        "free_speaking_answer_type_dist": {
-          "inaccordant": 2
-        },
-        "brainstorm_attempts": 5,
-        "brainstorm_score_avg": 20.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 3,
-          "correct": 2
-        },
-        "conversation_attempts": 14,
-        "conversation_score_avg": 83.46,
-        "worst_speaking_items": [
-          {
-            "lms_type": "brainstorm",
-            "question": "What activities can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "Do yoga",
-              "Play tennis",
-              "Play golf"
-            ],
-            "user_transcript": "Lin.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnq0865h-507b0947-audio.wav",
-            "reaction_time_ms": 622
-          },
-          {
-            "lms_type": "free_speaking",
-            "question": "What did you eat today?",
-            "expected_answer": null,
-            "target_objects": null,
-            "user_transcript": "Fortu to eighteen.",
-            "score": 0,
-            "answer_type": "inaccordant",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnq06z1d-eb74ac23-audio.wav",
-            "reaction_time_ms": 813
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Oh, I see. Do you play at seven or nine o'clock? ⏰",
-            "expected_answer": "I play at seven o'clock in the evening.",
-            "target_objects": null,
-            "user_transcript": "All o'clock.",
-            "score": 59,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 18,
-            "timestamp": "2026-04-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpx1d20-b63a2e23-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Nice, basketball and football. How often do you play them? 🏀⚽️",
-            "expected_answer": "I play basketball twice a week and football every weekend.",
-            "target_objects": null,
-            "user_transcript": "At seven nine o'clock.",
-            "score": 60.5,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 21,
-            "timestamp": "2026-04-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpx13as-0e176d89-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "conversation",
-            "question": "Cool, watching is fun. How often do you watch football? 📺",
-            "expected_answer": "I watch football twice a week.",
-            "target_objects": null,
-            "user_transcript": "At seven thirty.",
-            "score": 68,
-            "answer_type": null,
-            "correct_objects": null,
-            "pronunciation_score": 100,
-            "grammar_score": 36,
-            "timestamp": "2026-04-08",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpwz0an-5c707882-audio.wav",
-            "reaction_time_ms": null
-          }
-        ]
-      },
-      "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 8295,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-04-08"
-        },
-        "luyen_tap": {
-          "practice_id": 13524,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-04-08"
-        },
-        "lms_ids": {
-          "bai_tap": 8295,
-          "luyen_tap": 13524
-        },
-        "skill_breakdown": {
-          "English Tutoring - Level 3": {
-            "correct": 33,
-            "total": 33,
-            "accuracy": 1.0
-          },
-          "Biểu đồ": {
-            "correct": 7,
-            "total": 7,
             "accuracy": 1.0
           }
         },
@@ -6868,6 +6197,329 @@
       }
     },
     {
+      "lesson_id": 3798866,
+      "program_id": null,
+      "level": 3,
+      "position": 9,
+      "title": "Unit 2B: Sports - Lesson 3: What can he do?",
+      "desc": "- Review words in L2\n- Sports and exercise (con.t): play tennis, play chess, play golf\n- What can he do? He can play chess.\n- What can she do? She can play chess.",
+      "status": "completed",
+      "last_activity_date": "2026-04-06",
+      "days_since_last_practice": 15,
+      "forgetting_score": 0.8827,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.6914,
+      "in_class": {
+        "participated": true,
+        "session_count": 1,
+        "session_metrics": {
+          "cups": 48,
+          "audio_turns": 43,
+          "avg_reaction_ms": 996,
+          "fastest_reaction_ms": 652,
+          "total_duration_ms": 846647,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-06",
+        "pronunciation_attempts": 26,
+        "pronunciation_score_avg": 92.19,
+        "free_speaking_attempts": 1,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 0.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 2
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 77.5,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Good. How many days a week do you play tennis? 🎾",
+            "expected_answer": "I play tennis three times a week, on Monday, Wednesday, and Saturday.",
+            "target_objects": null,
+            "user_transcript": "In the afternoon.",
+            "score": 53,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 66,
+            "grammar_score": 40,
+            "timestamp": "2026-04-06",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn0smpd-d8ab675c-audio.wav",
+            "reaction_time_ms": 1024
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice. What sport do you play? 🎾",
+            "expected_answer": "I play tennis and sometimes chess with my friends.",
+            "target_objects": null,
+            "user_transcript": "I like tennis.",
+            "score": 66.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 44,
+            "grammar_score": 89,
+            "timestamp": "2026-04-06",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn0rzrs-621103b0-audio.wav",
+            "reaction_time_ms": 1024
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Hi! Nice to see you. Are you ready to talk about sports today? 😄",
+            "expected_answer": "Yes, I am ready. I like football and running.",
+            "target_objects": null,
+            "user_transcript": "Yes, but I think.",
+            "score": 68,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 36,
+            "timestamp": "2026-04-06",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn0qtwa-8a853a67-audio.wav",
+            "reaction_time_ms": 1024
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Good. How often do you play tennis? 🎾",
+            "expected_answer": "I play tennis twice a week.",
+            "target_objects": null,
+            "user_transcript": "At nine o'clock.",
+            "score": 68.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 37,
+            "timestamp": "2026-04-06",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn0pmf9-e135b257-audio.wav",
+            "reaction_time_ms": 1024
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "Can you tell me what are they doing?",
+            "expected_answer": null,
+            "target_objects": [
+              "Play golf",
+              "Play chess",
+              "Play tennis"
+            ],
+            "user_transcript": "Playing hockey.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-06",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/06/admin/mnn058g5-431c8743-audio.wav",
+            "reaction_time_ms": 717
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 8294,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-06"
+        },
+        "luyen_tap": {
+          "practice_id": 13603,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-06"
+        },
+        "lms_ids": {
+          "bai_tap": 8294,
+          "luyen_tap": 13603
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 33,
+            "total": 33,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 7,
+            "total": 7,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
+      "lesson_id": 3806167,
+      "program_id": null,
+      "level": 3,
+      "position": 10,
+      "title": "Unit 2B: Sports - Lesson 4: She can swim and do karate.",
+      "desc": "- consonant: /ʃ/ (chef, fish, dish, eg: the chef makes a dish of fish.)\n- Review words in L3\n- do karate, do yoga\n- What can he do? He can swim and do karate.\n- What can she do? She can swim and do ka",
+      "status": "completed",
+      "last_activity_date": "2026-04-08",
+      "days_since_last_practice": 13,
+      "forgetting_score": 0.8439,
+      "weakness_score": 0.5,
+      "composite_priority_score": 0.672,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "session_metrics": {
+          "cups": 41,
+          "audio_turns": 77,
+          "avg_reaction_ms": 1178,
+          "fastest_reaction_ms": 557,
+          "total_duration_ms": 10481,
+          "session_status": "COMPLETED",
+          "completion_pct": 71
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-08",
+        "pronunciation_attempts": 55,
+        "pronunciation_score_avg": 93.15,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 0.0,
+        "free_speaking_answer_type_dist": {
+          "inaccordant": 2
+        },
+        "brainstorm_attempts": 5,
+        "brainstorm_score_avg": 20.0,
+        "brainstorm_answer_type_dist": {
+          "incorrect": 3,
+          "correct": 2
+        },
+        "conversation_attempts": 14,
+        "conversation_score_avg": 83.46,
+        "worst_speaking_items": [
+          {
+            "lms_type": "brainstorm",
+            "question": "What activities can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "Do yoga",
+              "Play tennis",
+              "Play golf"
+            ],
+            "user_transcript": "Lin.",
+            "score": 0,
+            "answer_type": "incorrect",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnq0865h-507b0947-audio.wav",
+            "reaction_time_ms": 622
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "What did you eat today?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "Fortu to eighteen.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnq06z1d-eb74ac23-audio.wav",
+            "reaction_time_ms": 813
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Oh, I see. Do you play at seven or nine o'clock? ⏰",
+            "expected_answer": "I play at seven o'clock in the evening.",
+            "target_objects": null,
+            "user_transcript": "All o'clock.",
+            "score": 59,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 18,
+            "timestamp": "2026-04-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpx1d20-b63a2e23-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Nice, basketball and football. How often do you play them? 🏀⚽️",
+            "expected_answer": "I play basketball twice a week and football every weekend.",
+            "target_objects": null,
+            "user_transcript": "At seven nine o'clock.",
+            "score": 60.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 21,
+            "timestamp": "2026-04-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpx13as-0e176d89-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "conversation",
+            "question": "Cool, watching is fun. How often do you watch football? 📺",
+            "expected_answer": "I watch football twice a week.",
+            "target_objects": null,
+            "user_transcript": "At seven thirty.",
+            "score": 68,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 100,
+            "grammar_score": 36,
+            "timestamp": "2026-04-08",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/08/admin/mnpwz0an-5c707882-audio.wav",
+            "reaction_time_ms": null
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 8295,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-08"
+        },
+        "luyen_tap": {
+          "practice_id": 13524,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-08"
+        },
+        "lms_ids": {
+          "bai_tap": 8295,
+          "luyen_tap": 13524
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 33,
+            "total": 33,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 7,
+            "total": 7,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3610790,
       "program_id": null,
       "level": 3,
@@ -7029,113 +6681,117 @@
       }
     },
     {
-      "lesson_id": 3822819,
+      "lesson_id": 3995248,
       "program_id": null,
-      "level": 3,
-      "position": 11,
-      "title": "Unit 2B: Sports - Lesson 5: He can swim but he can't do karate.",
-      "desc": "- Review all\n- Health: Be active. Exercise every day.\n'- What can you do? I can swim and skip.\n- Can you play football? Yes, I can./ No, I can't.\n- I can play football but I can't play basketball.  \n-",
-      "status": "completed",
-      "last_activity_date": "2026-04-13",
-      "days_since_last_practice": 8,
-      "forgetting_score": 0.9997,
-      "weakness_score": 0.25,
-      "composite_priority_score": 0.6249,
+      "level": null,
+      "position": null,
+      "title": null,
+      "desc": null,
+      "status": "in_class_only",
+      "last_activity_date": "2026-04-20",
+      "days_since_last_practice": 1,
+      "forgetting_score": 0.1331,
+      "weakness_score": 1.0,
+      "composite_priority_score": 0.5665,
       "in_class": {
         "participated": true,
         "session_count": 2,
         "session_metrics": {
-          "cups": 64,
-          "audio_turns": 51,
-          "avg_reaction_ms": 2216,
-          "fastest_reaction_ms": 475,
-          "total_duration_ms": 1347298,
+          "cups": 66,
+          "audio_turns": 48,
+          "avg_reaction_ms": 2537,
+          "fastest_reaction_ms": 630,
+          "total_duration_ms": 1450416,
           "session_status": "COMPLETED",
           "completion_pct": 100
         },
         "is_completed": true,
         "completion_pct": 100,
-        "latest_session_date": "2026-04-13",
-        "pronunciation_attempts": 34,
-        "pronunciation_score_avg": 97.06,
+        "latest_session_date": "2026-04-20",
+        "pronunciation_attempts": 29,
+        "pronunciation_score_avg": 90.21,
         "free_speaking_attempts": 2,
-        "free_speaking_score_avg": 50.0,
+        "free_speaking_score_avg": 100.0,
         "free_speaking_answer_type_dist": {
-          "accordant": 1,
-          "inaccordant": 1
+          "accordant": 2
         },
         "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 100.0,
+        "brainstorm_score_avg": 0.0,
         "brainstorm_answer_type_dist": {
-          "correct": 2
+          "correct": 1,
+          "incorrect": 1
         },
-        "conversation_attempts": 13,
-        "conversation_score_avg": 84.23,
+        "conversation_attempts": 14,
+        "conversation_score_avg": 89.75,
         "worst_speaking_items": [
           {
             "lms_type": "conversation",
-            "question": "Nice. How often do you play with your friend? ⚽️",
-            "expected_answer": "We play twice a week, on Tuesdays and Saturdays.",
+            "question": "Nice. Do you like apple with peanut butter? 🥜",
+            "expected_answer": "Yes, I like apple with peanut butter.",
             "target_objects": null,
-            "user_transcript": "As twice a week, I'm once a day.",
-            "score": 33.5,
+            "user_transcript": "Yes, apple with peanut butter.",
+            "score": 66,
             "answer_type": null,
             "correct_objects": null,
-            "pronunciation_score": 51,
-            "grammar_score": 16,
-            "timestamp": "2026-04-13",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx30veq-fb994596-audio.wav",
-            "reaction_time_ms": 4171
+            "pronunciation_score": 44,
+            "grammar_score": 88,
+            "timestamp": "2026-04-20",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/20/admin/mo714lv4-3c8cd773-audio.wav",
+            "reaction_time_ms": 3130
           },
           {
-            "lms_type": "free_speaking",
-            "question": "How are you today?",
+            "lms_type": "brainstorm",
+            "question": "What else can you find?",
             "expected_answer": null,
-            "target_objects": null,
-            "user_transcript": "I thank you.",
+            "target_objects": [
+              "pear",
+              "pineapple",
+              "cabbage",
+              "broccoli "
+            ],
+            "user_transcript": "IAPp.",
             "score": 0,
-            "answer_type": "inaccordant",
+            "answer_type": "incorrect",
             "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
-            "timestamp": "2026-04-13",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx28nxo-1d3caf54-audio.wav",
-            "reaction_time_ms": 820
+            "timestamp": "2026-04-20",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/20/admin/mo70etsc-fed33fb5-audio.wav",
+            "reaction_time_ms": null
+          },
+          {
+            "lms_type": "brainstorm",
+            "question": "What can you see?",
+            "expected_answer": null,
+            "target_objects": [
+              "pear",
+              "pineapple",
+              "cabbage",
+              "broccoli "
+            ],
+            "user_transcript": "I a pair.",
+            "score": 0,
+            "answer_type": "correct",
+            "correct_objects": [
+              "pear"
+            ],
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-20",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/20/admin/mo70ei0x-8d369734-audio.wav",
+            "reaction_time_ms": 843
           }
         ]
       },
       "homework": {
-        "attempted": true,
-        "bai_tap": {
-          "practice_id": 8296,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-04-13"
-        },
-        "luyen_tap": {
-          "practice_id": 13535,
-          "score": 1,
-          "correct": 20,
-          "total": 20,
-          "submitted_date": "2026-04-13"
-        },
+        "attempted": false,
+        "bai_tap": null,
+        "luyen_tap": null,
         "lms_ids": {
-          "bai_tap": 8296,
-          "luyen_tap": 13535
+          "bai_tap": null,
+          "luyen_tap": null
         },
-        "skill_breakdown": {
-          "English Tutoring - Level 3": {
-            "correct": 32,
-            "total": 32,
-            "accuracy": 1.0
-          },
-          "Biểu đồ": {
-            "correct": 8,
-            "total": 8,
-            "accuracy": 1.0
-          }
-        },
+        "skill_breakdown": {},
         "weak_skills": [],
         "worst_questions": [],
         "not_attempted_preview": {}
@@ -7463,9 +7119,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-04",
       "days_since_last_practice": 48,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9989,
       "weakness_score": 0.0,
-      "composite_priority_score": 0.5,
+      "composite_priority_score": 0.4995,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -7605,9 +7261,9 @@
       "status": "completed",
       "last_activity_date": "2026-03-25",
       "days_since_last_practice": 27,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.9789,
       "weakness_score": 0.0,
-      "composite_priority_score": 0.5,
+      "composite_priority_score": 0.4894,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -7693,6 +7349,119 @@
       }
     },
     {
+      "lesson_id": 3822819,
+      "program_id": null,
+      "level": 3,
+      "position": 11,
+      "title": "Unit 2B: Sports - Lesson 5: He can swim but he can't do karate.",
+      "desc": "- Review all\n- Health: Be active. Exercise every day.\n'- What can you do? I can swim and skip.\n- Can you play football? Yes, I can./ No, I can't.\n- I can play football but I can't play basketball.  \n-",
+      "status": "completed",
+      "last_activity_date": "2026-04-13",
+      "days_since_last_practice": 8,
+      "forgetting_score": 0.6811,
+      "weakness_score": 0.25,
+      "composite_priority_score": 0.4656,
+      "in_class": {
+        "participated": true,
+        "session_count": 2,
+        "session_metrics": {
+          "cups": 64,
+          "audio_turns": 51,
+          "avg_reaction_ms": 2216,
+          "fastest_reaction_ms": 475,
+          "total_duration_ms": 1347298,
+          "session_status": "COMPLETED",
+          "completion_pct": 100
+        },
+        "is_completed": true,
+        "completion_pct": 100,
+        "latest_session_date": "2026-04-13",
+        "pronunciation_attempts": 34,
+        "pronunciation_score_avg": 97.06,
+        "free_speaking_attempts": 2,
+        "free_speaking_score_avg": 50.0,
+        "free_speaking_answer_type_dist": {
+          "accordant": 1,
+          "inaccordant": 1
+        },
+        "brainstorm_attempts": 2,
+        "brainstorm_score_avg": 100.0,
+        "brainstorm_answer_type_dist": {
+          "correct": 2
+        },
+        "conversation_attempts": 13,
+        "conversation_score_avg": 84.23,
+        "worst_speaking_items": [
+          {
+            "lms_type": "conversation",
+            "question": "Nice. How often do you play with your friend? ⚽️",
+            "expected_answer": "We play twice a week, on Tuesdays and Saturdays.",
+            "target_objects": null,
+            "user_transcript": "As twice a week, I'm once a day.",
+            "score": 33.5,
+            "answer_type": null,
+            "correct_objects": null,
+            "pronunciation_score": 51,
+            "grammar_score": 16,
+            "timestamp": "2026-04-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx30veq-fb994596-audio.wav",
+            "reaction_time_ms": 4171
+          },
+          {
+            "lms_type": "free_speaking",
+            "question": "How are you today?",
+            "expected_answer": null,
+            "target_objects": null,
+            "user_transcript": "I thank you.",
+            "score": 0,
+            "answer_type": "inaccordant",
+            "correct_objects": null,
+            "pronunciation_score": null,
+            "grammar_score": null,
+            "timestamp": "2026-04-13",
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/13/admin/mnx28nxo-1d3caf54-audio.wav",
+            "reaction_time_ms": 820
+          }
+        ]
+      },
+      "homework": {
+        "attempted": true,
+        "bai_tap": {
+          "practice_id": 8296,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-13"
+        },
+        "luyen_tap": {
+          "practice_id": 13535,
+          "score": 1,
+          "correct": 20,
+          "total": 20,
+          "submitted_date": "2026-04-13"
+        },
+        "lms_ids": {
+          "bai_tap": 8296,
+          "luyen_tap": 13535
+        },
+        "skill_breakdown": {
+          "English Tutoring - Level 3": {
+            "correct": 32,
+            "total": 32,
+            "accuracy": 1.0
+          },
+          "Biểu đồ": {
+            "correct": 8,
+            "total": 8,
+            "accuracy": 1.0
+          }
+        },
+        "weak_skills": [],
+        "worst_questions": [],
+        "not_attempted_preview": {}
+      }
+    },
+    {
       "lesson_id": 3785342,
       "program_id": null,
       "level": 3,
@@ -7702,9 +7471,9 @@
       "status": "completed",
       "last_activity_date": "2026-04-05",
       "days_since_last_practice": 16,
-      "forgetting_score": 1.0,
+      "forgetting_score": 0.8983,
       "weakness_score": 0.0,
-      "composite_priority_score": 0.5,
+      "composite_priority_score": 0.4491,
       "in_class": {
         "participated": true,
         "session_count": 1,
@@ -7829,9 +7598,9 @@
       "status": "in_class_only",
       "last_activity_date": "2026-04-15",
       "days_since_last_practice": 6,
-      "forgetting_score": 0.9975,
+      "forgetting_score": 0.5756,
       "weakness_score": 0.0,
-      "composite_priority_score": 0.4988,
+      "composite_priority_score": 0.2878,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -7931,9 +7700,9 @@
       "status": "completed",
       "last_activity_date": "2026-04-20",
       "days_since_last_practice": 1,
-      "forgetting_score": 0.6321,
+      "forgetting_score": 0.1331,
       "weakness_score": 0.0,
-      "composite_priority_score": 0.316,
+      "composite_priority_score": 0.0665,
       "in_class": {
         "participated": true,
         "session_count": 1,
