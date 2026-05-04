@@ -52,6 +52,8 @@ interface Question {
   correct_answer: string | null
   difficulty: 'easy' | 'medium' | 'hard'
   reason: string
+  /** Fragment of student's speaking transcript cited in reason. Null = not cited. */
+  speaking_evidence?: string | null
   student_context: StudentContext | null
   /** Gộp từ questions_export + failed_text_questions (API homework). */
   lms_question?: HomeworkQuestionFull | null
@@ -224,9 +226,25 @@ function PriorLearningContext({ q, studentId }: { q: Question; studentId: string
     )
   }
 
-  const speakingItems = ctx.worst_speaking_items ?? []
+  const allSpeakingItems = ctx.worst_speaking_items ?? []
   const textItem = findMatchingTextQuestion(q)
   const hideTextSnippet = shouldHideTextSnippet(q, textItem)
+
+  // Filter speaking items: show only the one(s) cited in reason when speaking_evidence is set.
+  // For speaking questions with no citation info, fall back to showing all.
+  const speakingEvidence = q.speaking_evidence ?? null
+  const speakingItems = (() => {
+    if (!speakingEvidence) {
+      // No explicit citation → only show for speaking questions
+      return q.skill_category === 'speaking' ? allSpeakingItems : []
+    }
+    const fragment = speakingEvidence.toLowerCase()
+    const cited = allSpeakingItems.filter(
+      (item) => item.user_transcript?.toLowerCase().includes(fragment),
+    )
+    // If nothing matched (agent paraphrased), fall back to all items
+    return cited.length > 0 ? cited : allSpeakingItems
+  })()
 
   const hasSnippet = speakingItems.length > 0 || (textItem && !hideTextSnippet)
   const days = ctx.days_since_last_practice

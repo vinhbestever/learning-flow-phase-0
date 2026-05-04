@@ -52,6 +52,7 @@ HOMEWORK_SCHEMA = {
                         "reason",
                         "question_id",
                         "requires_media",
+                        "speaking_evidence",
                     ],
                     "additionalProperties": False,
                     "properties": {
@@ -69,6 +70,7 @@ HOMEWORK_SCHEMA = {
                         "reason": {"type": "string"},
                         "question_id": {"anyOf": [{"type": "integer"}, {"type": "null"}]},
                         "requires_media": {"type": "boolean"},
+                        "speaking_evidence": {"anyOf": [{"type": "string"}, {"type": "null"}]},
                     },
                 },
             }
@@ -119,6 +121,15 @@ Do NOT omit this when prev_wrong=yes — it is the primary evidence for selectin
 Do NOT write generic labels like "critical signal, grammar practice".
 Do NOT invent errors that are not present in the pool data or diagnostic.
 The reason field MUST be written entirely in Vietnamese.
+
+SPEAKING_EVIDENCE FIELD:
+Set speaking_evidence to the exact short fragment of the student's transcript you cited in the reason \
+(e.g. "I'm a last in karaoke", "Can see a bus stop"). This allows the UI to highlight exactly that \
+transcript. Rules:
+- If your reason quotes or paraphrases a specific student speaking utterance → set speaking_evidence \
+to the exact quoted text from that utterance (copy it verbatim from the diagnostic or pool data).
+- If your reason does NOT reference any specific speaking transcript → set speaking_evidence to null.
+- Never fabricate a transcript fragment not found in the diagnostic or pool data.
 
 Good reason examples (in Vietnamese):
 - "Học sinh điền 'cost' thay vì 'is' trong bài fill-blank này — lỗi chia động từ theo chủ ngữ xuất hiện ở 3 bài học khác nhau theo kết quả chẩn đoán. Bài đã học cách đây 20 ngày (đã quên hoàn toàn)."
@@ -292,6 +303,7 @@ def _repair_homework(homework: list, question_pool: list, min_speaking: int) -> 
             "reason": "[Câu được điều chỉnh tự động để đảm bảo đa dạng bài học.]",
             "question_id": pq.get("question_id"),
             "requires_media": bool(pq.get("requires_media")),
+            "speaking_evidence": None,
         }
 
     def _find(

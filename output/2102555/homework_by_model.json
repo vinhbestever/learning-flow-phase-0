@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_run_model": "gpt-4.1",
+  "last_run_model": "gpt-5.4",
   "models": {
     "gpt-4.1": {
       "updated_at": "2026-05-04T08:25:27.750868+00:00",
@@ -1301,8 +1301,8 @@
       ]
     },
     "gpt-5.4": {
-      "updated_at": "2026-05-04T07:37:51.099909+00:00",
-      "diagnostic": "Ba mẫu lỗi/rủi ro nghiêm trọng nhất tôi quan sát được là: thứ nhất, điểm yếu nói theo ảnh với từ mục tiêu rất nặng và lặp lại gần như toàn bộ các bài, thể hiện ở brainstorm trung bình chỉ 15.85/100 và rất nhiều bài 0/100; thứ hai, có một nhóm rủi ro ghi nhớ rất cao ở các bài đã học từ lâu nhưng hoặc chưa nộp homework, hoặc chỉ có bằng chứng nói rất yếu nên khả năng quên gần như hoàn toàn; thứ ba, học sinh có xu hướng hiểu và làm bài viết tốt nhưng khi nói mở hoặc hội thoại vẫn hay trả lời lệch ý, lặp lại câu hỏi, hoặc tạo câu ngắn/không tự nhiên, cho thấy khoảng cách rõ giữa nhận biết trên giấy và khả năng gọi từ + diễn đạt miệng.\n\nMẫu nghiêm trọng nhất là yếu ở brainstorm, tức kỹ năng nhìn tranh rồi gọi đúng và đủ các từ mục tiêu. Đây không phải lỗi nhỏ mà là điểm nghẽn xuyên suốt. Nhiều câu có answer_type=correct nhưng vẫn score=0, nghĩa là học sinh nói ra từ hợp lệ nhưng không đủ số mục tiêu cần có. Ví dụ ở Transportation Lesson 3, học sinh nói “bus stop, train station” nhưng vẫn 0 điểm vì chưa bao phủ đủ targets; ở Jobs Review 1, học sinh nói được “police officer” nhưng bài cần Doctor, Nurse, Firefighter; ở Transportation Lesson 1, học sinh chỉ nói “Motorcycle” trong khi cần liệt kê thêm Truck, Tractor. Điều này cho thấy vấn đề chính không hẳn là không biết hoàn toàn, mà là vốn từ chủ điểm được gọi ra quá ít, thiếu chiến lược quét tranh và liệt kê, và khả năng nhớ theo nhóm từ rất yếu. Ngoài ra còn có nhiều câu brainstorm answer_type=incorrect, như “As six people”, “A.C.”, “I can see a rock to clean the feet”, “Baittting…”; các câu này cho thấy khi không gọi được từ đích, học sinh chuyển sang đoán âm, nói từ ngoài danh sách, hoặc tạo cụm không liên quan. Vì brainstorm là điểm yếu “critical” toàn cục, các bài có brainstorm 0/100 không nên chỉ ôn nhẹ mà cần luyện sâu bằng dạng nhìn tranh gọi từ, phân loại theo nhóm, và ép học sinh nói đủ 3–5 mục tiêu thay vì chỉ nói 1 từ.\n\nMẫu thứ hai là rủi ro quên bài rất cao ở các bài cũ, đặc biệt khi homework chưa làm hoặc dữ liệu lỗi viết không có nên không có bằng chứng giữ nhớ sau lớp. Trường hợp đáng lo nhất là Unit 1B Transportation Lesson 3, đã 118 ngày, hw_status=not_attempted, forgetting risk rất cao, lại có brainstorm 0/100 và free speaking 0/100. Vì chưa nộp bài, phần question bank preview không thể xem như lỗi thật, nên đây là khoảng trống bằng chứng chứ không phải “không có vấn đề”. Với tuổi bài 118 ngày và chỉ có một lần luyện trước, khả năng quên gần như hoàn toàn là rất lớn. Tương tự, các bài rất cũ như Jobs Review 1 cách 167 ngày, Free time Lesson 3 cách 153 ngày, Around the world Lesson 2 cách 139 ngày, Around the world Lesson 4 cách 132 ngày, Transportation Lesson 1 cách 122 ngày, Friends Lesson 1 cách 191 ngày, Jobs Lesson 1 cách 176 ngày đều cần ưu tiên theo hướng phục hồi trí nhớ trước, không nên giả định rằng vì viết trước đây tốt thì hiện tại vẫn nhớ. Điểm đáng chú ý là nhiều bài cũ vẫn có conversation tương đối ổn ở thời điểm học, nhưng brainstorm lại 0/100; sau hơn 3–6 tháng, phần từ vựng chủ điểm có khả năng rơi rụng mạnh hơn phần mẫu câu quen thuộc. Vì vậy các bài cũ có brainstorm 0 nên xếp vào nhóm luyện sâu, nhất là Transportation, Jobs, Around the world, Free time và My City. Riêng Transportation Lesson 3 là bài cần xử lý đầu tiên vì vừa rất cũ vừa chưa làm homework vừa có cả free speaking 0.\n\nMẫu thứ ba là chênh lệch lớn giữa năng lực làm bài viết và năng lực nói tự phát. Dữ liệu homework cho thấy accuracy viết rất cao ở hầu hết nhóm kỹ năng, gần như không có điểm yếu viết hệ thống. Tuy nhiên khi nói, học sinh lại thường trả lời lệch câu hỏi, lặp lại lời giáo viên, hoặc đưa câu quá ngắn nên không đạt yêu cầu giao tiếp. Ví dụ ở My City Lesson 2, câu hỏi “Where is your city located?” được trả lời bằng “Amy.”; ở My City Review 2, học sinh lặp lại nguyên câu hỏi “Nice. Do you go there often?” thay vì trả lời; ở My City Lesson 1, câu “No, no, no.” xuất hiện khi cần tiếp tục hội thoại; ở Shopping Review 1, câu “Bye, I don't know what to talk to again, too.” cho thấy học sinh cố ghép từ nhưng chưa kiểm soát được cấu trúc. Free speaking cũng phản ánh điều này: phân bố có 16 câu inaccordant và 3 lack_of_knowledge, nghĩa là không ít lần học sinh không bám được ý hỏi hoặc không biết nói gì. Dù free speaking average nhìn chung không quá thấp, dữ liệu từng bài cho thấy có các bài 0/100 thật sự như Transportation Lesson 3, Shopping Review 1, Favorite subject, Free time Lesson 3, My City Review 2. Điều này cho thấy học sinh có thể bắt chước hoặc trả lời tốt trong ngữ cảnh quen thuộc, nhưng khi cần tự chọn nội dung hoặc nối ý thì dễ mất định hướng. Vì vậy cần xem đây là vấn đề diễn đạt miệng và hiểu nhiệm vụ nói, không phải vấn đề ngữ pháp viết.\n\nVề khoảng trống kỹ năng cụ thể, học sinh mạnh ở nhận diện và làm bài LMS, yếu ở truy xuất từ vựng bằng lời nói. Phát âm trung bình 86.96/100 là khá ổn, nên đây không phải hồ sơ “không phát âm được”. Tuy nhiên có một số bài conversation bị kéo xuống bởi phát âm thấp ở các câu đúng ý, như Favorite subject có câu gram 95 nhưng pron 40, Free time Lesson 3 có các câu pron 38–40, Materials Lesson 2 có pron 50–53. Điều này nghĩa là khi học sinh biết nên nói gì, âm thanh đầu ra vẫn có lúc chưa rõ, đặc biệt ở từ ít quen hoặc chuỗi từ dài. Mặt khác, một số lỗi viết nhỏ cho thấy ngữ pháp và độ chính xác hình thức vẫn cần chạm lại ở mức nhẹ: “walk” thay vì “walks”, “read” thay vì “reading”, “west/east”, “school bag/bag”, “is that” thiếu cấu trúc đầy đủ, “fire fighter” tách sai chính tả, “grocery” viết sai. Nhưng vì tổng thể writing accuracy rất cao, đây không phải trọng tâm chính.\n\nNếu chia theo mức cần luyện sâu và ôn nhẹ, nhóm cần luyện sâu trước hết là các bài vừa cũ vừa có brainstorm 0/100 và/hoặc free speaking 0/100. Ưu tiên cao nhất là Unit 1B Transportation Lesson 3 vì chưa làm homework, rất cũ, và cả hai kỹ năng nói chính đều rơi về 0. Tiếp theo là Level 5B Transportation Lesson 1, Unit 2A Jobs Review 1, Unit 3A Free time Lesson 3, Unit 4A Around the world Lesson 2, Unit 4A Around the world Lesson 4, Unit 3B Materials Lesson 2, Unit 1C Favorite subject, Unit 4B My City Lesson 1 và Lesson 2. Trong nhóm này, Transportation, Jobs, Around the world và My City đặc biệt phù hợp để luyện phục hồi từ theo tranh vì dữ liệu cho thấy học sinh thường chỉ gọi được 1 mục tiêu hoặc nói lan man ngoài danh sách. Shopping Lesson 1 và Shopping Review 1 cũng cần luyện sâu, dù tuổi bài mới hơn, vì đây là cụm bài gần đây nhưng brainstorm vẫn 0 tuyệt đối; nếu bài còn khá mới mà vẫn không gọi được từ mục tiêu thì đó là dấu hiệu chưa hình thành biểu tượng từ vựng vững.\n\nNhóm chỉ cần ôn nhẹ hơn là các bài có conversation và pronunciation tương đối ổn, lỗi viết ít, và điểm yếu chủ yếu là độ đầy đủ khi brainstorm. Ví dụ Friends Lesson 1 và Jobs Lesson 1 tuy rất cũ nhưng conversation không tệ hoặc không có dấu hiệu hội thoại đổ vỡ nghiêm trọng; các bài này có thể dùng để spaced repetition theo dạng gọi từ nhanh, matching tranh-từ, rồi nói câu mẫu ngắn. Shopping Lesson 1 cũng có conversation 88/100 nên sau khi phục hồi từ vựng belts/handbags/gloves, có thể chuyển nhanh sang hỏi đáp giá tiền. Around the world Lesson 4 có conversation 91/100, vì vậy chỉ cần ôn nhẹ phần từ vựng địa danh/cảnh quan và mở rộng số lượng từ gọi ra trong tranh.\n\nVề mẫu lỗi lặp lại theo bài học, có thể thấy ba kiểu. Kiểu thứ nhất là “nói đúng nhưng thiếu”, rất rõ ở Transportation, Jobs, Shopping, Around the world, Friends. Với kiểu này, câu hỏi hiệu quả nhất là yêu cầu liệt kê đủ số lượng: “Con nói 3 từ con nhìn thấy”, “Còn gì nữa?”, “Hãy nói tất cả đồ vật/nghề nghiệp/địa điểm trong tranh”. Kiểu thứ hai là “nói lệch mục tiêu hoặc đoán âm”, xuất hiện ở Favorite subject, Materials, Free time, My City. Với kiểu này, nên dùng câu hỏi đóng hơn trước khi mở: cho 2–4 lựa chọn bằng hình hoặc từ, rồi mới yêu cầu nói lại đầy đủ. Kiểu thứ ba là “hiểu câu hỏi hội thoại chưa chắc, nên trả lời lạc đề hoặc lặp lại”, xuất hiện ở My City và một phần Shopping Review 1. Với kiểu này, câu hỏi hiệu quả nhất là khung trả lời ngắn có mẫu, ví dụ “My city is in…”, “I like… because…”, “Yes, I do./No, I don’t.” rồi mới tăng dần độ mở.\n\nXét từng cụm bài, Transportation cần tập trung vào từ chỉ phương tiện và địa điểm giao thông bằng tranh, sau đó nối sang mẫu “I go to school by…”. Vì bài Lesson 3 chưa làm homework và rất cũ, nên câu hỏi hiệu quả nhất là nhận diện tranh + gọi tên + chọn đúng giữa các phương tiện/địa điểm, rồi mới hỏi mở. Shopping cần luyện sâu bộ từ đồ dùng như belt, handbag, gloves, wallet và mẫu giá tiền. Dữ liệu cho thấy học sinh có thể nói lan sang từ không thuộc danh sách hoặc mô tả sai trọng tâm, nên dạng tốt nhất là tranh đơn lẻ, đối chiếu từ gần nghĩa, rồi hỏi “What can you see?” với yêu cầu ít nhất 3 từ đích. My City cần kết hợp từ vựng địa điểm, địa chỉ, phương hướng với hội thoại có khung, vì ở đây vừa có brainstorm yếu vừa có nhiều câu conversation lạc ý. Dạng câu hỏi hiệu quả là điền khung “It’s on… Street”, “It’s in the north/west…”, “The pharmacy is next to…”, sau đó mới chuyển sang hỏi mở về thành phố của em. Around the world cần ôn từ country/place/nature words theo nhóm, vì học sinh có xu hướng lặp một từ “city” hoặc đọc chuỗi tên nước không kiểm soát. Dạng phù hợp là phân loại “country hay place”, “mountain/lake/waterfall”, rồi nói câu ngắn “I live in…”, “There are…”. Jobs và Friends phù hợp với dạng nhìn tranh gọi đủ người/vai trò/đặc điểm, vì học sinh thường chỉ nêu một phần hoặc dùng mô tả chung như “many people”. Favorite subject và Free time cần thêm hỗ trợ hiểu nghĩa câu hỏi và chọn đúng trường từ vựng, vì đã xuất hiện câu trả lời rất xa mục tiêu.\n\nTóm lại, hồ sơ này không phải học sinh yếu toàn diện. Học sinh làm bài viết rất tốt, phát âm trung bình khá, conversation nhìn chung chấp nhận được. Điểm nghẽn thật sự là truy xuất từ vựng bằng lời nói khi nhìn tranh, cộng với rủi ro quên mạnh ở các bài cũ và một số biểu hiện trả lời lạc đề trong nói mở. Vì vậy chiến lược hiệu quả nhất là ưu tiên các bài cũ có brainstorm 0/100 để phục hồi vốn từ chủ điểm, đặc biệt Transportation Lesson 3, Transportation Lesson 1, Jobs Review 1, Free time Lesson 3, Around the world Lesson 2/4, My City Lesson 1/2. Sau khi học sinh gọi được đủ từ mục tiêu, mới chuyển sang free speaking và conversation có khung. Nếu chọn đúng dạng câu hỏi theo từng bài, khả năng cải thiện sẽ đến nhanh vì nền viết và phát âm của học sinh không yếu.",
+      "updated_at": "2026-05-04T09:44:00.455606+00:00",
+      "diagnostic": "Ba mẫu lỗi và rủi ro nghiêm trọng nhất là: thứ nhất, điểm yếu nói theo ảnh/từ mục tiêu rất nặng và lặp lại trên diện rộng; thứ hai, có dấu hiệu hiểu câu hỏi nói chưa ổn nên khi nói tự do hoặc hội thoại học sinh dễ trả lời lệch ý, lặp lại, hoặc bám vào một từ quen thuộc; thứ ba, có rủi ro quên bài rất cao ở các bài cũ, đặc biệt có một bài chưa nộp homework nên hoàn toàn thiếu bằng chứng ghi nhớ sau lớp.\n\nMẫu nghiêm trọng nhất là kỹ năng brainstorm. Đây là điểm yếu mang tính hệ thống, không phải lỗi đơn lẻ ở vài bài. Điểm trung bình brainstorm chỉ 15.85/100, dưới ngưỡng critical rất xa, trong khi phân bố câu trả lời cho thấy học sinh có cả hai kiểu vấn đề: nhiều lần nói ra từ hợp lệ nhưng không đủ số mục tiêu, và cũng có nhiều lần nói sai hẳn sang từ ngoài danh sách. Điều này cho thấy học sinh không yếu phát âm đơn thuần, vì pronunciation trung bình vẫn 86.96/100; vấn đề chính là gọi tên đúng nhóm từ mục tiêu từ tranh, đủ số lượng, và bám sát trường từ vựng của bài. Mẫu này xuất hiện liên tục ở hầu hết các lesson cần review: Transportation, Shopping, My City, Jobs, Around the world, Free time, Friends. Ví dụ rất điển hình là bài “Can you drive a car?” học sinh nói “Motorcycle” nhưng vẫn score 0 vì chỉ nêu được một mục tiêu trong khi tranh yêu cầu nhiều mục tiêu như Truck, Motorcycle, Tractor. Tương tự, ở “How do you go to school?” học sinh nói “bus stop, train station” là từ hợp lệ nhưng vẫn 0 vì chưa đủ mục tiêu. Điều này cực kỳ quan trọng: học sinh không hẳn “không biết gì”, mà thường biết rời rạc vài từ nhưng không đủ độ bao phủ. Với agent chọn câu hỏi, dạng câu hiệu quả nhất cho nhóm bài này là câu hỏi nhìn tranh và buộc liệt kê nhiều mục tiêu trong cùng một khung hình, ưu tiên bài có trường từ vựng rõ ràng như phương tiện, nghề nghiệp, địa điểm trong thành phố, vật dụng mua sắm. Cần deep practice cho các bài brainstorm = 0 và đã cũ lâu ngày: “Transportation - Lesson 1”, “Transportation - Lesson 3”, “Jobs - Review 1”, “Around the world - Lesson 2”, “Around the world - Lesson 4”, “Free time - Lesson 3”, “My City - Lesson 1/2/5”, “Shopping - Lesson 1/Review 1”. Những bài này không nên chỉ ôn nhận diện một từ; cần luyện chuỗi “What can you see?/What else can you find?” với mục tiêu là gọi đủ 3–5 từ đúng chủ điểm.\n\nMẫu thứ hai là học sinh thường không giữ được câu trả lời đúng trọng tâm khi nói tự do và một phần trong hội thoại. Free speaking trung bình 57.78/100 là thấp hơn nhiều so với conversation 86.26/100, và phân bố câu trả lời có 16 lần inaccordant cùng 3 lần lack_of_knowledge. Điều này cho thấy khi có khung câu rõ, học sinh làm tương đối được; nhưng khi câu hỏi mở hơn hoặc cần tự xử lý ngữ nghĩa, em dễ trả lời lệch. Dấu hiệu này xuất hiện rất rõ ở “How do you go to school?” khi câu hỏi màu sắc bầu trời lại trả lời “It’s black” rồi dao động “Blue, I think, Black, I think”; ở “My City - Lesson 2” câu “Where is your city located?” lại trả lời “Amy”; ở “My City - Lesson 1” có hiện tượng lặp lại câu hỏi hoặc từ chối tương tác như “No”, “No, no, no”; ở “My City - Review 2” học sinh nhắc lại nguyên câu hỏi thay vì tự tạo câu trả lời; ở “Shopping - Review 1” và “What’s your favorite subject?” học sinh có lúc bám vào một từ trong lời giáo viên rồi trả lời ngắn, sai chức năng giao tiếp. Mẫu này gợi ý khoảng trống ở nghe hiểu câu hỏi, chọn ý phù hợp, và xây câu phản hồi tối thiểu theo mẫu. Vì conversation vẫn khá cao, đây chưa phải đứt gãy toàn diện, nhưng là rủi ro lớn khi chuyển từ bài tập có cấu trúc sang nói tự nhiên. Với agent, dạng câu hiệu quả nhất là câu hỏi nói ngắn, một ý, có lựa chọn hoặc có khung trả lời rõ trước rồi mới mở dần. Nên ưu tiên luyện “either/or”, câu hỏi thông tin cá nhân rất quen thuộc, và bài hội thoại có expected answer ngắn trước khi chuyển sang câu mở. Deep practice nên dành cho các bài có free speaking = 0 hoặc conversation xuống thấp: “Transportation - Lesson 3”, “Shopping - Review 1”, “What’s your favorite subject?”, “My City - Lesson 1”, “Free time - Lesson 3”, “My City - Review 2”. Các bài conversation vẫn trên 80 nhưng có lỗi lệch ý thì chỉ cần light reinforcement bằng câu hỏi ngắn, tránh mở quá rộng ngay từ đầu.\n\nMẫu thứ ba là rủi ro quên bài theo thời gian, cộng với một điểm đỏ đặc biệt là bài chưa làm homework. Tất cả bài chỉ có 1 lần luyện trước, nên các bài trên 21 ngày gần như đã quên phần lớn; các bài 118 ngày, 122 ngày, 139 ngày, 153 ngày, 167 ngày, 176 ngày, 191 ngày là ưu tiên rất cao nếu điểm yếu tương đương. Nghiêm trọng nhất là “Unit 1B: Transportation - Lesson 3: How do you go to school?” vì vừa 118 ngày, vừa hw_status=not_attempted, vừa brainstorm=0, free_speaking=0. Ở bài này không có dữ liệu lỗi homework cụ thể, nghĩa là không có bằng chứng em giữ được kiến thức sau giờ học; đây là rủi ro học tập cao hơn các bài attempted. Ngoài ra, nhiều bài rất cũ cũng có cùng mẫu brainstorm=0 nên cần xem là quên gần như hoàn toàn phần từ vựng chủ điểm: “Jobs - Review 1” 167 ngày, “Free time - Lesson 3” 153 ngày, “Around the world - Lesson 2” 139 ngày, “Around the world - Lesson 4” 132 ngày, “Transportation - Lesson 1” 122 ngày, “Friends - Lesson 1” 191 ngày, “Jobs - Lesson 1” 176 ngày. Trong khi đó, kỹ năng viết nhìn chung rất mạnh, accuracy toàn cục trên 94% ở các nhóm kỹ năng, nên không nên dồn thời lượng vào drill viết đại trà. Các lỗi viết hiện có chỉ là lẻ tẻ: chia động từ “walks/walk”, danh động từ “reading/read”, thiếu độ chính xác từ vựng “school bag/bag”, chính tả “grocery store”, ghép từ “firefighter/fire fighter”, phương hướng “west/east”. Đây là lỗi cần light reinforcement, không phải trọng tâm chính.\n\nNếu chia mức độ can thiệp, nhóm cần deep practice trước là các bài vừa cũ vừa có nói yếu rõ rệt, đặc biệt brainstorm=0 và/hoặc free speaking=0. Ưu tiên cao nhất là “Transportation - Lesson 3: How do you go to school?” vì chưa nộp homework và đã 118 ngày. Tiếp theo là “Transportation - Lesson 1: Can you drive a car?”, “Jobs - Review 1”, “Free time - Lesson 3”, “Around the world - Lesson 2”, “Around the world - Lesson 4”, “My City - Lesson 1”, “My City - Lesson 2”, “Shopping - Lesson 1”, “Shopping - Review 1”, “What’s your favorite subject?”. Đây là nhóm nên ôn sâu bằng chuỗi câu hỏi tranh + gọi tên nhiều mục tiêu + câu trả lời mẫu ngắn. Nhóm cần light reinforcement là các bài mà conversation và pronunciation vẫn ổn, lỗi viết ít, nhưng cần nhắc lại để chống quên và tăng độ đầy đủ khi nói: “Friends - Lesson 1”, “Jobs - Lesson 1”, “My City - Review 2”, cùng các bài có lỗi viết đơn lẻ về chính tả hoặc ngữ pháp.\n\nVề loại câu hỏi hiệu quả theo lesson, với các bài Transportation, Jobs, Shopping, My City, Around the world, Friends, dạng hiệu quả nhất là nhận diện tranh và liệt kê theo nhóm mục tiêu, vì đúng vào lỗ hổng “biết ít từ rời rạc nhưng không đủ mục tiêu”. Với “What’s your favorite subject?” và “Free time - Lesson 3”, nên kết hợp tranh với câu mẫu ngắn vì ngoài từ vựng còn có dấu hiệu trả lời lệch hoặc phát âm làm giảm hiểu. Với các bài My City và Shopping review, nên dùng hội thoại siêu ngắn có expected answer rõ, tránh câu mở dài; học sinh làm tốt hơn khi có cấu trúc. Với các bài có lỗi viết lẻ tẻ, chỉ cần câu điền từ hoặc chọn đáp án rất ngắn để củng cố độ chính xác hình thức, không cần ưu tiên cao.\n\nTóm lại, hồ sơ này cho thấy một học sinh viết tốt, phát âm và hội thoại có khung tương đối ổn, nhưng đang thiếu mạnh ở việc truy xuất từ vựng theo tranh và trả lời nói đúng trọng tâm khi không có nhiều scaffold. Trọng tâm can thiệp nên là nói, không phải viết. Nếu agent cần chọn câu hỏi, nên ưu tiên trước các bài cũ nhất và bài chưa làm homework, dùng câu hỏi tranh-liệt kê nhiều mục tiêu, sau đó mới đến câu hỏi nói ngắn có khung để sửa xu hướng trả lời lệch ý.",
       "homework": [
         {
           "question_no": 1,
@@ -1313,9 +1313,10 @@
           "question_text": "Listen and write (Con hãy nghe và viết từ nhé.) (Con đừng viết hoa nhé.) How do you go to office?",
           "correct_answer": "train",
           "difficulty": "hard",
-          "reason": "Bài này đã học 118 ngày trước và còn ở trạng thái chưa làm homework, nên rủi ro quên gần như hoàn toàn. Đây là bài ưu tiên cao nhất vì chẩn đoán cho thấy brainstorm=0/100 và free speaking=0/100 ở Transportation Lesson 3, học sinh từng chỉ gọi được rất ít từ như “bus stop, train station” ở các bài cùng chủ điểm.",
+          "reason": "Bài này đã học 118 ngày trước và còn là bài chưa nộp homework nên gần như không có bằng chứng ghi nhớ sau lớp. Đây là lesson ưu tiên cao nhất vì chẩn đoán cho thấy brainstorm=0/100 và free speaking=0/100, học sinh thường chỉ gọi được vài từ rời rạc như \"bus stop, train station\" nhưng không đủ mục tiêu.",
           "question_id": 639615,
           "requires_media": false,
+          "speaking_evidence": "bus stop, train station",
           "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
@@ -1331,29 +1332,69 @@
         },
         {
           "question_no": 2,
+          "lesson_id": 3605593,
+          "lesson_title": "Unit 1B: Transportation - Lesson 3: How do you go to school?",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Find the mistake (Con hãy đọc và tìm lỗi sai nhé.) I go to the cinema on bus.",
+          "correct_answer": "on",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 118 ngày trước và chưa làm homework nên cần ôn rất kỹ từ đầu. Chẩn đoán cho thấy ở lesson này học sinh nói lệch mục tiêu, chỉ nêu \"bus stop, train station\" nên câu sửa lỗi về cụm phương tiện \"by bus\" sẽ giúp kéo lại đúng mẫu ngôn ngữ cốt lõi.",
+          "question_id": 639640,
+          "requires_media": false,
+          "speaking_evidence": "bus stop, train station",
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "go",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "cinema",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "on",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "by + phương tiện giao th&ocirc;ng: bằng...(phương tiện giao th&ocirc;ng) => I go to the cinema by bus. (Tớ đi đến rạp chiếu phim bằng xe bu&yacute;t.)",
+          "question_folder": "English Tutoring - Level 5"
+        },
+        {
+          "question_no": 3,
           "lesson_id": 3600069,
           "lesson_title": "Level 5B_1Unit 1B: Transportation - Lesson 1: Can you drive a car?",
           "skill_category": "speaking",
           "question_type": "speaking_unscripted",
           "question_text": "What can you see?",
-          "correct_answer": null,
+          "correct_answer": "open",
           "difficulty": "hard",
-          "reason": "Bài này đã học 122 ngày trước — cần phục hồi mạnh khả năng gọi từ theo tranh. Chẩn đoán nêu rõ ở Transportation Lesson 1 học sinh chỉ nói “Motorcycle” trong khi cần thêm “Truck, Tractor”, cho thấy lỗi brainstorm thiếu mục tiêu lặp lại rất nặng.",
+          "reason": "Bài này đã học 122 ngày trước nên nguy cơ quên rất cao. Đây đúng vào mẫu lỗi brainstorm nặng: học sinh từng nói \"Motorcycle\" nhưng vẫn 0/100 vì không gọi đủ các mục tiêu như Truck, Motorcycle, Tractor.",
           "question_id": null,
-          "requires_media": false
+          "requires_media": false,
+          "speaking_evidence": "Motorcycle"
         },
         {
-          "question_no": 3,
+          "question_no": 4,
           "lesson_id": 3448746,
           "lesson_title": "Unit 2A: Jobs - Lesson 4: Review 1.",
           "skill_category": "grammar",
           "question_type": "Điền vào chỗ trống",
           "question_text": "Listen and write (Con hãy nghe và viết từ đúng nhé.) (Con đừng viết hoa nhé.)",
-          "correct_answer": "nurse",
+          "correct_answer": "teacher",
           "difficulty": "hard",
-          "reason": "Bài này đã học 167 ngày trước nên cần ôn lại từ đầu để kéo lại vốn từ nghề nghiệp. Chẩn đoán cho thấy ở Jobs Review 1 học sinh chỉ nói được “police officer” nhưng bài cần Doctor, Nurse, Firefighter; brainstorm của dạng này rơi về 0/100 vì nói đúng nhưng quá thiếu.",
-          "question_id": 637829,
+          "reason": "Bài này đã học 167 ngày trước nên cần ôn lại từ đầu vì thuộc nhóm bài rất cũ có rủi ro quên mạnh. Chẩn đoán nêu rõ Jobs - Review 1 là một trong các lesson brainstorm=0 cần deep practice, nên thêm một câu điền từ ngắn để củng cố lại từ nghề nghiệp trước khi nói.",
+          "question_id": 637831,
           "requires_media": false,
+          "speaking_evidence": null,
           "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
@@ -1364,11 +1405,25 @@
               "audio_urls": []
             }
           ],
-          "comment_plain": "Audio: nurse Dịch: y tá",
+          "comment_plain": "Audio: teacher Dịch: giáo vi&ecirc;n",
           "question_folder": "English Tutoring - Level 5"
         },
         {
-          "question_no": 4,
+          "question_no": 5,
+          "lesson_id": 3448743,
+          "lesson_title": "Unit 2A: Jobs - Lesson 1: What do you do?",
+          "skill_category": "speaking",
+          "question_type": "speaking_unscripted",
+          "question_text": "What sport can you play?",
+          "correct_answer": "open",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 176 ngày trước nên rất dễ quên. Dù câu hỏi là nói ngắn có khung, nó phù hợp với hồ sơ học sinh vì chẩn đoán cho thấy khi câu hỏi mở hơn em dễ trả lời lệch ý hoặc bám vào một từ quen thuộc; cần luyện phản hồi đúng trọng tâm với mẫu thật ngắn trước.",
+          "question_id": null,
+          "requires_media": false,
+          "speaking_evidence": null
+        },
+        {
+          "question_no": 6,
           "lesson_id": 3528958,
           "lesson_title": "Unit 4A: Around the world - Lesson 2: Where do you live?",
           "skill_category": "vocabulary",
@@ -1376,9 +1431,10 @@
           "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng)",
           "correct_answer": "C. He is from England.",
           "difficulty": "hard",
-          "reason": "Bài này đã học 139 ngày trước nên nguy cơ quên rất cao. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"A. She is from Russia.\" thay vì \"C. He is from England.\"; lỗi này cũng phù hợp với mẫu chẩn đoán là khi nói/nghe dễ lệch mục tiêu và đoán theo từ quen thuộc.",
+          "reason": "Học sinh đã trả lời sai câu này trước đó: điền/chọn \"A. She is from Russia.\" thay vì \"C. He is from England.\" Bài này đã học 139 ngày trước nên lỗi nghe-hiểu và chọn đúng chủ ngữ/he-she rất cần được ôn lại ngay.",
           "question_id": 312952,
           "requires_media": false,
+          "speaking_evidence": null,
           "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
@@ -1405,17 +1461,56 @@
           "question_folder": "English Tutoring - Level 5"
         },
         {
-          "question_no": 5,
+          "question_no": 7,
+          "lesson_id": 3528960,
+          "lesson_title": "Unit 4A: Around the world - Lesson 4: There aren't any deserts in Vietnam.",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Read and choose the correct answer. (Con hãy đọc và chọn phương án đúng.) Peter: Hi John, where are you from? John:",
+          "correct_answer": "B. England",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 132 ngày trước nên thuộc nhóm cần chống quên mạnh. Chẩn đoán cho thấy Around the world - Lesson 4 nằm trong nhóm brainstorm=0 cần deep practice; câu hỏi ngắn về quốc gia giúp ôn lại trường từ vựng trước khi chuyển sang nói theo tranh.",
+          "question_id": 314363,
+          "requires_media": false,
+          "speaking_evidence": null,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. Vietnam",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. England",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. America",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Dịch: Peter: Chào John, bạn đến từ đâu? John: T&ocirc;i đến từ Anh. C&ograve;n bạn? Peter: T&ocirc;i đến từ Mĩ nhưng bây giờ t&ocirc;i đang sống ở Việt Nam. Bạn sống ở đâu? John: T&ocirc;i sống ở n&ocirc;ng th&ocirc;n ở Anh. Q: Where is John from? John đến từ đâu? => Đáp án: B (Anh.)",
+          "question_folder": "Từ vựng"
+        },
+        {
+          "question_no": 8,
           "lesson_id": 3445252,
           "lesson_title": "Unit 1A: Friends - Lesson 1: What do you look like?",
           "skill_category": "speaking",
           "question_type": "Trả lời bằng giọng nói",
           "question_text": "Look and say (Con hãy nhìn và nói) I'm young.",
           "correct_answer": "I'm young",
-          "difficulty": "medium",
-          "reason": "Bài này đã học 191 ngày trước — rất cũ nên cần spaced repetition để giữ lại mẫu nói cơ bản. Chẩn đoán cho thấy học sinh thường làm viết ổn nhưng khi nói mở lại gọi từ quá ít hoặc trả lời ngắn, nên một câu nói có khung như thế này giúp nối lại từ vựng ngoại hình với đầu ra miệng.",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 191 ngày trước, là một trong những lesson cũ nhất nên cần ôn lại để chống quên. Vì học sinh có xu hướng trả lời lệch ý ở nói tự do, câu nói mẫu rất ngắn này giúp em bám đúng cấu trúc thay vì lặp lại hoặc trả lời lan man.",
           "question_id": 384430,
           "requires_media": false,
+          "speaking_evidence": null,
           "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
@@ -1429,20 +1524,45 @@
           "question_folder": "Biểu đồ"
         },
         {
-          "question_no": 6,
-          "lesson_id": 3448743,
-          "lesson_title": "Unit 2A: Jobs - Lesson 1: What do you do?",
-          "skill_category": "speaking",
-          "question_type": "speaking_unscripted",
-          "question_text": "What sport can you play?",
-          "correct_answer": null,
-          "difficulty": "medium",
-          "reason": "Bài này đã học 176 ngày trước và thuộc nhóm spaced repetition cần được đưa lại vào bài tập. Dù câu hỏi là nói mở, chẩn đoán cho thấy học sinh hay trả lời lệch ý hoặc tạo câu ngắn/không tự nhiên, nên cần luyện phản xạ trả lời đúng trọng tâm với mẫu đơn giản.",
-          "question_id": null,
-          "requires_media": false
+          "question_no": 9,
+          "lesson_id": 3445252,
+          "lesson_title": "Unit 1A: Friends - Lesson 1: What do you look like?",
+          "skill_category": "vocabulary",
+          "question_type": "Một lựa chọn",
+          "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn phương án đúng.) What do you look like? ....",
+          "correct_answer": "B. I'm tall.",
+          "difficulty": "hard",
+          "reason": "Bài này đã học 191 ngày trước nên nguy cơ quên từ mô tả ngoại hình rất cao. Chọn thêm một câu nhận diện từ vựng trong cùng lesson để hỗ trợ câu speaking mẫu, nhưng vẫn khác skill_category theo đúng nguyên tắc phân bổ.",
+          "question_id": 384421,
+          "requires_media": false,
+          "speaking_evidence": null,
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": "A. I'm young.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "B",
+              "text": "B. I'm tall.",
+              "image_urls": [],
+              "audio_urls": []
+            },
+            {
+              "letter": "C",
+              "text": "C. I'm old.",
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "Audio: What do you look like? I&#39;m tall. => Đáp án: B",
+          "question_folder": "English Tutoring - Level 5"
         },
         {
-          "question_no": 7,
+          "question_no": 10,
           "lesson_id": 3785477,
           "lesson_title": "Unit 2C: Shopping - Lesson 4: Review 1",
           "skill_category": "speaking",
@@ -1450,9 +1570,10 @@
           "question_text": "Fill the blank and speak (Con hãy điền từ vào chỗ trống và nói cả câu nhé!) How ............. is the wallet? (It's 3 dol",
           "correct_answer": "How much is the wallet?",
           "difficulty": "hard",
-          "reason": "Bài này mới học 20 ngày trước nhưng vẫn là điểm yếu nặng, nên cần can thiệp sớm chứ không chỉ ôn nhẹ. Chẩn đoán ghi rõ ở Shopping Review 1 có free speaking 0/100 và học sinh từng nói “Bye, I don't know what to talk to again, too.”, cho thấy nói hội thoại còn lạc hướng dù mẫu viết không khó.",
+          "reason": "Bài này đã học 20 ngày trước nhưng weakness rất cao và nằm trong nhóm lesson có rủi ro trả lời sai chức năng giao tiếp. Chẩn đoán nói rõ ở Shopping - Review 1 học sinh có lúc bám vào một từ trong lời giáo viên rồi trả lời ngắn, sai chức năng, nên câu có khung rõ như thế này rất phù hợp.",
           "question_id": 688444,
           "requires_media": false,
+          "speaking_evidence": null,
           "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
@@ -1466,63 +1587,85 @@
           "question_folder": "English Tutoring - Level 5"
         },
         {
-          "question_no": 8,
+          "question_no": 11,
           "lesson_id": 3767001,
           "lesson_title": "Unit 2C: Shopping - Lesson 1: How much is the belt?",
           "skill_category": "speaking",
           "question_type": "speaking_unscripted",
           "question_text": "What can you see?",
-          "correct_answer": null,
-          "difficulty": "hard",
-          "reason": "Bài này đã học 28 ngày trước nhưng brainstorm vẫn 0 tuyệt đối theo chẩn đoán, nên đây là dấu hiệu từ vựng chưa hình thành vững. Với chủ điểm Shopping, học sinh cần được ép gọi đủ nhóm từ như belt/handbag/gloves/wallet thay vì chỉ nói 1 từ hoặc nói lan sang từ ngoài danh sách.",
+          "correct_answer": "open",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 28 ngày trước và thuộc nhóm Shopping cần luyện gọi tên nhiều mục tiêu theo tranh. Chẩn đoán cho thấy học sinh thường biết vài từ rời rạc nhưng không đủ độ bao phủ, nên câu hỏi \"What can you see?\" giúp kiểm tra và mở rộng trường từ vựng mua sắm.",
           "question_id": null,
-          "requires_media": false
+          "requires_media": false,
+          "speaking_evidence": null
         },
         {
-          "question_no": 9,
-          "lesson_id": 3687468,
-          "lesson_title": "Unit 4B: My City - Lesson 1: What is that building over there?",
+          "question_no": 12,
+          "lesson_id": 3767001,
+          "lesson_title": "Unit 2C: Shopping - Lesson 1: How much is the belt?",
           "skill_category": "vocabulary",
           "question_type": "Một lựa chọn",
-          "question_text": "Read and choose (Con hãy đọc và chọn đáp án đúng nhé.) What ... building over there? It's a pharmacy.",
-          "correct_answer": "D. is that",
+          "question_text": "Read and choose the correct answer (Con hãy đọc và chọn đáp án đúng nhé!) 3. Mike: You use it to keep the money. What is",
+          "correct_answer": "wallet",
           "difficulty": "medium",
-          "reason": "Bài này đã học 72 ngày trước và thuộc nhóm My City đang có cả yếu từ vựng lẫn hội thoại. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"B. is\" thay vì \"D. is that\"; lỗi này khớp với nhận định chẩn đoán rằng học sinh viết nhìn chung tốt nhưng vẫn hay thiếu cấu trúc đầy đủ như “is that”.",
-          "question_id": 689998,
+          "reason": "Bài này đã học 28 ngày trước, chưa quá cũ nhưng là nền từ vựng cần có để nói về mua sắm trôi chảy hơn. Chẩn đoán xác định Shopping - Lesson 1 là nhóm nên deep practice bằng tranh + gọi tên đồ vật, nên cần một câu nhận diện từ khóa như \"wallet\" để tăng độ chắc trước khi nói.",
+          "question_id": 687239,
           "requires_media": false,
+          "speaking_evidence": null,
           "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
             {
               "letter": "A",
-              "text": "A. are",
+              "text": "wallet",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "B",
-              "text": "B. is",
+              "text": "belt",
               "image_urls": [],
               "audio_urls": []
             },
             {
               "letter": "C",
-              "text": "C. is those",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "D",
-              "text": "D. is that",
+              "text": "glove",
               "image_urls": [],
               "audio_urls": []
             }
           ],
-          "comment_plain": "What is that building over there? It&#39;s a pharmacy. Dịch: T&ograve;a nhà ở đ&oacute; là g&igrave;? Đ&oacute; là hiệu thuốc.",
+          "comment_plain": "Đáp án chi tiết: Mike: You use it to keep the money. What is it? Lily: It&#39;s a wallet. Tạm dịch: Mike: Bạn d&ugrave;ng n&oacute; để giữ tiền. N&oacute; là g&igrave;? Lily: N&oacute; là một cái v&iacute;.",
           "question_folder": "English Tutoring - Level 5"
         },
         {
-          "question_no": 10,
+          "question_no": 13,
+          "lesson_id": 3687468,
+          "lesson_title": "Unit 4B: My City - Lesson 1: What is that building over there?",
+          "skill_category": "grammar",
+          "question_type": "Điền vào chỗ trống",
+          "question_text": "Read and write (Con hãy đọc và viết đáp án đúng nhé.) What is that ......... over there? It's a school.",
+          "correct_answer": "building",
+          "difficulty": "medium",
+          "reason": "Bài này đã học 72 ngày trước và thuộc nhóm My City cần ôn sâu vì học sinh hay lệch ý khi nói. Câu điền từ này giúp khóa lại mẫu câu nền trước khi trả lời nói, nhất là khi chẩn đoán ghi nhận ở My City - Lesson 1 học sinh từng phản hồi kiểu \"No\", \"No, no, no\" thay vì trả lời đúng câu hỏi.",
+          "question_id": 690000,
+          "requires_media": false,
+          "speaking_evidence": "No, no, no",
+          "stem_media_urls": [],
+          "comment_media_urls": [],
+          "choice_previews": [
+            {
+              "letter": "A",
+              "text": null,
+              "image_urls": [],
+              "audio_urls": []
+            }
+          ],
+          "comment_plain": "What is that building over there? It&#39;s a school. Dịch: T&ograve;a nhà ở đ&oacute; là g&igrave;? Đ&oacute; là một trường học.",
+          "question_folder": "English Tutoring - Level 5"
+        },
+        {
+          "question_no": 14,
           "lesson_id": 3744891,
           "lesson_title": "Unit 4B: My City - Lesson 2: Where is the pharmacy?",
           "skill_category": "vocabulary",
@@ -1530,9 +1673,10 @@
           "question_text": "Choose the correct answer. (Con hãy chọn đáp án đúng nhé.) 2. Do you know the address of the post office?",
           "correct_answer": "C. It’s 101 Pine Street.",
           "difficulty": "medium",
-          "reason": "Bài này đã học 70 ngày trước và là điểm yếu điển hình của nhóm My City. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"B. It’s in the south of the city.\" thay vì \"C. It’s 101 Pine Street.\"; đây là lỗi trả lời lệch loại thông tin, đúng với chẩn đoán rằng học sinh hay lẫn giữa câu hỏi về địa chỉ và vị trí.",
+          "reason": "Học sinh đã trả lời sai câu này trước đó: điền/chọn \"B. It’s in the south of the city.\" thay vì \"C. It’s 101 Pine Street.\" Bài này đã học 70 ngày trước; lỗi này cũng khớp với chẩn đoán rằng học sinh hay không giữ đúng trọng tâm câu hỏi nói, nhầm giữa hỏi địa chỉ và hỏi vị trí.",
           "question_id": 690112,
           "requires_media": false,
+          "speaking_evidence": null,
           "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
@@ -1565,17 +1709,18 @@
           "question_folder": "English Tutoring - Level 5"
         },
         {
-          "question_no": 11,
+          "question_no": 15,
           "lesson_id": 3766996,
           "lesson_title": "Unit 1C:  - Lesson 1: What's your favorite subject?",
-          "skill_category": "vocabulary",
+          "skill_category": "grammar",
           "question_type": "Một lựa chọn",
           "question_text": "Read and choose the correct answer to fill in the blank . (Con hãy đọc và chọn đáp án đúng để điền vào chỗ trống nhé!) M",
           "correct_answer": "walks",
           "difficulty": "medium",
-          "reason": "Bài này đã học 48 ngày trước và vẫn cần chạm lại lỗi hình thức cơ bản. Học sinh đã trả lời sai câu này trước đó: điền/chọn \"walk\" thay vì \"walks\"; lỗi chia động từ này cũng được nêu trong chẩn đoán như một lỗi viết nhỏ lặp lại kiểu “walk” thay vì “walks”.",
+          "reason": "Học sinh đã trả lời sai câu này trước đó: điền/chọn \"walk\" thay vì \"walks\". Bài này đã học 48 ngày trước; đây là lỗi chia động từ số ít ít gặp nhưng đã được chẩn đoán là một lỗi viết lẻ tẻ cần light reinforcement, nên ôn ngắn để tránh tái diễn.",
           "question_id": 678861,
           "requires_media": false,
+          "speaking_evidence": null,
           "stem_media_urls": [],
           "comment_media_urls": [],
           "choice_previews": [
@@ -1599,142 +1744,6 @@
             }
           ],
           "comment_plain": "Đáp án chi tiết: Mary wakes up early (1)............ 7 a.m. After breakfast, Mary gets her backpack ready for school. She puts in her books, pencils, and a healthy lunch. At 8 a.m, Mary says goodbye to her family and (2) walks to school with her friends. Her favorite (3)............ at school is English. She likes speaking English every day. In the PE lesson, Mary plays sports with her friends, like soccer or basketball. She also enjoys the Music class because it is (4)............. School finishes at 3 p.m. Mary goes home and has dinner. In the evenings, Mary (5)............ her homework. She studies for tests and completes any assignments the teacher gave. Tạm dịch: Mary thức dậy sớm (1)............ l&uacute;c 7 giờ sáng. Sau bữa sáng, Mary chuẩn bị cặp sách đi học. C&ocirc; ấy bỏ sách vở, b&uacute;t ch&igrave; và bữa trưa lành mạnh vào đ&oacute;. L&uacute;c 8 giờ sáng, Mary chào tạm biệt gia đ&igrave;nh và (2) đi bộ đến trường c&ugrave;ng bạn b&egrave;. M&ocirc;n học y&ecirc;u th&iacute;ch của c&ocirc; ấy (3)............ ở trường là tiếng Anh. C&ocirc; ấy th&iacute;ch n&oacute;i tiếng Anh mỗi ngày. Trong giờ thể dục, Mary chơi các m&ocirc;n thể thao với bạn b&egrave;, như b&oacute;ng đá hoặc b&oacute;ng rổ. C&ocirc; ấy cũng th&iacute;ch lớp &Acirc;m nhạc v&igrave; n&oacute; (4)............. Trường học tan l&uacute;c 3 giờ chiều. Mary về nhà và ăn tối. Buổi tối, Mary (5)............ làm bài tập về nhà. C&ocirc; ấy học bài để chuẩn bị cho các bài kiểm tra và hoàn thành bất kỳ bài tập nào mà giáo vi&ecirc;n giao.",
-          "question_folder": "English Tutoring - Level 5"
-        },
-        {
-          "question_no": 12,
-          "lesson_id": 3687464,
-          "lesson_title": "Unit 3B: Materials - Lesson 2: Shall I help you find it?",
-          "skill_category": "grammar",
-          "question_type": "Điền vào chỗ trống",
-          "question_text": "Listen and write (Con hãy nghe và viết từ đúng nhé.)",
-          "correct_answer": "stripe",
-          "difficulty": "medium",
-          "reason": "Bài này đã học 86 ngày trước nên cần ôn lại để tránh rơi rụng từ mô tả đồ vật. Chẩn đoán cho thấy Materials Lesson 2 nằm trong nhóm cần luyện sâu và có phát âm từng bị kéo xuống khoảng 50–53, nên dạng nghe-viết này giúp củng cố cả nhận âm lẫn chính tả.",
-          "question_id": 689712,
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": null,
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "Audio: stripe (sọc)",
-          "question_folder": "English Tutoring - Level 5"
-        },
-        {
-          "question_no": 13,
-          "lesson_id": 3528954,
-          "lesson_title": "Unit 3A: Free time - Lesson 3: What was he doing at 9 PM yesterday?",
-          "skill_category": "grammar",
-          "question_type": "Kéo thả vào chỗ trống trong đoạn văn",
-          "question_text": "Fill in blank missing word (Con hãy điền từ vào chỗ trống.) 1. What was he doing at 9 PM yesterday? - He was [{}] karaok",
-          "correct_answer": "1. What was he doing at 9 PM yesterday? - He was singing karaoke. 2. What was she doing at 9 PM yesterday? - She was acting. 3. What was she doing at 9 PM yesterday? - She was running race.",
-          "difficulty": "hard",
-          "reason": "Bài này đã học 153 ngày trước và thuộc nhóm bài cũ có nguy cơ quên rất cao. Chẩn đoán xếp Free time Lesson 3 vào nhóm cần luyện sâu, đồng thời ghi nhận free speaking có bài 0/100 và phát âm ở bài này từng chỉ khoảng 38–40, nên cần ôn lại mẫu quá khứ tiếp diễn bằng dạng điền từ có ngữ cảnh.",
-          "question_id": 396439,
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "1",
-              "text": "singing",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "2",
-              "text": "What",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "3",
-              "text": "yesterday",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "singing: hát What: G&igrave;, Cái g&igrave; yesterday: h&ocirc;m qua 1. What was he doing at 9 PM yesterday? - He was singing karaoke. Anh ấy đã đang làm g&igrave; vào 9 giờ tối h&ocirc;m qua? - Anh ấy đã đang hát karaoke. 2. What was she doing at 9 PM yesterday? - She was acting. C&ocirc; ấy đã đang làm g&igrave; vào 9 giờ tối h&ocirc;m qua? - C&ocirc; ấy đã đang diễn. 3. What was she doing at 9 PM yesterday? - She was running race. C&ocirc; ấy đã đang làm g&igrave; vào 9 giờ tối h&ocirc;m qua? - C&ocirc; ấy dã đang chạy đua. => Đáp án: 1 - singing; 2 - What; 3 - yesterday",
-          "question_folder": "English Tutoring - Level 5"
-        },
-        {
-          "question_no": 14,
-          "lesson_id": 3528960,
-          "lesson_title": "Unit 4A: Around the world - Lesson 4: There aren't any deserts in Vietnam.",
-          "skill_category": "vocabulary",
-          "question_type": "Một lựa chọn",
-          "question_text": "Listen and choose the correct answer. (Con hãy nghe và chọn phương án đúng)",
-          "correct_answer": "B. There aren&#39;t any safari parks in Vietnam.",
-          "difficulty": "hard",
-          "reason": "Bài này đã học 132 ngày trước nên cần phục hồi trí nhớ theo chủ điểm Around the world. Chẩn đoán cho thấy ở nhóm bài này học sinh thường lặp một vài từ quen như “city” hoặc gọi từ không kiểm soát, vì vậy cần ôn lại các danh từ địa danh/cảnh quan bằng câu có nghĩa rõ ràng.",
-          "question_id": 314354,
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. There aren&#39;t any safari parks in China.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. There aren&#39;t any safari parks in Vietnam.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. There isn&#39;t any safari parks in Vietnam.",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "Audio: There aren&#39;t any safari parks in Vietnam: Kh&ocirc;ng c&oacute; c&ocirc;ng vi&ecirc;n động vật hoang dã nào ở Việt Nam. => Đáp án: B",
-          "question_folder": "Kĩ năng nghe"
-        },
-        {
-          "question_no": 15,
-          "lesson_id": 3445252,
-          "lesson_title": "Unit 1A: Friends - Lesson 1: What do you look like?",
-          "skill_category": "vocabulary",
-          "question_type": "Một lựa chọn",
-          "question_text": "Listen and choose the correct answer (Con hãy nghe và chọn phương án đúng.) What do you look like? ....",
-          "correct_answer": "B. I'm tall.",
-          "difficulty": "medium",
-          "reason": "Bài này đã học 191 ngày trước — rất lâu rồi nên cần một câu nhận diện từ vựng để giữ nhịp spaced repetition. Chẩn đoán cho thấy nhóm Friends có thể chỉ cần ôn nhẹ hơn, nhưng học sinh vẫn có mẫu lỗi brainstorm “nói đúng nhưng thiếu”, nên cần nhắc lại từ ngoại hình trước khi mở rộng sang nói tự do.",
-          "question_id": 384421,
-          "requires_media": false,
-          "stem_media_urls": [],
-          "comment_media_urls": [],
-          "choice_previews": [
-            {
-              "letter": "A",
-              "text": "A. I'm young.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "B",
-              "text": "B. I'm tall.",
-              "image_urls": [],
-              "audio_urls": []
-            },
-            {
-              "letter": "C",
-              "text": "C. I'm old.",
-              "image_urls": [],
-              "audio_urls": []
-            }
-          ],
-          "comment_plain": "Audio: What do you look like? I&#39;m tall. => Đáp án: B",
           "question_folder": "English Tutoring - Level 5"
         }
       ]
