@@ -39,7 +39,6 @@ _SKILL_HINT_MAP: dict[str, str] = {
     "Kéo thả": "grammar",
     "Trả lời bằng giọng nói": "speaking",
     "free_speaking": "speaking",
-    "brainstorm": "speaking",
     "Một lựa chọn": "vocabulary",
     "Nhiều lựa chọn": "vocabulary",
 }
@@ -52,7 +51,7 @@ def _skill_hint(q: dict) -> str:
     source = q.get("source", "")
     interaction = q.get("interaction_type", "")
 
-    if source == "in_class" or interaction in ("free_speaking", "brainstorm"):
+    if source == "in_class" or interaction == "free_speaking":
         return "speaking"
     if "Trả lời bằng giọng nói" in qtype:
         return "speaking"
@@ -113,18 +112,6 @@ def _count_usable(lesson: dict) -> tuple[int, list]:
                 "requires_media": False,
                 "correct_answer": None,
                 "interaction_type": "free_speaking",
-                "source": "in_class",
-            })
-    for item in ic.get("brainstorm") or []:
-        if item.get("question"):
-            usable.append({
-                "question_id": None,
-                "question_folder": "Speaking",
-                "question_type": item.get("question_type", "brainstorm"),
-                "question_text": item["question"],
-                "requires_media": False,
-                "correct_answer": None,
-                "interaction_type": "brainstorm",
                 "source": "in_class",
             })
     return len(usable), usable
@@ -273,8 +260,6 @@ def _enrich_candidates_with_speaking(
         lesson = lessons_by_id.get(c["lesson_id"], {})
         ic = lesson.get("in_class", {})
         c["speaking_scores"] = {
-            "brainstorm_avg": ic.get("brainstorm_score_avg"),
-            "brainstorm_attempts": ic.get("brainstorm_attempts", 0),
             "free_speaking_avg": ic.get("free_speaking_score_avg"),
             "free_speaking_attempts": ic.get("free_speaking_attempts", 0),
             "conversation_avg": ic.get("conversation_score_avg"),

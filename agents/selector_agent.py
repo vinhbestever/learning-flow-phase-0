@@ -114,7 +114,7 @@ Every reason MUST explicitly state how many days ago the lesson was last practic
 as "{N}d ago" on every pool line.
 Also reference at least one of: a specific wrong answer they gave, a speaking transcript \
 (e.g. "học sinh nói 'It's black' thay vì 'It's blue'"), a speaking score from speaking_scores \
-(e.g. "brainstorm=0/100"), or a named error pattern from the diagnostic.
+(e.g. "free_speaking=0/100"), or a named error pattern from the diagnostic.
 If the pool line shows prev_wrong=yes, you MUST cite that specific mistake in the reason field. \
 State it as: 'Học sinh đã trả lời sai câu này trước đó: điền/chọn "[student_ans]" thay vì "[correct_ans]".' \
 Do NOT omit this when prev_wrong=yes — it is the primary evidence for selecting this question.
@@ -133,7 +133,7 @@ to the exact quoted text from that utterance (copy it verbatim from the diagnost
 
 Good reason examples (in Vietnamese):
 - "Học sinh điền 'cost' thay vì 'is' trong bài fill-blank này — lỗi chia động từ theo chủ ngữ xuất hiện ở 3 bài học khác nhau theo kết quả chẩn đoán. Bài đã học cách đây 20 ngày (đã quên hoàn toàn)."
-- "Điểm brainstorm 0/100 trong bài này: học sinh nói 'Can see a bus stop, a train station' khi được yêu cầu liệt kê 4 targets — thiếu 'bus' và 'train' dù đã thấy chúng trong tranh. Bài học đã qua 118 ngày."
+- "Điểm free_speaking 0/100 trong bài này: học sinh trả lời 'I'm sick, my boy.' cho câu hỏi cảm xúc cơ bản — inaccordant hoàn toàn. Bài học đã qua 118 ngày."
 - "Bài chưa được luyện tập trong 18 ngày; học sinh chưa nộp bài tập về nhà nên không có bằng chứng ghi nhớ. Củng cố các từ về quần áo/mua sắm mà chẩn đoán xác định là chưa được kiểm chứng sau lớp học."
 
 Return ONLY valid JSON matching the schema. No markdown, no explanation.\

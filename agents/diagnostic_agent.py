@@ -25,10 +25,7 @@ Giải thích các trường dữ liệu:
 - hw_status=not_attempted: học sinh đã học trên lớp nhưng CHƯA NỘP BÀI TẬP VỀ NHÀ — \
 không có dữ liệu lỗi cụ thể; "Question bank preview" chỉ là mẫu câu hỏi trong ngân hàng bài tập. \
 Đây là rủi ro học tập cao vì không có bằng chứng ghi nhớ sau lớp học.
-- Worst speaking items gồm ba loại: \
-[brainstorm] là nói theo ảnh/gợi ý với từ mục tiêu (targets) — score đo mức ĐẦY ĐỦ không phải đúng/sai; \
-answer_type=correct nghĩa là các từ học sinh nói ra đều hợp lệ nhưng chưa đủ số mục tiêu (score=0 KHÔNG có nghĩa là sai hoàn toàn); \
-answer_type=incorrect nghĩa là học sinh nói từ không nằm trong danh sách targets; \
+- Worst speaking items gồm hai loại: \
 [free_speaking] là nói mở / warmup (score=0 nghĩa là sai hoàn toàn; answer_type=inaccordant = câu trả lời không liên quan; \
 answer_type=lack_of_knowledge = học sinh không biết); \
 [conversation] là hội thoại cấu trúc (score<70/100 mới được ghi nhận là thất bại; \
@@ -40,7 +37,7 @@ Sự khác biệt giữa 7 ngày và 30 ngày CÓ ý nghĩa — ưu tiên bài l
 - Weak skills (viết): dựa trên accuracy < 70% trong bài tập LMS. Nếu rỗng, học sinh làm \
 bài tập viết tốt — điểm yếu chủ yếu nằm ở kỹ năng nói (xem speaking_scores bên dưới).
 - speaking_scores: điểm trung bình per-lesson từ các phiên Digital Teacher. \
-Thang điểm brainstorm và free_speaking: 0–1 (nhân 100 để so sánh). \
+Thang điểm free_speaking: 0–1 (nhân 100 để so sánh). \
 Conversation và pronunciation: 0–100.
 
 Trước khi viết phân tích, hãy xác định 3 mẫu lỗi hoặc rủi ro nghiêm trọng nhất bạn quan sát được \
@@ -54,10 +51,8 @@ STUDENT SUMMARY
 ---------------
 Lessons completed: {completed}/{total}
 Pronunciation avg: {pron}/100
-Brainstorm (ảnh → từ mục tiêu) avg: {brainstorm}/100{brainstorm_flag}
 Free speaking / warmup avg: {free}/100{free_flag}
 Conversation avg:  {convo}/100
-Brainstorm answer distribution: {brainstorm_answer_dist}
 Free speaking answer distribution: {answer_dist}
 Critical speaking weaknesses: {critical_speaking}
 
@@ -126,18 +121,9 @@ def _fmt_speaking(items: list) -> str:
             detail = f"score={score}/100 gram={gram} pron={pron}"
             if expected:
                 detail += f' expected="{expected}"'
-        elif lms_type == "brainstorm":
-            answer_type = s.get("answer_type") or "?"
-            targets = s.get("target_objects")
-            detail = f"score={score} [{answer_type}] brainstorm"
-            if targets:
-                detail += f" targets={targets}"
         else:
             answer_type = s.get("answer_type") or "?"
-            targets = s.get("target_objects")
             detail = f"score={score} [{answer_type}] warmup"
-            if targets:
-                detail += f" targets={targets}"
         parts.append(f'[{lms_type}] Q: "{q}" → "{transcript}" {detail}')
     return " | ".join(parts)
 
@@ -147,11 +133,6 @@ def _fmt_speaking_scores(scores: dict) -> str:
     if not scores:
         return "no data"
     parts = []
-    brain_avg = scores.get("brainstorm_avg")
-    brain_n = scores.get("brainstorm_attempts", 0)
-    if brain_n:
-        pct = round(brain_avg * 100) if brain_avg is not None else "?"
-        parts.append(f"brainstorm={pct}/100 ({brain_n} attempts)")
     free_avg = scores.get("free_speaking_avg")
     free_n = scores.get("free_speaking_attempts", 0)
     if free_n:
@@ -229,10 +210,8 @@ def build_prompt(summary: dict, candidates: list) -> str:
         )
         lesson_blocks.append(block)
 
-    brainstorm_val = summary.get("overall_brainstorm_score_avg")
     free_val = summary.get("overall_free_speaking_score_avg")
     critical_speaking = summary.get("critical_speaking_types") or []
-    brainstorm_flag = " ⚠️ CRITICAL (dưới ngưỡng 30/100)" if (brainstorm_val is not None and brainstorm_val < 30) else ""
     free_flag = " ⚠️ YẾU (dưới ngưỡng 50/100)" if (free_val is not None and free_val < 50) else ""
     critical_speaking_str = (
         ", ".join(critical_speaking) if critical_speaking
@@ -243,12 +222,9 @@ def build_prompt(summary: dict, candidates: list) -> str:
         completed=completed,
         total=total,
         pron=summary.get("overall_pronunciation_score_avg", "N/A"),
-        brainstorm=brainstorm_val if brainstorm_val is not None else "N/A",
-        brainstorm_flag=brainstorm_flag,
         free=free_val if free_val is not None else "N/A",
         free_flag=free_flag,
         convo=summary.get("overall_conversation_score_avg", "N/A"),
-        brainstorm_answer_dist=summary.get("overall_brainstorm_answer_type_dist", {}),
         answer_dist=summary.get("overall_free_speaking_answer_type_dist", {}),
         critical_speaking=critical_speaking_str,
         skill_breakdown=skill_breakdown_text,
