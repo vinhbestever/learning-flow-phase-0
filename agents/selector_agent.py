@@ -26,7 +26,7 @@ from agents.model_config import (
     openai_uses_responses_api,
 )
 
-MAX_SELECTOR_RETRIES = 3
+MAX_SELECTOR_RETRIES = 2
 
 HOMEWORK_SCHEMA = {
     "name": "homework_assignment",
@@ -367,8 +367,8 @@ def _repair_homework(homework: list, question_pool: list, min_speaking: int) -> 
                 repl = _find(idx, exclude_lesson=lid)
                 if repl:
                     homework[idx] = _make_row(repl, homework[idx]["question_no"])
-                changed = True
-                break  # restart after every swap
+                    changed = True
+                    break  # restart after every swap
 
     # Step 2: diff_skill — loop until stable (fixing one pair may create another)
     for _ in range(10):

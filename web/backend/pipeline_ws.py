@@ -14,7 +14,7 @@ import asyncio
 import json
 import os
 
-from openai import AsyncOpenAI
+from openai import AsyncOpenAI, OpenAI as _SyncOpenAI
 
 from agents.model_config import (
     DEFAULT_HOMEWORK_MODEL,
@@ -24,6 +24,9 @@ from agents.model_config import (
 )
 from web.backend.config import student_paths
 from web.backend.homework_storage import save_model_result
+
+_API_TIMEOUT = 90.0      # seconds per LLM API call (connect + read)
+_SELECTOR_TIMEOUT = 300  # seconds for entire selector (all retries + repair)
 
 _pipeline_lock = asyncio.Lock()
 
@@ -89,6 +92,10 @@ async def run_pipeline_ws(
 
         tiered_candidates, question_pool = await loop.run_in_executor(None, _build)
 
+        _raw_avg = student_context["summary"].get("overall_brainstorm_score_avg")
+        brainstorm_avg = 100 if _raw_avg is None else _raw_avg
+        min_speaking = 5 if brainstorm_avg < 30 else 4 if brainstorm_avg < 50 else 3
+
         await send({"type": "step", "text": f"[2/3] Đang chạy diagnostic agent ({model})..."})
 
         from agents.diagnostic_agent import SYSTEM_PROMPT, build_prompt
@@ -97,7 +104,7 @@ async def run_pipeline_ws(
 
         diagnostic_text = ""
         if provider == "openai":
-            client = AsyncOpenAI(api_key=os.environ["OPENAI_API_KEY"])
+            client = AsyncOpenAI(api_key=os.environ["OPENAI_API_KEY"], timeout=_API_TIMEOUT)
             if openai_uses_responses_api(model):
                 from agents.openai_responses import stream_diagnostic_text
 
@@ -144,26 +151,47 @@ async def run_pipeline_ws(
 
         await send({"type": "step", "text": "[3/3] Đang chọn câu hỏi bài tập..."})
 
+        async def _await_selector(aw) -> list:
+            """Await selector while sending heartbeats every 12 s to keep the WS alive."""
+            fut = asyncio.ensure_future(aw)
+            elapsed = 0.0
+            while True:
+                try:
+                    return await asyncio.wait_for(asyncio.shield(fut), timeout=12.0)
+                except asyncio.TimeoutError:
+                    elapsed += 12.0
+                    await send({"type": "step", "text": f"⏳ Đang xử lý câu hỏi ({elapsed:.0f}s)..."})
+                    if elapsed >= _SELECTOR_TIMEOUT:
+                        fut.cancel()
+                        raise asyncio.TimeoutError(f"Selector vượt quá {_SELECTOR_TIMEOUT:.0f}s")
+
         if provider == "openai":
             from agents.selector_agent import run_selector
+
+            _sync_client = _SyncOpenAI(api_key=os.environ["OPENAI_API_KEY"], timeout=_API_TIMEOUT)
 
             def _select():
                 return run_selector(
                     diagnostic_text=diagnostic_text,
                     question_pool=question_pool,
+                    client=_sync_client,
                     save_path=str(paths["homework"]),
                     model=model,
+                    min_speaking=min_speaking,
                 )
 
-            homework = await loop.run_in_executor(None, _select)
+            homework = await _await_selector(loop.run_in_executor(None, _select))
         else:
             from agents.selector_gemini import run_selector_gemini
 
-            homework = await run_selector_gemini(
-                diagnostic_text=diagnostic_text,
-                question_pool=question_pool,
-                model=model,
-                save_path=str(paths["homework"]),
+            homework = await _await_selector(
+                run_selector_gemini(
+                    diagnostic_text=diagnostic_text,
+                    question_pool=question_pool,
+                    model=model,
+                    save_path=str(paths["homework"]),
+                    min_speaking=min_speaking,
+                )
             )
 
         save_model_result(
