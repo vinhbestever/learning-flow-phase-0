@@ -1,6 +1,8 @@
 import copy
 import json
 
+import re
+
 from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect
 
 from agents.model_config import ALL_ALLOWED, DEFAULT_HOMEWORK_MODEL, GOOGLE_MODELS, OPENAI_MODELS
@@ -15,6 +17,93 @@ def _norm_text(s: object) -> str:
     if s is None:
         return ""
     return " ".join(str(s).lower().split())
+
+
+def _transcript_matches_speaking_evidence(transcript: object, evidence: object) -> bool:
+    return _speaking_evidence_match_score(transcript, evidence) > 0
+
+
+def _speaking_evidence_match_score(transcript: object, evidence: object) -> int:
+    """
+    Higher = stronger match. Short citations like "No." should not match "not"
+    or a stray "no," deep inside a long conversation turn.
+    """
+    ev = str(evidence or "").strip().lower()
+    t = str(transcript or "").strip().lower()
+    if not ev or not t:
+        return 0
+    ev_core = ev.rstrip(".!?,;:")
+    t_core = t.rstrip(".!?,;:")
+    if ev_core == t_core:
+        return 100
+    if t == ev:
+        return 100
+    if ev in t:
+        return 88
+    if len(ev_core) >= 4 and ev_core in t:
+        return 82
+    if len(ev_core) <= 3 and re.search(rf"(?<![a-z]){re.escape(ev_core)}(?![a-z])", t):
+        extra = len(t) - len(ev_core)
+        if extra <= 2:
+            return 78
+        if extra <= 12:
+            return 58
+        return 22
+    return 0
+
+
+def _iter_lesson_worst_speaking(full_ctx: dict):
+    for row in full_ctx.get("lessons") or []:
+        lid = row.get("lesson_id")
+        title = row.get("title")
+        for item in (row.get("in_class") or {}).get("worst_speaking_items") or []:
+            yield lid, title, item
+
+
+def _inject_cross_lesson_speaking_evidence(q: dict, full_ctx: dict | None) -> None:
+    """
+    When reason/speaking_evidence cites a transcript from another lesson (common in
+    diagnostics), prepend the best-matching row so “Bối cảnh đã học” aligns with the citation.
+    """
+    if not full_ctx:
+        return
+    sc = q.get("student_context")
+    ev = q.get("speaking_evidence")
+    if not sc or not isinstance(ev, str) or not ev.strip():
+        return
+    reason_l = (q.get("reason") or "").lower()
+    local = list(sc.get("worst_speaking_items") or [])
+    if any(_transcript_matches_speaking_evidence(it.get("user_transcript"), ev) for it in local):
+        return
+    hw_lid = q.get("lesson_id")
+    best: tuple[int, dict, object, object] | None = None  # (total, item, olid, otitle)
+
+    for olid, otitle, item in _iter_lesson_worst_speaking(full_ctx):
+        if olid == hw_lid:
+            continue
+        base = _speaking_evidence_match_score(item.get("user_transcript"), ev)
+        if base <= 0:
+            continue
+        bonus = 0
+        qn = (item.get("question") or "").strip().lower()
+        if qn and qn in reason_l:
+            bonus += 40
+        elif qn:
+            for part in qn.split():
+                if len(part) > 6 and part in reason_l:
+                    bonus += 15
+                    break
+        total = base + bonus
+        if best is None or total > best[0]:
+            best = (total, item, olid, otitle)
+
+    if best is None or best[0] < 35:
+        return
+    _, item, olid, otitle = best
+    clone = copy.deepcopy(item)
+    clone["cross_lesson_id"] = olid
+    clone["cross_lesson_title"] = otitle
+    sc["worst_speaking_items"] = [clone] + local
 
 
 def _build_export_question_pools(qe_data: dict) -> dict[int, list[dict]]:
@@ -122,12 +211,13 @@ def _enrich_homework_list(homework_list: list, paths: dict) -> list:
     rows = copy.deepcopy(homework_list)
     ctx_by_lesson: dict = {}
     lesson_by_id: dict = {}
+    full_ctx: dict | None = None
     ctx_p = paths["context"]
     if ctx_p.exists():
-        ctx = json.loads(ctx_p.read_text(encoding="utf-8"))
-        for c in ctx.get("scored_candidates", []):
+        full_ctx = json.loads(ctx_p.read_text(encoding="utf-8"))
+        for c in full_ctx.get("scored_candidates", []):
             ctx_by_lesson[c["lesson_id"]] = c
-        for row in ctx.get("lessons", []):
+        for row in full_ctx.get("lessons", []):
             lid = row.get("lesson_id")
             if lid is not None:
                 lesson_by_id[lid] = row
@@ -158,6 +248,7 @@ def _enrich_homework_list(homework_list: list, paths: dict) -> list:
         matched = _pop_export_match(pools, q)
         if matched:
             _attach_lms_question(q, matched, ctx_data)
+        _inject_cross_lesson_speaking_evidence(q, full_ctx)
     return rows
 
 

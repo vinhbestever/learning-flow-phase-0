@@ -117,18 +117,27 @@ def _count_usable(lesson: dict) -> tuple[int, list]:
     return len(usable), usable
 
 
-def _filter_pool_for_lesson(questions: list, max_per_lesson: int) -> list:
+def _filter_pool_for_lesson(
+    questions: list,
+    max_per_lesson: int,
+    failed_question_ids: set | None = None,
+) -> list:
     """
     Select up to max_per_lesson representative questions for one lesson.
 
     Priority order (greedy for skill diversity):
+      0. Previously-failed questions (from homework/practice results) — always pinned first
       1. Non-media questions with plain question_text (most usable offline)
       2. Media questions that have a comment_plain (at least some context)
       3. Remaining media questions
 
     Within each tier we pick greedily to maximise skill_hint diversity.
     """
+    failed_ids: set = failed_question_ids or set()
+
     def _priority(q: dict) -> int:
+        if q.get("question_id") in failed_ids:
+            return -1  # pin failed questions first
         if not q.get("requires_media"):
             return 0
         if (q.get("comment_plain") or "").strip():
@@ -223,18 +232,24 @@ def build_question_pool(
     lesson_ids: set,
     questions_export: dict,
     max_per_lesson: int = MAX_POOL_PER_LESSON,
+    failed_ids_by_lesson: dict[int, set] | None = None,
 ) -> list:
     """
     Flatten usable questions from the given lesson_ids.
     Applies per-lesson cap via _filter_pool_for_lesson for manageable pool size.
     Attaches lesson_id, lesson_title, signal_type (caller sets after tier_candidates).
+
+    failed_ids_by_lesson: mapping lesson_id → set of question_ids the student
+    previously answered incorrectly. These are pinned to the front of each
+    lesson's pool so the LLM sees them and can assign prev_wrong evidence.
     """
     q_map = {l["lesson_id"]: l for l in questions_export.get("lessons", [])}
     pool = []
     for lid in lesson_ids:
         lesson = q_map.get(lid, {})
         _, usable = _count_usable(lesson)
-        filtered = _filter_pool_for_lesson(usable, max_per_lesson)
+        failed_ids = (failed_ids_by_lesson or {}).get(lid)
+        filtered = _filter_pool_for_lesson(usable, max_per_lesson, failed_ids)
         title = lesson.get("title", "")
         for q in filtered:
             pool.append({
@@ -269,6 +284,41 @@ def _enrich_candidates_with_speaking(
         }
 
 
+def _inject_fs_distribution(student_context: dict, raw_candidates: list) -> None:
+    """
+    Compute free_speaking lesson distribution across ALL scored_candidates and
+    inject it into student_context['summary'] as 'free_speaking_lesson_dist'.
+
+    This gives the diagnostic agent a calibrated baseline: the "lessons to review"
+    are deliberately the weakest ones, so fs=0 there is expected. The full
+    distribution (good/partial/zero) prevents over-generalization.
+    """
+    lessons_by_id = {l["lesson_id"]: l for l in student_context.get("lessons", [])}
+    fs_good = fs_partial = fs_zero = 0
+    for c in raw_candidates:
+        lid = c.get("lesson_id")
+        lesson = lessons_by_id.get(lid, {})
+        ic = lesson.get("in_class", {})
+        fa = ic.get("free_speaking_attempts", 0)
+        if fa == 0:
+            continue
+        avg = ic.get("free_speaking_score_avg")
+        if avg is None:
+            continue
+        if avg == 0:
+            fs_zero += 1
+        elif avg >= 0.8:
+            fs_good += 1
+        else:
+            fs_partial += 1
+    student_context.setdefault("summary", {})["free_speaking_lesson_dist"] = {
+        "good": fs_good,
+        "partial": fs_partial,
+        "zero": fs_zero,
+        "total": fs_good + fs_partial + fs_zero,
+    }
+
+
 def build_context(
     student_context: dict,
     questions_export: dict,
@@ -288,6 +338,25 @@ def build_context(
     )
     _enrich_candidates_with_speaking(tiered, student_context)
 
+    # Inject free_speaking lesson distribution across ALL scored_candidates into the
+    # summary so the diagnostic agent can calibrate its assessment against selection bias.
+    # "Lessons to review" are the WEAKEST lessons — fs=0 there is expected; the summary
+    # must show the full picture to avoid overgeneralizing.
+    _inject_fs_distribution(student_context, raw_candidates)
+
+    # Strip brainstorm items from worst_speaking_items before sending to LLM agents.
+    # brainstorm is an open-ended vocabulary recall task — its transcripts are not
+    # interpretable as grammar/speaking evidence the way conversation/free_speaking are.
+    # This guard handles stale student_context.json files generated before the filter
+    # was added to build_dt_in_class / build_scored_candidates.
+    _VALID_SPEAKING_TYPES = {"free_speaking", "conversation"}
+    for c in tiered:
+        if c.get("worst_speaking_items"):
+            c["worst_speaking_items"] = [
+                w for w in c["worst_speaking_items"]
+                if w.get("lms_type") in _VALID_SPEAKING_TYPES
+            ]
+
     signal_map = {c["lesson_id"]: c["signal_type"] for c in tiered}
     days_map = {c["lesson_id"]: c.get("days_since_last_practice") for c in tiered}
     weakness_map = {c["lesson_id"]: c.get("weakness_score") for c in tiered}
@@ -295,16 +364,24 @@ def build_context(
 
     # Build per-question map of previously failed attempts: (lesson_id, question_id) → answers
     failed_map: dict[tuple, dict] = {}
+    failed_ids_by_lesson: dict[int, set] = {}
     for c in tiered:
+        lid = c["lesson_id"]
         for fq in c.get("failed_text_questions", []):
-            key = (c["lesson_id"], fq["question_id"])
-            failed_map[key] = {
+            qid = fq["question_id"]
+            failed_map[(lid, qid)] = {
                 "prev_student_answer": fq.get("student_answer"),
                 "prev_correct_answer": fq.get("correct_answer"),
             }
+            failed_ids_by_lesson.setdefault(lid, set()).add(qid)
 
     lesson_ids = set(signal_map.keys())
-    pool = build_question_pool(lesson_ids, questions_export, max_per_lesson=max_pool_per_lesson)
+    pool = build_question_pool(
+        lesson_ids,
+        questions_export,
+        max_per_lesson=max_pool_per_lesson,
+        failed_ids_by_lesson=failed_ids_by_lesson,
+    )
     for q in pool:
         lid = q["lesson_id"]
         qid = q.get("question_id")

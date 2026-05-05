@@ -19,20 +19,14 @@
       }
     },
     "weak_skills_global": [],
-    "critical_speaking_types": [
-      "brainstorm"
-    ],
+    "critical_speaking_types": [],
     "stability_days": 7.0,
     "overall_pronunciation_score_avg": 74.29,
     "overall_free_speaking_score_avg": 50.0,
-    "overall_brainstorm_score_avg": 16.67,
     "overall_conversation_score_avg": 84.14,
     "overall_free_speaking_answer_type_dist": {
       "inaccordant": 1,
       "accordant": 1
-    },
-    "overall_brainstorm_answer_type_dist": {
-      "correct": 6
     },
     "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
@@ -56,11 +50,9 @@
           "lms_type": "conversation",
           "question": "Cool! 🌳 What do you like about trees? They give us shade!",
           "expected_answer": "I like trees because they are big.",
-          "target_objects": null,
           "user_transcript": "I like trees with the a big.",
           "score": 69,
           "answer_type": null,
-          "correct_objects": null,
           "pronunciation_score": 81,
           "grammar_score": 57,
           "timestamp": "2026-01-12",
@@ -71,11 +63,9 @@
           "lms_type": "free_speaking",
           "question": "What did you do today? Is there any fun activity?",
           "expected_answer": null,
-          "target_objects": null,
           "user_transcript": "You right now?",
           "score": 0,
           "answer_type": "inaccordant",
-          "correct_objects": null,
           "pronunciation_score": null,
           "grammar_score": null,
           "timestamp": "2026-01-12",
@@ -86,11 +76,9 @@
           "lms_type": "conversation",
           "question": "Cool! Leaves can be pretty. 🍁 What color are the leaves near you?",
           "expected_answer": "The leaves are green.",
-          "target_objects": null,
           "user_transcript": "They live in green.",
           "score": 64.5,
           "answer_type": null,
-          "correct_objects": null,
           "pronunciation_score": 87,
           "grammar_score": 42,
           "timestamp": "2026-01-06",
@@ -101,11 +89,9 @@
           "lms_type": "conversation",
           "question": "That's okay. 😊 What about mushrooms? Have you ever seen a mushroom? 🍄",
           "expected_answer": "Yes, I have. / No, I haven't.",
-          "target_objects": null,
           "user_transcript": "Yes, I have, no, I haven't.",
           "score": 69.5,
           "answer_type": null,
-          "correct_objects": null,
           "pronunciation_score": 100,
           "grammar_score": 39,
           "timestamp": "2026-01-06",
@@ -116,11 +102,9 @@
           "lms_type": "conversation",
           "question": "Food is great! 😋 Do you like trees? I like climbing trees. 🌳",
           "expected_answer": "Yes, I do. / No, I don't.",
-          "target_objects": null,
           "user_transcript": "Yes, I do. No, I don't.",
           "score": 68.5,
           "answer_type": null,
-          "correct_objects": null,
           "pronunciation_score": 100,
           "grammar_score": 37,
           "timestamp": "2026-01-06",
@@ -140,8 +124,8 @@
       "last_activity_date": "2026-01-19",
       "days_since_last_practice": 92,
       "forgetting_score": 1.0,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "weakness_score": 0.0904,
+      "composite_priority_score": 0.5452,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -255,11 +239,9 @@
           "lms_type": "conversation",
           "question": "Nice! Worms help the plants grow. 🌱 Have you seen an ant today?",
           "expected_answer": "Yes, I have. / No, I haven't.",
-          "target_objects": null,
           "user_transcript": "Yes, I have no idea.",
           "score": 59,
           "answer_type": null,
-          "correct_objects": null,
           "pronunciation_score": 50,
           "grammar_score": 68,
           "timestamp": "2026-01-02",
@@ -270,40 +252,14 @@
           "lms_type": "conversation",
           "question": "Great! Do you like insects? 🐛🦋",
           "expected_answer": "Yes, I like insects./No, I don't like insects.",
-          "target_objects": null,
           "user_transcript": "Yes, I like it. No, I don't like ice.",
           "score": 68.5,
           "answer_type": null,
-          "correct_objects": null,
           "pronunciation_score": 92,
           "grammar_score": 45,
           "timestamp": "2026-01-02",
           "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/02/admin/mjwx8rxh-4bdf8297-audio.wav",
           "reaction_time_ms": null
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "Look at the picture and the thing I circled. What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "ladybug",
-            "butterfly",
-            "spider",
-            "ant",
-            "insects",
-            "worm"
-          ],
-          "user_transcript": "It is a An.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "ant"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-02",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/02/admin/mjwwci0w-569174bf-audio.wav",
-          "reaction_time_ms": 3260
         }
       ],
       "practice_ids": {
@@ -318,8 +274,8 @@
       "last_activity_date": "2026-03-14",
       "days_since_last_practice": 38,
       "forgetting_score": 0.9956,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.7478,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.4978,
       "homework_status": "attempted",
       "weak_skills": [],
       "failed_text_questions": [
@@ -450,81 +406,7 @@
       ],
       "question_bank_preview": [],
       "failed_media_questions_count": 0,
-      "worst_speaking_items": [
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "Wind",
-            "Cloud",
-            "Rainbow",
-            "Sun",
-            "Sky"
-          ],
-          "user_transcript": "I can see a sun, I can see a rainbow can and I can see a tree.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "sun",
-            "rainbow",
-            "tree"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-22",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/22/admin/mkpjffzq-9e4386bf-audio.wav",
-          "reaction_time_ms": 1176
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "Anything else?",
-          "expected_answer": null,
-          "target_objects": [
-            "Wind",
-            "Cloud",
-            "Rainbow",
-            "Sun",
-            "Sky"
-          ],
-          "user_transcript": "I can see a rainbow, I can see a tree.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "rainbow",
-            "tree"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-20",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/20/admin/mkmm56l7-96e8c8d6-audio.wav",
-          "reaction_time_ms": 3909
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "Wind",
-            "Cloud",
-            "Rainbow",
-            "Sun",
-            "Sky"
-          ],
-          "user_transcript": "I can see a rock, I can see a tree, I can see a rainbow.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "tree",
-            "rainbow"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-20",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/20/admin/mkmm4s58-31c4b3ce-audio.wav",
-          "reaction_time_ms": 1740
-        }
-      ],
+      "worst_speaking_items": [],
       "practice_ids": {
         "bai_tap": 7666,
         "luyen_tap": 13413
@@ -567,11 +449,6 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 50.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 2
-        },
         "conversation_attempts": 14,
         "conversation_score_avg": 80.46,
         "worst_speaking_items": [
@@ -579,11 +456,9 @@
             "lms_type": "conversation",
             "question": "Cool! 🌳 What do you like about trees? They give us shade!",
             "expected_answer": "I like trees because they are big.",
-            "target_objects": null,
             "user_transcript": "I like trees with the a big.",
             "score": 69,
             "answer_type": null,
-            "correct_objects": null,
             "pronunciation_score": 81,
             "grammar_score": 57,
             "timestamp": "2026-01-12",
@@ -594,11 +469,9 @@
             "lms_type": "free_speaking",
             "question": "What did you do today? Is there any fun activity?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "You right now?",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-01-12",
@@ -609,11 +482,9 @@
             "lms_type": "conversation",
             "question": "Cool! Leaves can be pretty. 🍁 What color are the leaves near you?",
             "expected_answer": "The leaves are green.",
-            "target_objects": null,
             "user_transcript": "They live in green.",
             "score": 64.5,
             "answer_type": null,
-            "correct_objects": null,
             "pronunciation_score": 87,
             "grammar_score": 42,
             "timestamp": "2026-01-06",
@@ -624,11 +495,9 @@
             "lms_type": "conversation",
             "question": "That's okay. 😊 What about mushrooms? Have you ever seen a mushroom? 🍄",
             "expected_answer": "Yes, I have. / No, I haven't.",
-            "target_objects": null,
             "user_transcript": "Yes, I have, no, I haven't.",
             "score": 69.5,
             "answer_type": null,
-            "correct_objects": null,
             "pronunciation_score": 100,
             "grammar_score": 39,
             "timestamp": "2026-01-06",
@@ -639,11 +508,9 @@
             "lms_type": "conversation",
             "question": "Food is great! 😋 Do you like trees? I like climbing trees. 🌳",
             "expected_answer": "Yes, I do. / No, I don't.",
-            "target_objects": null,
             "user_transcript": "Yes, I do. No, I don't.",
             "score": 68.5,
             "answer_type": null,
-            "correct_objects": null,
             "pronunciation_score": 100,
             "grammar_score": 37,
             "timestamp": "2026-01-06",
@@ -741,8 +608,8 @@
       "last_activity_date": "2026-01-19",
       "days_since_last_practice": 92,
       "forgetting_score": 1.0,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.75,
+      "weakness_score": 0.0904,
+      "composite_priority_score": 0.5452,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -763,11 +630,6 @@
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1
-        },
         "conversation_attempts": 5,
         "conversation_score_avg": 78.1,
         "worst_speaking_items": [
@@ -775,11 +637,9 @@
             "lms_type": "conversation",
             "question": "Nice! Worms help the plants grow. 🌱 Have you seen an ant today?",
             "expected_answer": "Yes, I have. / No, I haven't.",
-            "target_objects": null,
             "user_transcript": "Yes, I have no idea.",
             "score": 59,
             "answer_type": null,
-            "correct_objects": null,
             "pronunciation_score": 50,
             "grammar_score": 68,
             "timestamp": "2026-01-02",
@@ -790,40 +650,14 @@
             "lms_type": "conversation",
             "question": "Great! Do you like insects? 🐛🦋",
             "expected_answer": "Yes, I like insects./No, I don't like insects.",
-            "target_objects": null,
             "user_transcript": "Yes, I like it. No, I don't like ice.",
             "score": 68.5,
             "answer_type": null,
-            "correct_objects": null,
             "pronunciation_score": 92,
             "grammar_score": 45,
             "timestamp": "2026-01-02",
             "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/02/admin/mjwx8rxh-4bdf8297-audio.wav",
             "reaction_time_ms": null
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "Look at the picture and the thing I circled. What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "ladybug",
-              "butterfly",
-              "spider",
-              "ant",
-              "insects",
-              "worm"
-            ],
-            "user_transcript": "It is a An.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "ant"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/02/admin/mjwwci0w-569174bf-audio.wav",
-            "reaction_time_ms": 3260
           }
         ]
       },
@@ -978,8 +812,8 @@
       "last_activity_date": "2026-03-14",
       "days_since_last_practice": 38,
       "forgetting_score": 0.9956,
-      "weakness_score": 0.5,
-      "composite_priority_score": 0.7478,
+      "weakness_score": 0.0,
+      "composite_priority_score": 0.4978,
       "in_class": {
         "participated": true,
         "session_count": 2,
@@ -1002,88 +836,9 @@
         "free_speaking_answer_type_dist": {
           "accordant": 1
         },
-        "brainstorm_attempts": 3,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 3
-        },
         "conversation_attempts": 7,
         "conversation_score_avg": 95.83,
-        "worst_speaking_items": [
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "Wind",
-              "Cloud",
-              "Rainbow",
-              "Sun",
-              "Sky"
-            ],
-            "user_transcript": "I can see a sun, I can see a rainbow can and I can see a tree.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "sun",
-              "rainbow",
-              "tree"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-22",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/22/admin/mkpjffzq-9e4386bf-audio.wav",
-            "reaction_time_ms": 1176
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "Anything else?",
-            "expected_answer": null,
-            "target_objects": [
-              "Wind",
-              "Cloud",
-              "Rainbow",
-              "Sun",
-              "Sky"
-            ],
-            "user_transcript": "I can see a rainbow, I can see a tree.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "rainbow",
-              "tree"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-20",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/20/admin/mkmm56l7-96e8c8d6-audio.wav",
-            "reaction_time_ms": 3909
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "Wind",
-              "Cloud",
-              "Rainbow",
-              "Sun",
-              "Sky"
-            ],
-            "user_transcript": "I can see a rock, I can see a tree, I can see a rainbow.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "tree",
-              "rainbow"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-20",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/20/admin/mkmm4s58-31c4b3ce-audio.wav",
-            "reaction_time_ms": 1740
-          }
-        ]
+        "worst_speaking_items": []
       },
       "homework": {
         "attempted": true,

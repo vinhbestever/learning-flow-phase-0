@@ -40,6 +40,15 @@ bài tập viết tốt — điểm yếu chủ yếu nằm ở kỹ năng nói 
 Thang điểm free_speaking: 0–1 (nhân 100 để so sánh). \
 Conversation và pronunciation: 0–100.
 
+QUAN TRỌNG — Selection bias trong "LESSONS TO REVIEW": \
+Danh sách bài cần ôn được chọn có chủ đích là các bài YẾU NHẤT hoặc LÂU NHẤT chưa ôn. \
+Vì vậy, việc free_speaking=0/100 xuất hiện nhiều trong các bài cần ôn là CÓ CHỦ Ý — \
+đó là lý do chúng được chọn vào danh sách, KHÔNG có nghĩa học sinh yếu free_speaking trên toàn bộ chương trình. \
+Hãy tham chiếu "Free speaking / warmup avg" và "Free speaking lesson breakdown" trong STUDENT SUMMARY \
+để đánh giá mức độ thực tế. Nếu global avg > 50 nhưng các bài cần ôn đều = 0, \
+nhận định đúng là "học sinh có nhiều bài free_speaking tốt nhưng còn {N} bài cụ thể cần ôn lại". \
+Tránh tổng quát hóa từ danh sách bài cần ôn sang toàn bộ khả năng của học sinh.
+
 Trước khi viết phân tích, hãy xác định 3 mẫu lỗi hoặc rủi ro nghiêm trọng nhất bạn quan sát được \
 (bao gồm cả các bài chưa làm bài tập), sau đó trình bày chi tiết từng mẫu trong các đoạn văn rõ ràng. \
 Viết bằng tiếng Việt. Không dùng JSON, không dùng danh sách bullet, không dùng markdown headers. \
@@ -52,6 +61,7 @@ STUDENT SUMMARY
 Lessons completed: {completed}/{total}
 Pronunciation avg: {pron}/100
 Free speaking / warmup avg: {free}/100{free_flag}
+  Free speaking lesson breakdown: {fs_lesson_breakdown}
 Conversation avg:  {convo}/100
 Free speaking answer distribution: {answer_dist}
 Critical speaking weaknesses: {critical_speaking}
@@ -63,6 +73,10 @@ Homework skill breakdown (writing accuracy by category):
 
 LESSONS TO REVIEW
 -----------------
+Note: the lessons below are selected because they have the HIGHEST weakness or forgetting scores. \
+A lesson appearing here with free_speaking=0 reflects a specific weak attempt, \
+not the student's overall speaking ability (see breakdown above).
+
 {lesson_blocks}
 
 Analyze: identify skill gaps, recurring error patterns across lessons, which \
@@ -105,7 +119,13 @@ def _fmt_failed_q(questions: list) -> str:
     return " | ".join(parts)
 
 
+_SPEAKING_TYPES = {"free_speaking", "conversation"}
+
+
 def _fmt_speaking(items: list) -> str:
+    # Only include free_speaking and conversation — brainstorm items are not
+    # interpretable by the agent and should not influence the diagnostic.
+    items = [s for s in items if s.get("lms_type") in _SPEAKING_TYPES]
     if not items:
         return "none"
     parts = []
@@ -137,7 +157,13 @@ def _fmt_speaking_scores(scores: dict) -> str:
     free_n = scores.get("free_speaking_attempts", 0)
     if free_n:
         pct = round(free_avg * 100) if free_avg is not None else "?"
-        parts.append(f"free_speaking={pct}/100 ({free_n} attempts)")
+        # Add a clarifying note when avg=0 with very few attempts so the agent
+        # does not over-interpret a single failed warmup as a deep skill gap.
+        if pct == 0 and free_n <= 2:
+            note = f" (chỉ {free_n} câu warmup duy nhất bị fail — không đủ mẫu)"
+        else:
+            note = f" ({free_n} attempts)"
+        parts.append(f"free_speaking={pct}/100{note}")
     convo_avg = scores.get("conversation_avg")
     convo_n = scores.get("conversation_attempts", 0)
     if convo_n:
@@ -218,12 +244,31 @@ def build_prompt(summary: dict, candidates: list) -> str:
         else "none (writing is the main weakness)"
     )
 
+    # Use the pre-computed distribution injected by context_builder._inject_fs_distribution
+    # which covers ALL scored_candidates (not just the top-15 tiered ones) — this gives
+    # the LLM the full picture to avoid over-generalizing from the weakest bài list.
+    fs_dist = summary.get("free_speaking_lesson_dist") or {}
+    fs_good = fs_dist.get("good", 0)
+    fs_partial = fs_dist.get("partial", 0)
+    fs_zero = fs_dist.get("zero", 0)
+    fs_total = fs_dist.get("total", 0)
+    if fs_total:
+        fs_lesson_breakdown = (
+            f"{fs_good} bài đạt (≥80/100), "
+            f"{fs_partial} bài trung bình, "
+            f"{fs_zero} bài yếu (=0/100) "
+            f"— trong tổng {fs_total} bài có free_speaking"
+        )
+    else:
+        fs_lesson_breakdown = "không có dữ liệu"
+
     return USER_TEMPLATE.format(
         completed=completed,
         total=total,
         pron=summary.get("overall_pronunciation_score_avg", "N/A"),
         free=free_val if free_val is not None else "N/A",
         free_flag=free_flag,
+        fs_lesson_breakdown=fs_lesson_breakdown,
         convo=summary.get("overall_conversation_score_avg", "N/A"),
         answer_dist=summary.get("overall_free_speaking_answer_type_dist", {}),
         critical_speaking=critical_speaking_str,

@@ -19,6 +19,9 @@ interface SpeakingItem {
   timestamp?: string | null
   audio_url?: string | null
   reaction_time_ms?: number | null
+  /** When API injects evidence from another lesson to match speaking_evidence */
+  cross_lesson_id?: number | null
+  cross_lesson_title?: string | null
 }
 
 interface FailedTextQuestion {
@@ -100,6 +103,23 @@ function normalizeText(s: string) {
   return s.toLowerCase().replace(/\s+/g, ' ').trim()
 }
 
+/** Align with backend — short fragments like “no” must not match inside “not”. */
+function transcriptMatchesSpeakingEvidence(transcript: string | null | undefined, evidence: string): boolean {
+  const t = (transcript ?? '').trim().toLowerCase()
+  const ev = evidence.trim().toLowerCase()
+  if (!ev || !t) return false
+  const evCore = ev.replace(/[.!?,;:]+$/, '')
+  const tCore = t.replace(/[.!?,;:]+$/, '')
+  if (evCore === tCore) return true
+  if (t.includes(ev)) return true
+  if (evCore.length >= 4 && t.includes(evCore)) return true
+  if (evCore.length <= 3) {
+    const re = new RegExp(`(?<![a-z])${evCore.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![a-z])`, 'i')
+    return re.test(t)
+  }
+  return t.includes(evCore)
+}
+
 function formatReactionSec(ms: number | null | undefined): string | null {
   if (ms == null || Number.isNaN(ms)) return null
   return `${(ms / 1000).toFixed(1).replace('.', ',')}s`
@@ -158,25 +178,28 @@ function findMatchingTextQuestion(q: Question): FailedTextQuestion | null {
     if (byId) return byId
   }
   const qNorm = normalizeText(q.question_text)
-  return (
-    ctx.failed_text_questions.find((item) => normalizeText(item.question_text) === qNorm) ??
-    null
+  const byText = ctx.failed_text_questions.find(
+    (item) => normalizeText(item.question_text) === qNorm,
   )
+  if (byText) return byText
+  // Fallback: show any failed question from this lesson as supporting evidence
+  // (agent may have selected a different question from the same lesson but cited
+  //  the homework error in its reason — still relevant context for the learner).
+  return ctx.failed_text_questions[0]
 }
 
 /** Không lặp khối "đáp án học sinh" khi khối LMS đã có bài làm / cùng question_id */
 function shouldHideTextSnippet(q: Question, textItem: FailedTextQuestion | null): boolean {
   if (!textItem || !q.lms_question) return false
   const lms = q.lms_question
+  const isSameQuestion =
+    lms.question_id != null && textItem.question_id === lms.question_id
+  // Only hide when it's the exact same question AND the LMS block already shows the answer.
+  // If the textItem is a different (failed) question from the same lesson, always show it —
+  // it's independent evidence of a homework error not captured in the selected question.
+  if (!isSameQuestion) return false
   const lmsAns = formatStudentAnswerDisplay(lms.student_answer)
-  if (lmsAns.length > 0) return true
-  if (
-    lms.question_id != null
-    && textItem.question_id === lms.question_id
-  ) {
-    return true
-  }
-  return false
+  return lmsAns.length > 0
 }
 
 function speakingKind(item: SpeakingItem): 'conversation' | 'free_speaking' {
@@ -220,6 +243,10 @@ function PriorLearningContext({ q, studentId }: { q: Question; studentId: string
   const allSpeakingItems = ctx.worst_speaking_items ?? []
   const textItem = findMatchingTextQuestion(q)
   const hideTextSnippet = shouldHideTextSnippet(q, textItem)
+  const textItemIsSameQuestion =
+    textItem != null &&
+    q.lms_question?.question_id != null &&
+    textItem.question_id === q.lms_question.question_id
 
   // Filter speaking items: show only the one(s) cited in reason when speaking_evidence is set.
   // For speaking questions with no citation info, fall back to showing all.
@@ -229,9 +256,8 @@ function PriorLearningContext({ q, studentId }: { q: Question; studentId: string
       // No explicit citation → only show for speaking questions
       return q.skill_category === 'speaking' ? allSpeakingItems : []
     }
-    const fragment = speakingEvidence.toLowerCase()
     const cited = allSpeakingItems.filter(
-      (item) => item.user_transcript?.toLowerCase().includes(fragment),
+      (item) => transcriptMatchesSpeakingEvidence(item.user_transcript, speakingEvidence),
     )
     // If nothing matched (agent paraphrased), fall back to all items
     return cited.length > 0 ? cited : allSpeakingItems
@@ -310,6 +336,13 @@ function PriorLearningContext({ q, studentId }: { q: Question; studentId: string
                     <span className={`rounded-md border px-1.5 py-0.5 text-[10px] font-semibold ${ui.badge}`}>
                       {ui.label}
                     </span>
+                    {speakingItem.cross_lesson_title ? (
+                      <span className="max-w-[14rem] truncate rounded-md border border-amber-200/90 bg-amber-50 px-1.5 py-0.5 text-[10px] font-semibold text-amber-950" title={speakingItem.cross_lesson_title ?? undefined}>
+                        Bài khác:
+                        {' '}
+                        {speakingItem.cross_lesson_title}
+                      </span>
+                    ) : null}
                     <span className="text-[11px] tabular-nums text-[var(--ink)]">
                       <span className="text-[var(--muted)]">Điểm </span>
                       <span className="font-semibold">{scoreLine}</span>
@@ -432,12 +465,19 @@ function PriorLearningContext({ q, studentId }: { q: Question; studentId: string
             <div className="min-w-0 flex-1 space-y-1">
               <div className="flex flex-wrap items-center gap-2">
                 <span className="rounded-md border border-rose-200/90 bg-rose-50 px-1.5 py-0.5 text-[10px] font-semibold text-rose-950">
-                  LMS · Sai trước đó
+                  {textItemIsSameQuestion ? 'LMS · Sai trước đó' : 'BT về nhà · Câu liên quan'}
                 </span>
                 <span className="text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--muted)]">
-                  So sánh nhanh
+                  {textItemIsSameQuestion ? 'So sánh nhanh' : 'Lỗi cùng bài học'}
                 </span>
               </div>
+              {!textItemIsSameQuestion && (
+                <p className="text-[11px] leading-snug text-[var(--muted)]">
+                  {textItem.question_text.length > 90
+                    ? textItem.question_text.slice(0, 90) + '…'
+                    : textItem.question_text}
+                </p>
+              )}
               <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1 text-[13px] leading-snug">
                 <span className="font-semibold text-[var(--coral)]">
                   {Array.isArray(textItem.student_answer)

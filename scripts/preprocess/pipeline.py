@@ -140,7 +140,10 @@ def build_scored_candidates(records):
                 "failed_text_questions": text_questions,
                 "question_bank_preview": question_bank_preview,
                 "failed_media_questions_count": len(media_questions),
-                "worst_speaking_items": r["in_class"].get("worst_speaking_items", []),
+                "worst_speaking_items": [
+                    w for w in r["in_class"].get("worst_speaking_items", [])
+                    if w.get("lms_type") in ("free_speaking", "conversation")
+                ],
                 "practice_ids": {
                     "bai_tap": bt.get("practice_id") or lms_ids.get("bai_tap"),
                     "luyen_tap": lt.get("practice_id") or lms_ids.get("luyen_tap"),

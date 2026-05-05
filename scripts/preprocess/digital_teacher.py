@@ -96,6 +96,9 @@ def build_dt_in_class(sessions, results):
 
     failed_free = [r for r in free_items if (r.get("result") or {}).get("score", 1) == 0]
     failed_convo = [r for r in convo_items if ((r.get("result") or {}).get("score") or 100) < 70]
+    # Only free_speaking and conversation are meaningful evidence for the homework agent.
+    # brainstorm items (additionalData.brainstorm) are classified as "other" by classify_audio
+    # and must never appear here, but guard defensively in case a future code path changes.
     all_failed = (
         [(r, "free_speaking") for r in failed_free]
         + [(r, "conversation") for r in failed_convo]

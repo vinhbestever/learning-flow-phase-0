@@ -16,21 +16,15 @@
     },
     "weak_skills_global": [],
     "critical_speaking_types": [
-      "brainstorm",
       "free_speaking"
     ],
     "stability_days": 7.0,
     "overall_pronunciation_score_avg": 68.84,
     "overall_free_speaking_score_avg": 0.0,
-    "overall_brainstorm_score_avg": 6.38,
     "overall_conversation_score_avg": 81.0,
     "overall_free_speaking_answer_type_dist": {
       "lack_of_knowledge": 6,
       "inaccordant": 22
-    },
-    "overall_brainstorm_answer_type_dist": {
-      "incorrect": 36,
-      "correct": 11
     },
     "forgetting_curve_note": "All lessons have 1 prior attempt. Stability set to 7 days. Lessons older than ~21 days score >0.95 (mostly forgotten). Agent should prioritise by composite_priority_score."
   },
@@ -51,43 +45,12 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "Parents",
-            "Mother",
-            "Father",
-            "Grandmother",
-            "Grandfather",
-            "Grandparents",
-            "Son",
-            "Daughter"
-          ],
-          "user_transcript": "I see a father, grandfather, grandmother, sister, brother, mother.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "father",
-            "grandmother",
-            "grandfather",
-            "mother"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-02-09",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/09/admin/mlf5vyfy-b0b76fa0-audio.wav",
-          "reaction_time_ms": 922
-        },
-        {
           "lms_type": "free_speaking",
           "question": "What’s your favorite color?",
           "expected_answer": null,
-          "target_objects": null,
           "user_transcript": "My mother, father, the.",
           "score": 0,
           "answer_type": "inaccordant",
-          "correct_objects": null,
           "pronunciation_score": null,
           "grammar_score": null,
           "timestamp": "2026-02-09",
@@ -311,33 +274,12 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
-          "lms_type": "brainstorm",
-          "question": "What do you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "feet",
-            "toes",
-            "finger"
-          ],
-          "user_transcript": "I see a No.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-02-11",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/11/admin/mli0p7dg-9f6ec134-audio.wav",
-          "reaction_time_ms": 764
-        },
-        {
           "lms_type": "free_speaking",
           "question": "What's the weather like today?",
           "expected_answer": null,
-          "target_objects": null,
           "user_transcript": "Hi, my name is sister.",
           "score": 0,
           "answer_type": "inaccordant",
-          "correct_objects": null,
           "pronunciation_score": null,
           "grammar_score": null,
           "timestamp": "2026-02-11",
@@ -366,52 +308,12 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
-          "lms_type": "brainstorm",
-          "question": "What body part does he use to draw?",
-          "expected_answer": null,
-          "target_objects": [
-            "Hand",
-            "Mouth",
-            "Leg"
-          ],
-          "user_transcript": "Happhelo.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-02-13",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/13/admin/mlkuezd0-403ee753-audio.wav",
-          "reaction_time_ms": 618
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "Hand",
-            "Mouth",
-            "Leg"
-          ],
-          "user_transcript": "I see a thing or has a.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-02-13",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/13/admin/mlkueldr-45b25146-audio.wav",
-          "reaction_time_ms": 677
-        },
-        {
           "lms_type": "free_speaking",
           "question": "How are you today?",
           "expected_answer": null,
-          "target_objects": null,
           "user_transcript": "I is sing.",
           "score": 0,
           "answer_type": "lack_of_knowledge",
-          "correct_objects": null,
           "pronunciation_score": null,
           "grammar_score": null,
           "timestamp": "2026-02-13",
@@ -422,11 +324,9 @@
           "lms_type": "free_speaking",
           "question": "How are you today?",
           "expected_answer": null,
-          "target_objects": null,
           "user_transcript": "My name is Sister thinking.",
           "score": 0,
           "answer_type": "inaccordant",
-          "correct_objects": null,
           "pronunciation_score": null,
           "grammar_score": null,
           "timestamp": "2026-02-13",
@@ -455,74 +355,12 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "eye",
-            "ear",
-            "nose",
-            "mouth"
-          ],
-          "user_transcript": "This is my mom.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-11",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/11/admin/mmlzq6ek-2905343a-audio.wav",
-          "reaction_time_ms": 1151
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "eye",
-            "ear",
-            "nose",
-            "mouth"
-          ],
-          "user_transcript": "I see a I see a mouse, I see a I see a A.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-11",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/11/admin/mmlzpv1s-22c019f9-audio.wav",
-          "reaction_time_ms": 704
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "eye",
-            "ear",
-            "nose",
-            "mouth"
-          ],
-          "user_transcript": "I see Agu.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-03-11",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/11/admin/mmlzo7xh-675ce7ba-audio.wav",
-          "reaction_time_ms": 1374
-        },
-        {
           "lms_type": "free_speaking",
           "question": "What’s your favorite color?",
           "expected_answer": null,
-          "target_objects": null,
           "user_transcript": "I see.",
           "score": 0,
           "answer_type": "inaccordant",
-          "correct_objects": null,
           "pronunciation_score": null,
           "grammar_score": null,
           "timestamp": "2026-03-11",
@@ -551,54 +389,12 @@
       "failed_media_questions_count": 5,
       "worst_speaking_items": [
         {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "ball",
-            "doll",
-            "horse",
-            "puzzle"
-          ],
-          "user_transcript": "This is a circle, a bone.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-05",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk16l7ei-4b96e86e-audio.wav",
-          "reaction_time_ms": 1397
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What do you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "ball",
-            "doll",
-            "horse",
-            "puzzle"
-          ],
-          "user_transcript": "What do you see? I see a bone Don Cherry bear.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-05",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk16kti4-8b746aa0-audio.wav",
-          "reaction_time_ms": 802
-        },
-        {
           "lms_type": "free_speaking",
           "question": "What's the weather like today?",
           "expected_answer": null,
-          "target_objects": null,
           "user_transcript": "Yes, three.",
           "score": 0,
           "answer_type": "inaccordant",
-          "correct_objects": null,
           "pronunciation_score": null,
           "grammar_score": null,
           "timestamp": "2026-01-05",
@@ -606,44 +402,17 @@
           "reaction_time_ms": 3539
         },
         {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
+          "lms_type": "free_speaking",
+          "question": "What's the weather like today?",
           "expected_answer": null,
-          "target_objects": [
-            "ball",
-            "doll",
-            "horse",
-            "puzzle"
-          ],
-          "user_transcript": "What is it is a zone Chelly bear.",
+          "user_transcript": "My name is.",
           "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
+          "answer_type": "inaccordant",
           "pronunciation_score": null,
           "grammar_score": null,
           "timestamp": "2026-01-05",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk12oej4-1a116093-audio.wav",
-          "reaction_time_ms": 1477
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What do you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "ball",
-            "doll",
-            "horse",
-            "puzzle"
-          ],
-          "user_transcript": "What job you see is a bone.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-05",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk12o0ou-a188ae81-audio.wav",
-          "reaction_time_ms": 1257
+          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk12ln05-8a781f8d-audio.wav",
+          "reaction_time_ms": 2591
         }
       ],
       "practice_ids": {
@@ -736,54 +505,12 @@
       "failed_media_questions_count": 0,
       "worst_speaking_items": [
         {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "Block",
-            "Puzzle",
-            "bike",
-            "car"
-          ],
-          "user_transcript": "It's a rice.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-12",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/12/admin/mkb55ti8-c9874fb2-audio.wav",
-          "reaction_time_ms": 511
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "what can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "Block",
-            "Puzzle",
-            "bike",
-            "car"
-          ],
-          "user_transcript": "I see A.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-12",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/12/admin/mkb55gqx-eda00ba9-audio.wav",
-          "reaction_time_ms": 2746
-        },
-        {
           "lms_type": "free_speaking",
           "question": "How do you feel now?",
           "expected_answer": null,
-          "target_objects": null,
           "user_transcript": "It sts a cherry bear.",
           "score": 0,
           "answer_type": "inaccordant",
-          "correct_objects": null,
           "pronunciation_score": null,
           "grammar_score": null,
           "timestamp": "2026-01-12",
@@ -881,39 +608,12 @@
       "failed_media_questions_count": 3,
       "worst_speaking_items": [
         {
-          "lms_type": "brainstorm",
-          "question": "What is this?",
-          "expected_answer": null,
-          "target_objects": [
-            "grandfather",
-            "grandmother",
-            "father",
-            "mother",
-            "son",
-            "daughter"
-          ],
-          "user_transcript": "I see a grandmother, I see a mother, I see a.",
-          "score": 0,
-          "answer_type": "correct",
-          "correct_objects": [
-            "grandmother",
-            "mother"
-          ],
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-26",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/26/admin/mkv4mvuh-af087ebb-audio.wav",
-          "reaction_time_ms": 1882
-        },
-        {
           "lms_type": "free_speaking",
           "question": "What do you like to do after school?",
           "expected_answer": null,
-          "target_objects": null,
           "user_transcript": "This means does Grandma.",
           "score": 0,
           "answer_type": "inaccordant",
-          "correct_objects": null,
           "pronunciation_score": null,
           "grammar_score": null,
           "timestamp": "2026-01-26",
@@ -977,79 +677,17 @@
       "failed_media_questions_count": 8,
       "worst_speaking_items": [
         {
-          "lms_type": "brainstorm",
-          "question": "What do you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "father",
-            "mother",
-            "son",
-            "family"
-          ],
-          "user_transcript": "Try again.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-24",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/24/admin/mksbexjo-ef1c60ea-audio.wav",
-          "reaction_time_ms": 644
-        },
-        {
           "lms_type": "free_speaking",
           "question": "How are you today?",
           "expected_answer": null,
-          "target_objects": null,
           "user_transcript": "My family is a sister.",
           "score": 0,
           "answer_type": "inaccordant",
-          "correct_objects": null,
           "pronunciation_score": null,
           "grammar_score": null,
           "timestamp": "2026-01-24",
           "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/24/admin/mksbdpe4-aae496c8-audio.wav",
           "reaction_time_ms": 1721
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "father",
-            "mother",
-            "son",
-            "family"
-          ],
-          "user_transcript": ".<unk>ana your<unk>.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-23",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/23/admin/mkqx9529-e061fd10-audio.wav",
-          "reaction_time_ms": 1473
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What do you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "father",
-            "mother",
-            "son",
-            "family"
-          ],
-          "user_transcript": "This is a.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-23",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/23/admin/mkqx8tf0-31f2f2e2-audio.wav",
-          "reaction_time_ms": 1304
         }
       ],
       "practice_ids": {
@@ -1315,11 +953,9 @@
           "lms_type": "conversation",
           "question": "Nice. Do you live in a house or an apartment? 😄",
           "expected_answer": "I live in a house. / I live in an apartment.",
-          "target_objects": null,
           "user_transcript": "I live in a house.",
           "score": 57,
           "answer_type": null,
-          "correct_objects": null,
           "pronunciation_score": 26,
           "grammar_score": 88,
           "timestamp": "2026-01-30",
@@ -1327,54 +963,12 @@
           "reaction_time_ms": 1086
         },
         {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "bathroom",
-            "bedroom",
-            "kitchen",
-            "living room"
-          ],
-          "user_transcript": "This is a bone.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-30",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/30/admin/ml0wd7d2-138e397b-audio.wav",
-          "reaction_time_ms": 775
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "Have a look at this picture. What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "bathroom",
-            "bedroom",
-            "kitchen",
-            "living room"
-          ],
-          "user_transcript": "I see a chicken.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-30",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/30/admin/ml0wcwnz-8ecf45ca-audio.wav",
-          "reaction_time_ms": 1241
-        },
-        {
           "lms_type": "free_speaking",
           "question": "How do you feel now?",
           "expected_answer": null,
-          "target_objects": null,
           "user_transcript": "My, my family's mom does.",
           "score": 0,
           "answer_type": "inaccordant",
-          "correct_objects": null,
           "pronunciation_score": null,
           "grammar_score": null,
           "timestamp": "2026-01-30",
@@ -1494,60 +1088,12 @@
       "failed_media_questions_count": 1,
       "worst_speaking_items": [
         {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "bike",
-            "ball",
-            "blocks",
-            "teddy bear",
-            "doll",
-            "car",
-            "puzzles"
-          ],
-          "user_transcript": "This is a carous spoon jelly bear dont.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/19/admin/mkl498gs-498be319-audio.wav",
-          "reaction_time_ms": 924
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "bike",
-            "ball",
-            "blocks",
-            "teddy bear",
-            "doll",
-            "car",
-            "puzzles"
-          ],
-          "user_transcript": "I see A.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-19",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/19/admin/mkl48ust-d0fcfdea-audio.wav",
-          "reaction_time_ms": 1007
-        },
-        {
           "lms_type": "free_speaking",
           "question": "What do you like to do after school?",
           "expected_answer": null,
-          "target_objects": null,
           "user_transcript": "DSIn Arch Belt Bo Drone.",
           "score": 0,
           "answer_type": "lack_of_knowledge",
-          "correct_objects": null,
           "pronunciation_score": null,
           "grammar_score": null,
           "timestamp": "2026-01-19",
@@ -1576,54 +1122,12 @@
       "failed_media_questions_count": 1,
       "worst_speaking_items": [
         {
-          "lms_type": "brainstorm",
-          "question": "What is it?",
-          "expected_answer": null,
-          "target_objects": [
-            "Bike",
-            "Car",
-            "Block",
-            "Puzzle"
-          ],
-          "user_transcript": "This a circle in the red blue.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-16",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/16/admin/mkgt9mwe-63328af2-audio.wav",
-          "reaction_time_ms": 1239
-        },
-        {
-          "lms_type": "brainstorm",
-          "question": "What can you see?",
-          "expected_answer": null,
-          "target_objects": [
-            "Bike",
-            "Car",
-            "Block",
-            "Puzzle"
-          ],
-          "user_transcript": "What color you see is.",
-          "score": 0,
-          "answer_type": "incorrect",
-          "correct_objects": null,
-          "pronunciation_score": null,
-          "grammar_score": null,
-          "timestamp": "2026-01-16",
-          "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/16/admin/mkgt9a5z-6670e97f-audio.wav",
-          "reaction_time_ms": 1506
-        },
-        {
           "lms_type": "free_speaking",
           "question": "What toys do you like?",
           "expected_answer": null,
-          "target_objects": null,
           "user_transcript": "Is this a Ched bear?",
           "score": 0,
           "answer_type": "inaccordant",
-          "correct_objects": null,
           "pronunciation_score": null,
           "grammar_score": null,
           "timestamp": "2026-01-16",
@@ -1690,11 +1194,9 @@
           "lms_type": "free_speaking",
           "question": "What's the weather like today?",
           "expected_answer": null,
-          "target_objects": null,
           "user_transcript": "I see a dad, mom.",
           "score": 0,
           "answer_type": "inaccordant",
-          "correct_objects": null,
           "pronunciation_score": null,
           "grammar_score": null,
           "timestamp": "2026-02-04",
@@ -1705,11 +1207,9 @@
           "lms_type": "conversation",
           "question": "Nice. Can you say one word from the lesson you remember? 😊",
           "expected_answer": "Kitchen",
-          "target_objects": null,
           "user_transcript": "Them.",
           "score": 61.5,
           "answer_type": null,
-          "correct_objects": null,
           "pronunciation_score": 33,
           "grammar_score": 90,
           "timestamp": "2026-02-02",
@@ -1720,11 +1220,9 @@
           "lms_type": "conversation",
           "question": "Okay, great. Tell me one thing in the lesson you remember. 🌟",
           "expected_answer": "I remember the kitchen and the living room.",
-          "target_objects": null,
           "user_transcript": "I.",
           "score": 68.5,
           "answer_type": null,
-          "correct_objects": null,
           "pronunciation_score": 100,
           "grammar_score": 37,
           "timestamp": "2026-02-02",
@@ -1735,11 +1233,9 @@
           "lms_type": "conversation",
           "question": "Hi! Ready to review Unit 2A — Lesson 4 with me? 😄",
           "expected_answer": "Yes, I am ready. Let's start.",
-          "target_objects": null,
           "user_transcript": "Doly.",
           "score": 57.5,
           "answer_type": null,
-          "correct_objects": null,
           "pronunciation_score": 75,
           "grammar_score": 40,
           "timestamp": "2026-02-02",
@@ -1750,11 +1246,9 @@
           "lms_type": "conversation",
           "question": "Nice. What do you do in your garden? 🌿",
           "expected_answer": "I like to sit and drink tea in my garden. I also grow flowers.",
-          "target_objects": null,
           "user_transcript": "I like to sit in my garden. I also",
           "score": 65,
           "answer_type": null,
-          "correct_objects": null,
           "pronunciation_score": 63,
           "grammar_score": 67,
           "timestamp": "2026-02-02",
@@ -2007,61 +1501,16 @@
         "free_speaking_answer_type_dist": {
           "lack_of_knowledge": 1
         },
-        "brainstorm_attempts": 4,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 4
-        },
         "conversation_attempts": 7,
         "conversation_score_avg": 76.5,
         "worst_speaking_items": [
           {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "Doll",
-              "Ball",
-              "Teddy Bear"
-            ],
-            "user_transcript": "What is this? Is this a chib bear?",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-03",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/03/admin/mjy80ppn-55696a44-audio.wav",
-            "reaction_time_ms": 846
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "Doll",
-              "Ball",
-              "Teddy Bear"
-            ],
-            "user_transcript": "Is this A?",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-03",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/03/admin/mjy80dow-aa56047e-audio.wav",
-            "reaction_time_ms": 924
-          },
-          {
             "lms_type": "free_speaking",
             "question": "What color is the sky today?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "My it is A.",
             "score": 0,
             "answer_type": "lack_of_knowledge",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-01-03",
@@ -2072,35 +1521,14 @@
             "lms_type": "conversation",
             "question": "It's okay! Do you like dolls 👧 or teddy bears 🧸?",
             "expected_answer": "I like dolls.",
-            "target_objects": null,
             "user_transcript": "I't.",
             "score": 44.5,
             "answer_type": null,
-            "correct_objects": null,
             "pronunciation_score": 50,
             "grammar_score": 39,
             "timestamp": "2026-01-02",
             "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/02/admin/mjwwxj8n-4db9d8a9-audio.wav",
             "reaction_time_ms": 1003
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "Doll",
-              "Ball",
-              "Teddy Bear"
-            ],
-            "user_transcript": "My name is Jerry Bear.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-02",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/02/admin/mjww3vsz-f89ce582-audio.wav",
-            "reaction_time_ms": 3872
           }
         ]
       },
@@ -2153,52 +1581,16 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
           {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "Parents",
-              "Mother",
-              "Father",
-              "Grandmother",
-              "Grandfather",
-              "Grandparents",
-              "Son",
-              "Daughter"
-            ],
-            "user_transcript": "I see a father, grandfather, grandmother, sister, brother, mother.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "father",
-              "grandmother",
-              "grandfather",
-              "mother"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-02-09",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/09/admin/mlf5vyfy-b0b76fa0-audio.wav",
-            "reaction_time_ms": 922
-          },
-          {
             "lms_type": "free_speaking",
             "question": "What’s your favorite color?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "My mother, father, the.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-02-09",
@@ -2262,42 +1654,16 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 1
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
           {
-            "lms_type": "brainstorm",
-            "question": "What do you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "feet",
-              "toes",
-              "finger"
-            ],
-            "user_transcript": "I see a No.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-02-11",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/11/admin/mli0p7dg-9f6ec134-audio.wav",
-            "reaction_time_ms": 764
-          },
-          {
             "lms_type": "free_speaking",
             "question": "What's the weather like today?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "Hi, my name is sister.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-02-11",
@@ -2725,11 +2091,6 @@
           "inaccordant": 1,
           "lack_of_knowledge": 2
         },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
@@ -2737,11 +2098,9 @@
             "lms_type": "free_speaking",
             "question": "How do you feel now?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "The.",
             "score": 0,
             "answer_type": "lack_of_knowledge",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-02-12",
@@ -2749,54 +2108,12 @@
             "reaction_time_ms": 986
           },
           {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "head",
-              "hand",
-              "leg",
-              "body"
-            ],
-            "user_transcript": "The.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-02-12",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/12/admin/mljejh83-cf71d29a-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "Look at this picture and tell me, what can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "head",
-              "hand",
-              "leg",
-              "body"
-            ],
-            "user_transcript": "I see A.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-02-12",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/12/admin/mljej62y-82bde250-audio.wav",
-            "reaction_time_ms": 921
-          },
-          {
             "lms_type": "free_speaking",
             "question": "How do you feel now?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "I see a I I.",
             "score": 0,
             "answer_type": "lack_of_knowledge",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-02-12",
@@ -2807,11 +2124,9 @@
             "lms_type": "free_speaking",
             "question": "How do you feel now?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "My I here I am, no, I am ill.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-02-12",
@@ -2870,61 +2185,16 @@
           "inaccordant": 1,
           "lack_of_knowledge": 1
         },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
           {
-            "lms_type": "brainstorm",
-            "question": "What body part does he use to draw?",
-            "expected_answer": null,
-            "target_objects": [
-              "Hand",
-              "Mouth",
-              "Leg"
-            ],
-            "user_transcript": "Happhelo.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-02-13",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/13/admin/mlkuezd0-403ee753-audio.wav",
-            "reaction_time_ms": 618
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "Hand",
-              "Mouth",
-              "Leg"
-            ],
-            "user_transcript": "I see a thing or has a.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-02-13",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/13/admin/mlkueldr-45b25146-audio.wav",
-            "reaction_time_ms": 677
-          },
-          {
             "lms_type": "free_speaking",
             "question": "How are you today?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "I is sing.",
             "score": 0,
             "answer_type": "lack_of_knowledge",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-02-13",
@@ -2935,11 +2205,9 @@
             "lms_type": "free_speaking",
             "question": "How are you today?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "My name is Sister thinking.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-02-13",
@@ -3003,63 +2271,16 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
           {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "Head",
-              "Hands",
-              "Legs",
-              "Feet"
-            ],
-            "user_transcript": "This in a house.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-02-15",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/15/admin/mlntro03-1c4c47da-audio.wav",
-            "reaction_time_ms": 487
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "Head",
-              "Hands",
-              "Legs",
-              "Feet"
-            ],
-            "user_transcript": "I see a hair.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-02-15",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/15/admin/mlntrfru-6c6e39e8-audio.wav",
-            "reaction_time_ms": 1414
-          },
-          {
             "lms_type": "free_speaking",
             "question": "What did you eat today?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "House.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-02-15",
@@ -3117,9 +2338,6 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
-        "brainstorm_attempts": 0,
-        "brainstorm_score_avg": null,
-        "brainstorm_answer_type_dist": {},
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
@@ -3127,11 +2345,9 @@
             "lms_type": "free_speaking",
             "question": "What color is the sky today?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "I see a ear.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-02-21",
@@ -3189,64 +2405,16 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1,
-          "incorrect": 1
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
           {
-            "lms_type": "brainstorm",
-            "question": "Anything else?",
-            "expected_answer": null,
-            "target_objects": [
-              "hair",
-              "long",
-              "short"
-            ],
-            "user_transcript": "I see a mouse.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-02-23",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/23/admin/mlz4vh4u-5edbc61a-audio.wav",
-            "reaction_time_ms": 2531
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "Look at this picture and tell me, what can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "hair",
-              "long",
-              "short"
-            ],
-            "user_transcript": "I see a hair.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "hair"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-02-23",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/02/23/admin/mlz4v4qc-93a7b5f2-audio.wav",
-            "reaction_time_ms": 632
-          },
-          {
             "lms_type": "free_speaking",
             "question": "How do you feel now?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "See you here, I yeah, mom.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-02-23",
@@ -3304,59 +2472,16 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
           {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "straight",
-              "curly"
-            ],
-            "user_transcript": "Beybladeade High Kitchen.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-04",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/04/admin/mmc0yvd3-31b49b79-audio.wav",
-            "reaction_time_ms": 4133
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "straight",
-              "curly"
-            ],
-            "user_transcript": "I see a here, I see A.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-04",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/04/admin/mmc0ykdt-19c98387-audio.wav",
-            "reaction_time_ms": 1400
-          },
-          {
             "lms_type": "free_speaking",
             "question": "What did you eat today?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "My name is a A.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-03-04",
@@ -3414,84 +2539,16 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
-        "brainstorm_attempts": 4,
-        "brainstorm_score_avg": 25.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 3,
-          "correct": 1
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
           {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "eye",
-              "ear",
-              "nose",
-              "mouth"
-            ],
-            "user_transcript": "This is my mom.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-11",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/11/admin/mmlzq6ek-2905343a-audio.wav",
-            "reaction_time_ms": 1151
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "eye",
-              "ear",
-              "nose",
-              "mouth"
-            ],
-            "user_transcript": "I see a I see a mouse, I see a I see a A.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-11",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/11/admin/mmlzpv1s-22c019f9-audio.wav",
-            "reaction_time_ms": 704
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "eye",
-              "ear",
-              "nose",
-              "mouth"
-            ],
-            "user_transcript": "I see Agu.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-11",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/11/admin/mmlzo7xh-675ce7ba-audio.wav",
-            "reaction_time_ms": 1374
-          },
-          {
             "lms_type": "free_speaking",
             "question": "What’s your favorite color?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "I see.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-03-11",
@@ -3556,47 +2613,16 @@
           "inaccordant": 1,
           "lack_of_knowledge": 1
         },
-        "brainstorm_attempts": 3,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 2,
-          "incorrect": 1
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
           {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "ear",
-              "eyes",
-              "nose",
-              "mouth",
-              "eye"
-            ],
-            "user_transcript": "I see a I see a ear.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "ear"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-25",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/25/admin/mn5zavoc-c44803e4-audio.wav",
-            "reaction_time_ms": 668
-          },
-          {
             "lms_type": "free_speaking",
             "question": "How are you today?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "I don't know.",
             "score": 0,
             "answer_type": "lack_of_knowledge",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-03-25",
@@ -3604,59 +2630,12 @@
             "reaction_time_ms": 3554
           },
           {
-            "lms_type": "brainstorm",
-            "question": "Anything else?",
-            "expected_answer": null,
-            "target_objects": [
-              "ear",
-              "eyes",
-              "nose",
-              "mouth",
-              "eye"
-            ],
-            "user_transcript": "I see a mom.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-20",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/20/admin/mmytj1xq-c50f071f-audio.wav",
-            "reaction_time_ms": 2601
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "ear",
-              "eyes",
-              "nose",
-              "mouth",
-              "eye"
-            ],
-            "user_transcript": "I see a ear, I see a No, I see a hair.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "ear",
-              "hair"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-03-20",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/03/20/admin/mmytirjj-de10900f-audio.wav",
-            "reaction_time_ms": 1232
-          },
-          {
             "lms_type": "free_speaking",
             "question": "How are you today?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "I see a No.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-03-20",
@@ -3714,70 +2693,16 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1,
-          "incorrect": 1
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
           {
-            "lms_type": "brainstorm",
-            "question": "Anything else?",
-            "expected_answer": null,
-            "target_objects": [
-              "grandfather",
-              "grandmother",
-              "father",
-              "mother",
-              "son",
-              "daughter"
-            ],
-            "user_transcript": "I.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-11",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/11/admin/mnu9bwtt-71853282-audio.wav",
-            "reaction_time_ms": null
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "grandfather",
-              "grandmother",
-              "father",
-              "mother",
-              "son",
-              "daughter"
-            ],
-            "user_transcript": "I see a father, I see your father, I see a.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "father"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-11",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/11/admin/mnu9blwn-42a22b97-audio.wav",
-            "reaction_time_ms": 869
-          },
-          {
             "lms_type": "free_speaking",
             "question": "What do you like to do after school?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "I see a father, I see a mother this in my Who is this this?",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-04-11",
@@ -3835,63 +2760,16 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 2
         },
-        "brainstorm_attempts": 6,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 6
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
           {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "ball",
-              "doll",
-              "horse",
-              "puzzle"
-            ],
-            "user_transcript": "This is a circle, a bone.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-05",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk16l7ei-4b96e86e-audio.wav",
-            "reaction_time_ms": 1397
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What do you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "ball",
-              "doll",
-              "horse",
-              "puzzle"
-            ],
-            "user_transcript": "What do you see? I see a bone Don Cherry bear.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-05",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk16kti4-8b746aa0-audio.wav",
-            "reaction_time_ms": 802
-          },
-          {
             "lms_type": "free_speaking",
             "question": "What's the weather like today?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "Yes, three.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-01-05",
@@ -3899,44 +2777,17 @@
             "reaction_time_ms": 3539
           },
           {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
+            "lms_type": "free_speaking",
+            "question": "What's the weather like today?",
             "expected_answer": null,
-            "target_objects": [
-              "ball",
-              "doll",
-              "horse",
-              "puzzle"
-            ],
-            "user_transcript": "What is it is a zone Chelly bear.",
+            "user_transcript": "My name is.",
             "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
+            "answer_type": "inaccordant",
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-01-05",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk12oej4-1a116093-audio.wav",
-            "reaction_time_ms": 1477
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What do you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "ball",
-              "doll",
-              "horse",
-              "puzzle"
-            ],
-            "user_transcript": "What job you see is a bone.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-05",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk12o0ou-a188ae81-audio.wav",
-            "reaction_time_ms": 1257
+            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/05/admin/mk12ln05-8a781f8d-audio.wav",
+            "reaction_time_ms": 2591
           }
         ]
       },
@@ -4162,63 +3013,16 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
           {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "Block",
-              "Puzzle",
-              "bike",
-              "car"
-            ],
-            "user_transcript": "It's a rice.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-12",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/12/admin/mkb55ti8-c9874fb2-audio.wav",
-            "reaction_time_ms": 511
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "what can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "Block",
-              "Puzzle",
-              "bike",
-              "car"
-            ],
-            "user_transcript": "I see A.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-12",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/12/admin/mkb55gqx-eda00ba9-audio.wav",
-            "reaction_time_ms": 2746
-          },
-          {
             "lms_type": "free_speaking",
             "question": "How do you feel now?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "It sts a cherry bear.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-01-12",
@@ -4363,48 +3167,16 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
           {
-            "lms_type": "brainstorm",
-            "question": "What is this?",
-            "expected_answer": null,
-            "target_objects": [
-              "grandfather",
-              "grandmother",
-              "father",
-              "mother",
-              "son",
-              "daughter"
-            ],
-            "user_transcript": "I see a grandmother, I see a mother, I see a.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "grandmother",
-              "mother"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-26",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/26/admin/mkv4mvuh-af087ebb-audio.wav",
-            "reaction_time_ms": 1882
-          },
-          {
             "lms_type": "free_speaking",
             "question": "What do you like to do after school?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "This means does Grandma.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-01-26",
@@ -4639,88 +3411,21 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
-        "brainstorm_attempts": 3,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 3
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
           {
-            "lms_type": "brainstorm",
-            "question": "What do you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "father",
-              "mother",
-              "son",
-              "family"
-            ],
-            "user_transcript": "Try again.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-24",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/24/admin/mksbexjo-ef1c60ea-audio.wav",
-            "reaction_time_ms": 644
-          },
-          {
             "lms_type": "free_speaking",
             "question": "How are you today?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "My family is a sister.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-01-24",
             "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/24/admin/mksbdpe4-aae496c8-audio.wav",
             "reaction_time_ms": 1721
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "father",
-              "mother",
-              "son",
-              "family"
-            ],
-            "user_transcript": ".<unk>ana your<unk>.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-23",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/23/admin/mkqx9529-e061fd10-audio.wav",
-            "reaction_time_ms": 1473
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What do you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "father",
-              "mother",
-              "son",
-              "family"
-            ],
-            "user_transcript": "This is a.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-23",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/23/admin/mkqx8tf0-31f2f2e2-audio.wav",
-            "reaction_time_ms": 1304
           }
         ]
       },
@@ -5092,11 +3797,6 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
         "conversation_attempts": 4,
         "conversation_score_avg": 81.17,
         "worst_speaking_items": [
@@ -5104,11 +3804,9 @@
             "lms_type": "conversation",
             "question": "Nice. Do you live in a house or an apartment? 😄",
             "expected_answer": "I live in a house. / I live in an apartment.",
-            "target_objects": null,
             "user_transcript": "I live in a house.",
             "score": 57,
             "answer_type": null,
-            "correct_objects": null,
             "pronunciation_score": 26,
             "grammar_score": 88,
             "timestamp": "2026-01-30",
@@ -5116,54 +3814,12 @@
             "reaction_time_ms": 1086
           },
           {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "bathroom",
-              "bedroom",
-              "kitchen",
-              "living room"
-            ],
-            "user_transcript": "This is a bone.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-30",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/30/admin/ml0wd7d2-138e397b-audio.wav",
-            "reaction_time_ms": 775
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "Have a look at this picture. What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "bathroom",
-              "bedroom",
-              "kitchen",
-              "living room"
-            ],
-            "user_transcript": "I see a chicken.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-30",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/30/admin/ml0wcwnz-8ecf45ca-audio.wav",
-            "reaction_time_ms": 1241
-          },
-          {
             "lms_type": "free_speaking",
             "question": "How do you feel now?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "My, my family's mom does.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-01-30",
@@ -5514,69 +4170,16 @@
         "free_speaking_answer_type_dist": {
           "lack_of_knowledge": 1
         },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
           {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "bike",
-              "ball",
-              "blocks",
-              "teddy bear",
-              "doll",
-              "car",
-              "puzzles"
-            ],
-            "user_transcript": "This is a carous spoon jelly bear dont.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-19",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/19/admin/mkl498gs-498be319-audio.wav",
-            "reaction_time_ms": 924
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "bike",
-              "ball",
-              "blocks",
-              "teddy bear",
-              "doll",
-              "car",
-              "puzzles"
-            ],
-            "user_transcript": "I see A.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-19",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/19/admin/mkl48ust-d0fcfdea-audio.wav",
-            "reaction_time_ms": 1007
-          },
-          {
             "lms_type": "free_speaking",
             "question": "What do you like to do after school?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "DSIn Arch Belt Bo Drone.",
             "score": 0,
             "answer_type": "lack_of_knowledge",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-01-19",
@@ -5783,63 +4386,16 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "incorrect": 2
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
           {
-            "lms_type": "brainstorm",
-            "question": "What is it?",
-            "expected_answer": null,
-            "target_objects": [
-              "Bike",
-              "Car",
-              "Block",
-              "Puzzle"
-            ],
-            "user_transcript": "This a circle in the red blue.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-16",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/16/admin/mkgt9mwe-63328af2-audio.wav",
-            "reaction_time_ms": 1239
-          },
-          {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "Bike",
-              "Car",
-              "Block",
-              "Puzzle"
-            ],
-            "user_transcript": "What color you see is.",
-            "score": 0,
-            "answer_type": "incorrect",
-            "correct_objects": null,
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-01-16",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/01/16/admin/mkgt9a5z-6670e97f-audio.wav",
-            "reaction_time_ms": 1506
-          },
-          {
             "lms_type": "free_speaking",
             "question": "What toys do you like?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "Is this a Ched bear?",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-01-16",
@@ -5940,11 +4496,6 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 2
         },
-        "brainstorm_attempts": 2,
-        "brainstorm_score_avg": 50.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 2
-        },
         "conversation_attempts": 26,
         "conversation_score_avg": 82.18,
         "worst_speaking_items": [
@@ -5952,11 +4503,9 @@
             "lms_type": "free_speaking",
             "question": "What's the weather like today?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "I see a dad, mom.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-02-04",
@@ -5967,11 +4516,9 @@
             "lms_type": "conversation",
             "question": "Nice. Can you say one word from the lesson you remember? 😊",
             "expected_answer": "Kitchen",
-            "target_objects": null,
             "user_transcript": "Them.",
             "score": 61.5,
             "answer_type": null,
-            "correct_objects": null,
             "pronunciation_score": 33,
             "grammar_score": 90,
             "timestamp": "2026-02-02",
@@ -5982,11 +4529,9 @@
             "lms_type": "conversation",
             "question": "Okay, great. Tell me one thing in the lesson you remember. 🌟",
             "expected_answer": "I remember the kitchen and the living room.",
-            "target_objects": null,
             "user_transcript": "I.",
             "score": 68.5,
             "answer_type": null,
-            "correct_objects": null,
             "pronunciation_score": 100,
             "grammar_score": 37,
             "timestamp": "2026-02-02",
@@ -5997,11 +4542,9 @@
             "lms_type": "conversation",
             "question": "Hi! Ready to review Unit 2A — Lesson 4 with me? 😄",
             "expected_answer": "Yes, I am ready. Let's start.",
-            "target_objects": null,
             "user_transcript": "Doly.",
             "score": 57.5,
             "answer_type": null,
-            "correct_objects": null,
             "pronunciation_score": 75,
             "grammar_score": 40,
             "timestamp": "2026-02-02",
@@ -6012,11 +4555,9 @@
             "lms_type": "conversation",
             "question": "Nice. What do you do in your garden? 🌿",
             "expected_answer": "I like to sit and drink tea in my garden. I also grow flowers.",
-            "target_objects": null,
             "user_transcript": "I like to sit in my garden. I also",
             "score": 65,
             "answer_type": null,
-            "correct_objects": null,
             "pronunciation_score": 63,
             "grammar_score": 67,
             "timestamp": "2026-02-02",
@@ -6127,46 +4668,16 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 0.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
           {
-            "lms_type": "brainstorm",
-            "question": "What can you see?",
-            "expected_answer": null,
-            "target_objects": [
-              "Frog",
-              "Snake",
-              "Bat"
-            ],
-            "user_transcript": "I see a zebra, I see a monkey, I see a frog.",
-            "score": 0,
-            "answer_type": "correct",
-            "correct_objects": [
-              "zebra",
-              "monkey",
-              "frog"
-            ],
-            "pronunciation_score": null,
-            "grammar_score": null,
-            "timestamp": "2026-04-19",
-            "audio_url": "https://scontent.rinoedu.ai/uploads/2026/04/19/admin/mo5ttb9q-bcbf00ef-audio.wav",
-            "reaction_time_ms": 1645
-          },
-          {
             "lms_type": "free_speaking",
             "question": "What do you like to do after school?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "Gueess I see I cell phone.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-04-19",
@@ -6222,9 +4733,6 @@
         "free_speaking_attempts": 0,
         "free_speaking_score_avg": null,
         "free_speaking_answer_type_dist": {},
-        "brainstorm_attempts": 0,
-        "brainstorm_score_avg": null,
-        "brainstorm_answer_type_dist": {},
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": []
@@ -6659,11 +5167,6 @@
         "free_speaking_answer_type_dist": {
           "inaccordant": 1
         },
-        "brainstorm_attempts": 1,
-        "brainstorm_score_avg": 100.0,
-        "brainstorm_answer_type_dist": {
-          "correct": 1
-        },
         "conversation_attempts": 0,
         "conversation_score_avg": null,
         "worst_speaking_items": [
@@ -6671,11 +5174,9 @@
             "lms_type": "free_speaking",
             "question": "How are you today?",
             "expected_answer": null,
-            "target_objects": null,
             "user_transcript": "Yes, I do I, this is Lion Tiger.",
             "score": 0,
             "answer_type": "inaccordant",
-            "correct_objects": null,
             "pronunciation_score": null,
             "grammar_score": null,
             "timestamp": "2026-04-17",
