@@ -249,6 +249,34 @@ def _repair_homework(homework: list, question_pool: list, min_speaking: int) -> 
         key=lambda q: (-(q.get("weakness_score") or 0), -(q.get("days_since") or 0)),
     )
 
+    def _make_reason(pq: dict) -> str:
+        days = pq.get("days_since")
+        weak = pq.get("weakness_score")
+        hw_status = pq.get("hw_status", "attempted")
+        prev_ans = pq.get("prev_student_answer")
+        correct_ans = pq.get("prev_correct_answer")
+
+        parts: list[str] = []
+        if days is not None:
+            parts.append(f"Bài này được luyện tập cách đây {days} ngày")
+        if weak is not None and weak > 0.5:
+            parts.append("thuộc nhóm yếu cần ưu tiên ôn lại")
+        if hw_status == "not_attempted":
+            parts.append("học sinh chưa nộp bài tập về nhà cho bài này")
+        if prev_ans is not None:
+            parts.append(
+                f'học sinh đã trả lời sai câu này trước đó: điền/chọn "{prev_ans}" thay vì "{correct_ans}"'
+            )
+        if not parts:
+            signal = pq.get("signal_type", "")
+            if signal == "critical":
+                parts.append("Câu thuộc bài học có điểm yếu cao cần ôn tập")
+            elif signal == "spaced_rep":
+                parts.append("Câu thuộc bài học cần ôn lại theo lịch lặp cách quãng")
+            else:
+                parts.append("Câu được chọn để duy trì kiến thức đã học")
+        return ". ".join(parts) + "."
+
     def _make_row(pq: dict, question_no: int) -> dict:
         return {
             "question_no": question_no,
@@ -259,7 +287,7 @@ def _repair_homework(homework: list, question_pool: list, min_speaking: int) -> 
             "question_text": pq.get("question_text", ""),
             "correct_answer": pq.get("correct_answer"),
             "difficulty": pq.get("difficulty", "medium"),
-            "reason": "[Câu được điều chỉnh tự động để đảm bảo đa dạng bài học.]",
+            "reason": _make_reason(pq),
             "question_id": pq.get("question_id"),
             "requires_media": bool(pq.get("requires_media")),
             "speaking_evidence": None,
