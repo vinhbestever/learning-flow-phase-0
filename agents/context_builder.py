@@ -171,37 +171,43 @@ def _signal_type_for_candidate(c: dict) -> str:
     return "maintenance"
 
 
-def tier_candidates(
+def _enriched_export_eligible_candidates(
     candidates: list,
     questions_export: dict | None = None,
     min_questions: int = MIN_QUESTIONS,
-    max_candidates: int = MAX_CANDIDATES,
 ) -> list:
     """
-    Assign signal_type to each candidate, filter by question availability,
-    apply diversity-aware greedy selection, cap at max_candidates.
+    Attach signal_type / usable_question_count / skill_coverage to each candidate
+    and filter out lessons that lack enough usable questions in the export.
+    Returns all candidates that pass the gate (no tier selection yet).
     """
     q_map = {}
     if questions_export:
         q_map = {l["lesson_id"]: l for l in questions_export.get("lessons", [])}
 
-    def _signal(c):
-        return _signal_type_for_candidate(c)
-
     enriched = []
     for c in candidates:
-        signal = _signal(c)
         lesson = q_map.get(c["lesson_id"], {})
         count, _ = _count_usable(lesson)
         if questions_export and count < min_questions:
             continue
         enriched.append({
             **c,
-            "signal_type": signal,
+            "signal_type": _signal_type_for_candidate(c),
             "usable_question_count": count,
             "skill_coverage": list(set(c.get("weak_skills") or [])),
         })
+    return enriched
 
+
+def _select_tiered_from_enriched(
+    enriched: list,
+    max_candidates: int = MAX_CANDIDATES,
+) -> list:
+    """
+    Greedy tier selection over an already-enriched candidate list.
+    Applies critical/spaced_rep/maintenance ordering with diversity boost.
+    """
     # Reserve MIN_SPACED_REP_SLOTS slots for spaced_rep so it always appears in the pool.
     # Without this, 28 critical candidates would fill all 15 slots before spaced_rep is seen.
     spaced_rep_available = sum(1 for c in enriched if c["signal_type"] == "spaced_rep")
@@ -210,7 +216,7 @@ def tier_candidates(
 
     tier_order = ["critical", "spaced_rep", "maintenance"]
     selected = []
-    covered_skills = set()
+    covered_skills: set = set()
 
     for tier in tier_order:
         if len(selected) >= max_candidates:
@@ -227,11 +233,24 @@ def tier_candidates(
             covered_skills.update(best.get("weak_skills") or [])
             remaining.remove(best)
 
-    # Clean up internal field
     for c in selected:
         c.pop("_adjusted", None)
 
     return selected
+
+
+def tier_candidates(
+    candidates: list,
+    questions_export: dict | None = None,
+    min_questions: int = MIN_QUESTIONS,
+    max_candidates: int = MAX_CANDIDATES,
+) -> list:
+    """
+    Assign signal_type to each candidate, filter by question availability,
+    apply diversity-aware greedy selection, cap at max_candidates.
+    """
+    enriched = _enriched_export_eligible_candidates(candidates, questions_export, min_questions)
+    return _select_tiered_from_enriched(enriched, max_candidates)
 
 
 def build_question_pool(
