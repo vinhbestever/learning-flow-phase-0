@@ -192,40 +192,30 @@ def build_summary(records):
         f for f, s in overall_skill.items() if s["accuracy"] is not None and s["accuracy"] < 0.70
     ]
 
-    all_pron_scores, all_free_scores, all_brain_scores, all_convo_scores = [], [], [], []
+    all_pron_scores, all_free_scores, all_convo_scores = [], [], []
     all_answer_types = defaultdict(int)
-    all_brain_answer_types = defaultdict(int)
     for r in records:
         ic = r.get("in_class", {})
         pron_avg = ic.get("pronunciation_score_avg")
         pron_n = ic.get("pronunciation_attempts", 0)
         free_avg = ic.get("free_speaking_score_avg")
         free_n = ic.get("free_speaking_attempts", 0)
-        br_avg = ic.get("brainstorm_score_avg")
-        br_n = ic.get("brainstorm_attempts", 0)
         convo_avg = ic.get("conversation_score_avg")
         convo_n = ic.get("conversation_attempts", 0)
         if pron_avg is not None and pron_n > 0:
             all_pron_scores.extend([pron_avg] * pron_n)
         if free_avg is not None and free_n > 0:
             all_free_scores.extend([free_avg] * free_n)
-        if br_avg is not None and br_n > 0:
-            all_brain_scores.extend([br_avg] * br_n)
         if convo_avg is not None and convo_n > 0:
             all_convo_scores.extend([convo_avg] * convo_n)
         for at, cnt in ic.get("free_speaking_answer_type_dist", {}).items():
             all_answer_types[at] += cnt
-        for at, cnt in ic.get("brainstorm_answer_type_dist", {}).items():
-            all_brain_answer_types[at] += cnt
 
-    brain_avg = round(sum(all_brain_scores) / len(all_brain_scores), 2) if all_brain_scores else None
     free_avg = round(sum(all_free_scores) / len(all_free_scores), 2) if all_free_scores else None
     pron_avg = round(sum(all_pron_scores) / len(all_pron_scores), 2) if all_pron_scores else None
     convo_avg = round(sum(all_convo_scores) / len(all_convo_scores), 2) if all_convo_scores else None
 
     critical_speaking = []
-    if brain_avg is not None and brain_avg < 30:
-        critical_speaking.append("brainstorm")
     if free_avg is not None and free_avg < 50:
         critical_speaking.append("free_speaking")
 
@@ -240,10 +230,8 @@ def build_summary(records):
         "stability_days": config.EBBINGHAUS_STABILITY_DAYS,
         "overall_pronunciation_score_avg": pron_avg,
         "overall_free_speaking_score_avg": free_avg,
-        "overall_brainstorm_score_avg": brain_avg,
         "overall_conversation_score_avg": convo_avg,
         "overall_free_speaking_answer_type_dist": dict(all_answer_types),
-        "overall_brainstorm_answer_type_dist": dict(all_brain_answer_types),
         "forgetting_curve_note": (
             f"All lessons have 1 prior attempt. Stability set to {config.EBBINGHAUS_STABILITY_DAYS:.0f} days. "
             "Lessons older than ~21 days score >0.95 (mostly forgotten). "
@@ -290,7 +278,6 @@ def main() -> None:
     print(f"Scored candidates (Agent 2 pool): {len(scored_candidates)}")
     print(f"Pronunciation avg: {summary['overall_pronunciation_score_avg']}")
     print(f"Free speaking (warmup) avg: {summary['overall_free_speaking_score_avg']}")
-    print(f"Brainstorm (ảnh→từ) avg:     {summary['overall_brainstorm_score_avg']}")
     print(f"Conversation avg:  {summary['overall_conversation_score_avg']}")
     print(f"Global weak skills: {summary['weak_skills_global']}")
     print("\nTop 5 priority lessons for re-practice:")

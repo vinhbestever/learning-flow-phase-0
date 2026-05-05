@@ -42,25 +42,13 @@ def _build_speaking_item(r, lms_type):
     lms_data = r.get("lmsData") or {}
     ad = result_data.get("additionalData") or {}
 
-    target_objects = None
-    correct_objects = None
-    if "brainstorm" in ad:
-        bst = ad["brainstorm"]
-        objs = bst.get("objects") or []
-        target_objects = [o["name"] for o in objs if isinstance(o, dict) and o.get("isMain")] or None
-        correct_objects = (bst.get("result") or {}).get("correctObjects") or None
-
     return {
         "lms_type": lms_type,
         "question": lms_data.get("question"),
         "expected_answer": lms_data.get("expectedTranscript"),
-        "target_objects": target_objects,
         "user_transcript": result_data.get("userTranscript"),
         "score": result_data.get("score"),
-        "answer_type": (
-            extract_user_answer_type(ad) if lms_type in ("free_speaking", "brainstorm") else None
-        ),
-        "correct_objects": correct_objects,
+        "answer_type": extract_user_answer_type(ad) if lms_type == "free_speaking" else None,
         "pronunciation_score": result_data.get("pronunciationScore"),
         "grammar_score": result_data.get("grammarScore"),
         "timestamp": iso_to_date(parse_mongo_date(r.get("timestamp"))),
@@ -100,21 +88,6 @@ def build_dt_in_class(sessions, results):
         if uat:
             answer_type_dist[uat] += 1
 
-    brainstorm_items = [r for r in audio_results if classify_audio(r) == "brainstorm"]
-    brainstorm_scores = [
-        r["result"]["score"]
-        for r in brainstorm_items
-        if (r.get("result") or {}).get("score") is not None
-    ]
-    brainstorm_score_avg = (
-        round(sum(brainstorm_scores) / len(brainstorm_scores), 2) if brainstorm_scores else None
-    )
-    brainstorm_answer_type_dist = defaultdict(int)
-    for r in brainstorm_items:
-        uat = extract_user_answer_type((r.get("result") or {}).get("additionalData"))
-        if uat:
-            brainstorm_answer_type_dist[uat] += 1
-
     convo_items = [r for r in audio_results if classify_audio(r) == "conversation"]
     convo_scores = [
         r["result"]["score"] for r in convo_items if (r.get("result") or {}).get("score") is not None
@@ -122,11 +95,9 @@ def build_dt_in_class(sessions, results):
     conversation_score_avg = round(sum(convo_scores) / len(convo_scores), 2) if convo_scores else None
 
     failed_free = [r for r in free_items if (r.get("result") or {}).get("score", 1) == 0]
-    failed_brainstorm = [r for r in brainstorm_items if (r.get("result") or {}).get("score", 1) == 0]
     failed_convo = [r for r in convo_items if ((r.get("result") or {}).get("score") or 100) < 70]
     all_failed = (
         [(r, "free_speaking") for r in failed_free]
-        + [(r, "brainstorm") for r in failed_brainstorm]
         + [(r, "conversation") for r in failed_convo]
     )
     all_failed_sorted = sorted(
@@ -151,9 +122,6 @@ def build_dt_in_class(sessions, results):
         "free_speaking_attempts": len(free_items),
         "free_speaking_score_avg": free_speaking_score_avg,
         "free_speaking_answer_type_dist": dict(answer_type_dist),
-        "brainstorm_attempts": len(brainstorm_items),
-        "brainstorm_score_avg": brainstorm_score_avg,
-        "brainstorm_answer_type_dist": dict(brainstorm_answer_type_dist),
         "conversation_attempts": len(convo_items),
         "conversation_score_avg": conversation_score_avg,
         "worst_speaking_items": worst_speaking_items,
@@ -183,15 +151,7 @@ def compute_weakness_score(homework, in_class) -> float:
     if lt.get("score") is not None:
         components.append((1.0 - lt["score"], 0.15))
 
-    fs = in_class.get("free_speaking_score_avg")
-    bs = in_class.get("brainstorm_score_avg")
-    spoken = None
-    if fs is not None and bs is not None:
-        spoken = min(fs, bs)
-    elif fs is not None:
-        spoken = fs
-    elif bs is not None:
-        spoken = bs
+    spoken = in_class.get("free_speaking_score_avg")
     if spoken is not None:
         components.append((1.0 - spoken / 100.0, 0.50))
     elif in_class.get("participated"):
