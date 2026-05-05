@@ -5,16 +5,14 @@ import { formatActivityDateDisplay } from '../lib/activityDate'
 import { groupHistoryByMonth } from '../lib/lessonGroups'
 
 interface SpeakingItem {
-  lms_type?: 'free_speaking' | 'brainstorm' | 'conversation' | string | null
+  lms_type?: 'free_speaking' | 'conversation' | string | null
   question: string | null
   expected_answer?: string | null
-  target_objects?: string[] | null
   user_transcript: string | null
   answer_type: string | null
   score: number | null
   grammar_score?: number | null
   pronunciation_score?: number | null
-  correct_objects?: string[] | null
   timestamp: string | null
 }
 
@@ -50,8 +48,6 @@ interface InClassSummary {
   pronunciation_attempts: number
   free_speaking_score_avg: number | null
   free_speaking_attempts: number
-  brainstorm_score_avg?: number | null
-  brainstorm_attempts?: number
   conversation_score_avg?: number | null
   conversation_attempts?: number
   session_metrics?: SessionMetricsLite | null
@@ -183,15 +179,6 @@ function InClassPanel({ data }: { data: InClassSummary }) {
             <span className="text-[var(--muted)]">({data.pronunciation_attempts} lần)</span>
           </div>
         )}
-        {(data.brainstorm_attempts ?? 0) > 0 && (
-          <div className="flex items-baseline gap-1 text-[11px]">
-            <span className="text-[var(--muted)]">Brainstorm</span>
-            <span className={`font-bold tabular-nums ${scoreColor(data.brainstorm_score_avg != null ? data.brainstorm_score_avg / 100 : null)}`}>
-              {data.brainstorm_score_avg != null ? `${data.brainstorm_score_avg.toFixed(0)}/100` : '—'}
-            </span>
-            <span className="text-[var(--muted)]">({data.brainstorm_attempts} lần)</span>
-          </div>
-        )}
         {data.free_speaking_attempts > 0 && (
           <div className="flex items-baseline gap-1 text-[11px]">
             <span className="text-[var(--muted)]">Nói mở / warmup</span>
@@ -235,18 +222,13 @@ function InClassPanel({ data }: { data: InClassSummary }) {
           <p className="text-[10px] font-semibold uppercase tracking-wide text-[var(--muted)]">Câu nói cần cải thiện</p>
           {data.worst_speaking_items.map((w, i) => {
             const isConvo = w.lms_type === 'conversation'
-            const isBrain = w.lms_type === 'brainstorm'
             const shell = isConvo
               ? 'border-violet-200/90 bg-gradient-to-br from-violet-50/80 to-[var(--surface)]'
-              : isBrain
-                ? 'border-amber-200/90 bg-gradient-to-br from-amber-50/85 to-[var(--surface)]'
-                : 'border-rose-100 bg-rose-50'
+              : 'border-rose-100 bg-rose-50'
             const badge = isConvo
               ? 'bg-violet-200/80 text-violet-900'
-              : isBrain
-                ? 'bg-amber-200/90 text-amber-950'
-                : 'bg-sky-200/60 text-sky-900'
-            const kind = isConvo ? 'Hội thoại' : isBrain ? 'Brainstorm (ảnh)' : 'Nói mở / warmup'
+              : 'bg-sky-200/60 text-sky-900'
+            const kind = isConvo ? 'Hội thoại' : 'Nói mở / warmup'
             return (
               <div key={i} className={`rounded border px-2 py-1.5 text-[11px] ${shell}`}>
                 <div className="mb-0.5 flex flex-wrap items-center gap-1">

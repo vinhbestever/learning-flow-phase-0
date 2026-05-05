@@ -70,16 +70,14 @@ interface SessionMetrics {
 }
 
 interface SpeakingItem {
-  lms_type: 'free_speaking' | 'brainstorm' | 'conversation'
+  lms_type: 'free_speaking' | 'conversation' | string
   question: string | null
   expected_answer: string | null
-  target_objects: string[] | null
   user_transcript: string | null
   answer_type: string | null
   score: number | null
   grammar_score: number | null
   pronunciation_score: number | null
-  correct_objects: string[] | null
   timestamp: string | null
   audio_url?: string | null
   reaction_time_ms?: number | null
@@ -111,14 +109,11 @@ interface InClass {
   pronunciation_attempts: number
   free_speaking_score_avg: number | null
   free_speaking_attempts: number
-  brainstorm_score_avg?: number | null
-  brainstorm_attempts?: number
   conversation_score_avg: number | null
   conversation_attempts: number
   worst_speaking_items: SpeakingItem[]
   pronunciation_drills: PronunciationDrill[]
   free_speaking_questions: FreeSpeakingQuestion[]
-  brainstorm_questions?: FreeSpeakingQuestion[]
   conversation_questions: ConversationQuestion[]
   session_metrics?: SessionMetrics | null
 }
@@ -302,7 +297,6 @@ function PronunciationPhonemePanel({ detail }: { detail: PronunciationDetail }) 
 
 function WorstSpeakingItem({ item }: { item: SpeakingItem }) {
   const isConvo = item.lms_type === 'conversation'
-  const isBrainstorm = item.lms_type === 'brainstorm'
   const atInfo = answerTypeLabel(item.answer_type)
 
   return (
@@ -312,11 +306,9 @@ function WorstSpeakingItem({ item }: { item: SpeakingItem }) {
         <span className={`shrink-0 rounded border px-1.5 py-0.5 text-[10px] font-semibold ${
           isConvo
             ? 'border-violet-200 bg-violet-50 text-violet-700'
-            : isBrainstorm
-              ? 'border-amber-300 bg-amber-50 text-amber-900'
-              : 'border-sky-200 bg-sky-50 text-sky-700'
+            : 'border-sky-200 bg-sky-50 text-sky-700'
         }`}>
-          {isConvo ? 'Hội thoại' : isBrainstorm ? 'Brainstorm (ảnh)' : 'Nói mở (warmup)'}
+          {isConvo ? 'Hội thoại' : 'Nói mở (warmup)'}
         </span>
         {item.question && (
           <p className="min-w-0 flex-1 italic text-[var(--muted)]">"{item.question}"</p>
@@ -329,18 +321,6 @@ function WorstSpeakingItem({ item }: { item: SpeakingItem }) {
           <span className="font-semibold text-emerald-700">Câu mẫu: </span>
           <span className="text-emerald-800">{item.expected_answer}</span>
         </p>
-      )}
-
-      {/* Target objects (brainstorm vocabulary) */}
-      {!isConvo && item.target_objects && item.target_objects.length > 0 && (
-        <div className="mb-1.5 flex flex-wrap gap-1">
-          <span className="text-[10px] text-[var(--muted)]">Từ cần nói:</span>
-          {item.target_objects.map((obj) => (
-            <span key={obj} className="rounded border border-amber-200 bg-amber-50 px-1.5 py-0.5 text-[10px] font-medium text-amber-800">
-              {obj}
-            </span>
-          ))}
-        </div>
       )}
 
       {/* Student transcript */}
@@ -384,18 +364,6 @@ function WorstSpeakingItem({ item }: { item: SpeakingItem }) {
         )}
       </div>
 
-      {/* Correct objects (brainstorm) */}
-      {!isConvo && item.correct_objects && item.correct_objects.length > 0 && (
-        <div className="mt-1.5 flex flex-wrap gap-1">
-          <span className="text-[10px] text-[var(--muted)]">Đúng:</span>
-          {item.correct_objects.map((obj) => (
-            <span key={obj} className="rounded border border-emerald-200 bg-emerald-50 px-1.5 py-0.5 text-[10px] text-emerald-800">
-              {obj}
-            </span>
-          ))}
-        </div>
-      )}
-
       {item.timestamp && (
         <p className="mt-1 text-[10px] text-[var(--muted)]">{item.timestamp}</p>
       )}
@@ -413,7 +381,6 @@ function InClassSection({ data }: { data: InClass }) {
   }
 
   const hasConvo = (data.conversation_attempts ?? 0) > 0
-  const hasBrain = (data.brainstorm_attempts ?? 0) > 0
 
   return (
     <div className="space-y-4">
@@ -431,13 +398,6 @@ function InClassSection({ data }: { data: InClass }) {
           value={data.pronunciation_score_avg != null ? `${data.pronunciation_score_avg.toFixed(0)}/100` : '—'}
           valueClass={scoreColorClass(data.pronunciation_score_avg, 100)}
         />
-        {hasBrain && (
-          <StatChip
-            label={`Brainstorm — ảnh→từ (${data.brainstorm_attempts} lần)`}
-            value={data.brainstorm_score_avg != null ? `${data.brainstorm_score_avg.toFixed(0)}/100` : '—'}
-            valueClass={scoreColorClass(data.brainstorm_score_avg ?? null, 100)}
-          />
-        )}
         <StatChip
           label={`Nói mở / warmup (${data.free_speaking_attempts} lần)`}
           value={data.free_speaking_score_avg != null ? `${data.free_speaking_score_avg.toFixed(0)}/100` : '—'}
@@ -532,60 +492,7 @@ function InClassSection({ data }: { data: InClass }) {
         </details>
       )}
 
-      {/* Brainstorm: nhìn ảnh / ngữ cảnh, nói từ mục tiêu */}
-      {(data.brainstorm_questions ?? []).length > 0 && (
-        <details className="overflow-hidden rounded-xl border border-amber-200/90 bg-gradient-to-br from-amber-50/80 via-[var(--surface)] to-[var(--surface)] [&>summary::-webkit-details-marker]:hidden">
-          <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-2.5 text-sm font-semibold text-amber-950">
-            <span>Brainstorm — ảnh &amp; từ mục tiêu ({(data.brainstorm_questions ?? []).length} câu)</span>
-            <span className="text-xs font-normal text-amber-800/80">▾</span>
-          </summary>
-          <ul className="divide-y divide-amber-100 border-t border-amber-200/80">
-            {(data.brainstorm_questions ?? []).map((q, i) => (
-              <li key={i} className="px-4 py-2.5 text-sm">
-                <div className="flex items-start gap-3">
-                  <span className="w-5 shrink-0 tabular-nums text-[var(--muted)]">{i + 1}.</span>
-                  <div className="min-w-0 flex-1 space-y-1">
-                    <p className="text-[var(--ink)]">{q.question}</p>
-                    {q.target_objects && q.target_objects.length > 0 && (
-                      <div className="flex flex-wrap gap-1">
-                        {q.target_objects.map((obj) => (
-                          <span key={obj} className="rounded border border-amber-300 bg-amber-50 px-1.5 py-0.5 text-[10px] font-medium text-amber-900">
-                            {obj}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                    {q.user_transcript && (
-                      <p className="text-xs text-[var(--muted)]">
-                        <span className="font-medium">Học sinh: </span>{q.user_transcript}
-                        {q.score != null && (
-                          <span className={`ml-1.5 font-semibold tabular-nums ${scoreColorClass(q.score, 100)}`}>
-                            {q.score}/100
-                          </span>
-                        )}
-                      </p>
-                    )}
-                    {(q.reaction_time_ms != null || q.audio_url) && (
-                      <div className="mt-1 space-y-1.5 text-[10px] text-[var(--muted)]">
-                        {q.reaction_time_ms != null && (
-                          <p>
-                            Phản xạ:
-                            {' '}
-                            <strong className="tabular-nums text-[var(--ink)]">{formatReactionSec(q.reaction_time_ms)}</strong>
-                          </p>
-                        )}
-                        {q.audio_url && <InlineAudioPlayer src={q.audio_url} />}
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </details>
-      )}
-
-      {/* Nói mở / warmup (không gộp brainstorm) */}
+      {/* Nói mở / warmup */}
       {data.free_speaking_questions.length > 0 && (
         <details className="overflow-hidden rounded-xl border border-sky-200/80 bg-[var(--surface)] [&>summary::-webkit-details-marker]:hidden">
           <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-2.5 text-sm font-semibold text-[var(--ink)]">
@@ -934,7 +841,6 @@ export default function HistoryLessonDetail() {
   const statusInfo = statusLabel[data.status ?? ''] ?? { label: data.status ?? '', cls: 'bg-slate-50 text-slate-600 border-slate-200' }
 
   const inClassCount = ic.pronunciation_drills.length
-    + (ic.brainstorm_questions ?? []).length
     + ic.free_speaking_questions.length
     + ic.conversation_questions.length
 

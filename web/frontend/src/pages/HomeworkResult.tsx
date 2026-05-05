@@ -7,18 +7,16 @@ import { formatStudentAnswerDisplay } from '../lib/formatStudentAnswer'
 import { lmsQuestionOutcome } from '../lib/lmsQuestionAttempt'
 
 interface SpeakingItem {
-  lms_type?: 'free_speaking' | 'brainstorm' | 'conversation' | string | null
+  lms_type?: 'free_speaking' | 'conversation' | string | null
   question: string | null
   question_type?: string | null
   expected_answer?: string | null
-  target_objects?: string[] | null
   user_transcript?: string | null
   score?: number | null
   grammar_score?: number | null
   pronunciation_score?: number | null
   answer_type?: string | null
   timestamp?: string | null
-  correct_objects?: string[] | null
   audio_url?: string | null
   reaction_time_ms?: number | null
 }
@@ -181,10 +179,9 @@ function shouldHideTextSnippet(q: Question, textItem: FailedTextQuestion | null)
   return false
 }
 
-function speakingKind(item: SpeakingItem): 'conversation' | 'brainstorm' | 'free_speaking' {
+function speakingKind(item: SpeakingItem): 'conversation' | 'free_speaking' {
   const t = (item.lms_type ?? '').toLowerCase()
   if (t === 'conversation') return 'conversation'
-  if (t === 'brainstorm') return 'brainstorm'
   return 'free_speaking'
 }
 
@@ -199,12 +196,6 @@ function speakingKindUi(kind: ReturnType<typeof speakingKind>): {
         label: 'Hội thoại AI',
         rail: 'bg-violet-500',
         badge: 'border-violet-200/90 bg-violet-50 text-violet-950',
-      }
-    case 'brainstorm':
-      return {
-        label: 'Brainstorm',
-        rail: 'bg-amber-500',
-        badge: 'border-amber-200/90 bg-[var(--amber-soft)] text-[var(--amber)]',
       }
     default:
       return {
@@ -376,9 +367,7 @@ function PriorLearningContext({ q, studentId }: { q: Question; studentId: string
                       <p className="text-[10px] leading-snug text-[var(--muted)]">
                         {isConvo
                           ? 'Điểm tổng / ngữ pháp / phát âm (khi có dữ liệu).'
-                          : kind === 'brainstorm'
-                            ? 'Brainstorm: nhìn ảnh/gợi ý và gọi đúng các từ mục tiêu.'
-                            : 'Nói mở theo gợi ý trên lớp — đoạn được chọn để ôn (ưu tiên).'}
+                          : 'Nói mở theo gợi ý trên lớp — đoạn được chọn để ôn (ưu tiên).'}
                       </p>
 
                       {isConvo && speakingItem.expected_answer ? (

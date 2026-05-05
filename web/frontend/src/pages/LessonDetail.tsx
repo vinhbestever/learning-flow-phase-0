@@ -85,10 +85,8 @@ interface PracticeBlock {
 
 interface InClass {
   pronunciation_drills: PronunciationDrill[]
-  /** Warmup / nói mở (additionalData.warmup) — không gồm brainstorm ảnh→từ */
+  /** Warmup / nói mở (additionalData.warmup) */
   free_speaking_questions: FreeSpeakingQuestion[]
-  /** Brainstorm: nhìn ảnh, nói từ mục tiêu (export mới) */
-  brainstorm_questions?: FreeSpeakingQuestion[]
   /** Có thể thiếu nếu dữ liệu export cũ */
   conversation_questions?: ConversationQuestion[]
   session_metrics?: SessionMetrics | null
@@ -284,69 +282,6 @@ function PronunciationSection({ drills }: { drills: PronunciationDrill[] }) {
   )
 }
 
-function BrainstormSection({ questions }: { questions: FreeSpeakingQuestion[] }) {
-  if (!questions.length) return null
-  return (
-    <details
-      className="overflow-hidden rounded-xl border border-amber-200/90 bg-gradient-to-br from-amber-50/85 via-[var(--surface)] to-[var(--surface)] shadow-[inset_3px_0_0_0] shadow-amber-300/50 [&>summary::-webkit-details-marker]:hidden"
-      open
-    >
-      <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-2.5 text-sm font-semibold text-amber-950">
-        <span className="font-display tracking-tight">Brainstorm — ảnh &amp; từ mục tiêu ({questions.length} câu)</span>
-        <span className="text-xs font-normal text-amber-800/80">▾</span>
-      </summary>
-      <ul className="divide-y divide-amber-100 border-t border-amber-200/80">
-        {questions.map((q, i) => (
-          <li key={i} className="px-4 py-2.5 text-sm">
-            <div className="flex items-start gap-3">
-              <span className="w-6 shrink-0 tabular-nums text-[var(--muted)]">{i + 1}.</span>
-              <div className="min-w-0 flex-1 space-y-1">
-                <p className="text-[var(--ink)]">{q.question}</p>
-                {q.question_type && (
-                  <span className="inline-block rounded border border-amber-300 bg-amber-50 px-1.5 py-0.5 text-[10px] font-medium text-amber-900">
-                    {q.question_type}
-                  </span>
-                )}
-                {q.target_objects && q.target_objects.length > 0 && (
-                  <div className="flex flex-wrap gap-1">
-                    {q.target_objects.map((obj) => (
-                      <span key={obj} className="rounded border border-amber-300 bg-amber-50/90 px-1.5 py-0.5 text-[10px] font-medium text-amber-950">
-                        {obj}
-                      </span>
-                    ))}
-                  </div>
-                )}
-                {q.user_transcript && (
-                  <p className="text-xs text-[var(--muted)]">
-                    <span className="font-medium text-[var(--ink)]">Học sinh: </span>
-                    {q.user_transcript}
-                    {q.score != null && (
-                      <span className={`ml-1.5 font-semibold tabular-nums ${scoreColorClass(q.score, 100)}`}>
-                        {q.score}/100
-                      </span>
-                    )}
-                  </p>
-                )}
-                {(q.reaction_time_ms != null || q.audio_url) && (
-                  <div className="mt-1 space-y-1.5 text-[10px] text-[var(--muted)]">
-                    {q.reaction_time_ms != null && (
-                      <p>
-                        Phản xạ:
-                        {' '}
-                        <strong className="tabular-nums text-[var(--ink)]">{formatReactionSec(q.reaction_time_ms)}</strong>
-                      </p>
-                    )}
-                    {q.audio_url && <InlineAudioPlayer src={q.audio_url} />}
-                  </div>
-                )}
-              </div>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </details>
-  )
-}
 
 function FreeSpeakingSection({ questions }: { questions: FreeSpeakingQuestion[] }) {
   if (!questions.length) return (
@@ -591,7 +526,6 @@ export default function LessonDetail() {
   const ic = data.in_class
   const hw = data.homework
   const drillCount = ic.pronunciation_drills.length
-  const brainstormCount = ic.brainstorm_questions?.length ?? 0
   const speakingCount = ic.free_speaking_questions.length
   const convoCount = ic.conversation_questions?.length ?? 0
   const btCount = hw.bai_tap?.questions.length ?? 0
@@ -640,9 +574,9 @@ export default function LessonDetail() {
           className={`flex-1 rounded-lg px-3 py-1.5 font-medium transition ${tab === 'inclass' ? 'bg-[var(--surface)] text-[var(--ink)] shadow-sm' : 'text-[var(--muted)] hover:text-[var(--ink)]'}`}
         >
           Trên lớp
-          {(drillCount > 0 || brainstormCount > 0 || speakingCount > 0 || convoCount > 0) && (
+          {(drillCount > 0 || speakingCount > 0 || convoCount > 0) && (
             <span className="ml-1.5 text-xs text-[var(--muted)]">
-              {drillCount + brainstormCount + speakingCount + convoCount}
+              {drillCount + speakingCount + convoCount}
             </span>
           )}
         </button>
@@ -662,7 +596,6 @@ export default function LessonDetail() {
         <div className="space-y-4">
           {ic.session_metrics && <SessionMetricsStrip m={ic.session_metrics} />}
           <PronunciationSection drills={ic.pronunciation_drills} />
-          <BrainstormSection questions={ic.brainstorm_questions ?? []} />
           <FreeSpeakingSection questions={ic.free_speaking_questions} />
           <ConversationSection questions={ic.conversation_questions ?? []} />
         </div>
