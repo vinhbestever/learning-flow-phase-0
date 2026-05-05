@@ -377,30 +377,6 @@ function PriorLearningContext({ q, studentId }: { q: Question; studentId: string
                         </p>
                       ) : null}
 
-                      {!isConvo && speakingItem.target_objects && speakingItem.target_objects.length > 0 ? (
-                        <div>
-                          <p className="text-[9px] font-semibold uppercase tracking-[0.14em] text-[var(--muted)]">
-                            Từ mục tiêu
-                          </p>
-                          <div className="mt-1 flex flex-wrap gap-1">
-                            {speakingItem.target_objects.map((obj) => (
-                              <span
-                                key={obj}
-                                className="rounded-md border border-[var(--border)] bg-[var(--elevated)] px-1.5 py-0.5 text-[10px] font-medium text-[var(--ink)]"
-                              >
-                                {obj}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
-                      ) : null}
-
-                      {!isConvo && speakingItem.correct_objects && speakingItem.correct_objects.length > 0 ? (
-                        <p className="text-[11px] text-emerald-900">
-                          <span className="font-semibold">Khớp đúng: </span>
-                          {speakingItem.correct_objects.join(', ')}
-                        </p>
-                      ) : null}
 
                       {isConvo ? (
                         <div className="space-y-1">

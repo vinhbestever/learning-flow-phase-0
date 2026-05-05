@@ -17,7 +17,8 @@ def _improvement_suggestions(
     suggestions = []
 
     sp = prep["speaking_summary"]
-    if sp["weak_skills_global_empty"] and (sp.get("free_speaking_avg") or 100) < 50 and not sp.get("critical_speaking_types"):
+    _fs = sp.get("free_speaking_avg")
+    if sp["weak_skills_global_empty"] and (_fs if _fs is not None else 100) < 50 and not sp.get("critical_speaking_types"):
         suggestions.append(
             "**[Preprocess]** Add a `critical_speaking_types` field to `summary` "
             "exposing free_speaking weakness. Currently `weak_skills_global` only "
@@ -122,7 +123,7 @@ def format_markdown(
         "",
         "**Speaking averages:**",
         f"- Free speaking: **{prep['speaking_summary']['free_speaking_avg']}/100**"
-        + (" ⚠️ YẾU" if (prep["speaking_summary"]["free_speaking_avg"] or 100) < 50 else ""),
+        + (" ⚠️ YẾU" if (prep["speaking_summary"]["free_speaking_avg"] if prep["speaking_summary"]["free_speaking_avg"] is not None else 100) < 50 else ""),
         f"- Pronunciation: {prep['speaking_summary']['pronunciation_avg']}/100",
         f"- Conversation: {prep['speaking_summary']['conversation_avg']}/100",
         f"- `weak_skills_global` empty: **{prep['speaking_summary']['weak_skills_global_empty']}** "

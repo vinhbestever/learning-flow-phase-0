@@ -246,15 +246,7 @@ function InClassPanel({ data }: { data: InClassSummary }) {
                     {w.expected_answer}
                   </p>
                 )}
-                {!isConvo && w.target_objects && w.target_objects.length > 0 && (
-                  <div className="mb-0.5 flex flex-wrap gap-0.5">
-                    {w.target_objects.slice(0, 5).map((obj) => (
-                      <span key={obj} className="rounded border border-amber-200/90 bg-amber-50 px-1 py-0.5 text-[9px] text-amber-900">
-                        {obj}
-                      </span>
-                    ))}
-                  </div>
-                )}
+
                 <p className="text-[var(--ink)]">
                   <span className="font-medium">HS:</span> {w.user_transcript || '—'}
                 </p>

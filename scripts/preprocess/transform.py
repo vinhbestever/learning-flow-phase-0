@@ -12,17 +12,15 @@ def classify_audio(result_record):
     """
     conversation:        lmsType == "conversation"  (structured dialogue, grammar+pron scoring)
     pronunciation_drill: additionalData.speaking    (phonetic accuracy drills)
-    brainstorm:          additionalData.brainstorm (nhìn ảnh / gợi ý, nói các từ mục tiêu)
-    free_speaking:       additionalData.warmup only (nói mở / icebreaker, không phải brainstorm)
+    free_speaking:       additionalData.warmup only (nói mở / icebreaker)
     other:               no recognised lmsType or additionalData
+                         (includes legacy additionalData.brainstorm — intentionally dropped)
     """
     if result_record.get("lmsType") == "conversation":
         return "conversation"
     ad = (result_record.get("result") or {}).get("additionalData") or {}
     if "speaking" in ad:
         return "pronunciation_drill"
-    if "brainstorm" in ad:
-        return "brainstorm"
     if "warmup" in ad:
         return "free_speaking"
     return "other"
