@@ -19,6 +19,14 @@ def _norm_text(s: object) -> str:
     return " ".join(str(s).lower().split())
 
 
+def _norm_speaking_text(s: object) -> str:
+    """Normalize for speaking transcript matching: collapse whitespace, lowercase, unify apostrophes/quotes."""
+    t = str(s) if s is not None else ""
+    t = t.replace("’", "'").replace("‘", "'").replace("ʼ", "'")
+    t = t.replace("“", '"').replace("”", '"')
+    return " ".join(t.lower().split())
+
+
 def _transcript_matches_speaking_evidence(transcript: object, evidence: object) -> bool:
     return _speaking_evidence_match_score(transcript, evidence) > 0
 
@@ -28,8 +36,8 @@ def _speaking_evidence_match_score(transcript: object, evidence: object) -> int:
     Higher = stronger match. Short citations like "No." should not match "not"
     or a stray "no," deep inside a long conversation turn.
     """
-    ev = str(evidence or "").strip().lower()
-    t = str(transcript or "").strip().lower()
+    ev = _norm_speaking_text(evidence or "")
+    t = _norm_speaking_text(transcript or "")
     if not ev or not t:
         return 0
     ev_core = ev.rstrip(".!?,;:")

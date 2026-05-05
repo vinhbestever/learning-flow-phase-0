@@ -103,10 +103,18 @@ function normalizeText(s: string) {
   return s.toLowerCase().replace(/\s+/g, ' ').trim()
 }
 
+function normSpeakingText(s: string): string {
+  return s
+    .replace(/[\u2018\u2019\u02BC]/g, "'")
+    .replace(/[\u201C\u201D]/g, '"')
+    .toLowerCase()
+    .trim()
+}
+
 /** Align with backend — short fragments like “no” must not match inside “not”. */
 function transcriptMatchesSpeakingEvidence(transcript: string | null | undefined, evidence: string): boolean {
-  const t = (transcript ?? '').trim().toLowerCase()
-  const ev = evidence.trim().toLowerCase()
+  const t = normSpeakingText(transcript ?? '')
+  const ev = normSpeakingText(evidence)
   if (!ev || !t) return false
   const evCore = ev.replace(/[.!?,;:]+$/, '')
   const tCore = t.replace(/[.!?,;:]+$/, '')
@@ -238,19 +246,18 @@ function PriorLearningContext({ q, studentId }: { q: Question; studentId: string
     q.lms_question?.question_id != null &&
     textItem.question_id === q.lms_question.question_id
 
-  // Filter speaking items: show only the one(s) cited in reason when speaking_evidence is set.
-  // For speaking questions with no citation info, fall back to showing all.
+  // When speaking_evidence is set: show only the matched item(s) — no fallback to all items,
+  // since unmatched local items are unrelated to the cited evidence (different lesson or wrong evidence).
+  // When speaking_evidence is absent: show all items for speaking questions only.
   const speakingEvidence = q.speaking_evidence ?? null
   const speakingItems = (() => {
     if (!speakingEvidence) {
       // No explicit citation → only show for speaking questions
       return q.skill_category === 'speaking' ? allSpeakingItems : []
     }
-    const cited = allSpeakingItems.filter(
+    return allSpeakingItems.filter(
       (item) => transcriptMatchesSpeakingEvidence(item.user_transcript, speakingEvidence),
     )
-    // If nothing matched (agent paraphrased), fall back to all items
-    return cited.length > 0 ? cited : allSpeakingItems
   })()
 
   const hasSnippet = speakingItems.length > 0 || (textItem && !hideTextSnippet)
