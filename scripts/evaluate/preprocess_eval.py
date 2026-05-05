@@ -45,7 +45,6 @@ def evaluate_preprocess(student_context: dict) -> dict:
     )
     n_maintenance = n - n_critical - n_spaced
 
-    brainstorm_avg = summary.get("overall_brainstorm_score_avg", 100)
     free_speaking_avg = summary.get("overall_free_speaking_score_avg")
     pronunciation_avg = summary.get("overall_pronunciation_score_avg")
     conversation_avg = summary.get("overall_conversation_score_avg")
@@ -54,9 +53,10 @@ def evaluate_preprocess(student_context: dict) -> dict:
     issues: list[str] = []
 
     critical_speaking_types = summary.get("critical_speaking_types", [])
-    if brainstorm_avg < 50 and not weak_skills and not critical_speaking_types:
+    _fs_avg = free_speaking_avg if free_speaking_avg is not None else 100
+    if _fs_avg < 50 and not weak_skills and not critical_speaking_types:
         issues.append(
-            f"DESIGN GAP: weak_skills_global=[] despite brainstorm_avg={brainstorm_avg}/100. "
+            f"DESIGN GAP: weak_skills_global=[] despite free_speaking_avg={_fs_avg}/100. "
             "Speaking weakness is invisible to any code that reads weak_skills_global — "
             "only LMS homework accuracy is captured there, not speaking scores."
         )
@@ -104,7 +104,6 @@ def evaluate_preprocess(student_context: dict) -> dict:
             "note": f"All lessons have 1 prior attempt. Stability={stability_days:.0f}d.",
         },
         "speaking_summary": {
-            "brainstorm_avg": brainstorm_avg,
             "free_speaking_avg": free_speaking_avg,
             "pronunciation_avg": pronunciation_avg,
             "conversation_avg": conversation_avg,

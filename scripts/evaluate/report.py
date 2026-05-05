@@ -17,10 +17,10 @@ def _improvement_suggestions(
     suggestions = []
 
     sp = prep["speaking_summary"]
-    if sp["weak_skills_global_empty"] and sp["brainstorm_avg"] < 50 and not sp.get("critical_speaking_types"):
+    if sp["weak_skills_global_empty"] and (sp.get("free_speaking_avg") or 100) < 50 and not sp.get("critical_speaking_types"):
         suggestions.append(
             "**[Preprocess]** Add a `critical_speaking_types` field to `summary` "
-            "exposing brainstorm/free_speaking weakness. Currently `weak_skills_global` only "
+            "exposing free_speaking weakness. Currently `weak_skills_global` only "
             "reflects LMS written accuracy, masking the speaking crisis."
         )
 
@@ -45,7 +45,7 @@ def _improvement_suggestions(
     if failing_speaking:
         suggestions.append(
             f"**[Selector]** Models breaking ≥3 speaking rule: {failing_speaking}. "
-            "Consider dynamic threshold: `min_speaking = 5 if brainstorm<30 else 4 if brainstorm<50 else 3`."
+            "Consider dynamic threshold: `min_speaking = 5 if free_speaking<30 else 4 if free_speaking<50 else 3`."
         )
 
     failing_grammar = [m for m, cr in constraint_results.items() if not cr["checks"].get("grammar_ge4")]
@@ -121,9 +121,8 @@ def format_markdown(
         f"- No-signal candidates: {prep['signal_coverage']['no_signal_count']}",
         "",
         "**Speaking averages:**",
-        f"- Brainstorm: **{prep['speaking_summary']['brainstorm_avg']}/100**"
-        + (" ⚠️ CRITICAL" if (prep["speaking_summary"]["brainstorm_avg"] or 100) < 50 else ""),
-        f"- Free speaking: {prep['speaking_summary']['free_speaking_avg']}/100",
+        f"- Free speaking: **{prep['speaking_summary']['free_speaking_avg']}/100**"
+        + (" ⚠️ YẾU" if (prep["speaking_summary"]["free_speaking_avg"] or 100) < 50 else ""),
         f"- Pronunciation: {prep['speaking_summary']['pronunciation_avg']}/100",
         f"- Conversation: {prep['speaking_summary']['conversation_avg']}/100",
         f"- `weak_skills_global` empty: **{prep['speaking_summary']['weak_skills_global_empty']}** "
@@ -217,7 +216,7 @@ def format_markdown(
             f"| {sr['critical_tier_coverage']:.0%} "
             f"| {sr['top3_urgent_covered']}/3 "
             f"| {sr['not_attempted_coverage']:.0%} "
-            f"| {sr['speaking_count']}{'✓' if sr['brainstorm_emphasis_ok'] else '✗'}(≥{sr['brainstorm_needed_speaking']}) "
+            f"| {sr['speaking_count']}{'✓' if sr['free_speaking_emphasis_ok'] else '✗'}(≥{sr['free_speaking_needed_speaking']}) "
             f"| {sr['oldest5_covered']}/5 "
             f"| {td['critical']}/{td['spaced_rep']}/{td['maintenance']} |"
         )

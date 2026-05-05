@@ -37,8 +37,7 @@ You are evaluating the "reason" field written by an AI homework-assignment syste
 for a Vietnamese English learner (elementary level, ~10 years old).
 
 STUDENT CONTEXT:
-- Brainstorm (image→name visual targets) avg: {brainstorm_avg}/100 — CRITICAL weakness
-- Free speaking avg: {free_speaking_avg}/100
+- Free speaking / warmup avg: {free_speaking_avg}/100
 - Pronunciation avg: {pronunciation_avg}/100
 - Written homework accuracy: ~94% (strong)
 
@@ -69,8 +68,7 @@ You are evaluating a diagnostic analysis written by an AI model about a Vietname
 English learner's weaknesses. This diagnostic is used to brief a homework-selector agent.
 
 ACTUAL STUDENT DATA:
-- Brainstorm (image→name targets) avg: {brainstorm_avg}/100 — this is the CRITICAL weakness
-- Free speaking avg: {free_speaking_avg}/100
+- Free speaking / warmup avg: {free_speaking_avg}/100 — this is the CRITICAL weakness if low
 - Pronunciation avg: {pronunciation_avg}/100
 - Written homework accuracy: {homework_accuracy} (strong — do NOT flag this as a weakness)
 - Total lessons: {total_lessons}, completed: {completed}
@@ -80,7 +78,7 @@ DIAGNOSTIC TEXT (first 1200 chars):
 {diagnostic}
 
 Rate on each dimension (1=poor, 5=excellent):
-- weakness_identification: Correctly identifies brainstorm/speaking as primary weakness \
+- weakness_identification: Correctly identifies speaking as primary weakness \
 (not written accuracy which is already strong)
 - pattern_depth: Explains WHY failures happen, not just lists them
 - actionability: Gives clear guidance the selector agent can act on
@@ -111,7 +109,6 @@ def evaluate_reasons_llm(
     client = openai.OpenAI()
     summary = student_context["summary"]
 
-    brainstorm_avg = summary.get("overall_brainstorm_score_avg", "?")
     free_speaking_avg = summary.get("overall_free_speaking_score_avg", "?")
     pronunciation_avg = summary.get("overall_pronunciation_score_avg", "?")
     homework_accuracy = next(
@@ -134,7 +131,6 @@ def evaluate_reasons_llm(
         for q in sample:
             lesson_ctx = _lesson_context_for_judge(q["lesson_id"], student_context)
             prompt = _REASON_RUBRIC_PROMPT.format(
-                brainstorm_avg=brainstorm_avg,
                 free_speaking_avg=free_speaking_avg,
                 pronunciation_avg=pronunciation_avg,
                 lesson_title=q.get("lesson_title", ""),
@@ -168,7 +164,6 @@ def evaluate_reasons_llm(
         diag_score: dict = {}
         try:
             diag_prompt = _DIAGNOSTIC_RUBRIC_PROMPT.format(
-                brainstorm_avg=brainstorm_avg,
                 free_speaking_avg=free_speaking_avg,
                 pronunciation_avg=pronunciation_avg,
                 homework_accuracy=homework_accuracy,

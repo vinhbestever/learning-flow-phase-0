@@ -53,7 +53,7 @@ def main() -> None:
             f"  {model:<30} score={sr['score']:.3f} "
             f"| priority={sr['avg_priority_score_selected']:.3f} "
             f"| critical={sr['critical_tier_coverage']:.0%} "
-            f"| speaking={sr['speaking_count']}{'✓' if sr['brainstorm_emphasis_ok'] else '✗'}"
+            f"| speaking={sr['speaking_count']}{'✓' if sr['free_speaking_emphasis_ok'] else '✗'}"
         )
 
     llm_results: dict | None = None

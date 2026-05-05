@@ -144,10 +144,10 @@ def main() -> None:
 
     print(f"      Diagnostic done ({len(diagnostic_text)} chars) — stored in homework_by_model.json")
 
-    _raw_avg = student_context["summary"].get("overall_brainstorm_score_avg")
-    brainstorm_avg = 100 if _raw_avg is None else _raw_avg
-    min_speaking = 5 if brainstorm_avg < 30 else 4 if brainstorm_avg < 50 else 3
-    print(f"      brainstorm_avg={brainstorm_avg} → min_speaking={min_speaking}")
+    _raw_avg = student_context["summary"].get("overall_free_speaking_score_avg")
+    free_speaking_avg = 100 if _raw_avg is None else _raw_avg
+    min_speaking = 5 if free_speaking_avg < 30 else 4 if free_speaking_avg < 50 else 3
+    print(f"      free_speaking_avg={free_speaking_avg} → min_speaking={min_speaking}")
 
     print(f"[3/3] Running selector ({model})...")
     if provider == "openai":

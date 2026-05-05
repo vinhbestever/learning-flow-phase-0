@@ -95,9 +95,9 @@ async def run_pipeline_ws(
 
         tiered_candidates, question_pool = await loop.run_in_executor(None, _build)
 
-        _raw_avg = student_context["summary"].get("overall_brainstorm_score_avg")
-        brainstorm_avg = 100 if _raw_avg is None else _raw_avg
-        min_speaking = 5 if brainstorm_avg < 30 else 4 if brainstorm_avg < 50 else 3
+        _raw_avg = student_context["summary"].get("overall_free_speaking_score_avg")
+        free_speaking_avg = 100 if _raw_avg is None else _raw_avg
+        min_speaking = 5 if free_speaking_avg < 30 else 4 if free_speaking_avg < 50 else 3
 
         await send({"type": "step", "text": f"[2/3] Đang chạy diagnostic agent ({model})..."})
 
