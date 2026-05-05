@@ -108,8 +108,10 @@ map "other" to whichever of grammar/vocabulary/speaking best fits the question_t
 REASON FIELD RULES — this is the most important field:
 Write 1–2 sentences per question IN VIETNAMESE that are specific to THIS student's actual performance.
 Every reason MUST explicitly state how many days ago the lesson was last practiced \
-(e.g. "bài này đã học 118 ngày trước — cần ôn lại từ đầu"). The days value is shown \
-as "{N}d ago" on every pool line.
+(e.g. "bài này đã học 34 ngày trước — cần ôn lại"). The days value is shown \
+as "{N}d ago" on every pool line. The pool only contains lessons from the recent \
+activity window, so values will always be ≤60 days — copy the exact number from \
+the pool line, do NOT invent a larger value.
 Also reference at least one of: a specific wrong answer they gave, a speaking transcript \
 (e.g. "học sinh nói 'It's black' thay vì 'It's blue'"), a speaking score from speaking_scores \
 (e.g. "free_speaking=0/100"), or a named error pattern from the diagnostic.
