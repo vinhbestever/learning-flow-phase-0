@@ -24,6 +24,7 @@ MAX_CANDIDATES = 15
 MIN_SPACED_REP_SLOTS = 2  # reserved slots for spaced_rep tier when available
 MIN_QUESTIONS = 2  # lessons with fewer usable questions are excluded
 MAX_POOL_PER_LESSON = 5  # cap questions per lesson sent to selector
+MAX_SELECTOR_POOL_RECENCY_DAYS = 60  # pool for selector: only lessons practiced within this window
 
 # Shown in pool / homework when stem is mostly image+audio (no plain text stem).
 MEDIA_QUESTION_TEXT_STUB = (
@@ -161,6 +162,15 @@ def _filter_pool_for_lesson(
     return selected[:max_per_lesson]
 
 
+def _signal_type_for_candidate(c: dict) -> str:
+    """Map a scored candidate to its tier label."""
+    if c.get("weakness_score", 0) > 0.5:
+        return "critical"
+    if (c.get("days_since_last_practice") or 0) > 14:
+        return "spaced_rep"
+    return "maintenance"
+
+
 def tier_candidates(
     candidates: list,
     questions_export: dict | None = None,
@@ -176,11 +186,7 @@ def tier_candidates(
         q_map = {l["lesson_id"]: l for l in questions_export.get("lessons", [])}
 
     def _signal(c):
-        if c.get("weakness_score", 0) > 0.5:
-            return "critical"
-        if (c.get("days_since_last_practice") or 0) > 14:
-            return "spaced_rep"
-        return "maintenance"
+        return _signal_type_for_candidate(c)
 
     enriched = []
     for c in candidates:
