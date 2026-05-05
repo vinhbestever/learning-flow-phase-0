@@ -113,7 +113,7 @@ def test_get_lesson_detail(tmp_path: Path, monkeypatch) -> None:
     assert body["homework"]["bai_tap"]["total"] == 10
     assert len(body["homework"]["bai_tap"]["questions"]) == 1
     assert len(body["in_class"]["pronunciation_drills"]) == 1
-    assert body["in_class"]["brainstorm_questions"] == []
+    assert "brainstorm_questions" not in body["in_class"]
 
 
 def test_get_lesson_detail_404(tmp_path: Path, monkeypatch) -> None:

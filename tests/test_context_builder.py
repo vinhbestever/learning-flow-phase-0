@@ -43,13 +43,6 @@ QUESTIONS_EXPORT = {
                         "question_type": "speaking_unscripted",
                     }
                 ],
-                "brainstorm": [
-                    {
-                        "interaction_type": "brainstorm",
-                        "question": "Name three things in the kitchen.",
-                        "question_type": "speaking_brainstorm",
-                    }
-                ],
             },
             "homework": {
                 "bai_tap": None,
@@ -156,13 +149,6 @@ def test_build_question_pool_includes_free_speaking():
     pool = build_question_pool(lesson_ids, QUESTIONS_EXPORT)
     assert any(q.get("interaction_type") == "free_speaking" for q in pool)
 
-
-def test_build_question_pool_includes_brainstorm():
-    lesson_ids = {1}
-    pool = build_question_pool(lesson_ids, QUESTIONS_EXPORT)
-    rows = [q for q in pool if q.get("interaction_type") == "brainstorm"]
-    assert len(rows) == 1
-    assert "kitchen" in (rows[0].get("question_text") or "")
 
 
 def test_build_question_pool_attaches_lesson_metadata():
