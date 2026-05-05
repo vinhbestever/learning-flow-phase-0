@@ -356,11 +356,14 @@ def build_context(
     question_pool: filtered list of representative questions from those lessons
     """
     raw_candidates = student_context.get("scored_candidates", [])
-    tiered = tier_candidates(
-        raw_candidates,
-        questions_export,
-        max_candidates=max_candidates,
+
+    # Enrich all export-eligible candidates once; reuse for both tier selection and pool.
+    enriched_all = _enriched_export_eligible_candidates(
+        raw_candidates, questions_export, min_questions=MIN_QUESTIONS
     )
+
+    # --- Diagnostic path: full tiered list, no recency cutoff ---
+    tiered = _select_tiered_from_enriched(enriched_all, max_candidates=max_candidates)
     _enrich_candidates_with_speaking(tiered, student_context)
 
     # Inject free_speaking lesson distribution across ALL scored_candidates into the
@@ -382,15 +385,23 @@ def build_context(
                 if w.get("lms_type") in _VALID_SPEAKING_TYPES
             ]
 
-    signal_map = {c["lesson_id"]: c["signal_type"] for c in tiered}
-    days_map = {c["lesson_id"]: c.get("days_since_last_practice") for c in tiered}
-    weakness_map = {c["lesson_id"]: c.get("weakness_score") for c in tiered}
-    hw_status_map = {c["lesson_id"]: c.get("homework_status") for c in tiered}
+    # --- Selector pool path: only lessons with recent activity (≤ window days) ---
+    recent_enriched = [
+        c for c in enriched_all
+        if c.get("days_since_last_practice") is not None
+        and c["days_since_last_practice"] <= MAX_SELECTOR_POOL_RECENCY_DAYS
+    ]
+    pool_lesson_ids = {c["lesson_id"] for c in recent_enriched}
+
+    signal_map = {c["lesson_id"]: c["signal_type"] for c in recent_enriched}
+    days_map = {c["lesson_id"]: c.get("days_since_last_practice") for c in recent_enriched}
+    weakness_map = {c["lesson_id"]: c.get("weakness_score") for c in recent_enriched}
+    hw_status_map = {c["lesson_id"]: c.get("homework_status") for c in recent_enriched}
 
     # Build per-question map of previously failed attempts: (lesson_id, question_id) → answers
     failed_map: dict[tuple, dict] = {}
     failed_ids_by_lesson: dict[int, set] = {}
-    for c in tiered:
+    for c in recent_enriched:
         lid = c["lesson_id"]
         for fq in c.get("failed_text_questions", []):
             qid = fq["question_id"]
@@ -400,9 +411,8 @@ def build_context(
             }
             failed_ids_by_lesson.setdefault(lid, set()).add(qid)
 
-    lesson_ids = set(signal_map.keys())
     pool = build_question_pool(
-        lesson_ids,
+        pool_lesson_ids,
         questions_export,
         max_per_lesson=max_pool_per_lesson,
         failed_ids_by_lesson=failed_ids_by_lesson,
