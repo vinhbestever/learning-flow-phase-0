@@ -125,16 +125,6 @@ function formatReactionSec(ms: number | null | undefined): string | null {
   return `${(ms / 1000).toFixed(1).replace('.', ',')}s`
 }
 
-function findMatchingSpeakingItem(q: Question): SpeakingItem | null {
-  const ctx = q.student_context
-  if (!ctx || !ctx.worst_speaking_items.length) return null
-  const qNorm = normalizeText(q.question_text)
-  return (
-    ctx.worst_speaking_items.find((item) => normalizeText(item.question ?? '') === qNorm) ??
-    ctx.worst_speaking_items[0]
-  )
-}
-
 function scoreBgHw(score: number | null | undefined, max = 100): string {
   if (score == null) return 'bg-slate-200/80'
   const r = score / max

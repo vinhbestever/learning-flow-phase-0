@@ -279,11 +279,6 @@ function InClassPanel({ data }: { data: InClassSummary }) {
                     )}
                   </div>
                 )}
-                {!isConvo && w.correct_objects && w.correct_objects.length > 0 && (
-                  <p className="mt-0.5 text-[10px] text-emerald-800">
-                    <span className="font-medium">Đúng:</span> {w.correct_objects.join(', ')}
-                  </p>
-                )}
               </div>
             )
           })}
