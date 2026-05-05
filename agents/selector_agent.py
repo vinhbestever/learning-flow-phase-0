@@ -26,8 +26,6 @@ from agents.model_config import (
     openai_uses_responses_api,
 )
 
-MAX_SELECTOR_RETRIES = 2
-
 HOMEWORK_SCHEMA = {
     "name": "homework_assignment",
     "strict": True,
@@ -153,31 +151,6 @@ Select exactly 15 questions. REQUIRED MINIMUMS: ≥{min_speaking} speaking | ≥
 Assign question_no 1–15 in order of priority.\
 """
 
-_RETRY_TEMPLATE = """\
-⚠️ CONSTRAINT VIOLATIONS — your previous answer broke these hard rules:
-{violations_text}
-
-Fix ALL violations above before submitting. These are hard constraints, not suggestions.
-- diff_skill violation: for the listed lesson, replace one question with one that has \
-a DIFFERENT skill_category (consult the pool below for alternatives).
-- grammar deficit: swap in grammar questions until you reach ≥4 total.
-- speaking deficit: swap in speaking questions until you reach ≥{min_speaking} total.
-- media excess: set requires_media=false for questions beyond the first 4 MEDIA=yes.
-
-DIAGNOSTIC ANALYSIS
--------------------
-{diagnostic_text}
-
-QUESTION POOL ({count} questions available)
-REQUIRED MINIMUMS: ≥{min_speaking} speaking | ≥4 grammar/fill-blank | ≥3 vocabulary
---------------------------------------------
-{pool_text}
-
-Select exactly 15 questions. REQUIRED MINIMUMS: ≥{min_speaking} speaking | ≥4 grammar | ≥3 vocabulary. \
-Assign question_no 1–15 in order of priority.\
-"""
-
-
 def _pool_to_text(pool: list) -> str:
     lines = []
     for i, q in enumerate(pool):
@@ -223,22 +196,6 @@ def _pool_to_text(pool: list) -> str:
 
 def build_prompt(diagnostic_text: str, question_pool: list, min_speaking: int = 3) -> str:
     return USER_TEMPLATE.format(
-        diagnostic_text=diagnostic_text,
-        count=len(question_pool),
-        pool_text=_pool_to_text(question_pool),
-        min_speaking=min_speaking,
-    )
-
-
-def _build_retry_prompt(
-    diagnostic_text: str,
-    question_pool: list,
-    violations: list[str],
-    min_speaking: int,
-) -> str:
-    violations_text = "\n".join(f"  • {v}" for v in violations)
-    return _RETRY_TEMPLATE.format(
-        violations_text=violations_text,
         diagnostic_text=diagnostic_text,
         count=len(question_pool),
         pool_text=_pool_to_text(question_pool),
@@ -483,41 +440,26 @@ def _run_selector_via_responses(
 ) -> list:
     """Models like gpt-5.4-pro: /v1/responses + json_schema trong text.format."""
     prompt = build_prompt(diagnostic_text, question_pool, min_speaking=min_speaking)
-    best_homework: list | None = None
-    best_violation_count = 999
+    req: dict = {
+        "model": model,
+        "instructions": SYSTEM_PROMPT,
+        "input": prompt,
+        "text": {
+            "format": {
+                "type": "json_schema",
+                "name": HOMEWORK_SCHEMA["name"],
+                "strict": HOMEWORK_SCHEMA["strict"],
+                "schema": HOMEWORK_SCHEMA["schema"],
+            }
+        },
+    }
+    if openai_responses_include_temperature(model):
+        req["temperature"] = 0
+    response = client.responses.create(**req)
+    raw = response.output_text
+    homework = parse_response(raw)
+    enrich_homework_from_pool(homework, question_pool)
 
-    for attempt in range(MAX_SELECTOR_RETRIES):
-        req: dict = {
-            "model": model,
-            "instructions": SYSTEM_PROMPT,
-            "input": prompt,
-            "text": {
-                "format": {
-                    "type": "json_schema",
-                    "name": HOMEWORK_SCHEMA["name"],
-                    "strict": HOMEWORK_SCHEMA["strict"],
-                    "schema": HOMEWORK_SCHEMA["schema"],
-                }
-            },
-        }
-        if openai_responses_include_temperature(model):
-            req["temperature"] = 0
-        response = client.responses.create(**req)
-        raw = response.output_text
-        homework = parse_response(raw)
-        enrich_homework_from_pool(homework, question_pool)
-
-        violations = _validate_constraints(homework, min_speaking)
-        if len(violations) < best_violation_count:
-            best_homework = homework
-            best_violation_count = len(violations)
-
-        if not violations:
-            break
-        print(f"      [selector retry {attempt + 1}/{MAX_SELECTOR_RETRIES}] violations: {violations}")
-        prompt = _build_retry_prompt(diagnostic_text, question_pool, violations, min_speaking)
-
-    homework = best_homework  # type: ignore[assignment]
     remaining = _validate_constraints(homework, min_speaking)
     if remaining:
         print(f"      [selector repair] fixing {len(remaining)} remaining violations: {remaining}")
@@ -549,34 +491,19 @@ def run_selector(
         )
 
     prompt = build_prompt(diagnostic_text, question_pool, min_speaking=min_speaking)
-    best_homework: list | None = None
-    best_violation_count = 999
+    response = client.chat.completions.create(
+        model=model,
+        temperature=0,
+        response_format={"type": "json_schema", "json_schema": HOMEWORK_SCHEMA},
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": prompt},
+        ],
+    )
+    raw = response.choices[0].message.content
+    homework = parse_response(raw)
+    enrich_homework_from_pool(homework, question_pool)
 
-    for attempt in range(MAX_SELECTOR_RETRIES):
-        response = client.chat.completions.create(
-            model=model,
-            temperature=0,
-            response_format={"type": "json_schema", "json_schema": HOMEWORK_SCHEMA},
-            messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": prompt},
-            ],
-        )
-        raw = response.choices[0].message.content
-        homework = parse_response(raw)
-        enrich_homework_from_pool(homework, question_pool)
-
-        violations = _validate_constraints(homework, min_speaking)
-        if len(violations) < best_violation_count:
-            best_homework = homework
-            best_violation_count = len(violations)
-
-        if not violations:
-            break
-        print(f"      [selector retry {attempt + 1}/{MAX_SELECTOR_RETRIES}] violations: {violations}")
-        prompt = _build_retry_prompt(diagnostic_text, question_pool, violations, min_speaking)
-
-    homework = best_homework  # type: ignore[assignment]
     remaining = _validate_constraints(homework, min_speaking)
     if remaining:
         print(f"      [selector repair] fixing {len(remaining)} remaining violations: {remaining}")
