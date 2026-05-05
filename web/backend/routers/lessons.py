@@ -114,14 +114,11 @@ def get_lesson_detail(student_id: str, lesson_id: int):
         "pronunciation_attempts": sc_ic.get("pronunciation_attempts", 0),
         "free_speaking_score_avg": sc_ic.get("free_speaking_score_avg"),
         "free_speaking_attempts": sc_ic.get("free_speaking_attempts", 0),
-        "brainstorm_score_avg": sc_ic.get("brainstorm_score_avg"),
-        "brainstorm_attempts": sc_ic.get("brainstorm_attempts", 0),
         "conversation_score_avg": sc_ic.get("conversation_score_avg"),
         "conversation_attempts": sc_ic.get("conversation_attempts", 0),
         "worst_speaking_items": sc_ic.get("worst_speaking_items") or [],
         "pronunciation_drills": qe_ic.get("pronunciation_drills") or [],
         "free_speaking_questions": qe_ic.get("free_speaking") or [],
-        "brainstorm_questions": qe_ic.get("brainstorm") or [],
         "conversation_questions": qe_ic.get("conversation") or [],
     }
 

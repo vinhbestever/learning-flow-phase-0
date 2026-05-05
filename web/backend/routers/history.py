@@ -53,8 +53,6 @@ def get_learning_history(student_id: str):
                     "pronunciation_attempts": in_class.get("pronunciation_attempts", 0),
                     "free_speaking_score_avg": in_class.get("free_speaking_score_avg"),
                     "free_speaking_attempts": in_class.get("free_speaking_attempts", 0),
-                    "brainstorm_score_avg": in_class.get("brainstorm_score_avg"),
-                    "brainstorm_attempts": in_class.get("brainstorm_attempts", 0),
                     "conversation_score_avg": in_class.get("conversation_score_avg"),
                     "conversation_attempts": in_class.get("conversation_attempts", 0),
                     "session_metrics": in_class.get("session_metrics"),
@@ -63,13 +61,11 @@ def get_learning_history(student_id: str):
                             "lms_type": w.get("lms_type"),
                             "question": (w.get("question") or "")[:200] or None,
                             "expected_answer": (w.get("expected_answer") or "")[:300] or None,
-                            "target_objects": w.get("target_objects"),
                             "user_transcript": (w.get("user_transcript") or "")[:200] or None,
                             "answer_type": w.get("answer_type"),
                             "score": w.get("score"),
                             "grammar_score": w.get("grammar_score"),
                             "pronunciation_score": w.get("pronunciation_score"),
-                            "correct_objects": w.get("correct_objects"),
                             "timestamp": w.get("timestamp"),
                         }
                         for w in speaking_items[:3]
