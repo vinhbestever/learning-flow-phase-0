@@ -8,7 +8,6 @@ from .bank import _question_bank_path, load_practice_question_bank
 from .homework import build_homework_practice
 from .in_class import (
     compute_session_metrics,
-    extract_brainstorm,
     extract_conversation,
     extract_free_speaking,
     extract_interactive,
@@ -67,7 +66,6 @@ def main() -> None:
         "lessons": 0,
         "pron_drills": 0,
         "free_speaking": 0,
-        "brainstorm": 0,
         "conversation": 0,
         "interactive": 0,
         "lms_questions": 0,
@@ -125,9 +123,6 @@ def main() -> None:
         free_sp = [
             extract_free_speaking(r) for r in audio if preprocess.classify_audio(r) == "free_speaking"
         ]
-        brainstorm_sp = [
-            extract_brainstorm(r) for r in audio if preprocess.classify_audio(r) == "brainstorm"
-        ]
         convos = [
             extract_conversation(r) for r in audio if preprocess.classify_audio(r) == "conversation"
         ]
@@ -156,7 +151,6 @@ def main() -> None:
                     "session_metrics": session_metrics,
                     "pronunciation_drills": pron_drills,
                     "free_speaking": free_sp,
-                    "brainstorm": brainstorm_sp,
                     "conversation": convos,
                     "interactive": interactive,
                 },
@@ -170,7 +164,6 @@ def main() -> None:
         stats["lessons"] += 1
         stats["pron_drills"] += len(pron_drills)
         stats["free_speaking"] += len(free_sp)
-        stats["brainstorm"] += len(brainstorm_sp)
         stats["conversation"] += len(convos)
         stats["interactive"] += len(interactive)
         stats["lms_questions"] += len(bai_tap["questions"] if bai_tap else [])
@@ -196,7 +189,6 @@ def main() -> None:
     print(f"Lessons:            {stats['lessons']}")
     print(f"Pronunciation drills: {stats['pron_drills']}")
     print(f"Free speaking (warmup): {stats['free_speaking']}")
-    print(f"Brainstorm (ảnh→từ):  {stats['brainstorm']}")
     print(f"Conversation:         {stats['conversation']}")
     print(f"Interactive (NON_AUDIO): {stats['interactive']}")
     print(f"LMS homework questions:  {stats['lms_questions']}")

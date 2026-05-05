@@ -33,7 +33,7 @@ def extract_pronunciation_drill(r):
 
 
 def extract_free_speaking(r):
-    """Warmup / unscripted speaking — not brainstorm (see extract_brainstorm)."""
+    """Warmup / unscripted speaking (additionalData.warmup)."""
     lms = r.get("lmsData") or {}
     result = r.get("result") or {}
     return {
@@ -48,27 +48,6 @@ def extract_free_speaking(r):
         "reaction_time_ms": r.get("reactionTimeMs"),
     }
 
-
-def extract_brainstorm(r):
-    """Picture/cue vocabulary: student names target objects from additionalData.brainstorm."""
-    lms = r.get("lmsData") or {}
-    result = r.get("result") or {}
-    ad = result.get("additionalData") or {}
-    target_objects = None
-    if "brainstorm" in ad:
-        objs = ad["brainstorm"].get("objects") or []
-        target_objects = [o["name"] for o in objs if isinstance(o, dict) and o.get("isMain")] or None
-    return {
-        "interaction_type": "brainstorm",
-        "question": lms.get("question"),
-        "expected_transcript": lms.get("expectedTranscript"),
-        "question_type": lms.get("questionType"),
-        "target_objects": target_objects,
-        "user_transcript": result.get("userTranscript"),
-        "score": result.get("score"),
-        "audio_url": result.get("audioUrl"),
-        "reaction_time_ms": r.get("reactionTimeMs"),
-    }
 
 
 def extract_conversation(r):

@@ -13,7 +13,6 @@ from .bank import load_practice_question_bank
 from .homework import build_homework_practice, extract_lms_question
 from .in_class import (
     compute_session_metrics,
-    extract_brainstorm,
     extract_conversation,
     extract_free_speaking,
     extract_interactive,
@@ -26,7 +25,6 @@ __all__ = [
     "build_homework_practice",
     "compute_session_metrics",
     "config",
-    "extract_brainstorm",
     "extract_conversation",
     "extract_free_speaking",
     "extract_interactive",
