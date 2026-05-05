@@ -133,7 +133,7 @@ to the exact quoted text from that utterance (copy it verbatim from the diagnost
 
 Good reason examples (in Vietnamese):
 - "Học sinh điền 'cost' thay vì 'is' trong bài fill-blank này — lỗi chia động từ theo chủ ngữ xuất hiện ở 3 bài học khác nhau theo kết quả chẩn đoán. Bài đã học cách đây 20 ngày (đã quên hoàn toàn)."
-- "Điểm free_speaking 0/100 trong bài này: học sinh trả lời 'I'm sick, my boy.' cho câu hỏi cảm xúc cơ bản — inaccordant hoàn toàn. Bài học đã qua 118 ngày."
+- "Điểm free_speaking 0/100 trong bài này: học sinh trả lời 'I'm sick, my boy.' cho câu hỏi cảm xúc cơ bản — inaccordant hoàn toàn. Bài học đã qua 34 ngày."
 - "Bài chưa được luyện tập trong 18 ngày; học sinh chưa nộp bài tập về nhà nên không có bằng chứng ghi nhớ. Củng cố các từ về quần áo/mua sắm mà chẩn đoán xác định là chưa được kiểm chứng sau lớp học."
 
 Return ONLY valid JSON matching the schema. No markdown, no explanation.\

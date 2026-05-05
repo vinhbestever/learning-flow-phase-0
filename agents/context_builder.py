@@ -216,7 +216,7 @@ def _select_tiered_from_enriched(
 
     tier_order = ["critical", "spaced_rep", "maintenance"]
     selected = []
-    covered_skills: set = set()
+    covered_skills: set[str] = set()
 
     for tier in tier_order:
         if len(selected) >= max_candidates:
@@ -262,7 +262,7 @@ def build_question_pool(
     """
     Flatten usable questions from the given lesson_ids.
     Applies per-lesson cap via _filter_pool_for_lesson for manageable pool size.
-    Attaches lesson_id, lesson_title, signal_type (caller sets after tier_candidates).
+    Attaches lesson_id, lesson_title, signal_type (caller sets from recent_enriched map in build_context).
 
     failed_ids_by_lesson: mapping lesson_id → set of question_ids the student
     previously answered incorrectly. These are pinned to the front of each

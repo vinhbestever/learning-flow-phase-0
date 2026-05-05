@@ -99,6 +99,10 @@ def test_old_lesson_stays_in_tiered_but_not_in_pool():
     assert 9001 not in pool_ids, "old lesson must not appear in selector pool"
     assert 9002 in pool_ids, "recent lesson must appear in selector pool"
 
+    pool_9002 = [q for q in pool if q["lesson_id"] == 9002]
+    assert pool_9002[0]["signal_type"] == "critical", "pool row must carry signal_type from recent_enriched"
+    assert pool_9002[0]["days_since"] == 10, "pool row must carry days_since from recent_enriched"
+
 
 def test_boundary_day_60_included_in_pool():
     """A lesson at exactly 60 days should still be included in the pool."""
