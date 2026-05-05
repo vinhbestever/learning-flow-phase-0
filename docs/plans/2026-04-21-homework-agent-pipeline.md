@@ -867,7 +867,7 @@ git commit -m "feat: selector agent — GPT-4o structured output for 15 homework
 ## Task 5: Pipeline entry point
 
 **Files:**
-- Create: `agent_pipeline.py`
+- Create: `scripts/agent_pipeline.py` (thin `agent_pipeline.py` at repo root delegates here)
 
 ### What this module does
 
@@ -882,11 +882,11 @@ Entry point for the homework agent pipeline.
 
 Usage:
     export OPENAI_API_KEY=sk-...
-    python agent_pipeline.py
+    python -m scripts.agent_pipeline
 
 Prerequisites:
-    output/student_context.json   (run preprocess.py first)
-    output/questions_export.json  (run export_questions.py first)
+    output/<student_id>/student_context.json   (run scripts.preprocess first)
+    output/<student_id>/questions_export.json  (run scripts.export_questions first)
 
 Outputs:
     output/diagnostic_output.txt
@@ -985,7 +985,7 @@ Expected: prints candidate counts and tier labels, no errors.
 
 ```bash
 export OPENAI_API_KEY=sk-...
-python agent_pipeline.py
+python -m scripts.agent_pipeline
 ```
 Expected:
 ```
@@ -1025,7 +1025,7 @@ Expected: All tests PASSED.
 **Step 6: Commit**
 
 ```bash
-git add agent_pipeline.py
+git add scripts/agent_pipeline.py agent_pipeline.py
 git commit -m "feat: agent pipeline entry point — orchestrates context→diagnostic→selector"
 ```
 

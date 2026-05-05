@@ -14,7 +14,10 @@ def get_learning_history(student_id: str):
     if not p.exists():
         raise HTTPException(
             status_code=404,
-            detail=f"student_context.json not found for student {student_id} — run preprocess.py first",
+            detail=(
+                f"student_context.json not found for student {student_id} — run "
+                "`python -m scripts.preprocess` (or `python preprocess.py`) from repo root"
+            ),
         )
     raw = json.loads(p.read_text(encoding="utf-8"))
     summary = raw.get("summary") or {}

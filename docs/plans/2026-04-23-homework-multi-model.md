@@ -166,11 +166,11 @@
 
 ---
 
-### Task 11: CLI `agent_pipeline.py` — `--model`
+### Task 11: CLI `scripts/agent_pipeline.py` — `--model`
 
 **Files:**
 
-- Modify: `agent_pipeline.py` — `argparse` `--model` default `gpt-4o`; gọi cùng lớp pipeline nội bộ hoặc duplicate logic tối thiểu; ghi `homework_by_model.json`
+- Modify: `scripts/agent_pipeline.py` — `argparse` `--model` default `gpt-4o`; gọi cùng lớp pipeline nội bộ hoặc duplicate logic tối thiểu; ghi `homework_by_model.json`
 
 **Test:** `tests/test_agent_pipeline_cli.py` hoặc subprocess với mock
 

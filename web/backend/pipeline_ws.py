@@ -66,9 +66,12 @@ async def run_pipeline_ws(
         await send({"type": "error", "text": "GOOGLE_API_KEY chưa được cấu hình"})
         return
 
-    for path in (paths["context"], paths["questions"]):
+    hint_ctx = "chạy `python -m scripts.preprocess` (hoặc `python preprocess.py`) từ thư mục gốc repo"
+    hint_q = "chạy `python -m scripts.export_questions` (hoặc `python export_questions.py`) từ thư mục gốc repo"
+    for key, path in (("context", paths["context"]), ("questions", paths["questions"])):
         if not path.exists():
-            await send({"type": "error", "text": f"{path} không tồn tại — chạy preprocess.py trước"})
+            hint = hint_ctx if key == "context" else hint_q
+            await send({"type": "error", "text": f"{path} không tồn tại — {hint}"})
             return
 
     async with _pipeline_lock:

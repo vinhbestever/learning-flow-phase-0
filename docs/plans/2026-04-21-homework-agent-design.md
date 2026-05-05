@@ -165,9 +165,12 @@ Return ONLY valid JSON matching the schema.
 
 ```
 phase-0-learning-flow/
-├── preprocess.py                          (existing)
-├── export_questions.py                    (existing)
-├── agent_pipeline.py                      (NEW — entry point)
+├── scripts/
+│   ├── preprocess.py                          (existing)
+│   ├── export_questions.py                    (existing)
+│   └── agent_pipeline.py                      (NEW — entry point)
+├── agent_pipeline.py                          (optional shim)
+├── preprocess.py / export_questions.py         (optional shims)
 ├── agents/
 │   ├── __init__.py                        (NEW)
 │   ├── context_builder.py                 (NEW — tiering + filter)
@@ -189,7 +192,7 @@ phase-0-learning-flow/
 # Set OPENAI_API_KEY in environment
 
 export OPENAI_API_KEY=sk-...
-python agent_pipeline.py
+python -m scripts.agent_pipeline
 
 # Output:
 # [1/3] Building context... 12 candidates, 247 questions in pool

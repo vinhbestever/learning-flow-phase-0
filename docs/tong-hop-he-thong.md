@@ -11,9 +11,9 @@
 Hệ thống làm ba việc chính:
 
 1. **Thu thập / lưu trữ** các file JSON export từ LMS và MongoDB (thư mục `data/`).
-2. **Tiền xử lý** để gộp, tính điểm ưu tiên, tóm tắt kỹ năng yếu → `output/student_context.json`.
-3. **Trích xuất câu hỏi** theo từng bài học → `output/questions_export.json`.
-4. **Pipeline agent (tùy chọn, cần OpenAI):** chọn tối đa 15 bài học ưu tiên, phân tích chẩn đoán bằng LLM, chọn đúng **15 câu** bài tập phù hợp → `output/homework_assignment.json`.
+2. **Tiền xử lý** để gộp, tính điểm ưu tiên, tóm tắt kỹ năng yếu → `output/<student_id>/student_context.json`.
+3. **Trích xuất câu hỏi** theo từng bài học → `output/<student_id>/questions_export.json`.
+4. **Pipeline agent (tùy chọn, cần API key):** chọn tối đa 15 bài học ưu tiên, phân tích chẩn đoán bằng LLM, chọn đúng **15 câu** bài tập phù hợp → `output/<student_id>/homework_assignment.json`.
 
 ---
 
@@ -30,24 +30,24 @@ flowchart TB
     end
 
     subgraph p1["Bước 1 — Tiền xử lý"]
-        P[preprocess.py]
+        P[scripts/preprocess/<br/>package]
     end
 
     subgraph p2["Bước 2 — Export câu hỏi"]
-        E[export_questions.py]
+        E[scripts/export_questions/<br/>package]
     end
 
     subgraph p3["Bước 3 — Pipeline bài tập (OpenAI)"]
         CB[context_builder.py\nlọc tier + pool câu hỏi]
         DA[diagnostic_agent.py\nGPT-4o, văn bản]
         SA[selector_agent.py\nGPT-4o, JSON 15 câu]
-        AP[agent_pipeline.py]
+        AP[scripts/agent_pipeline.py]
     end
 
     raw --> P
-    P --> SC[["output/student_context.json\n(summary + scored_candidates + lessons)"]]
+    P --> SC[["output/<id>/student_context.json\n(summary + scored_candidates + lessons)"]]
     raw --> E
-    E --> QE[["output/questions_export.json\n(câu hỏi theo lesson)"]]
+    E --> QE[["output/<id>/questions_export.json\n(câu hỏi theo lesson)"]]
 
     SC --> AP
     QE --> AP
@@ -60,9 +60,9 @@ flowchart TB
 
 | Thứ tự | Lệnh | Phụ thuộc |
 |--------|------|-----------|
-| 1 | `python preprocess.py` | Có đủ file trong `data/` |
-| 2 | `python export_questions.py` | Cùng điều kiện |
-| 3 | `python agent_pipeline.py` | Có hai file `output/` ở trên + biến môi trường `OPENAI_API_KEY` |
+| 1 | `python -m scripts.preprocess` (hoặc shim `python preprocess.py`) | Có đủ file trong `data/` |
+| 2 | `python -m scripts.export_questions` (hoặc shim `python export_questions.py`) | Cùng điều kiện; export đồng bộ `preprocess.config.DATA_DIR` với `data/<student_id>/` |
+| 3 | `python -m scripts.agent_pipeline` (hoặc `python agent_pipeline.py`) | Có hai file `output/<id>/` ở trên + API key model tương ứng (`OPENAI_API_KEY` / `GOOGLE_API_KEY`) |
 
 ---
 
@@ -82,9 +82,11 @@ Quan hệ khóa chính (rút gọn): `lesson.id` ↔ tutor lessons ↔ `erpLesso
 
 ---
 
-## 4. `preprocess.py` — Ngữ cảnh học sinh
+## 4. `scripts/preprocess/` — Ngữ cảnh học sinh
 
-**Đầu ra:** `output/student_context.json`
+**Entry:** `python -m scripts.preprocess` (hoặc shim `preprocess.py`). **Cấu hình thư mục / học sinh:** `scripts.preprocess.config` (`DATA_DIR`, `STUDENT_ID`, …).
+
+**Đầu ra:** `output/<student_id>/student_context.json`
 
 **Cấu trúc gồm:**
 
@@ -96,9 +98,11 @@ Quan hệ khóa chính (rút gọn): `lesson.id` ↔ tutor lessons ↔ `erpLesso
 
 ---
 
-## 5. `export_questions.py` — Kho câu hỏi theo bài
+## 5. `scripts/export_questions/` — Kho câu hỏi theo bài
 
-**Đầu ra:** `output/questions_export.json`
+**Entry:** `python -m scripts.export_questions` (hoặc shim `export_questions.py`). Trước khi đọc dữ liệu, gán **`preprocess.config.DATA_DIR`** khớp `data/<student_id>/` để loader preprocess dùng đúng bộ file.
+
+**Đầu ra:** `output/<student_id>/questions_export.json`
 
 **Nội dung:** Theo mỗi `lesson_id`, có cấu trúc kiểu:
 
@@ -109,9 +113,9 @@ Mục đích: cung cấp **nguồn câu hỏi thật** để bước sau chỉ *
 
 ---
 
-## 6. Pipeline bài tập (`agent_pipeline.py` + `agents/`)
+## 6. Pipeline bài tập (`scripts/agent_pipeline.py` + `agents/`)
 
-Chạy khi đã có `student_context.json` và `questions_export.json`. Không cần framework; dùng SDK `openai`.
+Chạy khi đã có `student_context.json` và `questions_export.json` trong `output/<student_id>/`. Không cần framework; dùng SDK `openai` hoặc Gemini tùy model.
 
 ### Bước 6.1 — `context_builder` (Python thuần, không gọi API)
 
@@ -144,15 +148,15 @@ Ràng buộc thiết kế (ý định): ưu tiên critical > spaced_rep > mainte
 ## 7. Phụ thuộc & cách chạy nhanh
 
 - **Python 3.10+**, gói trong `requirements.txt` (chủ yếu `openai`, `pytest` cho kiểm thử).
-- Pipeline agent **bắt buộc** `OPENAI_API_KEY` trong môi trường.
+- Pipeline agent **bắt buộc** biến môi trường API tương ứng model (`OPENAI_API_KEY` và/hoặc `GOOGLE_API_KEY`).
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python preprocess.py
-python export_questions.py
+python -m scripts.preprocess
+python -m scripts.export_questions
 export OPENAI_API_KEY="sk-..."
-python agent_pipeline.py
+python -m scripts.agent_pipeline
 ```
 
 Chạy test (không tốn API):

@@ -13,8 +13,8 @@
 ## Prerequisites
 
 From project root `/home/pc600/Desktop/phase-0-learning-flow`:
-- `output/student_context.json` exists (run `python preprocess.py` if not)
-- `output/questions_export.json` exists (run `python export_questions.py` if not)
+- `output/<student_id>/student_context.json` exists (run `python -m scripts.preprocess` if not)
+- `output/<student_id>/questions_export.json` exists (run `python -m scripts.export_questions` if not)
 
 Install new backend deps:
 ```bash

@@ -50,7 +50,10 @@ def get_lessons(student_id: str):
     if not p.exists():
         raise HTTPException(
             status_code=404,
-            detail=f"questions_export.json not found for student {student_id} — run export_questions.py first",
+            detail=(
+                f"questions_export.json not found for student {student_id} — run "
+                "`python -m scripts.export_questions` (or `python export_questions.py`) from repo root"
+            ),
         )
     data = json.loads(p.read_text(encoding="utf-8"))
 

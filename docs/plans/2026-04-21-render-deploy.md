@@ -119,4 +119,4 @@ Open the Render-provided URL (e.g. `https://phase-0-learning-flow.onrender.com`)
 
 - Free Render tier spins down after 15 min inactivity — first request takes ~30s to wake up.
 - `OPENAI_API_KEY` is set via Render dashboard (never committed to repo).
-- To regenerate homework data locally: `python preprocess.py && python export_questions.py && python agent_pipeline.py`, then commit the updated `output/` files and push.
+- To regenerate homework data locally: `python -m scripts.preprocess && python -m scripts.export_questions && python -m scripts.agent_pipeline` (hoặc các shim `python preprocess.py` … tại thư mục gốc), then commit the updated `output/` files and push.

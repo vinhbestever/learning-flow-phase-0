@@ -1,13 +1,13 @@
 # Homework pipeline: chọn model & nhiều bản theo model
 
 **Status:** Approved (2026-04-23)  
-**Context:** Hiện pipeline gắn cứng `gpt-4o` ở diagnostic (streaming) và selector (JSON schema) trong `web/backend/pipeline_ws.py` và `agent_pipeline.py`. Một học sinh chỉ có một cặp `diagnostic_output.txt` + `homework_assignment.json`.
+**Context:** Hiện pipeline gắn cứng `gpt-4o` ở diagnostic (streaming) và selector (JSON schema) trong `web/backend/pipeline_ws.py` và `scripts/agent_pipeline.py`. Một học sinh chỉ có một cặp `diagnostic_output.txt` + `homework_assignment.json`.
 
 ## Goals
 
 1. Giao diện **Tạo bài tập** cho phép chọn **một** model mỗi lần chạy từ danh sách được phép (OpenAI — các bản GPT cao hơn; Google — Gemini).
 2. Giao diện **Kết quả** hiển thị nhiều bản, **mỗi tên model chỉ giữ bản mới nhất** (chạy lại cùng model = ghi đè bản cũ).
-3. CLI `agent_pipeline.py` hỗ trợ `--model` tương ứng.
+3. CLI `scripts/agent_pipeline.py` hỗ trợ `--model` tương ứng.
 4. Tương thích ngược với file cũ dưới `output/{student_id}/`.
 
 ## Non-goals (YAGNI)

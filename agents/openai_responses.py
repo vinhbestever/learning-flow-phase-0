@@ -58,7 +58,7 @@ def complete_diagnostic_text(
     user_content: str,
     temperature: float = 0.4,
 ) -> str:
-    """Một lần gọi, không stream (agent_pipeline CLI)."""
+    """Một lần gọi, không stream (scripts.agent_pipeline CLI)."""
     req: dict = {
         "model": model,
         "instructions": system_prompt,

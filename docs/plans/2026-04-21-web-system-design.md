@@ -73,7 +73,7 @@ Pipeline runs in `asyncio.run_in_executor` to avoid blocking the event loop. The
 
 - `OPENAI_API_KEY` not set → emit `error` immediately on WebSocket connect
 - Pipeline exception mid-run → emit `error` with message, close WebSocket
-- `output/*.json` missing → REST endpoints return HTTP 404 with message directing user to run `preprocess.py` / `export_questions.py`
+- `output/*.json` missing → REST endpoints return HTTP 404 with message directing user to run `python -m scripts.preprocess` / `python -m scripts.export_questions` (hoặc shim tương đương từ thư mục gốc repo)
 - Frontend shows error state with a "Thử lại" (retry) button
 
 ---

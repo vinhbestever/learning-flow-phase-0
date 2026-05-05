@@ -80,7 +80,7 @@ export default function StudentsList() {
                 Chưa có dữ liệu học sinh
               </p>
               <p className="mt-2 text-sm text-[var(--muted)]">
-                Chạy <code>preprocess.py</code> để tạo dữ liệu trước.
+                Chạy <code className="rounded bg-[var(--elevated)] px-1">python -m scripts.preprocess</code> (hoặc <code className="rounded bg-[var(--elevated)] px-1">python preprocess.py</code>) từ thư mục gốc repo.
               </p>
             </div>
           ) : (

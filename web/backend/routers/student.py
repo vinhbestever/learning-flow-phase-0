@@ -35,7 +35,10 @@ def get_student_profile(student_id: str):
     if not p.exists():
         raise HTTPException(
             status_code=404,
-            detail=f"student_context.json not found for student {student_id} — run preprocess.py first",
+            detail=(
+                f"student_context.json not found for student {student_id} — run "
+                "`python -m scripts.preprocess` (or `python preprocess.py`) from repo root"
+            ),
         )
     data = json.loads(p.read_text(encoding="utf-8"))
     return data["summary"]

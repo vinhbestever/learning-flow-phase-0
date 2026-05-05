@@ -41,11 +41,21 @@ vh_digital_teacher.learning_sessions._id → learning_results.sessionId
 
 After raw exports exist under `data/`, run preprocessing and optional question export, then the two-agent homework pipeline.
 
+Implementation lives under `scripts/` as **Python packages** (split from former monolithic modules):
+
+- **`scripts/preprocess/`** — `config.py`, `loaders.py`, `lms_questions.py`, `digital_teacher.py`, `pipeline.py`, … Entry: `python -m scripts.preprocess`. Mutable paths live on **`scripts.preprocess.config`** (`DATA_DIR`, `STUDENT_ID`, `OUTPUT_FILE`).
+- **`scripts/export_questions/`** — `bank.py`, `homework.py`, `in_class.py`, `pipeline.py`, … Entry: `python -m scripts.export_questions`. Before loading tutor/LMS files it sets **`preprocess.config.DATA_DIR`** to match this run.
+- **`scripts/evaluate/`** — metrics + LLM judge + reports; entry: `python -m scripts.evaluate`.
+- **Single-file utilities:** `scripts/agent_pipeline.py`, `scripts/lms_question_rich.py`, `scripts/analyze_pipeline_model_outputs.py`.
+
+From the repo root, prefer **`python -m scripts.<package>`**; thin shims at the repo root (`preprocess.py`, `export_questions.py`, `evaluate.py`, …) call the same code for backward compatibility.
+
 | Step | Command | Output |
 |------|---------|--------|
-| Preprocess | `python preprocess.py` | `output/student_context.json` (scored candidates + summary) |
-| Question export | `python export_questions.py` | `output/questions_export.json` |
-| Homework agents | `OPENAI_API_KEY` and/or `GOOGLE_API_KEY`; `python agent_pipeline.py [id] --model <id>` | `diagnostic_output.txt`, `homework_assignment.json`, `homework_by_model.json` (15 questions per run; một bản mới nhất mỗi model) |
+| Preprocess | `python -m scripts.preprocess [student_id]` or `python preprocess.py [student_id]` | `output/<student_id>/student_context.json` (scored candidates + summary) |
+| Question export | `python -m scripts.export_questions [student_id]` or `python export_questions.py [student_id]` | `output/<student_id>/questions_export.json` |
+| Homework agents | `OPENAI_API_KEY` and/or `GOOGLE_API_KEY`; `python -m scripts.agent_pipeline [student_id] --model <id>` (or `python agent_pipeline.py …`) | under `output/<student_id>/`: `homework_assignment.json`, `homework_by_model.json`, v.v. (15 questions per run; một bản mới nhất mỗi model) |
+| Evaluate (optional) | `python -m scripts.evaluate <student_id>` or `python evaluate.py …` | `output/<student_id>/evaluation_report.json` (+ `.md`) |
 
 - **Dependencies:** `pip install -r requirements.txt` (see `agents/` for context builder, diagnostic, selector modules; tests in `tests/`).
 - **Design:** `docs/plans/2026-04-21-homework-agent-design.md` and `docs/plans/2026-04-21-homework-agent-pipeline.md`.

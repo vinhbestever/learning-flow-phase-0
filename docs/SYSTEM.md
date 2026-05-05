@@ -15,13 +15,13 @@ Pipeline tự động tạo bộ 15 câu bài tập cá nhân hóa cho học sin
 └───────────────────────────┬─────────────────────────────┘
                             │
               ┌─────────────▼─────────────┐
-              │     preprocess.py          │  (Python thuần)
-              │  + export_questions.py     │
+              │  scripts/preprocess/      │  package (Python thuần)
+              │  scripts/export_questions/ │
               └─────────────┬─────────────┘
                             │
           ┌─────────────────┼─────────────────┐
           ▼                                   ▼
-  output/student_context.json     output/questions_export.json
+  output/<student_id>/student_context.json     output/<student_id>/questions_export.json
   (profile + scored_candidates)   (toàn bộ câu hỏi đã học)
           │                                   │
           └─────────────┬─────────────────────┘
@@ -62,7 +62,7 @@ Pipeline tự động tạo bộ 15 câu bài tập cá nhân hóa cho học sin
 - **API key:** `OPENAI_API_KEY` khi chọn model OpenAI; `GOOGLE_API_KEY` khi chọn Gemini (Google AI Studio / tương thích `google-genai`).
 - **File output:** `homework_by_model.json` giữ **một bản mới nhất cho mỗi** `model_id`. Dữ liệu import từ pipeline cũ (chỉ `homework_assignment.json` + `diagnostic_output.txt`) gắn khóa legacy `gpt-4o` khi đọc lần đầu.
 - **Web:** WebSocket `/api/ws/students/{id}/generate?model=...`; `GET /api/homework-models` (danh sách chọn); trang kết quả đọc `GET /api/students/{id}/homework` với `models` + `last_run_model`.
-- **CLI:** `python agent_pipeline.py <student_folder> --model <id>` (cần `PYTHONPATH=.` từ thư mục gốc repo nếu dùng `web.backend`).
+- **CLI:** `python -m scripts.agent_pipeline <student_folder> --model <id>` (hoặc `python agent_pipeline.py …`) — chạy từ thư mục gốc repo; `agents` / `web.backend` được resolve qua cwd trên `sys.path`.
 
 ---
 
@@ -70,17 +70,21 @@ Pipeline tự động tạo bộ 15 câu bài tập cá nhân hóa cho học sin
 
 ### Bước 1 — Tiền xử lý dữ liệu (đã có sẵn)
 
-**Script:** `preprocess.py` → `output/student_context.json`
+**Package:** `scripts/preprocess/` (`pipeline.py`, `loaders.py`, …) — lệnh: `python -m scripts.preprocess` → `output/<student_id>/student_context.json`
 
-Tính toán cho từng bài học:
+Đường dẫn dữ liệu theo học sinh nằm trong **`scripts.preprocess.config`** (`DATA_DIR`, `STUDENT_ID`, …).
+
+**Package:** `scripts/export_questions/` (`homework.py`, `in_class.py`, …) — lệnh: `python -m scripts.export_questions` → `output/<student_id>/questions_export.json`
+
+Trước khi gọi loader của preprocess, export gán `preprocess.config.DATA_DIR` khớp thư mục `data/<student_id>/`.
+
+Tính toán (preprocess) cho từng bài học:
 - `forgetting_score`: Ebbinghaus `1 - e^(-t/S)`, S=1 ngày. Bài > 7 ngày → score ≈ 1.0
 - `weakness_score`: tổng hợp có trọng số (bài tập 35% + luyện tập 15% + free speaking 50%)
 - `composite_priority_score`: `0.5 × forgetting + 0.5 × weakness`
 - `scored_candidates`: top 20 bài theo composite score, kèm failed questions + worst speaking items
 
-**Script:** `export_questions.py` → `output/questions_export.json`
-
-Trích xuất toàn bộ câu hỏi từ dữ liệu gốc, phân loại:
+Trích xuất (export_questions) toàn bộ câu hỏi từ dữ liệu gốc, phân loại:
 - `pronunciation_drills`: bài đọc phát âm scripted
 - `free_speaking`: câu hỏi nói tự do (open-ended)
 - `interactive`: bài tập tương tác non-audio (single_choice, fill_paragraph, matching)
@@ -190,13 +194,13 @@ export OPENAI_API_KEY=sk-...
 
 ### Chạy lần đầu (tạo dữ liệu tiền xử lý)
 ```bash
-uv run python preprocess.py        # → output/student_context.json
-uv run python export_questions.py  # → output/questions_export.json
+uv run python -m scripts.preprocess        # → output/<student_id>/student_context.json
+uv run python -m scripts.export_questions  # → output/<student_id>/questions_export.json
 ```
 
 ### Chạy pipeline agent
 ```bash
-uv run python agent_pipeline.py
+uv run python -m scripts.agent_pipeline
 ```
 
 **Output mẫu:**
@@ -218,7 +222,7 @@ Loading data files...
 
 ### Chạy tests
 ```bash
-uv run pytest tests/ -v   # 22 tests
+uv run pytest tests/ -v   # ~50 tests
 ```
 
 ---
@@ -227,6 +231,11 @@ uv run pytest tests/ -v   # 22 tests
 
 ```
 phase-0-learning-flow/
+├── preprocess.py                  # Shim → python -m scripts.preprocess
+├── export_questions.py            # Shim → python -m scripts.export_questions
+├── agent_pipeline.py              # Shim → scripts.agent_pipeline
+├── evaluate.py                    # Shim → python -m scripts.evaluate
+├── lms_question_rich.py           # Re-export → scripts.lms_question_rich
 ├── data/                          # Raw exports từ LMS + Digital Teacher
 │   ├── lms_practice_result_*.json
 │   ├── program_lesson_*.json
@@ -241,13 +250,18 @@ phase-0-learning-flow/
 │   ├── test_diagnostic_agent.py   # 6 tests
 │   └── test_selector_agent.py     # 8 tests
 ├── output/
-│   ├── student_context.json       # Profile + scored candidates
-│   ├── questions_export.json      # Full question bank
-│   ├── diagnostic_output.txt      # Intermediate: LLM analysis
-│   └── homework_assignment.json   # FINAL: 15 homework questions
-├── preprocess.py                  # Tiền xử lý dữ liệu gốc
-├── export_questions.py            # Trích xuất câu hỏi
-├── agent_pipeline.py              # Entry point
+│   └── <student_id>/              # e.g. 2102555/
+│       ├── student_context.json   # Profile + scored candidates
+│       ├── questions_export.json # Full question bank per lesson
+│       ├── diagnostic_output.txt  # Intermediate: LLM analysis (nếu có)
+│       └── homework_assignment.json  # FINAL: 15 homework questions
+├── scripts/
+│   ├── preprocess/                # Package: tiền xử lý (config, loaders, pipeline, …)
+│   ├── export_questions/          # Package: export câu hỏi (bank, homework, in_class, …)
+│   ├── evaluate/                  # Package: đánh giá pipeline (metrics, LLM judge, báo cáo)
+│   ├── agent_pipeline.py          # Entry point pipeline agent
+│   ├── lms_question_rich.py       # Tiện ích HTML/media cho câu LMS
+│   └── analyze_pipeline_model_outputs.py
 └── docs/
     ├── SYSTEM.md                  # Tài liệu này
     └── plans/
