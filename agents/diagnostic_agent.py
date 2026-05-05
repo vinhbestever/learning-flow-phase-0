@@ -49,6 +49,11 @@ Hãy tham chiếu "Free speaking / warmup avg" và "Free speaking lesson breakdo
 nhận định đúng là "học sinh có nhiều bài free_speaking tốt nhưng còn {N} bài cụ thể cần ôn lại". \
 Tránh tổng quát hóa từ danh sách bài cần ôn sang toàn bộ khả năng của học sinh.
 
+Lưu ý về bài tập về nhà: phân tích của bạn có thể đề cập mọi bài trong danh sách (kể cả bài \
+luyện tập rất lâu), nhưng agent chọn câu hỏi CHỈ lấy bài tập từ các bài được thực hành trong \
+vòng 60 ngày gần đây. Nếu một bài yếu nhưng quá cũ, bạn vẫn nêu lên trong phân tích nhưng \
+học sinh sẽ không nhận được bài tập cụ thể cho bài đó trong đêm nay.
+
 Trước khi viết phân tích, hãy xác định 3 mẫu lỗi hoặc rủi ro nghiêm trọng nhất bạn quan sát được \
 (bao gồm cả các bài chưa làm bài tập), sau đó trình bày chi tiết từng mẫu trong các đoạn văn rõ ràng. \
 Viết bằng tiếng Việt. Không dùng JSON, không dùng danh sách bullet, không dùng markdown headers. \
